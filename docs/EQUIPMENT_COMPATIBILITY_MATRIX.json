@@ -1,0 +1,3978 @@
+{
+  "schema": "equipment_compatibility_matrix.v1",
+  "totals": {
+    "PASS": 64,
+    "PASS_WITH_ADJUSTMENT": 5,
+    "UNSUPPORTED": 3,
+    "FAIL": 0,
+    "TOTAL": 72
+  },
+  "rules": {
+    "formula": "origin = anchor[slot] - pivot + offset",
+    "anchor_for_slot": {
+      "headgear": "head",
+      "main_hand": "main_hand",
+      "off_hand": "off_hand",
+      "accessory": "feet"
+    },
+    "offset_limit": 6,
+    "grip_pad": 2,
+    "pivot_opaque_max_chebyshev": 8,
+    "offhand_body_max_chebyshev": 8,
+    "head_body_max_chebyshev": 2,
+    "head_min_px_above": 4,
+    "feet_band": [
+      108,
+      121
+    ],
+    "feet_band_min": 20,
+    "baseline_y": 122,
+    "baseline_hard_px": 0,
+    "eye_fraction_max": 0.55,
+    "canvas": [
+      128,
+      128
+    ],
+    "body_policy": "Never scale, rotate, or repaint a body to force a fit. Mark UNSUPPORTED instead."
+  },
+  "scenarios": [
+    {
+      "id": "TC01",
+      "passed": true,
+      "detail": "masks identical (497 px), recolored 497 px, 0 px outside the helmet, pivot [22, 10] unchanged, character id AVT_AEG_001 unchanged",
+      "sheet": "tc01_silver_to_gold.png"
+    },
+    {
+      "id": "TC02",
+      "passed": true,
+      "detail": "AVT_AEG_001 PASS_WITH_ADJUSTMENT [-6, -2]; AVT_PHA_001 PASS [0, 0]; AVT_CEL_001 PASS [0, 0]; AVT_SAN_001 PASS [0, 0]",
+      "sheet": "tc02_basic_sword.png"
+    },
+    {
+      "id": "TC03",
+      "passed": true,
+      "detail": "AVT_AEG_001 main_hand PASS_WITH_ADJUSTMENT [-4, 0]; AVT_AEG_001 off_hand PASS [0, 0]; AVT_PHA_001 main_hand PASS [0, 0]; AVT_PHA_001 off_hand PASS [0, 0]; AVT_CEL_001 main_hand PASS [0, 0]; AVT_CEL_001 off_hand PASS [0, 0]; AVT_SAN_001 main_hand PASS [0, 0]; AVT_SAN_001 off_hand PASS [0, 0]",
+      "sheet": "tc03_shared_dagger.png"
+    },
+    {
+      "id": "TC04",
+      "passed": true,
+      "detail": "Madame Meteor PASS offset [0, 0]; overflow 0; baseline 0",
+      "sheet": "tc04_neutral_staff_meteor.png"
+    },
+    {
+      "id": "TC05",
+      "passed": true,
+      "detail": "Sister Plaster PASS offset [0, 0]; overflow 0; baseline 0",
+      "sheet": "tc05_neutral_staff_plaster.png"
+    },
+    {
+      "id": "TC06",
+      "passed": true,
+      "detail": "AVT_AEG_001 PASS; AVT_PHA_001 PASS; AVT_CEL_001 PASS; AVT_SAN_001 PASS",
+      "sheet": "tc06_buckler.png"
+    },
+    {
+      "id": "TC07",
+      "passed": true,
+      "detail": "hidden body pixels revealed: EQ_AEG_POT_HELMET_SILVER_001 161/162, EQ_AEG_POT_HELMET_GOLD_001 162/162, EQ_AEG_SWORD_POTLID_001 54/54, EQ_AEG_SHIELD_POTLID_001 599/626, EQ_PHA_KUNAI_MAIN_001 31/31, EQ_PHA_KUNAI_OFF_001 1/1, EQ_PHA_SNEAKERS_SQUEAK_001 431/431, EQ_CEL_HAT_ASTRO_001 67/67, EQ_CEL_STAFF_PLANET_001 189/191, EQ_CEL_NOODLE_CUP_001 12/13, EQ_SAN_CAP_HEALER_001 60/60, EQ_SAN_STAFF_BANDAGE_001 263/266, EQ_SAN_CLIPBOARD_001 8/8",
+      "sheet": "tc07_removal.png"
+    },
+    {
+      "id": "TC08",
+      "passed": true,
+      "detail": "EQ_AEG_SWORD_POTLID_001\u2192EQ_SWORD_BASIC_001 stray 0; EQ_PHA_KUNAI_MAIN_001\u2192EQ_DAGGER_BASIC_001 stray 0; EQ_CEL_STAFF_PLANET_001\u2192EQ_STAFF_NEUTRAL_001 stray 0; EQ_SAN_STAFF_BANDAGE_001\u2192EQ_STAFF_NEUTRAL_001 stray 0; EQ_AEG_POT_HELMET_SILVER_001\u2192EQ_AEG_POT_HELMET_GOLD_001 stray 0",
+      "sheet": "tc08_replacement.png"
+    },
+    {
+      "id": "TC09",
+      "passed": true,
+      "detail": "unknown ids leave the slot empty and do not raise",
+      "sheet": "tc09_missing_fallback.png"
+    },
+    {
+      "id": "TC10",
+      "passed": true,
+      "detail": "6 wrong-slot attempts rejected; legal sibling slots still draw",
+      "sheet": "tc10_wrong_slot.png"
+    }
+  ],
+  "rows": [
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_AEG_POT_HELMET_GOLD_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [44, 24] = head [66, 34] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          44,
+          24
+        ],
+        "anchor": [
+          66,
+          34
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          66,
+          34
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 162,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [44, 24] = head [66, 34] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          44,
+          24
+        ],
+        "anchor": [
+          66,
+          34
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          66,
+          34
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 162,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_AEG_SHIELD_POTLID_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [68, 52] = off_hand [86, 76] - pivot [18, 24] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 626 body pixels; overlap only, the body layer is not repainted or scaled"
+      ],
+      "metrics": {
+        "origin": [
+          68,
+          52
+        ],
+        "anchor": [
+          86,
+          76
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          18,
+          24
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          86,
+          76
+        ],
+        "opaque": 1225,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 626,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 537,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_AEG_SWORD_POTLID_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [29, 44] = main_hand [46, 75] - pivot [17, 31] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          29,
+          44
+        ],
+        "anchor": [
+          46,
+          75
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          17,
+          31
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          46,
+          75
+        ],
+        "opaque": 275,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 54,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 253,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_CEL_HAT_ASTRO_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [42, 18] = head [66, 34] - pivot [24, 16] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 11/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          42,
+          18
+        ],
+        "anchor": [
+          66,
+          34
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          24,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          66,
+          34
+        ],
+        "opaque": 843,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 110,
+        "eye_cover": 11,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 346,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_CEL_NOODLE_CUP_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [83, 62] = off_hand [86, 76] - pivot [3, 14] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          83,
+          62
+        ],
+        "anchor": [
+          86,
+          76
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          14
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          86,
+          76
+        ],
+        "opaque": 127,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 6,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 93,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 1,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_CEL_STAFF_PLANET_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "UNSUPPORTED",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "unresolved",
+      "reason": "UNSUPPORTED no integer offset within \u00b16 keeps the grip on the anchor and clears canvas overflow and the ground baseline. Body was not scaled. Remaining: overflow 8px past the 128 canvas; 27px cross the ground baseline y=122 (rows 122\u2013127 are shadow/VFX).",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          27,
+          30
+        ],
+        "anchor": [
+          46,
+          75
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          19,
+          45
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          46,
+          75
+        ],
+        "opaque": 605,
+        "overflow": 8,
+        "baseline_px": 27,
+        "body_overlap": 196,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 51,
+        "above_anchor": 415,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 2,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS_WITH_ADJUSTMENT",
+      "offset": [
+        -4,
+        0
+      ],
+      "offset_source": "rig_fit",
+      "reason": "PASS_WITH_ADJUSTMENT authored rig fit [-4, 0] on main_hand. origin [39, 71] = main_hand [46, 75] - pivot [3, 4] + offset [-4, 0]. grip pivot sits inside L05f. The preview already uses this offset; it is recorded and not recomputed.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          39,
+          71
+        ],
+        "anchor": [
+          46,
+          75
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          -4,
+          0
+        ],
+        "world_pivot": [
+          42,
+          75
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 109,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [83, 72] = off_hand [86, 76] - pivot [3, 4] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          83,
+          72
+        ],
+        "anchor": [
+          86,
+          76
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          86,
+          76
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 62,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_PHA_KUNAI_MAIN_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [41, 78] = main_hand [46, 75] - pivot [5, -3] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          41,
+          78
+        ],
+        "anchor": [
+          46,
+          75
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          46,
+          75
+        ],
+        "opaque": 31,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 31,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_PHA_KUNAI_OFF_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [85, 79] = off_hand [86, 76] - pivot [1, -3] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          85,
+          79
+        ],
+        "anchor": [
+          86,
+          76
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          1,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          86,
+          76
+        ],
+        "opaque": 90,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 0,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 4,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "slot": "accessory",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [30, 101] = feet [64, 122] - pivot [34, 21] + offset [0, 0]. mount sits on the feet baseline. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 549 body pixels; overlap only, the body layer is not repainted or scaled"
+      ],
+      "metrics": {
+        "origin": [
+          30,
+          101
+        ],
+        "anchor": [
+          64,
+          122
+        ],
+        "anchor_name": "feet",
+        "pivot": [
+          34,
+          21
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          64,
+          122
+        ],
+        "opaque": 703,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 549,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 520,
+        "above_anchor": 703,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 8,
+        "pivot_opaque_cheby": 7,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_SAN_CAP_HEALER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [54, 29] = head [66, 34] - pivot [12, 5] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 4/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          54,
+          29
+        ],
+        "anchor": [
+          66,
+          34
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          12,
+          5
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          66,
+          34
+        ],
+        "opaque": 134,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 78,
+        "eye_cover": 4,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 24,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_SAN_CLIPBOARD_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [77, 60] = off_hand [86, 76] - pivot [9, 16] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          77,
+          60
+        ],
+        "anchor": [
+          86,
+          76
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          9,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          86,
+          76
+        ],
+        "opaque": 287,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 113,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 177,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "UNSUPPORTED",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "unresolved",
+      "reason": "UNSUPPORTED no integer offset within \u00b16 keeps the grip on the anchor and clears canvas overflow and the ground baseline. Body was not scaled. Remaining: overflow 47px past the 128 canvas; 37px cross the ground baseline y=122 (rows 122\u2013127 are shadow/VFX).",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          22,
+          23
+        ],
+        "anchor": [
+          46,
+          75
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          24,
+          52
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          46,
+          75
+        ],
+        "opaque": 1124,
+        "overflow": 47,
+        "baseline_px": 37,
+        "body_overlap": 216,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 78,
+        "above_anchor": 767,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 5,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_SHIELD_BUCKLER_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [74, 64] = off_hand [86, 76] - pivot [12, 12] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          74,
+          64
+        ],
+        "anchor": [
+          86,
+          76
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          12,
+          12
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          86,
+          76
+        ],
+        "opaque": 448,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 149,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 224,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_STAFF_NEUTRAL_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "UNSUPPORTED",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "rig_declaration",
+      "reason": "UNSUPPORTED humanoid_heavy is not in compatible_rigs ['humanoid_standard'] for EQ_STAFF_NEUTRAL_001. The body was not scaled to force a fit. At [0, 0]: overflow 14px past the 128 canvas; 30px cross the ground baseline y=122 (rows 122\u2013127 are shadow/VFX).",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          39,
+          30
+        ],
+        "anchor": [
+          46,
+          75
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          7,
+          45
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          46,
+          75
+        ],
+        "opaque": 565,
+        "overflow": 14,
+        "baseline_px": 30,
+        "body_overlap": 335,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 70,
+        "above_anchor": 282,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_AEG_001",
+      "character": "Sir Potlid",
+      "rig": "humanoid_heavy",
+      "item_id": "EQ_SWORD_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS_WITH_ADJUSTMENT",
+      "offset": [
+        -6,
+        -2
+      ],
+      "offset_source": "rig_fit",
+      "reason": "PASS_WITH_ADJUSTMENT authored rig fit [-6, -2] on main_hand. origin [35, 44] = main_hand [46, 75] - pivot [5, 29] + offset [-6, -2]. grip pivot sits inside L05f. The preview already uses this offset; it is recorded and not recomputed.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          35,
+          44
+        ],
+        "anchor": [
+          46,
+          75
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          29
+        ],
+        "offset": [
+          -6,
+          -2
+        ],
+        "world_pivot": [
+          40,
+          73
+        ],
+        "opaque": 195,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 51,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 177,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_POT_HELMET_GOLD_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [48, 20] = head [70, 30] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          48,
+          20
+        ],
+        "anchor": [
+          70,
+          30
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          70,
+          30
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 351,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [48, 20] = head [70, 30] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          48,
+          20
+        ],
+        "anchor": [
+          70,
+          30
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          70,
+          30
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 351,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_SHIELD_POTLID_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [70, 36] = off_hand [88, 60] - pivot [18, 24] + offset [0, 0]. grip pivot sits inside L06f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 489 body pixels; overlap only, the body layer is not repainted or scaled",
+        "covers 1/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          70,
+          36
+        ],
+        "anchor": [
+          88,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          18,
+          24
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          88,
+          60
+        ],
+        "opaque": 1225,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 489,
+        "eye_cover": 1,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 537,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_SWORD_POTLID_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [23, 35] = main_hand [40, 66] - pivot [17, 31] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          23,
+          35
+        ],
+        "anchor": [
+          40,
+          66
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          17,
+          31
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          40,
+          66
+        ],
+        "opaque": 275,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 79,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 253,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_HAT_ASTRO_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [46, 14] = head [70, 30] - pivot [24, 16] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 11/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          46,
+          14
+        ],
+        "anchor": [
+          70,
+          30
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          24,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          70,
+          30
+        ],
+        "opaque": 843,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 298,
+        "eye_cover": 11,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 346,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_NOODLE_CUP_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [85, 46] = off_hand [88, 60] - pivot [3, 14] + offset [0, 0]. grip pivot sits inside L06f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          85,
+          46
+        ],
+        "anchor": [
+          88,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          14
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          88,
+          60
+        ],
+        "opaque": 127,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 23,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 93,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 1,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_STAFF_PLANET_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS_WITH_ADJUSTMENT",
+      "offset": [
+        0,
+        -3
+      ],
+      "offset_source": "stress_search",
+      "reason": "PASS_WITH_ADJUSTMENT unique offset [0, -3] (stress_search). origin [21, 18] = main_hand [40, 66] - pivot [19, 45] + offset [0, -3]. grip pivot sits inside L05f. [0, 0] left the canvas or the ground baseline; the body was not scaled.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          21,
+          18
+        ],
+        "anchor": [
+          40,
+          66
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          19,
+          45
+        ],
+        "offset": [
+          0,
+          -3
+        ],
+        "world_pivot": [
+          40,
+          63
+        ],
+        "opaque": 605,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 267,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 43,
+        "above_anchor": 417,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 2,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [37, 62] = main_hand [40, 66] - pivot [3, 4] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          37,
+          62
+        ],
+        "anchor": [
+          40,
+          66
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          40,
+          66
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 66,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [85, 56] = off_hand [88, 60] - pivot [3, 4] + offset [0, 0]. grip pivot sits inside L06f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          85,
+          56
+        ],
+        "anchor": [
+          88,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          88,
+          60
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 47,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_KUNAI_MAIN_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [35, 69] = main_hand [40, 66] - pivot [5, -3] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          35,
+          69
+        ],
+        "anchor": [
+          40,
+          66
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          40,
+          66
+        ],
+        "opaque": 31,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 31,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_KUNAI_OFF_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [87, 63] = off_hand [88, 60] - pivot [1, -3] + offset [0, 0]. grip pivot sits inside L06f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          87,
+          63
+        ],
+        "anchor": [
+          88,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          1,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          88,
+          60
+        ],
+        "opaque": 90,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 1,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 4,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "slot": "accessory",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [30, 101] = feet [64, 122] - pivot [34, 21] + offset [0, 0]. mount sits on the feet baseline. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 431 body pixels; overlap only, the body layer is not repainted or scaled"
+      ],
+      "metrics": {
+        "origin": [
+          30,
+          101
+        ],
+        "anchor": [
+          64,
+          122
+        ],
+        "anchor_name": "feet",
+        "pivot": [
+          34,
+          21
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          64,
+          122
+        ],
+        "opaque": 703,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 431,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 520,
+        "above_anchor": 703,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 9,
+        "pivot_opaque_cheby": 7,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_CAP_HEALER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [58, 25] = head [70, 30] - pivot [12, 5] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 4/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          58,
+          25
+        ],
+        "anchor": [
+          70,
+          30
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          12,
+          5
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          70,
+          30
+        ],
+        "opaque": 134,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 120,
+        "eye_cover": 4,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 24,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_CLIPBOARD_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [79, 44] = off_hand [88, 60] - pivot [9, 16] + offset [0, 0]. grip pivot sits inside L06f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          79,
+          44
+        ],
+        "anchor": [
+          88,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          9,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          88,
+          60
+        ],
+        "opaque": 287,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 110,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 177,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS_WITH_ADJUSTMENT",
+      "offset": [
+        0,
+        -4
+      ],
+      "offset_source": "stress_search",
+      "reason": "PASS_WITH_ADJUSTMENT unique offset [0, -4] (stress_search). origin [16, 10] = main_hand [40, 66] - pivot [24, 52] + offset [0, -4]. grip pivot sits inside L05f. [0, 0] left the canvas or the ground baseline; the body was not scaled.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          16,
+          10
+        ],
+        "anchor": [
+          40,
+          66
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          24,
+          52
+        ],
+        "offset": [
+          0,
+          -4
+        ],
+        "world_pivot": [
+          40,
+          62
+        ],
+        "opaque": 1124,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 359,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 89,
+        "above_anchor": 805,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 5,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SHIELD_BUCKLER_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [76, 48] = off_hand [88, 60] - pivot [12, 12] + offset [0, 0]. grip pivot sits inside L06f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          76,
+          48
+        ],
+        "anchor": [
+          88,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          12,
+          12
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          88,
+          60
+        ],
+        "opaque": 448,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 149,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 224,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_STAFF_NEUTRAL_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS_WITH_ADJUSTMENT",
+      "offset": [
+        0,
+        -1
+      ],
+      "offset_source": "stress_search",
+      "reason": "PASS_WITH_ADJUSTMENT unique offset [0, -1] (stress_search). origin [33, 20] = main_hand [40, 66] - pivot [7, 45] + offset [0, -1]. grip pivot sits inside L05f. [0, 0] left the canvas or the ground baseline; the body was not scaled.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          33,
+          20
+        ],
+        "anchor": [
+          40,
+          66
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          7,
+          45
+        ],
+        "offset": [
+          0,
+          -1
+        ],
+        "world_pivot": [
+          40,
+          65
+        ],
+        "opaque": 565,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 250,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 64,
+        "above_anchor": 287,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_PHA_001",
+      "character": "Nox Squeak",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SWORD_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [35, 37] = main_hand [40, 66] - pivot [5, 29] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          35,
+          37
+        ],
+        "anchor": [
+          40,
+          66
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          29
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          40,
+          66
+        ],
+        "opaque": 195,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 124,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 167,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_POT_HELMET_GOLD_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [46, 22] = head [68, 32] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          46,
+          22
+        ],
+        "anchor": [
+          68,
+          32
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          32
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 172,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [46, 22] = head [68, 32] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          46,
+          22
+        ],
+        "anchor": [
+          68,
+          32
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          32
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 172,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_SHIELD_POTLID_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [71, 34] = off_hand [89, 58] - pivot [18, 24] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 666 body pixels; overlap only, the body layer is not repainted or scaled"
+      ],
+      "metrics": {
+        "origin": [
+          71,
+          34
+        ],
+        "anchor": [
+          89,
+          58
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          18,
+          24
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          89,
+          58
+        ],
+        "opaque": 1225,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 666,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 537,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 2,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_SWORD_POTLID_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [27, 31] = main_hand [44, 62] - pivot [17, 31] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          27,
+          31
+        ],
+        "anchor": [
+          44,
+          62
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          17,
+          31
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          44,
+          62
+        ],
+        "opaque": 275,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 5,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 253,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_HAT_ASTRO_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [44, 16] = head [68, 32] - pivot [24, 16] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 11/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          44,
+          16
+        ],
+        "anchor": [
+          68,
+          32
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          24,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          32
+        ],
+        "opaque": 843,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 67,
+        "eye_cover": 11,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 346,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_NOODLE_CUP_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [86, 44] = off_hand [89, 58] - pivot [3, 14] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          86,
+          44
+        ],
+        "anchor": [
+          89,
+          58
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          14
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          89,
+          58
+        ],
+        "opaque": 127,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 13,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 93,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 2,
+        "pivot_opaque_cheby": 1,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_STAFF_PLANET_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [25, 17] = main_hand [44, 62] - pivot [19, 45] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          25,
+          17
+        ],
+        "anchor": [
+          44,
+          62
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          19,
+          45
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          44,
+          62
+        ],
+        "opaque": 605,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 191,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 39,
+        "above_anchor": 415,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 2,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [41, 58] = main_hand [44, 62] - pivot [3, 4] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          41,
+          58
+        ],
+        "anchor": [
+          44,
+          62
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          44,
+          62
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 103,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [86, 54] = off_hand [89, 58] - pivot [3, 4] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          86,
+          54
+        ],
+        "anchor": [
+          89,
+          58
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          89,
+          58
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 77,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 2,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_KUNAI_MAIN_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [39, 65] = main_hand [44, 62] - pivot [5, -3] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          39,
+          65
+        ],
+        "anchor": [
+          44,
+          62
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          44,
+          62
+        ],
+        "opaque": 31,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 24,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_KUNAI_OFF_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [88, 61] = off_hand [89, 58] - pivot [1, -3] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          88,
+          61
+        ],
+        "anchor": [
+          89,
+          58
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          1,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          89,
+          58
+        ],
+        "opaque": 90,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 22,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 2,
+        "pivot_opaque_cheby": 4,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "slot": "accessory",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [30, 101] = feet [64, 122] - pivot [34, 21] + offset [0, 0]. mount sits on the feet baseline. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 522 body pixels; overlap only, the body layer is not repainted or scaled"
+      ],
+      "metrics": {
+        "origin": [
+          30,
+          101
+        ],
+        "anchor": [
+          64,
+          122
+        ],
+        "anchor_name": "feet",
+        "pivot": [
+          34,
+          21
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          64,
+          122
+        ],
+        "opaque": 703,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 522,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 520,
+        "above_anchor": 703,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 2,
+        "pivot_opaque_cheby": 7,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_CAP_HEALER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [56, 27] = head [68, 32] - pivot [12, 5] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 4/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          56,
+          27
+        ],
+        "anchor": [
+          68,
+          32
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          12,
+          5
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          32
+        ],
+        "opaque": 134,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 70,
+        "eye_cover": 4,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 24,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_CLIPBOARD_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [80, 42] = off_hand [89, 58] - pivot [9, 16] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          80,
+          42
+        ],
+        "anchor": [
+          89,
+          58
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          9,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          89,
+          58
+        ],
+        "opaque": 287,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 108,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 177,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 2,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [20, 10] = main_hand [44, 62] - pivot [24, 52] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          20,
+          10
+        ],
+        "anchor": [
+          44,
+          62
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          24,
+          52
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          44,
+          62
+        ],
+        "opaque": 1124,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 257,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 89,
+        "above_anchor": 767,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 5,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SHIELD_BUCKLER_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [77, 46] = off_hand [89, 58] - pivot [12, 12] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          77,
+          46
+        ],
+        "anchor": [
+          89,
+          58
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          12,
+          12
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          89,
+          58
+        ],
+        "opaque": 448,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 171,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 224,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 2,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_STAFF_NEUTRAL_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [37, 17] = main_hand [44, 62] - pivot [7, 45] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          37,
+          17
+        ],
+        "anchor": [
+          44,
+          62
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          7,
+          45
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          44,
+          62
+        ],
+        "opaque": 565,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 261,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 49,
+        "above_anchor": 282,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_CEL_001",
+      "character": "Madame Meteor",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SWORD_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [39, 33] = main_hand [44, 62] - pivot [5, 29] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          39,
+          33
+        ],
+        "anchor": [
+          44,
+          62
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          29
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          44,
+          62
+        ],
+        "opaque": 195,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 45,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 167,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_POT_HELMET_GOLD_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [46, 8] = head [68, 18] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          46,
+          8
+        ],
+        "anchor": [
+          68,
+          18
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          18
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 258,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [46, 8] = head [68, 18] - pivot [22, 10] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 31/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          46,
+          8
+        ],
+        "anchor": [
+          68,
+          18
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          22,
+          10
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          18
+        ],
+        "opaque": 497,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 258,
+        "eye_cover": 31,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 129,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_SHIELD_POTLID_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [75, 36] = off_hand [93, 60] - pivot [18, 24] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 480 body pixels; overlap only, the body layer is not repainted or scaled",
+        "off-hand anchor sits 7px from the nearest remaining body pixel (no L06f)"
+      ],
+      "metrics": {
+        "origin": [
+          75,
+          36
+        ],
+        "anchor": [
+          93,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          18,
+          24
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          93,
+          60
+        ],
+        "opaque": 1225,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 480,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 537,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 7,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_AEG_SWORD_POTLID_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [31, 30] = main_hand [48, 61] - pivot [17, 31] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          31,
+          30
+        ],
+        "anchor": [
+          48,
+          61
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          17,
+          31
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          48,
+          61
+        ],
+        "opaque": 275,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 47,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 253,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_HAT_ASTRO_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [44, 2] = head [68, 18] - pivot [24, 16] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 11/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          44,
+          2
+        ],
+        "anchor": [
+          68,
+          18
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          24,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          18
+        ],
+        "opaque": 843,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 166,
+        "eye_cover": 11,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 346,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_NOODLE_CUP_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [90, 46] = off_hand [93, 60] - pivot [3, 14] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "off-hand anchor sits 7px from the nearest remaining body pixel (no L06f)"
+      ],
+      "metrics": {
+        "origin": [
+          90,
+          46
+        ],
+        "anchor": [
+          93,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          14
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          93,
+          60
+        ],
+        "opaque": 127,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 0,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 93,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 7,
+        "pivot_opaque_cheby": 1,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_CEL_STAFF_PLANET_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [29, 16] = main_hand [48, 61] - pivot [19, 45] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          29,
+          16
+        ],
+        "anchor": [
+          48,
+          61
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          19,
+          45
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          48,
+          61
+        ],
+        "opaque": 605,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 208,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 35,
+        "above_anchor": 415,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 2,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [45, 57] = main_hand [48, 61] - pivot [3, 4] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          45,
+          57
+        ],
+        "anchor": [
+          48,
+          61
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          48,
+          61
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 112,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_DAGGER_BASIC_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [90, 56] = off_hand [93, 60] - pivot [3, 4] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "off-hand anchor sits 7px from the nearest remaining body pixel (no L06f)"
+      ],
+      "metrics": {
+        "origin": [
+          90,
+          56
+        ],
+        "anchor": [
+          93,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          3,
+          4
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          93,
+          60
+        ],
+        "opaque": 112,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 40,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 20,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 7,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_KUNAI_MAIN_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [43, 64] = main_hand [48, 61] - pivot [5, -3] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          43,
+          64
+        ],
+        "anchor": [
+          48,
+          61
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          48,
+          61
+        ],
+        "opaque": 31,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 31,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 3,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_KUNAI_OFF_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [92, 63] = off_hand [93, 60] - pivot [1, -3] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "off-hand anchor sits 7px from the nearest remaining body pixel (no L06f)"
+      ],
+      "metrics": {
+        "origin": [
+          92,
+          63
+        ],
+        "anchor": [
+          93,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          1,
+          -3
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          93,
+          60
+        ],
+        "opaque": 90,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 3,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 0,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 7,
+        "pivot_opaque_cheby": 4,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "slot": "accessory",
+      "shared": false,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [30, 101] = feet [64, 122] - pivot [34, 21] + offset [0, 0]. mount sits on the feet baseline. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "occludes 448 body pixels; overlap only, the body layer is not repainted or scaled"
+      ],
+      "metrics": {
+        "origin": [
+          30,
+          101
+        ],
+        "anchor": [
+          64,
+          122
+        ],
+        "anchor_name": "feet",
+        "pivot": [
+          34,
+          21
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          64,
+          122
+        ],
+        "opaque": 703,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 448,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 520,
+        "above_anchor": 703,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 4,
+        "pivot_opaque_cheby": 7,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_CAP_HEALER_001",
+      "slot": "headgear",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [56, 13] = head [68, 18] - pivot [12, 5] + offset [0, 0]. mount sits on the head anchor and the hat extends above the skull. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "covers 4/78 pixels in the eye band under the head anchor"
+      ],
+      "metrics": {
+        "origin": [
+          56,
+          13
+        ],
+        "anchor": [
+          68,
+          18
+        ],
+        "anchor_name": "head",
+        "pivot": [
+          12,
+          5
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          68,
+          18
+        ],
+        "opaque": 134,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 60,
+        "eye_cover": 4,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 24,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 1,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_CLIPBOARD_001",
+      "slot": "off_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [84, 44] = off_hand [93, 60] - pivot [9, 16] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "off-hand anchor sits 7px from the nearest remaining body pixel (no L06f)"
+      ],
+      "metrics": {
+        "origin": [
+          84,
+          44
+        ],
+        "anchor": [
+          93,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          9,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          93,
+          60
+        ],
+        "opaque": 287,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 8,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 177,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 7,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+      "slot": "main_hand",
+      "shared": false,
+      "native": true,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [24, 9] = main_hand [48, 61] - pivot [24, 52] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          24,
+          9
+        ],
+        "anchor": [
+          48,
+          61
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          24,
+          52
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          48,
+          61
+        ],
+        "opaque": 1124,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 266,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 84,
+        "above_anchor": 767,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 5,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SHIELD_BUCKLER_001",
+      "slot": "off_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [81, 48] = off_hand [93, 60] - pivot [12, 12] + offset [0, 0]. grip pivot sits on the off-hand anchor. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [
+        "off-hand anchor sits 7px from the nearest remaining body pixel (no L06f)"
+      ],
+      "metrics": {
+        "origin": [
+          81,
+          48
+        ],
+        "anchor": [
+          93,
+          60
+        ],
+        "anchor_name": "off_hand",
+        "pivot": [
+          12,
+          12
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          93,
+          60
+        ],
+        "opaque": 448,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 69,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 224,
+        "pivot_in_grip": false,
+        "pivot_body_cheby": 7,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_STAFF_NEUTRAL_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [41, 16] = main_hand [48, 61] - pivot [7, 45] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          41,
+          16
+        ],
+        "anchor": [
+          48,
+          61
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          7,
+          45
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          48,
+          61
+        ],
+        "opaque": 565,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 339,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 44,
+        "above_anchor": 282,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    },
+    {
+      "character_id": "AVT_SAN_001",
+      "character": "Sister Plaster",
+      "rig": "humanoid_standard",
+      "item_id": "EQ_SWORD_BASIC_001",
+      "slot": "main_hand",
+      "shared": true,
+      "native": false,
+      "status": "PASS",
+      "offset": [
+        0,
+        0
+      ],
+      "offset_source": "zero",
+      "reason": "PASS origin [43, 32] = main_hand [48, 61] - pivot [5, 29] + offset [0, 0]. grip pivot sits inside L05f. Overflow 0. Body pixels outside the item are unchanged.",
+      "notes": [],
+      "metrics": {
+        "origin": [
+          43,
+          32
+        ],
+        "anchor": [
+          48,
+          61
+        ],
+        "anchor_name": "main_hand",
+        "pivot": [
+          5,
+          29
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "world_pivot": [
+          48,
+          61
+        ],
+        "opaque": 195,
+        "overflow": 0,
+        "baseline_px": 0,
+        "body_overlap": 74,
+        "eye_cover": 0,
+        "eye_px": 78,
+        "feet_band": 0,
+        "above_anchor": 167,
+        "pivot_in_grip": true,
+        "pivot_body_cheby": 0,
+        "pivot_opaque_cheby": 0,
+        "partial_alpha": 0,
+        "size_ok": true
+      }
+    }
+  ]
+}

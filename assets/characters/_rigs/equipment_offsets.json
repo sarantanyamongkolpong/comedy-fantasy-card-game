@@ -1,0 +1,63 @@
+{
+  "schema": "equipment_offsets.v1",
+  "formula": "origin = anchor[slot] - item.pivot + offset",
+  "units": "logical pixels, +x right, +y down, integers only",
+  "limit": 6,
+  "note": "Stress-test offsets only. Rig JSON is not modified. A missing character/item/slot means [0, 0]. source rig_fit copies the authored preview fit onto that item's primary slot. source stress_search is a new offset required to clear the 128 canvas or the ground baseline.",
+  "characters": {
+    "AVT_AEG_001": {
+      "EQ_DAGGER_BASIC_001": {
+        "main_hand": {
+          "offset": [
+            -4,
+            0
+          ],
+          "source": "rig_fit",
+          "reason": "PASS_WITH_ADJUSTMENT authored rig fit [-4, 0] on main_hand. origin [39, 71] = main_hand [46, 75] - pivot [3, 4] + offset [-4, 0]. grip pivot sits inside L05f. The preview already uses this offset; it is recorded and not recomputed."
+        }
+      },
+      "EQ_SWORD_BASIC_001": {
+        "main_hand": {
+          "offset": [
+            -6,
+            -2
+          ],
+          "source": "rig_fit",
+          "reason": "PASS_WITH_ADJUSTMENT authored rig fit [-6, -2] on main_hand. origin [35, 44] = main_hand [46, 75] - pivot [5, 29] + offset [-6, -2]. grip pivot sits inside L05f. The preview already uses this offset; it is recorded and not recomputed."
+        }
+      }
+    },
+    "AVT_PHA_001": {
+      "EQ_CEL_STAFF_PLANET_001": {
+        "main_hand": {
+          "offset": [
+            0,
+            -3
+          ],
+          "source": "stress_search",
+          "reason": "PASS_WITH_ADJUSTMENT unique offset [0, -3] (stress_search). origin [21, 18] = main_hand [40, 66] - pivot [19, 45] + offset [0, -3]. grip pivot sits inside L05f. [0, 0] left the canvas or the ground baseline; the body was not scaled."
+        }
+      },
+      "EQ_SAN_STAFF_BANDAGE_001": {
+        "main_hand": {
+          "offset": [
+            0,
+            -4
+          ],
+          "source": "stress_search",
+          "reason": "PASS_WITH_ADJUSTMENT unique offset [0, -4] (stress_search). origin [16, 10] = main_hand [40, 66] - pivot [24, 52] + offset [0, -4]. grip pivot sits inside L05f. [0, 0] left the canvas or the ground baseline; the body was not scaled."
+        }
+      },
+      "EQ_STAFF_NEUTRAL_001": {
+        "main_hand": {
+          "offset": [
+            0,
+            -1
+          ],
+          "source": "stress_search",
+          "reason": "PASS_WITH_ADJUSTMENT unique offset [0, -1] (stress_search). origin [33, 20] = main_hand [40, 66] - pivot [7, 45] + offset [0, -1]. grip pivot sits inside L05f. [0, 0] left the canvas or the ground baseline; the body was not scaled."
+        }
+      }
+    }
+  }
+}
