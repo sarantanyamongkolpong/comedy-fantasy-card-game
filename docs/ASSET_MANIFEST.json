@@ -1,7 +1,7 @@
 {
  "project": "Comedy Fantasy Card Game — First 4 Avatars",
  "manifest_version": 1,
- "generated": "2026-11-18T14:33:05+07:00",
+ "generated": "2026-11-18T15:42:10+07:00",
  "status_legend": [
   "CONCEPT",
   "PROTOTYPE",
@@ -9,7 +9,7 @@
   "PRODUCTION_READY",
   "INTEGRATED"
  ],
- "honest_summary": "Nothing is PRODUCTION_READY. Sprite layers are real separate PNGs on a shared 128x128 canvas but were cut from flat Owner references by script; occluded pixels are repainted approximations.",
+ "honest_summary": "Nothing is PRODUCTION_READY. Pixel-cleanup t230 scripted a palette, speckle, outline, and hidden-region pass on the four avatar sprite layers and split each L01 into skin/face/hair/outfit. Cleaned sprites stay PROTOTYPE. Equipment PNGs were not recropped. Repairs are deterministic, not hand-painted.",
  "canvas": {
   "logical": [
    128,
@@ -37,9 +37,10 @@
   "gold_swap": {
    "changed_px": 497,
    "changed_outside_helmet_px": 0
-  }
+  },
+  "note": "roundtrip_default_composite_vs_pixelized_ref_px_diff and gold_swap below are the pre-cleanup prototype (d65c89d) and are historical. Cleanup intentionally diverges from the flat reference."
  },
- "asset_count": 87,
+ "asset_count": 136,
  "assets": [
   {
    "asset_id": "RIG_HUMANOID_HEAVY_001",
@@ -92,17 +93,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification) | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "469d19df38552dadbbcb979e6eb948b7ce2d5a623dcca6c6a78283efcbd073d3",
-   "bytes": 8662,
+   "sha256": "45529afeee0e7b1a273b1a22a06f52e312efc54c01a3da551788bfa4562359cf",
+   "bytes": 8295,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 48,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_AEG_001_L04_headgear_silver",
@@ -145,17 +152,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "162 px: simple shaded hair cap painted under headgear; rest transparent",
+   "fill_note": "162 px: simple shaded hair cap painted under headgear; rest transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "d0ea66ae7bb5ebe5b2f6c6b280ef5a4189da8683b481f723a6bfab4646dced3f",
-   "bytes": 1528,
+   "sha256": "96f0872077c6c0024ab6b159d6f4feb70a4ca14a0a2b9c872f77c02ec6f000c1",
+   "bytes": 1467,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 24,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_AEG_001_L04_headgear_gold",
@@ -198,17 +211,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "recolour of OUR silver helmet layer by luminance rank; gold ramp sampled from owner gold ref palette",
+   "fill_note": "recolour of OUR silver helmet layer by luminance rank; gold ramp sampled from owner gold ref palette | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "2da24db6a50a4a3b664dd203a4004e82b8996193a99fe3641ecf58b0e60f7151",
-   "bytes": 911,
+   "sha256": "3ab570c852e24b3ddc432495de34d932c4b6723fe8f7e05344fb630e28d4a325",
+   "bytes": 882,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 5,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_AEG_001_L05_main_hand",
@@ -251,17 +270,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "54 occluded px synthesized (TELEA inpaint + palette snap); 221 px left transparent",
+   "fill_note": "54 occluded px synthesized (TELEA inpaint + palette snap); 221 px left transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "d213b039932b8ed43dea66b81655c0e3fa7ab6170cad9052db2cdb12db2edf53",
-   "bytes": 1217,
+   "sha256": "2c58cd8416a3e8fd6100c7d5e524f8d11993df1866822ed45a96cd2a37af4195",
+   "bytes": 1143,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 31,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_AEG_001_L06_off_hand",
@@ -304,17 +329,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "1114 px behind shield filled by mirroring the opposite body half about x=61; pixels with no mirrored source left transparent (approximate, normally hidden)",
+   "fill_note": "1114 px behind shield filled by mirroring the opposite body half about x=61; pixels with no mirrored source left transparent (approximate, normally hidden) | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "ef11fa0d2164d44ec56d383a06f3eb4552c1f578896c8ee4ec061bb865063a20",
-   "bytes": 2910,
+   "sha256": "c9a09e8abad3e8f2f920788f5459a06a33cb99d5fa42817fcab16dda62293193",
+   "bytes": 2793,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 31,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_AEG_001_L05f_main_hand_front",
@@ -357,17 +388,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "2283cfc28109f7578d7fd438b40b5bd1aa3fd4a6d7b27ac0a4e503d66bfe4997",
-   "bytes": 837,
+   "sha256": "aa3281fe70290e727e41d3850436381b8716aaf60f19cbc8e96fff48d60aaac1",
+   "bytes": 843,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 25,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "EQ_AEG_POT_HELMET_SILVER_001",
@@ -475,13 +512,19 @@
    "type": "sprite_composite_flattened",
    "owner": "AVT_AEG_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
-   "sha256": "c396d435f1d616fc264b08dc9200da796c45c1804c274a615a555affbb8f6714",
-   "bytes": 10856,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "89f00fd4b86089b5820e88cdabf326dcf32ea590d9c7c21f7ed7601be3ff4ab4",
+   "bytes": 10728,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 63,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_AEG_001_BASE_COMPOSITE_GOLDPOT",
@@ -489,13 +532,19 @@
    "type": "sprite_composite_flattened",
    "owner": "AVT_AEG_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
-   "sha256": "2c75103237eecebc5f533c01fa0c664423e2098da831a6f237343448cc792d67",
-   "bytes": 10480,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "8c1a236b06590387d5e764ff1b8bd3280aae06a964b29647eeaa32c9e8c81ec5",
+   "bytes": 10370,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 68,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_AEG_001_IDLE_SHEET",
@@ -503,13 +552,19 @@
    "type": "sprite_sheet_idle",
    "owner": "AVT_AEG_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
-   "sha256": "536130c9ab9ac7dac719db6f013af155d542672c8d0edb1072166593df1b5910",
-   "bytes": 15902,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "4eb4453ac6cde524f4d2dadd326a6e0c55447ffcbdf1f605f8efd76a5a5ff00e",
+   "bytes": 15750,
    "canvas_px": [
     768,
     128
-   ]
+   ],
+   "color_count": 63,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "RIG_HUMANOID_STANDARD_001",
@@ -562,17 +617,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification) | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "e1f7acc17fb77d86e05460be72785bc38a2fd8076aa8ead3bdca1a3e7574ccd7",
-   "bytes": 6715,
+   "sha256": "098f34a9412d6938391241ca0f4fb4c4ca2cb0184fee8497646d2a37d3968d9e",
+   "bytes": 5344,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 33,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_PHA_001_L05_main_hand",
@@ -615,17 +676,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "31 occluded px synthesized (TELEA inpaint + palette snap); 0 px left transparent",
+   "fill_note": "31 occluded px synthesized (TELEA inpaint + palette snap); 0 px left transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "d9e93e1fec3998995d57a21b217538c3332cdac659ed9798d40c1a7f0f17fdfe",
-   "bytes": 341,
+   "sha256": "f0ecde727657fe0d6d6faae60c9cfbfd835a378c74a28a5eef36f20c2d4228c8",
+   "bytes": 333,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 10,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_PHA_001_L06_off_hand",
@@ -668,17 +735,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "1 occluded px synthesized (TELEA inpaint + palette snap); 89 px left transparent",
+   "fill_note": "1 occluded px synthesized (TELEA inpaint + palette snap); 89 px left transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "1a6f3aad40c190f4dbd164251f1bc092118116c5f88e95167cef829253b79b18",
-   "bytes": 579,
+   "sha256": "5d5af20ae69696ff335a39bfc3f019542de85d0b483846df447607d11b2147ff",
+   "bytes": 537,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 14,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_PHA_001_L08_accessory_sneakers",
@@ -721,17 +794,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "431 px: placeholder dark tabi feet painted under sneakers",
+   "fill_note": "431 px: placeholder dark tabi feet painted under sneakers | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "fa5681c98672d2ed4e6911fe87c6574abfab75563444b225c76542e3eb5f8c17",
-   "bytes": 2282,
+   "sha256": "64d789d2f16230b185863a67184ab5d3be172528973a1f4bda315b64414d0c9f",
+   "bytes": 2241,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 44,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_PHA_001_L09_vfx_squeak",
@@ -774,7 +853,7 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "removed; background behind (no fill needed)",
+   "fill_note": "removed; background behind (no fill needed) | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
@@ -784,7 +863,13 @@
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 2,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_PHA_001_L05f_main_hand_front",
@@ -827,17 +912,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "9ea50183da45ce4cf59fa3ab894b9fc60256acb0198f25d82d8dea47b17e2a07",
-   "bytes": 431,
+   "sha256": "550a83fb033ad1f1c492e39e815f603c2062f3e00184f3e928ce75580b517ae9",
+   "bytes": 371,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 12,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_PHA_001_L06f_off_hand_front",
@@ -880,17 +971,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "13dba74d0077613b636b0b2b109cf2a0213e713251577d8a48356d1451623023",
-   "bytes": 480,
+   "sha256": "291fd0fac21ddd6c4e378b84244a99b79e1b36e94320e45f7c86bb8c8414a78a",
+   "bytes": 435,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 11,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "EQ_PHA_KUNAI_MAIN_001",
@@ -973,13 +1070,19 @@
    "type": "sprite_composite_flattened",
    "owner": "AVT_PHA_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
-   "sha256": "1136c5616b04270b27ffc2216706238de6525830488a428ec4fa4d4444bd4a31",
-   "bytes": 8947,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "bd4a89e1cb5ba9941e2817482c8b13e3d2899784f8573f4935262d7ab35fc51c",
+   "bytes": 7645,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 65,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_PHA_001_IDLE_SHEET",
@@ -987,13 +1090,19 @@
    "type": "sprite_sheet_idle",
    "owner": "AVT_PHA_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
-   "sha256": "96c29dc1844b8e2e858043772551d2459119d1e9828f3354bfeba9aa9f75c963",
-   "bytes": 14612,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "fde30782d6299e9e123ef77913c1ec8a0846e10dfa7fa126091fc79361d0e401",
+   "bytes": 12937,
    "canvas_px": [
     768,
     128
-   ]
+   ],
+   "color_count": 65,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_CEL_001_L01_body",
@@ -1036,17 +1145,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification) | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "6eefbfd17629bb7725c5811c50207422040fdc182f7f810a9e7a0787bc4cdda7",
-   "bytes": 10118,
+   "sha256": "e8357647125067a2deaad808dbf94f081bd98c9f96ec1b6f63cdca88caa9d745",
+   "bytes": 9445,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 48,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_CEL_001_L04_headgear",
@@ -1089,17 +1204,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "67 px: simple shaded hair cap painted under headgear; rest transparent",
+   "fill_note": "67 px: simple shaded hair cap painted under headgear; rest transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "c379b177512427b8300824347df78ff67ff0fe33b2f479459340680e98977dcd",
-   "bytes": 3180,
+   "sha256": "22a3367f7977cf0146b3d188cc35fee0e35827fa475561a9534ac8861a9f939f",
+   "bytes": 2792,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 41,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_CEL_001_L05_main_hand",
@@ -1142,17 +1263,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "191 occluded px synthesized (TELEA inpaint + palette snap); 414 px left transparent",
+   "fill_note": "191 occluded px synthesized (TELEA inpaint + palette snap); 414 px left transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "90929f870420e964dfdf0dd21ff356ae07f97943ff55862d151b7a30204f5d2a",
-   "bytes": 2517,
+   "sha256": "0046c3d8aa4db601599734324f53eb9dbe01ec211f77c6406f40493ddb78f7b8",
+   "bytes": 2351,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 41,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_CEL_001_L06_off_hand",
@@ -1195,17 +1322,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "13 occluded px synthesized (TELEA inpaint + palette snap); 114 px left transparent",
+   "fill_note": "13 occluded px synthesized (TELEA inpaint + palette snap); 114 px left transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "b38eaad910759f8c92e400b363bbca74d6f144985020987ce7f273c8fbfde3a8",
-   "bytes": 659,
+   "sha256": "191ba76b9e9d7cc991cf42ee59341c05856dbe4073f28be4256c1ad4b79660fb",
+   "bytes": 602,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 18,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_CEL_001_L09_vfx_steam",
@@ -1248,17 +1381,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "removed; background behind (no fill needed)",
+   "fill_note": "removed; background behind (no fill needed) | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "ce24b60731dd77ca51d23804e113a73c835757d8fd56488d4930e18478f82e2d",
-   "bytes": 630,
+   "sha256": "082345c67a31ef466fa3333d9cb3098ef86d64c27d3a864269877851e75dd7a1",
+   "bytes": 566,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 20,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_CEL_001_L05f_main_hand_front",
@@ -1301,17 +1440,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "d0759ecc2503c35b46e1a4ad0b6f89097a68fb27746138ea45046448e1b54e0b",
-   "bytes": 368,
+   "sha256": "fdf17e1d074bcf8e5dcc95f3130cf04e3133c1c65d80efd778415591a6400673",
+   "bytes": 367,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 8,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "EQ_CEL_HAT_ASTRO_001",
@@ -1394,13 +1539,19 @@
    "type": "sprite_composite_flattened",
    "owner": "AVT_CEL_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
-   "sha256": "54162cfd94a2f993ce3511dae9a3b472c2a90e7f39bc060b430fa51d6163c6b8",
-   "bytes": 14045,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "3e9e458ea9edfcdbf9eda3fc36c9c03bb486b394b1923917369898a8fed6bb76",
+   "bytes": 13673,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 80,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_CEL_001_IDLE_SHEET",
@@ -1408,13 +1559,19 @@
    "type": "sprite_sheet_idle",
    "owner": "AVT_CEL_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
-   "sha256": "7c9ce0407d58dbd3d100672597f4fab0047d059440d67d45e9619d9a36d2b5c8",
-   "bytes": 20606,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "42ba258e3621c2e1a4e15de7aead8cc01f89869f15de4c72f88ba5fea3e058ea",
+   "bytes": 20490,
    "canvas_px": [
     768,
     128
-   ]
+   ],
+   "color_count": 83,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_SAN_001_L01_body",
@@ -1457,17 +1614,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification) | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "0b41a4745c769dfb6aed1c32542a035d4314a19810e0d2cb18e902de461df480",
-   "bytes": 10746,
+   "sha256": "a3e87440120f5887dc0445056b80c67e38f70e12d9d50dd78666e6b8cd1f54a0",
+   "bytes": 9955,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 47,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_SAN_001_L04_headgear",
@@ -1510,17 +1673,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "60 px: simple shaded hair cap painted under headgear; rest transparent",
+   "fill_note": "60 px: simple shaded hair cap painted under headgear; rest transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "ee1277033647817c051d601540fc8872ae14871392f74e85bd953d5a25476fb5",
-   "bytes": 666,
+   "sha256": "17d472ff38afafcb2b14f4cd14ce57afa08b8adbb311d217b6a78fc3cd4a61f6",
+   "bytes": 631,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 19,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_SAN_001_L05_main_hand",
@@ -1563,17 +1732,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "266 occluded px synthesized (TELEA inpaint + palette snap); 858 px left transparent",
+   "fill_note": "266 occluded px synthesized (TELEA inpaint + palette snap); 858 px left transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "d5a67c38d1d5e93ebc610e64a9aad71ad8457178ffa6c007742dc1f6c459e7ab",
-   "bytes": 3204,
+   "sha256": "a248f54c1fed31474a7d70ea58b8e3328f09904695ba80da0eff2a14f839055c",
+   "bytes": 2819,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 40,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_SAN_001_L06_off_hand",
@@ -1616,17 +1791,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "8 occluded px synthesized (TELEA inpaint + palette snap); 279 px left transparent",
+   "fill_note": "8 occluded px synthesized (TELEA inpaint + palette snap); 279 px left transparent | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "1aac8a61d8acbb91823e07d731aa1924bce0432d447a2abe0092d729a58887a8",
-   "bytes": 1131,
+   "sha256": "4acb0b97737220d9a0b4f2209333f27a1f4c23e419c3a200b011d6e2887330d3",
+   "bytes": 1066,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 28,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_SAN_001_L05f_main_hand_front",
@@ -1669,17 +1850,23 @@
     ]
    },
    "status": "PROTOTYPE",
-   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
    "qa": {
     "alpha_0_255": true,
     "canvas_128": true
    },
-   "sha256": "e44f4f75040e9403295dddd7e037dd5998f9a24ef1d2920c91c5d4b13aa3eddf",
-   "bytes": 725,
+   "sha256": "0f4f987ee01df0dad126138c6f6e914e9ac6a5a81cd5eb3fd53b85ee2e07b4f4",
+   "bytes": 689,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 25,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "EQ_SAN_CAP_HEALER_001",
@@ -1762,13 +1949,19 @@
    "type": "sprite_composite_flattened",
    "owner": "AVT_SAN_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
-   "sha256": "dcdc3f41e0c3440db7664ce498180cdde63e1e173aaf5fa344125ffb23c4dcf1",
-   "bytes": 13250,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "cba10962a30018bd864a0354118dfdbe7b91dc19c27115bbc10756b69c019e88",
+   "bytes": 12961,
    "canvas_px": [
     128,
     128
-   ]
+   ],
+   "color_count": 73,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "SPR_AVT_SAN_001_IDLE_SHEET",
@@ -1776,13 +1969,19 @@
    "type": "sprite_sheet_idle",
    "owner": "AVT_SAN_001",
    "status": "PROTOTYPE",
-   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
-   "sha256": "297dbdf3dd845db415ae8b042ec50b061f0967359fe6851d13c556e22cf2e980",
-   "bytes": 19065,
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle | pixel-cleanup t230: scripted palette/noise/hidden-region pass, PROTOTYPE, not hand-painted, not PRODUCTION_READY",
+   "sha256": "8a3b8d2eff2a8c88d24718f035453f9fa85e4115dea7b834a3584a89ade896f8",
+   "bytes": 18627,
    "canvas_px": [
     768,
     128
-   ]
+   ],
+   "color_count": 73,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   }
   },
   {
    "asset_id": "EQ_STAFF_NEUTRAL_001",
@@ -2411,6 +2610,2973 @@
    "status": "PROTOTYPE",
    "sha256": "2b1131a979cbf8c30609282f2fc6c113e872668c04efce27db045766f4ba3184",
    "bytes": 1031654
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L01b_skin",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L01b_skin.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L01b",
+   "slot": "skin",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 3,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "98c3eff4435a69b09d7841ec08db93c8b2fec4285773feb374d5e74ce1e53e6d",
+   "bytes": 447,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L02_face",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L02_face.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L02",
+   "slot": "face",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 6,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "8214f4287cfbe5c8d1f9a1a844e68b2ddea89f9ccbd79344255ecd59a7ffb630",
+   "bytes": 381,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L02_hair",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L02_hair.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L02",
+   "slot": "hair",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 11,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "45116aeec365c02962c10bcf2bb62b6248164c30d5165394ec5e0e661780e2e3",
+   "bytes": 742,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L03_outfit",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L03_outfit.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L03",
+   "slot": "outfit",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 44,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "9e0de273a730d346db0ac176f0559d8bcfd0f11e9f506e19cd6e8be6983349a6",
+   "bytes": 7595,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_L01_body",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_L01_body.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 62,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "469d19df38552dadbbcb979e6eb948b7ce2d5a623dcca6c6a78283efcbd073d3",
+   "bytes": 8662,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_L04_headgear_gold",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_L04_headgear_gold.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": "gold",
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 6,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "2da24db6a50a4a3b664dd203a4004e82b8996193a99fe3641ecf58b0e60f7151",
+   "bytes": 911,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_L04_headgear_silver",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_L04_headgear_silver.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 32,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d0ea66ae7bb5ebe5b2f6c6b280ef5a4189da8683b481f723a6bfab4646dced3f",
+   "bytes": 1528,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_L05_main_hand",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_L05_main_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 40,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d213b039932b8ed43dea66b81655c0e3fa7ab6170cad9052db2cdb12db2edf53",
+   "bytes": 1217,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_L05f_main_hand_front.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 25,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "2283cfc28109f7578d7fd438b40b5bd1aa3fd4a6d7b27ac0a4e503d66bfe4997",
+   "bytes": 837,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_L06_off_hand",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_L06_off_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 36,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "ef11fa0d2164d44ec56d383a06f3eb4552c1f578896c8ee4ec061bb865063a20",
+   "bytes": 2910,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_base_composite",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_base_composite.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 62,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "c396d435f1d616fc264b08dc9200da796c45c1804c274a615a555affbb8f6714",
+   "bytes": 10856,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_base_composite_goldpot",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_base_composite_goldpot.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 67,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "2c75103237eecebc5f533c01fa0c664423e2098da831a6f237343448cc792d67",
+   "bytes": 10480,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_AEG_001_idle_sheet",
+   "path": "assets/characters/AVT_AEG_001/sprite/_source_v1/AVT_AEG_001_idle_sheet.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 62,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": false
+   },
+   "sha256": "536130c9ab9ac7dac719db6f013af155d542672c8d0edb1072166593df1b5910",
+   "bytes": 15902,
+   "canvas_px": [
+    768,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L01b_skin",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L01b_skin.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L01b",
+   "slot": "skin",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 3,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "fdbf3c3dd16030e863f6a8bb1f8bcd295e4b67a56c8243b581f07e122782cb62",
+   "bytes": 557,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L02_face",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L02_face.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L02",
+   "slot": "face",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 9,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "74d49dad7b16472930218587cec91af70527054c5dbc0d467d99a931805b630c",
+   "bytes": 522,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L02_hair",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L02_hair.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L02",
+   "slot": "hair",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 9,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d32cfb2daa8dcac25a04aadc9ae89f33705d1a00c3442be87aa4be2fe1c9b5e3",
+   "bytes": 932,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L03_outfit",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L03_outfit.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L03",
+   "slot": "outfit",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 32,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "2caf3afe82020c9d309dfc5e1665dfcaf90d9ffd95351eecc8451eb4827ea1df",
+   "bytes": 4720,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_L01_body",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_L01_body.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 49,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "e1f7acc17fb77d86e05460be72785bc38a2fd8076aa8ead3bdca1a3e7574ccd7",
+   "bytes": 6715,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_L05_main_hand",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_L05_main_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 15,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d9e93e1fec3998995d57a21b217538c3332cdac659ed9798d40c1a7f0f17fdfe",
+   "bytes": 341,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_L05f_main_hand_front.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 17,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "9ea50183da45ce4cf59fa3ab894b9fc60256acb0198f25d82d8dea47b17e2a07",
+   "bytes": 431,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_L06_off_hand",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_L06_off_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 22,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "1a6f3aad40c190f4dbd164251f1bc092118116c5f88e95167cef829253b79b18",
+   "bytes": 579,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_L06f_off_hand_front",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_L06f_off_hand_front.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 16,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "13dba74d0077613b636b0b2b109cf2a0213e713251577d8a48356d1451623023",
+   "bytes": 480,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_L08_accessory_sneakers",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_L08_accessory_sneakers.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 51,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "fa5681c98672d2ed4e6911fe87c6574abfab75563444b225c76542e3eb5f8c17",
+   "bytes": 2282,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_L09_vfx_squeak",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_L09_vfx_squeak.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 2,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "70983975ddffa7fd2be0b5c9dae69ee619945cc9294043b359c7be283e1bc27f",
+   "bytes": 337,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_base_composite",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_base_composite.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 67,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "1136c5616b04270b27ffc2216706238de6525830488a428ec4fa4d4444bd4a31",
+   "bytes": 8947,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_PHA_001_idle_sheet",
+   "path": "assets/characters/AVT_PHA_001/sprite/_source_v1/AVT_PHA_001_idle_sheet.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 67,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": false
+   },
+   "sha256": "96c29dc1844b8e2e858043772551d2459119d1e9828f3354bfeba9aa9f75c963",
+   "bytes": 14612,
+   "canvas_px": [
+    768,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L01b_skin",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L01b_skin.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L01b",
+   "slot": "skin",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 1,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "9505850467308333eb642bdb99680ec458ad8f4fe4b49c656043b6c67886d464",
+   "bytes": 360,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L02_face",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L02_face.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L02",
+   "slot": "face",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 13,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "bd3331730664b8970e5b6aa223279450fd101e8ebdaef39ed966396da6bab63d",
+   "bytes": 515,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L02_hair",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L02_hair.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L02",
+   "slot": "hair",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 10,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "98060f5d245550a09dec8cd6639ed414f415ddf2ea69a1ac165a73cf6a516cb9",
+   "bytes": 994,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L03_outfit",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L03_outfit.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L03",
+   "slot": "outfit",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 47,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "dbe07cb5646af6a869f2f4809df60ea0694dca72a89b70839aab8dc75854e2e5",
+   "bytes": 8562,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_L01_body",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_L01_body.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 78,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "6eefbfd17629bb7725c5811c50207422040fdc182f7f810a9e7a0787bc4cdda7",
+   "bytes": 10118,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_L04_headgear",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_L04_headgear.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 68,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "c379b177512427b8300824347df78ff67ff0fe33b2f479459340680e98977dcd",
+   "bytes": 3180,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_L05_main_hand",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_L05_main_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 64,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "90929f870420e964dfdf0dd21ff356ae07f97943ff55862d151b7a30204f5d2a",
+   "bytes": 2517,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_L05f_main_hand_front.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 8,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d0759ecc2503c35b46e1a4ad0b6f89097a68fb27746138ea45046448e1b54e0b",
+   "bytes": 368,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_L06_off_hand",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_L06_off_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 26,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "b38eaad910759f8c92e400b363bbca74d6f144985020987ce7f273c8fbfde3a8",
+   "bytes": 659,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_L09_vfx_steam",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_L09_vfx_steam.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 32,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "ce24b60731dd77ca51d23804e113a73c835757d8fd56488d4930e18478f82e2d",
+   "bytes": 630,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_base_composite",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_base_composite.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 80,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "54162cfd94a2f993ce3511dae9a3b472c2a90e7f39bc060b430fa51d6163c6b8",
+   "bytes": 14045,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_CEL_001_idle_sheet",
+   "path": "assets/characters/AVT_CEL_001/sprite/_source_v1/AVT_CEL_001_idle_sheet.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 80,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": false
+   },
+   "sha256": "7c9ce0407d58dbd3d100672597f4fab0047d059440d67d45e9619d9a36d2b5c8",
+   "bytes": 20606,
+   "canvas_px": [
+    768,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L01b_skin",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L01b_skin.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L01b",
+   "slot": "skin",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 4,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "298e85800e92f6406fc83f86bddf0aa958e1ace4909e67fc8454b8d3b7c179e6",
+   "bytes": 611,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L02_face",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L02_face.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L02",
+   "slot": "face",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 10,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "c867c184d0b638564cfb10201b08e4e4c1299e393bbcd9f172c28d8d2f7e27c8",
+   "bytes": 585,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L02_hair",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L02_hair.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L02",
+   "slot": "hair",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 12,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "714819c2cac9c7084253d86fb8f92c4491bf52bbe5e285ecaa8da569f2672c3e",
+   "bytes": 987,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L03_outfit",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L03_outfit.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L03",
+   "slot": "outfit",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Split out of L01 by tools/pixel_cleanup/clean.py. Exclusive partition; compositing skin+outfit+hair+face reproduces L01 exactly. Scripted, not hand-painted. PROTOTYPE.",
+   "color_count": 46,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "2afef10cb27d31ade5cce1cd05075f84f4fa823ee568d2127cc106406d9ba296",
+   "bytes": 8868,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_SAN_001_L01_body",
+   "path": "assets/characters/AVT_SAN_001/sprite/_source_v1/AVT_SAN_001_L01_body.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 73,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "0b41a4745c769dfb6aed1c32542a035d4314a19810e0d2cb18e902de461df480",
+   "bytes": 10746,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_SAN_001_L04_headgear",
+   "path": "assets/characters/AVT_SAN_001/sprite/_source_v1/AVT_SAN_001_L04_headgear.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 23,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "ee1277033647817c051d601540fc8872ae14871392f74e85bd953d5a25476fb5",
+   "bytes": 666,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_SAN_001_L05_main_hand",
+   "path": "assets/characters/AVT_SAN_001/sprite/_source_v1/AVT_SAN_001_L05_main_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 55,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d5a67c38d1d5e93ebc610e64a9aad71ad8457178ffa6c007742dc1f6c459e7ab",
+   "bytes": 3204,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_SAN_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_SAN_001/sprite/_source_v1/AVT_SAN_001_L05f_main_hand_front.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 33,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "e44f4f75040e9403295dddd7e037dd5998f9a24ef1d2920c91c5d4b13aa3eddf",
+   "bytes": 725,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_SAN_001_L06_off_hand",
+   "path": "assets/characters/AVT_SAN_001/sprite/_source_v1/AVT_SAN_001_L06_off_hand.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 40,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "1aac8a61d8acbb91823e07d731aa1924bce0432d447a2abe0092d729a58887a8",
+   "bytes": 1131,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_SAN_001_base_composite",
+   "path": "assets/characters/AVT_SAN_001/sprite/_source_v1/AVT_SAN_001_base_composite.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 76,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "dcdc3f41e0c3440db7664ce498180cdde63e1e173aaf5fa344125ffb23c4dcf1",
+   "bytes": 13250,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SRC_AVT_SAN_001_idle_sheet",
+   "path": "assets/characters/AVT_SAN_001/sprite/_source_v1/AVT_SAN_001_idle_sheet.png",
+   "type": "sprite_source_backup",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "source",
+   "slot": "backup",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "backup of a canvas-aligned layer",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "Unchanged bytes of the pre-cleanup prototype. Do not edit.",
+   "color_count": 76,
+   "pixel_cleanup": {
+    "pass": "t230",
+    "hand_painted": false,
+    "status_ceiling": "PROTOTYPE"
+   },
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": false
+   },
+   "sha256": "297dbdf3dd845db415ae8b042ec50b061f0967359fe6851d13c556e22cf2e980",
+   "bytes": 19065,
+   "canvas_px": [
+    768,
+    128
+   ]
   }
- ]
+ ],
+ "pixel_cleanup": {
+  "pass": "t230",
+  "branch": "polish/pixel-art-cleanup",
+  "method": "deterministic script tools/pixel_cleanup/clean.py; not hand-placed",
+  "status": "PROTOTYPE",
+  "not": "PRODUCTION_READY",
+  "palette_target": "<=48 colours per character sprite stack",
+  "source_backup": "assets/characters/<ID>/sprite/_source_v1/",
+  "report": "docs/PIXEL_CLEANUP_REPORT.md",
+  "characters": {
+   "AVT_AEG_001": {
+    "l01_colors_before": 62,
+    "l01_colors_after": 48,
+    "sprite_stack_colors_before": 63,
+    "sprite_stack_colors_after": 48,
+    "sprite_stack_colors_after_gold": 48,
+    "visible_mean_l1": 4.83,
+    "lowest_opaque_y": 121,
+    "partition_px": {
+     "skin": 116,
+     "face": 66,
+     "hair": 255,
+     "outfit": 3151
+    },
+    "status": "PROTOTYPE"
+   },
+   "AVT_PHA_001": {
+    "l01_colors_before": 49,
+    "l01_colors_after": 33,
+    "sprite_stack_colors_before": 68,
+    "sprite_stack_colors_after": 48,
+    "sprite_stack_colors_after_gold": 48,
+    "visible_mean_l1": 14.59,
+    "lowest_opaque_y": 121,
+    "partition_px": {
+     "skin": 137,
+     "face": 98,
+     "hair": 415,
+     "outfit": 2770
+    },
+    "status": "PROTOTYPE"
+   },
+   "AVT_CEL_001": {
+    "l01_colors_before": 78,
+    "l01_colors_after": 48,
+    "sprite_stack_colors_before": 81,
+    "sprite_stack_colors_after": 48,
+    "sprite_stack_colors_after_gold": 48,
+    "visible_mean_l1": 6.66,
+    "lowest_opaque_y": 120,
+    "partition_px": {
+     "skin": 113,
+     "face": 113,
+     "hair": 277,
+     "outfit": 3592
+    },
+    "status": "PROTOTYPE"
+   },
+   "AVT_SAN_001": {
+    "l01_colors_before": 73,
+    "l01_colors_after": 47,
+    "sprite_stack_colors_before": 77,
+    "sprite_stack_colors_after": 48,
+    "sprite_stack_colors_after_gold": 48,
+    "visible_mean_l1": 7.16,
+    "lowest_opaque_y": 119,
+    "partition_px": {
+     "skin": 144,
+     "face": 135,
+     "hair": 314,
+     "outfit": 3993
+    },
+    "status": "PROTOTYPE"
+   }
+  }
+ }
 }
