@@ -1,0 +1,2416 @@
+{
+ "project": "Comedy Fantasy Card Game — First 4 Avatars",
+ "manifest_version": 1,
+ "generated": "2026-11-18T14:33:05+07:00",
+ "status_legend": [
+  "CONCEPT",
+  "PROTOTYPE",
+  "QA_PASSED",
+  "PRODUCTION_READY",
+  "INTEGRATED"
+ ],
+ "honest_summary": "Nothing is PRODUCTION_READY. Sprite layers are real separate PNGs on a shared 128x128 canvas but were cut from flat Owner references by script; occluded pixels are repainted approximations.",
+ "canvas": {
+  "logical": [
+   128,
+   128
+  ],
+  "baseline_y": 122,
+  "scale_from_ref": 0.09,
+  "alpha": "0/255 only",
+  "scaling": "nearest-neighbour integer"
+ },
+ "characters": {
+  "AVT_AEG_001": "Sir Potlid / เซอร์ฝาหม้อ · Aegis Dominion · Tank · humanoid_heavy",
+  "AVT_PHA_001": "Nox Squeak / น็อกซ์ รองเท้าดัง · Phantom Blades · DPS · humanoid_standard",
+  "AVT_CEL_001": "Madame Meteor / มาดามดาวตก · Celestial Nexus · Magic · humanoid_standard",
+  "AVT_SAN_001": "Sister Plaster / ซิสเตอร์พลาสเตอร์ · Sanctuary Order · Support · humanoid_standard"
+ },
+ "stats": "POW/DEF/SPD values TBD; rarity TBD; card AP costs TBD",
+ "qa_checks": {
+  "roundtrip_default_composite_vs_pixelized_ref_px_diff": {
+   "AVT_AEG_001": 0,
+   "AVT_PHA_001": 0,
+   "AVT_CEL_001": 0,
+   "AVT_SAN_001": 0
+  },
+  "gold_swap": {
+   "changed_px": 497,
+   "changed_outside_helmet_px": 0
+  }
+ },
+ "asset_count": 87,
+ "assets": [
+  {
+   "asset_id": "RIG_HUMANOID_HEAVY_001",
+   "path": "assets/characters/_rigs/humanoid_heavy.json",
+   "type": "rig_definition",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "note": "default anchors + per-character measured anchors, layer list and fit offsets",
+   "sha256": "d1e26959c56636bec27d6d772aac49894bf60c8d7ef4457ea58871ca53276840",
+   "bytes": 3886
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L01_body",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L01_body.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L01",
+   "slot": "body",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "469d19df38552dadbbcb979e6eb948b7ce2d5a623dcca6c6a78283efcbd073d3",
+   "bytes": 8662,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L04_headgear_silver",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L04_headgear_silver.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L04",
+   "slot": "headgear",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "162 px: simple shaded hair cap painted under headgear; rest transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d0ea66ae7bb5ebe5b2f6c6b280ef5a4189da8683b481f723a6bfab4646dced3f",
+   "bytes": 1528,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L04_headgear_gold",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L04_headgear_gold.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L04",
+   "slot": "headgear",
+   "variant": "gold",
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "recolour of OUR silver helmet layer by luminance rank; gold ramp sampled from owner gold ref palette",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "2da24db6a50a4a3b664dd203a4004e82b8996193a99fe3641ecf58b0e60f7151",
+   "bytes": 911,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L05_main_hand",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L05_main_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L05",
+   "slot": "main_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "54 occluded px synthesized (TELEA inpaint + palette snap); 221 px left transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d213b039932b8ed43dea66b81655c0e3fa7ab6170cad9052db2cdb12db2edf53",
+   "bytes": 1217,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L06_off_hand",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L06_off_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L06",
+   "slot": "off_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "1114 px behind shield filled by mirroring the opposite body half about x=61; pixels with no mirrored source left transparent (approximate, normally hidden)",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "ef11fa0d2164d44ec56d383a06f3eb4552c1f578896c8ee4ec061bb865063a20",
+   "bytes": 2910,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L05f_main_hand_front.png",
+   "type": "sprite_layer",
+   "owner": "AVT_AEG_001",
+   "rig": "humanoid_heavy",
+   "layer": "L05f",
+   "slot": "main_hand_front",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "2283cfc28109f7578d7fd438b40b5bd1aa3fd4a6d7b27ac0a4e503d66bfe4997",
+   "bytes": 837,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "EQ_AEG_POT_HELMET_SILVER_001",
+   "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_AEG_001",
+   "slot": "headgear",
+   "pivot": [
+    22,
+    10
+   ],
+   "pivot_kind": "mount",
+   "native_origin_on_128": [
+    44,
+    24
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "character-specific shape",
+   "sha256": "5d5e4423f551df37649f552d1dbf46440d5d4f9d0e789421d383875e10663467",
+   "bytes": 1304,
+   "canvas_px": [
+    39,
+    28
+   ]
+  },
+  {
+   "asset_id": "EQ_AEG_POT_HELMET_GOLD_001",
+   "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_AEG_001",
+   "slot": "headgear",
+   "pivot": [
+    22,
+    10
+   ],
+   "pivot_kind": "mount",
+   "native_origin_on_128": [
+    44,
+    24
+   ],
+   "variant_of": "EQ_AEG_POT_HELMET_SILVER_001",
+   "status": "PROTOTYPE",
+   "reuse": "character-specific shape",
+   "sha256": "c2f43bc25b18f68bb5434260f8d063063d9a9d3217b8df1934292be2df33a3d3",
+   "bytes": 723,
+   "canvas_px": [
+    39,
+    28
+   ]
+  },
+  {
+   "asset_id": "EQ_AEG_SWORD_POTLID_001",
+   "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SWORD_POTLID_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_AEG_001",
+   "slot": "main_hand",
+   "pivot": [
+    17,
+    31
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    29,
+    44
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "b5626b9c85f25c509846ccf01d93bbe49e5cab21819f8edb89f7b46355991640",
+   "bytes": 1007,
+   "canvas_px": [
+    25,
+    42
+   ]
+  },
+  {
+   "asset_id": "EQ_AEG_SHIELD_POTLID_001",
+   "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SHIELD_POTLID_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_AEG_001",
+   "slot": "off_hand",
+   "pivot": [
+    18,
+    24
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    68,
+    52
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "f09aa22b77f82591adbf82a7bde8b7112842f17be72b9f467656d6fc4150a593",
+   "bytes": 2555,
+   "canvas_px": [
+    33,
+    50
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_BASE_COMPOSITE",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_base_composite.png",
+   "type": "sprite_composite_flattened",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
+   "sha256": "c396d435f1d616fc264b08dc9200da796c45c1804c274a615a555affbb8f6714",
+   "bytes": 10856,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_BASE_COMPOSITE_GOLDPOT",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_base_composite_goldpot.png",
+   "type": "sprite_composite_flattened",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
+   "sha256": "2c75103237eecebc5f533c01fa0c664423e2098da831a6f237343448cc792d67",
+   "bytes": 10480,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_AEG_001_IDLE_SHEET",
+   "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_idle_sheet.png",
+   "type": "sprite_sheet_idle",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
+   "sha256": "536130c9ab9ac7dac719db6f013af155d542672c8d0edb1072166593df1b5910",
+   "bytes": 15902,
+   "canvas_px": [
+    768,
+    128
+   ]
+  },
+  {
+   "asset_id": "RIG_HUMANOID_STANDARD_001",
+   "path": "assets/characters/_rigs/humanoid_standard.json",
+   "type": "rig_definition",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "note": "default anchors + per-character measured anchors, layer list and fit offsets",
+   "sha256": "5293fad8d0ee0dcf7057cac7448a1087e8f15d9d2f9c7699cac3d9701429cf92",
+   "bytes": 8787
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L01_body",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L01_body.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L01",
+   "slot": "body",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "e1f7acc17fb77d86e05460be72785bc38a2fd8076aa8ead3bdca1a3e7574ccd7",
+   "bytes": 6715,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L05_main_hand",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L05_main_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L05",
+   "slot": "main_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "31 occluded px synthesized (TELEA inpaint + palette snap); 0 px left transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d9e93e1fec3998995d57a21b217538c3332cdac659ed9798d40c1a7f0f17fdfe",
+   "bytes": 341,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L06_off_hand",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L06_off_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L06",
+   "slot": "off_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "1 occluded px synthesized (TELEA inpaint + palette snap); 89 px left transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "1a6f3aad40c190f4dbd164251f1bc092118116c5f88e95167cef829253b79b18",
+   "bytes": 579,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L08_accessory_sneakers",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L08_accessory_sneakers.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L08",
+   "slot": "accessory",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "431 px: placeholder dark tabi feet painted under sneakers",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "fa5681c98672d2ed4e6911fe87c6574abfab75563444b225c76542e3eb5f8c17",
+   "bytes": 2282,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L09_vfx_squeak",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L09_vfx_squeak.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L09",
+   "slot": "vfx",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "removed; background behind (no fill needed)",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "70983975ddffa7fd2be0b5c9dae69ee619945cc9294043b359c7be283e1bc27f",
+   "bytes": 337,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L05f_main_hand_front.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L05f",
+   "slot": "main_hand_front",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "9ea50183da45ce4cf59fa3ab894b9fc60256acb0198f25d82d8dea47b17e2a07",
+   "bytes": 431,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_L06f_off_hand_front",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L06f_off_hand_front.png",
+   "type": "sprite_layer",
+   "owner": "AVT_PHA_001",
+   "rig": "humanoid_standard",
+   "layer": "L06f",
+   "slot": "off_hand_front",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "13dba74d0077613b636b0b2b109cf2a0213e713251577d8a48356d1451623023",
+   "bytes": 480,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "EQ_PHA_KUNAI_MAIN_001",
+   "path": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_MAIN_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_PHA_001",
+   "slot": "main_hand",
+   "pivot": [
+    5,
+    -3
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    35,
+    69
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "cb0274a561df28b089d050ef0ce59a13748c8cfcca517ff940dcdeb936864cf2",
+   "bytes": 223,
+   "canvas_px": [
+    13,
+    13
+   ]
+  },
+  {
+   "asset_id": "EQ_PHA_KUNAI_OFF_001",
+   "path": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_OFF_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_PHA_001",
+   "slot": "off_hand",
+   "pivot": [
+    1,
+    -3
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    87,
+    63
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "045ac6d5472358595ea6ac8d97664ae8e73b194ca48d498eacc142f0c82d2c84",
+   "bytes": 457,
+   "canvas_px": [
+    15,
+    17
+   ]
+  },
+  {
+   "asset_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+   "path": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_SNEAKERS_SQUEAK_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_PHA_001",
+   "slot": "accessory",
+   "pivot": [
+    34,
+    21
+   ],
+   "pivot_kind": "mount",
+   "native_origin_on_128": [
+    30,
+    101
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "character-specific shape",
+   "sha256": "ca3ccf6f57f2b058d532e10577df392acb9bc39b17ebcc18f0a6936074711b60",
+   "bytes": 2043,
+   "canvas_px": [
+    64,
+    21
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_BASE_COMPOSITE",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_base_composite.png",
+   "type": "sprite_composite_flattened",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
+   "sha256": "1136c5616b04270b27ffc2216706238de6525830488a428ec4fa4d4444bd4a31",
+   "bytes": 8947,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_PHA_001_IDLE_SHEET",
+   "path": "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_idle_sheet.png",
+   "type": "sprite_sheet_idle",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
+   "sha256": "96c29dc1844b8e2e858043772551d2459119d1e9828f3354bfeba9aa9f75c963",
+   "bytes": 14612,
+   "canvas_px": [
+    768,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L01_body",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L01_body.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L01",
+   "slot": "body",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "6eefbfd17629bb7725c5811c50207422040fdc182f7f810a9e7a0787bc4cdda7",
+   "bytes": 10118,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L04_headgear",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L04_headgear.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L04",
+   "slot": "headgear",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "67 px: simple shaded hair cap painted under headgear; rest transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "c379b177512427b8300824347df78ff67ff0fe33b2f479459340680e98977dcd",
+   "bytes": 3180,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L05_main_hand",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L05_main_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L05",
+   "slot": "main_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "191 occluded px synthesized (TELEA inpaint + palette snap); 414 px left transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "90929f870420e964dfdf0dd21ff356ae07f97943ff55862d151b7a30204f5d2a",
+   "bytes": 2517,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L06_off_hand",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L06_off_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L06",
+   "slot": "off_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "13 occluded px synthesized (TELEA inpaint + palette snap); 114 px left transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "b38eaad910759f8c92e400b363bbca74d6f144985020987ce7f273c8fbfde3a8",
+   "bytes": 659,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L09_vfx_steam",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L09_vfx_steam.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L09",
+   "slot": "vfx",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "removed; background behind (no fill needed)",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "ce24b60731dd77ca51d23804e113a73c835757d8fd56488d4930e18478f82e2d",
+   "bytes": 630,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L05f_main_hand_front.png",
+   "type": "sprite_layer",
+   "owner": "AVT_CEL_001",
+   "rig": "humanoid_standard",
+   "layer": "L05f",
+   "slot": "main_hand_front",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d0759ecc2503c35b46e1a4ad0b6f89097a68fb27746138ea45046448e1b54e0b",
+   "bytes": 368,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "EQ_CEL_HAT_ASTRO_001",
+   "path": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_HAT_ASTRO_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_CEL_001",
+   "slot": "headgear",
+   "pivot": [
+    24,
+    16
+   ],
+   "pivot_kind": "mount",
+   "native_origin_on_128": [
+    44,
+    16
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "character-specific shape",
+   "sha256": "3918a0c88d534506d464f27b114fa866973b90b61750a77113cef70d4017e1de",
+   "bytes": 2830,
+   "canvas_px": [
+    55,
+    41
+   ]
+  },
+  {
+   "asset_id": "EQ_CEL_STAFF_PLANET_001",
+   "path": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_STAFF_PLANET_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_CEL_001",
+   "slot": "main_hand",
+   "pivot": [
+    19,
+    45
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    25,
+    17
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "53fa68754f8758f62a9d83a839363ff61e7a0a6047e2f05de88c263b04790103",
+   "bytes": 2204,
+   "canvas_px": [
+    30,
+    104
+   ]
+  },
+  {
+   "asset_id": "EQ_CEL_NOODLE_CUP_001",
+   "path": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_NOODLE_CUP_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_CEL_001",
+   "slot": "off_hand",
+   "pivot": [
+    3,
+    14
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    86,
+    44
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "f14a0104f8bfe0ee6e0001dbd37d6fb4198fb018da79ab1bd8a520f9a70b5460",
+   "bytes": 512,
+   "canvas_px": [
+    15,
+    19
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_BASE_COMPOSITE",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_base_composite.png",
+   "type": "sprite_composite_flattened",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
+   "sha256": "54162cfd94a2f993ce3511dae9a3b472c2a90e7f39bc060b430fa51d6163c6b8",
+   "bytes": 14045,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_CEL_001_IDLE_SHEET",
+   "path": "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_idle_sheet.png",
+   "type": "sprite_sheet_idle",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
+   "sha256": "7c9ce0407d58dbd3d100672597f4fab0047d059440d67d45e9619d9a36d2b5c8",
+   "bytes": 20606,
+   "canvas_px": [
+    768,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L01_body",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L01_body.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L01",
+   "slot": "body",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "0b41a4745c769dfb6aed1c32542a035d4314a19810e0d2cb18e902de461df480",
+   "bytes": 10746,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L04_headgear",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L04_headgear.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L04",
+   "slot": "headgear",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "60 px: simple shaded hair cap painted under headgear; rest transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "ee1277033647817c051d601540fc8872ae14871392f74e85bd953d5a25476fb5",
+   "bytes": 666,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L05_main_hand",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L05_main_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L05",
+   "slot": "main_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "266 occluded px synthesized (TELEA inpaint + palette snap); 858 px left transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "d5a67c38d1d5e93ebc610e64a9aad71ad8457178ffa6c007742dc1f6c459e7ab",
+   "bytes": 3204,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L06_off_hand",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L06_off_hand.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L06",
+   "slot": "off_hand",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "8 occluded px synthesized (TELEA inpaint + palette snap); 279 px left transparent",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "1aac8a61d8acbb91823e07d731aa1924bce0432d447a2abe0092d729a58887a8",
+   "bytes": 1131,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_L05f_main_hand_front",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L05f_main_hand_front.png",
+   "type": "sprite_layer",
+   "owner": "AVT_SAN_001",
+   "rig": "humanoid_standard",
+   "layer": "L05f",
+   "slot": "main_hand_front",
+   "variant": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "status": "PROTOTYPE",
+   "fill_note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped",
+   "qa": {
+    "alpha_0_255": true,
+    "canvas_128": true
+   },
+   "sha256": "e44f4f75040e9403295dddd7e037dd5998f9a24ef1d2920c91c5d4b13aa3eddf",
+   "bytes": 725,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "EQ_SAN_CAP_HEALER_001",
+   "path": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CAP_HEALER_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_SAN_001",
+   "slot": "headgear",
+   "pivot": [
+    12,
+    5
+   ],
+   "pivot_kind": "mount",
+   "native_origin_on_128": [
+    56,
+    13
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "character-specific shape",
+   "sha256": "bc4da7f5f8322d886072dcbd30668cf2af75e7a999395e83855aeb98326566e6",
+   "bytes": 497,
+   "canvas_px": [
+    27,
+    18
+   ]
+  },
+  {
+   "asset_id": "EQ_SAN_STAFF_BANDAGE_001",
+   "path": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_STAFF_BANDAGE_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_SAN_001",
+   "slot": "main_hand",
+   "pivot": [
+    24,
+    52
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    24,
+    9
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "9138a950e0e26298ace8c5b6157f4ee8c6ef06177bec95ff9a42bc96090797b7",
+   "bytes": 2816,
+   "canvas_px": [
+    35,
+    112
+   ]
+  },
+  {
+   "asset_id": "EQ_SAN_CLIPBOARD_001",
+   "path": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CLIPBOARD_001.png",
+   "type": "equipment_item",
+   "owner": "AVT_SAN_001",
+   "slot": "off_hand",
+   "pivot": [
+    9,
+    16
+   ],
+   "pivot_kind": "grip",
+   "native_origin_on_128": [
+    84,
+    44
+   ],
+   "variant_of": null,
+   "status": "PROTOTYPE",
+   "reuse": "equippable on other characters via pivot→anchor",
+   "sha256": "48f53eda6db6111cf37081a96dab7f8e8ac04680f9838f897df97282159ee221",
+   "bytes": 904,
+   "canvas_px": [
+    15,
+    25
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_BASE_COMPOSITE",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_base_composite.png",
+   "type": "sprite_composite_flattened",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset",
+   "sha256": "dcdc3f41e0c3440db7664ce498180cdde63e1e173aaf5fa344125ffb23c4dcf1",
+   "bytes": 13250,
+   "canvas_px": [
+    128,
+    128
+   ]
+  },
+  {
+   "asset_id": "SPR_AVT_SAN_001_IDLE_SHEET",
+   "path": "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_idle_sheet.png",
+   "type": "sprite_sheet_idle",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "note": "derived (flattened) from layers by tools/compose.py / export_idle.py; NOT a source asset · 6 frames x 128px, procedural idle",
+   "sha256": "297dbdf3dd845db415ae8b042ec50b061f0967359fe6851d13c556e22cf2e980",
+   "bytes": 19065,
+   "canvas_px": [
+    768,
+    128
+   ]
+  },
+  {
+   "asset_id": "EQ_STAFF_NEUTRAL_001",
+   "path": "assets/equipment/EQ_STAFF_NEUTRAL_001.png",
+   "type": "equipment_item",
+   "owner": "shared",
+   "slot": "main_hand",
+   "pivot": [
+    7,
+    45
+   ],
+   "pivot_kind": "grip",
+   "compatible_rigs": [
+    "humanoid_standard"
+   ],
+   "tested_on": [
+    "AVT_CEL_001",
+    "AVT_SAN_001"
+   ],
+   "status": "PROTOTYPE",
+   "note": "Neutral wood+silver staff with quartz orb; grip = shaft point between the two wraps",
+   "sha256": "af25f37555f8e3397427d8497f2a50cc3fbc151e2b9695e7414d1b8b8494c92d",
+   "bytes": 412,
+   "canvas_px": [
+    15,
+    102
+   ]
+  },
+  {
+   "asset_id": "EQ_SWORD_BASIC_001",
+   "path": "assets/equipment/EQ_SWORD_BASIC_001.png",
+   "type": "equipment_item",
+   "owner": "shared",
+   "slot": "main_hand",
+   "pivot": [
+    5,
+    29
+   ],
+   "pivot_kind": "grip",
+   "compatible_rigs": [
+    "humanoid_heavy",
+    "humanoid_standard"
+   ],
+   "tested_on": [
+    "AVT_AEG_001",
+    "AVT_PHA_001"
+   ],
+   "status": "PROTOTYPE",
+   "note": "Plain steel short sword, blade up, brass guard",
+   "sha256": "25620f91f9903d8e151f8fe37dd61b96a2042946697e8449c1e0f4ace2b70364",
+   "bytes": 228,
+   "canvas_px": [
+    11,
+    36
+   ]
+  },
+  {
+   "asset_id": "EQ_DAGGER_BASIC_001",
+   "path": "assets/equipment/EQ_DAGGER_BASIC_001.png",
+   "type": "equipment_item",
+   "owner": "shared",
+   "slot": "main_hand|off_hand",
+   "pivot": [
+    3,
+    4
+   ],
+   "pivot_kind": "grip",
+   "compatible_rigs": [
+    "humanoid_standard",
+    "humanoid_heavy"
+   ],
+   "tested_on": [
+    "AVT_PHA_001",
+    "AVT_AEG_001"
+   ],
+   "status": "PROTOTYPE",
+   "note": "Plain dagger, reverse grip (blade down)",
+   "sha256": "c88c2f8b29228a23fdfb7d53e03710cabefcb027dbc8a040146d7bfa97394b6b",
+   "bytes": 190,
+   "canvas_px": [
+    7,
+    22
+   ]
+  },
+  {
+   "asset_id": "EQ_SHIELD_BUCKLER_001",
+   "path": "assets/equipment/EQ_SHIELD_BUCKLER_001.png",
+   "type": "equipment_item",
+   "owner": "shared",
+   "slot": "off_hand",
+   "pivot": [
+    12,
+    12
+   ],
+   "pivot_kind": "grip",
+   "compatible_rigs": [
+    "humanoid_heavy",
+    "humanoid_standard"
+   ],
+   "tested_on": [
+    "AVT_AEG_001",
+    "AVT_SAN_001"
+   ],
+   "status": "PROTOTYPE",
+   "note": "Iron-rimmed wooden buckler; grip = boss centre",
+   "sha256": "e102ab52871efb9997cc7424be343f582f41f6799eb0f79890034d00ace3eed7",
+   "bytes": 480,
+   "canvas_px": [
+    24,
+    24
+   ]
+  },
+  {
+   "asset_id": "META_SHARED_ITEMS_001",
+   "path": "assets/equipment/shared_items.json",
+   "type": "metadata",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "sha256": "bacc2c294f4189f26815049d70f38ffebf69aed7a43b7aaa05cf5e43aeee80b5",
+   "bytes": 1321
+  },
+  {
+   "asset_id": "VFX_SLASH_001",
+   "path": "assets/vfx/VFX_SLASH_001.png",
+   "type": "vfx_strip",
+   "owner": "shared",
+   "frame_px": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "pivot": [
+    16,
+    16
+   ],
+   "use": "Attack (melee)",
+   "status": "PROTOTYPE",
+   "sha256": "ccc402d820fcfb2bc0948ae1d9a786a5ea68fcf8cc37fb191bfe414ebaa06c6e",
+   "bytes": 458,
+   "canvas_px": [
+    128,
+    32
+   ]
+  },
+  {
+   "asset_id": "VFX_HIT_SPARK_001",
+   "path": "assets/vfx/VFX_HIT_SPARK_001.png",
+   "type": "vfx_strip",
+   "owner": "shared",
+   "frame_px": [
+    16,
+    16
+   ],
+   "frames": 4,
+   "pivot": [
+    8,
+    8
+   ],
+   "use": "Hit",
+   "status": "PROTOTYPE",
+   "sha256": "812a94fad06bbf3739a86f80e9eec5e319c0e9b00c90ab0e77076b5772f6253e",
+   "bytes": 259,
+   "canvas_px": [
+    64,
+    16
+   ]
+  },
+  {
+   "asset_id": "VFX_HEAL_SPARKLE_001",
+   "path": "assets/vfx/VFX_HEAL_SPARKLE_001.png",
+   "type": "vfx_strip",
+   "owner": "shared",
+   "frame_px": [
+    24,
+    24
+   ],
+   "frames": 4,
+   "pivot": [
+    12,
+    20
+   ],
+   "use": "Skill (support) / heal",
+   "status": "PROTOTYPE",
+   "sha256": "9ee4c958032ff63c91a89a79959f85fd86ba575b058abd8a223c842aec7d264b",
+   "bytes": 332,
+   "canvas_px": [
+    96,
+    24
+   ]
+  },
+  {
+   "asset_id": "VFX_MAGIC_PARTICLE_001",
+   "path": "assets/vfx/VFX_MAGIC_PARTICLE_001.png",
+   "type": "vfx_strip",
+   "owner": "shared",
+   "frame_px": [
+    24,
+    24
+   ],
+   "frames": 4,
+   "pivot": [
+    12,
+    12
+   ],
+   "use": "Skill (magic)",
+   "status": "PROTOTYPE",
+   "sha256": "0bfb2b3f1fb1641c8f426793df3173e6fa05074133162463d29341b8dcbbf594",
+   "bytes": 228,
+   "canvas_px": [
+    96,
+    24
+   ]
+  },
+  {
+   "asset_id": "VFX_GUARD_RING_001",
+   "path": "assets/vfx/VFX_GUARD_RING_001.png",
+   "type": "vfx_strip",
+   "owner": "shared",
+   "frame_px": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "pivot": [
+    16,
+    16
+   ],
+   "use": "Defend",
+   "status": "PROTOTYPE",
+   "sha256": "b9d736e2c0658946906a5d1bb46572a480d9ec977cc439bde65d4f0c5c421665",
+   "bytes": 346,
+   "canvas_px": [
+    128,
+    32
+   ]
+  },
+  {
+   "asset_id": "META_VFX_001",
+   "path": "assets/vfx/vfx.json",
+   "type": "metadata",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "sha256": "2b1474e9f64c1fc3fd78f1e97073e37ab2c58b5bdbaf1839ba8da4874909b450",
+   "bytes": 648
+  },
+  {
+   "asset_id": "ANIM_SHARED_001",
+   "path": "assets/animations/ANIM_SHARED_001.json",
+   "type": "animation_timing",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "note": "Idle tuned/loopable; Attack/Defend/Hit/KO procedural prototypes (no hand-drawn frames)",
+   "sha256": "f220c224056101b1b58a4abf449c5d4671a4eab9581438442e3515ba2ee764d3",
+   "bytes": 6287
+  },
+  {
+   "asset_id": "CARD_AVT_AEG_001_card_v1",
+   "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1.png",
+   "type": "card_art",
+   "owner": "AVT_AEG_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "d76154a694635ca19e9f0f0dfc005dd8e570e3a0b210e60c41c1b24c934e2b75",
+   "bytes": 1565117,
+   "canvas_px": [
+    864,
+    1152
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_AEG_001_card_v1_variant_goldpot",
+   "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_variant_goldpot.png",
+   "type": "card_art",
+   "owner": "AVT_AEG_001",
+   "produced_by": "card_art_worker",
+   "status": "CONCEPT",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "61ab7f81220fb974b588edd474735da2cc980020bbe10ec8a23404b09b77ef51",
+   "bytes": 1500861,
+   "canvas_px": [
+    864,
+    1152
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_AEG_001_card_v1_variant_goldpot_web",
+   "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_variant_goldpot_web.webp",
+   "type": "card_art",
+   "owner": "AVT_AEG_001",
+   "produced_by": "card_art_worker",
+   "status": "CONCEPT",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "888d304fd1fe31c1ab382a276aab6489a606c238fdc25c1dab8a14a404e5e23f",
+   "bytes": 85918,
+   "canvas_px": [
+    512,
+    683
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_AEG_001_card_v1_web",
+   "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_web.webp",
+   "type": "card_art",
+   "owner": "AVT_AEG_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "f6e087e7976e58d808b3f1a468469085ddbc24317739631b802eabdb2e0ff65c",
+   "bytes": 86144,
+   "canvas_px": [
+    512,
+    683
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_CEL_001_card_v1",
+   "path": "assets/characters/AVT_CEL_001/card/AVT_CEL_001_card_v1.png",
+   "type": "card_art",
+   "owner": "AVT_CEL_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "29dfac1b185f41b3d6845263f94bc0efb51cde7f84b937a728ceca8ea72f0479",
+   "bytes": 1814705,
+   "canvas_px": [
+    864,
+    1152
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_CEL_001_card_v1_web",
+   "path": "assets/characters/AVT_CEL_001/card/AVT_CEL_001_card_v1_web.webp",
+   "type": "card_art",
+   "owner": "AVT_CEL_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "5281949cf1c984b9952995339ebe153f4b4742422e992a946f954f12bb9c911c",
+   "bytes": 115768,
+   "canvas_px": [
+    512,
+    683
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_PHA_001_card_v1",
+   "path": "assets/characters/AVT_PHA_001/card/AVT_PHA_001_card_v1.png",
+   "type": "card_art",
+   "owner": "AVT_PHA_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "f28032a87ea50202c04759bb121281836bee19f3390c8a61476e17580cefafef",
+   "bytes": 1314529,
+   "canvas_px": [
+    864,
+    1152
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_PHA_001_card_v1_web",
+   "path": "assets/characters/AVT_PHA_001/card/AVT_PHA_001_card_v1_web.webp",
+   "type": "card_art",
+   "owner": "AVT_PHA_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "832c1795f8bd96018c74df7faf03a6c588a6ad271a1f69536c79cc684d683a32",
+   "bytes": 66218,
+   "canvas_px": [
+    512,
+    683
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_SAN_001_card_v1",
+   "path": "assets/characters/AVT_SAN_001/card/AVT_SAN_001_card_v1.png",
+   "type": "card_art",
+   "owner": "AVT_SAN_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "d8a9cca51e04a273997328f41327d7250f2273ef3c29ffa6fb49fa0a4da66944",
+   "bytes": 1513111,
+   "canvas_px": [
+    864,
+    1152
+   ]
+  },
+  {
+   "asset_id": "CARD_AVT_SAN_001_card_v1_web",
+   "path": "assets/characters/AVT_SAN_001/card/AVT_SAN_001_card_v1_web.webp",
+   "type": "card_art",
+   "owner": "AVT_SAN_001",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+   "sha256": "95e64543b8a8058ad1f657d7c9cafec7552d0054a93694051f8e20b062ac8d49",
+   "bytes": 90290,
+   "canvas_px": [
+    512,
+    683
+   ]
+  },
+  {
+   "asset_id": "EMBLEM_AEGIS_001",
+   "path": "assets/card-art/frames/factions/EMBLEM_AEGIS_001.png",
+   "type": "card_emblem",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "CONCEPT",
+   "sha256": "4c1a6100e79a0f14bf819ada6f339b8b3e9bb73c3a06351ccafbe398cea9ee56",
+   "bytes": 26552,
+   "canvas_px": [
+    256,
+    256
+   ]
+  },
+  {
+   "asset_id": "EMBLEM_CELESTIAL_001",
+   "path": "assets/card-art/frames/factions/EMBLEM_CELESTIAL_001.png",
+   "type": "card_emblem",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "CONCEPT",
+   "sha256": "f8394fee0881a4a05d233728e1ed3a85d9b446d6a016f9dbf5dec1fedc1dcef8",
+   "bytes": 18195,
+   "canvas_px": [
+    256,
+    256
+   ]
+  },
+  {
+   "asset_id": "EMBLEM_PHANTOM_001",
+   "path": "assets/card-art/frames/factions/EMBLEM_PHANTOM_001.png",
+   "type": "card_emblem",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "CONCEPT",
+   "sha256": "2cf77f44ecb591ad63d9990dea9cdfba64c64dff4964e922377228ecf4bc2875",
+   "bytes": 25980,
+   "canvas_px": [
+    256,
+    256
+   ]
+  },
+  {
+   "asset_id": "EMBLEM_SANCTUARY_001",
+   "path": "assets/card-art/frames/factions/EMBLEM_SANCTUARY_001.png",
+   "type": "card_emblem",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "CONCEPT",
+   "sha256": "09dc1ebe6cec423fca2c1cd2382e361e60c30c554b3cb92e13c47539c30f2851",
+   "bytes": 14971,
+   "canvas_px": [
+    256,
+    256
+   ]
+  },
+  {
+   "asset_id": "FRAME_AEGIS_001",
+   "path": "assets/card-art/frames/factions/FRAME_AEGIS_001.png",
+   "type": "card_frame",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "sha256": "4e1dfea73659afd48fd27b95fd91b30927a94755a8dca99d694874dc7391e188",
+   "bytes": 38320,
+   "canvas_px": [
+    750,
+    1050
+   ]
+  },
+  {
+   "asset_id": "FRAME_CELESTIAL_001",
+   "path": "assets/card-art/frames/factions/FRAME_CELESTIAL_001.png",
+   "type": "card_frame",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "sha256": "eb803b72a57eac4f62a2423be9e39dae5d19a295d9cb120478c0605179fff414",
+   "bytes": 38681,
+   "canvas_px": [
+    750,
+    1050
+   ]
+  },
+  {
+   "asset_id": "FRAME_PHANTOM_001",
+   "path": "assets/card-art/frames/factions/FRAME_PHANTOM_001.png",
+   "type": "card_frame",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "sha256": "2541f973e39f95d47ae47287755452edbc1967b8135089a4e84d09b1a21e4fa0",
+   "bytes": 37726,
+   "canvas_px": [
+    750,
+    1050
+   ]
+  },
+  {
+   "asset_id": "FRAME_SANCTUARY_001",
+   "path": "assets/card-art/frames/factions/FRAME_SANCTUARY_001.png",
+   "type": "card_frame",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "sha256": "9350a0f59cad144d7f709a7f2ce7cb6a729bd95866e68ff2b2deb00ad8a4d640",
+   "bytes": 39172,
+   "canvas_px": [
+    750,
+    1050
+   ]
+  },
+  {
+   "asset_id": "FRAME_LAYOUT",
+   "path": "assets/card-art/frames/frame_layout.json",
+   "type": "card_frame_layout",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "sha256": "a9a3d23415b6c917ce75d3c19c0828d0782f76a40839f15be0acd0d3e7c7b423",
+   "bytes": 1162
+  },
+  {
+   "asset_id": "FRAME_BASE_001",
+   "path": "assets/card-art/frames/shared/FRAME_BASE_001.png",
+   "type": "card_frame",
+   "owner": "shared",
+   "produced_by": "card_art_worker",
+   "status": "PROTOTYPE",
+   "sha256": "3317354ddd1cfc041313e4ad184da2987d116755d96252644ed3e2e3fd33603f",
+   "bytes": 38549,
+   "canvas_px": [
+    750,
+    1050
+   ]
+  },
+  {
+   "asset_id": "REF_AEGIS_SIR_POTLID_BASE",
+   "path": "assets/reference/sprites/aegis_sir_potlid_base.png",
+   "type": "owner_reference_flat",
+   "owner": "owner",
+   "status": "CONCEPT",
+   "note": "Owner flat reference (identity lock). Not layered, not modular.",
+   "sha256": "f98af8afc08505183d75d2bb255cc0244a83349f727de417789678a459211b48",
+   "bytes": 986840,
+   "canvas_px": [
+    1312,
+    1199
+   ]
+  },
+  {
+   "asset_id": "REF_AEGIS_SIR_POTLID_GOLD_HELMET",
+   "path": "assets/reference/sprites/aegis_sir_potlid_gold_helmet.png",
+   "type": "owner_reference_flat",
+   "owner": "owner",
+   "status": "CONCEPT",
+   "note": "Owner flat reference (identity lock). Not layered, not modular.",
+   "sha256": "c4b31f696ab8e8ede6c701dabec6d18d70da1fcd90c1a5f4214a47758afabb64",
+   "bytes": 993494,
+   "canvas_px": [
+    1312,
+    1199
+   ]
+  },
+  {
+   "asset_id": "REF_CELESTIAL_MADAME_METEOR_BASE",
+   "path": "assets/reference/sprites/celestial_madame_meteor_base.png",
+   "type": "owner_reference_flat",
+   "owner": "owner",
+   "status": "CONCEPT",
+   "note": "Owner flat reference (identity lock). Not layered, not modular.",
+   "sha256": "677d5c7a9620969c71a0f7fafa886e990aa1147899c1a43d6e69e89bacb8b168",
+   "bytes": 1459049,
+   "canvas_px": [
+    1159,
+    1358
+   ]
+  },
+  {
+   "asset_id": "REF_PHANTOM_NOX_SQUEAK_BASE",
+   "path": "assets/reference/sprites/phantom_nox_squeak_base.png",
+   "type": "owner_reference_flat",
+   "owner": "owner",
+   "status": "CONCEPT",
+   "note": "Owner flat reference (identity lock). Not layered, not modular.",
+   "sha256": "6a9b8d458f8efdb8d14b3bc0a1dbcea8286c9f580a450f3b5a14d555a4b689cf",
+   "bytes": 904578,
+   "canvas_px": [
+    1312,
+    1199
+   ]
+  },
+  {
+   "asset_id": "REF_SANCTUARY_SISTER_PLASTER_BASE",
+   "path": "assets/reference/sprites/sanctuary_sister_plaster_base.png",
+   "type": "owner_reference_flat",
+   "owner": "owner",
+   "status": "CONCEPT",
+   "note": "Owner flat reference (identity lock). Not layered, not modular.",
+   "sha256": "f8fee1de6b5a9a177116c87bdc3d41e59f676543b4a03bbfc4b90ea700b2707d",
+   "bytes": 1296951,
+   "canvas_px": [
+    1179,
+    1334
+   ]
+  },
+  {
+   "asset_id": "PREVIEW_LOCAL",
+   "path": "preview/index.html",
+   "type": "preview",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "sha256": "82a10023c7cb43df37d356b44c759c4e6aae7fee5ec68cd6f267b620b02caa81",
+   "bytes": 40078
+  },
+  {
+   "asset_id": "PREVIEW_STANDALONE",
+   "path": "preview/card_game_art_preview_standalone.html",
+   "type": "preview",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "sha256": "2b1131a979cbf8c30609282f2fc6c113e872668c04efce27db045766f4ba3184",
+   "bytes": 1031654
+  }
+ ]
+}

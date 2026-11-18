@@ -1,0 +1,59 @@
+{
+ "EQ_CEL_HAT_ASTRO_001": {
+  "asset_id": "EQ_CEL_HAT_ASTRO_001",
+  "file": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_HAT_ASTRO_001.png",
+  "slot": "headgear",
+  "pivot": [
+   24,
+   16
+  ],
+  "pivot_kind": "mount",
+  "size": [
+   55,
+   41
+  ],
+  "native_character": "AVT_CEL_001",
+  "native_origin": [
+   44,
+   16
+  ]
+ },
+ "EQ_CEL_STAFF_PLANET_001": {
+  "asset_id": "EQ_CEL_STAFF_PLANET_001",
+  "file": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_STAFF_PLANET_001.png",
+  "slot": "main_hand",
+  "pivot": [
+   19,
+   45
+  ],
+  "pivot_kind": "grip",
+  "size": [
+   30,
+   104
+  ],
+  "native_character": "AVT_CEL_001",
+  "native_origin": [
+   25,
+   17
+  ]
+ },
+ "EQ_CEL_NOODLE_CUP_001": {
+  "asset_id": "EQ_CEL_NOODLE_CUP_001",
+  "file": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_NOODLE_CUP_001.png",
+  "slot": "off_hand",
+  "pivot": [
+   3,
+   14
+  ],
+  "pivot_kind": "grip",
+  "size": [
+   15,
+   19
+  ],
+  "native_character": "AVT_CEL_001",
+  "native_origin": [
+   86,
+   44
+  ]
+ }
+}

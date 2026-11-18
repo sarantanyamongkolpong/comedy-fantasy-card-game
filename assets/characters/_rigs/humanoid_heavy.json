@@ -1,0 +1,193 @@
+{
+ "rig": "humanoid_heavy",
+ "canvas": [
+  128,
+  128
+ ],
+ "baseline_y": 122,
+ "characters": {
+  "AVT_AEG_001": {
+   "anchors": {
+    "head": [
+     66,
+     34
+    ],
+    "main_hand": [
+     46,
+     75
+    ],
+    "off_hand": [
+     86,
+     76
+    ],
+    "back": [
+     60,
+     58
+    ],
+    "body_center": [
+     62,
+     80
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "layers": [
+    {
+     "file": "AVT_AEG_001_L01_body.png",
+     "layer": "L01",
+     "slot": "body",
+     "note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)"
+    },
+    {
+     "file": "AVT_AEG_001_L04_headgear_silver.png",
+     "layer": "L04",
+     "slot": "headgear",
+     "fill": "162 px: simple shaded hair cap painted under headgear; rest transparent"
+    },
+    {
+     "file": "AVT_AEG_001_L04_headgear_gold.png",
+     "layer": "L04",
+     "slot": "headgear",
+     "variant": "gold",
+     "fill": "recolour of OUR silver helmet layer by luminance rank; gold ramp sampled from owner gold ref palette"
+    },
+    {
+     "file": "AVT_AEG_001_L05_main_hand.png",
+     "layer": "L05",
+     "slot": "main_hand",
+     "fill": "54 occluded px synthesized (TELEA inpaint + palette snap); 221 px left transparent"
+    },
+    {
+     "file": "AVT_AEG_001_L06_off_hand.png",
+     "layer": "L06",
+     "slot": "off_hand",
+     "fill": "1114 px behind shield filled by mirroring the opposite body half about x=61; pixels with no mirrored source left transparent (approximate, normally hidden)"
+    },
+    {
+     "file": "AVT_AEG_001_L05f_main_hand_front.png",
+     "layer": "L05f",
+     "slot": "main_hand_front",
+     "note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped"
+    }
+   ],
+   "native_items": {
+    "EQ_AEG_POT_HELMET_SILVER_001": {
+     "asset_id": "EQ_AEG_POT_HELMET_SILVER_001",
+     "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png",
+     "slot": "headgear",
+     "pivot": [
+      22,
+      10
+     ],
+     "pivot_kind": "mount",
+     "size": [
+      39,
+      28
+     ],
+     "native_character": "AVT_AEG_001",
+     "native_origin": [
+      44,
+      24
+     ]
+    },
+    "EQ_AEG_POT_HELMET_GOLD_001": {
+     "asset_id": "EQ_AEG_POT_HELMET_GOLD_001",
+     "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png",
+     "slot": "headgear",
+     "pivot": [
+      22,
+      10
+     ],
+     "pivot_kind": "mount",
+     "size": [
+      39,
+      28
+     ],
+     "native_character": "AVT_AEG_001",
+     "native_origin": [
+      44,
+      24
+     ],
+     "variant_of": "EQ_AEG_POT_HELMET_SILVER_001"
+    },
+    "EQ_AEG_SWORD_POTLID_001": {
+     "asset_id": "EQ_AEG_SWORD_POTLID_001",
+     "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SWORD_POTLID_001.png",
+     "slot": "main_hand",
+     "pivot": [
+      17,
+      31
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      25,
+      42
+     ],
+     "native_character": "AVT_AEG_001",
+     "native_origin": [
+      29,
+      44
+     ]
+    },
+    "EQ_AEG_SHIELD_POTLID_001": {
+     "asset_id": "EQ_AEG_SHIELD_POTLID_001",
+     "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SHIELD_POTLID_001.png",
+     "slot": "off_hand",
+     "pivot": [
+      18,
+      24
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      33,
+      50
+     ],
+     "native_character": "AVT_AEG_001",
+     "native_origin": [
+      68,
+      52
+     ]
+    }
+   },
+   "fit": {
+    "EQ_SWORD_BASIC_001": [
+     -6,
+     -2
+    ],
+    "EQ_DAGGER_BASIC_001": [
+     -4,
+     0
+    ]
+   },
+   "fit_note": "per-character extra offset [dx,dy] for specific items, applied after pivot->anchor (QA-tuned)"
+  }
+ },
+ "default_anchors": {
+  "head": [
+   64,
+   30
+  ],
+  "main_hand": [
+   38,
+   72
+  ],
+  "off_hand": [
+   90,
+   74
+  ],
+  "back": [
+   64,
+   56
+  ],
+  "body_center": [
+   64,
+   80
+  ],
+  "feet": [
+   64,
+   122
+  ]
+ }
+}

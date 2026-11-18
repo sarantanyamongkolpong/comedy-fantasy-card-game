@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Comedy Fantasy Card Game — First 4 Avatars · Art & Asset Prototype</title>
+<style>
+:root{--bg:#14131c;--panel:#1f1d2b;--ink:#ece9f6;--mut:#a7a2bd;--acc:#f0c24b;--line:#34304a}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 system-ui,-apple-system,"Segoe UI","Noto Sans Thai","Sarabun",sans-serif}
+header{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line);background:#191725;position:sticky;top:0;z-index:5}
+header h1{font-size:15px;margin:0 8px 0 0;font-weight:700}
+.badge{font-size:11px;padding:2px 7px;border-radius:9px;background:#3b2f12;color:var(--acc);border:1px solid #6b5520;white-space:nowrap}
+.badge.p{background:#232a40;color:#9fc0ff;border-color:#3b4f80}.badge.c{background:#3a1f2a;color:#ff9fb8;border-color:#7a3550}
+nav.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+nav.tabs button,.btn{background:#2a2740;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit;cursor:pointer}
+nav.tabs button.on,.btn.on{background:#4a3d12;border-color:var(--acc);color:#fff}
+.btn:disabled{opacity:.45;cursor:default}
+main{padding:10px 12px 40px;max-width:1500px;margin:0 auto}
+.viewer{display:grid;grid-template-columns:minmax(220px,380px) minmax(0,1fr);gap:12px;align-items:start}.viewer>*{min-width:0}#cv{max-width:100%;height:auto}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
+.panel h2{font-size:13px;margin:0 0 6px;color:var(--mut);font-weight:600;letter-spacing:.03em;text-transform:uppercase}
+/* card */
+.card{position:relative;width:100%;aspect-ratio:750/1050;border-radius:14px;overflow:hidden;background:#0b0a10;cursor:zoom-in;container-type:inline-size}
+.card img{position:absolute;display:block}.card .art{object-fit:cover}
+.card .ph{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;color:#999;border:2px dashed #555;font-size:4cqw}
+.card .t{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;text-shadow:0 1px 2px #000,0 0 6px #000;font-weight:700;line-height:1.05}
+.card .name{font-size:4.2cqw;flex-direction:column}.card .name small{font-size:3.2cqw;font-weight:600;opacity:.9}
+.card .stat{font-size:3.6cqw;flex-direction:column}.card .stat b{font-size:3cqw;opacity:.85;letter-spacing:.08em}.card .stat span{font-size:4.4cqw;color:#ffe9a8}
+.card .rar{font-size:2.8cqw;color:#ddd;border:1px dashed rgba(255,255,255,.5);border-radius:6px;background:rgba(0,0,0,.35)}
+.card .fac{position:absolute;left:0;right:0;bottom:0;font-size:2.6cqw;text-align:center;color:#fff;opacity:.0}
+.cardmeta{margin-top:6px;font-size:12px;color:var(--mut)}
+/* sprite */
+.stagewrap{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.stage{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;line-height:0}
+.checker{background-color:#cfd0d8;background-image:linear-gradient(45deg,#b7b8c4 25%,transparent 25%),linear-gradient(-45deg,#b7b8c4 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#b7b8c4 75%),linear-gradient(-45deg,transparent 75%,#b7b8c4 75%);background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0}
+.dark{background:#262436!important}
+canvas{image-rendering:pixelated;image-rendering:crisp-edges;display:block}
+.ctrl{display:flex;flex-direction:column;gap:8px;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.row label{font-size:12px;color:var(--mut)}
+select{background:#2a2740;color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px;font:inherit;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:12px;table-layout:fixed}td code{word-break:break-all}td{overflow-wrap:anywhere}td,th{border-bottom:1px solid var(--line);padding:3px 4px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+code{font-size:11px;color:#cbbcff}
+.st{font-size:10px;padding:1px 5px;border-radius:6px;background:#232a40;color:#9fc0ff}.st.CONCEPT{background:#3a1f2a;color:#ff9fb8}.st.INTEGRATED{background:#1f3a2a;color:#9fffc0}
+.swap{display:flex;gap:6px;flex-wrap:wrap}
+.big{font-size:15px;padding:8px 14px}
+section.more{margin-top:14px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cell{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px;text-align:center;font-size:12px}
+.cell .stage{display:block!important}.cell canvas{margin:0 auto;width:100%;height:auto}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;align-items:center}
+.note{font-size:12px;color:var(--mut)}
+.modal{position:fixed;inset:0;background:rgba(5,5,10,.92);display:none;align-items:center;justify-content:center;z-index:20;padding:10px}
+.modal.on{display:flex}.modal .inner{max-width:100%;max-height:100%;overflow:auto;text-align:center}
+.modal img{max-width:96vw;max-height:88vh}
+.modal .x{position:fixed;top:10px;right:12px}
+.anim .tag{font-size:9px;opacity:.75;display:block}
+footer{color:var(--mut);font-size:11px;padding:12px;text-align:center}
+/* mobile */
+@media (max-width:760px) and (orientation:portrait){header h1{font-size:14px}.viewer{grid-template-columns:minmax(0,1fr)}.card{max-width:280px;margin:0 auto}.stagewrap{grid-template-columns:1fr}.stage{justify-self:center}}
+@media (max-height:500px) and (orientation:landscape){
+ header{position:static;padding:4px 8px}header h1{font-size:13px}
+ .viewer{grid-template-columns:auto 1fr;gap:8px}
+ .viewer>.panel:first-child{padding:6px}
+ .card{height:calc(100vh - 64px);width:calc((100vh - 64px)*750/1050);max-height:340px;max-width:243px}
+ .viewer>.panel:first-child h2{display:none}.badge{display:none}nav.tabs button{padding:3px 8px}
+ .panel{padding:6px}.panel h2{font-size:11px;margin-bottom:3px}.big{font-size:13px;padding:5px 10px}.btn{padding:4px 8px}
+ .cardmeta{display:none}
+ .stagewrap{grid-template-columns:auto 1fr}
+ main{padding:6px 8px 30px}
+}
+</style></head><body>
+<header>
+ <h1>Comedy Fantasy Card Game · First 4 Avatars</h1>
+ <span class="badge">ART &amp; ASSET PIPELINE PROTOTYPE</span>
+ <span class="badge p">Stats POW/DEF/SPD = TBD · Rarity = TBD</span>
+ <nav class="tabs" id="tabs"></nav>
+</header>
+<main>
+ <div class="viewer">
+  <div class="panel"><h2>Card Art <span id="cardStatus"></span></h2><div id="cardHost"></div><div class="cardmeta" id="cardMeta"></div></div>
+  <div class="panel"><h2>Pixel Sprite · live layer composition <span class="st">PROTOTYPE</span></h2>
+   <div class="stagewrap">
+    <div><div class="stage checker" id="stage" title="Tap to inspect"><canvas id="cv"></canvas></div>
+     <div class="row" style="margin-top:6px"><label>Zoom</label><select id="zoom"><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
+      <label><input type="checkbox" id="anch"> anchors</label><label><input type="checkbox" id="bgd"> dark bg</label></div></div>
+    <div class="ctrl">
+     <div id="special"></div>
+     <div><label class="note">Animation (shared timing · procedural)</label><div class="row anim" id="anims"></div></div>
+     <div><label class="note">Equipment slots (real layer swap, item pivot → character anchor)</label><div id="slots"></div></div>
+     <div><label class="note">Layers</label><div class="row" id="layers"></div></div>
+    </div>
+   </div>
+   <h2 style="margin-top:8px">Equipment list</h2><table id="eqTable"></table>
+  </div>
+ </div>
+
+ <section class="more panel"><h2>Test 1 · Sir Potlid Silver → Golden Pot (only L04 headgear changes)</h2>
+  <div class="grid4" id="potTest" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))"></div><p class="note" id="potNote"></p></section>
+ <section class="more panel"><h2>Test 2 · Shared staff across characters (EQ_STAFF_NEUTRAL_001 + signature staffs cross-equipped)</h2>
+  <div class="grid4" id="staffTest"></div><p class="note">Every cell is drawn live: character body layer (staff removed, hand/robe repainted) + staff item placed so its grip pivot lands on that character's <code>main_hand</code> anchor, then the original fist pixels (<code>L05f</code>) on top so the item reads as gripped.</p></section>
+ <section class="more panel"><h2>Test 3 · More shared equipment (sword / dagger / buckler) on different rigs</h2><div class="grid4" id="sharedTest"></div></section>
+ <section class="more panel"><h2>Card Art vs Pixel Art</h2><div class="grid4" id="compare" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))"></div></section>
+ <section class="more panel"><h2>Honest status</h2><div class="note" id="honest"></div></section>
+</main>
+<div class="modal" id="modal"><button class="btn x" id="mx">✕ close</button><div class="inner" id="mi"></div></div>
+<footer>Prototype for Owner review · no gameplay, no battle engine · build <span id="bld"></span></footer>
+<script>
+const DATA={"items": {"EQ_STAFF_NEUTRAL_001": {"src": "../assets/equipment/EQ_STAFF_NEUTRAL_001.png", "pivot": [7, 45], "slot": "main_hand", "shared": true, "status": "PROTOTYPE", "note": "Neutral wood+silver staff with quartz orb; grip = shaft point between the two wraps"}, "EQ_SWORD_BASIC_001": {"src": "../assets/equipment/EQ_SWORD_BASIC_001.png", "pivot": [5, 29], "slot": "main_hand", "shared": true, "status": "PROTOTYPE", "note": "Plain steel short sword, blade up, brass guard"}, "EQ_DAGGER_BASIC_001": {"src": "../assets/equipment/EQ_DAGGER_BASIC_001.png", "pivot": [3, 4], "slot": "main_hand|off_hand", "shared": true, "status": "PROTOTYPE", "note": "Plain dagger, reverse grip (blade down)"}, "EQ_SHIELD_BUCKLER_001": {"src": "../assets/equipment/EQ_SHIELD_BUCKLER_001.png", "pivot": [12, 12], "slot": "off_hand", "shared": true, "status": "PROTOTYPE", "note": "Iron-rimmed wooden buckler; grip = boss centre"}, "EQ_AEG_POT_HELMET_SILVER_001": {"src": "../assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png", "pivot": [22, 10], "slot": "headgear", "native_character": "AVT_AEG_001", "status": "PROTOTYPE", "note": "Silver cooking-pot helmet (cut from body, head repainted underneath)"}, "EQ_AEG_POT_HELMET_GOLD_001": {"src": "../assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png", "pivot": [22, 10], "slot": "headgear", "native_character": "AVT_AEG_001", "status": "PROTOTYPE", "note": "Gold variant = recolour of the silver helmet layer (same shape/pivot)"}, "EQ_AEG_SWORD_POTLID_001": {"src": "../assets/characters/AVT_AEG_001/equipment/EQ_AEG_SWORD_POTLID_001.png", "pivot": [17, 31], "slot": "main_hand", "native_character": "AVT_AEG_001", "status": "PROTOTYPE", "note": "Potlid short sword (native)"}, "EQ_AEG_SHIELD_POTLID_001": {"src": "../assets/characters/AVT_AEG_001/equipment/EQ_AEG_SHIELD_POTLID_001.png", "pivot": [18, 24], "slot": "off_hand", "native_character": "AVT_AEG_001", "status": "PROTOTYPE", "note": "Pot-lid shield (native)"}, "EQ_PHA_KUNAI_MAIN_001": {"src": "../assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_MAIN_001.png", "pivot": [5, -3], "slot": "main_hand", "native_character": "AVT_PHA_001", "status": "PROTOTYPE", "note": "Kunai, main hand (native)"}, "EQ_PHA_KUNAI_OFF_001": {"src": "../assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_OFF_001.png", "pivot": [1, -3], "slot": "off_hand", "native_character": "AVT_PHA_001", "status": "PROTOTYPE", "note": "Kunai, off hand (native)"}, "EQ_PHA_SNEAKERS_SQUEAK_001": {"src": "../assets/characters/AVT_PHA_001/equipment/EQ_PHA_SNEAKERS_SQUEAK_001.png", "pivot": [34, 21], "slot": "accessory", "native_character": "AVT_PHA_001", "status": "PROTOTYPE", "note": "Light-up squeaky sneakers (native accessory)"}, "EQ_CEL_HAT_ASTRO_001": {"src": "../assets/characters/AVT_CEL_001/equipment/EQ_CEL_HAT_ASTRO_001.png", "pivot": [24, 16], "slot": "headgear", "native_character": "AVT_CEL_001", "status": "PROTOTYPE", "note": "Astrologer hat with orbit ring"}, "EQ_CEL_STAFF_PLANET_001": {"src": "../assets/characters/AVT_CEL_001/equipment/EQ_CEL_STAFF_PLANET_001.png", "pivot": [19, 45], "slot": "main_hand", "native_character": "AVT_CEL_001", "status": "PROTOTYPE", "note": "Ringed-planet staff (signature)"}, "EQ_CEL_NOODLE_CUP_001": {"src": "../assets/characters/AVT_CEL_001/equipment/EQ_CEL_NOODLE_CUP_001.png", "pivot": [3, 14], "slot": "off_hand", "native_character": "AVT_CEL_001", "status": "PROTOTYPE", "note": "Fortune-telling instant noodles"}, "EQ_SAN_CAP_HEALER_001": {"src": "../assets/characters/AVT_SAN_001/equipment/EQ_SAN_CAP_HEALER_001.png", "pivot": [12, 5], "slot": "headgear", "native_character": "AVT_SAN_001", "status": "PROTOTYPE", "note": "Healer cap with green cross"}, "EQ_SAN_STAFF_BANDAGE_001": {"src": "../assets/characters/AVT_SAN_001/equipment/EQ_SAN_STAFF_BANDAGE_001.png", "pivot": [24, 52], "slot": "main_hand", "native_character": "AVT_SAN_001", "status": "PROTOTYPE", "note": "Giant bandage staff (signature)"}, "EQ_SAN_CLIPBOARD_001": {"src": "../assets/characters/AVT_SAN_001/equipment/EQ_SAN_CLIPBOARD_001.png", "pivot": [9, 16], "slot": "off_hand", "native_character": "AVT_SAN_001", "status": "PROTOTYPE", "note": "Clipboard"}}, "characters": [{"id": "AVT_AEG_001", "name_en": "Sir Potlid", "name_th": "เซอร์ฝาหม้อ", "faction": "Aegis Dominion", "role": "Tank", "rig": "humanoid_heavy", "anchors": {"head": [66, 34], "main_hand": [46, 75], "off_hand": [86, 76], "back": [60, 58], "body_center": [62, 80], "feet": [64, 122]}, "layers": {"L01": "../assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L01_body.png", "L05f": "../assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L05f_main_hand_front.png"}, "default_loadout": {"headgear": "EQ_AEG_POT_HELMET_SILVER_001", "main_hand": "EQ_AEG_SWORD_POTLID_001", "off_hand": "EQ_AEG_SHIELD_POTLID_001"}, "slot_options": {"headgear": ["EQ_AEG_POT_HELMET_SILVER_001", "EQ_AEG_POT_HELMET_GOLD_001"], "main_hand": ["EQ_AEG_SWORD_POTLID_001", "EQ_SWORD_BASIC_001", "EQ_DAGGER_BASIC_001"], "off_hand": ["EQ_AEG_SHIELD_POTLID_001", "EQ_SHIELD_BUCKLER_001"]}, "fit": {"EQ_SWORD_BASIC_001": [-6, -2], "EQ_DAGGER_BASIC_001": [-4, 0]}, "vfx_id": null, "body_note": "L01–L03 baked from flat ref; occluded pixels repainted (see registry)", "card": {"art": "../assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_web.webp", "variant": "../assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_variant_goldpot_web.webp", "frame": "../assets/card-art/frames/factions/FRAME_AEGIS_001.png", "emblem": "../assets/card-art/frames/factions/EMBLEM_AEGIS_001.png"}}, {"id": "AVT_PHA_001", "name_en": "Nox Squeak", "name_th": "น็อกซ์ รองเท้าดัง", "faction": "Phantom Blades", "role": "DPS", "rig": "humanoid_standard", "anchors": {"head": [70, 30], "main_hand": [40, 66], "off_hand": [88, 60], "back": [60, 52], "body_center": [64, 74], "feet": [64, 122]}, "layers": {"L01": "../assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L01_body.png", "L09": "../assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L09_vfx_squeak.png", "L05f": "../assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L05f_main_hand_front.png", "L06f": "../assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L06f_off_hand_front.png"}, "default_loadout": {"main_hand": "EQ_PHA_KUNAI_MAIN_001", "off_hand": "EQ_PHA_KUNAI_OFF_001", "accessory": "EQ_PHA_SNEAKERS_SQUEAK_001"}, "slot_options": {"main_hand": ["EQ_PHA_KUNAI_MAIN_001", "EQ_DAGGER_BASIC_001", "EQ_SWORD_BASIC_001"], "off_hand": ["EQ_PHA_KUNAI_OFF_001", "EQ_DAGGER_BASIC_001"], "accessory": ["EQ_PHA_SNEAKERS_SQUEAK_001"]}, "fit": {}, "vfx_id": "VFX_PHA_SQUEAK_001", "body_note": "L01–L03 baked from flat ref; occluded pixels repainted (see registry)", "card": {"art": "../assets/characters/AVT_PHA_001/card/AVT_PHA_001_card_v1_web.webp", "variant": null, "frame": "../assets/card-art/frames/factions/FRAME_PHANTOM_001.png", "emblem": "../assets/card-art/frames/factions/EMBLEM_PHANTOM_001.png"}}, {"id": "AVT_CEL_001", "name_en": "Madame Meteor", "name_th": "มาดามดาวตก", "faction": "Celestial Nexus", "role": "Magic", "rig": "humanoid_standard", "anchors": {"head": [68, 32], "main_hand": [44, 62], "off_hand": [89, 58], "back": [64, 56], "body_center": [66, 78], "feet": [64, 122]}, "layers": {"L01": "../assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L01_body.png", "L09": "../assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L09_vfx_steam.png", "L05f": "../assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L05f_main_hand_front.png"}, "default_loadout": {"headgear": "EQ_CEL_HAT_ASTRO_001", "main_hand": "EQ_CEL_STAFF_PLANET_001", "off_hand": "EQ_CEL_NOODLE_CUP_001"}, "slot_options": {"headgear": ["EQ_CEL_HAT_ASTRO_001"], "main_hand": ["EQ_CEL_STAFF_PLANET_001", "EQ_STAFF_NEUTRAL_001", "EQ_SAN_STAFF_BANDAGE_001"], "off_hand": ["EQ_CEL_NOODLE_CUP_001", "EQ_SHIELD_BUCKLER_001"]}, "fit": {}, "vfx_id": "VFX_CEL_NOODLE_STEAM_001", "body_note": "L01–L03 baked from flat ref; occluded pixels repainted (see registry)", "card": {"art": "../assets/characters/AVT_CEL_001/card/AVT_CEL_001_card_v1_web.webp", "variant": null, "frame": "../assets/card-art/frames/factions/FRAME_CELESTIAL_001.png", "emblem": "../assets/card-art/frames/factions/EMBLEM_CELESTIAL_001.png"}}, {"id": "AVT_SAN_001", "name_en": "Sister Plaster", "name_th": "ซิสเตอร์พลาสเตอร์", "faction": "Sanctuary Order", "role": "Support", "rig": "humanoid_standard", "anchors": {"head": [68, 18], "main_hand": [48, 61], "off_hand": [93, 60], "back": [62, 54], "body_center": [66, 78], "feet": [64, 122]}, "layers": {"L01": "../assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L01_body.png", "L05f": "../assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L05f_main_hand_front.png"}, "default_loadout": {"headgear": "EQ_SAN_CAP_HEALER_001", "main_hand": "EQ_SAN_STAFF_BANDAGE_001", "off_hand": "EQ_SAN_CLIPBOARD_001"}, "slot_options": {"headgear": ["EQ_SAN_CAP_HEALER_001"], "main_hand": ["EQ_SAN_STAFF_BANDAGE_001", "EQ_STAFF_NEUTRAL_001", "EQ_CEL_STAFF_PLANET_001"], "off_hand": ["EQ_SAN_CLIPBOARD_001", "EQ_SHIELD_BUCKLER_001"]}, "fit": {}, "vfx_id": null, "body_note": "L01–L03 baked from flat ref; occluded pixels repainted (see registry)", "card": {"art": "../assets/characters/AVT_SAN_001/card/AVT_SAN_001_card_v1_web.webp", "variant": null, "frame": "../assets/card-art/frames/factions/FRAME_SANCTUARY_001.png", "emblem": "../assets/card-art/frames/factions/EMBLEM_SANCTUARY_001.png"}}], "anim": {"asset_id": "ANIM_SHARED_001", "version": 1, "kind": "procedural layer-transform timing (NOT hand-drawn frames)", "units": {"time": "ms", "offset": "logical px (integers only)", "rot": "degrees, applied to the composited 128x128 buffer with nearest-neighbour"}, "groups": {"body": ["L01", "L08"], "head": ["L04"], "main": ["L05", "L05f"], "off": ["L06", "L06f"], "vfx": ["L09"]}, "rig_scale": {"humanoid_heavy": {"move": 0.75, "bob": 1}, "humanoid_standard": {"move": 1, "bob": 1}}, "states": {"idle": {"status": "PROTOTYPE (tuned, loopable)", "loop": true, "frame_ms": 180, "frames": [{"body": [0, 0], "head": [0, 0], "main": [0, 0], "off": [0, 0], "vfx": [0, 0]}, {"body": [0, 0], "head": [0, 0], "main": [0, 0], "off": [0, 0], "vfx": [0, -1]}, {"body": [0, 1], "head": [0, 1], "main": [0, 1], "off": [0, 1], "vfx": [0, -1]}, {"body": [0, 1], "head": [0, 1], "main": [0, 1], "off": [0, 1], "vfx": [0, -2]}, {"body": [0, 1], "head": [0, 1], "main": [0, 1], "off": [0, 1], "vfx": [0, -1]}, {"body": [0, 0], "head": [0, 0], "main": [0, 0], "off": [0, 0], "vfx": [0, 0]}]}, "attack": {"status": "PROTOTYPE (procedural lunge)", "loop": false, "frame_ms": 70, "frames": [{"all": [-1, 0]}, {"all": [-2, 0]}, {"all": [-2, 1]}, {"all": [3, 0], "vfx_fx": "attack"}, {"all": [6, 0], "vfx_fx": "attack"}, {"all": [6, 0], "vfx_fx": "attack"}, {"all": [4, 0], "vfx_fx": "attack"}, {"all": [2, 0]}, {"all": [1, 0]}, {"all": [0, 0]}]}, "defend": {"status": "PROTOTYPE (procedural brace)", "loop": false, "frame_ms": 90, "frames": [{"all": [-1, 0]}, {"all": [-2, 1], "off": [2, -1], "tint": "guard", "vfx_fx": "defend"}, {"all": [-2, 1], "off": [2, -1], "tint": "guard", "vfx_fx": "defend"}, {"all": [-2, 1], "off": [2, -1], "vfx_fx": "defend"}, {"all": [-2, 1], "off": [2, -1], "vfx_fx": "defend"}, {"all": [-1, 0]}, {"all": [0, 0]}], "note": "'off' push is applied only when the character's off-hand item is not gripped by a front-hand overlay (Sir Potlid's shield); otherwise ignored to avoid a doubled fist"}, "hit": {"status": "PROTOTYPE (procedural recoil + flash)", "loop": false, "frame_ms": 60, "frames": [{"all": [0, 0], "flash": "white", "vfx_fx": "hit"}, {"all": [-3, 0], "flash": "white", "vfx_fx": "hit"}, {"all": [-4, 0], "vfx_fx": "hit"}, {"all": [-3, 0], "flash": "red", "vfx_fx": "hit"}, {"all": [-2, 0]}, {"all": [-1, 0]}, {"all": [0, 0]}]}, "ko": {"status": "PROTOTYPE (procedural tilt/fall, nearest rotation about body_center, settles on baseline)", "loop": false, "hold_last": true, "frame_ms": 110, "frames": [{"all": [0, 0], "flash": "white"}, {"all": [0, 0], "rot": -8}, {"all": [0, 1], "rot": -20}, {"all": [0, 3], "rot": -40}, {"all": [0, 5], "rot": -65}, {"all": [0, 8], "rot": -85, "dim": 0.35}, {"all": [0, 9], "rot": -90, "dim": 0.5}], "pivot": "body_center"}}, "vfx_fx": {"attack": {"default": {"vfx": "VFX_SLASH_001", "at": "main_hand", "offset": [14, -8]}}, "defend": {"default": {"vfx": "VFX_GUARD_RING_001", "at": "body_center", "offset": [6, 0]}}, "hit": {"default": {"vfx": "VFX_HIT_SPARK_001", "at": "body_center", "offset": [0, -6]}}}, "character_overrides": {"AVT_CEL_001": {"attack": {"vfx": "VFX_MAGIC_PARTICLE_001", "at": "main_hand", "offset": [0, -40], "label": "Skill-style cast (staff orb)"}}, "AVT_SAN_001": {"attack": {"vfx": "VFX_HEAL_SPARKLE_001", "at": "main_hand", "offset": [0, -40], "label": "Skill-style heal (bandage staff)"}}, "AVT_AEG_001": {"defend": {"vfx": "VFX_GUARD_RING_001", "at": "off_hand", "offset": [0, 0]}}}, "rules": ["Fist pixels live in L01 and are duplicated in L05f/L06f; therefore held items move WITH the body (no independent hand offsets) in this prototype.", "Only L04 headgear and L09 VFX may drift independently; all offsets are whole logical pixels."]}, "vfx": {"VFX_SLASH_001": {"frame": [32, 32], "frames": 4, "pivot": [16, 16], "use": "Attack (melee)", "src": "../assets/vfx/VFX_SLASH_001.png"}, "VFX_HIT_SPARK_001": {"frame": [16, 16], "frames": 4, "pivot": [8, 8], "use": "Hit", "src": "../assets/vfx/VFX_HIT_SPARK_001.png"}, "VFX_HEAL_SPARKLE_001": {"frame": [24, 24], "frames": 4, "pivot": [12, 20], "use": "Skill (support) / heal", "src": "../assets/vfx/VFX_HEAL_SPARKLE_001.png"}, "VFX_MAGIC_PARTICLE_001": {"frame": [24, 24], "frames": 4, "pivot": [12, 12], "use": "Skill (magic)", "src": "../assets/vfx/VFX_MAGIC_PARTICLE_001.png"}, "VFX_GUARD_RING_001": {"frame": [32, 32], "frames": 4, "pivot": [16, 16], "use": "Defend", "src": "../assets/vfx/VFX_GUARD_RING_001.png"}}, "frame_layout": {"canvas": {"w": 750, "h": 1050}, "units": "px, [x, y, w, h], origin top-left", "rects": {"art_window": {"x": 30, "y": 30, "w": 690, "h": 920}, "faction_emblem": {"x": 42, "y": 42, "w": 96, "h": 96}, "rarity": {"x": 560, "y": 48, "w": 148, "h": 40}, "name": {"x": 120, "y": 896, "w": 510, "h": 50}, "stat_pow": {"x": 45, "y": 960, "w": 200, "h": 70}, "stat_def": {"x": 275, "y": 960, "w": 200, "h": 70}, "stat_spd": {"x": 505, "y": 960, "w": 200, "h": 70}}, "art_source_size": {"w": 864, "h": 1152, "fit": "scale to art_window (exact 3:4), lanczos"}, "draw_order": ["card_art (under)", "frame overlay", "emblem in faction_emblem", "text: name / stat values / rarity gems (runtime)"], "notes": "Frames carry no text, stats or rarity. Name plate and stat band overlap the bottom of art_window; keep key art features out of card y>890 (bottom ~6% of the art)."}, "honest": "<b>Real now:</b> separate transparent layer PNGs on one 128×128 canvas per character; equipment items with their own pivots placed on per-character anchors; Silver→Gold pot is a true L04 swap; the neutral staff and both signature staffs equip on both mages via the same compositor. <b>Approximated:</b> L01 Body + L02 Face/Hair + L03 Outfit are baked into one body layer (flat-source simplification); pixels hidden by removed items were repainted by script (inpaint + palette snap, mirror-fill behind Potlid's shield, simple painted hair caps under headgear, placeholder tabi feet under Nox's sneakers) — acceptable when equipped, rough when the slot is empty. Sprites are scripted downscales of the Owner's flat references, not hand-pixelled. Attack/Defend/Hit/KO are procedural transforms + shared VFX (PROTOTYPE), not hand-drawn frames. Card art = generated illustrations (PROTOTYPE); gold-pot card = CONCEPT. Nothing here is PRODUCTION_READY. No stats, rarity or card costs assigned.", "pot_note": "Same Character ID AVT_AEG_001; body, face, armour, shield, sword and animation identical — only the L04 headgear layer is replaced (EQ_AEG_POT_HELMET_SILVER_001 ↔ EQ_AEG_POT_HELMET_GOLD_001, same pivot).", "build": "2026-11-18 14:33 (UTC+7) · local"};
+const $=s=>document.querySelector(s), el=(t,a={},...k)=>{const e=document.createElement(t);for(const[x,y]of Object.entries(a)){if(x==='class')e.className=y;else if(x.startsWith('on'))e.addEventListener(x.slice(2),y);else e.setAttribute(x,y)}k.forEach(c=>e.append(c));return e};
+const IMG={};function img(src){if(!src)return null;if(!IMG[src]){const i=new Image();i.src=src;IMG[src]=i;i.onload=()=>dirty=true}return IMG[src]}
+const ITEMS=DATA.items, CH=DATA.characters, ANIM=DATA.anim, VFX=DATA.vfx;
+const state={cid:CH[0].id,load:{},anim:'idle',t0:performance.now(),hidden:{},cardVariant:false};
+CH.forEach(c=>{state.load[c.id]=Object.assign({},c.default_loadout)});
+let dirty=true;
+function ch(id){return CH.find(c=>c.id===id)}
+function compose(cid,load,opts={}){ // returns 128x128 canvas
+  const c=ch(cid),cv=opts.canvas||document.createElement('canvas');cv.width=128;cv.height=128;const g=cv.getContext('2d');g.imageSmoothingEnabled=false;g.clearRect(0,0,128,128);
+  const fr=opts.frame||{}, off=k=>{const a=fr.rot?[0,0]:(fr.all||[0,0]),b=fr[k]||[0,0];return[a[0]+b[0],a[1]+b[1]]};
+  const hid=opts.hidden||{};
+  const put=(src,x,y,grp)=>{const i=img(src);if(i&&i.complete&&i.naturalWidth){const o=off(grp);g.drawImage(i,x+o[0],y+o[1])}};
+  const item=(slot,grp)=>{const id=load[slot];if(!id||hid[slot])return;const it=ITEMS[id];const a=c.anchors[slot==='headgear'?'head':slot==='accessory'?'feet':slot];
+     const fit=(c.fit&&c.fit[id])||[0,0];put(it.src,a[0]-it.pivot[0]+fit[0],a[1]-it.pivot[1]+fit[1],grp)};
+  if(!hid.body)put(c.layers.L01,0,0,'body');
+  item('accessory','body'); item('headgear','head'); item('main_hand','main');
+  if(c.layers.L05f&&!hid.main_hand_front)put(c.layers.L05f,0,0,'main');
+  item('off_hand','off'); if(c.layers.L06f&&!hid.off_hand_front)put(c.layers.L06f,0,0,'off');
+  if(c.layers.L09&&!hid.vfx&&load.vfx!==null){ if(!(cid==='AVT_PHA_001'&&load.accessory!=='EQ_PHA_SNEAKERS_SQUEAK_001')&&!(cid==='AVT_CEL_001'&&load.off_hand!=='EQ_CEL_NOODLE_CUP_001')) put(c.layers.L09,0,0,'vfx');}
+  if(fr.flash||fr.tint){g.globalCompositeOperation='source-atop';g.fillStyle=fr.flash==='white'?'rgba(255,255,255,.85)':fr.flash==='red'?'rgba(255,60,60,.45)':'rgba(120,170,255,.35)';g.fillRect(0,0,128,128);g.globalCompositeOperation='source-over'}
+  if(fr.vfx_fx){const fx=fxFor(cid,fr.vfx_fx);if(fx){const v=VFX[fx.vfx],a=c.anchors[fx.at]||c.anchors.body_center,i=img(v.src);const n=opts.fxIdx||0;
+     if(i&&i.complete){const o=off('all');g.drawImage(i,(n%v.frames)*v.frame[0],0,v.frame[0],v.frame[1],a[0]+fx.offset[0]-v.pivot[0]+o[0],a[1]+fx.offset[1]-v.pivot[1]+o[1],v.frame[0],v.frame[1])}}}
+  if(fr.rot){const t=document.createElement('canvas');t.width=128;t.height=128;const h=t.getContext('2d');h.imageSmoothingEnabled=false;const f=c.anchors[(ANIM.states.ko.pivot)||'feet'];
+     h.translate(f[0],f[1]);h.rotate(fr.rot*Math.PI/180);h.translate(-f[0],-f[1]);h.drawImage(cv,0,0);g.clearRect(0,0,128,128);const ao=fr.all||[0,0];g.drawImage(t,ao[0],ao[1])}
+  if(fr.dim){g.globalCompositeOperation='source-atop';g.fillStyle=`rgba(20,18,30,${fr.dim})`;g.fillRect(0,0,128,128);g.globalCompositeOperation='source-over'}
+  return cv}
+function fxFor(cid,kind){const o=(ANIM.character_overrides[cid]||{})[kind];return o||(ANIM.vfx_fx[kind]||{}).default}
+function frameAt(cid,name,t){const s=ANIM.states[name];const n=s.frames.length;let i=Math.max(0,Math.floor(t/s.frame_ms));let done=false;
+  if(s.loop)i%=n;else if(i>=n){i=n-1;done=true}const f=JSON.parse(JSON.stringify(s.frames[i]));
+  const c=ch(cid);const sc=(ANIM.rig_scale[c.rig]||{move:1}).move; if(f.all&&sc!==1)f.all=f.all.map(v=>Math.round(v*sc));
+  if(name==='defend'&&!(c.id==='AVT_AEG_001'))delete f.off;
+  return{f,i,done,hold:s.hold_last}}
+// ---------- main stage
+function drawStage(now){const c=ch(state.cid),z=+$('#zoom').value,cv=$('#cv');const W=128*z;if(cv.width!==W){cv.width=W;cv.height=W}
+  const g=cv.getContext('2d');g.imageSmoothingEnabled=false;g.clearRect(0,0,W,W);
+  let {f,i,done,hold}=frameAt(state.cid,state.anim,now-state.t0);if(done&&!hold){state.anim='idle';state.t0=now;markAnim()}
+  // ground shadow (preview only)
+  g.fillStyle='rgba(0,0,0,.22)';const ft=c.anchors.feet;for(let y=-2;y<=2;y++){const w=Math.round(30*Math.sqrt(1-(y/3)**2));g.fillRect((ft[0]-w)*z,(ft[1]-1+y)*z,2*w*z,z)}
+  const sp=compose(state.cid,state.load[state.cid],{frame:f,hidden:state.hidden,fxIdx:i});g.drawImage(sp,0,0,W,W);
+  if($('#anch').checked){for(const[k,a]of Object.entries(c.anchors)){g.fillStyle='#ff2d6f';g.fillRect(a[0]*z-z,a[1]*z-z,z*3,z*3);g.fillStyle='#fff';g.font=`${Math.max(10,z*3)}px monospace`;g.fillText(k,a[0]*z+z*2,a[1]*z-z)}
+    g.strokeStyle='rgba(255,45,111,.6)';g.beginPath();g.moveTo(0,122*z);g.lineTo(W,122*z);g.stroke()}
+}
+let last=0;function loop(now){if(now-last>16){drawStage(now);drawMinis(now);last=now}requestAnimationFrame(loop)}
+// ---------- minis (test sections)
+const MINIS=[];function mini(host,cid,load,label,sub,z=2){const cv=el('canvas');const cell=el('div',{class:'cell'},el('div',{class:'stage checker'},cv),el('div',{},label),sub?el('div',{class:'note'},sub):'');host.append(cell);MINIS.push({cv,cid,load,z});return cell}
+function drawMinis(now){for(const m of MINIS){const W=128*m.z;if(m.cv.width!==W){m.cv.width=W;m.cv.height=W}const g=m.cv.getContext('2d');g.imageSmoothingEnabled=false;g.clearRect(0,0,W,W);
+  const {f}=frameAt(m.cid,'idle',now);g.drawImage(compose(m.cid,m.load,{frame:f}),0,0,W,W)}}
+// ---------- card
+function cardEl(c,variant){const L=DATA.frame_layout,cw=L.canvas.w,chh=L.canvas.h,r=L.rects,p=(o)=>`left:${o.x/cw*100}%;top:${o.y/chh*100}%;width:${o.w/cw*100}%;height:${o.h/chh*100}%`;
+  const d=el('div',{class:'card'});const art=variant&&c.card.variant?c.card.variant:c.card.art;
+  if(art)d.append(el('img',{class:'art',src:art,style:p(r.art_window),alt:c.name_en}));else d.append(el('div',{class:'ph',style:p(r.art_window)},'CARD ART PLACEHOLDER\n'+c.id));
+  if(c.card.frame)d.append(el('img',{src:c.card.frame,style:'left:0;top:0;width:100%;height:100%'}));
+  if(c.card.emblem)d.append(el('img',{src:c.card.emblem,style:p(r.faction_emblem),alt:c.faction}));
+  d.append(el('div',{class:'t name',style:p(r.name)},c.name_en,el('small',{},c.name_th+' · '+c.faction)));
+  for(const k of['pow','def','spd'])d.append(el('div',{class:'t stat',style:p(r['stat_'+k])},el('b',{},k.toUpperCase()),el('span',{},'TBD')));
+  d.append(el('div',{class:'t rar',style:p(r.rarity)},'RARITY · TBD'));
+  d.addEventListener('click',()=>openModal(el('div',{},cardBig(c,variant))));return d}
+function cardBig(c,variant){const e=cardEl(c,variant);e.style.width='min(92vw,calc(86vh*750/1050))';e.style.cursor='default';const n=e.cloneNode(true);return n}
+function openModal(node){$('#mi').innerHTML='';$('#mi').append(node);$('#modal').classList.add('on')}
+$('#mx').onclick=()=>$('#modal').classList.remove('on');$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')$('#modal').classList.remove('on')});
+// ---------- UI
+function markAnim(){document.querySelectorAll('#anims button').forEach(b=>b.classList.toggle('on',b.dataset.a===state.anim))}
+function render(){const c=ch(state.cid),L=state.load[c.id];
+  document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.id===c.id));
+  $('#cardHost').innerHTML='';$('#cardHost').append(cardEl(c,state.cardVariant&&c.id==='AVT_AEG_001'));
+  $('#cardStatus').innerHTML=c.card.art?'<span class="st">PROTOTYPE</span>':'<span class="st CONCEPT">MISSING</span>';
+  $('#cardMeta').innerHTML=`<b>${c.name_en}</b> / ${c.name_th}<br>${c.faction} · ${c.role} · rig <code>${c.rig}</code><br>POW / DEF / SPD: TBD · Rarity: TBD · Card costs: TBD<br>Tap card to zoom.`;
+  const sp=$('#special');sp.innerHTML='';
+  if(c.id==='AVT_AEG_001'){sp.append(el('label',{class:'note'},'Equipment swap test — same Character ID, only L04 changes'),el('div',{class:'swap'},
+     el('button',{class:'btn big'+(L.headgear==='EQ_AEG_POT_HELMET_SILVER_001'?' on':''),onclick:()=>{L.headgear='EQ_AEG_POT_HELMET_SILVER_001';state.cardVariant=false;render()}},'🥘 Silver Pot (V1)'),
+     el('button',{class:'btn big'+(L.headgear==='EQ_AEG_POT_HELMET_GOLD_001'?' on':''),onclick:()=>{L.headgear='EQ_AEG_POT_HELMET_GOLD_001';render()}},'✨ Golden Pot (V2)'),
+     el('label',{class:'note'},el('input',{type:'checkbox',id:'cv2',...(state.cardVariant?{checked:''}:{}),onchange:e=>{state.cardVariant=e.target.checked;render()}}),' show gold-pot card concept (CONCEPT, has drift)')))}
+  if(c.id==='AVT_CEL_001'||c.id==='AVT_SAN_001'){const sig=c.default_loadout.main_hand;sp.append(el('label',{class:'note'},'Shared staff test'),el('div',{class:'swap'},
+     el('button',{class:'btn big'+(L.main_hand===sig?' on':''),onclick:()=>{L.main_hand=sig;render()}},'Signature staff'),
+     el('button',{class:'btn big'+(L.main_hand==='EQ_STAFF_NEUTRAL_001'?' on':''),onclick:()=>{L.main_hand='EQ_STAFF_NEUTRAL_001';render()}},'Neutral shared staff'),
+     el('button',{class:'btn'+(L.main_hand===null?' on':''),onclick:()=>{L.main_hand=null;render()}},'No staff')))}
+  const an=$('#anims');an.innerHTML='';for(const[k,s]of Object.entries(ANIM.states)){an.append(el('button',{class:'btn','data-a':k,onclick:()=>{state.anim=k;state.t0=performance.now();markAnim()}},k[0].toUpperCase()+k.slice(1),el('span',{class:'tag'},k==='idle'?'loop':'PROTOTYPE')))}markAnim();
+  const sl=$('#slots');sl.innerHTML='';for(const slot of['headgear','main_hand','off_hand','accessory']){const opts=c.slot_options[slot]||[];if(!opts.length)continue;
+     const s=el('select',{onchange:e=>{L[slot]=e.target.value||null;render()}});s.append(el('option',{value:''},'— none —'));
+     for(const id of opts){const it=ITEMS[id];const o=el('option',{value:id},`${id}${it.native_character&&it.native_character!==c.id?' (from '+it.native_character+')':it.shared?' (shared)':''}`);if(L[slot]===id)o.selected=true;s.append(o)}
+     sl.append(el('div',{class:'row'},el('label',{style:'width:76px'},slot),s))}
+  const ly=$('#layers');ly.innerHTML='';const keys=['body','headgear','main_hand','main_hand_front','off_hand','off_hand_front','accessory','vfx'];
+  for(const k of keys){if(k.endsWith('_front')&&!c.layers[k==='main_hand_front'?'L05f':'L06f'])continue;if(k==='vfx'&&!c.layers.L09)continue;
+     ly.append(el('label',{},el('input',{type:'checkbox',...(state.hidden[k]?{}:{checked:''}),onchange:e=>{state.hidden[k]=!e.target.checked}}),' '+k))}
+  const tb=$('#eqTable');tb.innerHTML='<tr><th>Slot</th><th>Asset ID</th><th>Status</th><th>Pivot→Anchor</th></tr>';
+  const row=(slot,id)=>{if(!id){tb.insertAdjacentHTML('beforeend',`<tr><td>${slot}</td><td>—</td><td></td><td></td></tr>`);return}const it=ITEMS[id];const a=c.anchors[slot==='headgear'?'head':slot==='accessory'?'feet':slot];
+     tb.insertAdjacentHTML('beforeend',`<tr><td>${slot}</td><td><code>${id}</code><br><span class="note">${it.note||''}</span></td><td><span class="st ${it.status}">${it.status}</span></td><td>(${it.pivot})→${slot==='headgear'?'head':slot==='accessory'?'feet':slot}(${a})</td></tr>`)};
+  tb.insertAdjacentHTML('beforeend',`<tr><td>body</td><td><code>${c.id}_L01_body</code><br><span class="note">${c.body_note}</span></td><td><span class="st">PROTOTYPE</span></td><td>canvas 128×128, feet y=122</td></tr>`);
+  for(const s of['headgear','main_hand','off_hand','accessory'])if(c.slot_options[s]&&c.slot_options[s].length)row(s,L[s]);
+  if(c.layers.L09)tb.insertAdjacentHTML('beforeend',`<tr><td>vfx</td><td><code>${c.vfx_id}</code></td><td><span class="st">PROTOTYPE</span></td><td>character-fitted layer</td></tr>`);
+  dirty=true}
+function build(){if(innerWidth<560||innerHeight<520)$('#zoom').value='2';const t=$('#tabs');for(const c of CH)t.append(el('button',{'data-id':c.id,onclick:()=>{state.cid=c.id;state.anim='idle';render()}},c.name_en));
+  $('#zoom').onchange=()=>dirty=true;$('#bgd').onchange=e=>$('#stage').classList.toggle('dark',e.target.checked);
+  $('#stage').onclick=()=>{const cv=el('canvas');const z=Math.max(2,Math.floor(Math.min(innerWidth*0.92,innerHeight*0.85)/128));cv.width=cv.height=128*z;const g=cv.getContext('2d');g.imageSmoothingEnabled=false;
+     g.drawImage(compose(state.cid,state.load[state.cid],{hidden:state.hidden}),0,0,128*z,128*z);openModal(el('div',{},el('div',{class:'stage checker',style:'display:inline-block'},cv),el('div',{class:'note'},`${state.cid} · ${z}× nearest-neighbour · 128×128 logical`)))};
+  const A='AVT_AEG_001',M='AVT_CEL_001',P='AVT_SAN_001',N='AVT_PHA_001',d=id=>Object.assign({},ch(id).default_loadout);
+  mini($('#potTest'),A,d(A),'Silver Pot (V1)','EQ_AEG_POT_HELMET_SILVER_001',3);
+  mini($('#potTest'),A,Object.assign(d(A),{headgear:'EQ_AEG_POT_HELMET_GOLD_001'}),'Golden Pot (V2)','EQ_AEG_POT_HELMET_GOLD_001',3);
+  mini($('#potTest'),A,Object.assign(d(A),{headgear:null}),'No helmet','body layer head (painted hair cap)',3);
+  $('#potNote').textContent=DATA.pot_note;
+  const st=$('#staffTest');
+  mini(st,M,d(M),'Meteor + Planet staff','signature (native)');mini(st,M,Object.assign(d(M),{main_hand:'EQ_STAFF_NEUTRAL_001'}),'Meteor + NEUTRAL staff','shared');
+  mini(st,P,d(P),'Plaster + Bandage staff','signature (native)');mini(st,P,Object.assign(d(P),{main_hand:'EQ_STAFF_NEUTRAL_001'}),'Plaster + NEUTRAL staff','shared');
+  mini(st,M,Object.assign(d(M),{main_hand:'EQ_SAN_STAFF_BANDAGE_001'}),'Meteor + Bandage staff','cross-equipped');mini(st,P,Object.assign(d(P),{main_hand:'EQ_CEL_STAFF_PLANET_001'}),'Plaster + Planet staff','cross-equipped');
+  mini(st,M,Object.assign(d(M),{main_hand:null}),'Meteor · no staff','body layer');mini(st,P,Object.assign(d(P),{main_hand:null}),'Plaster · no staff','body layer');
+  const sh=$('#sharedTest');
+  mini(sh,A,Object.assign(d(A),{main_hand:'EQ_SWORD_BASIC_001'}),'Potlid + basic sword','EQ_SWORD_BASIC_001');
+  mini(sh,N,Object.assign(d(N),{main_hand:'EQ_SWORD_BASIC_001'}),'Nox + basic sword','EQ_SWORD_BASIC_001');
+  mini(sh,N,Object.assign(d(N),{main_hand:'EQ_DAGGER_BASIC_001',off_hand:'EQ_DAGGER_BASIC_001'}),'Nox + 2 basic daggers','EQ_DAGGER_BASIC_001 ×2');
+  mini(sh,A,Object.assign(d(A),{off_hand:'EQ_SHIELD_BUCKLER_001'}),'Potlid + buckler','EQ_SHIELD_BUCKLER_001');
+  mini(sh,P,Object.assign(d(P),{off_hand:'EQ_SHIELD_BUCKLER_001'}),'Plaster + buckler','EQ_SHIELD_BUCKLER_001');
+  mini(sh,N,Object.assign(d(N),{accessory:null}),'Nox · sneakers off','placeholder tabi feet in body');
+  const cp=$('#compare');for(const c of CH){const host=el('div',{class:'cell pair'});const cv=el('canvas');host.append(cardEl(c,false),el('div',{class:'stage checker'},cv));cp.append(el('div',{},host,el('div',{class:'note',style:'text-align:center'},c.name_en+' · '+c.faction)));MINIS.push({cv,cid:c.id,load:d(c.id),z:2});cv.style.width='100%';cv.style.height='auto'}
+  $('#honest').innerHTML=DATA.honest;$('#bld').textContent=DATA.build;
+  render();requestAnimationFrame(loop)}
+build();
+</script></body></html>

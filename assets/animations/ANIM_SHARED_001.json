@@ -1,0 +1,510 @@
+{
+ "asset_id": "ANIM_SHARED_001",
+ "version": 1,
+ "kind": "procedural layer-transform timing (NOT hand-drawn frames)",
+ "units": {
+  "time": "ms",
+  "offset": "logical px (integers only)",
+  "rot": "degrees, applied to the composited 128x128 buffer with nearest-neighbour"
+ },
+ "groups": {
+  "body": [
+   "L01",
+   "L08"
+  ],
+  "head": [
+   "L04"
+  ],
+  "main": [
+   "L05",
+   "L05f"
+  ],
+  "off": [
+   "L06",
+   "L06f"
+  ],
+  "vfx": [
+   "L09"
+  ]
+ },
+ "rig_scale": {
+  "humanoid_heavy": {
+   "move": 0.75,
+   "bob": 1
+  },
+  "humanoid_standard": {
+   "move": 1,
+   "bob": 1
+  }
+ },
+ "states": {
+  "idle": {
+   "status": "PROTOTYPE (tuned, loopable)",
+   "loop": true,
+   "frame_ms": 180,
+   "frames": [
+    {
+     "body": [
+      0,
+      0
+     ],
+     "head": [
+      0,
+      0
+     ],
+     "main": [
+      0,
+      0
+     ],
+     "off": [
+      0,
+      0
+     ],
+     "vfx": [
+      0,
+      0
+     ]
+    },
+    {
+     "body": [
+      0,
+      0
+     ],
+     "head": [
+      0,
+      0
+     ],
+     "main": [
+      0,
+      0
+     ],
+     "off": [
+      0,
+      0
+     ],
+     "vfx": [
+      0,
+      -1
+     ]
+    },
+    {
+     "body": [
+      0,
+      1
+     ],
+     "head": [
+      0,
+      1
+     ],
+     "main": [
+      0,
+      1
+     ],
+     "off": [
+      0,
+      1
+     ],
+     "vfx": [
+      0,
+      -1
+     ]
+    },
+    {
+     "body": [
+      0,
+      1
+     ],
+     "head": [
+      0,
+      1
+     ],
+     "main": [
+      0,
+      1
+     ],
+     "off": [
+      0,
+      1
+     ],
+     "vfx": [
+      0,
+      -2
+     ]
+    },
+    {
+     "body": [
+      0,
+      1
+     ],
+     "head": [
+      0,
+      1
+     ],
+     "main": [
+      0,
+      1
+     ],
+     "off": [
+      0,
+      1
+     ],
+     "vfx": [
+      0,
+      -1
+     ]
+    },
+    {
+     "body": [
+      0,
+      0
+     ],
+     "head": [
+      0,
+      0
+     ],
+     "main": [
+      0,
+      0
+     ],
+     "off": [
+      0,
+      0
+     ],
+     "vfx": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  "attack": {
+   "status": "PROTOTYPE (procedural lunge)",
+   "loop": false,
+   "frame_ms": 70,
+   "frames": [
+    {
+     "all": [
+      -1,
+      0
+     ]
+    },
+    {
+     "all": [
+      -2,
+      0
+     ]
+    },
+    {
+     "all": [
+      -2,
+      1
+     ]
+    },
+    {
+     "all": [
+      3,
+      0
+     ],
+     "vfx_fx": "attack"
+    },
+    {
+     "all": [
+      6,
+      0
+     ],
+     "vfx_fx": "attack"
+    },
+    {
+     "all": [
+      6,
+      0
+     ],
+     "vfx_fx": "attack"
+    },
+    {
+     "all": [
+      4,
+      0
+     ],
+     "vfx_fx": "attack"
+    },
+    {
+     "all": [
+      2,
+      0
+     ]
+    },
+    {
+     "all": [
+      1,
+      0
+     ]
+    },
+    {
+     "all": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  "defend": {
+   "status": "PROTOTYPE (procedural brace)",
+   "loop": false,
+   "frame_ms": 90,
+   "frames": [
+    {
+     "all": [
+      -1,
+      0
+     ]
+    },
+    {
+     "all": [
+      -2,
+      1
+     ],
+     "off": [
+      2,
+      -1
+     ],
+     "tint": "guard",
+     "vfx_fx": "defend"
+    },
+    {
+     "all": [
+      -2,
+      1
+     ],
+     "off": [
+      2,
+      -1
+     ],
+     "tint": "guard",
+     "vfx_fx": "defend"
+    },
+    {
+     "all": [
+      -2,
+      1
+     ],
+     "off": [
+      2,
+      -1
+     ],
+     "vfx_fx": "defend"
+    },
+    {
+     "all": [
+      -2,
+      1
+     ],
+     "off": [
+      2,
+      -1
+     ],
+     "vfx_fx": "defend"
+    },
+    {
+     "all": [
+      -1,
+      0
+     ]
+    },
+    {
+     "all": [
+      0,
+      0
+     ]
+    }
+   ],
+   "note": "'off' push is applied only when the character's off-hand item is not gripped by a front-hand overlay (Sir Potlid's shield); otherwise ignored to avoid a doubled fist"
+  },
+  "hit": {
+   "status": "PROTOTYPE (procedural recoil + flash)",
+   "loop": false,
+   "frame_ms": 60,
+   "frames": [
+    {
+     "all": [
+      0,
+      0
+     ],
+     "flash": "white",
+     "vfx_fx": "hit"
+    },
+    {
+     "all": [
+      -3,
+      0
+     ],
+     "flash": "white",
+     "vfx_fx": "hit"
+    },
+    {
+     "all": [
+      -4,
+      0
+     ],
+     "vfx_fx": "hit"
+    },
+    {
+     "all": [
+      -3,
+      0
+     ],
+     "flash": "red",
+     "vfx_fx": "hit"
+    },
+    {
+     "all": [
+      -2,
+      0
+     ]
+    },
+    {
+     "all": [
+      -1,
+      0
+     ]
+    },
+    {
+     "all": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  "ko": {
+   "status": "PROTOTYPE (procedural tilt/fall, nearest rotation about body_center, settles on baseline)",
+   "loop": false,
+   "hold_last": true,
+   "frame_ms": 110,
+   "frames": [
+    {
+     "all": [
+      0,
+      0
+     ],
+     "flash": "white"
+    },
+    {
+     "all": [
+      0,
+      0
+     ],
+     "rot": -8
+    },
+    {
+     "all": [
+      0,
+      1
+     ],
+     "rot": -20
+    },
+    {
+     "all": [
+      0,
+      3
+     ],
+     "rot": -40
+    },
+    {
+     "all": [
+      0,
+      5
+     ],
+     "rot": -65
+    },
+    {
+     "all": [
+      0,
+      8
+     ],
+     "rot": -85,
+     "dim": 0.35
+    },
+    {
+     "all": [
+      0,
+      9
+     ],
+     "rot": -90,
+     "dim": 0.5
+    }
+   ],
+   "pivot": "body_center"
+  }
+ },
+ "vfx_fx": {
+  "attack": {
+   "default": {
+    "vfx": "VFX_SLASH_001",
+    "at": "main_hand",
+    "offset": [
+     14,
+     -8
+    ]
+   }
+  },
+  "defend": {
+   "default": {
+    "vfx": "VFX_GUARD_RING_001",
+    "at": "body_center",
+    "offset": [
+     6,
+     0
+    ]
+   }
+  },
+  "hit": {
+   "default": {
+    "vfx": "VFX_HIT_SPARK_001",
+    "at": "body_center",
+    "offset": [
+     0,
+     -6
+    ]
+   }
+  }
+ },
+ "character_overrides": {
+  "AVT_CEL_001": {
+   "attack": {
+    "vfx": "VFX_MAGIC_PARTICLE_001",
+    "at": "main_hand",
+    "offset": [
+     0,
+     -40
+    ],
+    "label": "Skill-style cast (staff orb)"
+   }
+  },
+  "AVT_SAN_001": {
+   "attack": {
+    "vfx": "VFX_HEAL_SPARKLE_001",
+    "at": "main_hand",
+    "offset": [
+     0,
+     -40
+    ],
+    "label": "Skill-style heal (bandage staff)"
+   }
+  },
+  "AVT_AEG_001": {
+   "defend": {
+    "vfx": "VFX_GUARD_RING_001",
+    "at": "off_hand",
+    "offset": [
+     0,
+     0
+    ]
+   }
+  }
+ },
+ "rules": [
+  "Fist pixels live in L01 and are duplicated in L05f/L06f; therefore held items move WITH the body (no independent hand offsets) in this prototype.",
+  "Only L04 headgear and L09 VFX may drift independently; all offsets are whole logical pixels."
+ ]
+}

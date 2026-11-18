@@ -1,0 +1,174 @@
+{
+ "alpha_binary": {
+  "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png": 0,
+  "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png": 0,
+  "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SHIELD_POTLID_001.png": 0,
+  "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SWORD_POTLID_001.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L01_body.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L04_headgear_gold.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L04_headgear_silver.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L05_main_hand.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L05f_main_hand_front.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L06_off_hand.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_base_composite.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_base_composite_goldpot.png": 0,
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_idle_sheet.png": 0,
+  "assets/characters/AVT_CEL_001/equipment/EQ_CEL_HAT_ASTRO_001.png": 0,
+  "assets/characters/AVT_CEL_001/equipment/EQ_CEL_NOODLE_CUP_001.png": 0,
+  "assets/characters/AVT_CEL_001/equipment/EQ_CEL_STAFF_PLANET_001.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L01_body.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L04_headgear.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L05_main_hand.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L05f_main_hand_front.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L06_off_hand.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L09_vfx_steam.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_base_composite.png": 0,
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_idle_sheet.png": 0,
+  "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_MAIN_001.png": 0,
+  "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_OFF_001.png": 0,
+  "assets/characters/AVT_PHA_001/equipment/EQ_PHA_SNEAKERS_SQUEAK_001.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L01_body.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L05_main_hand.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L05f_main_hand_front.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L06_off_hand.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L06f_off_hand_front.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L08_accessory_sneakers.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L09_vfx_squeak.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_base_composite.png": 0,
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_idle_sheet.png": 0,
+  "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CAP_HEALER_001.png": 0,
+  "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CLIPBOARD_001.png": 0,
+  "assets/characters/AVT_SAN_001/equipment/EQ_SAN_STAFF_BANDAGE_001.png": 0,
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L01_body.png": 0,
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L04_headgear.png": 0,
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L05_main_hand.png": 0,
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L05f_main_hand_front.png": 0,
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L06_off_hand.png": 0,
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_base_composite.png": 0,
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_idle_sheet.png": 0,
+  "assets/equipment/EQ_DAGGER_BASIC_001.png": 0,
+  "assets/equipment/EQ_SHIELD_BUCKLER_001.png": 0,
+  "assets/equipment/EQ_STAFF_NEUTRAL_001.png": 0,
+  "assets/equipment/EQ_SWORD_BASIC_001.png": 0,
+  "assets/vfx/VFX_GUARD_RING_001.png": 0,
+  "assets/vfx/VFX_HEAL_SPARKLE_001.png": 0,
+  "assets/vfx/VFX_HIT_SPARK_001.png": 0,
+  "assets/vfx/VFX_MAGIC_PARTICLE_001.png": 0,
+  "assets/vfx/VFX_SLASH_001.png": 0
+ },
+ "canvas": {
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L05_main_hand.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L04_headgear_gold.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L05f_main_hand_front.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L04_headgear_silver.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L06_off_hand.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L01_body.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L01_body.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L05_main_hand.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L06_off_hand.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L08_accessory_sneakers.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L06f_off_hand_front.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L05f_main_hand_front.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_L09_vfx_squeak.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L09_vfx_steam.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L06_off_hand.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L04_headgear.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L05_main_hand.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L05f_main_hand_front.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_L01_body.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L04_headgear.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L06_off_hand.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L01_body.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L05f_main_hand_front.png": [
+   128,
+   128
+  ],
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_L05_main_hand.png": [
+   128,
+   128
+  ]
+ },
+ "roundtrip": {
+  "AVT_AEG_001": 0,
+  "AVT_PHA_001": 0,
+  "AVT_CEL_001": 0,
+  "AVT_SAN_001": 0
+ },
+ "base_composites": [
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_base_composite.png",
+  "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_base_composite_goldpot.png",
+  "assets/characters/AVT_PHA_001/sprite/AVT_PHA_001_base_composite.png",
+  "assets/characters/AVT_CEL_001/sprite/AVT_CEL_001_base_composite.png",
+  "assets/characters/AVT_SAN_001/sprite/AVT_SAN_001_base_composite.png"
+ ],
+ "gold_swap": {
+  "changed_px": 497,
+  "changed_outside_helmet_px": 0
+ }
+}

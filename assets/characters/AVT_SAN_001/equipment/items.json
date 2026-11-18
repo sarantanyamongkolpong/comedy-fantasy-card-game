@@ -1,0 +1,59 @@
+{
+ "EQ_SAN_CAP_HEALER_001": {
+  "asset_id": "EQ_SAN_CAP_HEALER_001",
+  "file": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CAP_HEALER_001.png",
+  "slot": "headgear",
+  "pivot": [
+   12,
+   5
+  ],
+  "pivot_kind": "mount",
+  "size": [
+   27,
+   18
+  ],
+  "native_character": "AVT_SAN_001",
+  "native_origin": [
+   56,
+   13
+  ]
+ },
+ "EQ_SAN_STAFF_BANDAGE_001": {
+  "asset_id": "EQ_SAN_STAFF_BANDAGE_001",
+  "file": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_STAFF_BANDAGE_001.png",
+  "slot": "main_hand",
+  "pivot": [
+   24,
+   52
+  ],
+  "pivot_kind": "grip",
+  "size": [
+   35,
+   112
+  ],
+  "native_character": "AVT_SAN_001",
+  "native_origin": [
+   24,
+   9
+  ]
+ },
+ "EQ_SAN_CLIPBOARD_001": {
+  "asset_id": "EQ_SAN_CLIPBOARD_001",
+  "file": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CLIPBOARD_001.png",
+  "slot": "off_hand",
+  "pivot": [
+   9,
+   16
+  ],
+  "pivot_kind": "grip",
+  "size": [
+   15,
+   25
+  ],
+  "native_character": "AVT_SAN_001",
+  "native_origin": [
+   84,
+   44
+  ]
+ }
+}

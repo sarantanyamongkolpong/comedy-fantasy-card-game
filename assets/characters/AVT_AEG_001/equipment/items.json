@@ -1,0 +1,79 @@
+{
+ "EQ_AEG_POT_HELMET_SILVER_001": {
+  "asset_id": "EQ_AEG_POT_HELMET_SILVER_001",
+  "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png",
+  "slot": "headgear",
+  "pivot": [
+   22,
+   10
+  ],
+  "pivot_kind": "mount",
+  "size": [
+   39,
+   28
+  ],
+  "native_character": "AVT_AEG_001",
+  "native_origin": [
+   44,
+   24
+  ]
+ },
+ "EQ_AEG_POT_HELMET_GOLD_001": {
+  "asset_id": "EQ_AEG_POT_HELMET_GOLD_001",
+  "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png",
+  "slot": "headgear",
+  "pivot": [
+   22,
+   10
+  ],
+  "pivot_kind": "mount",
+  "size": [
+   39,
+   28
+  ],
+  "native_character": "AVT_AEG_001",
+  "native_origin": [
+   44,
+   24
+  ],
+  "variant_of": "EQ_AEG_POT_HELMET_SILVER_001"
+ },
+ "EQ_AEG_SWORD_POTLID_001": {
+  "asset_id": "EQ_AEG_SWORD_POTLID_001",
+  "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SWORD_POTLID_001.png",
+  "slot": "main_hand",
+  "pivot": [
+   17,
+   31
+  ],
+  "pivot_kind": "grip",
+  "size": [
+   25,
+   42
+  ],
+  "native_character": "AVT_AEG_001",
+  "native_origin": [
+   29,
+   44
+  ]
+ },
+ "EQ_AEG_SHIELD_POTLID_001": {
+  "asset_id": "EQ_AEG_SHIELD_POTLID_001",
+  "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SHIELD_POTLID_001.png",
+  "slot": "off_hand",
+  "pivot": [
+   18,
+   24
+  ],
+  "pivot_kind": "grip",
+  "size": [
+   33,
+   50
+  ],
+  "native_character": "AVT_AEG_001",
+  "native_origin": [
+   68,
+   52
+  ]
+ }
+}
