@@ -1,0 +1,4382 @@
+{
+ "asset_id": "ANIM_AVT_PHA_001_V2",
+ "character_id": "AVT_PHA_001",
+ "name_en": "Nox Squeak",
+ "timing_template": "ANIM_SHARED_002",
+ "status": "PROTOTYPE",
+ "production_ready": false,
+ "pixels": "No frame is hand-placed pixel art. Idle/Attack/Defend/Hit pixels are the standing equipped sprite shifted by hand-authored integer offsets. KO pixels are a nearest-neighbour rotation of that sprite plus the held in-frame translation.",
+ "canvas": [
+  128,
+  128
+ ],
+ "baseline_y": 122,
+ "alpha": "0 or 255",
+ "loadout": {
+  "main_hand": "EQ_PHA_KUNAI_MAIN_001",
+  "off_hand": "EQ_PHA_KUNAI_OFF_001",
+  "accessory": "EQ_PHA_SNEAKERS_SQUEAK_001"
+ },
+ "anchors_rest": {
+  "head": [
+   70,
+   30
+  ],
+  "main_hand": [
+   40,
+   66
+  ],
+  "off_hand": [
+   88,
+   60
+  ],
+  "back": [
+   60,
+   52
+  ],
+  "body_center": [
+   64,
+   74
+  ],
+  "feet": [
+   64,
+   122
+  ]
+ },
+ "states": {
+  "idle": {
+   "status": "PROTOTYPE (hand-authored offsets carried from the tuned ANIM_SHARED_001 idle)",
+   "placement": "hand-authored-offsets",
+   "loop": true,
+   "hold_last": false,
+   "frame_ms": 180,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_idle_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_idle_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       31
+      ],
+      "main_hand": [
+       40,
+       67
+      ],
+      "off_hand": [
+       88,
+       61
+      ],
+      "back": [
+       60,
+       53
+      ],
+      "body_center": [
+       64,
+       75
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        67
+       ],
+       "draw_xy": [
+        35,
+        70
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        61
+       ],
+       "draw_xy": [
+        87,
+        64
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        123
+       ],
+       "draw_xy": [
+        30,
+        102
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       31
+      ],
+      "main_hand": [
+       40,
+       67
+      ],
+      "off_hand": [
+       88,
+       61
+      ],
+      "back": [
+       60,
+       53
+      ],
+      "body_center": [
+       64,
+       75
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        67
+       ],
+       "draw_xy": [
+        35,
+        70
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        61
+       ],
+       "draw_xy": [
+        87,
+        64
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        123
+       ],
+       "draw_xy": [
+        30,
+        102
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       31
+      ],
+      "main_hand": [
+       40,
+       67
+      ],
+      "off_hand": [
+       88,
+       61
+      ],
+      "back": [
+       60,
+       53
+      ],
+      "body_center": [
+       64,
+       75
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        67
+       ],
+       "draw_xy": [
+        35,
+        70
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        61
+       ],
+       "draw_xy": [
+        87,
+        64
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        123
+       ],
+       "draw_xy": [
+        30,
+        102
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    }
+   ]
+  },
+  "attack": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 80,
+   "frame_count": 8,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 8,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_attack_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_attack_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       69,
+       30
+      ],
+      "main_hand": [
+       39,
+       66
+      ],
+      "off_hand": [
+       87,
+       60
+      ],
+      "back": [
+       59,
+       52
+      ],
+      "body_center": [
+       63,
+       74
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        66
+       ],
+       "draw_xy": [
+        34,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        87,
+        60
+       ],
+       "draw_xy": [
+        86,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        63,
+        122
+       ],
+       "draw_xy": [
+        29,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -2,
+       0
+      ],
+      "head": [
+       -2,
+       0
+      ],
+      "main": [
+       -2,
+       0
+      ],
+      "off": [
+       -2,
+       0
+      ],
+      "vfx": [
+       -2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       30
+      ],
+      "main_hand": [
+       38,
+       66
+      ],
+      "off_hand": [
+       86,
+       60
+      ],
+      "back": [
+       58,
+       52
+      ],
+      "body_center": [
+       62,
+       74
+      ],
+      "feet": [
+       62,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        38,
+        66
+       ],
+       "draw_xy": [
+        33,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        60
+       ],
+       "draw_xy": [
+        85,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        62,
+        122
+       ],
+       "draw_xy": [
+        28,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       5,
+       0
+      ],
+      "head": [
+       5,
+       0
+      ],
+      "main": [
+       5,
+       0
+      ],
+      "off": [
+       5,
+       0
+      ],
+      "vfx": [
+       5,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       75,
+       30
+      ],
+      "main_hand": [
+       45,
+       66
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       65,
+       52
+      ],
+      "body_center": [
+       69,
+       74
+      ],
+      "feet": [
+       69,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        66
+       ],
+       "draw_xy": [
+        40,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        92,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        69,
+        122
+       ],
+       "draw_xy": [
+        35,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       6,
+       0
+      ],
+      "head": [
+       6,
+       0
+      ],
+      "main": [
+       6,
+       0
+      ],
+      "off": [
+       6,
+       0
+      ],
+      "vfx": [
+       6,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       76,
+       30
+      ],
+      "main_hand": [
+       46,
+       66
+      ],
+      "off_hand": [
+       94,
+       60
+      ],
+      "back": [
+       66,
+       52
+      ],
+      "body_center": [
+       70,
+       74
+      ],
+      "feet": [
+       70,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        66
+       ],
+       "draw_xy": [
+        41,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        94,
+        60
+       ],
+       "draw_xy": [
+        93,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        70,
+        122
+       ],
+       "draw_xy": [
+        36,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       3,
+       0
+      ],
+      "head": [
+       3,
+       0
+      ],
+      "main": [
+       3,
+       0
+      ],
+      "off": [
+       3,
+       0
+      ],
+      "vfx": [
+       3,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       73,
+       30
+      ],
+      "main_hand": [
+       43,
+       66
+      ],
+      "off_hand": [
+       91,
+       60
+      ],
+      "back": [
+       63,
+       52
+      ],
+      "body_center": [
+       67,
+       74
+      ],
+      "feet": [
+       67,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        43,
+        66
+       ],
+       "draw_xy": [
+        38,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        91,
+        60
+       ],
+       "draw_xy": [
+        90,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        122
+       ],
+       "draw_xy": [
+        33,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 6,
+     "groups": {
+      "body": [
+       1,
+       0
+      ],
+      "head": [
+       1,
+       0
+      ],
+      "main": [
+       1,
+       0
+      ],
+      "off": [
+       1,
+       0
+      ],
+      "vfx": [
+       1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       71,
+       30
+      ],
+      "main_hand": [
+       41,
+       66
+      ],
+      "off_hand": [
+       89,
+       60
+      ],
+      "back": [
+       61,
+       52
+      ],
+      "body_center": [
+       65,
+       74
+      ],
+      "feet": [
+       65,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        41,
+        66
+       ],
+       "draw_xy": [
+        36,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        89,
+        60
+       ],
+       "draw_xy": [
+        88,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        65,
+        122
+       ],
+       "draw_xy": [
+        31,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 7,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    }
+   ]
+  },
+  "defend": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 100,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_defend_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_defend_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       69,
+       30
+      ],
+      "main_hand": [
+       39,
+       66
+      ],
+      "off_hand": [
+       87,
+       60
+      ],
+      "back": [
+       59,
+       52
+      ],
+      "body_center": [
+       63,
+       74
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        66
+       ],
+       "draw_xy": [
+        34,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        87,
+        60
+       ],
+       "draw_xy": [
+        86,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        63,
+        122
+       ],
+       "draw_xy": [
+        29,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       -2,
+       0
+      ],
+      "head": [
+       -2,
+       0
+      ],
+      "main": [
+       -2,
+       0
+      ],
+      "off": [
+       -2,
+       0
+      ],
+      "vfx": [
+       -2,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       30
+      ],
+      "main_hand": [
+       38,
+       66
+      ],
+      "off_hand": [
+       86,
+       60
+      ],
+      "back": [
+       58,
+       52
+      ],
+      "body_center": [
+       62,
+       74
+      ],
+      "feet": [
+       62,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        38,
+        66
+       ],
+       "draw_xy": [
+        33,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        60
+       ],
+       "draw_xy": [
+        85,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        62,
+        122
+       ],
+       "draw_xy": [
+        28,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "tint": "guard",
+      "vfx_fx": "defend"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       -2,
+       0
+      ],
+      "head": [
+       -2,
+       0
+      ],
+      "main": [
+       -2,
+       0
+      ],
+      "off": [
+       -2,
+       0
+      ],
+      "vfx": [
+       -2,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       30
+      ],
+      "main_hand": [
+       38,
+       66
+      ],
+      "off_hand": [
+       86,
+       60
+      ],
+      "back": [
+       58,
+       52
+      ],
+      "body_center": [
+       62,
+       74
+      ],
+      "feet": [
+       62,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        38,
+        66
+       ],
+       "draw_xy": [
+        33,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        60
+       ],
+       "draw_xy": [
+        85,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        62,
+        122
+       ],
+       "draw_xy": [
+        28,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "tint": "guard",
+      "vfx_fx": "defend"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       69,
+       30
+      ],
+      "main_hand": [
+       39,
+       66
+      ],
+      "off_hand": [
+       87,
+       60
+      ],
+      "back": [
+       59,
+       52
+      ],
+      "body_center": [
+       63,
+       74
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        66
+       ],
+       "draw_xy": [
+        34,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        87,
+        60
+       ],
+       "draw_xy": [
+        86,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        63,
+        122
+       ],
+       "draw_xy": [
+        29,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    }
+   ]
+  },
+  "hit": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 60,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_hit_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_hit_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white",
+      "vfx_fx": "hit"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -3,
+       0
+      ],
+      "head": [
+       -3,
+       0
+      ],
+      "main": [
+       -3,
+       0
+      ],
+      "off": [
+       -3,
+       0
+      ],
+      "vfx": [
+       -3,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       67,
+       30
+      ],
+      "main_hand": [
+       37,
+       66
+      ],
+      "off_hand": [
+       85,
+       60
+      ],
+      "back": [
+       57,
+       52
+      ],
+      "body_center": [
+       61,
+       74
+      ],
+      "feet": [
+       61,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        37,
+        66
+       ],
+       "draw_xy": [
+        32,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        60
+       ],
+       "draw_xy": [
+        84,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        61,
+        122
+       ],
+       "draw_xy": [
+        27,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white",
+      "vfx_fx": "hit"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       -4,
+       0
+      ],
+      "head": [
+       -4,
+       0
+      ],
+      "main": [
+       -4,
+       0
+      ],
+      "off": [
+       -4,
+       0
+      ],
+      "vfx": [
+       -4,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       30
+      ],
+      "main_hand": [
+       36,
+       66
+      ],
+      "off_hand": [
+       84,
+       60
+      ],
+      "back": [
+       56,
+       52
+      ],
+      "body_center": [
+       60,
+       74
+      ],
+      "feet": [
+       60,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        36,
+        66
+       ],
+       "draw_xy": [
+        31,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        84,
+        60
+       ],
+       "draw_xy": [
+        83,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        60,
+        122
+       ],
+       "draw_xy": [
+        26,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "hit"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       -2,
+       0
+      ],
+      "head": [
+       -2,
+       0
+      ],
+      "main": [
+       -2,
+       0
+      ],
+      "off": [
+       -2,
+       0
+      ],
+      "vfx": [
+       -2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       30
+      ],
+      "main_hand": [
+       38,
+       66
+      ],
+      "off_hand": [
+       86,
+       60
+      ],
+      "back": [
+       58,
+       52
+      ],
+      "body_center": [
+       62,
+       74
+      ],
+      "feet": [
+       62,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        38,
+        66
+       ],
+       "draw_xy": [
+        33,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        60
+       ],
+       "draw_xy": [
+        85,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        62,
+        122
+       ],
+       "draw_xy": [
+        28,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "red"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       69,
+       30
+      ],
+      "main_hand": [
+       39,
+       66
+      ],
+      "off_hand": [
+       87,
+       60
+      ],
+      "back": [
+       59,
+       52
+      ],
+      "body_center": [
+       63,
+       74
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        66
+       ],
+       "draw_xy": [
+        34,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        87,
+        60
+       ],
+       "draw_xy": [
+        86,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        63,
+        122
+       ],
+       "draw_xy": [
+        29,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3841
+    }
+   ]
+  },
+  "ko": {
+   "status": "PROTOTYPE (hand-authored angles, procedural nearest-neighbour rotation, automatic in-frame translation)",
+   "placement": "procedural-rotation",
+   "loop": false,
+   "hold_last": true,
+   "frame_ms": 90,
+   "frame_count": 12,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 12,
+   "attachment_mode": "rigid_rotation",
+   "canonical_strip": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_ko_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_ko_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "rot_ccw": 0,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       70,
+       30
+      ],
+      "main_hand": [
+       40,
+       66
+      ],
+      "off_hand": [
+       88,
+       60
+      ],
+      "back": [
+       60,
+       52
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        66
+       ],
+       "draw_xy": [
+        35,
+        69
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        60
+       ],
+       "draw_xy": [
+        87,
+        63
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        122
+       ],
+       "draw_xy": [
+        30,
+        101
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white"
+     },
+     "opaque": 3841
+    },
+    {
+     "index": 1,
+     "rot_ccw": 8,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       64,
+       30
+      ],
+      "main_hand": [
+       39,
+       69
+      ],
+      "off_hand": [
+       86,
+       57
+      ],
+      "back": [
+       57,
+       53
+      ],
+      "body_center": [
+       64,
+       74
+      ],
+      "feet": [
+       71,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        69
+       ],
+       "draw_xy": [
+        34,
+        72
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        57
+       ],
+       "draw_xy": [
+        85,
+        60
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        71,
+        122
+       ],
+       "draw_xy": [
+        37,
+        101
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3842
+    },
+    {
+     "index": 2,
+     "rot_ccw": 14,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       59,
+       29
+      ],
+      "main_hand": [
+       39,
+       71
+      ],
+      "off_hand": [
+       84,
+       54
+      ],
+      "back": [
+       55,
+       53
+      ],
+      "body_center": [
+       64,
+       73
+      ],
+      "feet": [
+       76,
+       120
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        71
+       ],
+       "draw_xy": [
+        34,
+        74
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        84,
+        54
+       ],
+       "draw_xy": [
+        83,
+        57
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        76,
+        120
+       ],
+       "draw_xy": [
+        42,
+        99
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3835
+    },
+    {
+     "index": 3,
+     "rot_ccw": 20,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -2
+     ],
+     "anchors": {
+      "head": [
+       55,
+       29
+      ],
+      "main_hand": [
+       39,
+       73
+      ],
+      "off_hand": [
+       82,
+       51
+      ],
+      "back": [
+       53,
+       53
+      ],
+      "body_center": [
+       64,
+       72
+      ],
+      "feet": [
+       80,
+       117
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        73
+       ],
+       "draw_xy": [
+        34,
+        76
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        82,
+        51
+       ],
+       "draw_xy": [
+        81,
+        54
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        80,
+        117
+       ],
+       "draw_xy": [
+        46,
+        96
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3844
+    },
+    {
+     "index": 4,
+     "rot_ccw": 26,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -3
+     ],
+     "anchors": {
+      "head": [
+       50,
+       29
+      ],
+      "main_hand": [
+       39,
+       74
+      ],
+      "off_hand": [
+       79,
+       48
+      ],
+      "back": [
+       51,
+       53
+      ],
+      "body_center": [
+       64,
+       71
+      ],
+      "feet": [
+       85,
+       114
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        39,
+        74
+       ],
+       "draw_xy": [
+        34,
+        77
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        79,
+        48
+       ],
+       "draw_xy": [
+        78,
+        51
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        114
+       ],
+       "draw_xy": [
+        51,
+        93
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3862
+    },
+    {
+     "index": 5,
+     "rot_ccw": 34,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -4
+     ],
+     "anchors": {
+      "head": [
+       44,
+       30
+      ],
+      "main_hand": [
+       40,
+       77
+      ],
+      "off_hand": [
+       76,
+       45
+      ],
+      "back": [
+       48,
+       54
+      ],
+      "body_center": [
+       64,
+       70
+      ],
+      "feet": [
+       91,
+       110
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        40,
+        77
+       ],
+       "draw_xy": [
+        35,
+        80
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        76,
+        45
+       ],
+       "draw_xy": [
+        75,
+        48
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        91,
+        110
+       ],
+       "draw_xy": [
+        57,
+        89
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3832
+    },
+    {
+     "index": 6,
+     "rot_ccw": 42,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -4
+     ],
+     "anchors": {
+      "head": [
+       39,
+       33
+      ],
+      "main_hand": [
+       41,
+       80
+      ],
+      "off_hand": [
+       72,
+       44
+      ],
+      "back": [
+       46,
+       56
+      ],
+      "body_center": [
+       64,
+       70
+      ],
+      "feet": [
+       96,
+       106
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        41,
+        80
+       ],
+       "draw_xy": [
+        36,
+        83
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        72,
+        44
+       ],
+       "draw_xy": [
+        71,
+        47
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        96,
+        106
+       ],
+       "draw_xy": [
+        62,
+        85
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3822
+    },
+    {
+     "index": 7,
+     "rot_ccw": 50,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -4
+     ],
+     "anchors": {
+      "head": [
+       34,
+       37
+      ],
+      "main_hand": [
+       42,
+       83
+      ],
+      "off_hand": [
+       69,
+       43
+      ],
+      "back": [
+       45,
+       59
+      ],
+      "body_center": [
+       64,
+       70
+      ],
+      "feet": [
+       101,
+       101
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        42,
+        83
+       ],
+       "draw_xy": [
+        37,
+        86
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        69,
+        43
+       ],
+       "draw_xy": [
+        68,
+        46
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        101,
+        101
+       ],
+       "draw_xy": [
+        67,
+        80
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3840
+    },
+    {
+     "index": 8,
+     "rot_ccw": 60,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -4
+     ],
+     "anchors": {
+      "head": [
+       29,
+       43
+      ],
+      "main_hand": [
+       45,
+       87
+      ],
+      "off_hand": [
+       64,
+       42
+      ],
+      "back": [
+       43,
+       62
+      ],
+      "body_center": [
+       64,
+       70
+      ],
+      "feet": [
+       106,
+       94
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        87
+       ],
+       "draw_xy": [
+        40,
+        90
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        42
+       ],
+       "draw_xy": [
+        63,
+        45
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        106,
+        94
+       ],
+       "draw_xy": [
+        72,
+        73
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3836
+    },
+    {
+     "index": 9,
+     "rot_ccw": 72,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -4
+     ],
+     "anchors": {
+      "head": [
+       24,
+       51
+      ],
+      "main_hand": [
+       49,
+       90
+      ],
+      "off_hand": [
+       58,
+       43
+      ],
+      "back": [
+       42,
+       67
+      ],
+      "body_center": [
+       64,
+       70
+      ],
+      "feet": [
+       110,
+       85
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        49,
+        90
+       ],
+       "draw_xy": [
+        44,
+        93
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        58,
+        43
+       ],
+       "draw_xy": [
+        57,
+        46
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        110,
+        85
+       ],
+       "draw_xy": [
+        76,
+        64
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 3842
+    },
+    {
+     "index": 10,
+     "rot_ccw": 82,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -4
+     ],
+     "anchors": {
+      "head": [
+       21,
+       58
+      ],
+      "main_hand": [
+       53,
+       93
+      ],
+      "off_hand": [
+       53,
+       44
+      ],
+      "back": [
+       42,
+       71
+      ],
+      "body_center": [
+       64,
+       70
+      ],
+      "feet": [
+       112,
+       77
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        53,
+        93
+       ],
+       "draw_xy": [
+        48,
+        96
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        53,
+        44
+       ],
+       "draw_xy": [
+        52,
+        47
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        112,
+        77
+       ],
+       "draw_xy": [
+        78,
+        56
+       ]
+      }
+     ],
+     "effects": {
+      "dim": 0.35
+     },
+     "opaque": 3843
+    },
+    {
+     "index": 11,
+     "rot_ccw": 90,
+     "pivot": "body_center",
+     "pivot_xy": [
+      64,
+      74
+     ],
+     "translate": [
+      0,
+      -4
+     ],
+     "anchors": {
+      "head": [
+       20,
+       64
+      ],
+      "main_hand": [
+       56,
+       94
+      ],
+      "off_hand": [
+       50,
+       46
+      ],
+      "back": [
+       42,
+       74
+      ],
+      "body_center": [
+       64,
+       70
+      ],
+      "feet": [
+       112,
+       70
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_PHA_KUNAI_MAIN_001",
+       "pivot": [
+        5,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        56,
+        94
+       ],
+       "draw_xy": [
+        51,
+        97
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_PHA_KUNAI_OFF_001",
+       "pivot": [
+        1,
+        -3
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        50,
+        46
+       ],
+       "draw_xy": [
+        49,
+        49
+       ]
+      },
+      {
+       "slot": "accessory",
+       "item_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+       "pivot": [
+        34,
+        21
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        112,
+        70
+       ],
+       "draw_xy": [
+        78,
+        49
+       ]
+      }
+     ],
+     "effects": {
+      "dim": 0.5
+     },
+     "opaque": 3841
+    }
+   ]
+  }
+ }
+}

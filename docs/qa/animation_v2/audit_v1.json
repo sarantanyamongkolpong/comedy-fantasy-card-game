@@ -1,0 +1,478 @@
+{
+ "source": "ANIM_SHARED_001",
+ "what": "Opaque pixels of the padded KO rotation that land outside the 128 frame after the v1 settle.",
+ "characters": {
+  "AVT_AEG_001": {
+   "frames_with_pixels_outside": 1,
+   "max_outside_px": 7,
+   "frames": [
+    {
+     "index": 0,
+     "rot_ccw": 0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 4718,
+     "outside_128": 0,
+     "bbox": [
+      28,
+      24,
+      100,
+      120
+     ]
+    },
+    {
+     "index": 1,
+     "rot_ccw": 8.0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 4725,
+     "outside_128": 0,
+     "bbox": [
+      25,
+      24,
+      100,
+      123
+     ]
+    },
+    {
+     "index": 2,
+     "rot_ccw": 20.0,
+     "translate": [
+      0,
+      1
+     ],
+     "opaque": 4716,
+     "outside_128": 0,
+     "bbox": [
+      21,
+      28,
+      104,
+      127
+     ]
+    },
+    {
+     "index": 3,
+     "rot_ccw": 40.0,
+     "translate": [
+      0,
+      2
+     ],
+     "opaque": 4708,
+     "outside_128": 7,
+     "bbox": [
+      15,
+      35,
+      108,
+      129
+     ]
+    },
+    {
+     "index": 4,
+     "rot_ccw": 65.0,
+     "translate": [
+      0,
+      4
+     ],
+     "opaque": 4719,
+     "outside_128": 0,
+     "bbox": [
+      11,
+      46,
+      109,
+      125
+     ]
+    },
+    {
+     "index": 5,
+     "rot_ccw": 85.0,
+     "translate": [
+      0,
+      6
+     ],
+     "opaque": 4718,
+     "outside_128": 0,
+     "bbox": [
+      6,
+      48,
+      104,
+      122
+     ]
+    },
+    {
+     "index": 6,
+     "rot_ccw": 90.0,
+     "translate": [
+      0,
+      7
+     ],
+     "opaque": 4718,
+     "outside_128": 0,
+     "bbox": [
+      6,
+      49,
+      102,
+      121
+     ]
+    }
+   ]
+  },
+  "AVT_PHA_001": {
+   "frames_with_pixels_outside": 3,
+   "max_outside_px": 54,
+   "frames": [
+    {
+     "index": 0,
+     "rot_ccw": 0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 3841,
+     "outside_128": 0,
+     "bbox": [
+      27,
+      24,
+      101,
+      121
+     ]
+    },
+    {
+     "index": 1,
+     "rot_ccw": 8.0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 3842,
+     "outside_128": 0,
+     "bbox": [
+      25,
+      23,
+      102,
+      125
+     ]
+    },
+    {
+     "index": 2,
+     "rot_ccw": 20.0,
+     "translate": [
+      0,
+      1
+     ],
+     "opaque": 3844,
+     "outside_128": 15,
+     "bbox": [
+      22,
+      24,
+      108,
+      129
+     ]
+    },
+    {
+     "index": 3,
+     "rot_ccw": 40.0,
+     "translate": [
+      0,
+      3
+     ],
+     "opaque": 3822,
+     "outside_128": 54,
+     "bbox": [
+      17,
+      31,
+      116,
+      133
+     ]
+    },
+    {
+     "index": 4,
+     "rot_ccw": 65.0,
+     "translate": [
+      0,
+      5
+     ],
+     "opaque": 3837,
+     "outside_128": 4,
+     "bbox": [
+      16,
+      43,
+      118,
+      128
+     ]
+    },
+    {
+     "index": 5,
+     "rot_ccw": 85.0,
+     "translate": [
+      0,
+      8
+     ],
+     "opaque": 3841,
+     "outside_128": 0,
+     "bbox": [
+      15,
+      45,
+      113,
+      121
+     ]
+    },
+    {
+     "index": 6,
+     "rot_ccw": 90.0,
+     "translate": [
+      0,
+      9
+     ],
+     "opaque": 3841,
+     "outside_128": 0,
+     "bbox": [
+      14,
+      46,
+      111,
+      120
+     ]
+    }
+   ]
+  },
+  "AVT_CEL_001": {
+   "frames_with_pixels_outside": 3,
+   "max_outside_px": 11,
+   "frames": [
+    {
+     "index": 0,
+     "rot_ccw": 0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 5402,
+     "outside_128": 0,
+     "bbox": [
+      25,
+      16,
+      102,
+      120
+     ]
+    },
+    {
+     "index": 1,
+     "rot_ccw": 8.0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 5399,
+     "outside_128": 0,
+     "bbox": [
+      19,
+      18,
+      101,
+      122
+     ]
+    },
+    {
+     "index": 2,
+     "rot_ccw": 20.0,
+     "translate": [
+      0,
+      1
+     ],
+     "opaque": 5400,
+     "outside_128": 0,
+     "bbox": [
+      13,
+      20,
+      103,
+      127
+     ]
+    },
+    {
+     "index": 3,
+     "rot_ccw": 40.0,
+     "translate": [
+      0,
+      3
+     ],
+     "opaque": 5419,
+     "outside_128": 11,
+     "bbox": [
+      4,
+      25,
+      110,
+      130
+     ]
+    },
+    {
+     "index": 4,
+     "rot_ccw": 65.0,
+     "translate": [
+      0,
+      5
+     ],
+     "opaque": 5410,
+     "outside_128": 4,
+     "bbox": [
+      -2,
+      35,
+      113,
+      127
+     ]
+    },
+    {
+     "index": 5,
+     "rot_ccw": 85.0,
+     "translate": [
+      0,
+      8
+     ],
+     "opaque": 5405,
+     "outside_128": 0,
+     "bbox": [
+      3,
+      47,
+      109,
+      125
+     ]
+    },
+    {
+     "index": 6,
+     "rot_ccw": 90.0,
+     "translate": [
+      0,
+      9
+     ],
+     "opaque": 5402,
+     "outside_128": 2,
+     "bbox": [
+      4,
+      51,
+      108,
+      128
+     ]
+    }
+   ]
+  },
+  "AVT_SAN_001": {
+   "frames_with_pixels_outside": 4,
+   "max_outside_px": 142,
+   "frames": [
+    {
+     "index": 0,
+     "rot_ccw": 0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 5792,
+     "outside_128": 0,
+     "bbox": [
+      24,
+      9,
+      103,
+      120
+     ]
+    },
+    {
+     "index": 1,
+     "rot_ccw": 8.0,
+     "translate": [
+      0,
+      0
+     ],
+     "opaque": 5786,
+     "outside_128": 0,
+     "bbox": [
+      20,
+      13,
+      105,
+      121
+     ]
+    },
+    {
+     "index": 2,
+     "rot_ccw": 20.0,
+     "translate": [
+      0,
+      1
+     ],
+     "opaque": 5796,
+     "outside_128": 0,
+     "bbox": [
+      9,
+      17,
+      107,
+      124
+     ]
+    },
+    {
+     "index": 3,
+     "rot_ccw": 40.0,
+     "translate": [
+      0,
+      3
+     ],
+     "opaque": 5810,
+     "outside_128": 43,
+     "bbox": [
+      -4,
+      30,
+      111,
+      126
+     ]
+    },
+    {
+     "index": 4,
+     "rot_ccw": 65.0,
+     "translate": [
+      0,
+      5
+     ],
+     "opaque": 5789,
+     "outside_128": 142,
+     "bbox": [
+      -10,
+      42,
+      114,
+      127
+     ]
+    },
+    {
+     "index": 5,
+     "rot_ccw": 85.0,
+     "translate": [
+      0,
+      8
+     ],
+     "opaque": 5791,
+     "outside_128": 63,
+     "bbox": [
+      -6,
+      51,
+      109,
+      127
+     ]
+    },
+    {
+     "index": 6,
+     "rot_ccw": 90.0,
+     "translate": [
+      0,
+      9
+     ],
+     "opaque": 5792,
+     "outside_128": 33,
+     "bbox": [
+      -3,
+      50,
+      108,
+      129
+     ]
+    }
+   ]
+  }
+ }
+}

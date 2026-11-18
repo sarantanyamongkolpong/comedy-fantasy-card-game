@@ -1,0 +1,4382 @@
+{
+ "asset_id": "ANIM_AVT_SAN_001_V2",
+ "character_id": "AVT_SAN_001",
+ "name_en": "Sister Plaster",
+ "timing_template": "ANIM_SHARED_002",
+ "status": "PROTOTYPE",
+ "production_ready": false,
+ "pixels": "No frame is hand-placed pixel art. Idle/Attack/Defend/Hit pixels are the standing equipped sprite shifted by hand-authored integer offsets. KO pixels are a nearest-neighbour rotation of that sprite plus the held in-frame translation.",
+ "canvas": [
+  128,
+  128
+ ],
+ "baseline_y": 122,
+ "alpha": "0 or 255",
+ "loadout": {
+  "headgear": "EQ_SAN_CAP_HEALER_001",
+  "main_hand": "EQ_SAN_STAFF_BANDAGE_001",
+  "off_hand": "EQ_SAN_CLIPBOARD_001"
+ },
+ "anchors_rest": {
+  "head": [
+   68,
+   18
+  ],
+  "main_hand": [
+   48,
+   61
+  ],
+  "off_hand": [
+   93,
+   60
+  ],
+  "back": [
+   62,
+   54
+  ],
+  "body_center": [
+   66,
+   78
+  ],
+  "feet": [
+   64,
+   122
+  ]
+ },
+ "states": {
+  "idle": {
+   "status": "PROTOTYPE (hand-authored offsets carried from the tuned ANIM_SHARED_001 idle)",
+   "placement": "hand-authored-offsets",
+   "loop": true,
+   "hold_last": false,
+   "frame_ms": 180,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_idle_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_idle_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       19
+      ],
+      "main_hand": [
+       48,
+       62
+      ],
+      "off_hand": [
+       93,
+       61
+      ],
+      "back": [
+       62,
+       55
+      ],
+      "body_center": [
+       66,
+       79
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        19
+       ],
+       "draw_xy": [
+        56,
+        14
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        62
+       ],
+       "draw_xy": [
+        24,
+        10
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        61
+       ],
+       "draw_xy": [
+        84,
+        45
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       19
+      ],
+      "main_hand": [
+       48,
+       62
+      ],
+      "off_hand": [
+       93,
+       61
+      ],
+      "back": [
+       62,
+       55
+      ],
+      "body_center": [
+       66,
+       79
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        19
+       ],
+       "draw_xy": [
+        56,
+        14
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        62
+       ],
+       "draw_xy": [
+        24,
+        10
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        61
+       ],
+       "draw_xy": [
+        84,
+        45
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       19
+      ],
+      "main_hand": [
+       48,
+       62
+      ],
+      "off_hand": [
+       93,
+       61
+      ],
+      "back": [
+       62,
+       55
+      ],
+      "body_center": [
+       66,
+       79
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        19
+       ],
+       "draw_xy": [
+        56,
+        14
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        62
+       ],
+       "draw_xy": [
+        24,
+        10
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        61
+       ],
+       "draw_xy": [
+        84,
+        45
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    }
+   ]
+  },
+  "attack": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 80,
+   "frame_count": 8,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 8,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_attack_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_attack_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       67,
+       18
+      ],
+      "main_hand": [
+       47,
+       61
+      ],
+      "off_hand": [
+       92,
+       60
+      ],
+      "back": [
+       61,
+       54
+      ],
+      "body_center": [
+       65,
+       78
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        18
+       ],
+       "draw_xy": [
+        55,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        61
+       ],
+       "draw_xy": [
+        23,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        92,
+        60
+       ],
+       "draw_xy": [
+        83,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       2,
+       0
+      ],
+      "head": [
+       2,
+       0
+      ],
+      "main": [
+       2,
+       0
+      ],
+      "off": [
+       2,
+       0
+      ],
+      "vfx": [
+       2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       18
+      ],
+      "main_hand": [
+       50,
+       61
+      ],
+      "off_hand": [
+       95,
+       60
+      ],
+      "back": [
+       64,
+       54
+      ],
+      "body_center": [
+       68,
+       78
+      ],
+      "feet": [
+       66,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        70,
+        18
+       ],
+       "draw_xy": [
+        58,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        50,
+        61
+       ],
+       "draw_xy": [
+        26,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        95,
+        60
+       ],
+       "draw_xy": [
+        86,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       2,
+       0
+      ],
+      "head": [
+       2,
+       0
+      ],
+      "main": [
+       2,
+       0
+      ],
+      "off": [
+       2,
+       0
+      ],
+      "vfx": [
+       2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       70,
+       18
+      ],
+      "main_hand": [
+       50,
+       61
+      ],
+      "off_hand": [
+       95,
+       60
+      ],
+      "back": [
+       64,
+       54
+      ],
+      "body_center": [
+       68,
+       78
+      ],
+      "feet": [
+       66,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        70,
+        18
+       ],
+       "draw_xy": [
+        58,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        50,
+        61
+       ],
+       "draw_xy": [
+        26,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        95,
+        60
+       ],
+       "draw_xy": [
+        86,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       1,
+       0
+      ],
+      "head": [
+       1,
+       0
+      ],
+      "main": [
+       1,
+       0
+      ],
+      "off": [
+       1,
+       0
+      ],
+      "vfx": [
+       1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       69,
+       18
+      ],
+      "main_hand": [
+       49,
+       61
+      ],
+      "off_hand": [
+       94,
+       60
+      ],
+      "back": [
+       63,
+       54
+      ],
+      "body_center": [
+       67,
+       78
+      ],
+      "feet": [
+       65,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        69,
+        18
+       ],
+       "draw_xy": [
+        57,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        49,
+        61
+       ],
+       "draw_xy": [
+        25,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        94,
+        60
+       ],
+       "draw_xy": [
+        85,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 6,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 7,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    }
+   ]
+  },
+  "defend": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 100,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_defend_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_defend_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       67,
+       18
+      ],
+      "main_hand": [
+       47,
+       61
+      ],
+      "off_hand": [
+       92,
+       60
+      ],
+      "back": [
+       61,
+       54
+      ],
+      "body_center": [
+       65,
+       78
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        18
+       ],
+       "draw_xy": [
+        55,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        61
+       ],
+       "draw_xy": [
+        23,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        92,
+        60
+       ],
+       "draw_xy": [
+        83,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "tint": "guard",
+      "vfx_fx": "defend"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       67,
+       18
+      ],
+      "main_hand": [
+       47,
+       61
+      ],
+      "off_hand": [
+       92,
+       60
+      ],
+      "back": [
+       61,
+       54
+      ],
+      "body_center": [
+       65,
+       78
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        18
+       ],
+       "draw_xy": [
+        55,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        61
+       ],
+       "draw_xy": [
+        23,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        92,
+        60
+       ],
+       "draw_xy": [
+        83,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "tint": "guard",
+      "vfx_fx": "defend"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    }
+   ]
+  },
+  "hit": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 60,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_hit_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_hit_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white",
+      "vfx_fx": "hit"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       67,
+       18
+      ],
+      "main_hand": [
+       47,
+       61
+      ],
+      "off_hand": [
+       92,
+       60
+      ],
+      "back": [
+       61,
+       54
+      ],
+      "body_center": [
+       65,
+       78
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        18
+       ],
+       "draw_xy": [
+        55,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        61
+       ],
+       "draw_xy": [
+        23,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        92,
+        60
+       ],
+       "draw_xy": [
+        83,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white",
+      "vfx_fx": "hit"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       -2,
+       0
+      ],
+      "head": [
+       -2,
+       0
+      ],
+      "main": [
+       -2,
+       0
+      ],
+      "off": [
+       -2,
+       0
+      ],
+      "vfx": [
+       -2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       18
+      ],
+      "main_hand": [
+       46,
+       61
+      ],
+      "off_hand": [
+       91,
+       60
+      ],
+      "back": [
+       60,
+       54
+      ],
+      "body_center": [
+       64,
+       78
+      ],
+      "feet": [
+       62,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        18
+       ],
+       "draw_xy": [
+        54,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        61
+       ],
+       "draw_xy": [
+        22,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        91,
+        60
+       ],
+       "draw_xy": [
+        82,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "hit"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       -2,
+       0
+      ],
+      "head": [
+       -2,
+       0
+      ],
+      "main": [
+       -2,
+       0
+      ],
+      "off": [
+       -2,
+       0
+      ],
+      "vfx": [
+       -2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       18
+      ],
+      "main_hand": [
+       46,
+       61
+      ],
+      "off_hand": [
+       91,
+       60
+      ],
+      "back": [
+       60,
+       54
+      ],
+      "body_center": [
+       64,
+       78
+      ],
+      "feet": [
+       62,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        18
+       ],
+       "draw_xy": [
+        54,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        61
+       ],
+       "draw_xy": [
+        22,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        91,
+        60
+       ],
+       "draw_xy": [
+        82,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "red"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       67,
+       18
+      ],
+      "main_hand": [
+       47,
+       61
+      ],
+      "off_hand": [
+       92,
+       60
+      ],
+      "back": [
+       61,
+       54
+      ],
+      "body_center": [
+       65,
+       78
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        18
+       ],
+       "draw_xy": [
+        55,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        61
+       ],
+       "draw_xy": [
+        23,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        92,
+        60
+       ],
+       "draw_xy": [
+        83,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5792
+    }
+   ]
+  },
+  "ko": {
+   "status": "PROTOTYPE (hand-authored angles, procedural nearest-neighbour rotation, automatic in-frame translation)",
+   "placement": "procedural-rotation",
+   "loop": false,
+   "hold_last": true,
+   "frame_ms": 90,
+   "frame_count": 12,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 12,
+   "attachment_mode": "rigid_rotation",
+   "canonical_strip": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_ko_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_ko_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "rot_ccw": 0,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       68,
+       18
+      ],
+      "main_hand": [
+       48,
+       61
+      ],
+      "off_hand": [
+       93,
+       60
+      ],
+      "back": [
+       62,
+       54
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        18
+       ],
+       "draw_xy": [
+        56,
+        13
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        61
+       ],
+       "draw_xy": [
+        24,
+        9
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        93,
+        60
+       ],
+       "draw_xy": [
+        84,
+        44
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white"
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 1,
+     "rot_ccw": 12,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       55,
+       19
+      ],
+      "main_hand": [
+       45,
+       65
+      ],
+      "off_hand": [
+       89,
+       55
+      ],
+      "back": [
+       57,
+       55
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       73,
+       121
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        55,
+        19
+       ],
+       "draw_xy": [
+        43,
+        14
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        65
+       ],
+       "draw_xy": [
+        21,
+        13
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        89,
+        55
+       ],
+       "draw_xy": [
+        80,
+        39
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5796
+    },
+    {
+     "index": 2,
+     "rot_ccw": 18,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       49,
+       20
+      ],
+      "main_hand": [
+       44,
+       67
+      ],
+      "off_hand": [
+       86,
+       53
+      ],
+      "back": [
+       55,
+       56
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       78,
+       120
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        49,
+        20
+       ],
+       "draw_xy": [
+        37,
+        15
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        44,
+        67
+       ],
+       "draw_xy": [
+        20,
+        15
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        53
+       ],
+       "draw_xy": [
+        77,
+        37
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5780
+    },
+    {
+     "index": 3,
+     "rot_ccw": 24,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       43,
+       22
+      ],
+      "main_hand": [
+       43,
+       70
+      ],
+      "off_hand": [
+       83,
+       51
+      ],
+      "back": [
+       53,
+       58
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       82,
+       119
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        43,
+        22
+       ],
+       "draw_xy": [
+        31,
+        17
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        43,
+        70
+       ],
+       "draw_xy": [
+        19,
+        18
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        83,
+        51
+       ],
+       "draw_xy": [
+        74,
+        35
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5793
+    },
+    {
+     "index": 4,
+     "rot_ccw": 30,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       38,
+       25
+      ],
+      "main_hand": [
+       42,
+       72
+      ],
+      "off_hand": [
+       80,
+       49
+      ],
+      "back": [
+       51,
+       59
+      ],
+      "body_center": [
+       66,
+       78
+      ],
+      "feet": [
+       86,
+       117
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        38,
+        25
+       ],
+       "draw_xy": [
+        26,
+        20
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        42,
+        72
+       ],
+       "draw_xy": [
+        18,
+        20
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        80,
+        49
+       ],
+       "draw_xy": [
+        71,
+        33
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5778
+    },
+    {
+     "index": 5,
+     "rot_ccw": 36,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      3,
+      0
+     ],
+     "anchors": {
+      "head": [
+       35,
+       28
+      ],
+      "main_hand": [
+       44,
+       75
+      ],
+      "off_hand": [
+       80,
+       48
+      ],
+      "back": [
+       52,
+       61
+      ],
+      "body_center": [
+       69,
+       78
+      ],
+      "feet": [
+       93,
+       115
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        35,
+        28
+       ],
+       "draw_xy": [
+        23,
+        23
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        44,
+        75
+       ],
+       "draw_xy": [
+        20,
+        23
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        80,
+        48
+       ],
+       "draw_xy": [
+        71,
+        32
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5798
+    },
+    {
+     "index": 6,
+     "rot_ccw": 42,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      6,
+      0
+     ],
+     "anchors": {
+      "head": [
+       33,
+       32
+      ],
+      "main_hand": [
+       47,
+       77
+      ],
+      "off_hand": [
+       80,
+       47
+      ],
+      "back": [
+       53,
+       63
+      ],
+      "body_center": [
+       72,
+       78
+      ],
+      "feet": [
+       100,
+       112
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        33,
+        32
+       ],
+       "draw_xy": [
+        21,
+        27
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        77
+       ],
+       "draw_xy": [
+        23,
+        25
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        80,
+        47
+       ],
+       "draw_xy": [
+        71,
+        31
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5794
+    },
+    {
+     "index": 7,
+     "rot_ccw": 48,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      8,
+      0
+     ],
+     "anchors": {
+      "head": [
+       31,
+       36
+      ],
+      "main_hand": [
+       49,
+       80
+      ],
+      "off_hand": [
+       79,
+       46
+      ],
+      "back": [
+       53,
+       65
+      ],
+      "body_center": [
+       74,
+       78
+      ],
+      "feet": [
+       105,
+       109
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        31,
+        36
+       ],
+       "draw_xy": [
+        19,
+        31
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        49,
+        80
+       ],
+       "draw_xy": [
+        25,
+        28
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        79,
+        46
+       ],
+       "draw_xy": [
+        70,
+        30
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5785
+    },
+    {
+     "index": 8,
+     "rot_ccw": 54,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      10,
+      0
+     ],
+     "anchors": {
+      "head": [
+       29,
+       41
+      ],
+      "main_hand": [
+       52,
+       83
+      ],
+      "off_hand": [
+       77,
+       46
+      ],
+      "back": [
+       54,
+       67
+      ],
+      "body_center": [
+       76,
+       78
+      ],
+      "feet": [
+       110,
+       105
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        29,
+        41
+       ],
+       "draw_xy": [
+        17,
+        36
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        52,
+        83
+       ],
+       "draw_xy": [
+        28,
+        31
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        77,
+        46
+       ],
+       "draw_xy": [
+        68,
+        30
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5790
+    },
+    {
+     "index": 9,
+     "rot_ccw": 60,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      11,
+      0
+     ],
+     "anchors": {
+      "head": [
+       26,
+       46
+      ],
+      "main_hand": [
+       53,
+       85
+      ],
+      "off_hand": [
+       75,
+       46
+      ],
+      "back": [
+       54,
+       69
+      ],
+      "body_center": [
+       77,
+       78
+      ],
+      "feet": [
+       114,
+       102
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        26,
+        46
+       ],
+       "draw_xy": [
+        14,
+        41
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        53,
+        85
+       ],
+       "draw_xy": [
+        29,
+        33
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        75,
+        46
+       ],
+       "draw_xy": [
+        66,
+        30
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 5782
+    },
+    {
+     "index": 10,
+     "rot_ccw": 75,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      11,
+      0
+     ],
+     "anchors": {
+      "head": [
+       20,
+       61
+      ],
+      "main_hand": [
+       56,
+       91
+      ],
+      "off_hand": [
+       67,
+       47
+      ],
+      "back": [
+       53,
+       76
+      ],
+      "body_center": [
+       77,
+       78
+      ],
+      "feet": [
+       119,
+       91
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        20,
+        61
+       ],
+       "draw_xy": [
+        8,
+        56
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        56,
+        91
+       ],
+       "draw_xy": [
+        32,
+        39
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        47
+       ],
+       "draw_xy": [
+        58,
+        31
+       ]
+      }
+     ],
+     "effects": {
+      "dim": 0.35
+     },
+     "opaque": 5792
+    },
+    {
+     "index": 11,
+     "rot_ccw": 90,
+     "pivot": "body_center",
+     "pivot_xy": [
+      66,
+      78
+     ],
+     "translate": [
+      11,
+      0
+     ],
+     "anchors": {
+      "head": [
+       17,
+       76
+      ],
+      "main_hand": [
+       60,
+       96
+      ],
+      "off_hand": [
+       59,
+       51
+      ],
+      "back": [
+       53,
+       82
+      ],
+      "body_center": [
+       77,
+       78
+      ],
+      "feet": [
+       121,
+       80
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_SAN_CAP_HEALER_001",
+       "pivot": [
+        12,
+        5
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        17,
+        76
+       ],
+       "draw_xy": [
+        5,
+        71
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_SAN_STAFF_BANDAGE_001",
+       "pivot": [
+        24,
+        52
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        60,
+        96
+       ],
+       "draw_xy": [
+        36,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_SAN_CLIPBOARD_001",
+       "pivot": [
+        9,
+        16
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        59,
+        51
+       ],
+       "draw_xy": [
+        50,
+        35
+       ]
+      }
+     ],
+     "effects": {
+      "dim": 0.5
+     },
+     "opaque": 5792
+    }
+   ]
+  }
+ }
+}

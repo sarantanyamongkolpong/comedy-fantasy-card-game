@@ -1,0 +1,4382 @@
+{
+ "asset_id": "ANIM_AVT_AEG_001_V2",
+ "character_id": "AVT_AEG_001",
+ "name_en": "Sir Potlid",
+ "timing_template": "ANIM_SHARED_002",
+ "status": "PROTOTYPE",
+ "production_ready": false,
+ "pixels": "No frame is hand-placed pixel art. Idle/Attack/Defend/Hit pixels are the standing equipped sprite shifted by hand-authored integer offsets. KO pixels are a nearest-neighbour rotation of that sprite plus the held in-frame translation.",
+ "canvas": [
+  128,
+  128
+ ],
+ "baseline_y": 122,
+ "alpha": "0 or 255",
+ "loadout": {
+  "headgear": "EQ_AEG_POT_HELMET_SILVER_001",
+  "main_hand": "EQ_AEG_SWORD_POTLID_001",
+  "off_hand": "EQ_AEG_SHIELD_POTLID_001"
+ },
+ "anchors_rest": {
+  "head": [
+   66,
+   34
+  ],
+  "main_hand": [
+   46,
+   75
+  ],
+  "off_hand": [
+   86,
+   76
+  ],
+  "back": [
+   60,
+   58
+  ],
+  "body_center": [
+   62,
+   80
+  ],
+  "feet": [
+   64,
+   122
+  ]
+ },
+ "states": {
+  "idle": {
+   "status": "PROTOTYPE (hand-authored offsets carried from the tuned ANIM_SHARED_001 idle)",
+   "placement": "hand-authored-offsets",
+   "loop": true,
+   "hold_last": false,
+   "frame_ms": 180,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_idle_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_idle_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       35
+      ],
+      "main_hand": [
+       46,
+       76
+      ],
+      "off_hand": [
+       86,
+       77
+      ],
+      "back": [
+       60,
+       59
+      ],
+      "body_center": [
+       62,
+       81
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        35
+       ],
+       "draw_xy": [
+        44,
+        25
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        76
+       ],
+       "draw_xy": [
+        29,
+        45
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        77
+       ],
+       "draw_xy": [
+        68,
+        53
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -2
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       35
+      ],
+      "main_hand": [
+       46,
+       76
+      ],
+      "off_hand": [
+       86,
+       77
+      ],
+      "back": [
+       60,
+       59
+      ],
+      "body_center": [
+       62,
+       81
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        35
+       ],
+       "draw_xy": [
+        44,
+        25
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        76
+       ],
+       "draw_xy": [
+        29,
+        45
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        77
+       ],
+       "draw_xy": [
+        68,
+        53
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       0,
+       1
+      ],
+      "head": [
+       0,
+       1
+      ],
+      "main": [
+       0,
+       1
+      ],
+      "off": [
+       0,
+       1
+      ],
+      "vfx": [
+       0,
+       -1
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       35
+      ],
+      "main_hand": [
+       46,
+       76
+      ],
+      "off_hand": [
+       86,
+       77
+      ],
+      "back": [
+       60,
+       59
+      ],
+      "body_center": [
+       62,
+       81
+      ],
+      "feet": [
+       64,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        35
+       ],
+       "draw_xy": [
+        44,
+        25
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        76
+       ],
+       "draw_xy": [
+        29,
+        45
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        77
+       ],
+       "draw_xy": [
+        68,
+        53
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    }
+   ]
+  },
+  "attack": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 80,
+   "frame_count": 8,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 8,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_attack_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_attack_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       65,
+       34
+      ],
+      "main_hand": [
+       45,
+       75
+      ],
+      "off_hand": [
+       85,
+       76
+      ],
+      "back": [
+       59,
+       58
+      ],
+      "body_center": [
+       61,
+       80
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        65,
+        34
+       ],
+       "draw_xy": [
+        43,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        75
+       ],
+       "draw_xy": [
+        28,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        76
+       ],
+       "draw_xy": [
+        67,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       65,
+       34
+      ],
+      "main_hand": [
+       45,
+       75
+      ],
+      "off_hand": [
+       85,
+       76
+      ],
+      "back": [
+       59,
+       58
+      ],
+      "body_center": [
+       61,
+       80
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        65,
+        34
+       ],
+       "draw_xy": [
+        43,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        75
+       ],
+       "draw_xy": [
+        28,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        76
+       ],
+       "draw_xy": [
+        67,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       3,
+       0
+      ],
+      "head": [
+       3,
+       0
+      ],
+      "main": [
+       3,
+       0
+      ],
+      "off": [
+       3,
+       0
+      ],
+      "vfx": [
+       3,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       69,
+       34
+      ],
+      "main_hand": [
+       49,
+       75
+      ],
+      "off_hand": [
+       89,
+       76
+      ],
+      "back": [
+       63,
+       58
+      ],
+      "body_center": [
+       65,
+       80
+      ],
+      "feet": [
+       67,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        69,
+        34
+       ],
+       "draw_xy": [
+        47,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        49,
+        75
+       ],
+       "draw_xy": [
+        32,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        89,
+        76
+       ],
+       "draw_xy": [
+        71,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       3,
+       0
+      ],
+      "head": [
+       3,
+       0
+      ],
+      "main": [
+       3,
+       0
+      ],
+      "off": [
+       3,
+       0
+      ],
+      "vfx": [
+       3,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       69,
+       34
+      ],
+      "main_hand": [
+       49,
+       75
+      ],
+      "off_hand": [
+       89,
+       76
+      ],
+      "back": [
+       63,
+       58
+      ],
+      "body_center": [
+       65,
+       80
+      ],
+      "feet": [
+       67,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        69,
+        34
+       ],
+       "draw_xy": [
+        47,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        49,
+        75
+       ],
+       "draw_xy": [
+        32,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        89,
+        76
+       ],
+       "draw_xy": [
+        71,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       2,
+       0
+      ],
+      "head": [
+       2,
+       0
+      ],
+      "main": [
+       2,
+       0
+      ],
+      "off": [
+       2,
+       0
+      ],
+      "vfx": [
+       2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       68,
+       34
+      ],
+      "main_hand": [
+       48,
+       75
+      ],
+      "off_hand": [
+       88,
+       76
+      ],
+      "back": [
+       62,
+       58
+      ],
+      "body_center": [
+       64,
+       80
+      ],
+      "feet": [
+       66,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        68,
+        34
+       ],
+       "draw_xy": [
+        46,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        48,
+        75
+       ],
+       "draw_xy": [
+        31,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        88,
+        76
+       ],
+       "draw_xy": [
+        70,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "attack"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 6,
+     "groups": {
+      "body": [
+       1,
+       0
+      ],
+      "head": [
+       1,
+       0
+      ],
+      "main": [
+       1,
+       0
+      ],
+      "off": [
+       1,
+       0
+      ],
+      "vfx": [
+       1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       67,
+       34
+      ],
+      "main_hand": [
+       47,
+       75
+      ],
+      "off_hand": [
+       87,
+       76
+      ],
+      "back": [
+       61,
+       58
+      ],
+      "body_center": [
+       63,
+       80
+      ],
+      "feet": [
+       65,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        67,
+        34
+       ],
+       "draw_xy": [
+        45,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        75
+       ],
+       "draw_xy": [
+        30,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        87,
+        76
+       ],
+       "draw_xy": [
+        69,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 7,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    }
+   ]
+  },
+  "defend": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 100,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_defend_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_defend_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       65,
+       34
+      ],
+      "main_hand": [
+       45,
+       75
+      ],
+      "off_hand": [
+       85,
+       76
+      ],
+      "back": [
+       59,
+       58
+      ],
+      "body_center": [
+       61,
+       80
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        65,
+        34
+       ],
+       "draw_xy": [
+        43,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        75
+       ],
+       "draw_xy": [
+        28,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        76
+       ],
+       "draw_xy": [
+        67,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       -2,
+       1
+      ],
+      "head": [
+       -2,
+       1
+      ],
+      "main": [
+       -2,
+       1
+      ],
+      "off": [
+       -2,
+       1
+      ],
+      "vfx": [
+       -2,
+       1
+      ]
+     },
+     "anchors": {
+      "head": [
+       64,
+       35
+      ],
+      "main_hand": [
+       44,
+       76
+      ],
+      "off_hand": [
+       84,
+       77
+      ],
+      "back": [
+       58,
+       59
+      ],
+      "body_center": [
+       60,
+       81
+      ],
+      "feet": [
+       62,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        35
+       ],
+       "draw_xy": [
+        42,
+        25
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        44,
+        76
+       ],
+       "draw_xy": [
+        27,
+        45
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        84,
+        77
+       ],
+       "draw_xy": [
+        66,
+        53
+       ]
+      }
+     ],
+     "effects": {
+      "tint": "guard",
+      "vfx_fx": "defend"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       -2,
+       1
+      ],
+      "head": [
+       -2,
+       1
+      ],
+      "main": [
+       -2,
+       1
+      ],
+      "off": [
+       -2,
+       1
+      ],
+      "vfx": [
+       -2,
+       1
+      ]
+     },
+     "anchors": {
+      "head": [
+       64,
+       35
+      ],
+      "main_hand": [
+       44,
+       76
+      ],
+      "off_hand": [
+       84,
+       77
+      ],
+      "back": [
+       58,
+       59
+      ],
+      "body_center": [
+       60,
+       81
+      ],
+      "feet": [
+       62,
+       123
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        35
+       ],
+       "draw_xy": [
+        42,
+        25
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        44,
+        76
+       ],
+       "draw_xy": [
+        27,
+        45
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        84,
+        77
+       ],
+       "draw_xy": [
+        66,
+        53
+       ]
+      }
+     ],
+     "effects": {
+      "tint": "guard",
+      "vfx_fx": "defend"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       65,
+       34
+      ],
+      "main_hand": [
+       45,
+       75
+      ],
+      "off_hand": [
+       85,
+       76
+      ],
+      "back": [
+       59,
+       58
+      ],
+      "body_center": [
+       61,
+       80
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        65,
+        34
+       ],
+       "draw_xy": [
+        43,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        75
+       ],
+       "draw_xy": [
+        28,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        76
+       ],
+       "draw_xy": [
+        67,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    }
+   ]
+  },
+  "hit": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 60,
+   "frame_count": 6,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 6,
+   "attachment_mode": "locked_group_offset",
+   "canonical_strip": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_hit_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_hit_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white",
+      "vfx_fx": "hit"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 1,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       65,
+       34
+      ],
+      "main_hand": [
+       45,
+       75
+      ],
+      "off_hand": [
+       85,
+       76
+      ],
+      "back": [
+       59,
+       58
+      ],
+      "body_center": [
+       61,
+       80
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        65,
+        34
+       ],
+       "draw_xy": [
+        43,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        75
+       ],
+       "draw_xy": [
+        28,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        76
+       ],
+       "draw_xy": [
+        67,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white",
+      "vfx_fx": "hit"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 2,
+     "groups": {
+      "body": [
+       -2,
+       0
+      ],
+      "head": [
+       -2,
+       0
+      ],
+      "main": [
+       -2,
+       0
+      ],
+      "off": [
+       -2,
+       0
+      ],
+      "vfx": [
+       -2,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       64,
+       34
+      ],
+      "main_hand": [
+       44,
+       75
+      ],
+      "off_hand": [
+       84,
+       76
+      ],
+      "back": [
+       58,
+       58
+      ],
+      "body_center": [
+       60,
+       80
+      ],
+      "feet": [
+       62,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        64,
+        34
+       ],
+       "draw_xy": [
+        42,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        44,
+        75
+       ],
+       "draw_xy": [
+        27,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        84,
+        76
+       ],
+       "draw_xy": [
+        66,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "vfx_fx": "hit"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 3,
+     "groups": {
+      "body": [
+       -1,
+       0
+      ],
+      "head": [
+       -1,
+       0
+      ],
+      "main": [
+       -1,
+       0
+      ],
+      "off": [
+       -1,
+       0
+      ],
+      "vfx": [
+       -1,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       65,
+       34
+      ],
+      "main_hand": [
+       45,
+       75
+      ],
+      "off_hand": [
+       85,
+       76
+      ],
+      "back": [
+       59,
+       58
+      ],
+      "body_center": [
+       61,
+       80
+      ],
+      "feet": [
+       63,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        65,
+        34
+       ],
+       "draw_xy": [
+        43,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        75
+       ],
+       "draw_xy": [
+        28,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        76
+       ],
+       "draw_xy": [
+        67,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "red"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 4,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    },
+    {
+     "index": 5,
+     "groups": {
+      "body": [
+       0,
+       0
+      ],
+      "head": [
+       0,
+       0
+      ],
+      "main": [
+       0,
+       0
+      ],
+      "off": [
+       0,
+       0
+      ],
+      "vfx": [
+       0,
+       0
+      ]
+     },
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4718
+    }
+   ]
+  },
+  "ko": {
+   "status": "PROTOTYPE (hand-authored angles, procedural nearest-neighbour rotation, automatic in-frame translation)",
+   "placement": "procedural-rotation",
+   "loop": false,
+   "hold_last": true,
+   "frame_ms": 90,
+   "frame_count": 12,
+   "hand_placed_pixel_frames": 0,
+   "procedural_frames": 12,
+   "attachment_mode": "rigid_rotation",
+   "canonical_strip": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_ko_strip_v2.png",
+   "preview_gif": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_ko_v2.gif",
+   "preview_gif_note": "GIF adds a hard white flash and combat VFX on top of the canonical pixels. The strip does not.",
+   "frames": [
+    {
+     "index": 0,
+     "rot_ccw": 0,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       66,
+       34
+      ],
+      "main_hand": [
+       46,
+       75
+      ],
+      "off_hand": [
+       86,
+       76
+      ],
+      "back": [
+       60,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       64,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        34
+       ],
+       "draw_xy": [
+        44,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        75
+       ],
+       "draw_xy": [
+        29,
+        44
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        76
+       ],
+       "draw_xy": [
+        68,
+        52
+       ]
+      }
+     ],
+     "effects": {
+      "flash": "white"
+     },
+     "opaque": 4718
+    },
+    {
+     "index": 1,
+     "rot_ccw": 4,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       63,
+       34
+      ],
+      "main_hand": [
+       46,
+       76
+      ],
+      "off_hand": [
+       86,
+       74
+      ],
+      "back": [
+       58,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       67,
+       122
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        63,
+        34
+       ],
+       "draw_xy": [
+        41,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        76
+       ],
+       "draw_xy": [
+        29,
+        45
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        86,
+        74
+       ],
+       "draw_xy": [
+        68,
+        50
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4717
+    },
+    {
+     "index": 2,
+     "rot_ccw": 8,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       60,
+       34
+      ],
+      "main_hand": [
+       45,
+       77
+      ],
+      "off_hand": [
+       85,
+       73
+      ],
+      "back": [
+       57,
+       58
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       70,
+       121
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        60,
+        34
+       ],
+       "draw_xy": [
+        38,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        77
+       ],
+       "draw_xy": [
+        28,
+        46
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        85,
+        73
+       ],
+       "draw_xy": [
+        67,
+        49
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4725
+    },
+    {
+     "index": 3,
+     "rot_ccw": 14,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       55,
+       34
+      ],
+      "main_hand": [
+       45,
+       79
+      ],
+      "off_hand": [
+       84,
+       70
+      ],
+      "back": [
+       55,
+       59
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       74,
+       120
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        55,
+        34
+       ],
+       "draw_xy": [
+        33,
+        24
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        79
+       ],
+       "draw_xy": [
+        28,
+        48
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        84,
+        70
+       ],
+       "draw_xy": [
+        66,
+        46
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4719
+    },
+    {
+     "index": 4,
+     "rot_ccw": 20,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      0
+     ],
+     "anchors": {
+      "head": [
+       50,
+       35
+      ],
+      "main_hand": [
+       45,
+       81
+      ],
+      "off_hand": [
+       83,
+       68
+      ],
+      "back": [
+       53,
+       60
+      ],
+      "body_center": [
+       62,
+       80
+      ],
+      "feet": [
+       78,
+       119
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        50,
+        35
+       ],
+       "draw_xy": [
+        28,
+        25
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        45,
+        81
+       ],
+       "draw_xy": [
+        28,
+        50
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        83,
+        68
+       ],
+       "draw_xy": [
+        65,
+        44
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4716
+    },
+    {
+     "index": 5,
+     "rot_ccw": 28,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       44,
+       37
+      ],
+      "main_hand": [
+       46,
+       82
+      ],
+      "off_hand": [
+       81,
+       64
+      ],
+      "back": [
+       50,
+       61
+      ],
+      "body_center": [
+       62,
+       79
+      ],
+      "feet": [
+       83,
+       115
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        44,
+        37
+       ],
+       "draw_xy": [
+        22,
+        27
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        46,
+        82
+       ],
+       "draw_xy": [
+        29,
+        51
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        81,
+        64
+       ],
+       "draw_xy": [
+        63,
+        40
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4722
+    },
+    {
+     "index": 6,
+     "rot_ccw": 40,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       35,
+       41
+      ],
+      "main_hand": [
+       47,
+       85
+      ],
+      "off_hand": [
+       78,
+       61
+      ],
+      "back": [
+       46,
+       63
+      ],
+      "body_center": [
+       62,
+       79
+      ],
+      "feet": [
+       91,
+       110
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        35,
+        41
+       ],
+       "draw_xy": [
+        13,
+        31
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        47,
+        85
+       ],
+       "draw_xy": [
+        30,
+        54
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        78,
+        61
+       ],
+       "draw_xy": [
+        60,
+        37
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4708
+    },
+    {
+     "index": 7,
+     "rot_ccw": 55,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       27,
+       49
+      ],
+      "main_hand": [
+       49,
+       89
+      ],
+      "off_hand": [
+       72,
+       57
+      ],
+      "back": [
+       43,
+       68
+      ],
+      "body_center": [
+       62,
+       79
+      ],
+      "feet": [
+       98,
+       101
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        27,
+        49
+       ],
+       "draw_xy": [
+        5,
+        39
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        49,
+        89
+       ],
+       "draw_xy": [
+        32,
+        58
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        72,
+        57
+       ],
+       "draw_xy": [
+        54,
+        33
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4720
+    },
+    {
+     "index": 8,
+     "rot_ccw": 70,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       20,
+       60
+      ],
+      "main_hand": [
+       52,
+       92
+      ],
+      "off_hand": [
+       66,
+       55
+      ],
+      "back": [
+       41,
+       73
+      ],
+      "body_center": [
+       62,
+       79
+      ],
+      "feet": [
+       102,
+       91
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        20,
+        60
+       ],
+       "draw_xy": [
+        -2,
+        50
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        52,
+        92
+       ],
+       "draw_xy": [
+        35,
+        61
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        66,
+        55
+       ],
+       "draw_xy": [
+        48,
+        31
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4717
+    },
+    {
+     "index": 9,
+     "rot_ccw": 80,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       17,
+       67
+      ],
+      "main_hand": [
+       54,
+       94
+      ],
+      "off_hand": [
+       62,
+       55
+      ],
+      "back": [
+       40,
+       77
+      ],
+      "body_center": [
+       62,
+       79
+      ],
+      "feet": [
+       104,
+       84
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        17,
+        67
+       ],
+       "draw_xy": [
+        -5,
+        57
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        54,
+        94
+       ],
+       "draw_xy": [
+        37,
+        63
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        62,
+        55
+       ],
+       "draw_xy": [
+        44,
+        31
+       ]
+      }
+     ],
+     "effects": {},
+     "opaque": 4713
+    },
+    {
+     "index": 10,
+     "rot_ccw": 86,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       16,
+       72
+      ],
+      "main_hand": [
+       56,
+       95
+      ],
+      "off_hand": [
+       60,
+       55
+      ],
+      "back": [
+       40,
+       79
+      ],
+      "body_center": [
+       62,
+       79
+      ],
+      "feet": [
+       104,
+       80
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        16,
+        72
+       ],
+       "draw_xy": [
+        -6,
+        62
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        56,
+        95
+       ],
+       "draw_xy": [
+        39,
+        64
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        60,
+        55
+       ],
+       "draw_xy": [
+        42,
+        31
+       ]
+      }
+     ],
+     "effects": {
+      "dim": 0.35
+     },
+     "opaque": 4719
+    },
+    {
+     "index": 11,
+     "rot_ccw": 90,
+     "pivot": "body_center",
+     "pivot_xy": [
+      62,
+      80
+     ],
+     "translate": [
+      0,
+      -1
+     ],
+     "anchors": {
+      "head": [
+       16,
+       75
+      ],
+      "main_hand": [
+       57,
+       95
+      ],
+      "off_hand": [
+       58,
+       55
+      ],
+      "back": [
+       40,
+       81
+      ],
+      "body_center": [
+       62,
+       79
+      ],
+      "feet": [
+       104,
+       77
+      ]
+     },
+     "attachments": [
+      {
+       "slot": "headgear",
+       "item_id": "EQ_AEG_POT_HELMET_SILVER_001",
+       "pivot": [
+        22,
+        10
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        16,
+        75
+       ],
+       "draw_xy": [
+        -6,
+        65
+       ]
+      },
+      {
+       "slot": "main_hand",
+       "item_id": "EQ_AEG_SWORD_POTLID_001",
+       "pivot": [
+        17,
+        31
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        57,
+        95
+       ],
+       "draw_xy": [
+        40,
+        64
+       ]
+      },
+      {
+       "slot": "off_hand",
+       "item_id": "EQ_AEG_SHIELD_POTLID_001",
+       "pivot": [
+        18,
+        24
+       ],
+       "fit": [
+        0,
+        0
+       ],
+       "anchor": [
+        58,
+        55
+       ],
+       "draw_xy": [
+        40,
+        31
+       ]
+      }
+     ],
+     "effects": {
+      "dim": 0.5
+     },
+     "opaque": 4718
+    }
+   ]
+  }
+ }
+}
