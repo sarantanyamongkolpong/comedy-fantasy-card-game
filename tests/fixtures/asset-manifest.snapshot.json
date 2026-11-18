@@ -1,0 +1,299 @@
+{
+  "_snapshot": {
+    "source_branch": "feat/card-art-prototype-mira",
+    "source_commit": "d65c89dc87a9554d5611a108146b509c7aa7fcf0",
+    "note": "Partial JSON snapshot for loader tests. Not a live dependency. No binaries were copied. The source manifest lists 87 assets; this file keeps a subset.",
+    "source_file": "docs/ASSET_MANIFEST.json"
+  },
+  "project": "Comedy Fantasy Card Game — First 4 Avatars",
+  "manifest_version": 1,
+  "status_legend": [
+    "CONCEPT",
+    "PROTOTYPE",
+    "QA_PASSED",
+    "PRODUCTION_READY",
+    "INTEGRATED"
+  ],
+  "characters": {
+    "AVT_AEG_001": "Sir Potlid / เซอร์ฝาหม้อ · Aegis Dominion · Tank · humanoid_heavy",
+    "AVT_PHA_001": "Nox Squeak / น็อกซ์ รองเท้าดัง · Phantom Blades · DPS · humanoid_standard",
+    "AVT_CEL_001": "Madame Meteor / มาดามดาวตก · Celestial Nexus · Magic · humanoid_standard",
+    "AVT_SAN_001": "Sister Plaster / ซิสเตอร์พลาสเตอร์ · Sanctuary Order · Support · humanoid_standard"
+  },
+  "stats": "POW/DEF/SPD values TBD; rarity TBD; card AP costs TBD",
+  "source_asset_count": 87,
+  "assets": [
+    {
+      "asset_id": "RIG_HUMANOID_HEAVY_001",
+      "path": "assets/characters/_rigs/humanoid_heavy.json",
+      "type": "rig_definition",
+      "owner": "shared",
+      "status": "PROTOTYPE",
+      "note": "default anchors + per-character measured anchors, layer list and fit offsets",
+      "sha256": "d1e26959c56636bec27d6d772aac49894bf60c8d7ef4457ea58871ca53276840",
+      "bytes": 3886
+    },
+    {
+      "asset_id": "SPR_AVT_AEG_001_L04_headgear_gold",
+      "path": "assets/characters/AVT_AEG_001/sprite/AVT_AEG_001_L04_headgear_gold.png",
+      "type": "sprite_layer",
+      "owner": "AVT_AEG_001",
+      "rig": "humanoid_heavy",
+      "layer": "L04",
+      "slot": "headgear",
+      "variant": "gold",
+      "pivot": [
+        0,
+        0
+      ],
+      "pivot_note": "character-fitted layer: canvas-aligned (0,0)",
+      "anchors": {
+        "head": [
+          66,
+          34
+        ],
+        "main_hand": [
+          46,
+          75
+        ],
+        "off_hand": [
+          86,
+          76
+        ],
+        "back": [
+          60,
+          58
+        ],
+        "body_center": [
+          62,
+          80
+        ],
+        "feet": [
+          64,
+          122
+        ]
+      },
+      "status": "PROTOTYPE",
+      "fill_note": "recolour of OUR silver helmet layer by luminance rank; gold ramp sampled from owner gold ref palette",
+      "qa": {
+        "alpha_0_255": true,
+        "canvas_128": true
+      },
+      "sha256": "2da24db6a50a4a3b664dd203a4004e82b8996193a99fe3641ecf58b0e60f7151",
+      "bytes": 911,
+      "canvas_px": [
+        128,
+        128
+      ]
+    },
+    {
+      "asset_id": "EQ_AEG_POT_HELMET_SILVER_001",
+      "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_AEG_001",
+      "slot": "headgear",
+      "pivot": [
+        22,
+        10
+      ],
+      "pivot_kind": "mount",
+      "native_origin_on_128": [
+        44,
+        24
+      ],
+      "variant_of": null,
+      "status": "PROTOTYPE",
+      "reuse": "character-specific shape",
+      "sha256": "5d5e4423f551df37649f552d1dbf46440d5d4f9d0e789421d383875e10663467",
+      "bytes": 1304,
+      "canvas_px": [
+        39,
+        28
+      ]
+    },
+    {
+      "asset_id": "EQ_AEG_POT_HELMET_GOLD_001",
+      "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_AEG_001",
+      "slot": "headgear",
+      "pivot": [
+        22,
+        10
+      ],
+      "pivot_kind": "mount",
+      "native_origin_on_128": [
+        44,
+        24
+      ],
+      "variant_of": "EQ_AEG_POT_HELMET_SILVER_001",
+      "status": "PROTOTYPE",
+      "reuse": "character-specific shape",
+      "sha256": "c2f43bc25b18f68bb5434260f8d063063d9a9d3217b8df1934292be2df33a3d3",
+      "bytes": 723,
+      "canvas_px": [
+        39,
+        28
+      ]
+    },
+    {
+      "asset_id": "EQ_SWORD_BASIC_001",
+      "path": "assets/equipment/EQ_SWORD_BASIC_001.png",
+      "type": "equipment_item",
+      "owner": "shared",
+      "slot": "main_hand",
+      "pivot": [
+        5,
+        29
+      ],
+      "pivot_kind": "grip",
+      "compatible_rigs": [
+        "humanoid_heavy",
+        "humanoid_standard"
+      ],
+      "tested_on": [
+        "AVT_AEG_001",
+        "AVT_PHA_001"
+      ],
+      "status": "PROTOTYPE",
+      "note": "Plain steel short sword, blade up, brass guard",
+      "sha256": "25620f91f9903d8e151f8fe37dd61b96a2042946697e8449c1e0f4ace2b70364",
+      "bytes": 228,
+      "canvas_px": [
+        11,
+        36
+      ]
+    },
+    {
+      "asset_id": "EQ_DAGGER_BASIC_001",
+      "path": "assets/equipment/EQ_DAGGER_BASIC_001.png",
+      "type": "equipment_item",
+      "owner": "shared",
+      "slot": "main_hand|off_hand",
+      "pivot": [
+        3,
+        4
+      ],
+      "pivot_kind": "grip",
+      "compatible_rigs": [
+        "humanoid_standard",
+        "humanoid_heavy"
+      ],
+      "tested_on": [
+        "AVT_PHA_001",
+        "AVT_AEG_001"
+      ],
+      "status": "PROTOTYPE",
+      "note": "Plain dagger, reverse grip (blade down)",
+      "sha256": "c88c2f8b29228a23fdfb7d53e03710cabefcb027dbc8a040146d7bfa97394b6b",
+      "bytes": 190,
+      "canvas_px": [
+        7,
+        22
+      ]
+    },
+    {
+      "asset_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "path": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_SNEAKERS_SQUEAK_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_PHA_001",
+      "slot": "accessory",
+      "pivot": [
+        34,
+        21
+      ],
+      "pivot_kind": "mount",
+      "native_origin_on_128": [
+        30,
+        101
+      ],
+      "variant_of": null,
+      "status": "PROTOTYPE",
+      "reuse": "character-specific shape",
+      "sha256": "ca3ccf6f57f2b058d532e10577df392acb9bc39b17ebcc18f0a6936074711b60",
+      "bytes": 2043,
+      "canvas_px": [
+        64,
+        21
+      ]
+    },
+    {
+      "asset_id": "EMBLEM_AEGIS_001",
+      "path": "assets/card-art/frames/factions/EMBLEM_AEGIS_001.png",
+      "type": "card_emblem",
+      "owner": "shared",
+      "produced_by": "card_art_worker",
+      "status": "CONCEPT",
+      "sha256": "4c1a6100e79a0f14bf819ada6f339b8b3e9bb73c3a06351ccafbe398cea9ee56",
+      "bytes": 26552,
+      "canvas_px": [
+        256,
+        256
+      ]
+    },
+    {
+      "asset_id": "FRAME_AEGIS_001",
+      "path": "assets/card-art/frames/factions/FRAME_AEGIS_001.png",
+      "type": "card_frame",
+      "owner": "shared",
+      "produced_by": "card_art_worker",
+      "status": "PROTOTYPE",
+      "sha256": "4e1dfea73659afd48fd27b95fd91b30927a94755a8dca99d694874dc7391e188",
+      "bytes": 38320,
+      "canvas_px": [
+        750,
+        1050
+      ]
+    },
+    {
+      "asset_id": "FRAME_LAYOUT",
+      "path": "assets/card-art/frames/frame_layout.json",
+      "type": "card_frame_layout",
+      "owner": "shared",
+      "produced_by": "card_art_worker",
+      "status": "PROTOTYPE",
+      "sha256": "a9a3d23415b6c917ce75d3c19c0828d0782f76a40839f15be0acd0d3e7c7b423",
+      "bytes": 1162
+    },
+    {
+      "asset_id": "CARD_AVT_AEG_001_card_v1",
+      "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1.png",
+      "type": "card_art",
+      "owner": "AVT_AEG_001",
+      "produced_by": "card_art_worker",
+      "status": "PROTOTYPE",
+      "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+      "sha256": "d76154a694635ca19e9f0f0dfc005dd8e570e3a0b210e60c41c1b24c934e2b75",
+      "bytes": 1565117,
+      "canvas_px": [
+        864,
+        1152
+      ]
+    },
+    {
+      "asset_id": "CARD_AVT_AEG_001_card_v1_variant_goldpot",
+      "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_variant_goldpot.png",
+      "type": "card_art",
+      "owner": "AVT_AEG_001",
+      "produced_by": "card_art_worker",
+      "status": "CONCEPT",
+      "note": "flat painted illustration (not modular); see docs/CARD_ART_NOTES.md",
+      "sha256": "61ab7f81220fb974b588edd474735da2cc980020bbe10ec8a23404b09b77ef51",
+      "bytes": 1500861,
+      "canvas_px": [
+        864,
+        1152
+      ]
+    },
+    {
+      "asset_id": "ANIM_SHARED_001",
+      "path": "assets/animations/ANIM_SHARED_001.json",
+      "type": "animation_timing",
+      "owner": "shared",
+      "status": "PROTOTYPE",
+      "note": "Idle tuned/loopable; Attack/Defend/Hit/KO procedural prototypes (no hand-drawn frames)",
+      "sha256": "f220c224056101b1b58a4abf449c5d4671a4eab9581438442e3515ba2ee764d3",
+      "bytes": 6287
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "game.schema.json",
+  "title": "Comedy Fantasy Card Game core data",
+  "description": "Schema for catalog records. Numeric stats, rarity, and AP costs are allowed and are null in the shipped samples. Deck size, damage, HP, gacha rates, and upgrade formulas are not fields.",
+  "$defs": {
+    "Stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pow", "def", "spd", "valueStatus"],
+      "properties": {
+        "pow": { "type": ["integer", "null"], "minimum": 0 },
+        "def": { "type": ["integer", "null"], "minimum": 0 },
+        "spd": { "type": ["integer", "null"], "minimum": 0 },
+        "valueStatus": { "enum": ["TBD", "SET"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "valueStatus": { "const": "TBD" } }, "required": ["valueStatus"] },
+          "then": {
+            "properties": {
+              "pow": { "type": "null" },
+              "def": { "type": "null" },
+              "spd": { "type": "null" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "valueStatus": { "const": "SET" } }, "required": ["valueStatus"] },
+          "then": {
+            "properties": {
+              "pow": { "type": "integer" },
+              "def": { "type": "integer" },
+              "spd": { "type": "integer" }
+            }
+          }
+        }
+      ]
+    },
+    "Faction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["factionId", "name", "role"],
+      "properties": {
+        "factionId": { "enum": ["FAC_AEG", "FAC_PHA", "FAC_CEL", "FAC_SAN"] },
+        "name": {
+          "enum": ["Aegis Dominion", "Phantom Blades", "Celestial Nexus", "Sanctuary Order"]
+        },
+        "role": { "enum": ["Tank", "DPS", "Magic", "Support"] }
+      }
+    },
+    "Avatar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["avatarId", "nameEn", "nameTh", "factionId", "role", "stats", "rarity"],
+      "properties": {
+        "avatarId": { "type": "string", "pattern": "^AVT_[A-Z0-9_]+$" },
+        "nameEn": { "type": "string", "minLength": 1 },
+        "nameTh": { "type": "string", "minLength": 1 },
+        "factionId": { "enum": ["FAC_AEG", "FAC_PHA", "FAC_CEL", "FAC_SAN"] },
+        "role": { "enum": ["Tank", "DPS", "Magic", "Support"] },
+        "rigId": { "type": "string", "minLength": 1 },
+        "stats": { "$ref": "#/$defs/Stats" },
+        "rarity": { "type": ["string", "null"] },
+        "assetIds": {
+          "type": "object",
+          "additionalProperties": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "AvatarCard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cardId", "cardKind", "avatarId", "nameEn", "nameTh", "factionId", "role", "rarity", "stats", "assetId"],
+      "properties": {
+        "cardId": { "type": "string", "minLength": 1 },
+        "cardKind": { "const": "avatar_card" },
+        "avatarId": { "type": "string", "minLength": 1 },
+        "nameEn": { "type": "string", "minLength": 1 },
+        "nameTh": { "type": "string", "minLength": 1 },
+        "factionId": { "enum": ["FAC_AEG", "FAC_PHA", "FAC_CEL", "FAC_SAN"] },
+        "role": { "enum": ["Tank", "DPS", "Magic", "Support"] },
+        "rarity": { "type": ["string", "null"] },
+        "stats": { "$ref": "#/$defs/Stats" },
+        "assetId": { "type": "string", "minLength": 1 }
+      }
+    },
+    "ActionCard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cardId", "cardKind", "actionType", "name", "apCost", "costStatus", "effectId", "rarity"],
+      "properties": {
+        "cardId": { "type": "string", "minLength": 1 },
+        "cardKind": { "const": "action_card" },
+        "actionType": { "enum": ["ATK", "DEF", "Skill"] },
+        "name": { "type": ["string", "null"] },
+        "apCost": { "type": ["integer", "null"], "minimum": 0 },
+        "costStatus": { "enum": ["TBD", "SET"] },
+        "effectId": { "type": ["string", "null"] },
+        "rarity": { "type": ["string", "null"] },
+        "labels": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "Equipment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["equipmentId", "slot", "nativeAvatarId", "assetId", "variantOf", "statModifiers", "upgrade", "upgradeStatus"],
+      "properties": {
+        "equipmentId": { "type": "string", "minLength": 1 },
+        "slot": { "type": "string", "minLength": 1 },
+        "nativeAvatarId": { "type": ["string", "null"] },
+        "assetId": { "type": "string", "minLength": 1 },
+        "variantOf": { "type": ["string", "null"] },
+        "statModifiers": { "$ref": "#/$defs/Stats" },
+        "upgrade": { "type": "null" },
+        "upgradeStatus": { "const": "BLOCKED_BY_DESIGN" }
+      }
+    },
+    "Ownership": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ownershipId", "ownerId", "subjectKind", "subjectId", "quantity", "source", "sourceStatus"],
+      "properties": {
+        "ownershipId": { "type": "string", "minLength": 1 },
+        "ownerId": { "type": "string", "minLength": 1 },
+        "subjectKind": { "enum": ["avatar", "avatar_card", "action_card", "equipment"] },
+        "subjectId": { "type": "string", "minLength": 1 },
+        "quantity": { "type": ["integer", "null"], "minimum": 1 },
+        "source": { "type": "null" },
+        "sourceStatus": { "const": "TBD" }
+      }
+    },
+    "Variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["variantId", "baseId", "subjectKind", "label", "assetId", "status"],
+      "properties": {
+        "variantId": { "type": "string", "minLength": 1 },
+        "baseId": { "type": "string", "minLength": 1 },
+        "subjectKind": { "enum": ["equipment", "card_art", "sprite_layer"] },
+        "label": { "type": ["string", "null"] },
+        "assetId": { "type": "string", "minLength": 1 },
+        "status": {
+          "enum": ["CONCEPT", "PROTOTYPE", "QA_PASSED", "PRODUCTION_READY", "INTEGRATED"]
+        }
+      }
+    },
+    "AssetManifestEntry": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["asset_id", "path", "type", "owner", "status"],
+      "properties": {
+        "asset_id": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "owner": { "type": "string", "minLength": 1 },
+        "status": {
+          "enum": ["CONCEPT", "PROTOTYPE", "QA_PASSED", "PRODUCTION_READY", "INTEGRATED"]
+        },
+        "note": { "type": "string" },
+        "sha256": { "type": "string" },
+        "bytes": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}
