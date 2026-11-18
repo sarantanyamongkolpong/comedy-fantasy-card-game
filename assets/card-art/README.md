@@ -38,3 +38,7 @@ Rejected PHA try 2 (not a deliverable): `../characters/AVT_PHA_001/card/_rejecte
 | frame_layout.json | `frames/frame_layout.json` | PROTOTYPE |
 
 Proofs (review only): `frames/_proofs/PROOF_*.png`, `PROOF_contact_sheet.png`, `FRAMES_and_EMBLEMS_sheet.png`, `EMBLEMS_sheet.png`, generator `frames/_proofs/make_proofs.py`.
+
+## v2 quality pass
+
+v1 files above are unchanged. v2 adds a masked gold-pot recolour (gold on the pot helmet only), a top-left light pass on new frame files, and `EMBLEM_AEGIS_v2.png`. Base card PNGs for the four avatars are byte-copies of v1. Nothing here is PRODUCTION_READY. See `docs/CARD_ART_CONSISTENCY_REPORT.md` and `docs/manifest_additions/card_art_v2.json`.
