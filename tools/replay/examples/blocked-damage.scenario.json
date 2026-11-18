@@ -1,0 +1,111 @@
+{
+  "format": "comedy-fantasy.scenario",
+  "version": 1,
+  "label": "TEST-ONLY",
+  "note": "TEST-ONLY fixture. Stat numbers and AP costs are not catalog values. Damage and skill stay on the engine defaults and record BLOCKED_BY_DESIGN.",
+  "battleId": "blocked-damage",
+  "rulesetId": "test-only-sum-spd-ko",
+  "sideA": {
+    "sideId": "PLAYER",
+    "members": [
+      {
+        "avatarId": "AVT_AEG_001",
+        "stats": { "pow": 0, "def": 0, "spd": 4, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY"]
+      },
+      {
+        "avatarId": "AVT_PHA_001",
+        "stats": { "pow": 0, "def": 0, "spd": 3, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY"]
+      },
+      {
+        "avatarId": "AVT_CEL_001",
+        "stats": { "pow": 0, "def": 0, "spd": 2, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY"]
+      },
+      {
+        "avatarId": "AVT_SAN_001",
+        "stats": { "pow": 0, "def": 0, "spd": 1, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY"]
+      }
+    ]
+  },
+  "sideB": {
+    "sideId": "RIVAL",
+    "members": [
+      {
+        "avatarId": "TESTONLY_RIVAL_1",
+        "stats": { "pow": 0, "def": 0, "spd": 1, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY", "FIXTURE_SLOT"]
+      },
+      {
+        "avatarId": "TESTONLY_RIVAL_2",
+        "stats": { "pow": 0, "def": 0, "spd": 0, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY", "FIXTURE_SLOT"]
+      },
+      {
+        "avatarId": "TESTONLY_RIVAL_3",
+        "stats": { "pow": 0, "def": 0, "spd": 0, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY", "FIXTURE_SLOT"]
+      },
+      {
+        "avatarId": "TESTONLY_RIVAL_4",
+        "stats": { "pow": 0, "def": 0, "spd": 0, "valueStatus": "SET" },
+        "markers": { "ko": false },
+        "labels": ["TEST-ONLY", "FIXTURE_SLOT"]
+      }
+    ]
+  },
+  "hands": {
+    "PLAYER": [
+      {
+        "cardId": "ATK_CARD",
+        "cardKind": "action_card",
+        "actionType": "ATK",
+        "name": null,
+        "apCost": null,
+        "costStatus": "TBD",
+        "effectId": null,
+        "rarity": null,
+        "labels": ["TEST-ONLY"]
+      },
+      {
+        "cardId": "SKILL_CARD",
+        "cardKind": "action_card",
+        "actionType": "Skill",
+        "name": null,
+        "apCost": null,
+        "costStatus": "TBD",
+        "effectId": null,
+        "rarity": null,
+        "labels": ["TEST-ONLY"]
+      },
+      {
+        "cardId": "DEF_CARD",
+        "cardKind": "action_card",
+        "actionType": "DEF",
+        "name": null,
+        "apCost": null,
+        "costStatus": "TBD",
+        "effectId": null,
+        "rarity": null,
+        "labels": ["TEST-ONLY"]
+      }
+    ]
+  },
+  "steps": [
+    { "op": "act", "sideId": "PLAYER", "cardId": "ATK_CARD" },
+    { "op": "act", "sideId": "PLAYER", "cardId": "SKILL_CARD" },
+    { "op": "act", "sideId": "PLAYER", "cardId": "DEF_CARD" },
+    { "op": "endTurn" },
+    { "op": "endTurn" },
+    { "op": "act", "sideId": "PLAYER", "cardId": "DEF_CARD" }
+  ]
+}

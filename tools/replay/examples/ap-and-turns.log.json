@@ -1,0 +1,4876 @@
+{
+  "battleId": "ap-and-turns",
+  "events": [
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 3,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "SKILL_CARD",
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "ATK_CARD",
+            "SKILL_CARD",
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 0,
+      "input": {
+        "cardId": "ATK_CARD",
+        "sideId": "PLAYER"
+      },
+      "op": "play",
+      "result": {
+        "actionType": "ATK",
+        "apAfter": 3,
+        "apBefore": 5,
+        "cardId": "ATK_CARD",
+        "cost": 2,
+        "effect": "not_applied",
+        "ok": true,
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "status": "PLAYED",
+        "turnIndex": 1
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 3,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "SKILL_CARD",
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 3,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "SKILL_CARD",
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 1,
+      "input": {
+        "cardId": "RIVAL_ATK",
+        "sideId": "RIVAL"
+      },
+      "op": "play",
+      "result": {
+        "ap": null,
+        "cost": null,
+        "ok": false,
+        "reason": "NOT_ACTIVE_SIDE",
+        "status": "REJECTED"
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 3,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "SKILL_CARD",
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 2,
+      "input": {
+        "cardId": "SKILL_CARD",
+        "sideId": "PLAYER"
+      },
+      "op": "play",
+      "result": {
+        "actionType": "Skill",
+        "apAfter": 0,
+        "apBefore": 3,
+        "cardId": "SKILL_CARD",
+        "cost": 3,
+        "effect": "not_applied",
+        "ok": true,
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "status": "PLAYED",
+        "turnIndex": 1
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 3,
+      "input": {
+        "cardId": "DEF_CARD",
+        "sideId": "PLAYER"
+      },
+      "op": "play",
+      "result": {
+        "ap": 0,
+        "cost": 1,
+        "ok": false,
+        "reason": "INSUFFICIENT_AP",
+        "status": "REJECTED"
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "activeSideId": "RIVAL",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": 5
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "PLAYER",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 2
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 4,
+      "input": {},
+      "op": "endTurn",
+      "result": {
+        "activeSideId": "RIVAL",
+        "ap": 5,
+        "ok": true,
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "status": "TURN_ENDED"
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "activeSideId": "RIVAL",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": 3
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "PLAYER",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 2
+      },
+      "before": {
+        "activeAvatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "activeSideId": "RIVAL",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": 5
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "PLAYER",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": [
+            "RIVAL_ATK"
+          ]
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 2
+      },
+      "index": 5,
+      "input": {
+        "cardId": "RIVAL_ATK",
+        "sideId": "RIVAL"
+      },
+      "op": "play",
+      "result": {
+        "actionType": "ATK",
+        "apAfter": 3,
+        "apBefore": 5,
+        "cardId": "RIVAL_ATK",
+        "cost": 2,
+        "effect": "not_applied",
+        "ok": true,
+        "roundIndex": 1,
+        "sideId": "RIVAL",
+        "status": "PLAYED",
+        "turnIndex": 2
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": 3
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "PLAYER",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "RIVAL",
+            "roundIndex": 2,
+            "sideId": "PLAYER",
+            "turnIndex": 3,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 2,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 3
+      },
+      "before": {
+        "activeAvatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "activeSideId": "RIVAL",
+        "ap": {
+          "PLAYER": 0,
+          "RIVAL": 3
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "PLAYER",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 2
+      },
+      "index": 6,
+      "input": {},
+      "op": "endTurn",
+      "result": {
+        "activeSideId": "PLAYER",
+        "ap": 5,
+        "ok": true,
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "status": "TURN_ENDED"
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 4,
+          "RIVAL": 3
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "PLAYER",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "RIVAL",
+            "roundIndex": 2,
+            "sideId": "PLAYER",
+            "turnIndex": 3,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "DEF",
+            "cardId": "DEF_CARD",
+            "cost": 1,
+            "effect": "not_applied",
+            "roundIndex": 2,
+            "sideId": "PLAYER",
+            "turnIndex": 3,
+            "type": "play"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          },
+          {
+            "actionType": "DEF",
+            "cardId": "DEF_CARD",
+            "cost": 1,
+            "effect": "not_applied",
+            "roundIndex": 2,
+            "sideId": "PLAYER",
+            "turnIndex": 3,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 2,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 3
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": 3
+        },
+        "baseAp": 5,
+        "battleId": "ap-and-turns",
+        "engineLog": [
+          {
+            "battleId": "ap-and-turns",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "PLAYER",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "turn_start"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          },
+          {
+            "ap": 5,
+            "previousSideId": "RIVAL",
+            "roundIndex": 2,
+            "sideId": "PLAYER",
+            "turnIndex": 3,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [
+            "DEF_CARD"
+          ],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [
+          {
+            "actionType": "ATK",
+            "cardId": "ATK_CARD",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "Skill",
+            "cardId": "SKILL_CARD",
+            "cost": 3,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "play"
+          },
+          {
+            "actionType": "ATK",
+            "cardId": "RIVAL_ATK",
+            "cost": 2,
+            "effect": "not_applied",
+            "roundIndex": 1,
+            "sideId": "RIVAL",
+            "turnIndex": 2,
+            "type": "play"
+          }
+        ],
+        "roundIndex": 2,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 3
+      },
+      "index": 7,
+      "input": {
+        "cardId": "DEF_CARD",
+        "sideId": "PLAYER"
+      },
+      "op": "play",
+      "result": {
+        "actionType": "DEF",
+        "apAfter": 4,
+        "apBefore": 5,
+        "cardId": "DEF_CARD",
+        "cost": 1,
+        "effect": "not_applied",
+        "ok": true,
+        "roundIndex": 2,
+        "sideId": "PLAYER",
+        "status": "PLAYED",
+        "turnIndex": 3
+      }
+    }
+  ],
+  "finalState": {
+    "activeAvatarIds": [
+      "AVT_AEG_001",
+      "AVT_PHA_001",
+      "AVT_CEL_001",
+      "AVT_SAN_001"
+    ],
+    "activeSideId": "PLAYER",
+    "ap": {
+      "PLAYER": 4,
+      "RIVAL": 3
+    },
+    "baseAp": 5,
+    "battleId": "ap-and-turns",
+    "engineLog": [
+      {
+        "battleId": "ap-and-turns",
+        "startingSideId": "PLAYER",
+        "teamSpd": {
+          "PLAYER": 10,
+          "RIVAL": 1
+        },
+        "type": "battle_start"
+      },
+      {
+        "ap": 5,
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "turn_start"
+      },
+      {
+        "actionType": "ATK",
+        "cardId": "ATK_CARD",
+        "cost": 2,
+        "effect": "not_applied",
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "play"
+      },
+      {
+        "actionType": "Skill",
+        "cardId": "SKILL_CARD",
+        "cost": 3,
+        "effect": "not_applied",
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "play"
+      },
+      {
+        "ap": 5,
+        "previousSideId": "PLAYER",
+        "roundIndex": 1,
+        "sideId": "RIVAL",
+        "turnIndex": 2,
+        "type": "turn_start"
+      },
+      {
+        "actionType": "ATK",
+        "cardId": "RIVAL_ATK",
+        "cost": 2,
+        "effect": "not_applied",
+        "roundIndex": 1,
+        "sideId": "RIVAL",
+        "turnIndex": 2,
+        "type": "play"
+      },
+      {
+        "ap": 5,
+        "previousSideId": "RIVAL",
+        "roundIndex": 2,
+        "sideId": "PLAYER",
+        "turnIndex": 3,
+        "type": "turn_start"
+      },
+      {
+        "actionType": "DEF",
+        "cardId": "DEF_CARD",
+        "cost": 1,
+        "effect": "not_applied",
+        "roundIndex": 2,
+        "sideId": "PLAYER",
+        "turnIndex": 3,
+        "type": "play"
+      }
+    ],
+    "hands": {
+      "PLAYER": [],
+      "RIVAL": []
+    },
+    "outcome": {
+      "loserSideId": null,
+      "status": "ongoing",
+      "verdict": null,
+      "winnerSideId": null
+    },
+    "playedRecords": [
+      {
+        "actionType": "ATK",
+        "cardId": "ATK_CARD",
+        "cost": 2,
+        "effect": "not_applied",
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "play"
+      },
+      {
+        "actionType": "Skill",
+        "cardId": "SKILL_CARD",
+        "cost": 3,
+        "effect": "not_applied",
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "play"
+      },
+      {
+        "actionType": "ATK",
+        "cardId": "RIVAL_ATK",
+        "cost": 2,
+        "effect": "not_applied",
+        "roundIndex": 1,
+        "sideId": "RIVAL",
+        "turnIndex": 2,
+        "type": "play"
+      },
+      {
+        "actionType": "DEF",
+        "cardId": "DEF_CARD",
+        "cost": 1,
+        "effect": "not_applied",
+        "roundIndex": 2,
+        "sideId": "PLAYER",
+        "turnIndex": 3,
+        "type": "play"
+      }
+    ],
+    "roundIndex": 2,
+    "sides": {
+      "PLAYER": {
+        "avatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "members": [
+          {
+            "avatarId": "AVT_AEG_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 4,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_PHA_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 3,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_CEL_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 2,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_SAN_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "PLAYER"
+      },
+      "RIVAL": {
+        "avatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "members": [
+          {
+            "avatarId": "TESTONLY_RIVAL_1",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_2",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_3",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_4",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "RIVAL"
+      }
+    },
+    "startingSideId": "PLAYER",
+    "turnIndex": 3
+  },
+  "format": "comedy-fantasy.battle-log",
+  "initialState": {
+    "activeAvatarIds": [
+      "AVT_AEG_001",
+      "AVT_PHA_001",
+      "AVT_CEL_001",
+      "AVT_SAN_001"
+    ],
+    "activeSideId": "PLAYER",
+    "ap": {
+      "PLAYER": 5,
+      "RIVAL": null
+    },
+    "baseAp": 5,
+    "battleId": "ap-and-turns",
+    "engineLog": [
+      {
+        "battleId": "ap-and-turns",
+        "startingSideId": "PLAYER",
+        "teamSpd": {
+          "PLAYER": 10,
+          "RIVAL": 1
+        },
+        "type": "battle_start"
+      },
+      {
+        "ap": 5,
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "turn_start"
+      }
+    ],
+    "hands": {
+      "PLAYER": [
+        "ATK_CARD",
+        "SKILL_CARD",
+        "DEF_CARD"
+      ],
+      "RIVAL": [
+        "RIVAL_ATK"
+      ]
+    },
+    "outcome": {
+      "loserSideId": null,
+      "status": "ongoing",
+      "verdict": null,
+      "winnerSideId": null
+    },
+    "playedRecords": [],
+    "roundIndex": 1,
+    "sides": {
+      "PLAYER": {
+        "avatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "members": [
+          {
+            "avatarId": "AVT_AEG_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 4,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_PHA_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 3,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_CEL_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 2,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_SAN_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "PLAYER"
+      },
+      "RIVAL": {
+        "avatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "members": [
+          {
+            "avatarId": "TESTONLY_RIVAL_1",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_2",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_3",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_4",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "RIVAL"
+      }
+    },
+    "startingSideId": "PLAYER",
+    "turnIndex": 1
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "hash": "sha256:bad5eaf512e9246f9501b9d1c1e19be323d37b0ca7dcfc703629870969425360"
+  },
+  "label": "TEST-ONLY",
+  "note": "TEST-ONLY fixture. Plays spend the injected AP table and do not resolve effects. Turn ownership and the AP refresh are the engine's existing behavior.",
+  "ruleset": {
+    "entries": [
+      {
+        "key": "teamSpd",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "teamSpdSum",
+        "sourceHash": "sha256:350715d8f7aea7236505859b2834b1a7a170e55afec834f5eb5c0038316ae948"
+      },
+      {
+        "key": "spdTieBreak",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "spdTieBreak",
+        "sourceHash": "sha256:0e392e40dca95b22afe5cfc8e5f20b2c03684d00e9a771dc343a25dbffab1a4c"
+      },
+      {
+        "key": "isSideDefeated",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "sideDefeatedWhenEveryKo",
+        "sourceHash": "sha256:41dc29906c6fd2e2386732a91718d1c4efad53f97e4769489d0ebe7a0b7d6160"
+      },
+      {
+        "key": "simultaneousDefeat",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "simultaneousDefeat",
+        "sourceHash": "sha256:968e7a10f3ebb555996e9828dac44b7281af1262e75906957c4e221a9624c6fc"
+      },
+      {
+        "key": "perTurnActionLimit",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "noExtraActionLimit",
+        "sourceHash": "sha256:f2c88657e3821a721ee8ca316cbc892ca94e01c3e910aa66ab3511d8c021ed30"
+      },
+      {
+        "key": "resolveApCost",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "apCostByActionType",
+        "sourceHash": "sha256:f34338bf1978cd55548ac58d2f11032890289b2f59bad4b513e61e1636682164"
+      },
+      {
+        "key": "draw",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "draw",
+        "sourceHash": "sha256:620add5e5b054dd61725c9f47422778093c98d70a63862db3efea630031f4d1b"
+      },
+      {
+        "key": "discard",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "discard",
+        "sourceHash": "sha256:299efc6da3352fa541aedb8682a83652b3ecba0fc0c5668b12117d82d8113ce8"
+      },
+      {
+        "key": "deckSize",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "deckSize",
+        "sourceHash": "sha256:0f3c0c1d09acf42b0e9f164d58ed048504fed9da6b9ad646ca2491af7efbe515"
+      },
+      {
+        "key": "damage",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "damage",
+        "sourceHash": "sha256:567ef60db356d2dca0a0253d0afd9145927a8ecf673d2b2f524fc23376069cd3"
+      },
+      {
+        "key": "skillEffect",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "skillEffect",
+        "sourceHash": "sha256:a502c0b423dc3c334ad411f4062e1ce7113382698e103da30481a37a3348f74b"
+      },
+      {
+        "key": "gachaRate",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "gachaRate",
+        "sourceHash": "sha256:9744f68c0cfec9e718f23c7d3d12bc53e095a2006651760d5943b2e2525179f6"
+      },
+      {
+        "key": "upgrade",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "upgrade",
+        "sourceHash": "sha256:b325a5a018c2c5b40f01f12ffa3e5055b73b358d861fb55cc8a60528371b1b54"
+      }
+    ],
+    "hash": "sha256:00f144f0df4823976db3214a390df44794c8e68a15b99eea897ee3a97ba88f59",
+    "id": "test-only-sum-spd-ko",
+    "label": "TEST-ONLY",
+    "parameters": {
+      "apCostByActionType": {
+        "ATK": 2,
+        "DEF": 1,
+        "Skill": 3
+      },
+      "damage": "not injected; engine default throws",
+      "isSideDefeated": "true when every member marker ko is true",
+      "note": "Fixture values for the recorder. Not game defaults.",
+      "perTurnActionLimit": "accept while the play otherwise affords its cost",
+      "skillEffect": "not injected; engine default throws",
+      "teamSpd": "sum of the four member spd stats"
+    }
+  },
+  "setup": {
+    "hands": {
+      "PLAYER": [
+        {
+          "actionType": "ATK",
+          "apCost": null,
+          "cardId": "ATK_CARD",
+          "cardKind": "action_card",
+          "costStatus": "TBD",
+          "effectId": null,
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "name": null,
+          "rarity": null
+        },
+        {
+          "actionType": "Skill",
+          "apCost": null,
+          "cardId": "SKILL_CARD",
+          "cardKind": "action_card",
+          "costStatus": "TBD",
+          "effectId": null,
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "name": null,
+          "rarity": null
+        },
+        {
+          "actionType": "DEF",
+          "apCost": null,
+          "cardId": "DEF_CARD",
+          "cardKind": "action_card",
+          "costStatus": "TBD",
+          "effectId": null,
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "name": null,
+          "rarity": null
+        }
+      ],
+      "RIVAL": [
+        {
+          "actionType": "ATK",
+          "apCost": null,
+          "cardId": "RIVAL_ATK",
+          "cardKind": "action_card",
+          "costStatus": "TBD",
+          "effectId": null,
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "name": null,
+          "rarity": null
+        }
+      ]
+    },
+    "sideA": {
+      "members": [
+        {
+          "avatarId": "AVT_AEG_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 4,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "AVT_PHA_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 3,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "AVT_CEL_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 2,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "AVT_SAN_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 1,
+            "valueStatus": "SET"
+          }
+        }
+      ],
+      "sideId": "PLAYER"
+    },
+    "sideB": {
+      "members": [
+        {
+          "avatarId": "TESTONLY_RIVAL_1",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 1,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "TESTONLY_RIVAL_2",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 0,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "TESTONLY_RIVAL_3",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 0,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "TESTONLY_RIVAL_4",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 0,
+            "valueStatus": "SET"
+          }
+        }
+      ],
+      "sideId": "RIVAL"
+    }
+  },
+  "setupResult": {
+    "ok": true,
+    "status": "READY"
+  },
+  "version": 1
+}
