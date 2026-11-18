@@ -1,0 +1,417 @@
+{
+ "rig": "humanoid_standard",
+ "canvas": [
+  128,
+  128
+ ],
+ "baseline_y": 122,
+ "characters": {
+  "AVT_PHA_001": {
+   "anchors": {
+    "head": [
+     70,
+     30
+    ],
+    "main_hand": [
+     40,
+     66
+    ],
+    "off_hand": [
+     88,
+     60
+    ],
+    "back": [
+     60,
+     52
+    ],
+    "body_center": [
+     64,
+     74
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "layers": [
+    {
+     "file": "AVT_PHA_001_L01_body.png",
+     "layer": "L01",
+     "slot": "body",
+     "note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)"
+    },
+    {
+     "file": "AVT_PHA_001_L05_main_hand.png",
+     "layer": "L05",
+     "slot": "main_hand",
+     "fill": "31 occluded px synthesized (TELEA inpaint + palette snap); 0 px left transparent"
+    },
+    {
+     "file": "AVT_PHA_001_L06_off_hand.png",
+     "layer": "L06",
+     "slot": "off_hand",
+     "fill": "1 occluded px synthesized (TELEA inpaint + palette snap); 89 px left transparent"
+    },
+    {
+     "file": "AVT_PHA_001_L08_accessory_sneakers.png",
+     "layer": "L08",
+     "slot": "accessory",
+     "fill": "431 px: placeholder dark tabi feet painted under sneakers"
+    },
+    {
+     "file": "AVT_PHA_001_L09_vfx_squeak.png",
+     "layer": "L09",
+     "slot": "vfx",
+     "fill": "removed; background behind (no fill needed)"
+    },
+    {
+     "file": "AVT_PHA_001_L05f_main_hand_front.png",
+     "layer": "L05f",
+     "slot": "main_hand_front",
+     "note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped"
+    },
+    {
+     "file": "AVT_PHA_001_L06f_off_hand_front.png",
+     "layer": "L06f",
+     "slot": "off_hand_front",
+     "note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped"
+    }
+   ],
+   "native_items": {
+    "EQ_PHA_KUNAI_MAIN_001": {
+     "asset_id": "EQ_PHA_KUNAI_MAIN_001",
+     "file": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_MAIN_001.png",
+     "slot": "main_hand",
+     "pivot": [
+      5,
+      -3
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      13,
+      13
+     ],
+     "native_character": "AVT_PHA_001",
+     "native_origin": [
+      35,
+      69
+     ]
+    },
+    "EQ_PHA_KUNAI_OFF_001": {
+     "asset_id": "EQ_PHA_KUNAI_OFF_001",
+     "file": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_OFF_001.png",
+     "slot": "off_hand",
+     "pivot": [
+      1,
+      -3
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      15,
+      17
+     ],
+     "native_character": "AVT_PHA_001",
+     "native_origin": [
+      87,
+      63
+     ]
+    },
+    "EQ_PHA_SNEAKERS_SQUEAK_001": {
+     "asset_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+     "file": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_SNEAKERS_SQUEAK_001.png",
+     "slot": "accessory",
+     "pivot": [
+      34,
+      21
+     ],
+     "pivot_kind": "mount",
+     "size": [
+      64,
+      21
+     ],
+     "native_character": "AVT_PHA_001",
+     "native_origin": [
+      30,
+      101
+     ]
+    }
+   },
+   "fit": {},
+   "fit_note": "per-character extra offset [dx,dy] for specific items, applied after pivot->anchor (QA-tuned)"
+  },
+  "AVT_CEL_001": {
+   "anchors": {
+    "head": [
+     68,
+     32
+    ],
+    "main_hand": [
+     44,
+     62
+    ],
+    "off_hand": [
+     89,
+     58
+    ],
+    "back": [
+     64,
+     56
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "layers": [
+    {
+     "file": "AVT_CEL_001_L01_body.png",
+     "layer": "L01",
+     "slot": "body",
+     "note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)"
+    },
+    {
+     "file": "AVT_CEL_001_L04_headgear.png",
+     "layer": "L04",
+     "slot": "headgear",
+     "fill": "67 px: simple shaded hair cap painted under headgear; rest transparent"
+    },
+    {
+     "file": "AVT_CEL_001_L05_main_hand.png",
+     "layer": "L05",
+     "slot": "main_hand",
+     "fill": "191 occluded px synthesized (TELEA inpaint + palette snap); 414 px left transparent"
+    },
+    {
+     "file": "AVT_CEL_001_L06_off_hand.png",
+     "layer": "L06",
+     "slot": "off_hand",
+     "fill": "13 occluded px synthesized (TELEA inpaint + palette snap); 114 px left transparent"
+    },
+    {
+     "file": "AVT_CEL_001_L09_vfx_steam.png",
+     "layer": "L09",
+     "slot": "vfx",
+     "fill": "removed; background behind (no fill needed)"
+    },
+    {
+     "file": "AVT_CEL_001_L05f_main_hand_front.png",
+     "layer": "L05f",
+     "slot": "main_hand_front",
+     "note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped"
+    }
+   ],
+   "native_items": {
+    "EQ_CEL_HAT_ASTRO_001": {
+     "asset_id": "EQ_CEL_HAT_ASTRO_001",
+     "file": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_HAT_ASTRO_001.png",
+     "slot": "headgear",
+     "pivot": [
+      24,
+      16
+     ],
+     "pivot_kind": "mount",
+     "size": [
+      55,
+      41
+     ],
+     "native_character": "AVT_CEL_001",
+     "native_origin": [
+      44,
+      16
+     ]
+    },
+    "EQ_CEL_STAFF_PLANET_001": {
+     "asset_id": "EQ_CEL_STAFF_PLANET_001",
+     "file": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_STAFF_PLANET_001.png",
+     "slot": "main_hand",
+     "pivot": [
+      19,
+      45
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      30,
+      104
+     ],
+     "native_character": "AVT_CEL_001",
+     "native_origin": [
+      25,
+      17
+     ]
+    },
+    "EQ_CEL_NOODLE_CUP_001": {
+     "asset_id": "EQ_CEL_NOODLE_CUP_001",
+     "file": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_NOODLE_CUP_001.png",
+     "slot": "off_hand",
+     "pivot": [
+      3,
+      14
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      15,
+      19
+     ],
+     "native_character": "AVT_CEL_001",
+     "native_origin": [
+      86,
+      44
+     ]
+    }
+   },
+   "fit": {},
+   "fit_note": "per-character extra offset [dx,dy] for specific items, applied after pivot->anchor (QA-tuned)"
+  },
+  "AVT_SAN_001": {
+   "anchors": {
+    "head": [
+     68,
+     18
+    ],
+    "main_hand": [
+     48,
+     61
+    ],
+    "off_hand": [
+     93,
+     60
+    ],
+    "back": [
+     62,
+     54
+    ],
+    "body_center": [
+     66,
+     78
+    ],
+    "feet": [
+     64,
+     122
+    ]
+   },
+   "layers": [
+    {
+     "file": "AVT_SAN_001_L01_body.png",
+     "layer": "L01",
+     "slot": "body",
+     "note": "L01 base body + L02 face/hair + L03 outfit baked (flat-source simplification)"
+    },
+    {
+     "file": "AVT_SAN_001_L04_headgear.png",
+     "layer": "L04",
+     "slot": "headgear",
+     "fill": "60 px: simple shaded hair cap painted under headgear; rest transparent"
+    },
+    {
+     "file": "AVT_SAN_001_L05_main_hand.png",
+     "layer": "L05",
+     "slot": "main_hand",
+     "fill": "266 occluded px synthesized (TELEA inpaint + palette snap); 858 px left transparent"
+    },
+    {
+     "file": "AVT_SAN_001_L06_off_hand.png",
+     "layer": "L06",
+     "slot": "off_hand",
+     "fill": "8 occluded px synthesized (TELEA inpaint + palette snap); 279 px left transparent"
+    },
+    {
+     "file": "AVT_SAN_001_L05f_main_hand_front.png",
+     "layer": "L05f",
+     "slot": "main_hand_front",
+     "note": "grip overlay: original fist pixels drawn ABOVE the held item so any item looks gripped"
+    }
+   ],
+   "native_items": {
+    "EQ_SAN_CAP_HEALER_001": {
+     "asset_id": "EQ_SAN_CAP_HEALER_001",
+     "file": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CAP_HEALER_001.png",
+     "slot": "headgear",
+     "pivot": [
+      12,
+      5
+     ],
+     "pivot_kind": "mount",
+     "size": [
+      27,
+      18
+     ],
+     "native_character": "AVT_SAN_001",
+     "native_origin": [
+      56,
+      13
+     ]
+    },
+    "EQ_SAN_STAFF_BANDAGE_001": {
+     "asset_id": "EQ_SAN_STAFF_BANDAGE_001",
+     "file": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_STAFF_BANDAGE_001.png",
+     "slot": "main_hand",
+     "pivot": [
+      24,
+      52
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      35,
+      112
+     ],
+     "native_character": "AVT_SAN_001",
+     "native_origin": [
+      24,
+      9
+     ]
+    },
+    "EQ_SAN_CLIPBOARD_001": {
+     "asset_id": "EQ_SAN_CLIPBOARD_001",
+     "file": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CLIPBOARD_001.png",
+     "slot": "off_hand",
+     "pivot": [
+      9,
+      16
+     ],
+     "pivot_kind": "grip",
+     "size": [
+      15,
+      25
+     ],
+     "native_character": "AVT_SAN_001",
+     "native_origin": [
+      84,
+      44
+     ]
+    }
+   },
+   "fit": {},
+   "fit_note": "per-character extra offset [dx,dy] for specific items, applied after pivot->anchor (QA-tuned)"
+  }
+ },
+ "default_anchors": {
+  "head": [
+   64,
+   26
+  ],
+  "main_hand": [
+   40,
+   70
+  ],
+  "off_hand": [
+   88,
+   70
+  ],
+  "back": [
+   64,
+   52
+  ],
+  "body_center": [
+   64,
+   74
+  ],
+  "feet": [
+   64,
+   122
+  ]
+ }
+}

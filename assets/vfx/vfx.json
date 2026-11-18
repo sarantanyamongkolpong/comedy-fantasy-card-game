@@ -1,0 +1,62 @@
+{
+ "VFX_SLASH_001": {
+  "frame": [
+   32,
+   32
+  ],
+  "frames": 4,
+  "pivot": [
+   16,
+   16
+  ],
+  "use": "Attack (melee)"
+ },
+ "VFX_HIT_SPARK_001": {
+  "frame": [
+   16,
+   16
+  ],
+  "frames": 4,
+  "pivot": [
+   8,
+   8
+  ],
+  "use": "Hit"
+ },
+ "VFX_HEAL_SPARKLE_001": {
+  "frame": [
+   24,
+   24
+  ],
+  "frames": 4,
+  "pivot": [
+   12,
+   20
+  ],
+  "use": "Skill (support) / heal"
+ },
+ "VFX_MAGIC_PARTICLE_001": {
+  "frame": [
+   24,
+   24
+  ],
+  "frames": 4,
+  "pivot": [
+   12,
+   12
+  ],
+  "use": "Skill (magic)"
+ },
+ "VFX_GUARD_RING_001": {
+  "frame": [
+   32,
+   32
+  ],
+  "frames": 4,
+  "pivot": [
+   16,
+   16
+  ],
+  "use": "Defend"
+ }
+}

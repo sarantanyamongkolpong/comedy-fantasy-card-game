@@ -1,0 +1,40 @@
+{
+ "AVT_AEG_001": {
+  "notes": {
+   "L04_headgear_silver": "162 px: simple shaded hair cap painted under headgear; rest transparent",
+   "L05_main_hand": "54 occluded px synthesized (TELEA inpaint + palette snap); 221 px left transparent",
+   "L06_off_hand": "1114 px behind shield filled by mirroring the opposite body half about x=61; pixels with no mirrored source left transparent (approximate, normally hidden)"
+  },
+  "colors": 62,
+  "orphan_px_reassigned": 32
+ },
+ "AVT_PHA_001": {
+  "notes": {
+   "L05_main_hand": "31 occluded px synthesized (TELEA inpaint + palette snap); 0 px left transparent",
+   "L06_off_hand": "1 occluded px synthesized (TELEA inpaint + palette snap); 89 px left transparent",
+   "L08_accessory_sneakers": "431 px: placeholder dark tabi feet painted under sneakers",
+   "L09_vfx_squeak": "removed; background behind (no fill needed)"
+  },
+  "colors": 67,
+  "orphan_px_reassigned": 61
+ },
+ "AVT_CEL_001": {
+  "notes": {
+   "L04_headgear": "67 px: simple shaded hair cap painted under headgear; rest transparent",
+   "L05_main_hand": "191 occluded px synthesized (TELEA inpaint + palette snap); 414 px left transparent",
+   "L06_off_hand": "13 occluded px synthesized (TELEA inpaint + palette snap); 114 px left transparent",
+   "L09_vfx_steam": "removed; background behind (no fill needed)"
+  },
+  "colors": 80,
+  "orphan_px_reassigned": 69
+ },
+ "AVT_SAN_001": {
+  "notes": {
+   "L04_headgear": "60 px: simple shaded hair cap painted under headgear; rest transparent",
+   "L05_main_hand": "266 occluded px synthesized (TELEA inpaint + palette snap); 858 px left transparent",
+   "L06_off_hand": "8 occluded px synthesized (TELEA inpaint + palette snap); 279 px left transparent"
+  },
+  "colors": 76,
+  "orphan_px_reassigned": 80
+ }
+}

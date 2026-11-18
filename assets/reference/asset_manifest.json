@@ -1,0 +1,62 @@
+{
+  "project": "Comedy Fantasy Card Game",
+  "asset_pack_version": "0.1",
+  "style": "pixel_art_16bit",
+  "status": "static_sprite_prototypes_not_layered",
+  "background": "transparent",
+  "battle_sprite": "pixel_art",
+  "card_art": "separate_high_detail_illustration_tbd",
+  "shared_slots": ["headgear", "main_hand", "off_hand", "back", "accessory", "vfx"],
+  "anchor_names": ["head", "main_hand", "off_hand", "back", "body_center", "feet"],
+  "shared_rig_candidates": {
+    "humanoid_heavy": ["aegis_sir_potlid"],
+    "humanoid_standard": ["phantom_nox_squeak", "celestial_madame_meteor", "sanctuary_sister_plaster"]
+  },
+  "characters": [
+    {
+      "character_id": "aegis_sir_potlid",
+      "name_th": "เซอร์ฝาหม้อ",
+      "faction": "Aegis Dominion",
+      "battle_role": "Tank",
+      "rig": "humanoid_heavy",
+      "base_png": "sprites/aegis_sir_potlid_base.png",
+      "preview_variants": [{"variant_id": "gold_pot_helmet", "png": "sprites/aegis_sir_potlid_gold_helmet.png", "changes_only": ["headgear_material_color"]}],
+      "reusable_equipment_concepts": ["cooking_pot_helmet", "pot_lid_shield", "short_sword"]
+    },
+    {
+      "character_id": "phantom_nox_squeak",
+      "name_th": "น็อกซ์ รองเท้าดัง",
+      "faction": "Phantom Blades",
+      "battle_role": "DPS",
+      "rig": "humanoid_standard",
+      "base_png": "sprites/phantom_nox_squeak_base.png",
+      "reusable_equipment_concepts": ["twin_dagger", "scarf", "sneakers"]
+    },
+    {
+      "character_id": "celestial_madame_meteor",
+      "name_th": "มาดามดาวตก",
+      "faction": "Celestial Nexus",
+      "battle_role": "Magic",
+      "rig": "humanoid_standard",
+      "base_png": "sprites/celestial_madame_meteor_base.png",
+      "reusable_equipment_concepts": ["magic_staff", "mage_hat", "robe"]
+    },
+    {
+      "character_id": "sanctuary_sister_plaster",
+      "name_th": "ซิสเตอร์พลาสเตอร์",
+      "faction": "Sanctuary Order",
+      "battle_role": "Support",
+      "rig": "humanoid_standard",
+      "base_png": "sprites/sanctuary_sister_plaster_base.png",
+      "reusable_equipment_concepts": ["healer_staff", "robe", "medical_bag"]
+    }
+  ],
+  "todo_before_game_integration": [
+    "pick_game_pixel_grid_and_sprite_scale",
+    "extract_body_and_equipment_as_real_transparent_layers",
+    "define_and_validate_anchor_coordinates_for_each_rig",
+    "create_shared_animation_frames",
+    "test_cross_character_equipment_and_vfx",
+    "draw_separate_card_art"
+  ]
+}
