@@ -166,6 +166,21 @@ export function createBattle(input) {
 }
 
 /**
+ * Undo an `endTurn` that threw after it started writing.
+ * Assignments that never landed are left alone so a frozen field does not hide the original error.
+ * @param {object} state
+ * @param {string} nextSideId
+ * @param {{ turnIndex: number, roundIndex: number, activeSideId: string, nextAp: number | null, logLength: number }} checkpoint
+ */
+function rollbackEndTurn(state, nextSideId, checkpoint) {
+  if (state.turnIndex !== checkpoint.turnIndex) state.turnIndex = checkpoint.turnIndex;
+  if (state.roundIndex !== checkpoint.roundIndex) state.roundIndex = checkpoint.roundIndex;
+  if (state.activeSideId !== checkpoint.activeSideId) state.activeSideId = checkpoint.activeSideId;
+  if (state.ap[nextSideId] !== checkpoint.nextAp) state.ap[nextSideId] = checkpoint.nextAp;
+  if (state.log.length !== checkpoint.logLength) state.log.length = checkpoint.logLength;
+}
+
+/**
  * @param {object} state
  */
 export function endTurn(state) {
@@ -181,27 +196,23 @@ export function endTurn(state) {
     nextAp: state.ap[next],
     logLength: state.log.length,
   };
-  state.turnIndex += 1;
-  if (next === state.startingSideId) state.roundIndex += 1;
-  state.activeSideId = next;
-  state.ap[next] = BASE_AP;
-  state.log.push({
-    type: 'turn_start',
-    turnIndex: state.turnIndex,
-    roundIndex: state.roundIndex,
-    sideId: next,
-    ap: BASE_AP,
-    previousSideId: previous,
-  });
   try {
+    state.turnIndex += 1;
+    if (next === state.startingSideId) state.roundIndex += 1;
+    state.activeSideId = next;
+    state.ap[next] = BASE_AP;
+    state.log.push({
+      type: 'turn_start',
+      turnIndex: state.turnIndex,
+      roundIndex: state.roundIndex,
+      sideId: next,
+      ap: BASE_AP,
+      previousSideId: previous,
+    });
     const outcome = evaluateOutcome(state);
     return { ok: true, activeSideId: next, ap: state.ap[next], outcome };
   } catch (error) {
-    state.turnIndex = checkpoint.turnIndex;
-    state.roundIndex = checkpoint.roundIndex;
-    state.activeSideId = checkpoint.activeSideId;
-    state.ap[next] = checkpoint.nextAp;
-    state.log.length = checkpoint.logLength;
+    rollbackEndTurn(state, next, checkpoint);
     throw error;
   }
 }
@@ -213,8 +224,30 @@ function playsThisTurn(state, sideId) {
 }
 
 /**
+ * Undo a play whose log write failed after the hand or AP changed.
+ * @param {object} state
+ * @param {string} sideId
+ * @param {{ cards: object[] }} hand
+ * @param {object | null} card
+ * @param {number} cardIndex
+ * @param {number | null} apBefore
+ * @param {number} logLength
+ * @param {number} playedLength
+ */
+function rollbackPlay(state, sideId, hand, card, cardIndex, apBefore, logLength, playedLength) {
+  if (state.log.length !== logLength) state.log.length = logLength;
+  if (state.playedRecords.length !== playedLength) state.playedRecords.length = playedLength;
+  if (state.ap[sideId] !== apBefore) state.ap[sideId] = apBefore;
+  if (card && cardIndex >= 0 && !hand.cards.includes(card)) {
+    hand.cards.splice(cardIndex, 0, card);
+  }
+}
+
+/**
  * Spend AP and take the card out of the hand when the play is legal.
  * Does not apply damage, mitigation, or skill effects.
+ * A hand that already holds the same card id twice is rejected. The hand key is the card id,
+ * so a second copy would let that id be played again.
  * @param {object} state
  * @param {string} sideId
  * @param {string} cardId
@@ -228,7 +261,13 @@ export function playCard(state, sideId, cardId) {
   }
   const hand = state.hands[sideId];
   if (!hand) return { ok: false, reason: 'UNKNOWN_SIDE' };
-  const card = hand.cards.find((held) => held.cardId === cardId) ?? null;
+  const matches = [];
+  for (let index = 0; index < hand.cards.length; index += 1) {
+    if (hand.cards[index]?.cardId === cardId) matches.push(index);
+  }
+  if (matches.length > 1) return { ok: false, reason: 'DUPLICATE_CARD_ID' };
+  const cardIndex = matches.length === 1 ? matches[0] : -1;
+  const card = cardIndex >= 0 ? hand.cards[cardIndex] : null;
   const assessment = assessActionPlay({
     card,
     inHand: Boolean(card),
@@ -237,21 +276,30 @@ export function playCard(state, sideId, cardId) {
     playsThisTurn: playsThisTurn(state, sideId),
   });
   if (!assessment.ok) return assessment;
-  removeCard(hand, cardId);
-  state.ap[sideId] -= assessment.cost;
-  const event = {
-    type: 'play',
-    turnIndex: state.turnIndex,
-    roundIndex: state.roundIndex,
-    sideId,
-    cardId,
-    actionType: card.actionType,
-    cost: assessment.cost,
-    effect: 'not_applied',
-  };
-  state.log.push(event);
-  state.playedRecords.push({ ...event });
-  return { ok: true, ...event, ap: state.ap[sideId] };
+  const apBefore = state.ap[sideId];
+  const logLength = state.log.length;
+  const playedLength = state.playedRecords.length;
+  try {
+    const removed = removeCard(hand, cardId);
+    if (!removed.ok) return removed;
+    state.ap[sideId] = apBefore - assessment.cost;
+    const event = {
+      type: 'play',
+      turnIndex: state.turnIndex,
+      roundIndex: state.roundIndex,
+      sideId,
+      cardId,
+      actionType: removed.card.actionType,
+      cost: assessment.cost,
+      effect: 'not_applied',
+    };
+    state.log.push(event);
+    state.playedRecords.push({ ...event });
+    return { ok: true, ...event, ap: state.ap[sideId] };
+  } catch (error) {
+    rollbackPlay(state, sideId, hand, card, cardIndex, apBefore, logLength, playedLength);
+    throw error;
+  }
 }
 
 /**
