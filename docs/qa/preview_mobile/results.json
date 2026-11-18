@@ -1,0 +1,1787 @@
+{
+ "summary": {
+  "phase": "after",
+  "name_min_px": 12.0,
+  "touch_min_px": 44.0,
+  "viewports": [
+   {
+    "viewport": "360x800",
+    "size": [
+     360,
+     800
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "390x844",
+    "size": [
+     390,
+     844
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "412x915",
+    "size": [
+     412,
+     915
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "768x1024",
+    "size": [
+     768,
+     1024
+    ],
+    "kind": "tablet-portrait",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "1440x900",
+    "size": [
+     1440,
+     900
+    ],
+    "kind": "desktop",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "800x360",
+    "size": [
+     800,
+     360
+    ],
+    "kind": "phone-landscape",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "844x390",
+    "size": [
+     844,
+     390
+    ],
+    "kind": "phone-landscape",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "915x412",
+    "size": [
+     915,
+     412
+    ],
+    "kind": "phone-landscape",
+    "page": "preview/index.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "390x844-standalone",
+    "size": [
+     390,
+     844
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/card_game_art_preview_standalone.html",
+    "status": "PASS",
+    "fails": []
+   },
+   {
+    "viewport": "1440x900-standalone",
+    "size": [
+     1440,
+     900
+    ],
+    "kind": "desktop",
+    "page": "preview/card_game_art_preview_standalone.html",
+    "status": "PASS",
+    "fails": []
+   }
+  ]
+ },
+ "details": [
+  {
+   "overflow": {
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 6873,
+    "clientHeight": 800,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 15.072,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 20.9,
+     "textH": 20
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 314,
+    "h": 439.6,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 288.9,
+    "h": 385.2,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 314,
+    "h": 439.6,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "360x800",
+   "kind": "phone-portrait",
+   "size": [
+    360,
+    800
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/360x800.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/360x800_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/360x800_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 7057,
+    "clientHeight": 844,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 16.512,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 22.9,
+     "textH": 23
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 344,
+    "h": 481.6,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 316.5,
+    "h": 422,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 344,
+    "h": 481.6,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "390x844",
+   "kind": "phone-portrait",
+   "size": [
+    390,
+    844
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/390x844.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/390x844_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/390x844_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 412,
+    "clientWidth": 412,
+    "scrollHeight": 7134,
+    "clientHeight": 915,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 17.568,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 24.4,
+     "textH": 24
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 366,
+    "h": 512.4,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 336.7,
+    "h": 448.9,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 366,
+    "h": 512.4,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "412x915",
+   "kind": "phone-portrait",
+   "size": [
+    412,
+    915
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/412x915.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/412x915_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/412x915_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 4027,
+    "clientHeight": 1024,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 17.184,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 23.9,
+     "textH": 23
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 329.4,
+    "h": 439.1,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "768x1024",
+   "kind": "tablet-portrait",
+   "size": [
+    768,
+    1024
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/768x1024.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/768x1024_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/768x1024_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 2207,
+    "clientHeight": 900,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 13.794,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 27.9,
+     "textH": 19
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": true,
+     "contentTaller": true
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     384,
+     384
+    ],
+    "display": [
+     384,
+     384
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 384,
+     "h": 384
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 418,
+    "h": 585.2,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 384.5,
+    "h": 512.7,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 418,
+    "h": 585.2,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 546,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "— none — EQ_AEG_POT_HELMET_SILVER_001 EQ_AEG_POT_HELMET_GOLD",
+      "w": 444,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "— none — EQ_AEG_SWORD_POTLID_001 EQ_SWORD_BASIC_001 (shared)",
+      "w": 444,
+      "h": 31,
+      "fail": true
+     }
+    ],
+    "undersized_count": 19
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "1440x900",
+   "kind": "desktop",
+   "size": [
+    1440,
+    900
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/1440x900.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/1440x900_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/1440x900_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 800,
+    "clientWidth": 800,
+    "scrollHeight": 3803,
+    "clientHeight": 360,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 12,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 14.1,
+     "textH": 17
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 211.4,
+    "h": 296,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 194.5,
+    "h": 259.3,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 211.4,
+    "h": 296,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "800x360",
+   "kind": "phone-landscape",
+   "size": [
+    800,
+    360
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/800x360.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/800x360_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/800x360_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 844,
+    "clientWidth": 844,
+    "scrollHeight": 3710,
+    "clientHeight": 390,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 12,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 15.5,
+     "textH": 17
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 232.8,
+    "h": 326,
+    "ratio": 0.7142,
+    "natural": null
+   },
+   "art": {
+    "w": 214.2,
+    "h": 285.6,
+    "ratio": 0.7499,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 232.8,
+    "h": 326,
+    "ratio": 0.7142,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "844x390",
+   "kind": "phone-landscape",
+   "size": [
+    844,
+    390
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/844x390.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/844x390_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/844x390_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 915,
+    "clientWidth": 915,
+    "scrollHeight": 3817,
+    "clientHeight": 412,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 12,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 16.2,
+     "textH": 17
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 243,
+    "h": 340,
+    "ratio": 0.7147,
+    "natural": null
+   },
+   "art": {
+    "w": 223.5,
+    "h": 297.9,
+    "ratio": 0.7504,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 243,
+    "h": 340,
+    "ratio": 0.7147,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "915x412",
+   "kind": "phone-landscape",
+   "size": [
+    915,
+    412
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/after/915x412.png",
+   "screenshot_sprite": "docs/qa/preview_mobile/after/915x412_sprite.png",
+   "screenshot_full": "docs/qa/preview_mobile/after/915x412_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 7057,
+    "clientHeight": 844,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 16.512,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 22.9,
+     "textH": 23
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": false,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 344,
+    "h": 481.6,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 316.5,
+    "h": 422,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 344,
+    "h": 481.6,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [],
+    "undersized_count": 0
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "390x844-standalone",
+   "kind": "phone-portrait",
+   "size": [
+    390,
+    844
+   ],
+   "page": "preview/card_game_art_preview_standalone.html",
+   "screenshot": "docs/qa/preview_mobile/after/390x844_standalone.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 2207,
+    "clientHeight": 900,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14,
+     "shown": true
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 15,
+     "shown": true
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "shown": true,
+     "fontSize": 13.794,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 27.9,
+     "textH": 19
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 12,
+     "shown": true,
+     "contentTaller": true
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "pixelated",
+    "bitmap": [
+     384,
+     384
+    ],
+    "display": [
+     384,
+     384
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 384,
+     "h": 384
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 418,
+    "h": 585.2,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 384.5,
+    "h": 512.7,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 418,
+    "h": 585.2,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated",
+    "pixelated"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "neutral_staff_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": {
+     "from": "EQ_AEG_POT_HELMET_SILVER_001",
+     "to": "EQ_AEG_POT_HELMET_GOLD_001"
+    }
+   },
+   "fails": [],
+   "status": "PASS",
+   "touch_summary": {
+    "count": 24,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 546,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "— none — EQ_AEG_POT_HELMET_SILVER_001 EQ_AEG_POT_HELMET_GOLD",
+      "w": 444,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "— none — EQ_AEG_SWORD_POTLID_001 EQ_SWORD_BASIC_001 (shared)",
+      "w": 444,
+      "h": 31,
+      "fail": true
+     }
+    ],
+    "undersized_count": 19
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "1440x900-standalone",
+   "kind": "desktop",
+   "size": [
+    1440,
+    900
+   ],
+   "page": "preview/card_game_art_preview_standalone.html",
+   "screenshot": "docs/qa/preview_mobile/after/1440x900_standalone.png"
+  }
+ ]
+}

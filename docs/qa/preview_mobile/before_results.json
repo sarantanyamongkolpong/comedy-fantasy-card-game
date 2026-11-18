@@ -1,0 +1,2455 @@
+{
+ "summary": {
+  "phase": "before",
+  "name_min_px": 12.0,
+  "touch_min_px": 44.0,
+  "viewports": [
+   {
+    "viewport": "360x800",
+    "size": [
+     360,
+     800
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "name font 11.8px < 12px (card-name: Sir Potlid)",
+     "card name overflows its plate (Sir Potlid)",
+     "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "390x844",
+    "size": [
+     390,
+     844
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "name font 11.8px < 12px (card-name: Sir Potlid)",
+     "card name overflows its plate (Sir Potlid)",
+     "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "412x915",
+    "size": [
+     412,
+     915
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "name font 11.8px < 12px (card-name: Sir Potlid)",
+     "card name overflows its plate (Sir Potlid)",
+     "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "768x1024",
+    "size": [
+     768,
+     1024
+    ],
+    "kind": "tablet-portrait",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "horizontal overflow 841 > 768",
+     "card name overflows its plate (Sir Potlid)",
+     "name font 11.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "21 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "1440x900",
+    "size": [
+     1440,
+     900
+    ],
+    "kind": "desktop",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "card name overflows its plate (Sir Potlid)",
+     "name font 11.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "800x360",
+    "size": [
+     800,
+     360
+    ],
+    "kind": "phone-landscape",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "name font 8.9px < 12px (card-name: Sir Potlid)",
+     "card name overflows its plate (Sir Potlid)",
+     "name font 6.8px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "32 touch targets < 44px (button 'Sir Potlid' 76.6×27.6, button 'Nox Squeak' 96.1×27.6, button 'Madame Meteor' 127.5×27.6, button 'Sister Plaster' 103.8×27.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "844x390",
+    "size": [
+     844,
+     390
+    ],
+    "kind": "phone-landscape",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "name font 9.8px < 12px (card-name: Sir Potlid)",
+     "name font 7.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "32 touch targets < 44px (button 'Sir Potlid' 76.6×27.6, button 'Nox Squeak' 96.1×27.6, button 'Madame Meteor' 127.5×27.6, button 'Sister Plaster' 103.8×27.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "915x412",
+    "size": [
+     915,
+     412
+    ],
+    "kind": "phone-landscape",
+    "page": "preview/index.html",
+    "status": "FAIL",
+    "fails": [
+     "name font 10.2px < 12px (card-name: Sir Potlid)",
+     "card name overflows its plate (Sir Potlid)",
+     "name font 7.8px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "32 touch targets < 44px (button 'Sir Potlid' 76.6×27.6, button 'Nox Squeak' 96.1×27.6, button 'Madame Meteor' 127.5×27.6, button 'Sister Plaster' 103.8×27.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+     "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+     "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+    ]
+   },
+   {
+    "viewport": "390x844-standalone",
+    "size": [
+     390,
+     844
+    ],
+    "kind": "phone-portrait",
+    "page": "preview/card_game_art_preview_standalone.html",
+    "status": "FAIL",
+    "fails": [
+     "name font 11.8px < 12px (card-name: Sir Potlid)",
+     "card name overflows its plate (Sir Potlid)",
+     "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+     "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)"
+    ]
+   },
+   {
+    "viewport": "1440x900-standalone",
+    "size": [
+     1440,
+     900
+    ],
+    "kind": "desktop",
+    "page": "preview/card_game_art_preview_standalone.html",
+    "status": "FAIL",
+    "fails": [
+     "card name overflows its plate (Sir Potlid)",
+     "name font 11.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)"
+    ]
+   }
+  ]
+ },
+ "details": [
+  {
+   "overflow": {
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 6687,
+    "clientHeight": 800,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 11.76,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 18.7,
+     "textH": 16
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 8.96,
+     "contentTaller": true
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 257.6,
+    "h": 343.5,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "name font 11.8px < 12px (card-name: Sir Potlid)",
+    "card name overflows its plate (Sir Potlid)",
+    "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 294.1,
+      "h": 36.8,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 296.2,
+      "h": 20.8,
+      "fail": true
+     }
+    ],
+    "undersized_count": 27
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "360x800",
+   "kind": "phone-portrait",
+   "size": [
+    360,
+    800
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/360x800.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/360x800_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 6735,
+    "clientHeight": 844,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 11.76,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 18.7,
+     "textH": 16
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 8.96,
+     "contentTaller": true
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 257.6,
+    "h": 343.5,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "name font 11.8px < 12px (card-name: Sir Potlid)",
+    "card name overflows its plate (Sir Potlid)",
+    "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 294.1,
+      "h": 36.8,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 296.2,
+      "h": 20.8,
+      "fail": true
+     }
+    ],
+    "undersized_count": 27
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "390x844",
+   "kind": "phone-portrait",
+   "size": [
+    390,
+    844
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/390x844.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/390x844_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 412,
+    "clientWidth": 412,
+    "scrollHeight": 6729,
+    "clientHeight": 915,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 11.76,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 18.7,
+     "textH": 16
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 8.96,
+     "contentTaller": true
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 257.6,
+    "h": 343.5,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "name font 11.8px < 12px (card-name: Sir Potlid)",
+    "card name overflows its plate (Sir Potlid)",
+    "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 344.4,
+      "h": 17,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 296.2,
+      "h": 20.8,
+      "fail": true
+     }
+    ],
+    "undersized_count": 27
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "412x915",
+   "kind": "phone-portrait",
+   "size": [
+    412,
+    915
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/412x915.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/412x915_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 841,
+    "clientWidth": 768,
+    "scrollHeight": 4594,
+    "clientHeight": 1024,
+    "delta": 73
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 15.036,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 23.9,
+     "textH": 20
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 11.456,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     384,
+     384
+    ],
+    "display": [
+     318,
+     318
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 318,
+     "h": 318
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 329.4,
+    "h": 439.1,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "horizontal overflow 841 > 768",
+    "card name overflows its plate (Sir Potlid)",
+    "name font 11.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "21 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "headgear",
+      "w": 54.1,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "— none — EQ_AEG_POT_HELMET_SILVER_001 EQ_AEG_POT_HELMET_GOLD",
+      "w": 10,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "main_hand",
+      "w": 62.8,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "— none — EQ_AEG_SWORD_POTLID_001 EQ_SWORD_BASIC_001 (shared)",
+      "w": 10,
+      "h": 31,
+      "fail": true
+     }
+    ],
+    "undersized_count": 21
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "768x1024",
+   "kind": "tablet-portrait",
+   "size": [
+    768,
+    1024
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/768x1024.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/768x1024_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 2207,
+    "clientHeight": 900,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 15.036,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 23.9,
+     "textH": 20
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 11.456,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     384,
+     384
+    ],
+    "display": [
+     384,
+     384
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 384,
+     "h": 384
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 329.4,
+    "h": 439.1,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "card name overflows its plate (Sir Potlid)",
+    "name font 11.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 344.4,
+      "h": 17,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 296.2,
+      "h": 20.8,
+      "fail": true
+     }
+    ],
+    "undersized_count": 27
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "1440x900",
+   "kind": "desktop",
+   "size": [
+    1440,
+    900
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/1440x900.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/1440x900_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 800,
+    "clientWidth": 800,
+    "scrollHeight": 3406,
+    "clientHeight": 360,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อAegis Dominion · Tank · rig humanoid_heavyPOW / DEF / SPD: TBD · Rarity: TBD · Card costs: TBDTap card to zoom.",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 8.87972,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 14.1,
+     "textH": 12
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 6.7655,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 211.4,
+    "h": 296,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 194.5,
+    "h": 259.3,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 211.4,
+    "h": 296,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "name font 8.9px < 12px (card-name: Sir Potlid)",
+    "card name overflows its plate (Sir Potlid)",
+    "name font 6.8px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "32 touch targets < 44px (button 'Sir Potlid' 76.6×27.6, button 'Nox Squeak' 96.1×27.6, button 'Madame Meteor' 127.5×27.6, button 'Sister Plaster' 103.8×27.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 76.6,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 96.1,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 127.5,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 103.8,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 243.9,
+      "h": 36.8,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 121,
+      "h": 28.2,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 131.9,
+      "h": 28.2,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 268.6,
+      "h": 37.6,
+      "fail": true
+     }
+    ],
+    "undersized_count": 32
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "800x360",
+   "kind": "phone-landscape",
+   "size": [
+    800,
+    360
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/800x360.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/800x360_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 844,
+    "clientWidth": 844,
+    "scrollHeight": 3333,
+    "clientHeight": 390,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อAegis Dominion · Tank · rig humanoid_heavyPOW / DEF / SPD: TBD · Rarity: TBD · Card costs: TBDTap card to zoom.",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 9.77944,
+     "contentTaller": false,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 15.5,
+     "textH": 13
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 7.451,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 232.8,
+    "h": 326,
+    "ratio": 0.7142,
+    "natural": null
+   },
+   "art": {
+    "w": 214.2,
+    "h": 285.6,
+    "ratio": 0.7499,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 232.8,
+    "h": 326,
+    "ratio": 0.7142,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "name font 9.8px < 12px (card-name: Sir Potlid)",
+    "name font 7.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "32 touch targets < 44px (button 'Sir Potlid' 76.6×27.6, button 'Nox Squeak' 96.1×27.6, button 'Madame Meteor' 127.5×27.6, button 'Sister Plaster' 103.8×27.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 76.6,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 96.1,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 127.5,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 103.8,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 270.9,
+      "h": 36.8,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 121,
+      "h": 28.2,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 131.9,
+      "h": 28.2,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 291.2,
+      "h": 37.6,
+      "fail": true
+     }
+    ],
+    "undersized_count": 32
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "844x390",
+   "kind": "phone-landscape",
+   "size": [
+    844,
+    390
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/844x390.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/844x390_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 915,
+    "clientWidth": 915,
+    "scrollHeight": 3163,
+    "clientHeight": 412,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อAegis Dominion · Tank · rig humanoid_heavyPOW / DEF / SPD: TBD · Rarity: TBD · Card costs: TBDTap card to zoom.",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 10.206,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 16.2,
+     "textH": 14
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 7.776,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "readError": "SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.",
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 243,
+    "h": 340,
+    "ratio": 0.7147,
+    "natural": null
+   },
+   "art": {
+    "w": 223.5,
+    "h": 297.9,
+    "ratio": 0.7504,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 243,
+    "h": 340,
+    "ratio": 0.7147,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": false,
+    "silver_changes_pixels": false,
+    "select_changes_pixels": false,
+    "error": "Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+   },
+   "fails": [
+    "name font 10.2px < 12px (card-name: Sir Potlid)",
+    "card name overflows its plate (Sir Potlid)",
+    "name font 7.8px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "32 touch targets < 44px (button 'Sir Potlid' 76.6×27.6, button 'Nox Squeak' 96.1×27.6, button 'Madame Meteor' 127.5×27.6, button 'Sister Plaster' 103.8×27.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)",
+    "golden pot swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}",
+    "equipment select swap failed {'golden_changes_pixels': False, 'silver_changes_pixels': False, 'select_changes_pixels': False, 'error': \"Page.evaluate: SecurityError: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.\\n    at eval (eval at evaluate (:370:30), <anonymous>:1:37)\\n    at UtilityScript.evaluate (<anonymous>:377:18)\\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\"}"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 76.6,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 96.1,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 127.5,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 103.8,
+      "h": 27.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 344.4,
+      "h": 17,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 121,
+      "h": 28.2,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 131.9,
+      "h": 28.2,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 296.2,
+      "h": 20.8,
+      "fail": true
+     }
+    ],
+    "undersized_count": 32
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "915x412",
+   "kind": "phone-landscape",
+   "size": [
+    915,
+    412
+   ],
+   "page": "preview/index.html",
+   "screenshot": "docs/qa/preview_mobile/before/915x412.png",
+   "screenshot_full": "docs/qa/preview_mobile/before/915x412_full.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 6735,
+    "clientHeight": 844,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 11.76,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 18.7,
+     "textH": 16
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 8.96,
+     "contentTaller": true
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     256,
+     256
+    ],
+    "display": [
+     256,
+     256
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 256,
+     "h": 256
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 257.6,
+    "h": 343.5,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 280,
+    "h": 392,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": "EQ_AEG_POT_HELMET_GOLD_001"
+   },
+   "fails": [
+    "name font 11.8px < 12px (card-name: Sir Potlid)",
+    "card name overflows its plate (Sir Potlid)",
+    "name font 9.0px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)",
+    "27 touch targets < 44px (button 'Sir Potlid' 80.6×33.6, button 'Nox Squeak' 100.1×33.6, button 'Madame Meteor' 131.5×33.6, button 'Sister Plaster' 107.8×33.6, label 'Zoom' 32.6×16.8, select '2 3 4 5' 39×31)"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 294.1,
+      "h": 36.8,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 296.2,
+      "h": 20.8,
+      "fail": true
+     }
+    ],
+    "undersized_count": 27
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "390x844-standalone",
+   "kind": "phone-portrait",
+   "size": [
+    390,
+    844
+   ],
+   "page": "preview/card_game_art_preview_standalone.html",
+   "screenshot": "docs/qa/preview_mobile/before/390x844_standalone.png"
+  },
+  {
+   "overflow": {
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 2207,
+    "clientHeight": 900,
+    "delta": 0
+   },
+   "names": [
+    {
+     "where": "tab",
+     "text": "Sir Potlid",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Nox Squeak",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Madame Meteor",
+     "fontSize": 14
+    },
+    {
+     "where": "tab",
+     "text": "Sister Plaster",
+     "fontSize": 14
+    },
+    {
+     "where": "cardMeta",
+     "text": "Sir Potlid / เซอร์ฝาหม้อ",
+     "fontSize": 12
+    },
+    {
+     "where": "card-name",
+     "text": "Sir Potlid",
+     "fontSize": 15.036,
+     "contentTaller": true,
+     "contentWider": false,
+     "clippedByCard": false,
+     "boxH": 23.9,
+     "textH": 20
+    },
+    {
+     "where": "card-name-th",
+     "text": "เซอร์ฝาหม้อ · Aegis Dominion",
+     "fontSize": 11.456,
+     "contentTaller": false
+    }
+   ],
+   "sprite": {
+    "present": true,
+    "imageRendering": "crisp-edges",
+    "bitmap": [
+     384,
+     384
+    ],
+    "display": [
+     384,
+     384
+    ],
+    "displayRatio": 1,
+    "bitmapSquare": true,
+    "clip": {
+     "left": 0,
+     "right": 0,
+     "top": 0,
+     "bottom": 0,
+     "cropped": false,
+     "w": 384,
+     "h": 384
+    },
+    "stageRadius": 10,
+    "opaqueCornerSamples": 0
+   },
+   "card": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": null
+   },
+   "art": {
+    "w": 329.4,
+    "h": 439.1,
+    "ratio": 0.75,
+    "natural": [
+     512,
+     683
+    ]
+   },
+   "frame": {
+    "w": 358,
+    "h": 501.2,
+    "ratio": 0.7143,
+    "natural": [
+     750,
+     1050
+    ]
+   },
+   "rendering": [
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges",
+    "crisp-edges"
+   ],
+   "title": "Comedy Fantasy Card Game · First 4 Avatars",
+   "swap": {
+    "golden_changes_pixels": true,
+    "silver_changes_pixels": true,
+    "select_changes_pixels": true,
+    "error": null,
+    "golden_on": true,
+    "silver_on": true,
+    "select_option": "EQ_AEG_POT_HELMET_GOLD_001"
+   },
+   "fails": [
+    "card name overflows its plate (Sir Potlid)",
+    "name font 11.5px < 12px (card-name-th: เซอร์ฝาหม้อ · Aegis Dominion)"
+   ],
+   "status": "FAIL",
+   "touch_summary": {
+    "count": 32,
+    "undersized": [
+     {
+      "tag": "button",
+      "text": "Sir Potlid",
+      "w": 80.6,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Nox Squeak",
+      "w": 100.1,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Madame Meteor",
+      "w": 131.5,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "Sister Plaster",
+      "w": 107.8,
+      "h": 33.6,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Zoom",
+      "w": 32.6,
+      "h": 16.8,
+      "fail": true
+     },
+     {
+      "tag": "select",
+      "text": "2 3 4 5",
+      "w": 39,
+      "h": 31,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "anchors",
+      "w": 68.4,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "dark bg",
+      "w": 66.5,
+      "h": 20.8,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "Equipment swap test — same Character ID, only L04 changes",
+      "w": 344.4,
+      "h": 17,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "🥘 Silver Pot (V1)",
+      "w": 148.8,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "button",
+      "text": "✨ Golden Pot (V2)",
+      "w": 161.4,
+      "h": 39,
+      "fail": true
+     },
+     {
+      "tag": "label",
+      "text": "show gold-pot card concept (CONCEPT, has drift)",
+      "w": 296.2,
+      "h": 20.8,
+      "fail": true
+     }
+    ],
+    "undersized_count": 27
+   },
+   "images_broken": [],
+   "images_total": 15,
+   "console_errors": [],
+   "viewport": "1440x900-standalone",
+   "kind": "desktop",
+   "size": [
+    1440,
+    900
+   ],
+   "page": "preview/card_game_art_preview_standalone.html",
+   "screenshot": "docs/qa/preview_mobile/before/1440x900_standalone.png"
+  }
+ ]
+}

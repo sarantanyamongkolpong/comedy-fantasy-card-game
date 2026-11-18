@@ -1,6 +1,9 @@
 """Regenerate preview/index.html (relative asset paths) and preview/card_game_art_preview_standalone.html
 (every image inlined as base64) from the CURRENT files. Re-run after any asset change:
     python3 tools/build_preview.py
+
+Mobile layout (touch targets, name plate, stage fit) lives in tools/preview_template.html.
+Both HTML files are generated from that template so they stay in sync.
 """
 import json, os, base64, glob, datetime, hashlib
 R=os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')) + '/'
