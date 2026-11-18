@@ -18,6 +18,17 @@ export function createHand(ownerId, cards = []) {
     error.maxSize = HAND_SIZE;
     throw error;
   }
+  const seen = new Set();
+  for (const card of cards) {
+    if (typeof card?.cardId !== 'string') continue;
+    if (seen.has(card.cardId)) {
+      const error = new Error(`duplicate card id ${card.cardId}`);
+      error.reason = 'DUPLICATE_CARD_ID';
+      error.cardId = card.cardId;
+      throw error;
+    }
+    seen.add(card.cardId);
+  }
   return {
     ownerId,
     maxSize: HAND_SIZE,
