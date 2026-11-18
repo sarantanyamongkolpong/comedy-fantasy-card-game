@@ -1,0 +1,164 @@
+{
+  "_index": {
+    "purpose": "Asset IDs cited by content/examples. Fields are copied from feat/card-art-prototype-mira docs/ASSET_MANIFEST.json at the commit below. This is a test index, not the full manifest and not a sync of the Owner's Excel master.",
+    "source_branch": "feat/card-art-prototype-mira",
+    "source_commit": "d65c89dc87a9554d5611a108146b509c7aa7fcf0",
+    "source_file": "docs/ASSET_MANIFEST.json"
+  },
+  "assets": [
+    {
+      "asset_id": "CARD_AVT_AEG_001_card_v1",
+      "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1.png",
+      "type": "card_art",
+      "owner": "AVT_AEG_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "CARD_AVT_AEG_001_card_v1_variant_goldpot",
+      "path": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_variant_goldpot.png",
+      "type": "card_art",
+      "owner": "AVT_AEG_001",
+      "status": "CONCEPT"
+    },
+    {
+      "asset_id": "CARD_AVT_PHA_001_card_v1",
+      "path": "assets/characters/AVT_PHA_001/card/AVT_PHA_001_card_v1.png",
+      "type": "card_art",
+      "owner": "AVT_PHA_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "CARD_AVT_CEL_001_card_v1",
+      "path": "assets/characters/AVT_CEL_001/card/AVT_CEL_001_card_v1.png",
+      "type": "card_art",
+      "owner": "AVT_CEL_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "CARD_AVT_SAN_001_card_v1",
+      "path": "assets/characters/AVT_SAN_001/card/AVT_SAN_001_card_v1.png",
+      "type": "card_art",
+      "owner": "AVT_SAN_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_AEG_POT_HELMET_SILVER_001",
+      "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_AEG_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_AEG_POT_HELMET_GOLD_001",
+      "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_AEG_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_AEG_SWORD_POTLID_001",
+      "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SWORD_POTLID_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_AEG_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_AEG_SHIELD_POTLID_001",
+      "path": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_SHIELD_POTLID_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_AEG_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_PHA_KUNAI_MAIN_001",
+      "path": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_MAIN_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_PHA_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_PHA_KUNAI_OFF_001",
+      "path": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_KUNAI_OFF_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_PHA_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "path": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_SNEAKERS_SQUEAK_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_PHA_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_CEL_HAT_ASTRO_001",
+      "path": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_HAT_ASTRO_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_CEL_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_CEL_STAFF_PLANET_001",
+      "path": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_STAFF_PLANET_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_CEL_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_CEL_NOODLE_CUP_001",
+      "path": "assets/characters/AVT_CEL_001/equipment/EQ_CEL_NOODLE_CUP_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_CEL_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_SAN_CAP_HEALER_001",
+      "path": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CAP_HEALER_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_SAN_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_SAN_STAFF_BANDAGE_001",
+      "path": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_STAFF_BANDAGE_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_SAN_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_SAN_CLIPBOARD_001",
+      "path": "assets/characters/AVT_SAN_001/equipment/EQ_SAN_CLIPBOARD_001.png",
+      "type": "equipment_item",
+      "owner": "AVT_SAN_001",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_STAFF_NEUTRAL_001",
+      "path": "assets/equipment/EQ_STAFF_NEUTRAL_001.png",
+      "type": "equipment_item",
+      "owner": "shared",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_SWORD_BASIC_001",
+      "path": "assets/equipment/EQ_SWORD_BASIC_001.png",
+      "type": "equipment_item",
+      "owner": "shared",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_DAGGER_BASIC_001",
+      "path": "assets/equipment/EQ_DAGGER_BASIC_001.png",
+      "type": "equipment_item",
+      "owner": "shared",
+      "status": "PROTOTYPE"
+    },
+    {
+      "asset_id": "EQ_SHIELD_BUCKLER_001",
+      "path": "assets/equipment/EQ_SHIELD_BUCKLER_001.png",
+      "type": "equipment_item",
+      "owner": "shared",
+      "status": "PROTOTYPE"
+    }
+  ]
+}

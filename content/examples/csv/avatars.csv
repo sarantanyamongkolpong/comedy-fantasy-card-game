@@ -1,0 +1,5 @@
+avatarId,nameEn,nameTh,factionId,role,rigId,stats.pow,stats.def,stats.spd,stats.valueStatus,rarity,assetIds
+AVT_AEG_001,Sir Potlid,เซอร์ฝาหม้อ,FAC_AEG,Tank,humanoid_heavy,,,,TBD,,"{""cardArtVariantGoldpot"":""CARD_AVT_AEG_001_card_v1_variant_goldpot"",""cardArt"":""CARD_AVT_AEG_001_card_v1""}"
+AVT_PHA_001,Nox Squeak,น็อกซ์ รองเท้าดัง,FAC_PHA,DPS,humanoid_standard,,,,TBD,,"{""cardArt"":""CARD_AVT_PHA_001_card_v1""}"
+AVT_CEL_001,Madame Meteor,มาดามดาวตก,FAC_CEL,Magic,humanoid_standard,,,,TBD,,"{""cardArt"":""CARD_AVT_CEL_001_card_v1""}"
+AVT_SAN_001,Sister Plaster,ซิสเตอร์พลาสเตอร์,FAC_SAN,Support,humanoid_standard,,,,TBD,,"{""cardArt"":""CARD_AVT_SAN_001_card_v1""}"

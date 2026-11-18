@@ -1,0 +1,47 @@
+{
+  "templateId": "avatar-card",
+  "kind": "avatar_card",
+  "extends": "tbd-stats",
+  "description": "One avatar card per avatar. Names, faction, role, and card art are copied from the avatar record so they are written once. cardId is AVC_ plus the avatar id, matching docs/DATA_SCHEMA.md.",
+  "defaults": {
+    "cardKind": "avatar_card"
+  },
+  "derive": [
+    {
+      "field": "nameEn",
+      "fromAvatar": "nameEn",
+      "when": "missing"
+    },
+    {
+      "field": "nameTh",
+      "fromAvatar": "nameTh",
+      "when": "missing"
+    },
+    {
+      "field": "factionId",
+      "fromAvatar": "factionId",
+      "when": "missing"
+    },
+    {
+      "field": "role",
+      "fromAvatar": "role",
+      "when": "missing"
+    },
+    {
+      "field": "role",
+      "from": "factionId",
+      "map": "factionRole",
+      "when": "missing"
+    },
+    {
+      "field": "cardId",
+      "template": "AVC_${avatarId}",
+      "when": "missing"
+    },
+    {
+      "field": "assetId",
+      "fromAvatar": "assetIds.cardArt",
+      "when": "missing"
+    }
+  ]
+}
