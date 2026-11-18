@@ -1,0 +1,4 @@
+scenarioId,label,repeatIndex,seed,seedConsumed,policyA,policyB,stoppedReason,winnerSideId,loserSideId,simultaneous,turns,rounds,apSpentA,apSpentB,apRefreshedA,apRefreshedB,apLeftoverA,apLeftoverB,grantsA,grantsB,playsAtkA,playsDefA,playsSkillA,playsAtkB,playsDefB,playsSkillB,loopKind,loopFirstTurn,loopRepeatTurn
+EXPERIMENTAL_burst,EXPERIMENTAL,0,2002,false,always-ATK,always-ATK,decided,LAB_SIDE_A,LAB_SIDE_B,false,1,1,4,0,5,0,1,0,0,0,4,0,0,0,0,0,,,
+EXPERIMENTAL_burst,EXPERIMENTAL,1,2003,false,always-ATK,always-ATK,decided,LAB_SIDE_A,LAB_SIDE_B,false,1,1,4,0,5,0,1,0,0,0,4,0,0,0,0,0,,,
+EXPERIMENTAL_burst,EXPERIMENTAL,2,2004,false,always-ATK,always-ATK,decided,LAB_SIDE_A,LAB_SIDE_B,false,1,1,4,0,5,0,1,0,0,0,4,0,0,0,0,0,,,
