@@ -1,7 +1,7 @@
 import { existsSync, statSync } from 'node:fs';
-import { join, normalize, sep } from 'node:path';
+import { join } from 'node:path';
 import { ASSET_STATUSES } from '../../../src/schema/constants.js';
-import { isPlainObject, isUnder, readJsonFile, relativePosix, walkFiles } from './common.mjs';
+import { isPlainObject, isUnder, readJsonFile, relativePosix, resolveInsideRepo, walkFiles } from './common.mjs';
 
 /**
  * @param {unknown} value
@@ -28,12 +28,7 @@ function isAssetManifest(value) {
  * @returns {{ ok: true, full: string } | { ok: false, message: string }}
  */
 function resolveRepoPath(root, relPath) {
-  if (typeof relPath !== 'string' || relPath.length === 0) return { ok: false, message: 'path is empty' };
-  if (relPath.startsWith('/') || /^[A-Za-z]:[\\/]/.test(relPath)) return { ok: false, message: 'path must be repo-relative' };
-  const full = normalize(join(root, relPath));
-  const rootFull = normalize(root);
-  if (full !== rootFull && !full.startsWith(rootFull + sep)) return { ok: false, message: 'path escapes the repository' };
-  return { ok: true, full };
+  return resolveInsideRepo(root, relPath);
 }
 
 /**

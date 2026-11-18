@@ -17,6 +17,8 @@ export async function runDataValidation(root = rootFromArgv()) {
       annotate(`duplicate character id ${entry.id}: ${entry.locations.join(', ')}`);
     }
     for (const error of result.schemaErrors.slice(0, 20)) annotate(`${error.location}: ${error.message}`);
+    for (const error of result.draftErrors.slice(0, 20)) annotate(`${error.location}: ${error.message}`);
+    for (const error of result.productionErrors.slice(0, 20)) annotate(`${error.location}: ${error.message}`);
     for (const message of result.loadErrors.slice(0, 20)) annotate(message);
   }
   process.stdout.write(`DATA_VALIDATION: ${result.ok ? 'PASS' : 'FAIL'}\n`);

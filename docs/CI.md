@@ -29,18 +29,52 @@ Every `*.json` file outside `.git`, `node_modules`, and `coverage` must parse.
 
 Character IDs must be unique in two places:
 
-- Avatar and named character records (`avatarId` with a name, or `characterId` / `character_id` with a name), across JSON and the catalog modules `src/avatars/catalog.js`, `src/cards/catalog.js`, and `src/avatars/ownership.js`.
+- Avatar and named character records (`avatarId` with a name, or `characterId` / `character_id` with a name), across runtime JSON and the catalog modules `src/avatars/catalog.js`, `src/cards/catalog.js`, and `src/avatars/ownership.js`.
 - Keys of `characters` objects inside a single JSON file (rig and manifest indexes). The same id may appear once in the catalog and again in a manifest or rig index. Those are one character described in more than one layer, not two characters.
 
 References such as `owner`, `nativeAvatarId`, and `subjectId` are not character definitions.
 
-Schema checks call `src/schema/validate.js` for records that match a known shape: faction, avatar, avatar card, action card, equipment, ownership, variant, and asset manifest. JSON that is not one of those records (frame layout, rigs, the slot map, the protected-constants snapshot) is only checked for parse. The script does not fill in deck size, damage, HP, AP costs, gacha rates, or upgrade formulas.
+Schema checks call `src/schema/validate.js` for records that match a known shape: faction, avatar, avatar card, action card, equipment, ownership, variant, and asset manifest. JSON that is not one of those records (frame layout, rigs, the slot map, the protected-constants snapshot) is only checked for parse. The script does not fill in deck size, damage, HP, AP costs, gacha rates, or upgrade formulas. `CONCEPT` and `PROTOTYPE` stay valid. `PRODUCTION_READY` is not required, and this job does not mark any record `PRODUCTION_READY`.
+
+### Content tiers
+
+`DATA_VALIDATION` runs both tiers on every invocation. The tier is chosen per JSON file, marker first:
+
+| Order | Rule |
+|---|---|
+| 1 | Top-level `"contentTier": "draft"` or `"contentTier": "production"` on a JSON object. Any other value is ignored. |
+| 2 | A path under `content/production/` is production content. |
+| 3 | Any other path under `content/` is draft content. This includes authoring files such as `content/examples/` and template files under `content/templates/`. |
+| 4 | Every other file is runtime data. Runtime data keeps the parse, schema, and character-id checks above. It is not the production pack, so asset files are not required for it. |
+
+Draft content is the authoring shape used by `tools/card-data-authoring` (PR #6). A record with `extends` set to `avatar`, `avatar-card`, `action-card`, or `equipment` must include the fields the author writes. Template-filled fields (`role`, `stats`, derived `cardId`, derived `assetId`) are not required in the draft file. A draft file with `templateId` is a template, not a record. Its `defaults` are not schema-checked.
+
+| `extends` | Required author fields |
+|---|---|
+| `avatar` | `avatarId`, `nameEn`, `nameTh`, `factionId` |
+| `avatar-card` | `avatarId` |
+| `action-card` | `cardId`, `actionType` (`ATK`, `DEF`, or `Skill`) |
+| `equipment` | `equipmentId`, `slot` |
+
+Draft records that do not use `extends` and match a known shape still go through `src/schema/validate.js`.
+
+Ids declared as new entries must be unique inside draft content: a second avatar record, `cardId`, or `equipmentId` with the same id fails. An avatar id that already exists in the runtime catalog may appear again on a draft avatar record, and it may appear on as many avatar cards and `nativeAvatarId` fields as the catalog needs. `AVT_AEG_001`, `AVT_PHA_001`, `AVT_CEL_001`, and `AVT_SAN_001` are those existing ids. Repeating them from `content/examples/starter-catalog.json` is not a second character. Draft content does not require asset files to exist.
+
+Production content is the strict pack:
+
+- Records are complete. `extends` fails.
+- `src/schema/validate.js` runs (the same validators the runtime modules call).
+- `avatarId`, `cardId`, and `equipmentId` are unique in that pack and against the runtime catalog.
+- An avatar card `avatarId`, an equipment `nativeAvatarId`, an ownership `subjectId` for an avatar, an equipment `variantOf`, and an equipment variant `baseId` must name a record in the runtime catalog or in the production pack. `variantOf` cannot name its own equipment id.
+- `assetId` and `assetIds` values must resolve to a real file. A value that contains `/` or starts with `assets` is a repo-relative path. Any other value is an asset id that must appear in a live manifest outside `tests/` and outside draft content, and that manifest `path` must be a file in the checkout.
+
+A systems-only checkout has no `content/` directory. Both tiers pass with zero files. That is not a skipped job.
 
 ## ASSET_MANIFEST_VALIDATION
 
 Asset IDs must be unique inside each manifest `assets` array and inside each other collection of asset records (objects with `asset_id` plus `path`, `type`, `slot`, or `file`). The same id in two live manifests outside `tests/` also fails. Test fixtures are checked per file. A fixture id may repeat the same id as a future live manifest, because the fixture is a snapshot of that manifest.
 
-Path checks read `path` on manifest entries and require a file inside the repository. They run only when `assets/` exists and a live manifest outside `tests/` exists (the canonical file is `docs/ASSET_MANIFEST.json`).
+Path checks read `path` on manifest entries and require a file inside the repository. The repo root is normalised with `path.resolve` before the check, including a root that ends in `/` (the value `fileURLToPath` returns for a directory URL). Containment uses `path.relative`: a path that resolves outside the root fails with `path escapes the repository`. They run only when `assets/` exists and a live manifest outside `tests/` exists (the canonical file is `docs/ASSET_MANIFEST.json`).
 
 On this systems branch both are absent. The check prints a skip notice and still passes if ids are unique. That is intentional: art is on `feat/card-art-prototype-mira` (PR #1). A missing art tree is not a failure.
 

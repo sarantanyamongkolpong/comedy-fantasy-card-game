@@ -1,5 +1,5 @@
 import { appendFileSync, readdirSync, readFileSync, realpathSync } from 'node:fs';
-import { join, relative, sep } from 'node:path';
+import { isAbsolute, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SKIP_DIRECTORIES = new Set(['.git', 'node_modules', 'coverage']);
@@ -17,6 +17,31 @@ export function isPlainObject(value) {
  */
 export function relativePosix(root, file) {
   return relative(root, file).split(sep).join('/');
+}
+
+/**
+ * Resolve a repo-relative path and reject anything that leaves `root`.
+ * `root` may end in a separator (`fileURLToPath` on a directory URL does).
+ * `path.resolve` strips that separator, then `path.relative` decides containment.
+ * @param {string} root
+ * @param {string} relPath
+ * @returns {{ ok: true, full: string } | { ok: false, message: string }}
+ */
+export function resolveInsideRepo(root, relPath) {
+  if (typeof relPath !== 'string' || relPath.length === 0) return { ok: false, message: 'path is empty' };
+  if (relPath.startsWith('/') || relPath.startsWith('\\') || /^[A-Za-z]:[\\/]/.test(relPath)) {
+    return { ok: false, message: 'path must be repo-relative' };
+  }
+  const rootFull = resolve(root);
+  const full = resolve(rootFull, relPath);
+  const fromRoot = relative(rootFull, full);
+  const escapes = fromRoot === '..'
+    || fromRoot.startsWith(`..${sep}`)
+    || fromRoot.startsWith('../')
+    || fromRoot.startsWith('..\\')
+    || isAbsolute(fromRoot);
+  if (escapes) return { ok: false, message: 'path escapes the repository' };
+  return { ok: true, full };
 }
 
 /**

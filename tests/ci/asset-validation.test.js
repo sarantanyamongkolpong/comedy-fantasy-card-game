@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
+import { resolveInsideRepo } from '../../tools/ci/lib/common.mjs';
 import { validateAssets } from '../../tools/ci/lib/asset-validation.mjs';
 import { tempRepo } from './temp-repo.js';
 
@@ -131,6 +133,49 @@ test('a live status outside the vocabulary fails, and a path that escapes the re
     assert.equal(result.ok, false);
     assert.ok(result.invalidStatuses.some((item) => item.id === 'ODD' && item.status === 'WIP'));
     assert.ok(result.missingPaths.some((item) => item.id === 'ESCAPE'));
+  } finally {
+    repo.cleanup();
+  }
+});
+
+test('a trailing-slash repo root accepts nested asset paths and still rejects escapes', () => {
+  const repo = tempRepo();
+  try {
+    const nested = [
+      'assets/characters/AVT_AEG_001/sprite/body.png',
+      'assets/characters/AVT_PHA_001/equipment/items.json',
+      'assets/card-art/frames/gold/frame.png',
+    ];
+    for (const path of nested) repo.write(path, 'asset');
+    repo.write('docs/ASSET_MANIFEST.json', manifest(nested.map((path, index) => entry(
+      `NESTED_${index}`,
+      path,
+      index === 2 ? 'CONCEPT' : 'PROTOTYPE',
+    ))));
+    const slashRoot = repo.root.endsWith(sep) ? repo.root : `${repo.root}${sep}`;
+    assert.equal(slashRoot.endsWith(sep), true);
+    const result = validateAssets(slashRoot);
+    assert.equal(result.ok, true, JSON.stringify(result.missingPaths));
+    assert.equal(result.pathCheckRan, true);
+    assert.deepEqual(result.missingPaths, []);
+
+    const realRoot = fileURLToPath(new URL('../..', import.meta.url));
+    assert.equal(realRoot.endsWith(sep), true);
+    const inside = resolveInsideRepo(realRoot, nested[0]);
+    assert.equal(inside.ok, true);
+    assert.equal(inside.full.endsWith(nested[0]), true);
+    const fromFsRoot = resolveInsideRepo(sep, nested[0]);
+    assert.equal(fromFsRoot.ok, true);
+    assert.equal(resolveInsideRepo(slashRoot, '../outside.png').ok, false);
+
+    repo.write('docs/ASSET_MANIFEST.json', manifest([
+      ...nested.map((path, index) => entry(`NESTED_${index}`, path, 'PROTOTYPE')),
+      entry('ESCAPE', '../outside.png', 'PROTOTYPE'),
+    ]));
+    const escaped = validateAssets(slashRoot);
+    assert.equal(escaped.ok, false);
+    assert.ok(escaped.missingPaths.some((item) => item.id === 'ESCAPE' && item.message === 'path escapes the repository'));
+    assert.ok(escaped.missingPaths.every((item) => item.id === 'ESCAPE'));
   } finally {
     repo.cleanup();
   }
