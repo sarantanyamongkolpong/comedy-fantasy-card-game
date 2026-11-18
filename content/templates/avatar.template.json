@@ -1,0 +1,19 @@
+{
+  "templateId": "avatar",
+  "kind": "avatar",
+  "extends": "tbd-stats",
+  "description": "Avatar identity. Role follows the faction. cardArt follows the art-manifest id CARD_<avatarId>_card_v1 unless the record sets it. An explicit null is kept.",
+  "derive": [
+    {
+      "field": "role",
+      "from": "factionId",
+      "map": "factionRole",
+      "when": "missing"
+    },
+    {
+      "field": "assetIds.cardArt",
+      "template": "CARD_${avatarId}_card_v1",
+      "when": "missing"
+    }
+  ]
+}

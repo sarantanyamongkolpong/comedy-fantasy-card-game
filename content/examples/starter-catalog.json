@@ -1,0 +1,172 @@
+{
+  "note": "Starter authoring records for the four avatars. POW, DEF, SPD, rarity, AP cost, and effect stay null or TBD. Drop rate is not a schema field. Action cards are the structural schema samples ACT_SCHEMA_ATK, ACT_SCHEMA_DEF, and ACT_SCHEMA_SKILL, not a designed card list. Equipment IDs are the art-manifest IDs. The Owner's Excel master is outside this repo.",
+  "avatars": [
+    {
+      "extends": "avatar",
+      "avatarId": "AVT_AEG_001",
+      "nameEn": "Sir Potlid",
+      "nameTh": "เซอร์ฝาหม้อ",
+      "factionId": "FAC_AEG",
+      "rigId": "humanoid_heavy",
+      "assetIds": {
+        "cardArtVariantGoldpot": "CARD_AVT_AEG_001_card_v1_variant_goldpot"
+      }
+    },
+    {
+      "extends": "avatar",
+      "avatarId": "AVT_PHA_001",
+      "nameEn": "Nox Squeak",
+      "nameTh": "น็อกซ์ รองเท้าดัง",
+      "factionId": "FAC_PHA",
+      "rigId": "humanoid_standard"
+    },
+    {
+      "extends": "avatar",
+      "avatarId": "AVT_CEL_001",
+      "nameEn": "Madame Meteor",
+      "nameTh": "มาดามดาวตก",
+      "factionId": "FAC_CEL",
+      "rigId": "humanoid_standard"
+    },
+    {
+      "extends": "avatar",
+      "avatarId": "AVT_SAN_001",
+      "nameEn": "Sister Plaster",
+      "nameTh": "ซิสเตอร์พลาสเตอร์",
+      "factionId": "FAC_SAN",
+      "rigId": "humanoid_standard"
+    }
+  ],
+  "avatarCards": [
+    { "extends": "avatar-card", "avatarId": "AVT_AEG_001" },
+    { "extends": "avatar-card", "avatarId": "AVT_PHA_001" },
+    { "extends": "avatar-card", "avatarId": "AVT_CEL_001" },
+    { "extends": "avatar-card", "avatarId": "AVT_SAN_001" }
+  ],
+  "actionCards": [
+    {
+      "extends": "action-card",
+      "cardId": "ACT_SCHEMA_ATK",
+      "actionType": "ATK",
+      "labels": ["SCHEMA_SAMPLE", "TBD"]
+    },
+    {
+      "extends": "action-card",
+      "cardId": "ACT_SCHEMA_DEF",
+      "actionType": "DEF",
+      "labels": ["SCHEMA_SAMPLE", "TBD"]
+    },
+    {
+      "extends": "action-card",
+      "cardId": "ACT_SCHEMA_SKILL",
+      "actionType": "Skill",
+      "labels": ["SCHEMA_SAMPLE", "TBD"]
+    }
+  ],
+  "equipment": [
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_AEG_POT_HELMET_SILVER_001",
+      "slot": "headgear",
+      "nativeAvatarId": "AVT_AEG_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_AEG_POT_HELMET_GOLD_001",
+      "slot": "headgear",
+      "nativeAvatarId": "AVT_AEG_001",
+      "variantOf": "EQ_AEG_POT_HELMET_SILVER_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_AEG_SWORD_POTLID_001",
+      "slot": "main_hand",
+      "nativeAvatarId": "AVT_AEG_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_AEG_SHIELD_POTLID_001",
+      "slot": "off_hand",
+      "nativeAvatarId": "AVT_AEG_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_PHA_KUNAI_MAIN_001",
+      "slot": "main_hand",
+      "nativeAvatarId": "AVT_PHA_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_PHA_KUNAI_OFF_001",
+      "slot": "off_hand",
+      "nativeAvatarId": "AVT_PHA_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "slot": "accessory",
+      "nativeAvatarId": "AVT_PHA_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_CEL_HAT_ASTRO_001",
+      "slot": "headgear",
+      "nativeAvatarId": "AVT_CEL_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_CEL_STAFF_PLANET_001",
+      "slot": "main_hand",
+      "nativeAvatarId": "AVT_CEL_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_CEL_NOODLE_CUP_001",
+      "slot": "off_hand",
+      "nativeAvatarId": "AVT_CEL_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_SAN_CAP_HEALER_001",
+      "slot": "headgear",
+      "nativeAvatarId": "AVT_SAN_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_SAN_STAFF_BANDAGE_001",
+      "slot": "main_hand",
+      "nativeAvatarId": "AVT_SAN_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_SAN_CLIPBOARD_001",
+      "slot": "off_hand",
+      "nativeAvatarId": "AVT_SAN_001"
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_STAFF_NEUTRAL_001",
+      "slot": "main_hand",
+      "nativeAvatarId": null,
+      "variantOf": null
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_SWORD_BASIC_001",
+      "slot": "main_hand",
+      "nativeAvatarId": null
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_DAGGER_BASIC_001",
+      "slot": "main_hand|off_hand",
+      "nativeAvatarId": null
+    },
+    {
+      "extends": "equipment",
+      "equipmentId": "EQ_SHIELD_BUCKLER_001",
+      "slot": "off_hand",
+      "nativeAvatarId": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "templateId": "tbd-stats",
+  "kind": null,
+  "description": "Shared empty POW/DEF/SPD and rarity. Null means the Owner has not set a value. valueStatus TBD is required by the schema when the three stats are null.",
+  "defaults": {
+    "stats": {
+      "pow": null,
+      "def": null,
+      "spd": null,
+      "valueStatus": "TBD"
+    },
+    "rarity": null
+  }
+}
