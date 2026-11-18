@@ -1,0 +1,3116 @@
+{
+  "battleId": "ko-outcome",
+  "events": [
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 0,
+      "input": {
+        "avatarId": "TESTONLY_RIVAL_1",
+        "marker": "ko",
+        "sideId": "RIVAL",
+        "value": true
+      },
+      "op": "mark",
+      "result": {
+        "avatarId": "TESTONLY_RIVAL_1",
+        "marker": "ko",
+        "ok": true,
+        "sideId": "RIVAL",
+        "status": "MARKED",
+        "value": true
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 1,
+      "input": {
+        "avatarId": "TESTONLY_RIVAL_2",
+        "marker": "ko",
+        "sideId": "RIVAL",
+        "value": true
+      },
+      "op": "mark",
+      "result": {
+        "avatarId": "TESTONLY_RIVAL_2",
+        "marker": "ko",
+        "ok": true,
+        "sideId": "RIVAL",
+        "status": "MARKED",
+        "value": true
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 2,
+      "input": {
+        "avatarId": "TESTONLY_RIVAL_3",
+        "marker": "ko",
+        "sideId": "RIVAL",
+        "value": true
+      },
+      "op": "mark",
+      "result": {
+        "avatarId": "TESTONLY_RIVAL_3",
+        "marker": "ko",
+        "ok": true,
+        "sideId": "RIVAL",
+        "status": "MARKED",
+        "value": true
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 3,
+      "input": {
+        "avatarId": "TESTONLY_RIVAL_4",
+        "marker": "ko",
+        "sideId": "RIVAL",
+        "value": true
+      },
+      "op": "mark",
+      "result": {
+        "avatarId": "TESTONLY_RIVAL_4",
+        "marker": "ko",
+        "ok": true,
+        "sideId": "RIVAL",
+        "status": "MARKED",
+        "value": true
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": "RIVAL",
+          "status": "decided",
+          "verdict": {
+            "PLAYER": "victory",
+            "RIVAL": "defeat"
+          },
+          "winnerSideId": "PLAYER"
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": null,
+          "status": "ongoing",
+          "verdict": null,
+          "winnerSideId": null
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 4,
+      "input": {},
+      "op": "evaluate",
+      "result": {
+        "ok": true,
+        "outcome": {
+          "loserSideId": "RIVAL",
+          "status": "decided",
+          "verdict": {
+            "PLAYER": "victory",
+            "RIVAL": "defeat"
+          },
+          "winnerSideId": "PLAYER"
+        },
+        "status": "EVALUATED"
+      }
+    },
+    {
+      "after": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": "RIVAL",
+          "status": "decided",
+          "verdict": {
+            "PLAYER": "victory",
+            "RIVAL": "defeat"
+          },
+          "winnerSideId": "PLAYER"
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "before": {
+        "activeAvatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "activeSideId": "PLAYER",
+        "ap": {
+          "PLAYER": 5,
+          "RIVAL": null
+        },
+        "baseAp": 5,
+        "battleId": "ko-outcome",
+        "engineLog": [
+          {
+            "battleId": "ko-outcome",
+            "startingSideId": "PLAYER",
+            "teamSpd": {
+              "PLAYER": 10,
+              "RIVAL": 1
+            },
+            "type": "battle_start"
+          },
+          {
+            "ap": 5,
+            "roundIndex": 1,
+            "sideId": "PLAYER",
+            "turnIndex": 1,
+            "type": "turn_start"
+          }
+        ],
+        "hands": {
+          "PLAYER": [],
+          "RIVAL": []
+        },
+        "outcome": {
+          "loserSideId": "RIVAL",
+          "status": "decided",
+          "verdict": {
+            "PLAYER": "victory",
+            "RIVAL": "defeat"
+          },
+          "winnerSideId": "PLAYER"
+        },
+        "playedRecords": [],
+        "roundIndex": 1,
+        "sides": {
+          "PLAYER": {
+            "avatarIds": [
+              "AVT_AEG_001",
+              "AVT_PHA_001",
+              "AVT_CEL_001",
+              "AVT_SAN_001"
+            ],
+            "members": [
+              {
+                "avatarId": "AVT_AEG_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 4,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_PHA_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 3,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_CEL_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 2,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "AVT_SAN_001",
+                "labels": [
+                  "TEST-ONLY"
+                ],
+                "markers": {
+                  "ko": false
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "PLAYER"
+          },
+          "RIVAL": {
+            "avatarIds": [
+              "TESTONLY_RIVAL_1",
+              "TESTONLY_RIVAL_2",
+              "TESTONLY_RIVAL_3",
+              "TESTONLY_RIVAL_4"
+            ],
+            "members": [
+              {
+                "avatarId": "TESTONLY_RIVAL_1",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 1,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_2",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_3",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              },
+              {
+                "avatarId": "TESTONLY_RIVAL_4",
+                "labels": [
+                  "TEST-ONLY",
+                  "FIXTURE_SLOT"
+                ],
+                "markers": {
+                  "ko": true
+                },
+                "stats": {
+                  "def": 0,
+                  "pow": 0,
+                  "spd": 0,
+                  "valueStatus": "SET"
+                }
+              }
+            ],
+            "sideId": "RIVAL"
+          }
+        },
+        "startingSideId": "PLAYER",
+        "turnIndex": 1
+      },
+      "index": 5,
+      "input": {},
+      "op": "endTurn",
+      "result": {
+        "ok": false,
+        "outcome": {
+          "loserSideId": "RIVAL",
+          "status": "decided",
+          "verdict": {
+            "PLAYER": "victory",
+            "RIVAL": "defeat"
+          },
+          "winnerSideId": "PLAYER"
+        },
+        "reason": "BATTLE_DECIDED",
+        "status": "REJECTED"
+      }
+    }
+  ],
+  "finalState": {
+    "activeAvatarIds": [
+      "AVT_AEG_001",
+      "AVT_PHA_001",
+      "AVT_CEL_001",
+      "AVT_SAN_001"
+    ],
+    "activeSideId": "PLAYER",
+    "ap": {
+      "PLAYER": 5,
+      "RIVAL": null
+    },
+    "baseAp": 5,
+    "battleId": "ko-outcome",
+    "engineLog": [
+      {
+        "battleId": "ko-outcome",
+        "startingSideId": "PLAYER",
+        "teamSpd": {
+          "PLAYER": 10,
+          "RIVAL": 1
+        },
+        "type": "battle_start"
+      },
+      {
+        "ap": 5,
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "turn_start"
+      }
+    ],
+    "hands": {
+      "PLAYER": [],
+      "RIVAL": []
+    },
+    "outcome": {
+      "loserSideId": "RIVAL",
+      "status": "decided",
+      "verdict": {
+        "PLAYER": "victory",
+        "RIVAL": "defeat"
+      },
+      "winnerSideId": "PLAYER"
+    },
+    "playedRecords": [],
+    "roundIndex": 1,
+    "sides": {
+      "PLAYER": {
+        "avatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "members": [
+          {
+            "avatarId": "AVT_AEG_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 4,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_PHA_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 3,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_CEL_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 2,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_SAN_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "PLAYER"
+      },
+      "RIVAL": {
+        "avatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "members": [
+          {
+            "avatarId": "TESTONLY_RIVAL_1",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": true
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_2",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": true
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_3",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": true
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_4",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": true
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "RIVAL"
+      }
+    },
+    "startingSideId": "PLAYER",
+    "turnIndex": 1
+  },
+  "format": "comedy-fantasy.battle-log",
+  "initialState": {
+    "activeAvatarIds": [
+      "AVT_AEG_001",
+      "AVT_PHA_001",
+      "AVT_CEL_001",
+      "AVT_SAN_001"
+    ],
+    "activeSideId": "PLAYER",
+    "ap": {
+      "PLAYER": 5,
+      "RIVAL": null
+    },
+    "baseAp": 5,
+    "battleId": "ko-outcome",
+    "engineLog": [
+      {
+        "battleId": "ko-outcome",
+        "startingSideId": "PLAYER",
+        "teamSpd": {
+          "PLAYER": 10,
+          "RIVAL": 1
+        },
+        "type": "battle_start"
+      },
+      {
+        "ap": 5,
+        "roundIndex": 1,
+        "sideId": "PLAYER",
+        "turnIndex": 1,
+        "type": "turn_start"
+      }
+    ],
+    "hands": {
+      "PLAYER": [],
+      "RIVAL": []
+    },
+    "outcome": {
+      "loserSideId": null,
+      "status": "ongoing",
+      "verdict": null,
+      "winnerSideId": null
+    },
+    "playedRecords": [],
+    "roundIndex": 1,
+    "sides": {
+      "PLAYER": {
+        "avatarIds": [
+          "AVT_AEG_001",
+          "AVT_PHA_001",
+          "AVT_CEL_001",
+          "AVT_SAN_001"
+        ],
+        "members": [
+          {
+            "avatarId": "AVT_AEG_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 4,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_PHA_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 3,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_CEL_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 2,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "AVT_SAN_001",
+            "labels": [
+              "TEST-ONLY"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "PLAYER"
+      },
+      "RIVAL": {
+        "avatarIds": [
+          "TESTONLY_RIVAL_1",
+          "TESTONLY_RIVAL_2",
+          "TESTONLY_RIVAL_3",
+          "TESTONLY_RIVAL_4"
+        ],
+        "members": [
+          {
+            "avatarId": "TESTONLY_RIVAL_1",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 1,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_2",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_3",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          },
+          {
+            "avatarId": "TESTONLY_RIVAL_4",
+            "labels": [
+              "TEST-ONLY",
+              "FIXTURE_SLOT"
+            ],
+            "markers": {
+              "ko": false
+            },
+            "stats": {
+              "def": 0,
+              "pow": 0,
+              "spd": 0,
+              "valueStatus": "SET"
+            }
+          }
+        ],
+        "sideId": "RIVAL"
+      }
+    },
+    "startingSideId": "PLAYER",
+    "turnIndex": 1
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "hash": "sha256:c74b11a5be4de63c3b8a64d907f4e7fd7c7351f97ec571a1d66a0718e976af42"
+  },
+  "label": "TEST-ONLY",
+  "note": "TEST-ONLY fixture. Sets the existing ko marker, then asks the injected defeat predicate. This is not an HP rule. Rival ids are empty fixture slots, not new characters.",
+  "ruleset": {
+    "entries": [
+      {
+        "key": "teamSpd",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "teamSpdSum",
+        "sourceHash": "sha256:350715d8f7aea7236505859b2834b1a7a170e55afec834f5eb5c0038316ae948"
+      },
+      {
+        "key": "spdTieBreak",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "spdTieBreak",
+        "sourceHash": "sha256:0e392e40dca95b22afe5cfc8e5f20b2c03684d00e9a771dc343a25dbffab1a4c"
+      },
+      {
+        "key": "isSideDefeated",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "sideDefeatedWhenEveryKo",
+        "sourceHash": "sha256:41dc29906c6fd2e2386732a91718d1c4efad53f97e4769489d0ebe7a0b7d6160"
+      },
+      {
+        "key": "simultaneousDefeat",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "simultaneousDefeat",
+        "sourceHash": "sha256:968e7a10f3ebb555996e9828dac44b7281af1262e75906957c4e221a9624c6fc"
+      },
+      {
+        "key": "perTurnActionLimit",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "noExtraActionLimit",
+        "sourceHash": "sha256:f2c88657e3821a721ee8ca316cbc892ca94e01c3e910aa66ab3511d8c021ed30"
+      },
+      {
+        "key": "resolveApCost",
+        "kind": "LABELLED",
+        "label": "TEST-ONLY",
+        "name": "apCostByActionType",
+        "sourceHash": "sha256:f34338bf1978cd55548ac58d2f11032890289b2f59bad4b513e61e1636682164"
+      },
+      {
+        "key": "draw",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "draw",
+        "sourceHash": "sha256:620add5e5b054dd61725c9f47422778093c98d70a63862db3efea630031f4d1b"
+      },
+      {
+        "key": "discard",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "discard",
+        "sourceHash": "sha256:299efc6da3352fa541aedb8682a83652b3ecba0fc0c5668b12117d82d8113ce8"
+      },
+      {
+        "key": "deckSize",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "deckSize",
+        "sourceHash": "sha256:0f3c0c1d09acf42b0e9f164d58ed048504fed9da6b9ad646ca2491af7efbe515"
+      },
+      {
+        "key": "damage",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "damage",
+        "sourceHash": "sha256:567ef60db356d2dca0a0253d0afd9145927a8ecf673d2b2f524fc23376069cd3"
+      },
+      {
+        "key": "skillEffect",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "skillEffect",
+        "sourceHash": "sha256:a502c0b423dc3c334ad411f4062e1ce7113382698e103da30481a37a3348f74b"
+      },
+      {
+        "key": "gachaRate",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "gachaRate",
+        "sourceHash": "sha256:9744f68c0cfec9e718f23c7d3d12bc53e095a2006651760d5943b2e2525179f6"
+      },
+      {
+        "key": "upgrade",
+        "kind": "ENGINE_DEFAULT",
+        "label": null,
+        "name": "upgrade",
+        "sourceHash": "sha256:b325a5a018c2c5b40f01f12ffa3e5055b73b358d861fb55cc8a60528371b1b54"
+      }
+    ],
+    "hash": "sha256:00f144f0df4823976db3214a390df44794c8e68a15b99eea897ee3a97ba88f59",
+    "id": "test-only-sum-spd-ko",
+    "label": "TEST-ONLY",
+    "parameters": {
+      "apCostByActionType": {
+        "ATK": 2,
+        "DEF": 1,
+        "Skill": 3
+      },
+      "damage": "not injected; engine default throws",
+      "isSideDefeated": "true when every member marker ko is true",
+      "note": "Fixture values for the recorder. Not game defaults.",
+      "perTurnActionLimit": "accept while the play otherwise affords its cost",
+      "skillEffect": "not injected; engine default throws",
+      "teamSpd": "sum of the four member spd stats"
+    }
+  },
+  "setup": {
+    "hands": {},
+    "sideA": {
+      "members": [
+        {
+          "avatarId": "AVT_AEG_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 4,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "AVT_PHA_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 3,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "AVT_CEL_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 2,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "AVT_SAN_001",
+          "labels": [
+            "TEST-ONLY"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 1,
+            "valueStatus": "SET"
+          }
+        }
+      ],
+      "sideId": "PLAYER"
+    },
+    "sideB": {
+      "members": [
+        {
+          "avatarId": "TESTONLY_RIVAL_1",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 1,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "TESTONLY_RIVAL_2",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 0,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "TESTONLY_RIVAL_3",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 0,
+            "valueStatus": "SET"
+          }
+        },
+        {
+          "avatarId": "TESTONLY_RIVAL_4",
+          "labels": [
+            "TEST-ONLY",
+            "FIXTURE_SLOT"
+          ],
+          "markers": {
+            "ko": false
+          },
+          "stats": {
+            "def": 0,
+            "pow": 0,
+            "spd": 0,
+            "valueStatus": "SET"
+          }
+        }
+      ],
+      "sideId": "RIVAL"
+    }
+  },
+  "setupResult": {
+    "ok": true,
+    "status": "READY"
+  },
+  "version": 1
+}

@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "battle-log.schema.json",
+  "title": "Comedy Fantasy battle log",
+  "description": "Version 1 battle log written by the replay tool. Ruleset functions are not embedded; the log stores their identity hash. See docs/BATTLE_LOG_FORMAT.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "version",
+    "label",
+    "note",
+    "battleId",
+    "ruleset",
+    "setup",
+    "setupResult",
+    "initialState",
+    "events",
+    "finalState",
+    "integrity"
+  ],
+  "properties": {
+    "format": { "const": "comedy-fantasy.battle-log" },
+    "version": { "const": 1 },
+    "label": { "type": ["string", "null"] },
+    "note": { "type": ["string", "null"] },
+    "battleId": { "type": "string", "minLength": 1 },
+    "ruleset": { "$ref": "#/$defs/ruleset" },
+    "setup": { "$ref": "#/$defs/setup" },
+    "setupResult": { "$ref": "#/$defs/result" },
+    "initialState": { "$ref": "#/$defs/stateOrNull" },
+    "events": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/event" }
+    },
+    "finalState": { "$ref": "#/$defs/stateOrNull" },
+    "integrity": { "$ref": "#/$defs/integrity" }
+  },
+  "$defs": {
+    "ruleset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "parameters", "entries", "hash"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "label": { "type": ["string", "null"] },
+        "parameters": { "type": "object" },
+        "hash": { "$ref": "#/$defs/sha256" },
+        "entries": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/ruleEntry" }
+        }
+      }
+    },
+    "ruleEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "name", "kind", "label", "sourceHash"],
+      "properties": {
+        "key": { "type": "string" },
+        "name": { "type": "string" },
+        "kind": { "enum": ["ENGINE_DEFAULT", "LABELLED", "UNLABELLED"] },
+        "label": { "type": ["string", "null"] },
+        "sourceHash": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "setup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sideA", "sideB", "hands"],
+      "properties": {
+        "sideA": { "$ref": "#/$defs/side" },
+        "sideB": { "$ref": "#/$defs/side" },
+        "hands": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "object" }
+          }
+        }
+      }
+    },
+    "side": {
+      "type": "object",
+      "required": ["sideId", "members"],
+      "properties": {
+        "sideId": { "type": "string", "minLength": 1 },
+        "members": { "type": "array" }
+      }
+    },
+    "result": {
+      "type": "object",
+      "required": ["ok", "status"],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "status": { "type": "string" },
+        "code": { "type": ["string", "null"] },
+        "reason": { "type": ["string", "null"] },
+        "questionId": { "type": "string" },
+        "topic": { "type": "string" },
+        "message": { "type": "string" }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index", "op", "input", "result", "before", "after"],
+      "properties": {
+        "index": { "type": "integer", "minimum": 0 },
+        "op": { "enum": ["play", "resolve", "act", "endTurn", "mark", "evaluate"] },
+        "input": { "type": "object" },
+        "result": { "$ref": "#/$defs/result" },
+        "before": { "$ref": "#/$defs/stateOrNull" },
+        "after": { "$ref": "#/$defs/stateOrNull" }
+      }
+    },
+    "stateOrNull": {
+      "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/state" }]
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "battleId",
+        "startingSideId",
+        "activeSideId",
+        "activeAvatarIds",
+        "turnIndex",
+        "roundIndex",
+        "baseAp",
+        "ap",
+        "outcome",
+        "hands",
+        "playedRecords",
+        "engineLog",
+        "sides"
+      ],
+      "properties": {
+        "battleId": { "type": "string" },
+        "startingSideId": { "type": "string" },
+        "activeSideId": { "type": "string" },
+        "activeAvatarIds": { "type": "array", "items": { "type": "string" } },
+        "turnIndex": { "type": "integer", "minimum": 1 },
+        "roundIndex": { "type": "integer", "minimum": 1 },
+        "baseAp": { "type": "integer" },
+        "ap": { "type": "object", "additionalProperties": { "type": ["integer", "null"] } },
+        "outcome": { "type": "object" },
+        "hands": { "type": "object" },
+        "playedRecords": { "type": "array" },
+        "engineLog": { "type": "array" },
+        "sides": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["sideId", "avatarIds", "members"],
+            "properties": {
+              "sideId": { "type": "string" },
+              "avatarIds": { "type": "array", "items": { "type": "string" } },
+              "members": { "type": "array" }
+            }
+          }
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["algorithm", "hash"],
+      "properties": {
+        "algorithm": { "const": "sha256" },
+        "hash": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    }
+  }
+}
