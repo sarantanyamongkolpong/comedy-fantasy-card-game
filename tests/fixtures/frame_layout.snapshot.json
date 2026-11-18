@@ -1,0 +1,63 @@
+{
+  "canvas": {
+    "w": 750,
+    "h": 1050
+  },
+  "units": "px, [x, y, w, h], origin top-left",
+  "rects": {
+    "art_window": {
+      "x": 30,
+      "y": 30,
+      "w": 690,
+      "h": 920
+    },
+    "faction_emblem": {
+      "x": 42,
+      "y": 42,
+      "w": 96,
+      "h": 96
+    },
+    "rarity": {
+      "x": 560,
+      "y": 48,
+      "w": 148,
+      "h": 40
+    },
+    "name": {
+      "x": 120,
+      "y": 896,
+      "w": 510,
+      "h": 50
+    },
+    "stat_pow": {
+      "x": 45,
+      "y": 960,
+      "w": 200,
+      "h": 70
+    },
+    "stat_def": {
+      "x": 275,
+      "y": 960,
+      "w": 200,
+      "h": 70
+    },
+    "stat_spd": {
+      "x": 505,
+      "y": 960,
+      "w": 200,
+      "h": 70
+    }
+  },
+  "art_source_size": {
+    "w": 864,
+    "h": 1152,
+    "fit": "scale to art_window (exact 3:4), lanczos"
+  },
+  "draw_order": [
+    "card_art (under)",
+    "frame overlay",
+    "emblem in faction_emblem",
+    "text: name / stat values / rarity gems (runtime)"
+  ],
+  "notes": "Frames carry no text, stats or rarity. Name plate and stat band overlap the bottom of art_window; keep key art features out of card y>890 (bottom ~6% of the art)."
+}

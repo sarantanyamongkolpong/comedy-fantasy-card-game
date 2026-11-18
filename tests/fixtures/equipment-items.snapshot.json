@@ -1,0 +1,116 @@
+{
+  "_snapshot": {
+    "source_branch": "feat/card-art-prototype-mira",
+    "source_commit": "d65c89dc87a9554d5611a108146b509c7aa7fcf0",
+    "note": "Partial JSON snapshot for loader tests. Not a live dependency. No binaries were copied. Shared item bodies in the source omit asset_id; the key is copied into asset_id here.",
+    "source_files": [
+      "assets/characters/AVT_AEG_001/equipment/items.json",
+      "assets/characters/AVT_PHA_001/equipment/items.json",
+      "assets/equipment/shared_items.json"
+    ]
+  },
+  "items": {
+    "EQ_AEG_POT_HELMET_SILVER_001": {
+      "asset_id": "EQ_AEG_POT_HELMET_SILVER_001",
+      "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_SILVER_001.png",
+      "slot": "headgear",
+      "pivot": [
+        22,
+        10
+      ],
+      "pivot_kind": "mount",
+      "size": [
+        39,
+        28
+      ],
+      "native_character": "AVT_AEG_001",
+      "native_origin": [
+        44,
+        24
+      ]
+    },
+    "EQ_AEG_POT_HELMET_GOLD_001": {
+      "asset_id": "EQ_AEG_POT_HELMET_GOLD_001",
+      "file": "assets/characters/AVT_AEG_001/equipment/EQ_AEG_POT_HELMET_GOLD_001.png",
+      "slot": "headgear",
+      "pivot": [
+        22,
+        10
+      ],
+      "pivot_kind": "mount",
+      "size": [
+        39,
+        28
+      ],
+      "native_character": "AVT_AEG_001",
+      "native_origin": [
+        44,
+        24
+      ],
+      "variant_of": "EQ_AEG_POT_HELMET_SILVER_001"
+    },
+    "EQ_PHA_SNEAKERS_SQUEAK_001": {
+      "asset_id": "EQ_PHA_SNEAKERS_SQUEAK_001",
+      "file": "assets/characters/AVT_PHA_001/equipment/EQ_PHA_SNEAKERS_SQUEAK_001.png",
+      "slot": "accessory",
+      "pivot": [
+        34,
+        21
+      ],
+      "pivot_kind": "mount",
+      "size": [
+        64,
+        21
+      ],
+      "native_character": "AVT_PHA_001",
+      "native_origin": [
+        30,
+        101
+      ]
+    },
+    "EQ_SWORD_BASIC_001": {
+      "slot": "main_hand",
+      "pivot": [
+        5,
+        29
+      ],
+      "pivot_kind": "grip",
+      "size": [
+        11,
+        36
+      ],
+      "compatible_rigs": [
+        "humanoid_heavy",
+        "humanoid_standard"
+      ],
+      "tested_on": [
+        "AVT_AEG_001",
+        "AVT_PHA_001"
+      ],
+      "note": "Plain steel short sword, blade up, brass guard",
+      "asset_id": "EQ_SWORD_BASIC_001"
+    },
+    "EQ_DAGGER_BASIC_001": {
+      "slot": "main_hand|off_hand",
+      "pivot": [
+        3,
+        4
+      ],
+      "pivot_kind": "grip",
+      "size": [
+        7,
+        22
+      ],
+      "compatible_rigs": [
+        "humanoid_standard",
+        "humanoid_heavy"
+      ],
+      "tested_on": [
+        "AVT_PHA_001",
+        "AVT_AEG_001"
+      ],
+      "note": "Plain dagger, reverse grip (blade down)",
+      "asset_id": "EQ_DAGGER_BASIC_001"
+    }
+  }
+}

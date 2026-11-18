@@ -1,0 +1,12 @@
+{
+  "name": "comedy-fantasy-card-game",
+  "private": true,
+  "type": "module",
+  "description": "Comedy Fantasy Card Game — core systems prototype (schema, turn battle, hand/AP, asset loader).",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

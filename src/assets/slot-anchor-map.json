@@ -1,0 +1,10 @@
+{
+  "source": "Equip convention recorded in art-branch docs/CHARACTER_ASSET_REGISTRY.md at commit d65c89dc87a9554d5611a108146b509c7aa7fcf0. Headgear uses the head anchor. Accessories use the feet anchor. main_hand, off_hand, and back use the anchor of the same name. This file stores anchor names only.",
+  "map": {
+    "headgear": "head",
+    "main_hand": "main_hand",
+    "off_hand": "off_hand",
+    "accessory": "feet",
+    "back": "back"
+  }
+}

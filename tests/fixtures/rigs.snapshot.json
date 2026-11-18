@@ -1,0 +1,99 @@
+{
+  "_snapshot": {
+    "source_branch": "feat/card-art-prototype-mira",
+    "source_commit": "d65c89dc87a9554d5611a108146b509c7aa7fcf0",
+    "note": "Partial JSON snapshot for loader tests. Not a live dependency. No binaries were copied. Anchors and fit offsets are copied. Layer paint notes are omitted.",
+    "source_files": [
+      "assets/characters/_rigs/humanoid_heavy.json",
+      "assets/characters/_rigs/humanoid_standard.json"
+    ]
+  },
+  "rigs": [
+    {
+      "rig": "humanoid_heavy",
+      "canvas": [
+        128,
+        128
+      ],
+      "baseline_y": 122,
+      "characters": {
+        "AVT_AEG_001": {
+          "anchors": {
+            "head": [
+              66,
+              34
+            ],
+            "main_hand": [
+              46,
+              75
+            ],
+            "off_hand": [
+              86,
+              76
+            ],
+            "back": [
+              60,
+              58
+            ],
+            "body_center": [
+              62,
+              80
+            ],
+            "feet": [
+              64,
+              122
+            ]
+          },
+          "fit": {
+            "EQ_SWORD_BASIC_001": [
+              -6,
+              -2
+            ],
+            "EQ_DAGGER_BASIC_001": [
+              -4,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "rig": "humanoid_standard",
+      "canvas": [
+        128,
+        128
+      ],
+      "baseline_y": 122,
+      "characters": {
+        "AVT_PHA_001": {
+          "anchors": {
+            "head": [
+              70,
+              30
+            ],
+            "main_hand": [
+              40,
+              66
+            ],
+            "off_hand": [
+              88,
+              60
+            ],
+            "back": [
+              60,
+              52
+            ],
+            "body_center": [
+              64,
+              74
+            ],
+            "feet": [
+              64,
+              122
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
