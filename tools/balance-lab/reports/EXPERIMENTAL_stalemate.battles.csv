@@ -1,0 +1,2 @@
+scenarioId,label,repeatIndex,seed,seedConsumed,policyA,policyB,stoppedReason,winnerSideId,loserSideId,simultaneous,turns,rounds,apSpentA,apSpentB,apRefreshedA,apRefreshedB,apLeftoverA,apLeftoverB,grantsA,grantsB,playsAtkA,playsDefA,playsSkillA,playsAtkB,playsDefB,playsSkillB,loopKind,loopFirstTurn,loopRepeatTurn
+EXPERIMENTAL_stalemate,EXPERIMENTAL,0,7,false,always-ATK,always-ATK,repeated-state,,,false,6,3,4,4,15,15,11,11,0,0,4,0,0,4,0,0,repeated-state,4,6

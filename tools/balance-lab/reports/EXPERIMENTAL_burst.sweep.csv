@@ -1,0 +1,10 @@
+label,policyA,policyB,battles,winsA,winsB,unresolved,averageTurns,averageApSpentTotal
+EXPERIMENTAL,always-ATK,always-ATK,3,3,0,0,1,4
+EXPERIMENTAL,always-ATK,always-DEF,3,3,0,0,1,4
+EXPERIMENTAL,always-ATK,mixed,3,3,0,0,1,4
+EXPERIMENTAL,always-DEF,always-ATK,3,0,3,0,2,4
+EXPERIMENTAL,always-DEF,always-DEF,3,0,0,3,4,0
+EXPERIMENTAL,always-DEF,mixed,3,0,3,0,4,6
+EXPERIMENTAL,mixed,always-ATK,3,0,3,0,2,9
+EXPERIMENTAL,mixed,always-DEF,3,3,0,0,3,6
+EXPERIMENTAL,mixed,mixed,3,3,0,0,3,11

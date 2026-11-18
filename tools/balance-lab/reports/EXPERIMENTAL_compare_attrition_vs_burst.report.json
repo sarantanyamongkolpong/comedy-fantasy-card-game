@@ -1,0 +1,133 @@
+{
+  "label": "EXPERIMENTAL",
+  "implementationStatus": "EXPERIMENTAL",
+  "disclaimer": "EXPERIMENTAL: these results depend only on the parameters in this scenario. They are not game balance, not a recommendation, and not PRODUCTION_READY.",
+  "note": "Deltas are left minus right under each scenario's own supplied parameters. They are not a balance recommendation.",
+  "evaluatorDefinitions": {
+    "formulaClamp": "minimum is applied first, then maximum when maximum is not null",
+    "zeroAmountConsumes": "parameters.damage.incoming.zeroAmountConsumes decides whether a 0 amount clears mitigateNext",
+    "repeatSeed": "repeatIndex uses seed + repeatIndex * repeatSeedStep",
+    "rng": "mulberry32. Consumption order: seeded SPD tie-break (only when the team totals are equal), side A shuffle when order is seededShuffle, side B shuffle, reshuffles in time order, then a seeded simultaneous resolution if that rule runs",
+    "fingerprintExcludes": "turnIndex, roundIndex, and the play log are excluded so a recurring position can be detected",
+    "dominanceDenominator": "wins divided by battles in that cell, including unresolved battles. Cells have equal weight. Mirror pairings are included. The observation is per seat because the starting seat can differ",
+    "maxSpendableAp": "largest AP from which an in-deck card can still be paid during one turn. Only skills whose grantsAp exceeds their own cost are helpers. The target card occupies a hand slot. The engine assigns base AP at turn start, so grants do not carry to the next turn",
+    "healSkipsDefeatedUnlessRevive": "ally heals and buffs include defeated avatars only when hp.revive is true. Damage selections never include them",
+    "drawLossSetsHpZero": "loseOnEmptyDraw and loseOnOverflow set that side's experimental HP to 0 so the supplied defeat predicate can run. This is not a second victory type",
+    "shieldExpiry": "expireAtStartOfOwnerNextTurn clears shield after the draw and before plays on the owner's later turns, so the shield is present during the opponent's intervening turn",
+    "multiTarget": "every target selected at the start of an effect is resolved, then the outcome is evaluated once",
+    "actorStatRead": "the actor selector reads parameters.targeting.actorStatRead and does not follow the damage formula's statRead on its own",
+    "teamSpdReadsBase": "team SPD aggregation reads stats.spd only and ignores marker bonuses",
+    "playThenResolve": "the engine play spends AP and does not apply an effect. The laboratory then calls resolveEffect with the compiled damage or skill rule"
+  },
+  "left": {
+    "scenarioId": "EXPERIMENTAL_attrition",
+    "notes": "EXPERIMENTAL long fight. POW minus DEF, shields, and a small heal. Not a recommended balance.",
+    "policies": {
+      "sideA": {
+        "id": "always-ATK",
+        "label": "EXPERIMENTAL",
+        "priority": [
+          "ATK"
+        ]
+      },
+      "sideB": {
+        "id": "mixed",
+        "label": "EXPERIMENTAL",
+        "priority": [
+          "DEF",
+          "Skill",
+          "ATK"
+        ]
+      }
+    },
+    "summary": {
+      "battles": 3,
+      "winsA": 3,
+      "winsB": 0,
+      "unresolved": 0,
+      "winRateA": 1,
+      "winRateB": 0,
+      "unresolvedRate": 0,
+      "averageTurns": 28.333333333333332,
+      "minTurns": 27,
+      "maxTurns": 29,
+      "averageRounds": 14.666666666666666,
+      "averageApSpentA": 29.333333333333332,
+      "averageApSpentB": 36,
+      "averageApSpentTotal": 65.33333333333333,
+      "stoppedReasons": {
+        "decided": 3,
+        "turn-cap": 0,
+        "repeated-state": 0
+      },
+      "simultaneousBattles": 0,
+      "neverPlayedAcrossBattles": []
+    },
+    "impossibleAp": [],
+    "unreachable": [],
+    "maxSpendableAp": 5
+  },
+  "right": {
+    "scenarioId": "EXPERIMENTAL_burst",
+    "notes": "EXPERIMENTAL short fight. Flat damage equals HP, so one ATK defeats an avatar. Not a recommended balance.",
+    "policies": {
+      "sideA": {
+        "id": "always-ATK",
+        "label": "EXPERIMENTAL",
+        "priority": [
+          "ATK"
+        ]
+      },
+      "sideB": {
+        "id": "always-ATK",
+        "label": "EXPERIMENTAL",
+        "priority": [
+          "ATK"
+        ]
+      }
+    },
+    "summary": {
+      "battles": 3,
+      "winsA": 3,
+      "winsB": 0,
+      "unresolved": 0,
+      "winRateA": 1,
+      "winRateB": 0,
+      "unresolvedRate": 0,
+      "averageTurns": 1,
+      "minTurns": 1,
+      "maxTurns": 1,
+      "averageRounds": 1,
+      "averageApSpentA": 4,
+      "averageApSpentB": 0,
+      "averageApSpentTotal": 4,
+      "stoppedReasons": {
+        "decided": 3,
+        "turn-cap": 0,
+        "repeated-state": 0
+      },
+      "simultaneousBattles": 0,
+      "neverPlayedAcrossBattles": [
+        "DEF",
+        "Skill"
+      ]
+    },
+    "impossibleAp": [],
+    "unreachable": [],
+    "maxSpendableAp": 5
+  },
+  "deltas": {
+    "averageTurns": 27.333333333333332,
+    "averageRounds": 13.666666666666666,
+    "winRateA": 0,
+    "winRateB": 0,
+    "unresolvedRate": 0,
+    "averageApSpentA": 25.333333333333332,
+    "averageApSpentB": 36,
+    "averageApSpentTotal": 61.33333333333333
+  },
+  "fullReports": [
+    "EXPERIMENTAL_attrition.report.json",
+    "EXPERIMENTAL_burst.report.json"
+  ]
+}
