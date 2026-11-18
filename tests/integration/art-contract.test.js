@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
@@ -47,8 +47,64 @@ const EXPECTED_ISSUES = [
   ['duplicate-ids', 'PASS'],
 ];
 
+const ART_BINARY = /\.(png|jpe?g|gif|webp|ico|bmp)$/i;
+const ART_BINARY_IMPORT = /(?:^|\n)\s*(?:import\s+(?:[^'"\n]+\s+from\s+)?|import\s*\(|require\s*\()\s*['"][^'"]+\.(?:png|jpe?g|gif|webp|ico|bmp)['"]/;
+const ART_DATA_URI = /data:image\/(?:png|jpeg|gif|webp);base64,/i;
+
 function readRepo(path) {
   return readFileSync(join(repoRoot, path), 'utf8');
+}
+
+/**
+ * Art is legitimately in this commit only when HEAD contains the manifest and
+ * at least one of its paths exists on disk. A systems-only HEAD does not.
+ * @param {Set<string>} tracked
+ */
+function committedArtTreePresent(tracked) {
+  if (!tracked.has(ART_JSON.manifest)) return false;
+  const manifestPath = join(repoRoot, ART_JSON.manifest);
+  if (!existsSync(manifestPath)) return false;
+  let manifest;
+  try {
+    manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+  } catch {
+    return false;
+  }
+  if (!manifest || !Array.isArray(manifest.assets) || manifest.assets.length === 0) return false;
+  return manifest.assets.some((entry) => {
+    if (!entry || typeof entry.path !== 'string' || entry.path.length === 0) return false;
+    if (entry.path.startsWith('/') || entry.path.split(/[\\/]/).includes('..')) return false;
+    return existsSync(join(repoRoot, entry.path));
+  });
+}
+
+/**
+ * Systems code may name art paths. It may not import or carry the binaries.
+ * @returns {string[]}
+ */
+function embeddedArtInSystems() {
+  /** @type {string[]} */
+  const hits = [];
+  function walk(directory, relative) {
+    for (const entry of readdirSync(directory, { withFileTypes: true })) {
+      const full = join(directory, entry.name);
+      const next = `${relative}/${entry.name}`;
+      if (entry.isDirectory()) {
+        walk(full, next);
+        continue;
+      }
+      if (!entry.isFile()) continue;
+      if (ART_BINARY.test(entry.name)) {
+        hits.push(next);
+        continue;
+      }
+      if (!/\.(?:js|mjs|cjs|json)$/.test(entry.name)) continue;
+      const text = readFileSync(full, 'utf8');
+      if (ART_BINARY_IMPORT.test(text) || ART_DATA_URI.test(text)) hits.push(next);
+    }
+  }
+  walk(join(repoRoot, 'src'), 'src');
+  return hits;
 }
 
 function characterBlock(avatarId) {
@@ -254,10 +310,17 @@ test('required art changes name file, field, current value, and required value',
   assert.equal(audit.artChanges.some((row) => row.issue === 'R-ANCHOR' && row.record === 'EQ_DAGGER_BASIC_001'), false);
 });
 
-test('reports match the renderer and this commit does not vendor art', () => {
+test('reports match the renderer and systems code does not embed art', () => {
   assert.equal(readRepo('docs/ART_SYSTEMS_COMPATIBILITY_REPORT.md'), renderCompatibilityReport(audit));
   assert.equal(readRepo('docs/REQUIRED_CHANGES_FOR_MIRA.md'), renderRequiredChangesDoc(audit));
   const tracked = execFileSync('git', ['ls-tree', '-r', '--name-only', 'HEAD'], { cwd: repoRoot, encoding: 'utf8' });
+  const trackedLines = new Set(tracked.split('\n').filter(Boolean));
+  const embedded = [
+    ...embeddedArtInSystems(),
+    ...[...trackedLines].filter((path) => path.startsWith('src/') && ART_BINARY.test(path)),
+  ];
+  assert.deepEqual(embedded, []);
+  if (committedArtTreePresent(trackedLines)) return;
   assert.equal(tracked.includes('assets/characters/'), false);
   assert.equal(tracked.includes('docs/ASSET_MANIFEST.json'), false);
   assert.equal(tracked.includes('assets/card-art/'), false);

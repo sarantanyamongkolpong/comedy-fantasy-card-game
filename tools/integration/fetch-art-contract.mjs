@@ -3,13 +3,16 @@
  * Fetch the pinned Mira art commit, merge it with --no-commit into a
  * temporary worktree, run the test suite against those files, then abort
  * the merge and delete the worktree. Nothing is committed or pushed.
+ *
+ * When ART_ROOT is set, tests read that checkout instead of creating a
+ * worktree. The art ref is still pinned to ART_COMMIT.
  */
 import { execFileSync, spawnSync } from 'node:child_process';
 import { existsSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ART_BRANCH, ART_COMMIT, ART_REF } from '../../src/integration/constants.js';
+import { ART_BRANCH, ART_COMMIT, ART_JSON, ART_REF } from '../../src/integration/constants.js';
 import { auditArtBundle } from '../../src/integration/audit.js';
 import { loadArtBundle } from '../../src/integration/load-art.js';
 import { formatAudit } from '../../src/integration/report.js';
@@ -37,6 +40,29 @@ const sha = git(['rev-parse', ART_REF]);
 if (sha !== ART_COMMIT) {
   fail(`Art ref ${ART_REF} is ${sha}. This audit is pinned to ${ART_COMMIT}.`);
   process.exit(1);
+}
+
+const artRootOverride = process.env.ART_ROOT;
+if (artRootOverride) {
+  if (!existsSync(artRootOverride)) {
+    fail(`ART_ROOT does not exist: ${artRootOverride}`);
+    process.exit(1);
+  }
+  if (!existsSync(join(artRootOverride, ART_JSON.manifest))) {
+    fail(`ART_ROOT is missing ${ART_JSON.manifest}.`);
+    process.exit(1);
+  }
+  console.log(`ART_ROOT override: ${artRootOverride}`);
+  console.log(`Art ref remains pinned to ${ART_COMMIT}.`);
+  const bundle = loadArtBundle({ repo, root: artRootOverride, ref: ART_REF });
+  console.log(formatAudit(auditArtBundle(bundle)));
+  console.log('');
+  const test = spawnSync(process.execPath, ['--test', '--test-reporter', 'spec'], {
+    cwd: repo,
+    env: { ...process.env, ART_ROOT: artRootOverride, ART_REF },
+    stdio: 'inherit',
+  });
+  process.exit(test.status ?? 1);
 }
 
 const parent = mkdtempSync(join(tmpdir(), 'art-systems-contract-'));
