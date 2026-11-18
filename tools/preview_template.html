@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="th"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23f0c24b'/></svg>">
 <title>Comedy Fantasy Card Game — First 4 Avatars · Art & Asset Prototype</title>
 <style>
 :root{--bg:#14131c;--panel:#1f1d2b;--ink:#ece9f6;--mut:#a7a2bd;--acc:#f0c24b;--line:#34304a}
@@ -22,25 +23,41 @@ main{padding:10px 12px 40px;max-width:1500px;margin:0 auto}
 .card img{position:absolute;display:block}.card .art{object-fit:cover}
 .card .ph{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;color:#999;border:2px dashed #555;font-size:4cqw}
 .card .t{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;text-shadow:0 1px 2px #000,0 0 6px #000;font-weight:700;line-height:1.05}
-.card .name{font-size:4.2cqw;flex-direction:column}.card .name small{font-size:3.2cqw;font-weight:600;opacity:.9}
+/* Name plate is 50/1050 of the card. Two 12px lines need a card wider than ~390px;
+   below that the English name stays on the plate and the Thai name stays in the caption. */
+.card .name{font-size:clamp(12px, 3.3cqw, 22px);line-height:1;flex-direction:column}
+.card .name small{font-size:clamp(12px, 2.5cqw, 15px);line-height:1;font-weight:600;opacity:.9}
+@container (max-width: 390px){
+ .card .name small{display:none}
+ .card .name{font-size:clamp(12px, 4.8cqw, 20px)}
+}
 .card .stat{font-size:3.6cqw;flex-direction:column}.card .stat b{font-size:3cqw;opacity:.85;letter-spacing:.08em}.card .stat span{font-size:4.4cqw;color:#ffe9a8}
 .card .rar{font-size:2.8cqw;color:#ddd;border:1px dashed rgba(255,255,255,.5);border-radius:6px;background:rgba(0,0,0,.35)}
 .card .fac{position:absolute;left:0;right:0;bottom:0;font-size:2.6cqw;text-align:center;color:#fff;opacity:.0}
-.cardmeta{margin-top:6px;font-size:12px;color:var(--mut)}
+.cardmeta{margin-top:6px;font-size:14px;color:var(--mut);line-height:1.35;overflow-wrap:anywhere}
+.cardmeta .who{color:var(--ink);font-size:15px}
 /* sprite */
 .stagewrap{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
 .stage{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;line-height:0}
 .checker{background-color:#cfd0d8;background-image:linear-gradient(45deg,#b7b8c4 25%,transparent 25%),linear-gradient(-45deg,#b7b8c4 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#b7b8c4 75%),linear-gradient(-45deg,transparent 75%,#b7b8c4 75%);background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0}
 .dark{background:#262436!important}
-canvas{image-rendering:pixelated;image-rendering:crisp-edges;display:block}
-.ctrl{display:flex;flex-direction:column;gap:8px;min-width:0}
-.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+canvas{image-rendering:crisp-edges;image-rendering:pixelated;display:block}
+.ctrl{display:flex;flex-direction:column;gap:8px;min-width:0;max-width:100%}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:100%}
 .row label{font-size:12px;color:var(--mut)}
-select{background:#2a2740;color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px;font:inherit;max-width:100%}
+.slotrow{display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;width:100%;gap:6px}
+select{background:#2a2740;color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px;font:inherit;max-width:100%;min-width:0}
+.slotrow select{width:100%}
+.stagewrap.stack{grid-template-columns:minmax(0,1fr)}
+.stagewrap.stack .stage{justify-self:center;max-width:100%}
+.btn,.swap{max-width:100%}
+.btn{white-space:normal}
 table{border-collapse:collapse;width:100%;font-size:12px;table-layout:fixed}td code{word-break:break-all}td{overflow-wrap:anywhere}td,th{border-bottom:1px solid var(--line);padding:3px 4px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
 code{font-size:11px;color:#cbbcff}
 .st{font-size:10px;padding:1px 5px;border-radius:6px;background:#232a40;color:#9fc0ff}.st.CONCEPT{background:#3a1f2a;color:#ff9fb8}.st.INTEGRATED{background:#1f3a2a;color:#9fffc0}
-.swap{display:flex;gap:6px;flex-wrap:wrap}
+.swap{display:flex;gap:6px;flex-wrap:wrap;min-width:0;max-width:100%}
+.swap>.btn{min-width:44px}
+.swap>label{flex:1 1 100%;min-width:0;max-width:100%}
 .big{font-size:15px;padding:8px 14px}
 section.more{margin-top:14px}
 .grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
@@ -55,18 +72,29 @@ section.more{margin-top:14px}
 .anim .tag{font-size:9px;opacity:.75;display:block}
 footer{color:var(--mut);font-size:11px;padding:12px;text-align:center}
 /* mobile */
-@media (max-width:760px) and (orientation:portrait){header h1{font-size:14px}.viewer{grid-template-columns:minmax(0,1fr)}.card{max-width:280px;margin:0 auto}.stagewrap{grid-template-columns:1fr}.stage{justify-self:center}}
+@media (max-width:760px) and (orientation:portrait){header{position:static}header h1{font-size:14px}.viewer{grid-template-columns:minmax(0,1fr)}.card{width:100%;margin:0 auto}.stagewrap{grid-template-columns:minmax(0,1fr)}.stage{justify-self:center;max-width:100%}}
+@media (min-width:1100px){.viewer{grid-template-columns:minmax(240px,440px) minmax(0,1fr)}}
 @media (max-height:500px) and (orientation:landscape){
- header{position:static;padding:4px 8px}header h1{font-size:13px}
- .viewer{grid-template-columns:auto 1fr;gap:8px}
+ header{position:static;padding:4px 8px}header h1{font-size:14px}
+ .viewer{grid-template-columns:auto minmax(0,1fr);gap:8px}
  .viewer>.panel:first-child{padding:6px}
  .card{height:calc(100vh - 64px);width:calc((100vh - 64px)*750/1050);max-height:340px;max-width:243px}
- .viewer>.panel:first-child h2{display:none}.badge{display:none}nav.tabs button{padding:3px 8px}
- .panel{padding:6px}.panel h2{font-size:11px;margin-bottom:3px}.big{font-size:13px;padding:5px 10px}.btn{padding:4px 8px}
- .cardmeta{display:none}
- .stagewrap{grid-template-columns:auto 1fr}
+ .viewer>.panel:first-child h2{display:none}.badge{display:none}
+ .panel{padding:6px}.panel h2{font-size:12px;margin-bottom:3px}
+ .stagewrap{grid-template-columns:auto minmax(0,1fr)}
  main{padding:6px 8px 30px}
 }
+/* Phones, tablet, and short landscape. Desktop mouse layout is left as-is. */
+@media (max-width:1024px){
+ nav.tabs button,.btn,select{min-height:44px;min-width:44px}
+ nav.tabs button,.btn{padding:10px 12px;font-size:14px}
+ .btn.big{font-size:15px}
+ select{padding:8px 10px;font-size:16px}
+ label:has(> input[type=checkbox]){min-height:44px;min-width:44px;max-width:100%;display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 6px;font-size:14px;overflow-wrap:anywhere}
+ .anim .tag{font-size:11px}
+ input[type=checkbox]{width:22px;height:22px;flex:0 0 auto;accent-color:var(--acc)}
+}
+@media (max-width:640px){nav.tabs{margin-left:0;flex-basis:100%}header h1{min-width:0}}
 </style></head><body>
 <header>
  <h1>Comedy Fantasy Card Game · First 4 Avatars</h1>
@@ -138,7 +166,20 @@ function frameAt(cid,name,t){const s=ANIM.states[name];const n=s.frames.length;l
   if(name==='defend'&&!(c.id==='AVT_AEG_001'))delete f.off;
   return{f,i,done,hold:s.hold_last}}
 // ---------- main stage
-function drawStage(now){const c=ch(state.cid),z=+$('#zoom').value,cv=$('#cv');const W=128*z;if(cv.width!==W){cv.width=W;cv.height=W}
+let fitZ=2,lastMeasure=0;
+function measureStage(){
+  const wrap=document.querySelector('.stagewrap'); if(!wrap) return;
+  const sel=$('#zoom'); const avail=wrap.clientWidth||0; const want=+(sel&&sel.value)||2;
+  const side=avail>=want*128+200;
+  wrap.classList.toggle('stack',!side);
+  const budget=side?Math.max(128,avail-200):Math.max(128,avail);
+  const maxFit=Math.max(1,Math.floor((budget-2)/128)||1);
+  if(sel){[...sel.options].forEach(o=>{o.disabled=(+o.value)>maxFit}); if(+sel.value>maxFit){const pick=[...sel.options].filter(o=>!o.disabled).pop(); if(pick)sel.value=pick.value}}
+  fitZ=Math.max(1,Math.min(+(sel&&sel.value)||maxFit,maxFit));
+}
+function drawStage(now){if(now-lastMeasure>250){measureStage();lastMeasure=now}
+  const c=ch(state.cid),z=fitZ,cv=$('#cv');const W=128*z;if(cv.width!==W){cv.width=W;cv.height=W}
+  cv.style.width=W+'px';cv.style.height='auto';
   const g=cv.getContext('2d');g.imageSmoothingEnabled=false;g.clearRect(0,0,W,W);
   let {f,i,done,hold}=frameAt(state.cid,state.anim,now-state.t0);if(done&&!hold){state.anim='idle';state.t0=now;markAnim()}
   // ground shadow (preview only)
@@ -171,7 +212,7 @@ function render(){const c=ch(state.cid),L=state.load[c.id];
   document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.id===c.id));
   $('#cardHost').innerHTML='';$('#cardHost').append(cardEl(c,state.cardVariant&&c.id==='AVT_AEG_001'));
   $('#cardStatus').innerHTML=c.card.art?'<span class="st">PROTOTYPE</span>':'<span class="st CONCEPT">MISSING</span>';
-  $('#cardMeta').innerHTML=`<b>${c.name_en}</b> / ${c.name_th}<br>${c.faction} · ${c.role} · rig <code>${c.rig}</code><br>POW / DEF / SPD: TBD · Rarity: TBD · Card costs: TBD<br>Tap card to zoom.`;
+  $('#cardMeta').innerHTML=`<b class="who">${c.name_en}</b> <span class="who">/ ${c.name_th}</span><br>${c.faction} · ${c.role} · rig <code>${c.rig}</code><br>POW / DEF / SPD: TBD · Rarity: TBD · Card costs: TBD<br>Tap card to zoom.`;
   const sp=$('#special');sp.innerHTML='';
   if(c.id==='AVT_AEG_001'){sp.append(el('label',{class:'note'},'Equipment swap test — same Character ID, only L04 changes'),el('div',{class:'swap'},
      el('button',{class:'btn big'+(L.headgear==='EQ_AEG_POT_HELMET_SILVER_001'?' on':''),onclick:()=>{L.headgear='EQ_AEG_POT_HELMET_SILVER_001';state.cardVariant=false;render()}},'🥘 Silver Pot (V1)'),
@@ -185,7 +226,7 @@ function render(){const c=ch(state.cid),L=state.load[c.id];
   const sl=$('#slots');sl.innerHTML='';for(const slot of['headgear','main_hand','off_hand','accessory']){const opts=c.slot_options[slot]||[];if(!opts.length)continue;
      const s=el('select',{onchange:e=>{L[slot]=e.target.value||null;render()}});s.append(el('option',{value:''},'— none —'));
      for(const id of opts){const it=ITEMS[id];const o=el('option',{value:id},`${id}${it.native_character&&it.native_character!==c.id?' (from '+it.native_character+')':it.shared?' (shared)':''}`);if(L[slot]===id)o.selected=true;s.append(o)}
-     sl.append(el('div',{class:'row'},el('label',{style:'width:76px'},slot),s))}
+     sl.append(el('div',{class:'row slotrow'},el('label',{},slot),s))}
   const ly=$('#layers');ly.innerHTML='';const keys=['body','headgear','main_hand','main_hand_front','off_hand','off_hand_front','accessory','vfx'];
   for(const k of keys){if(k.endsWith('_front')&&!c.layers[k==='main_hand_front'?'L05f':'L06f'])continue;if(k==='vfx'&&!c.layers.L09)continue;
      ly.append(el('label',{},el('input',{type:'checkbox',...(state.hidden[k]?{}:{checked:''}),onchange:e=>{state.hidden[k]=!e.target.checked}}),' '+k))}
@@ -197,8 +238,9 @@ function render(){const c=ch(state.cid),L=state.load[c.id];
   if(c.layers.L09)tb.insertAdjacentHTML('beforeend',`<tr><td>vfx</td><td><code>${c.vfx_id}</code></td><td><span class="st">PROTOTYPE</span></td><td>character-fitted layer</td></tr>`);
   dirty=true}
 function build(){if(innerWidth<560||innerHeight<520)$('#zoom').value='2';const t=$('#tabs');for(const c of CH)t.append(el('button',{'data-id':c.id,onclick:()=>{state.cid=c.id;state.anim='idle';render()}},c.name_en));
-  $('#zoom').onchange=()=>dirty=true;$('#bgd').onchange=e=>$('#stage').classList.toggle('dark',e.target.checked);
-  $('#stage').onclick=()=>{const cv=el('canvas');const z=Math.max(2,Math.floor(Math.min(innerWidth*0.92,innerHeight*0.85)/128));cv.width=cv.height=128*z;const g=cv.getContext('2d');g.imageSmoothingEnabled=false;
+  $('#zoom').onchange=()=>{lastMeasure=0;measureStage();dirty=true};$('#bgd').onchange=e=>$('#stage').classList.toggle('dark',e.target.checked);
+  addEventListener('resize',()=>{lastMeasure=0;measureStage()});
+  $('#stage').onclick=()=>{const cv=el('canvas');const z=Math.max(2,Math.floor(Math.min(innerWidth*0.92,innerHeight*0.85)/128));cv.width=cv.height=128*z;cv.style.maxWidth='100%';cv.style.height='auto';const g=cv.getContext('2d');g.imageSmoothingEnabled=false;
      g.drawImage(compose(state.cid,state.load[state.cid],{hidden:state.hidden}),0,0,128*z,128*z);openModal(el('div',{},el('div',{class:'stage checker',style:'display:inline-block'},cv),el('div',{class:'note'},`${state.cid} · ${z}× nearest-neighbour · 128×128 logical`)))};
   const A='AVT_AEG_001',M='AVT_CEL_001',P='AVT_SAN_001',N='AVT_PHA_001',d=id=>Object.assign({},ch(id).default_loadout);
   mini($('#potTest'),A,d(A),'Silver Pot (V1)','EQ_AEG_POT_HELMET_SILVER_001',3);
@@ -219,6 +261,10 @@ function build(){if(innerWidth<560||innerHeight<520)$('#zoom').value='2';const t
   mini(sh,N,Object.assign(d(N),{accessory:null}),'Nox · sneakers off','placeholder tabi feet in body');
   const cp=$('#compare');for(const c of CH){const host=el('div',{class:'cell pair'});const cv=el('canvas');host.append(cardEl(c,false),el('div',{class:'stage checker'},cv));cp.append(el('div',{},host,el('div',{class:'note',style:'text-align:center'},c.name_en+' · '+c.faction)));MINIS.push({cv,cid:c.id,load:d(c.id),z:2});cv.style.width='100%';cv.style.height='auto'}
   $('#honest').innerHTML=DATA.honest;$('#bld').textContent=DATA.build;
-  render();requestAnimationFrame(loop)}
+  render();measureStage();requestAnimationFrame(()=>{measureStage();requestAnimationFrame(loop)})}
+window.__artPreview={
+  still(){const cv=compose(state.cid,state.load[state.cid],{frame:{},hidden:state.hidden});const d=cv.getContext('2d',{willReadFrequently:true}).getImageData(0,0,128,128).data;let h=2166136261;for(let i=0;i<d.length;i+=16)h=Math.imul(h^d[i]^d[i+1]^d[i+2]^d[i+3],16777619);return h>>>0},
+  ready(){return Object.values(IMG).length>0&&Object.values(IMG).every(i=>i.complete&&i.naturalWidth>0)}
+};
 build();
 </script></body></html>
