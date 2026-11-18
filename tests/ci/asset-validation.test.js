@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { sep } from 'node:path';
+import { existsSync, readFileSync } from 'node:fs';
+import { join, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import { resolveInsideRepo } from '../../tools/ci/lib/common.mjs';
@@ -22,8 +23,74 @@ function manifest(assets) {
   });
 }
 
+/**
+ * True when this checkout has the canonical manifest and every listed file.
+ * A systems-only tree has neither, and path checks stay skipped.
+ * @param {string} root
+ */
+function liveArtTree(root) {
+  const manifestPath = join(root, 'docs', 'ASSET_MANIFEST.json');
+  if (!existsSync(manifestPath) || !existsSync(join(root, 'assets'))) return false;
+  let manifest;
+  try {
+    manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+  } catch {
+    return false;
+  }
+  if (!manifest || !Array.isArray(manifest.assets) || manifest.assets.length === 0) return false;
+  const paths = manifest.assets
+    .filter((entry) => entry && typeof entry.path === 'string' && entry.path.length > 0)
+    .map((entry) => entry.path);
+  if (paths.length !== manifest.assets.length) return false;
+  return paths.every((path) => {
+    if (path.startsWith('/') || path.split(/[\\/]/).includes('..')) return false;
+    return existsSync(join(root, path));
+  });
+}
+
+/**
+ * Fixture id checks do not depend on the art tree. A systems-only directory
+ * still records fixture manifests and still fails a repeated fixture id.
+ */
+function assertFixtureIdsOnSystemsOnlyTree() {
+  const repo = tempRepo();
+  try {
+    repo.write('tests/fixtures/asset-manifest.snapshot.json', manifest([
+      entry('FIXTURE_A', 'assets/not-copied/a.png', 'PROTOTYPE'),
+      entry('FIXTURE_B', 'assets/not-copied/b.png', 'CONCEPT'),
+    ]));
+    repo.write('tests/fixtures/dup.json', manifest([
+      entry('DUP_FIXTURE', 'assets/not-copied/a.png', 'PROTOTYPE'),
+      entry('DUP_FIXTURE', 'assets/not-copied/b.png', 'CONCEPT'),
+    ]));
+    const result = validateAssets(repo.root);
+    assert.equal(result.assetsPresent, false);
+    assert.equal(result.pathCheckRan, false);
+    assert.equal(result.ok, false);
+    assert.deepEqual(result.missingPaths, []);
+    assert.ok(result.duplicates.some((item) => item.id === 'DUP_FIXTURE'));
+    assert.ok(result.manifests.some((item) => item.fixture && item.file === 'tests/fixtures/asset-manifest.snapshot.json' && item.assetCount === 2));
+    assert.match(result.notices.join('\n'), /Asset path checks skipped/);
+  } finally {
+    repo.cleanup();
+  }
+}
+
 test('systems-only checkout skips missing art and still checks fixture ids', () => {
+  assertFixtureIdsOnSystemsOnlyTree();
   const result = validateAssets(repoRoot);
+  assert.ok(result.manifests.some((item) => item.fixture && item.file === 'tests/fixtures/asset-manifest.snapshot.json'));
+  if (liveArtTree(repoRoot)) {
+    assert.equal(result.ok, true);
+    assert.equal(result.assetsPresent, true);
+    assert.equal(result.pathCheckRan, true);
+    assert.deepEqual(result.duplicates, []);
+    assert.deepEqual(result.missingPaths, []);
+    assert.deepEqual(result.invalidStatuses, []);
+    assert.equal(result.missingPaths.some((item) => item.message === 'path escapes the repository'), false);
+    assert.ok(result.manifests.some((item) => !item.fixture && item.file === 'docs/ASSET_MANIFEST.json'));
+    return;
+  }
   assert.equal(result.ok, true);
   assert.equal(result.assetsPresent, false);
   assert.equal(result.pathCheckRan, false);
@@ -32,7 +99,6 @@ test('systems-only checkout skips missing art and still checks fixture ids', () 
   assert.match(result.notices.join('\n'), /Asset path checks skipped/);
   assert.match(result.notices.join('\n'), /feat\/card-art-prototype-mira/);
   assert.match(result.notices.join('\n'), /PRODUCTION_READY is not required/);
-  assert.ok(result.manifests.some((item) => item.fixture && item.file === 'tests/fixtures/asset-manifest.snapshot.json'));
 });
 
 test('CONCEPT and PROTOTYPE paths pass without any PRODUCTION_READY asset', () => {
@@ -185,5 +251,11 @@ test('asset validation CLI passes on this checkout', () => {
   const run = spawnSync(process.execPath, ['tools/ci/validate-assets.mjs'], { cwd: repoRoot, encoding: 'utf8' });
   assert.equal(run.status, 0, run.stderr || run.stdout);
   assert.match(run.stdout, /ASSET_MANIFEST_VALIDATION: PASS/);
+  assert.doesNotMatch(run.stdout, /path escapes the repository/);
+  if (liveArtTree(repoRoot)) {
+    assert.match(run.stdout, /every live manifest path exists/);
+    assert.doesNotMatch(run.stdout, /Asset path checks skipped/);
+    return;
+  }
   assert.match(run.stdout, /Asset path checks skipped/);
 });

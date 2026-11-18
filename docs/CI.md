@@ -76,7 +76,7 @@ Asset IDs must be unique inside each manifest `assets` array and inside each oth
 
 Path checks read `path` on manifest entries and require a file inside the repository. The repo root is normalised with `path.resolve` before the check, including a root that ends in `/` (the value `fileURLToPath` returns for a directory URL). Containment uses `path.relative`: a path that resolves outside the root fails with `path escapes the repository`. They run only when `assets/` exists and a live manifest outside `tests/` exists (the canonical file is `docs/ASSET_MANIFEST.json`).
 
-On this systems branch both are absent. The check prints a skip notice and still passes if ids are unique. That is intentional: art is on `feat/card-art-prototype-mira` (PR #1). A missing art tree is not a failure.
+On this systems branch both are absent. The check prints a skip notice and still passes if ids are unique. That is intentional: art is on `feat/card-art-prototype-mira` (PR #1). A missing art tree is not a failure. When `docs/ASSET_MANIFEST.json` and every file it lists are in the checkout, the same command checks those paths and fails on an escape, a missing file, a duplicate id, or a status outside the vocabulary. Fixture id checks still run in either checkout.
 
 `CONCEPT` and `PROTOTYPE` are valid statuses. `QA_PASSED`, `PRODUCTION_READY`, and `INTEGRATED` are valid too. None of them is required. A live manifest whose status is outside that vocabulary fails.
 
