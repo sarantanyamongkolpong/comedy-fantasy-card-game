@@ -1,0 +1,206 @@
+{
+ "characters": {
+  "AVT_AEG_001": {
+   "layers": {
+    "AVT_AEG_001_L01_body.png": {
+     "colors": 48,
+     "opaque": 3588
+    },
+    "AVT_AEG_001_L01b_skin.png": {
+     "colors": 3,
+     "opaque": 116
+    },
+    "AVT_AEG_001_L02_face.png": {
+     "colors": 6,
+     "opaque": 66
+    },
+    "AVT_AEG_001_L02_hair.png": {
+     "colors": 11,
+     "opaque": 255
+    },
+    "AVT_AEG_001_L03_outfit.png": {
+     "colors": 44,
+     "opaque": 3151
+    },
+    "AVT_AEG_001_L04_headgear_gold.png": {
+     "colors": 5,
+     "opaque": 497
+    },
+    "AVT_AEG_001_L04_headgear_silver.png": {
+     "colors": 24,
+     "opaque": 497
+    },
+    "AVT_AEG_001_L05_main_hand.png": {
+     "colors": 31,
+     "opaque": 275
+    },
+    "AVT_AEG_001_L05f_main_hand_front.png": {
+     "colors": 25,
+     "opaque": 140
+    },
+    "AVT_AEG_001_L06_off_hand.png": {
+     "colors": 31,
+     "opaque": 1225
+    }
+   },
+   "lowest_opaque_y": 121,
+   "pixels_on_row_121": 22,
+   "stack_colors": 48,
+   "equipped_colors_before": 62,
+   "equipped_colors_after": 63,
+   "l01_colors": 48
+  },
+  "AVT_PHA_001": {
+   "layers": {
+    "AVT_PHA_001_L01_body.png": {
+     "colors": 33,
+     "opaque": 3420
+    },
+    "AVT_PHA_001_L01b_skin.png": {
+     "colors": 3,
+     "opaque": 137
+    },
+    "AVT_PHA_001_L02_face.png": {
+     "colors": 9,
+     "opaque": 98
+    },
+    "AVT_PHA_001_L02_hair.png": {
+     "colors": 9,
+     "opaque": 415
+    },
+    "AVT_PHA_001_L03_outfit.png": {
+     "colors": 32,
+     "opaque": 2770
+    },
+    "AVT_PHA_001_L05_main_hand.png": {
+     "colors": 10,
+     "opaque": 31
+    },
+    "AVT_PHA_001_L05f_main_hand_front.png": {
+     "colors": 12,
+     "opaque": 53
+    },
+    "AVT_PHA_001_L06_off_hand.png": {
+     "colors": 14,
+     "opaque": 90
+    },
+    "AVT_PHA_001_L06f_off_hand_front.png": {
+     "colors": 11,
+     "opaque": 59
+    },
+    "AVT_PHA_001_L08_accessory_sneakers.png": {
+     "colors": 44,
+     "opaque": 703
+    },
+    "AVT_PHA_001_L09_vfx_squeak.png": {
+     "colors": 2,
+     "opaque": 76
+    }
+   },
+   "lowest_opaque_y": 121,
+   "pixels_on_row_121": 11,
+   "stack_colors": 48,
+   "equipped_colors_before": 67,
+   "equipped_colors_after": 65,
+   "l01_colors": 33
+  },
+  "AVT_CEL_001": {
+   "layers": {
+    "AVT_CEL_001_L01_body.png": {
+     "colors": 48,
+     "opaque": 4095
+    },
+    "AVT_CEL_001_L01b_skin.png": {
+     "colors": 1,
+     "opaque": 113
+    },
+    "AVT_CEL_001_L02_face.png": {
+     "colors": 13,
+     "opaque": 113
+    },
+    "AVT_CEL_001_L02_hair.png": {
+     "colors": 10,
+     "opaque": 277
+    },
+    "AVT_CEL_001_L03_outfit.png": {
+     "colors": 47,
+     "opaque": 3592
+    },
+    "AVT_CEL_001_L04_headgear.png": {
+     "colors": 41,
+     "opaque": 843
+    },
+    "AVT_CEL_001_L05_main_hand.png": {
+     "colors": 41,
+     "opaque": 605
+    },
+    "AVT_CEL_001_L05f_main_hand_front.png": {
+     "colors": 8,
+     "opaque": 37
+    },
+    "AVT_CEL_001_L06_off_hand.png": {
+     "colors": 18,
+     "opaque": 127
+    },
+    "AVT_CEL_001_L09_vfx_steam.png": {
+     "colors": 20,
+     "opaque": 101
+    }
+   },
+   "lowest_opaque_y": 120,
+   "pixels_on_row_121": 0,
+   "stack_colors": 48,
+   "equipped_colors_before": 80,
+   "equipped_colors_after": 80,
+   "l01_colors": 48
+  },
+  "AVT_SAN_001": {
+   "layers": {
+    "AVT_SAN_001_L01_body.png": {
+     "colors": 47,
+     "opaque": 4586
+    },
+    "AVT_SAN_001_L01b_skin.png": {
+     "colors": 4,
+     "opaque": 144
+    },
+    "AVT_SAN_001_L02_face.png": {
+     "colors": 10,
+     "opaque": 135
+    },
+    "AVT_SAN_001_L02_hair.png": {
+     "colors": 12,
+     "opaque": 314
+    },
+    "AVT_SAN_001_L03_outfit.png": {
+     "colors": 46,
+     "opaque": 3993
+    },
+    "AVT_SAN_001_L04_headgear.png": {
+     "colors": 19,
+     "opaque": 134
+    },
+    "AVT_SAN_001_L05_main_hand.png": {
+     "colors": 40,
+     "opaque": 1124
+    },
+    "AVT_SAN_001_L05f_main_hand_front.png": {
+     "colors": 25,
+     "opaque": 119
+    },
+    "AVT_SAN_001_L06_off_hand.png": {
+     "colors": 28,
+     "opaque": 287
+    }
+   },
+   "lowest_opaque_y": 119,
+   "pixels_on_row_121": 0,
+   "stack_colors": 48,
+   "equipped_colors_before": 76,
+   "equipped_colors_after": 73,
+   "l01_colors": 47
+  }
+ },
+ "passed": true,
+ "errors": []
+}
