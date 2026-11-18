@@ -1,0 +1,1438 @@
+{
+ "project": "Comedy Fantasy Card Game — First 4 Avatars",
+ "addition_set": "animation_v2",
+ "status": "PROTOTYPE",
+ "production_ready": false,
+ "generated": "2026-11-18",
+ "generated_by": "tools/animation/build_v2.py",
+ "do_not_edit": "docs/ASSET_MANIFEST.json is owned by the pixel-cleanup agent. Fold these entries in there.",
+ "honest_summary": "Animation v2 is PROTOTYPE. No frame is hand-drawn. No entry is PRODUCTION_READY. KO now keeps the whole body inside the shared 128x128 frame.",
+ "asset_count": 45,
+ "assets": [
+  {
+   "asset_id": "ANIM_SHARED_002",
+   "path": "assets/animations/ANIM_SHARED_002.json",
+   "type": "animation_timing",
+   "owner": "shared",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "v2 shared timing. Idle offsets carried from ANIM_SHARED_001. Attack/Defend/Hit are hand-authored integer offsets. KO angles are hand-authored; the in-frame translation is computed. Not hand-drawn pixels. Not PRODUCTION_READY.",
+   "supersedes": "ANIM_SHARED_001",
+   "sha256": "f6442509b24d561a7b801daa5478fd7795e03ccd80e64d8a5ef516da31677d5c",
+   "bytes": 9629
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_AEG_001_IDLE_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_idle_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid idle v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "693e0131ff82e2038a75cca1172ef2bbe22ed8e448cfa4f6c693cb6fa2c0b36a",
+   "bytes": 15200,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_AEG_001_IDLE_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_idle_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid idle v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "928f9d3458041ce8cdb28e1f507a98e1a97b3c21aec253545f8a81a309732605",
+   "bytes": 12817,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_AEG_001_ATTACK_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_attack_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid attack v2 canonical strip, 8x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "e1195dd37c9ed3f731bd04e93cef2701f78c08427f1d0b47668b7a983ebb0fd7",
+   "bytes": 14272,
+   "canvas_px": [
+    1024,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_AEG_001_ATTACK_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_attack_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid attack v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "93cae0b789d60523962c15213677d7cdabeb284cb6ac89b92f58646f17e4a535",
+   "bytes": 29734,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_AEG_001_DEFEND_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_defend_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid defend v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "74ba894222aeecaa4023c58be19802a26908dc0f02a31e75abb7783ea6e14481",
+   "bytes": 16441,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_AEG_001_DEFEND_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_defend_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid defend v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "0a80e43bc1875bf3d871713b447559345cab0b5958e96286eff8f87ffdfb0dea",
+   "bytes": 25541,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_AEG_001_HIT_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_hit_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid hit v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "8a90a735c08da84795568d484fd1c13ce82582ccd3fdb55551fa3adec725b0c4",
+   "bytes": 13464,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_AEG_001_HIT_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_hit_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid hit v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "932f7b1b2622e56093d3da60d556041287db3b313868c1c4308460e7e7ab176e",
+   "bytes": 15276,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_AEG_001_KO_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_ko_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid ko v2 canonical strip, 12x128. procedural-rotation. PROTOTYPE.",
+   "sha256": "4bdaff72379bdc27fe160a23da79d0ee40afc244b789dfe5a66fe9e69cbef956",
+   "bytes": 92657,
+   "canvas_px": [
+    1536,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_AEG_001_KO_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_ko_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sir Potlid ko v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "b30144ea11df02e3ad5af782c9fdac0bbfb6b63aa124dba61d1f8f66119fe1c7",
+   "bytes": 48247,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_AVT_AEG_001_V2",
+   "path": "assets/characters/AVT_AEG_001/anim/AVT_AEG_001_tracks_v2.json",
+   "type": "animation_tracks",
+   "owner": "AVT_AEG_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Per-frame anchors and equipment draw positions for the default loadout. Derived from ANIM_SHARED_002. PROTOTYPE.",
+   "sha256": "d0deaf4e452b726c85878ebc6e97528327c2306caec6facf0c7de21254311613",
+   "bytes": 61808
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_PHA_001_IDLE_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_idle_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak idle v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "f92bfea9afa3ba3a7acd7ad01d31b94d2b172379fe190ad9cad6132124a45cc3",
+   "bytes": 13848,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_PHA_001_IDLE_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_idle_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak idle v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "623d3d517f458e48ffb9e088632bcc1fd2d71b45ba143acd9702c411cc02c393",
+   "bytes": 22114,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_PHA_001_ATTACK_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_attack_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak attack v2 canonical strip, 8x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "bef6043968882b3d93b14a1028a4327c52a2b74499abb67bc29a09d981a31e3e",
+   "bytes": 12165,
+   "canvas_px": [
+    1024,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_PHA_001_ATTACK_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_attack_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak attack v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "f5c5e6ce7da86b036d2a85aeb7369a84f64646c50e276dff957f2056d5ffdeff",
+   "bytes": 29495,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_PHA_001_DEFEND_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_defend_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak defend v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "c26190114bdfc8dc9102b7824560f77d143eb9644d22b283d0ba052c5a5e3240",
+   "bytes": 11237,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_PHA_001_DEFEND_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_defend_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak defend v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "3cdbd91b44facc60377c31e9186e559cad12982354ca17b51b30662440968837",
+   "bytes": 22208,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_PHA_001_HIT_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_hit_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak hit v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "e7dd8b8bd4888cc0d479cdd3a203f30959b0eb8727a8cc4608a43cb9169e2d2f",
+   "bytes": 11283,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_PHA_001_HIT_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_hit_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak hit v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "78fbd0eddf6c26c374445cd50a82d19b9ba5376ccd4e066169c98b1179da0782",
+   "bytes": 17670,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_PHA_001_KO_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_ko_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak ko v2 canonical strip, 12x128. procedural-rotation. PROTOTYPE.",
+   "sha256": "de745c4e069b31c79253aa5557a6ad968a0a3ca52fdf89a03a9c338790d04f4e",
+   "bytes": 83159,
+   "canvas_px": [
+    1536,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_PHA_001_KO_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_ko_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Nox Squeak ko v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "6989f5c1d5bc508497fe05926f9f03039b738e5b25d40764e45144cc8af9b319",
+   "bytes": 43122,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_AVT_PHA_001_V2",
+   "path": "assets/characters/AVT_PHA_001/anim/AVT_PHA_001_tracks_v2.json",
+   "type": "animation_tracks",
+   "owner": "AVT_PHA_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Per-frame anchors and equipment draw positions for the default loadout. Derived from ANIM_SHARED_002. PROTOTYPE.",
+   "sha256": "ac37f54a2b93e4310f1987ce79a010d6ad3cd2ba66c0b207c375ee7586dbc2d5",
+   "bytes": 61548
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_CEL_001_IDLE_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_idle_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor idle v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "35fa0fffae264a0782622ad16628cbd3fe073ecfd7aa58fc1730a87ff4fb1b96",
+   "bytes": 19939,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_CEL_001_IDLE_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_idle_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor idle v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "c1114d8f33a43a88379394734acbbe01b9db55f0ce6f294f6a442649e194563f",
+   "bytes": 32510,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_CEL_001_ATTACK_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_attack_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor attack v2 canonical strip, 8x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "40bf5db1a0b936b4b0d8a048b03bc45b25b6deaa877e5e2b4498f249f5b013e6",
+   "bytes": 20239,
+   "canvas_px": [
+    1024,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_CEL_001_ATTACK_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_attack_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor attack v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "93a51147b4e712c839a768b2caa870874af590a7281becda9e7752f7c0636e1c",
+   "bytes": 32536,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_CEL_001_DEFEND_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_defend_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor defend v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "90c5b3b2aedc73404f429f8021557f5df168bd45defa8a2f35f856cf2d470e03",
+   "bytes": 16382,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_CEL_001_DEFEND_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_defend_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor defend v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "5d76e29a59d62c766b3add454ad2e5268caf8bf78e5f5eb26bc4557688f59434",
+   "bytes": 21733,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_CEL_001_HIT_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_hit_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor hit v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "1fb39156c51c68ecd54a4735ef59cbb0cdf52b80362ab3d0310ddebde263ef77",
+   "bytes": 16442,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_CEL_001_HIT_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_hit_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor hit v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "deb4666b0cd04e8aabe2fc07afa24840cf64f44975d6aa80cc581506cb2f63e9",
+   "bytes": 24515,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_CEL_001_KO_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_ko_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor ko v2 canonical strip, 12x128. procedural-rotation. PROTOTYPE.",
+   "sha256": "9dfd42a0e1b9b032f7d45ddf66ac8220fc42c76ea5665347be25ed85e9bdc7cc",
+   "bytes": 141415,
+   "canvas_px": [
+    1536,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_CEL_001_KO_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_ko_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Madame Meteor ko v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "24292a32db1a734ddb8510bb08fa07c7f82bbcd79501b4fd0701b8a757cb083c",
+   "bytes": 61212,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_AVT_CEL_001_V2",
+   "path": "assets/characters/AVT_CEL_001/anim/AVT_CEL_001_tracks_v2.json",
+   "type": "animation_tracks",
+   "owner": "AVT_CEL_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Per-frame anchors and equipment draw positions for the default loadout. Derived from ANIM_SHARED_002. PROTOTYPE.",
+   "sha256": "38581222cb465eb31b481218de4e6f98b98fa5506933e6eda957aa6df3ac4aa3",
+   "bytes": 61351
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_SAN_001_IDLE_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_idle_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster idle v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "fb7d0244d060f581e052ea3ef316bca4ae13073f3c1944c37564c1c44b7e07a1",
+   "bytes": 18247,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_SAN_001_IDLE_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_idle_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster idle v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "91aef3d1a4dba3a9bacf8b595190b8b43f2b55e1425b8ca6fe74e259e724de5a",
+   "bytes": 15924,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 180,
+   "loop": true,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_SAN_001_ATTACK_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_attack_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster attack v2 canonical strip, 8x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "1f5730d65d314c6a5d0c728909a78821f1996639631f1975c6924f8709ce4eba",
+   "bytes": 16541,
+   "canvas_px": [
+    1024,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_SAN_001_ATTACK_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_attack_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster attack v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "c714e561ac77974d77900618d38c5ed15abbcf1e578566f33233da858ac7ad39",
+   "bytes": 37107,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 8,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 80,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_SAN_001_DEFEND_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_defend_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster defend v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "ddb790cbd220b27527e759d0e05caac0ff2170920db0e47347f16d3d69af6500",
+   "bytes": 15787,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_SAN_001_DEFEND_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_defend_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster defend v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "3c2fc90d106be09055347714ad0c7516941a70471c4a69429e453ea4e36b8938",
+   "bytes": 21226,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 100,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_SAN_001_HIT_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_hit_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster hit v2 canonical strip, 6x128. hand-authored-offsets. PROTOTYPE.",
+   "sha256": "a051a651cec48d0da9c66fcf60a3e267fb2fc3ccb647958dac9db39839148000",
+   "bytes": 15768,
+   "canvas_px": [
+    768,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_SAN_001_HIT_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_hit_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster hit v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "ec84e4fc9e09f8f0449c2330b2934d2ae7e01a681001b942f74170b759034ce2",
+   "bytes": 23971,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 6,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 60,
+   "loop": false,
+   "placement": "hand-authored-offsets"
+  },
+  {
+   "asset_id": "ANIM_STRIP_AVT_SAN_001_KO_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_ko_strip_v2.png",
+   "type": "animation_strip",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster ko v2 canonical strip, 12x128. procedural-rotation. PROTOTYPE.",
+   "sha256": "2ac8c01cf6e2bbcce673dd1ea04ee3e09062d45a19d1eee77be0d6b5fe732d38",
+   "bytes": 135223,
+   "canvas_px": [
+    1536,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_GIF_AVT_SAN_001_KO_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_ko_v2.gif",
+   "type": "animation_gif",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Sister Plaster ko v2 GIF preview. Hard white flash and combat VFX are baked here only. PROTOTYPE.",
+   "sha256": "c1e75a66192c3b234ec7a0c019d9e26eeea3593dcf1dfffe0d6e42788d6f0924",
+   "bytes": 59497,
+   "canvas_px": [
+    128,
+    128
+   ],
+   "frame_count": 12,
+   "frame_px": [
+    128,
+    128
+   ],
+   "frame_ms": 90,
+   "loop": false,
+   "placement": "procedural-rotation"
+  },
+  {
+   "asset_id": "ANIM_AVT_SAN_001_V2",
+   "path": "assets/characters/AVT_SAN_001/anim/AVT_SAN_001_tracks_v2.json",
+   "type": "animation_tracks",
+   "owner": "AVT_SAN_001",
+   "status": "PROTOTYPE",
+   "production_ready": false,
+   "note": "Per-frame anchors and equipment draw positions for the default loadout. Derived from ANIM_SHARED_002. PROTOTYPE.",
+   "sha256": "0fb12505d98df05dbc6690878cfbeb3a097a899f7504a4094f23d64a11a02522",
+   "bytes": 61314
+  }
+ ],
+ "qa_artifacts": [
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_AEG_001_idle.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_AEG_001",
+   "state": "idle",
+   "scale": 4,
+   "sha256": "4fea4747c211e64c5e18e8e6ba3da1966c2dbc9e3d28fd8b6174891dbeb13a48",
+   "bytes": 96139,
+   "canvas_px": [
+    3292,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_AEG_001_attack.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_AEG_001",
+   "state": "attack",
+   "scale": 4,
+   "sha256": "ac57556b6e3af5c75d68bdc4845c55d16ad1d2f573bb8e5723f24d3e69c4ec4c",
+   "bytes": 102449,
+   "canvas_px": [
+    5340,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_AEG_001_defend.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_AEG_001",
+   "state": "defend",
+   "scale": 4,
+   "sha256": "a0b30848de9acc84fd1dcdcd4f3c480f7e0f2ae94af02af0c540864f9f45fd2a",
+   "bytes": 99147,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_AEG_001_hit.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_AEG_001",
+   "state": "hit",
+   "scale": 4,
+   "sha256": "06ae7ebfc20af5bde847b045391ea1fffdf09d23e52c6a59b5fcfb88024c9789",
+   "bytes": 74126,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_AEG_001_ko.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_AEG_001",
+   "state": "ko",
+   "scale": 4,
+   "sha256": "0ef52bcfdd6fdd2c72d8faca4c63b099e17a04236222f99141ac1fe6ae4e25e9",
+   "bytes": 300088,
+   "canvas_px": [
+    6364,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/anchors_AVT_AEG_001.png",
+   "type": "qa_anchor_proof",
+   "character_id": "AVT_AEG_001",
+   "scale": 2,
+   "sha256": "81af8051a9ba8059f771a5ae12f316b1c54ceeaa363414b99c5f853cfcd46bb3",
+   "bytes": 159568,
+   "canvas_px": [
+    3072,
+    576
+   ],
+   "legend": {
+    "head": [
+     255,
+     196,
+     48
+    ],
+    "main_hand": [
+     255,
+     64,
+     64
+    ],
+    "off_hand": [
+     48,
+     220,
+     255
+    ],
+    "back": [
+     186,
+     120,
+     255
+    ],
+    "body_center": [
+     255,
+     255,
+     255
+    ],
+    "feet": [
+     64,
+     230,
+     96
+    ]
+   }
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_PHA_001_idle.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_PHA_001",
+   "state": "idle",
+   "scale": 4,
+   "sha256": "f42523fd605201beeb2918120edc61551f1fed341091c6d2ce9a488dea3c23c0",
+   "bytes": 88352,
+   "canvas_px": [
+    3292,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_PHA_001_attack.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_PHA_001",
+   "state": "attack",
+   "scale": 4,
+   "sha256": "c0cfad3d5d14fee1736522e8a6e3ff34aef45bbd2aa14577308cd0a66d73debc",
+   "bytes": 104847,
+   "canvas_px": [
+    5340,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_PHA_001_defend.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_PHA_001",
+   "state": "defend",
+   "scale": 4,
+   "sha256": "40c8ee49b1873e2ea182b87c942046b54af7e7efaa9549f717a0b58b746a5bd4",
+   "bytes": 83859,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_PHA_001_hit.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_PHA_001",
+   "state": "hit",
+   "scale": 4,
+   "sha256": "7bca9ef4c0fa1e674f39e047f9fc5b5b7b0e4798e6bf830ab402152e2b999b63",
+   "bytes": 77624,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_PHA_001_ko.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_PHA_001",
+   "state": "ko",
+   "scale": 4,
+   "sha256": "cbfcf88b4f61e74040c5b36c85b82750b62e84103f857473a459256562b83e0e",
+   "bytes": 271506,
+   "canvas_px": [
+    6364,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/anchors_AVT_PHA_001.png",
+   "type": "qa_anchor_proof",
+   "character_id": "AVT_PHA_001",
+   "scale": 2,
+   "sha256": "e2914549be6abd97b876b01b5d5673a723ffeb927cfab9b2031d5948b19767c6",
+   "bytes": 155942,
+   "canvas_px": [
+    3072,
+    576
+   ],
+   "legend": {
+    "head": [
+     255,
+     196,
+     48
+    ],
+    "main_hand": [
+     255,
+     64,
+     64
+    ],
+    "off_hand": [
+     48,
+     220,
+     255
+    ],
+    "back": [
+     186,
+     120,
+     255
+    ],
+    "body_center": [
+     255,
+     255,
+     255
+    ],
+    "feet": [
+     64,
+     230,
+     96
+    ]
+   }
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_CEL_001_idle.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_CEL_001",
+   "state": "idle",
+   "scale": 4,
+   "sha256": "1bc0fdb6f077dcc838a8d8807a3416ffce12f566e01c1ee47f0a2a1a74941b0f",
+   "bytes": 118690,
+   "canvas_px": [
+    3292,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_CEL_001_attack.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_CEL_001",
+   "state": "attack",
+   "scale": 4,
+   "sha256": "6e8ebce4bf025ca9c54a45c33570554c185cbc30139a04f52b9d5d7a04c51c31",
+   "bytes": 141635,
+   "canvas_px": [
+    5340,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_CEL_001_defend.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_CEL_001",
+   "state": "defend",
+   "scale": 4,
+   "sha256": "15d2524dd0b4e87f347540e8bc14456c5301d7044af146312bc891ef8bbd626b",
+   "bytes": 104387,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_CEL_001_hit.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_CEL_001",
+   "state": "hit",
+   "scale": 4,
+   "sha256": "7024c587d6e34f20b32fdba72ce1752c97bea41f53bc63def4a2069e1aa9843a",
+   "bytes": 91219,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_CEL_001_ko.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_CEL_001",
+   "state": "ko",
+   "scale": 4,
+   "sha256": "dfdb9fd7ca62a10901d34de534da101a0a1c21b9342bf4132f888bec48efc1ed",
+   "bytes": 403781,
+   "canvas_px": [
+    6364,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/anchors_AVT_CEL_001.png",
+   "type": "qa_anchor_proof",
+   "character_id": "AVT_CEL_001",
+   "scale": 2,
+   "sha256": "c5e3020f7db539a3d0de0d45b0cf64e9a81b8ad9d6b81309a3446ab728d86717",
+   "bytes": 236766,
+   "canvas_px": [
+    3072,
+    576
+   ],
+   "legend": {
+    "head": [
+     255,
+     196,
+     48
+    ],
+    "main_hand": [
+     255,
+     64,
+     64
+    ],
+    "off_hand": [
+     48,
+     220,
+     255
+    ],
+    "back": [
+     186,
+     120,
+     255
+    ],
+    "body_center": [
+     255,
+     255,
+     255
+    ],
+    "feet": [
+     64,
+     230,
+     96
+    ]
+   }
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_SAN_001_idle.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_SAN_001",
+   "state": "idle",
+   "scale": 4,
+   "sha256": "a4509d9f9c4b7c4c61c7563800c1e70b6a60ed6b1c649b6270d23a8e11dcbd45",
+   "bytes": 111739,
+   "canvas_px": [
+    3292,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_SAN_001_attack.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_SAN_001",
+   "state": "attack",
+   "scale": 4,
+   "sha256": "866ca6e86e8ed85725a4e1420f61dc1454bd12f1f48067856ababaf4c15c9734",
+   "bytes": 117195,
+   "canvas_px": [
+    5340,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_SAN_001_defend.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_SAN_001",
+   "state": "defend",
+   "scale": 4,
+   "sha256": "7c897e169c128912fc837405b3da1a8b9443d11e699a212896380cab30c960a5",
+   "bytes": 99924,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_SAN_001_hit.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_SAN_001",
+   "state": "hit",
+   "scale": 4,
+   "sha256": "f8ace859e27fef708686ed9b47252c6ebe1d0426a6e1cdcdfd3277e8cc6d7af6",
+   "bytes": 85014,
+   "canvas_px": [
+    3804,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/compare_AVT_SAN_001_ko.png",
+   "type": "qa_comparison",
+   "character_id": "AVT_SAN_001",
+   "state": "ko",
+   "scale": 4,
+   "sha256": "5b212d971421af99f9fc2d1b2aea26bf8637b12dbfc8dc3cfb3bf2368ea593d6",
+   "bytes": 379977,
+   "canvas_px": [
+    6364,
+    1152
+   ]
+  },
+  {
+   "path": "docs/qa/animation_v2/anchors_AVT_SAN_001.png",
+   "type": "qa_anchor_proof",
+   "character_id": "AVT_SAN_001",
+   "scale": 2,
+   "sha256": "d29651b246d9b56e2722093adf39b960e0235127c462e8f18ba0d5760c674608",
+   "bytes": 218635,
+   "canvas_px": [
+    3072,
+    576
+   ],
+   "legend": {
+    "head": [
+     255,
+     196,
+     48
+    ],
+    "main_hand": [
+     255,
+     64,
+     64
+    ],
+    "off_hand": [
+     48,
+     220,
+     255
+    ],
+    "back": [
+     186,
+     120,
+     255
+    ],
+    "body_center": [
+     255,
+     255,
+     255
+    ],
+    "feet": [
+     64,
+     230,
+     96
+    ]
+   }
+  },
+  {
+   "path": "docs/qa/animation_v2/summary_board.png",
+   "type": "qa_summary",
+   "scale": 4,
+   "sha256": "05df2816d6743f0fe7b3179cf28b085eb9d5b010528ad08370b6505141786d86",
+   "bytes": 394481,
+   "canvas_px": [
+    5320,
+    2180
+   ]
+  }
+ ]
+}

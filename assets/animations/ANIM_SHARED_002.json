@@ -1,0 +1,222 @@
+{
+ "asset_id": "ANIM_SHARED_002",
+ "version": 2,
+ "supersedes": "ANIM_SHARED_001",
+ "status": "PROTOTYPE",
+ "production_ready": false,
+ "kind": "Shared timing template. Pixels are procedural transforms of the standing equipped composite, not hand-drawn frames. ANIM_SHARED_001 is left untouched.",
+ "units": {
+  "time": "ms",
+  "offset": "logical px, integers only",
+  "rot": "degrees, visual counter-clockwise (head toward the viewer's left), nearest-neighbour, pivot body_center"
+ },
+ "canvas": {
+  "idle": [128, 128],
+  "attack": [128, 128],
+  "defend": [128, 128],
+  "hit": [128, 128],
+  "ko": [128, 128],
+  "baseline_y": 122,
+  "alpha": "0 or 255 only",
+  "scaling": "nearest-neighbour, no per-frame scale",
+  "ko_note": "KO stays on the shared 128x128 canvas. v1 clipped tall characters because the rotation was performed inside a 128 buffer (pixels that swung outside were destroyed) and a downward settle pushed the body off the bottom. v2 rotates in a padded buffer, then applies the smallest integer translation that keeps every opaque pixel inside the frame with a 1px margin. That translation is held once applied so it does not snap back. Feet-as-pivot was rejected: it needs a 17px-plus corrective slide in a single frame."
+ },
+ "groups": {
+  "body": ["L01", "accessory"],
+  "head": ["headgear"],
+  "main": ["main_hand", "L05f"],
+  "off": ["off_hand", "L06f"],
+  "vfx": ["L09"]
+ },
+ "lock_rule": "On Idle/Attack/Defend/Hit, body, head, main and off share one offset so weapons, the pot, the hat and the shield stay on the body. Only L09 (squeak marks, noodle steam) may differ. Combat VFX are not baked into the canonical frames.",
+ "placement_legend": {
+  "hand-authored-offsets": "Integer offsets written by hand in this file. The pixels are the standing sprite shifted; nobody repainted a frame.",
+  "procedural-rotation": "Angle list written by hand. The raster is a nearest-neighbour rotation plus an automatic in-frame translation."
+ },
+ "states": {
+  "idle": {
+   "status": "PROTOTYPE (hand-authored offsets carried from the tuned ANIM_SHARED_001 idle)",
+   "placement": "hand-authored-offsets",
+   "loop": true,
+   "hold_last": false,
+   "frame_ms": 180,
+   "frames": [
+    {"body": [0, 0], "head": [0, 0], "main": [0, 0], "off": [0, 0], "vfx": [0, 0]},
+    {"body": [0, 0], "head": [0, 0], "main": [0, 0], "off": [0, 0], "vfx": [0, -1]},
+    {"body": [0, 1], "head": [0, 1], "main": [0, 1], "off": [0, 1], "vfx": [0, -1]},
+    {"body": [0, 1], "head": [0, 1], "main": [0, 1], "off": [0, 1], "vfx": [0, -2]},
+    {"body": [0, 1], "head": [0, 1], "main": [0, 1], "off": [0, 1], "vfx": [0, -1]},
+    {"body": [0, 0], "head": [0, 0], "main": [0, 0], "off": [0, 0], "vfx": [0, 0]}
+   ],
+   "note": "Same 1px bob as v1. First and last frames are the rest pose, so the loop is exact. Nox's squeak marks and Meteor's steam drift on L09; Potlid and Plaster have no L09, so their idle stays a serious 1px settle. The bob may touch row 122 (1px into the shadow rows), matching the tuned v1 idle."
+  },
+  "attack": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 80,
+   "frames": [
+    {"all": [-1, 0]},
+    {"all": [-2, 0]},
+    {"all": [0, 0]},
+    {"all": [4, 0], "vfx_fx": "attack"},
+    {"all": [5, 0], "vfx_fx": "attack"},
+    {"all": [3, 0], "vfx_fx": "attack"},
+    {"all": [1, 0]},
+    {"all": [0, 0]}
+   ],
+   "character_motion": {
+    "AVT_AEG_001": {
+     "note": "Serious knight. Short rooted thrust, little wind-up, no bounce.",
+     "all": [[-1, 0], [-1, 0], [0, 0], [3, 0], [3, 0], [2, 0], [1, 0], [0, 0]]
+    },
+    "AVT_PHA_001": {
+     "note": "Assassin jab, slightly longer reach. Squeak marks hop off the shoes on the strike; the sneakers themselves stay on the feet.",
+     "all": [[-1, 0], [-2, 0], [0, 0], [5, 0], [6, 0], [3, 0], [1, 0], [0, 0]],
+     "vfx_add": [[0, 0], [0, 0], [0, -1], [0, -2], [0, -2], [0, -1], [0, 0], [0, 0]]
+    },
+    "AVT_CEL_001": {
+     "note": "Elegant cast. One pixel of rise, one pixel of step. The planet staff stays in the hand.",
+     "all": [[0, 0], [0, -1], [0, -1], [1, -1], [1, -1], [1, 0], [0, 0], [0, 0]]
+    },
+    "AVT_SAN_001": {
+     "note": "Strict healer. A short presentation of the bandage staff, no flourish.",
+     "all": [[0, 0], [-1, 0], [0, 0], [2, 0], [2, 0], [1, 0], [0, 0], [0, 0]]
+    }
+   }
+  },
+  "defend": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 100,
+   "frames": [
+    {"all": [0, 0]},
+    {"all": [-1, 0]},
+    {"all": [-2, 0], "tint": "guard", "vfx_fx": "defend"},
+    {"all": [-2, 0], "tint": "guard", "vfx_fx": "defend"},
+    {"all": [-1, 0]},
+    {"all": [0, 0]}
+   ],
+   "note": "v1 pushed the off-hand group on its own, which slid Potlid's shield off the arm. v2 braces the whole body together. The guard ring is a combat VFX at the off-hand anchor, not a detached shield.",
+   "character_motion": {
+    "AVT_AEG_001": {
+     "note": "Plants his weight. A 1px crouch with the shield locked to the arm.",
+     "all": [[0, 0], [-1, 0], [-2, 1], [-2, 1], [-1, 0], [0, 0]]
+    },
+    "AVT_PHA_001": {
+     "note": "Uses the shared brace. Squeak marks flick up while the shoes stay put.",
+     "vfx_add": [[0, 0], [0, -1], [0, -2], [0, -2], [0, -1], [0, 0]]
+    },
+    "AVT_CEL_001": {
+     "note": "Small composed lean. The noodle cup does not leave the hand.",
+     "all": [[0, 0], [0, 0], [-1, 0], [-1, 0], [0, 0], [0, 0]]
+    },
+    "AVT_SAN_001": {
+     "note": "Same small lean as Meteor. Strict, no extra motion.",
+     "all": [[0, 0], [0, 0], [-1, 0], [-1, 0], [0, 0], [0, 0]]
+    }
+   }
+  },
+  "hit": {
+   "status": "PROTOTYPE (hand-authored procedural offsets)",
+   "placement": "hand-authored-offsets",
+   "loop": false,
+   "hold_last": false,
+   "frame_ms": 60,
+   "frames": [
+    {"all": [0, 0], "flash": "white", "vfx_fx": "hit"},
+    {"all": [-2, 0], "flash": "white", "vfx_fx": "hit"},
+    {"all": [-3, 0], "vfx_fx": "hit"},
+    {"all": [-2, 0], "flash": "red"},
+    {"all": [-1, 0]},
+    {"all": [0, 0]}
+   ],
+   "note": "Flash and the red tint are render hints. They are not baked into the canonical PNG strips, because a partial-alpha flash would break the 0/255 rule and recolor the palette. GIF previews bake a hard white (or leave the red as a label only).",
+   "character_motion": {
+    "AVT_AEG_001": {
+     "note": "Rooted. A short recoil, back on his feet quickly.",
+     "all": [[0, 0], [-1, 0], [-2, 0], [-1, 0], [0, 0], [0, 0]]
+    },
+    "AVT_PHA_001": {
+     "note": "Lighter body, a slightly longer recoil. Squeak marks jump on the impact.",
+     "all": [[0, 0], [-3, 0], [-4, 0], [-2, 0], [-1, 0], [0, 0]],
+     "vfx_add": [[0, -2], [0, -2], [0, -1], [0, 0], [0, 0], [0, 0]]
+    },
+    "AVT_SAN_001": {
+     "note": "Holds a small flinch one frame longer than Potlid, then is still. No stagger.",
+     "all": [[0, 0], [-1, 0], [-2, 0], [-2, 0], [-1, 0], [0, 0]]
+    }
+   }
+  },
+  "ko": {
+   "status": "PROTOTYPE (hand-authored angles, procedural nearest-neighbour rotation, automatic in-frame translation)",
+   "placement": "procedural-rotation",
+   "loop": false,
+   "hold_last": true,
+   "frame_ms": 90,
+   "pivot": "body_center",
+   "fit": {
+    "margin": 1,
+    "policy": "Hold the previous translation while it still keeps every opaque pixel inside x/y 1..126. When it does not, move by the minimum integer onto the legal range. Never snap back toward zero.",
+    "max_step_px": 3
+   },
+   "frames": [
+    {"rot": 0, "flash": "white"},
+    {"rot": 12},
+    {"rot": 18},
+    {"rot": 24},
+    {"rot": 30},
+    {"rot": 36},
+    {"rot": 42},
+    {"rot": 48},
+    {"rot": 54},
+    {"rot": 60},
+    {"rot": 75, "dim": 0.35},
+    {"rot": 90, "dim": 0.5}
+   ],
+   "note": "Shared curve is the controlled topple used by Madame Meteor and Sister Plaster. Dim is a render hint and is not baked (partial alpha is forbidden). Frame 0 is the unrotated rest pose so KO continues from Idle.",
+   "character_motion": {
+    "AVT_AEG_001": {
+     "note": "Heavy. He resists, then drops. The pot and shield rotate with him.",
+     "rot": [0, 4, 8, 14, 20, 28, 40, 55, 70, 80, 86, 90]
+    },
+    "AVT_PHA_001": {
+     "note": "Light. He tips sooner. The sneakers and both daggers stay on the body.",
+     "rot": [0, 8, 14, 20, 26, 34, 42, 50, 60, 72, 82, 90]
+    }
+   }
+  }
+ },
+ "vfx_fx": {
+  "attack": {
+   "default": {"vfx": "VFX_SLASH_001", "at": "main_hand", "offset": [14, -8]}
+  },
+  "defend": {
+   "default": {"vfx": "VFX_GUARD_RING_001", "at": "body_center", "offset": [6, 0]}
+  },
+  "hit": {
+   "default": {"vfx": "VFX_HIT_SPARK_001", "at": "body_center", "offset": [0, -6]}
+  }
+ },
+ "character_overrides": {
+  "AVT_CEL_001": {
+   "attack": {"vfx": "VFX_MAGIC_PARTICLE_001", "at": "main_hand", "offset": [0, -40], "label": "Cast at the planet orb"}
+  },
+  "AVT_SAN_001": {
+   "attack": {"vfx": "VFX_HEAL_SPARKLE_001", "at": "main_hand", "offset": [0, -40], "label": "Heal at the bandage head"}
+  },
+  "AVT_AEG_001": {
+   "defend": {"vfx": "VFX_GUARD_RING_001", "at": "off_hand", "offset": [0, 0], "label": "Block on the pot-lid shield"}
+  }
+ },
+ "rules": [
+  "Do not mark this PRODUCTION_READY.",
+  "No per-frame scale. No partial alpha in canonical rasters.",
+  "Weapons are not given their own offset. An independent weapon offset detaches the item from the fist baked into L01.",
+  "Canonical strips omit combat VFX and flashes. GIF previews may bake a hard white flash and the combat VFX, still at alpha 0/255.",
+  "Character IDs and equipment IDs are unchanged."
+ ]
+}
