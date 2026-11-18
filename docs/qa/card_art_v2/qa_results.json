@@ -1,0 +1,216 @@
+{
+  "passed": 42,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "v1 untouched assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1.png",
+      "ok": true,
+      "detail": "d76154a694635ca19e9f0f0dfc005dd8e570e3a0b210e60c41c1b24c934e2b75"
+    },
+    {
+      "name": "v1 untouched assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v1_variant_goldpot.png",
+      "ok": true,
+      "detail": "61ab7f81220fb974b588edd474735da2cc980020bbe10ec8a23404b09b77ef51"
+    },
+    {
+      "name": "v1 untouched assets/characters/AVT_PHA_001/card/AVT_PHA_001_card_v1.png",
+      "ok": true,
+      "detail": "f28032a87ea50202c04759bb121281836bee19f3390c8a61476e17580cefafef"
+    },
+    {
+      "name": "v1 untouched assets/characters/AVT_CEL_001/card/AVT_CEL_001_card_v1.png",
+      "ok": true,
+      "detail": "29dfac1b185f41b3d6845263f94bc0efb51cde7f84b937a728ceca8ea72f0479"
+    },
+    {
+      "name": "v1 untouched assets/characters/AVT_SAN_001/card/AVT_SAN_001_card_v1.png",
+      "ok": true,
+      "detail": "d8a9cca51e04a273997328f41327d7250f2273ef3c29ffa6fb49fa0a4da66944"
+    },
+    {
+      "name": "v1 untouched assets/card-art/frames/factions/EMBLEM_AEGIS_001.png",
+      "ok": true,
+      "detail": "4c1a6100e79a0f14bf819ada6f339b8b3e9bb73c3a06351ccafbe398cea9ee56"
+    },
+    {
+      "name": "v1 untouched assets/card-art/frames/factions/FRAME_AEGIS_001.png",
+      "ok": true,
+      "detail": "4e1dfea73659afd48fd27b95fd91b30927a94755a8dca99d694874dc7391e188"
+    },
+    {
+      "name": "base v2 bytes == v1 assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v2.png",
+      "ok": true,
+      "detail": "1565117 bytes"
+    },
+    {
+      "name": "base v2 bytes == v1 assets/characters/AVT_PHA_001/card/AVT_PHA_001_card_v2.png",
+      "ok": true,
+      "detail": "1314529 bytes"
+    },
+    {
+      "name": "base v2 bytes == v1 assets/characters/AVT_CEL_001/card/AVT_CEL_001_card_v2.png",
+      "ok": true,
+      "detail": "1814705 bytes"
+    },
+    {
+      "name": "base v2 bytes == v1 assets/characters/AVT_SAN_001/card/AVT_SAN_001_card_v2.png",
+      "ok": true,
+      "detail": "1513111 bytes"
+    },
+    {
+      "name": "gold size",
+      "ok": true,
+      "detail": "(1152, 864, 3)"
+    },
+    {
+      "name": "gold outside mask changed pixels",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "gold inside mask changed pixels",
+      "ok": true,
+      "detail": "32516"
+    },
+    {
+      "name": "pauldron rect unchanged",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "shield rect unchanged",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "face rect unchanged",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "pot rect changed",
+      "ok": true,
+      "detail": "26217"
+    },
+    {
+      "name": "webp count",
+      "ok": true,
+      "detail": "5"
+    },
+    {
+      "name": "webp AVT_AEG_001_card_v2_variant_goldpot_web.webp",
+      "ok": true,
+      "detail": "(512, 683)"
+    },
+    {
+      "name": "webp AVT_AEG_001_card_v2_web.webp",
+      "ok": true,
+      "detail": "(512, 683)"
+    },
+    {
+      "name": "webp AVT_SAN_001_card_v2_web.webp",
+      "ok": true,
+      "detail": "(512, 683)"
+    },
+    {
+      "name": "webp AVT_PHA_001_card_v2_web.webp",
+      "ok": true,
+      "detail": "(512, 683)"
+    },
+    {
+      "name": "webp AVT_CEL_001_card_v2_web.webp",
+      "ok": true,
+      "detail": "(512, 683)"
+    },
+    {
+      "name": "frame FRAME_BASE_v2.png",
+      "ok": true,
+      "detail": "(750, 1050) RGBA"
+    },
+    {
+      "name": "frame window transparent FRAME_BASE_v2.png",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "frame FRAME_AEGIS_v2.png",
+      "ok": true,
+      "detail": "(750, 1050) RGBA"
+    },
+    {
+      "name": "frame window transparent FRAME_AEGIS_v2.png",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "frame FRAME_PHANTOM_v2.png",
+      "ok": true,
+      "detail": "(750, 1050) RGBA"
+    },
+    {
+      "name": "frame window transparent FRAME_PHANTOM_v2.png",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "frame FRAME_CELESTIAL_v2.png",
+      "ok": true,
+      "detail": "(750, 1050) RGBA"
+    },
+    {
+      "name": "frame window transparent FRAME_CELESTIAL_v2.png",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "frame FRAME_SANCTUARY_v2.png",
+      "ok": true,
+      "detail": "(750, 1050) RGBA"
+    },
+    {
+      "name": "frame window transparent FRAME_SANCTUARY_v2.png",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "aegis emblem v2",
+      "ok": true,
+      "detail": "(256, 256) RGBA"
+    },
+    {
+      "name": "layout art_window kept",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "layout v2 key",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "name": "proof size",
+      "ok": true,
+      "detail": "(750, 1050)"
+    },
+    {
+      "name": "thumb 180",
+      "ok": true,
+      "detail": "(180, 252)"
+    },
+    {
+      "name": "thumb 120",
+      "ok": true,
+      "detail": "(120, 168)"
+    },
+    {
+      "name": "proof text is TBD",
+      "ok": true,
+      "detail": "source"
+    },
+    {
+      "name": "no stat digits in proof builder",
+      "ok": true,
+      "detail": "source"
+    }
+  ]
+}

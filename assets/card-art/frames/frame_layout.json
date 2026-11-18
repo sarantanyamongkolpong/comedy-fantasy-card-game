@@ -59,5 +59,15 @@
     "emblem in faction_emblem",
     "text: name / stat values / rarity gems (runtime)"
   ],
-  "notes": "Frames carry no text, stats or rarity. Name plate and stat band overlap the bottom of art_window; keep key art features out of card y>890 (bottom ~6% of the art)."
+  "notes": "Frames carry no text, stats or rarity. Name plate and stat band overlap the bottom of art_window; keep key art features out of card y>890 (bottom ~6% of the art).",
+  "v2": {
+    "card_png": "assets/characters/<ID>/card/<ID>_card_v2.png",
+    "card_webp": "assets/characters/<ID>/card/<ID>_card_v2_web.webp",
+    "goldpot_png": "assets/characters/AVT_AEG_001/card/AVT_AEG_001_card_v2_variant_goldpot.png",
+    "frames": "FRAME_<FAC>_v2.png beside the v1 frames; FRAME_BASE_v2.png in shared/",
+    "emblem_aegis": "EMBLEM_AEGIS_v2.png (pot-lid redraw). Other emblems stay v1.",
+    "lighting": "v2 frames multiply opaque chrome brighter at the top-left",
+    "rects": "unchanged; v1 rects above still place v2 art, frames and emblems",
+    "stats": "proofs draw POW/DEF/SPD as TBD. No gameplay numbers are baked in."
+  }
 }
