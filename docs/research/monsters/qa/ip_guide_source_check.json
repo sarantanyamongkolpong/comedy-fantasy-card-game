@@ -1,0 +1,434 @@
+{
+  "generatedAt": "2026-11-20T13:21:32.519Z",
+  "tool": "tools/research/monsters-qa",
+  "disclaimer": "URL verdicts are a research check. A verified page contains the claim’s key terms. It is not a legal or factual certification.",
+  "refs": [
+    {
+      "agent": "guide",
+      "branch": "",
+      "present": true,
+      "ref": "input",
+      "sha": "",
+      "files": [
+        "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json"
+      ],
+      "records": 8,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "urls": 8,
+    "verified": 8,
+    "failed": 0,
+    "partial": 0,
+    "blocked": 0,
+    "unrelated": 0,
+    "dead": 0,
+    "suspicious": 0,
+    "error": 0,
+    "unverified": 0
+  },
+  "urls": [
+    {
+      "url": "https://www.copyright.gov/fair-use/",
+      "canonical": "https://www.copyright.gov/fair-use",
+      "httpStatus": 200,
+      "finalUrl": "https://www.copyright.gov/fair-use/",
+      "title": "U.S. Copyright Office Fair Use Index",
+      "contentType": "text/html",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-FAIR-USE",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "U.S. Copyright Office Fair Use Index",
+          "supports": "Fair use is a legal doctrine that promotes freedom of expression by permitting the unlicensed use of copyright-protected works in certain circumstances. Transformative uses are those that add something new, with a further purpose or different character, and do not substitute for the original use of the work. The Index is not a substitute for legal advice.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "transformative",
+            "circumstances",
+            "expression",
+            "permitting",
+            "substitute",
+            "unlicensed",
+            "copyright",
+            "different"
+          ],
+          "termsFound": [
+            "transformative",
+            "circumstances",
+            "expression",
+            "permitting",
+            "substitute",
+            "unlicensed",
+            "copyright",
+            "different"
+          ],
+          "termsMissing": [],
+          "termHitRatio": 1,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…of the use against the other factors below. Additionally, “transformative” uses are more likely to be considered fair. Transformative…"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.copyright.gov/help/faq/faq-protect.html",
+      "canonical": "https://www.copyright.gov/help/faq/faq-protect.html",
+      "httpStatus": 200,
+      "finalUrl": "https://www.copyright.gov/help/faq/faq-protect.html",
+      "title": "What Does Copyright Protect? (FAQ) | U.S. Copyright Office",
+      "contentType": "text/html",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-COPYRIGHT-PROTECT",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "What Does Copyright Protect? (FAQ) | U.S. Copyright Office",
+          "supports": "Copyright protects original works of authorship including literary, dramatic, musical, and artistic works. Copyright does not protect facts, ideas, systems, or methods of operation. Names are not protected by copyright law. Copyright does not protect names, titles, slogans, or short phrases.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "authorship",
+            "copyright",
+            "including",
+            "operation",
+            "protected",
+            "artistic",
+            "dramatic",
+            "literary"
+          ],
+          "termsFound": [
+            "authorship",
+            "copyright",
+            "including",
+            "operation",
+            "protected",
+            "artistic",
+            "dramatic",
+            "literary"
+          ],
+          "termsMissing": [],
+          "termHitRatio": 1,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…rm of intellectual property law, protects original works of authorship including literary, dramatic, musical, and artistic works,…"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.law.cornell.edu/supct/html/92-1292.ZS.html",
+      "canonical": "https://www.law.cornell.edu/supct/html/92-1292.ZS.html",
+      "httpStatus": 200,
+      "finalUrl": "https://www.law.cornell.edu/supct/html/92-1292.ZS.html",
+      "title": "Campbell v. Acuff-Rose Music, 510 U.S. 569 (1994).",
+      "contentType": "text/html; charset=utf-8",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-CAMPBELL",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "Campbell v. Acuff-Rose Music, 510 U.S. 569 (1994)",
+          "supports": "2 Live Crew's commercial parody may be a fair use. The enquiry focuses on whether the new work is transformative, altering the original with new expression, meaning, or message. The heart of any parodist's claim to quote from existing material is the use of some elements of a prior author's composition to create a new one.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "transformative",
+            "composition",
+            "commercial",
+            "expression",
+            "parodists",
+            "altering",
+            "elements",
+            "existing"
+          ],
+          "termsFound": [
+            "transformative",
+            "composition",
+            "commercial",
+            "expression",
+            "parodists",
+            "altering",
+            "elements",
+            "existing"
+          ],
+          "termsMissing": [],
+          "termHitRatio": 1,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…the original creation, or whether and to what extent it is \"transformative,\" altering the original with new expression, meaning, or me…"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.law.cornell.edu/supremecourt/text/22-148",
+      "canonical": "https://www.law.cornell.edu/supremecourt/text/22-148",
+      "httpStatus": 200,
+      "finalUrl": "https://www.law.cornell.edu/supremecourt/text/22-148",
+      "title": "JACK DANIEL’S PROPERTIES, INC. v. VIP PRODUCTS LLC | Supreme Court | US Law | LII / Legal Information Institute",
+      "contentType": "text/html; charset=utf-8",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-JACK-DANIELS",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "Jack Daniel's Properties, Inc. v. VIP Products LLC, syllabus via Cornell LII",
+          "supports": "When an alleged infringer uses a trademark as a designation of source for the infringer's own goods, the Rogers test does not apply. Bad Spaniels. humorous message. likelihood of confusion. source identifier.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "designation",
+            "identifier",
+            "infringers",
+            "likelihood",
+            "confusion",
+            "infringer",
+            "trademark",
+            "humorous"
+          ],
+          "termsFound": [
+            "designation",
+            "identifier",
+            "infringers",
+            "likelihood",
+            "confusion",
+            "infringer",
+            "trademark",
+            "humorous"
+          ],
+          "termsMissing": [],
+          "termHitRatio": 1,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…. Held : 1. When an alleged infringer uses a trademark as a designation of source for the infringer’s own goods, the Rogers test do…"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.uspto.gov/trademarks/basics/what-trademark",
+      "canonical": "https://www.uspto.gov/trademarks/basics/what-trademark",
+      "httpStatus": 200,
+      "finalUrl": "https://www.uspto.gov/trademarks/basics/what-trademark",
+      "title": "What is a trademark? | USPTO",
+      "contentType": "text/html; charset=UTF-8",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-USPTO-TRADEMARK",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "What is a trademark? | USPTO",
+          "supports": "A trademark can be any word, phrase, symbol, design, or a combination of these things that identifies your goods or services. You do not have rights to the word or phrase in general, only to how that word or phrase is used with your specific goods or services.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "combination",
+            "identifies",
+            "trademark",
+            "services",
+            "specific",
+            "general",
+            "design",
+            "phrase"
+          ],
+          "termsFound": [
+            "combination",
+            "identifies",
+            "trademark",
+            "services",
+            "specific",
+            "general",
+            "design",
+            "phrase"
+          ],
+          "termsMissing": [],
+          "termHitRatio": 1,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…? A trademark can be any word, phrase, symbol, design, or a combination of these things that identifies your goods or services. It'…"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.uspto.gov/trademarks/search/likelihood-confusion",
+      "canonical": "https://www.uspto.gov/trademarks/search/likelihood-confusion",
+      "httpStatus": 200,
+      "finalUrl": "https://www.uspto.gov/trademarks/search/likelihood-confusion",
+      "title": "Likelihood of confusion | USPTO",
+      "contentType": "text/html; charset=UTF-8",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-USPTO-CONFUSION",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "Likelihood of confusion | USPTO",
+          "supports": "Trademarks do not have to be identical to be confusingly similar. They could be similar in sound, appearance, or meaning, or could create a similar commercial impression. Identical trademarks can coexist when the goods or services are not related, as with Dove soap and Dove ice cream.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "confusingly",
+            "appearance",
+            "commercial",
+            "impression",
+            "trademarks",
+            "identical",
+            "services",
+            "coexist"
+          ],
+          "termsFound": [
+            "confusingly",
+            "appearance",
+            "commercial",
+            "impression",
+            "trademarks",
+            "identical",
+            "services"
+          ],
+          "termsMissing": [
+            "coexist"
+          ],
+          "termHitRatio": 0.875,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…ods or services from your competitors. If your trademark is confusingly similar to another trademark and the goods and services are…"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.wipo.int/en/web/copyright/faq-copyright",
+      "canonical": "https://www.wipo.int/en/web/copyright/faq-copyright",
+      "httpStatus": 200,
+      "finalUrl": "https://www.wipo.int/en/web/copyright/faq-copyright",
+      "title": "Frequently Asked Questions: Copyright",
+      "contentType": "text/html;charset=UTF-8",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-WIPO-COPYRIGHT",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "WIPO Frequently Asked Questions: Copyright",
+          "supports": "Copyright protection extends only to expressions, and not to ideas, procedures, methods of operation or mathematical concepts as such. Titles, slogans, or logos depend on whether they contain sufficient authorship.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "mathematical",
+            "expressions",
+            "authorship",
+            "procedures",
+            "protection",
+            "sufficient",
+            "copyright",
+            "operation"
+          ],
+          "termsFound": [
+            "mathematical",
+            "expressions",
+            "authorship",
+            "procedures",
+            "protection",
+            "sufficient",
+            "copyright",
+            "operation"
+          ],
+          "termsMissing": [],
+          "termHitRatio": 1,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…ions, and not to ideas, procedures, methods of operation or mathematical concepts as such. Copyright may or may not be available for…"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.wipo.int/en/web/traditional-knowledge",
+      "canonical": "https://www.wipo.int/en/web/traditional-knowledge",
+      "httpStatus": 200,
+      "finalUrl": "https://www.wipo.int/en/web/traditional-knowledge",
+      "title": "Genetic Resources, Traditional Knowledge and Traditional Cultural Expressions",
+      "contentType": "text/html;charset=UTF-8",
+      "verdict": "verified",
+      "priority": null,
+      "flags": [],
+      "claims": [
+        {
+          "agent": "guide",
+          "recordId": "GUIDE-WIPO-TK",
+          "path": "/agent/repos/comedy-fantasy-card-game/docs/research/monsters/qa/ip_guide_sources.json",
+          "ref": "input",
+          "sha": "",
+          "kind": "citation",
+          "claimedTitle": "WIPO Genetic Resources, Traditional Knowledge and Traditional Cultural Expressions",
+          "supports": "Many Indigenous Peoples, local communities and governments seek intellectual property protection for traditional knowledge and traditional cultural expressions. Such assets can range from traditional medicine and environmental knowledge to art, symbols and music.",
+          "accessed": "2026-11-20",
+          "keyTerms": [
+            "environmental",
+            "intellectual",
+            "communities",
+            "expressions",
+            "governments",
+            "indigenous",
+            "protection",
+            "knowledge"
+          ],
+          "termsFound": [
+            "environmental",
+            "intellectual",
+            "communities",
+            "expressions",
+            "governments",
+            "indigenous",
+            "protection",
+            "knowledge"
+          ],
+          "termsMissing": [],
+          "termHitRatio": 1,
+          "verdict": "verified",
+          "priority": null,
+          "evidenceSnippet": "…assets. Such assets can range from traditional medicine and environmental knowledge to art, symbols and music. Genetic resources (GRs…"
+        }
+      ],
+      "error": ""
+    }
+  ]
+}
