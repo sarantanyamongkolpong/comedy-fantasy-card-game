@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-11-20T13:02:29.297Z",
+  "oversizeThresholdBytes": 409600,
+  "manifests": [
+    "web/assets-manifest.json"
+  ],
+  "assetEntries": 150,
+  "missing": [],
+  "duplicateIds": [],
+  "referencedFiles": 174,
+  "referencedBytes": 7734921,
+  "shippedFiles": 176,
+  "shippedBytes": 7744508,
+  "unreferencedShipped": [
+    "web/assets/fonts/OFL.txt",
+    "web/assets/generated/BUILD_REPORT.json"
+  ],
+  "oversize": [
+    {
+      "path": "web/assets/generated/map/BG_MAP.webp",
+      "bytes": 437050
+    }
+  ],
+  "largest": [
+    {
+      "path": "web/assets/generated/map/BG_MAP.webp",
+      "bytes": 437050
+    },
+    {
+      "path": "web/assets/generated/dream_v02/house_villa.webp",
+      "bytes": 249790
+    },
+    {
+      "path": "web/assets/generated/dream_v02/enemy_security_skeleton.webp",
+      "bytes": 237302
+    },
+    {
+      "path": "web/assets/generated/dream_v02/gacha_reveal_ex.webp",
+      "bytes": 231196
+    },
+    {
+      "path": "web/assets/generated/dream_v02/house_loft.webp",
+      "bytes": 209856
+    },
+    {
+      "path": "web/assets/generated/dream_v02/house_penthouse.webp",
+      "bytes": 208186
+    },
+    {
+      "path": "web/assets/generated/dream_v03/shopping_mall_interior.webp",
+      "bytes": 194972
+    },
+    {
+      "path": "web/assets/generated/dream_v02/gacha_reveal_epic.webp",
+      "bytes": 193318
+    },
+    {
+      "path": "web/assets/generated/dream_v02/action_barrier.webp",
+      "bytes": 190332
+    },
+    {
+      "path": "web/assets/generated/dream_v02/enemy_clipboard_goblin.webp",
+      "bytes": 183968
+    },
+    {
+      "path": "web/assets/generated/dream_v02/house_cabin.webp",
+      "bytes": 173592
+    },
+    {
+      "path": "web/assets/generated/dream_v02/action_slash.webp",
+      "bytes": 170058
+    },
+    {
+      "path": "web/assets/generated/dream_v02/house_cottage.webp",
+      "bytes": 164842
+    },
+    {
+      "path": "web/assets/generated/dream_v02/action_heavy_strike.webp",
+      "bytes": 160114
+    },
+    {
+      "path": "web/assets/generated/dream_v02/action_guard.webp",
+      "bytes": 158740
+    },
+    {
+      "path": "web/assets/generated/dream_v02/house_bungalow.webp",
+      "bytes": 156798
+    },
+    {
+      "path": "web/assets/generated/dream_v03/reward_room.webp",
+      "bytes": 151350
+    },
+    {
+      "path": "web/assets/generated/dream_v02/enemy_salary_slime.webp",
+      "bytes": 146382
+    },
+    {
+      "path": "web/assets/generated/dream_v02/gacha_machine_action.webp",
+      "bytes": 138876
+    },
+    {
+      "path": "web/assets/generated/dream_v02/gacha_hall.webp",
+      "bytes": 130308
+    }
+  ],
+  "staticFirstLoadEstimate": {
+    "html": 713,
+    "css": 26278,
+    "js": 186401,
+    "manifest": 86086,
+    "referencedAssets": 7734921,
+    "total": 8034399,
+    "note": "Sum of index.html, web/css, web/js, the manifest, and unique files referenced by manifests and CSS. The browser may request only the current screen. playable.html inlines this set and is measured separately."
+  }
+}

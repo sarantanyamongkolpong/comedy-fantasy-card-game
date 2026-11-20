@@ -1,0 +1,175 @@
+{
+  "generatedAt": "2026-11-20T14:53:19.884Z",
+  "worktree": "/tmp/qa-merge",
+  "head": "2f74ceaa8cb14353578b1ac49600c876e7a79f12",
+  "originWaveBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+  "fetchStatus": 0,
+  "fetches": [
+    {
+      "branch": "prod/a-card-art",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "branch": "prod/b-hideout",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "branch": "prod/c-inventory",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "branch": "prod/d-gacha",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "branch": "prod/e-battle-polish",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "branch": "prod/f-sport-art",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "branch": "prod/g-world-content",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "streams": [
+    {
+      "id": "A",
+      "owns": "art-src/cards web/assets/cards web/manifests/cards.json tools/art/cards tests/prod/a",
+      "branch": "prod/a-card-art",
+      "present": true,
+      "merged": true,
+      "sha": "d2acdd8a6969351d167648827f74d1679c7fa6c5",
+      "commits": [
+        "d2acdd8 Add layered starter-deck card art for review."
+      ],
+      "commitsBeyondWaveBase": [
+        "d2acdd8 Add layered starter-deck card art for review."
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [],
+      "throwawayCommit": "a3f1c3e"
+    },
+    {
+      "id": "B",
+      "owns": "art-src/hideout web/assets/hideout web/manifests/hideout.json content/prod/hideout tests/prod/b",
+      "branch": "prod/b-hideout",
+      "present": true,
+      "merged": true,
+      "sha": "70e64971174bee1c131dbd991f977fad1aa234d5",
+      "commits": [
+        "70e6497 feat(hideout): add review-only house tiers and furniture (t270u)"
+      ],
+      "commitsBeyondWaveBase": [
+        "70e6497 feat(hideout): add review-only house tiers and furniture (t270u)"
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [],
+      "throwawayCommit": "b72f779"
+    },
+    {
+      "id": "C",
+      "owns": "web/js/collection web/css/collection.css tests/prod/c tests/e2e/prod/c",
+      "branch": "prod/c-inventory",
+      "present": true,
+      "merged": true,
+      "sha": "85ccc41b4b9aff2c17c9dcaa4affe5ebf59ff533",
+      "commits": [
+        "85ccc41 Add landscape collection screens for stash, inventory, and decks."
+      ],
+      "commitsBeyondWaveBase": [
+        "85ccc41 Add landscape collection screens for stash, inventory, and decks."
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [],
+      "throwawayCommit": "991aa98"
+    },
+    {
+      "id": "D",
+      "owns": "web/js/gacha-fx web/css/gacha-fx.css art-src/gacha web/assets/gacha web/manifests/gacha.json tests/prod/d",
+      "branch": "prod/d-gacha",
+      "present": true,
+      "merged": false,
+      "sha": "8bfb7452c2edc67bc45d7377e333a62358a9df1e",
+      "commits": [
+        "8bfb745 Add the gacha booth reveal, pity, and G wallet visuals."
+      ],
+      "commitsBeyondWaveBase": [
+        "8bfb745 Add the gacha booth reveal, pity, and G wallet visuals."
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [
+        "web/index.html"
+      ],
+      "error": "Auto-merging web/index.html\nCONFLICT (content): Merge conflict in web/index.html\nAuto-merging web/js/app.js\nAutomatic merge failed; fix conflicts and then commit the result."
+    },
+    {
+      "id": "E",
+      "owns": "web/css/battle-polish.css web/js/battle-fx art-src/battle-ui web/assets/battle-ui web/manifests/battle-ui.json tests/prod/e",
+      "branch": "prod/e-battle-polish",
+      "present": true,
+      "merged": false,
+      "sha": "7b2c3c7b80758fce143d69f69e6d3e099f494835",
+      "commits": [
+        "7b2c3c7 Polish Battle and Prep presentation",
+        "30a4d6f docs(production): audit Battle and Prep polish gaps"
+      ],
+      "commitsBeyondWaveBase": [
+        "7b2c3c7 Polish Battle and Prep presentation",
+        "30a4d6f docs(production): audit Battle and Prep polish gaps"
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [
+        "web/index.html"
+      ],
+      "error": "Auto-merging web/index.html\nCONFLICT (content): Merge conflict in web/index.html\nAuto-merging web/js/app.js\nAutomatic merge failed; fix conflicts and then commit the result."
+    },
+    {
+      "id": "F",
+      "owns": "art-src/sport web/assets/sport web/manifests/sport.json tests/prod/f",
+      "branch": "prod/f-sport-art",
+      "present": true,
+      "merged": true,
+      "sha": "41fe22e54756cb465c958d83a7d97a82de86aa0f",
+      "commits": [
+        "41fe22e Add Sport Complex review art for frames, boards, and venues."
+      ],
+      "commitsBeyondWaveBase": [
+        "41fe22e Add Sport Complex review art for frames, boards, and venues."
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [],
+      "throwawayCommit": "ae3bfeb"
+    },
+    {
+      "id": "G",
+      "owns": "content/prod/world docs/production/world tools/content/world tests/prod/g",
+      "branch": "prod/g-world-content",
+      "present": true,
+      "merged": true,
+      "sha": "40305cfac93dec68cf4f1f06660a5f916ffa837c",
+      "commits": [
+        "40305cf docs(world): record owner decisions OQ_G_09 through OQ_G_13",
+        "0da3a45 feat(world): propose comedy copy for the six map pins"
+      ],
+      "commitsBeyondWaveBase": [
+        "40305cf docs(world): record owner decisions OQ_G_09 through OQ_G_13",
+        "0da3a45 feat(world): propose comedy copy for the six map pins"
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [],
+      "throwawayCommit": "4839a0a"
+    }
+  ],
+  "dirtySummary": 0,
+  "pushed": false
+}
