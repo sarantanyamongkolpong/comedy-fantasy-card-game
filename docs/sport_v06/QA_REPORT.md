@@ -161,6 +161,12 @@ Quality gates on `ecd170e` (runs 44758980394 and 44758993479) also did not start
 
 Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T153037Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T153037Z/`.
 
+Quality gates on `70707d0` (runs 44764027310 and 44764046691) started again. Data validation, repository structure, and the asset manifest passed. `SYSTEMS_TEST` is red on Node 20 and Node 22: 406 pass, 1 fail, 4 todo, 13 skip, 424 tests. The only failing name is still `QA-10 real-engine Deck Battle Rewards win and lose`. The sport harness cases on this branch skipped, because the sport modules are not in the QA checkout.
+
+### Probe 8 — 2026-11-20T16:00:22Z
+
+Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T160022Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T160022Z/`.
+
 ## Findings
 
 ### P0
