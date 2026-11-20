@@ -1,0 +1,74 @@
+{
+ "shield2": {
+  "n": 100,
+  "finishPct": 98,
+  "playerWinPct": 43,
+  "enemyWinPct": 55,
+  "starterWinPct": 69.4,
+  "firstInSideOrderWinPct": 43.9,
+  "startedBy": {
+   "player": 53,
+   "enemy": 47
+  },
+  "playerWinPctWhenPlayerStarts": 60.4,
+  "playerWinPctWhenEnemyStarts": 23.4,
+  "turns": {
+   "min": 15,
+   "avg": 37.1,
+   "median": 26,
+   "p95": 60,
+   "max": 401
+  },
+  "undecidedSeeds": [
+   8,
+   16
+  ]
+ },
+ "legacy_def1": {
+  "n": 100,
+  "finishPct": 100,
+  "playerWinPct": 54,
+  "enemyWinPct": 46,
+  "starterWinPct": 67,
+  "firstInSideOrderWinPct": 54,
+  "startedBy": {
+   "player": 53,
+   "enemy": 47
+  },
+  "playerWinPctWhenPlayerStarts": 69.8,
+  "playerWinPctWhenEnemyStarts": 36.2,
+  "turns": {
+   "min": 13,
+   "avg": 25,
+   "median": 21,
+   "p95": 53,
+   "max": 101
+  },
+  "undecidedSeeds": []
+ },
+ "swapped": {
+  "n": 100,
+  "finishPct": 98,
+  "playerWinPct": 55,
+  "enemyWinPct": 43,
+  "starterWinPct": 69.4,
+  "firstInSideOrderWinPct": 43.9,
+  "startedBy": {
+   "player": 47,
+   "enemy": 53
+  },
+  "playerWinPctWhenPlayerStarts": 76.6,
+  "playerWinPctWhenEnemyStarts": 35.8,
+  "turns": {
+   "min": 15,
+   "avg": 37.1,
+   "median": 26,
+   "p95": 60,
+   "max": 401
+  },
+  "undecidedSeeds": [
+   8,
+   16
+  ]
+ }
+}

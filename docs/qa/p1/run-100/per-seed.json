@@ -1,0 +1,3902 @@
+[
+ {
+  "variant": "shield2",
+  "seed": 1,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 2,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 55,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 3,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 33,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 55
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 4,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 74,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 5,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 28,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 58
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 6,
+  "decided": true,
+  "winner": "player",
+  "turns": 34,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 23,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 7,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 34,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 54
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 8,
+  "decided": false,
+  "winner": null,
+  "turns": 401,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 37,
+   "enemy": 39
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 9,
+  "decided": true,
+  "winner": "player",
+  "turns": 41,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 52,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 10,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 146,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 39
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 11,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 60,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 12,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 59,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 13,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 28,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 67
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 14,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 15,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 42,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 55
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 16,
+  "decided": false,
+  "winner": null,
+  "turns": 401,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 40,
+   "enemy": 33
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 17,
+  "decided": true,
+  "winner": "player",
+  "turns": 29,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 57,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 18,
+  "decided": true,
+  "winner": "player",
+  "turns": 33,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 52,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 19,
+  "decided": true,
+  "winner": "player",
+  "turns": 38,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 60,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 20,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 33,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 50
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 21,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 22,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 58
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 23,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 24,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 69
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 25,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 28,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 56
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 26,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 62
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 27,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 70,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 28,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 64
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 29,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 56
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 30,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 40
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 31,
+  "decided": true,
+  "winner": "player",
+  "turns": 30,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 55,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 32,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 34,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 22
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 33,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 45
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 34,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 73,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 39
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 35,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 30,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 53
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 36,
+  "decided": true,
+  "winner": "player",
+  "turns": 26,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 74,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 37,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 62
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 38,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 73,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 39,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 71,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 40,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 41,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 41,
+  "decided": true,
+  "winner": "player",
+  "turns": 15,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 72,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 42,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 41,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 43,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 46,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 55
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 44,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 34,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 51
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 45,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 46,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 71
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 47,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 57,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 48,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 56,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 49,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 73,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 50,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 56,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 51,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 20,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 74
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 52,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 74,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 53,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 73,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 54,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 37,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 55,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 54
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 56,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 55,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 57,
+  "decided": true,
+  "winner": "player",
+  "turns": 24,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 75,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 58,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 67
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 59,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 33,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 54
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 60,
+  "decided": true,
+  "winner": "player",
+  "turns": 41,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 58,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 61,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 31,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 52
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 62,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 30,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 54
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 63,
+  "decided": true,
+  "winner": "player",
+  "turns": 32,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 28,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 64,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 71,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 65,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 67
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 66,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 60
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 67,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 29,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 68,
+  "decided": true,
+  "winner": "player",
+  "turns": 33,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 54,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 69,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 71,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 70,
+  "decided": true,
+  "winner": "player",
+  "turns": 28,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 58,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 71,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 39,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 54
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 72,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 26,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 62
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 73,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 59,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 37
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 74,
+  "decided": true,
+  "winner": "player",
+  "turns": 30,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 58,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 75,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 37,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 53
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 76,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 69,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 77,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 24,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 69
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 78,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 79,
+  "decided": true,
+  "winner": "player",
+  "turns": 35,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 55,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 80,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 35,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 55
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 81,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 77,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 2
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 82,
+  "decided": true,
+  "winner": "player",
+  "turns": 20,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 70,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 83,
+  "decided": true,
+  "winner": "player",
+  "turns": 26,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 54,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 84,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 28,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 56
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 85,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 71,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 86,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 72,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 87,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 72,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 88,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 33,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 54
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 89,
+  "decided": true,
+  "winner": "player",
+  "turns": 29,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 59,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 90,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 26,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 72
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 91,
+  "decided": true,
+  "winner": "player",
+  "turns": 43,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 59,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 92,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 56,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 93,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 22,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 69
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 94,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 60
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 95,
+  "decided": true,
+  "winner": "player",
+  "turns": 22,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 62,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 96,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 30,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 55
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 97,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 56,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 98,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 99,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 60,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 39
+  }
+ },
+ {
+  "variant": "shield2",
+  "seed": 100,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 71
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 1,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 45,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 17
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 2,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 54,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 3,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 58
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 4,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 65,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 5,
+  "decided": true,
+  "winner": "player",
+  "turns": 33,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 37,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 6,
+  "decided": true,
+  "winner": "player",
+  "turns": 24,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 24,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 7,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 26,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 26
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 8,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 14,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 67
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 9,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 56,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 10,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 22,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 40
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 11,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 46,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 12,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 47,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 13,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 50,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 28
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 14,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 37
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 15,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 68,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 16,
+  "decided": true,
+  "winner": "player",
+  "turns": 31,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 34,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 17,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 18,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 28
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 18,
+  "decided": true,
+  "winner": "player",
+  "turns": 77,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 26,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 19,
+  "decided": true,
+  "winner": "player",
+  "turns": 30,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 34,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 20,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 21,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 50
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 22,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 46
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 23,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 24,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 62
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 25,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 28,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 37
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 26,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 48
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 27,
+  "decided": true,
+  "winner": "player",
+  "turns": 13,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 70,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 28,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 66
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 29,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 57
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 30,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 32
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 31,
+  "decided": true,
+  "winner": "player",
+  "turns": 24,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 46,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 32,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 24,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 33,
+  "decided": true,
+  "winner": "player",
+  "turns": 16,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 28,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 34,
+  "decided": true,
+  "winner": "player",
+  "turns": 32,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 32,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 35,
+  "decided": true,
+  "winner": "player",
+  "turns": 15,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 53,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 36,
+  "decided": true,
+  "winner": "player",
+  "turns": 20,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 52,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 37,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 52
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 38,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 69,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 39,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 70,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 40,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 29,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 41,
+  "decided": true,
+  "winner": "player",
+  "turns": 15,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 70,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 42,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 47
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 43,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 28,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 47
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 44,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 51,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 45,
+  "decided": true,
+  "winner": "player",
+  "turns": 86,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 31,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 46,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 13,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 70
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 47,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 32,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 34
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 48,
+  "decided": true,
+  "winner": "player",
+  "turns": 13,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 54,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 49,
+  "decided": true,
+  "winner": "player",
+  "turns": 93,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 32,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 50,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 55,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 51,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 18,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 66
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 52,
+  "decided": true,
+  "winner": "player",
+  "turns": 15,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 71,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 53,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 25,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 54,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 53,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 35
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 55,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 101,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 10
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 56,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 48,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 57,
+  "decided": true,
+  "winner": "player",
+  "turns": 18,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 51,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 58,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 59,
+  "decided": true,
+  "winner": "player",
+  "turns": 16,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 52,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 60,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 22,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 45
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 61,
+  "decided": true,
+  "winner": "player",
+  "turns": 56,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 36,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 62,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 56,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 63,
+  "decided": true,
+  "winner": "player",
+  "turns": 24,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 26,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 64,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 56,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 65,
+  "decided": true,
+  "winner": "player",
+  "turns": 28,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 52,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 66,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 15,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 53
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 67,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 46
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 68,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 54,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 69,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 50,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 70,
+  "decided": true,
+  "winner": "player",
+  "turns": 20,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 34,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 71,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 54
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 72,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 24,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 50
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 73,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 15,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 74,
+  "decided": true,
+  "winner": "player",
+  "turns": 24,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 53,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 75,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 13,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 66
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 76,
+  "decided": true,
+  "winner": "player",
+  "turns": 15,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 55,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 77,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 18,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 62
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 78,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 79,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 24,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 56
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 80,
+  "decided": true,
+  "winner": "player",
+  "turns": 24,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 25,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 81,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 33
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 82,
+  "decided": true,
+  "winner": "player",
+  "turns": 22,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 62,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 83,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 15,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 45
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 84,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 54,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 85,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 52,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 86,
+  "decided": true,
+  "winner": "player",
+  "turns": 15,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 71,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 87,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 53,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 88,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 56
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 89,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 24,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 53
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 90,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 20,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 40
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 91,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 18,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 53
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 92,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 52,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 93,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 44,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 94,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 55
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 95,
+  "decided": true,
+  "winner": "player",
+  "turns": 36,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 26,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 96,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 61,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 97,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 63,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 98,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 59
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 99,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 40,
+   "enemy": 0
+  }
+ },
+ {
+  "variant": "legacy_def1",
+  "seed": 100,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "player",
+  "finalHp": {
+   "player": 0,
+   "enemy": 70
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 1,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 57
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 2,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 55,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 3,
+  "decided": true,
+  "winner": "player",
+  "turns": 33,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 55
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 4,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 74,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 5,
+  "decided": true,
+  "winner": "player",
+  "turns": 28,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 58
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 6,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 34,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 23,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 7,
+  "decided": true,
+  "winner": "player",
+  "turns": 34,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 54
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 8,
+  "decided": false,
+  "winner": null,
+  "turns": 401,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 37,
+   "player": 39
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 9,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 41,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 52,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 10,
+  "decided": true,
+  "winner": "player",
+  "turns": 146,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 39
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 11,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 60,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 12,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 59,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 13,
+  "decided": true,
+  "winner": "player",
+  "turns": 28,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 67
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 14,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 57
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 15,
+  "decided": true,
+  "winner": "player",
+  "turns": 42,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 55
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 16,
+  "decided": false,
+  "winner": null,
+  "turns": 401,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 40,
+   "player": 33
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 17,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 29,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 57,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 18,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 33,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 52,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 19,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 38,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 60,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 20,
+  "decided": true,
+  "winner": "player",
+  "turns": 33,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 50
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 21,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 57
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 22,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 58
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 23,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 57
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 24,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 69
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 25,
+  "decided": true,
+  "winner": "player",
+  "turns": 28,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 56
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 26,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 62
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 27,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 70,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 28,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 64
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 29,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 56
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 30,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 40
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 31,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 30,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 55,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 32,
+  "decided": true,
+  "winner": "player",
+  "turns": 34,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 22
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 33,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 45
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 34,
+  "decided": true,
+  "winner": "player",
+  "turns": 73,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 39
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 35,
+  "decided": true,
+  "winner": "player",
+  "turns": 30,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 53
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 36,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 26,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 74,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 37,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 62
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 38,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 73,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 39,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 71,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 40,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 41,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 41,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 15,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 72,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 42,
+  "decided": true,
+  "winner": "player",
+  "turns": 41,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 57
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 43,
+  "decided": true,
+  "winner": "player",
+  "turns": 46,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 55
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 44,
+  "decided": true,
+  "winner": "player",
+  "turns": 34,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 51
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 45,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 59
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 46,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 71
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 47,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 57,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 48,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 56,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 49,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 73,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 50,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 56,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 51,
+  "decided": true,
+  "winner": "player",
+  "turns": 20,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 74
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 52,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 74,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 53,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 21,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 73,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 54,
+  "decided": true,
+  "winner": "player",
+  "turns": 37,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 57
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 55,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 54
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 56,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 27,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 55,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 57,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 24,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 75,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 58,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 67
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 59,
+  "decided": true,
+  "winner": "player",
+  "turns": 33,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 54
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 60,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 41,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 58,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 61,
+  "decided": true,
+  "winner": "player",
+  "turns": 31,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 52
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 62,
+  "decided": true,
+  "winner": "player",
+  "turns": 30,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 54
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 63,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 32,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 28,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 64,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 71,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 65,
+  "decided": true,
+  "winner": "player",
+  "turns": 23,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 67
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 66,
+  "decided": true,
+  "winner": "player",
+  "turns": 25,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 60
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 67,
+  "decided": true,
+  "winner": "player",
+  "turns": 29,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 59
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 68,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 33,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 54,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 69,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 71,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 70,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 28,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 58,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 71,
+  "decided": true,
+  "winner": "player",
+  "turns": 39,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 54
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 72,
+  "decided": true,
+  "winner": "player",
+  "turns": 26,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 62
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 73,
+  "decided": true,
+  "winner": "player",
+  "turns": 59,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 37
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 74,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 30,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 58,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 75,
+  "decided": true,
+  "winner": "player",
+  "turns": 37,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 53
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 76,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 69,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 77,
+  "decided": true,
+  "winner": "player",
+  "turns": 24,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 69
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 78,
+  "decided": true,
+  "winner": "player",
+  "turns": 21,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 59
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 79,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 35,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 55,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 80,
+  "decided": true,
+  "winner": "player",
+  "turns": 35,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 55
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 81,
+  "decided": true,
+  "winner": "player",
+  "turns": 77,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 2
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 82,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 20,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 70,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 83,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 26,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 54,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 84,
+  "decided": true,
+  "winner": "player",
+  "turns": 28,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 56
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 85,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 19,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 71,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 86,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 72,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 87,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 17,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 72,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 88,
+  "decided": true,
+  "winner": "player",
+  "turns": 33,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 54
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 89,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 29,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 59,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 90,
+  "decided": true,
+  "winner": "player",
+  "turns": 26,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 72
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 91,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 43,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 59,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 92,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 23,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 56,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 93,
+  "decided": true,
+  "winner": "player",
+  "turns": 22,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 69
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 94,
+  "decided": true,
+  "winner": "player",
+  "turns": 17,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 60
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 95,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 22,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 62,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 96,
+  "decided": true,
+  "winner": "player",
+  "turns": 30,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 55
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 97,
+  "decided": true,
+  "winner": "enemy",
+  "turns": 25,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 56,
+   "player": 0
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 98,
+  "decided": true,
+  "winner": "player",
+  "turns": 27,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 59
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 99,
+  "decided": true,
+  "winner": "player",
+  "turns": 60,
+  "starter": "enemy",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 39
+  }
+ },
+ {
+  "variant": "swapped",
+  "seed": 100,
+  "decided": true,
+  "winner": "player",
+  "turns": 19,
+  "starter": "player",
+  "firstInOrder": "enemy",
+  "finalHp": {
+   "enemy": 0,
+   "player": 71
+  }
+ }
+]

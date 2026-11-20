@@ -465,7 +465,12 @@ test('a skill card fires that avatar active once, and an attack does not', () =>
 });
 
 test('passive chance follows the seeded stream', () => {
+  // This test checks the passive RNG stream with an authored DEF +1 buff. Under the
+  // default flat_atk preset, a passive named Bulwark is remapped to Shield +2 (Owner
+  // t282u, MVP_PROVISIONAL), so the remap is switched off here. Engine behaviour is unchanged.
+  const config = resolveRuleConfig({ damage: { bulwark: { enabled: false } } });
   const withChance = (seed, chance) => createMatch(matchInput({
+    config,
     seed,
     player: roster((avatar, index) => {
       if (index !== 0) return;

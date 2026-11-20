@@ -1,0 +1,3487 @@
+{
+ "seed": 8,
+ "variant": "shield2",
+ "actions": {
+  "player": {
+   "any_legal_expected_value:ACT_FAC_CEL_002": 1,
+   "any_legal_expected_value:ACT_FAC_PHA_002": 1,
+   "discard_voluntary": 710,
+   "end_turn": 200,
+   "shield_taunt_if_lethal:ACT_GEN_SKILL_002": 2,
+   "shield_taunt_if_lethal:ACT_FAC_AEG_002": 2,
+   "heal_regen:ACT_FAC_SAN_001": 10,
+   "highest_damage_lowest_hp:ACT_GEN_ATK_001": 94,
+   "highest_damage_lowest_hp:ACT_FAC_CEL_001": 3,
+   "setup_next_attack:ACT_GEN_SKILL_002": 2,
+   "setup_next_attack:ACT_GEN_SKILL_001": 1,
+   "highest_damage_lowest_hp:ACT_GEN_ATK_002": 61,
+   "setup_next_attack:ACT_FAC_CEL_002": 1,
+   "any_legal_expected_value:ACT_GEN_SKILL_001": 1,
+   "shield_taunt_if_lethal:ACT_GEN_SKILL_001": 1,
+   "heal_regen:ACT_GEN_SKILL_001": 16,
+   "heal_regen:ACT_GEN_SKILL_002": 12
+  },
+  "enemy": {
+   "setup_next_attack:ACT_GEN_SKILL_001": 3,
+   "highest_damage_lowest_hp:ACT_GEN_ATK_002": 65,
+   "discard_voluntary": 715,
+   "end_turn": 200,
+   "setup_next_attack:ACT_FAC_CEL_002": 2,
+   "highest_damage_lowest_hp:ACT_GEN_ATK_001": 93,
+   "highest_damage_lowest_hp:ACT_FAC_CEL_001": 3,
+   "setup_next_attack:ACT_FAC_PHA_002": 1,
+   "shield_taunt_if_lethal:ACT_GEN_SKILL_002": 1,
+   "shield_taunt_if_lethal:ACT_FAC_AEG_002": 1,
+   "heal_regen:ACT_GEN_SKILL_002": 11,
+   "heal_regen:ACT_FAC_SAN_001": 10,
+   "heal_regen:ACT_GEN_SKILL_001": 14
+  }
+ },
+ "frames": [
+  {
+   "turn": 361,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 7,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 14,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 258,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 244,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 3,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 362,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 7,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 14,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 258,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 246,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 363,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 14,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 258,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 246,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 364,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 14,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 258,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 248,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 4,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 365,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 13,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 248,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 4,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 366,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 13,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 250,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 10,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 367,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 15,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 250,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 10,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1",
+       "regen:3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 368,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 15,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 250,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 13,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 369,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 14,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 250,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 13,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 370,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 14,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 252,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 16,
+      "maxHp": 20,
+      "shield": 4,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 371,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 11,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 252,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 16,
+      "maxHp": 20,
+      "shield": 4,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 372,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 11,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 254,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 16,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 373,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 8,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 254,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 16,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 374,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 8,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 260,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 256,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 375,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 8,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 262,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 256,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 376,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 8,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1",
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 262,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 258,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 4,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 377,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 10,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 264,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 258,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 4,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 378,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 10,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 264,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 260,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 6,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 379,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 20,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 12,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 266,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 260,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 6,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 380,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 20,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 12,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 266,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 262,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 381,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 12,
+      "maxHp": 26,
+      "shield": 4,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 268,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 262,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 15,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 382,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 12,
+      "maxHp": 26,
+      "shield": 4,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 268,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 264,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 14,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 383,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 12,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 12,
+      "maxHp": 26,
+      "shield": 6,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 270,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 264,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 14,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 384,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 12,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 12,
+      "maxHp": 26,
+      "shield": 6,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 270,
+      "statuses": [
+       "buff:atk:1",
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 264,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 14,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 385,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 7,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 15,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 270,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 264,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 14,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 386,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 7,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 15,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 270,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 266,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 13,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 387,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 17,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 272,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 266,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 13,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 388,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 17,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 272,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 266,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 11,
+      "maxHp": 20,
+      "shield": 0,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 389,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 13,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 272,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 266,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 11,
+      "maxHp": 20,
+      "shield": 0,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 390,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 13,
+      "maxHp": 26,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 272,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 268,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 11,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 391,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 20,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 13,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 274,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 21,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 268,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 11,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 392,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 20,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 13,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1",
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 274,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 268,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 9,
+      "maxHp": 20,
+      "shield": 0,
+      "statuses": []
+     }
+    ]
+   }
+  },
+  {
+   "turn": 393,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 15,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 16,
+      "maxHp": 26,
+      "shield": 4,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 276,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 16,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 268,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 9,
+      "maxHp": 20,
+      "shield": 0,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 394,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 15,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 16,
+      "maxHp": 26,
+      "shield": 4,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 276,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 268,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 12,
+      "maxHp": 20,
+      "shield": 0,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 395,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 10,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 19,
+      "maxHp": 26,
+      "shield": 6,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 278,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 11,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 268,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 12,
+      "maxHp": 20,
+      "shield": 0,
+      "statuses": [
+       "regen:3",
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 396,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 10,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 19,
+      "maxHp": 26,
+      "shield": 6,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 278,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 270,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 9,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 397,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 19,
+      "maxHp": 26,
+      "shield": 5,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 280,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 270,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 9,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "buff:atk:1",
+       "regen:3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 398,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 6,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 19,
+      "maxHp": 26,
+      "shield": 5,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 280,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 1,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 272,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 11,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 399,
+   "active": "player",
+   "player": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 18,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 282,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 0,
+    "hand": 1,
+    "draw": 1,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 272,
+      "statuses": [
+       "regen:3"
+      ]
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 11,
+      "maxHp": 20,
+      "shield": 2,
+      "statuses": [
+       "regen:3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "turn": 400,
+   "active": "enemy",
+   "player": {
+    "ap": 0,
+    "hand": 0,
+    "draw": 2,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 18,
+      "maxHp": 26,
+      "shield": 2,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 20,
+      "maxHp": 20,
+      "shield": 282,
+      "statuses": []
+     }
+    ]
+   },
+   "enemy": {
+    "ap": 5,
+    "hand": 5,
+    "draw": 25,
+    "units": [
+     {
+      "id": "AVT_AEG_002",
+      "role": "Tank",
+      "hp": 26,
+      "maxHp": 26,
+      "shield": 272,
+      "statuses": []
+     },
+     {
+      "id": "AVT_PHA_002",
+      "role": "DPS",
+      "hp": 0,
+      "maxHp": 14,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_CEL_002",
+      "role": "Magic",
+      "hp": 0,
+      "maxHp": 16,
+      "shield": 0,
+      "statuses": []
+     },
+     {
+      "id": "AVT_SAN_002",
+      "role": "Support",
+      "hp": 13,
+      "maxHp": 20,
+      "shield": 0,
+      "statuses": []
+     }
+    ]
+   }
+  }
+ ]
+}

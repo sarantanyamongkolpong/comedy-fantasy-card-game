@@ -1,0 +1,18 @@
+{
+ "gitSha": "a6085bfd4121e2935b4004e5b46d523eb1b65d08",
+ "gitDirty": false,
+ "node": "v22.23.5",
+ "command": "node tools/sim/p1-diagnostics.mjs --seeds 100 --out /home/claude/work/p1-evidence",
+ "seeds": 100,
+ "turnCap": 400,
+ "ruleConfigSha256": "8712c294d93216eb6171d7662099e2be918ad7b5047226075a57ccffe94092ff",
+ "generatedAt": "2026-11-20T19:17:11.093Z",
+ "artifacts": {
+  "per-seed.json": "d7695a9b2a00ebabc69d5feea73f6186fe1ce20071dd19b5a592a34905819101",
+  "summary.json": "72d5a16673ac3bb0b43f73a277109a739fdf465748a5409b72824b3bce6c6b82",
+  "traces": [
+   8,
+   16
+  ]
+ }
+}
