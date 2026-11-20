@@ -1,0 +1,2995 @@
+[
+  {
+    "inspirationId": "INS-01-001",
+    "name": "Slime",
+    "origin": "Dragon Quest (Square Enix / Enix; art by Akira Toriyama)",
+    "kind": "game",
+    "facts": [
+      "Slimes debuted in the 1986 game Dragon Quest as the first and weakest enemy, and have appeared in almost every game since.",
+      "Yuji Horii said the idea came from slime-like characters in Wizardry. He conceived a pile of goo; Akira Toriyama's design came back as a teardrop the team considered perfect.",
+      "They became the series mascot: often easy to defeat, sometimes friendly townspeople who say they are not a bad slime, with a 'slurp' verbal tic. Spin-offs even star a nation of slimes.",
+      "The same article lists many varieties, including differently colored slimes, She-Slimes, Bubble Slimes, Healslimes, and crowned King Slimes, plus a rare Metal Slime family."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Slime_(Dragon_Quest)",
+        "title": "Slime (Dragon Quest) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "debut, Wizardry inspiration, Toriyama teardrop, mascot status, speech tic, and named varieties"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_(video_game)",
+        "title": "Dragon Quest (video game) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Dragon Quest (1986) is the first game in the series, with Toriyama artwork"
+      }
+    ],
+    "archetypeTags": [
+      "slime",
+      "mascot",
+      "early-route",
+      "cute-menace",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A weak, readable first-floor blob players feel slightly guilty about hitting. Do not copy the teardrop silhouette, the blank smile, or the catchphrase.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-002",
+    "name": "Metal slime",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "The metal slime debuts in the first Dragon Quest. It looks like an ordinary slime except for a silver-grey metallic body.",
+      "It is infamous for a very high experience payout, rare appearances, and a habit of running away. High agility and defence mean ordinary attacks usually miss or barely hurt it, and most spells do nothing.",
+      "Horii explained the fleeing as shyness. Fans treat meeting one as a jackpot rather than a threat, because it looks almost identical to a normal slime."
+    ],
+    "sources": [
+      {
+        "url": "https://dragon-quest.org/wiki/Metal_slime",
+        "title": "Metal slime — Dragon Quest Wiki",
+        "accessed": "2026-11-20",
+        "supports": "silver body, huge experience, flee, high agility and defence, spells mostly useless"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Slime_(Dragon_Quest)",
+        "title": "Slime (Dragon Quest) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "rare metal variant, Horii's shyness explanation, large experience reward"
+      }
+    ],
+    "archetypeTags": [
+      "slime",
+      "rare-spawn",
+      "flee",
+      "experience-pinata",
+      "tier-hint-elite",
+      "tier-hint-secret"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A shy jackpot that looks like trash mob until it bolts. Parody the behavior, not the silver teardrop face.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-003",
+    "name": "King slime",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "A king slime is a giant crown-wearing blob made when multiple ordinary slimes fuse. It wears a gold-rimmed crown, and an optional Dragon Quest VIII scene shows the crown is what holds the fusion together: remove it and the king splits.",
+      "Players often meet a group of slimes that call more of their kind; when eight gather, they pile up into one king slime. The monster is a large step up from a normal slime and often knows supportive magic.",
+      "The game debut was Dragon Quest IV, after an earlier manga appearance. The crowned fusion is a recurring series monster, not a one-off boss."
+    ],
+    "sources": [
+      {
+        "url": "https://www.dragonquest-wiki.com/King_slime",
+        "title": "King slime — Dragon Quest Wiki",
+        "accessed": "2026-11-20",
+        "supports": "fusion, crown, eight-slime pile, DQIV debut, stronger than a normal slime"
+      }
+    ],
+    "archetypeTags": [
+      "slime",
+      "fusion",
+      "crown",
+      "tier-hint-mini",
+      "tier-hint-elite"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Elite"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A committee of blobs that becomes a monarch only while the crown stays on. Use a different crown and body than the striped DQ crown.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-004",
+    "name": "She-slime",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "The Dragon Quest slime article describes She-Slimes as orange slimes that are slightly stronger than regular slimes and, despite the name, not necessarily female."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Slime_(Dragon_Quest)",
+        "title": "Slime (Dragon Quest) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "orange, slightly stronger, name does not reliably mark sex"
+      }
+    ],
+    "archetypeTags": [
+      "slime",
+      "palette-variant-with-a-twist",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A color variant whose name lies about what it is. One sentence of support only, so this is a thin record.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-005",
+    "name": "Bubble slime",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "Bubble Slimes are described as slimes that look like pools of slime rather than the standing teardrop body.",
+      "A cited Dragon Quest Monsters account says Liquid Metal Slimes derive from the Bubble Slime, a puddle that was later 'purified' into metal. The same article flags some other Liquid Metal visual details as needing citation, so those are not repeated here."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Slime_(Dragon_Quest)",
+        "title": "Slime (Dragon Quest) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "puddle-shaped slime, and the sourced Bubble-to-Liquid-Metal derivation"
+      }
+    ],
+    "archetypeTags": [
+      "slime",
+      "puddle",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A spill with a face. Good floor hazard. Do not copy the specific metal-puddle face.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-006",
+    "name": "Healslime",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "Healslimes are listed among Dragon Quest slime varieties and are described as slimes that have tentacles."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Slime_(Dragon_Quest)",
+        "title": "Slime (Dragon Quest) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "tentacled slime variety"
+      }
+    ],
+    "archetypeTags": [
+      "slime",
+      "support-monster",
+      "tier-hint-normal",
+      "tier-hint-elite"
+    ],
+    "suggestedTiers": [
+      "Normal",
+      "Elite"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A medic blob. The page does not detail its spells; do not invent a DQ spell list. Thin record.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-007",
+    "name": "Dracky",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "The dracky is a recurring cartoon bat introduced in the first game. The name points at Dracula. Old English localization: Drakee.",
+      "It is described as a goofy bat: large wings, antennae, two round feet, a thin tail, round eyes, and a fanged mouth that always seems to be smiling. It stands in for the series' flying monsters.",
+      "In-game blurbs call it a bat-like monster that flies through the night, with cousins such as wackies and brackies."
+    ],
+    "sources": [
+      {
+        "url": "https://dragon-quest.org/wiki/Dracky",
+        "title": "Dracky — Dragon Quest Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Dracula-named goofy bat, body description, flying-monster representative"
+      }
+    ],
+    "archetypeTags": [
+      "bat",
+      "early-route",
+      "flyer",
+      "cute-menace",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The smiling nuisance bat of the first cave. Parody the goofy flyer, not Toriyama's antenna-and-grin sheet.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-008",
+    "name": "Dragonlord",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "The Dragonlord is the final boss of the original Dragon Quest. He steals the Sphere of Light from Tantegel, covers Alefgard in darkness, and kidnaps Princess Gwaelin.",
+      "He first appears as a blue-skinned humanoid in a purple robe with a dragon-carved staff, then reveals an upright bipedal dragon form.",
+      "Cornered, he offers the hero half the world. In the 1986 release, accepting ends the game as a failure. The offer itself was unusual for a villain of that year: a political deal, not mindless rampage."
+    ],
+    "sources": [
+      {
+        "url": "https://dragon-quest.org/wiki/Dragonlord",
+        "title": "Dragonlord — Dragon Quest Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Sphere of Light, two forms, half-the-world offer and what accepting does"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_(video_game)",
+        "title": "Dragon Quest (video game) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "the hero must defeat the Dragonlord and recover the stolen Balls of Light"
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "two-form",
+      "temptation",
+      "final-boss",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A polite tyrant who tries to hire the party before the second phase. Do not copy the blue mage or the purple upright dragon.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-009",
+    "name": "Baramos",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "In Dragon Quest III the hero is sent to destroy the archfiend Baramos, who threatens the world. The celebration after that fight is cut short.",
+      "Zoma, Baramos's master, reveals himself as the true villain. Later the party fights a revived Baramos who becomes Baramos Bomus and then the skeletal Baramos Gonus."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_III",
+        "title": "Dragon Quest III — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "false final boss, revival into Bomus and Gonus, servant of Zoma"
+      }
+    ],
+    "archetypeTags": [
+      "false-final-boss",
+      "phase-shift",
+      "demon",
+      "tier-hint-main",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The boss the tower lets you celebrate, then stands back up meaner. Do not copy his specific demon design; the page used here does not describe the sprite.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-010",
+    "name": "Zoma",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "Zoma is Baramos's master and Dragon Quest III's true villain. After Baramos falls, Zoma opens a pit to the Dark World, which is Alefgard itself.",
+      "The hero reaches Zoma's castle across a rainbow bridge and, with the Ball of Light from the Dragon Queen, defeats him. Zoma boasts that evil will return.",
+      "Defeating Zoma is what lets the hero earn the name Erdrick, tying this prequel to the first game."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_III",
+        "title": "Dragon Quest III — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "true villain under the false archfiend, Alefgard as the Dark World, Ball of Light"
+      }
+    ],
+    "archetypeTags": [
+      "true-final-boss",
+      "darkness",
+      "underworld",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The landlord behind the landlord. A darkness that claims the 'last' boss was middle management.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-011",
+    "name": "Psaro the Manslayer",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "In Dragon Quest IV, Psaro the Manslayer leads the attack on the hero's hometown and is the figure the chosen companions are gathered against.",
+      "He plans to become the next Ruler of Evil after his elven partner Rose is killed by humans. The heroes also learn that Estark, the current Ruler of Evil, has woken."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_IV",
+        "title": "Dragon Quest IV — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "manslayer antagonist, Rose's death, bid to become Ruler of Evil"
+      }
+    ],
+    "archetypeTags": [
+      "tragic-antagonist",
+      "humanoid-boss",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A villain whose cruelty has a wound under it. Parody the grudge-against-humanity arc, not Psaro's face or name.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-012",
+    "name": "Estark",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "Dragon Quest IV calls Estark the Ruler of Evil. The party learns he has been awakened and defeats him at his palace just as Psaro's followers arrive."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_IV",
+        "title": "Dragon Quest IV — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Ruler of Evil, awakened and fought at his palace"
+      }
+    ],
+    "archetypeTags": [
+      "sleeping-evil",
+      "ruler",
+      "tier-hint-mini",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "An old evil that someone else is late to recruit. The page does not describe his body, so do not invent a canonical Estark look.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-013",
+    "name": "Hargon",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "Dragon Quest II opens with the wizard Hargon destroying Moonbrooke Castle. He wants to summon the demon Malroth to destroy the world.",
+      "The prince of Midenhall, a descendant of Erdrick, is sent to stop him, with his cousins. A HD-2D postgame scene says Hargon was possessed and corrupted by Calasmos."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_II",
+        "title": "Dragon Quest II — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "wizard who summons Malroth, Moonbrooke attack, later possession note"
+      }
+    ],
+    "archetypeTags": [
+      "cult-wizard",
+      "summoner",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A high priest who is himself a puppet. Useful 'the summoner was summoned' structure.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-014",
+    "name": "Malroth",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "Malroth is the demon Hargon seeks to summon in Dragon Quest II in order to destroy the world.",
+      "In the HD-2D remake's postgame, a Will of Darkness engulfs Malroth and reveals Malwrath, described as an enhanced form of Malroth controlled by Calasmos."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_II",
+        "title": "Dragon Quest II — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "world-ending demon behind the wizard, and the later Malwrath form"
+      }
+    ],
+    "archetypeTags": [
+      "summoned-demon",
+      "world-ender",
+      "tier-hint-world",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The thing the cultist was dialing. Appearance is not described on the page used here.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-015",
+    "name": "Dhoulmagus",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "Dhoulmagus is the wicked figure Dragon Quest VIII's party pursues after he curses the kingdom of Trodain and its people.",
+      "He also sets fire to an abbey and kills the abbot, which pulls the templar Angelo into the chase. The hero of Trodain is the one person in the castle who escaped the curse unharmed."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_VIII",
+        "title": "Dragon Quest VIII — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "curse on Trodain, abbey burning, the chase that structures the game"
+      }
+    ],
+    "archetypeTags": [
+      "curse",
+      "jester-role-unverified",
+      "pursuit-boss",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A curse that walks ahead of the party. This page does not confirm a jester costume; do not add one from memory.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-016",
+    "name": "Mordegon",
+    "origin": "Dragon Quest",
+    "kind": "game",
+    "facts": [
+      "In Dragon Quest XI, King Carnelian is possessed by the sorcerer Mordegon, who also destroyed Dundrasil. His agent is Jasper.",
+      "Mordegon steals the Luminary's power and the Sword of Light, corrupts it into the Sword of Shadows, absorbs the heart of Yggdrasil, and plunges the world into darkness."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Quest_XI",
+        "title": "Dragon Quest XI — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "possession, theft of the Sword of Light, Yggdrasil's heart, age of darkness"
+      }
+    ],
+    "archetypeTags": [
+      "possession",
+      "world-tree",
+      "dark-age",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A sorcerer wearing a king, who eats the world tree's heart. Do not copy his DQXI design.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-017",
+    "name": "Cactuar",
+    "origin": "Final Fantasy (Square Enix; Japanese name Sabotender)",
+    "kind": "game",
+    "facts": [
+      "Cactuars are anthropomorphic cacti with haniwa-like faces, usually drawn in a running pose. They first appear as enemies in Final Fantasy VI and became a series mascot beside the chocobo and the moogle. The franchise is owned by Square Enix.",
+      "Tetsuya Nomura based the face on a high-school doodle. They are notoriously hard to hit. Their famous attack is 1000 Needles, a defensive strike that deals a fixed 1000 hit points regardless of defence. In Final Fantasy XV, common cactuars are rare spawns that try to run, and beating them pays well in experience."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cactuar",
+        "title": "Cactuar — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "haniwa cactus, FFVI debut, mascot status, 1000 Needles, flee-and-reward variant"
+      }
+    ],
+    "archetypeTags": [
+      "plant",
+      "runner",
+      "fixed-damage",
+      "mascot",
+      "rare-spawn",
+      "tier-hint-normal",
+      "tier-hint-secret"
+    ],
+    "suggestedTiers": [
+      "Normal",
+      "Elite",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A rude little plant that sprints and pokes for a flat insult. Do not copy the haniwa face or the 1000 Needles name.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-018",
+    "name": "Tonberry",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "The tonberry first appears in Final Fantasy V. It is a short, cute, salamander-like creature in a robe, with a knife and a lantern, that walks up slowly and then does often-fatal damage.",
+      "Nomura designed it hoping Final Fantasy monsters could become as popular as Dragon Quest's. Some versions have an attack that hits harder based on how many monsters the character has killed, or how many steps they have taken. A Tonberry King is one recurring variant."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tonberry",
+        "title": "Tonberry — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "robe, knife, lantern, slow approach, grudge-style attack, Nomura, Tonberry King"
+      }
+    ],
+    "archetypeTags": [
+      "grudge",
+      "slow-killer",
+      "cute-horror",
+      "tier-hint-elite",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Mini",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Something small and polite that keeps a ledger of your violence. Do not copy the green lizard, the kitchen knife, or the lantern silhouette together.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-019",
+    "name": "Chocobo",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "Chocobos are a fictional galliform bird, commonly yellow, created by Koichi Ishii for Final Fantasy II (1988). Ishii wanted an animal companion and drew on a childhood chick.",
+      "They appear in nearly every mainline game after that, usually as transport, and sometimes as story characters. A chocobo is the star of its own spin-off series."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chocobo",
+        "title": "Chocobo — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "yellow bird, Ishii, FFII, transport, spin-off protagonist"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Recurring_elements_in_the_Final_Fantasy_series",
+        "title": "Recurring elements in the Final Fantasy series — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "recurring transport bird created by Ishii for Final Fantasy II"
+      }
+    ],
+    "archetypeTags": [
+      "mount",
+      "mascot",
+      "bird",
+      "companion",
+      "tier-hint-normal",
+      "tier-hint-secret"
+    ],
+    "suggestedTiers": [
+      "Normal",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A big ridiculous bird the party would rather ride than fight. Invent a different bird; the yellow chocobo is a flagship mark.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-020",
+    "name": "Moogle",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "Moogles are a white-furred people, usually with wings and a pom-pom antenna. Koichi Ishii drew them in school from a white koala with bat wings. The Japanese name blends the words for mole and bat.",
+      "They debut in Final Fantasy III and often run shops or stand in the background, but some are allies or playable. They are a series mascot with a lot of merchandise."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Moogle",
+        "title": "Moogle — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "wings, pom-pom, koala-bat origin, shopkeeper role, FFIII debut"
+      }
+    ],
+    "archetypeTags": [
+      "mascot",
+      "shopkeeper",
+      "companion",
+      "flying",
+      "tier-hint-normal",
+      "tier-hint-secret"
+    ],
+    "suggestedTiers": [
+      "Normal",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A small clerk-creature that should not have to fight. Do not copy the pom-pom, the wings-plus-koala face, or the 'kupo' tic (the tic is not restated here because this page's extract did not quote it).",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-021",
+    "name": "Bomb",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "Bombs are recurring enemies and summons from Final Fantasy II onward: red fireball bodies, yellow eyes, hands, and a snarling fanged face.",
+      "Their signature is Self-Destruct, used when they are badly hurt: heavy damage, and the bomb dies doing it. They also use fire attacks. Variants include Grenades, Balloons, Ice Bombs, King Bombs, and Mom Bombs."
+    ],
+    "sources": [
+      {
+        "url": "https://finalfantasywiki.com/wiki/Bomb",
+        "title": "Bomb — Final Fantasy Wiki",
+        "accessed": "2026-11-20",
+        "supports": "round fiery body, Self-Destruct, FFII debut, named variants"
+      }
+    ],
+    "archetypeTags": [
+      "elemental",
+      "self-destruct",
+      "fire",
+      "tier-hint-normal",
+      "tier-hint-elite"
+    ],
+    "suggestedTiers": [
+      "Normal",
+      "Elite"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A round tantrum that would rather explode than lose. Do not copy the red sphere with the specific fang grin.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-022",
+    "name": "Mom Bomb",
+    "origin": "Final Fantasy IV",
+    "kind": "game",
+    "facts": [
+      "Final Fantasy IV introduces Mom Bomb as a boss. If it explodes, it breaks into three Bombs and three Dark Grenades."
+    ],
+    "sources": [
+      {
+        "url": "https://finalfantasywiki.com/wiki/Bomb",
+        "title": "Bomb — Final Fantasy Wiki",
+        "accessed": "2026-11-20",
+        "supports": "FFIV boss that splits into six smaller bombs"
+      }
+    ],
+    "archetypeTags": [
+      "parent-bomb",
+      "split",
+      "phase-shift",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A blast that becomes a litter. The split is the idea; the name and the FFIV body are not reusable.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-023",
+    "name": "Malboro",
+    "origin": "Final Fantasy (also called Morbol)",
+    "kind": "game",
+    "facts": [
+      "Malboros, also called Morbols, are monstrous plants covered in tentacle-like vines. They first appear in Final Fantasy II. Most are green.",
+      "Their signature is Bad Breath, a toxic breath that inflicts many status effects at once. The wiki suggests the name may nod at the Marlboro cigarette brand because of that breath. That brand is a separate trademark."
+    ],
+    "sources": [
+      {
+        "url": "https://finalfantasywiki.com/wiki/Malboro",
+        "title": "Malboro — Final Fantasy Wiki",
+        "accessed": "2026-11-20",
+        "supports": "tentacle plant, FFII, Bad Breath, possible cigarette-brand pun"
+      }
+    ],
+    "archetypeTags": [
+      "plant",
+      "status-breath",
+      "tier-hint-elite",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A salad that exhales a whole status menu. Do not copy the maw-and-tentacle FF plant or joke with the cigarette brand.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-024",
+    "name": "Behemoth (Final Fantasy)",
+    "origin": "Final Fantasy, using a biblical name",
+    "kind": "game",
+    "facts": [
+      "Final Fantasy behemoths are large, often late-game beasts. They first appear as a boss in Final Fantasy II. Many depictions are large purple beasts that gore with horns and lightning, on four legs or two, and answer a spell with a bigger spell such as Flare or Meteor. A stronger King Behemoth also recurs.",
+      "The name is the beast from Job 40. The biblical Behemoth is a primeval land monster paired with Leviathan, so powerful that the text says only God can overcome it. The Hebrew word is an augmentative of 'beast'."
+    ],
+    "sources": [
+      {
+        "url": "https://finalfantasywiki.com/wiki/Behemoth",
+        "title": "Behemoth — Final Fantasy Wiki",
+        "accessed": "2026-11-20",
+        "supports": "FFII debut, late-game power, horn and lightning, spell retaliation, King Behemoth, biblical naming"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Behemoth",
+        "title": "Behemoth — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Book of Job beast, paired with Leviathan, 'great beast' etymology"
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "spell-reflect",
+      "myth-name",
+      "tier-hint-elite",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A late-dungeon mammal that punishes careless magic. The name is old; the purple FF body is not.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-025",
+    "name": "Flan",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "Flans are a recurring gelatinous enemy, debuting in the first Final Fantasy. They are usually round, sometimes a puddle, with large eyes and a large mouth.",
+      "In several games they resist physical blows and fall to a particular element. Many variants are named like desserts: Pudding, Bavarois, or Mousse, rather than Flan."
+    ],
+    "sources": [
+      {
+        "url": "https://finalfantasywiki.com/wiki/Flan",
+        "title": "Flan — Final Fantasy Wiki",
+        "accessed": "2026-11-20",
+        "supports": "gelatinous FFI debut, physical resistance, dessert names"
+      }
+    ],
+    "archetypeTags": [
+      "ooze",
+      "dessert",
+      "elemental-weakness",
+      "tier-hint-normal",
+      "tier-hint-elite"
+    ],
+    "suggestedTiers": [
+      "Normal",
+      "Elite"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A pudding that ignores swords. 'Flan' is a food word; the FF face is still Square's.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-026",
+    "name": "Ahriman",
+    "origin": "Final Fantasy (also Allemagne, Fataleye, Veteran)",
+    "kind": "game",
+    "facts": [
+      "Ahriman is a recurring Final Fantasy enemy from Final Fantasy III, where it is one of the four Dark Crystal guardians in the World of Darkness and guards the Earth Crystal. Later games more often use smaller versions.",
+      "A remake note says that version's Ahriman has a glowing purple eye and mouth and keeps green wings from the Famicom original. This page does not give a full body description."
+    ],
+    "sources": [
+      {
+        "url": "https://finalfantasywiki.com/wiki/Ahriman",
+        "title": "Ahriman — Final Fantasy Wiki",
+        "accessed": "2026-11-20",
+        "supports": "FFIII crystal guardian, later smaller foes, eye and wings in one remake"
+      }
+    ],
+    "archetypeTags": [
+      "eye",
+      "guardian",
+      "doom",
+      "tier-hint-elite",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A watching thing tied to a crystal. Do not assume the floating-eyeball cliché beyond the eye the page actually mentions. The Zoroastrian name was not re-sourced here.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-027",
+    "name": "Exdeath",
+    "origin": "Final Fantasy V",
+    "kind": "game",
+    "facts": [
+      "Exdeath is Final Fantasy V's main antagonist: a tree used for centuries as a prison for demons until the evil inside it became a mind and the tree took a humanoid warlock form.",
+      "He was sealed in another world by four crystals. When he gains the Void, he becomes a giant tree again, is consumed by the Void, and returns as Neo Exdeath, who wants to erase all reality, including himself."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Exdeath",
+        "title": "Exdeath — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "sentient prison-tree, Void, Neo Exdeath"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_V",
+        "title": "Final Fantasy V — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "crystals seal him; the fight goes from tree form to Neo Exdeath"
+      }
+    ],
+    "archetypeTags": [
+      "tree",
+      "void",
+      "phase-shift",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A forest that became a person because people kept stuffing their evil into it. A strong two-phase 'container, then the nothing inside' boss.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-028",
+    "name": "Kefka Palazzo",
+    "origin": "Final Fantasy VI",
+    "kind": "game",
+    "facts": [
+      "Kefka is Final Fantasy VI's court mage. He goes from imperial clown-soldier to god of a ruined world after betraying the emperor and taking magic's source.",
+      "He was the first Magitek Knight prototype; the process drove him mad. Yoshitaka Amano's designs drew on circus clowns and, in Amano's own comparison, the Joker. He laughs, hates, and in the end shows a godlike form."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kefka_Palazzo",
+        "title": "Kefka Palazzo — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "nihilist mage, magitek madness, clown design, god form over a ruined world"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VI",
+        "title": "Final Fantasy VI — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "clownish first Magitek Knight, one of the game's main antagonists"
+      }
+    ],
+    "archetypeTags": [
+      "clown",
+      "nihilist",
+      "ascended-villain",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A joke that becomes the sky. Do not copy the purple ruffles, the face paint, or the laugh. Clown-plus-Joker is already crowded.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-029",
+    "name": "Chaos (Final Fantasy)",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "In the first Final Fantasy, the four Elemental Fiends send Garland two thousand years back. He becomes the archdemon Chaos and sends the fiends forward, a time loop meant to let him live forever.",
+      "The Warriors of Light break the loop. Their deed survives only as legend."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_(video_game)",
+        "title": "Final Fantasy (video game) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Garland as Chaos, time loop with the four fiends"
+      }
+    ],
+    "archetypeTags": [
+      "time-loop",
+      "archdemon",
+      "final-boss",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The first boss and the last boss are the same appointment. 'Chaos' is a common word; this character is still Square's.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-030",
+    "name": "Four Fiends",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "The first Final Fantasy sends four Elemental Fiends to darken four crystals: Lich (earth, Earth Cave), Kary (fire, Gurgu Volcano), Kraken (water, Sunken Shrine), and Tiamat (wind, Floating Castle).",
+      "Beating them restores the crystals and opens the way to Chaos, who created the loop they serve."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_(video_game)",
+        "title": "Final Fantasy (video game) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "four elemental fiends, their dungeons, and their link to Chaos"
+      }
+    ],
+    "archetypeTags": [
+      "elemental-quartet",
+      "crystal",
+      "dungeon-boss",
+      "tier-hint-mini",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Four themed gatekeepers, one per element, who are really one plan. Lich, Kraken, and Tiamat are older names; Kary and the set are the game's. Do not restage the FF1 sprites.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-031",
+    "name": "Golbez",
+    "origin": "Final Fantasy IV",
+    "kind": "game",
+    "facts": [
+      "Golbez is the sorcerer Cecil spends Final Fantasy IV trying to stop from taking the crystals.",
+      "He is controlled by the Lunarian Zemus, who wants humanity gone so Lunarians can have the earth, and he uses Golbez and Kain to wake the Giant of Babil, a machine built for that genocide."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_IV",
+        "title": "Final Fantasy IV — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "crystal thief under Zemus's control, Giant of Babil"
+      }
+    ],
+    "archetypeTags": [
+      "puppet-villain",
+      "armored-sorcerer",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The dark knight's mirror, who is someone else's hand. Do not copy the helmet. This page does not describe his armor in the sentences used.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-032",
+    "name": "Jenova",
+    "origin": "Final Fantasy VII",
+    "kind": "game",
+    "facts": [
+      "Jenova is a hostile alien that landed on the Planet about two thousand years before Final Fantasy VII, infected the Cetra, and was sealed in a tomb that Shinra later dug up.",
+      "Sephiroth was created from Jenova. The page calls Jenova an extraterrestrial life-form the Cetra imprisoned."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VII",
+        "title": "Final Fantasy VII — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "alien parasite of the Cetra, sealed, used to make Sephiroth"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Sephiroth_(Final_Fantasy)",
+        "title": "Sephiroth (Final Fantasy) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Sephiroth was injected with Jenova's cells before birth"
+      }
+    ],
+    "archetypeTags": [
+      "alien-parasite",
+      "false-god",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A calamity that wears the faces of people's dead. Do not copy the FFVII body or the name.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-033",
+    "name": "Sephiroth",
+    "origin": "Final Fantasy VII",
+    "kind": "game",
+    "facts": [
+      "Sephiroth is Final Fantasy VII's main antagonist, a former Shinra soldier given superhuman physiology by Jenova's cells.",
+      "After learning what he is, he tries to wound the Planet and use its healing power to be reborn as a god. He was designed as Cloud's foil: one rejects his identity, the other rebuilds it."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sephiroth_(Final_Fantasy)",
+        "title": "Sephiroth (Final Fantasy) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "SOLDIER antagonist, Jenova cells, godhood through the Planet's life"
+      }
+    ],
+    "archetypeTags": [
+      "humanoid-boss",
+      "one-wing-unverified-here",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The silver calamity people already know too well. This page pass did not document the one-wing form, so do not treat that silhouette as verified here. Do not use the name, the hair, or the long sword.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-034",
+    "name": "Sin",
+    "origin": "Final Fantasy X",
+    "kind": "game",
+    "facts": [
+      "Final Fantasy X is about defeating Sin, a rampaging monster. Sin destroys Zanarkand and strands Tidus in Spira.",
+      "The pilgrimage reveals Sin's true identity is Tidus's missing father, Jecht. Summoner Yuna's journey is built to end Sin."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_X",
+        "title": "Final Fantasy X — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "world-sized monster, Zanarkand, Jecht as Sin's identity"
+      }
+    ],
+    "archetypeTags": [
+      "world-serpent-scale",
+      "tragic-vessel",
+      "pilgrimage",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A natural disaster that is somebody's parent. Do not copy the whale-like FF X body; this page does not describe the shape.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-035",
+    "name": "Weapon (Final Fantasy VII)",
+    "origin": "Final Fantasy VII",
+    "kind": "game",
+    "facts": [
+      "Final Fantasy VII's plot describes a planetary defense force called Weapon. One such Weapon attacks the island where Cloud is hospitalized, and that attack drops Cloud and Tifa into the Lifestream."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VII",
+        "title": "Final Fantasy VII — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Weapon as the Planet's defense, attacking the Mideel-like island hospital"
+      }
+    ],
+    "archetypeTags": [
+      "planetary-defense",
+      "giant",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The world itself growing antibodies. This sentence does not name Emerald, Ruby, or Ultimate, so those are not separate records here.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-036",
+    "name": "Final Fantasy summon (Esper / Aeon pattern)",
+    "origin": "Final Fantasy",
+    "kind": "game",
+    "facts": [
+      "Summoning, proposed for the first game and first shipped in Final Fantasy III, calls a monster to perform a cinematic action. Summons may be optional or tied to the story.",
+      "Their names are drawn from many cultures, including Egyptian, Middle Eastern, Asian, and Classical myth. Group labels across the series include Espers, Guardian Forces, Aeons, Eidolons, Astrals, Primals, and Eikons.",
+      "Final Fantasy VI's Espers are that game's summons. Ifrit, Shiva, Bahamut, and Odin are named as recurring examples. Dead espers leave magicite that teaches spells.",
+      "Separately, Arabic cosmography describes Bahamut as a giant fish that helps hold up the world, a name later linked to the biblical Behemoth. That fish is not what the FFVI sentence describes."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Recurring_elements_in_the_Final_Fantasy_series",
+        "title": "Recurring elements in the Final Fantasy series — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "summoning since FFIII, mythic names, the list of group titles"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VI",
+        "title": "Final Fantasy VI — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Espers include recurring Ifrit, Shiva, Bahamut, and Odin"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bahamut",
+        "title": "Bahamut — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Bahamut as a cosmic fish in Arabic cosmography, name related to Behemoth"
+      }
+    ],
+    "archetypeTags": [
+      "summon",
+      "myth-name",
+      "cinematic-attack",
+      "tier-hint-elite",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Mini",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A borrowed god that shows up, does one enormous verb, and leaves. Use the pattern, not Ifrit, Shiva, Bahamut, or Odin's FF bodies. Myth agents may also claim the underlying gods.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-037",
+    "name": "Lavos",
+    "origin": "Chrono Trigger (Square)",
+    "kind": "game",
+    "facts": [
+      "Lavos is Chrono Trigger's main antagonist, an extraterrestrial parasite that harvests DNA and the Earth's energy for its own growth.",
+      "It destroys the Kingdom of Zeal in 12000 BC and awakens to ravage the world in 1999 AD. The party travels through time to prevent that."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chrono_Trigger",
+        "title": "Chrono Trigger — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "parasitic alien, Zeal, 1999 apocalypse"
+      }
+    ],
+    "archetypeTags": [
+      "buried-calamity",
+      "parasite",
+      "time",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Something asleep under the floor of history. Do not copy the shell-and-core Lavos design; this page does not describe the sprite.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-038",
+    "name": "Magus",
+    "origin": "Chrono Trigger",
+    "kind": "game",
+    "facts": [
+      "Magus leads the Mystics (Fiends in some localizations) against Guardia in 600 AD. He turned the squire Glenn into Frog and killed Glenn's friend Cyrus.",
+      "He was Janus, prince of Zeal, thrown forward in time when Lavos destroyed the kingdom. His war is cover for a revenge plot against Lavos, and grief over his sister Schala."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chrono_Trigger",
+        "title": "Chrono Trigger — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "sorcerer warlord, Frog's curse, Janus, revenge on Lavos"
+      }
+    ],
+    "archetypeTags": [
+      "dark-sorcerer",
+      "tragic",
+      "false-final",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The caped villain who is actually hunting the real apocalypse. Do not copy the scythe silhouette or the name.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-039",
+    "name": "Mana Beast",
+    "origin": "Secret of Mana (Seiken Densetsu 2, Square)",
+    "kind": "game",
+    "facts": [
+      "After the Mana Tree is destroyed, its remains tell the heroes a giant dragon called the Mana Beast will be summoned to fight the Mana Fortress, and that its rage may destroy the world as well.",
+      "The hero is reluctant to kill it, because dispersing mana may erase the sprite companion. He does so with the Mana Sword. The beast explodes and becomes snow."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Secret_of_Mana",
+        "title": "Secret of Mana — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "rage-dragon born to answer the fortress, bittersweet kill"
+      }
+    ],
+    "archetypeTags": [
+      "guardian-turned-disaster",
+      "dragon",
+      "bittersweet",
+      "tier-hint-world",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The world's immune system, too angry to tell friend from fortress.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-040",
+    "name": "Thanatos",
+    "origin": "Secret of Mana",
+    "kind": "game",
+    "facts": [
+      "Thanatos is an ancient sorcerer manipulating the Emperor. His body is failing, so he needs someone to possess. He puts Pandora into a trance and eventually takes Dyluck.",
+      "He betrays the Empire, seizes the Mana Fortress, and destroys the Mana Tree. When Dyluck dies, Thanatos is forced back into a skeletal lich form."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Secret_of_Mana",
+        "title": "Secret of Mana — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "body-thief, Mana Fortress, skeletal lich form"
+      }
+    ],
+    "archetypeTags": [
+      "lich",
+      "possession",
+      "fortress",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A ghost who keeps shopping for a healthier body, then a flying castle. 'Thanatos' is a Greek name used as this character's name; the character is Square's.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-041",
+    "name": "Giygas",
+    "origin": "EarthBound / Mother (Nintendo; also Giegue, Gyiyg)",
+    "kind": "game",
+    "facts": [
+      "Giygas is the alien final boss of EarthBound Beginnings and EarthBound, created by Shigesato Itoi. In the first game he tries to wipe out humanity; in EarthBound he conquers the world and sends forces into the past to stop Ness.",
+      "Itoi based the final battle's dialogue on a traumatic childhood movie. He called Giygas something people cannot make sense of, and also a living being who deserves love. Critics often call the fight one of the creepiest in games.",
+      "EarthBound itself parodies RPG habits in a modern, deliberately goofy setting: pencil erasers, hallucinations, and battles with piles of vomit."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Giygas",
+        "title": "Giygas — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "alien final boss, Itoi's film trauma, incomprehensible and pitiable"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/EarthBound",
+        "title": "EarthBound — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Ness gathers sanctuary melodies to defeat Giygas; the game parodies RPG staples"
+      }
+    ],
+    "archetypeTags": [
+      "abstract-horror",
+      "alien",
+      "comedy-rpg",
+      "tier-hint-secret",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Secret",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A final boss that is a feeling, not a body. Do not reproduce the battle background or the specific cries. The goofy-modern parody tone is the useful lesson.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-042",
+    "name": "Myria",
+    "origin": "Breath of Fire (Capcom; also Tyr or Maria in some English texts)",
+    "kind": "game",
+    "facts": [
+      "Breath of Fire's backstory says the goddess Myria offered to grant any wish and split the Dragon Clan into Light and Dark dragons. She was sealed by the Light Dragons with six magic keys.",
+      "Emperor Zog's Dark Dragon empire wants to revive her and take the world. The hero Ryu is one of the last of a people who can turn into dragons."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Breath_of_Fire_(video_game)",
+        "title": "Breath of Fire (video game) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "wish-goddess who split the dragons, six keys, revival plot, hero who becomes a dragon"
+      }
+    ],
+    "archetypeTags": [
+      "goddess",
+      "dragon-clan",
+      "sealed-evil",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A wish that was a war. The dragon-person hero is a separate trope from the sealed goddess.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-043",
+    "name": "Dark Falz",
+    "origin": "Phantasy Star (Sega)",
+    "kind": "game",
+    "facts": [
+      "In the 1987 Phantasy Star, Alis sets out to defeat King Lassic. After Lassic falls, an ethereal voice sends the party back to Motavia, where a more evil force, Dark Falz, is waiting. Destroying Dark Falz restores peace to the Algol system."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phantasy_Star_(video_game)",
+        "title": "Phantasy Star (video game) — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "the evil behind the tyrant, fought after Lassic"
+      }
+    ],
+    "archetypeTags": [
+      "hidden-final",
+      "demon",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Beat the king, then meet what was wearing him. The page does not describe Dark Falz's body.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-044",
+    "name": "Ghaleon, the Magic Emperor",
+    "origin": "Lunar: The Silver Star (Game Arts)",
+    "kind": "game",
+    "facts": [
+      "Ghaleon is a powerful sorcerer and Nash's teacher in Lunar: The Silver Star. He becomes the primary antagonist under the name Magic Emperor.",
+      "The hero Alex idolizes Dragonmaster Dyne and must gather power to become the next Dragonmaster and save the world. The page identifies the mentor Laike as Dyne after he lost his powers."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lunar:_The_Silver_Star",
+        "title": "Lunar: The Silver Star — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "mentor revealed as the Magic Emperor; Dragonmaster quest"
+      }
+    ],
+    "archetypeTags": [
+      "mentor-betrayer",
+      "emperor",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The teacher who was the throne. A boss shape, not a creature design; the page does not describe a monster form.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-045",
+    "name": "Sinistrals",
+    "origin": "Lufia & the Fortress of Doom (Taito / Neverland)",
+    "kind": "game",
+    "facts": [
+      "Lufia & the Fortress of Doom follows the Hero, Lufia, Aguro, and Jerin as they try to stop the resurrection of four superpowered beings called the Sinistrals."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lufia_%26_the_Fortress_of_Doom",
+        "title": "Lufia & the Fortress of Doom — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "four superpowered beings whose return is the quest"
+      }
+    ],
+    "archetypeTags": [
+      "demon-quartet",
+      "resurrection",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Four sealed powers on a schedule. This page does not name the four or describe them, so they stay one record.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-046",
+    "name": "Dhaos",
+    "origin": "Tales of Phantasia (Namco)",
+    "kind": "game",
+    "facts": [
+      "Tales of Phantasia's hero Cress discovers that the attack on his hometown was a scheme to free Dhaos, the war-mongering main antagonist.",
+      "Cress uses time travel to gather allies from the past who can stop Dhaos in his own era. The game is the first Tales title."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tales_of_Phantasia",
+        "title": "Tales of Phantasia — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "war-monger freed by the opening tragedy, fought across time"
+      }
+    ],
+    "archetypeTags": [
+      "time-villain",
+      "warlord",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A war that recruits its own opposition from other centuries. No body description on this page.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-047",
+    "name": "Saturos",
+    "origin": "Golden Sun (Camelot / Nintendo)",
+    "kind": "game",
+    "facts": [
+      "Three years before Golden Sun, Saturos and Menardi raid Mt. Aleph to steal the Elemental Stars, fail the guarding riddles, and are driven off by a magical storm and rockslide.",
+      "The adepts' quest is to stop alchemy from being released as it was in the past. Saturos is part of the group trying to light that power again."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Golden_Sun",
+        "title": "Golden Sun — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "raid for the Elemental Stars, alchemy as the dangerous power"
+      }
+    ],
+    "archetypeTags": [
+      "elemental-raider",
+      "humanoid-boss",
+      "tier-hint-mini",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A fire-aligned thief of elemental seals. This page does not describe his look, so do not add the familiar Mars-adept design from memory.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-048",
+    "name": "Luca Blight",
+    "origin": "Suikoden II (Konami)",
+    "kind": "game",
+    "facts": [
+      "Suikoden II's war is between the City-States of Jowston and the Kingdom of Highland, led by Prince Luca Blight.",
+      "The protagonists each carry half of the Rune of the Beginning, one of 27 True Runes, and the game is about recruiting the 108 Stars of Destiny."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Suikoden_II",
+        "title": "Suikoden II — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Prince Luca Blight leads Highland's war; True Runes and 108 stars frame the cast"
+      }
+    ],
+    "archetypeTags": [
+      "human-monster",
+      "war-prince",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A human boss who is the monster. This page does not document his cruelty in detail, so the record stays at 'war leader' and should not grow unsourced atrocities.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-049",
+    "name": "Orange Mushroom",
+    "origin": "MapleStory (Wizet / Nexon)",
+    "kind": "game",
+    "facts": [
+      "MapleStory's chronicler calls Orange Mushrooms bouncing mushroom monsters found all over Maple Island and Victoria Island, searching for food. They are also described as delicious, and as an ingredient in mushroom candy and stew.",
+      "The wiki classes them as Plant. Early versions sit at the start of the game, including the Entrance to Adventurer Training Center on Maple Island."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Orange_Mushroom",
+        "title": "Orange Mushroom — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "bouncing edible plant-mushroom of the starter islands"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/MapleStory",
+        "title": "MapleStory — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "MapleStory is Wizet's free-to-play side-scrolling MMORPG, published by Nexon"
+      }
+    ],
+    "archetypeTags": [
+      "mushroom",
+      "early-route",
+      "cute",
+      "edible-gag",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The first monster is also a snack. Do not copy the orange cap face. Nexon owns the design.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-050",
+    "name": "Blue Snail",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "The Blue Snail is described as a bigger, meaner cousin of the ordinary snail on Maple Island and Victoria Island, and still about as weak as a monster can be. The blurb jokes that nobody knows why it turned blue, and that snail shells used to be weapons.",
+      "The wiki classes it as Mammal and places level-2 versions around Lith Harbor and the Adventurer Training Center."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Blue_Snail",
+        "title": "Blue Snail — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "weak blue snail of the tutorial fields, shell-as-old-weapon joke"
+      }
+    ],
+    "archetypeTags": [
+      "snail",
+      "early-route",
+      "tutorial",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "The slowest possible welcome mat. A different shell creature is fine; the Maple snail face is not.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-051",
+    "name": "Mushmom",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "Mushmom is a gigantic mushroom once believed to be the mother of Victoria Island's mushroom monsters. A rival theory says mushrooms come from spores. The chronicler prefers the spore theory and suggests a Mushmom is just a mushroom that ate too much, citing the house in Henesys where they are found.",
+      "The wiki lists Mushmom as a Plant boss."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Mushmom",
+        "title": "Mushmom — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "giant mushroom 'mother', overeating theory, boss, Henesys"
+      }
+    ],
+    "archetypeTags": [
+      "mushroom",
+      "area-boss",
+      "parent",
+      "tier-hint-mini"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The mushroom that would not stop eating and became the neighborhood boss.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-052",
+    "name": "Zombie Mushroom",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "A Zombie Mushroom is a defeated mushroom revived by pinning a Charm of the Undead to it. The wiki says it collapses if the charm is removed, but keeps charging while injured. It is classed Undead and Immortal, weak to Holy and resistant to Dark.",
+      "A widely repeated in-world theory blames a magician researching dark magic. Nests are in the Ant Tunnel near Sleepywood."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Zombie_Mushroom",
+        "title": "Zombie Mushroom — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "charm-revived mushroom, remove-the-charm weakness, undead element"
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "mushroom",
+      "puzzle-weakness",
+      "tier-hint-elite",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A corpse that is a recipe: pull the pin. Do not copy the charm-on-a-mushroom sprite.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-053",
+    "name": "Zakum",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "Zakum is a spirit that was sealed in a tree in the El Nath mines. Miners' greed corrupted it. It forced the town to build a statue, possessed the statue, and killed the town. The forest withered and the dead walked.",
+      "The fight is summoned with an Eye of Fire on an altar. Players can destroy its arms to take away arm slams and claps; late in the fight the arms go away and the cracked body remains. Easy, Normal, and Chaos versions exist."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Zakum",
+        "title": "Zakum — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "tree spirit, statue possession, Eye of Fire, arm-and-body fight"
+      }
+    ],
+    "archetypeTags": [
+      "multi-part",
+      "statue",
+      "fire",
+      "raid",
+      "tier-hint-world",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A grudge in a monument, fought one limb at a time. Do not copy the Zakum statue face or the eye-of-fire ritual name.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-054",
+    "name": "Horntail",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "Horntail is an evil three-headed dragon, one of the Great Kings of Minar Forest. He rebelled against the dragon chief Nine Spirit, stole Nine Spirit's egg, broke a pact with the Halflingers, and hid in a cave to heal while plotting a wider rule.",
+      "The chronicle says the three heads mean three minds. The battle is phased. Easy, Normal, and Chaos entries exist, and for a time Horntail was treated as the game's top boss after Zakum."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Horntail",
+        "title": "Horntail — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "three-headed rebel dragon, stolen egg, cave, phased battle"
+      },
+      {
+        "url": "https://maplestorywiki.net/w/Pink_Bean",
+        "title": "Pink Bean — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "timeline that lists Horntail as a final boss period after Zakum and before Pink Bean"
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "multi-head",
+      "raid",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A committee of heads on one neck, each with its own mind. Do not copy Horntail's body.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-055",
+    "name": "Pink Bean",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "Pink Bean is a strange creature from another world, a major boss in the Temple of Time. Kirston tried to use the Mirror of the Goddess to summon the Black Mage and got Pink Bean instead. The chronicle says it is cute, absurdly powerful, and able to revive a dead god.",
+      "The fight starts with five god-statues, while Pink Bean lounges, summons mini beans, and later steps off a throne. On defeat it cries and hops through a portal. A non-canon note places it in Bean World opposite Black Bean. Trivia says it eats meat, plays guitar, and wears headphones.",
+      "The wiki's Taiwan server row says the boss was formerly named 皮卡啾, glossed on that page as Pikachu, and is now 粉豆 (Pink Bean). That former label is an IP collision to avoid, not a design to reuse."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Pink_Bean",
+        "title": "Pink Bean — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "wrong summon, cute god-tier boss, statues, lounge behavior, exit cry"
+      }
+    ],
+    "archetypeTags": [
+      "cute-god",
+      "accidental-summon",
+      "comedy",
+      "raid",
+      "tier-hint-secret",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Secret",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The apocalypse that arrived because the ritual had a typo. Do not copy the pink bean body, the headphones, or the name. TaiwanMS once using a Pokémon-like label is a warning, not a suggestion.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-056",
+    "name": "Papulatus",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "Papulatus came through the Dimensional Crack. The chronicle says it has many personalities, all of them evil, warped Ludibrium's toys into monsters, and grows stronger as the crack widens.",
+      "The wiki places the boss at the bottom of Ludibrium's clocktower and says it is a ghostly plant-like being from another dimension who pilots a robot shaped like a clock. An alarm phase rains clock springs. When the first phase ends, the clock robot explodes and Papulatus fights from a smaller vehicle.",
+      "It is summoned with a Piece of Cracked Dimension. The Japanese server name on the page is Vicious Plant."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Papulatus",
+        "title": "Papulatus — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "dimensional intruder, toy-warping, cracked-dimension summon, alarm phase"
+      }
+    ],
+    "archetypeTags": [
+      "clock",
+      "plant",
+      "dimensional",
+      "multi-personality",
+      "phase-shift",
+      "tier-hint-mini",
+      "tier-hint-main"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A crack in the schedule that turns toys mean. If a clock is used, it needs its own face; the Maple clock is Nexon's.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-057",
+    "name": "Black Mage",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "MapleStory's Wikipedia plot says the Black Mage was the Transcendent of Light, called the White Mage, until an experiment corrupted his light core. Six heroes sealed him for centuries and were sealed themselves.",
+      "The MapleStory Wiki lists him as a Transcendent, formerly of Edelstein, with a chain emblem and a roster of commanders that includes Will, Lotus, Hilla, Arkarium, Von Leon, Lucid, Magnus, and Damien, among others. His quoted line: the ultimate light is found only in the ultimate darkness."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/MapleStory",
+        "title": "MapleStory — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "White Mage corrupted into Black Mage, sealed by six heroes"
+      },
+      {
+        "url": "https://maplestorywiki.net/w/Black_Mage",
+        "title": "Black Mage — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Transcendent of Light, commanders, chain emblem, light-in-darkness line"
+      }
+    ],
+    "archetypeTags": [
+      "dark-lord",
+      "corrupted-light",
+      "commander-roster",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A healer who did one experiment too many and became the seal at the bottom of the tower. Do not copy the robe or the name. 'Black Mage' is also a generic job title in other games; this one is Nexon's character.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-058",
+    "name": "Lucid",
+    "origin": "MapleStory",
+    "kind": "game",
+    "facts": [
+      "Lucid, the Dream Master and Keeper of Nightmares, is a former Black Mage commander, an elf who manipulates dreams.",
+      "She made an illusion of a ruined Maple World inside the Gate to the Future and created Lachelein in the Arcane River. Her minions include Dreamkeepers and Wightmares. Her line: the festival must go on until the world is shrouded in sweet dreams."
+    ],
+    "sources": [
+      {
+        "url": "https://maplestorywiki.net/w/Lucid",
+        "title": "Lucid — MapleStory Wiki",
+        "accessed": "2026-11-20",
+        "supports": "dream commander, Lachelein, nightmare title, festival line"
+      }
+    ],
+    "archetypeTags": [
+      "dream",
+      "nightmare-festival",
+      "humanoid-boss",
+      "tier-hint-main",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A party that is a prison. Butterfly emblem is noted on the page; do not copy her elf design.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-059",
+    "name": "Poring",
+    "origin": "Ragnarok Online (Gravity)",
+    "kind": "game",
+    "facts": [
+      "Ragnarok Online is Gravity's 2002 MMORPG, based on Lee Myung-jin's manhwa, full of creatures players defeat to level and loot.",
+      "The iRO monster database lists Poring as monster 1002: a passive looter, plant race, water element, medium size, on early fields such as Prontera Field, Payon Forest, and Geffen Field. It can be summoned by Mastering. Jellopy is on its drop list.",
+      "This database page shows a sprite image but does not describe the body in text. No color or shape is asserted here."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ragnarok_Online",
+        "title": "Ragnarok Online — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Gravity MMO, creatures exist to be fought for levels and items"
+      },
+      {
+        "url": "https://db.irowiki.org/db/monster-info/1002/",
+        "title": "Monster Info — Poring — iRO Wiki database",
+        "accessed": "2026-11-20",
+        "supports": "passive looter plant, water element, early fields, Jellopy"
+      }
+    ],
+    "archetypeTags": [
+      "early-route",
+      "looter",
+      "mascot-unverified-shape",
+      "plant",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The thing that picks your pocket while looking harmless. Do not draw the famous RO jelly from memory; this pass did not verify the silhouette in prose. The name is Gravity's.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-060",
+    "name": "Eddga",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Eddga as a low-difficulty MVP: Payon Field 10 on a 2-hour timer, and also Balder Guild Dungeon on an 8-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Eddga bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "field-boss",
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "An open-field timed hunt. No body description was on the MVP page; do not invent one.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-061",
+    "name": "Golden Thief Bug",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Golden Thief Bug as a low-difficulty MVP: Prontera Culvert 4 on a 1-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Golden Thief Bug bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "insect",
+      "sewer",
+      "tier-hint-mini",
+      "tier-hint-elite",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Elite"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A gilded pest in the drains under the starter city. The name is doing the comedy; the sprite was not described.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-062",
+    "name": "Phreeoni",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Phreeoni as a low-difficulty MVP: Morroc Field 15 on a 2-hour timer, or Morroc Field 17 in the Renewal ruleset.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Phreeoni bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "field-boss",
+      "desert",
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A desert-field MVP. Appearance unverified on this page. The name is coined.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-063",
+    "name": "Mistress",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Mistress as a medium-difficulty MVP: Mt. Mjolnir 4 on a 2-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Mistress bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A mountain timed boss with a common-noun name. Design still belongs to Gravity. No silhouette was sourced.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-064",
+    "name": "Moonlight Flower",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Moonlight Flower as a medium-difficulty MVP: Payon Cave 5 on a 1-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Moonlight Flower bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "cave",
+      "tier-hint-mini",
+      "tier-hint-elite",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Elite"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A nocturnal cave VIP. This page does not say it is a nine-tailed fox; do not add that until a visual source is fetched.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-065",
+    "name": "Osiris",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Osiris as a medium-difficulty MVP: Pyramid 4F on a 1-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Osiris bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "pyramid",
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A pyramid MVP using a name shared with Egyptian myth. The myth page was not fetched in this pass, so public-domain status is left false and no god-lore is claimed. The RO encounter is Gravity's.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-066",
+    "name": "Drake",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Drake as a medium-difficulty MVP: Sunken Ship 2 on a 2-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Drake bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "shipwreck",
+      "undead-unverified",
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A wreck boss. 'Drake' is a common word. No body was described here, so do not assume a bone dragon.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-067",
+    "name": "Maya",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Maya as a medium-difficulty MVP: Ant Hell 2 on a 2-hour timer, and Valkyrie Realms Guild Dungeon on an 8-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Maya bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "dungeon",
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "The boss at the bottom of an insect hell. The page does not say she is an ant queen; that is not asserted.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-068",
+    "name": "Doppelganger",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Doppelganger as a mid-high-difficulty MVP: Geffen Dungeon 3 on a 2-hour timer, and Luina Guild Dungeon on an 8-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Doppelganger bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "double",
+      "tier-hint-elite",
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A timed double in a mage-city basement. Folklore doppelgangers were not re-sourced here, so this record is only the RO boss.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-069",
+    "name": "Orc Hero",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Orc Hero as a mid-high-difficulty MVP: Geffen Field 12 on a 1-hour timer, and Geffen Field 2 on a 24-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Orc Hero bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "orc",
+      "field-boss",
+      "tier-hint-elite",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Elite",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "The champion of an orc camp who is a scheduled event, not a random mob. 'Orc' is a wider fantasy word; this hero is Gravity's monster.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-070",
+    "name": "Orc Lord",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Orc Lord as a high-difficulty MVP: Geffen Field 10 on a 2-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Orc Lord bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "orc",
+      "tier-hint-mini",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "The boss above the orc hero, still a field MVP rather than a story cutscene.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-071",
+    "name": "Hatii",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Hatii as a medium-difficulty MVP: Lutie Field on a 2-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Hatii bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "seasonal-field",
+      "tier-hint-mini",
+      "tier-hint-secret",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A timed boss on the Lutie field. No species was stated. Do not assume a holiday wolf from memory.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-072",
+    "name": "Baphomet",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "The name Baphomet is not Gravity's coinage. It appears in 11th-century crusade writing and in 14th-century Templar trials. Éliphas Lévi's 1856 Sabbatic Goat, a winged androgynous human-goat, is the image most people mean by the name.",
+      "The iRO page lists the MVP but does not describe Gravity's sprite. The historical figure and the game monster must not be collapsed into one free-to-copy design.",
+      "iRO Wiki lists Baphomet as a high-difficulty MVP: Labyrinth Forest 3 on a 2-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Baphomet",
+        "title": "Baphomet — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "pre-modern name and Lévi's goat image"
+      },
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Baphomet bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "chapel",
+      "goat-name",
+      "tier-hint-mini",
+      "tier-hint-main",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A famous hunt name. Use the 'scheduled demon of the labyrinth' pattern, not Lévi's goat and not Gravity's sprite.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-073",
+    "name": "Dark Lord",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Dark Lord as a high-difficulty MVP: Glast Heim Chuchyard (spelled that way on the wiki) on a 1-hour timer, and Britoniah Guild Dungeon on an 8-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Dark Lord bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "undead-castle",
+      "tier-hint-main",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "The lord of a ruined capital's yard. 'Dark Lord' is generic English; the Glast Heim version is still Gravity's.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-074",
+    "name": "Detardeurus",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Detardeurus as a high-difficulty MVP: Abyss Lake 3 on a 3-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Detardeurus bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "lake",
+      "tier-hint-world",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A long-timer abyss boss with a coined name. No anatomy was sourced.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-075",
+    "name": "Ifrit (Ragnarok Online MVP)",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Ifrit (Ragnarok Online MVP) as a high-difficulty MVP: Thor's Volcano 3 on an 11-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Ifrit (Ragnarok Online MVP) bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "fire",
+      "volcano",
+      "tier-hint-world",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A rare volcano appointment. The Islamic ifrit was not re-sourced in this pass, so myth details are omitted. Final Fantasy also uses the name as a summon; dedupe with that record.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-076",
+    "name": "Stormy Knight",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Stormy Knight as a high-difficulty MVP: Toy Factory 2 on a 1-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Stormy Knight bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "factory",
+      "tier-hint-mini",
+      "tier-hint-secret",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Mini",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A serious knight in a toy factory. The contrast is the parody hook. No armor description was sourced.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-077",
+    "name": "Beelzebub",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Beelzebub as a high-difficulty MVP: Cursed Monastery 3 on a 12-hour timer.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Beelzebub bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "monastery",
+      "tier-hint-world",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Main"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A half-day monastery boss. Biblical Beelzebub was not re-fetched, so no demonology is claimed. The encounter timing is the sourced fact.",
+    "confidence": "medium",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-078",
+    "name": "Ktullanux",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Ktullanux as a special-spawn MVP: not on a normal timer. Players put out four sacred fires in Ice Dungeon 3 with four Freezing Snow Powder items or four Ice Scales. After a kill it cannot be called again for 2 hours. Classed mid-high.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Ktullanux bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "ritual-spawn",
+      "ice",
+      "tier-hint-world",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A boss you unlock by snuffing four flames. Strong ritual-raid shape. Name is coined.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-079",
+    "name": "Memory of Thanatos",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Memory of Thanatos as a quest-spawn MVP: spawned by finishing the Thanatos Tower quest, classed medium difficulty. It does not use the ordinary clock.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died.",
+      "The same page says MVPs summon extra monsters, do not show a health bar, and, unless a player spawned them, leave a tomb that names who received the MVP reward."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "Memory of Thanatos bullet plus the general MVP rules"
+      }
+    ],
+    "archetypeTags": [
+      "memory",
+      "tower",
+      "tier-hint-main",
+      "mvp",
+      "timed-boss",
+      "summons-adds"
+    ],
+    "suggestedTiers": [
+      "Main",
+      "Mini"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A memory you have to earn the right to fight, inside a tower. Fits this game's Mysterious Tower better than a field timer.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-080",
+    "name": "Poring the Conqueror",
+    "origin": "Ragnarok Online",
+    "kind": "game",
+    "facts": [
+      "iRO Wiki lists Poring the Conqueror, also called Bring It On, as an event MVP that appears only when game masters choose to spawn it, classed Very High difficulty.",
+      "iRO Wiki defines an MVP as a monster with Boss Protocol and MVP Protocol: much stronger than normal monsters, usually taken by a party, and set to respawn on a timer after the last one died."
+    ],
+    "sources": [
+      {
+        "url": "https://irowiki.org/wiki/MVP",
+        "title": "MVP — iRO Wiki",
+        "accessed": "2026-11-20",
+        "supports": "GM-spawned very-high event boss distinct from ordinary Porings"
+      }
+    ],
+    "archetypeTags": [
+      "event-boss",
+      "mascot-as-calamity",
+      "tier-hint-secret",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "Secret",
+      "World"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The tutorial critter, except someone turned the spawn switch to apocalypse. Still do not copy the Poring body.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-081",
+    "name": "First partner Pokémon (elemental trio)",
+    "origin": "Pokémon (Game Freak / Nintendo / The Pokémon Company). Archetype only; no species is proposed for copying.",
+    "kind": "game",
+    "facts": [
+      "Bulbapedia, citing official usage, describes a first partner Pokémon (long called a starter) as the first creature a trainer owns. In the core games a professor usually offers a Grass-, Fire-, or Water-type.",
+      "Those three types are a rock-paper-scissors lesson: Fire beats Grass, Water beats Fire, Grass beats Water. The first partner is used to battle the first wild creature, and is often kept as the partner the trainer trusts most. They are said to be extremely rare in the wild.",
+      "Pokémon as a franchise is creatures with special powers living alongside humans. Battles are non-lethal: a defeated Pokémon faints. Trainers catch species with Poké Balls and log them in a Pokédex. The name Pokémon and the species names are owned through The Pokémon Company (Nintendo, Creatures, and Game Freak)."
+    ],
+    "sources": [
+      {
+        "url": "https://bulbapedia.bulbagarden.net/wiki/Starter_Pok%C3%A9mon",
+        "title": "First partner Pokémon — Bulbapedia",
+        "accessed": "2026-11-20",
+        "supports": "first partner, Grass/Fire/Water trio, type triangle, rarity, trust"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon",
+        "title": "Pokémon — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "creature-collection franchise, fainting not death, Pokédex, corporate ownership"
+      }
+    ],
+    "archetypeTags": [
+      "starter-trio",
+      "elemental-triangle",
+      "companion",
+      "archetype-not-species",
+      "tier-hint-normal"
+    ],
+    "suggestedTiers": [
+      "Normal"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Three household elements that teach the combat triangle, and one of them stays your friend. Do not use Pokémon species, the ball, or the word Pokémon on a card.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-082",
+    "name": "Legendary Pokémon",
+    "origin": "Pokémon (archetype only)",
+    "kind": "game",
+    "facts": [
+      "Bulbapedia describes Legendary Pokémon as incredibly rare and often very powerful, written into the world's myths, sometimes worshipped as deities. There is no single mechanical test; official media is what places a creature in the group.",
+      "A related but separate group, Mythical Pokémon, is usually event-exclusive. Western material folded mythicals into legendaries before Generation V.",
+      "Wikipedia records the April 1996 'Legendary Pokémon Offer' in CoroCoro, built around Mew, a secret creature added late, not obtainable by normal play, and meant for a promotion."
+    ],
+    "sources": [
+      {
+        "url": "https://bulbapedia.bulbagarden.net/wiki/Legendary_Pok%C3%A9mon",
+        "title": "Legendary Pokémon — Bulbapedia",
+        "accessed": "2026-11-20",
+        "supports": "rare mythic power, worship, no mechanical definition, mythicals as event-exclusives"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon",
+        "title": "Pokémon — Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "Mew as a promotional secret outside normal capture"
+      }
+    ],
+    "archetypeTags": [
+      "legendary",
+      "mythic",
+      "event",
+      "archetype-not-species",
+      "tier-hint-secret",
+      "tier-hint-world"
+    ],
+    "suggestedTiers": [
+      "World",
+      "Secret"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A creature the story talks about more than it lets you meet, plus a rumor you can only get from outside the game. No species names in the parody.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  },
+  {
+    "inspirationId": "INS-01-083",
+    "name": "Powerhouse Pokémon (fan term: pseudo-legendary)",
+    "origin": "Pokémon (archetype only)",
+    "kind": "game",
+    "facts": [
+      "Bulbapedia's Powerhouse Pokémon, which fans call pseudo-legendaries, are the final stage of a three-stage line, with a base stat total of exactly 600 before any mega form, and a slow experience curve (1,250,000 points to level 100).",
+      "They are usually harder to raise than ordinary creatures and often Dragon-type. Every generation has added at least one, typically late in that generation's dex, just before the legendaries. 'Powerhouse Pokémon' has been used in official merchandise and news; 'pseudo-legendary' remains a fan term."
+    ],
+    "sources": [
+      {
+        "url": "https://bulbapedia.bulbagarden.net/wiki/Pseudo-legendary_Pok%C3%A9mon",
+        "title": "Powerhouse Pokémon — Bulbapedia",
+        "accessed": "2026-11-20",
+        "supports": "three-stage, 600 stat total, slow growth, often dragons, late-dex placement"
+      }
+    ],
+    "archetypeTags": [
+      "late-bloomer",
+      "dragon",
+      "investment",
+      "archetype-not-species",
+      "tier-hint-elite"
+    ],
+    "suggestedTiers": [
+      "Elite"
+    ],
+    "suggestedTiersNote": "Agent classification for tower spread. Not a sourced fact.",
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The project monster: weak for a long time, then a private legendary. Do not copy a specific dragon species or the 600 number into our combat math.",
+    "confidence": "high",
+    "recordStatus": "RESEARCH"
+  }
+]
