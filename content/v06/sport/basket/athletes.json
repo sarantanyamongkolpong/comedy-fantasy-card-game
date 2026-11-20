@@ -1,0 +1,1139 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "basket",
+  "status": "PROPOSED",
+  "athletes": [
+    {
+      "id": "SPC_BASKET_ATH_001",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PG",
+      "parodyName": "Stew Currywurst",
+      "rarity": "Epic",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 89,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_001_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Stephen Curry",
+        "url": "https://www.nba.com/stats/leaders?Season=2024-25&SeasonType=Regular+Season&StatCategory=AST",
+        "season": "NBA 2024/25",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Stephen Curry"
+        ],
+        "verifiedRawMetrics": "24.5 PPG, 4.4 3PM, 6.0 AST",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA001",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_002",
+      "sport": "basket",
+      "kind": "card",
+      "role": "C",
+      "parodyName": "Nikola Yogurt",
+      "rarity": "EX",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_002_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Nikola Jokić",
+        "url": "https://www.nba.com/nuggets/news/nikola-jokic-named-to-kia-all-nba-first-team-3",
+        "season": "NBA 2024/25",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Nikola Jokić",
+          "Denver Nuggets"
+        ],
+        "verifiedRawMetrics": "29.6 PPG, 12.7 REB, 10.2 AST",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA002",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_003",
+      "sport": "basket",
+      "kind": "card",
+      "role": "C",
+      "parodyName": "Victor Wobble-yama",
+      "rarity": "Epic",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_003_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Victor Wembanyama",
+        "url": "https://www.nba.com/stats/leaders?Season=2024-25&SeasonType=Regular+Season&StatCategory=BLK",
+        "season": "NBA 2024/25",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Victor Wembanyama"
+        ],
+        "verifiedRawMetrics": "3.8 BLK, 11.0 REB, 24.3 PPG (46 GP)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA003",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_004",
+      "sport": "basket",
+      "kind": "card",
+      "role": "SG",
+      "parodyName": "Shy Gorgeous Salamander",
+      "rarity": "EX",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_004_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Shai Gilgeous-Alexander",
+        "url": "https://www.nba.com/news/kia-nba-most-valuable-player-award-2024-25-shai-gilgeous-alexander",
+        "season": "NBA 2024/25",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Shai Gilgeous-Alexander"
+        ],
+        "verifiedRawMetrics": "32.7 PPG, 6.4 AST, 1.7 STL",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA004",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_005",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PF",
+      "parodyName": "Yannis Alphabet-Soup",
+      "rarity": "Epic",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_005_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Giannis Antetokounmpo",
+        "url": "https://www.nba.com/bucks/news/giannis-antetokounmpo-named-eastern-conference-player-of-the-week-24",
+        "season": "NBA 2024/25",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Giannis Antetokounmpo"
+        ],
+        "verifiedRawMetrics": "30.4 PPG, 11.9 REB, 6.5 AST",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA005",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_006",
+      "sport": "basket",
+      "kind": "card",
+      "role": "SF",
+      "parodyName": "LeBrawn Jams",
+      "rarity": "Epic",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 69,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_006_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "LeBron James",
+        "url": "https://www.nba.com/lakers/news/lebron-james-named-to-2024-25-all-nba-second-team-052325",
+        "season": "NBA 2024/25",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "LeBron James",
+          "Los Angeles Lakers"
+        ],
+        "verifiedRawMetrics": "24.4 PPG, 7.8 REB, 8.2 AST",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA006",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_007",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PG",
+      "parodyName": "Kaitlyn Cluck",
+      "rarity": "Epic",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_007_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Caitlin Clark",
+        "url": "https://fever.wnba.com/news/indiana-fever-guards-caitlin-clark-and-kelsey-mitchell-named-to-2026-all-wnba-first-team",
+        "season": "WNBA 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Caitlin Clark",
+          "Indiana Fever"
+        ],
+        "verifiedRawMetrics": "22.3 PPG, 8.3 AST",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA007",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_008",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PF/C",
+      "parodyName": "Ay-Jay Wobble-Son",
+      "rarity": "EX",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_008_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "A’ja Wilson",
+        "url": "https://www.wnba.com/news/wilson-named-2026-most-valuable-player",
+        "season": "WNBA 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "A’ja Wilson"
+        ],
+        "verifiedRawMetrics": "26.2 PPG, 9.4 REB, 1.9 BLK",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA008",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_009",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PF",
+      "parodyName": "Brianna Stew-Pot",
+      "rarity": "R",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_009_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Breanna Stewart",
+        "url": "https://liberty.wnba.com/roster",
+        "season": "WNBA 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Breanna Stewart",
+          "New York Liberty"
+        ],
+        "verifiedRawMetrics": "20.8 PPG, 8.3 REB, 3.3 AST",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA009",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_010",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PF",
+      "parodyName": "Angel Rice-Bowl",
+      "rarity": "R",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_ATH_010_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Angel Reese",
+        "url": "https://www.wnba.com/news/reese-named-2026-defensive-player-of-the-year",
+        "season": "WNBA 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Angel Reese"
+        ],
+        "verifiedRawMetrics": "12.1 REB; 2026 DPOY",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "BA010",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_011",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PG",
+      "parodyName": "Biscuit Handle",
+      "rarity": "N",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_011_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_012",
+      "sport": "basket",
+      "kind": "card",
+      "role": "SF",
+      "parodyName": "Gravy Wing",
+      "rarity": "N",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 69,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_012_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_013",
+      "sport": "basket",
+      "kind": "card",
+      "role": "C",
+      "parodyName": "Ladle Post",
+      "rarity": "N",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_013_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_014",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PG",
+      "parodyName": "Whisk Point",
+      "rarity": "R",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 61,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_014_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_015",
+      "sport": "basket",
+      "kind": "card",
+      "role": "SG",
+      "parodyName": "Pan Flash",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_015_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_016",
+      "sport": "basket",
+      "kind": "card",
+      "role": "SF",
+      "parodyName": "Roux Wing",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_016_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_017",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PF",
+      "parodyName": "Stock Block",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_017_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_018",
+      "sport": "basket",
+      "kind": "card",
+      "role": "C",
+      "parodyName": "Dumpling Post",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_018_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_019",
+      "sport": "basket",
+      "kind": "card",
+      "role": "SG",
+      "parodyName": "Crumb Shot",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 63,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_019_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_020",
+      "sport": "basket",
+      "kind": "card",
+      "role": "PF",
+      "parodyName": "Broth Board",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_020_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_ATH_021",
+      "sport": "basket",
+      "kind": "card",
+      "role": "C",
+      "parodyName": "Oven Seal",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 89,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_ATH_021_PORTRAIT",
+        "placeholder": true
+      }
+    }
+  ]
+}

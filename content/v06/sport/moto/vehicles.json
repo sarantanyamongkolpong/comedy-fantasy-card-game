@@ -1,0 +1,232 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "moto",
+  "status": "PROPOSED",
+  "vehicles": [
+    {
+      "id": "SPC_MOTO_VEH_001",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "RubberDuck V-Quack",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic bike. The silhouette is not a copied fairing.",
+      "team": "Red Quack Works",
+      "art": {
+        "slot": "SPC_MOTO_VEH_001_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Ducati Desmosedici GP26",
+        "url": "https://www.ducati.com/us/en/racing/motogp/ducati-lenovo-team-bike-desmosedici-gp",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Ducati Desmosedici GP26",
+          "Ducati"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_002",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Petal-26",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic bike. The silhouette is not a copied fairing.",
+      "team": "Purple Petal Moto",
+      "art": {
+        "slot": "SPC_MOTO_VEH_002_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Aprilia RS-GP26",
+        "url": "https://www.aprilia.com/us_EN/aprilia-racing/moto-gp/the-bike/",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Aprilia RS-GP26",
+          "Aprilia"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_003",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Hammer Sixteen",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic bike. The silhouette is not a copied fairing.",
+      "team": "Orange Anvil Motors",
+      "art": {
+        "slot": "SPC_MOTO_VEH_003_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "KTM RC16",
+        "url": "https://press.ktm.com/news-race-ready-2026-motogp-gets-live?id=229400&imageid=920294&l=international&menueid=7311",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "KTM RC16",
+          "KTM"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_004",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Echo V4",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic bike. The silhouette is not a copied fairing.",
+      "team": "Blue Melody Works",
+      "art": {
+        "slot": "SPC_MOTO_VEH_004_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Yamaha YZR-M1 V4",
+        "url": "https://www.yamaha-racing.com/series/grand-prix/motogp/bike/",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Yamaha YZR-M1 V4",
+          "Yamaha"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_005",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Phoenix 213",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic bike. The silhouette is not a copied fairing.",
+      "team": "Sakura Forge",
+      "art": {
+        "slot": "SPC_MOTO_VEH_005_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Honda RC213V",
+        "url": "https://motogp.honda.racing/page/rc213v-b5943814",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Honda RC213V",
+          "Honda"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_006",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Night Petal",
+      "team": "Late Bloom Garage",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic bike for a third researched rider who did not fit a two-entry squad.",
+      "art": {
+        "slot": "SPC_MOTO_VEH_006_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_007",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Broth Blade",
+      "team": "Noodle Knee Sliders",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_MOTO_VEH_007_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_008",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Shell Shock",
+      "team": "Coconut Visor Club",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_MOTO_VEH_008_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_009",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Steam Slider",
+      "team": "Dumpling Lean Works",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_MOTO_VEH_009_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_010",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Brine Rocket",
+      "team": "Pickle Fairing Co",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_MOTO_VEH_010_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_MOTO_VEH_011",
+      "sport": "moto",
+      "kind": "vehicle",
+      "parodyName": "Syrup Snake",
+      "team": "Waffle Trail Gang",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_MOTO_VEH_011_BODY",
+        "placeholder": true
+      }
+    }
+  ]
+}

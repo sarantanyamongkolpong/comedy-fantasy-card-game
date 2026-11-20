@@ -1,0 +1,93 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "basket",
+  "status": "PROPOSED",
+  "venues": [
+    {
+      "id": "SPC_BASKET_VEN_001",
+      "sport": "basket",
+      "kind": "venue",
+      "parodyName": "Cheese Center",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic arena. Seating bowl is not a copied building.",
+      "real": {
+        "name": "Chase Center",
+        "url": "https://www.nba.com/news/all-30-nba-arenas-by-team",
+        "season": "Arena list current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Chase Center"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_BASKET_VEN_002",
+      "sport": "basket",
+      "kind": "venue",
+      "parodyName": "Bowl Arena",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic arena. Seating bowl is not a copied building.",
+      "real": {
+        "name": "Ball Arena",
+        "url": "https://www.nba.com/news/all-30-nba-arenas-by-team",
+        "season": "Arena list current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Ball Arena"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_BASKET_VEN_003",
+      "sport": "basket",
+      "kind": "venue",
+      "parodyName": "Crouton Arena",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic arena. Seating bowl is not a copied building.",
+      "real": {
+        "name": "Crypto.com Arena",
+        "url": "https://www.nba.com/news/all-30-nba-arenas-by-team",
+        "season": "Arena list current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Crypto.com Arena"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_BASKET_VEN_004",
+      "sport": "basket",
+      "kind": "venue",
+      "parodyName": "Flavor Court",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic court. The workbook had no arena row for this franchise."
+    },
+    {
+      "id": "SPC_BASKET_VEN_005",
+      "sport": "basket",
+      "kind": "venue",
+      "parodyName": "Gravy Greenhouse",
+      "teamId": "SPC_BASKET_TEA_006",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic arena for the opponent five."
+    }
+  ]
+}

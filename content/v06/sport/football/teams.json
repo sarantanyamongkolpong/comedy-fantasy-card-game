@@ -1,0 +1,181 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "football",
+  "status": "PROPOSED",
+  "teams": [
+    {
+      "id": "SPC_FOOTBALL_TEA_001",
+      "sport": "football",
+      "kind": "team",
+      "parodyName": "Royal Meringue FC",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic club. Crest and kit are placeholders, not a copied badge.",
+      "real": {
+        "name": "Real Madrid",
+        "url": "https://www.realmadrid.com/en-US/bernabeu-stadium/",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Real Madrid"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "venueId": "SPC_FOOTBALL_VEN_001"
+    },
+    {
+      "id": "SPC_FOOTBALL_TEA_002",
+      "sport": "football",
+      "kind": "team",
+      "parodyName": "Catalonia Coffee Club",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic club. Crest and kit are placeholders, not a copied badge.",
+      "real": {
+        "name": "Barcelona",
+        "url": "https://www.fcbarcelona.com/en/club/facilities/spotify-camp-nou",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Barcelona"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "venueId": "SPC_FOOTBALL_VEN_002"
+    },
+    {
+      "id": "SPC_FOOTBALL_TEA_003",
+      "sport": "football",
+      "kind": "team",
+      "parodyName": "Metro Blueprints Athletic",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic club. Crest and kit are placeholders, not a copied badge.",
+      "real": {
+        "name": "Manchester City",
+        "url": "https://www.mancity.com/etihad-stadium",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Manchester City"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "venueId": "SPC_FOOTBALL_VEN_003"
+    },
+    {
+      "id": "SPC_FOOTBALL_TEA_004",
+      "sport": "football",
+      "kind": "team",
+      "parodyName": "Dockside Noodles",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic club. Crest and kit are placeholders, not a copied badge.",
+      "real": {
+        "name": "Liverpool",
+        "url": "https://www.liverpoolfc.com/anfield",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Liverpool"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "venueId": "SPC_FOOTBALL_VEN_004"
+    },
+    {
+      "id": "SPC_FOOTBALL_TEA_005",
+      "sport": "football",
+      "kind": "team",
+      "parodyName": "Banquet Select XI",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original exhibition side using the researched pool. The workbook did not link those athletes to the four clubs."
+    },
+    {
+      "id": "SPC_FOOTBALL_TEA_006",
+      "sport": "football",
+      "kind": "team",
+      "parodyName": "Gherkin Rovers",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original opponent club with a full eleven, a goalkeeper, and a small bench.",
+      "venueId": "SPC_FOOTBALL_VEN_005"
+    }
+  ],
+  "lineups": [
+    {
+      "id": "SPC_FOOTBALL_LIN_001",
+      "sport": "football",
+      "kind": "lineup",
+      "side": "home",
+      "status": "PROPOSED",
+      "fictional": true,
+      "teamId": "SPC_FOOTBALL_TEA_005",
+      "coachId": "SPC_FOOTBALL_COA_006",
+      "formation": "4-3-3",
+      "starters": [
+        "SPC_FOOTBALL_ATH_001",
+        "SPC_FOOTBALL_ATH_002",
+        "SPC_FOOTBALL_ATH_003",
+        "SPC_FOOTBALL_ATH_004",
+        "SPC_FOOTBALL_ATH_005",
+        "SPC_FOOTBALL_ATH_006",
+        "SPC_FOOTBALL_ATH_007",
+        "SPC_FOOTBALL_ATH_008",
+        "SPC_FOOTBALL_ATH_009",
+        "SPC_FOOTBALL_ATH_010",
+        "SPC_FOOTBALL_ATH_011"
+      ],
+      "bench": [
+        "SPC_FOOTBALL_ATH_012",
+        "SPC_FOOTBALL_ATH_013"
+      ],
+      "summary": "Eleven including one goalkeeper, plus a two-card bench."
+    },
+    {
+      "id": "SPC_FOOTBALL_LIN_002",
+      "sport": "football",
+      "kind": "lineup",
+      "side": "away",
+      "status": "PROPOSED",
+      "fictional": true,
+      "teamId": "SPC_FOOTBALL_TEA_006",
+      "coachId": "SPC_FOOTBALL_COA_005",
+      "formation": "4-3-3",
+      "starters": [
+        "SPC_FOOTBALL_ATH_014",
+        "SPC_FOOTBALL_ATH_015",
+        "SPC_FOOTBALL_ATH_016",
+        "SPC_FOOTBALL_ATH_017",
+        "SPC_FOOTBALL_ATH_018",
+        "SPC_FOOTBALL_ATH_019",
+        "SPC_FOOTBALL_ATH_020",
+        "SPC_FOOTBALL_ATH_021",
+        "SPC_FOOTBALL_ATH_022",
+        "SPC_FOOTBALL_ATH_023",
+        "SPC_FOOTBALL_ATH_024"
+      ],
+      "bench": [
+        "SPC_FOOTBALL_ATH_025",
+        "SPC_FOOTBALL_ATH_026",
+        "SPC_FOOTBALL_ATH_027",
+        "SPC_FOOTBALL_ATH_028"
+      ],
+      "summary": "Original opponent eleven including one goalkeeper, plus a small bench."
+    }
+  ]
+}

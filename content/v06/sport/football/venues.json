@@ -1,0 +1,110 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "football",
+  "status": "PROPOSED",
+  "venues": [
+    {
+      "id": "SPC_FOOTBALL_VEN_001",
+      "sport": "football",
+      "kind": "venue",
+      "parodyName": "Sangria Bernaboo Dome",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic ground. The bowl shape is not a traced stadium plan.",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "real": {
+        "name": "Santiago Bernabéu",
+        "url": "https://www.realmadrid.com/en-US/bernabeu-stadium/",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Santiago Bernabéu"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_VEN_002",
+      "sport": "football",
+      "kind": "venue",
+      "parodyName": "Camp Noodle Colosseum",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic ground. The bowl shape is not a traced stadium plan.",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "real": {
+        "name": "Camp Nou",
+        "url": "https://www.fcbarcelona.com/en/club/facilities/spotify-camp-nou",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Camp Nou"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_VEN_003",
+      "sport": "football",
+      "kind": "venue",
+      "parodyName": "Eddy-Tea-Had Stadium",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic ground. The bowl shape is not a traced stadium plan.",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "real": {
+        "name": "Etihad Stadium",
+        "url": "https://www.mancity.com/etihad-stadium",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Etihad Stadium"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_VEN_004",
+      "sport": "football",
+      "kind": "venue",
+      "parodyName": "Auntie's Field",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic ground. The bowl shape is not a traced stadium plan.",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "real": {
+        "name": "Anfield",
+        "url": "https://www.liverpoolfc.com/anfield",
+        "season": "Club site current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Anfield"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_VEN_005",
+      "sport": "football",
+      "kind": "venue",
+      "parodyName": "Pickle Park",
+      "teamId": "SPC_FOOTBALL_TEA_006",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic ground for the opponent club."
+    }
+  ]
+}

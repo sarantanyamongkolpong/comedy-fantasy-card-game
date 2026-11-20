@@ -1,0 +1,280 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "car",
+  "status": "PROPOSED",
+  "teams": [
+    {
+      "id": "SPC_CAR_TEA_001",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Papaya Peel Racing",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic constructor. Two combined entries race for this squad.",
+      "vehicleId": "SPC_CAR_VEH_001",
+      "real": {
+        "name": "McLaren",
+        "url": "https://www.formula1.com/en/teams/mclaren",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "McLaren",
+          "MCL40"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "entryIds": [
+        "SPC_CAR_ENT_001",
+        "SPC_CAR_ENT_002"
+      ]
+    },
+    {
+      "id": "SPC_CAR_TEA_002",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Scarlet Spaghetti Works",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic constructor. Two combined entries race for this squad.",
+      "vehicleId": "SPC_CAR_VEH_002",
+      "real": {
+        "name": "Ferrari",
+        "url": "https://www.formula1.com/en/teams/ferrari",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Ferrari",
+          "SF-26"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "entryIds": [
+        "SPC_CAR_ENT_003",
+        "SPC_CAR_ENT_004"
+      ]
+    },
+    {
+      "id": "SPC_CAR_TEA_003",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Silver Spoon GP",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic constructor. Two combined entries race for this squad.",
+      "vehicleId": "SPC_CAR_VEH_003",
+      "real": {
+        "name": "Mercedes",
+        "url": "https://www.formula1.com/en/teams/mercedes",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Mercedes",
+          "W17"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "entryIds": [
+        "SPC_CAR_ENT_005",
+        "SPC_CAR_ENT_006"
+      ]
+    },
+    {
+      "id": "SPC_CAR_TEA_004",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Thunder Moo Motorsport",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic constructor. Two combined entries race for this squad.",
+      "vehicleId": "SPC_CAR_VEH_004",
+      "real": {
+        "name": "Red Bull",
+        "url": "https://www.formula1.com/en/teams/red-bull-racing",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Red Bull",
+          "RB22"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "entryIds": [
+        "SPC_CAR_ENT_007",
+        "SPC_CAR_ENT_008"
+      ]
+    },
+    {
+      "id": "SPC_CAR_TEA_005",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Noodle Torque Racing",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic constructor. Two combined entries race for this squad.",
+      "vehicleId": "SPC_CAR_VEH_005",
+      "real": {
+        "name": "Audi",
+        "url": "https://www.formula1.com/en/latest/article/first-look-audi-reveal-their-new-car-for-2026-f1-season.5g0jakpo0CQwnqoFDjhsAG.5g0jakpo0CQwnqoFDjhsAG",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Audi",
+          "R26"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "entryIds": [
+        "SPC_CAR_ENT_009",
+        "SPC_CAR_ENT_010"
+      ]
+    },
+    {
+      "id": "SPC_CAR_TEA_006",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Royal Blueberries GP",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic constructor. Two combined entries race for this squad.",
+      "vehicleId": "SPC_CAR_VEH_006",
+      "real": {
+        "name": "Williams",
+        "url": "https://www.formula1.com/en/teams/williams",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Williams",
+          "FW48"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "entryIds": [
+        "SPC_CAR_ENT_011",
+        "SPC_CAR_ENT_012"
+      ]
+    },
+    {
+      "id": "SPC_CAR_TEA_007",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Biscuit Axle Club",
+      "vehicleId": "SPC_CAR_VEH_007",
+      "entryIds": [
+        "SPC_CAR_ENT_013",
+        "SPC_CAR_ENT_014"
+      ],
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic squad added so the grid can run two entries per team."
+    },
+    {
+      "id": "SPC_CAR_TEA_008",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Pickle Piston Works",
+      "vehicleId": "SPC_CAR_VEH_008",
+      "entryIds": [
+        "SPC_CAR_ENT_015",
+        "SPC_CAR_ENT_016"
+      ],
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic squad added so the grid can run two entries per team."
+    },
+    {
+      "id": "SPC_CAR_TEA_009",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Waffle Wing Union",
+      "vehicleId": "SPC_CAR_VEH_009",
+      "entryIds": [
+        "SPC_CAR_ENT_017",
+        "SPC_CAR_ENT_018"
+      ],
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic squad added so the grid can run two entries per team."
+    },
+    {
+      "id": "SPC_CAR_TEA_010",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Coconut Coast GP",
+      "vehicleId": "SPC_CAR_VEH_010",
+      "entryIds": [
+        "SPC_CAR_ENT_019",
+        "SPC_CAR_ENT_020"
+      ],
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic squad added so the grid can run two entries per team."
+    },
+    {
+      "id": "SPC_CAR_TEA_011",
+      "sport": "car",
+      "kind": "team",
+      "parodyName": "Dumpling Draft Team",
+      "vehicleId": "SPC_CAR_VEH_011",
+      "entryIds": [
+        "SPC_CAR_ENT_021",
+        "SPC_CAR_ENT_022"
+      ],
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic squad added so the grid can run two entries per team."
+    }
+  ],
+  "grids": [
+    {
+      "id": "SPC_CAR_GRD_001",
+      "sport": "car",
+      "kind": "grid",
+      "status": "PROPOSED",
+      "fictionalFill": true,
+      "entryIds": [
+        "SPC_CAR_ENT_001",
+        "SPC_CAR_ENT_002",
+        "SPC_CAR_ENT_003",
+        "SPC_CAR_ENT_004",
+        "SPC_CAR_ENT_005",
+        "SPC_CAR_ENT_006",
+        "SPC_CAR_ENT_007",
+        "SPC_CAR_ENT_008",
+        "SPC_CAR_ENT_009",
+        "SPC_CAR_ENT_010",
+        "SPC_CAR_ENT_011",
+        "SPC_CAR_ENT_012",
+        "SPC_CAR_ENT_013",
+        "SPC_CAR_ENT_014",
+        "SPC_CAR_ENT_015",
+        "SPC_CAR_ENT_016",
+        "SPC_CAR_ENT_017",
+        "SPC_CAR_ENT_018",
+        "SPC_CAR_ENT_019",
+        "SPC_CAR_ENT_020",
+        "SPC_CAR_ENT_021",
+        "SPC_CAR_ENT_022"
+      ],
+      "summary": "Full grid. Researched squads plus original teams so every squad has two entries."
+    }
+  ]
+}

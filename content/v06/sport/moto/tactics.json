@@ -1,0 +1,192 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "moto",
+  "status": "PROPOSED",
+  "tactics": [
+    {
+      "id": "SPC_MOTO_TAC_001",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Soft Nib",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Early grip, faster wear.",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TAC_002",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Medium Nib",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A balance of grip and life.",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TAC_003",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Hard Nib",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Less early grip, more life.",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TAC_004",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Rain Nib",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A wet-weather tread.",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TAC_005",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Tuck Preset",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A setup leaning toward straight-line speed.",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TAC_006",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Carve Preset",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A setup leaning toward direction changes.",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TAC_007",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Even Preset",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A balanced setup.",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TAC_008",
+      "sport": "moto",
+      "kind": "tactic",
+      "parodyName": "Splash Preset",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A wet-weather setup.",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Setup labels are game presets. H/M/L bike traits stay in tuning, not in this real block."
+      }
+    }
+  ]
+}

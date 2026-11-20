@@ -1,0 +1,384 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "football",
+  "status": "PROPOSED",
+  "coaches": [
+    {
+      "id": "SPC_FOOTBALL_COA_001",
+      "sport": "football",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Pepper Gourd-ola",
+      "rarity": "Epic",
+      "team": "Metro Blueprints Athletic",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 54,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_COA_001_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Pep Guardiola",
+        "url": "https://www.uefa.com/uefachampionsleague/news/0280-17c6b1ac9a53-0dc7fbd642da-1000--in-the-zone-city-slickers/",
+        "season": "UCL tactical report",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Pep Guardiola"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Game team pairing is a design proposal. The workbook row is a tactical archetype, not an employment record."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_COA_002",
+      "sport": "football",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Hansy Flicker",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 65,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 55,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_COA_002_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Hansi Flick",
+        "url": "https://www.uefa.com/uefachampionsleague/news/0298-1d89b8face21-7d7daaad2e8e-1000--meet-the-champions-league-semi-finalists/",
+        "season": "UCL tactical analysis",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Hansi Flick"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Game team pairing is a design proposal. The workbook row is a tactical archetype, not an employment record."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_COA_003",
+      "sport": "football",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Tony Count-Té",
+      "rarity": "R",
+      "team": "Dockside Noodles",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 60,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 57,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_COA_003_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Antonio Conte",
+        "url": "https://www.uefa.com/uefachampionsleague/news/027a-1672a7a4bb35-e53198f581e7-1000--round-of-16-meet-the-teams/",
+        "season": "UCL round of 16 tactical report",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Antonio Conte"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Game team pairing is a design proposal. The workbook row is a tactical archetype, not an employment record."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_COA_004",
+      "sport": "football",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Carlo Anchovy-Lotti",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 63,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 59,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_COA_004_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Carlo Ancelotti",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/carlo-ancelotti-brazil-attacking-options",
+        "season": "FIFA World Cup 2026 manager profile",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Carlo Ancelotti"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Game team pairing is a design proposal. The workbook row is a tactical archetype, not an employment record."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_COA_005",
+      "sport": "football",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Brine Whistle",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_COA_005_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_COA_006",
+      "sport": "football",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Menu Card",
+      "rarity": "N",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 61,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 54,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_COA_006_PORTRAIT",
+        "placeholder": true
+      }
+    }
+  ]
+}

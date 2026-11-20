@@ -1,0 +1,123 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "football",
+  "status": "PROPOSED",
+  "formations": [
+    {
+      "id": "SPC_FOOTBALL_TAC_001",
+      "sport": "football",
+      "kind": "formation",
+      "parodyName": "Wide Triangle 4-3-3",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Wide attackers and a midfield triangle. Pushing the fullbacks leaves space behind them.",
+      "shape": "4-3-3",
+      "real": {
+        "name": "FIFA tactical analysis",
+        "url": "https://inside.fifa.com/tournaments/mens/mensolympic/tokyo2020/news/analysing-the-olympics-attacking-success-stories",
+        "season": "Tactical reference current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "FIFA tactical analysis"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "The shape label is a game formation. Strengths in the summary are design inferences, not official bonuses."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_TAC_002",
+      "sport": "football",
+      "kind": "formation",
+      "parodyName": "Double Screen 4-2-3-1",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Two holders screen the back line while a playmaker joins the attack. The lone forward can be isolated.",
+      "shape": "4-2-3-1",
+      "real": {
+        "name": "UEFA Champions League analysis",
+        "url": "https://www.uefa.com/uefachampionsleague/news/0298-1d89b8face21-7d7daaad2e8e-1000--meet-the-champions-league-semi-finalists/",
+        "season": "Tactical reference current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "UEFA Champions League analysis"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "The shape label is a game formation. Strengths in the summary are design inferences, not official bonuses."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_TAC_003",
+      "sport": "football",
+      "kind": "formation",
+      "parodyName": "Twin Spear 3-5-2",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Extra central cover with two forwards. High wingbacks can be caught facing the wrong way.",
+      "shape": "3-5-2",
+      "real": {
+        "name": "UEFA tactical analysis",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/0299-1da976b7409d-0bab90537314-1000--uefa-conference-league-tactical-analysis-how-real-betis-/",
+        "season": "Tactical reference current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "UEFA tactical analysis"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "The shape label is a game formation. Strengths in the summary are design inferences, not official bonuses."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_TAC_004",
+      "sport": "football",
+      "kind": "formation",
+      "parodyName": "Two Bands 4-4-2",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Two compact lines of four. A packed middle can crowd the gaps.",
+      "shape": "4-4-2",
+      "real": {
+        "name": "UEFA history/tactics",
+        "url": "https://www.uefa.com/news-media/news/01de-0f8e489e9402-ca60279b93b5-1000--graham-taylor-s-4-4-2/",
+        "season": "Tactical reference current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "UEFA history/tactics"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "The shape label is a game formation. Strengths in the summary are design inferences, not official bonuses."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_TAC_005",
+      "sport": "football",
+      "kind": "formation",
+      "parodyName": "Wingback Fan 3-4-3",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A back three with wingbacks supplying width. Those wingbacks have a lot of ground to cover.",
+      "shape": "3-4-3",
+      "real": {
+        "name": "UEFA coaching analysis",
+        "url": "https://www.uefa.com/uefachampionsleague/news/027a-1672a7a4bb35-e53198f581e7-1000--round-of-16-meet-the-teams/",
+        "season": "Tactical reference current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "UEFA coaching analysis"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "The shape label is a game formation. Strengths in the summary are design inferences, not official bonuses."
+      }
+    }
+  ]
+}
