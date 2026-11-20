@@ -80,6 +80,33 @@ function reservedCount(stack) {
 }
 
 /**
+ * One row per catalog stack. Quantity is the stack count. Reserved copies stay in a deck.
+ * @param {{ avatars?: object[], actions?: object[], companions?: object[] }} inventory
+ */
+export function stackCounts(inventory) {
+  const stacks = [];
+  for (const kind of ['avatars', 'actions', 'companions']) {
+    for (const row of inventory?.[kind] ?? []) {
+      const quantity = Number.isInteger(row.quantity) ? row.quantity : 0;
+      const reserved = reservedCount(row);
+      stacks.push({
+        kind: row.kind ?? kind.slice(0, -1),
+        catalogId: row.catalogId,
+        quantity,
+        reserved,
+        free: quantity - reserved,
+        locked: row.locked === true,
+        favorite: row.favorite === true,
+      });
+    }
+  }
+  return {
+    stacks,
+    copies: stacks.reduce((sum, row) => sum + row.quantity, 0),
+  };
+}
+
+/**
  * Mutates `profile`. Callers that need a copy use {@link grantItem}.
  * @param {object} profile
  * @param {{ kind: string, catalogId: string, quantity?: number, source?: object }} item

@@ -32,9 +32,11 @@ export { validateDeck } from './schema/deck.js';
 export {
   HOUSE_TIERS,
   MAP_DESTINATIONS,
+  PHASE3_FURNITURE_ART,
   acquireTier,
   displayHouseTier,
   installFurniture,
+  removeFurniture,
   storageFromFurniture,
 } from './schema/hideout.js';
 export {
@@ -57,6 +59,8 @@ export {
   grantItem,
   serialize,
   setAutoBattle,
+  stackCounts,
+  stashReport,
   setFavorite,
   setLocked,
   unbindDeck,
