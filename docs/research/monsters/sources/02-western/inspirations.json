@@ -857,5 +857,2377 @@
     "publicDomain": true,
     "parodyPotential": "A sea worm whose corpse is a geography lesson and whose breath is a public-health incident.",
     "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-031",
+    "name": "European dragon",
+    "origin": "Medieval European folklore",
+    "kind": "folklore",
+    "facts": [
+      "Virgil uses both serpens and draco for a large constricting snake, so in his time the words could mean the same thing.",
+      "From the Early Middle Ages on, the European dragon is typically a large, fire-breathing, scaly, horned, lizard-like creature with leathery bat-like wings and a long muscular prehensile tail."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/European_dragon",
+        "title": "European dragon",
+        "accessed": "2026-11-20",
+        "supports": "Both the Virgil note and the medieval winged, fire-breathing form are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "fire",
+      "flying"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The standard tower landlord: wings, horns, and a lease written in scorch marks.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-032",
+    "name": "Griffin",
+    "origin": "Greek and Roman tradition, later European heraldry",
+    "kind": "myth",
+    "facts": [
+      "A griffin has the body, tail, and back legs of a lion, and the head, wings, and front talons of an eagle.",
+      "Greek and Roman texts link griffins and the Arimaspians with the gold of Central Asia. The earliest classical notices come from Aristeas, preserved by Herodotus and Aeschylus."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Griffin",
+        "title": "Griffin",
+        "accessed": "2026-11-20",
+        "supports": "Body plan and the Central Asian gold tradition are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "beast",
+      "guardian"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A lion-eagle auditor who nests on the treasury and files the gold under 'mine'.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-033",
+    "name": "Unicorn",
+    "origin": "Classical and medieval European tradition",
+    "kind": "folklore",
+    "facts": [
+      "Since antiquity the unicorn is a beast with one large pointed spiraling horn on the forehead.",
+      "For about the last thousand years of European art it is a white horse- or goat-like animal, often with cloven hooves and sometimes a goat beard.",
+      "Medieval and Renaissance writers call it an extremely wild woodland creature, a symbol of purity, that could be captured only by a virgin. Encyclopedias said the horn could make poisoned water drinkable and heal sickness."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Unicorn",
+        "title": "Unicorn",
+        "accessed": "2026-11-20",
+        "supports": "Horn, medieval look, virgin-capture, and the healing horn are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "healer",
+      "purity"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A woodland HR mascot whose horn is a water filter and whose capture rules are a paperwork nightmare.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-034",
+    "name": "Lernaean Hydra",
+    "origin": "Greek and Roman myth",
+    "kind": "myth",
+    "facts": [
+      "The Hydra is a serpentine lake monster whose lair was the lake of Lerna in the Argolid, called an entrance to the Underworld. Heracles kills it as the second of his twelve labours.",
+      "Hesiod makes it the offspring of Typhon and Echidna. It had poisonous breath and blood so virulent that even its scent was deadly."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lernaean_Hydra",
+        "title": "Lernaean Hydra",
+        "accessed": "2026-11-20",
+        "supports": "Lair, Heracles, parentage, and the poisonous breath and blood are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "multi-head",
+      "venom",
+      "boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A lake serpent whose blood is a health-code violation and whose necks will not agree on a plan.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-035",
+    "name": "Chimera",
+    "origin": "Greek myth",
+    "kind": "myth",
+    "facts": [
+      "The Chimera is a fire-breathing hybrid from Lycia in Asia Minor, typically a lion with a goat's head growing from its back and a snake-headed tail. Some images add dragon wings.",
+      "It is an offspring of Typhon and Echidna and a sibling of Cerberus and the Lernaean Hydra. The word later means any creature stitched from several animals."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chimera_(mythology)",
+        "title": "Chimera (mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Anatomy, fire, parentage, and the later generic meaning are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "fire",
+      "boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A committee of three animals sharing one torso and none of the minutes.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-036",
+    "name": "Minotaur",
+    "origin": "Greek myth",
+    "kind": "myth",
+    "facts": [
+      "The Minotaur, also Asterion or Asterius, is shown in classical art with a bull's head and tail and a man's body. Ovid calls the being part man and part bull.",
+      "It lived at the center of the Labyrinth, built by Daedalus and Icarus for King Minos of Crete. Every nine years Athens had to send fourteen young nobles, seven men and seven women, as victims."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Minotaur",
+        "title": "Minotaur",
+        "accessed": "2026-11-20",
+        "supports": "Anatomy, the Labyrinth, and the Athenian tribute are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "maze",
+      "boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bull-headed middle manager who built the maze and then lost the exit himself.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-037",
+    "name": "Medusa",
+    "origin": "Greek myth",
+    "kind": "myth",
+    "facts": [
+      "Medusa is the mortal one of the three Gorgons, daughters of Phorcys and Ceto. She is described as a woman with living snakes for hair, whose look turns people to stone.",
+      "Perseus beheads her. The severed head still petrifies, and he later gives it to Athena for her shield."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Medusa",
+        "title": "Medusa",
+        "accessed": "2026-11-20",
+        "supports": "Snake hair, the killing gaze, mortality, and Perseus are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "gaze",
+      "serpent",
+      "boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A hairdresser whose clients really cannot look up from their phones.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-038",
+    "name": "Phoenix",
+    "origin": "Greek myth, with analogues elsewhere",
+    "kind": "myth",
+    "facts": [
+      "The phoenix is a legendary immortal bird that is reborn, associated with the sun. Some legends have it die in flames; others have it burn, rot, and be born again.",
+      "The tradition is Greek and has analogues in Egyptian and Persian myth. Herodotus and later scholars have argued about an Egyptian origin."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phoenix_(mythology)",
+        "title": "Phoenix (mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Rebirth, fire, and the Greek-plus-analogues origin are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "bird",
+      "fire",
+      "rebirth",
+      "boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bird that treats dying as a scheduled reboot and is late coming back from lunch.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-039",
+    "name": "Werewolf",
+    "origin": "European folklore",
+    "kind": "folklore",
+    "facts": [
+      "A werewolf, from Old English werwulf 'man-wolf', is a person who can become a wolf or a wolf-human hybrid, on purpose or by a curse. Greek lycanthrope means the same idea.",
+      "The full-moon trigger and bite transmission are how modern fiction, especially film, usually tells it. Early written notices of the belief include Petronius and Gervase of Tilbury."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Werewolf",
+        "title": "Werewolf",
+        "accessed": "2026-11-20",
+        "supports": "The shapeshift definition, the modern film rules, and the early authors are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "shapechanger",
+      "beast",
+      "curse"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A clerk who circles the wrong night on the calendar and brings the wrong teeth to work.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-040",
+    "name": "Vampire (European folklore)",
+    "origin": "European folklore",
+    "kind": "folklore",
+    "facts": [
+      "A vampire is a human-like being that feeds on vital essence, usually blood.",
+      "In European folklore the vampire is an undead neighbor: it visits people it knew, wears a shroud, and is often bloated and ruddy or dark. The gaunt pale vampire is an early-19th-century look.",
+      "The word was popularized in Western Europe after 18th-century reports of a mass hysteria that drew on older folk belief."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Vampire",
+        "title": "Vampire",
+        "accessed": "2026-11-20",
+        "supports": "Feeding, the bloated shrouded folklore body, and the later pale look are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "blood",
+      "neighbor"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The folklore one is a ruddy shrouded neighbor, not a cape. A tower busybody who borrows blood and returns the jug empty.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-041",
+    "name": "Goblin",
+    "origin": "European folklore",
+    "kind": "folklore",
+    "facts": [
+      "A goblin is a small, grotesque, often malevolent humanoid of European folklore, mischievous or demonic, sometimes said to be about 30 cm tall, furry or leathery, and able to shapeshift. Depictions often give it green skin.",
+      "They are said to live underground or in houses and to range from pranks to murder. The English word comes from Old French gobelin, late 12th century."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Goblin",
+        "title": "Goblin",
+        "accessed": "2026-11-20",
+        "supports": "Size, temperament, dwellings, and the Old French etymology are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "humanoid",
+      "trickster",
+      "small"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A knee-high housemate whose pranks have a body count and a union.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-042",
+    "name": "Troll",
+    "origin": "Nordic folklore",
+    "kind": "folklore",
+    "facts": [
+      "In Old Norse sources, beings called trolls live in lonely rocks, mountains, or caves, in small family units, and are rarely helpful to humans.",
+      "Later Scandinavian folklore makes trolls their own kind: far from Christian settlement and dangerous. Looks vary from ugly and slow-witted to indistinguishable from ordinary people."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Troll",
+        "title": "Troll",
+        "accessed": "2026-11-20",
+        "supports": "Habitat, the later dangerous outsider, and the unstable appearance are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "humanoid",
+      "wilderness"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mountain family who might be monsters or might just be extremely offline.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-043",
+    "name": "Ogre",
+    "origin": "European fairy-tale tradition",
+    "kind": "folklore",
+    "facts": [
+      "An ogre is a legendary monster shown as a large hideous humanoid that eats people, especially infants and children.",
+      "Stories often give ogres a huge body, a disproportionately large head, lots of hair, odd skin, a huge appetite, and strength. They sit next to giants and human cannibals in the tales."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ogre",
+        "title": "Ogre",
+        "accessed": "2026-11-20",
+        "supports": "The man-eating definition and the usual body are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "humanoid",
+      "devourer"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A huge diner who reads the menu as a list of people and is hurt when corrected.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-044",
+    "name": "Wyvern",
+    "origin": "European heraldry and folklore",
+    "kind": "folklore",
+    "facts": [
+      "A wyvern is a mythical dragon with two legs, two wings, and often a pointed tail.",
+      "It is a heraldic beast and, unlike many other dragons, is rarely fire-breathing in heraldry and folklore."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wyvern",
+        "title": "Wyvern",
+        "accessed": "2026-11-20",
+        "supports": "Leg count and the rarity of fire are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "flying",
+      "heraldry"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A dragon who is tired of being asked why he does not breathe fire and only has the two legs.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-045",
+    "name": "Kraken",
+    "origin": "Norwegian sailors' legend",
+    "kind": "folklore",
+    "facts": [
+      "The kraken is a legendary creature of enormous size, cephalopod-like by its etymology, said to appear in the Norwegian Sea.",
+      "Christen Jensøn describes it in a Norwegian glossary in 1646. Later writers include Francesco Negri in 1700 and Hans Egede in 1734, who equates it with the hafgufa. The legend is often linked to sightings of giant squid."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kraken",
+        "title": "Kraken",
+        "accessed": "2026-11-20",
+        "supports": "Size, place, the 1646 glossary, and the squid hypothesis are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "sea",
+      "cephalopod",
+      "world-boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A sea monster that is mostly rumor, glossary entry, and one very large shadow under the boat.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-046",
+    "name": "Cerberus",
+    "origin": "Greek myth",
+    "kind": "myth",
+    "facts": [
+      "Cerberus, the hound of Hades, is a multi-headed dog who guards the underworld so the dead cannot leave. He is usually given three heads, a serpent for a tail, and snakes growing from his body.",
+      "He is the offspring of Typhon and Echidna. Heracles captures him as the last of the twelve labours."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cerberus",
+        "title": "Cerberus",
+        "accessed": "2026-11-20",
+        "supports": "Heads, snakes, the gate, parentage, and Heracles are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "underworld",
+      "guardian",
+      "multi-head"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A three-headed door dog that needs three different passwords and still will not fetch.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-047",
+    "name": "Centaur",
+    "origin": "Greek myth",
+    "kind": "myth",
+    "facts": [
+      "A centaur has a human upper body and the body and legs of a horse, and was said to live in the mountains of Thessaly.",
+      "Many Greek stories treat centaurs as wild as untamed horses. One genealogy names them after Centaurus and makes them kin to the Lapiths."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Centaur",
+        "title": "Centaur",
+        "accessed": "2026-11-20",
+        "supports": "Body plan, Thessaly, and the wild-horse temperament are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "humanoid",
+      "wilderness"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A cavalry unit that is also the cavalry, and argues with its own legs.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-048",
+    "name": "Cyclops",
+    "origin": "Greek and Roman myth",
+    "kind": "myth",
+    "facts": [
+      "Cyclopes are giant one-eyed beings. The name means circle-eye or round-eye.",
+      "Hesiod's three brothers, Brontes, Steropes, and Arges, forge Zeus's thunderbolt, Poseidon's trident, and Hades' helm. Homer's cyclopes are uncivilized cave-dwelling shepherds, including Polyphemus. A third tradition has them build the walls of Mycenae and Tiryns."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cyclopes",
+        "title": "Cyclopes",
+        "accessed": "2026-11-20",
+        "supports": "The single eye and the three separate traditions are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "one-eye",
+      "smith"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Three different one-eyed professions — smith, shepherd, and mason — who keep getting each other's mail.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-049",
+    "name": "Sphinx (Greek)",
+    "origin": "Greek myth",
+    "kind": "myth",
+    "facts": [
+      "A sphinx in the broad sense has a human head, a lion's body, and an eagle's wings. The Greek sphinx is a woman-headed, lion-haunched, bird-winged killer.",
+      "She asks a riddle and eats whoever fails it. That sphinx belongs to the story of Oedipus. The Egyptian sphinx is typically male and benevolent, a different tradition."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sphinx",
+        "title": "Sphinx",
+        "accessed": "2026-11-20",
+        "supports": "Greek riddle-sphinx versus Egyptian sphinx is in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "riddle",
+      "guardian"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A toll booth that eats you for a wrong answer and will not explain the question.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-050",
+    "name": "Fenrir",
+    "origin": "Norse myth",
+    "kind": "myth",
+    "facts": [
+      "Fenrir, or Fenrisúlfr, is a monstrous wolf. At Ragnarök he is foretold to help set the world on fire, collapse human society, and kill Odin.",
+      "He is a child of Loki and the jötunn Angrboða, with Hel and Jörmungandr. He is attested in the Poetic Edda and the Prose Edda."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fenrir",
+        "title": "Fenrir",
+        "accessed": "2026-11-20",
+        "supports": "Ragnarök role, parentage, and the Eddas are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "wolf",
+      "apocalypse",
+      "world-boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bound wolf who is the tower's fire alarm and is not supposed to go off yet.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-051",
+    "name": "Jörmungandr",
+    "origin": "Norse myth",
+    "kind": "myth",
+    "facts": [
+      "Jörmungandr, the Midgard Serpent, is a sea serpent so large it encircles the earth and bites its own tail.",
+      "It is the middle child of Loki and Angrboða. Letting go of its tail is one of the signs that Ragnarök has begun."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/J%C3%B6rmungandr",
+        "title": "Jörmungandr",
+        "accessed": "2026-11-20",
+        "supports": "The world-ring, the tail, the parentage, and Ragnarök are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "sea",
+      "world-boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A serpent that is the tower's outer ring road and causes the apocalypse by unclenching.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-052",
+    "name": "Hippogriff",
+    "origin": "Ludovico Ariosto, Orlando Furioso (16th century)",
+    "kind": "historical",
+    "facts": [
+      "The hippogriff has the front half of an eagle and the hind half of a horse.",
+      "Ludovico Ariosto invented it at the start of the 16th century in Orlando Furioso. In the poem it is born of a mare and a griffin, a pairing treated as impossible, and it can fly around the world and to the Moon."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hippogriff",
+        "title": "Hippogriff",
+        "accessed": "2026-11-20",
+        "supports": "Anatomy, Ariosto, and the flight to the Moon are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "flying",
+      "mount"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A creature whose parents were a math error, and which still commutes to the Moon.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-053",
+    "name": "Bestiary panther",
+    "origin": "Medieval European bestiary",
+    "kind": "folklore",
+    "facts": [
+      "The legendary panther is a big cat with a multicoloured hide.",
+      "Medieval belief: after eating it sleeps in a cave for three days, then roars a sweet smell that draws every animal except the dragon, and eats them. The cycle repeats. Greeks also made it a mount of Dionysus."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Panther_(legendary_creature)",
+        "title": "Panther (legendary creature)",
+        "accessed": "2026-11-20",
+        "supports": "The hide, the three-day sleep, the sweet roar, and the dragon exception are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "bestiary",
+      "lure"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A pastel cat whose breath is a perfume ad and whose only failure is dragons, who are immune to marketing.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-054",
+    "name": "Amphisbaena",
+    "origin": "Greek myth and later bestiaries",
+    "kind": "myth",
+    "facts": [
+      "The amphisbaena is a mythological ant-eating serpent with a head at each end."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Amphisbaena",
+        "title": "Amphisbaena",
+        "accessed": "2026-11-20",
+        "supports": "The lead is this description."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "two-headed"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A snake that can never decide which end is late for the meeting.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-055",
+    "name": "Boggart",
+    "origin": "English folklore",
+    "kind": "folklore",
+    "facts": [
+      "Elizabeth Wright called boggart a generic name for an apparition. Simon Young defines it as any ambivalent or evil solitary supernatural spirit. Kai Roberts says the word covered everything from a hill hobgoblin to a house fairy, a headless ghost, or a poltergeist.",
+      "Harland and Wilkinson's 1867 Lancashire Folklore separates house boggarts from others. One told behavior is crawling into a bed and laying a clammy hand on the sleeper's face, or stripping the sheets. A house boggart may follow a family when they move."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Boggart",
+        "title": "Boggart",
+        "accessed": "2026-11-20",
+        "supports": "The definitions, the 1867 split, and the bed behavior are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "household-spirit",
+      "ghost",
+      "trickster"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A housemate who moves with you, sits on the bed, and will not be named.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-056",
+    "name": "Knocker",
+    "origin": "Cornish and Devon folklore",
+    "kind": "folklore",
+    "facts": [
+      "The knocker, or knacker, is a subterranean gnome-like being of Cornwall and Devon. The Welsh counterpart is the coblyn.",
+      "Cornish description: about two feet tall, oversized head, long arms, wrinkled skin, white whiskers, dressed as a tiny miner, and prone to stealing unattended tools and food."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Knocker_(folklore)",
+        "title": "Knocker (folklore)",
+        "accessed": "2026-11-20",
+        "supports": "Size, look, and the tool-stealing are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "mine",
+      "fey",
+      "small"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A two-foot miner who knocks to warn you and then pockets your hammer.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-057",
+    "name": "Nisse",
+    "origin": "Nordic folklore",
+    "kind": "folklore",
+    "facts": [
+      "A nisse, tomte, or tonttu is a small human-like household spirit in a red cap and gray clothes who does house and stable work.",
+      "It expects a reward at least once a year around midwinter, traditionally its favorite food, porridge. The name may come from Niels or Nicholas."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nisse_(folklore)",
+        "title": "Nisse (folklore)",
+        "accessed": "2026-11-20",
+        "supports": "Chores, the red cap, and the porridge gift are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "household-spirit",
+      "winter",
+      "small"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A barn elf whose entire contract is one bowl of porridge and a catastrophic grudge if it is oatmeal.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-058",
+    "name": "Grendel",
+    "origin": "Old English poem Beowulf",
+    "kind": "historical",
+    "facts": [
+      "Grendel is one of three antagonists in the Old English poem Beowulf, with his mother and the dragon. The only secure date is the manuscript, made between AD 975 and 1025.",
+      "The poem calls him both an eoten and a þyrs, a descendant of Cain, a creature of darkness, and the destroyer and devourer of humankind. Whether he is a monster, a giant, or something else is still debated."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Grendel",
+        "title": "Grendel",
+        "accessed": "2026-11-20",
+        "supports": "Epithets, Cain, and the scholarly doubt are in the lead."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Beowulf",
+        "title": "Beowulf",
+        "accessed": "2026-11-20",
+        "supports": "The manuscript date AD 975–1025 and Grendel's attacks on Heorot are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "man-eater",
+      "hall"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A hall-smasher whose species line on the form is still blank after a thousand years.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-059",
+    "name": "Doppelgänger",
+    "origin": "German folklore and later European fiction",
+    "kind": "folklore",
+    "facts": [
+      "A doppelgänger is a supernatural double of a living person, especially one that haunts that person.",
+      "It is usually taken as a ghost or a bad-luck omen. A common literary use is the evil twin."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Doppelg%C3%A4nger",
+        "title": "Doppelgänger",
+        "accessed": "2026-11-20",
+        "supports": "The double, the haunting, and the omen are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "double",
+      "omen",
+      "spirit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower echo that is you, but it already spent your action points.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-060",
+    "name": "Gargoyle",
+    "origin": "Gothic architecture",
+    "kind": "historical",
+    "facts": [
+      "In Gothic architecture a gargoyle is a carved grotesque with a spout that throws roof water clear of the wall so the mortar does not erode.",
+      "A trough in the back sends the water out the open mouth. They are usually long fantastical animals because the length decides how far the water lands."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gargoyle",
+        "title": "Gargoyle",
+        "accessed": "2026-11-20",
+        "supports": "The waterspout function and the animal shape are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "stone",
+      "architecture",
+      "beast"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A roof beast whose only job is plumbing, and who is offended to be asked to fight. This record is the waterspout, not a later game's living statue.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-061",
+    "name": "Beholder",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "The beholder is depicted as a floating orb of flesh with a large mouth, one central eye, and many eyestalks with magical abilities. It is an original D&D creature, not taken from mythology. Terry Kuntz created it and Gary Gygax detailed it. It was introduced in the 1975 Greyhawk supplement, described there as a 'Sphere of Many Eyes' or 'Eye Tyrant', a levitating globe, and it has been in every edition since.",
+      "Wikipedia states that Wizards of the Coast claims the beholder as Product Identity and that it was not released under the Open Game License.",
+      "The OGL preamble in SRD 5.1 lists beholder among the items that are not Open Content.",
+      "Wizards' current SRD page says the Beholder is excluded from SRD 5.2 because of brand identity, licensing, and intellectual-property protection."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Beholder_(Dungeons_%26_Dragons)",
+        "title": "Beholder (Dungeons & Dragons)",
+        "accessed": "2026-11-20",
+        "supports": "Lead: floating orb, mouth, central eye, eyestalks, every edition since 1975, and the Product Identity claim. Publication history: not from mythology; Terry Kuntz created it and Gary Gygax detailed it; the 1975 Greyhawk supplement calls it a Sphere of Many Eyes or Eye Tyrant, a levitating globe with ten magical eyestalks."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Preamble lists beholder as Product Identity, not Open Content."
+      },
+      {
+        "url": "https://dnd.wizards.com/resources/systems-reference-document",
+        "title": "System Reference Document (Wizards)",
+        "accessed": "2026-11-20",
+        "supports": "SRD 5.2 FAQ names the Beholder as excluded for brand-identity protection."
+      }
+    ],
+    "archetypeTags": [
+      "aberration",
+      "eyes",
+      "product-identity"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Recognizable and legally hot. Do not reuse the orb, the central eye, the eyestalks, or the name. A parody has to be a different joke.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-062",
+    "name": "Illithid (mind flayer)",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "Illithids, commonly called mind flayers, are monstrous humanoid aberrations with psionic powers. In a typical setting they live in the caverns and cities of the Underdark, consider themselves the dominant species, keep other creatures as thralls, and eat brains.",
+      "The OGL preamble in SRD 5.1 lists both mind flayer and illithid as Product Identity, not Open Content."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Illithid",
+        "title": "Illithid",
+        "accessed": "2026-11-20",
+        "supports": "Psionics, the Underdark, thralls, and brain-eating are in the lead."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Preamble lists mind flayer and illithid as not Open Content."
+      }
+    ],
+    "archetypeTags": [
+      "aberration",
+      "psionic",
+      "product-identity"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The brain-eating tyrant idea is the hook. The name and any face design that copies the game's are off limits; this pass did not verify a face description beyond the article's lead.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-063",
+    "name": "Displacer beast",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "The displacer beast is a fictional evil feline created for D&D in 1975 and included in every edition since. This pass did not fetch a fuller anatomical description.",
+      "The OGL preamble in SRD 5.1 lists displacer beast as Product Identity, not Open Content."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Displacer_beast",
+        "title": "Displacer beast",
+        "accessed": "2026-11-20",
+        "supports": "The 1975 feline and the edition history are the whole lead."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Preamble lists displacer beast as not Open Content."
+      }
+    ],
+    "archetypeTags": [
+      "feline",
+      "product-identity"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Do not invent tentacles or a displacement silhouette from memory. Only the 'evil cat, 1975, still in the game' fact was verified.",
+    "confidence": "medium"
+  },
+  {
+    "inspirationId": "INS-02-064",
+    "name": "Githyanki",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "Githyanki are a fictional humanoid race, cousins and ancient enemies of the githzerai. In the Dark Sun setting they are simply called gith.",
+      "Charles Stross introduced them in White Dwarf #12. They entered the game officially in Fiend Folio (1981) and were on its cover.",
+      "The OGL preamble in SRD 5.1 lists githyanki and githzerai as Product Identity, not Open Content."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Githyanki",
+        "title": "Githyanki",
+        "accessed": "2026-11-20",
+        "supports": "The githzerai enmity, Stross, and Fiend Folio 1981 are in the lead."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Preamble lists githyanki and githzerai as not Open Content."
+      }
+    ],
+    "archetypeTags": [
+      "humanoid",
+      "product-identity"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A feuding astral people is the usable idea only at high altitude. The names are product identity. No armor or mount was verified here.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-065",
+    "name": "Yuan-ti",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "Yuan-ti are a fictional species of evil snakemen, divided into castes. In some settings they descend from human cultists who mixed their blood with serpents. They have strong psychic abilities.",
+      "They first appeared in the 1981 module Dwellers of the Forbidden City and have been in every edition since.",
+      "The OGL preamble in SRD 5.1 lists yuan-ti as Product Identity, not Open Content."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yuan-ti",
+        "title": "Yuan-ti",
+        "accessed": "2026-11-20",
+        "supports": "Snakemen, castes, cult origin, psychic power, and 1981 are in the lead."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Preamble lists yuan-ti as not Open Content."
+      }
+    ],
+    "archetypeTags": [
+      "snake",
+      "humanoid",
+      "product-identity"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Snake-cultists are an old idea; the name yuan-ti and the game's caste art are not available to copy.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-066",
+    "name": "Mimic",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "The mimic changes shape to pass as an inanimate object, commonly a chest. A strong adhesive holds whatever touches it, and it beats victims with pseudopods.",
+      "It was introduced in the original Advanced Dungeons & Dragons Monster Manual and has appeared in later editions, including variants.",
+      "The name mimic is not in the SRD 5.1 OGL product-identity list. That is not the same as public domain, and this pass did not confirm a clean stat block in the CC PDF."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mimic_(Dungeons_%26_Dragons)",
+        "title": "Mimic (Dungeons & Dragons)",
+        "accessed": "2026-11-20",
+        "supports": "Chest disguise, adhesive, pseudopods, and the Monster Manual debut are in the lead."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "The product-identity list does not include mimic."
+      }
+    ],
+    "archetypeTags": [
+      "shapechanger",
+      "trap",
+      "ooze"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A piece of furniture that is a mugging. Use a different object than a treasure chest if the silhouette would be the game's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-067",
+    "name": "Gelatinous cube",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "A gelatinous cube is a ten-foot cube of transparent gelatinous ooze that absorbs and digests organic matter.",
+      "SRD 5.1 CC uses it as the example of a dungeon surprise: a gelatinous cube glides down a passage unnoticed until it engulfs an adventurer.",
+      "The name is not on the SRD 5.1 OGL product-identity list. The cube is still a Wizards creature design, not folklore."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gelatinous_cube",
+        "title": "Gelatinous cube",
+        "accessed": "2026-11-20",
+        "supports": "The ten-foot transparent digesting cube is the lead."
+      },
+      {
+        "url": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+        "title": "System Reference Document 5.1 (CC-BY-4.0)",
+        "accessed": "2026-11-20",
+        "supports": "Prose example of a gelatinous cube engulfing an adventurer in a passage."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Product-identity list does not include the gelatinous cube."
+      }
+    ],
+    "archetypeTags": [
+      "ooze",
+      "dungeon",
+      "transparent"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A janitor you do not see until you are inside it. The exact ten-foot cube is the game's signature; a parody should change the container.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-068",
+    "name": "Owlbear",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "An owlbear is depicted as a cross between a bear and an owl that hugs like a bear and attacks with its beak.",
+      "Gary Gygax created it from a Hong Kong plastic toy and introduced it in the 1975 Greyhawk supplement. It has been in every later edition. The name appears in the SRD 5.1 CC PDF; column layout made the stat line unsafe to quote."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Owlbear",
+        "title": "Owlbear",
+        "accessed": "2026-11-20",
+        "supports": "The bear-owl, the hug and beak, the toy, and Greyhawk 1975 are in the lead."
+      },
+      {
+        "url": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+        "title": "System Reference Document 5.1 (CC-BY-4.0)",
+        "accessed": "2026-11-20",
+        "supports": "The name Owlbear appears in the monster text."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "beast"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A hug that is also a beak. The toy-accident origin is the joke. Do not trace the game's specific plush silhouette.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-069",
+    "name": "Rust monster",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "A rust monster seeks out and eats metal, often the party's weapons and armor.",
+      "It was inspired by a cheap plastic toy, was one of the first monsters made specifically for D&D, and has been in every edition. In most editions it barely hurts people and is feared because it ruins expensive gear in seconds."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rust_monster",
+        "title": "Rust monster",
+        "accessed": "2026-11-20",
+        "supports": "Diet, the toy, and the non-lethal gear-destruction role are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "equipment-hate"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A pest that does not want you, it wants your sword, and it is winning.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-070",
+    "name": "Lich (D&D)",
+    "origin": "Dungeons & Dragons, from an older English word",
+    "kind": "game",
+    "facts": [
+      "In D&D a lich is an undead spellcaster who uses magic to avoid death. The word is an archaic English term for a corpse.",
+      "Gary Gygax said he based the game's description on Gardner Fox's 1969 short story 'The Sword of the Sorcerer'.",
+      "Lich is not in the SRD 5.1 product-identity monster list. The archaic word is not Wizards' invention; the game's phylactery-wizard package is a specific design and was not fully described in the fetched lead."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lich_(Dungeons_%26_Dragons)",
+        "title": "Lich (Dungeons & Dragons)",
+        "accessed": "2026-11-20",
+        "supports": "Undead spellcaster, the archaic word, and Gygax's Fox source are in the lead."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Product-identity list does not name the lich."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "spellcaster"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A wizard who will not die because the paperwork is unfinished. Do not copy a specific game lich's face or soul-jar prop unless a later source spells that prop out.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-071",
+    "name": "Carrion crawler",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "The OGL preamble in SRD 5.1 designates the name carrion crawler as Product Identity and not Open Content.",
+      "This pass did not fetch a page that describes the body. Appearance is unverified and must not be filled in from memory."
+    ],
+    "sources": [
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Preamble lists carrion crawler as not Open Content."
+      }
+    ],
+    "archetypeTags": [
+      "product-identity"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Name only, until a description is fetched. Do not design the creature from recollection.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-072",
+    "name": "Umber hulk",
+    "origin": "Dungeons & Dragons",
+    "kind": "game",
+    "facts": [
+      "The OGL preamble in SRD 5.1 designates the name umber hulk as Product Identity and not Open Content.",
+      "A Wikipedia title for the creature resolved to a generic monster-list page that does not describe it. Appearance is unverified."
+    ],
+    "sources": [
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Preamble lists umber hulk as not Open Content."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_Advanced_Dungeons_%26_Dragons_2nd_edition_monsters",
+        "title": "List of Advanced Dungeons & Dragons 2nd edition monsters",
+        "accessed": "2026-11-20",
+        "supports": "The umber hulk title redirected here and the lead does not describe the creature."
+      }
+    ],
+    "archetypeTags": [
+      "product-identity"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Name only. Do not design from memory.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-073",
+    "name": "Otyugh",
+    "origin": "Dungeons & Dragons SRD 5.1",
+    "kind": "game",
+    "facts": [
+      "SRD 5.1 Limited Telepathy: the otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy does not allow the receiving creature to telepathically respond.",
+      "The same stat block's action line says the otyugh makes attacks with its bite and its tentacles. The surrounding columns are interleaved with other monsters, so no size, damage numbers, or further anatomy are claimed.",
+      "The name is not on the OGL product-identity list."
+    ],
+    "sources": [
+      {
+        "url": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+        "title": "System Reference Document 5.1 (CC-BY-4.0)",
+        "accessed": "2026-11-20",
+        "supports": "The Limited Telepathy sentence, including the ban on a telepathic reply, and the action line that names a bite and tentacles."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Product-identity list does not include otyugh."
+      }
+    ],
+    "archetypeTags": [
+      "aberration",
+      "telepathy"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A dungeon thing that will not stop texting you pictures and cannot hear the reply.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-074",
+    "name": "Cloaker",
+    "origin": "Dungeons & Dragons SRD 5.1",
+    "kind": "game",
+    "facts": [
+      "SRD 5.1 says the cloaker magically creates three illusory duplicates of itself when it is not in bright light. The duplicates move with it and mimic its actions so attackers cannot tell which is real, and the duplicates disappear if it enters bright light.",
+      "False Appearance in the same entry: while the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak.",
+      "The name is not on the OGL product-identity list."
+    ],
+    "sources": [
+      {
+        "url": "https://media.wizards.com/2023/downloads/dnd/SRD_CC_v5.1.pdf",
+        "title": "System Reference Document 5.1 (CC-BY-4.0)",
+        "accessed": "2026-11-20",
+        "supports": "The Phantasms sentence and the False Appearance sentence both name the cloaker. Stat numbers in the adjacent column are not used."
+      },
+      {
+        "url": "https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf",
+        "title": "System Reference Document 5.1 (OGL)",
+        "accessed": "2026-11-20",
+        "supports": "Product-identity list does not include cloaker."
+      }
+    ],
+    "archetypeTags": [
+      "aberration",
+      "illusion"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A cloak that brings three identical alibis and disappears them when you turn the lamp on.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-075",
+    "name": "Murloc",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "Murlocs are a bipedal amphibious humanoid race living mostly along coasts, lakeshores, and riverbeds. They usually stay in crowded settlements rather than wandering alone.",
+      "The Warcraft wiki prints a gurgling battle cry and says that, according to Brann Bronzebeard, murlocs are smarter than other peoples think and smart enough not to show it."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Murloc",
+        "title": "Murloc",
+        "accessed": "2026-11-20",
+        "supports": "Habitat, the crowd habit, the cry, and the Bronzebeard line are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "amphibian",
+      "humanoid",
+      "horde"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A shoreline crowd that is smarter than it lets on. Do not copy the gurgling cry or the game's fish-man model.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-076",
+    "name": "Quilboar",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "Quilboar are aggressive boar-like humanoids native to Kalimdor, Kul Tiras, and Exile's Reach, with razor-sharp spines on a muscular hunched back.",
+      "They live in the thorn maze of Razorfen Downs in the Barrens. Brutes are larger males changed by a special ritual."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Quilboar",
+        "title": "Quilboar",
+        "accessed": "2026-11-20",
+        "supports": "Spines, the Barrens maze, and the brute ritual are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beastfolk",
+      "tribal"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A boar-person whose argument is mostly quills and a maze of thorns. The name is Blizzard's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-077",
+    "name": "Worgen",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "Worgen are large wolf-humanoids that walk upright, hunt and howl like wolves, and run on all fours. A bite or drinking their blood passes the curse to humans and night elves. Rage and guilt can erase the old self; medicine, magic, and discipline can hold the feral side back.",
+      "The wiki says the first worgen were made in the War of the Satyr, when priestess Belysra Starbreeze and druid Ralaar Fangfire used the Scythe of Elune to mix Elune's magic with the wolf Ancient Goldrinn's pack form."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Worgen",
+        "title": "Worgen",
+        "accessed": "2026-11-20",
+        "supports": "Body, curse, control, and the Scythe of Elune origin are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "shapechanger",
+      "wolf",
+      "curse"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A werewolf with a prescription. The name and the Scythe story are Warcraft's, not generic lycanthropy (see INS-02-039).",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-078",
+    "name": "Core hound",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "A core hound is a four-legged fire-elemental monster from the Firelands, a vicious but loyal servant of the Firelord. It looks like a massive dog with rows of flaming teeth, armored hide, bony spikes on the head, and a streak of flame from head to a stubby tail.",
+      "There is a larger two-headed kind and a smaller one-headed kind. Dark Iron dwarves use the smaller ones as mounts. Fel-green ones are called fel beasts or fel core hounds."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Core_hound",
+        "title": "Core hound",
+        "accessed": "2026-11-20",
+        "supports": "Anatomy, the two head-counts, and the fel variant are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "fire",
+      "beast",
+      "elemental"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A furnace dog. Two heads is the Warcraft version; a parody should not be a lava mastiff with that exact kit.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-079",
+    "name": "Warcraft kobold",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "In Warcraft, kobolds are small rat-like humanoids of caves and mines across several continents. They are not very intelligent, famously cowardly, and obsessively protective of the candles they wear on their heads to light the tunnels.",
+      "The German folklore kobold is a different being (INS-02-017): a household spirit, not a candle-wearing mine rat. Only the game depiction is claimed here."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Kobold",
+        "title": "Kobold",
+        "accessed": "2026-11-20",
+        "supports": "Ratlike miners, cowardice, and the head-candles are in the lead."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Kobold",
+        "title": "Kobold",
+        "accessed": "2026-11-20",
+        "supports": "The folklore kobold is a German household spirit, used only as the contrast."
+      }
+    ],
+    "archetypeTags": [
+      "mine",
+      "humanoid",
+      "coward"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "The candle on the head is the game's joke. Do not copy 'you no take candle' or the rat-miner model. The word kobold itself is older.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-080",
+    "name": "N'raqi (faceless one)",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "The n'raqi, commonly called faceless ones, are monstrous Void beings that arose from matter seeping from the Old Gods. They are cunning, fanatically loyal, and serve as commanders of the Old Gods' forces.",
+      "They were first seen serving a forgotten one under Azjol-Nerub in Warcraft III: The Frozen Throne, and entered World of Warcraft in Wrath of the Lich King."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/N%27raqi",
+        "title": "N'raqi",
+        "accessed": "2026-11-20",
+        "supports": "Origin, role, and the two game debuts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "void",
+      "aberration",
+      "commander"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A middle manager of the void. Do not copy the game's faceless silhouette; this lead does not even specify the face.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-081",
+    "name": "Furbolg",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "Furbolgs are a hulking, simple-minded race of bear-people living in northern Kalimdor, Northrend, the Broken Isles, the Dragon Isles, and the Verdant Wilds.",
+      "The wiki says many tribes have been corrupted by the Burning Legion, the Old Gods, or the Primalists, while some, such as the Timbermaw, Stillpine, and Longclaw, are not hostile. In northern Kalimdor they were old allies of the night elves and have been retreating into rage."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Furbolg",
+        "title": "Furbolg",
+        "accessed": "2026-11-20",
+        "supports": "Bear-people, the regions, and the corruption split are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beastfolk",
+      "bear",
+      "corrupted"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A bear neighbor who used to be friendly and is now having a very long bad day. The name is Blizzard's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-082",
+    "name": "Nerubian",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "Nerubians are an ancient race of intelligent humanoid spiders of the underground kingdoms Azjol-Nerub in Northrend and Azj-Kahet in Khaz Algar. Like the qiraji and the mantid, they descend from the aqir, but they rejected their Old God masters.",
+      "The Undead Scourge broke Azjol-Nerub in the War of the Spider and raised many nerubians as crypt fiends and crypt lords."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Nerubian",
+        "title": "Nerubian",
+        "accessed": "2026-11-20",
+        "supports": "Spider-people, the two kingdoms, the aqir link, and the Scourge war are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "spider",
+      "underground",
+      "undead"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "An underground spider civilization with a grudge against being undead. Do not copy the nerubian body or the kingdom names.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-083",
+    "name": "Old God",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "Old Gods, or Shath'Yar, are parasitic eldritch horrors the void lords made to find and corrupt sleeping titan world-souls. They are described as mountains of flesh, physical Void, growing in worlds like cancers.",
+      "Four — Y'Shaarj, C'Thun, Yogg-Saron, and N'Zoth — ruled primordial Azeroth as the Black Empire. The titans imprisoned those they could not rip out without killing the world. A fifth, G'huun, was created later by accident."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Old_God",
+        "title": "Old God",
+        "accessed": "2026-11-20",
+        "supports": "The void-lord origin, the flesh-mountain image, the four names, and G'huun are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "eldritch",
+      "world-boss",
+      "void"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A buried god that is also a landlord. Every proper name in this entry is Blizzard's. Parody the 'something huge under the floor' idea, not these names.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-084",
+    "name": "Voidwalker",
+    "origin": "Warcraft",
+    "kind": "game",
+    "facts": [
+      "Voidwalkers are large shapeless blue-and-purple void creatures that hover. Touching one is compared to frostbite, and their grip can crush bone to powder. They are fleshless and still have souls, and they stay hungry even when a spellcaster binds them.",
+      "The wiki says they are not demons, though gameplay sometimes classifies them that way. The first one summoned to Azeroth was summoned by Egalin."
+    ],
+    "sources": [
+      {
+        "url": "https://warcraft.wiki.gg/wiki/Voidwalker",
+        "title": "Voidwalker",
+        "accessed": "2026-11-20",
+        "supports": "Shape, touch, hunger, and the not-a-demon note are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "void",
+      "summon"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A summoned hunger that is legally not a demon and is annoyed about the form.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-085",
+    "name": "Treasure Goblin",
+    "origin": "Diablo",
+    "kind": "game",
+    "facts": [
+      "Treasure Goblins are small demons that steal loot and anything that glitters, carrying it in sacks. They serve the baroness Greed and portal between the mortal realm and her domain.",
+      "They prefer not to fight. They escape into their realm, where sentries protect them if someone follows. Abd al-Hazir's Act I note calls the peasant story of a demon lord named Greed a ludicrous notion, which the bestiary then treats as true."
+    ],
+    "sources": [
+      {
+        "url": "https://diablo.fandom.com/wiki/Treasure_Goblin",
+        "title": "Treasure Goblin",
+        "accessed": "2026-11-20",
+        "supports": "Sacks, Greed, portals, and the refusal to fight are in the lead, including the Abd al-Hazir quote."
+      }
+    ],
+    "archetypeTags": [
+      "demon",
+      "thief",
+      "comedy"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A goblin whose combat plan is leaving. Do not copy the sack-and-portal Diablo goblin; the joke can be any thief who opens a door that is not yours.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-086",
+    "name": "Khazra",
+    "origin": "Diablo",
+    "kind": "game",
+    "facts": [
+      "Scholars call them khazra and children call them goatmen. Adria's Book of Adria says they are half goat and half man, as the Vizjerei intended, but they are vicious and cunning rather than loyal weapons.",
+      "The wiki calls them mutated humans in the shape of bipedal goats who obey demon masters and fight with axes, polearms, swords, and staves."
+    ],
+    "sources": [
+      {
+        "url": "https://diablo.fandom.com/wiki/Khazra",
+        "title": "Khazra",
+        "accessed": "2026-11-20",
+        "supports": "The Adria quote and the weapon list are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "goat",
+      "demon",
+      "humanoid"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A mage's failed weapon that unionized. Goat-men exist in older myth; the Vizjerei origin and the name khazra are Diablo's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-087",
+    "name": "The Cow King",
+    "origin": "Diablo",
+    "kind": "game",
+    "facts": [
+      "The Cow King is a Hell Bovine monarch tied to the Secret Cow Level. The wiki's infobox titles him Hoof of Moophisto, lists his race as cow and his class as Hell Bovine, and places him in Diablo II and Diablo III."
+    ],
+    "sources": [
+      {
+        "url": "https://diablo.fandom.com/wiki/The_Cow_King",
+        "title": "The Cow King",
+        "accessed": "2026-11-20",
+        "supports": "The Hell Bovine title, the Secret Cow Level, and the infobox labels are in the lead wikitext."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "secret",
+      "comedy",
+      "boss"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A secret bovine king is the joke. Do not use Cow King, Hell Bovine, or the Moophisto pun; those are the game's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-088",
+    "name": "Sand Maggot",
+    "origin": "Diablo",
+    "kind": "game",
+    "facts": [
+      "Sand Maggots are large bugs of the Aranoch deserts and even near rivers of flame in Hell. They have many pairs of side legs, large pincers, and a tough shell.",
+      "They spit poison, and when threatened they burrow and come up underneath a target. They lay eggs that hatch into Sand Maggot Young. The lead says Geglash advises that crossbows fail against the armor and melee works better, and that their attacks are slow."
+    ],
+    "sources": [
+      {
+        "url": "https://diablo.fandom.com/wiki/Sand_Maggot",
+        "title": "Sand Maggot",
+        "accessed": "2026-11-20",
+        "supports": "Body, poison, burrow ambush, eggs, and Geglash's advice are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "bug",
+      "burrow",
+      "poison"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A desert worm that is mostly a surprise from below and a bad matchup chart. The name is the game's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-089",
+    "name": "Lacuni",
+    "origin": "Diablo",
+    "kind": "game",
+    "facts": [
+      "Abd al-Hazir calls the Lacuni panther-men who have lived in the desert wastes east of Caldeum for thousands of years. Large males lead and protect; agile females hunt. They are mostly primitive and reclusive and attack if cornered or hungry.",
+      "The wiki also lists the names Panther-men and Sabre Cats."
+    ],
+    "sources": [
+      {
+        "url": "https://diablo.fandom.com/wiki/Lacuni",
+        "title": "Lacuni",
+        "accessed": "2026-11-20",
+        "supports": "The Abd al-Hazir description and the alternate names are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "cat",
+      "humanoid",
+      "desert"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Desert cat-people. The name Lacuni and the Caldeum placement are Diablo's; cat-people as an idea are wider.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-090",
+    "name": "Dremora",
+    "origin": "The Elder Scrolls",
+    "kind": "game",
+    "facts": [
+      "Dremora, who call themselves the Kyn, are a warlike Daedric people tied especially to Mehrunes Dagon and also found serving lords such as Molag Bal. They are intelligent warriors and mages.",
+      "Dremora is an arena nickname used with mortals so a clan's real tribunymic cannot be turned against them. They rank themselves above other Daedra, whom they see as animals, and they dislike mortals."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Dremora",
+        "title": "Lore:Dremora",
+        "accessed": "2026-11-20",
+        "supports": "Kyn, Dagon, the nickname, and the attitude are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "demon",
+      "humanoid",
+      "summon"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A demon who insists the name you know is only the one he uses in public. Do not use Dremora or Kyn.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-091",
+    "name": "Clannfear",
+    "origin": "The Elder Scrolls",
+    "kind": "game",
+    "facts": [
+      "Clannfear are reptilian Daedra: a bipedal muscular lizard with a bony head crest, a curved beak, sharp talons, and bird-like clawed feet. The hide is tough and the mouth is full of cutting teeth.",
+      "They are usually treated as animal-smart, though many can speak. They do not use tools; they bite, claw, and lash tail spikes. Their claws hook prey so it can be eaten alive. Every Daedric Prince is said to have clannfear legions; some people attribute them especially to Mehrunes Dagon."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Clannfear",
+        "title": "Lore:Clannfear",
+        "accessed": "2026-11-20",
+        "supports": "Body, speech, and the lack of tools are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "reptile",
+      "daedra",
+      "beast"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A lizard-bird that headbutts because it never learned a tool. The name is Bethesda's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-092",
+    "name": "Cliff racer",
+    "origin": "The Elder Scrolls (Morrowind)",
+    "kind": "game",
+    "facts": [
+      "Cliff racers are large flying reptiles of Morrowind, with long tails and a tall sail along the spine, and no legs. They are kin to cliff striders and cliff darters.",
+      "They attack anyone they see, spot travelers from far off, and follow unnoticed until a swarm drops on them."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Cliff_Racer",
+        "title": "Lore:Cliff Racer",
+        "accessed": "2026-11-20",
+        "supports": "The legless sail-reptile and the swarming habit are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "flying",
+      "reptile",
+      "pest"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "The most hated commute in a province: a legless lizard that followed you home and brought friends. Do not copy the Morrowind model.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-093",
+    "name": "Hagraven",
+    "origin": "The Elder Scrolls",
+    "kind": "game",
+    "facts": [
+      "Hagravens look like a cross between an old woman and a bird. They were witches who traded humanity for magic in a ritual. They often eat people alive and especially like fresh eyeballs.",
+      "They stay able to talk, fight up close or with spells, stink, and can become a murder of crows. The change can be reversed; UESP cites one case where Kyne cleansed Keeper Ormi after her son Sahun prayed."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Hagraven",
+        "title": "Lore:Hagraven",
+        "accessed": "2026-11-20",
+        "supports": "The bird-woman body, the ritual, the diet, and the crow form are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "witch",
+      "bird",
+      "corruption"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A witch who paid for power in species. The name and the eyeball diet are the game's specific package; a parody should not copy that meal.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-094",
+    "name": "Chaurus",
+    "origin": "The Elder Scrolls (Skyrim)",
+    "kind": "game",
+    "facts": [
+      "Chaurus are large carnivorous arthropods of deep Skyrim caves and some surface swamps such as Hjaalmarch. They have poisonous saliva and a bite that can crush prey.",
+      "The Falmer breed them as guards or kill them for chitin. They are large black insects with four limbs, blue sensory organs, razor mandibles, and tail pincers. Mature chaurus hunters grow wings and longer front limbs."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Chaurus",
+        "title": "Lore:Chaurus",
+        "accessed": "2026-11-20",
+        "supports": "Poison, the Falmer, and the body plan are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "insect",
+      "underground",
+      "poison"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A cave insect with a farmer. The name and the Falmer kennel are Skyrim's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-095",
+    "name": "Dwemer animunculus",
+    "origin": "The Elder Scrolls",
+    "kind": "game",
+    "facts": [
+      "Dwemer animunculi, also called Dwarven constructs or centurions, are machines of Dwarven metal made as war machines and guards. Many still attack anyone who enters the ruins, including worker units, long after the Dwemer vanished in 1E 700.",
+      "Most are Dwarven brass. Rarer ones use adamant, glass, or ebon steel. They scavenge parts to repair themselves and each other."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Dwemer_Animunculi",
+        "title": "Lore:Dwemer Animunculi",
+        "accessed": "2026-11-20",
+        "supports": "Role, the 1E 700 date, materials, and self-repair are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "construct",
+      "ruin",
+      "guardian"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A janitor robot that has been on duty since the owners evaporated. Dwemer and the brass spider-centurion look are Bethesda's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-096",
+    "name": "Scamp",
+    "origin": "The Elder Scrolls",
+    "kind": "game",
+    "facts": [
+      "Scamps are lesser sentient Daedra that slip into the mortal world to make mischief and run errands. Other Daedra compare them to rats. They are weak, often cowardly, and dangerous mainly in numbers.",
+      "They look like small goblinish humanoids with tapered ears, furry legs, and ratlike tails, and they have sharp claws and teeth. UESP notes they are capable of defecation."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Scamp",
+        "title": "Lore:Scamp",
+        "accessed": "2026-11-20",
+        "supports": "Role, the rat comparison, and the body are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "daedra",
+      "small",
+      "trickster"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "Oblivion's rat with hands. The English word scamp is ordinary; this Daedra is not public domain.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-097",
+    "name": "Lurcher",
+    "origin": "The Elder Scrolls",
+    "kind": "game",
+    "facts": [
+      "Lurchers, or log-striders, are lumbering plant creatures. Some are natural; others are wooden golems of bark, moss, and evil magic. They attack by venting choking pollen from a glowing core. The pollen has spread disease in High Rock.",
+      "Inside the torso is a knotted heart, a fist-sized acorn that beats. Bosmer in Valenwood make them and often like them. Reachmen bind evil spirits into crude vine bodies."
+    ],
+    "sources": [
+      {
+        "url": "https://en.uesp.net/wiki/Lore:Lurcher",
+        "title": "Lore:Lurcher",
+        "accessed": "2026-11-20",
+        "supports": "Pollen, the acorn heart, and the Bosmer and Reach origins are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "plant",
+      "construct"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A walking tree with an acorn for a heart and a pollen cough. The English word lurcher is a dog breed; this plant is the game's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-098",
+    "name": "Leshy",
+    "origin": "Slavic myth",
+    "kind": "myth",
+    "facts": [
+      "Leshy is a forest and hunting tutelary in pagan Slavic myth, sometimes linked to the god Porewit. He often looks like a man and can disguise himself as any person, including changing size.",
+      "He misguides travelers and abducts children, which some stories share with the chort, so he is sometimes treated as hostile. His attitude to humans varies."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Leshy",
+        "title": "Leshy",
+        "accessed": "2026-11-20",
+        "supports": "Tutelary role, size-changing disguise, and the misguiding are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "forest",
+      "spirit",
+      "trickster"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A forest landlord who changes height to win arguments. This is the folklore leshy, not a game's antlered model, which was not described in the fetched game lead.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-099",
+    "name": "Leshen (The Witcher)",
+    "origin": "The Witcher",
+    "kind": "game",
+    "facts": [
+      "The Witcher wiki says a leshy (Polish leszy; also leshen, and in the CDPR games also called a spriggan) is a forest monster 'that lives only to kill' and leaves little for carrion eaters.",
+      "That killer framing is the game-wiki lead. It is not the same claim as the folklore tutelary in INS-02-098. The fetched lead does not describe antlers, a skull, or wolves."
+    ],
+    "sources": [
+      {
+        "url": "https://witcher.fandom.com/wiki/Leshy",
+        "title": "Leshy",
+        "accessed": "2026-11-20",
+        "supports": "The 'lives only to kill' sentence and the leshen/spriggan aliases are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "forest",
+      "killer"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "Use the folklore leshy if you want a public-domain forest spirit. Do not copy the CDPR leshen's look; this source did not even supply that look.",
+    "confidence": "medium"
+  },
+  {
+    "inspirationId": "INS-02-100",
+    "name": "Noonwraith",
+    "origin": "The Witcher",
+    "kind": "game",
+    "facts": [
+      "Noonwraiths appear in fields when the sun is highest. Grain swaying on a windless day announces them. They dance in circles in daylight and draw farmers into the dance.",
+      "The wiki says they are ghosts, and no one who joins the circle leaves alive."
+    ],
+    "sources": [
+      {
+        "url": "https://witcher.fandom.com/wiki/Noonwraith",
+        "title": "Noonwraith",
+        "accessed": "2026-11-20",
+        "supports": "The field, the windless grain, the dance, and the ghost circle are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "ghost",
+      "field",
+      "dance"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A lunch-hour ghost that recruits you into a dance. The English name is descriptive; the bestiary entry is the game's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-101",
+    "name": "Fiend (The Witcher)",
+    "origin": "The Witcher",
+    "kind": "game",
+    "facts": [
+      "The Witcher fiend (Polish bies) is a relict that resembles a deer but is much larger. It has a third eye used to hypnotize opponents.",
+      "The fetched bestiary infobox lists a third-eye hypnotism tactic and immunity to the Aard sign. No antler count was in that lead."
+    ],
+    "sources": [
+      {
+        "url": "https://witcher.fandom.com/wiki/Fiend",
+        "title": "Fiend",
+        "accessed": "2026-11-20",
+        "supports": "The oversized deer and the hypnotic third eye are in the lead wikitext."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "hypnosis",
+      "relict"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A deer with one extra eye and a bad attitude. Do not assume the rest of the CDPR model; it was not in the lead.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-102",
+    "name": "Drowner",
+    "origin": "The Witcher",
+    "kind": "game",
+    "facts": [
+      "Drowners, also called muire d'yaeblen in Skellige or vodniks, live in rivers, lakes, mill ponds, and city sewers.",
+      "The common belief that they are drowned men returned from the dead is, the wiki says, false. They are another post-Conjunction relic."
+    ],
+    "sources": [
+      {
+        "url": "https://witcher.fandom.com/wiki/Drowner",
+        "title": "Drowner",
+        "accessed": "2026-11-20",
+        "supports": "Habitat and the false drowned-man theory are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "water",
+      "humanoid"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A sewer corpse that is offended to be called a corpse. The Conjunction framing is the game's lore.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-103",
+    "name": "Shaelmaar",
+    "origin": "The Witcher",
+    "kind": "game",
+    "facts": [
+      "A shaelmaar (Polish szarlej) is a large creature that lives almost entirely in burrow tunnels and comes up only sometimes. Arenas in Nilfgaard and Toussaint put them against human fighters.",
+      "The lead says they are completely blind and use echolocation. The bestiary tactics line says they roll into a ball and charge."
+    ],
+    "sources": [
+      {
+        "url": "https://witcher.fandom.com/wiki/Shaelmaar",
+        "title": "Shaelmaar",
+        "accessed": "2026-11-20",
+        "supports": "Burrow life, blindness, echolocation, arenas, and the rolling charge are in the lead wikitext."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "burrow",
+      "blind"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A blind bowling ball that hunts by sound and has a stadium contract. The name is the game's.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-104",
+    "name": "Bruxa",
+    "origin": "The Witcher",
+    "kind": "game",
+    "facts": [
+      "A bruxa is a powerful vampire that usually looks like a dark-haired young human, most often a woman. Its natural form is a large black bat with fangs and claws.",
+      "The wiki says it is one of the few vampire kinds not hurt by sunlight, along with alps, mulas, and higher vampires. It is very agile, silver swords work on it, and its scream can throw a grown man."
+    ],
+    "sources": [
+      {
+        "url": "https://witcher.fandom.com/wiki/Bruxa",
+        "title": "Bruxa",
+        "accessed": "2026-11-20",
+        "supports": "The two forms, sunlight, silver, and the scream are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "vampire",
+      "shapechanger"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A bat that passes as a person and hates noon less than other vampires. The name and the silver-scream kit are the game's. Portuguese bruxa simply means witch; this entry is the Witcher vampire.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-105",
+    "name": "Balrog",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "Balrogs are a species of demonic monsters in Tolkien's Middle-earth. The Lord of the Rings shows one, Durin's Bane, in the Mines of Moria. They also appear in The Silmarillion.",
+      "They are tall and menacing, can wrap themselves in fire, darkness, and shadow, and carry fiery whips of many thongs, sometimes long swords.",
+      "Tolkien Gateway adds that they are Maiar corrupted by Morgoth, and names Gothmog and Durin's Bane. Tolkien died on 2 September 1973, so these are modern literary creatures, not folklore."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Balrog",
+        "title": "Balrog",
+        "accessed": "2026-11-20",
+        "supports": "Fire, shadow, whips, swords, and Durin's Bane are in the lead."
+      },
+      {
+        "url": "https://tolkiengateway.net/wiki/Balrogs",
+        "title": "Balrogs",
+        "accessed": "2026-11-20",
+        "supports": "Maiar corrupted by Morgoth, with whips and swords."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/J._R._R._Tolkien",
+        "title": "J. R. R. Tolkien",
+        "accessed": "2026-11-20",
+        "supports": "Death date 2 September 1973."
+      }
+    ],
+    "archetypeTags": [
+      "demon",
+      "fire",
+      "shadow",
+      "boss"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A shadow with a whip is one of the most recognizable modern fantasy bosses. Do not use the name, the Moria bridge scene, or that silhouette.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-106",
+    "name": "Nazgûl",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "Nazgûl is Black Speech: nazg 'ring' and gûl 'wraith'. They are also the Black Riders, Ringwraiths, and the Nine.",
+      "They were nine Men who wore Rings of Power, gained a kind of immortality, and became invisible wraiths bound to the One Ring and to Sauron. The book calls them his most terrible servants. Their leader is the Witch-king of Angmar.",
+      "Tolkien Gateway agrees they were mortal Men turned to wraiths by the Nine Rings."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nazg%C3%BBl",
+        "title": "Nazgûl",
+        "accessed": "2026-11-20",
+        "supports": "Etymology, the nine Men, the Rings, and the Witch-king are in the lead."
+      },
+      {
+        "url": "https://tolkiengateway.net/wiki/Nazg%C3%BBl",
+        "title": "Nazgûl",
+        "accessed": "2026-11-20",
+        "supports": "Black Speech for Ringwraiths; Men turned by the Nine Rings."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "rider",
+      "wraith",
+      "boss"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Nine riders who used to be kings is Tolkien's. A parody of 'a crown that ate the person' has to look like something else.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-107",
+    "name": "Ent",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "Ents are giant humanoids in Middle-earth who closely resemble trees. Their name comes from an Old English word for giant. Treebeard of Fangorn is their leader and is called the oldest creature in Middle-earth.",
+      "In The Lord of the Rings they are ancient shepherds of the forest. There are no Enting children because the Entwives are lost. Huorns are a related in-between of tree and Ent.",
+      "Tolkien Gateway says they were made at Yavanna's request to protect trees, especially from Dwarves, and calls them Shepherds of the Trees."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ent",
+        "title": "Ent",
+        "accessed": "2026-11-20",
+        "supports": "Tree-giants, the Old English word, Treebeard, and the lost Entwives are in the lead."
+      },
+      {
+        "url": "https://tolkiengateway.net/wiki/Ents",
+        "title": "Ents",
+        "accessed": "2026-11-20",
+        "supports": "Yavanna's shepherds of the trees."
+      }
+    ],
+    "archetypeTags": [
+      "plant",
+      "giant",
+      "guardian"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "The Old English word ent means giant and is old. The talking tree-shepherd people are Tolkien's. Do not make a slow tree-man named anything close to Ent or Treebeard.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-108",
+    "name": "Warg",
+    "origin": "J. R. R. Tolkien's Middle-earth, from older Germanic words",
+    "kind": "historical",
+    "facts": [
+      "In Tolkien, a warg is a particularly large evil wolf that orcs can ride. He built the word from Old Norse vargr, a wolf, especially Fenrir and his children, and Old English wearh, an outcast who may be strangled.",
+      "Tolkien Gateway calls wargs, or Wild Wolves, a race of evil wolves as named by the Northmen of Rhovanion.",
+      "Later fantasy, including George R. R. Martin, inherited Tolkien's warg. The Norse wolf is older (see INS-02-050); the orc-riding warg is Tolkien's package."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Warg",
+        "title": "Warg",
+        "accessed": "2026-11-20",
+        "supports": "The orc-mount, the Norse and Old English sources, and the later authors are in the lead."
+      },
+      {
+        "url": "https://tolkiengateway.net/wiki/Wargs",
+        "title": "Wargs",
+        "accessed": "2026-11-20",
+        "supports": "Evil wolves of Rhovanion."
+      }
+    ],
+    "archetypeTags": [
+      "wolf",
+      "mount"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Rideable evil wolf is the modern fantasy cliché Tolkien fed. A parody wolf should not be named warg.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-109",
+    "name": "Barrow-wight",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "Barrow-wights are wraith-like creatures in Middle-earth. In The Lord of the Rings a barrow-wight traps the four hobbits; they escape with ancient swords of Westernesse.",
+      "Tolkien drew the idea from Norse saga heroes fighting draugar. Tolkien Gateway calls them dead bones animated by evil spirits that live in barrows.",
+      "The underlying mound-dead is the older draugr (INS-02-018). The name barrow-wight and the hobbit scene are Tolkien's."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Barrow-wight",
+        "title": "Barrow-wight",
+        "accessed": "2026-11-20",
+        "supports": "The hobbit scene and the draugr source are in the lead."
+      },
+      {
+        "url": "https://tolkiengateway.net/wiki/Barrow-wights",
+        "title": "Barrow-wights",
+        "accessed": "2026-11-20",
+        "supports": "Bones animated by spirits in the mounds."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "barrow"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Use the saga draugr if you want a public-domain mound corpse. Do not restage the hobbits in the tomb.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-110",
+    "name": "Oliphaunt",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "In The Lord of the Rings an oliphaunt, called a mûmak in Gondor (plural mûmakil), is a giant elephant-like beast used as a war elephant by the Haradrim.",
+      "Tolkien took the word oliphaunt from Middle English to make Sam Gamgee's speech sound rustic. Sam recites an Oliphaunt rhyme and later sees the beasts in Ithilien and at the Pelennor Fields."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Oliphaunt",
+        "title": "Oliphaunt",
+        "accessed": "2026-11-20",
+        "supports": "The mûmak, the Haradrim war-beasts, and the Middle English borrowing are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "war",
+      "elephant"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A war elephant is ancient. The words oliphaunt and mûmak, and Sam's poem, are Tolkien's telling. Do not use those names.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-111",
+    "name": "Uruk-hai",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "Tolkien Gateway says Uruk-hai is Black Speech for 'Orc-folk'. Uruk can mean any orc, but some larger, stronger breeds are specifically Uruks.",
+      "The term Uruk-hai was most notably how the Uruks of Saruman's army described themselves in the War of the Ring.",
+      "A Wikipedia request for Uruk-hai resolved to a general modern-fantasy orc article, which was not used for these claims."
+    ],
+    "sources": [
+      {
+        "url": "https://tolkiengateway.net/wiki/Uruk-hai",
+        "title": "Uruk-hai",
+        "accessed": "2026-11-20",
+        "supports": "The Black Speech gloss and Saruman's army are the lead."
+      }
+    ],
+    "archetypeTags": [
+      "humanoid",
+      "soldier"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A bigger orc with a brand name. Do not use Uruk. The general goblin (INS-02-041) is the public-domain small humanoid.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-112",
+    "name": "Watcher in the Water",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "The Watcher in the Water lurked in the dark pool made when the Sirannon was dammed, under the western walls of Moria.",
+      "Its whole shape was unknown. The visible parts were many tentacles: long, sinuous, pale green, luminous, with fingered ends."
+    ],
+    "sources": [
+      {
+        "url": "https://tolkiengateway.net/wiki/Watcher_in_the_Water",
+        "title": "Watcher in the Water",
+        "accessed": "2026-11-20",
+        "supports": "The dammed pool and the tentacle description are the lead."
+      }
+    ],
+    "archetypeTags": [
+      "tentacle",
+      "water",
+      "guardian"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A thing in a pool outside a door. The Moria gate scene is Tolkien's. A different tentacled water animal needs a different place and look. Kraken (INS-02-045) is the public-domain sea version.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-113",
+    "name": "Fell beast",
+    "origin": "J. R. R. Tolkien's Middle-earth",
+    "kind": "historical",
+    "facts": [
+      "Tolkien Gateway says fell beasts, also called Nazgûl-birds, Black Wings, and hell-hawks, were huge pterodactyl-like flying creatures used as steeds by the Nazgûl.",
+      "The lead is a single sentence. Confidence is medium because it is a short paraphrase rather than a quoted description from the book."
+    ],
+    "sources": [
+      {
+        "url": "https://tolkiengateway.net/wiki/Fell_beasts",
+        "title": "Fell beasts",
+        "accessed": "2026-11-20",
+        "supports": "The one-sentence lead equates them with Nazgûl steeds and calls them pterodactylic."
+      }
+    ],
+    "archetypeTags": [
+      "flying",
+      "mount"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A flying mount for a wraith is a Tolkien picture. Do not pair a reptile-bird with a ring-wraith. The wyvern (INS-02-044) is the older two-legged dragon.",
+    "confidence": "medium"
   }
 ]
