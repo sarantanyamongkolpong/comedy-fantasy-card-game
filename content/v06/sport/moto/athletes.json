@@ -1,0 +1,1392 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "moto",
+  "status": "PROPOSED",
+  "athletes": [
+    {
+      "id": "SPC_MOTO_ENT_001",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Mako Mayhem",
+      "rarity": "EX",
+      "team": "Red Quack Works",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_001_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_001",
+      "vehicleParodyName": "RubberDuck V-Quack",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_001_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Marc Márquez",
+        "url": "https://www.motogp.com/en/riders/marc-marquez/23e50438-a657-4fb0-a190-3262b5472f29",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Marc Márquez",
+          "Ducati Lenovo Team",
+          "Ducati"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR001",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_002",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Paco Bagnetti",
+      "rarity": "Epic",
+      "team": "Red Quack Works",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_002_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_001",
+      "vehicleParodyName": "RubberDuck V-Quack",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_001_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "H",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Francesco Bagnaia",
+        "url": "https://www.motogp.com/en/riders/francesco-bagnaia/66b78301-5826-4986-b11e-fa68a7bd77a7",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Francesco Bagnaia",
+          "Ducati Lenovo Team",
+          "Ducati"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR002",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_003",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Fabio Fourturn",
+      "rarity": "Epic",
+      "team": "Blue Melody Works",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_003_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_004",
+      "vehicleParodyName": "Echo V4",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_004_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Fabio Quartararo",
+        "url": "https://www.motogp.com/en/riders/fabio-quartararo/bf95d959-6a60-44f1-84b5-ded861e62578",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Fabio Quartararo",
+          "Yamaha"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR003",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_004",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Pedro Acoaster",
+      "rarity": "Epic",
+      "team": "Orange Anvil Motors",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_004_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_003",
+      "vehicleParodyName": "Hammer Sixteen",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_003_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Pedro Acosta",
+        "url": "https://www.motogp.com/en/riders/pedro-acosta/ea39a0af-95d3-4a37-81a7-f332efdb9216",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Pedro Acosta",
+          "KTM"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR004",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_005",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Jorge Martian",
+      "rarity": "Epic",
+      "team": "Purple Petal Moto",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_005_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_002",
+      "vehicleParodyName": "Petal-26",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_002_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "H",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Jorge Martín",
+        "url": "https://www.motogp.com/en/riders/jorge-martin/5b9af34e-da94-4ca2-9c4c-6be0fc8b1bbc",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Jorge Martín",
+          "Aprilia"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR005",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_006",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Brady Blender",
+      "rarity": "R",
+      "team": "Orange Anvil Motors",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_006_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_003",
+      "vehicleParodyName": "Hammer Sixteen",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_003_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Brad Binder",
+        "url": "https://www.motogp.com/en/riders/brad-binder/ade5ef32-01ea-487c-95ca-491544a668ed",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Brad Binder",
+          "KTM"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR006",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_007",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Marco Buzzachi",
+      "rarity": "R",
+      "team": "Purple Petal Moto",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_007_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_002",
+      "vehicleParodyName": "Petal-26",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_002_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Marco Bezzecchi",
+        "url": "https://www.motogp.com/en/riders/marco-bezzecchi/e622ec5b-5ccf-457c-a67f-ec028f0ddf6e",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Marco Bezzecchi",
+          "Aprilia"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR007",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_008",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Horizon Mirage",
+      "rarity": "R",
+      "team": "Sakura Forge",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_008_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_005",
+      "vehicleParodyName": "Phoenix 213",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_005_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Joan Mir",
+        "url": "https://www.motogp.com/en/riders/joan-mir/f55f9c34-8621-437b-ae04-ae2418720204",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Joan Mir",
+          "Honda"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR008",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_009",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Torak Razzle",
+      "rarity": "Epic",
+      "team": "Blue Melody Works",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_009_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_004",
+      "vehicleParodyName": "Echo V4",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_004_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Toprak Razgatlıoğlu",
+        "url": "https://www.motogp.com/en/riders/toprak-razgatlioglu/c883a3b8-17ce-419d-b71b-32c252f6fc7e",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Toprak Razgatlıoğlu",
+          "Yamaha"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR009",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_010",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Ayo Oguramen",
+      "rarity": "R",
+      "team": "Late Bloom Garage",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_MOTO_ENT_010_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_006",
+      "vehicleParodyName": "Night Petal",
+      "vehicleArt": {
+        "slot": "PENDING_NIGHT_PETAL_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "real": {
+        "name": "Ai Ogura",
+        "url": "https://www.motogp.com/en/riders/ai-ogura/244b6f51-ac33-40ee-876d-9401dc9d1346",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Ai Ogura",
+          "Aprilia"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "MR010",
+        "internalNote": "Combined rider and bike entry. H/M/L bands are not stored here. Acceleration and handling were not verified."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_011",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Nectar Shift",
+      "rarity": "N",
+      "team": "Late Bloom Garage",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_011_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_006",
+      "vehicleParodyName": "Night Petal",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_006_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_012",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Koi Cascade",
+      "rarity": "N",
+      "team": "Sakura Forge",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_012_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_005",
+      "vehicleParodyName": "Phoenix 213",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_005_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_013",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Ramen Knee",
+      "rarity": "R",
+      "team": "Noodle Knee Sliders",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_013_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_007",
+      "vehicleParodyName": "Broth Blade",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_007_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_014",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Udon Apex",
+      "rarity": "N",
+      "team": "Noodle Knee Sliders",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_014_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_007",
+      "vehicleParodyName": "Broth Blade",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_007_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_015",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Palm Visor",
+      "rarity": "R",
+      "team": "Coconut Visor Club",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_015_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_008",
+      "vehicleParodyName": "Shell Shock",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_008_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_016",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Reef Tuck",
+      "rarity": "N",
+      "team": "Coconut Visor Club",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_016_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_008",
+      "vehicleParodyName": "Shell Shock",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_008_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_017",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Bao Lean",
+      "rarity": "R",
+      "team": "Dumpling Lean Works",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_017_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_009",
+      "vehicleParodyName": "Steam Slider",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_009_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_018",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Gyoza Hairpin",
+      "rarity": "N",
+      "team": "Dumpling Lean Works",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_018_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_009",
+      "vehicleParodyName": "Steam Slider",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_009_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_019",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Dill Tuck",
+      "rarity": "R",
+      "team": "Pickle Fairing Co",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_019_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_010",
+      "vehicleParodyName": "Brine Rocket",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_010_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_020",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Spear Gasket",
+      "rarity": "N",
+      "team": "Pickle Fairing Co",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_020_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_010",
+      "vehicleParodyName": "Brine Rocket",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_010_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_021",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Maple Knee",
+      "rarity": "R",
+      "team": "Waffle Trail Gang",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_021_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_011",
+      "vehicleParodyName": "Syrup Snake",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_011_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    {
+      "id": "SPC_MOTO_ENT_022",
+      "sport": "moto",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Butter Apex",
+      "rarity": "N",
+      "team": "Waffle Trail Gang",
+      "bannerId": "SPORT_MOTO",
+      "stats": {
+        "TopSpeed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_MOTO_ENT_022_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_MOTO_VEH_011",
+      "vehicleParodyName": "Syrup Snake",
+      "vehicleArt": {
+        "slot": "SPC_MOTO_VEH_011_BODY",
+        "placeholder": true
+      },
+      "gameTraits": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    }
+  ]
+}

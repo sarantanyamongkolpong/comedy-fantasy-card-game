@@ -1,0 +1,1703 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "football",
+  "status": "PROPOSED",
+  "athletes": [
+    {
+      "id": "SPC_FOOTBALL_ATH_001",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Theo Court-Tea",
+      "rarity": "Epic",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 44,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 91,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 47,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_001_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Thibaut Courtois",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250011668--thibaut-courtois/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Thibaut Courtois"
+        ],
+        "verifiedRawMetrics": "4 appearances; 19 saves; pass accuracy 83%",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB001",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_002",
+      "sport": "football",
+      "kind": "card",
+      "role": "RB/RWB",
+      "parodyName": "Ash-Raf Haki-Mi",
+      "rarity": "R",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 59,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 69,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_002_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Achraf Hakimi",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250088061--achraf-hakimi/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Achraf Hakimi"
+        ],
+        "verifiedRawMetrics": "8 tackles; 14 recoveries; top speed 34.05 km/h (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB002",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_003",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Virgil Van Brick",
+      "rarity": "Epic",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 54,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_003_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Virgil van Dijk",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/50327420--virgil-van-dijk/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Virgil van Dijk"
+        ],
+        "verifiedRawMetrics": "19 recoveries; 92.25% pass accuracy (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB003",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_004",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Willy Patchwork",
+      "rarity": "N",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 53,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 61,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_004_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Willian Pacho",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250174126--willian-pacho/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Willian Pacho"
+        ],
+        "verifiedRawMetrics": "26 recoveries; 91% pass accuracy (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB004",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_005",
+      "sport": "football",
+      "kind": "card",
+      "role": "LB/LWB",
+      "parodyName": "Noodle Mendez",
+      "rarity": "N",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 56,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_005_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Nuno Mendes",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250136465--nuno-mendes/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Nuno Mendes"
+        ],
+        "verifiedRawMetrics": "5 tackles; top speed 35.16 km/h (2 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB005",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_006",
+      "sport": "football",
+      "kind": "card",
+      "role": "DM",
+      "parodyName": "Carousel Six",
+      "rarity": "Epic",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 57,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_006_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Rodri",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250082664--rodri/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Rodri"
+        ],
+        "verifiedRawMetrics": "95.25% pass accuracy; 34.43 km covered (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB006",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_007",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Penne Al-Dente",
+      "rarity": "R",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_007_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Pedri",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250143693--pedri/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Pedri"
+        ],
+        "verifiedRawMetrics": "94.25% pass accuracy; 1 assist (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB007",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_008",
+      "sport": "football",
+      "kind": "card",
+      "role": "AM",
+      "parodyName": "Jude Belly-Ham",
+      "rarity": "Epic",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 55,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_008_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Jude Bellingham",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250128377--jude-bellingham/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Jude Bellingham"
+        ],
+        "verifiedRawMetrics": "1 goal; 88% pass accuracy (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB008",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_009",
+      "sport": "football",
+      "kind": "card",
+      "role": "LW",
+      "parodyName": "Vinnie Juicebox Jr.",
+      "rarity": "R",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 48,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 89,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_009_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Vinícius Júnior",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250121533--vinicius-junior/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Vinícius Júnior"
+        ],
+        "verifiedRawMetrics": "8 attempts; top speed 33.67 km/h (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB009",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_010",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Earl Haa-Landlord",
+      "rarity": "EX",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 85,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_010_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Erling Haaland",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250103758--erling-haaland/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Erling Haaland"
+        ],
+        "verifiedRawMetrics": "5 goals; 17 attempts (3 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB010",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_011",
+      "sport": "football",
+      "kind": "card",
+      "role": "RW",
+      "parodyName": "Lemon Yammal",
+      "rarity": "Epic",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 45,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_011_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Lamine Yamal",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250176450--lamine-yamal/statistics/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Lamine Yamal"
+        ],
+        "verifiedRawMetrics": "3 goals; 4 assists; 41 dribbles (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB011",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_012",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST/LW",
+      "parodyName": "Killian Map-Pay",
+      "rarity": "EX",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_012_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Kylian Mbappé",
+        "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250076574--kylian-mbappe/",
+        "season": "UCL 2026/27",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Kylian Mbappé"
+        ],
+        "verifiedRawMetrics": "4 goals; 17 attempts; 36.41 km/h (4 apps)",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB012",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_013",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST/RW",
+      "parodyName": "Lion Messo",
+      "rarity": "EX",
+      "team": "Banquet Select XI",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 91,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 41,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_013_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Lionel Messi",
+        "url": "https://www.mlssoccer.com/news/inter-miami-cf-forward-lionel-messi-wins-2026-mls-golden-boot-presented-by-audi",
+        "season": "MLS 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Lionel Messi",
+          "Inter Miami CF"
+        ],
+        "verifiedRawMetrics": "26 goals; MLS Golden Boot 2026",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "FB013",
+        "internalNote": "Identity metadata only. Placeholder ratings are not a normalization of the evidence string."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_014",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Pickle Palms",
+      "rarity": "R",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 46,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_014_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_015",
+      "sport": "football",
+      "kind": "card",
+      "role": "RB",
+      "parodyName": "Crust Crumb",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 59,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_015_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_016",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Brine Wall",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 61,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_016_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_017",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Jar Lid",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 49,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_017_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_018",
+      "sport": "football",
+      "kind": "card",
+      "role": "LB",
+      "parodyName": "Vinegar Lane",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 58,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_018_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_019",
+      "sport": "football",
+      "kind": "card",
+      "role": "DM",
+      "parodyName": "Seed Pocket",
+      "rarity": "R",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 57,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 65,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 85,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_019_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_020",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Relish Pass",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 63,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_020_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_021",
+      "sport": "football",
+      "kind": "card",
+      "role": "AM",
+      "parodyName": "Mustard Through",
+      "rarity": "R",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 54,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_021_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_022",
+      "sport": "football",
+      "kind": "card",
+      "role": "LW",
+      "parodyName": "Dill Whip",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 83,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 47,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 85,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_022_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_023",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Gherkin Strike",
+      "rarity": "Epic",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_023_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_024",
+      "sport": "football",
+      "kind": "card",
+      "role": "RW",
+      "parodyName": "Crunch Cross",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 81,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 41,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_024_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_025",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Spare Cask",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 46,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_025_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_026",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Oak Barrel",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 49,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 67,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_026_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_027",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Sweet Relish",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_027_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_028",
+      "sport": "football",
+      "kind": "card",
+      "role": "LW",
+      "parodyName": "Side Salad",
+      "rarity": "N",
+      "team": "Gherkin Rovers",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 46,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Speed": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Acc": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_028_PORTRAIT",
+        "placeholder": true
+      }
+    }
+  ]
+}

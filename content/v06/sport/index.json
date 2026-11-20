@@ -1,0 +1,108 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "status": "PROPOSED",
+  "currency": "G",
+  "bannerIds": [
+    "SPORT_FOOTBALL",
+    "SPORT_BASKET",
+    "SPORT_CAR",
+    "SPORT_MOTO"
+  ],
+  "rarities": [
+    "N",
+    "R",
+    "Epic",
+    "EX"
+  ],
+  "statKeys": {
+    "football": [
+      "Power",
+      "Def",
+      "Speed",
+      "Sta",
+      "Acc"
+    ],
+    "basket": [
+      "Shooting",
+      "Def",
+      "Spd",
+      "Sta"
+    ],
+    "car": [
+      "TopSpeed",
+      "Accel",
+      "Handling"
+    ],
+    "moto": [
+      "TopSpeed",
+      "Accel",
+      "Handling"
+    ]
+  },
+  "files": {
+    "football_athletes": "football/athletes.json",
+    "football_coaches": "football/coaches.json",
+    "football_teams": "football/teams.json",
+    "football_venues": "football/venues.json",
+    "football_formations": "football/formations.json",
+    "basket_athletes": "basket/athletes.json",
+    "basket_coaches": "basket/coaches.json",
+    "basket_teams": "basket/teams.json",
+    "basket_venues": "basket/venues.json",
+    "basket_schemes": "basket/schemes.json",
+    "car_athletes": "car/athletes.json",
+    "car_coaches": "car/coaches.json",
+    "car_teams": "car/teams.json",
+    "car_vehicles": "car/vehicles.json",
+    "car_tracks": "car/tracks.json",
+    "car_tactics": "car/tactics.json",
+    "moto_athletes": "moto/athletes.json",
+    "moto_coaches": "moto/coaches.json",
+    "moto_teams": "moto/teams.json",
+    "moto_vehicles": "moto/vehicles.json",
+    "moto_tracks": "moto/tracks.json",
+    "moto_tactics": "moto/tactics.json"
+  },
+  "counts": {
+    "cards": {
+      "value": 104,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "footballAthletes": {
+      "value": 28,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "basketAthletes": {
+      "value": 21,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "carEntries": {
+      "value": 22,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "motoEntries": {
+      "value": 22,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "sources": {
+      "value": 144,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    }
+  },
+  "internalGaps": [
+    "Football workbook lists 13 athletes and one goalkeeper and does not link them to the four clubs. Banquet Select XI is an original exhibition side. Gherkin Rovers is an original opponent.",
+    "Basket workbook lists 10 athletes and no bench. Hardwood Exhibition and Gravy Garden supply fives with benches. Flavor Court is an original court because that franchise had no arena row.",
+    "One researched basket coach is a former head coach. The card must not be shown as an active head coach. See that coach real block.",
+    "Car workbook has six squads. Five original teams complete a two-entry grid. Acceleration and handling were not given verified numbers.",
+    "Moto workbook has ten riders and five manufacturers. One manufacturer had a single rider and one had three. Original teammates and teams complete an eleven-squad grid. H/M/L traits are game-only.",
+    "Rarity, odds, pity, pull cost, rewards, and match lengths are proposals. Nothing here is approved for release."
+  ],
+  "internalNote": "Clients should read this index and the linked files. Render parody fields only."
+}
