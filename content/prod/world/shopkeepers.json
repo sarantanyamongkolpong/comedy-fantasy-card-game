@@ -22,7 +22,7 @@
         "hotspotLocked": false
       },
       "displayName": "Blank Tag Counter",
-      "pitch": "Blank tags on purpose. The counter can list every current mall row and still ring up nothing.",
+      "pitch": "Blank tags on purpose. Currencies and how they are earned come first, then gacha prices, then these shop prices, then the companion system. Nothing charges until an Economy Balance review passes.",
       "canonRules": [
         "MAP-06",
         "HOME-09",
@@ -302,7 +302,7 @@
         "hotspotLocked": false
       },
       "displayName": "Three Booths",
-      "pitch": "Three test booths. Weights are not copied. No amount sits beside the currency name.",
+      "pitch": "Three test booths. Weights are not copied. Currencies come before prices. No booth charges until an Economy Balance review passes.",
       "canonRules": [
         "MAP-07",
         "GA-01",

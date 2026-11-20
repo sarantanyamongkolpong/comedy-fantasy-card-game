@@ -193,7 +193,7 @@
         "hotspotLocked": true
       },
       "title": "Stretch, then stop",
-      "body": "Coach Stretch counts a stretch for four games that are not in the build. You may touch your toes. The lock on the door does not loosen. Coming soon remains the only score.",
+      "body": "Coach Stretch counts a stretch for four games that are not playable. You may touch your toes. Coming soon stays on those activities only. An opened activity would not keep the sign, and the door stays locked until one exists.",
       "npcId": "NPC_SPORTS_COACH",
       "mentionsCardIds": [],
       "mentionsAvatarIds": [],

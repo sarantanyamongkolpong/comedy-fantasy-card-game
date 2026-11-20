@@ -96,7 +96,7 @@
 <section><h2>NPCs</h2><article>
 <h3>The Doormat</h3>
 <p class="id">NPC_HOME_DOORMAT · The Doormat · unique_dialogue_role · greeter · Hideout</p>
-<blockquote>Wipe your boots. I am the doormat, and my ambitions are flat. The picture on the wall is the Cabin until a real tier change, and peeking at the brochure does not buy the Penthouse.</blockquote><blockquote>Stash is the bag. Team and deck are the other door. I do not hold cards. Installed furniture does. The Cabin number is still blank, and I am not filling it in.</blockquote>
+<blockquote>Wipe your boots. I am the doormat, and my ambitions are flat. The picture on the wall is the Cabin until a real tier change, and peeking at the brochure does not buy the Penthouse.</blockquote><blockquote>The Cabin starts with 50 Stash slots, 3 Decks, and 2 Companions. Each of those is its own capacity. I still do not hold the cards. Installed furniture does.</blockquote>
 </article><article>
 <h3>Archivist Echo</h3>
 <p class="id">NPC_TOWER_ARCHIVIST · Archivist Echo · unique_dialogue_role · archivist · Mysterious Tower</p>
@@ -104,11 +104,11 @@
 </article><article>
 <h3>Announcer Announcer</h3>
 <p class="id">NPC_ARENA_ANNOUNCER · Announcer Announcer · unique_dialogue_role · announcer · Tournament Arena</p>
-<blockquote>In this corner, a practice echo. In the other corner, also a practice echo. A second human has not bought a ticket, because tickets are not a system yet.</blockquote><blockquote>If Justin Time is late, that is the joke and also the schedule. Justin Case is here just in case. Justin Theory has a theory about the seating chart. Justina Moment would like the moment noted. I announce the exhibition, and then I sit down.</blockquote>
+<blockquote>Training against the AI comes first. The other seat can hold a later PvP match, and that match is not in this pack.</blockquote><blockquote>If Justin Time is late, that is the joke and also the schedule. Justin Case is here just in case. Justin Theory has a theory about the seating chart. Justina Moment would like the moment noted. I announce the exhibition, and then I sit down.</blockquote>
 </article><article>
 <h3>Coach Stretch</h3>
 <p class="id">NPC_SPORTS_COACH · Coach Stretch · unique_dialogue_role · coach · Sports Complex</p>
-<blockquote>Football, basketball, racing, and MotoGP are stretching off-screen. Coming soon. I will lead the stretch. I will not start the match.</blockquote><blockquote>The pin on the map is real. The four games are not in this pack. There is no season to sell, because there is no season.</blockquote>
+<blockquote>Football, basketball, racing, and MotoGP are stretching off-screen. Coming soon, because none of them is playable yet. An activity that opens is available at once. I will not start the match.</blockquote><blockquote>The pin on the map is real. The four games are not in this pack. There is no season to sell, because there is no season.</blockquote>
 </article><article>
 <h3>Pullbert</h3>
 <p class="id">NPC_GACHA_ATTENDANT · Pullbert · unique_dialogue_role · attendant · Gachapon</p>
@@ -121,7 +121,7 @@
 <section><h2>Shopkeepers</h2><article>
 <h3>Blank Tag Counter</h3>
 <p class="id">SHOP_MALL_BLANK_TAGS · checkout off</p>
-<p>Blank tags on purpose. The counter can list every current mall row and still ring up nothing.</p>
+<p>Blank tags on purpose. Currencies and how they are earned come first, then gacha prices, then these shop prices, then the companion system. Nothing charges until an Economy Balance review passes.</p>
 <table>
 <thead><tr><th>Offer</th><th>Name</th><th>Mall label</th><th>Currency name</th><th>Amount</th></tr></thead>
 <tbody><tr>
@@ -201,7 +201,7 @@
 </article><article>
 <h3>Three Booths</h3>
 <p class="id">SHOP_GACHA_THREE_BOOTHS · checkout off</p>
-<p>Three test booths. Weights are not copied. No amount sits beside the currency name.</p>
+<p>Three test booths. Weights are not copied. Currencies come before prices. No booth charges until an Economy Balance review passes.</p>
 <table>
 <thead><tr><th>Offer</th><th>Name</th><th>Mall label</th><th>Currency name</th><th>Amount</th></tr></thead>
 <tbody><tr>
@@ -243,7 +243,7 @@
 </article><article>
 <h3>Stretch, then stop</h3>
 <p class="id">EVT_SPORTS_GROUP_STRETCH · Sports Complex · not a quest</p>
-<p>Coach Stretch counts a stretch for four games that are not in the build. You may touch your toes. The lock on the door does not loosen. Coming soon remains the only score.</p>
+<p>Coach Stretch counts a stretch for four games that are not playable. You may touch your toes. Coming soon stays on those activities only. An opened activity would not keep the sign, and the door stays locked until one exists.</p>
 <p class="pending">Reward kinds: G, materials, decorations. Amounts PENDING. Difficulty cap PENDING. Premium currency stays out of large grants. Status: PENDING_OWNER.</p>
 </article><article>
 <h3>Pamphlet with no amounts</h3>
@@ -271,7 +271,7 @@
 </article><article>
 <h3>4. End the turn yourself</h3>
 <p class="id">TUT_BATTLE_TURN · battle · battle · first</p>
-<p>Action cards command the avatars. Avatar cards stay out of the deck. You begin a turn at 5 AP, and spending the last point does not end the turn for you. Press END TURN. Play card asks for a target. Draw, Discard, and The Void stay separate piles. The opponent on this screen is a practice echo of your Justins. The catalog echoes with Placeholder names are a different list, and this prompt does not swap them in.</p>
+<p>Action cards command the avatars. Avatar cards stay out of the deck. You begin a turn at 5 AP, and spending the last point does not end the turn for you. Press END TURN. Play card asks for a target. Draw, Discard, and The Void stay separate piles. Testing cites ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies on this screen stay Placeholder until a real enemy set exists. This prompt does not retarget the battle builder.</p>
 </article><article>
 <h3>5. Nap, or kettle</h3>
 <p class="id">TUT_REWARDS_ONCE · rewards · rewards · first</p>
@@ -279,7 +279,7 @@
 </article><article>
 <h3>6. The Cabin is the house</h3>
 <p class="id">TUT_HIDEOUT_CABIN · hideout · home · later</p>
-<p>You live in the Cabin until a tier actually changes. Tap a higher tier to peek. Peeking does not upgrade you, and a tier change does not add stash slots by itself. Installed furniture is what holds cards. The Cabin number is blank. Stash, Team and Deck, and the World Map are the doors.</p>
+<p>You live in the Cabin until a tier actually changes. Tap a higher tier to peek. Peeking does not upgrade you, and a tier change does not add stash slots by itself. The Cabin starts with 50 Stash slots, 3 Decks, and 2 Companions. Each of those is its own capacity. Stash, Team and Deck, and the World Map are the doors.</p>
 </article><article>
 <h3>7. Bags, stacks, and blanks</h3>
 <p class="id">TUT_STASH_FILTERS · stash · stash · later</p>
@@ -299,7 +299,7 @@
 </article></section>
 <section>
 <h2>Encounter order</h2>
-<p>A suggested encounter order for the two battle pins. It is not a main quest, it is not enforced by the client, and it does not close the hideout, the mall, or the gachapon.</p>
+<p>Main areas are open from the start. Special areas and some dungeons unlock by tower progress, and this pack does not add those areas. The encounter order for the two battle pins is not a main quest and is not enforced by the client.</p>
 <p class="pending">ENM_DEMO_004 stays in the roster. Tag: Missing Artwork. Placeholder image: web/assets/illustrations/ILLUST_ACTION_GENERIC.svg.</p>
 <ol class="chain"><li><span class="id">ST_TOWER_ORIENTATION</span> — Echo orientation <span class="pending">(Lobby naps, unlock amount empty)</span></li><li><span class="id">ST_TOWER_REMATCH</span> — Same nap, second bell <span class="pending">(Lobby naps, unlock amount empty)</span></li><li><span class="id">ST_ARENA_EXHIBITION</span> — Exhibition echoes <span class="pending">(Exhibition night, unlock amount empty)</span></li><li><span class="id">ST_ARENA_REMATCH</span> — Encore, still unnamed <span class="pending">(Exhibition night, unlock amount empty)</span></li></ol>
 <h3>Open from the start</h3>
@@ -307,7 +307,7 @@
 <h3>Not in the chain</h3>
 <ul><li>Sports Complex stays out of the chain. <span class="id">NODE_SPORTS_LOCKED</span></li></ul>
 </section>
-<section><h2>Questions</h2><p>OQ_G_01 through OQ_G_08 stay OPEN. OQ_G_09 through OQ_G_13 are OWNER_DECIDED in the decision log, not LOCKED.</p><ol><li><span class="id">OQ_G_01</span> <span class="pending">OPEN</span> Should the map stay ungated, with this encounter order only as a suggestion, or should clearing a tower stage ever hide a pin? There is no main quest, and tower floors are still open.</li><li><span class="id">OQ_G_02</span> <span class="pending">OPEN</span> How many tower floors should exist, and will later floors get new enemy records? The catalog currently has one battle and four placeholder echoes.</li><li><span class="id">OQ_G_03</span> <span class="pending">OPEN</span> Should live battles keep using echo copies of the four Justins, or load the catalog enemy team? This pack does not retarget the battle builder.</li><li><span class="id">OQ_G_04</span> <span class="pending">OPEN</span> Mall prices, furniture grant versus buy, gacha amounts for the currency named G, and companion currency are open. Every amount in this pack is empty. Which of those should be decided before a counter can charge?</li><li><span class="id">OQ_G_05</span> <span class="pending">OPEN</span> Cabin base storage is still open. This pack does not set it. What should the starting capacity be, if the Cabin has one?</li><li><span class="id">OQ_G_06</span> <span class="pending">OPEN</span> Arena multiplayer is still open. These exhibition stages are practice echoes. Should a second player exist before the arena is anything besides practice?</li><li><span class="id">OQ_G_07</span> <span class="pending">OPEN</span> The Sports Complex pin is real and the four games are out of scope. Should world copy keep saying coming soon, or stay silent until those games exist?</li><li><span class="id">OQ_G_08</span> <span class="pending">OPEN</span> Hotspot site ids and locked map destination ids differ for the tower, the arena, the mall, and the sports pin. Which id should later content treat as canonical? This pack stores both and renames neither.</li><li><span class="id">OQ_G_09</span> <span class="pending">OWNER_DECIDED</span> Should a side event ever grant a reward, and if so what kind? Amounts are not proposed.</li><li><span class="id">OQ_G_10</span> <span class="pending">OWNER_DECIDED</span> These tutorial prompts are data only and are not shown in the client. Should a later pass hook them into the screens, or keep them as writer copy?</li><li><span class="id">OQ_G_11</span> <span class="pending">OWNER_DECIDED</span> No named companion exists in the catalog, so none was invented. Should the hideout companion room have a named speaker later?</li><li><span class="id">OQ_G_12</span> <span class="pending">OWNER_DECIDED</span> The support catalog enemy has no battle sprite. Progression still cites that enemy id. Should floors wait for a sprite, or keep citing the id?</li><li><span class="id">OQ_G_13</span> <span class="pending">OWNER_DECIDED</span> The core loop note names Upgrade after rewards, and material recipes are still open. This pack does not add an upgrade step or an amount. Should upgrade stay out of world copy until those recipes exist?</li></ol></section>
+<section><h2>Questions</h2><p>OQ_G_01 through OQ_G_13 are OWNER_DECIDED in the decision log, not LOCKED.</p><ol><li><span class="id">OQ_G_01</span> <span class="pending">OWNER_DECIDED</span> Should the map stay ungated, with this encounter order only as a suggestion, or should clearing a tower stage ever hide a pin? There is no main quest, and tower floors are still open.</li><li><span class="id">OQ_G_02</span> <span class="pending">OWNER_DECIDED</span> How many tower floors should exist, and will later floors get new enemy records? The catalog currently has one battle and four placeholder echoes.</li><li><span class="id">OQ_G_03</span> <span class="pending">OWNER_DECIDED</span> Should live battles keep using echo copies of the four Justins, or load the catalog enemy team? This pack does not retarget the battle builder.</li><li><span class="id">OQ_G_04</span> <span class="pending">OWNER_DECIDED</span> Mall prices, furniture grant versus buy, gacha amounts for the currency named G, and companion currency are open. Every amount in this pack is empty. Which of those should be decided before a counter can charge?</li><li><span class="id">OQ_G_05</span> <span class="pending">OWNER_DECIDED</span> Cabin base storage is still open. This pack does not set it. What should the starting capacity be, if the Cabin has one?</li><li><span class="id">OQ_G_06</span> <span class="pending">OWNER_DECIDED</span> Arena multiplayer is still open. These exhibition stages are practice echoes. Should a second player exist before the arena is anything besides practice?</li><li><span class="id">OQ_G_07</span> <span class="pending">OWNER_DECIDED</span> The Sports Complex pin is real and the four games are out of scope. Should world copy keep saying coming soon, or stay silent until those games exist?</li><li><span class="id">OQ_G_08</span> <span class="pending">OWNER_DECIDED</span> Hotspot site ids and locked map destination ids differ for the tower, the arena, the mall, and the sports pin. Which id should later content treat as canonical? This pack stores both and renames neither.</li><li><span class="id">OQ_G_09</span> <span class="pending">OWNER_DECIDED</span> Should a side event ever grant a reward, and if so what kind? Amounts are not proposed.</li><li><span class="id">OQ_G_10</span> <span class="pending">OWNER_DECIDED</span> These tutorial prompts are data only and are not shown in the client. Should a later pass hook them into the screens, or keep them as writer copy?</li><li><span class="id">OQ_G_11</span> <span class="pending">OWNER_DECIDED</span> No named companion exists in the catalog, so none was invented. Should the hideout companion room have a named speaker later?</li><li><span class="id">OQ_G_12</span> <span class="pending">OWNER_DECIDED</span> The support catalog enemy has no battle sprite. Progression still cites that enemy id. Should floors wait for a sprite, or keep citing the id?</li><li><span class="id">OQ_G_13</span> <span class="pending">OWNER_DECIDED</span> The core loop note names Upgrade after rewards, and material recipes are still open. This pack does not add an upgrade step or an amount. Should upgrade stay out of world copy until those recipes exist?</li></ol></section>
 </main>
 </body>
 </html>

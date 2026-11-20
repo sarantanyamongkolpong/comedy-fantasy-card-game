@@ -42,7 +42,21 @@ const FIRST_ROUND = new Set(['map', 'prep_battle', 'battle', 'rewards']);
 const LATER_ROUND = new Set(['gacha', 'hideout', 'stash', 'deck', 'mall']);
 const REWARD_KINDS = Object.freeze(['G', 'materials', 'decorations']);
 const MISSING_ARTWORK_ID = 'ENM_DEMO_004';
-const OWNER_DECIDED_QUESTIONS = new Set(['OQ_G_09', 'OQ_G_10', 'OQ_G_11', 'OQ_G_12', 'OQ_G_13']);
+const QUESTION_DECISIONS = Object.freeze({
+  OQ_G_01: 't280u',
+  OQ_G_02: 't280u',
+  OQ_G_03: 't279u',
+  OQ_G_04: 't279u',
+  OQ_G_05: 't279u',
+  OQ_G_06: 't279u',
+  OQ_G_07: 't279u',
+  OQ_G_08: 't279u',
+  OQ_G_09: 't276u',
+  OQ_G_10: 't276u',
+  OQ_G_11: 't276u',
+  OQ_G_12: 't276u',
+  OQ_G_13: 't276u',
+});
 const LOOP_SCREEN = Object.freeze({
   map: 'map',
   prep_battle: 'prep',
@@ -273,15 +287,13 @@ function checkQuestionOrder(questions, errors) {
 
 function checkQuestionResolutions(questions, errors) {
   for (const question of questions) {
-    const decided = OWNER_DECIDED_QUESTIONS.has(question.id);
-    if (decided) {
-      if (question.resolution !== 'OWNER_DECIDED' || question.decisionSource !== 't276u' || question.decidedOn !== '2026-11-20') {
-        errors.push(`${question.id}: owner decision t276u on 2026-11-20 must stay OWNER_DECIDED`);
-      }
+    const source = QUESTION_DECISIONS[question.id];
+    if (!source) {
+      errors.push(`${question.id}: missing owner decision source`);
       continue;
     }
-    if (question.resolution !== 'OPEN' || question.decisionSource !== null || question.decidedOn !== null) {
-      errors.push(`${question.id}: still OPEN`);
+    if (question.resolution !== 'OWNER_DECIDED' || question.decisionSource !== source || question.decidedOn !== '2026-11-20') {
+      errors.push(`${question.id}: owner decision ${source} on 2026-11-20 must stay OWNER_DECIDED`);
     }
   }
 }

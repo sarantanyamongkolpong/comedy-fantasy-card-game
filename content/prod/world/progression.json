@@ -8,7 +8,7 @@
   "gatesCoreLoop": false,
   "enforcedByClient": false,
   "proposedOrderOnly": true,
-  "summary": "A suggested encounter order for the two battle pins. It is not a main quest, it is not enforced by the client, and it does not close the hideout, the mall, or the gachapon.",
+  "summary": "Main areas are open from the start. Special areas and some dungeons unlock by tower progress, and this pack does not add those areas. The encounter order for the two battle pins is not a main quest and is not enforced by the client.",
   "canonRules": [
     "MAP-08",
     "OPEN-07",
@@ -21,7 +21,7 @@
       "designStatus": "PROPOSED",
       "order": 1,
       "title": "Lobby naps",
-      "summary": "The tower is the lore pin. These stages reuse the only catalog enemy team and do not pretend a new floor list exists.",
+      "summary": "The tower is the lore pin. Testing uses the existing ENM_DEMO team. This pack does not add the later floor list.",
       "building": {
         "assetId": "MAP_BLD_TOWER",
         "hotspotId": "tower",
@@ -48,7 +48,7 @@
           "designStatus": "PROPOSED",
           "order": 1,
           "title": "Echo orientation",
-          "summary": "The only enemy team in the catalog lines up in the lobby. The live fight still uses echo copies of the four Justins. This stage names both facts and unlocks nothing you can spend.",
+          "summary": "Testing lines up ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. This stage unlocks nothing you can spend.",
           "building": {
             "assetId": "MAP_BLD_TOWER",
             "hotspotId": "tower",
@@ -100,7 +100,7 @@
               "AVT_SAN_002"
             ],
             "deckId": "DECK_DEMO_MIXED_001",
-            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
           },
           "requiresStageId": null,
           "enforcedByClient": false,
@@ -136,7 +136,7 @@
           "designStatus": "PROPOSED",
           "order": 2,
           "title": "Same nap, second bell",
-          "summary": "The same four catalog echoes, in the same battle record, after orientation. A distinct floor roster does not exist yet, so the rematch admits it is a rematch.",
+          "summary": "The same ENM_DEMO team, in the same battle record, after orientation. Justin echo copies stay Placeholder. This pack does not add a new floor roster.",
           "building": {
             "assetId": "MAP_BLD_TOWER",
             "hotspotId": "tower",
@@ -188,7 +188,7 @@
               "AVT_SAN_002"
             ],
             "deckId": "DECK_DEMO_MIXED_001",
-            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
           },
           "requiresStageId": "ST_TOWER_ORIENTATION",
           "enforcedByClient": false,
@@ -226,7 +226,7 @@
       "designStatus": "PROPOSED",
       "order": 2,
       "title": "Exhibition night",
-      "summary": "The arena is the battle pin. These stages are practice echoes, not a second player, and the client does not lock them behind the tower.",
+      "summary": "The arena is training against the AI first. The structure can hold a later PvP match, and this pack does not add one. The client does not lock these stages behind the tower.",
       "building": {
         "assetId": "MAP_BLD_ARENA",
         "hotspotId": "arena",
@@ -252,7 +252,7 @@
           "designStatus": "PROPOSED",
           "order": 1,
           "title": "Exhibition echoes",
-          "summary": "The banner says Tournament Arena. The opponent is still a practice echo. Clearing the tower rematch is the proposed order, and the client does not enforce it.",
+          "summary": "The banner says Tournament Arena. The opponent is the AI training echo. Clearing the tower rematch is the proposed order, and the client does not enforce it.",
           "building": {
             "assetId": "MAP_BLD_ARENA",
             "hotspotId": "arena",
@@ -304,7 +304,7 @@
               "AVT_SAN_002"
             ],
             "deckId": "DECK_DEMO_MIXED_001",
-            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
           },
           "requiresStageId": "ST_TOWER_REMATCH",
           "enforcedByClient": false,
@@ -392,7 +392,7 @@
               "AVT_SAN_002"
             ],
             "deckId": "DECK_DEMO_MIXED_001",
-            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
           },
           "requiresStageId": "ST_ARENA_EXHIBITION",
           "enforcedByClient": false,
@@ -471,7 +471,7 @@
       "availableFromStart": true,
       "includedInUnlockChain": false,
       "screenLive": true,
-      "note": "The mall pin opens the blank tag sheet immediately. Checkout stays off.",
+      "note": "The mall pin opens the blank tag sheet immediately. Checkout stays off until an Economy Balance review passes.",
       "G": null,
       "price": null,
       "priceStatus": "PENDING_OWNER",
@@ -497,7 +497,7 @@
       "availableFromStart": true,
       "includedInUnlockChain": false,
       "screenLive": true,
-      "note": "The gachapon pin opens the three test booths immediately. No stage gate, and no amount on the tag.",
+      "note": "The gachapon pin opens the three test booths immediately. No stage gate, no amount, and no charge until an Economy Balance review passes.",
       "G": null,
       "price": null,
       "priceStatus": "PENDING_OWNER",
@@ -530,7 +530,7 @@
         "MAP-04",
         "MAP-08"
       ],
-      "note": "The pin stays on the map. Football, basketball, racing, and MotoGP are not staged in this pack.",
+      "note": "Coming Soon covers only activities that are not playable. None of the four games is playable here, so the pin stays locked. An opened activity would be accessible immediately.",
       "G": null,
       "price": null,
       "priceStatus": "PENDING_OWNER",

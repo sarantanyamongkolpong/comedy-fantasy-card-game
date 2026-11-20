@@ -117,7 +117,7 @@
       "screen": "battle",
       "loopStep": "battle",
       "title": "End the turn yourself",
-      "body": "Action cards command the avatars. Avatar cards stay out of the deck. You begin a turn at 5 AP, and spending the last point does not end the turn for you. Press END TURN. Play card asks for a target. Draw, Discard, and The Void stay separate piles. The opponent on this screen is a practice echo of your Justins. The catalog echoes with Placeholder names are a different list, and this prompt does not swap them in.",
+      "body": "Action cards command the avatars. Avatar cards stay out of the deck. You begin a turn at 5 AP, and spending the last point does not end the turn for you. Press END TURN. Play card asks for a target. Draw, Discard, and The Void stay separate piles. Testing cites ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies on this screen stay Placeholder until a real enemy set exists. This prompt does not retarget the battle builder.",
       "pointsAt": {
         "hotspotId": null,
         "uiAnchorId": null,
@@ -189,7 +189,7 @@
       "screen": "home",
       "loopStep": "hideout",
       "title": "The Cabin is the house",
-      "body": "You live in the Cabin until a tier actually changes. Tap a higher tier to peek. Peeking does not upgrade you, and a tier change does not add stash slots by itself. Installed furniture is what holds cards. The Cabin number is blank. Stash, Team and Deck, and the World Map are the doors.",
+      "body": "You live in the Cabin until a tier actually changes. Tap a higher tier to peek. Peeking does not upgrade you, and a tier change does not add stash slots by itself. The Cabin starts with 50 Stash slots, 3 Decks, and 2 Companions. Each of those is its own capacity. Stash, Team and Deck, and the World Map are the doors.",
       "pointsAt": {
         "hotspotId": null,
         "uiAnchorId": null,

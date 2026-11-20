@@ -51,58 +51,58 @@
     {
       "id": "OQ_G_01",
       "text": "Should the map stay ungated, with this encounter order only as a suggestion, or should clearing a tower stage ever hide a pin? There is no main quest, and tower floors are still open.",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t280u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_02",
       "text": "How many tower floors should exist, and will later floors get new enemy records? The catalog currently has one battle and four placeholder echoes.",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t280u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_03",
       "text": "Should live battles keep using echo copies of the four Justins, or load the catalog enemy team? This pack does not retarget the battle builder.",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t279u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_04",
       "text": "Mall prices, furniture grant versus buy, gacha amounts for the currency named G, and companion currency are open. Every amount in this pack is empty. Which of those should be decided before a counter can charge?",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t279u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_05",
       "text": "Cabin base storage is still open. This pack does not set it. What should the starting capacity be, if the Cabin has one?",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t279u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_06",
       "text": "Arena multiplayer is still open. These exhibition stages are practice echoes. Should a second player exist before the arena is anything besides practice?",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t279u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_07",
       "text": "The Sports Complex pin is real and the four games are out of scope. Should world copy keep saying coming soon, or stay silent until those games exist?",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t279u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_08",
       "text": "Hotspot site ids and locked map destination ids differ for the tower, the arena, the mall, and the sports pin. Which id should later content treat as canonical? This pack stores both and renames neither.",
-      "resolution": "OPEN",
-      "decisionSource": null,
-      "decidedOn": null
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t279u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_09",

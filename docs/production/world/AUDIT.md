@@ -19,7 +19,7 @@ The live map is a fixed 1672×941 canvas (`web/assets-manifest.json` `designCanv
 | `MAP_BLD_GACHA` | `gacha` | `gachapon` | `gachapon` | Gachapon | `gacha` | — | no |
 | `MAP_BLD_MALL` | `mall` | `mall` | `shopping-mall` | Shopping Mall | `mall` | — | no |
 
-Hotspot `siteId` and the locked destination id in `content/v05/hideout/house-tiers.json` differ for the tower, arena, mall, and sports pin. Both ids are canon. This pack stores both and renames neither. The alias is recorded in `tools/content/world/canon.js` so a later edit cannot "fix" one side by dropping the other.
+t279u: the locked destination id is canonical. Hotspot `siteId`s that differ are mismatches, not a second canon id. Map code is outside Agent G ownership, so those `siteId`s are not renamed here. This pack still stores the live hotspot `siteId` beside the destination id and does not create a duplicate. Mismatches: `tower` / `mysterious-tower`, `arena` / `tournament-arena`, `sports` / `sports-complex`, `mall` / `shopping-mall`. `home` and `gachapon` already match. The alias in `tools/content/world/canon.js` only records that difference.
 
 Every building hotspot is `placementStatus: PROPOSED`. Shipped art is WebP with an SVG fallback, `review_status: GENERATED_REVIEW`. The mall hotspot carries an existing fit note: the dream box crossed the top of the master, so the shipped width is 280 and the anchor stays on the proposed pad. That note was not edited.
 
@@ -27,7 +27,7 @@ The sports pin shows the existing notice: football, basketball, racing, and Moto
 
 ## Hideout
 
-`web/js/screens/home.js` is the Hideout. There is no second hideout route. The ladder is the locked names Cabin → Bungalow → Cottage → Loft → Villa → Penthouse (`HOME-01`…`HOME-06`). `HOME-07` shows only the highest acquired tier. Peeking is a brochure and does not purchase. `HOME-08` takes stash capacity from installed furniture, pooled, and a tier upgrade adds no slots. `HOME-09` says the mall sells or unlocks furniture. `HOME-10` is auto-placement, no freehand editor. `HOME-11` (Cabin base capacity) and `OPEN-06` (grant versus unlock-to-buy, and prices) stay open. Sheet capacities already live in `content/v05/hideout/house-tiers.json`. They were not copied into this pack.
+`web/js/screens/home.js` is the Hideout. There is no second hideout route. The ladder is the locked names Cabin → Bungalow → Cottage → Loft → Villa → Penthouse (`HOME-01`…`HOME-06`). `HOME-07` shows only the highest acquired tier. Peeking is a brochure and does not purchase. `HOME-08` takes stash capacity from installed furniture, pooled, and a tier upgrade adds no slots. `HOME-09` says the mall sells or unlocks furniture. `HOME-10` is auto-placement, no freehand editor. t279u sets the Cabin start at 50 Stash slots, 3 Decks, and 2 Companions, each with its own capacity. Sheet tier capacities and prices were not copied. Grant versus buy and shop prices still wait on the economy order: currencies first, then gacha prices, shop prices, then the companion system. No counter charges until an Economy Balance review passes.
 
 Phase 3 furniture (`content/v05/hideout/phase3-furniture-art.json`) is art-only: seven asset ids, `capacity` null, `price` null, `PENDING_OWNER`. The mall screen lists those seven plus the five sheet pieces and prints PENDING on every row. Reference names on the sheet and labels on the mall screen are not identical (`Box` versus `Cottage box`, and different capitalization on the cabinet and counter). Offers keep the sheet name in `displayName` and the mall screen string in `mallScreenLabel`.
 
@@ -108,16 +108,16 @@ node --test tests/prod/g
 
 ## Open questions for the Owner
 
-The same list is `catalog.json` `openQuestions`, ids `OQ_G_01` through `OQ_G_13`. Questions 1–8 remain OPEN. Questions 9–13 are OWNER_DECIDED on 2026-11-20 from t276u, not LOCKED. The wording is in `docs/production/world/DECISION_LOG.md`.
+The same list is `catalog.json` `openQuestions`, ids `OQ_G_01` through `OQ_G_13`. All thirteen are OWNER_DECIDED, not LOCKED. Wording is in `docs/production/world/DECISION_LOG.md`.
 
-1. Should the map stay ungated, with this encounter order only as a suggestion, or should clearing a tower stage ever hide a pin?
-2. How many tower floors should exist, and will later floors get new enemy records? Only `DEMO_BATTLE_001` exists today.
-3. Should live battles keep using echo copies of the four Justins, or load the catalog enemy team? This pack does not retarget the builder.
-4. Mall prices, furniture grant versus buy, gacha amounts for the currency named G, and companion currency are open. Every amount here is empty. Which of those should be decided before a counter can charge?
-5. What is the Cabin base capacity, if the Cabin has one? `HOME-11` is untouched.
-6. Should a second player exist before the arena is anything besides practice? `MAP-05` multiplayer is still open.
-7. Should Sports Complex copy keep saying coming soon, or stay silent until the four games exist?
-8. Which id is canonical when hotspot `siteId` and the locked destination id differ? This pack stores both.
+1. OWNER_DECIDED (t280u). Main areas are open from the start. Special areas and some dungeons unlock by tower progress. None of those extra areas were added.
+2. OWNER_DECIDED (t280u). Tower structure is 100 floors in 10 zones of 10, with new enemies and a zone boss per zone, one zone at a time. No floor content and no new enemy records were created.
+3. OWNER_DECIDED (t279u). Testing uses `ENM_DEMO_*`. The four Justin echo copies stay Placeholder until a real enemy set exists.
+4. OWNER_DECIDED (t279u). Currencies and how they are earned come first, then gacha prices, shop prices, then the companion system. No charging until an Economy Balance review passes.
+5. OWNER_DECIDED (t279u). Cabin starts at 50 Stash slots, 3 Decks, and 2 Companions. Each system has its own capacity.
+6. OWNER_DECIDED (t279u). Arena training versus AI comes first. The structure stays ready for PvP later. No PvP match was added.
+7. OWNER_DECIDED (t279u). Coming Soon stays only on activities that are not playable. Opened activities are accessible immediately. The four sports are still not playable.
+8. OWNER_DECIDED (t279u). The locked destination id is canonical. Hotspot `siteId` mismatches are flagged above. Map code was not edited, and no duplicate id was created.
 9. OWNER_DECIDED. Side-event rewards may be G, materials, and decorations, capped by difficulty. Avoid large premium-currency grants. Amounts stay PENDING. No number was invented.
 10. OWNER_DECIDED. The tutorial script stays. Only the basic play path is first-round. Hideout, stash, deck, gacha, and mall prompts are tagged later.
 11. OWNER_DECIDED. Unique names are for characters with dialogue or a story role. Generic characters may use temporary names. No companion was named.

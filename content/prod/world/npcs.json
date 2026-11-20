@@ -25,7 +25,7 @@
       },
       "lines": [
         "Wipe your boots. I am the doormat, and my ambitions are flat. The picture on the wall is the Cabin until a real tier change, and peeking at the brochure does not buy the Penthouse.",
-        "Stash is the bag. Team and deck are the other door. I do not hold cards. Installed furniture does. The Cabin number is still blank, and I am not filling it in."
+        "The Cabin starts with 50 Stash slots, 3 Decks, and 2 Companions. Each of those is its own capacity. I still do not hold the cards. Installed furniture does."
       ],
       "mentionsAvatarIds": [],
       "mentionsCardIds": [],
@@ -108,7 +108,7 @@
         "hotspotLocked": false
       },
       "lines": [
-        "In this corner, a practice echo. In the other corner, also a practice echo. A second human has not bought a ticket, because tickets are not a system yet.",
+        "Training against the AI comes first. The other seat can hold a later PvP match, and that match is not in this pack.",
         "If Justin Time is late, that is the joke and also the schedule. Justin Case is here just in case. Justin Theory has a theory about the seating chart. Justina Moment would like the moment noted. I announce the exhibition, and then I sit down."
       ],
       "mentionsAvatarIds": [
@@ -153,7 +153,7 @@
         "hotspotLocked": true
       },
       "lines": [
-        "Football, basketball, racing, and MotoGP are stretching off-screen. Coming soon. I will lead the stretch. I will not start the match.",
+        "Football, basketball, racing, and MotoGP are stretching off-screen. Coming soon, because none of them is playable yet. An activity that opens is available at once. I will not start the match.",
         "The pin on the map is real. The four games are not in this pack. There is no season to sell, because there is no season."
       ],
       "mentionsAvatarIds": [],

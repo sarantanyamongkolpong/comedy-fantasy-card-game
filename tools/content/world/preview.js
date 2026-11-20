@@ -166,7 +166,7 @@ ${art}
 
 function questionSection(pack) {
   const items = pack.catalog.openQuestions.map((question) => `<li><span class="id">${esc(question.id)}</span> <span class="pending">${esc(question.resolution)}</span> ${esc(question.text)}</li>`).join('');
-  return `<section><h2>Questions</h2><p>OQ_G_01 through OQ_G_08 stay OPEN. OQ_G_09 through OQ_G_13 are OWNER_DECIDED in the decision log, not LOCKED.</p><ol>${items}</ol></section>`;
+  return `<section><h2>Questions</h2><p>OQ_G_01 through OQ_G_13 are OWNER_DECIDED in the decision log, not LOCKED.</p><ol>${items}</ol></section>`;
 }
 
 function label(key) {

@@ -90,19 +90,34 @@ test('every cited amount in the pack is null and pending', () => {
   }
 });
 
-test('owner decisions 09 through 13 are applied and 01 through 08 stay open', () => {
+test('all thirteen owner questions are decided and none stay open', () => {
   const world = pack();
+  const sources = {
+    OQ_G_01: 't280u',
+    OQ_G_02: 't280u',
+    OQ_G_03: 't279u',
+    OQ_G_04: 't279u',
+    OQ_G_05: 't279u',
+    OQ_G_06: 't279u',
+    OQ_G_07: 't279u',
+    OQ_G_08: 't279u',
+    OQ_G_09: 't276u',
+    OQ_G_10: 't276u',
+    OQ_G_11: 't276u',
+    OQ_G_12: 't276u',
+    OQ_G_13: 't276u',
+  };
   const questions = world.catalog.openQuestions;
-  for (const question of questions.slice(0, 8)) {
-    assert.equal(question.resolution, 'OPEN');
-    assert.equal(question.decisionSource, null);
-    assert.equal(question.decidedOn, null);
-  }
-  for (const question of questions.slice(8)) {
+  assert.equal(questions.length, 13);
+  for (const question of questions) {
     assert.equal(question.resolution, 'OWNER_DECIDED');
-    assert.equal(question.decisionSource, 't276u');
+    assert.equal(question.decisionSource, sources[question.id]);
     assert.equal(question.decidedOn, '2026-11-20');
   }
+  assert.equal(world.progression.chapters.flatMap((chapter) => chapter.stages).length, 4);
+  assert.equal(world.npcs[0].lines.some((line) => line.includes('50 Stash slots')), true);
+  assert.equal(world.npcs[3].building.siteId, 'sports');
+  assert.equal(world.npcs[3].building.mapDestinationId, 'sports-complex');
   const first = new Set(['TUT_MAP_WANDER', 'TUT_MAP_TOWER', 'TUT_PREP_READY', 'TUT_BATTLE_TURN', 'TUT_REWARDS_ONCE']);
   for (const tutorial of world.tutorials) {
     assert.equal(tutorial.round, first.has(tutorial.id) ? 'first' : 'later');
