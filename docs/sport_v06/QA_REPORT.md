@@ -1,6 +1,8 @@
 # SPORT COMPLEX v0.6 — QA report
 
 Stream: qa. Branch: `sport/v06-qa`. Base: `sport/v06-base` @ `d5da98a79803c03c963e5b1c88fe14aac78efbe2`.
+Draft PR: https://github.com/sarantanyamongkolpong/comedy-fantasy-card-game/pull/32 (into `sport/v06-base`, not merged).
+Harness commit: `2ce3dacd89e64b7ee282a4846fe339b7a7181c7e`.
 Measured 2026-11-20. No merge, no force-push, no deploy. `main`, PR #9, and hunter-life were not touched. This report does not assign a release status to any sport work.
 
 ## Phase 1 — v0.5 regression baseline
