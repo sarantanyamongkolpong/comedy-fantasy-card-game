@@ -243,8 +243,8 @@ function summarise(rows) {
     finishPct: r1((100 * rows.filter((r) => r.decided).length) / rows.length),
     within60Pct: r1((100 * rows.filter((r) => r.turns <= 60).length) / rows.length),
     playerWinPct: r1(100 * winP),
-    turns: { avg: r1(avg(t)), median: pct(t, 0.5), p90: pct(t, 0.9), max: Math.max(...t), min: Math.min(...t) },
-    waits: { avg: r1(avg(w)), median: pct(w, 0.5), p90: pct(w, 0.9), max: Math.max(...w) },
+    turns: { min: Math.min(...t), avg: r1(avg(t)), median: pct(t, 0.5), p90: pct(t, 0.9), p95: pct(t, 0.95), max: Math.max(...t) },
+    waits: { min: Math.min(...w), avg: r1(avg(w)), median: pct(w, 0.5), p90: pct(w, 0.9), p95: pct(w, 0.95), max: Math.max(...w) },
     avgWaitsPerTurn: r1(avg(rows.map((r) => r.waits / Math.max(1, r.turns)))),
     mechanics: Object.fromEntries(Object.keys(rows[0].m).map((k) => [k, sum(k)])),
     tauntRedirectPct: r1(100 * rows.reduce((a, r) => a + r.m.hitsOnTaunterInWindow, 0) / Math.max(1, rows.reduce((a, r) => a + r.m.hitsInTauntWindow, 0))),
@@ -257,7 +257,7 @@ const part = args.includes('--part') ? args[args.indexOf('--part') + 1] : 'all';
 const out = { seeds: SEEDS, part, timingMs: AUTO_TIMING.ms, matchups: {}, presets: {}, ablations: {} };
 const mins = (rows) => Object.fromEntries(Object.entries(AUTO_TIMING.ms).map(([k, ms]) => {
   const w = rows.map((r) => r.waits);
-  return [k, { avg: r1(avg(w) * ms / 60000), median: r1(pct(w, 0.5) * ms / 60000), p90: r1(pct(w, 0.9) * ms / 60000), max: r1(Math.max(...w) * ms / 60000) }];
+  return [k, { min: r1(Math.min(...w) * ms / 60000), avg: r1(avg(w) * ms / 60000), median: r1(pct(w, 0.5) * ms / 60000), p90: r1(pct(w, 0.9) * ms / 60000), p95: r1(pct(w, 0.95) * ms / 60000), max: r1(Math.max(...w) * ms / 60000) }];
 }));
 for (const [name, def] of Object.entries(MATCHUPS)) {
   if (part !== 'all' && part !== name) continue;
