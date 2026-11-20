@@ -6,7 +6,7 @@ Local merges only. Nothing in this log was pushed.
 
 | Branch | Commit | Present |
 | --- | --- | --- |
-| `core/v05-qa` | `42bb2af` plus the uncommitted acceptance fixes recorded with this log | yes |
+| `core/v05-qa` | the acceptance commits on this branch, including the battle-phase fixes | yes |
 | `origin/core/v05-data` | `0b37c05` Add gacha pity, inventory protection, and versioned saves | yes |
 | `origin/core/v05-engine` | `07b1b2f` test: cover locked v0.5 battle rules | yes |
 | `origin/core/v05-web` | — | no remote ref |
