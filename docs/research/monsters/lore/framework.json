@@ -1,0 +1,475 @@
+{
+  "documentId": "MONSTER-WORLD-FRAMEWORK",
+  "status": "PROPOSED",
+  "canon": false,
+  "agent": "08",
+  "branch": "research/m08-lore",
+  "baseCommit": "6e2bffec082a4db190bd51087196d29b02555f4a",
+  "audit": "docs/research/monsters/lore/LORE_AUDIT.md",
+  "prose": "docs/research/monsters/lore/MONSTER_WORLD_FRAMEWORK.md",
+  "warning": "PROPOSED extension for monster research only. Not canon. Does not change core lore, factions, tower rules, rarities, or the battle schema. Owner approval required before any field here is treated as LOCKED or OWNER_APPROVED.",
+  "statusWordsAllowed": ["RESEARCH", "PROPOSED", "QA_PASSED"],
+  "statusWordsForbidden": ["LOCKED", "OWNER_APPROVED"],
+  "canonBoundary": {
+    "factions": [
+      { "factionId": "FAC_AEG", "name": "Aegis Dominion", "role": "Tank" },
+      { "factionId": "FAC_PHA", "name": "Phantom Blades", "role": "DPS" },
+      { "factionId": "FAC_CEL", "name": "Celestial Nexus", "role": "Magic" },
+      { "factionId": "FAC_SAN", "name": "Sanctuary Order", "role": "Support" }
+    ],
+    "worldTone": "Comedy Fantasy throughout. No compulsory main story or main quest.",
+    "tower": {
+      "mapName": "Mysterious Tower",
+      "lockedJob": "PvE battle and Mystery Tower lore",
+      "floors": "PENDING (OPEN-07). Environments below are biomes, not locked floor numbers."
+    },
+    "echoPhrase": "Mystery Tower, Real People + Echo hybrid Avatar",
+    "echoSummoning": "Research label in the monster brief only. Not a canon mechanic.",
+    "peopleAreDistinct": {
+      "evidence": "Owner t253u 20 Nov 2026",
+      "newCharacters": ["AVT_AEG_002", "AVT_PHA_002", "AVT_CEL_002", "AVT_SAN_002"],
+      "untouched": ["AVT_AEG_001", "AVT_PHA_001", "AVT_CEL_001", "AVT_SAN_001"]
+    },
+    "doNotUse": [
+      "Sync / VR Sync as live lore (Owner t261u REJECTED)",
+      "Valhalla as a place",
+      "Justin Spirit",
+      "Barry Blitz",
+      "Common / Rare / Legendary / Mythic",
+      "FAC as a monster rarity",
+      "The Void as an element or plane",
+      "a fifth faction",
+      "a renamed faction or a swapped role"
+    ]
+  },
+  "originClasses": [
+    {
+      "originId": "ORG-WILD",
+      "name": "Wild Creature",
+      "status": "PROPOSED",
+      "canon": false,
+      "summary": "A beast, plant, or odd animal that was not built as a copy of a person and was not posted as tower staff.",
+      "factionId": null,
+      "factionRule": "Optional. Leave null unless the joke truly wears one existing faction's role. A faction tag does not make it a faction member.",
+      "not": "Not an Avatar, not a Companion, not an Echo of a real person."
+    },
+    {
+      "originId": "ORG-ECHO",
+      "name": "Corrupted Echo",
+      "status": "PROPOSED",
+      "canon": false,
+      "summary": "A tower creature that looks like a person done wrong: a badge with the wrong face, a reflection that clocked in early, a legend that copied the punchline and missed the person.",
+      "factionId": null,
+      "factionRule": "Optional. If it mimics one role, it may wear that faction's id. It is still not that faction's avatar and not Justin or the *_001 cast.",
+      "not": "Does not define what a player Echo hybrid Avatar is. The locked phrase stays 'Real People + Echo hybrid Avatar'. This class is only for hostile or wild research entries."
+    },
+    {
+      "originId": "ORG-GUARD",
+      "name": "Tower Guardian",
+      "status": "PROPOSED",
+      "canon": false,
+      "summary": "Something that behaves like it works here: it takes tickets, guards a landing, or refuses to let the song end. Employment is a comedy pose, not a published org chart.",
+      "factionId": null,
+      "factionRule": "Optional. Guardians are tower creatures first. Do not invent a tower faction.",
+      "not": "Not proof the tower has a government. OPEN-07 still has no floor list."
+    },
+    {
+      "originId": "ORG-ANOM",
+      "name": "Tower Anomaly",
+      "status": "PROPOSED",
+      "canon": false,
+      "summary": "A creature that is the floor misbehaving: weather with manners, a theorem that grew legs, a throne that is not sure it is final.",
+      "factionId": null,
+      "factionRule": "Usually null. An anomaly that settles into one role may take an optional faction id.",
+      "not": "Not a new element and not The Void. The Void remains a card pile."
+    },
+    {
+      "originId": "ORG-FACTION",
+      "name": "Faction-aligned",
+      "status": "PROPOSED",
+      "canon": false,
+      "summary": "A creature whose silhouette and joke are about one existing faction's locked role. Use this origin only when that role is the point.",
+      "factionId": "required",
+      "factionRule": "factionId must be FAC_AEG, FAC_PHA, FAC_CEL, or FAC_SAN. Role stays the faction's locked role. No fifth faction.",
+      "not": "Not an Avatar record, not a FAC action card, and not a statement that the faction has a canon creed."
+    }
+  ],
+  "factionRelations": [
+    {
+      "factionId": "FAC_AEG",
+      "name": "Aegis Dominion",
+      "role": "Tank",
+      "status": "PROPOSED",
+      "canonAnchor": "Name and Tank role are canon. No creed is canon.",
+      "knownPeople": ["Justin Case (AVT_AEG_002)", "Sir Potlid (AVT_AEG_001) — a different person"],
+      "monsterRelation": "Faction-aligned monsters brace, stall, or wear armor that is slightly the wrong object. They buy time. They do not rule a dominion, because no dominion is written.",
+      "primaryAttribute": "ATTR_GUARD",
+      "avoid": "Do not merge Sir Potlid's pot helmet into Justin Case. Do not make the faction a kingdom."
+    },
+    {
+      "factionId": "FAC_PHA",
+      "name": "Phantom Blades",
+      "role": "DPS",
+      "status": "PROPOSED",
+      "canonAnchor": "Name and DPS role are canon. 'Phantom' is undefined.",
+      "knownPeople": ["Justin Time (AVT_PHA_002)", "Nox Squeak (AVT_PHA_001) — a different person"],
+      "monsterRelation": "Faction-aligned monsters rush, nick, or arrive before the introduction finishes. 'Phantom' may be played as a comic almost-there, not as a canon species of ghost.",
+      "primaryAttribute": "ATTR_STRIKE",
+      "avoid": "Do not revive the draft name Barry Blitz. Do not decide that the faction is undead."
+    },
+    {
+      "factionId": "FAC_CEL",
+      "name": "Celestial Nexus",
+      "role": "Magic",
+      "status": "PROPOSED",
+      "canonAnchor": "Name and Magic role are canon. 'Science/magic comedy' is a note on Justin Theory's sample, not a school charter.",
+      "knownPeople": ["Justin Theory (AVT_CEL_002)", "Madame Meteor (AVT_CEL_001) — a different person"],
+      "monsterRelation": "Faction-aligned monsters mis-cast a grand effect: stars that missed the quiz, formulas that grew legs, meteor manners. Magic stays a role, not a new element wheel.",
+      "primaryAttribute": "ATTR_ARCANE",
+      "avoid": "Do not publish a pantheon or a real-world constellation myth as this faction's doctrine."
+    },
+    {
+      "factionId": "FAC_SAN",
+      "name": "Sanctuary Order",
+      "role": "Support",
+      "status": "PROPOSED",
+      "canonAnchor": "Name and Support role are canon. Saving Grace is Justina Moment's locked active, not the faction's sacrament.",
+      "knownPeople": ["Justina Moment (AVT_SAN_002, female)", "Sister Plaster (AVT_SAN_001) — a different person"],
+      "monsterRelation": "Faction-aligned monsters help too hard: bandages with opinions, soup that heals and scolds, a hymn that will not let you leave until you feel better.",
+      "primaryAttribute": "ATTR_AID",
+      "avoid": "Do not revive Justin Spirit. Do not found a church. 'Sister' is part of one avatar's name only."
+    }
+  ],
+  "towerEnvironments": [
+    {
+      "environmentId": "ENV-TWR-01",
+      "slug": "lobby-of-lost-badges",
+      "name": "The Lobby of Lost Badges",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Cracked marble, a velvet rope, a desk lamp aimed like a spotlight, name badges in a heap.",
+      "comedyAngle": "The tower checks everyone in under someone else's name, then acts offended.",
+      "humorType": "Satirical Fantasy",
+      "likelyOriginIds": ["ORG-GUARD", "ORG-ECHO"],
+      "likelyAttributeIds": ["ATTR_NEUTRAL", "ATTR_ECHO"],
+      "sequenceHint": "Arrival color. Not floor 1."
+    },
+    {
+      "environmentId": "ENV-TWR-02",
+      "slug": "pantry-of-leftovers",
+      "name": "The Pantry of Living Leftovers",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Copper pots, heroic steam, cutting boards used as shields, a fridge light that never blinks off.",
+      "comedyAngle": "Dinner got ambitious and now it has opinions about being eaten.",
+      "humorType": "Absurd Comedy",
+      "likelyOriginIds": ["ORG-WILD", "ORG-ANOM"],
+      "likelyAttributeIds": ["ATTR_WILD", "ATTR_GUARD"],
+      "sequenceHint": "Any mid floor. Not a locked number."
+    },
+    {
+      "environmentId": "ENV-TWR-03",
+      "slug": "armory-of-wrong-sizes",
+      "name": "The Armory of Wrong Sizes",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Racks of shields one size off, helmets that fit a mood instead of a head, dust in heroic piles.",
+      "comedyAngle": "Every piece of armor is almost protective and completely embarrassing.",
+      "humorType": "Epic but Ridiculous",
+      "likelyOriginIds": ["ORG-GUARD", "ORG-FACTION"],
+      "likelyAttributeIds": ["ATTR_GUARD"],
+      "factionHint": "FAC_AEG optional. The armory is not Aegis Dominion headquarters.",
+      "sequenceHint": "Mid floor color."
+    },
+    {
+      "environmentId": "ENV-TWR-04",
+      "slug": "corridor-of-squeaks",
+      "name": "The Corridor of Uninvited Footsteps",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "A carpet too long, portraits that blink late, floorboards that file a report.",
+      "comedyAngle": "Stealth is impossible because the floor is a gossip.",
+      "humorType": "Satirical Fantasy",
+      "likelyOriginIds": ["ORG-WILD", "ORG-ECHO", "ORG-FACTION"],
+      "likelyAttributeIds": ["ATTR_STRIKE", "ATTR_ECHO"],
+      "factionHint": "FAC_PHA optional. Do not identify the corridor with Nox Squeak.",
+      "sequenceHint": "Mid floor color."
+    },
+    {
+      "environmentId": "ENV-TWR-05",
+      "slug": "observatory-of-bad-math",
+      "name": "The Observatory of Bad Math",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "A cracked orrery, chalk constellations that disagree with the ceiling, telescopes pointed at the floor.",
+      "comedyAngle": "The stars failed the quiz and would like a retake, loudly.",
+      "humorType": "Absurd Comedy",
+      "likelyOriginIds": ["ORG-ANOM", "ORG-FACTION"],
+      "likelyAttributeIds": ["ATTR_ARCANE"],
+      "factionHint": "FAC_CEL optional. Not a canon school of Justin Theory.",
+      "sequenceHint": "Mid or high color."
+    },
+    {
+      "environmentId": "ENV-TWR-06",
+      "slug": "infirmary-of-too-much-care",
+      "name": "The Infirmary of Too Much Care",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "White tile, glowing bandages, soup steam, a bell that rings when anyone looks tired.",
+      "comedyAngle": "The medicine heals you and then waits for a thank-you card.",
+      "humorType": "Dark Fantasy Comedy",
+      "likelyOriginIds": ["ORG-GUARD", "ORG-FACTION"],
+      "likelyAttributeIds": ["ATTR_AID"],
+      "factionHint": "FAC_SAN optional. Not Justina's clinic and not a church.",
+      "sequenceHint": "Mid floor color."
+    },
+    {
+      "environmentId": "ENV-TWR-07",
+      "slug": "mirror-well",
+      "name": "The Mirror Well",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "A vertical shaft of reflections, each face half a second behind, badges that do not match the chins.",
+      "comedyAngle": "Your reflection clocked in early and is already disappointed in you.",
+      "humorType": "Dark Fantasy Comedy",
+      "likelyOriginIds": ["ORG-ECHO", "ORG-ANOM"],
+      "likelyAttributeIds": ["ATTR_ECHO"],
+      "factionHint": null,
+      "sequenceHint": "Echo-heavy color. Does not explain Echo hybrid Avatars.",
+      "boundary": "Use for corrupted research creatures. Do not narrate the player's hybrid as a monster."
+    },
+    {
+      "environmentId": "ENV-TWR-08",
+      "slug": "menagerie-of-unfiled-beasts",
+      "name": "The Menagerie of Unfiled Beasts",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Straw, open gates, hand-painted signs hung on the wrong cages, a ledger with paw prints in the totals.",
+      "comedyAngle": "The filing system lost, and the animals updated their own job titles.",
+      "humorType": "Absurd Comedy",
+      "likelyOriginIds": ["ORG-WILD"],
+      "likelyAttributeIds": ["ATTR_WILD"],
+      "sequenceHint": "Any floor. Best default home for unaffiliated beasts."
+    },
+    {
+      "environmentId": "ENV-TWR-09",
+      "slug": "ballroom-of-one-dance",
+      "name": "The Ballroom Stuck on One Dance",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Chandeliers, confetti that refuses to land, a band of armored instruments, one scuff mark worn through the floor.",
+      "comedyAngle": "The song will not end, and neither will the bow.",
+      "humorType": "Epic but Ridiculous",
+      "likelyOriginIds": ["ORG-ANOM", "ORG-GUARD"],
+      "likelyAttributeIds": ["ATTR_ARCANE", "ATTR_AID"],
+      "sequenceHint": "Set-piece color. Not a story gate."
+    },
+    {
+      "environmentId": "ENV-TWR-10",
+      "slug": "basement-of-retired-bosses",
+      "name": "The Basement of Retired Bosses",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Folding chairs, a throne used as a coat rack, nameplates with the title scratched into 'former'.",
+      "comedyAngle": "Yesterday's final bosses run a support group and still enter like the world depends on it.",
+      "humorType": "Satirical Fantasy",
+      "likelyOriginIds": ["ORG-GUARD", "ORG-ECHO"],
+      "likelyAttributeIds": ["ATTR_NEUTRAL", "ATTR_GUARD"],
+      "sequenceHint": "Good soil for Mini Boss and Main Boss samples. They are not a canon previous game."
+    },
+    {
+      "environmentId": "ENV-TWR-11",
+      "slug": "roof-garden-of-indoor-weather",
+      "name": "The Roof Garden of Indoor Weather",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Rain that falls only on the plants, thunder that apologizes, vines wearing tiny galoshes.",
+      "comedyAngle": "The storm has indoor shoes and a curfew.",
+      "humorType": "Absurd Comedy",
+      "likelyOriginIds": ["ORG-WILD", "ORG-ANOM"],
+      "likelyAttributeIds": ["ATTR_WILD", "ATTR_ARCANE"],
+      "sequenceHint": "High color. Not the top of the tower."
+    },
+    {
+      "environmentId": "ENV-TWR-12",
+      "slug": "archive-of-unfinished-legends",
+      "name": "The Archive of Unfinished Legends",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Stacks of books with the last page torn into confetti, index cards that outrank the books, a lamp with a halo of dust.",
+      "comedyAngle": "Every epic ends in 'to be continued' and a grocery list.",
+      "humorType": "Satirical Fantasy",
+      "likelyOriginIds": ["ORG-ECHO", "ORG-ANOM"],
+      "likelyAttributeIds": ["ATTR_ECHO", "ATTR_ARCANE"],
+      "sequenceHint": "Lore-joke color. Still not a main quest."
+    },
+    {
+      "environmentId": "ENV-TWR-13",
+      "slug": "service-elevator-between-moods",
+      "name": "The Service Elevator Between Moods",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "A flickering indicator that shows feelings instead of numbers, brass doors, a polite ding at the wrong time.",
+      "comedyAngle": "You pressed 'ominous' and the car stopped at 'brunch'.",
+      "humorType": "Absurd Comedy",
+      "likelyOriginIds": ["ORG-ANOM", "ORG-GUARD"],
+      "likelyAttributeIds": ["ATTR_NEUTRAL"],
+      "sequenceHint": "Transit biome. Connects other environments without numbering them."
+    },
+    {
+      "environmentId": "ENV-TWR-14",
+      "slug": "throne-landing-of-maybe",
+      "name": "The Throne Landing of Maybe",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "A door that is also a stage, one spotlight, an empty throne with a reserved sign and a second sign that says 'maybe not'.",
+      "comedyAngle": "The final floor is not sure it is final, but it has already hired a drumroll.",
+      "humorType": "Epic but Ridiculous",
+      "likelyOriginIds": ["ORG-GUARD", "ORG-ANOM"],
+      "likelyAttributeIds": ["ATTR_NEUTRAL", "ATTR_GUARD"],
+      "sequenceHint": "World-boss set-piece color. OPEN-07: there is no locked last floor."
+    },
+    {
+      "environmentId": "ENV-TWR-15",
+      "slug": "gift-shop-of-the-conquered",
+      "name": "The Gift Shop of the Conquered",
+      "status": "PROPOSED",
+      "canon": false,
+      "visualMood": "Keychains of bosses you have not met, mugs that spoil the ending, a cashier who is also a gargoyle on break.",
+      "comedyAngle": "The souvenir knows the fight better than the fighter does.",
+      "humorType": "Satirical Fantasy",
+      "likelyOriginIds": ["ORG-ANOM", "ORG-ECHO"],
+      "likelyAttributeIds": ["ATTR_NEUTRAL", "ATTR_ECHO"],
+      "sequenceHint": "Secret and comedy boss color. Not the Shopping Mall (MAP-06)."
+    }
+  ],
+  "attributes": {
+    "schemaFact": "src/schema has no element or attribute enum. These tags fill research field 12 only. They are not damage types, not weaknesses, and not new stats.",
+    "primaryRequired": true,
+    "secondaryOptional": true,
+    "alignsWith": {
+      "roles": ["Tank", "DPS", "Magic", "Support"],
+      "actionTypes": ["ATK", "DEF", "Skill"],
+      "stats": ["atk", "def", "spd"]
+    },
+    "list": [
+      {
+        "attributeId": "ATTR_GUARD",
+        "name": "Guard",
+        "status": "PROPOSED",
+        "alignsWith": "Role Tank, action DEF, faction FAC_AEG. Sample words Shield and Taunt may inspire the joke. They are not required rules.",
+        "canon": false
+      },
+      {
+        "attributeId": "ATTR_STRIKE",
+        "name": "Strike",
+        "status": "PROPOSED",
+        "alignsWith": "Role DPS, action ATK, faction FAC_PHA.",
+        "canon": false
+      },
+      {
+        "attributeId": "ATTR_ARCANE",
+        "name": "Arcane",
+        "status": "PROPOSED",
+        "alignsWith": "Role Magic, action Skill, faction FAC_CEL. Not an element wheel.",
+        "canon": false
+      },
+      {
+        "attributeId": "ATTR_AID",
+        "name": "Aid",
+        "status": "PROPOSED",
+        "alignsWith": "Role Support, faction FAC_SAN. Regen is a sample and a locked active on one avatar. This tag is not named Saving Grace.",
+        "canon": false
+      },
+      {
+        "attributeId": "ATTR_WILD",
+        "name": "Wild",
+        "status": "PROPOSED",
+        "alignsWith": "No schema match. Flavor for ORG-WILD. Does not add a stat.",
+        "canon": false
+      },
+      {
+        "attributeId": "ATTR_ECHO",
+        "name": "Echo",
+        "status": "PROPOSED",
+        "alignsWith": "Lore look for ORG-ECHO. Not a definition of Echo hybrid Avatars and not a combat keyword.",
+        "canon": false
+      },
+      {
+        "attributeId": "ATTR_NEUTRAL",
+        "name": "Neutral",
+        "status": "PROPOSED",
+        "alignsWith": "No faction color. Use when a role joke would over-claim.",
+        "canon": false
+      }
+    ],
+    "doNotUseAsAttributes": ["Void", "Sync", "Holiness", "Fire", "Ice", "Lightning", "Mythic"]
+  },
+  "rarityGuidance": {
+    "status": "PROPOSED",
+    "canon": false,
+    "useLadder": "Avatar rarities N / R / Epic / EX (CORE-024). Monsters are creature suggestions, so they borrow the avatar ladder rather than the action ladder.",
+    "doNotUse": ["Common", "Rare", "Legendary", "Mythic", "FAC"],
+    "facNote": "FAC is an action-card rarity (CORE-025), the same top tier as EX, and a faction play-gate. It is not a monster rank.",
+    "exNote": "Nothing sits above EX. A World Boss is not a new rarity.",
+    "jokeNote": "Rarity suggests how large the combat presence is. A funnier normal monster stays N.",
+    "byCategory": [
+      {
+        "monsterCategory": "Normal Monster",
+        "suggestedRarity": "N",
+        "why": "Smallest presence. Rhymes with N avatars, who are mostly base stats."
+      },
+      {
+        "monsterCategory": "Elite Monster",
+        "suggestedRarity": "R",
+        "why": "One signature trait. Rhymes with R avatars, who have Active or Passive, not both by default."
+      },
+      {
+        "monsterCategory": "Mini Boss",
+        "suggestedRarity": "Epic",
+        "why": "Grander than an elite, still a scene rather than a campaign. Rhymes with Epic's two skills without copying the slot rule."
+      },
+      {
+        "monsterCategory": "Main Boss",
+        "suggestedRarity": "EX",
+        "why": "A phase change rhymes with the EX Ultimate slot. Still no HP or damage numbers."
+      },
+      {
+        "monsterCategory": "World Boss",
+        "suggestedRarity": "EX",
+        "why": "Top of the existing ladder. Do not mint a rank past EX."
+      },
+      {
+        "monsterCategory": "Secret / Comedy Boss",
+        "suggestedRarity": "Epic",
+        "alternateRarity": "EX",
+        "why": "Default Epic for a one-scene joke. Use EX only when the entry has a real phase transformation. Never FAC."
+      }
+    ]
+  },
+  "linkRulesForSamples": {
+    "status": "PROPOSED",
+    "requiredOnEachLink": ["originId", "environmentId", "attributeId", "suggestedRarity", "factionId"],
+    "factionIdMayBeNull": true,
+    "factionRequiredWhen": "originId is ORG-FACTION",
+    "hookLength": "1 to 2 sentences",
+    "hookMust": [
+      "Stay inside Comedy Fantasy",
+      "Avoid a compulsory quest",
+      "Name no new faction",
+      "Leave Echo hybrid Avatars undefined",
+      "Keep Justins distinct from AVT_*_001"
+    ],
+    "flagWhen": [
+      "A fifth faction or a renamed faction appears",
+      "A faction role is swapped",
+      "Justin Spirit, Barry Blitz, Valhalla, or Sync is used as current lore",
+      "A Justin is written as the same person as the matching *_001 avatar",
+      "Rarity is Common, Rare, Legendary, Mythic, or FAC",
+      "The Void is a place or an element",
+      "The entry requires a main story",
+      "A protected proper name from another work is used as the creature's name",
+      "The hook defines how Echo Summoning works"
+    ]
+  }
+}
