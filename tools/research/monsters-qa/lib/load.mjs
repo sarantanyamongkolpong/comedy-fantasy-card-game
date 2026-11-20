@@ -213,7 +213,7 @@ export function normalizeRecord(raw, meta) {
       ? ['bossTitle', 'epithet', 'title']
       : ['bossTitle', 'epithet'])),
     entrance: asText(pick(flat, ['entranceConcept', 'entrance'])),
-    lore: asText(pick(flat, ['loreSummary', 'lore', 'summary', 'backstory'])),
+    lore: asText(pick(flat, ['loreSummary', 'lore', 'summary', 'backstory', 'hook'])),
     element: asText(pick(flat, ['element', 'attribute', 'elementAttribute'])),
     archetype: asText(pick(flat, ['combatArchetype', 'archetype'])),
     weakness: asText(pick(flat, ['weaknessConcept', 'weakness'])),
@@ -307,8 +307,11 @@ function recordsFromJson(text, meta) {
     ? asText(pick(json, ['role', 'agentRole'])) : '';
   const fileAgent = json && typeof json === 'object' && !Array.isArray(json)
     ? asText(pick(json, ['agent'])) : '';
+  const agentId = meta.lockAgent ? meta.agent : (fileAgent || meta.agent);
+  const conflicts = conflictRecords(json, { ...meta, agent: agentId });
   const rows = unwrapRecords(json);
   if (rows.length === 0) {
+    if (conflicts.length > 0) return conflicts;
     const note = emptyRecord({ ...meta, index: 0 });
     note.kind = 'empty-json';
     note.role = meta.role;
@@ -316,12 +319,36 @@ function recordsFromJson(text, meta) {
     note.parseError = '';
     return [note];
   }
-  return rows.map((row, index) => normalizeRecord(row, {
+  const records = rows.map((row, index) => normalizeRecord(row, {
     ...meta,
-    agent: meta.lockAgent ? meta.agent : (fileAgent || meta.agent),
+    agent: agentId,
     role: fileRole || meta.role,
     index,
   }));
+  return [...records, ...conflicts];
+}
+
+/**
+ * Open and resolved lore conflicts sit beside the entry list. They are notes, not monsters.
+ * @param {unknown} json
+ * @param {{ agent: string, role: string, ref: string, sha: string, path: string }} meta
+ */
+function conflictRecords(json, meta) {
+  if (!json || typeof json !== 'object' || Array.isArray(json)) return [];
+  const rows = /** @type {Record<string, unknown>} */ (json).conflicts;
+  if (!Array.isArray(rows)) return [];
+  return rows.filter((item) => item && typeof item === 'object' && !Array.isArray(item)).map((item, index) => {
+    const row = /** @type {Record<string, unknown>} */ (item);
+    const record = emptyRecord({ ...meta, index: 1000 + index });
+    record.kind = 'lore-conflict';
+    record.role = 'lore';
+    record.id = asText(row.conflictId) || `${meta.agent}-conflict-${index + 1}`;
+    record.lore = [asText(row.theirClaim), asText(row.lorePosition), asText(row.resolution)].filter(Boolean).join(' ');
+    record.confidence = asText(row.status);
+    record.category = asText(row.severity);
+    record.origin = asText(row.canonImpact);
+    return record;
+  });
 }
 
 /**

@@ -44,6 +44,11 @@ export function buildArtifacts(input) {
     ...ipEntries.map((row) => finding(row.priority, 'ip', row.agent, row.id, row.path, row.risk, row.reason)),
     ...sensitivity.filter((row) => row.priority).map((row) => finding(row.priority, 'sensitivity', row.agent, row.id, row.path, row.level, row.reason)),
     ...parseErrors.map((row) => finding('P1', 'parse', row.agent, row.id, row.path, 'unreadable', row.parseError)),
+    ...records.filter((row) => row.kind === 'lore-conflict' && String(row.confidence).toLowerCase() === 'open').map((row) => {
+      const impact = String(row.origin || '').toLowerCase();
+      const priority = impact && !impact.startsWith('none') ? 'P1' : 'P2';
+      return finding(priority, 'lore', row.agent, row.id, row.path, row.category || 'open', clipFinding(row.lore));
+    }),
   ].filter((item) => item.priority);
 
   const sourceAudit = {
@@ -151,7 +156,7 @@ function renderReport(data) {
   lines.push('|---|---|---|---:|---:|');
   for (const agent of data.agents) {
     const sha = agent.sha ? agent.sha.slice(0, 12) : 'absent';
-    const counted = (agent.records || []).filter((record) => record.kind !== 'empty-json' && !record.parseError).length;
+    const counted = (agent.records || []).filter((record) => record.kind !== 'empty-json' && record.kind !== 'lore-conflict' && !record.parseError).length;
     lines.push(`| ${agent.id} | ${agent.branch || agent.prefix} | ${sha} | ${agent.files?.length ?? 0} | ${counted} |`);
   }
   lines.push('');
@@ -243,6 +248,7 @@ function renderReport(data) {
   lines.push('- **BOS-MAIN-04 Sir Stairweb** is far from the name Anansi. Do not add Akan religious iconography or a copied folk-art spider.');
   lines.push('- **BOS-WORLD-03 Sir Lotusbulk** takes the biblical beast and moves the joke to a loading dock. Do not mock the verse or the faith.');
   lines.push('- **Tubcritic** in the agent 06 name bank is the same name as agent 03’s pitch **Tub Critic**. It is not one of the 30 sample entries. Do not promote it.');
+  lines.push('- Agent 08 linked all 30 sample ids. Open conflicts from that file are P2 when the canon impact starts with “none”. The continuity one is Dame Dryladle: the name and lore use she, and a phase line says him. The glossary one is the word Hunters for a party this game calls Avatars.');
   lines.push('- Research notes for Kali, Wendigo, and the atomic-bomb context of a film monster stay in the source files. They are not comedy targets.');
   lines.push('');
   lines.push('## Reproduce');
@@ -350,6 +356,14 @@ function ipTable(rows) {
     lines.push(`| ${row.agent} | ${cell(row.id)} | ${cell(row.parodyName || row.bossTitle)} | ${row.risk} | ${row.priority || ''} | ${sens} | ${cell(row.reason)} |`);
   }
   return lines.join('\n');
+}
+
+/**
+ * @param {unknown} value
+ */
+function clipFinding(value) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  return text.length > 280 ? `${text.slice(0, 277)}...` : text;
 }
 
 function cell(value) {

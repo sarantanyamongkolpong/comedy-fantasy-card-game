@@ -1,6 +1,6 @@
 # Monster research QA report
 
-Generated: 2026-11-20T13:31:58.111Z
+Generated: 2026-11-20T13:41:52.763Z
 
 This pass reads agents 01–08 with `git show`. It does not edit their branches. Verdicts are review heuristics for the monster research project. They are not legal advice and they are not a trademark clearance.
 
@@ -17,9 +17,9 @@ P0 means a cited source is dead, unrelated, or looks fabricated, or a parody nam
 | 05 | research/m05-anime-pop | 2877fcbb27de | 3 | 96 |
 | 06 | research/m06-parody | 77c558bba78d | 4 | 92 |
 | 07 | research/m07-boss | 76360d6c50db | 2 | 27 |
-| 08 | research/m08-lore | df51457588f0 | 4 | 0 |
+| 08 | research/m08-lore | 2b8c5439062b | 4 | 30 |
 
-Findings: **P0 1**, **P1 164**, **P2 9**.
+Findings: **P0 1**, **P1 164**, **P2 22**.
 
 Sources: 481 URLs, 370 verified, 111 failed or unverified.
 Creative samples in the IP table: 156 (high 0, medium 1, low 155).
@@ -200,10 +200,22 @@ Blocked or unreachable hosts are grouped. A block means the page could not be re
 
 ### Agent 08 — research/m08-lore
 
-SHA `df51457588f0394fbd011f6211baa95969415734`. Files: `docs/research/monsters/lore/LORE_AUDIT.md`, `docs/research/monsters/lore/MONSTER_WORLD_FRAMEWORK.md`, `docs/research/monsters/lore/framework.json`, `docs/research/monsters/lore/sample_lore_links.json`.
-Inspirations 0, creative records 0, findings 0.
-JSON with no entry list (read, not a failed record): `docs/research/monsters/lore/framework.json`, `docs/research/monsters/lore/sample_lore_links.json`.
-No P0, P1, or P2 on the records loaded from this branch.
+SHA `2b8c5439062b6835d9af2ac003184e10d4f58fc1`. Files: `docs/research/monsters/lore/LORE_AUDIT.md`, `docs/research/monsters/lore/MONSTER_WORLD_FRAMEWORK.md`, `docs/research/monsters/lore/framework.json`, `docs/research/monsters/lore/sample_lore_links.json`.
+Inspirations 0, creative records 0, findings 13.
+JSON with no entry list (read, not a failed record): `docs/research/monsters/lore/framework.json`.
+- **P2** lore `08` `CONF-06-SUMMON-WORD` (boundary) The lore summary says something was summoned into the Lobby and gained a destiny. Echo Summoning is not a mechanic. MAP-09 stays the undefined phrase Real People + Echo hybrid Avatar. The link keeps ORG-ECHO and ENV-TWR-01. The hook treats the signature as the creature's probl...
+- **P2** lore `08` `CONF-07-HUNTER-WORD` (glossary) Boss lore addresses the climbing party as Hunters. This card game's party is four Avatars. The repo is a separate project from Hunter Life. Hunter is not a faction, a class, or a map pin. Hooks say party or leave the climbers unnamed. Do not import Hunter Life. Do not add a hu...
+- **P2** lore `08` `CONF-07-ROLE-SHAPE` (integration) Each boss notes a Tank, DPS, Magic, or Support shape. Clerk Claypunch's note says the engine loader still requires a faction id, and the record does not invent one. The four roles belong to the four factions on Avatars. A monster's staging shape does not join a faction and doe...
+- **P2** lore `08` `CONF-07-ROLE-WILD-MAGIC` (guidance-variance) attributeId is ATTR_WILD and engineRoleShape is Magic. ATTR_WILD has no faction. Magic is Celestial Nexus's locked avatar role. A wild creature may look arcane in play without joining that faction. Link keeps ORG-WILD, ATTR_WILD, factionId null. The Magic shape is staging only.
+- **P2** lore `08` `CONF-07-DUAL-PROSE` (wording) The lore calls him the floor's Tower Guardian and, in the same breath, an Echo that grew a dragon outline. notes.originId is ORG-GUARD. A link stores one originId. Echo hybrid Avatars stay undefined either way. The link uses ORG-GUARD, matching the notes field and the vault-ke...
+- **P2** lore `08` `CONF-07-ENV-FLOOD` (environment) No ENV-TWR biome is a flood. The sample uses ENV-TWR-13 because the elevator cannot agree which floor to open. The fifteen biomes are the set. OPEN-07 still has no floor list. A sixteenth flood floor would be a new proposal past the set. Accepted their mapping. The link does n...
+- **P2** lore `08` `CONF-07-ENV-SEA` (environment) ENV-TWR-10 is the Basement of Retired Bosses. This world boss is not retired. The room is used for an open ceiling. There is no sea biome. Same fifteen-biome cap. A partial postcard is allowed. It does not rename the basement. Accepted ENV-TWR-10. The hook says the fit is part...
+- **P2** lore `08` `CONF-07-PRONOUN` (continuity) The name is Dame and the lore uses she. The phase line says the lighting change does not erase him. One figure, one presentation. This is inside the sample, not a faction rule. The hook uses Dame and she. The phase line should be aligned by Agent 07 when they next edit. Lore d...
+- **P2** lore `08` `CONF-07-ENV-SCALE` (environment) A world-scale dock beast is filed in the Menagerie. The sample says lotus crates are props, not a new dock biome. ENV-TWR-08 may hold him. World-boss scale is presentation, not a new region and not a raid. Accepted ENV-TWR-08. No dock biome added.
+- **P2** lore `08` `CONF-07-ATTR-ECHO` (guidance-variance) originId is ORG-ANOM and attributeId is ATTR_ECHO. The note correctly says the Void in the mechanic is the card pile. ATTR_ECHO is the look of a person or a legend done wrong. A cabinet that was never stocked is an anomaly first. Void stays a pile, which their note already say...
+- **P2** lore `08` `CONF-SHARED-TWR-14` (note) An elite and a main boss share the Throne Landing of Maybe. Biomes may repeat. The elite does not become a world boss, and the landing is not floor N. Both links kept. No floor number assigned.
+- **P2** lore `08` `CONF-SHARED-TWR-11` (note) Two normals and a world boss share the Roof Garden. Shared postcard. World scale on Sir Yarncoil is presentation. All three links kept.
+- **P2** lore `08` `CONF-SHARED-TWR-08` (note) Two normals and a world boss share the Menagerie. Shared postcard. See also CONF-07-ENV-SCALE. All three links kept.
 
 ## IP risk — phase-1 sample
 
@@ -277,6 +289,7 @@ These notes are from reading the phase-1 sample text. They are not extra tool th
 - **BOS-MAIN-04 Sir Stairweb** is far from the name Anansi. Do not add Akan religious iconography or a copied folk-art spider.
 - **BOS-WORLD-03 Sir Lotusbulk** takes the biblical beast and moves the joke to a loading dock. Do not mock the verse or the faith.
 - **Tubcritic** in the agent 06 name bank is the same name as agent 03’s pitch **Tub Critic**. It is not one of the 30 sample entries. Do not promote it.
+- Agent 08 linked all 30 sample ids. Open conflicts from that file are P2 when the canon impact starts with “none”. The continuity one is Dame Dryladle: the name and lore use she, and a phase line says him. The glossary one is the word Hunters for a party this game calls Avatars.
 - Research notes for Kali, Wendigo, and the atomic-bomb context of a film monster stay in the source files. They are not comedy targets.
 
 ## Reproduce

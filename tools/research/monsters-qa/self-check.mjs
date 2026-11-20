@@ -284,6 +284,24 @@ test('markdown URLs drop trailing backticks and do not override structured claim
   });
   assert.equal(empty[0].kind, 'empty-json');
   assert.equal(empty[0].parseError, '');
+
+  const lore = recordsFromText(JSON.stringify({
+    entries: [{ monsterId: 'M06-N-001', hook: 'Curlhorn files no quest.' }],
+    conflicts: [{
+      conflictId: 'CONF-1',
+      status: 'open',
+      severity: 'continuity',
+      canonImpact: 'none',
+      theirClaim: 'The phase line says him.',
+      lorePosition: 'The name is Dame.',
+    }],
+  }), { agent: '08', role: 'lore', ref: 'test', sha: 'abc', path: 'sample_lore_links.json', lockAgent: true });
+  assert.equal(lore[0].id, 'M06-N-001');
+  assert.equal(lore[0].kind, 'lore');
+  assert.equal(lore[0].lore, 'Curlhorn files no quest.');
+  assert.equal(lore[1].kind, 'lore-conflict');
+  assert.equal(lore[1].id, 'CONF-1');
+  assert.equal(lore[1].confidence, 'open');
 });
 
 test('cli writes an IP audit and returns P0 for a copied character name', () => {

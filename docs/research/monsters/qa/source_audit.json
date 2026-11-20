@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:31:58.111Z",
+  "generatedAt": "2026-11-20T13:41:52.763Z",
   "tool": "tools/research/monsters-qa",
   "disclaimer": "URL verdicts are a research check. A verified page contains the claim’s key terms. It is not a legal or factual certification.",
   "refs": [
@@ -106,14 +106,14 @@
       "branch": "research/m08-lore",
       "present": true,
       "ref": "origin/research/m08-lore",
-      "sha": "df51457588f0394fbd011f6211baa95969415734",
+      "sha": "2b8c5439062b6835d9af2ac003184e10d4f58fc1",
       "files": [
         "docs/research/monsters/lore/LORE_AUDIT.md",
         "docs/research/monsters/lore/MONSTER_WORLD_FRAMEWORK.md",
         "docs/research/monsters/lore/framework.json",
         "docs/research/monsters/lore/sample_lore_links.json"
       ],
-      "records": 2,
+      "records": 50,
       "error": ""
     }
   ],
