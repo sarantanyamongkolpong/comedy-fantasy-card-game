@@ -137,6 +137,38 @@ function compareProtect(left, right) {
   return idOrder(left, right);
 }
 
+function usefulProtect(play) {
+  return play.tags.effects.some((effect) => (effect.op === 'shield' && effect.amount > 0) || effect.op === 'taunt');
+}
+
+function expectedValue(state, side, play) {
+  const dealt = play.tags.damage ? damageScore(state, side, play).total : 0;
+  let extra = 0;
+  const allies = living(side.avatars).length;
+  for (const effect of play.tags.effects) {
+    if (effect.op === 'next_attack' && Number.isInteger(effect.amount)) extra += effect.amount;
+    else if (effect.op === 'regen' && Number.isInteger(effect.amount)) extra += effect.amount * allies;
+    else if (effect.op === 'heal' && Number.isInteger(effect.amount)) extra += effect.amount;
+    else if (effect.op === 'buff' && Number.isInteger(effect.amount)) extra += effect.amount;
+    else if (effect.op === 'shield' && Number.isInteger(effect.amount)) extra += effect.amount;
+    else if (effect.op === 'taunt') extra += 1;
+    else if (effect.op === 'draw') extra += effect.count ?? 1;
+  }
+  return dealt + extra;
+}
+
+function compareExpected(state, side, policy) {
+  return (left, right) => {
+    const delta = expectedValue(state, side, right) - expectedValue(state, side, left);
+    if (delta !== 0) return delta;
+    const leftHp = left.tags.damage ? damageScore(state, side, left).focusHp : Number.POSITIVE_INFINITY;
+    const rightHp = right.tags.damage ? damageScore(state, side, right).focusHp : Number.POSITIVE_INFINITY;
+    if (leftHp !== rightHp) return leftHp - rightHp;
+    if (policy.spend === 'greedy' && left.card.costAp !== right.card.costAp) return right.card.costAp - left.card.costAp;
+    return idOrder(left, right);
+  };
+}
+
 function pickPlay(state, side, policy) {
   const plays = legalPlays(state, side);
   for (const step of policy.priorities) {
@@ -144,11 +176,13 @@ function pickPlay(state, side, policy) {
     if (step === 'shield_taunt_if_lethal' && !enemyCanKill(state, side)) continue;
     let matching = [];
     if (step === 'heal_regen') matching = plays.filter((play) => play.tags.heal);
-    else if (step === 'shield_taunt_if_lethal') matching = plays.filter((play) => play.tags.protect);
+    else if (step === 'shield_taunt_if_lethal') matching = plays.filter((play) => usefulProtect(play));
     else if (step === 'highest_damage_lowest_hp') matching = plays.filter((play) => play.tags.damage);
+    else if (step === 'any_legal_expected_value') matching = plays.slice();
     if (matching.length === 0) continue;
     if (step === 'heal_regen') matching.sort(idOrder);
     else if (step === 'shield_taunt_if_lethal') matching.sort(compareProtect);
+    else if (step === 'any_legal_expected_value') matching.sort(compareExpected(state, side, policy));
     else matching.sort(compareDamage(state, side, policy));
     const chosen = matching[0];
     return {

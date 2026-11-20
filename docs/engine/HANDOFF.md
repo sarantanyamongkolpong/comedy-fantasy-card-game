@@ -48,7 +48,8 @@ AUTO is locked. SYNC is not in this build: there is no sync function and no sync
 - `runAutoTurn(state, sideId, opts)` plays them and then ends the turn. The returned `log` is the animation list (`play`, `discard_voluntary`, `end_turn`, `mandatory_discard`). `state` is the same match object, updated in place.
 - `playEnemyTurn(state)` is `runAutoTurn` for the non-human side.
 - Stop between actions with `opts.shouldStop` returning true, or `opts.maxActions`. The current action finishes; the turn is not ended, so the player can take over.
-- `defaultRuleConfig().autoPolicy` is `PROPOSED`. Default name `balanced`: heal/regen when an ally is under 40% HP, shield/taunt the tank when an enemy strike can KO, otherwise highest estimated damage on the lowest-HP legal target, spend AP greedily, voluntary discard only for a hand-locked card. Edit `policies.balanced` to change the threshold or the priority order. Do not mark the policy `LOCKED`.
+- `defaultRuleConfig().autoPolicy` is `PROPOSED`. Default name `balanced`: heal/regen when an ally is under 40% HP, shield/taunt the tank when an enemy strike can KO, otherwise highest estimated damage on the lowest-HP legal target, then any other legal card by expected value (a Skill that fires an Active is played; a zero-shield card does not outrank a damaging play). A turn is not passed while a legal card remains. Spend AP greedily. Voluntary discard only for a hand-locked card. Edit `policies.balanced` to change the threshold or the priority order. Do not mark the policy `LOCKED`.
+- Damage presets are selectable and still `PENDING_OWNER`. Leave `damage.preset` null for the current floor of 1. `floor_25_pct_atk`, `floor_50_pct_atk`, and `flat_atk` are named alternates. They do not change the default formula.
 
 `runEnemyTurn` remains the older lowest-instance demo. The web adapter should call `playEnemyTurn` for AUTO.
 
@@ -58,7 +59,8 @@ Contract names above are stable. Acceptance tests should import `src/engine/inde
 
 ## Known limits
 
-- Damage, HP, heal cap, regen timing, status duration, team-SPD math, SPD ties, and simultaneous death are placeholders. See `docs/engine/RULES.md`.
+- Damage, HP, heal cap, regen timing, status duration, team-SPD math, SPD ties, and simultaneous death are placeholders. See `docs/engine/RULES.md`. The default damage floor is still 1. On the mirror Justin practice match that loses to Regen and DEF buffs, pick `damage.preset` rather than treating the default as approved.
+- A KO sets `alive` false, HP 0, and clears that unit's statuses. The unit stays in the roster so the screen can show the seat. `0/14` with `alive: false` is defeated, not still fighting.
 - The legacy hand still throws on draw and discard. v0.5 zones are inside the match.
 - No currency payload is filled in. Rewards are a single result object.
 - `runEnemyTurn` is still the lowest-instance demo. AUTO decisions come from `autoPolicy` and are proposed, not a tuned difficulty.
