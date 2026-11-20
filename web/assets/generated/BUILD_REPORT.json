@@ -1,0 +1,228 @@
+{
+  "sourceCommit": "0c063ca176f3b7f8ee329f47c03714b9410966c3",
+  "totalBytes": 1638676,
+  "files": [
+    {
+      "asset_id": "AVT_AEG_002",
+      "path": "web/assets/generated/avatars/AVT_AEG_002.webp",
+      "bytes": 59398,
+      "source": "avatars/justin_case_battle.png"
+    },
+    {
+      "asset_id": "AVT_PHA_002",
+      "path": "web/assets/generated/avatars/AVT_PHA_002.webp",
+      "bytes": 62158,
+      "source": "avatars/justin_time_battle.png"
+    },
+    {
+      "asset_id": "AVT_CEL_002",
+      "path": "web/assets/generated/avatars/AVT_CEL_002.webp",
+      "bytes": 79404,
+      "source": "avatars/justin_theory_battle.png"
+    },
+    {
+      "asset_id": "AVT_SAN_002",
+      "path": "web/assets/generated/avatars/AVT_SAN_002.webp",
+      "bytes": 90074,
+      "source": "avatars/justina_moment_battle.png"
+    },
+    {
+      "asset_id": "FRAME_N",
+      "path": "web/assets/generated/frames/FRAME_N.webp",
+      "bytes": 72176,
+      "source": "card_ui/frame_n.png"
+    },
+    {
+      "asset_id": "FRAME_R",
+      "path": "web/assets/generated/frames/FRAME_R.webp",
+      "bytes": 79684,
+      "source": "card_ui/frame_r.png"
+    },
+    {
+      "asset_id": "FRAME_EPIC",
+      "path": "web/assets/generated/frames/FRAME_EPIC.webp",
+      "bytes": 84400,
+      "source": "card_ui/frame_epic.png"
+    },
+    {
+      "asset_id": "FRAME_EX",
+      "path": "web/assets/generated/frames/FRAME_EX.webp",
+      "bytes": 91648,
+      "source": "card_ui/frame_ex.png"
+    },
+    {
+      "asset_id": "FRAME_FAC",
+      "path": "web/assets/generated/frames/FRAME_FAC.webp",
+      "bytes": 110878,
+      "source": "card_ui/frame_fac.png"
+    },
+    {
+      "asset_id": "CARD_INTERIOR",
+      "path": "web/assets/generated/frames/CARD_INTERIOR.webp",
+      "bytes": 11754,
+      "source": "card_ui/card_interior_neutral.png"
+    },
+    {
+      "asset_id": "STAT_ICON_ATK",
+      "path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "bytes": 9776,
+      "source": "card_ui/icon_atk.png"
+    },
+    {
+      "asset_id": "STAT_ICON_DEF",
+      "path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "bytes": 8040,
+      "source": "card_ui/icon_def.png"
+    },
+    {
+      "asset_id": "TYPE_ICON_SKILL",
+      "path": "web/assets/generated/icons/TYPE_ICON_SKILL.webp",
+      "bytes": 8488,
+      "source": "card_ui/icon_skill.png"
+    },
+    {
+      "asset_id": "BG_MAP",
+      "path": "web/assets/generated/map/BG_MAP.webp",
+      "bytes": 437050,
+      "source": "world/world_map_base_16x9.png"
+    },
+    {
+      "asset_id": "MAP_BLD_HIDEOUT",
+      "path": "web/assets/generated/buildings/MAP_BLD_HIDEOUT.webp",
+      "bytes": 69684,
+      "source": "world/building_hideout.png"
+    },
+    {
+      "asset_id": "MAP_BLD_TOWER",
+      "path": "web/assets/generated/buildings/MAP_BLD_TOWER.webp",
+      "bytes": 47392,
+      "source": "world/building_mysterious_tower.png"
+    },
+    {
+      "asset_id": "MAP_BLD_SPORTS",
+      "path": "web/assets/generated/buildings/MAP_BLD_SPORTS.webp",
+      "bytes": 75178,
+      "source": "world/building_sports_complex.png"
+    },
+    {
+      "asset_id": "MAP_BLD_ARENA",
+      "path": "web/assets/generated/buildings/MAP_BLD_ARENA.webp",
+      "bytes": 89682,
+      "source": "world/building_tournament_arena.png"
+    },
+    {
+      "asset_id": "MAP_BLD_MALL",
+      "path": "web/assets/generated/buildings/MAP_BLD_MALL.webp",
+      "bytes": 86618,
+      "source": "world/building_shopping_mall.png"
+    },
+    {
+      "asset_id": "MAP_BLD_GACHA",
+      "path": "web/assets/generated/buildings/MAP_BLD_GACHA.webp",
+      "bytes": 65194,
+      "source": "world/building_gachapon_shop.png"
+    }
+  ],
+  "frameInsets": {
+    "N": {
+      "art": {
+        "x": 110,
+        "y": 282,
+        "w": 803,
+        "h": 687
+      },
+      "title": {
+        "x": 276,
+        "y": 117,
+        "w": 646,
+        "h": 76
+      },
+      "body": {
+        "x": 95,
+        "y": 1098,
+        "w": 833,
+        "h": 157
+      }
+    },
+    "R": {
+      "art": {
+        "x": 113,
+        "y": 246,
+        "w": 798,
+        "h": 723
+      },
+      "title": {
+        "x": 274,
+        "y": 119,
+        "w": 646,
+        "h": 76
+      },
+      "body": {
+        "x": 96,
+        "y": 1099,
+        "w": 831,
+        "h": 156
+      }
+    },
+    "Epic": {
+      "art": {
+        "x": 113,
+        "y": 282,
+        "w": 797,
+        "h": 688
+      },
+      "title": {
+        "x": 275,
+        "y": 121,
+        "w": 646,
+        "h": 73
+      },
+      "body": {
+        "x": 95,
+        "y": 1097,
+        "w": 831,
+        "h": 157
+      }
+    },
+    "EX": {
+      "art": {
+        "x": 112,
+        "y": 283,
+        "w": 799,
+        "h": 684
+      },
+      "title": {
+        "x": 274,
+        "y": 121,
+        "w": 647,
+        "h": 74
+      },
+      "body": {
+        "x": 95,
+        "y": 1103,
+        "w": 834,
+        "h": 147
+      }
+    },
+    "FAC": {
+      "art": {
+        "x": 116,
+        "y": 282,
+        "w": 790,
+        "h": 685
+      },
+      "title": {
+        "x": 276,
+        "y": 119,
+        "w": 644,
+        "h": 74
+      },
+      "body": {
+        "x": 95,
+        "y": 1104,
+        "w": 832,
+        "h": 146
+      }
+    }
+  }
+}
