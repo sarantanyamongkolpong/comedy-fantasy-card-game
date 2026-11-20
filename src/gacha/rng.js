@@ -1,4 +1,23 @@
 /**
+ * A non-negative integer, or the FNV-1a 32-bit hash of a non-empty string.
+ * `pull()` accepts only the integer. Call this before `pull()` when the caller has a string.
+ * @param {unknown} value
+ */
+export function integerSeed(value) {
+  if (Number.isInteger(value) && value >= 0) return value;
+  if (typeof value !== 'string' || value.length === 0) {
+    const error = new TypeError('integerSeed expects a non-negative integer or a non-empty string');
+    error.code = 'BAD_SEED';
+    throw error;
+  }
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash = Math.imul(hash ^ value.charCodeAt(index), 16777619);
+  }
+  return hash >>> 0;
+}
+
+/**
  * Deterministic 32-bit generator. Same seed, same sequence.
  * @param {number} seed
  */
