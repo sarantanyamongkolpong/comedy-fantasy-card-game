@@ -133,6 +133,10 @@ Failed: the provenance audit (248 real-name/URL hits, all in one web file) and t
 
 Content JSON had no stat-key, rarity, untagged-number, or forbidden-token findings. Public content fields did not contain real-block names.
 
+### Probe 3 — 2026-11-20T13:33:18Z
+
+Fetched each stream again. Tips are the same four commits as probe 2. None match feature-complete. Throwaway merge onto `sport/v06-base` was clean again and was not pushed. Harness on Node v22.23.4 reproduced the same totals: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. The five failures are still the 248 real-name hits in `web/sport/fixtures/catalog.js` and the four hideout viewports. No new P0, P1, or P2. Counts: `tools/sport-qa/baselines/harness-20261120T133318Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T133318Z/`.
+
 ## Findings
 
 ### P0
