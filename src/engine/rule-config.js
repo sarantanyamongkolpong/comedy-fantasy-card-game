@@ -11,7 +11,8 @@ const SPD_AGGREGATIONS = new Set(['sum', 'average', 'max']);
 const SIMULTANEOUS_POLICIES = new Set(['higher_team_spd_then_input_order', 'input_order']);
 const HEAL_POLICIES = new Set(['clamp_to_max_hp', 'allow_overheal']);
 const REGEN_STACKS = new Set(['refresh_ticks_keep_higher_amount', 'stack_separate']);
-const AUTO_STEPS = new Set(['heal_regen', 'shield_taunt_if_lethal', 'highest_damage_lowest_hp', 'any_legal_expected_value']);
+const AUTO_STEPS = new Set(['heal_regen', 'shield_taunt_if_lethal', 'setup_next_attack', 'highest_damage_lowest_hp', 'any_legal_expected_value']);
+const DISCARD_POLICIES = new Set(['hand_locked_only', 'hand_locked_or_no_progress']);
 const DAMAGE_PRESETS = new Set(['floor_25_pct_atk', 'floor_50_pct_atk', 'flat_atk']);
 
 const TEMPLATE = {
@@ -152,12 +153,12 @@ const TEMPLATE = {
     policies: {
       balanced: {
         allyLowHpRatio: 0.4,
-        priorities: ['heal_regen', 'shield_taunt_if_lethal', 'highest_damage_lowest_hp', 'any_legal_expected_value'],
+        priorities: ['setup_next_attack', 'highest_damage_lowest_hp', 'shield_taunt_if_lethal', 'heal_regen', 'any_legal_expected_value'],
         spend: 'greedy',
-        voluntaryDiscard: 'hand_locked_only',
+        voluntaryDiscard: 'hand_locked_or_no_progress',
       },
     },
-    note: 'AUTO is locked. This preference table is proposed and editable. balanced heals or applies regen when an ally is under allyLowHpRatio of max HP, shields or taunts the tank when an enemy strike can KO, otherwise plays the highest estimated damage on the lowest-HP legal target. The last tier plays any other legal card by expected value, including a Skill that fires an Active and a zero-amount shield, so a turn is not passed while a legal card remains. A zero-amount shield does not count as the lethal shield tier. AP is spent greedily. A voluntary discard is used only for a hand-locked card.',
+    note: 'AUTO is locked. This preference table is proposed and editable. balanced plays a next-attack Skill before damage when that buff raises the hit, then the highest estimated damage on the lowest-HP legal target, then a real shield or taunt when an enemy strike can KO, then a non-regen heal when an ally is under allyLowHpRatio and no damaging card is legal. The last tier plays any other legal card whose expected value is above 0. Team regen and a shield of 0 score 0, so they do not replace a damaging play. hand_locked_or_no_progress spends 1 AP to discard one zero-value or unplayable card so the hand can draw. AP is spent greedily.',
   },
 };
 
@@ -252,7 +253,7 @@ function assertConfig(config) {
       throw gameError('UNKNOWN_AUTO_POLICY');
     }
     if (policy.spend !== 'greedy') throw gameError('UNKNOWN_AUTO_POLICY');
-    if (policy.voluntaryDiscard !== 'hand_locked_only') throw gameError('UNKNOWN_AUTO_POLICY');
+    if (!DISCARD_POLICIES.has(policy.voluntaryDiscard)) throw gameError('UNKNOWN_AUTO_POLICY');
   }
   const duplicateCap = config.deckDuplicateMax.value;
   if (duplicateCap !== null && !(Number.isInteger(duplicateCap) && duplicateCap >= 1)) {
