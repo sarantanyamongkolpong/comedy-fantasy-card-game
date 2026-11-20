@@ -1,0 +1,110 @@
+{
+  "manifest_version": "0.1.0",
+  "project": "comedy-fantasy-card-game",
+  "created_on": "2026-11-20",
+  "owner": "Potae",
+  "asset_status_policy": {
+    "reference_cards": "APPROVED_ART_REFERENCE",
+    "all_new_images": "GENERATED_REVIEW",
+    "runtime_integration": "NOT_INTEGRATED"
+  },
+  "reference_cards": {
+    "justin_case": "reference_cards/justin_case_approved_card.png",
+    "justin_time": "reference_cards/justin_time_approved_card.png",
+    "justin_theory": "reference_cards/justin_theory_approved_card.png",
+    "justina_moment": "reference_cards/justina_moment_approved_card.png"
+  },
+  "battle_avatars": {
+    "justin_case": {
+      "path": "avatars/justin_case_battle.png",
+      "role": "tank",
+      "faction": "Aegis Dominion",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "animated": false
+    },
+    "justin_time": {
+      "path": "avatars/justin_time_battle.png",
+      "role": "dps",
+      "faction": "Phantom Blades",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "animated": false
+    },
+    "justin_theory": {
+      "path": "avatars/justin_theory_battle.png",
+      "role": "magic",
+      "faction": "Celestial Nexus",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "animated": false
+    },
+    "justina_moment": {
+      "path": "avatars/justina_moment_battle.png",
+      "role": "support",
+      "faction": "Sanctuary Order",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "animated": false
+    }
+  },
+  "world": {
+    "background": "world/world_map_base_16x9.png",
+    "master_size": {
+      "width": 1672,
+      "height": 941
+    },
+    "buildings": {
+      "home": "world/building_hideout.png",
+      "tower": "world/building_mysterious_tower.png",
+      "sports": "world/building_sports_complex.png",
+      "arena": "world/building_tournament_arena.png",
+      "mall": "world/building_shopping_mall.png",
+      "gachapon": "world/building_gachapon_shop.png"
+    },
+    "buildings_native_size": {
+      "width": 1254,
+      "height": 1254
+    },
+    "placement_data": "world/WORLD_MAP_PLACEMENT_PROPOSED.json",
+    "placement_status": "PROPOSED",
+    "scaling": "FIXED_ASPECT_UNIFORM_CONTAIN_LETTERBOX"
+  },
+  "card_ui": {
+    "interior_background": "card_ui/card_interior_neutral.png",
+    "frames": {
+      "N": "card_ui/frame_n.png",
+      "R": "card_ui/frame_r.png",
+      "EPIC": "card_ui/frame_epic.png",
+      "EX": "card_ui/frame_ex.png",
+      "FAC": "card_ui/frame_fac.png"
+    },
+    "frame_size": {
+      "width": 1024,
+      "height": 1536
+    },
+    "icons": {
+      "ATK": "card_ui/icon_atk.png",
+      "DEF": "card_ui/icon_def.png",
+      "SKILL": "card_ui/icon_skill.png"
+    },
+    "transparent": true,
+    "data_binding": "RUNTIME"
+  },
+  "owner_updates": {
+    "justina_moment_active_skill": "All teammates Regen +3 - 2 Turns",
+    "stats_skills_lock_state": "PROPOSED_UNLESS_EXPLICITLY_LOCKED_IN_V05"
+  },
+  "technical_notes": [
+    "All new artwork is generated for review and has not yet been approved for production use.",
+    "Card frames are transparent overlays; keep portrait, labels and numbers as separate runtime layers.",
+    "Rarity frame alpha masks are not pixel-perfect identical; use the same 1024x1536 visual canvas, but do not use one frame's alpha as the hitmask for another.",
+    "World buildings are separate transparent overlays; keep all anchors inside one uniformly scaled master canvas.",
+    "Do not merge unapproved PR #9.",
+    "No code or existing PR was modified in this production batch."
+  ]
+}
