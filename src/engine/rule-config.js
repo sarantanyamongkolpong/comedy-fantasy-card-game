@@ -11,7 +11,9 @@ const SPD_AGGREGATIONS = new Set(['sum', 'average', 'max']);
 const SIMULTANEOUS_POLICIES = new Set(['higher_team_spd_then_input_order', 'input_order']);
 const HEAL_POLICIES = new Set(['clamp_to_max_hp', 'allow_overheal']);
 const REGEN_STACKS = new Set(['refresh_ticks_keep_higher_amount', 'stack_separate']);
-const AUTO_STEPS = new Set(['heal_regen', 'shield_taunt_if_lethal', 'highest_damage_lowest_hp']);
+const AUTO_STEPS = new Set(['heal_regen', 'shield_taunt_if_lethal', 'setup_next_attack', 'highest_damage_lowest_hp', 'any_legal_expected_value']);
+const DISCARD_POLICIES = new Set(['hand_locked_only', 'hand_locked_or_no_progress']);
+const DAMAGE_PRESETS = new Set(['floor_25_pct_atk', 'floor_50_pct_atk', 'flat_atk']);
 
 const TEMPLATE = {
   meta: {
@@ -49,7 +51,28 @@ const TEMPLATE = {
     label: 'PLACEHOLDER_NOT_APPROVED',
     formula: 'placeholder_atk_minus_def',
     minDamage: 1,
-    note: 'No v0.5 source defines damage. placeholder_atk_minus_def is max(minDamage, effectiveATK - effectiveDEF) plus on-attack bonus damage from the attacker passive. effectiveATK includes ATK buffs and a next-attack bonus. Shield absorbs before HP. minDamage 1 is only there so a connecting attack can finish the demo loop; set it to 0 to allow zero-damage hits. placeholder_flat_atk ignores DEF and is also unapproved. This is not balance.',
+    preset: null,
+    presets: {
+      floor_25_pct_atk: {
+        formula: 'placeholder_atk_minus_def',
+        minDamage: 1,
+        floorPct: 0.25,
+        note: 'PLACEHOLDER alternate. Damage is at least ceil(25% of effective ATK), and still at least ATK - DEF and minDamage. DEF can still reduce a hit above that floor. Not approved.',
+      },
+      floor_50_pct_atk: {
+        formula: 'placeholder_atk_minus_def',
+        minDamage: 1,
+        floorPct: 0.5,
+        note: 'PLACEHOLDER alternate. Damage is at least ceil(50% of effective ATK), and still at least ATK - DEF and minDamage. Not approved.',
+      },
+      flat_atk: {
+        formula: 'placeholder_flat_atk',
+        minDamage: 0,
+        floorPct: null,
+        note: 'PLACEHOLDER alternate. Damage is effective ATK and ignores DEF. Not approved.',
+      },
+    },
+    note: 'No v0.5 source defines damage. The default stays placeholder_atk_minus_def: max(minDamage, effectiveATK - effectiveDEF) plus on-attack bonus. minDamage 1 and preset null are unchanged. Select damage.preset floor_25_pct_atk, floor_50_pct_atk, or flat_atk to try a named alternate. effectiveATK includes ATK buffs and a next-attack bonus. Shield absorbs before HP. This is not balance.',
   },
   hp: {
     id: 'CORE-039',
@@ -130,12 +153,12 @@ const TEMPLATE = {
     policies: {
       balanced: {
         allyLowHpRatio: 0.4,
-        priorities: ['heal_regen', 'shield_taunt_if_lethal', 'highest_damage_lowest_hp'],
+        priorities: ['setup_next_attack', 'highest_damage_lowest_hp', 'shield_taunt_if_lethal', 'heal_regen', 'any_legal_expected_value'],
         spend: 'greedy',
-        voluntaryDiscard: 'hand_locked_only',
+        voluntaryDiscard: 'hand_locked_or_no_progress',
       },
     },
-    note: 'AUTO is locked. This preference table is proposed and editable. balanced heals or applies regen when an ally is under allyLowHpRatio of max HP, shields or taunts the tank when an enemy strike can KO, otherwise plays the highest estimated damage on the lowest-HP legal target. AP is spent greedily. A voluntary discard is used only for a hand-locked card.',
+    note: 'AUTO is locked. This preference table is proposed and editable. balanced plays a next-attack Skill before damage when that buff raises the hit, then the highest estimated damage on the lowest-HP legal target, then a real shield or taunt when an enemy strike can KO, then a non-regen heal when an ally is under allyLowHpRatio and no damaging card is legal. The last tier plays any other legal card whose expected value is above 0. Team regen and a shield of 0 score 0, so they do not replace a damaging play. hand_locked_or_no_progress spends 1 AP to discard one zero-value or unplayable card so the hand can draw. AP is spent greedily.',
   },
 };
 
@@ -190,6 +213,18 @@ function assertConfig(config) {
   if (!Number.isInteger(config.damage.minDamage) || config.damage.minDamage < 0) {
     throw gameError('INVALID_DAMAGE_CONFIG');
   }
+  if (config.damage.preset !== null && !DAMAGE_PRESETS.has(config.damage.preset)) {
+    throw gameError('UNKNOWN_FORMULA', 'Unknown damage preset');
+  }
+  const presets = config.damage.presets ?? {};
+  for (const name of DAMAGE_PRESETS) {
+    const preset = presets[name];
+    if (!preset || !DAMAGE_FORMULAS.has(preset.formula)) throw gameError('UNKNOWN_FORMULA');
+    if (!Number.isInteger(preset.minDamage) || preset.minDamage < 0) throw gameError('INVALID_DAMAGE_CONFIG');
+    if (preset.floorPct !== null && (typeof preset.floorPct !== 'number' || preset.floorPct <= 0 || preset.floorPct > 1)) {
+      throw gameError('INVALID_DAMAGE_CONFIG');
+    }
+  }
   if (config.hp.formula !== 'placeholder_base_plus_def') throw gameError('UNKNOWN_HP_FORMULA');
   if (!Number.isInteger(config.hp.base) || config.hp.base < 0 || !Number.isInteger(config.hp.perDef) || config.hp.perDef < 0) {
     throw gameError('INVALID_HP_CONFIG');
@@ -218,7 +253,7 @@ function assertConfig(config) {
       throw gameError('UNKNOWN_AUTO_POLICY');
     }
     if (policy.spend !== 'greedy') throw gameError('UNKNOWN_AUTO_POLICY');
-    if (policy.voluntaryDiscard !== 'hand_locked_only') throw gameError('UNKNOWN_AUTO_POLICY');
+    if (!DISCARD_POLICIES.has(policy.voluntaryDiscard)) throw gameError('UNKNOWN_AUTO_POLICY');
   }
   const duplicateCap = config.deckDuplicateMax.value;
   if (duplicateCap !== null && !(Number.isInteger(duplicateCap) && duplicateCap >= 1)) {

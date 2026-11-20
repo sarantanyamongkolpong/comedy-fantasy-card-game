@@ -137,18 +137,82 @@ function compareProtect(left, right) {
   return idOrder(left, right);
 }
 
+function usefulProtect(play) {
+  return play.tags.effects.some((effect) => (effect.op === 'shield' && effect.amount > 0) || effect.op === 'taunt');
+}
+
+function nextAttackDelta(state, side, play) {
+  const effect = play.tags.effects.find((item) => item.op === 'next_attack' && Number.isInteger(item.amount));
+  if (!effect) return 0;
+  const foes = living(state.sides[opponentId(state, side.sideId)].avatars);
+  if (foes.length === 0) return 0;
+  const victim = foes.reduce((lowest, unit) => (unit.hp < lowest.hp ? unit : lowest));
+  const before = formulaDamage(play.actor, victim, state.config, 0).amount;
+  play.actor.statuses.push({ kind: 'next_attack', stat: 'atk', amount: effect.amount });
+  const after = formulaDamage(play.actor, victim, state.config, 0).amount;
+  play.actor.statuses.pop();
+  return Math.max(0, after - before);
+}
+
+function expectedValue(state, side, play, policy) {
+  const dealt = play.tags.damage ? damageScore(state, side, play).total : 0;
+  let extra = 0;
+  const lethal = enemyCanKill(state, side);
+  if (play.tags.effects.some((effect) => effect.op === 'next_attack')) extra += nextAttackDelta(state, side, play);
+  for (const effect of play.tags.effects) {
+    if (effect.op === 'next_attack') continue;
+    if (effect.op === 'regen' || effect.op === 'heal') {
+      extra += 0;
+    } else if (effect.op === 'buff' && effect.stat === 'atk' && Number.isInteger(effect.amount)) extra += effect.amount;
+    else if (effect.op === 'shield' && lethal && Number.isInteger(effect.amount) && effect.amount > 0) extra += effect.amount;
+    else if (effect.op === 'taunt' && lethal) extra += 1;
+    else if (effect.op === 'draw') extra += effect.count ?? 1;
+  }
+  return dealt + extra;
+}
+
+function compareExpected(state, side, policy) {
+  return (left, right) => {
+    const delta = expectedValue(state, side, right, policy) - expectedValue(state, side, left, policy);
+    if (delta !== 0) return delta;
+    const leftHp = left.tags.damage ? damageScore(state, side, left).focusHp : Number.POSITIVE_INFINITY;
+    const rightHp = right.tags.damage ? damageScore(state, side, right).focusHp : Number.POSITIVE_INFINITY;
+    if (leftHp !== rightHp) return leftHp - rightHp;
+    if (policy.spend === 'greedy' && left.card.costAp !== right.card.costAp) return right.card.costAp - left.card.costAp;
+    return idOrder(left, right);
+  };
+}
+
+function improvesTheHit(state, side, play, plays) {
+  if (nextAttackDelta(state, side, play) <= 0) return false;
+  const follow = plays.filter((other) => other.tags.damage
+    && other.actor.avatarId === play.actor.avatarId
+    && other.card.instanceId !== play.card.instanceId
+    && other.card.costAp <= side.ap - play.card.costAp);
+  if (follow.length === 0) return false;
+  const bestNow = plays.filter((other) => other.tags.damage).reduce((best, other) => Math.max(best, damageScore(state, side, other).total), 0);
+  const actorNow = follow.reduce((best, other) => Math.max(best, damageScore(state, side, other).total), 0);
+  return actorNow + nextAttackDelta(state, side, play) > bestNow;
+}
+
 function pickPlay(state, side, policy) {
   const plays = legalPlays(state, side);
   for (const step of policy.priorities) {
     if (step === 'heal_regen' && !allyIsLow(side, policy.allyLowHpRatio)) continue;
     if (step === 'shield_taunt_if_lethal' && !enemyCanKill(state, side)) continue;
     let matching = [];
-    if (step === 'heal_regen') matching = plays.filter((play) => play.tags.heal);
-    else if (step === 'shield_taunt_if_lethal') matching = plays.filter((play) => play.tags.protect);
+    if (step === 'heal_regen') {
+      matching = plays.filter((play) => play.tags.heal && !plays.some((other) => other.tags.damage)
+        && !play.tags.effects.some((effect) => effect.op === 'regen'));
+    }
+    else if (step === 'shield_taunt_if_lethal') matching = plays.filter((play) => usefulProtect(play));
+    else if (step === 'setup_next_attack') matching = plays.filter((play) => improvesTheHit(state, side, play, plays));
     else if (step === 'highest_damage_lowest_hp') matching = plays.filter((play) => play.tags.damage);
+    else if (step === 'any_legal_expected_value') matching = plays.filter((play) => expectedValue(state, side, play, policy) > 0);
     if (matching.length === 0) continue;
     if (step === 'heal_regen') matching.sort(idOrder);
     else if (step === 'shield_taunt_if_lethal') matching.sort(compareProtect);
+    else if (step === 'setup_next_attack' || step === 'any_legal_expected_value') matching.sort(compareExpected(state, side, policy));
     else matching.sort(compareDamage(state, side, policy));
     const chosen = matching[0];
     return {
@@ -174,19 +238,33 @@ function cardIsHandLocked(state, side, card) {
     .some((pair) => assessAction(copy, actionFrom(pair)).ok);
 }
 
+function cardHasProgress(state, side, policy, card) {
+  const copy = getState(state);
+  const mirrored = copy.sides[side.sideId];
+  mirrored.ap = Math.max(mirrored.ap ?? 0, card.costAp, copy.config.baseAp.value);
+  return legalPlays(copy, mirrored)
+    .filter((play) => play.card.instanceId === card.instanceId)
+    .some((play) => expectedValue(copy, mirrored, play, policy) > 0);
+}
+
 function pickDiscard(state, side, policy) {
-  if (policy.voluntaryDiscard !== 'hand_locked_only') return null;
+  const mode = policy.voluntaryDiscard;
+  if (mode !== 'hand_locked_only' && mode !== 'hand_locked_or_no_progress') return null;
   if ((side.ap ?? 0) < state.config.voluntaryDiscardAp.value) return null;
-  if (legalPlays(state, side).length > 0) return null;
-  const locked = [...side.zones.hand]
-    .filter((card) => cardIsHandLocked(state, side, card))
-    .sort((left, right) => (left.instanceId < right.instanceId ? -1 : left.instanceId > right.instanceId ? 1 : 0));
-  if (locked.length === 0) return null;
+  const plays = legalPlays(state, side);
+  if (plays.some((play) => expectedValue(state, side, play, policy) > 0)) return null;
+  const byInstance = (left, right) => (left.instanceId < right.instanceId ? -1 : left.instanceId > right.instanceId ? 1 : 0);
+  const locked = [...side.zones.hand].filter((card) => cardIsHandLocked(state, side, card)).sort(byInstance);
+  const stalled = mode === 'hand_locked_or_no_progress'
+    ? [...side.zones.hand].filter((card) => !cardHasProgress(state, side, policy, card)).sort(byInstance)
+    : [];
+  const chosen = locked[0] ?? stalled[0];
+  if (!chosen) return null;
   return {
     kind: 'discard_voluntary',
-    priority: 'hand_locked_only',
-    cardInstanceId: locked[0].instanceId,
-    cardId: locked[0].cardId,
+    priority: locked[0] ? 'hand_locked_only' : 'no_progress',
+    cardInstanceId: chosen.instanceId,
+    cardId: chosen.cardId,
     actorAvatarId: null,
     targets: null,
     cost: state.config.voluntaryDiscardAp.value,
