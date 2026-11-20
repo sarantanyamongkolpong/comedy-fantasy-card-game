@@ -1,0 +1,95 @@
+{
+  "node": "v20.20.2",
+  "totals": {
+    "tests": 19,
+    "pass": 10,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 9,
+    "todo": 0
+  },
+  "hangs": [],
+  "failures": [],
+  "files": [
+    {
+      "file": "tests/sport/qa/provenance.test.js",
+      "elapsedMs": 85,
+      "code": 0,
+      "hung": false,
+      "summary": {
+        "tests": 9,
+        "pass": 8,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 1,
+        "todo": 0,
+        "duration_ms": 57.215568
+      },
+      "failures": []
+    },
+    {
+      "file": "tests/sport/qa/save-compat.test.js",
+      "elapsedMs": 74,
+      "code": 0,
+      "hung": false,
+      "summary": {
+        "tests": 3,
+        "pass": 2,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 1,
+        "todo": 0,
+        "duration_ms": 51.990998
+      },
+      "failures": []
+    },
+    {
+      "file": "tests/sport/qa/wallet-gacha.test.js",
+      "elapsedMs": 72,
+      "code": 0,
+      "hung": false,
+      "summary": {
+        "tests": 1,
+        "pass": 0,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 1,
+        "todo": 0,
+        "duration_ms": 49.227309
+      },
+      "failures": []
+    },
+    {
+      "file": "tests/sport/qa/sim-determinism.test.js",
+      "elapsedMs": 70,
+      "code": 0,
+      "hung": false,
+      "summary": {
+        "tests": 5,
+        "pass": 0,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 5,
+        "todo": 0,
+        "duration_ms": 47.417194
+      },
+      "failures": []
+    },
+    {
+      "file": "tests/e2e/sport/viewport-buttons.test.js",
+      "elapsedMs": 66,
+      "code": 0,
+      "hung": false,
+      "summary": {
+        "tests": 1,
+        "pass": 0,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 1,
+        "todo": 0,
+        "duration_ms": 43.4074
+      },
+      "failures": []
+    }
+  ]
+}

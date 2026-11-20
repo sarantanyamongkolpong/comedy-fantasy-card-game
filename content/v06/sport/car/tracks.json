@@ -1,0 +1,140 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "car",
+  "status": "PROPOSED",
+  "tracks": [
+    {
+      "id": "SPC_CAR_TRK_001",
+      "sport": "car",
+      "kind": "track",
+      "parodyName": "Mozza Speedway",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Long straights reward top speed.",
+      "real": {
+        "name": "Monza",
+        "url": "https://www.formula1.com/en/racing/2026/italy",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Monza"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Workbook context names the country as Italy. Country is not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_TRK_002",
+      "sport": "car",
+      "kind": "track",
+      "parodyName": "Monocle Harbor Loop",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Tight streets make passing hard and reward handling.",
+      "real": {
+        "name": "Monaco",
+        "url": "https://www.formula1.com/en/racing/2026/monaco",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Monaco"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Circuit inspiration only. Layout is not traced."
+      }
+    },
+    {
+      "id": "SPC_CAR_TRK_003",
+      "sport": "car",
+      "kind": "track",
+      "parodyName": "Sushi-Zag Circuit",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Fast changes of direction reward a stable car.",
+      "real": {
+        "name": "Suzuka",
+        "url": "https://www.formula1.com/en/racing/2026/japan",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Suzuka"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Workbook context names the country as Japan. Country is not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_TRK_004",
+      "sport": "car",
+      "kind": "track",
+      "parodyName": "Silver Spoonstone",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Sustained quick corners reward aero balance.",
+      "real": {
+        "name": "Silverstone",
+        "url": "https://www.formula1.com/en/racing/2026/great-britain",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Silverstone"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Workbook context names the country as Great Britain. Country is not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_TRK_005",
+      "sport": "car",
+      "kind": "track",
+      "parodyName": "Spa-ghetti Summit",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Elevation changes and shifting weather.",
+      "real": {
+        "name": "Spa-Francorchamps",
+        "url": "https://www.formula1.com/en/racing/2026/belgium",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Spa-Francorchamps"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Workbook context names the country as Belgium. Country is not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_TRK_006",
+      "sport": "car",
+      "kind": "track",
+      "parodyName": "Singa-Pour Night Loop",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A hot night lap that chews through tyres.",
+      "real": {
+        "name": "Marina Bay",
+        "url": "https://www.formula1.com/en/racing/2026/singapore",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Marina Bay"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Workbook context names the country as Singapore. Country is not a player-facing label."
+      }
+    }
+  ]
+}

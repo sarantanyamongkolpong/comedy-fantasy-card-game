@@ -1,0 +1,8 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "car",
+  "status": "PROPOSED",
+  "coaches": [],
+  "internalNote": "The workbook has no coach rows for car racing."
+}

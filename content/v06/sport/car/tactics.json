@@ -1,0 +1,146 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "car",
+  "status": "PROPOSED",
+  "tactics": [
+    {
+      "id": "SPC_CAR_TAC_001",
+      "sport": "car",
+      "kind": "tactic",
+      "parodyName": "Soft Peel",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A greedy dry tyre that grips early and fades.",
+      "real": {
+        "name": "Formula 1 dry tyre guide",
+        "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Formula 1 dry tyre guide",
+          "Pirelli"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Compound names are game labels. No allocation table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_TAC_002",
+      "sport": "car",
+      "kind": "tactic",
+      "parodyName": "Medium Crust",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A middle dry tyre. Neither the fastest nor the longest lasting.",
+      "real": {
+        "name": "Formula 1 dry tyre guide",
+        "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Formula 1 dry tyre guide",
+          "Pirelli"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Compound names are game labels. No allocation table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_TAC_003",
+      "sport": "car",
+      "kind": "tactic",
+      "parodyName": "Hard Biscuit",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A durable dry tyre that gives up early bite.",
+      "real": {
+        "name": "Formula 1 dry tyre guide",
+        "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Formula 1 dry tyre guide",
+          "Pirelli"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Compound names are game labels. No allocation table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_TAC_004",
+      "sport": "car",
+      "kind": "tactic",
+      "parodyName": "Drizzle Tread",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A damp-weather tyre for a track that is not yet soaked.",
+      "real": {
+        "name": "Formula 1 wet tyre guide",
+        "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Formula 1 wet tyre guide",
+          "Pirelli"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Compound names are game labels. No allocation table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_TAC_005",
+      "sport": "car",
+      "kind": "tactic",
+      "parodyName": "Storm Tread",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A full-wet tyre for standing water.",
+      "real": {
+        "name": "Formula 1 wet tyre guide",
+        "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Formula 1 wet tyre guide",
+          "Pirelli"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Compound names are game labels. No allocation table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_TAC_006",
+      "sport": "car",
+      "kind": "tactic",
+      "parodyName": "Pit Window Guess",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "The crew picks a stop window. There is no hardcoded stop count.",
+      "real": {
+        "name": "Formula 1 pit stop guide",
+        "url": "https://www.formula1.com/en/latest/article/anatomy-of-a-pit-stop-how-do-teams-service-their-cars-in-less-than-two.5p9LNdd8XJdvP4mRsXoGsB",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Formula 1 pit stop guide",
+          "Pirelli"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Compound names are game labels. No allocation table was copied."
+      }
+    }
+  ]
+}

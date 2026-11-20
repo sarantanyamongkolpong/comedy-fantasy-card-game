@@ -58,7 +58,25 @@ const css = readFileSync(join(repoRoot, 'web/css/app.css'), 'utf8').replace(
     return `url("${dataUri(file)}")`;
   },
 );
-const js = readFileSync(bundleFile, 'utf8');
+// v0.6 Sport Complex: inline sport.css and every file named in web/sport/art-manifest.json.
+const sportCss = readFileSync(join(repoRoot, 'web/sport/sport.css'), 'utf8');
+const sportArt = JSON.parse(readFileSync(join(repoRoot, 'web/sport/art-manifest.json'), 'utf8'));
+const sportArtInline = {};
+for (const asset of sportArt.assets ?? []) {
+  if (!asset.file || asset.file.startsWith('data:') || sportArtInline[asset.file]) continue;
+  const file = join(repoRoot, 'web/sport', asset.file);
+  if (existsSync(file)) sportArtInline[asset.file] = dataUri(file);
+}
+// v0.6 Sport (PROPOSED): src/sport/gacha/catalog.js keeps private real-name provenance
+// (`real(name, url)`) next to its default pools. The player-facing build never reads it,
+// so the single-file HTML drops those strings and fails if any real-provenance URL survives.
+const js = readFileSync(bundleFile, 'utf8')
+  .replace(/\b(real\d*)\(\s*"[^"]*",\s*"https?:\/\/[^"]*"\s*\)/g, '$1(null, null)');
+const leaked = js.match(/https?:\/\/(?:www\.)?(?:formula1\.com|motogp\.com)[^"'\s]*/);
+if (leaked) {
+  console.error(`build-single-html: real-provenance URL left in bundle: ${leaked[0]}`);
+  process.exit(1);
+}
 const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,6 +85,9 @@ const html = `<!DOCTYPE html>
   <title>Comedy Fantasy Card Game</title>
   <style>
 ${css}
+  </style>
+  <style data-sport-css="true">
+${sportCss}
   </style>
 </head>
 <body>
@@ -78,6 +99,7 @@ ${css}
     <p>This stage is built for landscape. Portrait is just a very tall joke.</p>
   </div>
   <script>globalThis.__CFCG_MANIFEST = ${JSON.stringify(manifest)};</script>
+  <script>globalThis.__SPORT_ART_INLINE = ${JSON.stringify(sportArtInline)};</script>
   <script>${js}</script>
 </body>
 </html>
