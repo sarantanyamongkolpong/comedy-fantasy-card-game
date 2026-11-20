@@ -164,6 +164,7 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
       shuffleDecks: input.shuffleDecks !== false,
       teams,
       decks: input.decks,
+      config: input.config,
     });
     return presentMatch(state, { mode: input.mode, rewardId: input.rewardId });
   }
