@@ -173,36 +173,52 @@ Record, in the creative block, which language holds the joke: `en`, `th`, or `bo
 
 ## Elements, archetypes, factions, rarity, tower
 
-These vocabularies are **PROPOSED** labels for art and for later database work. They are not combat rules. Agent 09 may rename the keys. Agent 08 may rename the tower floors. Until those files exist, use the lists below and do not invent a damage triangle.
+Agent 08 proposed a vocabulary at `research/m08-lore` commit `35c6d36` (`MONSTER_WORLD_FRAMEWORK.md` and `framework.json`). It is **PROPOSED**, not canon. This folder uses it so the sample can be linked later. If that file changes, follow the newer proposal.
 
-**Element** (one): Cinder, Tide, Loam, Gale, Spark, Gloom, Bloom, Gleam, Scrap, Neutral. No Void. No Light/Dark pair that implies holy war. Gloom is the shadow tag. Gleam is the bright tag.
+**Element / attribute** is one primary id from that list, not a damage type:
 
-**Combat archetype** (one), written so a four-seat battle can host it later:
-
-| Archetype | Nearest locked role | Reads as |
+| Id | Name | Use |
 |---|---|---|
-| Wall | Tank | Stands in front and refuses to move. |
-| Striker | DPS | One big commitment. |
-| Skirmisher | DPS | Faster, peskier. |
-| Artillery | Magic | Hits from the back. |
-| Hexer | Magic | Changes the fight's rules. |
-| Chanter | Support | Helps the other monsters. |
+| `ATTR_GUARD` | Guard | Brace, stall, wrong-object armor. Lines up with Tank. |
+| `ATTR_STRIKE` | Strike | Rush, nick, arrive early. Lines up with DPS. |
+| `ATTR_ARCANE` | Arcane | A grand effect told as bad math. Lines up with Magic. Not a pantheon. |
+| `ATTR_AID` | Aid | Help that overstays. Not the name Saving Grace. Lines up with Support. |
+| `ATTR_WILD` | Wild | Beasts and plants. |
+| `ATTR_ECHO` | Echo | Looks like a person or a legend done wrong. Does not define hybrid avatars. |
+| `ATTR_NEUTRAL` | Neutral | No faction color. |
 
-Elites use the same six. They do not get a seventh word that means "stronger".
+Do not use Void, Sync, Holiness, Fire, Ice, Lightning, or Mythic as the attribute. A bird may still be drawn with ash and flame. The picture is not an element wheel. Weakness concepts are comedy and situation (a bowl tips, a lamp goes out, a form is filled in). They are not "weak to ice".
 
-**Suggested rarity:** Normal monsters are `N`, or `R` when the gag and the silhouette are doing extra work. Elites are `R` or `Epic`. Do not spend `EX` on this normal/elite sample. Do not use `FAC`.
+`ORG-FACTION` entries take that faction's attribute: Guard, Strike, Arcane, or Aid.
 
-**Faction affiliation** (optional). Legal values, all of them research buckets from the brief, none of them canon:
+**Origin** (one), separate from attribute:
 
-- `Wild Creature`
-- `Corrupted Echo`
-- `Tower Guardian`
-- `Tower Anomaly`
-- one of the four faction ids, only when the joke is that the faction is stuck with the creature
+| Id | Name |
+|---|---|
+| `ORG-WILD` | Wild Creature |
+| `ORG-ECHO` | Corrupted Echo |
+| `ORG-GUARD` | Tower Guardian |
+| `ORG-ANOM` | Tower Anomaly |
+| `ORG-FACTION` | Faction-aligned. Requires `FAC_AEG`, `FAC_PHA`, `FAC_CEL`, or `FAC_SAN`. |
 
-Most sample creatures should sit in one of the four buckets. Choosing `Corrupted Echo` does not explain what an Echo is. The lore summary may say the tower's records misfiled a story. It must not describe a summoning. Do not write faction doctrine. If a later Agent 08 proposal names these buckets differently, follow that proposal.
+The other four origins leave faction null unless the joke truly wears one existing role's colors. A color does not make it a member. Most of the sample should not be faction-aligned. One or two is enough to show the bucket.
 
-**Tower environment** is a suggested postcard mood, not a floor. Tower floors are PENDING. Use a short provisional label, for example "Gate Market", "Service Tunnels", "Flooded Reliquary", "Unlicensed Observatory", "Night Kitchen", "Roof Laundry". Repeat a label only when two creatures would actually share a postcard. Do not declare it canon. Say "Mysterious Tower" when you need the real place name.
+**Combat archetype** (one) is a staging word for a four-seat fight. It has to agree with the attribute, not invent a seventh role:
+
+| Archetype | Attribute it agrees with | Reads as |
+|---|---|---|
+| Wall | Guard, sometimes Wild | Stands in front and refuses to move. |
+| Striker | Strike | One big commitment. |
+| Skirmisher | Strike or Wild | Faster, peskier. |
+| Artillery | Arcane or Wild | Hits from the back. |
+| Hexer | Arcane or Echo | Changes the fight's rules. |
+| Chanter | Aid or Echo | Helps the other monsters, usually too much. |
+
+Elites use the same six. They do not get a word that means "stronger".
+
+**Suggested rarity**, from the same proposal: Normal monsters are `N`. Elites are `R`. A funnier normal stays `N`. Do not spend `Epic` or `EX` on this normal/elite sample. Do not use `FAC`. Do not use Common, Rare, Legendary, or Mythic.
+
+**Tower environment** is one `ENV-TWR-01` … `ENV-TWR-15` id from that proposal. They are biomes the tower might wear, not floor numbers, not the top, and not a quest order. Prefer the biome whose humor type matches the creature. Repeat a biome only when two creatures would share a postcard. Say "Mysterious Tower" when the prose needs the real place name. Do not send a monster to live at the Shopping Mall, the Arena, or the Gachapon. The Gift Shop of the Conquered is not the Shopping Mall.
 
 ## Research block versus creative block
 
@@ -270,14 +286,14 @@ These keys are **PROPOSED**. If `docs/research/monsters/schema/**` on `research/
 | 9 | Personality | `creative.personality` |
 | 10 | Signature Trait | `creative.signatureTrait` |
 | 11 | Comedy Concept | `creative.comedyConcept` |
-| 12 | Element/Attribute | `creative.element` |
+| 12 | Element/Attribute | `creative.element` as `{ "attributeId", "name" }` from Agent 08's list |
 | 13 | Combat Archetype | `creative.combatArchetype` |
 | 14 | Signature Ability Concept | `creative.signatureAbilityConcept` |
 | 15 | Weakness Concept | `creative.weaknessConcept` |
 | 16 | Lore Summary | `creative.loreSummary` |
-| 17 | Faction Affiliation | `creative.factionAffiliation` |
+| 17 | Faction Affiliation | `creative.factionAffiliation` (`factionId` or null) plus `creative.originId` |
 | 18 | Suggested Rarity | `creative.suggestedRarity` |
-| 19 | Suggested Tower Environment | `creative.towerEnvironment` |
+| 19 | Suggested Tower Environment | `creative.towerEnvironment` (`environmentId` and `name`) |
 | 20 | Artwork Prompt Concept | `creative.artworkPromptConcept` |
 | 21 | IP Similarity Risk | `ipSimilarityRisk` plus `ipSimilarityReason` |
 | 22 | Research Confidence | `research.confidence` |
