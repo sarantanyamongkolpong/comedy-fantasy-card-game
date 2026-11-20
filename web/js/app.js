@@ -6,15 +6,19 @@ import { emptySelection } from './battle-flow.js';
 import { el, modal } from './dom.js';
 import { createStarterProfile, buildMatchInput } from './profile.js';
 import { isPortrait, stageLayout } from './stage.js';
+import { applyBattlePolish } from './battle-fx/polish.js';
 import { renderBattle } from './screens/battle.js';
-import { performPull, renderGacha } from './screens/gacha.js';
+import { performPull } from './screens/gacha.js';
+// AGENT D hook (prod/d-gacha): booth visuals live in web/js/gacha-fx. Pulls stay on the existing API.
+import { renderGachaFx } from './gacha-fx/screen.js';
 import { renderHome } from './screens/home.js';
 import { renderMall } from './screens/mall.js';
 import { renderMap } from './screens/map.js';
 import { renderParty } from './screens/party.js';
 import { renderPrep } from './screens/prep.js';
 import { renderRewards } from './screens/rewards.js';
-import { renderStash } from './screens/stash.js';
+// HOOK prod/c-inventory: Stash, Inventory, Collection, Deck Builder, and Card Detail.
+import { collectionRoute, renderCollection } from './collection/index.js';
 
 const SAVE_KEY = 'cfcg.v05.web.save';
 
@@ -269,15 +273,18 @@ function render() {
   const stage = document.getElementById('stage');
   const ctx = makeCtx();
   let view;
-  if (state.screen === 'stash') view = renderStash(ctx);
+  const routed = collectionRoute(state.screen, state.partyTab);
+  // HOOK prod/c-inventory: party deck tab uses the collection deck builder.
+  if (routed) view = renderCollection(ctx, routed);
   else if (state.screen === 'mall') view = renderMall(ctx);
   else if (state.screen === 'party') view = renderParty(ctx);
-  else if (state.screen === 'gacha') view = renderGacha(ctx);
+  else if (state.screen === 'gacha') view = renderGachaFx(ctx);
   else if (state.screen === 'map') view = renderMap(ctx);
   else if (state.screen === 'prep') view = renderPrep(ctx);
   else if (state.screen === 'battle' && state.match) view = renderBattle(ctx);
   else if (state.screen === 'rewards' && state.match) view = renderRewards(ctx);
   else view = renderHome(ctx);
+  if ((state.screen === 'battle' && state.match) || state.screen === 'prep') applyBattlePolish(view, ctx);
   stage.replaceChildren(view);
 }
 
@@ -305,7 +312,7 @@ async function main() {
     state.match = stored.match;
     state.battleUi = stored.battleUi ?? freshBattleUi();
     if (stored.screen === 'battle' || stored.screen === 'rewards') state.screen = stored.screen;
-  } else if (stored?.screen && ['home', 'stash', 'party', 'gacha', 'map', 'prep', 'mall'].includes(stored.screen)) {
+  } else if (stored?.screen && ['home', 'stash', 'party', 'gacha', 'map', 'prep', 'mall', 'inventory', 'collection', 'deck', 'detail'].includes(stored.screen)) {
     state.screen = stored.screen;
   }
   ensureBanners();

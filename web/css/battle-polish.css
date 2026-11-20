@@ -1,0 +1,325 @@
+/**
+ * Battle and Prep presentation.
+ * Active on .bp-on. Image URLs are custom properties from the battle UI fragment.
+ * Seats, buttons, and bars do not animate. A combat number plays once.
+ */
+
+.bp-on {
+  --bp-sprite-w: 136px;
+  --bp-sprite-h-back: 186px;
+  --bp-sprite-h-front: 236px;
+  --bp-sprite-bottom: 22px;
+  --bp-prep-inset-x: 6px;
+  --bp-prep-top: 4px;
+  --bp-prep-bottom: 22px;
+  --bp-hand-card-w: 128px;
+  --bp-hand-gap: 6px;
+  --bp-hand-lift: 16px;
+}
+
+.bp-on .unit .sprite {
+  left: 50%;
+  right: auto;
+  top: auto;
+  bottom: var(--bp-sprite-bottom);
+  width: var(--bp-sprite-w);
+  height: var(--bp-sprite-h-front);
+  transform: translateX(-50%);
+  animation: none;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 4px 1px rgba(0, 0, 0, 0.4));
+}
+
+.bp-on .unit[data-row="back"] .sprite {
+  height: var(--bp-sprite-h-back);
+}
+
+.bp-on .unit.faces-left .sprite {
+  transform: translateX(-50%) scaleX(-1);
+}
+
+.bp-on .prep-token .sprite {
+  left: var(--bp-prep-inset-x);
+  right: auto;
+  top: var(--bp-prep-top);
+  bottom: auto;
+  width: calc(100% - (2 * var(--bp-prep-inset-x)));
+  height: calc(100% - var(--bp-prep-top) - var(--bp-prep-bottom));
+  max-width: none;
+  transform: none;
+  animation: none;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.bp-on .unit .shadow,
+.bp-on .prep-token .shadow {
+  left: 50%;
+  right: auto;
+  width: calc(var(--bp-sprite-w) - 12px);
+  height: 16px;
+  bottom: 16px;
+  transform: translateX(-50%);
+  background: var(--bp-shadow, radial-gradient(ellipse, rgba(0, 0, 0, 0.55), transparent 70%)) center / 100% 100% no-repeat;
+}
+
+.bp-on .prep-token .shadow {
+  width: 78%;
+}
+
+.bp-on .unit::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  width: 18px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: var(--bp-row) center / contain no-repeat;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.bp-on .unit[data-row="front"] { --bp-row: var(--bp-row-front); }
+.bp-on .unit[data-row="back"] { --bp-row: var(--bp-row-back); }
+
+.bp-on .unit .vfx {
+  left: 18%;
+  right: 18%;
+  top: 18%;
+  width: auto;
+  height: 42%;
+  object-fit: contain;
+}
+
+.bp-on .bp-sigil {
+  position: absolute;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.bp-on .unit.is-taunt {
+  outline: 2px solid rgba(255, 150, 64, 0.95);
+  outline-offset: -6px;
+}
+
+.bp-on .unit.is-regen {
+  outline: 2px solid rgba(186, 255, 120, 0.9);
+  outline-offset: -3px;
+}
+
+.bp-on .unit.is-shielded .hp-bar {
+  box-shadow: 0 0 8px rgba(126, 200, 255, 0.85);
+}
+
+.bp-on .band-hand .hand {
+  gap: var(--bp-hand-gap);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bp-on .hand-card {
+  flex: 0 1 var(--bp-hand-card-w);
+  width: var(--bp-hand-card-w);
+  max-width: var(--bp-hand-card-w);
+  min-width: 0;
+  margin-left: 0;
+  transform: none;
+  transition: none;
+}
+
+.bp-on .hand-card:first-child { margin-left: 0; }
+
+.bp-on .hand-card.is-selected {
+  transform: translateY(calc(-1 * var(--bp-hand-lift)));
+}
+
+.bp-on .pip {
+  width: 26px;
+  height: 26px;
+  clip-path: none;
+  background: var(--bp-gem-off) center / contain no-repeat;
+  filter: none;
+}
+
+.bp-on .pip.is-on {
+  background: var(--bp-gem-on) center / contain no-repeat;
+  filter: drop-shadow(0 0 4px rgba(126, 239, 255, 0.85));
+}
+
+.bp-on .hand-card .card-cost {
+  background: var(--bp-gem-on) center / 100% 100% no-repeat;
+  border-color: transparent;
+  color: #062028;
+  text-shadow: none;
+}
+
+.bp-on .hp-bar,
+.bp-on .lead-plate .hp-bar {
+  left: 6px;
+  right: 6px;
+  height: 16px;
+  border-color: transparent;
+  background:
+    var(--bp-hp-track) center / 100% 100% no-repeat,
+    #2a0c14;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.bp-on .lead-plate .hp-bar {
+  position: relative;
+  left: auto;
+  right: auto;
+  height: 18px;
+}
+
+.bp-on .hp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8e1e2a 0%, #e07a3a 46%, #f0d48a 82%, #fff1b0 100%);
+}
+
+.bp-on .hp-shield {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--bp-hp-shield) left center / 18px 100% repeat-x;
+  box-shadow: inset 0 0 6px rgba(220, 244, 255, 0.9);
+  pointer-events: none;
+}
+
+.bp-on .unit-hp {
+  left: 0;
+  right: 0;
+  bottom: 18px;
+}
+
+.bp-on .floater.is-damage,
+.bp-on .floater.is-heal,
+.bp-on .floater.is-shield,
+.bp-on .floater.is-regen {
+  left: 0;
+  right: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  animation: bp-rise 900ms ease-out 1 both;
+  pointer-events: none;
+}
+
+.bp-on .floater.is-damage {
+  color: #ffd0d4;
+  text-shadow: 0 2px 0 #2a0a10, 0 0 10px #ff5a6a;
+}
+
+.bp-on .floater.is-heal,
+.bp-on .floater.is-regen {
+  color: #e7ffc4;
+  text-shadow: 0 2px 0 #10200c, 0 0 10px #8dff6a;
+}
+
+.bp-on .floater.is-shield {
+  color: #e7f4ff;
+  text-shadow: 0 2px 0 #0c1c30, 0 0 10px #7ec8ff;
+}
+
+.bp-on .bp-status-label {
+  animation: none;
+  left: 2px;
+  right: 2px;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-shadow: 0 1px 0 #140c1c;
+}
+
+@keyframes bp-rise {
+  0% { transform: translateY(6px); opacity: 0; }
+  22% { opacity: 1; }
+  100% { transform: translateY(-22px); opacity: 0; }
+}
+
+.bp-on .bp-frame {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.bp-on .bp-framed > :not(.bp-frame) {
+  position: relative;
+  z-index: 5;
+}
+
+.bp-on .bp-corner,
+.bp-on .bp-edge {
+  position: absolute;
+  pointer-events: none;
+}
+
+.bp-on .bp-corner {
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+  object-fit: contain;
+}
+
+.bp-on .bp-corner-tl { top: 0; left: 0; }
+.bp-on .bp-corner-tr { top: 0; right: 0; transform: scaleX(-1); }
+.bp-on .bp-corner-bl { bottom: 0; left: 0; transform: scaleY(-1); }
+.bp-on .bp-corner-br { bottom: 0; right: 0; transform: scale(-1); }
+
+.bp-on .bp-edge { z-index: 1; object-fit: fill; }
+.bp-on .bp-edge-top,
+.bp-on .bp-edge-bottom { left: 18px; width: calc(100% - 36px); height: 8px; }
+.bp-on .bp-edge-top { top: 0; }
+.bp-on .bp-edge-bottom { bottom: 0; }
+.bp-on .bp-edge-left,
+.bp-on .bp-edge-right { top: 18px; height: calc(100% - 36px); width: 8px; }
+.bp-on .bp-edge-left { left: 0; }
+.bp-on .bp-edge-right { right: 0; }
+
+.bp-on .auto-toggle,
+.bp-on .speed-btn,
+.bp-on .toss-btn {
+  border: 3px solid #e6c36a;
+  box-shadow:
+    inset 0 0 0 2px #24180c,
+    inset 0 0 14px rgba(255, 220, 160, 0.28),
+    0 0 0 1px #8a6230;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 244, 210, 0.35), transparent 48%),
+    linear-gradient(180deg, #24345c, #10182e);
+}
+
+.bp-on .auto-toggle.is-on {
+  border-color: #fff1c2;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.5), transparent 42%),
+    linear-gradient(180deg, #b6f5cf, #1f6b45);
+  color: #062214;
+  text-shadow: none;
+}
+
+.bp-on .prep-start {
+  color: #2a1608;
+  text-shadow: 0 1px 0 rgba(255, 248, 220, 0.8);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 250, 230, 0.75), transparent 46%),
+    linear-gradient(180deg, #ffe7a3, #d7a441 55%, #8a5a12);
+}
+
+.bp-on .end-turn {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 220, 160, 0.35), transparent 42%),
+    linear-gradient(180deg, #7a3cac, #3a1468);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bp-on .floater { animation: none; opacity: 1; }
+}

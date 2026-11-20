@@ -1,0 +1,41 @@
+{
+  "saveVersion": 1,
+  "profile": {
+    "profileId": "PLAYER_V1_BAG",
+    "saveVersion": 1,
+    "inventory": {
+      "avatars": [
+        {
+          "instanceId": "STACK_avatar_AVT_AEG_002",
+          "catalogId": "AVT_AEG_002",
+          "kind": "avatar",
+          "quantity": 1,
+          "locked": false,
+          "favorite": true,
+          "reservations": []
+        }
+      ],
+      "actions": [
+        {
+          "instanceId": "STACK_action_ACT_GEN_ATK_001",
+          "catalogId": "ACT_GEN_ATK_001",
+          "kind": "action",
+          "quantity": 2,
+          "locked": true,
+          "favorite": false,
+          "reservations": []
+        }
+      ],
+      "companions": []
+    },
+    "decks": [],
+    "currency": { "G": 4 },
+    "pity": {},
+    "house": {
+      "acquiredTiers": ["cabin"],
+      "displayTier": "cabin",
+      "installedFurniture": []
+    },
+    "rewardLedger": {}
+  }
+}
