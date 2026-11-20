@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "world-content-1",
+  "reviewStatus": "GENERATED_REVIEW",
+  "designStatus": "PROPOSED",
+  "mainQuest": false,
+  "wiredToClient": false,
+  "id": "PROG_WORLD_001",
+  "gatesCoreLoop": false,
+  "enforcedByClient": false,
+  "proposedOrderOnly": true,
+  "summary": "Main areas are open from the start. Special areas and some dungeons unlock by tower progress, and this pack does not add those areas. The encounter order for the two battle pins is not a main quest and is not enforced by the client.",
+  "canonRules": [
+    "MAP-08",
+    "OPEN-07",
+    "CORE-001"
+  ],
+  "chapters": [
+    {
+      "id": "CH_TOWER_LOBBY",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 1,
+      "title": "Lobby naps",
+      "summary": "The tower is the lore pin. Testing uses the existing ENM_DEMO team. This pack does not add the later floor list.",
+      "building": {
+        "assetId": "MAP_BLD_TOWER",
+        "hotspotId": "tower",
+        "siteId": "tower",
+        "hotspotLabel": "Mysterious Tower",
+        "mapDestinationId": "mysterious-tower",
+        "mapDestinationName": "Mysterious Tower",
+        "mapAction": "battle",
+        "webMode": "tower",
+        "hotspotLocked": false
+      },
+      "mainQuest": false,
+      "gatesCoreLoop": false,
+      "canonRules": [
+        "MAP-03",
+        "MAP-08",
+        "MAP-09",
+        "OPEN-07"
+      ],
+      "stages": [
+        {
+          "id": "ST_TOWER_ORIENTATION",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 1,
+          "title": "Echo orientation",
+          "summary": "Testing lines up ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. This stage unlocks nothing you can spend.",
+          "building": {
+            "assetId": "MAP_BLD_TOWER",
+            "hotspotId": "tower",
+            "siteId": "tower",
+            "hotspotLabel": "Mysterious Tower",
+            "mapDestinationId": "mysterious-tower",
+            "mapDestinationName": "Mysterious Tower",
+            "mapAction": "battle",
+            "webMode": "tower",
+            "hotspotLocked": false
+          },
+          "webMode": "tower",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
+          },
+          "requiresStageId": null,
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-03",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
+          }
+        },
+        {
+          "id": "ST_TOWER_REMATCH",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 2,
+          "title": "Same nap, second bell",
+          "summary": "The same ENM_DEMO team, in the same battle record, after orientation. Justin echo copies stay Placeholder. This pack does not add a new floor roster.",
+          "building": {
+            "assetId": "MAP_BLD_TOWER",
+            "hotspotId": "tower",
+            "siteId": "tower",
+            "hotspotLabel": "Mysterious Tower",
+            "mapDestinationId": "mysterious-tower",
+            "mapDestinationName": "Mysterious Tower",
+            "mapAction": "battle",
+            "webMode": "tower",
+            "hotspotLocked": false
+          },
+          "webMode": "tower",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
+          },
+          "requiresStageId": "ST_TOWER_ORIENTATION",
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-03",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH_ARENA_EXHIBITION",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 2,
+      "title": "Exhibition night",
+      "summary": "The arena is training against the AI first. The structure can hold a later PvP match, and this pack does not add one. The client does not lock these stages behind the tower.",
+      "building": {
+        "assetId": "MAP_BLD_ARENA",
+        "hotspotId": "arena",
+        "siteId": "arena",
+        "hotspotLabel": "Tournament Arena",
+        "mapDestinationId": "tournament-arena",
+        "mapDestinationName": "Tournament Arena",
+        "mapAction": "battle",
+        "webMode": "arena",
+        "hotspotLocked": false
+      },
+      "mainQuest": false,
+      "gatesCoreLoop": false,
+      "canonRules": [
+        "MAP-05",
+        "MAP-08",
+        "OPEN-07"
+      ],
+      "stages": [
+        {
+          "id": "ST_ARENA_EXHIBITION",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 1,
+          "title": "Exhibition echoes",
+          "summary": "The banner says Tournament Arena. The opponent is the AI training echo. Clearing the tower rematch is the proposed order, and the client does not enforce it.",
+          "building": {
+            "assetId": "MAP_BLD_ARENA",
+            "hotspotId": "arena",
+            "siteId": "arena",
+            "hotspotLabel": "Tournament Arena",
+            "mapDestinationId": "tournament-arena",
+            "mapDestinationName": "Tournament Arena",
+            "mapAction": "battle",
+            "webMode": "arena",
+            "hotspotLocked": false
+          },
+          "webMode": "arena",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
+          },
+          "requiresStageId": "ST_TOWER_REMATCH",
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-05",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
+          }
+        },
+        {
+          "id": "ST_ARENA_REMATCH",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 2,
+          "title": "Encore, still unnamed",
+          "summary": "One more pass of the same catalog team at the arena pin. The reward line is empty on purpose. No ticket is invented.",
+          "building": {
+            "assetId": "MAP_BLD_ARENA",
+            "hotspotId": "arena",
+            "siteId": "arena",
+            "hotspotLabel": "Tournament Arena",
+            "mapDestinationId": "tournament-arena",
+            "mapDestinationName": "Tournament Arena",
+            "mapAction": "battle",
+            "webMode": "arena",
+            "hotspotLocked": false
+          },
+          "webMode": "arena",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "Testing uses ENM_DEMO_001 through ENM_DEMO_004. The four Justin echo copies stay Placeholder until a real enemy set exists. The web battle builder still fields those echo copies, and this pack does not retarget it."
+          },
+          "requiresStageId": "ST_ARENA_EXHIBITION",
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-05",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
+          }
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "id": "FAC_HOME",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "facility",
+      "building": {
+        "assetId": "MAP_BLD_HIDEOUT",
+        "hotspotId": "hideout",
+        "siteId": "home",
+        "hotspotLabel": "Hideout",
+        "mapDestinationId": "home",
+        "mapDestinationName": "Home",
+        "mapAction": "home",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "availableFromStart": true,
+      "includedInUnlockChain": false,
+      "screenLive": true,
+      "note": "The Hideout is home from the first boot. No stage has to be cleared to open the door.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    },
+    {
+      "id": "FAC_MALL",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "facility",
+      "building": {
+        "assetId": "MAP_BLD_MALL",
+        "hotspotId": "mall",
+        "siteId": "mall",
+        "hotspotLabel": "Shopping Mall",
+        "mapDestinationId": "shopping-mall",
+        "mapDestinationName": "Shopping Mall",
+        "mapAction": "mall",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "availableFromStart": true,
+      "includedInUnlockChain": false,
+      "screenLive": true,
+      "note": "The mall pin opens the blank tag sheet immediately. Checkout stays off until an Economy Balance review passes.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    },
+    {
+      "id": "FAC_GACHA",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "facility",
+      "building": {
+        "assetId": "MAP_BLD_GACHA",
+        "hotspotId": "gacha",
+        "siteId": "gachapon",
+        "hotspotLabel": "Gachapon",
+        "mapDestinationId": "gachapon",
+        "mapDestinationName": "Gachapon",
+        "mapAction": "gacha",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "availableFromStart": true,
+      "includedInUnlockChain": false,
+      "screenLive": true,
+      "note": "The gachapon pin opens the three test booths immediately. No stage gate, no amount, and no charge until an Economy Balance review passes.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    }
+  ],
+  "lockedNodes": [
+    {
+      "id": "NODE_SPORTS_LOCKED",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "locked_building",
+      "building": {
+        "assetId": "MAP_BLD_SPORTS",
+        "hotspotId": "sports",
+        "siteId": "sports",
+        "hotspotLabel": "Sports Complex",
+        "mapDestinationId": "sports-complex",
+        "mapDestinationName": "Sports Complex",
+        "mapAction": "locked",
+        "webMode": null,
+        "hotspotLocked": true
+      },
+      "includedInUnlockChain": false,
+      "mapPinLive": true,
+      "systemsLive": false,
+      "implementation": "OUT_OF_SCOPE",
+      "canonRules": [
+        "MAP-04",
+        "MAP-08"
+      ],
+      "note": "Coming Soon covers only activities that are not playable. None of the four games is playable here, so the pin stays locked. An opened activity would be accessible immediately.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    }
+  ]
+}
