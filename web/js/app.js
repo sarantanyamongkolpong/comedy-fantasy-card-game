@@ -14,7 +14,8 @@ import { renderMap } from './screens/map.js';
 import { renderParty } from './screens/party.js';
 import { renderPrep } from './screens/prep.js';
 import { renderRewards } from './screens/rewards.js';
-import { renderStash } from './screens/stash.js';
+// HOOK prod/c-inventory: Stash, Inventory, Collection, Deck Builder, and Card Detail.
+import { collectionRoute, renderCollection } from './collection/index.js';
 
 const SAVE_KEY = 'cfcg.v05.web.save';
 
@@ -269,7 +270,9 @@ function render() {
   const stage = document.getElementById('stage');
   const ctx = makeCtx();
   let view;
-  if (state.screen === 'stash') view = renderStash(ctx);
+  const routed = collectionRoute(state.screen, state.partyTab);
+  // HOOK prod/c-inventory: party deck tab uses the collection deck builder.
+  if (routed) view = renderCollection(ctx, routed);
   else if (state.screen === 'mall') view = renderMall(ctx);
   else if (state.screen === 'party') view = renderParty(ctx);
   else if (state.screen === 'gacha') view = renderGacha(ctx);
@@ -305,7 +308,7 @@ async function main() {
     state.match = stored.match;
     state.battleUi = stored.battleUi ?? freshBattleUi();
     if (stored.screen === 'battle' || stored.screen === 'rewards') state.screen = stored.screen;
-  } else if (stored?.screen && ['home', 'stash', 'party', 'gacha', 'map', 'prep', 'mall'].includes(stored.screen)) {
+  } else if (stored?.screen && ['home', 'stash', 'party', 'gacha', 'map', 'prep', 'mall', 'inventory', 'collection', 'deck', 'detail'].includes(stored.screen)) {
     state.screen = stored.screen;
   }
   ensureBanners();

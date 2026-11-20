@@ -1,0 +1,70 @@
+{
+  "saveVersion": 2,
+  "profile": {
+    "profileId": "PLAYER_V2_BAG",
+    "saveVersion": 2,
+    "preferences": { "autoBattle": true },
+    "inventory": {
+      "avatars": [
+        {
+          "instanceId": "STACK_avatar_AVT_AEG_002",
+          "catalogId": "AVT_AEG_002",
+          "kind": "avatar",
+          "quantity": 2,
+          "locked": true,
+          "favorite": false,
+          "reservations": []
+        }
+      ],
+      "actions": [
+        {
+          "instanceId": "STACK_action_ACT_GEN_ATK_001",
+          "catalogId": "ACT_GEN_ATK_001",
+          "kind": "action",
+          "quantity": 4,
+          "locked": false,
+          "favorite": true,
+          "reservations": [{ "deckId": "DECK_ACTIVE", "count": 2 }]
+        }
+      ],
+      "companions": []
+    },
+    "decks": [
+      {
+        "deckId": "DECK_ACTIVE",
+        "cardIds": ["ACT_GEN_ATK_001", "ACT_GEN_ATK_001"]
+      }
+    ],
+    "currency": { "G": 7 },
+    "pity": { "TEST_BANNER_AVATAR": { "epicCounter": 3, "topCounter": 1 } },
+    "house": {
+      "acquiredTiers": ["cabin", "bungalow"],
+      "displayTier": "bungalow",
+      "installedFurniture": [
+        {
+          "furnitureId": "FUR_REF_BUNGALOW_BOX",
+          "name": "Box",
+          "capacity": 50,
+          "installed": true
+        },
+        {
+          "furnitureId": "FUR_REF_COTTAGE_BOX",
+          "name": "Cottage Box",
+          "capacity": 999,
+          "installed": false
+        },
+        {
+          "furnitureId": "furniture_companion_bed",
+          "assetId": "furniture_companion_bed",
+          "artOnly": true,
+          "capacity": null,
+          "installed": true,
+          "capacityStatus": "PENDING_OWNER"
+        }
+      ]
+    },
+    "rewardLedger": {},
+    "team": ["STACK_avatar_AVT_AEG_002#1"],
+    "deck": []
+  }
+}
