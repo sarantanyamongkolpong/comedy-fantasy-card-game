@@ -10,6 +10,7 @@
       "reviewStatus": "GENERATED_REVIEW",
       "designStatus": "PROPOSED",
       "name": "The Doormat",
+      "nameStanding": "unique_dialogue_role",
       "role": "greeter",
       "building": {
         "assetId": "MAP_BLD_HIDEOUT",
@@ -52,6 +53,7 @@
       "reviewStatus": "GENERATED_REVIEW",
       "designStatus": "PROPOSED",
       "name": "Archivist Echo",
+      "nameStanding": "unique_dialogue_role",
       "role": "archivist",
       "building": {
         "assetId": "MAP_BLD_TOWER",
@@ -92,6 +94,7 @@
       "reviewStatus": "GENERATED_REVIEW",
       "designStatus": "PROPOSED",
       "name": "Announcer Announcer",
+      "nameStanding": "unique_dialogue_role",
       "role": "announcer",
       "building": {
         "assetId": "MAP_BLD_ARENA",
@@ -136,6 +139,7 @@
       "reviewStatus": "GENERATED_REVIEW",
       "designStatus": "PROPOSED",
       "name": "Coach Stretch",
+      "nameStanding": "unique_dialogue_role",
       "role": "coach",
       "building": {
         "assetId": "MAP_BLD_SPORTS",
@@ -174,6 +178,7 @@
       "reviewStatus": "GENERATED_REVIEW",
       "designStatus": "PROPOSED",
       "name": "Pullbert",
+      "nameStanding": "unique_dialogue_role",
       "role": "attendant",
       "building": {
         "assetId": "MAP_BLD_GACHA",
@@ -214,6 +219,7 @@
       "reviewStatus": "GENERATED_REVIEW",
       "designStatus": "PROPOSED",
       "name": "Tag",
+      "nameStanding": "unique_dialogue_role",
       "role": "shopkeeper",
       "building": {
         "assetId": "MAP_BLD_MALL",

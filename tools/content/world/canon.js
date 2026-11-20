@@ -80,6 +80,16 @@ export function loadCanon(root = repoRootFrom()) {
     banners: new Map((banners.banners ?? []).map((banner) => [banner.bannerId, banner])),
     bannerOrder: (banners.banners ?? []).map((banner) => banner.bannerId),
     mallLabelByRef: new Map(MALL_ROWS.map(([label, id]) => [id, label])),
+    placeholderByPath: new Map(
+      (manifest.assets ?? [])
+        .filter((asset) => asset.placeholder === true && typeof asset.path === 'string')
+        .map((asset) => [asset.path, asset.asset_id]),
+    ),
+    battleSpriteSubjects: new Set(
+      (manifest.assets ?? [])
+        .filter((asset) => asset.slot === 'battle-sprite' && typeof asset.subject_id === 'string')
+        .map((asset) => asset.subject_id),
+    ),
   };
 }
 

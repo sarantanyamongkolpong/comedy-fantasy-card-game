@@ -66,7 +66,10 @@ test('every cited amount in the pack is null and pending', () => {
     assert.equal(event.mainQuest, false);
     assert.equal(event.questId, null);
     assert.equal(event.reward.G, null);
+    assert.equal(event.reward.amount, null);
     assert.equal(event.reward.status, 'PENDING_OWNER');
+    assert.equal(event.reward.amountMark, 'PENDING');
+    assert.deepEqual(event.reward.kinds, ['G', 'materials', 'decorations']);
   }
   for (const chapter of world.progression.chapters) {
     for (const stage of chapter.stages) {
@@ -74,6 +77,8 @@ test('every cited amount in the pack is null and pending', () => {
       assert.equal(stage.gatesCoreLoop, false);
       assert.equal(stage.mainQuest, false);
       assert.equal(stage.reward.G, null);
+      assert.equal(stage.reward.amount, null);
+      assert.equal(stage.reward.amountMark, 'PENDING');
       assert.equal(stage.enforcedByClient, false);
     }
   }
@@ -83,6 +88,60 @@ test('every cited amount in the pack is null and pending', () => {
     assert.equal(facility.availableFromStart, true);
     assert.equal(facility.unlockCost, null);
   }
+});
+
+test('owner decisions 09 through 13 are applied and 01 through 08 stay open', () => {
+  const world = pack();
+  const questions = world.catalog.openQuestions;
+  for (const question of questions.slice(0, 8)) {
+    assert.equal(question.resolution, 'OPEN');
+    assert.equal(question.decisionSource, null);
+    assert.equal(question.decidedOn, null);
+  }
+  for (const question of questions.slice(8)) {
+    assert.equal(question.resolution, 'OWNER_DECIDED');
+    assert.equal(question.decisionSource, 't276u');
+    assert.equal(question.decidedOn, '2026-11-20');
+  }
+  const first = new Set(['TUT_MAP_WANDER', 'TUT_MAP_TOWER', 'TUT_PREP_READY', 'TUT_BATTLE_TURN', 'TUT_REWARDS_ONCE']);
+  for (const tutorial of world.tutorials) {
+    assert.equal(tutorial.round, first.has(tutorial.id) ? 'first' : 'later');
+  }
+  const names = new Set();
+  for (const npc of world.npcs) {
+    assert.equal(npc.nameStanding, 'unique_dialogue_role');
+    assert.equal(names.has(npc.name), false);
+    names.add(npc.name);
+  }
+  const placeholder = 'web/assets/illustrations/ILLUST_ACTION_GENERIC.svg';
+  for (const chapter of world.progression.chapters) {
+    for (const stage of chapter.stages) {
+      const hymn = stage.enemies.find((enemy) => enemy.enemyId === 'ENM_DEMO_004');
+      assert.equal(hymn.displayName, 'Placeholder Echo Hymn');
+      assert.equal(hymn.artworkTag, 'Missing Artwork');
+      assert.equal(hymn.placeholderImage, placeholder);
+      for (const enemy of stage.enemies) {
+        if (enemy.enemyId !== 'ENM_DEMO_004') assert.equal(enemy.artworkTag, null);
+      }
+    }
+  }
+  const nap = world.sideEvents.find((event) => event.mentionsEnemyIds.includes('ENM_DEMO_004'));
+  assert.equal(nap.artworkTags[0].artworkTag, 'Missing Artwork');
+  assert.equal(nap.artworkTags[0].placeholderImage, placeholder);
+  const ids = [];
+  const walk = (value) => {
+    if (Array.isArray(value)) {
+      value.forEach(walk);
+      return;
+    }
+    if (!value || typeof value !== 'object') return;
+    if (typeof value.id === 'string') ids.push(value.id);
+    if (typeof value.enemyId === 'string') ids.push(value.enemyId);
+    for (const child of Object.values(value)) walk(child);
+  };
+  walk(world.files);
+  const contentIds = ids.filter((id) => !id.startsWith('ENM_') && !id.startsWith('OQ_'));
+  assert.equal(new Set(contentIds).size, contentIds.length);
 });
 
 test('the web client does not import the world pack', () => {

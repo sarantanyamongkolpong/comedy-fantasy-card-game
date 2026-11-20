@@ -97,7 +97,7 @@ function buildingSection(pack) {
 function npcSection(pack) {
   const cards = pack.npcs.map((npc) => `<article>
 <h3>${esc(npc.name)}</h3>
-<p class="id">${esc(npc.id)} · ${esc(npc.role)} · ${esc(npc.building.hotspotLabel)}</p>
+<p class="id">${esc(npc.id)} · ${esc(npc.name)} · ${esc(npc.nameStanding)} · ${esc(npc.role)} · ${esc(npc.building.hotspotLabel)}</p>
 ${npc.lines.map((line) => `<blockquote>${esc(line)}</blockquote>`).join('')}
 </article>`).join('');
   return `<section><h2>NPCs</h2>${cards}</section>`;
@@ -130,7 +130,7 @@ function eventSection(pack) {
 <h3>${esc(event.title)}</h3>
 <p class="id">${esc(event.id)} · ${esc(event.building.hotspotLabel)} · not a quest</p>
 <p>${esc(event.body)}</p>
-<p class="pending">Reward amount: — · PENDING_OWNER</p>
+<p class="pending">Reward kinds: G, materials, decorations. Amounts PENDING. Difficulty cap PENDING. Premium currency stays out of large grants. Status: PENDING_OWNER.</p>
 </article>`).join('');
   return `<section><h2>Side events</h2>${cards}</section>`;
 }
@@ -138,19 +138,24 @@ function eventSection(pack) {
 function tutorialSection(pack) {
   const cards = [...pack.tutorials].sort((left, right) => left.order - right.order).map((tutorial) => `<article>
 <h3>${tutorial.order}. ${esc(tutorial.title)}</h3>
-<p class="id">${esc(tutorial.id)} · ${esc(tutorial.loopStep)} · ${esc(tutorial.screen)}</p>
+<p class="id">${esc(tutorial.id)} · ${esc(tutorial.loopStep)} · ${esc(tutorial.screen)} · ${esc(tutorial.round)}</p>
 <p>${esc(tutorial.body)}</p>
 </article>`).join('');
   return `<section><h2>Tutorial prompts</h2>${cards}</section>`;
 }
 
 function progressionSection(pack, stages) {
+  const hymn = stages[0]?.stage.enemies.find((enemy) => enemy.enemyId === 'ENM_DEMO_004');
+  const art = hymn
+    ? `<p class="pending">${esc(hymn.enemyId)} stays in the roster. Tag: ${esc(hymn.artworkTag)}. Placeholder image: ${esc(hymn.placeholderImage)}.</p>`
+    : '';
   const items = stages.map(({ chapter, stage }) => `<li><span class="id">${esc(stage.id)}</span> — ${esc(stage.title)} <span class="pending">(${esc(chapter.title)}, unlock amount empty)</span></li>`).join('');
   const facilities = pack.progression.facilities.map((row) => `<li>${esc(row.building.hotspotLabel)} is open from the start. <span class="id">${esc(row.id)}</span></li>`).join('');
   const locked = pack.progression.lockedNodes.map((row) => `<li>${esc(row.building.hotspotLabel)} stays out of the chain. <span class="id">${esc(row.id)}</span></li>`).join('');
   return `<section>
 <h2>Encounter order</h2>
 <p>${esc(pack.progression.summary)}</p>
+${art}
 <ol class="chain">${items}</ol>
 <h3>Open from the start</h3>
 <ul>${facilities}</ul>
@@ -160,8 +165,8 @@ function progressionSection(pack, stages) {
 }
 
 function questionSection(pack) {
-  const items = pack.catalog.openQuestions.map((question) => `<li><span class="id">${esc(question.id)}</span> ${esc(question.text)}</li>`).join('');
-  return `<section><h2>Open questions</h2><ol>${items}</ol></section>`;
+  const items = pack.catalog.openQuestions.map((question) => `<li><span class="id">${esc(question.id)}</span> <span class="pending">${esc(question.resolution)}</span> ${esc(question.text)}</li>`).join('');
+  return `<section><h2>Questions</h2><p>OQ_G_01 through OQ_G_08 stay OPEN. OQ_G_09 through OQ_G_13 are OWNER_DECIDED in the decision log, not LOCKED.</p><ol>${items}</ol></section>`;
 }
 
 function label(key) {

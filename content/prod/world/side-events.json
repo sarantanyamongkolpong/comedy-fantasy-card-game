@@ -31,6 +31,7 @@
       "mentionsCardIds": [],
       "mentionsAvatarIds": [],
       "mentionsEnemyIds": [],
+      "artworkTags": [],
       "canonRules": [
         "MAP-02",
         "MAP-08",
@@ -43,7 +44,15 @@
         "amount": null,
         "items": null,
         "cardIds": null,
-        "status": "PENDING_OWNER"
+        "status": "PENDING_OWNER",
+        "kinds": [
+          "G",
+          "materials",
+          "decorations"
+        ],
+        "amountMark": "PENDING",
+        "difficultyCap": "PENDING",
+        "premiumCurrency": "avoid_large_amounts"
       }
     },
     {
@@ -79,6 +88,13 @@
         "ENM_DEMO_003",
         "ENM_DEMO_004"
       ],
+      "artworkTags": [
+        {
+          "enemyId": "ENM_DEMO_004",
+          "artworkTag": "Missing Artwork",
+          "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
+        }
+      ],
       "canonRules": [
         "MAP-03",
         "MAP-08",
@@ -91,7 +107,15 @@
         "amount": null,
         "items": null,
         "cardIds": null,
-        "status": "PENDING_OWNER"
+        "status": "PENDING_OWNER",
+        "kinds": [
+          "G",
+          "materials",
+          "decorations"
+        ],
+        "amountMark": "PENDING",
+        "difficultyCap": "PENDING",
+        "premiumCurrency": "avoid_large_amounts"
       }
     },
     {
@@ -125,6 +149,7 @@
         "AVT_SAN_002"
       ],
       "mentionsEnemyIds": [],
+      "artworkTags": [],
       "canonRules": [
         "MAP-05",
         "MAP-08"
@@ -136,7 +161,15 @@
         "amount": null,
         "items": null,
         "cardIds": null,
-        "status": "PENDING_OWNER"
+        "status": "PENDING_OWNER",
+        "kinds": [
+          "G",
+          "materials",
+          "decorations"
+        ],
+        "amountMark": "PENDING",
+        "difficultyCap": "PENDING",
+        "premiumCurrency": "avoid_large_amounts"
       }
     },
     {
@@ -165,6 +198,7 @@
       "mentionsCardIds": [],
       "mentionsAvatarIds": [],
       "mentionsEnemyIds": [],
+      "artworkTags": [],
       "canonRules": [
         "MAP-04",
         "MAP-08"
@@ -176,7 +210,15 @@
         "amount": null,
         "items": null,
         "cardIds": null,
-        "status": "PENDING_OWNER"
+        "status": "PENDING_OWNER",
+        "kinds": [
+          "G",
+          "materials",
+          "decorations"
+        ],
+        "amountMark": "PENDING",
+        "difficultyCap": "PENDING",
+        "premiumCurrency": "avoid_large_amounts"
       }
     },
     {
@@ -205,6 +247,7 @@
       "mentionsCardIds": [],
       "mentionsAvatarIds": [],
       "mentionsEnemyIds": [],
+      "artworkTags": [],
       "canonRules": [
         "MAP-07",
         "GA-01",
@@ -217,7 +260,15 @@
         "amount": null,
         "items": null,
         "cardIds": null,
-        "status": "PENDING_OWNER"
+        "status": "PENDING_OWNER",
+        "kinds": [
+          "G",
+          "materials",
+          "decorations"
+        ],
+        "amountMark": "PENDING",
+        "difficultyCap": "PENDING",
+        "premiumCurrency": "avoid_large_amounts"
       }
     },
     {
@@ -246,6 +297,7 @@
       "mentionsCardIds": [],
       "mentionsAvatarIds": [],
       "mentionsEnemyIds": [],
+      "artworkTags": [],
       "canonRules": [
         "MAP-06",
         "HOME-09",
@@ -258,7 +310,15 @@
         "amount": null,
         "items": null,
         "cardIds": null,
-        "status": "PENDING_OWNER"
+        "status": "PENDING_OWNER",
+        "kinds": [
+          "G",
+          "materials",
+          "decorations"
+        ],
+        "amountMark": "PENDING",
+        "difficultyCap": "PENDING",
+        "premiumCurrency": "avoid_large_amounts"
       }
     }
   ]

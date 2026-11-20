@@ -38,6 +38,11 @@ const BANNED_KEYS = new Set([
 const FORBIDDEN_STRINGS = new Set(['LOCKED', 'OWNER_APPROVED', 'PRODUCTION_READY', 'QA_PASSED']);
 const STATUS_VALUES = new Set(['GENERATED_REVIEW', 'PROPOSED', 'PENDING_OWNER']);
 const REQUIRED_LOOPS = Object.freeze(['map', 'prep_battle', 'battle', 'rewards', 'gacha', 'hideout', 'stash', 'deck']);
+const FIRST_ROUND = new Set(['map', 'prep_battle', 'battle', 'rewards']);
+const LATER_ROUND = new Set(['gacha', 'hideout', 'stash', 'deck', 'mall']);
+const REWARD_KINDS = Object.freeze(['G', 'materials', 'decorations']);
+const MISSING_ARTWORK_ID = 'ENM_DEMO_004';
+const OWNER_DECIDED_QUESTIONS = new Set(['OQ_G_09', 'OQ_G_10', 'OQ_G_11', 'OQ_G_12', 'OQ_G_13']);
 const LOOP_SCREEN = Object.freeze({
   map: 'map',
   prep_battle: 'prep',
@@ -132,11 +137,18 @@ function semanticErrors(pack, canon) {
   claimId(ids, pack.catalog.packId, 'WORLD_PACK_', 'catalog.packId', errors);
   for (const question of pack.catalog.openQuestions) claimId(ids, question.id, 'OQ_G_', 'catalog.openQuestions', errors);
   checkQuestionOrder(pack.catalog.openQuestions, errors);
+  checkQuestionResolutions(pack.catalog.openQuestions, errors);
 
   const buildings = new Map();
+  const spokenNames = new Set();
   for (const [index, npc] of pack.npcs.entries()) {
     const pathName = `npcs[${index}]`;
     claimId(ids, npc.id, 'NPC_', pathName, errors);
+    if (npc.lines.length > 0 && npc.nameStanding !== 'unique_dialogue_role') {
+      errors.push(`${pathName}.nameStanding: a character with dialogue keeps a unique name`);
+    }
+    if (spokenNames.has(npc.name)) errors.push(`${pathName}.name: duplicate dialogue name ${npc.name}`);
+    spokenNames.add(npc.name);
     rememberBuilding(buildings, npc.building, pathName, errors);
     buildingErrors(npc.building, canon, pathName, errors);
     resolveIds(npc.mentionsAvatarIds, canon.avatarIds, `${pathName}.mentionsAvatarIds`, errors);
@@ -168,6 +180,8 @@ function semanticErrors(pack, canon) {
     resolveIds(event.mentionsAvatarIds, canon.avatarIds, `${pathName}.mentionsAvatarIds`, errors);
     resolveIds(event.mentionsCardIds, canon.cardIds, `${pathName}.mentionsCardIds`, errors);
     resolveIds(event.mentionsEnemyIds, canon.enemies, `${pathName}.mentionsEnemyIds`, errors);
+    checkArtworkTags(event, pathName, canon, errors);
+    checkRewardPolicy(event.reward, `${pathName}.reward`, errors);
   }
 
   checkCoverage(pack, canon, npcByAsset, errors);
@@ -189,12 +203,87 @@ function checkCatalog(pack, canon, errors) {
   }
 }
 
+function checkRewardPolicy(reward, pathName, errors) {
+  if (JSON.stringify(reward?.kinds) !== JSON.stringify(REWARD_KINDS)) {
+    errors.push(`${pathName}.kinds: rewards may be G, materials, and decorations`);
+  }
+  if (reward?.amountMark !== 'PENDING' || reward?.difficultyCap !== 'PENDING') {
+    errors.push(`${pathName}: amounts and the difficulty cap stay PENDING`);
+  }
+  if (reward?.premiumCurrency !== 'avoid_large_amounts') {
+    errors.push(`${pathName}.premiumCurrency: do not hand out premium currency in large amounts`);
+  }
+}
+
+function checkArtworkTags(event, pathName, canon, errors) {
+  const tags = event.artworkTags ?? [];
+  const mentioned = new Set(event.mentionsEnemyIds ?? []);
+  for (const tag of tags) {
+    if (tag.enemyId !== MISSING_ARTWORK_ID) {
+      errors.push(`${pathName}.artworkTags: only ${MISSING_ARTWORK_ID} is tagged Missing Artwork`);
+    }
+    if (!mentioned.has(tag.enemyId)) errors.push(`${pathName}.artworkTags: ${tag.enemyId} is not mentioned`);
+    checkMissingArtwork(tag, canon, `${pathName}.artworkTags`, errors);
+  }
+  if (mentioned.has(MISSING_ARTWORK_ID) && !tags.some((tag) => tag.enemyId === MISSING_ARTWORK_ID)) {
+    errors.push(`${pathName}.artworkTags: ${MISSING_ARTWORK_ID} must be tagged Missing Artwork`);
+  }
+}
+
+function checkEnemyArtwork(enemy, canon, pathName, errors) {
+  const canonEnemy = canon.enemies.get(enemy.enemyId);
+  if (!canonEnemy) {
+    errors.push(`${pathName}: unresolved ${enemy.enemyId}`);
+    return;
+  }
+  if (enemy.displayName !== canonEnemy.displayName) {
+    errors.push(`${pathName}: ${enemy.enemyId} display name is ${canonEnemy.displayName}`);
+  }
+  if (enemy.enemyId === MISSING_ARTWORK_ID) {
+    checkMissingArtwork(enemy, canon, pathName, errors);
+    return;
+  }
+  if (enemy.artworkTag !== null || enemy.placeholderImage !== null) {
+    errors.push(`${pathName}: only ${MISSING_ARTWORK_ID} is tagged Missing Artwork`);
+  }
+}
+
+function checkMissingArtwork(ref, canon, pathName, errors) {
+  if (ref.artworkTag !== 'Missing Artwork') {
+    errors.push(`${pathName}: ${MISSING_ARTWORK_ID} must be tagged Missing Artwork`);
+  }
+  const assetId = canon.placeholderByPath.get(ref.placeholderImage);
+  if (!assetId) {
+    errors.push(`${pathName}.placeholderImage: ${ref.placeholderImage} is not an existing placeholder asset`);
+  } else if (!existsSync(path.join(canon.root, ref.placeholderImage))) {
+    errors.push(`${pathName}.placeholderImage: missing file ${ref.placeholderImage}`);
+  }
+  if (canon.battleSpriteSubjects.has(MISSING_ARTWORK_ID)) {
+    errors.push(`${pathName}: ${MISSING_ARTWORK_ID} now has a battle sprite`);
+  }
+}
+
 function checkQuestionOrder(questions, errors) {
   const numbers = questions.map((question) => Number(question.id.slice('OQ_G_'.length)));
   const sorted = [...numbers].sort((left, right) => left - right);
   sorted.forEach((value, index) => {
     if (value !== index + 1) errors.push(`catalog.openQuestions: expected OQ_G_${String(index + 1).padStart(2, '0')} in the id set`);
   });
+}
+
+function checkQuestionResolutions(questions, errors) {
+  for (const question of questions) {
+    const decided = OWNER_DECIDED_QUESTIONS.has(question.id);
+    if (decided) {
+      if (question.resolution !== 'OWNER_DECIDED' || question.decisionSource !== 't276u' || question.decidedOn !== '2026-11-20') {
+        errors.push(`${question.id}: owner decision t276u on 2026-11-20 must stay OWNER_DECIDED`);
+      }
+      continue;
+    }
+    if (question.resolution !== 'OPEN' || question.decisionSource !== null || question.decidedOn !== null) {
+      errors.push(`${question.id}: still OPEN`);
+    }
+  }
 }
 
 function checkOffers(shop, canon, pathName, errors, ids) {
@@ -308,6 +397,12 @@ function checkTutorials(pack, canon, ids, errors) {
     }
     resolveIds(tutorial.mentionsAvatarIds, canon.avatarIds, `${pathName}.mentionsAvatarIds`, errors);
     resolveIds(tutorial.mentionsCardIds, canon.cardIds, `${pathName}.mentionsCardIds`, errors);
+    if (FIRST_ROUND.has(tutorial.loopStep) && tutorial.round !== 'first') {
+      errors.push(`${pathName}.round: the basic play loop is first-round`);
+    }
+    if (LATER_ROUND.has(tutorial.loopStep) && tutorial.round !== 'later') {
+      errors.push(`${pathName}.round: this step is later than the basic play loop`);
+    }
   });
   const expectedOrders = pack.tutorials.map((_, index) => index + 1);
   const actualOrders = [...orders].sort((left, right) => left - right);
@@ -342,13 +437,15 @@ function checkProgression(pack, canon, ids, buildings, errors) {
       stageOrders.add(stage.order);
       if (stage.catalogBattleId !== canon.battle.battleId) errors.push(`${stagePath}.catalogBattleId: unknown battle`);
       if (stage.rosterReuse !== canon.battle.battleId) errors.push(`${stagePath}.rosterReuse: must name the only catalog battle`);
-      const expectedEnemies = (canon.battle.enemies ?? []).map((enemy) => ({
-        enemyId: enemy.enemyId,
-        displayName: enemy.displayName,
-      }));
-      if (JSON.stringify(stage.enemies) !== JSON.stringify(expectedEnemies)) {
+      const expectedIds = (canon.battle.enemies ?? []).map((enemy) => enemy.enemyId);
+      const actualIds = stage.enemies.map((enemy) => enemy.enemyId);
+      if (JSON.stringify(actualIds) !== JSON.stringify(expectedIds)) {
         errors.push(`${stagePath}.enemies: must cite the catalog team in file order without renaming`);
       }
+      stage.enemies.forEach((enemy, enemyIndex) => {
+        checkEnemyArtwork(enemy, canon, `${stagePath}.enemies[${enemyIndex}]`, errors);
+      });
+      checkRewardPolicy(stage.reward, `${stagePath}.reward`, errors);
       if (JSON.stringify(stage.runtimeOpponent.avatarIds) !== JSON.stringify(canon.avatarIds)) {
         errors.push(`${stagePath}.runtimeOpponent.avatarIds: must be the Justin roster in file order`);
       }

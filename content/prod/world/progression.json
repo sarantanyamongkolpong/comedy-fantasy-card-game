@@ -65,19 +65,27 @@
           "enemies": [
             {
               "enemyId": "ENM_DEMO_001",
-              "displayName": "Placeholder Echo Tank"
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_002",
-              "displayName": "Placeholder Echo Blade"
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_003",
-              "displayName": "Placeholder Echo Spark"
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_004",
-              "displayName": "Placeholder Echo Hymn"
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
             }
           ],
           "rosterReuse": "DEMO_BATTLE_001",
@@ -111,7 +119,15 @@
             "amount": null,
             "items": null,
             "cardIds": null,
-            "status": "PENDING_OWNER"
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
           }
         },
         {
@@ -137,19 +153,27 @@
           "enemies": [
             {
               "enemyId": "ENM_DEMO_001",
-              "displayName": "Placeholder Echo Tank"
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_002",
-              "displayName": "Placeholder Echo Blade"
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_003",
-              "displayName": "Placeholder Echo Spark"
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_004",
-              "displayName": "Placeholder Echo Hymn"
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
             }
           ],
           "rosterReuse": "DEMO_BATTLE_001",
@@ -183,7 +207,15 @@
             "amount": null,
             "items": null,
             "cardIds": null,
-            "status": "PENDING_OWNER"
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
           }
         }
       ]
@@ -237,19 +269,27 @@
           "enemies": [
             {
               "enemyId": "ENM_DEMO_001",
-              "displayName": "Placeholder Echo Tank"
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_002",
-              "displayName": "Placeholder Echo Blade"
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_003",
-              "displayName": "Placeholder Echo Spark"
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_004",
-              "displayName": "Placeholder Echo Hymn"
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
             }
           ],
           "rosterReuse": "DEMO_BATTLE_001",
@@ -283,7 +323,15 @@
             "amount": null,
             "items": null,
             "cardIds": null,
-            "status": "PENDING_OWNER"
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
           }
         },
         {
@@ -309,19 +357,27 @@
           "enemies": [
             {
               "enemyId": "ENM_DEMO_001",
-              "displayName": "Placeholder Echo Tank"
+              "displayName": "Placeholder Echo Tank",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_002",
-              "displayName": "Placeholder Echo Blade"
+              "displayName": "Placeholder Echo Blade",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_003",
-              "displayName": "Placeholder Echo Spark"
+              "displayName": "Placeholder Echo Spark",
+              "artworkTag": null,
+              "placeholderImage": null
             },
             {
               "enemyId": "ENM_DEMO_004",
-              "displayName": "Placeholder Echo Hymn"
+              "displayName": "Placeholder Echo Hymn",
+              "artworkTag": "Missing Artwork",
+              "placeholderImage": "web/assets/illustrations/ILLUST_ACTION_GENERIC.svg"
             }
           ],
           "rosterReuse": "DEMO_BATTLE_001",
@@ -355,7 +411,15 @@
             "amount": null,
             "items": null,
             "cardIds": null,
-            "status": "PENDING_OWNER"
+            "status": "PENDING_OWNER",
+            "kinds": [
+              "G",
+              "materials",
+              "decorations"
+            ],
+            "amountMark": "PENDING",
+            "difficultyCap": "PENDING",
+            "premiumCurrency": "avoid_large_amounts"
           }
         }
       ]

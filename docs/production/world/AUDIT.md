@@ -108,7 +108,7 @@ node --test tests/prod/g
 
 ## Open questions for the Owner
 
-The same list is `catalog.json` `openQuestions`, ids `OQ_G_01` through `OQ_G_13`.
+The same list is `catalog.json` `openQuestions`, ids `OQ_G_01` through `OQ_G_13`. Questions 1–8 remain OPEN. Questions 9–13 are OWNER_DECIDED on 2026-11-20 from t276u, not LOCKED. The wording is in `docs/production/world/DECISION_LOG.md`.
 
 1. Should the map stay ungated, with this encounter order only as a suggestion, or should clearing a tower stage ever hide a pin?
 2. How many tower floors should exist, and will later floors get new enemy records? Only `DEMO_BATTLE_001` exists today.
@@ -118,8 +118,8 @@ The same list is `catalog.json` `openQuestions`, ids `OQ_G_01` through `OQ_G_13`
 6. Should a second player exist before the arena is anything besides practice? `MAP-05` multiplayer is still open.
 7. Should Sports Complex copy keep saying coming soon, or stay silent until the four games exist?
 8. Which id is canonical when hotspot `siteId` and the locked destination id differ? This pack stores both.
-9. Should a side event ever grant a reward, and of what kind? Amounts are not proposed.
-10. Should a later pass show these tutorial prompts in the client, or keep them as writer copy?
-11. Should the companion room get a named speaker? None exists in the catalog, so none was invented.
-12. `ENM_DEMO_004` has no battle sprite. Should floors wait for one, or keep citing the id?
-13. Should Upgrade stay out of world copy until material recipes exist?
+9. OWNER_DECIDED. Side-event rewards may be G, materials, and decorations, capped by difficulty. Avoid large premium-currency grants. Amounts stay PENDING. No number was invented.
+10. OWNER_DECIDED. The tutorial script stays. Only the basic play path is first-round. Hideout, stash, deck, gacha, and mall prompts are tagged later.
+11. OWNER_DECIDED. Unique names are for characters with dialogue or a story role. Generic characters may use temporary names. No companion was named.
+12. OWNER_DECIDED. `ENM_DEMO_004` stays so references do not break. It uses an existing placeholder image and is tagged Missing Artwork.
+13. OWNER_DECIDED. Upgrade may be mentioned in story terms. No recipes, materials, or numbers until crafting is finalized.

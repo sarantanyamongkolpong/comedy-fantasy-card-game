@@ -44,60 +44,100 @@
     "docs/design/v05/tabs/v05_Gacha.md",
     "docs/design/v05/BRIEF_20261120.md",
     "docs/production/OWNERSHIP.md",
-    "content/v05/source/PROVENANCE.md"
+    "content/v05/source/PROVENANCE.md",
+    "docs/production/world/DECISION_LOG.md"
   ],
   "openQuestions": [
     {
       "id": "OQ_G_01",
-      "text": "Should the map stay ungated, with this encounter order only as a suggestion, or should clearing a tower stage ever hide a pin? There is no main quest, and tower floors are still open."
+      "text": "Should the map stay ungated, with this encounter order only as a suggestion, or should clearing a tower stage ever hide a pin? There is no main quest, and tower floors are still open.",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_02",
-      "text": "How many tower floors should exist, and will later floors get new enemy records? The catalog currently has one battle and four placeholder echoes."
+      "text": "How many tower floors should exist, and will later floors get new enemy records? The catalog currently has one battle and four placeholder echoes.",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_03",
-      "text": "Should live battles keep using echo copies of the four Justins, or load the catalog enemy team? This pack does not retarget the battle builder."
+      "text": "Should live battles keep using echo copies of the four Justins, or load the catalog enemy team? This pack does not retarget the battle builder.",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_04",
-      "text": "Mall prices, furniture grant versus buy, gacha amounts for the currency named G, and companion currency are open. Every amount in this pack is empty. Which of those should be decided before a counter can charge?"
+      "text": "Mall prices, furniture grant versus buy, gacha amounts for the currency named G, and companion currency are open. Every amount in this pack is empty. Which of those should be decided before a counter can charge?",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_05",
-      "text": "Cabin base storage is still open. This pack does not set it. What should the starting capacity be, if the Cabin has one?"
+      "text": "Cabin base storage is still open. This pack does not set it. What should the starting capacity be, if the Cabin has one?",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_06",
-      "text": "Arena multiplayer is still open. These exhibition stages are practice echoes. Should a second player exist before the arena is anything besides practice?"
+      "text": "Arena multiplayer is still open. These exhibition stages are practice echoes. Should a second player exist before the arena is anything besides practice?",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_07",
-      "text": "The Sports Complex pin is real and the four games are out of scope. Should world copy keep saying coming soon, or stay silent until those games exist?"
+      "text": "The Sports Complex pin is real and the four games are out of scope. Should world copy keep saying coming soon, or stay silent until those games exist?",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_08",
-      "text": "Hotspot site ids and locked map destination ids differ for the tower, the arena, the mall, and the sports pin. Which id should later content treat as canonical? This pack stores both and renames neither."
+      "text": "Hotspot site ids and locked map destination ids differ for the tower, the arena, the mall, and the sports pin. Which id should later content treat as canonical? This pack stores both and renames neither.",
+      "resolution": "OPEN",
+      "decisionSource": null,
+      "decidedOn": null
     },
     {
       "id": "OQ_G_09",
-      "text": "Should a side event ever grant a reward, and if so what kind? Amounts are not proposed."
+      "text": "Should a side event ever grant a reward, and if so what kind? Amounts are not proposed.",
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t276u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_10",
-      "text": "These tutorial prompts are data only and are not shown in the client. Should a later pass hook them into the screens, or keep them as writer copy?"
+      "text": "These tutorial prompts are data only and are not shown in the client. Should a later pass hook them into the screens, or keep them as writer copy?",
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t276u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_11",
-      "text": "No named companion exists in the catalog, so none was invented. Should the hideout companion room have a named speaker later?"
+      "text": "No named companion exists in the catalog, so none was invented. Should the hideout companion room have a named speaker later?",
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t276u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_12",
-      "text": "The support catalog enemy has no battle sprite. Progression still cites that enemy id. Should floors wait for a sprite, or keep citing the id?"
+      "text": "The support catalog enemy has no battle sprite. Progression still cites that enemy id. Should floors wait for a sprite, or keep citing the id?",
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t276u",
+      "decidedOn": "2026-11-20"
     },
     {
       "id": "OQ_G_13",
-      "text": "The core loop note names Upgrade after rewards, and material recipes are still open. This pack does not add an upgrade step or an amount. Should upgrade stay out of world copy until those recipes exist?"
+      "text": "The core loop note names Upgrade after rewards, and material recipes are still open. This pack does not add an upgrade step or an amount. Should upgrade stay out of world copy until those recipes exist?",
+      "resolution": "OWNER_DECIDED",
+      "decisionSource": "t276u",
+      "decidedOn": "2026-11-20"
     }
   ]
 }
