@@ -1,0 +1,38 @@
+{
+  "project": "Comedy Fantasy Card Game",
+  "workstream": "Phase2-Housing",
+  "version": "0.2-preview",
+  "status": "GENERATED_REVIEW",
+  "created_files": 10,
+  "map_building_tiers": [
+    {"tier": 1, "name": "Cabin", "file": "house_cabin.png"},
+    {"tier": 2, "name": "Bungalow", "file": "house_bungalow.png"},
+    {"tier": 3, "name": "Cottage", "file": "house_cottage.png"},
+    {"tier": 4, "name": "Loft", "file": "house_loft.png"},
+    {"tier": 5, "name": "Villa", "file": "house_villa.png"},
+    {"tier": 6, "name": "Penthouse", "file": "house_penthouse.png"}
+  ],
+  "interior": {"tier": 1, "file": "interior_cabin.png", "zones": ["stash", "deck", "companion"]},
+  "furniture": [
+    {"name":"Card box", "file":"furniture_card_box.png", "suggested_zone":"deck"},
+    {"name":"Tall cabinet", "file":"furniture_tall_cabinet.png", "suggested_zone":"stash"},
+    {"name":"Display counter", "file":"furniture_display_counter.png", "suggested_zone":"deck_or_stash"}
+  ],
+  "technical": {
+    "building_dimensions": [1254, 1254],
+    "furniture_dimensions": [1254, 1254],
+    "interior_dimensions": [1672, 941],
+    "building_furniture_background": "transparent RGBA, alpha range 0-255 verified",
+    "interior_background": "opaque RGB",
+    "fixed_ratio_rule": "Place on a fixed 1672x941 game canvas and scale uniformly with min(viewportW/1672, viewportH/941); do not resize individual elements independently in response to viewport dimensions.",
+    "suggested_world_placement": "Use v01/world/WORLD_MAP_PLACEMENT_PROPOSED.json site home bottom anchor (264,700), not LOCKED.",
+    "asset_modularity": "Each building tier and each furniture item is a separate PNG; swap asset path via manifest while keeping the anchor and layout system stable."
+  },
+  "qa": {
+    "image_dimensions_checked": true,
+    "transparent_alpha_checked": true,
+    "visual_direction_checked": true,
+    "in_engine_composition_tested": false,
+    "known_limitations": ["Preview art, not yet approved as FINAL/LOCKED", "Relative render scale and click targets need phone-landscape QA", "No other hideout tiers' interiors generated in this phase", "No sprite animations or hand-exported character motion frames included"]
+  }
+}
