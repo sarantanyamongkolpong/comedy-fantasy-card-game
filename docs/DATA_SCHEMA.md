@@ -143,10 +143,54 @@ GA-01..GA-04 in the imported sheet are column-shifted: the LOCKED token sits in 
 
 - `defaultRuleConfig()`
 - `validateDeck(deck, { cardsById, teamFactions, enforceFac })` reports FAC legality. Mixed factions are allowed. Size must be 30. `enforceFac` is off unless the caller asks.
-- `createBannerState(banner, saved)`, `pull(state, { seed, count, profile, costG })`
-- `serialize(profile)`, `deserialize(json)`, `createMemoryAdapter()`, `createLocalStorageAdapter(storage)`
+- `createBannerState(banner, saved)`, `pull(state, { seed, count, profile, costG })`, `bannerList(catalog)`, `integerSeed(value)`
+- `serialize(profile)`, `deserialize(json)`, `playerView(profile)`, `createMemoryAdapter()`, `createLocalStorageAdapter(storage)`
 - `applyBattleReward(profile, { matchId, rewards })` runs once per `matchId`
+- `installFurniture(house, piece)`, `removeFurniture(house, furnitureId)`, `storageFromFurniture(house)`, `stackCounts(inventory)`, `stashReport(profile)`
+- `migrateSavePow(profile)`, `reverseSavePow(profile)`
 - Stream A names `createMatch`, `startTurn`, `playAction`, `discardVoluntary`, `endTurn`, `resolveEndOfRoundDiscard`, `getZones`, and `getOutcome` are exported from `src/index.js` and throw `ENGINE_NOT_LANDED` until `src/engine` exists. Do not treat that as the battle implementation.
+
+### Furniture and stash
+
+`storageFromFurniture` counts slots from installed pieces that have an integer capacity. Acquiring a house tier does not install furniture and does not add slots. `stashReport` returns the stack quantities (`stackCounts`) beside those slots. Cabin base capacity (HOME-11), prices, loot, G rewards, and whether a reference piece is granted or only unlocked for sale (OPEN-06) stay `PENDING_OWNER` with value null.
+
+`removeFurniture` takes one installed piece off the house. The acquired tier stays.
+
+Phase 3 art in `content/v05/hideout/phase3-furniture-art.json` (`PHASE3_FURNITURE_ART`) is art-only. Each row has the asset id from `art_source/dream_v03/ASSET_MANIFEST.json`, `status: "PROPOSED"`, and null capacity and price. No new `FUR_*` id is assigned. The existing reference ids (`FUR_REF_BUNGALOW_BOX`, `FUR_REF_COTTAGE_BOX`, `FUR_REF_LOFT_TALL_CABINET`, `FUR_REF_VILLA_DISPLAY_COUNTER`, `FUR_REF_PENTHOUSE_LARGE_TALL_CABINET`) are unchanged. `reviewStatus: "GENERATED_REVIEW"` is the art-package review state. It is not a lock and it is not owner approval.
+
+Installing an art-only row records the piece and adds no slots.
+
+### Save migration
+
+`deserialize` reads save versions 1 and 2. A version 1 profile gains `preferences.autoBattle: false` when that boolean is missing, and every stats bag that still has `pow` is copied to `atk` 1:1. `pow` and `legacy.pow` both remain. The fixture is `tests/migrate/fixtures/legacy-pow-save-v1.json`. `reverseSavePow` removes `atk` only when it equals `legacy.pow`, and it leaves `pow` and `legacy.pow` in place so the same profile can be migrated again.
+
+### Web contract
+
+These are the shapes `src/gacha` and `src/save` accept and return. The web adapter in `web/js/engine-session.js` and `web/js/screens/gacha.js` still needs the edits below. This stream does not change `web/`.
+
+Banner list:
+
+- `bannerList` accepts `Banner[]` or `{ banners: Banner[] }`. The content file `content/v05/gacha/TEST_ONLY_banners.json` is the second shape. Pass one banner into `createBannerState`, not the whole file.
+- The pool field is `entries: [{ id, rarity, weight }]`.
+- A banner that has `weights` and no `entries` is accepted. `weights` is copied onto `entries`. When both are present, `entries` is the pool.
+- A UI banner `{ real, weights, pityEpic, pityTop }` is accepted. The labelled banner is `real.banner`. Saved counters may use `epicCounter` or `pityEpic`, and `topCounter` or `pityTop`.
+- `testOnly: true`, `rateStatus: "TEST_ONLY_NOT_PRODUCTION"`, and a warning that contains both `NOT_PRODUCTION` and `NOT A DROP RATE` stay required.
+
+Pull:
+
+- `pull(state, { seed, count })` returns `{ state, pulls, results, profile, spent }`.
+- `results` and `pulls` are the same array of raw rows (`id`, `rarity`, `forced`, `tier`, counters).
+- `seed` is a non-negative integer. A string throws `BAD_PULL`. `integerSeed(value)` returns the integer unchanged, or the FNV-1a 32-bit hash of a non-empty string (offset `2166136261`, prime `16777619`).
+- `web/js/screens/gacha.js` `performPull` currently passes `` seed: `gacha:${banner.bannerId}:${ctx.profile.seq}:${count}` ``. The acceptance check rejects a backtick on the `seed:` line. Pass an integer there, for example `ctx.profile.seq`. Compute `integerSeed(...)` on a previous line if the string form is still wanted.
+- `web/js/engine-session.js` `pull` returns `{ state, results, chargedG }` and drops `pulls`. Include `pulls: result.pulls` on that return value. The screen can keep reading `outcome.results` for the display rows it builds today. `src/gacha` `results` are the raw rows, not those display objects.
+
+Save:
+
+- `serialize` / `deserialize` keep `team` and `deck` on the data profile.
+- A web starter (`team`, `deck`, and no inventory) is stored as a versioned profile. `team` and `deck` are copied onto that profile. The original object is kept at `profile.web.ui`.
+- A data profile whose `team` or `deck` is missing lifts those arrays from `web.ui` on load.
+- `playerView(profile)` returns the player object with those `team` and `deck` arrays.
+- `web/js/engine-session.js` `deserialize` returns `{ webBundle, profile, match, screen, battleUi }`. The acceptance check reads `loaded.team` and `loaded.deck` on that return value, so those two arrays have to sit on the object `deserialize` returns. Spread `playerView(saved)` onto the returned object. `src/save.deserialize` itself returns the data profile, which already has `team` and `deck` after the lift.
 
 `rollAcquisition` still throws Q-GACHA. The new pull path refuses a banner that is not marked `TEST_ONLY_NOT_PRODUCTION`.
 
@@ -154,4 +198,5 @@ GA-01..GA-04 in the imported sheet are column-shifted: the LOCKED token sits in 
 
 - Stream D: add `deckSize` to `PROTECTED_KEYS` in `tools/ci/lib/repository-structure.mjs` and stop requiring `tools/ci/protected-constants.json` to omit `deckSize`. The runtime constant is already 30. The snapshot hash was left unchanged so the existing check keeps passing.
 - Stream A: replace the `ENGINE_NOT_LANDED` stubs in `src/index.js` with `export { ... } from './engine/index.js'` when that module exists. `endTurn` stays the current `src/battle/battle.js` export because `src/debug/execute.js` imports it from `src/index.js`. Demo enemy team: `DEMO_ENEMY_TEAM` (`DEMO_BATTLE_001`), field `displayName`. Read `Cost_AP` / `apCost` from v05 action cards.
-- Stream C: call `defaultRuleConfig`, `validateDeck`, `createBannerState` / `pull`, and `serialize` / `deserialize`. House display uses `displayHouseTier`. Storage uses `storageFromFurniture` only. Do not add slots because the house tier changed.
+- Stream C: call `defaultRuleConfig`, `validateDeck`, `createBannerState` / `pull`, and `serialize` / `deserialize`. House display uses `displayHouseTier`. Storage uses `storageFromFurniture` only. Installed furniture is the slot source. `installFurniture` / `removeFurniture` change the slots. Acquiring a tier does not.
+- Web: apply the "Web contract" section in `web/js/screens/gacha.js` and `web/js/engine-session.js`. Pass an integer `seed`, return `pulls` from the web `pull`, and put `team` and `deck` on the object `deserialize` returns.

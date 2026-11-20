@@ -30,6 +30,35 @@ function fail(message, code) {
 }
 
 /**
+ * `Banner[]` or `{ banners: Banner[] }`.
+ * @param {unknown} catalog
+ */
+export function bannerList(catalog) {
+  if (Array.isArray(catalog)) return catalog;
+  if (catalog && typeof catalog === 'object' && Array.isArray(catalog.banners)) return catalog.banners;
+  fail('banner list must be an array or { banners: [] }', 'BAD_BANNER');
+}
+
+function unwrapBanner(banner) {
+  if (!banner || typeof banner !== 'object') return banner;
+  if (banner.real?.banner?.bannerId) return banner.real.banner;
+  if (banner.banner?.bannerId && !Array.isArray(banner.entries) && !Array.isArray(banner.weights)) return banner.banner;
+  return banner;
+}
+
+/**
+ * `entries` is the pool. `weights` is accepted when `entries` is missing.
+ * @param {object} banner
+ */
+export function normalizeBanner(banner) {
+  const source = unwrapBanner(banner);
+  if (!source || typeof source !== 'object') return source;
+  if (Array.isArray(source.entries) && source.entries.length > 0) return source;
+  if (Array.isArray(source.weights) && source.weights.length > 0) return { ...source, entries: source.weights };
+  return source;
+}
+
+/**
  * @param {unknown} banner
  */
 export function assertTestBanner(banner) {
@@ -56,8 +85,10 @@ export function assertTestBanner(banner) {
  * @param {{ epicCounter?: number, topCounter?: number | null, pulls?: number }} [saved]
  */
 export function createBannerState(banner, saved = {}) {
-  assertTestBanner(banner);
-  const epicCounter = saved.epicCounter ?? 0;
+  const stored = normalizeBanner(banner);
+  assertTestBanner(stored);
+  banner = stored;
+  const epicCounter = saved.epicCounter ?? saved.pityEpic ?? 0;
   if (!Number.isInteger(epicCounter) || epicCounter < 0) fail('epicCounter must be a non-negative integer', 'BAD_PITY');
   let topCounter = null;
   if (banner.pool === 'companion') {
@@ -65,7 +96,7 @@ export function createBannerState(banner, saved = {}) {
       fail('Companion has no top-tier counter (GA-10, GA-12).', 'COMPANION_HAS_NO_TOP_COUNTER');
     }
   } else {
-    topCounter = saved.topCounter ?? 0;
+    topCounter = saved.topCounter ?? saved.pityTop ?? 0;
     if (!Number.isInteger(topCounter) || topCounter < 0) fail('topCounter must be a non-negative integer', 'BAD_PITY');
   }
   const pulls = saved.pulls ?? 0;
@@ -112,11 +143,15 @@ function eligible(entries, forced, pool) {
  * @param {{ seed: number, count?: number, profile?: object | null, costG?: number | null }} options
  */
 export function pull(state, options = {}) {
-  if (!state || !state.banner) fail('banner state is required', 'BAD_BANNER');
+  const real = state?.banner ? state : (state?.real?.banner ? state.real : state);
+  if (!real || !real.banner) fail('banner state is required', 'BAD_BANNER');
+  state = real;
   assertTestBanner(state.banner);
   const count = options.count ?? 1;
   if (!Number.isInteger(count) || count < 1) fail('count must be a positive integer', 'BAD_PULL');
-  if (!Number.isInteger(options.seed) || options.seed < 0) fail('seed must be a non-negative integer', 'BAD_PULL');
+  if (!Number.isInteger(options.seed) || options.seed < 0) {
+    fail('seed must be a non-negative integer. Hash a string with integerSeed() before pull().', 'BAD_PULL');
+  }
   if (options.costG != null && state.pool === 'companion') {
     fail('Companion currency is PENDING_OWNER (GA-02). Companion pulls do not spend G.', 'COMPANION_CURRENCY_PENDING');
   }
@@ -199,6 +234,7 @@ export function pull(state, options = {}) {
       policy: lockedPityPolicy(),
     },
     pulls,
+    results: pulls,
     profile,
     spent,
   };
