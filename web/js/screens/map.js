@@ -86,8 +86,7 @@ function onHotspot(ctx, hotspot) {
     return;
   }
   if (hotspot.action === 'mall') {
-    ctx.setNotice('The Shopping Mall has blank price tags. Furniture prices and cabin storage are PENDING. Nothing is for sale in this build.');
-    ctx.redraw();
+    ctx.goto('mall');
     return;
   }
   if (hotspot.action === 'battle') {

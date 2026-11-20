@@ -1,14 +1,76 @@
+import { migrateSavePow } from '../migrate/save-pow.js';
 import { SAVE_VERSION } from '../schema/constants.js';
 
 const REQUIRED = ['profileId', 'inventory', 'decks', 'currency', 'pity', 'house', 'rewardLedger'];
 const READABLE_VERSIONS = new Set([1, SAVE_VERSION]);
 
+function isDataProfile(profile) {
+  return Boolean(
+    profile
+    && profile.inventory
+    && Array.isArray(profile.inventory.avatars)
+    && Array.isArray(profile.inventory.actions)
+    && Array.isArray(profile.inventory.companions)
+    && Array.isArray(profile.decks)
+    && profile.currency
+    && typeof profile.currency.G === 'number',
+  );
+}
+
+function isWebPlayer(profile) {
+  return Array.isArray(profile.team) || Array.isArray(profile.deck) || Array.isArray(profile.avatars);
+}
+
+/**
+ * Store a web starter as a versioned profile. `team` and `deck` stay on the profile.
+ * The original object is kept at `web.ui`.
+ * @param {object} ui
+ */
+export function adoptWebProfile(ui) {
+  return {
+    profileId: typeof ui.profileId === 'string' ? ui.profileId : 'PLAYER',
+    saveVersion: SAVE_VERSION,
+    preferences: {
+      autoBattle: ui.preferences?.autoBattle === true || ui.autoPlay?.enabled === true,
+    },
+    inventory: isDataProfile(ui) ? structuredClone(ui.inventory) : { avatars: [], actions: [], companions: [] },
+    decks: Array.isArray(ui.decks) ? structuredClone(ui.decks) : [],
+    currency: {
+      G: typeof ui.currency?.G === 'number' ? ui.currency.G : (Number.isInteger(ui.currencyG) ? ui.currencyG : 0),
+    },
+    pity: ui.pity && typeof ui.pity === 'object' ? structuredClone(ui.pity) : {},
+    house: ui.house?.acquiredTiers
+      ? structuredClone(ui.house)
+      : {
+        acquiredTiers: ['cabin'],
+        displayTier: ui.house?.tierId ?? 'cabin',
+        installedFurniture: [],
+      },
+    rewardLedger: ui.rewardLedger && typeof ui.rewardLedger === 'object' ? structuredClone(ui.rewardLedger) : {},
+    team: Array.isArray(ui.team) ? structuredClone(ui.team) : [],
+    deck: Array.isArray(ui.deck) ? structuredClone(ui.deck) : [],
+    web: { ui: structuredClone(ui) },
+  };
+}
+
+/**
+ * Player fields web should put on the object it returns from deserialize.
+ * @param {object} profile
+ */
+export function playerView(profile) {
+  const ui = profile?.web?.ui && typeof profile.web.ui === 'object' ? structuredClone(profile.web.ui) : {};
+  if (Array.isArray(profile?.team)) ui.team = structuredClone(profile.team);
+  if (Array.isArray(profile?.deck)) ui.deck = structuredClone(profile.deck);
+  return ui;
+}
+
 /**
  * @param {object} profile
  */
 export function serialize(profile) {
-  if (!profile || typeof profile !== 'object') throw new TypeError('profile is required');
-  return JSON.stringify({ saveVersion: SAVE_VERSION, profile });
+  if (!profile || typeof profile !== 'object' || Array.isArray(profile)) throw new TypeError('profile is required');
+  const stored = isDataProfile(profile) ? profile : (isWebPlayer(profile) ? adoptWebProfile(profile) : profile);
+  return JSON.stringify({ saveVersion: SAVE_VERSION, profile: stored });
 }
 
 /**
@@ -29,7 +91,7 @@ export function deserialize(json) {
     throw new TypeError('save inventory must include avatars, actions, and companions');
   }
   if (typeof profile.currency.G !== 'number') throw new TypeError('save currency.G must be a number');
-  return migrateProfile(profile);
+  return liftPlayerFields(migrateSavePow(migrateProfile(profile)));
 }
 
 /**
@@ -45,4 +107,16 @@ function migrateProfile(profile) {
   next.preferences = { ...bag, autoBattle };
   next.saveVersion = SAVE_VERSION;
   return next;
+}
+
+function liftPlayerFields(profile) {
+  const ui = profile.web?.ui;
+  if (!ui || typeof ui !== 'object') return profile;
+  if (!Object.prototype.hasOwnProperty.call(profile, 'team') && Array.isArray(ui.team)) {
+    profile.team = structuredClone(ui.team);
+  }
+  if (!Object.prototype.hasOwnProperty.call(profile, 'deck') && Array.isArray(ui.deck)) {
+    profile.deck = structuredClone(ui.deck);
+  }
+  return profile;
 }

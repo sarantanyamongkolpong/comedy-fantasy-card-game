@@ -318,6 +318,20 @@ function pickSimultaneousWinner(state) {
   throw gameError('UNKNOWN_SIMULTANEOUS');
 }
 
+function pendingRewardPayload() {
+  return {
+    status: 'PENDING_OWNER',
+    label: 'PENDING_OWNER',
+    G: null,
+    GStatus: 'PENDING_OWNER',
+    loot: null,
+    lootStatus: 'PENDING_OWNER',
+    items: null,
+    itemsStatus: 'PENDING_OWNER',
+    note: 'G and loot are PENDING_OWNER placeholders. No prize amount is approved.',
+  };
+}
+
 function decide(state, winnerSideId, loserSideId, reason) {
   if (state.rewards) return state.outcome;
   const rewards = {
@@ -329,7 +343,7 @@ function decide(state, winnerSideId, loserSideId, reason) {
     loserSideId,
     reason,
     payloadStatus: 'PENDING_OWNER',
-    payload: null,
+    payload: pendingRewardPayload(),
   };
   state.rewards = rewards;
   state.outcome = {

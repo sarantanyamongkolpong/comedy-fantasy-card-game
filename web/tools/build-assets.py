@@ -685,10 +685,134 @@ def main_backgrounds() -> None:
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + '\n')
 
 
+V03_COMMIT = '67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b'
+V03 = REPO / 'art_source' / 'dream_v03'
+V03_OUT = Path('web/assets/generated/dream_v03')
+
+# Raster frames with dirty edges, plus effects that have no v0.5 rule.
+V03_SKIP = {
+    'inventory_ui/inventory_slot_frame.png',
+    'inventory_ui/inventory_item_detail_panel.png',
+    'inventory_ui/inventory_category_tab_frame.png',
+    'inventory_ui/inventory_tooltip_frame.png',
+    'vfx/vfx_critical_hit.png',
+    'vfx/vfx_card_upgrade.png',
+}
+
+
+def v03_entry(path, type_name, slot, layer, anchor, subject, source_file, presentation=None):
+    entry = {
+        'path': path,
+        'type': type_name,
+        'owner': 'web-ui',
+        'status': 'CONCEPT',
+        'slot': slot,
+        'layer': layer,
+        'anchor': anchor,
+        'placeholder': False,
+        'review_status': REVIEW,
+        'rarity': None,
+        'subject_id': subject,
+        'source_commit': V03_COMMIT,
+        'source_file': f'art_source/dream_v03/{source_file}',
+    }
+    if presentation:
+        entry['presentation'] = presentation
+    return entry
+
+
+def v03_webp(src_rel, dest_name, max_edge, quality):
+    src = V03 / src_rel
+    dest = V03_OUT / dest_name
+    size = save_max_edge(src, dest, max_edge, quality)
+    print(f'{dest} {size}')
+    return str(dest).replace('\\', '/')
+
+
+def v03_svg(src_rel, dest_name):
+    src = V03 / src_rel
+    dest = REPO / V03_OUT / dest_name
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(src.read_bytes())
+    return str(V03_OUT / dest_name).replace('\\', '/')
+
+
+def build_dream_v03(manifest: dict) -> None:
+    """Phase 3 WebP plus the SVG frames. Skips REVIEW_FIX_NEEDED PNGs and unbound VFX."""
+    if not V03.is_dir():
+        print('skip dream v03 (art_source/dream_v03 missing)')
+        return
+    rows = [
+        ('BG_INVENTORY_ROOM', v03_webp('inventory_ui/inventory_room_background.png', 'inventory_room.webp', 1280, 68), 'background', 'bg-stash', 'background', 'stage', 'inventory', 'inventory_ui/inventory_room_background.png', None),
+        ('PROP_INVENTORY_BACKPACK', v03_webp('inventory_ui/inventory_backpack.png', 'inventory_backpack.webp', 512, 72), 'prop', 'inventory-prop', 'prop', 'stash', 'backpack', 'inventory_ui/inventory_backpack.png', None),
+        ('PROP_HIDEOUT_BED', v03_webp('furniture/furniture_companion_bed.png', 'furniture_companion_bed.webp', 512, 72), 'prop', 'hideout-furniture', 'prop', 'hideout', 'companion-bed', 'furniture/furniture_companion_bed.png', {'placement': {'x': 580, 'y': 460, 'w': 260, 'h': 260}}),
+        ('PROP_HIDEOUT_SOFA', v03_webp('furniture/furniture_cozy_sofa.png', 'furniture_cozy_sofa.webp', 512, 72), 'prop', 'hideout-furniture', 'prop', 'hideout', 'cozy-sofa', 'furniture/furniture_cozy_sofa.png', {'placement': {'x': 840, 'y': 560, 'w': 320, 'h': 220}}),
+        ('PROP_HIDEOUT_BOOKCASE', v03_webp('furniture/furniture_bookcase.png', 'furniture_bookcase.webp', 512, 72), 'prop', 'hideout-furniture', 'prop', 'hideout', 'bookcase', 'furniture/furniture_bookcase.png', {'placement': {'x': 980, 'y': 220, 'w': 200, 'h': 300}}),
+        ('PROP_HIDEOUT_SHELF', v03_webp('furniture/furniture_trophy_shelf.png', 'furniture_trophy_shelf.webp', 512, 72), 'prop', 'hideout-furniture', 'prop', 'hideout', 'trophy-shelf', 'furniture/furniture_trophy_shelf.png', {'placement': {'x': 1180, 'y': 230, 'w': 190, 'h': 270}}),
+        ('PROP_HIDEOUT_WARDROBE', v03_webp('furniture/furniture_wardrobe.png', 'furniture_wardrobe.webp', 512, 72), 'prop', 'hideout-furniture', 'prop', 'hideout', 'wardrobe', 'furniture/furniture_wardrobe.png', {'placement': {'x': 1380, 'y': 200, 'w': 180, 'h': 320}}),
+        ('PROP_HIDEOUT_WORKBENCH', v03_webp('furniture/furniture_magic_workbench.png', 'furniture_magic_workbench.webp', 512, 72), 'prop', 'hideout-furniture', 'prop', 'hideout', 'magic-workbench', 'furniture/furniture_magic_workbench.png', {'placement': {'x': 1160, 'y': 520, 'w': 250, 'h': 220}}),
+        ('PROP_HIDEOUT_CHEST', v03_webp('furniture/furniture_ornate_storage_chest.png', 'furniture_ornate_storage_chest.webp', 512, 72), 'prop', 'hideout-furniture', 'prop', 'hideout', 'ornate-chest', 'furniture/furniture_ornate_storage_chest.png', {'placement': {'x': 1480, 'y': 620, 'w': 160, 'h': 160}}),
+        ('VFX_STATUS_TAUNT', v03_webp('vfx/vfx_taunt.png', 'vfx_taunt.webp', 384, 72), 'battle_vfx', 'battle-vfx', 'overlay', 'unit', 'taunt', 'vfx/vfx_taunt.png', None),
+        ('VFX_ZONE_DRAW', v03_webp('vfx/vfx_card_draw.png', 'vfx_card_draw.webp', 384, 72), 'battle_vfx', 'zone-vfx', 'overlay', 'zone', 'draw', 'vfx/vfx_card_draw.png', None),
+        ('VFX_ZONE_DISCARD', v03_webp('vfx/vfx_card_discard.png', 'vfx_card_discard.webp', 384, 72), 'battle_vfx', 'zone-vfx', 'overlay', 'zone', 'discard', 'vfx/vfx_card_discard.png', None),
+        ('VFX_REWARD_COINS', v03_webp('vfx/vfx_reward_coin_burst.png', 'vfx_reward_coin_burst.webp', 512, 72), 'battle_vfx', 'reward-vfx', 'overlay', 'rewards', 'coin', 'vfx/vfx_reward_coin_burst.png', None),
+        ('BG_MALL_INTERIOR', v03_webp('shop_rewards/shopping_mall_interior.png', 'shopping_mall_interior.webp', 1280, 68), 'background', 'bg-mall', 'background', 'stage', 'mall', 'shop_rewards/shopping_mall_interior.png', None),
+        ('SPRITE_SHOPKEEPER', v03_webp('shop_rewards/shopkeeper_merchant.png', 'shopkeeper_merchant.webp', 640, 72), 'prop', 'mall-cutout', 'character', 'mall', 'merchant', 'shop_rewards/shopkeeper_merchant.png', None),
+        ('PROP_SHOP_COUNTER', v03_webp('shop_rewards/shopping_counter.png', 'shopping_counter.webp', 768, 72), 'prop', 'mall-cutout', 'prop', 'mall', 'counter', 'shop_rewards/shopping_counter.png', None),
+        ('BG_REWARD_ROOM', v03_webp('shop_rewards/reward_room_background.png', 'reward_room.webp', 1280, 68), 'background', 'bg-rewards', 'background', 'stage', 'room', 'shop_rewards/reward_room_background.png', None),
+        ('PROP_REWARD_TREASURE', v03_webp('shop_rewards/reward_treasure_open.png', 'reward_treasure.webp', 640, 72), 'prop', 'reward-cutout', 'prop', 'rewards', 'treasure', 'shop_rewards/reward_treasure_open.png', None),
+    ]
+    for asset_id, path, type_name, slot, layer, anchor, subject, source, presentation in rows:
+        upsert_asset(manifest, asset_id, v03_entry(path, type_name, slot, layer, anchor, subject, source, presentation))
+    vectors = [
+        ('UI_BTN_PRIMARY', 'ui_vector/button_primary.svg', 'ui-button', 'primary'),
+        ('UI_BTN_SECONDARY', 'ui_vector/button_secondary.svg', 'ui-button', 'secondary'),
+        ('UI_BTN_DANGER', 'ui_vector/button_danger.svg', 'ui-button', 'danger'),
+        ('UI_BTN_DISABLED', 'ui_vector/button_disabled.svg', 'ui-button', 'disabled'),
+        ('UI_BTN_GHOST', 'ui_vector/button_ghost.svg', 'ui-button', 'ghost'),
+        ('UI_BTN_SMALL', 'ui_vector/button_small.svg', 'ui-button', 'small'),
+        ('UI_BTN_ICON', 'ui_vector/button_icon_square.svg', 'ui-button', 'icon'),
+        ('UI_TAB_SELECTED', 'ui_vector/tab_selected.svg', 'ui-tab', 'selected'),
+        ('UI_TAB_UNSELECTED', 'ui_vector/tab_unselected.svg', 'ui-tab', 'unselected'),
+        ('UI_PANEL_POPUP', 'ui_vector/popup_panel.svg', 'ui-panel', 'popup'),
+        ('UI_PANEL_TOAST', 'ui_vector/toast_panel.svg', 'ui-panel', 'toast'),
+        ('UI_FRAME_INVENTORY_SLOT', 'ui_vector/inventory_slot_frame.svg', 'ui-frame', 'slot'),
+        ('UI_FRAME_INVENTORY_DETAIL', 'ui_vector/inventory_item_detail_panel.svg', 'ui-frame', 'detail'),
+        ('UI_FRAME_INVENTORY_TAB', 'ui_vector/inventory_category_tab_frame.svg', 'ui-frame', 'tab'),
+        ('UI_FRAME_INVENTORY_TOOLTIP', 'ui_vector/inventory_tooltip_frame.svg', 'ui-frame', 'tooltip'),
+        ('ICO_NAV_BAG', 'ui_vector/icon_bag.svg', 'nav-icon', 'bag'),
+        ('ICO_NAV_DECK', 'ui_vector/icon_deck.svg', 'nav-icon', 'deck'),
+        ('ICO_NAV_HOME', 'ui_vector/icon_home.svg', 'nav-icon', 'home'),
+        ('ICO_NAV_GACHA', 'ui_vector/icon_gacha.svg', 'nav-icon', 'gacha'),
+        ('ICO_NAV_MAP', 'ui_vector/icon_map.svg', 'nav-icon', 'map'),
+        ('ICO_NAV_SHOP', 'ui_vector/icon_shop.svg', 'nav-icon', 'shop'),
+        ('ICO_NAV_COMPANION', 'ui_vector/icon_companion.svg', 'nav-icon', 'companion'),
+        ('ICO_NAV_SETTINGS', 'ui_vector/icon_settings.svg', 'nav-icon', 'settings'),
+        ('ICO_NAV_CLOSE', 'ui_vector/icon_close.svg', 'nav-icon', 'close'),
+        ('ICO_NAV_BACK', 'ui_vector/icon_back.svg', 'nav-icon', 'back'),
+        ('ICO_NAV_SORT', 'ui_vector/icon_sort.svg', 'nav-icon', 'sort'),
+        ('ICO_NAV_FILTER', 'ui_vector/icon_filter.svg', 'nav-icon', 'filter'),
+    ]
+    for asset_id, src_rel, slot, subject in vectors:
+        path = v03_svg(src_rel, f'ui/{src_rel.split("/")[-1]}')
+        upsert_asset(manifest, asset_id, v03_entry(path, 'ui_vector', slot, 'chrome', 'ui', subject, src_rel))
+    for skipped in sorted(V03_SKIP):
+        print(f'skip {skipped}')
+
+
+def main_v03() -> None:
+    manifest = json.loads(MANIFEST_PATH.read_text())
+    build_dream_v03(manifest)
+    manifest['productionReady'] = False
+    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + '\n')
+
+
 if __name__ == '__main__':
     if '--backgrounds' in sys.argv:
         main_backgrounds()
     elif '--v02' in sys.argv:
         main_v02()
+    elif '--v03' in sys.argv:
+        main_v03()
     else:
         main()

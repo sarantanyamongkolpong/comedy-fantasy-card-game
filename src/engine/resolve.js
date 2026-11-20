@@ -154,9 +154,12 @@ function applyOne(state, ctx, effect, source) {
         type: 'damage',
         attackerId: ctx.actor.avatarId,
         targetId: target.avatarId,
+        avatarId: target.avatarId,
+        sideId: target.sideId,
         amount,
         absorbed: result.absorbed,
         dealt: result.dealt,
+        delta: -result.dealt,
         hp: target.hp,
         defeated: result.defeated,
         formula,
@@ -173,7 +176,15 @@ function applyOne(state, ctx, effect, source) {
   for (const target of targets) {
     if (effect.op === 'shield') {
       target.shield += effect.amount;
-      state.log.push({ type: 'shield', avatarId: target.avatarId, amount: effect.amount, shield: target.shield, placeholder: true });
+      state.log.push({
+        type: 'shield',
+        avatarId: target.avatarId,
+        sideId: target.sideId,
+        amount: effect.amount,
+        delta: 0,
+        shield: target.shield,
+        placeholder: true,
+      });
     } else if (effect.op === 'taunt') {
       pushStatus(state, target, {
         kind: 'taunt',
@@ -202,7 +213,15 @@ function applyOne(state, ctx, effect, source) {
       });
     } else if (effect.op === 'regen') {
       addRegen(state, target, effect, { avatarId: ctx.actor.avatarId, name: source?.name ?? ctx.actor.active?.name ?? null });
-      state.log.push({ type: 'regen_applied', avatarId: target.avatarId, amount: effect.amount, ticks: effect.ticks, source: source?.name ?? null });
+      state.log.push({
+        type: 'regen_applied',
+        avatarId: target.avatarId,
+        sideId: target.sideId,
+        amount: effect.amount,
+        ticks: effect.ticks,
+        delta: 0,
+        source: source?.name ?? null,
+      });
     } else if (effect.op === 'next_attack') {
       pushStatus(state, target, {
         kind: 'next_attack',
@@ -273,8 +292,10 @@ export function tickRegen(state, side) {
       state.log.push({
         type: 'regen_tick',
         avatarId: unit.avatarId,
+        sideId: unit.sideId,
         amount: status.amount,
         healed,
+        delta: healed,
         hp: unit.hp,
         ticksRemaining: status.ticksRemaining,
         placeholderTiming: true,

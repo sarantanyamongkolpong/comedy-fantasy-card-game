@@ -1,0 +1,10 @@
+{
+  "fixtureKind": "v05-acceptance-banners",
+  "note": "Banner identity only. No drop rates and no pull prices. GA-11 stays pending.",
+  "banners": [
+    { "bannerId": "avatar-standard", "pool": "avatar" },
+    { "bannerId": "avatar-other", "pool": "avatar" },
+    { "bannerId": "action-standard", "pool": "action" },
+    { "bannerId": "companion-standard", "pool": "companion" }
+  ]
+}

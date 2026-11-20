@@ -32,9 +32,11 @@ export { validateDeck } from './schema/deck.js';
 export {
   HOUSE_TIERS,
   MAP_DESTINATIONS,
+  PHASE3_FURNITURE_ART,
   acquireTier,
   displayHouseTier,
   installFurniture,
+  removeFurniture,
   storageFromFurniture,
 } from './schema/hideout.js';
 export {
@@ -44,9 +46,10 @@ export {
   POW_TO_ATK,
   SAVE_VERSION,
 } from './schema/constants.js';
-export { migratePowToAtk } from './migrate/index.js';
-export { createBannerState, exampleTestBanners, pull, testBanner } from './gacha/index.js';
+export { migratePowToAtk, migrateSavePow, reversePowMigration, reverseSavePow } from './migrate/index.js';
+export { bannerList, createBannerState, exampleTestBanners, integerSeed, normalizeBanner, pull, testBanner } from './gacha/index.js';
 export {
+  adoptWebProfile,
   applyBattleReward,
   bindDeck,
   consumeDuplicate,
@@ -55,8 +58,11 @@ export {
   createProfile,
   deserialize,
   grantItem,
+  playerView,
   serialize,
   setAutoBattle,
+  stackCounts,
+  stashReport,
   setFavorite,
   setLocked,
   unbindDeck,

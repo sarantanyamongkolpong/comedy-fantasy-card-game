@@ -1,5 +1,11 @@
 /** Hideout and map data from v05_Hideout_Map. Grant-vs-buy and cabin base stay pending. */
 
+import phase3FurnitureArt from '../../content/v05/hideout/phase3-furniture-art.json' with { type: 'json' };
+
+export const PHASE3_FURNITURE_ART = Object.freeze(
+  phase3FurnitureArt.furniture.map((row) => Object.freeze({ ...row })),
+);
+
 export const HOUSE_TIERS = Object.freeze([
   Object.freeze({
     tier: 1,
@@ -108,13 +114,16 @@ export function displayHouseTier(house) {
 /**
  * Slots come only from installed furniture (HOME-08).
  * Cabin base is PENDING_OWNER and is not added.
- * @param {{ installedFurniture?: { capacity?: number, installed?: boolean }[] }} house
+ * Art-only pieces and pieces whose capacity is still PENDING_OWNER add no slots.
+ * @param {{ installedFurniture?: { capacity?: number, installed?: boolean, artOnly?: boolean, capacityStatus?: string }[] }} house
  */
 export function storageFromFurniture(house) {
   const installed = Array.isArray(house?.installedFurniture) ? house.installedFurniture : [];
   let installedSlots = 0;
   for (const piece of installed) {
     if (piece.installed === false) continue;
+    if (piece.artOnly === true) continue;
+    if (piece.capacity == null && piece.capacityStatus === 'PENDING_OWNER') continue;
     if (!Number.isInteger(piece.capacity) || piece.capacity < 0) {
       throw new TypeError('installed furniture capacity must be a non-negative integer');
     }
@@ -154,19 +163,66 @@ export function acquireTier(house, tierId) {
 
 /**
  * @param {{ acquiredTiers?: string[], installedFurniture?: object[], displayTier?: string }} house
- * @param {{ furnitureId: string, capacity: number, name?: string }} piece
+ * @param {{ furnitureId?: string, assetId?: string, capacity?: number | null, artOnly?: boolean, name?: string }} piece
  */
 export function installFurniture(house, piece) {
-  if (!piece || typeof piece.furnitureId !== 'string' || piece.furnitureId.length === 0) {
-    throw new TypeError('furnitureId is required');
-  }
-  if (!Number.isInteger(piece.capacity) || piece.capacity < 0) {
+  if (!piece || typeof piece !== 'object') throw new TypeError('furniture is required');
+  const artOnly = piece.artOnly === true;
+  const furnitureId = typeof piece.furnitureId === 'string' && piece.furnitureId.length > 0
+    ? piece.furnitureId
+    : (artOnly && typeof piece.assetId === 'string' ? piece.assetId : '');
+  if (furnitureId.length === 0) throw new TypeError('furnitureId is required');
+  if (artOnly) {
+    if (piece.capacity != null) throw new TypeError('art-only furniture has no capacity');
+    if (piece.price != null) throw new TypeError('art-only furniture has no price');
+  } else if (!Number.isInteger(piece.capacity) || piece.capacity < 0) {
     throw new TypeError('capacity must be a non-negative integer');
+  }
+  const stored = { ...piece, furnitureId, installed: true };
+  if (artOnly) {
+    stored.artOnly = true;
+    stored.capacity = null;
+    stored.price = null;
+    stored.capacityStatus = piece.capacityStatus ?? 'PENDING_OWNER';
+    stored.priceStatus = piece.priceStatus ?? 'PENDING_OWNER';
+    stored.status = piece.status ?? 'PROPOSED';
   }
   const next = {
     ...house,
     acquiredTiers: [...(house.acquiredTiers ?? [])],
-    installedFurniture: [...(house.installedFurniture ?? []), { ...piece, installed: true }],
+    installedFurniture: [...(house.installedFurniture ?? []), stored],
+  };
+  next.displayTier = displayHouseTier(next);
+  return next;
+}
+
+/**
+ * Remove one installed piece. The acquired house tier stays as it was.
+ * @param {{ acquiredTiers?: string[], installedFurniture?: object[], displayTier?: string }} house
+ * @param {string} furnitureId furnitureId, assetId, or instanceId
+ */
+export function removeFurniture(house, furnitureId) {
+  if (typeof furnitureId !== 'string' || furnitureId.length === 0) {
+    throw new TypeError('furnitureId is required');
+  }
+  const list = Array.isArray(house?.installedFurniture) ? house.installedFurniture : [];
+  let index = -1;
+  for (let i = list.length - 1; i >= 0; i -= 1) {
+    const piece = list[i];
+    if (piece.furnitureId === furnitureId || piece.assetId === furnitureId || piece.instanceId === furnitureId) {
+      index = i;
+      break;
+    }
+  }
+  if (index < 0) {
+    const error = new Error(`furniture "${furnitureId}" is not installed`);
+    error.code = 'NOT_INSTALLED';
+    throw error;
+  }
+  const next = {
+    ...house,
+    acquiredTiers: [...(house.acquiredTiers ?? [])],
+    installedFurniture: list.filter((_, i) => i !== index).map((piece) => ({ ...piece })),
   };
   next.displayTier = displayHouseTier(next);
   return next;

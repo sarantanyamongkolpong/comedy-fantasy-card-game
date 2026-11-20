@@ -1,5 +1,6 @@
 import { speedChoices } from '../auto-play.js';
 import { bindImage, findAsset, firstAsset } from '../assets.js';
+import { combatFx, floatersForUnit } from '../combat-fx.js';
 import { battleBands, battleSlots } from '../battle-layout.js';
 import { beginCard, cancelPlay, chooseActor, chooseTarget } from '../battle-flow.js';
 import { button, el, modal } from '../dom.js';
@@ -17,6 +18,9 @@ export function renderBattle(ctx) {
   const match = ctx.match;
   const ui = ctx.battleUi;
   const bands = battleBands();
+  const fx = combatFx(match.engine?.log ?? [], ui.logCursor);
+  ui.logCursor = fx.cursor;
+  ui.fx = fx;
   const root = el('section', 'battle');
   root.dataset.screen = 'battle';
   paintStage(root, ctx, 'bg-battle', 'battle');
@@ -43,7 +47,7 @@ function paintStage(root, ctx, slot, subjectId) {
   if (!bg) return;
   const img = el('img', 'stage-bg');
   img.alt = '';
-  bindImage(img, bg);
+  bindImage(img, bg, { eager: true });
   root.append(img);
 }
 
@@ -147,6 +151,7 @@ function statusVfx(unit) {
   for (const status of unit.statuses ?? []) {
     if (status.id === 'shield' || status.name === 'shield') subjects.push('shield');
     if (status.id === 'regen' || status.name === 'regen') subjects.push('regen');
+    if (status.id === 'taunt' || status.name === 'taunt') subjects.push('taunt');
   }
   return subjects;
 }
@@ -179,10 +184,18 @@ function unitToken(ctx, unit, slot, arenaBox) {
     bindImage(img, art);
     node.append(img);
   }
-  const prev = ctx.battleUi.hpSnap?.[unit.instanceId];
-  if (Number.isInteger(prev) && prev !== unit.hp) {
-    const delta = unit.hp - prev;
-    node.append(el('span', delta < 0 ? 'floater is-damage' : 'floater is-heal', delta > 0 ? `+${delta}` : String(delta)));
+  const logged = floatersForUnit(ctx.battleUi.fx?.floaters, unit);
+  if (logged.length) {
+    for (const item of logged) {
+      const tone = item.kind === 'damage' ? 'is-damage' : item.kind === 'heal' ? 'is-heal' : item.kind === 'shield' ? 'is-shield' : 'is-regen';
+      node.append(el('span', `floater ${tone}`, item.text));
+    }
+  } else {
+    const prev = ctx.battleUi.hpSnap?.[unit.instanceId];
+    if (Number.isInteger(prev) && prev !== unit.hp) {
+      const delta = unit.hp - prev;
+      node.append(el('span', delta < 0 ? 'floater is-damage' : 'floater is-heal', delta > 0 ? `+${delta}` : String(delta)));
+    }
   }
   for (const status of unit.statuses ?? []) {
     if (status.label) node.append(el('span', 'floater', status.label));
@@ -326,6 +339,16 @@ function pileStack(ctx, box) {
     row.append(el('span', zone === 'void' ? 'pile-glyph is-void' : 'pile-glyph'));
     row.append(el('span', 'pile-name', label));
     row.append(el('span', 'pile-count', String(zones[zone].length)));
+    const fx = ctx.battleUi.fx;
+    const burst = (zone === 'draw' && fx?.draw) || (zone === 'discard' && fx?.discard)
+      ? findAsset(ctx.manifest, { slot: 'zone-vfx', subjectId: zone })
+      : null;
+    if (burst) {
+      const overlay = el('img', 'zone-vfx');
+      overlay.alt = '';
+      bindImage(overlay, burst);
+      row.append(overlay);
+    }
     const icon = findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: zone });
     paintIfReady(row, icon);
     stack.append(row);

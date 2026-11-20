@@ -33,15 +33,15 @@ export function battleBands(design = { width: 1672, height: 941 }) {
   const top = { x: 0, y: 0, w: design.width, h: 88 };
   const arena = { x: 0, y: 88, w: design.width, h: 530 };
   const piles = { x: 12, y: 626, w: 380, h: 128 };
-  const hand = { x: 404, y: 626, w: 820, h: 308 };
-  const controls = { x: 1236, y: 626, w: 420, h: 300 };
+  const hand = { x: 404, y: 626, w: 680, h: 308 };
+  const controls = { x: 1096, y: 626, w: 560, h: 300 };
   const lead = { x: 900, y: 96, w: 740, h: 140 };
   return { top, arena, piles, hand, controls, lead };
 }
 
 /** Feet anchors. The box is the hit target; the sprite draws taller than the box. */
 export function battleSlots() {
-  const footprint = { w: 110, h: 210 };
+  const footprint = { w: 116, h: 210 };
   const bar = 22;
   return [...PLAYER_FEET, ...ENEMY_FEET].map((feet) => {
     const point = stagePoint(feet.imageX, feet.imageY);

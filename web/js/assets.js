@@ -35,10 +35,12 @@ export function assetUrl(entry) {
 }
 
 /** Point an img at a manifest entry and fall back to the placeholder if the file fails. */
-export function bindImage(img, entry) {
+export function bindImage(img, entry, options = {}) {
   if (!entry) return img;
   img.dataset.assetId = entry.asset_id ?? '';
   img.dataset.slot = entry.slot ?? '';
+  img.loading = options.eager ? 'eager' : 'lazy';
+  img.decoding = 'async';
   if (entry.placeholder) img.dataset.placeholder = 'true';
   if (entry.review_status) img.dataset.reviewStatus = entry.review_status;
   const presentation = entry.presentation ?? {};
