@@ -14,7 +14,9 @@ The parody target is the creature's recognizable behavior (regenerating heads, a
 
 ## Counts
 
-53 inspirations so far (`INS-04-001`–`INS-04-053`). 12 pitches, unchanged. High-sensitivity records, none of them pitched: Hel, Ravana, naga, ifrit, jinn, Garuda, Kali, the bunyip label, Quetzalcoatl, the Tuatha Dé Danann.
+71 inspirations (`INS-04-001`–`INS-04-071`). 12 pitches, unchanged. 79 source URLs, each fetched on 2026-11-20. Confidence: 64 high, 7 medium. Sensitivity: 30 low, 27 medium, 14 high.
+
+High-sensitivity records, none of them pitched: Hel, Ravana, naga, ifrit, jinn, Garuda, Kali, the bunyip label, Quetzalcoatl, the Tuatha Dé Danann, the bennu, the windigo, the asura class, and Rahu and Ketu.
 
 ## Batch 1
 
@@ -41,13 +43,40 @@ New high records, research flags only: ifrit and jinn (Qur'an), Garuda, Kali, Qu
 
 Kelpie and manticore cite Wikipedia because a Britannica article was not found. Both are marked medium confidence. The kelpie article itself says specialists disagree on whether the each-uisge is the same being. Andy Scott's Falkirk sculptures are a modern artwork and are not the folklore creature.
 
-Still required: African traditions named by people, further Celtic monsters with a real page (Balor was not on the Tuatha Dé Danann article and was not invented), Mesoamerican creatures that are not gods, a careful wendigo / thunderbird flag from a source that states the sensitivity, Oceanic beings from a Māori or museum page (Te Ara returned 403), and a better-than-Wikipedia source for the simurgh. Anansi's Britannica Scholars URL returned HTTP 500 twice and is not cited.
+The simurgh is now sourced from Encyclopaedia Iranica (INS-04-054), with Kamak (INS-04-055) and a narrow Anzu note (INS-04-056) from the same article. The windigo flag is INS-04-062, from the Canadian Encyclopedia, and it names Marvel's Wendigo as a comic to avoid.
+
+## Batch 3
+
+Added INS-04-054–071.
+
+| Id | Name | Sensitivity | Source |
+|---|---|---|---|
+| 054 | Simorgh | medium | Encyclopaedia Iranica |
+| 055 | Kamak | low | same article |
+| 056 | Anzu | medium, medium confidence | same article, two sentences only |
+| 057 | Pazuzu | medium | British Museum 91876 |
+| 058 | Roc | low | Britannica Scholars |
+| 059 | Bennu | high | Britannica phoenix article |
+| 060 | Classical phoenix | medium | same article, kept separate from the bennu |
+| 061 | Banshee | medium, medium confidence | Britannica Milesians: the name only |
+| 062 | Windigo | high | The Canadian Encyclopedia |
+| 063 | Calydonian boar | low | Theoi |
+| 064 | Cretan bull | low | Theoi |
+| 065 | Erymanthian boar | low | Theoi |
+| 066 | Campe | low | Theoi |
+| 067 | Empusa | medium | Theoi |
+| 068 | Cerynitian hind | medium | Theoi; sacred to Artemis |
+| 069 | Satyrs | medium | Theoi; attendants of gods |
+| 070 | Asuras | high | Britannica on the Samudra Manthana |
+| 071 | Rahu and Ketu | high | same article |
+
+A guessed Britannica URL titled "asura" returned the Griffith Rig Veda instead of an asura article. It is not cited. The asura record uses the churning article, which also ties the myth to the Kumbh Mela.
 
 ## Sensitivity
 
 Field values are only `low`, `medium`, and `high`. `sensitivityNote` says why.
 
-- **high** — a worshipped being, a being honored in a living religion, or a figure tied to a current festival or cultural reverence. Research records only. No parody pitch. Current high records: Hel (INS-04-019), Ravana (INS-04-029), naga (INS-04-030).
+- **high** — a worshipped being, a being honored in a living religion, a figure tied to a current festival, or a living sacred tradition. Research records only. No parody pitch. The fourteen are listed under Counts.
 - **medium** — living folklore, a monster inside a mythology people still hold as religious, or a tradition whose story is about harm to children. Parody has to change the target of the joke. Current examples: Fenrir, Jörmungandr, Surtr, Ammit, Apopis, the rakshasa class, Baba Yaga, the leshy, Lamia, Lamashtu.
 - **low** — an ancient literary monster with no living cult in the sources fetched. Still not a license to copy a film or a game.
 
@@ -82,7 +111,7 @@ Greek Sirens on the Theoi page are bird-bodied. A fish tail is not supported by 
 
 ## Deliberately not pitched
 
-- Hel, Ravana, nagas, and any other high-sensitivity being.
+- Every high-sensitivity record. That includes the bennu, the windigo, asuras, and Rahu and Ketu, not only the gods named in batch 1.
 - Lamia and Lamashtu, because the sourced tradition is child-killing, and Lamashtu's also includes miscarriage and disease.
 - Baba Yaga's eating of children. The pitch uses only the spinning hut, the mortar and pestle, and the water-of-life fountain, and it says so.
 - Hanuman. The rakshasa article calls him the monkey god. He is not given a record because a one-line mention is not a sourced profile, and he is a worshipped deity.
@@ -110,8 +139,17 @@ Useful low-sensitivity shapes already sourced:
 
 No HP, ATK, DEF, or damage numbers are proposed.
 
-## Next fetch targets
+## Gaps left open on purpose
 
-Celtic (Balor, dullahan, kelpie, púca), further Slavic (rusalka, koschei, domovoi) only after a real page, African traditions one people at a time, Mesoamerican creatures from a museum or a scholarly edition of Sahagún or the Popol Vuh with sacred beings flagged high, Oceanic beings from Te Ara, Te Papa, or the Australian Museum, Persian simurgh and zahhak, Arabian ghoul from a careful source. Jinn and ifrit stay high if the source shows them as part of living Islamic belief.
+These were in the brief and were not filled, because a usable page was not fetched. They are not implied by the records that do exist.
+
+- African traditions named by a people. Anansi's Britannica Scholars URL returned HTTP 500 twice and is not cited. No adze, tokoloshe, impundulu, or asanbosam record.
+- Oceanic beings. Te Ara returned 403. No taniwha and no Rainbow Serpent.
+- A Mesoamerican creature that is not a god. Quetzalcoatl is the only Mesoamerican record, and it is high. No ahuizotl.
+- Further Celtic monsters. Kelpie is in. The banshee record is the etymology only. Balor was not on the Tuatha Dé Danann page and was not invented. No dullahan and no púca.
+- Thunderbird. Not fetched.
+- Zahhak. Not fetched. The Simorgh article was not used to invent him.
+
+Slavic coverage beyond Baba Yaga is the leshy, the domovoy, and the rusalka. The leshy and the domovoy are the strongest unpitched candidates if a later pass swaps a Greek pitch. The pitch file stays at 12.
 
 Each new URL has to be fetched before it is written into `inspirations.json`.
