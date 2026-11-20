@@ -2,7 +2,7 @@
 
 Agent H. Base `prod/wave-base` @ `7cbf071a15d2da747ba5f9c100696a805860271e`. Damage preset under test: `flat_atk` (Owner choice, MVP_PROVISIONAL). This file is the QA record. It does not mark the game PRODUCTION_READY, LOCKED, or OWNER_APPROVED.
 
-Updated 2026-11-20T14:17:50.671Z.
+Updated 2026-11-20T14:57:00.046Z.
 
 ## Baseline
 
@@ -715,32 +715,32 @@ Phase 1 ran on `prod/wave-base` only. Stream branches are merged only inside a l
 
 ## Phase 2 pass
 
-Pass 2 at 2026-11-20T14:20:00.000Z. Throwaway worktree only. Not pushed. Included streams: A, B, C, F, G.
-Pass 1 at 2026-11-20T13:37Z merged B, C, F, and G. A and D were absent. E already conflicted with C in web/index.html. Merged-tree npm test was 457/448/0.
-`npm test` on the merged tree, Node v22.23.4: tests 462, pass 453, fail 0, skip 4, todo 5, exit 0, 142.9s.
+Pass 3 at 2026-11-20T14:56:00.000Z. Throwaway worktree only. Not pushed. Included streams: A, B, C, F, G.
+This is the final pass. Every stream tip matches the previous poll and each branch has commits beyond prod/wave-base, so polling stops.
+Pass 2 at 2026-11-20T14:20Z recorded the same seven tips. GitHub Actions did not start the four failing gates on 2f74cea: the runner reported a billing or spending-limit block. Those checks did not execute the suite.
+`npm test` on the merged tree, Node v22.23.4: tests 462, pass 453, fail 0, skip 4, todo 5, exit 0, 145.5s.
 Asset audit on the merged tree: missing 0, oversize 1, shipped 13.55 MB, referenced 10.61 MB, static catalog 10.95 MB.
 
 | Stream | Sev | Finding |
 |---|---|---|
-| A | info | New tip d2acdd8. Layered starter-deck card art is a GENERATED_REVIEW fragment in web/manifests/cards.json. Files are present, none are missing, and none exceed 400 KB. The running battle hand still paints the live catalog (dream_v02 action art and the existing frames). Nothing in web/js imports web/manifests/cards.json. |
-| B | info | Tip unchanged at 70e6497. Hideout fragment still not on the live catalog. No new missing files and no new oversize raster. |
-| C | P2 | Tip unchanged at 85ccc41. The Stash still renders with data-collection-route and without data-screen=stash. At 1280×720 the title is The Stash, there were no page errors, and no control was under 44 CSS px. Back, map, prep, battle, and rewards still open. |
-| D | P0 | New tip 8bfb745 conflicts with the combined tree in web/index.html. C, D, and E each insert a stylesheet link on the line after css/app.css. D alone merges onto prod/wave-base. content/v05/gacha is unchanged. On that isolated tree the new booth shows TEST weights N 100 · Epic 0 · EX 0 and N 100 · Epic 0 · FAC 0, pity 1/100 and 1/200 after Pull 1, charge 0 G, and price PENDING. Pull 10 is the top element at its center on all six landscape viewports, so the wave-base cover does not reproduce here. Smallest Pull button measured 46 CSS px. No page errors. |
-| D | P2 | On the isolated booth at 1280×720, the policy line under the wallet and the fine print inside each banner (price and TEST weights) are low contrast and clipped against the cream card. Pity numbers and the Pull buttons stay readable. The pull summary sits below the buttons. |
-| E | P0 | Tip unchanged at 7b2c3c7. Still conflicts with the combined tree in web/index.html for the same stylesheet line. Left out of the played tree again. |
-| F | info | Tip unchanged at 41fe22e. Sport review art stays off the locked Sports Complex pin. No new oversize raster. |
-| G | info | Tip moved to 40305cf. Owner decisions OQ_G_09 through OQ_G_13 are recorded as OWNER_DECIDED. Reward amounts stay null and PENDING, no premium quantity is set, ENM_DEMO_004 keeps its id with the existing placeholder tagged Missing Artwork, and no upgrade recipe or number was added. Live map labels are unchanged. The new world tests passed inside the merged npm test. |
+| A | info | Tip stable at d2acdd8. Review card-art fragment. The merged battle hand still paints the live catalog. No missing files and no raster at or above 400 KB from this stream. |
+| B | info | Tip stable at 70e6497. Hideout art remains a review fragment off the live catalog. No missing files and no new oversize raster. |
+| C | P2 | Tip stable at 85ccc41. Final probe: The Stash renders, data-collection-route is stash, data-screen is absent, and no control is under 44 CSS px. Map, prep, battle (5 hand cards, 8 sprites), and rewards still open on the merged tree. |
+| D | P0 | Tip stable at 8bfb745. Still conflicts with the combined tree in web/index.html, on the same stylesheet line as C and E. Alone, all six landscape viewports keep Pull 10 uncovered, weights N 100 · Epic 0 · EX 0 and N 100 · Epic 0 · FAC 0, epic pity 1/100, top pity 1/200, and last charge 0 G with price PENDING. Smallest Pull button is 46 CSS px. No page errors. |
+| D | P2 | Isolated booth fine print stays low contrast. The merged tree, which does not include D, still covers Pull 10 with the pull log line N: N TEST token TEST_POOL_N. |
+| E | P0 | Tip stable at 7b2c3c7. Still conflicts with the combined tree in web/index.html. Alone, prep and battle set data-bp=1, frame 7 prep panels and 8 battle panels, show START BATTLE, 5 hand cards, and 8 sprites, with 0 broken images, 0 page errors, and no control under 44 CSS px. |
+| E | P2 | On the isolated battle screen the same character-sprite overlap from wave-base is still visible. Polish frames do not remove it. |
+| F | info | Tip stable at 41fe22e. Sport review art stays off the locked Sports Complex pin. No new oversize raster. |
+| G | info | Tip stable at 40305cf. OQ_G_09 through OQ_G_13 stay OWNER_DECIDED with amounts PENDING. Live map labels are unchanged, including the stacked Sports Complex / Coming soon pair. |
+| wave-base | P1 | On the merged tree the wave-base gacha screen still covers Pull 10 after Pull 1. D's replacement booth does not, and D is not in that tree because of the index.html conflict. |
+| wave-base | P2 | BG_MAP.webp remains the only raster at or above 400 KB (437050 bytes). Merged shipped assets are 13.55 MB and the static catalog is 10.95 MB. Missing paths: 0. |
 
 Merged-tree screenshots:
 
-- `tools/qa/artifacts/screenshots/phase2-pass2/home.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass2/stash.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass2/map.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass2/battle.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass2/rewards.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass2/gacha.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass2/d-gacha.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass2/d-gacha-after-10.jpg`
+- `tools/qa/artifacts/screenshots/phase2-final/merge-stash.jpg`
+- `tools/qa/artifacts/screenshots/phase2-final/d-gacha-after-1.jpg`
+- `tools/qa/artifacts/screenshots/phase2-final/e-prep.jpg`
+- `tools/qa/artifacts/screenshots/phase2-final/e-battle.jpg`
 
 
 ## Severity on the wave-base client

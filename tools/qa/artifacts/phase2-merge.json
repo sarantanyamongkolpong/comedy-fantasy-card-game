@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-20T14:13:22.981Z",
+  "generatedAt": "2026-11-20T14:53:19.884Z",
   "worktree": "/tmp/qa-merge",
-  "head": "c7762d07fd0f738e94ad91036903f971bad52d21",
+  "head": "2f74ceaa8cb14353578b1ac49600c876e7a79f12",
   "originWaveBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
   "fetchStatus": 0,
   "fetches": [
@@ -57,7 +57,7 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "d9b04bc"
+      "throwawayCommit": "a3f1c3e"
     },
     {
       "id": "B",
@@ -74,7 +74,7 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "1559182"
+      "throwawayCommit": "b72f779"
     },
     {
       "id": "C",
@@ -91,7 +91,7 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "c2e41a2"
+      "throwawayCommit": "991aa98"
     },
     {
       "id": "D",
@@ -148,7 +148,7 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "0178cf6"
+      "throwawayCommit": "ae3bfeb"
     },
     {
       "id": "G",
@@ -167,7 +167,7 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "a76998b"
+      "throwawayCommit": "4839a0a"
     }
   ],
   "dirtySummary": 0,

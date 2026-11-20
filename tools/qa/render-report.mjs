@@ -218,6 +218,7 @@ function phase2PassSection(pass) {
   lines.push('## Phase 2 pass');
   lines.push('');
   lines.push(`Pass ${pass.pass} at ${pass.generatedAt}. Throwaway worktree only. Not pushed. Included streams: ${(pass.included ?? []).join(', ') || 'none'}.`);
+  if (pass.final) lines.push('This is the final pass. Every stream tip matches the previous poll and each branch has commits beyond prod/wave-base, so polling stops.');
   if (pass.prior) lines.push(pass.prior);
   if (pass.npmTest) {
     const row = pass.npmTest;
