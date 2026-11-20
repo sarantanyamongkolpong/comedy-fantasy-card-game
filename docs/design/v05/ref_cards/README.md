@@ -15,3 +15,9 @@ Rules for using these files:
 - The stats/skills printed on the cards match `v05_Avatar_Examples`, **but the sheet status stays exactly as written**: `Name/Faction LOCKED; Stats/Skills PROPOSED` (Justin Case, Justin Time, Justin Theory) and `Female + Name + ACTIVE EFFECT LOCKED; other stats/skills PROPOSED` (Justina Moment). The printed art does **not** promote any stat or skill to LOCKED.
 - The star count printed on the cards is illustrative (sheet note on AV_EX01; brief §3) and is **not** a star cap.
 - Existing repo Character/Asset IDs (`AVT_AEG_001`, `AVT_PHA_001`, `AVT_CEL_001`, `AVT_SAN_001` and their assets) are unchanged; see the mapping proposal in `docs/audit/BASELINE_AUDIT_20261120.md` §3.
+
+## Files added (20 Nov 2026, 16:2x ICT)
+
+The four PNGs (1024×1536) come from Dream's package `Justin_Approved_Cards_4_v01.zip` (Google Drive file id 1Erc1fWUaFb9JG-I1T2uXBJnAYbLeT3LG), renamed to the `REF_CARD_*` names above. Dream's original README is kept verbatim as `README_REFERENCE_DREAM_v0.1.md`.
+
+Owner decision t253u (20 Nov 2026): the four Justins are NEW characters, separate from the existing `*_001` avatars. The `AVT_*_002` numbers are the implementation IDs in use.
