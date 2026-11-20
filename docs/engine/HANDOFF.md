@@ -70,7 +70,7 @@ There is no `state.auto` and no `opts.auto`. Stop calling `runAutoTurn`, or pass
 
 `playAction` and `endTurn` mutate the match in place and return `{ ok, reason, outcome }`. They do not return `{ state }`. Keep the object you passed in and read `getOutcome` from it. QA-10's helper accepts that when the previous value is the match: `{ ok: true }` with a previous match that has `sides` is the same match.
 
-QA-10 on the web session fails one step earlier. `web/js/engine-session.js` `createMatch` returns a view (`engine`, `units`, `phase`). That view has neither `sides` nor `state`, so `asState` throws before it reads `getOutcome`. The session's `getOutcome(view)` already returns the engine outcome documented below. The engine `createMatch` returns the match itself. Unwrapping `view.engine` belongs to the web adapter.
+The web session's `createMatch` returns a view and also sets `view.state` and `view.engine` to the match, plus `view.sides`. `asState` reads `view.state`. `getOutcome` accepts the view or the raw match.
 
 `getOutcome` while the fight is going:
 

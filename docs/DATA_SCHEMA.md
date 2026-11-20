@@ -166,7 +166,7 @@ Installing an art-only row records the piece and adds no slots.
 
 ### Web contract
 
-These are the shapes `src/gacha` and `src/save` accept and return. The web adapter in `web/js/engine-session.js` and `web/js/screens/gacha.js` still needs the edits below. This stream does not change `web/`.
+These are the shapes `src/gacha` and `src/save` accept and return. The web adapter follows them.
 
 Banner list:
 
@@ -181,8 +181,8 @@ Pull:
 - `pull(state, { seed, count })` returns `{ state, pulls, results, profile, spent }`.
 - `results` and `pulls` are the same array of raw rows (`id`, `rarity`, `forced`, `tier`, counters).
 - `seed` is a non-negative integer. A string throws `BAD_PULL`. `integerSeed(value)` returns the integer unchanged, or the FNV-1a 32-bit hash of a non-empty string (offset `2166136261`, prime `16777619`).
-- `web/js/screens/gacha.js` `performPull` currently passes `` seed: `gacha:${banner.bannerId}:${ctx.profile.seq}:${count}` ``. The acceptance check rejects a backtick on the `seed:` line. Pass an integer there, for example `ctx.profile.seq`. Compute `integerSeed(...)` on a previous line if the string form is still wanted.
-- `web/js/engine-session.js` `pull` returns `{ state, results, chargedG }` and drops `pulls`. Include `pulls: result.pulls` on that return value. The screen can keep reading `outcome.results` for the display rows it builds today. `src/gacha` `results` are the raw rows, not those display objects.
+- `web/js/screens/gacha.js` `performPull` computes `integerSeed(...)` on the line before `pull`, then passes that integer on the `seed:` line. A backtick on that line fails the acceptance check. `pull()` rejects a string seed with `BAD_PULL`.
+- `web/js/engine-session.js` `pull` returns `pulls: result.pulls` and keeps display rows on `results`. The screen reads `outcome.results`. `src/gacha` `results` are the raw rows, not those display objects.
 
 Save:
 
@@ -190,7 +190,7 @@ Save:
 - A web starter (`team`, `deck`, and no inventory) is stored as a versioned profile. `team` and `deck` are copied onto that profile. The original object is kept at `profile.web.ui`.
 - A data profile whose `team` or `deck` is missing lifts those arrays from `web.ui` on load.
 - `playerView(profile)` returns the player object with those `team` and `deck` arrays.
-- `web/js/engine-session.js` `deserialize` returns `{ webBundle, profile, match, screen, battleUi }`. The acceptance check reads `loaded.team` and `loaded.deck` on that return value, so those two arrays have to sit on the object `deserialize` returns. Spread `playerView(saved)` onto the returned object. `src/save.deserialize` itself returns the data profile, which already has `team` and `deck` after the lift.
+- `web/js/engine-session.js` `deserialize` spreads `playerView(saved)` onto `{ webBundle, profile, match, screen, battleUi }`, so `loaded.team` and `loaded.deck` are on that object. `src/save.deserialize` itself returns the data profile, which already has `team` and `deck` after the lift. Stash slots come from `installFurniture` / `removeFurniture` via `stashReport`. Phase 3 rows in `PHASE3_FURNITURE_ART` install as art only and add no slots.
 
 `rollAcquisition` still throws Q-GACHA. The new pull path refuses a banner that is not marked `TEST_ONLY_NOT_PRODUCTION`.
 

@@ -9,6 +9,7 @@ import { isPortrait, stageLayout } from './stage.js';
 import { renderBattle } from './screens/battle.js';
 import { performPull, renderGacha } from './screens/gacha.js';
 import { renderHome } from './screens/home.js';
+import { renderMall } from './screens/mall.js';
 import { renderMap } from './screens/map.js';
 import { renderParty } from './screens/party.js';
 import { renderPrep } from './screens/prep.js';
@@ -26,6 +27,7 @@ const state = {
   modal: null,
   previewTier: null,
   stashFilter: 'avatars',
+  stashSort: 'name',
   detail: null,
   partyTab: 'team',
   replacing: null,
@@ -59,6 +61,8 @@ function hydrate(profile) {
   profile.banners ??= {};
   profile.seq ??= 1;
   profile.companion ??= { status: 'PLACEHOLDER' };
+  profile.house ??= { tierId: 'cabin', tierName: 'Cabin', rule: 'HOME-01', status: 'LOCKED' };
+  profile.house.installedFurniture ??= [];
   profile.storage ??= { status: 'PENDING', rule: 'HOME-11', installed: [] };
   profile.autoPlay ??= { enabled: false, speed: 'normal' };
   if (typeof profile.autoPlay.speed !== 'string' || profile.autoPlay.speed.length === 0) profile.autoPlay.speed = 'normal';
@@ -149,6 +153,7 @@ function makeCtx() {
     modal: state.modal,
     previewTier: state.previewTier,
     stashFilter: state.stashFilter,
+    stashSort: state.stashSort,
     detail: state.detail,
     partyTab: state.partyTab,
     replacing: state.replacing,
@@ -175,6 +180,7 @@ function makeCtx() {
     setNotice(text) { state.notice = text; },
     setPreviewTier(tierId) { state.previewTier = tierId; render(); },
     setStashFilter(filter) { state.stashFilter = filter; state.detail = null; render(); },
+    setStashSort(mode) { state.stashSort = mode; render(); },
     setDetail(detail) { state.detail = detail; render(); },
     setPartyTab(tab) { state.partyTab = tab; state.replacing = null; render(); },
     setReplacing(index) { state.replacing = index; render(); },
@@ -264,6 +270,7 @@ function render() {
   const ctx = makeCtx();
   let view;
   if (state.screen === 'stash') view = renderStash(ctx);
+  else if (state.screen === 'mall') view = renderMall(ctx);
   else if (state.screen === 'party') view = renderParty(ctx);
   else if (state.screen === 'gacha') view = renderGacha(ctx);
   else if (state.screen === 'map') view = renderMap(ctx);
@@ -298,8 +305,8 @@ async function main() {
     state.match = stored.match;
     state.battleUi = stored.battleUi ?? freshBattleUi();
     if (stored.screen === 'battle' || stored.screen === 'rewards') state.screen = stored.screen;
-  } else if (stored?.screen === 'prep') {
-    state.screen = 'prep';
+  } else if (stored?.screen && ['home', 'stash', 'party', 'gacha', 'map', 'prep', 'mall'].includes(stored.screen)) {
+    state.screen = stored.screen;
   }
   ensureBanners();
   mountRotateArt();
