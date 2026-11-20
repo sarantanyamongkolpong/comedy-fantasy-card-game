@@ -14,7 +14,7 @@ The parody target is the creature's recognizable behavior (regenerating heads, a
 
 ## Counts
 
-71 inspirations (`INS-04-001`–`INS-04-071`). 12 pitches, unchanged. 79 source URLs, each fetched on 2026-11-20. Confidence: 64 high, 7 medium. Sensitivity: 30 low, 27 medium, 14 high.
+71 inspirations (`INS-04-001`–`INS-04-071`). 12 pitches, unchanged. 79 source citations across 64 distinct URLs, each fetched on 2026-11-20. Some pages support more than one record (the Iranica Simorgh article, the Britannica phoenix article, the Samudra Manthana article). Confidence: 64 high, 7 medium. Sensitivity: 30 low, 27 medium, 14 high.
 
 High-sensitivity records, none of them pitched: Hel, Ravana, naga, ifrit, jinn, Garuda, Kali, the bunyip label, Quetzalcoatl, the Tuatha Dé Danann, the bennu, the windigo, the asura class, and Rahu and Ketu.
 
