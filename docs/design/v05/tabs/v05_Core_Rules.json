@@ -1,0 +1,337 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_Core_Rules",
+  "title": "CARD GAME CORE — RULES v0.5 (20 Nov 2026)",
+  "columns": [
+    "Rule ID",
+    "Area",
+    "Decision / Rule",
+    "Status",
+    "Evidence",
+    "Implementation Notes"
+  ],
+  "rows": [
+    {
+      "Rule ID": "CORE-001",
+      "Area": "Project",
+      "Decision / Rule": "Comedy-fantasy gacha card battle; no compulsory main storyline or Main Quest",
+      "Status": "LOCKED",
+      "Evidence": "Owner 16-20 Nov",
+      "Implementation Notes": "MVP loop Gacha → Team/Deck → Battle → Rewards → Upgrade"
+    },
+    {
+      "Rule ID": "CORE-002",
+      "Area": "Avatar",
+      "Decision / Rule": "Fights as an actual character/sprite on field; Action cards command units",
+      "Status": "LOCKED",
+      "Evidence": "Owner 18 Nov",
+      "Implementation Notes": "Never treat avatar cards as Action deck consumables"
+    },
+    {
+      "Rule ID": "CORE-003",
+      "Area": "Team",
+      "Decision / Rule": "4 Avatars per player team",
+      "Status": "LOCKED",
+      "Evidence": "Owner 18 Nov",
+      "Implementation Notes": "Can bring mixed factions"
+    },
+    {
+      "Rule ID": "CORE-004",
+      "Area": "Win/Lose",
+      "Decision / Rule": "Win all enemies defeated; lose all 4 own avatars defeated",
+      "Status": "LOCKED",
+      "Evidence": "Owner 18 Nov",
+      "Implementation Notes": "Handle simultaneous deaths explicitly"
+    },
+    {
+      "Rule ID": "CORE-005",
+      "Area": "Avatar stats",
+      "Decision / Rule": "ATK / DEF / SPD",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Migrate old POW and legacy stats safely"
+    },
+    {
+      "Rule ID": "CORE-006",
+      "Area": "Turn order",
+      "Decision / Rule": "Higher team SPD takes first turn, then alternating sides",
+      "Status": "LOCKED",
+      "Evidence": "v0.4 18 Nov",
+      "Implementation Notes": "Team aggregate and tie resolution remain PENDING"
+    },
+    {
+      "Rule ID": "CORE-007",
+      "Area": "AP",
+      "Decision / Rule": "5 base AP, reset at beginning of each own turn",
+      "Status": "LOCKED",
+      "Evidence": "Owner 18-20 Nov",
+      "Implementation Notes": "No auto end turn at AP 0"
+    },
+    {
+      "Rule ID": "CORE-008",
+      "Area": "Card AP Cost",
+      "Decision / Rule": "Each Action Card cost is card data, allowed 0 to 5 AP",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Do not assume cost for unassigned individual cards"
+    },
+    {
+      "Rule ID": "CORE-009",
+      "Area": "Action deck",
+      "Decision / Rule": "30 Action Cards in deck",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Duplicate limit per card still PENDING"
+    },
+    {
+      "Rule ID": "CORE-010",
+      "Area": "Opening hand",
+      "Decision / Rule": "5 cards",
+      "Status": "LOCKED",
+      "Evidence": "Owner 18-20 Nov",
+      "Implementation Notes": "Start of battle"
+    },
+    {
+      "Rule ID": "CORE-011",
+      "Area": "Turn start draw",
+      "Decision / Rule": "Retain unplayed cards; draw until 5 at start of own turn",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "If draw deck empty, shuffle Discard to Draw"
+    },
+    {
+      "Rule ID": "CORE-012",
+      "Area": "Effect-based draw",
+      "Decision / Rule": "Extra draw during turn may temporarily exceed five",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Card effect decides extra draw"
+    },
+    {
+      "Rule ID": "CORE-013",
+      "Area": "Turn-end cap",
+      "Decision / Rule": "Discard excess freely until hand ≤ 5 at end of round",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Discard UI is required"
+    },
+    {
+      "Rule ID": "CORE-014",
+      "Area": "Manual discard",
+      "Decision / Rule": "Optional discard during own turn costs 1 AP per card",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "No AP cost for mandatory end-of-round discard"
+    },
+    {
+      "Rule ID": "CORE-015",
+      "Area": "Manual end",
+      "Decision / Rule": "Player explicitly presses End Turn",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Never auto End Turn when no AP"
+    },
+    {
+      "Rule ID": "CORE-016",
+      "Area": "Used card",
+      "Decision / Rule": "Normal played Action moves to Discard Pile",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Except specific Void effects"
+    },
+    {
+      "Rule ID": "CORE-017",
+      "Area": "Recycle",
+      "Decision / Rule": "When Draw empties, shuffle only Discard into Draw",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Void never auto-recycles"
+    },
+    {
+      "Rule ID": "CORE-018",
+      "Area": "The Void",
+      "Decision / Rule": "Active pile for cards exiled by effects; viewable any time",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Supersedes v0.4 legacy status"
+    },
+    {
+      "Rule ID": "CORE-019",
+      "Area": "Pile retrieval",
+      "Decision / Rule": "Some named card effects retrieve specified cards from Discard/Void",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Destination per effect; no global return rule"
+    },
+    {
+      "Rule ID": "CORE-020",
+      "Area": "Action categories",
+      "Decision / Rule": "ATK / DEF / Skill",
+      "Status": "LOCKED",
+      "Evidence": "v0.4 18 Nov",
+      "Implementation Notes": "Action, not old Tactic"
+    },
+    {
+      "Rule ID": "CORE-021",
+      "Area": "Skill activation",
+      "Decision / Rule": "Avatar Active fired using eligible Action Card (usually 1 Avatar per Action)",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Explicit card text can override one-target default"
+    },
+    {
+      "Rule ID": "CORE-022",
+      "Area": "Generic Action",
+      "Decision / Rule": "Works with any eligible Avatar regardless of faction",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Deck not faction-exclusive"
+    },
+    {
+      "Rule ID": "CORE-023",
+      "Area": "FAC Action",
+      "Decision / Rule": "Matching Faction Avatar required to activate, except card-specific override",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Check both deck mixed faction and play gate"
+    },
+    {
+      "Rule ID": "CORE-024",
+      "Area": "Avatar rarity",
+      "Decision / Rule": "N / R / Epic / EX",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Supersedes five-rarity model"
+    },
+    {
+      "Rule ID": "CORE-025",
+      "Area": "Action rarity",
+      "Decision / Rule": "N / R / Epic / EX / FAC; EX and FAC same top power tier",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "FAC is action rarity/category, not avatar faction"
+    },
+    {
+      "Rule ID": "CORE-026",
+      "Area": "N skill slots",
+      "Decision / Rule": "Only base stats; a few N have small Active",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "No uniform active requirement"
+    },
+    {
+      "Rule ID": "CORE-027",
+      "Area": "R skill slots",
+      "Decision / Rule": "Active OR Passive",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Not both by default"
+    },
+    {
+      "Rule ID": "CORE-028",
+      "Area": "Epic skill slots",
+      "Decision / Rule": "Active + Passive",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "All four example Avatars are Epic"
+    },
+    {
+      "Rule ID": "CORE-029",
+      "Area": "EX skill slots",
+      "Decision / Rule": "Active + Passive + Ultimate",
+      "Status": "LOCKED",
+      "Evidence": "Owner 19-20 Nov",
+      "Implementation Notes": "Activation conditions/data beyond this pending"
+    },
+    {
+      "Rule ID": "CORE-030",
+      "Area": "Avatar EXP level",
+      "Decision / Rule": "Maximum level 5; separate from Stars/Rank",
+      "Status": "LOCKED",
+      "Evidence": "Prior Owner discussion",
+      "Implementation Notes": "Keep Star cap PENDING"
+    },
+    {
+      "Rule ID": "CORE-031",
+      "Area": "Progression",
+      "Decision / Rule": "Hero Synthesis for stars; Promotion Stones for rank promotion",
+      "Status": "LOCKED",
+      "Evidence": "Prior Owner discussion",
+      "Implementation Notes": "Quantities/material recipes PENDING"
+    },
+    {
+      "Rule ID": "CORE-032",
+      "Area": "Companion relationship",
+      "Decision / Rule": "Gifts and Relationship apply to Companions ONLY, not Avatars",
+      "Status": "LOCKED",
+      "Evidence": "v0.4 16 Nov",
+      "Implementation Notes": "Separate character schema"
+    },
+    {
+      "Rule ID": "CORE-033",
+      "Area": "Rarity values",
+      "Decision / Rule": "Common/Rare/Legendary/Mythic v0.4 values",
+      "Status": "SUPERSEDED",
+      "Evidence": "v0.4 archive",
+      "Implementation Notes": "Do not use in new roster/gacha"
+    },
+    {
+      "Rule ID": "CORE-034",
+      "Area": "Old battle",
+      "Decision / Rule": "10+10 Tactic, 7 MP, Valhalla, no Void",
+      "Status": "SUPERSEDED",
+      "Evidence": "v0.1→v0.4 archive",
+      "Implementation Notes": "Current Action deck=30, AP=5, Discard+Void"
+    },
+    {
+      "Rule ID": "CORE-035",
+      "Area": "Old Auto Battler",
+      "Decision / Rule": "Autonomous AI fight is not current primary battle system",
+      "Status": "SUPERSEDED",
+      "Evidence": "v0.3→v0.4",
+      "Implementation Notes": "Current player-controlled turn-based"
+    },
+    {
+      "Rule ID": "CORE-036",
+      "Area": "Battle grid",
+      "Decision / Rule": "Old Tactical 5×2 / front-back",
+      "Status": "PENDING",
+      "Evidence": "Early concept",
+      "Implementation Notes": "Do not hardwire until Owner confirms"
+    },
+    {
+      "Rule ID": "CORE-037",
+      "Area": "VR Sync",
+      "Decision / Rule": "100% initial Sync from old concept",
+      "Status": "PENDING",
+      "Evidence": "Early concept",
+      "Implementation Notes": "Lore/mode only until Owner confirms active stat"
+    },
+    {
+      "Rule ID": "CORE-038",
+      "Area": "Team SPD formula",
+      "Decision / Rule": "Sum/Avg/Max and tie handling",
+      "Status": "PENDING",
+      "Evidence": "v0.4",
+      "Implementation Notes": "Keep configurable; avoid unapproved permanent rules"
+    },
+    {
+      "Rule ID": "CORE-039",
+      "Area": "Damage and HP",
+      "Decision / Rule": "Exact formulas, heal cap and KO behavior",
+      "Status": "PENDING",
+      "Evidence": "v0.4",
+      "Implementation Notes": "Test and present chosen temporary defaults separately"
+    },
+    {
+      "Rule ID": "CORE-040",
+      "Area": "Card duplicates",
+      "Decision / Rule": "Max duplicates in 30-card deck",
+      "Status": "PENDING",
+      "Evidence": "No confirmed cap",
+      "Implementation Notes": "Do not carry v0.1 'no duplicates' forward"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}

@@ -1,0 +1,97 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_Open_Decisions",
+  "title": "UNRESOLVED — DO NOT QUIETLY LOCK",
+  "columns": [
+    "ID",
+    "Area",
+    "Open Choice / Ambiguity",
+    "Status",
+    "Owner/Agent",
+    "Safe Implementation"
+  ],
+  "rows": [
+    {
+      "ID": "OPEN-01",
+      "Area": "Turn & position",
+      "Open Choice / Ambiguity": "Team SPD aggregation/ties and 5×2/front-back geometry",
+      "Status": "PENDING",
+      "Owner/Agent": "Mira",
+      "Safe Implementation": "Config toggle + owner question; no irreversible schema"
+    },
+    {
+      "ID": "OPEN-02",
+      "Area": "Damage and Recovery",
+      "Open Choice / Ambiguity": "HP formula, Regen tick timing, cap, stacking, KO healing",
+      "Status": "PENDING",
+      "Owner/Agent": "Mira",
+      "Safe Implementation": "Implement documented provisional rule behind config and test"
+    },
+    {
+      "ID": "OPEN-03",
+      "Area": "Action Deck limits",
+      "Open Choice / Ambiguity": "Same-card duplicate max, forced vs optional discard timing phrasing",
+      "Status": "PENDING",
+      "Owner/Agent": "Owner",
+      "Safe Implementation": "No new arbitrary restriction"
+    },
+    {
+      "ID": "OPEN-04",
+      "Area": "Progression",
+      "Open Choice / Ambiguity": "Rarity Star cap, EXP curve, synthesis materials, promotion recipes",
+      "Status": "PENDING",
+      "Owner/Agent": "Owner",
+      "Safe Implementation": "Scaffold only"
+    },
+    {
+      "ID": "OPEN-05",
+      "Area": "Gacha economy",
+      "Open Choice / Ambiguity": "Exact drop probabilities, G costs, pity-reset semantics",
+      "Status": "PENDING",
+      "Owner/Agent": "Owner",
+      "Safe Implementation": "No guessed rates"
+    },
+    {
+      "ID": "OPEN-06",
+      "Area": "Storage economy",
+      "Open Choice / Ambiguity": "Cabin base capacity, furniture grant vs unlock-to-buy, prices",
+      "Status": "PENDING",
+      "Owner/Agent": "Owner",
+      "Safe Implementation": "Record exact given tier/card capacities"
+    },
+    {
+      "ID": "OPEN-07",
+      "Area": "World progression",
+      "Open Choice / Ambiguity": "Sync 100%, old 5×2, Tower floors, Sports games",
+      "Status": "PENDING",
+      "Owner/Agent": "Owner",
+      "Safe Implementation": "Keep non-core / optional"
+    },
+    {
+      "ID": "OPEN-08",
+      "Area": "Four sample balance",
+      "Open Choice / Ambiguity": "Stats and passives other than Justina's active",
+      "Status": "PROPOSED",
+      "Owner/Agent": "Owner",
+      "Safe Implementation": "Samples playable but not globally final"
+    },
+    {
+      "ID": "OPEN-09",
+      "Area": "Existing PRs",
+      "Open Choice / Ambiguity": "PR #9, #11, 14 other drafts status may have changed",
+      "Status": "PENDING",
+      "Owner/Agent": "Mira",
+      "Safe Implementation": "Perform live audit before merge simulation"
+    },
+    {
+      "ID": "OPEN-10",
+      "Area": "Repo identity",
+      "Open Choice / Ambiguity": "Card game repository URL not verified in this Master",
+      "Status": "PENDING",
+      "Owner/Agent": "Mira",
+      "Safe Implementation": "Resolve from workspace/PR; never assume hunter-life"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}
