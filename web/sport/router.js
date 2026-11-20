@@ -14,6 +14,7 @@ import {
   finishReward,
   lineupOf,
   runSim,
+  setPersistHook,
   updateLineup,
 } from './session.js';
 import {
@@ -37,6 +38,7 @@ function stopTimer() {
 
 export function stopSport() {
   stopTimer();
+  setPersistHook(null);
   ctx = null;
 }
 
@@ -65,7 +67,8 @@ function lineupReady(sport) {
   return ids.length === 2;
 }
 
-export function startSport({ profile, onExit }) {
+export function startSport({ profile, onExit, persist }) {
+  setPersistHook(persist);
   ensureSession(profile);
   ctx = {
     screen: 'hub',
@@ -205,7 +208,9 @@ export function startSport({ profile, onExit }) {
     pull(count) {
       const outcome = doPull(ctx.bannerId, count);
       if (!outcome.ok) {
-        ctx.notice = 'Not enough G. Nothing was charged. PROPOSED.';
+        ctx.notice = outcome.reason === 'INSUFFICIENT_G'
+          ? 'Not enough G. Nothing was charged. PROPOSED.'
+          : `Pull did not run (${outcome.reason}). Nothing was charged. PROPOSED.`;
       } else {
         ctx.reveals = outcome.results ?? [];
         ctx.notice = `Pulled ${ctx.reveals.length}. Charged ${outcome.chargedG} G · PROPOSED.`;

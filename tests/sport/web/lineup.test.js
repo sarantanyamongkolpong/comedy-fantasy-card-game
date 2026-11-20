@@ -15,7 +15,7 @@ import {
   BASKET_COMPAT,
   BASKET_ROLES,
 } from '../../../web/sport/lineup.js';
-import { getCard, listPublicCards, STARTER_OWNED } from '../../../web/sport/fixtures/catalog.js';
+import { getCard, listPublicCards, STARTER_OWNED } from '../../../web/sport/live/catalog.js';
 
 test('every formation is 11 and fits on the pitch without overlap', () => {
   for (const formation of FORMATION_IDS) {

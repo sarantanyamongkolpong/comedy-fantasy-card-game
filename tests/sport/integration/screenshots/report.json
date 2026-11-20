@@ -1,0 +1,170 @@
+[
+  {
+    "viewport": "844x390",
+    "sports": {
+      "football": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "basket": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "car": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "moto": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      }
+    },
+    "save": {
+      "gBefore": 6774,
+      "gAfter": 6774,
+      "pityBefore": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pityAfter": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pass": true
+    },
+    "consoleErrors": [],
+    "missing": []
+  },
+  {
+    "viewport": "667x375",
+    "sports": {
+      "football": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "basket": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "car": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "moto": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      }
+    },
+    "save": {
+      "gBefore": 6774,
+      "gAfter": 6774,
+      "pityBefore": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pityAfter": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pass": true
+    },
+    "consoleErrors": [],
+    "missing": []
+  },
+  {
+    "viewport": "915x412",
+    "sports": {
+      "football": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "basket": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "car": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "moto": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      }
+    },
+    "save": {
+      "gBefore": 6774,
+      "gAfter": 6774,
+      "pityBefore": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pityAfter": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pass": true
+    },
+    "consoleErrors": [],
+    "missing": []
+  },
+  {
+    "viewport": "1280x720",
+    "sports": {
+      "football": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "basket": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "car": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      },
+      "moto": {
+        "prep": true,
+        "sim": true,
+        "result": true,
+        "gacha": true,
+        "roster": true
+      }
+    },
+    "save": {
+      "gBefore": 6774,
+      "gAfter": 6774,
+      "pityBefore": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pityAfter": "Epic pity 8 / 100 · EX pity 10 / 200 · PROPOSED",
+      "pass": true
+    },
+    "consoleErrors": [],
+    "missing": []
+  }
+]

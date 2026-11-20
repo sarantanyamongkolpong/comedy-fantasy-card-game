@@ -1,6 +1,6 @@
 import { el } from '../../js/dom.js';
 import { artNode } from '../art.js';
-import { getTuning, sportMeta } from '../fixtures/index.js';
+import { AWAY, getTuning, sportMeta } from '../live/index.js';
 import {
   BASKET_ROLES,
   FORMATIONS,
@@ -116,7 +116,7 @@ function side(ctx, sport) {
     }))));
     const blurb = tuning.football.formations[lineup.formation]?.blurb ?? '';
     const coach = cardById(lineup.coachId);
-    panel.append(el('p', 'side-blurb', `${blurb} ${coach?.passive ?? ''} Away: Puddle United.`));
+    panel.append(el('p', 'side-blurb', `${blurb} ${coach?.passive ?? ''} Away: ${AWAY.football.name}.`));
   } else if (sport === 'basket') {
     panel.append(el('p', 'choice-label', 'Defense · PROPOSED'));
     panel.append(choiceGrid(ctx, 'cols-3', Object.entries(tuning.basket.schemes).map(([id, scheme]) => ({
@@ -141,7 +141,7 @@ function side(ctx, sport) {
     }))));
     const scheme = tuning.basket.schemes[lineup.scheme];
     const pace = tuning.basket.paces[lineup.pace];
-    panel.append(el('p', 'side-blurb', `${scheme?.blurb ?? ''} ${pace?.blurb ?? ''} Away: Gravy City Hoops. Five stay on the court.`));
+    panel.append(el('p', 'side-blurb', `${scheme?.blurb ?? ''} ${pace?.blurb ?? ''} Away: ${AWAY.basket.name}. Five stay on the court.`));
   } else {
     const rules = tuning[sport];
     panel.append(el('p', 'choice-label', 'Tyre · PROPOSED'));
@@ -158,8 +158,8 @@ function side(ctx, sport) {
       onClick: () => ctx.setSetup(sport, id),
       action: 'setup',
     }))));
-    const away = sport === 'car' ? 'Biscuit Brake Club' : 'Spoonslide';
-    panel.append(el('p', 'side-blurb', `Away: ${away}. Both entries count. A DNF retires one machine. PROPOSED.`));
+    const tyre = rules.tyres[lineup.tyre];
+    panel.append(el('p', 'side-blurb', `${tyre?.blurb ?? ''} Field: every other content team. Both entries count. A DNF retires one machine. PROPOSED.`));
   }
   return panel;
 }

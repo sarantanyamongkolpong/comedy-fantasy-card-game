@@ -1,5 +1,5 @@
 import { el } from '../../js/dom.js';
-import { sportMeta } from '../fixtures/index.js';
+import { sportMeta } from '../live/index.js';
 import { noteRow, sportRoot, topBar } from '../shell.js';
 
 export function renderSim(ctx) {

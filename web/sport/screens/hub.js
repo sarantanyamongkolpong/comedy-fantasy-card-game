@@ -1,5 +1,5 @@
 import { artNode } from '../art.js';
-import { SPORTS } from '../fixtures/index.js';
+import { SPORTS } from '../live/index.js';
 import { el } from '../../js/dom.js';
 import { noteRow, sportRoot, topBar } from '../shell.js';
 

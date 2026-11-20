@@ -1,5 +1,5 @@
 import { el } from '../../js/dom.js';
-import { sportMeta } from '../fixtures/index.js';
+import { sportMeta } from '../live/index.js';
 import { noteRow, sportRoot, topBar } from '../shell.js';
 
 export function renderResult(ctx) {
@@ -25,9 +25,12 @@ export function renderResult(ctx) {
     const winner = result.winner === 'draw' ? 'Draw' : result.winner === 'home' ? 'Your Complex' : result.awayName;
     score.append(el('p', null, `${winner} · PROPOSED`));
   } else {
-    for (const row of result?.standings ?? []) {
+    const rows = (result?.standings ?? []).filter((row, index) => index < 5 || row.mine);
+    for (const row of rows) {
       const place = row.dnf ? 'DNF' : row.place;
-      score.append(el('p', 'stand-row', `${place}  ${row.parodyName}${row.vehicleName ? ` · ${row.vehicleName}` : ''} · ${row.team}`));
+      const line = el('p', `stand-row${row.mine ? ' is-mine' : ''}`, `${place}  ${row.parodyName}${row.vehicleName ? ` · ${row.vehicleName}` : ''} · ${row.team}${row.points ? ` · ${row.points} pts` : ''}`);
+      if (row.mine) line.dataset.mine = 'true';
+      score.append(line);
     }
     score.append(el('p', null, 'Standings · PROPOSED'));
   }

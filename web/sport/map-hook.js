@@ -13,6 +13,7 @@ export function isSportsComplexHotspot(hotspot) {
 export function openSportsComplex(ctx) {
   mountSportApp({
     profile: ctx.profile,
+    persist: typeof ctx.persist === 'function' ? ctx.persist : null,
     onExit: () => {
       unmountSportApp();
       ctx.goto('map');
@@ -24,6 +25,12 @@ let cssLink = null;
 
 function ensureCss() {
   if (cssLink) return cssLink;
+  // Single-file build: web/tools/build-single-html inlines sport.css as <style data-sport-css>.
+  const inlined = document.querySelector('style[data-sport-css]');
+  if (inlined) {
+    cssLink = inlined;
+    return cssLink;
+  }
   const link = document.createElement('link');
   link.rel = 'stylesheet';
   link.href = new URL('./sport.css', import.meta.url).href;
@@ -37,9 +44,9 @@ function ensureCss() {
  * Mount the Sport Complex inside the existing #stage.
  * The v0.5 screen router is left alone until onExit sends the player back to the map.
  */
-export function mountSportApp({ profile, onExit }) {
+export function mountSportApp({ profile, onExit, persist = null }) {
   const link = ensureCss();
-  const begin = () => startSport({ profile, onExit });
+  const begin = () => startSport({ profile, onExit, persist });
   if (link.sheet) begin();
   else {
     link.addEventListener('load', begin, { once: true });

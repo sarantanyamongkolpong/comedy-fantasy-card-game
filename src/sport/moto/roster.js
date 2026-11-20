@@ -3,7 +3,7 @@
  * Stats are synthetic BALANCE_PLACEHOLDER values. Rider stamina is not a stat
  * on these cards; the sim tracks it as a weekend-only number.
  * The sheet has 10 riders and does not give every parody make a pair, so the
- * default grid is the four complete pairs. Joan Mirage and Ayo Oguramen stay
+ * default grid is the four complete pairs. Horizon Mirage and Ayo Oguramen stay
  * in the roster for a caller-built team.
  */
 
@@ -28,7 +28,7 @@ export const MOTO_ROSTER = Object.freeze([
   rider('SPC_MOTO_ENTRY_005', 'Jorge Martian', 'MOTO_PURPLE_PETAL', 'Purple Petal Moto', 'Petal-26', 80, 79, 68),
   rider('SPC_MOTO_ENTRY_006', 'Brady Blender', 'MOTO_ORANGE_ANVIL', 'Orange Anvil Motors', 'Hammer Sixteen', 73, 81, 72),
   rider('SPC_MOTO_ENTRY_007', 'Marco Buzzachi', 'MOTO_PURPLE_PETAL', 'Purple Petal Moto', 'Petal-26', 71, 74, 80),
-  rider('SPC_MOTO_ENTRY_008', 'Joan Mirage', 'MOTO_SAKURA_FORGE', 'Sakura Forge', 'Phoenix 213', 70, 72, 75),
+  rider('SPC_MOTO_ENTRY_008', 'Horizon Mirage', 'MOTO_SAKURA_FORGE', 'Sakura Forge', 'Phoenix 213', 70, 72, 75),
   rider('SPC_MOTO_ENTRY_009', 'Torak Razzle', 'MOTO_BLUE_MELODY', 'Blue Melody Works', 'Echo V4', 77, 83, 74),
   rider('SPC_MOTO_ENTRY_010', 'Ayo Oguramen', 'MOTO_PURPLE_PETAL', 'Purple Petal Moto', 'Petal-26', 72, 73, 79),
 ]);

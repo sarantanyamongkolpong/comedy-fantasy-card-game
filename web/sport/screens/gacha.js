@@ -1,6 +1,6 @@
 import { el } from '../../js/dom.js';
 import { artNode } from '../art.js';
-import { BANNER_INFO, getTuning } from '../fixtures/index.js';
+import { BANNER_INFO, getTuning } from '../live/index.js';
 import { pityOf } from '../session.js';
 import { noteRow, sportRoot, topBar } from '../shell.js';
 

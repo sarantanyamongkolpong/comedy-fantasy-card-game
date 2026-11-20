@@ -1,9 +1,13 @@
 /**
- * Sport session. Separate from the v0.5 save blob.
- * Shared G is read from and written to profile.currency.G and profile.currencyG
- * so the existing wallet field stays the one balance. A missing balance receives
- * one PROPOSED preview grant. An explicit 0 is left alone.
- * Roster, pity, and ledger live on state.sport until the sim stream's save v3 lands.
+ * Sport session (live wiring).
+ *
+ * Source of truth is the v0.5 web profile:
+ *   - shared G: profile.currencyG and profile.currency.G (the existing wallet; serialize() saves it as currency.G)
+ *   - sport save v3 payload: profile.sport = { roster, pity, ledger } (src/sport/save/migrate-v3.js shape)
+ * A v1/v2 profile with no sport block migrates losslessly: an empty block is added and the PROPOSED
+ * starter roster is seeded. A missing G balance receives one PROPOSED preview grant; an explicit 0 is left alone.
+ * Every change writes back to the profile and calls the host persist hook, so Save/Load and reload keep sport state.
+ * Lineups are session-only (rebuilt from the roster on load). PROPOSED.
  */
 
 import {
@@ -13,16 +17,20 @@ import {
   getTuning,
   emptyPity,
   grantG,
-  opponentsFor,
+  pityView,
+  previewGrant,
   pullSport,
   simulateSport,
   sportMeta,
-} from './fixtures/index.js';
-import { buildDefaultLineups } from './lineup.js';
+  starterRosterEntry,
+} from './live/index.js';
+import { migrateSportV3 } from '../../src/sport/save/index.js';
+import { buildDefaultLineups, flatRoles } from './lineup.js';
 
 let state = null;
 let profileRef = null;
-let seq = 1;
+let persistHook = null;
+let seq = 0;
 
 function readSharedG(profile) {
   if (profile && Number.isInteger(profile.currencyG)) return profile.currencyG;
@@ -37,43 +45,54 @@ export function writeSharedG(profile, value) {
   profile.currency = { ...current, G: value };
 }
 
+export function setPersistHook(fn) {
+  persistHook = typeof fn === 'function' ? fn : null;
+}
+
+function writeBack() {
+  if (!state) return;
+  if (profileRef) {
+    const sport = structuredClone(state.sport);
+    delete sport.tuning;
+    profileRef.sport = sport;
+    writeSharedG(profileRef, state.currency.G);
+  }
+  try {
+    persistHook?.(false);
+  } catch {
+    // Saving is best effort. The in-memory session stays correct.
+  }
+}
+
 export function resetSession(profile) {
   profileRef = profile ?? null;
   const tuning = getTuning();
+  const base = migrateSportV3({ sport: profileRef?.sport ?? null });
   let g = readSharedG(profileRef);
-  const ledger = [];
-  if (g == null) {
-    g = tuning.previewStartingG;
-    ledger.push({
-      id: 'SPORT_PREVIEW_GRANT',
-      type: 'grant',
-      G: g,
-      reason: 'preview-starting-balance',
-      status: 'PROPOSED',
-    });
-    writeSharedG(profileRef, g);
+  let next = { currency: { G: g ?? 0 }, sport: base.sport };
+  if (g == null) next = previewGrant(next, tuning.previewStartingG);
+  if (Object.keys(next.sport.roster).length === 0) {
+    for (const id of STARTER_OWNED) {
+      const card = getCard(id);
+      if (card) next.sport.roster[id] = starterRosterEntry(card);
+    }
   }
-  const owned = STARTER_OWNED.map((id) => getCard(id)).filter(Boolean);
-  const pity = {};
-  for (const bannerId of BANNERS) pity[bannerId] = emptyPity();
+  for (const bannerId of BANNERS) next.sport.pity[bannerId] ??= { epicCounter: 0, exCounter: 0, pulls: 0 };
+  const owned = Object.keys(next.sport.roster).map((id) => getCard(id)).filter(Boolean);
   state = {
-    currency: { G: g },
-    sport: {
-      roster: Object.fromEntries(STARTER_OWNED.map((id) => [id, { count: 1 }])),
-      pity,
-      ledger,
-    },
+    currency: next.currency,
+    sport: next.sport,
     lineups: buildDefaultLineups(owned),
     lastSim: null,
     rewardAppliedFor: null,
   };
-  seq = 1;
+  seq = 0;
+  writeBack();
   return state;
 }
 
 export function ensureSession(profile) {
-  if (!state) resetSession(profile);
-  else if (profile) profileRef = profile;
+  if (!state || (profile && profile !== profileRef)) resetSession(profile ?? profileRef);
   return state;
 }
 
@@ -93,7 +112,8 @@ export function ownedCards() {
 }
 
 export function pityOf(bannerId) {
-  return state?.sport?.pity?.[bannerId] ?? emptyPity();
+  const saved = state?.sport?.pity?.[bannerId];
+  return saved ? pityView(saved) : emptyPity();
 }
 
 export function lineupOf(sport) {
@@ -125,25 +145,26 @@ export function entries(sport) {
 export function runSim(sport) {
   const meta = sportMeta(sport);
   const lineup = lineupOf(sport);
-  const homeCards = (lineup?.slots ?? []).map((id) => getCard(id)).filter(Boolean);
+  const slots = lineup?.slots ?? [];
+  const homeCards = slots.map((id) => getCard(id)).filter(Boolean);
   const coach = getCard(lineup?.coachId);
-  const away = opponentsFor(sport);
   seq += 1;
-  const eventId = `SPORT_${sport.toUpperCase()}_${seq}`;
+  const eventId = `SPORT_${sport.toUpperCase()}_L${state.sport.ledger.length}_S${seq}`;
   const result = simulateSport({
     sport,
     seed: eventId,
     eventId,
     home: homeCards,
-    away,
     tactics: {
       formation: lineup?.formation,
+      webRoles: sport === 'football' ? flatRoles(lineup?.formation ?? '4-3-3') : [],
       scheme: lineup?.scheme,
       pace: lineup?.pace,
       tyre: lineup?.tyre,
       setup: lineup?.setup,
       coachId: lineup?.coachId ?? null,
       coach,
+      bench: athletes(sport).filter((card) => !slots.includes(card.id)),
       venue: meta?.venue,
     },
   });
@@ -155,28 +176,26 @@ export function runSim(sport) {
 export function finishReward() {
   const result = state?.lastSim;
   if (!result) return { duplicate: true, G: 0 };
-  const txnId = `grant:${result.rewards.eventId}`;
   if (state.rewardAppliedFor === result.rewards.eventId) {
-    return { duplicate: true, G: result.rewards.G };
+    return { duplicate: true, G: result.rewards.G, balance: state.currency.G };
   }
   const outcome = grantG(state, {
-    id: txnId,
+    id: result.rewards.claimId,
     G: result.rewards.G,
-    reason: result.rewards.eventId,
+    reason: 'sport-reward',
+    meta: { sport: result.sport, eventId: result.rewards.eventId, status: 'PROPOSED' },
   });
-  state = outcome.state;
+  state = { ...state, currency: outcome.state.currency, sport: outcome.state.sport };
   state.rewardAppliedFor = result.rewards.eventId;
-  writeSharedG(profileRef, state.currency.G);
+  writeBack();
   return { duplicate: outcome.duplicate, G: result.rewards.G, balance: state.currency.G };
 }
 
 export function doPull(bannerId, count) {
-  seq += 1;
-  const seed = `sport-gacha:${bannerId}:${seq}`;
-  const outcome = pullSport(state, bannerId, count, seed);
+  const outcome = pullSport(state, bannerId, count);
   if (!outcome.ok) return outcome;
-  state = outcome.state;
-  writeSharedG(profileRef, state.currency.G);
+  state = { ...state, currency: outcome.state.currency, sport: outcome.state.sport };
+  writeBack();
   return outcome;
 }
 
@@ -190,6 +209,10 @@ export function rosterPage(sport, page, size) {
     pages,
     total: cards.length,
   };
+}
+
+export function rosterQty(id) {
+  return state?.sport?.roster?.[id]?.qty ?? 0;
 }
 
 export function fieldPlayers(sport) {

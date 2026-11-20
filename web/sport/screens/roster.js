@@ -1,6 +1,6 @@
 import { el } from '../../js/dom.js';
 import { artNode } from '../art.js';
-import { SPORTS } from '../fixtures/index.js';
+import { SPORTS } from '../live/index.js';
 import { rosterPage } from '../session.js';
 import { noteRow, personLabel, sportRoot, statLine, topBar } from '../shell.js';
 

@@ -33,7 +33,9 @@ export function artNode(query) {
   if (entry?.file) {
     const img = document.createElement('img');
     img.alt = entry.alt || 'Placeholder';
-    img.src = new URL(entry.file, import.meta.url).href;
+    // Single-file build inlines art files as data URIs (globalThis.__SPORT_ART_INLINE); otherwise load beside this module.
+    const inlined = globalThis.__SPORT_ART_INLINE?.[entry.file];
+    img.src = inlined ?? new URL(entry.file, import.meta.url).href;
     img.addEventListener('error', () => {
       img.replaceWith(shapeSvg(entry));
     });
