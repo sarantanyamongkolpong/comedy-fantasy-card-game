@@ -167,6 +167,14 @@ Quality gates on `70707d0` (runs 44764027310 and 44764046691) started again. Dat
 
 Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T160022Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T160022Z/`.
 
+Quality gates on `4623d72` (runs 44769025847 and 44769039335) executed. Data validation, repository structure, and the asset manifest passed. `SYSTEMS_TEST` is red on Node 20 and Node 22: 406 pass, 1 fail, 4 todo, 13 skip, 424 tests. The only failing name is still `QA-10 real-engine Deck Battle Rewards win and lose`.
+
+### Probe 9 — final — 2026-11-20T16:30:24Z
+
+This pass is after 2026-11-20T16:15:00Z, so polling stops here. Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None of the subjects match feature-complete. The throwaway merge onto `sport/v06-base` was clean and was not pushed. Harness on Node v22.23.4: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T163024Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T163024Z/`.
+
+The probe timer is unsubscribed after this commit is pushed. No stream is feature-complete.
+
 ## Findings
 
 ### P0
@@ -184,4 +192,4 @@ Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `
 - v0.5 browser tests did not drive Chrome, because `playwright-core` and `@playwright/test` are not installed in this repo. The sport harness loads `playwright-core` from a side install and serves `web/` over `127.0.0.1`.
 - `src/sport/gacha/catalog.js` mentions `LOCKED` and `PRODUCTION_READY` only in a comparison that rejects those statuses. That is not a status assignment.
 - The card-game envelope stays at save version 2. Sport state is the added `profile.sport` bag. v1 and v2 fixtures still load.
-- No stream tip is a feature-complete commit yet.
+- No stream tip is a feature-complete commit. Polling stopped at the 16:30 UTC final pass.
