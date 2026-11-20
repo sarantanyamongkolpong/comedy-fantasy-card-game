@@ -1,0 +1,359 @@
+{
+  "schemaVersion": "world-content-1",
+  "reviewStatus": "GENERATED_REVIEW",
+  "designStatus": "PROPOSED",
+  "mainQuest": false,
+  "wiredToClient": false,
+  "tutorials": [
+    {
+      "id": "TUT_MAP_WANDER",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 1,
+      "screen": "map",
+      "loopStep": "map",
+      "title": "Wander on purpose",
+      "body": "You are on the World Map. The line under the title is already the rule: comedy fantasy, no main quest. Six buildings sit on the fixed canvas. The Sports Complex pin is visible and locked. This prompt does not start a quest, and it does not charge you to look.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": "map-title",
+        "control": null,
+        "screen": "map"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "CORE-001",
+        "MAP-01",
+        "MAP-08"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_MAP_TOWER",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 2,
+      "screen": "map",
+      "loopStep": "map",
+      "title": "The tower clears its throat",
+      "body": "Tap Mysterious Tower. Prep Battle opens with that name on the banner. The pin does not ask for a payment. Back on the map, the Hideout button returns you home without a receipt.",
+      "pointsAt": {
+        "hotspotId": "tower",
+        "uiAnchorId": null,
+        "control": "Mysterious Tower",
+        "screen": "map"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "MAP-03",
+        "MAP-08"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_PREP_READY",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 3,
+      "screen": "prep",
+      "loopStep": "prep_battle",
+      "title": "Count the team, then the deck",
+      "body": "Prep Battle shows the team and the action deck. The team is 4 avatars. The deck is 30 action cards. START BATTLE stays quiet until both are legal. BACK returns to the map. The banner names the building you tapped. Nothing on this screen has an amount.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "START BATTLE",
+        "screen": "prep"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "CORE-003",
+        "CORE-009"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_BATTLE_TURN",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 4,
+      "screen": "battle",
+      "loopStep": "battle",
+      "title": "End the turn yourself",
+      "body": "Action cards command the avatars. Avatar cards stay out of the deck. You begin a turn at 5 AP, and spending the last point does not end the turn for you. Press END TURN. Play card asks for a target. Draw, Discard, and The Void stay separate piles. The opponent on this screen is a practice echo of your Justins. The catalog echoes with Placeholder names are a different list, and this prompt does not swap them in.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "END TURN",
+        "screen": "battle"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "CORE-002",
+        "CORE-007",
+        "CORE-015",
+        "CORE-016",
+        "CORE-017",
+        "CORE-018"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_REWARDS_ONCE",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 5,
+      "screen": "rewards",
+      "loopStep": "rewards",
+      "title": "Nap, or kettle",
+      "body": "If you win, the echo takes a nap. If you lose, the kettle is on at the hideout. G, loot, and items stay unnamed on the sheet. Leaving stamps the fight so it will not pay out twice. Back to the Hideout is the way out.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "Back to the Hideout",
+        "screen": "rewards"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "CORE-001",
+        "MAP-02"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_HIDEOUT_CABIN",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 6,
+      "screen": "home",
+      "loopStep": "hideout",
+      "title": "The Cabin is the house",
+      "body": "You live in the Cabin until a tier actually changes. Tap a higher tier to peek. Peeking does not upgrade you, and a tier change does not add stash slots by itself. Installed furniture is what holds cards. The Cabin number is blank. Stash, Team and Deck, and the World Map are the doors.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "Stash",
+        "screen": "home"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "HOME-01",
+        "HOME-07",
+        "HOME-08",
+        "HOME-11",
+        "MAP-02"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_STASH_FILTERS",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 7,
+      "screen": "stash",
+      "loopStep": "stash",
+      "title": "Bags, stacks, and blanks",
+      "body": "Filter the stash by Avatars, Actions, or TEST tokens. Stacks are copies of the same card. Lock and favorite still apply to one copy. Furniture slots and the Cabin base stay pending. A house tier adds no slots.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "Avatars",
+        "screen": "stash"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "HOME-08",
+        "HOME-11"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_DECK_THIRTY",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 8,
+      "screen": "party",
+      "loopStep": "deck",
+      "title": "Exactly thirty, mixed on purpose",
+      "body": "Exactly 30 action cards. Not 29. Not 31. Four seats, and a rainbow team is legal. A generic card such as the starter jab does not ask your faction. A faction card complains later, at the moment you try to play it without that faction seated. The duplicate cap is still open, so this prompt does not invent one.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "Action deck",
+        "screen": "party"
+      },
+      "mentionsCardIds": [
+        "ACT_GEN_ATK_001",
+        "ACT_FAC_AEG_001",
+        "ACT_FAC_PHA_001",
+        "ACT_FAC_CEL_001",
+        "ACT_FAC_SAN_001"
+      ],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "CORE-003",
+        "CORE-009",
+        "CORE-022",
+        "CORE-023",
+        "CORE-040"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_GACHA_BOOTHS",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 9,
+      "screen": "gacha",
+      "loopStep": "gacha",
+      "title": "Three booths, empty tags",
+      "body": "Three booths: Avatar, Action, and Companion. Pull 1 and Pull 10 are the buttons. Avatar and Action share a currency named G, and this sheet stores no amount. Companion currency is unnamed here. The weights on the live booth are test weights. They are not copied into this pack, and they are not drop rates. Pity caps stay on the gacha sheet.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "Pull 1",
+        "screen": "gacha"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "GA-01",
+        "GA-02",
+        "GA-11",
+        "MAP-07"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "TUT_MALL_TAGS",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 10,
+      "screen": "mall",
+      "loopStep": "mall",
+      "title": "Blank on purpose",
+      "body": "The mall sheet already shows pending on every row. This prompt does not fill one in. Grant versus buy stays open. Back to the Map returns you to the pins without a receipt.",
+      "pointsAt": {
+        "hotspotId": null,
+        "uiAnchorId": null,
+        "control": "Back to the Map",
+        "screen": "mall"
+      },
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "skippable": true,
+      "blocksProgress": false,
+      "canonRules": [
+        "MAP-06",
+        "HOME-09",
+        "OPEN-06"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    }
+  ]
+}

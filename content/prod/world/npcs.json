@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "world-content-1",
+  "reviewStatus": "GENERATED_REVIEW",
+  "designStatus": "PROPOSED",
+  "mainQuest": false,
+  "wiredToClient": false,
+  "npcs": [
+    {
+      "id": "NPC_HOME_DOORMAT",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "name": "The Doormat",
+      "role": "greeter",
+      "building": {
+        "assetId": "MAP_BLD_HIDEOUT",
+        "hotspotId": "hideout",
+        "siteId": "home",
+        "hotspotLabel": "Hideout",
+        "mapDestinationId": "home",
+        "mapDestinationName": "Home",
+        "mapAction": "home",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "lines": [
+        "Wipe your boots. I am the doormat, and my ambitions are flat. The picture on the wall is the Cabin until a real tier change, and peeking at the brochure does not buy the Penthouse.",
+        "Stash is the bag. Team and deck are the other door. I do not hold cards. Installed furniture does. The Cabin number is still blank, and I am not filling it in."
+      ],
+      "mentionsAvatarIds": [],
+      "mentionsCardIds": [],
+      "shopkeeperId": null,
+      "canonRules": [
+        "MAP-02",
+        "MAP-08",
+        "HOME-01",
+        "HOME-07",
+        "HOME-08",
+        "HOME-11"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "NPC_TOWER_ARCHIVIST",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "name": "Archivist Echo",
+      "role": "archivist",
+      "building": {
+        "assetId": "MAP_BLD_TOWER",
+        "hotspotId": "tower",
+        "siteId": "tower",
+        "hotspotLabel": "Mysterious Tower",
+        "mapDestinationId": "mysterious-tower",
+        "mapDestinationName": "Mysterious Tower",
+        "mapAction": "battle",
+        "webMode": "tower",
+        "hotspotLocked": false
+      },
+      "lines": [
+        "I am an echo of a filing cabinet that learned to sigh. Real people walk in. Echoes file themselves under the same haircut. Your Justins are the people. The practice fight is the impression.",
+        "There is no main quest. There is a staircase, a prep screen, and a kettle waiting if it goes badly. The ledger still says Placeholder Echo Tank. I asked for a better name. The ledger said that would be a balance change and left the room."
+      ],
+      "mentionsAvatarIds": [],
+      "mentionsCardIds": [],
+      "shopkeeperId": null,
+      "canonRules": [
+        "MAP-03",
+        "MAP-08",
+        "MAP-09",
+        "CORE-001"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "NPC_ARENA_ANNOUNCER",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "name": "Announcer Announcer",
+      "role": "announcer",
+      "building": {
+        "assetId": "MAP_BLD_ARENA",
+        "hotspotId": "arena",
+        "siteId": "arena",
+        "hotspotLabel": "Tournament Arena",
+        "mapDestinationId": "tournament-arena",
+        "mapDestinationName": "Tournament Arena",
+        "mapAction": "battle",
+        "webMode": "arena",
+        "hotspotLocked": false
+      },
+      "lines": [
+        "In this corner, a practice echo. In the other corner, also a practice echo. A second human has not bought a ticket, because tickets are not a system yet.",
+        "If Justin Time is late, that is the joke and also the schedule. Justin Case is here just in case. Justin Theory has a theory about the seating chart. Justina Moment would like the moment noted. I announce the exhibition, and then I sit down."
+      ],
+      "mentionsAvatarIds": [
+        "AVT_AEG_002",
+        "AVT_PHA_002",
+        "AVT_CEL_002",
+        "AVT_SAN_002"
+      ],
+      "mentionsCardIds": [],
+      "shopkeeperId": null,
+      "canonRules": [
+        "MAP-05",
+        "MAP-08",
+        "CORE-001"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "NPC_SPORTS_COACH",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "name": "Coach Stretch",
+      "role": "coach",
+      "building": {
+        "assetId": "MAP_BLD_SPORTS",
+        "hotspotId": "sports",
+        "siteId": "sports",
+        "hotspotLabel": "Sports Complex",
+        "mapDestinationId": "sports-complex",
+        "mapDestinationName": "Sports Complex",
+        "mapAction": "locked",
+        "webMode": null,
+        "hotspotLocked": true
+      },
+      "lines": [
+        "Football, basketball, racing, and MotoGP are stretching off-screen. Coming soon. I will lead the stretch. I will not start the match.",
+        "The pin on the map is real. The four games are not in this pack. There is no season to sell, because there is no season."
+      ],
+      "mentionsAvatarIds": [],
+      "mentionsCardIds": [],
+      "shopkeeperId": null,
+      "canonRules": [
+        "MAP-04",
+        "MAP-08"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "NPC_GACHA_ATTENDANT",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "name": "Pullbert",
+      "role": "attendant",
+      "building": {
+        "assetId": "MAP_BLD_GACHA",
+        "hotspotId": "gacha",
+        "siteId": "gachapon",
+        "hotspotLabel": "Gachapon",
+        "mapDestinationId": "gachapon",
+        "mapDestinationName": "Gachapon",
+        "mapAction": "gacha",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "lines": [
+        "Three booths. Avatar, Action, Companion. I cough politely, after the machine coughs first.",
+        "Avatar and Action share a currency whose name is G. I will not say an amount. Companion currency is not mine to name. Pity lives on the sheet. Drop rates do not live in my mouth."
+      ],
+      "mentionsAvatarIds": [],
+      "mentionsCardIds": [],
+      "shopkeeperId": "SHOP_GACHA_THREE_BOOTHS",
+      "canonRules": [
+        "MAP-07",
+        "GA-01",
+        "GA-02",
+        "GA-11"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "NPC_MALL_TAGGER",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "name": "Tag",
+      "role": "shopkeeper",
+      "building": {
+        "assetId": "MAP_BLD_MALL",
+        "hotspotId": "mall",
+        "siteId": "mall",
+        "hotspotLabel": "Shopping Mall",
+        "mapDestinationId": "shopping-mall",
+        "mapDestinationName": "Shopping Mall",
+        "mapAction": "mall",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "lines": [
+        "I write price tags and then I leave them blank. A blank tag is a finished tag until someone who is allowed to write a number arrives.",
+        "Boxes, cabinets, a sofa, a bed, a chest that is not a card box. Whether the house grants them or the mall sells them is still an open sentence. Nothing here rings up."
+      ],
+      "mentionsAvatarIds": [],
+      "mentionsCardIds": [],
+      "shopkeeperId": "SHOP_MALL_BLANK_TAGS",
+      "canonRules": [
+        "MAP-06",
+        "HOME-09",
+        "OPEN-06"
+      ],
+      "economy": {
+        "G": null,
+        "price": null,
+        "priceStatus": "PENDING_OWNER",
+        "unlockCost": null,
+        "unlockCostStatus": "PENDING_OWNER",
+        "amount": null,
+        "amountStatus": "PENDING_OWNER"
+      }
+    }
+  ]
+}

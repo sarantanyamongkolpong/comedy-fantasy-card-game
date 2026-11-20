@@ -1,0 +1,477 @@
+{
+  "schemaVersion": "world-content-1",
+  "reviewStatus": "GENERATED_REVIEW",
+  "designStatus": "PROPOSED",
+  "mainQuest": false,
+  "wiredToClient": false,
+  "id": "PROG_WORLD_001",
+  "gatesCoreLoop": false,
+  "enforcedByClient": false,
+  "proposedOrderOnly": true,
+  "summary": "A suggested encounter order for the two battle pins. It is not a main quest, it is not enforced by the client, and it does not close the hideout, the mall, or the gachapon.",
+  "canonRules": [
+    "MAP-08",
+    "OPEN-07",
+    "CORE-001"
+  ],
+  "chapters": [
+    {
+      "id": "CH_TOWER_LOBBY",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 1,
+      "title": "Lobby naps",
+      "summary": "The tower is the lore pin. These stages reuse the only catalog enemy team and do not pretend a new floor list exists.",
+      "building": {
+        "assetId": "MAP_BLD_TOWER",
+        "hotspotId": "tower",
+        "siteId": "tower",
+        "hotspotLabel": "Mysterious Tower",
+        "mapDestinationId": "mysterious-tower",
+        "mapDestinationName": "Mysterious Tower",
+        "mapAction": "battle",
+        "webMode": "tower",
+        "hotspotLocked": false
+      },
+      "mainQuest": false,
+      "gatesCoreLoop": false,
+      "canonRules": [
+        "MAP-03",
+        "MAP-08",
+        "MAP-09",
+        "OPEN-07"
+      ],
+      "stages": [
+        {
+          "id": "ST_TOWER_ORIENTATION",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 1,
+          "title": "Echo orientation",
+          "summary": "The only enemy team in the catalog lines up in the lobby. The live fight still uses echo copies of the four Justins. This stage names both facts and unlocks nothing you can spend.",
+          "building": {
+            "assetId": "MAP_BLD_TOWER",
+            "hotspotId": "tower",
+            "siteId": "tower",
+            "hotspotLabel": "Mysterious Tower",
+            "mapDestinationId": "mysterious-tower",
+            "mapDestinationName": "Mysterious Tower",
+            "mapAction": "battle",
+            "webMode": "tower",
+            "hotspotLocked": false
+          },
+          "webMode": "tower",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank"
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade"
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark"
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+          },
+          "requiresStageId": null,
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-03",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER"
+          }
+        },
+        {
+          "id": "ST_TOWER_REMATCH",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 2,
+          "title": "Same nap, second bell",
+          "summary": "The same four catalog echoes, in the same battle record, after orientation. A distinct floor roster does not exist yet, so the rematch admits it is a rematch.",
+          "building": {
+            "assetId": "MAP_BLD_TOWER",
+            "hotspotId": "tower",
+            "siteId": "tower",
+            "hotspotLabel": "Mysterious Tower",
+            "mapDestinationId": "mysterious-tower",
+            "mapDestinationName": "Mysterious Tower",
+            "mapAction": "battle",
+            "webMode": "tower",
+            "hotspotLocked": false
+          },
+          "webMode": "tower",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank"
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade"
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark"
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+          },
+          "requiresStageId": "ST_TOWER_ORIENTATION",
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-03",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH_ARENA_EXHIBITION",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "order": 2,
+      "title": "Exhibition night",
+      "summary": "The arena is the battle pin. These stages are practice echoes, not a second player, and the client does not lock them behind the tower.",
+      "building": {
+        "assetId": "MAP_BLD_ARENA",
+        "hotspotId": "arena",
+        "siteId": "arena",
+        "hotspotLabel": "Tournament Arena",
+        "mapDestinationId": "tournament-arena",
+        "mapDestinationName": "Tournament Arena",
+        "mapAction": "battle",
+        "webMode": "arena",
+        "hotspotLocked": false
+      },
+      "mainQuest": false,
+      "gatesCoreLoop": false,
+      "canonRules": [
+        "MAP-05",
+        "MAP-08",
+        "OPEN-07"
+      ],
+      "stages": [
+        {
+          "id": "ST_ARENA_EXHIBITION",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 1,
+          "title": "Exhibition echoes",
+          "summary": "The banner says Tournament Arena. The opponent is still a practice echo. Clearing the tower rematch is the proposed order, and the client does not enforce it.",
+          "building": {
+            "assetId": "MAP_BLD_ARENA",
+            "hotspotId": "arena",
+            "siteId": "arena",
+            "hotspotLabel": "Tournament Arena",
+            "mapDestinationId": "tournament-arena",
+            "mapDestinationName": "Tournament Arena",
+            "mapAction": "battle",
+            "webMode": "arena",
+            "hotspotLocked": false
+          },
+          "webMode": "arena",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank"
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade"
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark"
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+          },
+          "requiresStageId": "ST_TOWER_REMATCH",
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-05",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER"
+          }
+        },
+        {
+          "id": "ST_ARENA_REMATCH",
+          "reviewStatus": "GENERATED_REVIEW",
+          "designStatus": "PROPOSED",
+          "order": 2,
+          "title": "Encore, still unnamed",
+          "summary": "One more pass of the same catalog team at the arena pin. The reward line is empty on purpose. No ticket is invented.",
+          "building": {
+            "assetId": "MAP_BLD_ARENA",
+            "hotspotId": "arena",
+            "siteId": "arena",
+            "hotspotLabel": "Tournament Arena",
+            "mapDestinationId": "tournament-arena",
+            "mapDestinationName": "Tournament Arena",
+            "mapAction": "battle",
+            "webMode": "arena",
+            "hotspotLocked": false
+          },
+          "webMode": "arena",
+          "catalogBattleId": "DEMO_BATTLE_001",
+          "enemies": [
+            {
+              "enemyId": "ENM_DEMO_001",
+              "displayName": "Placeholder Echo Tank"
+            },
+            {
+              "enemyId": "ENM_DEMO_002",
+              "displayName": "Placeholder Echo Blade"
+            },
+            {
+              "enemyId": "ENM_DEMO_003",
+              "displayName": "Placeholder Echo Spark"
+            },
+            {
+              "enemyId": "ENM_DEMO_004",
+              "displayName": "Placeholder Echo Hymn"
+            }
+          ],
+          "rosterReuse": "DEMO_BATTLE_001",
+          "distinctFloorRoster": false,
+          "rosterWiredToWebBattle": false,
+          "runtimeOpponent": {
+            "kind": "echo_copies_of_avatars",
+            "avatarIds": [
+              "AVT_AEG_002",
+              "AVT_PHA_002",
+              "AVT_CEL_002",
+              "AVT_SAN_002"
+            ],
+            "deckId": "DECK_DEMO_MIXED_001",
+            "note": "The web battle builder fields echo copies of the starter avatars and the demo action deck. It does not load the catalog enemy ids. This stage does not retarget that builder."
+          },
+          "requiresStageId": "ST_ARENA_EXHIBITION",
+          "enforcedByClient": false,
+          "proposedOrderOnly": true,
+          "gatesCoreLoop": false,
+          "mainQuest": false,
+          "canonRules": [
+            "MAP-05",
+            "MAP-08",
+            "OPEN-07"
+          ],
+          "reward": {
+            "G": null,
+            "price": null,
+            "unlockCost": null,
+            "amount": null,
+            "items": null,
+            "cardIds": null,
+            "status": "PENDING_OWNER"
+          }
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "id": "FAC_HOME",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "facility",
+      "building": {
+        "assetId": "MAP_BLD_HIDEOUT",
+        "hotspotId": "hideout",
+        "siteId": "home",
+        "hotspotLabel": "Hideout",
+        "mapDestinationId": "home",
+        "mapDestinationName": "Home",
+        "mapAction": "home",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "availableFromStart": true,
+      "includedInUnlockChain": false,
+      "screenLive": true,
+      "note": "The Hideout is home from the first boot. No stage has to be cleared to open the door.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    },
+    {
+      "id": "FAC_MALL",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "facility",
+      "building": {
+        "assetId": "MAP_BLD_MALL",
+        "hotspotId": "mall",
+        "siteId": "mall",
+        "hotspotLabel": "Shopping Mall",
+        "mapDestinationId": "shopping-mall",
+        "mapDestinationName": "Shopping Mall",
+        "mapAction": "mall",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "availableFromStart": true,
+      "includedInUnlockChain": false,
+      "screenLive": true,
+      "note": "The mall pin opens the blank tag sheet immediately. Checkout stays off.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    },
+    {
+      "id": "FAC_GACHA",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "facility",
+      "building": {
+        "assetId": "MAP_BLD_GACHA",
+        "hotspotId": "gacha",
+        "siteId": "gachapon",
+        "hotspotLabel": "Gachapon",
+        "mapDestinationId": "gachapon",
+        "mapDestinationName": "Gachapon",
+        "mapAction": "gacha",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "availableFromStart": true,
+      "includedInUnlockChain": false,
+      "screenLive": true,
+      "note": "The gachapon pin opens the three test booths immediately. No stage gate, and no amount on the tag.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    }
+  ],
+  "lockedNodes": [
+    {
+      "id": "NODE_SPORTS_LOCKED",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "locked_building",
+      "building": {
+        "assetId": "MAP_BLD_SPORTS",
+        "hotspotId": "sports",
+        "siteId": "sports",
+        "hotspotLabel": "Sports Complex",
+        "mapDestinationId": "sports-complex",
+        "mapDestinationName": "Sports Complex",
+        "mapAction": "locked",
+        "webMode": null,
+        "hotspotLocked": true
+      },
+      "includedInUnlockChain": false,
+      "mapPinLive": true,
+      "systemsLive": false,
+      "implementation": "OUT_OF_SCOPE",
+      "canonRules": [
+        "MAP-04",
+        "MAP-08"
+      ],
+      "note": "The pin stays on the map. Football, basketball, racing, and MotoGP are not staged in this pack.",
+      "G": null,
+      "price": null,
+      "priceStatus": "PENDING_OWNER",
+      "unlockCost": null,
+      "unlockCostStatus": "PENDING_OWNER"
+    }
+  ]
+}

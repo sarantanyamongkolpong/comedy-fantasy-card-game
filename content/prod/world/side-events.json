@@ -1,0 +1,265 @@
+{
+  "schemaVersion": "world-content-1",
+  "reviewStatus": "GENERATED_REVIEW",
+  "designStatus": "PROPOSED",
+  "mainQuest": false,
+  "wiredToClient": false,
+  "sideEvents": [
+    {
+      "id": "EVT_HOME_KETTLE_WHISTLE",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "side_event",
+      "mainQuest": false,
+      "mandatory": false,
+      "gatesCoreLoop": false,
+      "questId": null,
+      "building": {
+        "assetId": "MAP_BLD_HIDEOUT",
+        "hotspotId": "hideout",
+        "siteId": "home",
+        "hotspotLabel": "Hideout",
+        "mapDestinationId": "home",
+        "mapDestinationName": "Home",
+        "mapAction": "home",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "title": "The kettle has opinions",
+      "body": "The kettle is on. That sentence is the whole consolation when a fight goes badly, and it is also the whole prize while loot is still unnamed. The doormat pretends this was the plan.",
+      "npcId": "NPC_HOME_DOORMAT",
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "mentionsEnemyIds": [],
+      "canonRules": [
+        "MAP-02",
+        "MAP-08",
+        "HOME-11"
+      ],
+      "reward": {
+        "G": null,
+        "price": null,
+        "unlockCost": null,
+        "amount": null,
+        "items": null,
+        "cardIds": null,
+        "status": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "EVT_TOWER_LOBBY_NAP",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "side_event",
+      "mainQuest": false,
+      "mandatory": false,
+      "gatesCoreLoop": false,
+      "questId": null,
+      "building": {
+        "assetId": "MAP_BLD_TOWER",
+        "hotspotId": "tower",
+        "siteId": "tower",
+        "hotspotLabel": "Mysterious Tower",
+        "mapDestinationId": "mysterious-tower",
+        "mapDestinationName": "Mysterious Tower",
+        "mapAction": "battle",
+        "webMode": "tower",
+        "hotspotLocked": false
+      },
+      "title": "Lobby nap",
+      "body": "An echo is napping on the tower welcome mat. The drawer beside the mat lists Placeholder Echo Tank, Placeholder Echo Blade, Placeholder Echo Spark, and Placeholder Echo Hymn. That is the whole enemy catalog, and they are sharing one nap. Someone left Placeholder Spark on the mat. The name is still a placeholder. The spark is not on fire. You may step over the nap and open Prep.",
+      "npcId": "NPC_TOWER_ARCHIVIST",
+      "mentionsCardIds": [
+        "ACT_GEN_SKILL_001"
+      ],
+      "mentionsAvatarIds": [],
+      "mentionsEnemyIds": [
+        "ENM_DEMO_001",
+        "ENM_DEMO_002",
+        "ENM_DEMO_003",
+        "ENM_DEMO_004"
+      ],
+      "canonRules": [
+        "MAP-03",
+        "MAP-08",
+        "MAP-09"
+      ],
+      "reward": {
+        "G": null,
+        "price": null,
+        "unlockCost": null,
+        "amount": null,
+        "items": null,
+        "cardIds": null,
+        "status": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "EVT_ARENA_NAME_MIXUP",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "side_event",
+      "mainQuest": false,
+      "mandatory": false,
+      "gatesCoreLoop": false,
+      "questId": null,
+      "building": {
+        "assetId": "MAP_BLD_ARENA",
+        "hotspotId": "arena",
+        "siteId": "arena",
+        "hotspotLabel": "Tournament Arena",
+        "mapDestinationId": "tournament-arena",
+        "mapDestinationName": "Tournament Arena",
+        "mapAction": "battle",
+        "webMode": "arena",
+        "hotspotLocked": false
+      },
+      "title": "Justin Thyme",
+      "body": "The announcer calls Justin Time by an herb that is not on the team, then apologizes to the herb. Justin Case offers to stand in front of the apology, just in case. No second player enters. The exhibition is still an echo.",
+      "npcId": "NPC_ARENA_ANNOUNCER",
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [
+        "AVT_AEG_002",
+        "AVT_PHA_002",
+        "AVT_CEL_002",
+        "AVT_SAN_002"
+      ],
+      "mentionsEnemyIds": [],
+      "canonRules": [
+        "MAP-05",
+        "MAP-08"
+      ],
+      "reward": {
+        "G": null,
+        "price": null,
+        "unlockCost": null,
+        "amount": null,
+        "items": null,
+        "cardIds": null,
+        "status": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "EVT_SPORTS_GROUP_STRETCH",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "side_event",
+      "mainQuest": false,
+      "mandatory": false,
+      "gatesCoreLoop": false,
+      "questId": null,
+      "building": {
+        "assetId": "MAP_BLD_SPORTS",
+        "hotspotId": "sports",
+        "siteId": "sports",
+        "hotspotLabel": "Sports Complex",
+        "mapDestinationId": "sports-complex",
+        "mapDestinationName": "Sports Complex",
+        "mapAction": "locked",
+        "webMode": null,
+        "hotspotLocked": true
+      },
+      "title": "Stretch, then stop",
+      "body": "Coach Stretch counts a stretch for four games that are not in the build. You may touch your toes. The lock on the door does not loosen. Coming soon remains the only score.",
+      "npcId": "NPC_SPORTS_COACH",
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "mentionsEnemyIds": [],
+      "canonRules": [
+        "MAP-04",
+        "MAP-08"
+      ],
+      "reward": {
+        "G": null,
+        "price": null,
+        "unlockCost": null,
+        "amount": null,
+        "items": null,
+        "cardIds": null,
+        "status": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "EVT_GACHA_POLITE_COUGH",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "side_event",
+      "mainQuest": false,
+      "mandatory": false,
+      "gatesCoreLoop": false,
+      "questId": null,
+      "building": {
+        "assetId": "MAP_BLD_GACHA",
+        "hotspotId": "gacha",
+        "siteId": "gachapon",
+        "hotspotLabel": "Gachapon",
+        "mapDestinationId": "gachapon",
+        "mapDestinationName": "Gachapon",
+        "mapAction": "gacha",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "title": "Pamphlet with no amounts",
+      "body": "The capsule machine coughs up a pamphlet and then looks sorry. The pamphlet names three booths and no amounts. Pullbert files the pamphlet under pending and offers you nothing with a number on it.",
+      "npcId": "NPC_GACHA_ATTENDANT",
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "mentionsEnemyIds": [],
+      "canonRules": [
+        "MAP-07",
+        "GA-01",
+        "GA-11"
+      ],
+      "reward": {
+        "G": null,
+        "price": null,
+        "unlockCost": null,
+        "amount": null,
+        "items": null,
+        "cardIds": null,
+        "status": "PENDING_OWNER"
+      }
+    },
+    {
+      "id": "EVT_MALL_FALLEN_TAG",
+      "reviewStatus": "GENERATED_REVIEW",
+      "designStatus": "PROPOSED",
+      "kind": "side_event",
+      "mainQuest": false,
+      "mandatory": false,
+      "gatesCoreLoop": false,
+      "questId": null,
+      "building": {
+        "assetId": "MAP_BLD_MALL",
+        "hotspotId": "mall",
+        "siteId": "mall",
+        "hotspotLabel": "Shopping Mall",
+        "mapDestinationId": "shopping-mall",
+        "mapDestinationName": "Shopping Mall",
+        "mapAction": "mall",
+        "webMode": null,
+        "hotspotLocked": false
+      },
+      "title": "Tag, meet floor",
+      "body": "A tag falls off the counter and lands blank-side up. Tag the shopkeeper nods, as if the floor has finished the tag. The sofa does not grow a number on the way down.",
+      "npcId": "NPC_MALL_TAGGER",
+      "mentionsCardIds": [],
+      "mentionsAvatarIds": [],
+      "mentionsEnemyIds": [],
+      "canonRules": [
+        "MAP-06",
+        "HOME-09",
+        "OPEN-06"
+      ],
+      "reward": {
+        "G": null,
+        "price": null,
+        "unlockCost": null,
+        "amount": null,
+        "items": null,
+        "cardIds": null,
+        "status": "PENDING_OWNER"
+      }
+    }
+  ]
+}
