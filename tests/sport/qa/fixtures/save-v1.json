@@ -1,0 +1,21 @@
+{
+  "saveVersion": 1,
+  "profile": {
+    "profileId": "QA_SPORT_V1",
+    "saveVersion": 1,
+    "inventory": {
+      "avatars": [{ "catalogId": "AVT_AEG_002", "quantity": 1 }],
+      "actions": [{ "catalogId": "ACT_GEN_ATK_001", "quantity": 2 }],
+      "companions": []
+    },
+    "decks": [{ "deckId": "DECK_QA_V1", "cardIds": ["ACT_GEN_ATK_001"] }],
+    "currency": { "G": 17 },
+    "pity": { "TEST_BANNER_AVATAR": { "epicCounter": 2, "topCounter": 4 } },
+    "house": {
+      "acquiredTiers": ["cabin"],
+      "displayTier": "cabin",
+      "installedFurniture": []
+    },
+    "rewardLedger": { "match-qa-v1": { "granted": true } }
+  }
+}
