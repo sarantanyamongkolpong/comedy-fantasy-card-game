@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 16" fill="none">
+  <defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff8dc"/>
+    <stop offset="0.42" stop-color="#f0d48a"/>
+    <stop offset="0.72" stop-color="#c9963a"/>
+    <stop offset="1" stop-color="#6b4714"/>
+  </linearGradient>
+  <linearGradient id="goldV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff8dc"/>
+    <stop offset="0.45" stop-color="#e6c36a"/>
+    <stop offset="1" stop-color="#7a5418"/>
+  </linearGradient>
+  <linearGradient id="purple" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f4ecff"/>
+    <stop offset="0.45" stop-color="#8d6ad0"/>
+    <stop offset="1" stop-color="#3a1868"/>
+  </linearGradient></defs>
+  
+      <rect x="0" y="2" width="64" height="12" fill="url(#goldV)"/>
+      <rect x="0" y="3" width="64" height="2.2" fill="#fff8dc" opacity="0.8"/>
+      <rect x="0" y="10.2" width="64" height="1.6" fill="#5a348c"/>
+      <rect x="0" y="12.2" width="64" height="1" fill="#fff1c4" opacity="0.55"/>
+    
+</svg>

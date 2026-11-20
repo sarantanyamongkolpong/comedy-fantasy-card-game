@@ -52,3 +52,10 @@ Shared hooks, and only these:
 - `web/js/app.js` — import `applyBattlePolish` and call it for Prep and Battle after the screen is built.
 
 `battle-layout.js`, `prep-layout.js`, `battle-flow.js`, `combat-fx.js`, `render-card.js`, `card-layers.js`, and `src/engine/**` are not modified. Floaters keep coming from `combatFx`.
+
+## What the paint pass found after the audit
+
+- `renderBattle` reads the log and then `settle()` paints again in the same turn, so the first DOM (the one that held the numbers) is replaced before the browser paints. `holdLogFx` keeps those same rows until the frame after the last paint. It does not invent numbers and it does not change the log.
+- The file:// playable (`web/tools/build-single-html`) inlines `app.css` and the main manifest only. esbuild's bundle has no `import.meta.url`. `battleUiUrl` returns an empty string in that bundle, so Prep still opens and no broken frame image is inserted. The http app, which loads `battle-polish.css`, is the polished surface.
+- The battle notice (`.toast`) still sits on the pile buttons. That placement is Mira's `app.css` rule. This stream does not move bands.
+- There is still no debuff op. The debuff sigil stays hidden unless a status already says debuff.

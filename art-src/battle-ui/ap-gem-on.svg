@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff8dc"/>
+    <stop offset="0.42" stop-color="#f0d48a"/>
+    <stop offset="0.72" stop-color="#c9963a"/>
+    <stop offset="1" stop-color="#6b4714"/>
+  </linearGradient>
+  <linearGradient id="goldV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff8dc"/>
+    <stop offset="0.45" stop-color="#e6c36a"/>
+    <stop offset="1" stop-color="#7a5418"/>
+  </linearGradient>
+  <linearGradient id="purple" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f4ecff"/>
+    <stop offset="0.45" stop-color="#8d6ad0"/>
+    <stop offset="1" stop-color="#3a1868"/>
+  </linearGradient></defs>
+  
+      <circle cx="64" cy="64" r="48" fill="#102038" stroke="url(#gold)" stroke-width="8"/>
+      <circle cx="64" cy="64" r="34" fill="#147a96"/>
+      <path d="M64 32 L94 64 L64 96 L34 64 Z" fill="#bff7ff" opacity="0.55"/>
+      <path d="M64 40 L80 64 L64 74 L48 64 Z" fill="#ffffff" opacity="0.9"/>
+      <path d="M64 18 L72 36 L56 36 Z" fill="url(#gold)"/>
+      <path d="M64 110 L72 92 L56 92 Z" fill="url(#gold)"/>
+      <path d="M18 64 L36 72 L36 56 Z" fill="url(#gold)"/>
+      <path d="M110 64 L92 72 L92 56 Z" fill="url(#gold)"/>
+      <circle cx="52" cy="50" r="4" fill="#ffffff" opacity="0.85"/>
+    
+</svg>
