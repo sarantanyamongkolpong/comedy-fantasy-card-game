@@ -1047,16 +1047,36 @@
     },
     {
       "asset_id": "BG_BATTLE",
-      "path": "web/assets/battle/BG_BATTLE.svg",
+      "path": "web/assets/generated/backgrounds/BG_BATTLE.webp",
       "type": "background",
       "owner": "web-ui",
       "status": "CONCEPT",
       "slot": "bg-battle",
       "layer": "background",
       "anchor": "stage",
-      "placeholder": true,
+      "placeholder": false,
       "rarity": null,
-      "subject_id": "battle"
+      "subject_id": "battle",
+      "review_status": "GENERATED_REVIEW",
+      "source_commit": "1e72dc06c4fcb3320326a1a643b0ee8211d594b4",
+      "source_file": "art_source/mira_v01/bg_battle_arena_v01.png",
+      "fallback_path": "web/assets/battle/BG_BATTLE.svg"
+    },
+    {
+      "asset_id": "BG_PREP",
+      "path": "web/assets/generated/backgrounds/BG_PREP.webp",
+      "type": "background",
+      "owner": "web-ui",
+      "status": "CONCEPT",
+      "slot": "bg-prep",
+      "layer": "background",
+      "anchor": "stage",
+      "placeholder": false,
+      "review_status": "GENERATED_REVIEW",
+      "rarity": null,
+      "subject_id": "prep",
+      "source_commit": "1e72dc06c4fcb3320326a1a643b0ee8211d594b4",
+      "source_file": "art_source/mira_v01/bg_prep_battle_v01.png"
     },
     {
       "asset_id": "TILE_PLAYER",
@@ -1388,5 +1408,79 @@
     "review_status": "GENERATED_REVIEW",
     "productionReady": false,
     "note": "Optimized derivatives for review. The official asset status enum has no GENERATED_REVIEW value yet, so status stays CONCEPT (not production) and review_status is GENERATED_REVIEW. Reference-card PNGs are not registered."
+  },
+  "battleTiles": {
+    "status": "MEASURED",
+    "note": "Feet sit on baked tile centres in bg_battle_arena_v01. Cyan is the left 2x5, magenta the right 2x5. Four of the ten tiles per side are used so the bodies do not share a column. Visual only, not a movement grid.",
+    "sourceFile": "art_source/mira_v01/bg_battle_arena_v01.png",
+    "sourceCommit": "1e72dc06c4fcb3320326a1a643b0ee8211d594b4",
+    "image": {
+      "width": 1280,
+      "height": 720
+    },
+    "stage": {
+      "width": 1672,
+      "height": 941
+    },
+    "playerFeet": [
+      {
+        "id": "p0",
+        "row": "back",
+        "column": 0,
+        "imageX": 172,
+        "imageY": 336
+      },
+      {
+        "id": "p1",
+        "row": "back",
+        "column": 4,
+        "imageX": 550,
+        "imageY": 336
+      },
+      {
+        "id": "p2",
+        "row": "front",
+        "column": 2,
+        "imageX": 312,
+        "imageY": 456
+      },
+      {
+        "id": "p3",
+        "row": "front",
+        "column": 3,
+        "imageX": 425,
+        "imageY": 456
+      }
+    ],
+    "enemyFeet": [
+      {
+        "id": "e0",
+        "row": "back",
+        "column": 4,
+        "imageX": 1108,
+        "imageY": 336
+      },
+      {
+        "id": "e1",
+        "row": "back",
+        "column": 0,
+        "imageX": 730,
+        "imageY": 336
+      },
+      {
+        "id": "e2",
+        "row": "front",
+        "column": 2,
+        "imageX": 968,
+        "imageY": 456
+      },
+      {
+        "id": "e3",
+        "row": "front",
+        "column": 1,
+        "imageX": 855,
+        "imageY": 456
+      }
+    ]
   }
 }

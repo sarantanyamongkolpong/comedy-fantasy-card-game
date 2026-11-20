@@ -279,6 +279,7 @@ def main() -> None:
         ],
         'note': 'APPROVED reference only. Not copied into web/ and not used as card faces.',
     }
+    build_mira_backgrounds(manifest)
     manifest['productionReady'] = False
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + '\n')
     total = sum(item['bytes'] for item in report)
@@ -336,5 +337,87 @@ def upsert_skill(manifest: dict, dest: str) -> None:
         manifest['assets'].append(entry)
 
 
+MIRA_COMMIT = '1e72dc06c4fcb3320326a1a643b0ee8211d594b4'
+MIRA = REPO / 'art_source' / 'mira_v01'
+
+# Tile centres measured on bg_battle_arena_v01.png (1280×720).
+# Cyan back row y=336, front row y=456. Magenta is the mirror across x=640.
+MEASURED_PLAYER_FEET = [
+    {'id': 'p0', 'row': 'back', 'column': 0, 'imageX': 172, 'imageY': 336},
+    {'id': 'p1', 'row': 'back', 'column': 4, 'imageX': 550, 'imageY': 336},
+    {'id': 'p2', 'row': 'front', 'column': 2, 'imageX': 312, 'imageY': 456},
+    {'id': 'p3', 'row': 'front', 'column': 3, 'imageX': 425, 'imageY': 456},
+]
+MEASURED_ENEMY_FEET = [
+    {'id': 'e0', 'row': 'back', 'column': 4, 'imageX': 1108, 'imageY': 336},
+    {'id': 'e1', 'row': 'back', 'column': 0, 'imageX': 730, 'imageY': 336},
+    {'id': 'e2', 'row': 'front', 'column': 2, 'imageX': 968, 'imageY': 456},
+    {'id': 'e3', 'row': 'front', 'column': 1, 'imageX': 855, 'imageY': 456},
+]
+
+
+def build_mira_backgrounds(manifest: dict) -> None:
+    """WebP the two Mira arena plates. Does not touch map hotspots."""
+    if not MIRA.is_dir():
+        print('skip mira backgrounds (art_source/mira_v01 missing)')
+        return
+    jobs = [
+        ('BG_BATTLE', 'bg_battle_arena_v01.png', 'bg-battle', 'battle', 'web/assets/generated/backgrounds/BG_BATTLE.webp', 'web/assets/battle/BG_BATTLE.svg'),
+        ('BG_PREP', 'bg_prep_battle_v01.png', 'bg-prep', 'prep', 'web/assets/generated/backgrounds/BG_PREP.webp', None),
+    ]
+    for asset_id, filename, slot, subject, dest, fallback in jobs:
+        src = MIRA / filename
+        if not src.exists():
+            raise SystemExit(f'missing {src}')
+        im = Image.open(src).convert('RGB')
+        out = REPO / dest
+        out.parent.mkdir(parents=True, exist_ok=True)
+        im.save(out, 'WEBP', quality=76, method=6)
+        existing = next((asset for asset in manifest['assets'] if asset['asset_id'] == asset_id), None)
+        entry = existing or {
+            'asset_id': asset_id,
+            'type': 'background',
+            'owner': 'web-ui',
+            'slot': slot,
+            'layer': 'background',
+            'anchor': 'stage',
+            'rarity': None,
+            'subject_id': subject,
+        }
+        entry.update({
+            'path': dest,
+            'placeholder': False,
+            'review_status': REVIEW,
+            'status': 'CONCEPT',
+            'source_commit': MIRA_COMMIT,
+            'source_file': f'art_source/mira_v01/{filename}',
+        })
+        if fallback:
+            entry['fallback_path'] = fallback
+        if existing is None:
+            manifest['assets'].append(entry)
+        print(f'{asset_id} {out.stat().st_size} bytes')
+    manifest['battleTiles'] = {
+        'status': 'MEASURED',
+        'note': 'Feet sit on baked tile centres in bg_battle_arena_v01. Cyan is the left 2x5, magenta the right 2x5. Four of the ten tiles per side are used so the bodies do not share a column. Visual only, not a movement grid.',
+        'sourceFile': 'art_source/mira_v01/bg_battle_arena_v01.png',
+        'sourceCommit': MIRA_COMMIT,
+        'image': {'width': 1280, 'height': 720},
+        'stage': {'width': 1672, 'height': 941},
+        'playerFeet': MEASURED_PLAYER_FEET,
+        'enemyFeet': MEASURED_ENEMY_FEET,
+    }
+
+
+def main_backgrounds() -> None:
+    manifest = json.loads(MANIFEST_PATH.read_text())
+    build_mira_backgrounds(manifest)
+    manifest['productionReady'] = False
+    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + '\n')
+
+
 if __name__ == '__main__':
-    main()
+    if '--backgrounds' in sys.argv:
+        main_backgrounds()
+    else:
+        main()

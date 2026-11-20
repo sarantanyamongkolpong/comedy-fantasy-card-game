@@ -1,42 +1,67 @@
 /**
  * Battle composition on the 1672×941 stage.
- * Owner ref is mirrored: our four avatars stand on the left, enemies on the right.
- * Tiles are visual anchors only. They are not a movement grid.
+ * Feet come from the measured centres of the baked floor tiles
+ * (manifest.battleTiles). Four of the ten tiles per side, so the
+ * bodies do not share a column. Tiles are visual anchors only.
  */
 
+const IMAGE = { width: 1280, height: 720 };
+const STAGE = { width: 1672, height: 941 };
+
+const PLAYER_FEET = [
+  { id: 'p0', row: 'back', column: 0, imageX: 172, imageY: 336 },
+  { id: 'p1', row: 'back', column: 4, imageX: 550, imageY: 336 },
+  { id: 'p2', row: 'front', column: 2, imageX: 312, imageY: 456 },
+  { id: 'p3', row: 'front', column: 3, imageX: 425, imageY: 456 },
+];
+
+const ENEMY_FEET = [
+  { id: 'e0', row: 'back', column: 4, imageX: 1108, imageY: 336 },
+  { id: 'e1', row: 'back', column: 0, imageX: 730, imageY: 336 },
+  { id: 'e2', row: 'front', column: 2, imageX: 968, imageY: 456 },
+  { id: 'e3', row: 'front', column: 1, imageX: 855, imageY: 456 },
+];
+
+function stagePoint(imageX, imageY) {
+  return {
+    x: Math.round(imageX * STAGE.width / IMAGE.width),
+    y: Math.round(imageY * STAGE.height / IMAGE.height),
+  };
+}
+
 export function battleBands(design = { width: 1672, height: 941 }) {
-  const top = { x: 0, y: 0, w: design.width, h: 128 };
-  const arena = { x: 0, y: 128, w: design.width, h: 414 };
-  const piles = { x: 16, y: 552, w: 230, h: 372 };
-  const hand = { x: 260, y: 560, w: 1060, h: 360 };
-  const controls = { x: 1340, y: 560, w: 312, h: 360 };
-  const lead = { x: 980, y: 132, w: 660, h: 28 };
+  const top = { x: 0, y: 0, w: design.width, h: 88 };
+  const arena = { x: 0, y: 88, w: design.width, h: 530 };
+  const piles = { x: 12, y: 626, w: 380, h: 128 };
+  const hand = { x: 404, y: 626, w: 820, h: 308 };
+  const controls = { x: 1236, y: 626, w: 420, h: 300 };
+  const lead = { x: 900, y: 96, w: 740, h: 140 };
   return { top, arena, piles, hand, controls, lead };
 }
 
-/** Feet anchors. Box is the sprite, sitting on a tile. */
+/** Feet anchors. The box is the hit target; the sprite draws taller than the box. */
 export function battleSlots() {
-  const sprite = { w: 140, h: 150 };
-  const feet = [
-    { id: 'p0', side: 'player', x: 250, y: 310 },
-    { id: 'p1', side: 'player', x: 480, y: 300 },
-    { id: 'p2', side: 'player', x: 200, y: 500 },
-    { id: 'p3', side: 'player', x: 520, y: 500 },
-    { id: 'e0', side: 'enemy', x: 1422, y: 310 },
-    { id: 'e1', side: 'enemy', x: 1192, y: 322 },
-    { id: 'e2', side: 'enemy', x: 1472, y: 500 },
-    { id: 'e3', side: 'enemy', x: 1152, y: 500 },
-  ];
-  return feet.map((slot) => ({
-    ...slot,
-    box: {
-      x: slot.x - sprite.w / 2,
-      y: slot.y - sprite.h,
-      w: sprite.w,
-      h: sprite.h,
-    },
-    bar: { x: slot.x - 70, y: slot.y + 4, w: 140, h: 28 },
-  }));
+  const footprint = { w: 110, h: 210 };
+  const bar = 22;
+  return [...PLAYER_FEET, ...ENEMY_FEET].map((feet) => {
+    const point = stagePoint(feet.imageX, feet.imageY);
+    return {
+      id: feet.id,
+      side: feet.id.startsWith('p') ? 'player' : 'enemy',
+      row: feet.row,
+      column: feet.column,
+      imageX: feet.imageX,
+      imageY: feet.imageY,
+      x: point.x,
+      y: point.y,
+      box: {
+        x: point.x - footprint.w / 2,
+        y: point.y - (footprint.h - bar),
+        w: footprint.w,
+        h: footprint.h,
+      },
+    };
+  });
 }
 
 export function boxesIntersect(a, b) {

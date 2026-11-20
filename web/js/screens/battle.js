@@ -19,6 +19,7 @@ export function renderBattle(ctx) {
   const bands = battleBands();
   const root = el('section', 'battle');
   root.dataset.screen = 'battle';
+  paintStage(root, ctx, 'bg-battle', 'battle');
   root.append(topBar(ctx, bands.top));
   root.append(arena(ctx, bands));
   root.append(pileStack(ctx, bands.piles));
@@ -33,22 +34,34 @@ export function renderBattle(ctx) {
   if (match.phase === 'mandatoryDiscard') root.append(mandatoryModal(ctx));
   else if (ui.confirm) root.append(confirmModal(ctx));
   else if (ui.pile) root.append(pileModal(ctx));
+  ctx.battleUi.hpSnap = Object.fromEntries(match.units.map((unit) => [unit.instanceId, unit.hp]));
   return root;
+}
+
+function paintStage(root, ctx, slot, subjectId) {
+  const bg = findAsset(ctx.manifest, { slot, subjectId });
+  if (!bg) return;
+  const img = el('img', 'stage-bg');
+  img.alt = '';
+  bindImage(img, bg);
+  root.append(img);
+}
+
+function paintIfReady(node, asset) {
+  if (!asset || asset.placeholder === true) return;
+  const img = el('img');
+  img.alt = '';
+  bindImage(img, asset);
+  node.prepend(img);
 }
 
 function topBar(ctx, box) {
   const bar = el('header', 'battle-top');
   place(bar, box);
-  const badge = button('BATTLE', () => ctx.goto('map'), 'battle-badge');
-  const plate = findAsset(ctx.manifest, { slot: 'ui-badge', subjectId: 'battle' });
-  if (plate) {
-    const img = el('img');
-    img.alt = '';
-    bindImage(img, plate);
-    badge.prepend(img);
-  }
+  const badge = button('BATTLE', () => ctx.goto('map'), 'battle-badge plate');
+  paintIfReady(badge, findAsset(ctx.manifest, { slot: 'ui-badge', subjectId: 'battle' }));
   bar.append(badge);
-  const turn = el('p', 'turn-chip', `TURN ${String(ctx.match.turnIndex ?? 1).padStart(2, '0')}`);
+  const turn = el('p', 'turn-chip plate', `TURN ${String(ctx.match.turnIndex ?? 1).padStart(2, '0')}`);
   bar.append(turn);
   bar.append(apMeter(ctx));
   return bar;
@@ -56,20 +69,11 @@ function topBar(ctx, box) {
 
 function apMeter(ctx) {
   const ap = ctx.match.ap?.player ?? 0;
-  const meter = el('div', 'ap-meter');
+  const meter = el('div', 'ap-meter plate');
   meter.append(el('b', null, `AP ${ap}/5`));
   const pips = el('span', 'pips');
-  const icon = findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: 'ap-pip' })
-    ?? findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: 'ap' });
   for (let i = 0; i < 5; i += 1) {
-    const pip = el('span', i < ap ? 'pip is-on' : 'pip');
-    if (icon) {
-      const img = el('img');
-      img.alt = '';
-      bindImage(img, icon);
-      pip.append(img);
-    }
-    pips.append(pip);
+    pips.append(el('span', i < ap ? 'pip is-on' : 'pip'));
   }
   meter.append(pips);
   return meter;
@@ -79,25 +83,7 @@ function arena(ctx, bands) {
   const field = el('div', 'arena');
   field.dataset.band = 'arena';
   place(field, bands.arena);
-  const bg = findAsset(ctx.manifest, { slot: 'bg-battle', subjectId: 'battle' });
-  if (bg) {
-    const img = el('img', 'battle-bg');
-    img.alt = '';
-    bindImage(img, bg);
-    field.append(img);
-  }
-  const lead = el('div', 'lead-plate');
-  place(lead, {
-    x: bands.lead.x - bands.arena.x,
-    y: bands.lead.y - bands.arena.y,
-    w: bands.lead.w,
-    h: bands.lead.h,
-  });
-  const front = ctx.match.units.find((unit) => unit.sideId === 'enemy' && !unit.ko)
-    ?? ctx.match.units.find((unit) => unit.sideId === 'enemy');
-  lead.append(el('b', null, front ? front.name : 'Echoes'));
-  lead.append(el('span', null, front ? `${front.hp} / ${front.maxHp}` : ''));
-  field.append(lead);
+  field.append(leadPlate(ctx, bands));
   const slots = battleSlots();
   const used = { player: 0, enemy: 0 };
   for (const unit of ctx.match.units) {
@@ -110,9 +96,49 @@ function arena(ctx, bands) {
   return field;
 }
 
+function leadPlate(ctx, bands) {
+  const lead = el('div', 'lead-plate plate');
+  place(lead, {
+    x: bands.lead.x - bands.arena.x,
+    y: bands.lead.y - bands.arena.y,
+    w: bands.lead.w,
+    h: bands.lead.h,
+  });
+  const front = ctx.match.units.find((unit) => unit.sideId === 'enemy' && !unit.ko)
+    ?? ctx.match.units.find((unit) => unit.sideId === 'enemy');
+  const medal = el('span', 'lead-medal');
+  const art = front ? firstAsset(ctx.manifest, [
+    { slot: 'battle-sprite', subjectId: front.avatarId },
+    { slot: 'illustration', subjectId: front.avatarId },
+  ]) : null;
+  if (art) {
+    const img = el('img');
+    img.alt = '';
+    bindImage(img, art);
+    medal.append(img);
+  }
+  lead.append(medal);
+  const copy = el('span', 'lead-copy');
+  copy.append(el('b', null, front ? front.name : 'Echoes'));
+  copy.append(hpBar(front));
+  copy.append(el('span', null, front ? `${front.hp} / ${front.maxHp}` : ''));
+  lead.append(copy);
+  return lead;
+}
+
+function hpBar(unit) {
+  const bar = el('span', 'hp-bar');
+  const fill = el('span', 'hp-fill');
+  const ratio = unit?.maxHp ? Math.max(0, Math.min(1, unit.hp / unit.maxHp)) : 0;
+  fill.style.width = `${ratio * 100}%`;
+  bar.append(fill);
+  return bar;
+}
+
 function unitToken(ctx, unit, slot, arenaBox) {
   const node = el('button', `unit${unit.ko ? ' is-ko' : ''}${unit.sideId === 'enemy' ? ' faces-left' : ' faces-right'}`);
   node.type = 'button';
+  node.dataset.row = slot.row;
   const local = {
     x: slot.box.x - arenaBox.x,
     y: slot.box.y - arenaBox.y,
@@ -120,13 +146,7 @@ function unitToken(ctx, unit, slot, arenaBox) {
     h: slot.box.h,
   };
   place(node, local);
-  const tile = findAsset(ctx.manifest, { slot: 'battle-tile', subjectId: unit.sideId });
-  if (tile) {
-    const pad = el('img', 'tile');
-    pad.alt = '';
-    bindImage(pad, tile);
-    node.append(pad);
-  }
+  node.append(el('span', 'shadow'));
   const art = firstAsset(ctx.manifest, [
     { slot: 'battle-sprite', subjectId: unit.avatarId },
     { slot: 'illustration', subjectId: unit.avatarId },
@@ -137,14 +157,16 @@ function unitToken(ctx, unit, slot, arenaBox) {
     bindImage(img, art);
     node.append(img);
   }
-  const floater = (unit.statuses ?? []).find((status) => status.label);
-  if (floater) node.append(el('span', 'floater', floater.label));
-  const bar = el('span', 'hp-bar');
-  const fill = el('span', 'hp-fill');
-  const ratio = unit.maxHp ? Math.max(0, Math.min(1, unit.hp / unit.maxHp)) : 0;
-  fill.style.width = `${ratio * 100}%`;
-  bar.append(fill);
-  node.append(bar);
+  const prev = ctx.battleUi.hpSnap?.[unit.instanceId];
+  if (Number.isInteger(prev) && prev !== unit.hp) {
+    const delta = unit.hp - prev;
+    node.append(el('span', delta < 0 ? 'floater is-damage' : 'floater is-heal', delta > 0 ? `+${delta}` : String(delta)));
+  }
+  for (const status of unit.statuses ?? []) {
+    if (status.label) node.append(el('span', 'floater', status.label));
+  }
+  if (unit.ko) node.append(el('span', 'ko-tag', 'KO'));
+  node.append(hpBar(unit));
   node.append(el('span', 'unit-hp', `${unit.hp}/${unit.maxHp}`));
   const selected = ctx.battleUi.selection.actorAvatarId === unit.instanceId || ctx.battleUi.selection.targetId === unit.instanceId;
   if (selected) node.classList.add('is-selected');
@@ -205,6 +227,7 @@ function handRow(ctx) {
       onClick: () => onCard(ctx, card, reason),
     });
     face.classList.add('hand-card');
+    if (ctx.match.phase === 'playerTurn' && !reason) face.classList.add('is-playable');
     face.style.zIndex = String(index + 1);
     wrap.append(face);
   });
@@ -267,16 +290,14 @@ function pileStack(ctx, box) {
   place(stack, box);
   const zones = ctx.api.getZones(ctx.match, 'player');
   for (const [zone, label] of [['draw', 'DECK'], ['discard', 'DISCARD'], ['void', 'VOID']]) {
-    const row = button(`${label} ${zones[zone].length}`, () => {
+    const row = button('', () => {
       ctx.patchBattle({ pile: { sideId: 'player', zone }, confirm: null });
-    }, 'pile-btn');
+    }, 'pile-btn plate');
+    row.append(el('span', zone === 'void' ? 'pile-glyph is-void' : 'pile-glyph'));
+    row.append(el('span', 'pile-name', label));
+    row.append(el('span', 'pile-count', String(zones[zone].length)));
     const icon = findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: zone });
-    if (icon) {
-      const img = el('img');
-      img.alt = '';
-      bindImage(img, icon);
-      row.prepend(img);
-    }
+    paintIfReady(row, icon);
     stack.append(row);
   }
   return stack;
@@ -287,7 +308,7 @@ function controls(ctx, box) {
   const panel = el('div', 'battle-controls');
   panel.dataset.band = 'controls';
   place(panel, box);
-  const end = button('END TURN', () => {
+  const end = button('END\nTURN', () => {
     if (ctx.autoRunning) {
       ctx.setNotice('Auto is in the middle of an action. Switch AUTO off to take the next one.');
       ctx.redraw();
@@ -302,21 +323,15 @@ function controls(ctx, box) {
     ctx.api.endTurn(match);
     ctx.patchBattle({ selection: cancelled.selection, confirm: null, voluntary: false });
     settle(ctx);
-  }, 'end-turn');
-  const art = findAsset(ctx.manifest, { slot: 'ui-button', subjectId: 'end-turn' });
-  if (art) {
-    const img = el('img');
-    img.alt = '';
-    bindImage(img, art);
-    end.prepend(img);
-  }
+  }, 'end-turn plate');
+  paintIfReady(end, findAsset(ctx.manifest, { slot: 'ui-button', subjectId: 'end-turn' }));
   panel.append(end);
   const available = ctx.api.autoAvailable === true;
   const rules = typeof ctx.api.dataRules === 'function' ? ctx.api.dataRules() : null;
   const choices = speedChoices(rules);
   const speed = choices.includes(ctx.autoSpeed) ? ctx.autoSpeed : (rules?.autoPolicy?.speed?.value ?? 'normal');
   const autoRow = el('div', 'auto-row');
-  const auto = button('AUTO', () => ctx.setAuto(!ctx.autoEnabled), 'auto-toggle');
+  const auto = button('AUTO', () => ctx.setAuto(!ctx.autoEnabled), 'auto-toggle plate');
   auto.disabled = !available;
   auto.title = available ? 'Play your turns with the engine auto.' : 'Auto loading';
   if (ctx.autoEnabled) auto.classList.add('is-on');
@@ -326,7 +341,7 @@ function controls(ctx, box) {
     const chip = button(speed, () => {
       const index = choices.indexOf(speed);
       ctx.setAutoSpeed(choices[(index + 1) % choices.length]);
-    }, 'speed-btn');
+    }, 'speed-btn plate');
     chip.title = 'PROPOSED playback speed.';
     autoRow.append(chip);
   }

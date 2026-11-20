@@ -2,6 +2,7 @@ import { bindImage, findAsset } from '../assets.js';
 import { button, el } from '../dom.js';
 import { prepBands, prepPlayerSlots } from '../prep-layout.js';
 import { battleReady, deckDefs, teamDefs } from '../profile.js';
+import { playerFacingName } from '../render-card.js';
 
 const FACTION_CLASS = {
   FAC_AEG: 'faction-FAC_AEG',
@@ -22,6 +23,13 @@ export function renderPrep(ctx) {
   const root = el('section', 'prep');
   root.dataset.screen = 'prep';
   const site = ctx.prepSite ?? { label: 'Mysterious Tower', mode: 'tower' };
+  const bg = findAsset(ctx.manifest, { slot: 'bg-prep', subjectId: 'prep' });
+  if (bg) {
+    const img = el('img', 'stage-bg');
+    img.alt = '';
+    bindImage(img, bg);
+    root.append(img);
+  }
   root.append(chrome(ctx, bands, site));
   root.append(teamPanel(ctx, bands.team));
   root.append(preview(ctx, bands.arena));
@@ -33,25 +41,13 @@ export function renderPrep(ctx) {
 }
 
 function chrome(ctx, bands, site) {
-  const title = el('div', 'prep-title');
+  const title = el('div', 'prep-title plate');
   place(title, bands.title);
-  const badge = findAsset(ctx.manifest, { slot: 'ui-badge', subjectId: 'prep' });
-  if (badge) {
-    const img = el('img');
-    img.alt = '';
-    bindImage(img, badge);
-    title.append(img);
-  }
+  paintIfReady(title, findAsset(ctx.manifest, { slot: 'ui-badge', subjectId: 'prep' }));
   title.append(el('h1', null, 'PREP BATTLE'));
-  const banner = el('div', 'prep-location');
+  const banner = el('div', 'prep-location plate');
   place(banner, bands.location);
-  const plate = findAsset(ctx.manifest, { slot: 'ui-banner', subjectId: 'site' });
-  if (plate) {
-    const img = el('img');
-    img.alt = '';
-    bindImage(img, plate);
-    banner.append(img);
-  }
+  paintIfReady(banner, findAsset(ctx.manifest, { slot: 'ui-banner', subjectId: 'site' }));
   banner.append(el('h2', null, site.label.toUpperCase()));
   const wrap = el('div');
   wrap.append(title, banner);
@@ -105,13 +101,6 @@ function preview(ctx, box) {
   const field = el('div', 'prep-arena');
   field.dataset.band = 'arena';
   place(field, box);
-  const bg = findAsset(ctx.manifest, { slot: 'bg-battle', subjectId: 'battle' });
-  if (bg) {
-    const img = el('img', 'battle-bg');
-    img.alt = '';
-    bindImage(img, bg);
-    field.append(img);
-  }
   const rows = teamDefs(ctx.profile, ctx.api.catalog);
   const slots = prepPlayerSlots();
   rows.forEach((row, index) => {
@@ -125,13 +114,7 @@ function preview(ctx, box) {
       w: slot.box.w,
       h: slot.box.h,
     });
-    const tile = findAsset(ctx.manifest, { slot: 'battle-tile', subjectId: 'player' });
-    if (tile) {
-      const pad = el('img', 'tile');
-      pad.alt = '';
-      bindImage(pad, tile);
-      token.append(pad);
-    }
+    token.append(el('span', 'shadow'));
     const art = findAsset(ctx.manifest, { slot: 'battle-sprite', subjectId: def.avatarId });
     if (art) {
       const img = el('img', 'sprite faces-right');
@@ -156,8 +139,9 @@ function deckPanel(ctx, box) {
   for (const row of cards) {
     const def = row.def;
     if (!def) continue;
-    const icon = el('div', 'deck-icon');
-    icon.title = def.name;
+    const icon = el('div', 'deck-icon plate');
+    icon.title = playerFacingName(def.name);
+    icon.dataset.cardName = def.name;
     const art = findAsset(ctx.manifest, { slot: 'type-icon', subjectId: def.type })
       ?? findAsset(ctx.manifest, { slot: 'stat-icon', subjectId: String(def.type ?? '').toLowerCase() });
     if (art) {
@@ -166,7 +150,6 @@ function deckPanel(ctx, box) {
       bindImage(img, art);
       icon.append(img);
     }
-    icon.append(el('span', null, def.name));
     grid.append(icon);
   }
   panel.append(grid);
@@ -209,42 +192,34 @@ function skillBlock(label, skill) {
 
 function footer(ctx, bands, site) {
   const ready = battleReady(ctx.profile, ctx.api.catalog);
-  const back = button('BACK', () => ctx.goto('map'), 'prep-back');
+  const back = button('BACK', () => ctx.goto('map'), 'prep-back plate');
   place(back, bands.back);
-  const backArt = findAsset(ctx.manifest, { slot: 'ui-button', subjectId: 'back' });
-  if (backArt) {
-    const img = el('img');
-    img.alt = '';
-    bindImage(img, backArt);
-    back.prepend(img);
-  }
+  paintIfReady(back, findAsset(ctx.manifest, { slot: 'ui-button', subjectId: 'back' }));
   const start = button('START BATTLE', () => {
     if (!ready.ok) return;
     ctx.startBattle(site.mode || 'tower');
-  }, 'prep-start');
+  }, 'prep-start plate');
   place(start, bands.start);
   start.disabled = !ready.ok;
   const problem = ready.messages.find((message) => message.level === 'error');
   if (problem) start.title = problem.text;
-  const startArt = findAsset(ctx.manifest, { slot: 'ui-button', subjectId: 'start-battle' });
-  if (startArt) {
-    const img = el('img');
-    img.alt = '';
-    bindImage(img, startArt);
-    start.prepend(img);
-  }
+  paintIfReady(start, findAsset(ctx.manifest, { slot: 'ui-button', subjectId: 'start-battle' }));
   const wrap = el('div');
   wrap.append(back, start);
   return wrap;
 }
 
-function paintPanel(panel, ctx, subjectId) {
-  const art = findAsset(ctx.manifest, { slot: 'ui-panel', subjectId });
-  if (!art) return;
-  const img = el('img', 'panel-bg');
+function paintIfReady(node, asset) {
+  if (!asset || asset.placeholder === true) return;
+  const img = el('img');
   img.alt = '';
-  bindImage(img, art);
-  panel.append(img);
+  bindImage(img, asset);
+  node.prepend(img);
+}
+
+function paintPanel(panel, ctx, subjectId) {
+  panel.classList.add('plate');
+  paintIfReady(panel, findAsset(ctx.manifest, { slot: 'ui-panel', subjectId }));
 }
 
 function selectedIndex(ctx, rows) {

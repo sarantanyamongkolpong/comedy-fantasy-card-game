@@ -32,6 +32,8 @@ python3 web/tools/build-assets.py
 rm -rf art_source
 ```
 
+Mira’s arena plates (`bg_battle_arena_v01`, `bg_prep_battle_v01`, commit `1e72dc0`) are the default full-bleed backgrounds, slots `bg-battle` and `bg-prep`, review status `GENERATED_REVIEW`. Rebuild just those with `python3 web/tools/build-assets.py --backgrounds` while `art_source/mira_v01` is checked out. Feet anchors live in `battleTiles` on the manifest. The display face is Cinzel (OFL) under `web/assets/fonts`. Card faces do not print the word PLACEHOLDER; that status stays on `data-status`. Action art windows show the ATK, DEF, or Skill icon until a real illustration is bound.
+
 ## What you can click
 
 Home (Cabin), stash with lock / favorite / in-deck, team of 4 and a 30-card deck, TEST gacha (pull 1 or 10, pity counters, no G price), world map, Prep Battle, tower or arena practice battle, rewards once, save/load in `localStorage` (`cfcg.v05.web.save`).
@@ -53,7 +55,7 @@ Sports Complex is locked. Shopping Mall has no prices. Companion is a placeholde
 | Justin battle stills, map, six buildings, rarity frames, interior, ATK/DEF/skill icons | Dream drop `art/dream-v01-drop` @ `0c063ca`, downscaled to WebP. `review_status: GENERATED_REVIEW`. |
 | `AVT_*_001` portraits, houses, faction badges, SPD icon, status icons, UI chrome icons | Placeholder SVG, `placeholder: true`. |
 | Reference card PNGs | Not shipped and not used as card faces. |
-| Battle floor, prep panels, tiles, pips, buttons | Placeholder SVG slots (`bg-battle` is PLACEHOLDER). Swap by asset id. Grid tiles are visual only. No movement or range rule. |
+| Battle floor and prep floor | Mira `bg_battle_arena_v01` / `bg_prep_battle_v01` @ `1e72dc0`, WebP, slots `bg-battle` and `bg-prep`, `GENERATED_REVIEW`. Feet are `battleTiles`. Tiles are visual only. |
 | Battle composition | Owner ref `BATTLE_LAYOUT_REF_OWNER_20261120` mirrored: four Justins on the left (cyan tiles, facing right), echoes on the right (magenta tiles, facing left). The file itself shows the opposite sides. |
 | Prep Battle | Owner ref `PREP_BATTLE_REF_OWNER_20261120`. Team list on the left, cyan preview in the center, deck icons and the selected avatar’s data text on the right. |
 | Battle, gacha, save | Real modules. Enemy turns call `runEnemyTurn` until `playEnemyTurn` is exported. Player AUTO calls `runAutoTurn` when that export exists. Gacha `pull` gets an integer seed. Banners are the labelled TEST configs. |
@@ -68,8 +70,6 @@ Screenshots of Home, Stash, Team, Gacha, Map, Battle, and Rewards at 844×390, 6
 ## Known issues
 
 - AUTO uses the engine policy `balanced` (PROPOSED). That policy plays heal, a shield or taunt only when a hit would KO, or damage. Other cards are passed. On the sample deck the fight can stall with both sides still up, so AUTO does not promise a Rewards screen. The web passes `maxActions: 1` so the log can play one action at a time.
-- The battle background slot `bg_battle` (`BG_BATTLE`) is a PLACEHOLDER castle sky. Dream’s map art is not cropped into it.
-
 - A refresh during a fight reloads the match from the versioned save (`web` field on the profile, engine state included). Leaving the page writes that save.
 - Enemy play is `runEnemyTurn`, the engine’s demo AI, not a design opponent.
 - Pity reset is a labelled GA-12 assumption: per banner, reset the tier that was hit.
