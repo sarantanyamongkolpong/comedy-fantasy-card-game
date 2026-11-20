@@ -890,6 +890,1874 @@
      }
     },
     {
+     "id": "SPC_FOOTBALL_ATH_029",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Icarus Cast-Irons",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 44,
+      "Def": 91,
+      "Speed": 52,
+      "Sta": 76,
+      "Acc": 66
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_029_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_030",
+     "sport": "football",
+     "role": "LB",
+     "roles": [
+      "LB",
+      "LWB"
+     ],
+     "roleLabel": "LB/LWB",
+     "parodyName": "Roberto Carbo-Load",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 72,
+      "Def": 82,
+      "Speed": 86,
+      "Sta": 82,
+      "Acc": 74
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_030_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_031",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Fernando Hieroglyph",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 68,
+      "Def": 87,
+      "Speed": 62,
+      "Sta": 76,
+      "Acc": 72
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_031_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_032",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Sergeant Ramen",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 76,
+      "Def": 88,
+      "Speed": 72,
+      "Sta": 80,
+      "Acc": 74
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_032_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_033",
+     "sport": "football",
+     "role": "RB",
+     "roles": [
+      "RB",
+      "RWB"
+     ],
+     "roleLabel": "RB/RWB",
+     "parodyName": "Danny Carve-All",
+     "rarity": "R",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 62,
+      "Def": 80,
+      "Speed": 82,
+      "Sta": 82,
+      "Acc": 72
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_033_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_034",
+     "sport": "football",
+     "role": "AM",
+     "roles": [
+      "AM"
+     ],
+     "roleLabel": "AM",
+     "parodyName": "Zinny Zestlane",
+     "rarity": "EX",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 84,
+      "Def": 58,
+      "Speed": 76,
+      "Sta": 76,
+      "Acc": 90
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_034_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_035",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Michael Microwave",
+     "rarity": "R",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 70,
+      "Def": 64,
+      "Speed": 72,
+      "Sta": 78,
+      "Acc": 84
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_035_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_036",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Luka Mo-Drag-on",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 70,
+      "Def": 72,
+      "Speed": 74,
+      "Sta": 84,
+      "Acc": 88
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_036_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_037",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Al Di Ste-Fanboy",
+     "rarity": "EX",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 90,
+      "Def": 58,
+      "Speed": 84,
+      "Sta": 82,
+      "Acc": 86
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_037_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_038",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Frankie Push-Cart",
+     "rarity": "EX",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 93,
+      "Def": 38,
+      "Speed": 80,
+      "Sta": 74,
+      "Acc": 84
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_038_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_039",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Raúl Ravioli",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 84,
+      "Def": 44,
+      "Speed": 74,
+      "Sta": 76,
+      "Acc": 82
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_039_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_040",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Miguel Angel-Cake",
+     "rarity": "R",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 42,
+      "Def": 86,
+      "Speed": 50,
+      "Sta": 72,
+      "Acc": 64
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_040_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_041",
+     "sport": "football",
+     "role": "LW",
+     "roles": [
+      "LW"
+     ],
+     "roleLabel": "LW",
+     "parodyName": "Paco Gent-o-Matic",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 80,
+      "Def": 48,
+      "Speed": 88,
+      "Sta": 78,
+      "Acc": 76
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_041_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_042",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Emilio Buttery-Goon",
+     "rarity": "Epic",
+     "team": "Royal Meringue FC",
+     "teamId": "SPC_FOOTBALL_TEA_001",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 82,
+      "Def": 42,
+      "Speed": 74,
+      "Sta": 74,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_042_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_043",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Vic Vald-Vanilla",
+     "rarity": "R",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 42,
+      "Def": 87,
+      "Speed": 54,
+      "Sta": 74,
+      "Acc": 68
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_043_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_044",
+     "sport": "football",
+     "role": "RB",
+     "roles": [
+      "RB",
+      "RWB"
+     ],
+     "roleLabel": "RB/RWB",
+     "parodyName": "Dani Alveo-Lava",
+     "rarity": "Epic",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 68,
+      "Def": 78,
+      "Speed": 86,
+      "Sta": 82,
+      "Acc": 78
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_044_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_045",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Carl Puyo-Lock",
+     "rarity": "Epic",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 70,
+      "Def": 89,
+      "Speed": 70,
+      "Sta": 80,
+      "Acc": 72
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_045_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_046",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Gerry Peek-A-Boo",
+     "rarity": "Epic",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 68,
+      "Def": 86,
+      "Speed": 64,
+      "Sta": 76,
+      "Acc": 78
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_046_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_047",
+     "sport": "football",
+     "role": "LB",
+     "roles": [
+      "LB",
+      "LWB"
+     ],
+     "roleLabel": "LB/LWB",
+     "parodyName": "Jordi Albacore",
+     "rarity": "R",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 60,
+      "Def": 76,
+      "Speed": 88,
+      "Sta": 82,
+      "Acc": 76
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_047_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_048",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Xavi X-Presso",
+     "rarity": "EX",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 66,
+      "Def": 68,
+      "Speed": 72,
+      "Sta": 82,
+      "Acc": 92
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_048_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_049",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Andy Iniesta-latte",
+     "rarity": "EX",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 72,
+      "Def": 64,
+      "Speed": 74,
+      "Sta": 80,
+      "Acc": 91
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_049_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_050",
+     "sport": "football",
+     "role": "DM",
+     "roles": [
+      "DM"
+     ],
+     "roleLabel": "DM",
+     "parodyName": "Sergio Bus-Stop",
+     "rarity": "Epic",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 60,
+      "Def": 84,
+      "Speed": 64,
+      "Sta": 80,
+      "Acc": 86
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_050_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_051",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Johan Cruyff-Cake",
+     "rarity": "EX",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 84,
+      "Def": 52,
+      "Speed": 85,
+      "Sta": 78,
+      "Acc": 90
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_051_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_052",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Romário Ramen-Rio",
+     "rarity": "Epic",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 88,
+      "Def": 38,
+      "Speed": 82,
+      "Sta": 72,
+      "Acc": 82
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_052_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_053",
+     "sport": "football",
+     "role": "LW",
+     "roles": [
+      "LW"
+     ],
+     "roleLabel": "LW",
+     "parodyName": "Ronnie Dough-aldinho",
+     "rarity": "EX",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 84,
+      "Def": 46,
+      "Speed": 84,
+      "Sta": 74,
+      "Acc": 88
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_053_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_054",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Andoni Zubi-Zest",
+     "rarity": "R",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 40,
+      "Def": 85,
+      "Speed": 50,
+      "Sta": 72,
+      "Acc": 64
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_054_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_055",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Hristo Stoich-Coffee",
+     "rarity": "Epic",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 86,
+      "Def": 42,
+      "Speed": 78,
+      "Sta": 74,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_055_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_056",
+     "sport": "football",
+     "role": "AM",
+     "roles": [
+      "AM"
+     ],
+     "roleLabel": "AM",
+     "parodyName": "Michael Laud-Rup",
+     "rarity": "Epic",
+     "team": "Catalonia Coffee Club",
+     "teamId": "SPC_FOOTBALL_TEA_002",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 78,
+      "Def": 50,
+      "Speed": 78,
+      "Sta": 74,
+      "Acc": 88
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_056_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_057",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Bert Traut-Dough",
+     "rarity": "R",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 40,
+      "Def": 86,
+      "Speed": 50,
+      "Sta": 74,
+      "Acc": 62
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_057_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_058",
+     "sport": "football",
+     "role": "RB",
+     "roles": [
+      "RB",
+      "RWB"
+     ],
+     "roleLabel": "RB/RWB",
+     "parodyName": "Pablo Zabba-Lettuce",
+     "rarity": "R",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 62,
+      "Def": 80,
+      "Speed": 76,
+      "Sta": 82,
+      "Acc": 72
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_058_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_059",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Vinnie Company-Store",
+     "rarity": "Epic",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 74,
+      "Def": 89,
+      "Speed": 68,
+      "Sta": 78,
+      "Acc": 72
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_059_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_060",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Joleon Lost-Cot",
+     "rarity": "R",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 68,
+      "Def": 82,
+      "Speed": 64,
+      "Sta": 74,
+      "Acc": 68
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_060_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_061",
+     "sport": "football",
+     "role": "LB",
+     "roles": [
+      "LB",
+      "LWB"
+     ],
+     "roleLabel": "LB/LWB",
+     "parodyName": "Aleks Kola-Rover",
+     "rarity": "R",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 70,
+      "Def": 74,
+      "Speed": 76,
+      "Sta": 76,
+      "Acc": 78
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_061_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_062",
+     "sport": "football",
+     "role": "AM",
+     "roles": [
+      "AM"
+     ],
+     "roleLabel": "AM",
+     "parodyName": "Dave Silva-Lining",
+     "rarity": "Epic",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 76,
+      "Def": 58,
+      "Speed": 72,
+      "Sta": 78,
+      "Acc": 90
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_062_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_063",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Yaya Tour-Éclair",
+     "rarity": "Epic",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 82,
+      "Def": 72,
+      "Speed": 74,
+      "Sta": 80,
+      "Acc": 82
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_063_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_064",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Colin Bell-Pepper",
+     "rarity": "Epic",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 74,
+      "Def": 68,
+      "Speed": 74,
+      "Sta": 84,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_064_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_065",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Sergey Agüe-Roast",
+     "rarity": "EX",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 90,
+      "Def": 38,
+      "Speed": 82,
+      "Sta": 74,
+      "Acc": 84
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_065_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_066",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Carl Tevez-Tea",
+     "rarity": "Epic",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 82,
+      "Def": 58,
+      "Speed": 78,
+      "Sta": 82,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_066_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_067",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Mario Balo-Telly",
+     "rarity": "R",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 84,
+      "Def": 40,
+      "Speed": 76,
+      "Sta": 68,
+      "Acc": 76
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_067_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_068",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Joe Hart-Burn",
+     "rarity": "R",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 44,
+      "Def": 82,
+      "Speed": 54,
+      "Sta": 74,
+      "Acc": 64
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_068_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_069",
+     "sport": "football",
+     "role": "DM",
+     "roles": [
+      "DM"
+     ],
+     "roleLabel": "DM",
+     "parodyName": "Fernan-Dingo",
+     "rarity": "Epic",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 64,
+      "Def": 84,
+      "Speed": 70,
+      "Sta": 82,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_069_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_070",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "David Platter",
+     "rarity": "R",
+     "team": "Metro Blueprints Athletic",
+     "teamId": "SPC_FOOTBALL_TEA_003",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 74,
+      "Def": 60,
+      "Speed": 70,
+      "Sta": 76,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_070_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_071",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Ray Clemence-Pie",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 42,
+      "Def": 89,
+      "Speed": 52,
+      "Sta": 76,
+      "Acc": 64
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_071_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_072",
+     "sport": "football",
+     "role": "RB",
+     "roles": [
+      "RB",
+      "RWB"
+     ],
+     "roleLabel": "RB/RWB",
+     "parodyName": "Phil Neal-Deal",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 62,
+      "Def": 82,
+      "Speed": 76,
+      "Sta": 82,
+      "Acc": 74
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_072_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_073",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Alan Hans-Sandwich",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 64,
+      "Def": 88,
+      "Speed": 68,
+      "Sta": 76,
+      "Acc": 78
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_073_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_074",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Jamie Carry-Ager",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 68,
+      "Def": 87,
+      "Speed": 64,
+      "Sta": 80,
+      "Acc": 72
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_074_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_075",
+     "sport": "football",
+     "role": "LB",
+     "roles": [
+      "LB",
+      "LWB"
+     ],
+     "roleLabel": "LB/LWB",
+     "parodyName": "Steve Nickle-Loaf",
+     "rarity": "R",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 64,
+      "Def": 78,
+      "Speed": 80,
+      "Sta": 80,
+      "Acc": 74
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_075_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_076",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Stevie Gerrard-Grader",
+     "rarity": "EX",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 86,
+      "Def": 70,
+      "Speed": 74,
+      "Sta": 82,
+      "Acc": 84
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_076_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_077",
+     "sport": "football",
+     "role": "DM",
+     "roles": [
+      "DM"
+     ],
+     "roleLabel": "DM",
+     "parodyName": "Graeme Sauce-Ess",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 76,
+      "Def": 82,
+      "Speed": 68,
+      "Sta": 80,
+      "Acc": 78
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_077_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_078",
+     "sport": "football",
+     "role": "CM",
+     "roles": [
+      "CM"
+     ],
+     "roleLabel": "CM",
+     "parodyName": "Jan Molby-Molasses",
+     "rarity": "R",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 70,
+      "Def": 62,
+      "Speed": 64,
+      "Sta": 74,
+      "Acc": 86
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_078_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_079",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Kenny Dal-Glitter",
+     "rarity": "EX",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 86,
+      "Def": 50,
+      "Speed": 74,
+      "Sta": 78,
+      "Acc": 88
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_079_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_080",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Ian Rush-Hour",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 88,
+      "Def": 40,
+      "Speed": 80,
+      "Sta": 76,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_080_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_081",
+     "sport": "football",
+     "role": "LW",
+     "roles": [
+      "LW"
+     ],
+     "roleLabel": "LW",
+     "parodyName": "John Barnes-Stormer",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 80,
+      "Def": 50,
+      "Speed": 82,
+      "Sta": 78,
+      "Acc": 84
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_081_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_082",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Bruce Grobbel-Lager",
+     "rarity": "R",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 42,
+      "Def": 84,
+      "Speed": 54,
+      "Sta": 74,
+      "Acc": 62
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_082_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_083",
+     "sport": "football",
+     "role": "RW",
+     "roles": [
+      "RW"
+     ],
+     "roleLabel": "RW",
+     "parodyName": "Steve McMan-A-Man",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 76,
+      "Def": 50,
+      "Speed": 82,
+      "Sta": 76,
+      "Acc": 82
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_083_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_084",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Robbie Fowler-Flour",
+     "rarity": "Epic",
+     "team": "Dockside Noodles",
+     "teamId": "SPC_FOOTBALL_TEA_004",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 84,
+      "Def": 38,
+      "Speed": 78,
+      "Sta": 72,
+      "Acc": 80
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_084_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_085",
+     "sport": "football",
+     "role": "ST",
+     "roles": [
+      "ST"
+     ],
+     "roleLabel": "ST",
+     "parodyName": "Marco van Basten-Basket",
+     "rarity": "EX",
+     "team": "Banquet Select XI",
+     "teamId": "SPC_FOOTBALL_TEA_005",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 90,
+      "Def": 44,
+      "Speed": 78,
+      "Sta": 70,
+      "Acc": 86
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_085_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_086",
+     "sport": "football",
+     "role": "RW",
+     "roles": [
+      "RW"
+     ],
+     "roleLabel": "RW",
+     "parodyName": "George Best-Beast",
+     "rarity": "Epic",
+     "team": "Banquet Select XI",
+     "teamId": "SPC_FOOTBALL_TEA_005",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 84,
+      "Def": 44,
+      "Speed": 86,
+      "Sta": 72,
+      "Acc": 86
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_086_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_087",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Paolo Maldini-Melon",
+     "rarity": "EX",
+     "team": "Banquet Select XI",
+     "teamId": "SPC_FOOTBALL_TEA_005",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 68,
+      "Def": 92,
+      "Speed": 72,
+      "Sta": 80,
+      "Acc": 78
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_087_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_088",
+     "sport": "football",
+     "role": "GK",
+     "roles": [
+      "GK"
+     ],
+     "roleLabel": "GK",
+     "parodyName": "Lev Yashin-Mash",
+     "rarity": "EX",
+     "team": "Gherkin Rovers",
+     "teamId": "SPC_FOOTBALL_TEA_006",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 42,
+      "Def": 93,
+      "Speed": 52,
+      "Sta": 76,
+      "Acc": 62
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_088_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_089",
+     "sport": "football",
+     "role": "CB",
+     "roles": [
+      "CB"
+     ],
+     "roleLabel": "CB",
+     "parodyName": "Franz Becken-Bauer-Boat",
+     "rarity": "EX",
+     "team": "Gherkin Rovers",
+     "teamId": "SPC_FOOTBALL_TEA_006",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 74,
+      "Def": 90,
+      "Speed": 72,
+      "Sta": 80,
+      "Acc": 84
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_089_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
+     "id": "SPC_FOOTBALL_ATH_090",
+     "sport": "football",
+     "role": "RW",
+     "roles": [
+      "RW"
+     ],
+     "roleLabel": "RW",
+     "parodyName": "Garrincha-Garlic",
+     "rarity": "EX",
+     "team": "Gherkin Rovers",
+     "teamId": "SPC_FOOTBALL_TEA_006",
+     "bannerId": "SPORT_FOOTBALL",
+     "stats": {
+      "Power": 86,
+      "Def": 40,
+      "Speed": 88,
+      "Sta": 70,
+      "Acc": 84
+     },
+     "vehicleId": null,
+     "vehicleName": null,
+     "fictional": false,
+     "balance": "BALANCE_PLACEHOLDER",
+     "status": "PROPOSED",
+     "art": {
+      "slot": "SPC_FOOTBALL_ATH_090_PORTRAIT",
+      "placeholder": true
+     }
+    },
+    {
      "id": "SPC_FOOTBALL_COA_001",
      "sport": "football",
      "role": "COACH",

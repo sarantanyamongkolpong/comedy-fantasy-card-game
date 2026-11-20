@@ -27,7 +27,7 @@ function failCopy(mutate) {
 test('the sport pack passes provenance checks', () => {
   const result = validateSportBundle(bundle);
   assert.equal(result.ok, true, result.errors.slice(0, 8).map((error) => `${error.code} ${error.path}: ${error.message}`).join('\n'));
-  assert.equal(result.cardCount, 104);
+  assert.equal(result.cardCount, 166); // 104 + 62 Football Legends v0.7 (Owner 2026-11-21)
 });
 
 test('a player-facing field that repeats a real name fails', () => {

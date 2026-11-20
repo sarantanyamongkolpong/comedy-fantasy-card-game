@@ -1850,6 +1850,1060 @@
         "accent": "#f4e2c4",
         "mark": "moto"
       }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_029",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_029",
+      "contentSlot": "SPC_FOOTBALL_ATH_029_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_030",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_030",
+      "contentSlot": "SPC_FOOTBALL_ATH_030_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_031",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_031",
+      "contentSlot": "SPC_FOOTBALL_ATH_031_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_032",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_032",
+      "contentSlot": "SPC_FOOTBALL_ATH_032_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_033",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_033",
+      "contentSlot": "SPC_FOOTBALL_ATH_033_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_034",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_034",
+      "contentSlot": "SPC_FOOTBALL_ATH_034_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_035",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_035",
+      "contentSlot": "SPC_FOOTBALL_ATH_035_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_036",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_036",
+      "contentSlot": "SPC_FOOTBALL_ATH_036_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_037",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_037",
+      "contentSlot": "SPC_FOOTBALL_ATH_037_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_038",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_038",
+      "contentSlot": "SPC_FOOTBALL_ATH_038_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_039",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_039",
+      "contentSlot": "SPC_FOOTBALL_ATH_039_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_040",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_040",
+      "contentSlot": "SPC_FOOTBALL_ATH_040_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_041",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_041",
+      "contentSlot": "SPC_FOOTBALL_ATH_041_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_042",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_042",
+      "contentSlot": "SPC_FOOTBALL_ATH_042_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_043",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_043",
+      "contentSlot": "SPC_FOOTBALL_ATH_043_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_044",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_044",
+      "contentSlot": "SPC_FOOTBALL_ATH_044_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_045",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_045",
+      "contentSlot": "SPC_FOOTBALL_ATH_045_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_046",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_046",
+      "contentSlot": "SPC_FOOTBALL_ATH_046_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_047",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_047",
+      "contentSlot": "SPC_FOOTBALL_ATH_047_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_048",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_048",
+      "contentSlot": "SPC_FOOTBALL_ATH_048_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_049",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_049",
+      "contentSlot": "SPC_FOOTBALL_ATH_049_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_050",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_050",
+      "contentSlot": "SPC_FOOTBALL_ATH_050_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_051",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_051",
+      "contentSlot": "SPC_FOOTBALL_ATH_051_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_052",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_052",
+      "contentSlot": "SPC_FOOTBALL_ATH_052_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_053",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_053",
+      "contentSlot": "SPC_FOOTBALL_ATH_053_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_054",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_054",
+      "contentSlot": "SPC_FOOTBALL_ATH_054_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_055",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_055",
+      "contentSlot": "SPC_FOOTBALL_ATH_055_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_056",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_056",
+      "contentSlot": "SPC_FOOTBALL_ATH_056_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_057",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_057",
+      "contentSlot": "SPC_FOOTBALL_ATH_057_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_058",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_058",
+      "contentSlot": "SPC_FOOTBALL_ATH_058_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_059",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_059",
+      "contentSlot": "SPC_FOOTBALL_ATH_059_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_060",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_060",
+      "contentSlot": "SPC_FOOTBALL_ATH_060_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_061",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_061",
+      "contentSlot": "SPC_FOOTBALL_ATH_061_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_062",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_062",
+      "contentSlot": "SPC_FOOTBALL_ATH_062_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_063",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_063",
+      "contentSlot": "SPC_FOOTBALL_ATH_063_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_064",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_064",
+      "contentSlot": "SPC_FOOTBALL_ATH_064_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_065",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_065",
+      "contentSlot": "SPC_FOOTBALL_ATH_065_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_066",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_066",
+      "contentSlot": "SPC_FOOTBALL_ATH_066_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_067",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_067",
+      "contentSlot": "SPC_FOOTBALL_ATH_067_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_068",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_068",
+      "contentSlot": "SPC_FOOTBALL_ATH_068_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_069",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_069",
+      "contentSlot": "SPC_FOOTBALL_ATH_069_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_070",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_070",
+      "contentSlot": "SPC_FOOTBALL_ATH_070_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_071",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_071",
+      "contentSlot": "SPC_FOOTBALL_ATH_071_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_072",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_072",
+      "contentSlot": "SPC_FOOTBALL_ATH_072_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_073",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_073",
+      "contentSlot": "SPC_FOOTBALL_ATH_073_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_074",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_074",
+      "contentSlot": "SPC_FOOTBALL_ATH_074_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_075",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_075",
+      "contentSlot": "SPC_FOOTBALL_ATH_075_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_076",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_076",
+      "contentSlot": "SPC_FOOTBALL_ATH_076_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_077",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_077",
+      "contentSlot": "SPC_FOOTBALL_ATH_077_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_078",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_078",
+      "contentSlot": "SPC_FOOTBALL_ATH_078_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_079",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_079",
+      "contentSlot": "SPC_FOOTBALL_ATH_079_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_080",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_080",
+      "contentSlot": "SPC_FOOTBALL_ATH_080_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_081",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_081",
+      "contentSlot": "SPC_FOOTBALL_ATH_081_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_082",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_082",
+      "contentSlot": "SPC_FOOTBALL_ATH_082_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_083",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_083",
+      "contentSlot": "SPC_FOOTBALL_ATH_083_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_084",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_084",
+      "contentSlot": "SPC_FOOTBALL_ATH_084_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_085",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_085",
+      "contentSlot": "SPC_FOOTBALL_ATH_085_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_086",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_086",
+      "contentSlot": "SPC_FOOTBALL_ATH_086_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_087",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_087",
+      "contentSlot": "SPC_FOOTBALL_ATH_087_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_088",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_088",
+      "contentSlot": "SPC_FOOTBALL_ATH_088_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_089",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_089",
+      "contentSlot": "SPC_FOOTBALL_ATH_089_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_090",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_090",
+      "contentSlot": "SPC_FOOTBALL_ATH_090_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
     }
   ]
 }

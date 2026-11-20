@@ -3461,6 +3461,2300 @@
         "scale": "game-scale-not-official",
         "source": "not-from-verified-metrics"
       }
+    },
+    "SPC_FOOTBALL_ATH_029": {
+      "Power": {
+        "value": 44,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 91,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_030": {
+      "Power": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_031": {
+      "Power": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_032": {
+      "Power": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_033": {
+      "Power": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_034": {
+      "Power": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 58,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_035": {
+      "Power": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_036": {
+      "Power": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_037": {
+      "Power": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 58,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_038": {
+      "Power": {
+        "value": 93,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 38,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_039": {
+      "Power": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 44,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_040": {
+      "Power": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 50,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_041": {
+      "Power": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 48,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_042": {
+      "Power": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_043": {
+      "Power": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 54,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_044": {
+      "Power": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_045": {
+      "Power": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 89,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_046": {
+      "Power": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_047": {
+      "Power": {
+        "value": 60,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_048": {
+      "Power": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 92,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_049": {
+      "Power": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 91,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_050": {
+      "Power": {
+        "value": 60,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_051": {
+      "Power": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 85,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_052": {
+      "Power": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 38,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_053": {
+      "Power": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 46,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_054": {
+      "Power": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 85,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 50,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_055": {
+      "Power": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_056": {
+      "Power": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 50,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_057": {
+      "Power": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 50,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_058": {
+      "Power": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_059": {
+      "Power": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 89,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_060": {
+      "Power": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_061": {
+      "Power": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_062": {
+      "Power": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 58,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_063": {
+      "Power": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_064": {
+      "Power": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_065": {
+      "Power": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 38,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_066": {
+      "Power": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 58,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_067": {
+      "Power": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_068": {
+      "Power": {
+        "value": 44,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 54,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_069": {
+      "Power": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_070": {
+      "Power": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 60,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_071": {
+      "Power": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 89,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_072": {
+      "Power": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_073": {
+      "Power": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_074": {
+      "Power": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_075": {
+      "Power": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_076": {
+      "Power": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_077": {
+      "Power": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_078": {
+      "Power": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_079": {
+      "Power": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 50,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_080": {
+      "Power": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_081": {
+      "Power": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 50,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_082": {
+      "Power": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 54,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_083": {
+      "Power": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 50,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_084": {
+      "Power": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 38,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_085": {
+      "Power": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 44,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_086": {
+      "Power": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 44,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_087": {
+      "Power": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 92,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_088": {
+      "Power": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 93,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_089": {
+      "Power": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
+    },
+    "SPC_FOOTBALL_ATH_090": {
+      "Power": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Def": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Speed": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Sta": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "historical-evidence-draft"
+      }
     }
   },
   "rarityByCardId": {
@@ -3981,6 +6275,316 @@
     },
     "SPC_MOTO_ENT_022": {
       "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_029": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_030": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_031": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_032": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_033": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_034": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_035": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_036": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_037": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_038": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_039": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_040": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_041": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_042": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_043": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_044": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_045": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_046": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_047": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_048": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_049": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_050": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_051": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_052": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_053": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_054": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_055": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_056": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_057": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_058": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_059": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_060": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_061": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_062": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_063": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_064": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_065": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_066": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_067": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_068": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_069": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_070": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_071": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_072": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_073": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_074": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_075": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_076": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_077": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_078": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_079": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_080": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_081": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_082": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_083": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_084": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_085": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_086": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_087": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_088": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_089": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_090": {
+      "rarity": "EX",
       "balance": "BALANCE_PLACEHOLDER",
       "status": "PROPOSED"
     }

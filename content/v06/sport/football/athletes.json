@@ -1698,6 +1698,4036 @@
         "slot": "SPC_FOOTBALL_ATH_028_PORTRAIT",
         "placeholder": true
       }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_029",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Icarus Cast-Irons",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 44,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 91,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_029_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_030",
+      "sport": "football",
+      "kind": "card",
+      "role": "LB/LWB",
+      "parodyName": "Roberto Carbo-Load",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "LB",
+        "secondary": "LWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_030_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_031",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Fernando Hieroglyph",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_031_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_032",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Sergeant Ramen",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_032_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_033",
+      "sport": "football",
+      "kind": "card",
+      "role": "RB/RWB",
+      "parodyName": "Danny Carve-All",
+      "rarity": "R",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "RB",
+        "secondary": "RWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_033_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_034",
+      "sport": "football",
+      "kind": "card",
+      "role": "AM",
+      "parodyName": "Zinny Zestlane",
+      "rarity": "EX",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 58,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "AM",
+        "secondary": "CM"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_034_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_035",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Michael Microwave",
+      "rarity": "R",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_035_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_036",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Luka Mo-Drag-on",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_036_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_037",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Al Di Ste-Fanboy",
+      "rarity": "EX",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 58,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": "CM"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_037_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_038",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Frankie Push-Cart",
+      "rarity": "EX",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 93,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 38,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_038_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_039",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Raúl Ravioli",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 44,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_039_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_040",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Miguel Angel-Cake",
+      "rarity": "R",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 50,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_040_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_041",
+      "sport": "football",
+      "kind": "card",
+      "role": "LW",
+      "parodyName": "Paco Gent-o-Matic",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 48,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "LW",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_041_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_042",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Emilio Buttery-Goon",
+      "rarity": "Epic",
+      "team": "Royal Meringue FC",
+      "teamId": "SPC_FOOTBALL_TEA_001",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_042_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_043",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Vic Vald-Vanilla",
+      "rarity": "R",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 54,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_043_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_044",
+      "sport": "football",
+      "kind": "card",
+      "role": "RB/RWB",
+      "parodyName": "Dani Alveo-Lava",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "RB",
+        "secondary": "RWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_044_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_045",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Carl Puyo-Lock",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 89,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_045_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_046",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Gerry Peek-A-Boo",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_046_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_047",
+      "sport": "football",
+      "kind": "card",
+      "role": "LB/LWB",
+      "parodyName": "Jordi Albacore",
+      "rarity": "R",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 60,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "LB",
+        "secondary": "LWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_047_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_048",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Xavi X-Presso",
+      "rarity": "EX",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 66,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 92,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_048_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_049",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Andy Iniesta-latte",
+      "rarity": "EX",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 91,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_049_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_050",
+      "sport": "football",
+      "kind": "card",
+      "role": "DM",
+      "parodyName": "Sergio Bus-Stop",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 60,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "DM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_050_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_051",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Johan Cruyff-Cake",
+      "rarity": "EX",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 85,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": "AM"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_051_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_052",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Romário Ramen-Rio",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 38,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_052_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_053",
+      "sport": "football",
+      "kind": "card",
+      "role": "LW",
+      "parodyName": "Ronnie Dough-aldinho",
+      "rarity": "EX",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 46,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "LW",
+        "secondary": "AM"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_053_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_054",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Andoni Zubi-Zest",
+      "rarity": "R",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 85,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 50,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_054_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_055",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Hristo Stoich-Coffee",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": "LW"
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_055_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_056",
+      "sport": "football",
+      "kind": "card",
+      "role": "AM",
+      "parodyName": "Michael Laud-Rup",
+      "rarity": "Epic",
+      "team": "Catalonia Coffee Club",
+      "teamId": "SPC_FOOTBALL_TEA_002",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 50,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "AM",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_056_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_057",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Bert Traut-Dough",
+      "rarity": "R",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 50,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_057_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_058",
+      "sport": "football",
+      "kind": "card",
+      "role": "RB/RWB",
+      "parodyName": "Pablo Zabba-Lettuce",
+      "rarity": "R",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "RB",
+        "secondary": "RWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_058_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_059",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Vinnie Company-Store",
+      "rarity": "Epic",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 89,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_059_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_060",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Joleon Lost-Cot",
+      "rarity": "R",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_060_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_061",
+      "sport": "football",
+      "kind": "card",
+      "role": "LB/LWB",
+      "parodyName": "Aleks Kola-Rover",
+      "rarity": "R",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "LB",
+        "secondary": "LWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_061_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_062",
+      "sport": "football",
+      "kind": "card",
+      "role": "AM",
+      "parodyName": "Dave Silva-Lining",
+      "rarity": "Epic",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 58,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "AM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_062_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_063",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Yaya Tour-Éclair",
+      "rarity": "Epic",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_063_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_064",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Colin Bell-Pepper",
+      "rarity": "Epic",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_064_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_065",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Sergey Agüe-Roast",
+      "rarity": "EX",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 38,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_065_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_066",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Carl Tevez-Tea",
+      "rarity": "Epic",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 58,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": "AM"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_066_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_067",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Mario Balo-Telly",
+      "rarity": "R",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_067_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_068",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Joe Hart-Burn",
+      "rarity": "R",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 44,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 54,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_068_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_069",
+      "sport": "football",
+      "kind": "card",
+      "role": "DM",
+      "parodyName": "Fernan-Dingo",
+      "rarity": "Epic",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "DM",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_069_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_070",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "David Platter",
+      "rarity": "R",
+      "team": "Metro Blueprints Athletic",
+      "teamId": "SPC_FOOTBALL_TEA_003",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 60,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_070_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_071",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Ray Clemence-Pie",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 89,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_071_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_072",
+      "sport": "football",
+      "kind": "card",
+      "role": "RB/RWB",
+      "parodyName": "Phil Neal-Deal",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "RB",
+        "secondary": "RWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_072_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_073",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Alan Hans-Sandwich",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_073_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_074",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Jamie Carry-Ager",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 87,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_074_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_075",
+      "sport": "football",
+      "kind": "card",
+      "role": "LB/LWB",
+      "parodyName": "Steve Nickle-Loaf",
+      "rarity": "R",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "LB",
+        "secondary": "RWB"
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_075_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_076",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Stevie Gerrard-Grader",
+      "rarity": "EX",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_076_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_077",
+      "sport": "football",
+      "kind": "card",
+      "role": "DM",
+      "parodyName": "Graeme Sauce-Ess",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "DM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_077_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_078",
+      "sport": "football",
+      "kind": "card",
+      "role": "CM",
+      "parodyName": "Jan Molby-Molasses",
+      "rarity": "R",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CM",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_078_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_079",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Kenny Dal-Glitter",
+      "rarity": "EX",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 50,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_079_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_080",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Ian Rush-Hour",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_080_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_081",
+      "sport": "football",
+      "kind": "card",
+      "role": "LW",
+      "parodyName": "John Barnes-Stormer",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 50,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "LW",
+        "secondary": ""
+      },
+      "designation": "starter",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_081_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_082",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Bruce Grobbel-Lager",
+      "rarity": "R",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 54,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_082_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_083",
+      "sport": "football",
+      "kind": "card",
+      "role": "RW",
+      "parodyName": "Steve McMan-A-Man",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 50,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 82,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "RW",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_083_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_084",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Robbie Fowler-Flour",
+      "rarity": "Epic",
+      "team": "Dockside Noodles",
+      "teamId": "SPC_FOOTBALL_TEA_004",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 38,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_084_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_085",
+      "sport": "football",
+      "kind": "card",
+      "role": "ST",
+      "parodyName": "Marco van Basten-Basket",
+      "rarity": "EX",
+      "team": "Banquet Select XI",
+      "teamId": "SPC_FOOTBALL_TEA_005",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 44,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "ST",
+        "secondary": ""
+      },
+      "designation": "sub",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_085_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_086",
+      "sport": "football",
+      "kind": "card",
+      "role": "RW",
+      "parodyName": "George Best-Beast",
+      "rarity": "Epic",
+      "team": "Banquet Select XI",
+      "teamId": "SPC_FOOTBALL_TEA_005",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 44,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "RW",
+        "secondary": ""
+      },
+      "designation": "rotation",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_086_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_087",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Paolo Maldini-Melon",
+      "rarity": "EX",
+      "team": "Banquet Select XI",
+      "teamId": "SPC_FOOTBALL_TEA_005",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 68,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 92,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": "LB"
+      },
+      "designation": "rotation",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_087_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_088",
+      "sport": "football",
+      "kind": "card",
+      "role": "GK",
+      "parodyName": "Lev Yashin-Mash",
+      "rarity": "EX",
+      "team": "Gherkin Rovers",
+      "teamId": "SPC_FOOTBALL_TEA_006",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 42,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 93,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 52,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "GK",
+        "secondary": ""
+      },
+      "designation": "rotation",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_088_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_089",
+      "sport": "football",
+      "kind": "card",
+      "role": "CB",
+      "parodyName": "Franz Becken-Bauer-Boat",
+      "rarity": "EX",
+      "team": "Gherkin Rovers",
+      "teamId": "SPC_FOOTBALL_TEA_006",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 90,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "CB",
+        "secondary": "DM"
+      },
+      "designation": "rotation",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_089_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
+    },
+    {
+      "id": "SPC_FOOTBALL_ATH_090",
+      "sport": "football",
+      "kind": "card",
+      "role": "RW",
+      "parodyName": "Garrincha-Garlic",
+      "rarity": "EX",
+      "team": "Gherkin Rovers",
+      "teamId": "SPC_FOOTBALL_TEA_006",
+      "bannerId": "SPORT_FOOTBALL",
+      "stats": {
+        "Power": {
+          "value": 86,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Def": {
+          "value": 40,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Speed": {
+          "value": 88,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Sta": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        },
+        "Acc": {
+          "value": 84,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "historical-evidence-draft"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "position": {
+        "primary": "RW",
+        "secondary": ""
+      },
+      "designation": "rotation",
+      "art": {
+        "slot": "SPC_FOOTBALL_ATH_090_PORTRAIT",
+        "placeholder": true
+      },
+      "provenance": {
+        "status": "PRIVATE_CROSSWALK_PENDING",
+        "release": "football-legends-v0.7",
+        "note": "Real identity is kept out of public data. The crosswalk is stored privately (Owner approval pending)."
+      }
     }
   ]
 }

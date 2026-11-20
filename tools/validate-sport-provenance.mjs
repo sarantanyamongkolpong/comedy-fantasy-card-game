@@ -360,6 +360,12 @@ function checkCard(card, path, errors) {
     if (card.real != null) {
       errors.push({ code: 'FICTIONAL', path: `${path}.real`, message: 'Fictional cards do not carry a real identity' });
     }
+  } else if (isPrivateCrosswalk(card)) {
+    // Football Legends v0.7 (Owner 2026-11-21): the real identity lives in a private crosswalk,
+    // never in public data. Such a card must not also carry a public real block.
+    if (card.real != null) {
+      errors.push({ code: 'PRIVATE_REAL', path: `${path}.real`, message: 'A private-crosswalk card must not carry a public real block' });
+    }
   } else if (!isCompleteReal(card.real)) {
     errors.push({ code: 'MISSING_REAL', path: `${path}.real`, message: 'Sourced card needs real.name, url, season, snapshotDate, identities' });
   }
@@ -373,6 +379,14 @@ function checkCard(card, path, errors) {
     }
   }
   if (sport === 'moto') checkMotoTraits(card.gameTraits, `${path}.gameTraits`, errors);
+}
+
+/**
+ * Sourced card whose identity is kept in the private crosswalk (no public real block).
+ * @param {any} card
+ */
+function isPrivateCrosswalk(card) {
+  return card?.provenance?.status === 'PRIVATE_CROSSWALK_PENDING';
 }
 
 /**
