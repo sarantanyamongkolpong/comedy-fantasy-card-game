@@ -1,0 +1,295 @@
+{
+  "documentId": "PARODY-SELF-INSPIRATIONS",
+  "status": "RESEARCH",
+  "agent": "06",
+  "note": "research/m01-classic-rpg was not on origin when this file was written. These records are self-verified fetches by Agent 06. They use the SELF-06 prefix so they cannot be mistaken for another agent's INS-0X ids. Facts below are only what the fetched page stated. If Agent 01 later publishes the same creature, prefer their inspirationId.",
+  "accessed": "2026-11-20",
+  "inspirations": [
+    {
+      "inspirationId": "SELF-06-001",
+      "name": "Slime (Dragon Quest)",
+      "origin": "Dragon Quest (1986), inspired by Wizardry",
+      "kind": "game",
+      "domain": "01-classic-rpg",
+      "facts": [
+        "Slimes are a fictional species of slime monster in the Dragon Quest series, conceived as a weak and common enemy for the 1986 game and inspired by Wizardry.",
+        "Yuji Horii said the slime was originally conceived as a pile of goo. Akira Toriyama's design came back as a teardrop, which the team considered perfect, and that teardrop became the series mascot and merchandise."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Slime_(Dragon_Quest)",
+          "title": "Slime (Dragon Quest)",
+          "accessed": "2026-11-20",
+          "supports": "Both facts are in the lead and in the Concept and design section fetched the same day."
+        }
+      ],
+      "archetypeTags": ["slime", "jrpg", "mascot", "weak-common"],
+      "protectedName": true,
+      "publicDomain": false,
+      "parodyPotential": "Use the weak common blob. Do not draw the teardrop mascot.",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "sensitivityNote": "The teardrop design is a living franchise mascot. The pile-of-goo concept is the usable distance."
+    },
+    {
+      "inspirationId": "SELF-06-002",
+      "name": "Mimic (Dungeons & Dragons)",
+      "origin": "Dungeons & Dragons, Monster Manual (1977)",
+      "kind": "game",
+      "domain": "01-classic-rpg",
+      "facts": [
+        "In Dungeons & Dragons the mimic is a monster that changes shape to look like an inanimate object, commonly a chest. It was introduced in the original Monster Manual (1977) and is described there as a subterranean creature that cannot stand sunlight and can mimic stone or wood, posing as stonework, doors, or chests.",
+        "The same article describes a powerful adhesive and pseudopods. Those two mechanics are specific to this game monster and are not used in the parody."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mimic_(Dungeons_%26_Dragons)",
+          "title": "Mimic (Dungeons & Dragons)",
+          "accessed": "2026-11-20",
+          "supports": "Chest disguise, 1977 debut, sunlight aversion, stone-or-wood mimicry, and the adhesive pseudopods."
+        }
+      ],
+      "archetypeTags": ["ambush", "object", "rpg"],
+      "protectedName": true,
+      "publicDomain": false,
+      "parodyPotential": "An object that argues about being claimed. Not a wooden chest, and not the adhesive fight.",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "sensitivityNote": "Iconic game monster. The chest silhouette plus a tongue would be too close."
+    },
+    {
+      "inspirationId": "SELF-06-003",
+      "name": "Animated object",
+      "origin": "Folklore and fantasy stories, including games",
+      "kind": "folklore",
+      "domain": "01-classic-rpg",
+      "facts": [
+        "An animated object is an item that acts on its own, apart from a person using it, often by supernatural means.",
+        "The article says forms ranging from household tools to armor have appeared in stories throughout history, and that animated objects also appear in games."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Animated_object",
+          "title": "Animated object",
+          "accessed": "2026-11-20",
+          "supports": "Self-moving items, including armor, in stories and in games."
+        }
+      ],
+      "archetypeTags": ["construct", "armor", "object"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "Empty armor that clocks in at the wrong size.",
+      "confidence": "medium",
+      "sensitivity": "low",
+      "sensitivityNote": "The page is a broad survey, not a single bestiary entry. Confidence stays medium. The Japanese tsukumogami paragraph on the same page is a different tradition and is not the source for the armor parody."
+    },
+    {
+      "inspirationId": "SELF-06-004",
+      "name": "Goblin",
+      "origin": "European folklore",
+      "kind": "folklore",
+      "domain": "01-classic-rpg",
+      "facts": [
+        "A goblin is a small, often malevolent humanoid in European folklore, mischievous, furry or leathery, and sometimes said to shapeshift. The article says they are often depicted with green skin.",
+        "They are said to live underground or in households and to range from pranks to much worse harm. The word is also used as a blanket term for small fay creatures."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Goblin",
+          "title": "Goblin",
+          "accessed": "2026-11-20",
+          "supports": "Small household or underground trickster, leathery or furry, and the modern green-skin depiction."
+        }
+      ],
+      "archetypeTags": ["humanoid", "trickster", "household"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "A household clerk with fangs. Not a green game goblin.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "Folklore type. Green skin plus a game silhouette would collide with living game goblins. Do not play the harmful end of the range as comedy."
+    },
+    {
+      "inspirationId": "SELF-06-005",
+      "name": "Phoenix (mythology)",
+      "origin": "Greek mythology, with analogues elsewhere",
+      "kind": "myth",
+      "domain": "04-world-myth",
+      "facts": [
+        "The phoenix is a legendary immortal bird that cyclically regenerates. The article places its origin in Greek mythology and notes analogues in other cultures.",
+        "It is associated with the sun and obtains new life by rising from the ashes of its predecessor. Some legends have it die in a show of flames; others have it burn, decompose, and be born again."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Phoenix_(mythology)",
+          "title": "Phoenix (mythology)",
+          "accessed": "2026-11-20",
+          "supports": "Cyclic rebirth from ashes, Greek origin, and the flame death."
+        }
+      ],
+      "archetypeTags": ["bird", "rebirth"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "The bow is grand and the next body is a sooty hen. Not a game summon.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "Do not use an Egyptian sacred-bird costume or a franchise phoenix."
+    },
+    {
+      "inspirationId": "SELF-06-006",
+      "name": "Spring-heeled Jack",
+      "origin": "Victorian English urban legend",
+      "kind": "urban_legend",
+      "domain": "05-anime-pop",
+      "facts": [
+        "Spring-heeled Jack is a Victorian English folklore entity. The first claimed sighting was in 1837, with later reports especially in suburban London, the Midlands, and Scotland. The stories emphasize extraordinary leaps.",
+        "Claimed descriptions include a frightening face, clawed hands, and eyes like red balls of fire. One report put a helmet and a tight white oilskin garment under a black cloak. Several reports add blue and white flames from the mouth and sharp metallic claws, and at least two people claimed he spoke English."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Spring-heeled_Jack",
+          "title": "Spring-heeled Jack",
+          "accessed": "2026-11-20",
+          "supports": "1837 sightings, leaps, claws, fiery eyes, cloak and oilskin, and the flame reports."
+        }
+      ],
+      "archetypeTags": ["leaper", "urban-legend", "victorian"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "The leap is terrifying until it is only someone skipping a queue.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "Historical urban legend. Do not copy one penny-dreadful illustration as the costume."
+    },
+    {
+      "inspirationId": "SELF-06-007",
+      "name": "Troll",
+      "origin": "Nordic folklore",
+      "kind": "folklore",
+      "domain": "02-western",
+      "facts": [
+        "A troll is a being in Nordic folklore, including Norse mythology.",
+        "In Old Norse sources, beings described as trolls live in isolated rocks, mountains, or caves, keep to small family units, and are rarely helpful."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Troll",
+          "title": "Troll",
+          "accessed": "2026-11-20",
+          "supports": "Isolated rock, mountain, or cave households, and the rarely-helpful note."
+        }
+      ],
+      "archetypeTags": ["giant", "cave"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "A household of one, filed under rock.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "The fetched lead does not mention a bridge toll. Do not add one."
+    },
+    {
+      "inspirationId": "SELF-06-008",
+      "name": "Jersey Devil",
+      "origin": "South Jersey and Philadelphia folklore",
+      "kind": "folklore",
+      "domain": "05-anime-pop",
+      "facts": [
+        "The Jersey Devil, also called the Leeds Devil, is a cryptid of the New Jersey Pine Barrens in South Jersey, also told around Philadelphia.",
+        "A common description is a bipedal kangaroo-like or wyvern-like creature with a horse-like or goat-like head, bat-like wings, horns, small clawed arms, cloven hooves, and a forked tail, said to move quickly and to scream."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Jersey_Devil",
+          "title": "Jersey Devil",
+          "accessed": "2026-11-20",
+          "supports": "Pine Barrens cryptid and the winged, hoofed, horse-or-goat-headed description."
+        }
+      ],
+      "archetypeTags": ["cryptid", "winged", "hoofed"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "Hooves and wings in a service corridor. Do not put Devil in the name.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "The word Devil in the folklore name is not a license to joke about religion. Leave it off the card."
+    },
+    {
+      "inspirationId": "SELF-06-009",
+      "name": "Robin Hood",
+      "origin": "English folklore",
+      "kind": "historical",
+      "domain": "05-anime-pop",
+      "facts": [
+        "Robin Hood is a legendary English outlaw, a skilled archer. The oldest known versions make him a yeoman, not a noble.",
+        "He is traditionally depicted in Lincoln green. The article says he is today most closely associated with robbing the rich to give to the poor."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Robin_Hood",
+          "title": "Robin Hood",
+          "accessed": "2026-11-20",
+          "supports": "Yeoman outlaw, Lincoln green, and the rob-the-rich association."
+        }
+      ],
+      "archetypeTags": ["outlaw", "archer"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "He grabbed the wrong bag and is trying to give it back.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "Do not copy a film's costume as the whole design."
+    },
+    {
+      "inspirationId": "SELF-06-010",
+      "name": "Flatwoods monster",
+      "origin": "Flatwoods, West Virginia, 1952",
+      "kind": "urban_legend",
+      "domain": "05-anime-pop",
+      "facts": [
+        "The Flatwoods monster is an alleged humanoid reported in Flatwoods, West Virginia, on 12 September 1952, after a bright light crossed the night sky.",
+        "In 2000, Joe Nickell suggested the light was a meteor and the creature may have been a barn owl in a tree, its shadow read as a large humanoid."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Flatwoods_monster",
+          "title": "Flatwoods monster",
+          "accessed": "2026-11-20",
+          "supports": "The 1952 report and the barn-owl explanation."
+        }
+      ],
+      "archetypeTags": ["cryptid", "missee"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "The shadow files a complaint against the write-up.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "Do not reproduce a famous illustration's exact head shape."
+    },
+    {
+      "inspirationId": "SELF-06-011",
+      "name": "Mandrake",
+      "origin": "Mediterranean plant lore",
+      "kind": "folklore",
+      "domain": "01-classic-rpg",
+      "facts": [
+        "A mandrake is a toxic plant, chiefly Mediterranean Mandragora, whose roots are man-shaped and have been used in folk remedies.",
+        "Because the roots look like little people, and because the plants contain dangerous alkaloids, they have been tied to magic rituals."
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mandrake",
+          "title": "Mandrake",
+          "accessed": "2026-11-20",
+          "supports": "Man-shaped toxic root and the ritual association. The fetched text does not describe a scream."
+        }
+      ],
+      "archetypeTags": ["plant", "root"],
+      "protectedName": false,
+      "publicDomain": true,
+      "parodyPotential": "A root that resents being a remedy. Do not add a scream the page did not state.",
+      "confidence": "high",
+      "sensitivity": "low",
+      "sensitivityNote": "The screaming mandrake is a later fiction image and is not in this source."
+    }
+  ]
+}
