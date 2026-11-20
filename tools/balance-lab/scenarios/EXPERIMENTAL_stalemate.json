@@ -1,0 +1,205 @@
+{
+  "label": "EXPERIMENTAL",
+  "scenarioId": "EXPERIMENTAL_stalemate",
+  "notes": "EXPERIMENTAL zero-damage fight used to show repeated-state detection. Not a recommended balance.",
+  "seed": 7,
+  "repeats": 1,
+  "repeatSeedStep": 1,
+  "parameters": {
+    "teamSpd": {
+      "aggregation": "sum",
+      "rounding": "none"
+    },
+    "spdTieBreak": {
+      "method": "lowerSideId"
+    },
+    "hp": {
+      "scope": "perAvatar",
+      "pool": {
+        "kind": "linear",
+        "constant": 10,
+        "terms": [],
+        "minimum": 0,
+        "maximum": null,
+        "statRead": "base"
+      },
+      "defeatWhen": "everyAvatarHpZero",
+      "floorAtZero": true,
+      "healCanExceedStarting": false,
+      "revive": false
+    },
+    "apCost": {
+      "byActionType": {
+        "ATK": 1,
+        "DEF": 1,
+        "Skill": 1
+      },
+      "avatarModifier": "none",
+      "perCard": []
+    },
+    "damage": {
+      "atk": {
+        "kind": "linear",
+        "constant": 0,
+        "terms": [],
+        "minimum": 0,
+        "maximum": null,
+        "statRead": "base"
+      },
+      "defCard": {
+        "kind": "noEffect",
+        "amount": null,
+        "stacks": null
+      },
+      "incoming": {
+        "order": [],
+        "shieldUnused": null,
+        "zeroAmountConsumes": false
+      }
+    },
+    "deck": {
+      "size": 4,
+      "scope": "perSide",
+      "includeAvatarCards": false,
+      "avatarCardCount": 0,
+      "avatarCardPosition": null,
+      "composition": [
+        {
+          "actionType": "ATK",
+          "count": 4
+        },
+        {
+          "actionType": "DEF",
+          "count": 0
+        },
+        {
+          "actionType": "Skill",
+          "count": 0
+        }
+      ]
+    },
+    "draw": {
+      "openingCount": 4,
+      "openingIncludesFirstTurn": true,
+      "openingOrder": "sideAThenSideB",
+      "eachTurnCount": 0,
+      "timing": "never",
+      "emptyDeck": "stopDrawing",
+      "handFull": "skipCard",
+      "order": "listed"
+    },
+    "discard": {
+      "playedCardsGoTo": "removed"
+    },
+    "actionLimit": {
+      "mode": "apOnly",
+      "maxPlays": null,
+      "maxByType": {
+        "ATK": null,
+        "DEF": null,
+        "Skill": null
+      }
+    },
+    "skill": {
+      "kind": "noEffect",
+      "amount": null,
+      "grantsAp": 0,
+      "stat": null,
+      "duration": null,
+      "stacks": null
+    },
+    "simultaneousDefeat": {
+      "method": "lowerSideId",
+      "whenTeamSpdTied": null
+    },
+    "turnCap": {
+      "maxTurns": 20,
+      "atCap": "unresolved"
+    },
+    "targeting": {
+      "actor": "highestPowLiving",
+      "actorStatRead": "base",
+      "tieBreak": "partyOrder",
+      "atk": "firstLivingEnemy",
+      "def": null,
+      "skill": null
+    }
+  },
+  "sides": {
+    "A": {
+      "sideId": "LAB_SIDE_A",
+      "members": [
+        {
+          "avatarId": "LAB_A1",
+          "pow": 3,
+          "def": 1,
+          "spd": 4
+        },
+        {
+          "avatarId": "LAB_A2",
+          "pow": 3,
+          "def": 1,
+          "spd": 3
+        },
+        {
+          "avatarId": "LAB_A3",
+          "pow": 2,
+          "def": 1,
+          "spd": 2
+        },
+        {
+          "avatarId": "LAB_A4",
+          "pow": 2,
+          "def": 1,
+          "spd": 1
+        }
+      ]
+    },
+    "B": {
+      "sideId": "LAB_SIDE_B",
+      "members": [
+        {
+          "avatarId": "LAB_B1",
+          "pow": 1,
+          "def": 0,
+          "spd": 1
+        },
+        {
+          "avatarId": "LAB_B2",
+          "pow": 1,
+          "def": 0,
+          "spd": 1
+        },
+        {
+          "avatarId": "LAB_B3",
+          "pow": 1,
+          "def": 0,
+          "spd": 1
+        },
+        {
+          "avatarId": "LAB_B4",
+          "pow": 1,
+          "def": 0,
+          "spd": 1
+        }
+      ]
+    }
+  },
+  "policies": {
+    "sideA": {
+      "id": "always-ATK",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "ATK"
+      ]
+    },
+    "sideB": {
+      "id": "always-ATK",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "ATK"
+      ]
+    }
+  },
+  "policySweep": null
+}

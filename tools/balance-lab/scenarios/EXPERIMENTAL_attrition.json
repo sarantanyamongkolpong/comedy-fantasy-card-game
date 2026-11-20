@@ -1,0 +1,264 @@
+{
+  "label": "EXPERIMENTAL",
+  "scenarioId": "EXPERIMENTAL_attrition",
+  "notes": "EXPERIMENTAL long fight. POW minus DEF, shields, and a small heal. Not a recommended balance.",
+  "seed": 1100,
+  "repeats": 3,
+  "repeatSeedStep": 1,
+  "parameters": {
+    "teamSpd": {
+      "aggregation": "sum",
+      "rounding": "none"
+    },
+    "spdTieBreak": {
+      "method": "lowerSideId"
+    },
+    "hp": {
+      "scope": "perAvatar",
+      "pool": {
+        "kind": "linear",
+        "constant": 12,
+        "terms": [],
+        "minimum": 1,
+        "maximum": null,
+        "statRead": "base"
+      },
+      "defeatWhen": "everyAvatarHpZero",
+      "floorAtZero": true,
+      "healCanExceedStarting": false,
+      "revive": false
+    },
+    "apCost": {
+      "byActionType": {
+        "ATK": 2,
+        "DEF": 1,
+        "Skill": 3
+      },
+      "avatarModifier": "none",
+      "perCard": []
+    },
+    "damage": {
+      "atk": {
+        "kind": "linear",
+        "constant": 0,
+        "terms": [
+          {
+            "stat": "pow",
+            "side": "actor",
+            "coefficient": 1
+          },
+          {
+            "stat": "def",
+            "side": "target",
+            "coefficient": -1
+          }
+        ],
+        "minimum": 0,
+        "maximum": null,
+        "statRead": "base"
+      },
+      "defCard": {
+        "kind": "shield",
+        "amount": {
+          "kind": "linear",
+          "constant": 0,
+          "minimum": 0,
+          "maximum": null,
+          "statRead": "base",
+          "terms": [
+            {
+              "stat": "def",
+              "side": "target",
+              "coefficient": 1
+            }
+          ]
+        },
+        "stacks": "add"
+      },
+      "incoming": {
+        "order": [
+          "shield"
+        ],
+        "shieldUnused": "persist",
+        "zeroAmountConsumes": false
+      }
+    },
+    "deck": {
+      "size": 16,
+      "scope": "perSide",
+      "includeAvatarCards": false,
+      "avatarCardCount": 0,
+      "avatarCardPosition": null,
+      "composition": [
+        {
+          "actionType": "DEF",
+          "count": 2
+        },
+        {
+          "actionType": "ATK",
+          "count": 12
+        },
+        {
+          "actionType": "Skill",
+          "count": 2
+        }
+      ]
+    },
+    "draw": {
+      "openingCount": 5,
+      "openingIncludesFirstTurn": true,
+      "openingOrder": "sideAThenSideB",
+      "eachTurnCount": 1,
+      "timing": "turnStart",
+      "emptyDeck": "reshuffleDiscard",
+      "handFull": "skipCard",
+      "order": "listed"
+    },
+    "discard": {
+      "playedCardsGoTo": "discardPile"
+    },
+    "actionLimit": {
+      "mode": "apOnly",
+      "maxPlays": null,
+      "maxByType": {
+        "ATK": null,
+        "DEF": null,
+        "Skill": null
+      }
+    },
+    "skill": {
+      "kind": "heal",
+      "amount": {
+        "kind": "linear",
+        "constant": 2,
+        "terms": [],
+        "minimum": 0,
+        "maximum": null,
+        "statRead": "base"
+      },
+      "grantsAp": 0,
+      "stat": null,
+      "duration": null,
+      "stacks": null
+    },
+    "simultaneousDefeat": {
+      "method": "lowerSideId",
+      "whenTeamSpdTied": null
+    },
+    "turnCap": {
+      "maxTurns": 40,
+      "atCap": "unresolved"
+    },
+    "targeting": {
+      "actor": "highestPowLiving",
+      "actorStatRead": "base",
+      "tieBreak": "partyOrder",
+      "atk": "lowestHpEnemy",
+      "def": "lowestHpAlly",
+      "skill": "lowestHpAlly"
+    }
+  },
+  "sides": {
+    "A": {
+      "sideId": "LAB_SIDE_A",
+      "members": [
+        {
+          "avatarId": "LAB_A1",
+          "pow": 5,
+          "def": 2,
+          "spd": 8
+        },
+        {
+          "avatarId": "LAB_A2",
+          "pow": 5,
+          "def": 2,
+          "spd": 5
+        },
+        {
+          "avatarId": "LAB_A3",
+          "pow": 5,
+          "def": 2,
+          "spd": 4
+        },
+        {
+          "avatarId": "LAB_A4",
+          "pow": 5,
+          "def": 2,
+          "spd": 3
+        }
+      ]
+    },
+    "B": {
+      "sideId": "LAB_SIDE_B",
+      "members": [
+        {
+          "avatarId": "LAB_B1",
+          "pow": 4,
+          "def": 1,
+          "spd": 3
+        },
+        {
+          "avatarId": "LAB_B2",
+          "pow": 4,
+          "def": 1,
+          "spd": 2
+        },
+        {
+          "avatarId": "LAB_B3",
+          "pow": 4,
+          "def": 1,
+          "spd": 2
+        },
+        {
+          "avatarId": "LAB_B4",
+          "pow": 4,
+          "def": 1,
+          "spd": 1
+        }
+      ]
+    }
+  },
+  "policies": {
+    "sideA": {
+      "id": "always-ATK",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "ATK"
+      ]
+    },
+    "sideB": {
+      "id": "mixed",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "DEF",
+        "Skill",
+        "ATK"
+      ]
+    }
+  },
+  "policySweep": [
+    {
+      "id": "always-ATK",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "ATK"
+      ]
+    },
+    {
+      "id": "always-DEF",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "DEF"
+      ]
+    },
+    {
+      "id": "mixed",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "Skill",
+        "ATK",
+        "DEF"
+      ]
+    }
+  ]
+}

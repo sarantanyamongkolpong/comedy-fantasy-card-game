@@ -1,0 +1,434 @@
+{
+  "label": "EXPERIMENTAL",
+  "implementationStatus": "EXPERIMENTAL",
+  "disclaimer": "EXPERIMENTAL: these results depend only on the parameters in this scenario. They are not game balance, not a recommendation, and not PRODUCTION_READY.",
+  "laboratory": "tools/balance-lab",
+  "scenarioId": "EXPERIMENTAL_unreachable",
+  "notes": "EXPERIMENTAL deck with a Skill cost above base AP and no DEF cards. Not a recommended balance.",
+  "seed": 9,
+  "repeats": 1,
+  "repeatSeedStep": 1,
+  "fixedRules": {
+    "partySize": 4,
+    "handSize": 5,
+    "baseAp": 5,
+    "turns": "alternating",
+    "start": "highest team SPD, compared from the supplied teamSpd aggregation",
+    "actionTypes": [
+      "ATK",
+      "DEF",
+      "Skill"
+    ],
+    "outcome": "engine evaluateOutcome using the supplied defeat predicate"
+  },
+  "evaluatorDefinitions": {
+    "formulaClamp": "minimum is applied first, then maximum when maximum is not null",
+    "zeroAmountConsumes": "parameters.damage.incoming.zeroAmountConsumes decides whether a 0 amount clears mitigateNext",
+    "repeatSeed": "repeatIndex uses seed + repeatIndex * repeatSeedStep",
+    "rng": "mulberry32. Consumption order: seeded SPD tie-break (only when the team totals are equal), side A shuffle when order is seededShuffle, side B shuffle, reshuffles in time order, then a seeded simultaneous resolution if that rule runs",
+    "fingerprintExcludes": "turnIndex, roundIndex, and the play log are excluded so a recurring position can be detected",
+    "dominanceDenominator": "wins divided by battles in that cell, including unresolved battles. Cells have equal weight. Mirror pairings are included. The observation is per seat because the starting seat can differ",
+    "maxSpendableAp": "largest AP from which an in-deck card can still be paid during one turn. Only skills whose grantsAp exceeds their own cost are helpers. The target card occupies a hand slot. The engine assigns base AP at turn start, so grants do not carry to the next turn",
+    "healSkipsDefeatedUnlessRevive": "ally heals and buffs include defeated avatars only when hp.revive is true. Damage selections never include them",
+    "drawLossSetsHpZero": "loseOnEmptyDraw and loseOnOverflow set that side's experimental HP to 0 so the supplied defeat predicate can run. This is not a second victory type",
+    "shieldExpiry": "expireAtStartOfOwnerNextTurn clears shield after the draw and before plays on the owner's later turns, so the shield is present during the opponent's intervening turn",
+    "multiTarget": "every target selected at the start of an effect is resolved, then the outcome is evaluated once",
+    "actorStatRead": "the actor selector reads parameters.targeting.actorStatRead and does not follow the damage formula's statRead on its own",
+    "teamSpdReadsBase": "team SPD aggregation reads stats.spd only and ignores marker bonuses",
+    "playThenResolve": "the engine play spends AP and does not apply an effect. The laboratory then calls resolveEffect with the compiled damage or skill rule"
+  },
+  "parameters": {
+    "teamSpd": {
+      "aggregation": "sum",
+      "rounding": "none"
+    },
+    "spdTieBreak": {
+      "method": "lowerSideId"
+    },
+    "hp": {
+      "scope": "perAvatar",
+      "pool": {
+        "kind": "linear",
+        "constant": 10,
+        "terms": [],
+        "minimum": 0,
+        "maximum": null,
+        "statRead": "base"
+      },
+      "defeatWhen": "everyAvatarHpZero",
+      "floorAtZero": true,
+      "healCanExceedStarting": false,
+      "revive": false
+    },
+    "apCost": {
+      "byActionType": {
+        "ATK": 1,
+        "DEF": 1,
+        "Skill": 8
+      },
+      "avatarModifier": "none",
+      "perCard": []
+    },
+    "damage": {
+      "atk": {
+        "kind": "linear",
+        "constant": 10,
+        "terms": [],
+        "minimum": 0,
+        "maximum": null,
+        "statRead": "base"
+      },
+      "defCard": {
+        "kind": "noEffect",
+        "amount": null,
+        "stacks": null
+      },
+      "incoming": {
+        "order": [],
+        "shieldUnused": null,
+        "zeroAmountConsumes": false
+      }
+    },
+    "deck": {
+      "size": 8,
+      "scope": "perSide",
+      "includeAvatarCards": false,
+      "avatarCardCount": 0,
+      "avatarCardPosition": null,
+      "composition": [
+        {
+          "actionType": "ATK",
+          "count": 6
+        },
+        {
+          "actionType": "DEF",
+          "count": 0
+        },
+        {
+          "actionType": "Skill",
+          "count": 2
+        }
+      ]
+    },
+    "draw": {
+      "openingCount": 5,
+      "openingIncludesFirstTurn": true,
+      "openingOrder": "sideAThenSideB",
+      "eachTurnCount": 0,
+      "timing": "never",
+      "emptyDeck": "stopDrawing",
+      "handFull": "skipCard",
+      "order": "listed"
+    },
+    "discard": {
+      "playedCardsGoTo": "removed"
+    },
+    "actionLimit": {
+      "mode": "apOnly",
+      "maxPlays": null,
+      "maxByType": {
+        "ATK": null,
+        "DEF": null,
+        "Skill": null
+      }
+    },
+    "skill": {
+      "kind": "noEffect",
+      "amount": null,
+      "grantsAp": 0,
+      "stat": null,
+      "duration": null,
+      "stacks": null
+    },
+    "simultaneousDefeat": {
+      "method": "lowerSideId",
+      "whenTeamSpdTied": null
+    },
+    "turnCap": {
+      "maxTurns": 8,
+      "atCap": "unresolved"
+    },
+    "targeting": {
+      "actor": "highestPowLiving",
+      "actorStatRead": "base",
+      "tieBreak": "partyOrder",
+      "atk": "firstLivingEnemy",
+      "def": null,
+      "skill": null
+    }
+  },
+  "policies": {
+    "sideA": {
+      "id": "always-ATK",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "ATK"
+      ]
+    },
+    "sideB": {
+      "id": "always-ATK",
+      "label": "EXPERIMENTAL",
+      "priority": [
+        "ATK"
+      ]
+    }
+  },
+  "static": {
+    "baseAp": 5,
+    "handSize": 5,
+    "maxSpendableAp": 5,
+    "maxSpendableNote": "Maximum AP from which some in-deck card can still be paid in one turn under the supplied costs, grants, and action limit. Grants do not carry across turns.",
+    "impossibleAp": [
+      {
+        "actionType": "Skill",
+        "index": 0,
+        "cost": 8,
+        "inDeck": true,
+        "maxPayableAp": 5,
+        "reason": "cost exceeds base AP (5) and no positive-net helper skill can be paid first"
+      },
+      {
+        "actionType": "Skill",
+        "index": 1,
+        "cost": 8,
+        "inDeck": true,
+        "maxPayableAp": 5,
+        "reason": "cost exceeds base AP (5) and no positive-net helper skill can be paid first"
+      }
+    ],
+    "unreachable": [
+      {
+        "actionType": "DEF",
+        "reason": "notInDeck"
+      },
+      {
+        "actionType": "Skill",
+        "reason": "impossibleApCost"
+      }
+    ],
+    "policyOmitted": {
+      "sideA": [
+        "DEF",
+        "Skill"
+      ],
+      "sideB": [
+        "DEF",
+        "Skill"
+      ]
+    },
+    "buffDoesNotAffectFormulas": false,
+    "fixedRules": {
+      "partySize": 4,
+      "handSize": 5,
+      "baseAp": 5,
+      "turns": "alternating",
+      "start": "highest team SPD, compared from the supplied teamSpd aggregation",
+      "actionTypes": [
+        "ATK",
+        "DEF",
+        "Skill"
+      ],
+      "outcome": "engine evaluateOutcome using the supplied defeat predicate"
+    }
+  },
+  "summary": {
+    "battles": 1,
+    "winsA": 1,
+    "winsB": 0,
+    "unresolved": 0,
+    "winRateA": 1,
+    "winRateB": 0,
+    "unresolvedRate": 0,
+    "averageTurns": 1,
+    "minTurns": 1,
+    "maxTurns": 1,
+    "averageRounds": 1,
+    "averageApSpentA": 4,
+    "averageApSpentB": 0,
+    "averageApSpentTotal": 4,
+    "stoppedReasons": {
+      "decided": 1,
+      "turn-cap": 0,
+      "repeated-state": 0
+    },
+    "simultaneousBattles": 0,
+    "neverPlayedAcrossBattles": [
+      "DEF",
+      "Skill"
+    ]
+  },
+  "battles": [
+    {
+      "label": "EXPERIMENTAL",
+      "repeatIndex": 0,
+      "seed": 9,
+      "seedConsumed": false,
+      "scenarioId": "EXPERIMENTAL_unreachable",
+      "sideIds": {
+        "A": "LAB_SIDE_A",
+        "B": "LAB_SIDE_B"
+      },
+      "policyA": "always-ATK",
+      "policyB": "always-ATK",
+      "startingSideId": "LAB_SIDE_A",
+      "teamSpd": {
+        "LAB_SIDE_A": 10,
+        "LAB_SIDE_B": 4
+      },
+      "startingHp": {
+        "A": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "B": [
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "stoppedReason": "decided",
+      "loop": null,
+      "outcome": {
+        "status": "decided",
+        "winnerSideId": "LAB_SIDE_A",
+        "loserSideId": "LAB_SIDE_B",
+        "verdict": {
+          "LAB_SIDE_A": "victory",
+          "LAB_SIDE_B": "defeat"
+        }
+      },
+      "winnerSideId": "LAB_SIDE_A",
+      "loserSideId": "LAB_SIDE_B",
+      "simultaneous": false,
+      "turns": 1,
+      "rounds": 1,
+      "ap": {
+        "A": {
+          "spent": 4,
+          "refreshed": 5,
+          "turns": 1,
+          "plays": {
+            "ATK": 4,
+            "DEF": 0,
+            "Skill": 0
+          },
+          "leftover": 1,
+          "grants": 0
+        },
+        "B": {
+          "spent": 0,
+          "refreshed": 0,
+          "turns": 0,
+          "plays": {
+            "ATK": 0,
+            "DEF": 0,
+            "Skill": 0
+          },
+          "leftover": 0,
+          "grants": 0
+        }
+      },
+      "plays": {
+        "A": {
+          "ATK": 4,
+          "DEF": 0,
+          "Skill": 0
+        },
+        "B": {
+          "ATK": 0,
+          "DEF": 0,
+          "Skill": 0
+        }
+      },
+      "effects": [
+        {
+          "label": "EXPERIMENTAL",
+          "ok": true,
+          "cardId": "LAB_A_ATK_0",
+          "actionType": "ATK",
+          "kind": "damage",
+          "actorId": "LAB_A1",
+          "applications": [
+            {
+              "avatarId": "LAB_B1",
+              "rawAmount": 10,
+              "hpBefore": 10,
+              "hpAfter": 0,
+              "shieldBefore": 0,
+              "shieldAfter": 0,
+              "mitigateBefore": 0,
+              "mitigateAfter": 0
+            }
+          ]
+        },
+        {
+          "label": "EXPERIMENTAL",
+          "ok": true,
+          "cardId": "LAB_A_ATK_1",
+          "actionType": "ATK",
+          "kind": "damage",
+          "actorId": "LAB_A1",
+          "applications": [
+            {
+              "avatarId": "LAB_B2",
+              "rawAmount": 10,
+              "hpBefore": 10,
+              "hpAfter": 0,
+              "shieldBefore": 0,
+              "shieldAfter": 0,
+              "mitigateBefore": 0,
+              "mitigateAfter": 0
+            }
+          ]
+        },
+        {
+          "label": "EXPERIMENTAL",
+          "ok": true,
+          "cardId": "LAB_A_ATK_2",
+          "actionType": "ATK",
+          "kind": "damage",
+          "actorId": "LAB_A1",
+          "applications": [
+            {
+              "avatarId": "LAB_B3",
+              "rawAmount": 10,
+              "hpBefore": 10,
+              "hpAfter": 0,
+              "shieldBefore": 0,
+              "shieldAfter": 0,
+              "mitigateBefore": 0,
+              "mitigateAfter": 0
+            }
+          ]
+        },
+        {
+          "label": "EXPERIMENTAL",
+          "ok": true,
+          "cardId": "LAB_A_ATK_3",
+          "actionType": "ATK",
+          "kind": "damage",
+          "actorId": "LAB_A1",
+          "applications": [
+            {
+              "avatarId": "LAB_B4",
+              "rawAmount": 10,
+              "hpBefore": 10,
+              "hpAfter": 0,
+              "shieldBefore": 0,
+              "shieldAfter": 0,
+              "mitigateBefore": 0,
+              "mitigateAfter": 0
+            }
+          ]
+        }
+      ],
+      "neverPlayed": [
+        "DEF",
+        "Skill"
+      ]
+    }
+  ]
+}
