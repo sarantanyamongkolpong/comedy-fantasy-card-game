@@ -6,6 +6,7 @@ import { emptySelection } from './battle-flow.js';
 import { el, modal } from './dom.js';
 import { createStarterProfile, buildMatchInput } from './profile.js';
 import { isPortrait, stageLayout } from './stage.js';
+import { applyBattlePolish } from './battle-fx/polish.js';
 import { renderBattle } from './screens/battle.js';
 import { performPull, renderGacha } from './screens/gacha.js';
 import { renderHome } from './screens/home.js';
@@ -278,6 +279,7 @@ function render() {
   else if (state.screen === 'battle' && state.match) view = renderBattle(ctx);
   else if (state.screen === 'rewards' && state.match) view = renderRewards(ctx);
   else view = renderHome(ctx);
+  if ((state.screen === 'battle' && state.match) || state.screen === 'prep') applyBattlePolish(view, ctx);
   stage.replaceChildren(view);
 }
 
