@@ -1,0 +1,23 @@
+{
+  "version": "0.1",
+  "status": "PROPOSED_VISUAL_LAYOUT_NOT_LOCKED",
+  "base_asset": "world_map_base_16x9.png",
+  "canvas": {"width": 1672, "height": 941, "aspect_ratio": "1672:941 (~16:9)"},
+  "layout_rule": "Maintain the whole map and every building/UI anchor on one fixed master coordinate system. Use uniform scale = min(viewportWidth / 1672, viewportHeight / 941); center with letterbox/pillarbox. Never stretch the map independently or reposition buildings per breakpoint.",
+  "anchor_rule": "Each proposed x,y is the near/front edge of the empty stone pad, intended to receive the transparent building image bottom-center (CSS translate(-50%, -100%)). Tweak size/anchor only after viewing all building sprites overlaid together. Do not bake buildings into the background.",
+  "sites": [
+    {"id":"home", "asset":"building_hideout.png", "pad":"lower_left", "bottom_anchor_px":{"x":264,"y":700}, "bottom_anchor_normalized":{"x":0.158,"y":0.744}, "target_width_master_px":268},
+    {"id":"tower", "asset":"building_mysterious_tower.png", "pad":"upper_center", "bottom_anchor_px":{"x":820,"y":260}, "bottom_anchor_normalized":{"x":0.490,"y":0.276}, "target_width_master_px":205},
+    {"id":"sports", "asset":"building_sports_complex.png", "pad":"lower_center", "bottom_anchor_px":{"x":904,"y":791}, "bottom_anchor_normalized":{"x":0.541,"y":0.841}, "target_width_master_px":330},
+    {"id":"arena", "asset":"building_tournament_arena.png", "pad":"middle_right", "bottom_anchor_px":{"x":1375,"y":530}, "bottom_anchor_normalized":{"x":0.822,"y":0.563}, "target_width_master_px":330},
+    {"id":"mall", "asset":"building_shopping_mall.png", "pad":"upper_right", "bottom_anchor_px":{"x":1393,"y":280}, "bottom_anchor_normalized":{"x":0.833,"y":0.298}, "target_width_master_px":330},
+    {"id":"gachapon", "asset":"building_gachapon_shop.png", "pad":"middle_left", "bottom_anchor_px":{"x":225,"y":405}, "bottom_anchor_normalized":{"x":0.135,"y":0.430}, "target_width_master_px":265}
+  ],
+  "qa": {
+    "assets": 7,
+    "background_is_separate": true,
+    "building_alpha_verified": true,
+    "status": "ASSETS_CREATED_AND_INSPECTED__INTEGRATION_NOT_YET_TESTED",
+    "warnings": ["Normalized anchors and render widths are visually estimated, not validated in live layout", "This map is richly illustrated and pixel-inspired, but not grid-exact pixel art; do not claim tile-perfect sprites"]
+  }
+}
