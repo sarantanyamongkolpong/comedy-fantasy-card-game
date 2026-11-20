@@ -19,7 +19,10 @@ Stream B owns `src/config`. Until that lands, pass a rule config into `createMat
 | `getZones(state, sideId)` | `{ draw, hand, discard, void }` copies. |
 | `getOutcome(state)` | Ongoing, or a decided result with a rewards object. |
 | `getState(state)` | JSON clone of the whole match. |
-| `defaultRuleConfig()` | Locked numbers plus `PENDING_OWNER` placeholders. |
+| `defaultRuleConfig()` | Locked numbers, `PENDING_OWNER` placeholders, and the proposed `autoPolicy` table. |
+| `chooseAutoActions(state, side, opts?)` | Ordered legal actions for that side's current turn. Does not change the match. |
+| `runAutoTurn(state, side, opts?)` | Plays that list, then ends the turn. Returns the match plus an action log. |
+| `playEnemyTurn(state, opts?)` | `runAutoTurn` for the enemy side. |
 
 `targets` may be an array of avatar ids, or `{ avatarIds, retrieveInstanceIds }`.
 
@@ -29,7 +32,9 @@ Stream B owns `src/config`. Until that lands, pass a rule config into `createMat
 
 `shuffleDecks` defaults to `true`. Tests that need a scripted pile pass `false`. Reshuffles of an empty draw pile always use the match seed.
 
-`runEnemyTurn` plays the active AI side, ends its turn, and discards that side's end-of-round excess. It does not play a human turn.
+`runEnemyTurn` plays the active AI side with the original lowest-instance demo, ends its turn, and discards that side's end-of-round excess. It does not play a human turn.
+
+`runAutoTurn` uses `autoPolicy` (default `balanced`, status `PROPOSED`). Pass `opts.shouldStop` or `opts.maxActions` to stop between actions without ending the turn. `playEnemyTurn` is that helper for the enemy side. SYNC is not implemented.
 
 ## Teams and decks
 

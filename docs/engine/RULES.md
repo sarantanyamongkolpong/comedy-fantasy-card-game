@@ -54,6 +54,12 @@ These stay `status: 'PENDING_OWNER'`. `resolveRuleConfig` rejects an attempt to 
 
 Unknown formula names, aggregations, and policies throw. They are not silently treated as the placeholder.
 
+## AUTO and SYNC
+
+AUTO battle mode is locked (`autoMode.enabled` is true). SYNC is not implemented: there is no sync function and no sync config.
+
+`autoPolicy` is `PROPOSED`. The default name is `balanced`. The table in `defaultRuleConfig().autoPolicy.policies` decides the order: heal or regen when a living ally is under `allyLowHpRatio` (0.4), shield or taunt the tank when an enemy strike can reduce an ally to 0, otherwise the highest estimated damage on the lowest-HP legal target. AP is spent greedily. A voluntary discard happens only when nothing legal remains and a card cannot be played even with enough AP. Editing the ratio or the priority order is allowed. Marking the policy `LOCKED` is rejected.
+
 ## Sample avatars
 
 `proposedSampleRoster()` in `src/engine/samples.js` is fixture data, not the catalog.

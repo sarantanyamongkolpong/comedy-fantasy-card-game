@@ -1,50 +1,21 @@
+import { orderedCandidates } from './candidates.js';
 import { getOutcome, endTurn, playAction, previewAction, resolveEndOfRoundDiscard } from './match.js';
-import { living, opponentId, permitMatches } from './model.js';
 
-function byId(left, right, key) {
-  if (left[key] < right[key]) return -1;
-  if (left[key] > right[key]) return 1;
+function byInstance(left, right) {
+  if (left.instanceId < right.instanceId) return -1;
+  if (left.instanceId > right.instanceId) return 1;
   return 0;
-}
-
-function candidateTargets(state, side, card) {
-  const pureTrigger = card.type === 'Skill'
-    && card.effects.length > 0
-    && card.effects.every((effect) => effect.op === 'trigger_active');
-  if (pureTrigger) return [[]];
-  const enemy = state.sides[opponentId(state, side.sideId)];
-  if (card.targetRule === 'Enemy') {
-    return living(enemy.avatars)
-      .sort((left, right) => byId(left, right, 'avatarId'))
-      .map((unit) => [unit.avatarId]);
-  }
-  if (card.targetRule === 'Ally') {
-    return living(side.avatars)
-      .sort((left, right) => byId(left, right, 'avatarId'))
-      .map((unit) => [unit.avatarId]);
-  }
-  if (card.targetRule === 'Self' || card.targetRule === 'All_Allies' || card.targetRule === 'All_Enemies') return [[]];
-  const effect = card.effects.find((item) => item.op === 'retrieve');
-  if (!effect) return [];
-  const pile = side.zones[effect.pile] ?? [];
-  const permitted = pile.filter((item) => permitMatches(item, effect.permit))
-    .sort((left, right) => byId(left, right, 'instanceId'));
-  const count = effect.count ?? 1;
-  if (permitted.length < count) return [];
-  return [{ retrieveInstanceIds: permitted.slice(0, count).map((item) => item.instanceId) }];
 }
 
 function chooseAction(state) {
   const side = state.sides[state.activeSideId];
-  const cards = [...side.zones.hand].sort((left, right) => byId(left, right, 'instanceId'));
-  const actors = living(side.avatars).sort((left, right) => byId(left, right, 'avatarId'));
-  for (const card of cards) {
-    for (const actor of actors) {
-      for (const targets of candidateTargets(state, side, card)) {
-        const action = { cardInstanceId: card.instanceId, actorAvatarId: actor.avatarId, targets };
-        if (previewAction(state, action).ok) return action;
-      }
-    }
+  for (const pair of orderedCandidates(state, side)) {
+    const action = {
+      cardInstanceId: pair.card.instanceId,
+      actorAvatarId: pair.actor.avatarId,
+      targets: pair.targets,
+    };
+    if (previewAction(state, action).ok) return action;
   }
   return null;
 }
@@ -77,7 +48,7 @@ export function runEnemyTurn(state) {
       const current = state.sides[sideId];
       const excess = current.zones.hand.length - state.config.handSize.value;
       if (excess <= 0 || current.control !== 'ai') continue;
-      const sorted = [...current.zones.hand].sort((left, right) => byId(left, right, 'instanceId'));
+      const sorted = [...current.zones.hand].sort(byInstance);
       for (let index = 0; index < excess; index += 1) ids.push(sorted[index].instanceId);
     }
     if (ids.length > 0) discarded = resolveEndOfRoundDiscard(state, ids);
