@@ -155,6 +155,12 @@ Quality gates on `c01f396` (runs 44754184886 and 44754199308) also did not start
 
 Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T150026Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T150026Z/`.
 
+Quality gates on `ecd170e` (runs 44758980394 and 44758993479) also did not start. The annotation is the same Actions billing block. No new suite totals.
+
+### Probe 7 — 2026-11-20T15:30:37Z
+
+Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T153037Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T153037Z/`.
+
 ## Findings
 
 ### P0
