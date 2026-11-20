@@ -96,8 +96,8 @@ bindApi(engine, [
       }
       assert.equal(regenStatus(avatarOf(state, 'player', 'AVT_AEG_002')), undefined);
       const ownTurn = () => {
-        state = asState(api.endTurn(state));
-        state = asState(api.endTurn(state));
+        state = asState(api.endTurn(state), state);
+        state = asState(api.endTurn(state), state);
       };
       let mark = state.log.length;
       ownTurn();

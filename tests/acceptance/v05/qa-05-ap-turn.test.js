@@ -42,9 +42,9 @@ bindApi(engine, [
       assert.equal(apOf(state, 'player'), 5);
       state = playCard(api, state, 'player', 'ACT_GEN_SKILL', 'AVT_SAN_002').state;
       assert.equal(apOf(state, 'player'), 4);
-      state = asState(api.endTurn(state));
-      state = asState(api.endTurn(state));
-      state = asState(api.startTurn(state));
+      state = asState(api.endTurn(state), state);
+      state = asState(api.endTurn(state), state);
+      state = asState(api.startTurn(state), state);
       assert.equal(state.activeSideId, 'player');
       assert.equal(apOf(state, 'player'), 5);
     },
@@ -74,7 +74,7 @@ bindApi(engine, [
       assert.equal(state.activeSideId, 'player');
       const outcome = readOutcome(api, state);
       assert.equal(outcome.result, 'ongoing');
-      state = asState(api.endTurn(state));
+      state = asState(api.endTurn(state), state);
       assert.equal(state.activeSideId, 'enemy');
     },
   },

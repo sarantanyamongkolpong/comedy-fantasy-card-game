@@ -58,9 +58,8 @@ bindApi(schema, [
   ...OPTIONAL.map((field) => ({
     name: `${field} v05 action schema field stays optional`,
     fn(api) {
-      const card = { ...base };
-      delete card[field];
-      assert.equal(failed(api.validateActionCardV05(card)), false);
+      const card = { ...base, [field]: null };
+      assert.equal(failed(api.validateActionCardV05(card)), false, `${field} may be null`);
     },
   })),
   {

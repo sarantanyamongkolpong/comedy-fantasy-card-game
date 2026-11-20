@@ -29,8 +29,7 @@ bindApi(engine, [
         cardInstanceId: card.instanceId,
         actorAvatarId: state.sides.enemy.avatars[0].avatarId,
         targets: [],
-        commit: true,
-      }));
+      }), state);
       assert.ok(state.sides.player.avatars.every((avatar) => avatar.defeated === true || avatar.hp <= 0));
       const outcome = readOutcome(api, state);
       assert.equal(outcome.result, 'lose');

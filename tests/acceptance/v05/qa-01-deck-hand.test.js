@@ -50,10 +50,10 @@ bindApi(engine, [
       let state = asState(api.createMatch(buildMatch()));
       const kept = findCard(zonesOf(api, state, 'player').hand, 'ACT_GEN_ATK5');
       state = playCard(api, state, 'player', 'ACT_GEN_ATK0', 'AVT_AEG_002').state;
-      state = asState(api.endTurn(state));
+      state = asState(api.endTurn(state), state);
       assert.equal(state.activeSideId, 'enemy');
-      state = asState(api.endTurn(state));
-      state = asState(api.startTurn(state));
+      state = asState(api.endTurn(state), state);
+      state = asState(api.startTurn(state), state);
       const zones = zonesOf(api, state, 'player');
       assert.equal(state.activeSideId, 'player');
       assert.equal(zones.hand.length, 5);

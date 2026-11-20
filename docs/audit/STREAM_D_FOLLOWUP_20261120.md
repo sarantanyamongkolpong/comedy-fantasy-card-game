@@ -8,5 +8,5 @@ This note does not edit `docs/audit/BASELINE_AUDIT_20261120.md` on `core/v05-des
   1. Justins are new characters `AVT_*_002` with `designRef` `AV_EX01`–`AV_EX04`. `AVT_*_001` stays.
   2. Pity counters are per banner. Epic and top are separate. An Epic hit resets Epic only. An EX/FAC hit resets both. Companion Epic is its own counter. Thresholds stay 100 / 200 / 100.
   3. `pow` maps to `atk` 1:1 and `legacy.pow` is kept.
-- `origin/core/v05-data` exists (`0b37c05` at the first fetch). `origin/core/v05-engine` and `origin/core/v05-web` did not.
+- `origin/core/v05-data` is `0b37c05`. `origin/core/v05-engine` is `07b1b2f`. `origin/core/v05-web` still has no remote ref.
 - No merge was pushed. Local merge results are in `docs/qa/v05/INTEGRATION_LOG.md`.

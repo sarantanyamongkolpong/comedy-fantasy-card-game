@@ -2,13 +2,13 @@
 
 Stream D calls these names. The audit list is the minimum. Later exports from `origin/core/v05-data` are accepted where they implement the same locked rule. A missing module is `todo`, not a pass. A module that exists and breaks a locked rule is a failure.
 
-## Battle engine (`src/engine/index.js`) — not landed at the first integration pass
+## Battle engine (`src/engine/index.js`)
 
-`createMatch`, `startTurn`, `playAction`, `discardVoluntary`, `endTurn`, `resolveEndOfRoundDiscard`, `getZones`, `getOutcome`, `advanceStatusTick`, `rollPassive`.
+Landed on `origin/core/v05-engine` @ `07b1b2f`. Stable names: `createMatch`, `startTurn`, `playAction`, `discardVoluntary`, `endTurn`, `resolveEndOfRoundDiscard`, `getZones`, `getOutcome`.
 
-`createMatch({ seed, deal: 'preserve', config, teams, decks })` deals the opening hand from the front of `decks[].cards` when `deal` is `preserve`. Seeded shuffle is for recycling Discard into Draw.
+`createMatch({ seed, shuffleDecks: false, teams, decks })` deals the opening hand from the front of each deck when `shuffleDecks` is false. `decks` is `{ player: cards, enemy: cards }` or an array parallel to `teams`. Cards need `targetRule` and an `effects` array. The engine assigns `instanceId`.
 
-`getZones(state, sideId)` returns `{ draw, hand, discard, void }`. `getOutcome(state)` returns `{ result: 'ongoing'|'win'|'lose'|'simultaneous', winningSideId, losingSideId, rewards }`. `playAction(..., { commit: false })` must not spend AP or move cards.
+`getZones(state, sideId)` returns `{ draw, hand, discard, void }`. `getOutcome(state)` uses `status: 'ongoing' | 'decided'`, `winnerSideId`, `loserSideId`, and one `rewards` object (or null). A preview is `previewAction`. It must not spend AP. Regen ticks on the next start of that side's turn. `advanceStatusTick` and `rollPassive` are not exported; passives are in the match log.
 
 ## Rule config (`src/config/index.js`)
 

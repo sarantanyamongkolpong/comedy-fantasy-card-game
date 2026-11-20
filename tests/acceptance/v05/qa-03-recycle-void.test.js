@@ -6,14 +6,14 @@ import { apOf, asState, findCard, instanceIds, playCard, zonesOf } from './helpe
 const engine = await loadNamed(ENGINE_FILES, ENGINE_EXPORTS, 'stream A');
 
 function finishTurn(api, state) {
-  let next = asState(api.endTurn(state));
+  let next = asState(api.endTurn(state), state);
   if (next.phase === 'end_of_round_discard') {
     const ids = [];
     for (const sideId of ['player', 'enemy']) {
       const hand = zonesOf(api, next, sideId).hand;
       if (hand.length > 5) ids.push(...hand.slice(0, hand.length - 5).map((card) => card.instanceId));
     }
-    next = asState(api.resolveEndOfRoundDiscard(next, ids));
+    next = asState(api.resolveEndOfRoundDiscard(next, ids), next);
   }
   return next;
 }
@@ -35,7 +35,12 @@ bindApi(engine, [
           state = finishTurn(api, state);
           continue;
         }
-        const playable = zonesOf(api, state, 'player').hand.find((card) => card.cardId !== 'ACT_VOID' && card.costAp <= apOf(state, 'player'));
+        const playable = zonesOf(api, state, 'player').hand.find((card) => {
+          if (card.cardId === 'ACT_VOID' || card.cardId === 'ACT_RETRIEVE') return false;
+          if (card.costAp > apOf(state, 'player')) return false;
+          if (card.factionRequirement && !card.factionOverride && card.factionRequirement !== 'Aegis Dominion') return false;
+          return true;
+        });
         if (!playable) {
           state = finishTurn(api, state);
           continue;
@@ -52,7 +57,8 @@ bindApi(engine, [
       const seen = new Set(instanceIds([...recycled.draw, ...recycled.hand, ...recycled.discard]));
       assert.equal(seen.has(voidCard.instanceId), false);
       assert.equal(recycled.void.length, 1);
-      assert.ok(recycled.draw.length + recycled.hand.length > 0, 'Discard must be shuffled back into Draw');
+      assert.ok(state.log.some((event) => event.type === 'shuffle_discard' && event.sideId === 'player'), 'Discard must be shuffled back into Draw');
+      assert.ok(recycled.draw.length + recycled.hand.length > 0);
     },
   },
   {
@@ -68,7 +74,7 @@ bindApi(engine, [
       assert.equal(during.discard.length, 1);
       assert.equal(typeof during.void[0].cardId, 'string');
       assert.equal(typeof during.discard[0].cardId, 'string');
-      state = asState(api.endTurn(state));
+      state = asState(api.endTurn(state), state);
       const after = zonesOf(api, state, 'player');
       assert.equal(after.void.length, 1);
       assert.ok(after.discard.length >= 1);

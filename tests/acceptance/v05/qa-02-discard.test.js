@@ -14,7 +14,7 @@ bindApi(engine, [
       const target = hand.find((entry) => entry.cardId === 'ACT_VOID');
       if (!target) throw new Error('opening hand is missing ACT_VOID');
       const before = apOf(state, 'player');
-      state = asState(api.discardVoluntary(state, target.instanceId));
+      state = asState(api.discardVoluntary(state, target.instanceId), state);
       const zones = zonesOf(api, state, 'player');
       assert.equal(apOf(state, 'player'), before - 1);
       assert.equal(zones.hand.some((entry) => entry.instanceId === target.instanceId), false);
@@ -31,8 +31,8 @@ bindApi(engine, [
       assert.ok(zones.hand.length > 5);
       const excess = zones.hand.length - 5;
       const chosen = zones.hand.slice(0, excess).map((card) => card.instanceId);
-      state = asState(api.endTurn(state));
-      state = asState(api.endTurn(state));
+      state = asState(api.endTurn(state), state);
+      state = asState(api.endTurn(state), state);
       const beforeAp = apOf(state, 'player');
       const tooFew = chosen.slice(0, Math.max(0, excess - 1));
       if (excess > 1) {
@@ -40,7 +40,7 @@ bindApi(engine, [
         assert.equal(apOf(state, 'player'), beforeAp);
         assert.equal(zonesOf(api, state, 'player').hand.length, zones.hand.length);
       }
-      state = asState(api.resolveEndOfRoundDiscard(state, chosen));
+      state = asState(api.resolveEndOfRoundDiscard(state, chosen), state);
       zones = zonesOf(api, state, 'player');
       assert.equal(zones.hand.length, 5);
       assert.notEqual(apOf(state, 'player'), beforeAp - 1, 'mandatory discard does not spend AP');
