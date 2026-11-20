@@ -26,8 +26,11 @@ if (!webLanded) {
 } else {
   test('QA-10 MAP-01 MAP-02 MAP-03 MAP-04 MAP-05 MAP-06 MAP-07 MAP-08 MAP-09 world map entries', () => {
     const manifest = JSON.parse(readFileSync(join(WEB_ROOT, 'assets-manifest.json'), 'utf8'));
-    const entries = manifest.mapEntries ?? manifest.entries ?? manifest.buildings;
-    const ids = (entries ?? []).map((entry) => entry.id ?? entry.key);
+    const listed = manifest.mapEntries ?? manifest.entries ?? manifest.buildings;
+    const fromAssets = (manifest.assets ?? [])
+      .filter((asset) => asset.slot === 'building')
+      .map((asset) => asset.hotspot?.siteId ?? asset.hotspot?.id);
+    const ids = (listed ?? fromAssets).map((entry) => (typeof entry === 'string' ? entry : entry.id ?? entry.key));
     for (const id of ['home', 'tower', 'sports', 'arena', 'mall', 'gachapon']) {
       assert.ok(ids.includes(id), `map is missing ${id}`);
     }
@@ -36,7 +39,10 @@ if (!webLanded) {
   test('OWNER-PLAT-01 OWNER-PLAT-02 web landscape shell', () => {
     assert.equal(existsSync(join(WEB_ROOT, 'index.html')), true);
     const html = readFileSync(join(WEB_ROOT, 'index.html'), 'utf8');
-    assert.match(html, /data-testid="rotate-overlay"/);
+    assert.match(html, /id="rotate-overlay"|data-testid="rotate-overlay"/);
+    const css = readFileSync(join(WEB_ROOT, 'css', 'app.css'), 'utf8');
+    assert.match(css, /#rotate-overlay\s*\{[^}]*display:\s*none/);
+    assert.match(css, /is-portrait #rotate-overlay|\(orientation:\s*portrait\)/);
   });
 
   test('OWNER-PLAT-03 visuals resolve through the asset manifest', () => {

@@ -70,7 +70,7 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | GA-08 | LOCKED | LOCKED | Guarantee by 200 pulls | tests/acceptance/v05/qa-08-gacha.test.js |  |
 | GA-09 | LOCKED | LOCKED | Guarantee by 100 pulls | tests/acceptance/v05/qa-08-gacha.test.js |  |
 | GA-10 | LOCKED | LOCKED | No top-tier pity | tests/acceptance/v05/qa-08-gacha.test.js |  |
-| GA-11 | PENDING | PENDING | Not finalized | tests/acceptance/v05/qa-08-gacha.test.js | Drop rates and the G price per pull. Do not invent either. |
+| GA-11 | PENDING | PENDING | Not finalized | tests/acceptance/v05/qa-08-gacha.test.js and tests/acceptance/v05/qa-12-playable-web.test.js | Drop rates and the G price stay unset. On `core/v05-playable` @ `6be1689` the web TEST banners and the string pull seed are rejected by `src/gacha`. |
 | GA-12 | PENDING | LOCKED by Owner t253u (sheet cell was PENDING) | Reset on target? banner-specific/shared? overlapping guarantees? | tests/acceptance/v05/qa-08-gacha.test.js | None. The sheet cell can be updated by the Owner; the behavior is locked. |
 | GA-13 | LOCKED | LOCKED | Hero Synthesis uses duplicates; protection for locked/in-deck | tests/acceptance/v05/save-inventory.test.js |  |
 | HOME-01 | LOCKED | LOCKED | Cabin | tests/acceptance/v05/qa-09-storage.test.js |  |
@@ -111,7 +111,7 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | OPEN-02 | PENDING | PENDING | HP formula, Regen tick timing, cap, stacking, KO healing | tests/acceptance/v05/pending-owner.test.js | Regen tick phase, heal cap, and KO healing. |
 | OPEN-03 | PENDING | PENDING | Same-card duplicate max, forced vs optional discard timing phrasing | tests/acceptance/v05/pending-owner.test.js | Duplicate cap, and the exact wording of forced versus optional discard. |
 | OPEN-04 | PENDING | PENDING | Rarity Star cap, EXP curve, synthesis materials, promotion recipes | tests/acceptance/v05/pending-owner.test.js | Star cap per rarity, EXP curve, synthesis cost, promotion cost. Do not assume N2/R3/Epic4/EX5. |
-| OPEN-05 | PENDING | PENDING | Exact drop probabilities, G costs, pity-reset semantics | tests/acceptance/v05/pending-owner.test.js | Same as GA-11. Pity reset itself is no longer open: Owner t253u locked GA-12. |
+| OPEN-05 | PENDING | PENDING | Exact drop probabilities, G costs, pity-reset semantics | tests/acceptance/v05/pending-owner.test.js and tests/acceptance/v05/qa-12-playable-web.test.js | Rates and G price stay open. Pity reset is locked by Owner t253u. The playable web booth does not meet the test-banner or integer-seed contract. |
 | OPEN-06 | PENDING | PENDING | Cabin base capacity, furniture grant vs unlock-to-buy, prices | tests/acceptance/v05/pending-owner.test.js | Whether reference furniture is granted or only unlocked to buy, and any price. |
 | OPEN-07 | PENDING | PENDING | Sync 100%, old 5×2, Tower floors, Sports games | tests/acceptance/v05/pending-owner.test.js | Whether Sync 100%, the old 5×2 grid, Tower floors, or Sports games are in this core. |
 | OPEN-08 | PROPOSED | PROPOSED | Stats and passives other than Justina's active | tests/acceptance/v05/pending-owner.test.js | Keep the value editable and labelled PROPOSED. Location: sample record field status, not a production constant. |
@@ -126,7 +126,7 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | QA-07 | NOT RUN | NOT RUN | All enemy dead win; all own 4 dead lose | tests/acceptance/v05/qa-07-win-lose.test.js | Acceptance row. Result is in ACCEPTANCE_STATUS.md. |
 | QA-08 | NOT RUN | NOT RUN | Epic pity 100, top 200, Companion Epic 100 | tests/acceptance/v05/qa-08-gacha.test.js | Acceptance row. Result is in ACCEPTANCE_STATUS.md. |
 | QA-09 | NOT RUN | NOT RUN | No capacity boost solely from house tier; installed furniture pools | tests/acceptance/v05/qa-09-storage.test.js | Acceptance row. Result is in ACCEPTANCE_STATUS.md. |
-| QA-10 | NOT RUN | NOT RUN | Map→Home/Gacha/Battle→Rewards, touch controls, piles viewer | tests/acceptance/v05/qa-10-ui.test.js and tests/e2e/smoke-guard.test.js | Acceptance row. Result is in ACCEPTANCE_STATUS.md. |
+| QA-10 | NOT RUN | NOT RUN | Map→Home/Gacha/Battle→Rewards, touch controls, piles viewer | tests/acceptance/v05/qa-10-ui.test.js, tests/acceptance/v05/qa-12-playable-web.test.js, tests/e2e/smoke-guard.test.js | On `core/v05-playable` @ `6be1689` the engine win/lose smoke passed. Gacha banners, the string pull seed, and save reload failed. See INTEGRATION_LOG.md. |
 | QA-11 | NOT RUN | NOT RUN | No unapproved merge/deploy, all commits pushed, conflict map | tests/acceptance/v05/qa-11-git.test.js | Acceptance row. Result is in ACCEPTANCE_STATUS.md. |
 | 1. Audit | NOT STARTED | NOT STARTED | Inspect actual Card Game repo/PR #9/#11; merge conflict dry run | docs/qa/v05/REQUIREMENT_RECONCILIATION.md (process row, no gameplay lock) | Acceptance row. Result is in ACCEPTANCE_STATUS.md. |
 | 2. Core | NOT STARTED | NOT STARTED | Implement deterministic Battle engine and Action/Avatar schemas | docs/qa/v05/REQUIREMENT_RECONCILIATION.md (process row, no gameplay lock) | Acceptance row. Result is in ACCEPTANCE_STATUS.md. |
@@ -137,7 +137,7 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | OWNER-PLAT-01 | LOCKED | LOCKED | Web-playable game | tests/acceptance/v05/qa-10-ui.test.js |  |
 | OWNER-PLAT-02 | LOCKED | LOCKED | Optimized for mobile LANDSCAPE | tests/acceptance/v05/qa-10-ui.test.js |  |
 | OWNER-PLAT-03 | LOCKED | LOCKED | All visuals swappable/editable via manifest asset refs; no baked-in art in code | tests/acceptance/v05/qa-10-ui.test.js |  |
-| OWNER-PLAT-04 | LOCKED | LOCKED | Fixed-aspect design canvas; uniform scale + letterbox/pillarbox; never stretch; buildings never off-edge; UI anchored to same canvas | tests/acceptance/v05/owner-plat-04-map.test.js |  |
+| OWNER-PLAT-04 | LOCKED | LOCKED | Fixed-aspect design canvas; uniform scale + letterbox/pillarbox; never stretch; buildings never off-edge; UI anchored to same canvas | tests/acceptance/v05/owner-plat-04-map.test.js and tests/acceptance/v05/qa-12-playable-web.test.js | On `core/v05-playable` @ `6be1689` the 1672×941 stage scales uniformly. `MAP_BLD_MALL` is 50px above the canvas. |
 
 ## Platform rows (not in the xlsx)
 
@@ -146,5 +146,5 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | OWNER-PLAT-01 | LOCKED | tests/acceptance/v05/qa-10-ui.test.js | Web entry. Todo until web/ exists. |
 | OWNER-PLAT-02 | LOCKED | tests/acceptance/v05/qa-10-ui.test.js | Landscape, portrait rotate overlay. |
 | OWNER-PLAT-03 | LOCKED | tests/acceptance/v05/qa-10-ui.test.js | Manifest asset refs. No data:image. |
-| OWNER-PLAT-04 | LOCKED | tests/acceptance/v05/owner-plat-04-map.test.js | Fixed-aspect canvas across the viewport matrix. |
+| OWNER-PLAT-04 | LOCKED | tests/acceptance/v05/owner-plat-04-map.test.js and tests/acceptance/v05/qa-12-playable-web.test.js | 1672×941 stage. On playable, the mall sprite box starts at y=-50. |
 | D-ID | LOCKED Owner t253u | tests/acceptance/v05/qa-04-faction.test.js | New Justin ids. *_001 unchanged test passes on this branch today. |

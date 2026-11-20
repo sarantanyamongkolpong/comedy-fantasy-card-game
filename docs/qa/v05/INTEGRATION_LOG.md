@@ -47,4 +47,32 @@ None in the merged data + engine tree. No failing acceptance test.
 
 ### Mobile
 
-No viewport run. The map module is not in this checkout. Portrait and the seven landscape sizes stay todo until `web/` lands.
+No viewport run in that pass. The map module was not in the checkout yet.
+
+## 20 Nov 2026, 17:05 ICT — `core/v05-playable`
+
+`origin/core/v05-playable` @ `6be1689` is base + data `0b37c05` + engine `07b1b2f` + web `e8461b7` (PR #19). `origin/core/v05-playable-wire` has no remote ref yet. This branch was not merged. The acceptance files were copied onto a detached worktree that also had `web/`, `src/`, and `content/` from `6be1689`.
+
+Mira's full run of that commit: 243 pass / 244, the one failure is `tests/web/mock-contract.test.js:112` (expects `source: 'mock'` while `loadGameApi` now reports `engine`).
+
+Acceptance on that worktree, Node v22.23.4 and v20.20.2, same totals:
+
+| | count |
+| --- | --- |
+| pass | 96 |
+| fail | 4 |
+| todo | 3 |
+| discovered | 103 |
+
+The Deck → Battle → Rewards smoke against `src/engine` passed for both a player win and a player loss. Rewards were emitted once. Landscape shells 667×375, 844×390, and 1280×720 scale the 1672×941 stage uniformly and stay inside the viewport. Manifest image refs resolve. `loadGameApi().playEnemyTurn` is `runEnemyTurn`; the engine module itself does not export `playEnemyTurn`.
+
+### P0 on playable
+
+1. `MAP_BLD_MALL` sprite box is `1228,-50 330×330`. The top of the mall leaves the 1672×941 canvas. OWNER-PLAT-04.
+2. `web/js/sample-catalog.js` `TEST_BANNERS` are rejected by `createBannerState` with `GA11_RATES_PENDING`. They set `testConfig` and `weights`, not `testOnly`, `rateStatus: 'TEST_ONLY_NOT_PRODUCTION'`, `warning`, and `entries`.
+3. `web/js/screens/gacha.js` passes `` seed: `gacha:${bannerId}:${seq}:${count}` ``. `pull()` requires an integer seed.
+4. Reloading the web starter profile through `src/save` throws `save profile is missing profileId`. The web profile is not the save module's profile.
+
+### Still todo
+
+`layoutWorldMap` is not the web export (the web uses `stageLayout` and `buildingHotspots`). The Playwright smoke stays todo; the node smoke above is the one that ran. `core/v05-playable-wire` was not on the remote, so it was not run.
