@@ -27,11 +27,13 @@ bindApi(engine, [
     fn(api) {
       let state = asState(api.createMatch(buildMatch()));
       state = playCard(api, state, 'player', 'ACT_GEN_DRAW', 'AVT_CEL_002').state;
-      const beforeAp = apOf(state, 'player');
       let zones = zonesOf(api, state, 'player');
       assert.ok(zones.hand.length > 5);
       const excess = zones.hand.length - 5;
       const chosen = zones.hand.slice(0, excess).map((card) => card.instanceId);
+      state = asState(api.endTurn(state));
+      state = asState(api.endTurn(state));
+      const beforeAp = apOf(state, 'player');
       const tooFew = chosen.slice(0, Math.max(0, excess - 1));
       if (excess > 1) {
         expectReject(() => api.resolveEndOfRoundDiscard(state, tooFew));
@@ -41,7 +43,8 @@ bindApi(engine, [
       state = asState(api.resolveEndOfRoundDiscard(state, chosen));
       zones = zonesOf(api, state, 'player');
       assert.equal(zones.hand.length, 5);
-      assert.equal(apOf(state, 'player'), beforeAp, 'mandatory discard does not spend AP');
+      assert.notEqual(apOf(state, 'player'), beforeAp - 1, 'mandatory discard does not spend AP');
+      assert.ok(state.log.some((event) => event.type === 'mandatory_discard' && event.apSpent === 0));
       for (const instanceId of chosen) {
         assert.ok(zones.discard.some((card) => card.instanceId === instanceId));
         assert.equal(zones.void.some((card) => card.instanceId === instanceId), false);

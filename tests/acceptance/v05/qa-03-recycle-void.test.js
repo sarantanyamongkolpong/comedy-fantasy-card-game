@@ -1,19 +1,19 @@
 import assert from 'node:assert/strict';
 import { bindApi, ENGINE_EXPORTS, ENGINE_FILES, loadNamed } from './helpers/load-api.js';
-import { buildMatch } from './helpers/match.js';
-import { asState, findCard, instanceIds, playCard, zonesOf } from './helpers/state.js';
+import { buildMatch, deckLists } from './helpers/match.js';
+import { apOf, asState, findCard, instanceIds, playCard, zonesOf } from './helpers/state.js';
 
 const engine = await loadNamed(ENGINE_FILES, ENGINE_EXPORTS, 'stream A');
 
-function playHandToDiscard(api, state, sideId, actorAvatarId) {
-  let next = state;
-  const hand = [...zonesOf(api, next, sideId).hand];
-  for (const card of hand) {
-    if (card.onResolveZone === 'Void') {
-      next = playCard(api, next, sideId, card.cardId, actorAvatarId).state;
-      continue;
+function finishTurn(api, state) {
+  let next = asState(api.endTurn(state));
+  if (next.phase === 'end_of_round_discard') {
+    const ids = [];
+    for (const sideId of ['player', 'enemy']) {
+      const hand = zonesOf(api, next, sideId).hand;
+      if (hand.length > 5) ids.push(...hand.slice(0, hand.length - 5).map((card) => card.instanceId));
     }
-    next = playCard(api, next, sideId, card.cardId, actorAvatarId).state;
+    next = asState(api.resolveEndOfRoundDiscard(next, ids));
   }
   return next;
 }
@@ -28,13 +28,19 @@ bindApi(engine, [
       assert.ok(zonesOf(api, state, 'player').void.some((card) => card.instanceId === voidCard.instanceId));
       assert.equal(zonesOf(api, state, 'player').discard.some((card) => card.instanceId === voidCard.instanceId), false);
 
-      for (let cycle = 0; cycle < 8; cycle += 1) {
+      for (let cycle = 0; cycle < 80; cycle += 1) {
         const zones = zonesOf(api, state, 'player');
-        if (zones.draw.length === 0 && zones.hand.length === 0) break;
-        state = playHandToDiscard(api, state, 'player', 'AVT_AEG_002');
-        state = asState(api.endTurn(state));
-        if (state.activeSideId === 'enemy') state = asState(api.endTurn(state));
-        state = asState(api.startTurn(state));
+        if (zones.draw.length === 0 && zones.discard.length === 0) break;
+        if (state.activeSideId !== 'player') {
+          state = finishTurn(api, state);
+          continue;
+        }
+        const playable = zonesOf(api, state, 'player').hand.find((card) => card.cardId !== 'ACT_VOID' && card.costAp <= apOf(state, 'player'));
+        if (!playable) {
+          state = finishTurn(api, state);
+          continue;
+        }
+        state = playCard(api, state, 'player', playable.cardId, 'AVT_AEG_002').state;
         const after = zonesOf(api, state, 'player');
         assert.equal(after.void.some((card) => card.instanceId === voidCard.instanceId), true);
         assert.equal(after.draw.some((card) => card.instanceId === voidCard.instanceId), false);
@@ -72,7 +78,7 @@ bindApi(engine, [
     name: 'QA-03 CORE-019 return effects retrieve only the named permitted card',
     fn(api) {
       const input = buildMatch();
-      const deck = input.decks[0].cards;
+      const deck = deckLists(input)[0];
       const pullFront = (cardId) => {
         const index = deck.findIndex((card) => card.cardId === cardId);
         if (index < 0) throw new Error(`fixture deck is missing ${cardId}`);
@@ -91,8 +97,7 @@ bindApi(engine, [
       const result = api.playAction(state, {
         cardInstanceId: retrieve.instanceId,
         actorAvatarId: 'AVT_AEG_002',
-        targets: [zero.instanceId],
-        commit: true,
+        targets: { retrieveInstanceIds: [zero.instanceId] },
       });
       state = asState(result, state);
       const zones = zonesOf(api, state, 'player');

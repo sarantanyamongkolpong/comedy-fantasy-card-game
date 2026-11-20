@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { bindApi, ENGINE_EXPORTS, ENGINE_FILES, loadNamed } from './helpers/load-api.js';
-import { assertDeckCount, buildMatch, enemyDeck, playerDeck } from './helpers/match.js';
+import { assertDeckCount, buildMatch, deckLists, enemyDeck, playerDeck } from './helpers/match.js';
 
 test('QA-01 fixture decks contain 30 action cards', () => {
   for (const cards of [playerDeck('standard'), playerDeck('faction'), playerDeck('damage'), enemyDeck()]) {
@@ -39,8 +39,9 @@ bindApi(engine, [
       assert.equal(zones.draw.length, 25);
       assert.equal(zones.discard.length, 0);
       assert.equal(zones.void.length, 0);
-      assert.deepEqual(instanceIds(zones.hand), input.decks[0].cards.slice(0, 5).map((card) => card.instanceId));
-      assert.deepEqual(instanceIds(zones.draw), input.decks[0].cards.slice(5).map((card) => card.instanceId));
+      const deck = deckLists(input)[0];
+      assert.deepEqual(zones.hand.map((card) => card.cardId), deck.slice(0, 5).map((card) => card.cardId));
+      assert.deepEqual(zones.draw.map((card) => card.cardId), deck.slice(5).map((card) => card.cardId));
     },
   },
   {

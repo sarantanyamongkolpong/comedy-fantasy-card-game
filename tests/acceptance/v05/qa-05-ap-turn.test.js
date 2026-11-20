@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { bindApi, CONFIG_FILES, ENGINE_EXPORTS, ENGINE_FILES, loadNamed } from './helpers/load-api.js';
 import { buildMatch } from './helpers/match.js';
-import { apOf, asState, expectReject, flagOf, playCard, readOutcome, zonesOf } from './helpers/state.js';
+import { apOf, asState, expectReject, flagOf, isPendingStatus, playCard, readOutcome, zonesOf } from './helpers/state.js';
 
 const engine = await loadNamed(ENGINE_FILES, ENGINE_EXPORTS, 'stream A');
 const config = await loadNamed(CONFIG_FILES, ['defaultRuleConfig'], 'stream B');
@@ -28,9 +28,9 @@ bindApi(engine, [
       if (config.mod && config.missing.length === 0) {
         const tie = flagOf(config.mod.defaultRuleConfig(), 'spdTieBreak');
         const aggregate = flagOf(config.mod.defaultRuleConfig(), 'teamSpdAggregation');
-        assert.equal(tie.status, 'PENDING');
+        assert.equal(isPendingStatus(tie.status), true);
         assert.equal(tie.value ?? null, null);
-        assert.equal(aggregate.status, 'PENDING');
+        assert.equal(isPendingStatus(aggregate.status), true);
         assert.equal(aggregate.value ?? null, null);
       }
     },
@@ -58,10 +58,10 @@ bindApi(engine, [
       state = playCard(api, state, 'player', 'ACT_GEN_ATK5', 'AVT_PHA_002').state;
       assert.equal(apOf(state, 'player'), 0);
       const illegal = buildMatch();
-      illegal.decks[0].cards[0] = { ...illegal.decks[0].cards[0], costAp: 6, cardId: 'ACT_ILLEGAL', instanceId: 'player-ACT_ILLEGAL-0' };
+      illegal.decks.player[0] = { ...illegal.decks.player[0], costAp: 6, cardId: 'ACT_ILLEGAL' };
       expectReject(() => api.createMatch(illegal));
       const negative = buildMatch();
-      negative.decks[0].cards[0] = { ...negative.decks[0].cards[0], costAp: -1 };
+      negative.decks.player[0] = { ...negative.decks.player[0], costAp: -1 };
       expectReject(() => api.createMatch(negative));
     },
   },

@@ -6,7 +6,7 @@ import * as avatarCatalog from '../../../src/avatars/catalog.js';
 
 const SAMPLE_AVATARS = avatarCatalog.SAMPLE_AVATARS;
 import { bindApi, CONFIG_FILES, ENGINE_EXPORTS, ENGINE_FILES, loadNamed, repoPath, tryImport } from './helpers/load-api.js';
-import { buildMatch, rosters } from './helpers/match.js';
+import { buildMatch, deckLists, rosters } from './helpers/match.js';
 import { apOf, asState, expectReject, playCard, zonesOf } from './helpers/state.js';
 
 const EXPECTED_001 = [
@@ -243,8 +243,8 @@ bindApi(engine, [
     name: 'QA-04 CORE-002 action decks do not contain avatar cards',
     fn(api) {
       const input = buildMatch();
-      for (const deck of input.decks) {
-        for (const card of deck.cards) {
+      for (const cards of deckLists(input)) {
+        for (const card of cards) {
           assert.notEqual(card.type, 'Avatar');
           assert.equal(String(card.cardId).startsWith('AVT_'), false);
         }
@@ -261,7 +261,7 @@ bindApi(engine, [
     name: 'QA-04 CORE-022 CORE-023 mixed-faction deck is legal',
     fn(api) {
       const input = buildMatch({ profile: 'faction' });
-      const ids = new Set(input.decks[0].cards.map((card) => card.factionRequirement).filter(Boolean));
+      const ids = new Set(deckLists(input)[0].map((card) => card.factionRequirement).filter(Boolean));
       assert.ok(ids.has('FAC_AEG'));
       assert.ok(ids.has('FAC_PHA'));
       const state = asState(api.createMatch(input));

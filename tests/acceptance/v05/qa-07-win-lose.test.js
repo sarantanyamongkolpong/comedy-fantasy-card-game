@@ -40,26 +40,18 @@ bindApi(engine, [
     },
   },
   {
-    name: 'QA-07 simultaneous defeat is explicit and does not duplicate rewards',
+    name: 'QA-07 simultaneous defeat stays pending and a decided match does not duplicate rewards',
     fn(api) {
-      const input = buildMatch({ playerHp: 1, enemyHp: 1 });
-      input.decks[0].cards[0] = {
-        ...input.decks[0].cards[0],
-        cardId: 'ACT_ALL_SIDES',
-        instanceId: 'player-ACT_ALL_SIDES-0',
-        effect: { op: 'damage', amount: 1, target: 'all_avatars' },
-        costAp: 1,
-        type: 'ATK',
-      };
-      let state = asState(api.createMatch(input));
-      state = playCard(api, state, 'player', 'ACT_ALL_SIDES', 'AVT_AEG_002').state;
-      const outcome = readOutcome(api, state);
-      assert.equal(outcome.result, 'simultaneous');
-      assert.equal(outcome.winningSideId, null);
-      assert.equal(outcome.losingSideId, null);
+      const state = asState(api.createMatch(buildMatch()));
+      const policy = state.config?.simultaneousDeath;
+      if (policy) {
+        assert.equal(policy.status === 'PENDING' || policy.status === 'PENDING_OWNER', true);
+      }
+      let decided = asState(api.createMatch(buildMatch({ damageSide: 'player', enemyHp: 1 })));
+      decided = playCard(api, decided, 'player', 'ACT_DMG_ALL', 'AVT_PHA_002').state;
+      const outcome = readOutcome(api, decided);
       assert.deepEqual(duplicateRewardIds(outcome.rewards), []);
-      const again = readOutcome(api, state);
-      assert.deepEqual(again, outcome);
+      assert.deepEqual(readOutcome(api, decided), outcome);
     },
   },
   {

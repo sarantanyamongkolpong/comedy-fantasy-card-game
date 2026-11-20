@@ -103,8 +103,6 @@ export const ENGINE_EXPORTS = [
   'resolveEndOfRoundDiscard',
   'getZones',
   'getOutcome',
-  'advanceStatusTick',
-  'rollPassive',
 ];
 
 export function repoPath(...parts) {

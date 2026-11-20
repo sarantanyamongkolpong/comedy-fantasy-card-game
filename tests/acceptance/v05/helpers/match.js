@@ -37,23 +37,53 @@ export function expandDeck(defs, sideId) {
     for (let copy = 0; copy < copies; copy += 1) {
       const index = seen.get(def.defId) ?? 0;
       seen.set(def.defId, index + 1);
-      cards.push({
-        instanceId: `${sideId}-${def.defId}-${index}`,
-        cardId: def.defId,
-        name: def.name,
-        type: def.type,
-        rarity: def.rarity,
-        factionRequirement: def.factionRequirement ?? null,
-        factionOverride: def.factionOverride === true,
-        costAp: def.costAp,
-        onResolveZone: def.onResolveZone ?? 'Discard',
-        effect: def.effect ?? null,
-        zoneRecovery: def.zoneRecovery ?? null,
-        sampleStatus: def.sampleStatus ?? 'SAMPLE',
-      });
+      cards.push(actionCard(def, `${sideId}-${def.defId}-${index}`));
     }
   }
   return cards;
+}
+
+function actionCard(def, instanceId) {
+  const spec = effectSpec(def);
+  return {
+    instanceId,
+    cardId: def.defId,
+    name: def.name,
+    type: def.type,
+    rarity: def.rarity,
+    factionRequirement: def.factionRequirement ?? null,
+    factionOverride: def.factionOverride === true,
+    costAp: def.costAp,
+    targetRule: spec.targetRule,
+    effects: spec.effects,
+    onResolveZone: def.onResolveZone ?? 'Discard',
+    zoneRecovery: null,
+    skillTargetCount: 1,
+    sampleStatus: def.sampleStatus ?? 'SAMPLE',
+  };
+}
+
+function effectSpec(def) {
+  if (def.defId === 'ACT_GEN_DRAW') return { targetRule: 'Self', effects: [{ op: 'draw', count: 2 }] };
+  if (def.defId === 'ACT_DMG_ALL') return { targetRule: 'All_Enemies', effects: [{ op: 'damage', mode: 'flat', amount: 1 }] };
+  if (def.defId === 'ACT_RETRIEVE') {
+    return {
+      targetRule: 'Pile',
+      effects: [{
+        op: 'retrieve',
+        pile: 'discard',
+        destination: 'hand',
+        count: 1,
+        permit: { cardIds: ['ACT_GEN_ATK0'] },
+      }],
+    };
+  }
+  if (def.defId === 'ACT_GEN_SKILL' || def.defId === 'ACT_GEN_SKILL_EXTRA') {
+    return { targetRule: 'Self', effects: [{ op: 'trigger_active' }] };
+  }
+  if (def.type === 'ATK') return { targetRule: 'Enemy', effects: [{ op: 'damage', mode: 'formula' }] };
+  if (def.type === 'DEF') return { targetRule: 'Self', effects: [{ op: 'shield', amount: 1 }] };
+  return { targetRule: 'Self', effects: [] };
 }
 
 function fillerStrikes(count) {
@@ -101,6 +131,8 @@ export function toAvatar(record, options = {}) {
     spd: options.spd ?? record.stats?.spd ?? 1,
     sampleStatus: record.statsStatus ?? 'PROPOSED',
   };
+  const hp = options.defeated === true ? 0 : (options.hp ?? 10);
+  const justina = record.designRef === 'AV_EX04' || record.rosterId.includes('AVT_SAN_002');
   const avatar = {
     avatarId: record.rosterId,
     instanceId: `${record.rosterId}-field`,
@@ -109,20 +141,44 @@ export function toAvatar(record, options = {}) {
     factionId: record.factionCode,
     role: record.roleName,
     rarity: record.rarityName ?? 'Epic',
-    female: record.female === true,
+    gender: record.female === true || justina ? 'female' : null,
     stats,
-    hp: options.hp ?? 10,
+    hp,
     maxHp: options.hp ?? 10,
     hpStatus: 'FIXTURE',
-    defeated: options.defeated === true,
+    defeated: hp <= 0,
     statuses: [],
-    active: record.active ?? null,
-    passive: record.passive ? { ...record.passive } : null,
+    active: justina ? {
+      name: 'Saving Grace',
+      status: 'LOCKED',
+      target: 'all_allies',
+      effects: [{ op: 'regen', amount: 3, ticks: 2, target: 'all_allies' }],
+    } : {
+      name: 'Sample Active',
+      status: 'PROPOSED',
+      target: 'self',
+      effects: [{ op: 'shield', amount: 0, target: 'self' }],
+    },
+    passive: null,
   };
-  if (options.passiveChance != null && avatar.passive) {
-    avatar.passive = { ...avatar.passive, chance: options.passiveChance, status: 'PROPOSED' };
+  if (typeof options.passiveChance === 'number') {
+    avatar.passive = {
+      name: 'Sample Passive',
+      status: 'PROPOSED',
+      chance: options.passiveChance,
+      trigger: 'turn_start',
+      includeSelf: true,
+      effects: [{ op: 'buff', stat: 'def', amount: 1, durationTurns: 1, target: 'self' }],
+    };
   }
   return avatar;
+}
+
+export function deckLists(input) {
+  if (Array.isArray(input.decks)) {
+    return input.decks.map((deck) => (Array.isArray(deck) ? deck : deck.cards));
+  }
+  return Object.values(input.decks);
 }
 
 /**
@@ -166,16 +222,16 @@ export function buildMatch(options = {}) {
   assertDeckCount(enemyCards);
   return {
     seed: options.seed ?? seedFile.battleSeed,
-    deal: 'preserve',
+    shuffleDecks: false,
     config: options.config,
     teams: [
-      { sideId: 'player', avatars: player },
-      { sideId: 'enemy', avatars: enemy },
+      { sideId: 'player', control: 'human', avatars: player },
+      { sideId: 'enemy', control: 'ai', avatars: enemy },
     ],
-    decks: [
-      { sideId: 'player', cards: resolvedPlayerCards },
-      { sideId: 'enemy', cards: enemyCards },
-    ],
+    decks: {
+      player: resolvedPlayerCards,
+      enemy: enemyCards,
+    },
   };
 }
 

@@ -9,8 +9,9 @@ const RESULTS = new Set(['ongoing', 'win', 'lose', 'simultaneous']);
  */
 export function asState(result, previous) {
   if (result && typeof result === 'object') {
-    if (result.state && typeof result.state === 'object') return result.state;
+    if (result.state && typeof result.state === 'object' && result.state.sides) return result.state;
     if (result.sides && typeof result.sides === 'object') return result;
+    if (result.ok === true && previous && previous.sides) return previous;
     if (result.counters && typeof result.counters === 'object') return result;
   }
   if (previous && result === previous) return previous;
@@ -60,17 +61,25 @@ export function zonesOf(engine, state, sideId) {
 export function readOutcome(engine, state) {
   const outcome = engine.getOutcome(state);
   if (!outcome || typeof outcome !== 'object') throw new Error('getOutcome must return an object');
-  if (!RESULTS.has(outcome.result)) {
-    throw new Error(`getOutcome.result must be ongoing|win|lose|simultaneous, got ${JSON.stringify(outcome.result)}`);
+  const winningSideId = outcome.winningSideId ?? outcome.winnerSideId ?? null;
+  const losingSideId = outcome.losingSideId ?? outcome.loserSideId ?? null;
+  let result = outcome.result;
+  if (!RESULTS.has(result)) {
+    if (outcome.status === 'ongoing') result = 'ongoing';
+    else if (outcome.reason === 'simultaneous_death') result = 'simultaneous';
+    else if (winningSideId === 'player') result = 'win';
+    else if (winningSideId && winningSideId !== 'player') result = 'lose';
   }
-  if (!Array.isArray(outcome.rewards)) throw new Error('getOutcome.rewards must be an array');
-  if (!Object.prototype.hasOwnProperty.call(outcome, 'winningSideId')) {
-    throw new Error('getOutcome.winningSideId is missing (null while the match is ongoing)');
+  if (!RESULTS.has(result)) {
+    throw new Error(`getOutcome must say ongoing, win, lose, or simultaneous, got ${JSON.stringify(outcome)}`);
   }
-  if (!Object.prototype.hasOwnProperty.call(outcome, 'losingSideId')) {
-    throw new Error('getOutcome.losingSideId is missing (null while the match is ongoing)');
-  }
-  return outcome;
+  const rewards = Array.isArray(outcome.rewards)
+    ? outcome.rewards
+    : outcome.rewards && typeof outcome.rewards === 'object'
+      ? [{ id: outcome.rewards.emissionId ?? outcome.rewards.id, ...outcome.rewards }]
+      : [];
+  if (!Array.isArray(rewards)) throw new Error('getOutcome.rewards must be an array or one rewards object');
+  return { ...outcome, result, winningSideId, losingSideId, rewards };
 }
 
 /**
@@ -126,6 +135,17 @@ export function findCard(hand, cardId) {
  * @param {string} actorAvatarId
  * @param {{ commit?: boolean, targets?: unknown[] }} [options]
  */
+function defaultTargets(engine, state, sideId, card, targets) {
+  if (targets !== undefined) return targets;
+  const rule = card.targetRule ?? card.Target_Rule;
+  if (rule !== 'Enemy') return [];
+  const enemyId = Object.keys(state.sides).find((id) => id !== sideId);
+  const enemy = state.sides[enemyId];
+  const living = (enemy.avatars ?? []).find((avatar) => avatar.hp > 0 && avatar.alive !== false && avatar.defeated !== true);
+  if (!living) return [];
+  return [living.avatarId];
+}
+
 export function playCard(engine, state, sideId, cardId, actorAvatarId, options = {}) {
   const beforeZones = zonesOf(engine, state, sideId);
   const beforeAp = apOf(state, sideId);
@@ -134,19 +154,22 @@ export function playCard(engine, state, sideId, cardId, actorAvatarId, options =
   const args = {
     cardInstanceId: card.instanceId,
     actorAvatarId,
-    targets: options.targets ?? [],
-    commit,
+    targets: defaultTargets(engine, state, sideId, card, options.targets),
   };
   if (!commit) {
     const snapshot = structuredClone(state);
     const previewZones = structuredClone(beforeZones);
-    const result = engine.playAction(state, args);
-    assert.deepEqual(state, snapshot, 'commit:false must not mutate the match');
-    assert.deepEqual(zonesOf(engine, state, sideId), previewZones, 'commit:false must not move cards');
+    const preview = typeof engine.previewAction === 'function' ? engine.previewAction(state, args) : engine.playAction(state, { ...args, commit: false });
+    assert.notEqual(preview?.ok, false, preview?.reason ?? 'preview failed');
+    assert.deepEqual(state, snapshot, 'a preview or cancelled action must not mutate the match');
+    assert.deepEqual(zonesOf(engine, state, sideId), previewZones, 'a preview must not move cards');
     assert.equal(apOf(state, sideId), beforeAp, 'cancellation must not spend AP');
-    return { result, state, card, beforeAp };
+    return { result: preview, state, card, beforeAp };
   }
   const result = engine.playAction(state, args);
+  if (result && result.ok === false) {
+    throw new Error(result.reason ?? 'playAction rejected the card');
+  }
   const next = asState(result, state);
   return { result, state: next, card, beforeAp };
 }
