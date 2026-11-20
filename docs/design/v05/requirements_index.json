@@ -1,0 +1,828 @@
+[
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-001",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-002",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-003",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-004",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-005",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-006",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-007",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-008",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-009",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-010",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-011",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-012",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-013",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-014",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-015",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-016",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-017",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-018",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-019",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-020",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-021",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-022",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-023",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-024",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-025",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-026",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-027",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-028",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-029",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-030",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-031",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-032",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-033",
+  "status_cell": "SUPERSEDED",
+  "status_effective": "SUPERSEDED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-034",
+  "status_cell": "SUPERSEDED",
+  "status_effective": "SUPERSEDED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-035",
+  "status_cell": "SUPERSEDED",
+  "status_effective": "SUPERSEDED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-036",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-037",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-038",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-039",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Core_Rules",
+  "id": "CORE-040",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Avatar_Examples",
+  "id": "AV_EX01",
+  "status_cell": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+  "status_effective": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Avatar_Examples",
+  "id": "AV_EX02",
+  "status_cell": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+  "status_effective": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Avatar_Examples",
+  "id": "AV_EX03",
+  "status_cell": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+  "status_effective": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Avatar_Examples",
+  "id": "AV_EX04",
+  "status_cell": "Female + Name + ACTIVE EFFECT LOCKED; other stats/skills PROPOSED",
+  "status_effective": "Female + Name + ACTIVE EFFECT LOCKED; other stats/skills PROPOSED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-01",
+  "status_cell": "Owner 19-20 Nov",
+  "status_effective": "LOCKED",
+  "flag": "⚠ sheet row column-shifted: status found in \"Pity Pulls\""
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-02",
+  "status_cell": "Owner 19-20 Nov",
+  "status_effective": "LOCKED",
+  "flag": "⚠ sheet row column-shifted: status found in \"Pity Pulls\""
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-03",
+  "status_cell": "Owner 19-20 Nov",
+  "status_effective": "LOCKED",
+  "flag": "⚠ sheet row column-shifted: status found in \"Pity Pulls\""
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-04",
+  "status_cell": "Owner 19-20 Nov",
+  "status_effective": "LOCKED",
+  "flag": "⚠ sheet row column-shifted: status found in \"Pity Pulls\""
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-05",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-06",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-07",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-08",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-09",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-10",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-11",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-12",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Gacha",
+  "id": "GA-13",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-01",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-02",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-03",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-04",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-05",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-06",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-07",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-08",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-09",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-10",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "HOME-11",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-01",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-02",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-03",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-04",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-05",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-06",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-07",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-08",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Hideout_Map",
+  "id": "MAP-09",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Action_ID",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Name",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Type",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Rarity",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Faction_Requirement",
+  "status_cell": "OPTIONAL",
+  "status_effective": "OPTIONAL",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Cost_AP",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Target_Rule",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Effect_Spec",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Duration_Turns",
+  "status_cell": "OPTIONAL",
+  "status_effective": "OPTIONAL",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "On_Resolve_Zone",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Zone_Recovery",
+  "status_cell": "OPTIONAL",
+  "status_effective": "OPTIONAL",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Can_Play",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Asset_Ref",
+  "status_cell": "OPTIONAL",
+  "status_effective": "OPTIONAL",
+  "flag": null
+ },
+ {
+  "tab": "v05_Action_Schema",
+  "id": "Version_And_Status",
+  "status_cell": "REQUIRED",
+  "status_effective": "REQUIRED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-01",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-02",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-03",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-04",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-05",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-06",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-07",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-08",
+  "status_cell": "PROPOSED",
+  "status_effective": "PROPOSED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-09",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_Open_Decisions",
+  "id": "OPEN-10",
+  "status_cell": "PENDING",
+  "status_effective": "PENDING",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-01",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-02",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-03",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-04",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-05",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-06",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-07",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-08",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-09",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-10",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_QA",
+  "id": "QA-11",
+  "status_cell": "NOT RUN",
+  "status_effective": "NOT RUN",
+  "flag": null
+ },
+ {
+  "tab": "v05_Mira_Handoff",
+  "id": "1. Audit",
+  "status_cell": "NOT STARTED",
+  "status_effective": "NOT STARTED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Mira_Handoff",
+  "id": "2. Core",
+  "status_cell": "NOT STARTED",
+  "status_effective": "NOT STARTED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Mira_Handoff",
+  "id": "3. Loop",
+  "status_cell": "NOT STARTED",
+  "status_effective": "NOT STARTED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Mira_Handoff",
+  "id": "4. QA",
+  "status_cell": "NOT STARTED",
+  "status_effective": "NOT STARTED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Mira_Handoff",
+  "id": "5. Handoff",
+  "status_cell": "NOT STARTED",
+  "status_effective": "NOT STARTED",
+  "flag": null
+ },
+ {
+  "tab": "v05_Mira_Handoff",
+  "id": "Source",
+  "status_cell": "READY",
+  "status_effective": "READY",
+  "flag": null
+ }
+]
