@@ -824,5 +824,33 @@
   "status_cell": "READY",
   "status_effective": "READY",
   "flag": null
+ },
+ {
+  "tab": "OWNER_ADDENDUM_t250u",
+  "id": "OWNER-PLAT-01",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": "Web-playable"
+ },
+ {
+  "tab": "OWNER_ADDENDUM_t250u",
+  "id": "OWNER-PLAT-02",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": "Mobile landscape"
+ },
+ {
+  "tab": "OWNER_ADDENDUM_t250u",
+  "id": "OWNER-PLAT-03",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": "Swappable assets via manifest"
+ },
+ {
+  "tab": "OWNER_ADDENDUM_t250u",
+  "id": "OWNER-PLAT-04",
+  "status_cell": "LOCKED",
+  "status_effective": "LOCKED",
+  "flag": "Fixed-aspect world map canvas"
  }
 ]

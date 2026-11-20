@@ -163,6 +163,15 @@ Legend: `Status (cell)` = the value in the sheet's status column. `Status (effec
 | 5. Handoff | Commit/push authorized branches and provide Draft PR links | Commit/push authorized branches and provide Draft PR links | NOT STARTED | NOT STARTED |  |
 | Source | Read linked master prompt MIRA_CARD_GAME_CORE_MASTER_PROMPT_20261120.md | Read linked master prompt MIRA_CARD_GAME_CORE_MASTER_PROMPT_20261120.md | READY | READY |  |
 
+## Owner platform addendum (t250u, 20 Nov 2026) — not in the xlsx; recorded from Owner message
+
+| ID | Area/Topic | Rule (short) | Status (cell) | Status (effective) | Note |
+|---|---|---|---|---|---|
+| OWNER-PLAT-01 | Platform | Web-playable game | LOCKED | LOCKED | Owner t250u |
+| OWNER-PLAT-02 | Platform | Optimized for mobile LANDSCAPE | LOCKED | LOCKED | Owner t250u |
+| OWNER-PLAT-03 | Assets | All visuals swappable/editable via manifest asset refs; no baked-in art in code | LOCKED | LOCKED | Owner t250u |
+| OWNER-PLAT-04 | World map | Fixed-aspect design canvas; uniform scale + letterbox/pillarbox; never stretch; buildings never off-edge; UI anchored to same canvas | LOCKED | LOCKED | Owner t250u |
+
 ## Counts (effective status)
 
 | Tab | Status | Count |
