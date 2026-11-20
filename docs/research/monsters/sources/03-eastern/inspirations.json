@@ -1,0 +1,1669 @@
+[
+  {
+    "inspirationId": "INS-03-001",
+    "name": "Jiangshi (僵尸 / 殭屍)",
+    "origin": "Chinese folklore",
+    "kind": "folklore",
+    "facts": [
+      "A jiangshi is an undead or reanimated corpse in Chinese legends and folklore, often called a Chinese hopping vampire in English.",
+      "Hong Kong cinema fixed the popular image of a stiff corpse in Qing official dress that hops; folkloric accounts instead describe a more dangerous corpse that can run, and an old enough one, or one that has absorbed enough yang, that can fly.",
+      "J. J. M. de Groot linked the fear to unburied corpses and to qi animating exposed bodies. The nighttime trade of 'corpse-driving' — tying a body to bamboo so it could be carried home for burial — also produced the look of a hopping corpse."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jiangshi",
+        "title": "Jiangshi",
+        "accessed": "2026-11-20",
+        "supports": "Undead corpse; hop is a cinema image; folklore allows running and flight; corpse-driving practice."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "corpse",
+      "pursuit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower corpse furious that films taught it to hop, when it would rather sprint the corridor.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-002",
+    "name": "Huli jing (狐狸精)",
+    "origin": "Chinese mythology and folklore",
+    "kind": "myth",
+    "facts": [
+      "Huli jing are Chinese fox spirits, usually able to shapeshift, and they may be benevolent or malevolent.",
+      "Names in the tradition sort them into fox immortal, fox god, fox saint, fox king, fox demon, fox clan, and nine-tailed fox (jiuweihu).",
+      "Whether a fox spirit is a good or bad omen depends on the story. The nine-tailed fox motif later passed into Japanese, Korean, and Vietnamese tradition."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Huli_jing",
+        "title": "Huli jing",
+        "accessed": "2026-11-20",
+        "supports": "Shapeshifting fox spirits, good or bad, including the nine-tailed fox and later transmission."
+      }
+    ],
+    "archetypeTags": [
+      "shapeshifter",
+      "fox",
+      "omen"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A nine-resume fox who keeps one tail per failed job interview.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-003",
+    "name": "Nian (年獸)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The nian is a beast said to live under the sea or in the mountains. The character nian more usually means year or new year.",
+      "The earliest written sources that treat the nian as a creature date to the early 20th century, so it is unclear whether it is ancient mythology or an oral tradition first written down then.",
+      "It is now a key Chinese New Year figure. Scholars cite it as the reason for practices such as wearing red and making noise with drums and fireworks."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nian",
+        "title": "Nian",
+        "accessed": "2026-11-20",
+        "supports": "Sea or mountain beast; early-20th-century written sources; linked by scholars to red clothes and New Year noise."
+      }
+    ],
+    "archetypeTags": [
+      "festival-beast",
+      "noise",
+      "calendar"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A New Year beast that files a noise complaint and then flees its own fireworks.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-004",
+    "name": "Pixiu (貔貅)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The pixiu is a Chinese mythical hybrid, described as resembling a strong winged lion, and treated as a protector of the souls of the dead, of xian, and of feng shui practitioners.",
+      "It is an auspicious wealth creature whose appetite is said to be only for gold, silver, and jewels, drawing cai qi (wealth-energy) from all directions.",
+      "A two-antler form, the female Bixie, wards off evil; a one-antler form, the male Tianlu, seeks wealth. Statues are used to attract money."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pixiu",
+        "title": "Pixiu",
+        "accessed": "2026-11-20",
+        "supports": "Winged-lion wealth guardian; gold appetite; Bixie and Tianlu antler types."
+      }
+    ],
+    "archetypeTags": [
+      "auspicious",
+      "wealth",
+      "hybrid"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A treasury beast that can swallow coins and cannot spit them back out.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-005",
+    "name": "Taotie (饕餮)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The taotie is an ancient Chinese mythological creature, one of the Four Perils in classics such as the Classic of Mountains and Seas, with Hundun, Qiongqi, and Taowu.",
+      "It is the familiar frontal, symmetrical mask on Shang and Zhou ritual bronze vessels such as dings: raised eyes and typically no lower jaw.",
+      "Some scholars trace related designs to Neolithic jades, including the Liangzhu culture."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Taotie",
+        "title": "Taotie",
+        "accessed": "2026-11-20",
+        "supports": "Four Perils member; bronze mask with eyes and usually no lower jaw."
+      }
+    ],
+    "archetypeTags": [
+      "glutton",
+      "bronze-mask",
+      "ancient"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mask-face boss with no chin who still tries to eat the loot pile.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-006",
+    "name": "Hundun (混沌)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Hundun names both a legendary faceless being in Chinese mythology and the primordial central chaos of Chinese cosmogony, compared with the world egg.",
+      "The taotie article lists Hundun among the Four Perils beside Taotie, Qiongqi, and Taowu."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hundun",
+        "title": "Hundun",
+        "accessed": "2026-11-20",
+        "supports": "Faceless being and primordial chaos."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Taotie",
+        "title": "Taotie",
+        "accessed": "2026-11-20",
+        "supports": "Hundun is named as one of the Four Perils."
+      }
+    ],
+    "archetypeTags": [
+      "faceless",
+      "chaos",
+      "primordial"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A faceless round boss who wins by having no features left to target.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-007",
+    "name": "Penghou (彭侯)",
+    "origin": "Chinese mythology and folklore",
+    "kind": "myth",
+    "facts": [
+      "The Penghou, literally 'drumbeat marquis', is a tree spirit. The Baize tu says a creature evolved from the essence of wood looks like a black dog with no tail, and that its meat can be eaten.",
+      "The Soushenji tells of Jing Shu felling a camphor tree in the Wu kingdom: the wood bled, and inside was an animal like a dog with a human face, which he identified as a Penghou and stewed.",
+      "Li Shizhen's Bencao gangmu repeats those sources. Toriyama Sekien later drew the Japanese reading Hōkō from the same Chinese texts."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Penghou",
+        "title": "Penghou",
+        "accessed": "2026-11-20",
+        "supports": "Tailless black-dog tree spirit; camphor-tree story; later a Sekien yokai under the Japanese name."
+      }
+    ],
+    "archetypeTags": [
+      "tree-spirit",
+      "dog-faced",
+      "edible-in-lore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A camphor-tree dog with a human face who objects to being a recipe.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-008",
+    "name": "Bai Ze (白澤)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Bai Ze is a mythical creature from ancient Chinese legend, later introduced to Japan under the same name in the Tang period.",
+      "The Book of Song tradition of the Bai Ze tu says this divine creature knows the world's ghosts and gods. The Yellow Emperor entrusted it to draw and annotate them.",
+      "Appearance differs by source: the Ming San Cai Tu Hui gives green hair, a dragon head, a horn, and flight; the History of Yuan gives a tiger head and red mane. Households hung Bai Ze drawings to ward off spirit harm."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bai_Ze",
+        "title": "Bai Ze",
+        "accessed": "2026-11-20",
+        "supports": "All-knowing divine beast; ghost diagram for the Yellow Emperor; protective household images."
+      }
+    ],
+    "archetypeTags": [
+      "cataloguer",
+      "auspicious",
+      "anti-spirit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A librarian of ghosts whose diagram is always one entry out of date. Do not mock the protective custom.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-009",
+    "name": "Zhenniao (鴆鳥)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Zhenniao, often just zhen, literally 'poison-feather bird', is the name given in Chinese myths, annals, and poetry to poisonous birds once said to live in what is now southern China.",
+      "The fifth chapter of the Classic of Mountains and Seas describes the zhen as resembling an eagle and places it on several southern mountains, including Mount Nüji in Jiangsu."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zhenniao",
+        "title": "Zhenniao",
+        "accessed": "2026-11-20",
+        "supports": "Poison-feather bird resembling an eagle in southern mountains, from the Shanhaijing."
+      }
+    ],
+    "archetypeTags": [
+      "poison",
+      "bird",
+      "classic"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A southern eagle whose feathers are a walking hazard label.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-010",
+    "name": "Xiangliu (相柳 / 相繇)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Xiangliu, called Xiangyao in the Classic of Mountains and Seas, is a venomous nine-headed snake monster that brings floods and destruction.",
+      "The body may be shown coiled. Older woodcuts cluster the nine heads on one neck; many modern pictures give each head its own neck, like a hydra."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Xiangliu",
+        "title": "Xiangliu",
+        "accessed": "2026-11-20",
+        "supports": "Venomous nine-headed flood snake; head arrangement varies by picture."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "flood",
+      "multi-head"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A nine-headed flood snake that cannot agree which way the river should run.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-011",
+    "name": "Xiezhi (獬豸), also haechi",
+    "origin": "Chinese mythology, also Korean",
+    "kind": "myth",
+    "facts": [
+      "The xiezhi is a mythical creature of Chinese origin across Sinospheric legends. It resembles an ox or goat, with thick dark fur, bright eyes, and one long horn.",
+      "It is said to understand human speech and to know right from wrong. Finding a corrupt official, it rams them with the horn and devours them. It is a symbol of justice.",
+      "The English Wikipedia disambiguation for Haechi points to the xiezhi as the legendary creature in Chinese and Korean mythology and as the Seoul mascot."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Xiezhi",
+        "title": "Xiezhi",
+        "accessed": "2026-11-20",
+        "supports": "One-horned justice beast that gores corrupt officials."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Haechi",
+        "title": "Haechi",
+        "accessed": "2026-11-20",
+        "supports": "Disambiguation identifies the xiezhi with Chinese and Korean mythology and the Seoul mascot."
+      }
+    ],
+    "archetypeTags": [
+      "justice",
+      "unicorn-ox",
+      "judge"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A one-horn auditor who headbutts only the player who cheated the loot roll. Avoid mocking the Seoul civic symbol.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-012",
+    "name": "Kui (夔)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Kui is a polysemous name. Classic texts use it for a legendary musician who invented music and dancing, for a one-legged mountain demon or rain-god, and for the kuiniu wild yak or buffalo.",
+      "The one-legged Kui is variously said to resemble a Chinese dragon, a drum, or a monkey with a human face."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kui_(Chinese_mythology)",
+        "title": "Kui (Chinese mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Musician, one-legged mountain demon or rain-god, and wild bovine share the name."
+      }
+    ],
+    "archetypeTags": [
+      "one-legged",
+      "music",
+      "mountain"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A one-legged drum-demon who keeps perfect time and terrible balance. Do not target the rain-god sense.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-013",
+    "name": "Chinese dragon (long / loong, 龍)",
+    "origin": "Chinese mythology and culture",
+    "kind": "myth",
+    "facts": [
+      "The Chinese dragon, long or loong, is a legendary creature in Chinese mythology, folklore, and culture at large.",
+      "It has many animal-like forms, including turtles and fish, but is most often shown as snake-like with four legs.",
+      "Scholars have offered four origin theories: snakes, Chinese alligators, thunder worship, and nature worship. Dragons traditionally symbolize potent auspicious power, especially control of water and weather."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chinese_dragon",
+        "title": "Chinese dragon",
+        "accessed": "2026-11-20",
+        "supports": "Snake-like four-legged auspicious weather and water being."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "water",
+      "auspicious"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Research record only for a sacred auspicious symbol. Prefer the hornless jiaolong if a comic flood-serpent is needed.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-014",
+    "name": "Qilin (麒麟)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The qilin is a legendary hooved chimera in Chinese mythology, said to appear with the imminent arrival or passing of a sage or illustrious ruler.",
+      "It is a specific type within the lin family of one-horned beasts, and it also appears in other Chinese-influenced mythologies."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Qilin",
+        "title": "Qilin",
+        "accessed": "2026-11-20",
+        "supports": "Hooved chimera and omen of a sage or ruler; one-horned lin type."
+      }
+    ],
+    "archetypeTags": [
+      "omen",
+      "hooved",
+      "auspicious"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An omen beast that arrives for a wise ruler and looks embarrassed when the party is not one.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-015",
+    "name": "Fenghuang (鳳凰)",
+    "origin": "Chinese and Sinosphere mythology",
+    "kind": "myth",
+    "facts": [
+      "Fenghuang are mythological birds across the Sinosphere, understood to reign over all other birds.",
+      "Males and females were once called feng and huang separately. The gender split is usually dropped now, and the fenghuang is generally treated as feminine and paired with the traditionally masculine Chinese dragon.",
+      "Calling it a Chinese phoenix is a Western habit; similarities to the Persian or Western phoenix are superficial."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fenghuang",
+        "title": "Fenghuang",
+        "accessed": "2026-11-20",
+        "supports": "Bird-sovereign paired with the dragon; not a Western phoenix."
+      }
+    ],
+    "archetypeTags": [
+      "bird",
+      "auspicious",
+      "sovereign"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bird-sovereign who refuses to be called a phoenix on the nameplate.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-016",
+    "name": "Jiaolong (蛟龍)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The jiaolong, or jiao, is a serpent-like dragon in Chinese mythology, often defined as a scaled dragon. Certain scholars say it is hornless, and it is described as aquatic or river-dwelling. It may once have referred to a crocodile.",
+      "Scholars point to non-Sinitic southern origins. Ancient texts say the Yue tattooed their bodies to ward these monsters off.",
+      "English translators render jiao as jiao-dragon, crocodile, flood dragon, scaly dragon, or even kraken."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jiaolong",
+        "title": "Jiaolong",
+        "accessed": "2026-11-20",
+        "supports": "Hornless aquatic scaled dragon; Yue tattoos as a ward."
+      }
+    ],
+    "archetypeTags": [
+      "flood-dragon",
+      "river",
+      "serpent"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A hornless river dragon still annoyed that people got tattoos instead of paying the toll.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-017",
+    "name": "Chi (螭)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Chi means either a hornless dragon or a mountain demon (chimei) in Chinese mythology.",
+      "Hornless dragons were a common motif in ancient Chinese art. The chiwen, or 'hornless-dragon mouth', was an imperial roof ornament."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chi_(mythology)",
+        "title": "Chi (mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Hornless dragon or mountain demon; chiwen roof ornament."
+      }
+    ],
+    "archetypeTags": [
+      "hornless-dragon",
+      "roof-guardian",
+      "mountain-demon"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A roof-ornament dragon that eats gutter water and files leak reports.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-018",
+    "name": "Bixi (贔屭)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Bixi is a figure from Chinese mythology, one of the nine sons of the Dragon King, depicted as a dragon with a turtle's shell.",
+      "Stone bixi have served for centuries as plinths under commemorative steles, including in later imperial funerary complexes, and also under bridges and archways.",
+      "People traditionally rub the sculptures for luck, which damages them. They occur across East Asia and the Russian Far East."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bixi",
+        "title": "Bixi",
+        "accessed": "2026-11-20",
+        "supports": "Dragon-turtle son of the Dragon King, used as a stele plinth and rubbed for luck."
+      }
+    ],
+    "archetypeTags": [
+      "dragon-turtle",
+      "monument",
+      "burden"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A dragon-turtle who has been holding the same tablet up for centuries and would like a shift change.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-019",
+    "name": "Feilian (飛廉)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Feilian is a Chinese wind spirit from a southern tradition, later identified with and absorbed under the main wind deity Fengbo.",
+      "The name has also been tied to a late Shang minister and to the mythical phoenix. After losing the rank of wind-master, Feilian kept a separate identity as a mythical creature."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Feilian",
+        "title": "Feilian",
+        "accessed": "2026-11-20",
+        "supports": "Southern wind spirit later folded into Fengbo, surviving as a creature."
+      }
+    ],
+    "archetypeTags": [
+      "wind",
+      "demoted-spirit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A retired wind spirit who still gusts the discard pile when ignored.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-020",
+    "name": "Wangliang (魍魎)",
+    "origin": "Chinese folklore",
+    "kind": "folklore",
+    "facts": [
+      "A wangliang is a malevolent spirit. Readings of the name include a wilderness spirit like the kui, a water spirit akin to the Chinese dragon, a fever demon like the three-legged poisonous turtle called yu, and a graveyard ghost also called wangxiang or fangliang.",
+      "One description is a man-eating demon like a three-year-old child, with brown skin, red eyes, long ears, and beautiful hair."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wangliang",
+        "title": "Wangliang",
+        "accessed": "2026-11-20",
+        "supports": "Several malevolent-spirit readings, including a child-shaped man-eater."
+      }
+    ],
+    "archetypeTags": [
+      "wilderness-spirit",
+      "grave",
+      "ambiguous"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Use the wilderness or graveyard reading. Do not build a joke on the child-shaped man-eater.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-021",
+    "name": "Daji (妲己) as fox spirit",
+    "origin": "Chinese historical legend and literature",
+    "kind": "historical",
+    "facts": [
+      "Daji is the alleged favorite consort of Di Xin, last king of Shang. She is not recorded in contemporary oracle-bone inscriptions.",
+      "In later legend and fiction she is a malevolent fox spirit who kills and impersonates the real Daji. That fox identification is traced at least to the Tang, and it was spread by works such as Wu Wang fa Zhou pinghua, Fengshen yanyi, and Lieguo zhi.",
+      "She is a stock example of a beautiful femme fatale blamed for a dynasty's fall. In 1111 a Song edict ordered destruction of many Kaifeng spirit shrines, including shrines of Daji; suppression of fox cults was unsuccessful."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Daji",
+        "title": "Daji",
+        "accessed": "2026-11-20",
+        "supports": "Later fox-spirit impersonator of a Shang consort; shrine suppression in 1111; not on oracle bones."
+      }
+    ],
+    "archetypeTags": [
+      "fox",
+      "femme-fatale",
+      "court"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A fox who stole a queen's name and is still bad at paperwork. Do not treat the shrine cult as a punchline.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-022",
+    "name": "Bai Suzhen (白素貞), Lady White Snake",
+    "origin": "Chinese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Bai Suzhen, also Lady Bai, is a thousand-year-old white snake spirit and the title figure of the Legend of the White Snake, one of China's four great folktales.",
+      "The legend is a romance between the snake spirit and a man named Xu Xian. The story has changed by era and region and has been told in novels, operas, and other media.",
+      "In some versions Bai Suzhen becomes a goddess, and worshippers call her Madam White Snake. She is widely taken as a symbol of true love and kind-heartedness."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bai_Suzhen",
+        "title": "Bai Suzhen",
+        "accessed": "2026-11-20",
+        "supports": "Thousand-year white snake of a great folktale; sometimes worshipped as Madam White Snake."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Legend_of_the_White_Snake",
+        "title": "Legend of the White Snake",
+        "accessed": "2026-11-20",
+        "supports": "Romance of Xu Xian and Bai Suzhen; one of the four great folktales."
+      }
+    ],
+    "archetypeTags": [
+      "snake-spirit",
+      "romance",
+      "folktale"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An affectionate tower echo of a devoted snake-doctor, not a mockery of Madam White Snake worship.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-023",
+    "name": "Mogwai (魔鬼), as a word",
+    "origin": "Cantonese and Chinese religious vocabulary",
+    "kind": "folklore",
+    "facts": [
+      "Mogwai is the Cantonese reading of 魔鬼, meaning monster, evil spirit, devil, or demon. Mandarin reads the same characters móguǐ.",
+      "Mo comes from Sanskrit māra, evil beings, literally death. Examples given are the yecha (yaksha) and the luocha (rakshasa), both reaching Chinese lore through Buddhism.",
+      "This is a class word, not a single species, and it is not the creature from the 1984 film that borrowed the sound of the word."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mogwai_(Chinese_culture)",
+        "title": "Mogwai (Chinese culture)",
+        "accessed": "2026-11-20",
+        "supports": "Cantonese word for demon; Sanskrit māra; yaksha and rakshasa as examples."
+      }
+    ],
+    "archetypeTags": [
+      "terminology",
+      "demon",
+      "loanword"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not design a furry film-gremlin. The word is a generic demon label.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-024",
+    "name": "Oni (鬼)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "An oni is a yōkai, demon, or ogre in Japanese folklore, said to live in caves, deep mountains, or hell.",
+      "They are hugely strong, tied to thunder and lightning, and storied as murderous and cannibal. Typical pictures show horns, huge teeth, sometimes a third eye, red blue black or yellow skin, a tiger-skin loincloth, and an iron kanabō.",
+      "They can change shape to win trust. Heian setsuwa show them eating a person in one bite (onihitokuchi). They have also been linked to good fortune. Shuten-dōji is regarded as the most famous and strongest oni."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Oni",
+        "title": "Oni",
+        "accessed": "2026-11-20",
+        "supports": "Horned club-wielding ogre; shapeshifting; Heian man-eating tales; also a luck association."
+      }
+    ],
+    "archetypeTags": [
+      "oni",
+      "brute",
+      "shapeshifter"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A horned hall monitor whose club is heavier than the joke.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-025",
+    "name": "Kappa (河童)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The kappa, 'river-child', is a major Japanese water yōkai living in ponds and rivers, also called kawatarō in some places.",
+      "Older accounts make them drowners of people, horses, and cattle. Later tales have a captured kappa, sometimes with an arm pulled off, repay forgiveness with labor or a secret medicine.",
+      "They are pictured as green, slimy or scaly, webbed, and turtle-shelled. A dish (sara) of water on the head is their strength; spill it and they weaken. They like cucumbers and sumo, and are accused of pulling out a mythical organ called the shirikodama."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kappa_(folklore)",
+        "title": "Kappa (folklore)",
+        "accessed": "2026-11-20",
+        "supports": "River monster; head-dish; cucumbers; sumo; shift from killer to indebted helper."
+      }
+    ],
+    "archetypeTags": [
+      "river",
+      "trickster",
+      "water-weakness"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A river auditor who will wrestle for a cucumber and folds if anyone bows low enough to spill the dish.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-026",
+    "name": "Tengu (天狗)",
+    "origin": "Japanese folklore and Shinto belief",
+    "kind": "folklore",
+    "facts": [
+      "Tengu, 'heavenly dog', are legendary creatures in Shinto belief, classed as yōkai or as kami.",
+      "They were first thought of as birds of prey and were tied to a monkey deity, drawn with human, monkey, and bird traits. Sarutahiko Ōkami is considered the model of the red-faced long-nosed konoha-tengu now treated as the popular tengu.",
+      "Buddhism long called them disruptive demons and omens of war. The image softened into dangerous but protective mountain and forest spirits, associated with Shugendō and usually dressed as yamabushi."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tengu",
+        "title": "Tengu",
+        "accessed": "2026-11-20",
+        "supports": "Heavenly-dog yokai or kami; long-nosed yamabushi form; Sarutahiko as model of the konoha-tengu."
+      }
+    ],
+    "archetypeTags": [
+      "mountain",
+      "bird",
+      "ascetic"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A long-nosed mountain guide who gives terrible directions on purpose. Do not parody Sarutahiko Ōkami.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-027",
+    "name": "Kitsune (狐)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "In popular Japanese folklore the kitsune is a fox or fox spirit with the supernatural ability to shapeshift or bewitch other living beings.",
+      "The bake-danuki article says that in some regions tanuki are reputed to share kitsune-like powers of shapeshifting and possession. The noppera-bō article lists kitsune among shapeshifters who may stage a faceless scare."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kitsune",
+        "title": "Kitsune",
+        "accessed": "2026-11-20",
+        "supports": "Fox spirit that shapeshifts or bewitches."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bake-danuki",
+        "title": "Bake-danuki",
+        "accessed": "2026-11-20",
+        "supports": "Some regions credit tanuki with kitsune-like shapeshifting and possession."
+      }
+    ],
+    "archetypeTags": [
+      "fox",
+      "shapeshifter",
+      "possession"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A fox clerk who files the party under the wrong names. Do not attach this record to Inari worship; that link was not in the sources read.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-028",
+    "name": "Bake-danuki (化け狸)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Bake-danuki are yōkai in classics and local legends, associated with the Japanese raccoon dog, the tanuki. The literary bake-danuki is a strange or supernatural animal, not just the real mammal.",
+      "In some regions they are said to shapeshift or possess people, abilities also attributed to kitsune.",
+      "Named tanuki of Sado, Awa, and Kagawa, among others, became subjects of ritual."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bake-danuki",
+        "title": "Bake-danuki",
+        "accessed": "2026-11-20",
+        "supports": "Supernatural tanuki; shapeshift and possess; some named ones receive rites."
+      }
+    ],
+    "archetypeTags": [
+      "tanuki",
+      "shapeshifter",
+      "trickster"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A raccoon-dog merchant whose leaf disguise is a bad receipt. Leave the ritually named tanuki alone.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-029",
+    "name": "Yuki-onna (雪女)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Yuki-onna, 'snow woman', is a yūrei or yōkai in Japanese folklore, also common in literature, film, and animation.",
+      "Regional names include yuki-musume, yukihime, yuki-onago, yukijorō, yuki-onba, yukinba in Ehime, and yukifuri-baba in Nagano, plus icicle names such as tsurara-onna.",
+      "The English lead read for this project lists names and does not specify powers. Do not treat ice-breath or a spare-the-youth bargain as sourced from this pass."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yuki-onna",
+        "title": "Yuki-onna",
+        "accessed": "2026-11-20",
+        "supports": "Snow-woman yurei or yokai under many regional names; powers not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "snow",
+      "woman-spirit",
+      "regional-names"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A snow woman whose only confirmed trait here is that every village files her under a different name.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-030",
+    "name": "Noppera-bō (のっぺらぼう)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The noppera-bō is a faceless yōkai that looks human but has no face. An 18th-century version calls a similar being a nupperibō.",
+      "Lafcadio Hearn's 1904 story 'Mujina', set in Edo, uses the double scare: a man flees a blank-faced woman and tells a soba-shop keeper, who then turns around blank-faced.",
+      "The blank face is sometimes said to be a trick by a mujina, kitsune, or tanuki."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Noppera-b%C5%8D",
+        "title": "Noppera-bō",
+        "accessed": "2026-11-20",
+        "supports": "Faceless human yokai; Hearn's soba-shop double scare; sometimes a beast's trick."
+      }
+    ],
+    "archetypeTags": [
+      "faceless",
+      "scare",
+      "shapeshifter-trick"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A help-desk ghost whose face loads only after you stop asking.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-031",
+    "name": "Rokurokubi (ろくろ首)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Rokurokubi are yōkai who look almost human. One type stretches its neck; another, the nukekubi, detaches its head and lets it fly.",
+      "They appear in classical kaidan and in yōkai picture-books. The krasue article notes them as a Japanese comparison for Southeast Asian flying-head spirits, not as the same being."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rokurokubi",
+        "title": "Rokurokubi",
+        "accessed": "2026-11-20",
+        "supports": "Stretching neck or detachable flying head."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Krasue",
+        "title": "Krasue",
+        "accessed": "2026-11-20",
+        "supports": "Names nukekubi and rokurokubi as a Japanese comparison, not an identity."
+      }
+    ],
+    "archetypeTags": [
+      "neck",
+      "flying-head",
+      "human-disguise"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A customer whose neck reaches the back of the shop while the body stays in line.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-032",
+    "name": "Nurikabe (塗壁)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The nurikabe, 'plastered wall', is a yōkai said to appear as an invisible wall that blocks or misdirects night travelers. It is described as too tall to climb and too wide to walk around.",
+      "Kunio Yanagita recorded an early prominent example. A 17th-century scroll at Brigham Young University, noticed in 2007, labels a white dog-elephant-like creature as nurikabe.",
+      "Shigeru Mizuki's manga nurikabe was inspired by his own claim of being stuck in coal tar in New Guinea. That character is a modern depiction, not the folklore wall."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nurikabe",
+        "title": "Nurikabe",
+        "accessed": "2026-11-20",
+        "supports": "Invisible night wall; Yanagita; 17th-century dog-elephant picture; Mizuki's version is separate."
+      }
+    ],
+    "archetypeTags": [
+      "wall",
+      "obstacle",
+      "night"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An invisible wall that is simply the next room refusing to load.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-033",
+    "name": "Tsukumogami (付喪神)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Tsukumogami, literally 'tool kami', are tools that have acquired a spirit. One theory in a commentary on The Tales of Ise, traced to the Onmyōki, counts hundred-year-old shapeshifted foxes and tanuki as tsukumogami too.",
+      "The characters 九十九神, 'ninety-nine kami', are a modern spelling that stresses age.",
+      "Komatsu Kazuhiko argues the tool-yōkai idea spread in the middle ages and later faded, and that Bakumatsu prints revived a picture without the old belief. The popular 'any object turns alive at 100' rule is widespread and disputed."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tsukumogami",
+        "title": "Tsukumogami",
+        "accessed": "2026-11-20",
+        "supports": "Tools that gain a kami; the 100-year rule is a modern and contested reading."
+      }
+    ],
+    "archetypeTags": [
+      "object",
+      "animated-tool",
+      "age"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A union of retired tools. Do not treat the hundred-year rule as settled folklore.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-034",
+    "name": "Kasa-obake (傘おばけ)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Kasa-obake are umbrella ghosts or yōkai. They are sometimes, not always, classed as tsukumogami that old umbrellas become.",
+      "Other names include karakasa-obake, kasa-bake, and karakasa kozō.",
+      "The English lead read here does not describe a single eye, a single leg, or a licking tongue. Those details are not sourced in this pass."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kasa-obake",
+        "title": "Kasa-obake",
+        "accessed": "2026-11-20",
+        "supports": "Umbrella yokai, sometimes a tsukumogami; one-eye one-leg look not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "umbrella",
+      "object",
+      "tsukumogami"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An umbrella that opens indoors on purpose. Do not add a one-eyed foot unless a later source is fetched.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-035",
+    "name": "Umibōzu (海坊主)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Umibōzu, 'sea monk', is a yōkai in the form of a giant black human-like being.",
+      "It appears to sailors on calm seas that then turn rough. It breaks the ship as it rises, or it demands a ladle and drowns the crew.",
+      "The told escape is to hand it a bottomless ladle and sail while it is confused. Near-synonyms include umihōshi and uminyūdō."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Umib%C5%8Dzu",
+        "title": "Umibōzu",
+        "accessed": "2026-11-20",
+        "supports": "Giant black sea figure; ladle demand; bottomless ladle as the escape."
+      }
+    ],
+    "archetypeTags": [
+      "sea",
+      "giant",
+      "riddle-object"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A sea monk who loses the fight to a ladle with no bottom.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-036",
+    "name": "Jorōgumo (絡新婦)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Jorōgumo is a yōkai. The kanji 女郎蜘蛛 mean 'woman-spider'; the kanji usually written, 絡新婦, mean 'entangling newlywed woman' and are read with a jukujikun.",
+      "In Toriyama Sekien's Gazu Hyakki Yagyō it is a spider woman manipulating small fire-breathing spiders.",
+      "The same word, in katakana, is the entomologists' name for the spider Trichonephila clavata, the joro spider. That animal is not the yōkai."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jor%C5%8Dgumo",
+        "title": "Jorōgumo",
+        "accessed": "2026-11-20",
+        "supports": "Spider woman in Sekien, with small fire-breathing spiders; distinct from the joro spider species."
+      }
+    ],
+    "archetypeTags": [
+      "spider",
+      "shapeshifter",
+      "woman"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bridal spider who sends smaller spiders to do the talking. Do not draw the real joro spider as if it were the monster.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-037",
+    "name": "Amabie (アマビエ)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Amabie is a legendary Japanese merfolk figure with a beak-like mouth and three legs or tail-fins. It is said to rise from the sea, prophesy a rich harvest or an epidemic, and tell people to copy its picture as a defense against illness.",
+      "It appears to be a variant or misspelling of amabiko or amahiko, a prophetic beast drawn with three or four legs and ape-like, daruma-like, bird-like, or fish-like features.",
+      "The known amabie picture is a woodblock dated 1846 at Kyoto University Library. An amabiko leaflet dated 1844 is older. These prints are yogenjū, prophecy-beasts."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Amabie",
+        "title": "Amabie",
+        "accessed": "2026-11-20",
+        "supports": "Three-legged prophetic merfolk; copying the picture wards illness; 1846 print."
+      }
+    ],
+    "archetypeTags": [
+      "prophet",
+      "merfolk",
+      "epidemic",
+      "print"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A three-legged forecast fish that is only defeated by fan art.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-038",
+    "name": "Kamaitachi (鎌鼬)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Kamaitachi is a yōkai from the oral tradition of the Kōshin'etsu region, and the name also covers the strange events it causes.",
+      "They ride dust devils and cut people with sickle-like front claws, leaving sharp wounds that do not hurt.",
+      "The name joins kama, sickle, and itachi, weasel."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kamaitachi",
+        "title": "Kamaitachi",
+        "accessed": "2026-11-20",
+        "supports": "Sickle-weasel on a dust devil; painless cuts."
+      }
+    ],
+    "archetypeTags": [
+      "weasel",
+      "wind",
+      "cut"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A dust-devil weasel that deals papercuts and apologizes.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-039",
+    "name": "Akaname (垢嘗)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The akaname, 'scum-licker' or 'filth-licker', is a yōkai drawn in Toriyama Sekien's 1776 Gazu Hyakki Yagyō. A precursor, akaneburi, is documented in 1686.",
+      "These beings are presumed to lick the filth that collects in bathtubs and bathrooms."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Akaname",
+        "title": "Akaname",
+        "accessed": "2026-11-20",
+        "supports": "Sekien filth-licker of baths; 1776, with a 1686 precursor."
+      }
+    ],
+    "archetypeTags": [
+      "filth",
+      "bath",
+      "licker"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bathroom critic who rates grime and will not fight a clean tub.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-040",
+    "name": "Baku (獏)",
+    "origin": "Japanese folklore, from Chinese mo",
+    "kind": "folklore",
+    "facts": [
+      "Baku are Japanese supernatural beings said to devour nightmares. They originate from the Chinese mo.",
+      "Legend says they were made from the spare pieces left when the gods finished the other animals.",
+      "The word baku now also means the Malayan tapir, and recent art has changed how the dream-eater is drawn. Dream-eating is the folkloric sense; the tapir is the modern animal sense."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Baku_(mythology)",
+        "title": "Baku (mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Nightmare-eater made of leftover parts; Chinese mo origin; later confused with the tapir."
+      }
+    ],
+    "archetypeTags": [
+      "dream",
+      "chimera",
+      "benevolent"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A leftover-parts beast that eats the party's bad draws and sometimes a good one.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-041",
+    "name": "Raijū (雷獣)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "The raijū, 'thunder beast', is a yōkai associated with lightning, thunder, and the god Raijin. It is said to appear with lightning strikes.",
+      "Legends are centered in eastern Japan, and the name is common in Edo essays and modern folklore notes.",
+      "One theory says the nue shot by Minamoto no Yorimasa in the Heike was actually a raijū."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Raij%C5%AB",
+        "title": "Raijū",
+        "accessed": "2026-11-20",
+        "supports": "Thunder beast accompanying lightning and Raijin; a theory equates one nue with a raiju."
+      }
+    ],
+    "archetypeTags": [
+      "thunder",
+      "beast",
+      "lightning"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A storm weasel that arrives only when the thunder cue fires. Do not parody Raijin.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-042",
+    "name": "Nue (鵺)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "The nue is a legendary yōkai or mononoke. In the Tale of the Heike it is a chimera with a monkey's head, a tiger's limbs, a tanuki's body, and a snake's front half for a tail. The Genpei jōsuiki instead gives a tiger's back, tanuki limbs, a fox tail, a cat's head, and a chicken's torso.",
+      "It is said to cry an eerie 'hyoo hyoo' like a scaly thrush, to be nocturnal, and to shapeshift, often into a flying black cloud.",
+      "In the Heike telling, a black cloud and the cry sicken an emperor until Minamoto no Yorimasa shoots the cloud and Ino Hayata finishes the creature. Kyoto, fearing a curse, floats the corpse downstream; mounds called Nuezuka mark burials, and disturbing one is said to have revived the grudge."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nue",
+        "title": "Nue",
+        "accessed": "2026-11-20",
+        "supports": "Heike chimera; thrush cry; black-cloud form; Yorimasa's shot; cursed burial mounds."
+      }
+    ],
+    "archetypeTags": [
+      "chimera",
+      "illness",
+      "night-bird"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mixed-up beast whose own bestiaries disagree about the parts.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-043",
+    "name": "Shuten-dōji (酒呑童子)",
+    "origin": "Japanese legend",
+    "kind": "folklore",
+    "facts": [
+      "Shuten-dōji is a mythical oni leader, killed in legend by Minamoto no Raikō (Yorimitsu).",
+      "After the beheading, the detached head still bit at the hero, who survived by wearing several helmets stacked on his head.",
+      "The lair is Mount Ōe northwest of Kyoto, or Mount Ibuki, depending on the version. Another theory places the original mountain at the western edge of Kyoto."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Shuten-d%C5%8Dji",
+        "title": "Shuten-dōji",
+        "accessed": "2026-11-20",
+        "supports": "Oni leader; the severed head still bites; stacked helmets; Mount Oe lair."
+      }
+    ],
+    "archetypeTags": [
+      "oni",
+      "boss",
+      "severed-head"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A drinking-oni whose defeat animation is a head that still tries one bite, answered by a stack of pots.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-044",
+    "name": "Gashadokuro (がしゃどくろ)",
+    "origin": "Modern Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Gashadokuro, literally 'rattling skeleton', also called odokuro, are mythical creatures the English Wikipedia places in modern Japanese mythology.",
+      "They are said to pick up people they wish to eat.",
+      "The lead read for this pass does not give a size, a starvation origin, or a ringing in the ears. Those details are not sourced here."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gashadokuro",
+        "title": "Gashadokuro",
+        "accessed": "2026-11-20",
+        "supports": "Modern-mythology rattling skeleton that picks up people to eat; further traits not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "skeleton",
+      "giant",
+      "modern-folklore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A rattling skeleton that grabs one hero for a snack. Keep it distinct from older bone-ghosts; the article calls the tradition modern.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-045",
+    "name": "Nuppeppō (ぬっぺっぽう)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The nuppeppō appears in Edo-period yōkai picture scrolls, including Gazu Hyakki Yagyō and Hyakkai zukan.",
+      "It is drawn as a blob of meat whose face and body are the same mass of wrinkles, so the features cannot be told apart."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nuppepp%C5%8D",
+        "title": "Nuppeppō",
+        "accessed": "2026-11-20",
+        "supports": "Edo picture-scroll blob of wrinkled meat with no separate face."
+      }
+    ],
+    "archetypeTags": [
+      "blob",
+      "flesh",
+      "edo"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A walking meatball with no face to aim at and no interest in being cooked.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-046",
+    "name": "Azukiarai (小豆洗い)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Azukiarai, or azukitogi, is a ghostly sound like azuki beans being washed or ground, usually near a river.",
+      "Sometimes the spirit sings that it might grind beans or catch a person to eat, and anyone who approaches falls into the water.",
+      "It is seldom seen. When described, it is a short grotesque man with a large balding head, crooked teeth, a thin moustache, bulging yellow eyes, and ragged clothes, bent over a pail. The sound is sometimes blamed on a tanuki or a weasel."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Azukiarai",
+        "title": "Azukiarai",
+        "accessed": "2026-11-20",
+        "supports": "Bean-washing sound by water; a song; approaching means falling in; sometimes a tanuki or weasel."
+      }
+    ],
+    "archetypeTags": [
+      "sound",
+      "river",
+      "lure"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bean-washer whose chorus is the tell that the riverbank is a trap.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-047",
+    "name": "Wanyūdō (輪入道)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Wanyūdō, literally 'wheel monk', also called Firewheel or Soultaker, is a yōkai in Toriyama Sekien's Konjaku gazu zoku hyakki.",
+      "The earliest reports are said to date to the Heian period.",
+      "The lead gives the names and the Sekien depiction. It does not describe the method of taking souls. Do not invent that method from the alias alone."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wany%C5%ABd%C5%8D",
+        "title": "Wanyūdō",
+        "accessed": "2026-11-20",
+        "supports": "Wheel-monk yokai in Sekien; Heian reports; aliases Firewheel and Soultaker."
+      }
+    ],
+    "archetypeTags": [
+      "wheel",
+      "fire",
+      "monk-form"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A flaming cartwheel monk who demands the right of way. Do not add a soul-stealing procedure that this source does not give.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-048",
+    "name": "Namazu (鯰)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "Namazu, or ōnamazu, is a giant underground catfish that causes earthquakes.",
+      "It lives under the Japanese islands and is guarded by the god Takemikazuchi at Kashima, who holds it down with a stone.",
+      "When that god's guard slips, the catfish thrashes and the earthquake follows."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Namazu",
+        "title": "Namazu",
+        "accessed": "2026-11-20",
+        "supports": "Earthquake catfish pinned by the Kashima god's stone."
+      }
+    ],
+    "archetypeTags": [
+      "catfish",
+      "earthquake",
+      "underground"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A catfish under the tower whose thrash is the quake. Do not parody Takemikazuchi.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-049",
+    "name": "Bake-kujira (化鯨)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Bake-kujira, 'ghost whale', also hone-kujira, 'bone whale', is a yōkai usually drawn as a whale's skeleton appearing at sea on stormy nights.",
+      "It is most closely tied to the coasts of western Japan, especially the Shimane peninsula.",
+      "It is generally read as a vengeful spirit of a whale, carrying resentment toward people involved in whaling."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bake-kujira",
+        "title": "Bake-kujira",
+        "accessed": "2026-11-20",
+        "supports": "Skeletal whale on stormy nights; Shimane; grudge against whalers."
+      }
+    ],
+    "archetypeTags": [
+      "whale",
+      "skeleton",
+      "sea",
+      "vengeful"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bone whale that arrives with the weather and will not beach for a selfie.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-050",
+    "name": "Futakuchi-onna (二口女)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Futakuchi-onna, 'two-mouthed woman', is a yōkai with a normal mouth and a second mouth on the back of the head, under the hair, where the skull splits into lips, teeth, and a tongue.",
+      "The article places her with rokurokubi, kuchisake-onna, and yamauba: women transformed by a curse or supernatural disease, whose nature stays hidden until the end."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Futakuchi-onna",
+        "title": "Futakuchi-onna",
+        "accessed": "2026-11-20",
+        "supports": "Second mouth on the back of the head; hidden until revealed."
+      }
+    ],
+    "archetypeTags": [
+      "two-mouths",
+      "curse",
+      "woman"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A diner whose back-of-head mouth clears the plate the front mouth refused. Kuchisake-onna is a separate urban legend and is left to that research lane.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-051",
+    "name": "Tesso (鉄鼠)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Tesso, 'iron rat', is a yōkai tied to the vengeful spirit of the Heian monk Raigō and to a mouse.",
+      "Toriyama Sekien gave it the name tesso in Gazu Hyakki Yagyō. Older names include Raigō-nezumi, from a Heike yomihon, and Mii-dera-nezumi, from Miidera in Ōtsu."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tesso",
+        "title": "Tesso",
+        "accessed": "2026-11-20",
+        "supports": "Vengeful monk as a rat; Sekien's name; also Raigo-nezumi and Miidera-nezumi."
+      }
+    ],
+    "archetypeTags": [
+      "rat",
+      "vengeful-monk",
+      "swarm"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A monastery grudge that shows up as one iron rat and then as too many rats.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-052",
+    "name": "Zashiki-warashi (座敷童子)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Zashiki-warashi, 'parlor child', are spirit-like beings told of mostly in Iwate. They are yōkai said to live in parlors or storerooms and to play pranks.",
+      "Seeing one is believed to bring good fortune, and families they dwell with are said to prosper. Yanagita's Tōno monogatari records them; chapter 17 says families with whom this spirit dwells become prosperous."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zashiki-warashi",
+        "title": "Zashiki-warashi",
+        "accessed": "2026-11-20",
+        "supports": "Iwate parlor-child; pranks; the house prospers while they stay."
+      }
+    ],
+    "archetypeTags": [
+      "house-spirit",
+      "child",
+      "fortune"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A parlor child who pranks the hideout and whose leaving is the real disaster. Not a corpse-spirit.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-053",
+    "name": "Yamata no Orochi (八岐大蛇)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "Yamata no Orochi is a legendary eight-headed, eight-tailed serpent in the Kojiki and the Nihon shoki. The kami Susanoo defeats it to rescue Kushinadahime, and the Kusanagi sword, part of the imperial regalia, is found in a tail.",
+      "A local tradition says the serpent survived, fled to Mount Ibuki, and was venerated as Ibuki Daimyōjin.",
+      "Emperor Antoku and the dragon girl Longnü have been identified as incarnations of the serpent."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yamata_no_Orochi",
+        "title": "Yamata no Orochi",
+        "accessed": "2026-11-20",
+        "supports": "Eight-headed serpent of the Kojiki; sword in the tail; venerated at Ibuki in one tradition."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "eight-heads",
+      "myth"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. The serpent is tied to imperial-regalia myth and, locally, to veneration as Ibuki Daimyōjin.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-054",
+    "name": "Onryō (怨霊)",
+    "origin": "Japanese traditional belief",
+    "kind": "folklore",
+    "facts": [
+      "Onryō, 'vengeful spirits', are yūrei believed able to harm the living, kill enemies, or cause disasters to redress wrongs suffered while alive.",
+      "They are often pictured as wronged women. Emperor Sutoku, Taira no Masakado, and Sugawara no Michizane are called the Three Great Onryō and were later enshrined as kami to calm them.",
+      "Masakado's head mound near Tokyo Station is still maintained; moves proposed for redevelopment were followed, in the telling, by worker deaths and accidents, so the mound stayed. Goryō are onryō of nobles who died unjust political deaths and became objects of reverence."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Onry%C5%8D",
+        "title": "Onryō",
+        "accessed": "2026-11-20",
+        "supports": "Vengeful ghosts; three great onryo deified; Masakado's mound still tended."
+      }
+    ],
+    "archetypeTags": [
+      "vengeful-ghost",
+      "disaster",
+      "appeasement"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A generic grudge-ghost may be usable. Do not parody Masakado's mound, Tenjin, or Sutoku.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-055",
+    "name": "Shisa (シーサー)",
+    "origin": "Ryukyuan / Okinawan tradition",
+    "kind": "folklore",
+    "facts": [
+      "Shisa are traditional Ryukyuan ornaments derived from Chinese guardian lions, usually in pairs, like a cross between a lion and a dog.",
+      "They are wards against some evils, placed on rooftops or beside house gates. The left figure traditionally has a closed mouth and the right an open mouth.",
+      "The open mouth wards off evil spirits; the closed mouth keeps good spirits in."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Shisa",
+        "title": "Shisa",
+        "accessed": "2026-11-20",
+        "supports": "Okinawan lion-dog pairs; open mouth expels evil, closed mouth keeps good."
+      }
+    ],
+    "archetypeTags": [
+      "guardian-lion",
+      "pair",
+      "ward"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A gate pair who argue about whether the door should stay open. Do not mock them as fake charms.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-056",
+    "name": "Komainu (狛犬)",
+    "origin": "Japanese Shinto shrine tradition",
+    "kind": "folklore",
+    "facts": [
+      "Komainu, often called lion-dogs in English, are pairs of lion-like statues that guard the gate of a Shinto shrine or stand before or inside the honden."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Komainu",
+        "title": "Komainu",
+        "accessed": "2026-11-20",
+        "supports": "Lion-dog statue pairs guarding Shinto shrine gates or the inner sanctuary."
+      }
+    ],
+    "archetypeTags": [
+      "guardian-lion",
+      "shrine",
+      "pair"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Research record for a shrine guardian. Do not use it as a comedy enemy of the sanctuary.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-057",
+    "name": "Chinese guardian lions (石獅)",
+    "origin": "Chinese Buddhist architectural tradition",
+    "kind": "folklore",
+    "facts": [
+      "Chinese guardian lions, or shishi, are traditional architectural ornaments, usually stone, also called stone lions and, in colloquial English, lion dogs, foo dogs, or fu dogs.",
+      "The form became popular in Chinese Buddhism. A pair, often a male with a ball and a female with a cub, was thought to protect a building from harmful spiritual influences and dangerous people.",
+      "From imperial palaces and tombs the lions spread across Asia, including Japan (komainu), Okinawa, Korea, Thailand, Vietnam, Cambodia, and Laos, among other places."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chinese_guardian_lions",
+        "title": "Chinese guardian lions",
+        "accessed": "2026-11-20",
+        "supports": "Buddhist stone-lion pairs as building protectors; spread includes komainu and much of East and Southeast Asia."
+      }
+    ],
+    "archetypeTags": [
+      "guardian-lion",
+      "pair",
+      "threshold"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A threshold pair, male with a ball and female with a cub. 'Foo dog' is an English nickname, not a separate species, and not a film character.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  }
+]
