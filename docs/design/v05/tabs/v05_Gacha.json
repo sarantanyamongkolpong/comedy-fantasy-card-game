@@ -1,0 +1,121 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_Gacha",
+  "title": "GACHA BANNERS / PITY — CURRENT RULES",
+  "columns": [
+    "ID",
+    "System",
+    "Policy",
+    "Pity Pulls",
+    "Status",
+    "Notes"
+  ],
+  "rows": [
+    {
+      "ID": "GA-01",
+      "System": "Pools",
+      "Policy": "Avatar / Action / Companion are separate",
+      "Pity Pulls": "LOCKED",
+      "Status": "Owner 19-20 Nov",
+      "Notes": "No Equipment banner assumed"
+    },
+    {
+      "ID": "GA-02",
+      "System": "Currency",
+      "Policy": "Avatar & Action use shared G currency",
+      "Pity Pulls": "LOCKED",
+      "Status": "Owner 19-20 Nov",
+      "Notes": "Companion price/currency not locked"
+    },
+    {
+      "ID": "GA-03",
+      "System": "Avatar rarity",
+      "Policy": "N / R / Epic / EX",
+      "Pity Pulls": "LOCKED",
+      "Status": "Owner 19-20 Nov",
+      "Notes": "No five-rarity table"
+    },
+    {
+      "ID": "GA-04",
+      "System": "Action rarity",
+      "Policy": "N / R / Epic / EX / FAC",
+      "Pity Pulls": "LOCKED",
+      "Status": "Owner 19-20 Nov",
+      "Notes": "EX and FAC same top tier"
+    },
+    {
+      "ID": "GA-05",
+      "System": "Avatar Epic pity",
+      "Policy": "Guarantee by 100 pulls",
+      "Pity Pulls": 100,
+      "Status": "LOCKED",
+      "Notes": "Owner 19-20 Nov"
+    },
+    {
+      "ID": "GA-06",
+      "System": "Action Epic pity",
+      "Policy": "Guarantee by 100 pulls",
+      "Pity Pulls": 100,
+      "Status": "LOCKED",
+      "Notes": "Owner 19-20 Nov"
+    },
+    {
+      "ID": "GA-07",
+      "System": "Avatar EX pity",
+      "Policy": "Guarantee by 200 pulls",
+      "Pity Pulls": 200,
+      "Status": "LOCKED",
+      "Notes": "Owner 19-20 Nov"
+    },
+    {
+      "ID": "GA-08",
+      "System": "Action top EX/FAC pity",
+      "Policy": "Guarantee by 200 pulls",
+      "Pity Pulls": 200,
+      "Status": "LOCKED",
+      "Notes": "Owner 19-20 Nov"
+    },
+    {
+      "ID": "GA-09",
+      "System": "Companion Epic pity",
+      "Policy": "Guarantee by 100 pulls",
+      "Pity Pulls": 100,
+      "Status": "LOCKED",
+      "Notes": "Owner 19-20 Nov"
+    },
+    {
+      "ID": "GA-10",
+      "System": "Companion top pity",
+      "Policy": "No top-tier pity",
+      "Pity Pulls": null,
+      "Status": "LOCKED",
+      "Notes": "Owner 19-20 Nov"
+    },
+    {
+      "ID": "GA-11",
+      "System": "Drop rates, draw price",
+      "Policy": "Not finalized",
+      "Pity Pulls": null,
+      "Status": "PENDING",
+      "Notes": "Do not invent production figures"
+    },
+    {
+      "ID": "GA-12",
+      "System": "Pity reset/rule",
+      "Policy": "Reset on target? banner-specific/shared? overlapping guarantees?",
+      "Pity Pulls": null,
+      "Status": "PENDING",
+      "Notes": "Need Owner or explicit config"
+    },
+    {
+      "ID": "GA-13",
+      "System": "Duplicate usage",
+      "Policy": "Hero Synthesis uses duplicates; protection for locked/in-deck",
+      "Pity Pulls": null,
+      "Status": "LOCKED",
+      "Notes": "Specific recipes pending"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}
