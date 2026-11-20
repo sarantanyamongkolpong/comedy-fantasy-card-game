@@ -1,7 +1,8 @@
 /**
  * Web adapter choices for the live Sport Complex wiring (integration/v06-sport).
  *
- * Every entry here is PROPOSED and still waiting for Owner approval.
+ * Every entry here is PROPOSED unless it says otherwise. Owner decisions (t282u) are marked
+ * OWNER_DECIDED or MVP_PROVISIONAL and still need their listed review.
  * These fill contract gaps between content/v06/sport, src/sport, and web/sport.
  * Numbers are BALANCE_PLACEHOLDER. Change them here, not in the screens.
  */
@@ -10,8 +11,12 @@ export const ADAPTER_TUNING = Object.freeze({
   status: 'PROPOSED',
   balance: 'BALANCE_PLACEHOLDER',
 
-  /** One-time preview grant when the profile has no G balance at all (kept from the web stream). */
+  /**
+   * New-player starting G when the profile has no G balance at all.
+   * MVP_PROVISIONAL (Owner decision t282u #4). Economy Balance review still required.
+   */
   previewStartingG: 8000,
+  previewStartingGStatus: Object.freeze({ status: 'MVP_PROVISIONAL', source: 't282u #4', pending: 'Economy Balance review' }),
 
   /**
    * Starter roster. Mirrors the web stream's fixture starter (same parody names),

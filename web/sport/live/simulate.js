@@ -157,11 +157,52 @@ function playbackCap(sport) {
   return Math.max(20, Math.floor((seconds * 1000) / T.playbackMsPerEvent));
 }
 
-function rewardPack(sim, sport, eventId) {
+/**
+ * Match reward (OWNER_DECIDED t282u #6, values PROPOSED / BALANCE_PLACEHOLDER as in source).
+ * Primary source: the win/draw/loss and placement table in content/v06/sport/tuning.json
+ * (eventRewardsG). A sport with no complete table row falls back to the sim purse and says so.
+ * Football/basket: result for the home side. Car/moto (PROPOSED): the better-placed of your two
+ * entries in the Grand Prix; dnf only when neither finished. One payout per match (claimId).
+ */
+const RESULT_KEYS = {
+  football: ['win', 'draw', 'loss'],
+  basket: ['win', 'draw', 'loss'],
+  car: ['first', 'second', 'third', 'classified', 'dnf'],
+  moto: ['first', 'second', 'third', 'classified', 'dnf'],
+};
+
+export function rewardTable(sport) {
+  const row = CONTENT.tuning?.eventRewardsG?.[sport];
+  const keys = RESULT_KEYS[sport] ?? [];
+  if (!row || !keys.every((key) => Number.isInteger(row[key]) && row[key] >= 0)) return null;
+  return Object.fromEntries(keys.map((key) => [key, row[key]]));
+}
+
+export function resultKey(sport, simResult, homeIds) {
+  if (sport === 'football' || sport === 'basket') {
+    const { home, away } = simResult.score ?? {};
+    if (!Number.isFinite(home) || !Number.isFinite(away)) return null;
+    return home > away ? 'win' : home < away ? 'loss' : 'draw';
+  }
+  const order = simResult.gp?.order ?? [];
+  const mine = order.filter((row) => homeIds.has(row.id) && row.status === 'FIN');
+  if (!mine.length) return order.some((row) => homeIds.has(row.id)) ? 'dnf' : null;
+  const best = Math.min(...mine.map((row) => row.position));
+  return best === 1 ? 'first' : best === 2 ? 'second' : best === 3 ? 'third' : 'classified';
+}
+
+function rewardPack(sim, sport, eventId, homeIds = new Set()) {
+  const table = rewardTable(sport);
+  const key = table ? resultKey(sport, sim.result, homeIds) : null;
+  const fromTable = Boolean(table && key && key in table);
   return {
-    G: sim.rewards.G,
+    G: fromTable ? table[key] : sim.rewards.G,
+    source: fromTable ? 'content/v06/sport/tuning.json#eventRewardsG' : 'sim-purse',
+    resultKey: key,
+    fallbackReason: fromTable ? null : (table ? 'result not mapped' : 'reward table missing for this sport'),
     status: 'PROPOSED',
     balance: 'BALANCE_PLACEHOLDER',
+    decision: 'OWNER_DECIDED t282u #6',
     eventId,
     claimId: `sport-reward:${eventId}`,
   };
@@ -328,6 +369,6 @@ export function simulateSport(input = {}) {
     events: highlight(run.playback ?? fullEvents, playbackCap(sport)),
     fullEvents,
     result,
-    rewards: rewardPack(sim, sport, eventId),
+    rewards: rewardPack(sim, sport, eventId, new Set(home.map((card) => card.id))),
   };
 }
