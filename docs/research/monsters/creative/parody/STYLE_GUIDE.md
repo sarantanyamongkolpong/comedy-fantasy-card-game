@@ -173,7 +173,7 @@ Record, in the creative block, which language holds the joke: `en`, `th`, or `bo
 
 ## Elements, archetypes, factions, rarity, tower
 
-Agent 08 proposed a vocabulary at `research/m08-lore` commit `35c6d36` (`MONSTER_WORLD_FRAMEWORK.md` and `framework.json`). It is **PROPOSED**, not canon. This folder uses it so the sample can be linked later. If that file changes, follow the newer proposal.
+Agent 08 proposed a vocabulary at `research/m08-lore` commit `35c6d36` (`MONSTER_WORLD_FRAMEWORK.md` and `framework.json`). It is **PROPOSED**, not canon. This folder uses it so the sample can be linked later. If that file changes, follow the newer proposal. Rechecked at `1c44f4e`: the ids below had not moved.
 
 **Element / attribute** is one primary id from that list, not a damage type:
 
