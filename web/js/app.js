@@ -7,7 +7,9 @@ import { el, modal } from './dom.js';
 import { createStarterProfile, buildMatchInput } from './profile.js';
 import { isPortrait, stageLayout } from './stage.js';
 import { renderBattle } from './screens/battle.js';
-import { performPull, renderGacha } from './screens/gacha.js';
+import { performPull } from './screens/gacha.js';
+// AGENT D hook (prod/d-gacha): booth visuals live in web/js/gacha-fx. Pulls stay on the existing API.
+import { renderGachaFx } from './gacha-fx/screen.js';
 import { renderHome } from './screens/home.js';
 import { renderMall } from './screens/mall.js';
 import { renderMap } from './screens/map.js';
@@ -272,7 +274,7 @@ function render() {
   if (state.screen === 'stash') view = renderStash(ctx);
   else if (state.screen === 'mall') view = renderMall(ctx);
   else if (state.screen === 'party') view = renderParty(ctx);
-  else if (state.screen === 'gacha') view = renderGacha(ctx);
+  else if (state.screen === 'gacha') view = renderGachaFx(ctx);
   else if (state.screen === 'map') view = renderMap(ctx);
   else if (state.screen === 'prep') view = renderPrep(ctx);
   else if (state.screen === 'battle' && state.match) view = renderBattle(ctx);
