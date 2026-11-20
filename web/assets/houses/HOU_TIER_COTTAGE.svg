@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200"><polygon points="125,18 230,78 20,78" fill="#3f8f62" stroke="#2a1b12" stroke-width="4"/>
+    <rect x="40" y="78" width="170" height="110" fill="#f4e2c4" stroke="#2a1b12" stroke-width="4"/>
+    <text x="125" y="140" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="18" fill="#2a1b12">Cottage</text>
+    <text x="125" y="164" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#2a1b12">PLACEHOLDER</text></svg>

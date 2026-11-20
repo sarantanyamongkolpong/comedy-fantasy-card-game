@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"><rect width="1280" height="720" fill="#8ec6ea"/>
+  <circle cx="1080" cy="120" r="48" fill="#fff4cc"/>
+  <path d="M0 460 C200 400 320 500 520 450 C760 390 900 500 1280 430 L1280 720 L0 720 Z" fill="#7dbe6e"/>
+  <path d="M0 520 C240 480 400 560 680 510 C960 460 1100 540 1280 500 L1280 720 L0 720 Z" fill="#5e9a52"/>
+  <text x="36" y="700" font-family="Trebuchet MS,sans-serif" font-size="18" fill="#2a1b12">PLACEHOLDER MAP — buildings are separate assets</text></svg>
