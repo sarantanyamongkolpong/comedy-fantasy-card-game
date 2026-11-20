@@ -2,7 +2,7 @@
 
 Agent H. Base `prod/wave-base` @ `7cbf071a15d2da747ba5f9c100696a805860271e`. Damage preset under test: `flat_atk` (Owner choice, MVP_PROVISIONAL). This file is the QA record. It does not mark the game PRODUCTION_READY, LOCKED, or OWNER_APPROVED.
 
-Updated 2026-11-20T13:37:32.525Z.
+Updated 2026-11-20T14:17:50.671Z.
 
 ## Baseline
 
@@ -705,39 +705,42 @@ Phase 1 ran on `prod/wave-base` only. Stream branches are merged only inside a l
 
 | Stream | Branch | State on this pass | SHA | Commits ahead of wave-base | Merged locally | Conflicts | Notes |
 |---|---|---|---|---:|---|---:|---|
-| A | `prod/a-card-art` | branch missing on origin | `—` | 0 | no | 0 | not on origin this poll |
+| A | `prod/a-card-art` | merged in throwaway | `d2acdd8a6969` | 1 | yes | 0 | included in the throwaway harness |
 | B | `prod/b-hideout` | merged in throwaway | `70e64971174b` | 1 | yes | 0 | included in the throwaway harness |
 | C | `prod/c-inventory` | merged in throwaway | `85ccc41b4b9a` | 1 | yes | 0 | included in the throwaway harness |
-| D | `prod/d-gacha` | branch missing on origin | `—` | 0 | no | 0 | not on origin this poll |
+| D | `prod/d-gacha` | merge conflict | `8bfb7452c2ed` | 1 | no | 1 | conflict in web/index.html |
 | E | `prod/e-battle-polish` | merge conflict | `7b2c3c7b8075` | 2 | no | 1 | conflict in web/index.html |
 | F | `prod/f-sport-art` | merged in throwaway | `41fe22e54756` | 1 | yes | 0 | included in the throwaway harness |
-| G | `prod/g-world-content` | merged in throwaway | `0da3a45452d7` | 1 | yes | 0 | included in the throwaway harness |
+| G | `prod/g-world-content` | merged in throwaway | `40305cfac93d` | 2 | yes | 0 | included in the throwaway harness |
 
 ## Phase 2 pass
 
-Pass 1 at 2026-11-20T13:37:40.000Z. Throwaway worktree only. Not pushed. Included streams: B, C, F, G.
-`npm test` on the merged tree, Node v22.23.4: tests 457, pass 448, fail 0, skip 4, todo 5, exit 0, 144.8s.
-Asset audit on the merged tree: missing 0, oversize 1, shipped 12.42 MB, referenced 9.47 MB, static catalog 9.82 MB.
+Pass 2 at 2026-11-20T14:20:00.000Z. Throwaway worktree only. Not pushed. Included streams: A, B, C, F, G.
+Pass 1 at 2026-11-20T13:37Z merged B, C, F, and G. A and D were absent. E already conflicted with C in web/index.html. Merged-tree npm test was 457/448/0.
+`npm test` on the merged tree, Node v22.23.4: tests 462, pass 453, fail 0, skip 4, todo 5, exit 0, 142.9s.
+Asset audit on the merged tree: missing 0, oversize 1, shipped 13.55 MB, referenced 10.61 MB, static catalog 10.95 MB.
 
 | Stream | Sev | Finding |
 |---|---|---|
-| A | info | prod/a-card-art is not on origin. |
-| B | info | Hideout art is a GENERATED_REVIEW fragment (web/manifests/hideout.json uses entries, not assets). Files are present, none are missing, and none exceed 400 KB. Ids such as HOU_TIER_CABIN already exist in web/assets-manifest.json, which matches the stream note that this fragment must not be copied into the live catalog yet. The running hideout still uses the existing house art. |
-| C | P2 | The Stash, Inventory, Collection, and Deck screens render. At 667×375, 844×390, 932×430, and 1280×720 every measured control is at least 44 CSS px, 22 cards are visible, and there were no page errors. The section sets data-collection-route and does not set data-screen=stash, so a waiter on [data-screen=stash] does not resolve. Back returns to the hideout. Map, prep, battle, rewards, and gacha still open. npm test on the merged tree is 457/448/0 with one extra todo: collection screens at landscape viewports, because Playwright is not installed in the repo. |
-| D | info | prod/d-gacha is not on origin. |
-| E | P0 | prod/e-battle-polish conflicts with prod/c-inventory in web/index.html. Both insert a stylesheet link on the line after css/app.css (collection.css and battle-polish.css). web/js/app.js auto-merges. E merges cleanly onto prod/wave-base by itself. This pass left E out of the throwaway tree, so battle-polish.css was not on the screens that were played. |
-| F | info | Sport art landed as a review manifest (productionReady false). No missing files and no raster at or above 400 KB from this stream. The live Sports Complex pin is still locked. |
-| G | info | World content tests pass. The proposed copy is in content/prod/world. The live map still shows the wave-base pin labels, including the overlapping Sports Complex / Coming soon pair. |
+| A | info | New tip d2acdd8. Layered starter-deck card art is a GENERATED_REVIEW fragment in web/manifests/cards.json. Files are present, none are missing, and none exceed 400 KB. The running battle hand still paints the live catalog (dream_v02 action art and the existing frames). Nothing in web/js imports web/manifests/cards.json. |
+| B | info | Tip unchanged at 70e6497. Hideout fragment still not on the live catalog. No new missing files and no new oversize raster. |
+| C | P2 | Tip unchanged at 85ccc41. The Stash still renders with data-collection-route and without data-screen=stash. At 1280×720 the title is The Stash, there were no page errors, and no control was under 44 CSS px. Back, map, prep, battle, and rewards still open. |
+| D | P0 | New tip 8bfb745 conflicts with the combined tree in web/index.html. C, D, and E each insert a stylesheet link on the line after css/app.css. D alone merges onto prod/wave-base. content/v05/gacha is unchanged. On that isolated tree the new booth shows TEST weights N 100 · Epic 0 · EX 0 and N 100 · Epic 0 · FAC 0, pity 1/100 and 1/200 after Pull 1, charge 0 G, and price PENDING. Pull 10 is the top element at its center on all six landscape viewports, so the wave-base cover does not reproduce here. Smallest Pull button measured 46 CSS px. No page errors. |
+| D | P2 | On the isolated booth at 1280×720, the policy line under the wallet and the fine print inside each banner (price and TEST weights) are low contrast and clipped against the cream card. Pity numbers and the Pull buttons stay readable. The pull summary sits below the buttons. |
+| E | P0 | Tip unchanged at 7b2c3c7. Still conflicts with the combined tree in web/index.html for the same stylesheet line. Left out of the played tree again. |
+| F | info | Tip unchanged at 41fe22e. Sport review art stays off the locked Sports Complex pin. No new oversize raster. |
+| G | info | Tip moved to 40305cf. Owner decisions OQ_G_09 through OQ_G_13 are recorded as OWNER_DECIDED. Reward amounts stay null and PENDING, no premium quantity is set, ENM_DEMO_004 keeps its id with the existing placeholder tagged Missing Artwork, and no upgrade recipe or number was added. Live map labels are unchanged. The new world tests passed inside the merged npm test. |
 
 Merged-tree screenshots:
 
-- `tools/qa/artifacts/screenshots/phase2-pass1/1280-home.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass1/1280-stash.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass1/1280-map.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass1/1280-prep.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass1/1280-battle.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass1/1280-rewards.jpg`
-- `tools/qa/artifacts/screenshots/phase2-pass1/1280-gacha.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/home.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/stash.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/map.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/battle.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/rewards.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/gacha.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/d-gacha.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass2/d-gacha-after-10.jpg`
 
 
 ## Severity on the wave-base client

@@ -218,6 +218,7 @@ function phase2PassSection(pass) {
   lines.push('## Phase 2 pass');
   lines.push('');
   lines.push(`Pass ${pass.pass} at ${pass.generatedAt}. Throwaway worktree only. Not pushed. Included streams: ${(pass.included ?? []).join(', ') || 'none'}.`);
+  if (pass.prior) lines.push(pass.prior);
   if (pass.npmTest) {
     const row = pass.npmTest;
     lines.push(`\`npm test\` on the merged tree, Node ${row.node}: tests ${row.tests}, pass ${row.pass}, fail ${row.fail}, skip ${row.skipped}, todo ${row.todo}, exit ${row.exit}, ${row.duration}.`);

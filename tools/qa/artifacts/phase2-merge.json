@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-20T13:32:19.957Z",
+  "generatedAt": "2026-11-20T14:13:22.981Z",
   "worktree": "/tmp/qa-merge",
-  "head": "b3948e8b7bfbfdcc169ad05eb491f536afacb613",
+  "head": "c7762d07fd0f738e94ad91036903f971bad52d21",
   "originWaveBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
   "fetchStatus": 0,
   "fetches": [
     {
       "branch": "prod/a-card-art",
-      "ok": false,
-      "error": "fatal: couldn't find remote ref prod/a-card-art"
+      "ok": true,
+      "error": ""
     },
     {
       "branch": "prod/b-hideout",
@@ -22,8 +22,8 @@
     },
     {
       "branch": "prod/d-gacha",
-      "ok": false,
-      "error": "fatal: couldn't find remote ref prod/d-gacha"
+      "ok": true,
+      "error": ""
     },
     {
       "branch": "prod/e-battle-polish",
@@ -46,11 +46,18 @@
       "id": "A",
       "owns": "art-src/cards web/assets/cards web/manifests/cards.json tools/art/cards tests/prod/a",
       "branch": "prod/a-card-art",
-      "present": false,
-      "merged": false,
-      "sha": null,
-      "commits": [],
-      "error": "fatal: ambiguous argument 'origin/prod/a-card-art': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'"
+      "present": true,
+      "merged": true,
+      "sha": "d2acdd8a6969351d167648827f74d1679c7fa6c5",
+      "commits": [
+        "d2acdd8 Add layered starter-deck card art for review."
+      ],
+      "commitsBeyondWaveBase": [
+        "d2acdd8 Add layered starter-deck card art for review."
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [],
+      "throwawayCommit": "d9b04bc"
     },
     {
       "id": "B",
@@ -67,7 +74,7 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "9846085"
+      "throwawayCommit": "1559182"
     },
     {
       "id": "C",
@@ -84,17 +91,26 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "8914db3"
+      "throwawayCommit": "c2e41a2"
     },
     {
       "id": "D",
       "owns": "web/js/gacha-fx web/css/gacha-fx.css art-src/gacha web/assets/gacha web/manifests/gacha.json tests/prod/d",
       "branch": "prod/d-gacha",
-      "present": false,
+      "present": true,
       "merged": false,
-      "sha": null,
-      "commits": [],
-      "error": "fatal: ambiguous argument 'origin/prod/d-gacha': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'"
+      "sha": "8bfb7452c2edc67bc45d7377e333a62358a9df1e",
+      "commits": [
+        "8bfb745 Add the gacha booth reveal, pity, and G wallet visuals."
+      ],
+      "commitsBeyondWaveBase": [
+        "8bfb745 Add the gacha booth reveal, pity, and G wallet visuals."
+      ],
+      "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+      "conflicts": [
+        "web/index.html"
+      ],
+      "error": "Auto-merging web/index.html\nCONFLICT (content): Merge conflict in web/index.html\nAuto-merging web/js/app.js\nAutomatic merge failed; fix conflicts and then commit the result."
     },
     {
       "id": "E",
@@ -132,7 +148,7 @@
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "a1f69ad"
+      "throwawayCommit": "0178cf6"
     },
     {
       "id": "G",
@@ -140,16 +156,18 @@
       "branch": "prod/g-world-content",
       "present": true,
       "merged": true,
-      "sha": "0da3a45452d7de4ef788c868d112603b6a9889fe",
+      "sha": "40305cfac93dec68cf4f1f06660a5f916ffa837c",
       "commits": [
+        "40305cf docs(world): record owner decisions OQ_G_09 through OQ_G_13",
         "0da3a45 feat(world): propose comedy copy for the six map pins"
       ],
       "commitsBeyondWaveBase": [
+        "40305cf docs(world): record owner decisions OQ_G_09 through OQ_G_13",
         "0da3a45 feat(world): propose comedy copy for the six map pins"
       ],
       "mergeBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
       "conflicts": [],
-      "throwawayCommit": "550fc59"
+      "throwawayCommit": "a76998b"
     }
   ],
   "dirtySummary": 0,
