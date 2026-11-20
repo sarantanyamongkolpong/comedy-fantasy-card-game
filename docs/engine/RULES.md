@@ -49,7 +49,7 @@ These stay `status: 'PENDING_OWNER'`. `resolveRuleConfig` rejects an attempt to 
 
 | Topic | Config | Placeholder used so the loop can be played |
 |---|---|---|
-| CORE-038 team SPD | `teamSpd.aggregation`, `teamSpd.tieBreak` | `sum` of all four roster SPD values, taken once at the start. Tie: dedicated seeded stream labelled `spd-tie`, which does not move the draw stream. Also implemented: `average`, `max`. |
+| CORE-038 team SPD | `teamSpd.aggregation`, `teamSpd.tieBreak` | Owner 2026-11-21 (MVP_PROVISIONAL): `max`, so the side with the single fastest avatar starts. Taken once at the start. Tie: dedicated seeded stream labelled `spd-tie`, which does not move the draw stream. Also implemented: `sum`, `average`. |
 | CORE-004 simultaneous death | `simultaneousDeath.policy` | `higher_team_spd_then_input_order`. Alternate: `input_order` (teams[0]). |
 | CORE-039 damage (alternates) | `damage.formula`, `damage.minDamage`, `damage.preset` | Moved to MVP_PROVISIONAL above (default `flat_atk`). The legacy fields `formula: placeholder_atk_minus_def` and `minDamage: 1` are kept and apply when `preset` is `null`. `floor_25_pct_atk` / `floor_50_pct_atk` (at least ceil of that percent of ATK) stay selectable placeholders. |
 | CORE-039 HP | `hp.base`, `hp.perDef` | If the avatar does not bring `maxHp`, `maxHp = 10 + DEF * 2`. KO at HP 0. |
@@ -58,7 +58,7 @@ These stay `status: 'PENDING_OWNER'`. `resolveRuleConfig` rejects an attempt to 
 | OPEN-02 durations | `statusExpiry` | A timed buff or Taunt expires at the start of the owner's later turn (`appliedTurn + durationTurns * sideCount`). A 1-turn Taunt therefore covers the enemy turn. Next-attack bonuses expire at end of turn, or as soon as that attack resolves. |
 | OPEN-02 regen stack | `regenStack.policy` | Keep the higher amount and refresh the tick count upward. Alternate: `stack_separate`. |
 | CORE-040 duplicates | `deckDuplicateMax.value` | `null`. No cap is invented. A positive integer enforces one. |
-| Shield | `shield.policy` | Amounts add into one pool. The pool has no turn limit. |
+| Shield | `shield.policy`, `shield.expiry` | Amounts add into one pool. Owner 2026-11-21 option C (MVP_PROVISIONAL): `expiry: start_of_next_own_turn` clears a side's shields when that side starts its next turn, before Regen ticks and turn-start passives, so a shield covers exactly one enemy turn. `expiry: none` restores the legacy unlimited pool. |
 
 Unknown formula names, aggregations, and policies throw. They are not silently treated as the placeholder.
 
@@ -66,7 +66,7 @@ Unknown formula names, aggregations, and policies throw. They are not silently t
 
 AUTO battle mode is locked (`autoMode.enabled` is true). SYNC is not implemented: there is no sync function and no sync config.
 
-`autoPolicy` is `PROPOSED` (never silently LOCKED). The default name is `balanced`. Owner t282u (MVP_PROVISIONAL): the table first plays a real shield or taunt if a hit can KO, then a worthwhile affordable Regen or heal when an ally is at or below `allyLowHpRatio` (0.5, inclusive). That check skips the skill if it is unaffordable (AP/cost; this ruleset has no MP), if the low unit already has regen, if the unit is at max HP, or if the heal would not land. When that fires, the Skill is given to Justina rather than spent on a next-attack setup. Then a next-attack Skill plays if it raises a still-payable hit, then the highest estimated damage on the lowest-HP legal target. `any_legal_expected_value` plays any other card whose expected value is above 0. A shield of 0 does not outrank a damaging play. `hand_locked_or_no_progress` discards one zero-value or unplayable card for 1 AP so the hand can draw. Editing the ratio or the priority order is allowed. Marking the policy `LOCKED` is rejected.
+`autoPolicy` is `PROPOSED` (never silently LOCKED). The default name is `balanced`. Owner t282u (MVP_PROVISIONAL): the table first plays a real shield or taunt if a hit can KO, then a worthwhile affordable Regen or heal when an ally is at or below `allyLowHpRatio` (0.5, inclusive). That check skips the skill if it is unaffordable (AP/cost; this ruleset has no MP), if the low unit already has regen, if the unit is at max HP, or if the heal would not land. When that fires, the Skill is given to Justina rather than spent on a next-attack setup. Then a next-attack Skill plays if it raises a still-payable hit, then the highest estimated damage on the lowest-HP legal target. `any_legal_expected_value` plays any other card whose expected value is above 0. A shield of 0 does not outrank a damaging play. `hand_locked_or_no_progress` discards one zero-value or unplayable card for 1 AP so the hand can draw. Owner 2026-11-21: `maxHealCastsPerMatch` (default 3, PROPOSED) caps how many times AUTO casts a Regen or heal Skill per side per match; `null` removes the cap; manual play is never capped. Editing the ratio or the priority order is allowed. Marking the policy `LOCKED` is rejected.
 
 Under the `flat_atk` preset only, Justin Case / Bulwark's turn-start DEF +1 is remapped at resolve time to Shield +2 (Owner t282u, MVP_PROVISIONAL, `damage.bulwark`). Authored skill data is unchanged. Legacy damage presets keep DEF +1.
 

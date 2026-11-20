@@ -45,7 +45,15 @@ test('contract config keeps locked numbers and pending decisions', () => {
   assert.equal(config.damage.preset, 'flat_atk');
   assert.equal(config.damage.placeholder, true);
   assert.equal(resolveRuleConfig({ damage: { status: 'PENDING_OWNER' } }).damage.status, 'PENDING_OWNER');
-  for (const key of ['teamSpd', 'hp', 'healCap', 'regenTickTiming', 'simultaneousDeath', 'deckDuplicateMax', 'statusExpiry']) {
+  // Owner decisions 2026-11-21 (Phase 1): teamSpd = max single avatar SPD, shield expires at the
+  // start of its side's next turn. Both MVP_PROVISIONAL, never LOCKED.
+  for (const key of ['teamSpd', 'shield']) {
+    assert.equal(config[key].status, 'MVP_PROVISIONAL', key);
+    assert.throws(() => resolveRuleConfig({ [key]: { status: 'LOCKED' } }), (error) => error.reason === 'PENDING_LOCK', key);
+  }
+  assert.equal(config.teamSpd.aggregation, 'max');
+  assert.equal(config.shield.expiry, 'start_of_next_own_turn');
+  for (const key of ['hp', 'healCap', 'regenTickTiming', 'simultaneousDeath', 'deckDuplicateMax', 'statusExpiry']) {
     assert.equal(config[key].status, 'PENDING_OWNER', key);
     assert.equal(config[key].placeholder === true || config[key].value === null, true, key);
   }
@@ -82,21 +90,22 @@ test('higher placeholder team SPD starts, sides alternate, and ties use the seed
   const fasterEnemy = createMatch(matchInput({ playerSpd: [1, 0, 0, 0], enemySpd: [4, 0, 0, 0] }));
   assert.equal(fasterEnemy.startingSideId, 'enemy');
   assert.equal(fasterEnemy.activeSideId, 'enemy');
-  assert.equal(fasterEnemy.flags.teamSpd, 'PENDING_OWNER');
+  assert.equal(fasterEnemy.flags.teamSpd, 'MVP_PROVISIONAL');
   assert.equal(fasterEnemy.log.find((event) => event.type === 'battle_start').placeholder, true);
 
   const summed = createMatch(matchInput({
     playerSpd: [9, 0, 0, 0],
     enemySpd: [3, 3, 3, 3],
+    config: { teamSpd: { aggregation: 'sum' } },
   }));
   assert.equal(summed.startingSideId, 'enemy');
+  // Owner 2026-11-21: by default the side with the single fastest avatar starts.
   const maxed = createMatch(matchInput({
     playerSpd: [9, 0, 0, 0],
     enemySpd: [3, 3, 3, 3],
-    config: { teamSpd: { aggregation: 'max' } },
   }));
   assert.equal(maxed.startingSideId, 'player');
-  assert.equal(maxed.config.teamSpd.status, 'PENDING_OWNER');
+  assert.equal(maxed.config.teamSpd.status, 'MVP_PROVISIONAL');
 
   const starters = new Set();
   for (let seed = 1; seed <= 40; seed += 1) {

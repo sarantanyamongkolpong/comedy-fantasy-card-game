@@ -16,6 +16,9 @@ const DISCARD_POLICIES = new Set(['hand_locked_only', 'hand_locked_or_no_progres
 const DAMAGE_PRESETS = new Set(['floor_25_pct_atk', 'floor_50_pct_atk', 'flat_atk']);
 /** Owner t269u: damage may be MVP_PROVISIONAL or PENDING_OWNER. Never LOCKED. */
 const DAMAGE_STATUSES = new Set(['MVP_PROVISIONAL', 'PENDING_OWNER']);
+/** Owner decisions 2026-11-21 (Phase 1): these rules may also be MVP_PROVISIONAL. Never LOCKED. */
+const OWNER_PROVISIONAL_KEYS = new Set(['teamSpd', 'shield']);
+const SHIELD_EXPIRY = new Set(['none', 'start_of_next_own_turn']);
 
 const TEMPLATE = {
   meta: {
@@ -31,10 +34,12 @@ const TEMPLATE = {
   voluntaryDiscardAp: { id: 'CORE-014', status: 'LOCKED', value: 1 },
   teamSpd: {
     id: 'CORE-038',
-    status: 'PENDING_OWNER',
+    // Owner decision 2026-11-21 (Phase 1): the side with the single fastest avatar starts. MVP_PROVISIONAL, not LOCKED.
+    status: 'MVP_PROVISIONAL',
     placeholder: true,
-    label: 'PLACEHOLDER_NOT_APPROVED',
-    aggregation: 'sum',
+    label: 'MVP_PROVISIONAL_NOT_LOCKED',
+    decision: { owner: 'Pote', date: '2026-11-21', evidence: 'docs/qa/p1/P1_INVESTIGATION.md', choice: 'max_single_avatar_spd', status: 'MVP_PROVISIONAL' },
+    aggregation: 'max',
     tieBreak: 'seeded_rng',
     note: 'CORE-006 locks "higher team SPD starts, then sides alternate". CORE-038 leaves the aggregate and the tie-break unapproved. Placeholder: sum the four roster SPD values once at match start (defeated units are not removed from the total). A tie uses a dedicated seeded stream labelled spd-tie and does not advance the draw stream. Implemented aggregates: sum, average, max.',
   },
@@ -161,11 +166,15 @@ const TEMPLATE = {
   },
   shield: {
     id: 'CORE-039',
-    status: 'PENDING_OWNER',
+    // Owner decision 2026-11-21 (Phase 1 option C): a side's shields clear at the start of that side's next turn.
+    status: 'MVP_PROVISIONAL',
     placeholder: true,
-    label: 'PLACEHOLDER_NOT_APPROVED',
+    label: 'MVP_PROVISIONAL_NOT_LOCKED',
+    decision: { owner: 'Pote', date: '2026-11-21', evidence: 'docs/qa/p1/P1_INVESTIGATION.md', choice: 'C_expire_start_of_next_own_turn', status: 'MVP_PROVISIONAL' },
     policy: 'sum_pool_absorbs_before_hp',
-    note: 'Shield amounts add into one pool and absorb damage before HP. The pool has no turn limit unless a future status says so. Taunt is a separate timed status. Not an approved mitigation rule.',
+    // 'start_of_next_own_turn' (Owner option C) or 'none' (legacy: the pool has no turn limit).
+    expiry: 'start_of_next_own_turn',
+    note: 'Shield amounts add into one pool and absorb damage before HP. With expiry start_of_next_own_turn (Owner option C, MVP_PROVISIONAL) the pool clears when its side starts its next turn, before Regen ticks and turn-start passives, so a shield lasts through exactly one enemy turn. expiry none restores the legacy unlimited pool. Taunt is a separate timed status.',
   },
   autoMode: {
     id: 'AUTO-MODE',
@@ -181,6 +190,9 @@ const TEMPLATE = {
       balanced: {
         // Owner t282u: AUTO uses Regen when a target ally is at or below this ratio (inclusive).
         allyLowHpRatio: 0.5,
+        // Owner decision 2026-11-21 (Phase 1): AUTO may cast a Regen/heal Skill at most this many times per side per match.
+        // null = no limit. Manual play is never limited. PROPOSED value, tune after play.
+        maxHealCastsPerMatch: 3,
         priorities: ['shield_taunt_if_lethal', 'heal_regen', 'setup_next_attack', 'highest_damage_lowest_hp', 'any_legal_expected_value'],
         spend: 'greedy',
         voluntaryDiscard: 'hand_locked_or_no_progress',
@@ -236,6 +248,12 @@ function assertConfig(config) {
       }
       continue;
     }
+    if (OWNER_PROVISIONAL_KEYS.has(key)) {
+      if (!DAMAGE_STATUSES.has(config[key]?.status)) {
+        throw gameError('PENDING_LOCK', `${key} must stay MVP_PROVISIONAL or PENDING_OWNER, never LOCKED`);
+      }
+      continue;
+    }
     if (config[key]?.status !== 'PENDING_OWNER') {
       throw gameError('PENDING_LOCK', `${key} must stay PENDING_OWNER`);
     }
@@ -274,6 +292,7 @@ function assertConfig(config) {
   if (!REGEN_STACKS.has(config.regenStack.policy)) throw gameError('UNKNOWN_REGEN_STACK');
   if (config.buffStack.policy !== 'sum_independent_durations') throw gameError('UNKNOWN_BUFF_STACK');
   if (config.shield.policy !== 'sum_pool_absorbs_before_hp') throw gameError('UNKNOWN_SHIELD_POLICY');
+  if (!SHIELD_EXPIRY.has(config.shield.expiry ?? 'none')) throw gameError('UNKNOWN_SHIELD_POLICY');
   if (config.autoMode?.status !== 'LOCKED' || config.autoMode?.enabled !== true) {
     throw gameError('LOCKED_RULE', 'AUTO mode is LOCKED on');
   }
@@ -288,6 +307,8 @@ function assertConfig(config) {
     }
     if (policy.spend !== 'greedy') throw gameError('UNKNOWN_AUTO_POLICY');
     if (!DISCARD_POLICIES.has(policy.voluntaryDiscard)) throw gameError('UNKNOWN_AUTO_POLICY');
+    const healCap = policy.maxHealCastsPerMatch;
+    if (healCap !== undefined && healCap !== null && !(Number.isInteger(healCap) && healCap >= 0)) throw gameError('UNKNOWN_AUTO_POLICY');
   }
   const duplicateCap = config.deckDuplicateMax.value;
   if (duplicateCap !== null && !(Number.isInteger(duplicateCap) && duplicateCap >= 1)) {

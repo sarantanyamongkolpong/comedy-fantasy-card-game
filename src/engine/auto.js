@@ -119,6 +119,13 @@ function worthwhileHeal(state, side, play, policy) {
   return false;
 }
 
+/** Owner decision 2026-11-21: AUTO heal casts per side per match (null = no limit). */
+function healCapReached(side, policy) {
+  const cap = policy.maxHealCastsPerMatch;
+  if (cap === undefined || cap === null) return false;
+  return (side.autoHealCasts ?? 0) >= cap;
+}
+
 function allyNeedsHeal(side, ratio) {
   return living(side.avatars).some((unit) => isAtOrBelowRatio(unit, ratio) && !hasRegenStatus(unit) && missingHp(unit) > 0);
 }
@@ -249,7 +256,7 @@ function improvesTheHit(state, side, play, plays) {
 function pickPlay(state, side, policy) {
   const plays = legalPlays(state, side);
   for (const step of policy.priorities) {
-    if (step === 'heal_regen' && !allyNeedsHeal(side, policy.allyLowHpRatio)) continue;
+    if (step === 'heal_regen' && (healCapReached(side, policy) || !allyNeedsHeal(side, policy.allyLowHpRatio))) continue;
     if (step === 'shield_taunt_if_lethal' && !enemyCanKill(state, side)) continue;
     let matching = [];
     if (step === 'heal_regen') {
@@ -333,7 +340,12 @@ function applyPlanned(state, planned) {
   }
   const check = assessAction(state, planned);
   if (!check.ok) return check;
-  return playAction(state, planned);
+  const sideId = state.activeSideId;
+  const result = playAction(state, planned);
+  if (result.ok && planned.priority === 'heal_regen' && state.sides[sideId]) {
+    state.sides[sideId].autoHealCasts = (state.sides[sideId].autoHealCasts ?? 0) + 1;
+  }
+  return result;
 }
 
 /**

@@ -45,3 +45,13 @@ Scratch experiments, 100 seeds, same command, engine patched only in a throwaway
 | D revert | Bulwark stays DEF +1 (`bulwark.enabled: false`) | 100 | 54 | 25.0 | 53 | 101 |
 
 Option C changes every shield, not only Bulwark (the starter deck has no other shield source, the engine sample deck does). The Regen stall under non-default presets (finding 4) needs its own answer: keep presets as-is and accept the stall there, add a turn limit, or cap Regen in AUTO.
+
+## Owner decisions (2026-11-21, all MVP_PROVISIONAL, not LOCKED)
+
+| Question | Decision | Where |
+| --- | --- | --- |
+| Bulwark / shield stacking | Option C: shields clear at the start of their side's next turn | `shield.expiry: 'start_of_next_own_turn'` (`'none'` = legacy) |
+| Regen stall | Limit AUTO heal use | `autoPolicy.policies.balanced.maxHealCastsPerMatch: 3` (PROPOSED value; `null` = no limit; manual play not limited) |
+| Who starts | Side with the single fastest avatar | `teamSpd.aggregation: 'max'`; equal max SPD still uses the seeded `spd-tie` stream (tie-break itself stays `PENDING_OWNER`) |
+
+Results after the decisions are in `run-500-after/` (same command, committed SHA).

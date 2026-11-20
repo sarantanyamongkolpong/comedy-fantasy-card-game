@@ -69,11 +69,22 @@ function excessList(state) {
   return rows;
 }
 
+/** Owner option C (2026-11-21, MVP_PROVISIONAL): shields last through one enemy turn. */
+function expireShields(state, side) {
+  if ((state.config.shield?.expiry ?? 'none') !== 'start_of_next_own_turn') return;
+  for (const unit of side.avatars) {
+    if (!unit.shield) continue;
+    state.log.push({ type: 'shield_expired', sideId: side.sideId, avatarId: unit.avatarId, amount: unit.shield });
+    unit.shield = 0;
+  }
+}
+
 function beginTurn(state) {
   if (state.turnStarted) return;
   const side = state.sides[state.activeSideId];
   withRng(state, (rng) => {
     expireStartStatuses(state, side);
+    expireShields(state, side);
     tickRegen(state, side);
     fireTurnPassives(state, side, rng);
     refillHand(state, side, rng);
@@ -149,7 +160,7 @@ export function createMatch(input) {
       control,
       ap: null,
       teamSpd: aggregateTeamSpd(avatars, config.teamSpd.aggregation),
-      teamSpdStatus: 'PENDING_OWNER',
+      teamSpdStatus: config.teamSpd.status,
       avatars,
       zones: { draw: cards, hand: [], discard: [], void: [] },
     };
@@ -164,7 +175,7 @@ export function createMatch(input) {
     config,
     flags: {
       productionReady: false,
-      teamSpd: 'PENDING_OWNER',
+      teamSpd: config.teamSpd.status,
       spdTieBreak: 'PENDING_OWNER',
       damageFormula: config.damage.status,
       hp: 'PENDING_OWNER',
@@ -220,7 +231,7 @@ export function createMatch(input) {
       [sideOrder[0]]: sides[sideOrder[0]].teamSpd,
       [sideOrder[1]]: sides[sideOrder[1]].teamSpd,
     },
-    teamSpdStatus: 'PENDING_OWNER',
+    teamSpdStatus: state.config.teamSpd.status,
     tieBreakStatus: 'PENDING_OWNER',
     placeholder: true,
   });
