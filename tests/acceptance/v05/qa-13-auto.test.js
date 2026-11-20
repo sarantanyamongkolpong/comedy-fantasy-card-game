@@ -84,12 +84,14 @@ function drive(api, seed) {
     if (isEnemy(state)) {
       const result = api.playEnemyTurn(state);
       assert.notEqual(result?.ok, false, result?.reason ?? 'playEnemyTurn failed');
+      assert.equal(result.state, state, 'playEnemyTurn updates the same match');
       log.push(['enemy', ...(result.log ?? []).map(stepName)]);
       state = asState(result, state);
     } else {
       assertNextLegal(api, state, state.activeSideId);
       const result = api.runAutoTurn(state, state.activeSideId);
       assert.notEqual(result?.ok, false, result?.reason ?? 'runAutoTurn failed');
+      assert.equal(result.state, state, 'runAutoTurn updates the same match');
       log.push(['player', ...(result.log ?? []).map(stepName)]);
       state = asState(result, state);
     }
@@ -97,6 +99,22 @@ function drive(api, seed) {
   }
   const outcome = readOutcome(api, state);
   assert.notEqual(outcome.result, 'ongoing', `AUTO did not finish seed ${seed}`);
+  const raw = api.getOutcome(state);
+  assert.equal(raw.rewards.timesEmitted, 1);
+  assert.equal(raw.rewards.payloadStatus, 'PENDING_OWNER');
+  assert.equal(raw.rewards.payload.status, 'PENDING_OWNER');
+  assert.equal(raw.rewards.payload.G, null);
+  assert.equal(raw.rewards.payload.loot, null);
+  assert.equal(raw.rewards.payload.items, null);
+  assert.equal(api.getOutcome(state).rewards.timesEmitted, 1);
+  if (raw.winnerSideId === 'player') {
+    assert.equal(raw.verdict.player, 'victory');
+    assert.equal(raw.verdict.enemy, 'defeat');
+  } else if (raw.winnerSideId === 'enemy') {
+    assert.equal(raw.verdict.enemy, 'victory');
+    assert.equal(raw.verdict.player, 'defeat');
+  }
+  assert.equal(state.auto, undefined);
   return { result: outcome.result, winner: outcome.winningSideId, log };
 }
 
@@ -162,8 +180,16 @@ bindApi(engine, [
     name: 'AUTO-04 Owner t261u toggle-off returns control mid-turn',
     fn(api) {
       let state = asState(api.createMatch(buildMatch({ seed: 7 })));
+      assert.throws(() => api.runAutoTurn(state, { seed: 7, auto: true }), /UNKNOWN_SIDE/);
       assert.equal(state.activeSideId, 'player');
       state = playCard(api, state, 'player', 'ACT_GEN_ATK0', 'AVT_PHA_002').state;
+      const floater = state.log.find((event) => event.type === 'damage');
+      assert.ok(floater, 'damage floaters live on state.log');
+      assert.equal(typeof floater.amount, 'number');
+      assert.equal(typeof floater.dealt, 'number');
+      assert.equal(floater.delta, -floater.dealt);
+      assert.equal(typeof floater.avatarId, 'string');
+      assert.equal(typeof floater.sideId, 'string');
       assert.equal(readOutcome(api, state).result, 'ongoing');
       assert.equal(state.activeSideId, 'player');
       const before = stamp(api, state);

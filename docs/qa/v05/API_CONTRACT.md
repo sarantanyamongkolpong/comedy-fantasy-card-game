@@ -16,9 +16,11 @@ AUTO battle is required. The mode flag is `LOCKED`. The choice policy stays `PRO
 
 - `chooseAutoActions(state, sideId)` returns the ordered legal plays for that side and does not change the match. `sideId` is `'player'` or `'enemy'` (or `{ sideId }`). An options object is not a side.
 - `runAutoTurn(state, sideId, opts)` plays that side's turn and updates the match in place. The return includes `state`, `log`, `ok`, `stopped`, and `ended`. `opts.shouldStop` or `opts.maxActions` stops between actions without ending the turn.
-- `playEnemyTurn(state, opts)` is `runAutoTurn` for the non-human side.
+- `playEnemyTurn(state)` is `runAutoTurn` for the non-human side. It does not take a side name. There is no `state.auto` and no `opts.auto`.
 
-The web session presents that match as a view (`activeSideId`, `units`, `zones`, `engine`). `playAction` and `getOutcome` take the view. `getOutcome` still returns the engine object: `status`, `winnerSideId`, `loserSideId`, and one `rewards` object with `timesEmitted: 1`. The booth may pass a string seed; `engine-session.js` hashes it with `hashSeed` before `src/gacha` `pull`, which still rejects a raw string. Save reload of the web profile comes back as `{ webBundle, profile }`. `profile.team` and `profile.deck` are the round trip.
+`playAction` and `endTurn` mutate the match and return `{ ok, reason, outcome }`. They do not return `{ state }`. `getOutcome` on a decided match has `winnerSideId`, `loserSideId`, and `verdict` (`victory` for the winner, `defeat` for the loser). A player wipe is `winnerSideId: 'player'` and `verdict.player: 'victory'`. An enemy wipe is `winnerSideId: 'enemy'` and `verdict.player: 'defeat'`. `rewards.timesEmitted` stays 1. `rewards.payload` is `{ G: null, loot: null, items: null }` with status `PENDING_OWNER`. Damage, shield, and regen floaters are `state.log` entries (`damage.amount` / `dealt` / `delta`, `shield`, `regen_applied`, `regen_tick`).
+
+The web adapter's `createMatch` must return that match (`sides`) or `{ state }`. A view that only has `engine`, `units`, and `phase` is a web bug: acceptance does not unwrap `view.engine` for the caller. The booth may pass a string seed; `engine-session.js` hashes it with `hashSeed` before `src/gacha` `pull`, which still rejects a raw string. Save reload of the web profile comes back as `{ webBundle, profile }`. `profile.team` and `profile.deck` are the round trip.
 
 The web battle screen exposes the toggle (`data-testid="auto-toggle"`, `setAuto`, or `autoBattle`). The save profile keeps `preferences.autoBattle` through `serialize` / `deserialize`. `setAutoBattle(profile, enabled)` or `createProfile({ preferences: { autoBattle } })` must preserve it.
 

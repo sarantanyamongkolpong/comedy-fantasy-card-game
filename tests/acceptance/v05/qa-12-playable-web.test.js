@@ -5,7 +5,7 @@ import test from 'node:test';
 import { pathToFileURL } from 'node:url';
 import { repoPath } from './helpers/load-api.js';
 import { buildMatch } from './helpers/match.js';
-import { duplicateRewardIds, readOutcome } from './helpers/state.js';
+import { asState, duplicateRewardIds, playCard, readOutcome } from './helpers/state.js';
 
 const webRoot = repoPath('web');
 const webLanded = existsSync(join(webRoot, 'js', 'stage.js')) && existsSync(join(webRoot, 'assets-manifest.json'));
@@ -16,7 +16,7 @@ const engineLanded = existsSync(repoPath('src', 'engine', 'index.js'))
 function walk(dir, out = []) {
   if (!existsSync(dir)) return out;
   for (const name of readdirSync(dir)) {
-    if (name === 'node_modules') continue;
+    if (name === 'node_modules' || name === 'dist') continue;
     const full = join(dir, name);
     if (statSync(full).isDirectory()) walk(full, out);
     else out.push(full);
@@ -118,41 +118,39 @@ if (!webLanded || !engineLanded) {
     assert.equal(api.productionReady, false);
     assert.equal(typeof api.playEnemyTurn, 'function', 'the web adapter must expose playEnemyTurn from the engine');
 
-    const won = api.createMatch(buildMatch({ damageSide: 'player', enemyHp: 1 }));
-    const winCard = api.getZones(won, 'player').hand.find((entry) => entry.cardId === 'ACT_DMG_ALL');
-    const winActor = won.units.find((unit) => unit.sideId === 'player' && unit.ko !== true);
-    assert.ok(winCard && winActor, 'the player opening hand needs ACT_DMG_ALL and a living avatar');
-    const winPlay = api.playAction(won, {
-      cardInstanceId: winCard.instanceId,
-      actorAvatarId: winActor.avatarId,
-      targets: [],
-    });
-    assert.notEqual(winPlay?.ok, false, winPlay?.reason ?? 'the winning play was refused');
+    const created = api.createMatch(buildMatch({ damageSide: 'player', enemyHp: 1 }));
+    assert.ok(
+      created?.sides || created?.state?.sides,
+      'web createMatch must return the engine match (sides) or { state }. A view with only engine/units/phase hides the match; unwrapping view.engine belongs to the web adapter.',
+    );
+    let won = asState(created);
+    won = playCard(api, won, 'player', 'ACT_DMG_ALL', 'AVT_PHA_002').state;
     const win = readOutcome(api, won);
     assert.equal(win.result, 'win');
     assert.equal(win.winningSideId, 'player');
+    assert.equal(win.verdict?.player, 'victory');
     assert.equal(win.losingSideId, 'enemy');
     assert.equal(win.rewards.length, 1);
+    assert.equal(win.rewards[0].timesEmitted, 1);
+    assert.equal(win.rewards[0].payloadStatus, 'PENDING_OWNER');
+    assert.equal(win.rewards[0].payload.G, null);
+    assert.equal(win.rewards[0].payload.loot, null);
+    assert.equal(win.rewards[0].payload.items, null);
     assert.deepEqual(duplicateRewardIds(win.rewards), []);
-    assert.deepEqual(readOutcome(api, won), win);
+    assert.equal(readOutcome(api, won).rewards[0].timesEmitted, 1);
 
-    const lost = api.createMatch(buildMatch({ damageSide: 'enemy', playerHp: 1 }));
+    let lost = asState(api.createMatch(buildMatch({ damageSide: 'enemy', playerHp: 1 })));
     assert.equal(lost.activeSideId, 'enemy');
-    const card = api.getZones(lost, 'enemy').hand.find((entry) => entry.cardId === 'ACT_DMG_ALL');
-    const foe = lost.units.find((unit) => unit.sideId === 'enemy' && unit.ko !== true);
-    assert.ok(card && foe, 'enemy opening hand is missing ACT_DMG_ALL');
-    const losePlay = api.playAction(lost, {
-      cardInstanceId: card.instanceId,
-      actorAvatarId: foe.avatarId,
-      targets: [],
-    });
-    assert.notEqual(losePlay?.ok, false, losePlay?.reason ?? 'the losing play was refused');
+    lost = playCard(api, lost, 'enemy', 'ACT_DMG_ALL', lost.sides.enemy.avatars[0].avatarId).state;
     const lose = readOutcome(api, lost);
     assert.equal(lose.result, 'lose');
     assert.equal(lose.winningSideId, 'enemy');
+    assert.equal(lose.verdict?.player, 'defeat');
     assert.equal(lose.losingSideId, 'player');
     assert.equal(lose.rewards.length, 1);
-    assert.deepEqual(readOutcome(api, lost).rewards, lose.rewards);
+    assert.equal(lose.rewards[0].timesEmitted, 1);
+    assert.equal(lose.rewards[0].payload.G, null);
+    assert.equal(lose.rewards[0].payload.loot, null);
   });
 
   test('QA-10 GA-11 web gacha banners must satisfy src/gacha', async () => {
