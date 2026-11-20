@@ -189,4 +189,4 @@ Hooks are PROPOSED extension text. They are not canon even when the sample's par
 
 First watch `ee9c649` had a separate element list, combined affiliation field, looser rarity step, and postcard floor names. Second watch `b7132e2` (`docs/research/monsters/creative/parody/STYLE_GUIDE.md`) adopts this file's origin ids, attribute ids, rarity defaults for normals and elites, and `ENV-TWR-01` through `ENV-TWR-15`. Those five tensions are closed. The guide still does not move any core-lore line, and it still refuses to define Echo, hybrid, or summoning.
 
-`research/m07-boss` was still absent at `2026-11-20T13:20:19Z`. No sample creature has been published, so `sample_lore_links.json` still has an empty `entries` list. The old crosswalk stays in that file as history.
+A later watch, recorded in `sample_lore_links.json`, linked the 15 normal and elite entries on `research/m06-parody` @ `77c558b` and the 15 bosses on `research/m07-boss` @ `76360d6`. Those links stay PROPOSED. The old crosswalk stays in the link file as history.
