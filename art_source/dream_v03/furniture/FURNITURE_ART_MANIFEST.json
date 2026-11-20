@@ -1,0 +1,24 @@
+{
+  "project": "Comedy Fantasy Card Game",
+  "phase": 3,
+  "workstream": "Hideout Furniture",
+  "status": "GENERATED_REVIEW",
+  "files": [
+    {"id": "companion_bed", "file": "furniture_companion_bed.png", "suggested_zone": "companion", "purpose": "resting place; static empty bed art"},
+    {"id": "trophy_shelf", "file": "furniture_trophy_shelf.png", "suggested_zone": "stash_or_living", "purpose": "show trophies/achievements"},
+    {"id": "bookcase", "file": "furniture_bookcase.png", "suggested_zone": "living", "purpose": "decorative book storage"},
+    {"id": "magic_workbench", "file": "furniture_magic_workbench.png", "suggested_zone": "crafting", "purpose": "workbench or future crafting hotspot"},
+    {"id": "wardrobe", "file": "furniture_wardrobe.png", "suggested_zone": "living", "purpose": "Avatar clothing/cosmetics"},
+    {"id": "cozy_sofa", "file": "furniture_cozy_sofa.png", "suggested_zone": "living_or_companion", "purpose": "living room rest furniture"},
+    {"id": "ornate_storage_chest", "file": "furniture_ornate_storage_chest.png", "suggested_zone": "stash", "purpose": "loot-item storage chest, distinct from Phase2 card-deck box"}
+  ],
+  "format": {"type": "PNG", "dimensions_px": [1254, 1254], "channels": "RGBA", "alpha_extrema_verified": [0, 255], "isolated_cutout": true},
+  "design_rules": [
+    "Independent furniture assets, no full room baked into PNGs.",
+    "Position/scale/click-target must be supplied by renderer or separate manifest, not inferred as GAME_RULE from illustration.",
+    "For phone landscape, scale objects uniformly with the fixed master canvas; never stretch object aspect ratio.",
+    "Asset can be replaced by swapping manifest path without changing game logic.",
+    "Actual stash capacity, upgrade cost, effect unlocks, and availability remain governed by v0.5 requirement data; artwork grants no gameplay capability."
+  ],
+  "qa": {"file_count": 7, "alpha_verified": true, "dimensions_verified": true, "visual_sample_reviewed": true, "integrated": false, "owner_art_approval": false}
+}
