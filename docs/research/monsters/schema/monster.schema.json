@@ -1,0 +1,1055 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "monster.schema.json",
+  "title": "Monster and boss parody research database",
+  "description": "Research records for the monster and boss parody project. Sourced facts live in research. Agent-written parody lives in creative. Status is RESEARCH, PROPOSED, or QA_PASSED. Combat stats, gacha rates, and the words LOCKED and OWNER_APPROVED are out of scope.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "monster-research-1"
+    },
+    "contentTier": {
+      "const": "research",
+      "description": "Marks the file as research. It is not content/ draft and it is not production."
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/monster"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A source the research agent fetched. The tool checks the shape. It does not fetch the URL.",
+      "required": [
+        "url",
+        "title",
+        "accessed",
+        "supports"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://\\S+$",
+          "maxLength": 2000,
+          "description": "http(s) page that supports the cited fact."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300,
+          "description": "Title of the page or work."
+        },
+        "accessed": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "Calendar date the URL was read, YYYY-MM-DD."
+        },
+        "supports": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 400,
+          "description": "Which fact this source supports, in the researcher's words."
+        }
+      }
+    },
+    "research": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Sourced facts only. Parody names, jokes, and lore written for this game belong in creative.",
+      "required": [
+        "originalInspiration",
+        "sourceUrl",
+        "facts",
+        "sources",
+        "protectedName",
+        "publicDomain",
+        "confidence"
+      ],
+      "properties": {
+        "inspirationId": {
+          "type": "string",
+          "pattern": "^(INS|SELF)-[0-9]{2}-[0-9]{3}$",
+          "description": "Optional link to an inspiration id. Agents 01–05 use INS-01-001. Agent 06 uses SELF-06-001 for a stand-in inspiration written before that source branch was on origin."
+        },
+        "originalInspiration": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Field 4. The real motif, creature, or public source being parodied. Not the parody name."
+        },
+        "origin": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "description": "Culture, era, or genre the inspiration comes from."
+        },
+        "kind": {
+          "enum": [
+            "game",
+            "myth",
+            "folklore",
+            "anime",
+            "urban_legend",
+            "pop",
+            "historical"
+          ],
+          "description": "Same kind vocabulary as the inspiration records."
+        },
+        "facts": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 500
+          },
+          "description": "Sourced sentences. Each one needs a source whose supports field points at it."
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://\\S+$",
+          "maxLength": 2000,
+          "description": "Field 5. Primary URL. It must also appear in sources[].url."
+        },
+        "protectedName": {
+          "type": "boolean",
+          "description": "True when the inspiration uses a protected proper name or a distinctive copyrighted character."
+        },
+        "publicDomain": {
+          "type": "boolean",
+          "description": "True when the underlying motif is public domain or a generic genre trope."
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "description": "Field 22. Research confidence. Same three words as agents 01–05."
+        },
+        "archetypeTags": {
+          "type": "array",
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          }
+        }
+      }
+    },
+    "creative": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Agent-written identity. Keep protected proper names and copied character details out of these strings.",
+      "required": [
+        "nameEn",
+        "nameTh",
+        "creatureType",
+        "visualIdentity",
+        "personality",
+        "signatureTrait",
+        "comedyConcept",
+        "element",
+        "combatArchetype",
+        "signatureAbilityConcept",
+        "weaknessConcept",
+        "loreSummary",
+        "factionAffiliation",
+        "suggestedRarity",
+        "suggestedTowerEnvironment",
+        "artworkPromptConcept"
+      ],
+      "properties": {
+        "nameEn": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 60,
+          "description": "Field 2. Parody name in English. Short enough to read aloud."
+        },
+        "nameTh": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "description": "Field 3. Thai name."
+        },
+        "creatureType": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80,
+          "description": "Field 7. What this parody creature is. Free text. The game has no creature-type enum."
+        },
+        "visualIdentity": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "Field 8. Original silhouette and costume. Do not describe a copyrighted design."
+        },
+        "personality": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "Field 9. How it behaves."
+        },
+        "signatureTrait": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 400,
+          "description": "Field 10. The one habit a player remembers."
+        },
+        "comedyConcept": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "Field 11. The joke or the twist. Not every entry has to be funny."
+        },
+        "humorType": {
+          "enum": [
+            "Absurd Comedy",
+            "Dark Fantasy Comedy",
+            "Satirical Fantasy",
+            "Epic but Ridiculous"
+          ],
+          "description": "Optional. The brief's humor types. Not one of the 22 required fields."
+        },
+        "element": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "description": "Field 12. Suggested element or attribute. Free text. src/schema has no element enum, so this is not a damage type."
+        },
+        "combatArchetype": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80,
+          "description": "Field 13. How it fights, in words. Map Tank, DPS, Magic, or Support only through hooks.role."
+        },
+        "signatureAbilityConcept": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "Field 14. What the signature ability does. No damage numbers."
+        },
+        "weaknessConcept": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "Field 15. What undoes it. No stat penalties."
+        },
+        "loreSummary": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 1200,
+          "description": "Field 16. Where it sits in the existing world. Do not rewrite core lore."
+        },
+        "factionAffiliation": {
+          "enum": [
+            "Aegis Dominion",
+            "Phantom Blades",
+            "Celestial Nexus",
+            "Sanctuary Order",
+            "Wild Creature",
+            "Corrupted Echo",
+            "Tower Guardian",
+            "Tower Anomaly",
+            null
+          ],
+          "description": "Field 17. Optional affiliation. Null means unaffiliated. The four faction names match src/schema/constants.js. The other four are the brief's non-faction labels (tower-anomaly creature is Tower Anomaly)."
+        },
+        "suggestedRarity": {
+          "enum": [
+            "N",
+            "R",
+            "Epic",
+            "EX",
+            null
+          ],
+          "description": "Field 18. Suggested rarity using avatar rarities N, R, Epic, EX (CORE-024). FAC is an action-card rarity and is rejected. Null means not suggested yet."
+        },
+        "suggestedTowerEnvironment": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 200,
+          "description": "Field 19. A place inside the Mysterious Tower (MAP-03). Flavor text, not a new map pin."
+        },
+        "artworkPromptConcept": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 1200,
+          "description": "Field 20. An original art prompt. Do not ask for a copy of existing artwork or a named character."
+        }
+      }
+    },
+    "boss": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Eight extra fields for Mini Boss, Main Boss, World Boss, and Secret Boss. Concepts only. No HP, ATK, DEF, SPD, POW, or damage numbers.",
+      "required": [
+        "bossTitle",
+        "entranceConcept",
+        "signatureSilhouette",
+        "personalityMotivation",
+        "signatureMechanic",
+        "phaseTransformationConcept",
+        "defeatAnimationConcept",
+        "uniqueLootTheme"
+      ],
+      "properties": {
+        "bossTitle": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80,
+          "description": "Boss title. Grander than the parody name, even when the name is a joke."
+        },
+        "entranceConcept": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "How the boss arrives."
+        },
+        "signatureSilhouette": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "The readable outline before the details."
+        },
+        "personalityMotivation": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "Personality and motivation. Separate from creative.personality."
+        },
+        "signatureMechanic": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "The fight idea. No damage, duration, or HP numbers."
+        },
+        "phaseTransformationConcept": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "How the boss changes. Describe the change, not a stat jump."
+        },
+        "defeatAnimationConcept": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 800,
+          "description": "What the player sees when it falls."
+        },
+        "uniqueLootTheme": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 400,
+          "description": "A loot theme. Not a drop table, rate, or item stat."
+        }
+      }
+    },
+    "hooks": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional future hooks for card collection, gacha, and battle. Ids and rarity letters only. No weights, pity, or combat stats.",
+      "properties": {
+        "cardId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[A-Z][A-Z0-9_]*$",
+          "description": "Reserved card id, or null when no card exists. Not an action card and not a banner entry."
+        },
+        "enemyId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^ENM_[A-Z0-9_]+$",
+          "description": "Reserved enemy id in the content/v05/enemies style (ENM_DEMO_001). Null lets the importer derive ENM_<prefix>_<nnnn> from the monster id."
+        },
+        "rarity": {
+          "enum": [
+            "N",
+            "R",
+            "Epic",
+            "EX",
+            null
+          ],
+          "description": "Rarity letter to carry onto a future enemy or card. Same set as suggestedRarity. Null uses the suggestion."
+        },
+        "role": {
+          "enum": [
+            "Tank",
+            "DPS",
+            "Magic",
+            "Support",
+            null
+          ],
+          "description": "Enemy role from the demo battle file. Null when the combat archetype is not one of these four."
+        },
+        "factionId": {
+          "enum": [
+            "FAC_AEG",
+            "FAC_PHA",
+            "FAC_CEL",
+            "FAC_SAN",
+            null
+          ],
+          "description": "Systems key for a real faction. Must be null when factionAffiliation is Wild Creature, Corrupted Echo, Tower Guardian, Tower Anomaly, or null, unless affiliation is null and this id is only a reservation."
+        },
+        "gachaPool": {
+          "enum": [
+            "avatar",
+            "action",
+            "companion",
+            null
+          ],
+          "description": "Optional pool name matching GachaBanner.pool. Naming a pool does not add a weight, a rate, or a pity rule."
+        }
+      }
+    },
+    "monsterFields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "monsterId",
+        "category",
+        "status",
+        "ipRisk",
+        "research",
+        "creative",
+        "boss"
+      ],
+      "properties": {
+        "monsterId": {
+          "type": "string",
+          "pattern": "^MON-(NRM|ELT|MNB|MJB|WLB|SCB)-[0-9]{4}$",
+          "description": "Field 1. MON-NRM-0001, MON-ELT-, MON-MNB-, MON-MJB-, MON-WLB-, MON-SCB-. The prefix must match category."
+        },
+        "category": {
+          "enum": [
+            "Normal",
+            "Elite",
+            "Mini Boss",
+            "Main Boss",
+            "World Boss",
+            "Secret Boss"
+          ],
+          "description": "Field 6. Secret / Comedy Boss in the target table is Secret Boss."
+        },
+        "status": {
+          "enum": [
+            "RESEARCH",
+            "PROPOSED",
+            "QA_PASSED"
+          ],
+          "description": "Workflow. RESEARCH, PROPOSED, or QA_PASSED. LOCKED and OWNER_APPROVED are not values."
+        },
+        "ipRisk": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "blocked"
+          ],
+          "description": "Field 21. IP similarity risk. blocked means do not produce. high means a reader can still see the protected source too clearly."
+        },
+        "research": {
+          "$ref": "#/$defs/research"
+        },
+        "creative": {
+          "$ref": "#/$defs/creative"
+        },
+        "boss": {
+          "description": "Null for Normal and Elite. The eight boss fields for the four boss categories.",
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "hooks": {
+          "$ref": "#/$defs/hooks"
+        }
+      }
+    },
+    "monster": {
+      "description": "One research monster. research holds sourced facts. creative holds the parody. No combat stat fields.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/monsterFields"
+        },
+        {
+          "if": {
+            "properties": {
+              "category": {
+                "const": "Normal"
+              }
+            },
+            "required": [
+              "category"
+            ]
+          },
+          "then": {
+            "properties": {
+              "monsterId": {
+                "pattern": "^MON-NRM-[0-9]{4}$"
+              },
+              "boss": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "category": {
+                "const": "Elite"
+              }
+            },
+            "required": [
+              "category"
+            ]
+          },
+          "then": {
+            "properties": {
+              "monsterId": {
+                "pattern": "^MON-ELT-[0-9]{4}$"
+              },
+              "boss": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "category": {
+                "const": "Mini Boss"
+              }
+            },
+            "required": [
+              "category"
+            ]
+          },
+          "then": {
+            "properties": {
+              "monsterId": {
+                "pattern": "^MON-MNB-[0-9]{4}$"
+              },
+              "boss": {
+                "$ref": "#/$defs/boss"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "category": {
+                "const": "Main Boss"
+              }
+            },
+            "required": [
+              "category"
+            ]
+          },
+          "then": {
+            "properties": {
+              "monsterId": {
+                "pattern": "^MON-MJB-[0-9]{4}$"
+              },
+              "boss": {
+                "$ref": "#/$defs/boss"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "category": {
+                "const": "World Boss"
+              }
+            },
+            "required": [
+              "category"
+            ]
+          },
+          "then": {
+            "properties": {
+              "monsterId": {
+                "pattern": "^MON-WLB-[0-9]{4}$"
+              },
+              "boss": {
+                "$ref": "#/$defs/boss"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "category": {
+                "const": "Secret Boss"
+              }
+            },
+            "required": [
+              "category"
+            ]
+          },
+          "then": {
+            "properties": {
+              "monsterId": {
+                "pattern": "^MON-SCB-[0-9]{4}$"
+              },
+              "boss": {
+                "$ref": "#/$defs/boss"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "severity",
+        "code",
+        "path",
+        "message"
+      ],
+      "properties": {
+        "severity": {
+          "enum": [
+            "error",
+            "warning",
+            "info"
+          ]
+        },
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "monsterId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "otherMonsterId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "score": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Similarity score written as text so the import file stays free of numeric combat fields."
+        }
+      }
+    },
+    "importEnemy": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Future enemy row shaped like content/v05/enemies/demo-battle.json, with stats omitted.",
+      "required": [
+        "enemyId",
+        "displayName",
+        "nameTh",
+        "factionId",
+        "role",
+        "rarity",
+        "rarityStatus",
+        "monsterId",
+        "category",
+        "status"
+      ],
+      "properties": {
+        "enemyId": {
+          "type": "string",
+          "pattern": "^ENM_[A-Z0-9_]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nameTh": {
+          "type": "string",
+          "minLength": 1
+        },
+        "factionId": {
+          "enum": [
+            "FAC_AEG",
+            "FAC_PHA",
+            "FAC_CEL",
+            "FAC_SAN",
+            null
+          ]
+        },
+        "role": {
+          "enum": [
+            "Tank",
+            "DPS",
+            "Magic",
+            "Support",
+            null
+          ]
+        },
+        "rarity": {
+          "enum": [
+            "N",
+            "R",
+            "Epic",
+            "EX",
+            null
+          ]
+        },
+        "rarityStatus": {
+          "const": "PROPOSED",
+          "description": "The letter is a suggestion. It is not locked balance and it is not a drop rate."
+        },
+        "monsterId": {
+          "type": "string",
+          "pattern": "^MON-(NRM|ELT|MNB|MJB|WLB|SCB)-[0-9]{4}$"
+        },
+        "category": {
+          "enum": [
+            "Normal",
+            "Elite",
+            "Mini Boss",
+            "Main Boss",
+            "World Boss",
+            "Secret Boss"
+          ]
+        },
+        "status": {
+          "enum": [
+            "RESEARCH",
+            "PROPOSED",
+            "QA_PASSED"
+          ]
+        }
+      }
+    },
+    "importCard": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Card-collection hook. cardKind is omitted so this object is not an action card or an avatar card.",
+      "required": [
+        "cardId",
+        "cardIdStatus",
+        "monsterId",
+        "nameEn",
+        "nameTh",
+        "rarity",
+        "note"
+      ],
+      "properties": {
+        "cardId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[A-Z][A-Z0-9_]*$"
+        },
+        "cardIdStatus": {
+          "enum": [
+            "UNASSIGNED",
+            "RESERVED"
+          ]
+        },
+        "monsterId": {
+          "type": "string"
+        },
+        "nameEn": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nameTh": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rarity": {
+          "enum": [
+            "N",
+            "R",
+            "Epic",
+            "EX",
+            null
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "gameImport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enemies",
+        "cards",
+        "gacha",
+        "encounters"
+      ],
+      "properties": {
+        "enemies": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Same outer keys as content/v05/enemies/demo-battle.json. The enemy objects do not include stats.",
+          "required": [
+            "contentTier",
+            "warning",
+            "battle"
+          ],
+          "properties": {
+            "contentTier": {
+              "const": "research"
+            },
+            "warning": {
+              "type": "string",
+              "minLength": 1
+            },
+            "battle": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "battleId",
+                "status",
+                "note",
+                "enemies"
+              ],
+              "properties": {
+                "battleId": {
+                  "type": "null",
+                  "description": "Left null. A battle stream assigns the encounter id later."
+                },
+                "status": {
+                  "const": "PROPOSED"
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "enemies": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/importEnemy"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/importCard"
+          }
+        },
+        "gacha": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "included",
+            "reason",
+            "suggestions"
+          ],
+          "properties": {
+            "included": {
+              "const": false
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "suggestions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "monsterId",
+                  "pool",
+                  "rarity"
+                ],
+                "properties": {
+                  "monsterId": {
+                    "type": "string"
+                  },
+                  "pool": {
+                    "enum": [
+                      "avatar",
+                      "action",
+                      "companion"
+                    ]
+                  },
+                  "rarity": {
+                    "enum": [
+                      "N",
+                      "R",
+                      "Epic",
+                      "EX"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "encounters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "category",
+              "enemyIds",
+              "note"
+            ],
+            "properties": {
+              "category": {
+                "enum": [
+                  "Normal",
+                  "Elite",
+                  "Mini Boss",
+                  "Main Boss",
+                  "World Boss",
+                  "Secret Boss"
+                ]
+              },
+              "enemyIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^ENM_[A-Z0-9_]+$"
+                }
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "importFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "export-json.mjs output. Records follow the research schema. gameImport is the future loader shape and contains no combat numbers.",
+      "required": [
+        "schemaVersion",
+        "contentTier",
+        "importKind",
+        "warning",
+        "sourceFiles",
+        "records",
+        "gameImport",
+        "audit"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": "monster-research-1"
+        },
+        "contentTier": {
+          "const": "research"
+        },
+        "importKind": {
+          "const": "future-game-import"
+        },
+        "warning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceFiles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/monster"
+          }
+        },
+        "gameImport": {
+          "$ref": "#/$defs/gameImport"
+        },
+        "audit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ok",
+            "errors",
+            "warnings",
+            "notes"
+          ],
+          "properties": {
+            "ok": {
+              "type": "boolean"
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/finding"
+              }
+            },
+            "warnings": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/finding"
+              }
+            },
+            "notes": {
+              "type": "array",
+              "description": "QA notes. They are not errors and they are not warnings.",
+              "items": {
+                "$ref": "#/$defs/finding"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
