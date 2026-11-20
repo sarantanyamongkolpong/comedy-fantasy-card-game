@@ -151,7 +151,7 @@ export function actionModel(def) {
     name: def.name,
     rarity: def.rarity,
     factionId: def.factionRequirement,
-    illustrationSubjectId: 'generic-action',
+    illustrationSubjectId: def.cardId || 'generic-action',
     costAp: def.costAp,
     type: def.type,
     stats: null,

@@ -21,6 +21,7 @@ export function renderHome(ctx) {
   figure.append(el('p', 'lede', ownedLine));
   figure.append(el('p', 'fine', 'Storage slots: PENDING (HOME-11). Installed furniture: none. A fancier house does not add slots by itself.'));
   body.append(figure);
+  body.append(furnitureStrip(ctx));
 
   const nav = el('div', 'home-nav');
   nav.append(
@@ -45,5 +46,34 @@ export function renderHome(ctx) {
   }
   brochure.append(row);
   body.append(brochure);
-  return shell(ctx, 'The Hideout', body);
+  const view = shell(ctx, 'The Hideout', body);
+  const bg = findAsset(ctx.manifest, { slot: 'bg-hideout', subjectId: 'cabin' });
+  if (bg) {
+    const img = el('img', 'scene-bg');
+    img.alt = '';
+    bindImage(img, bg);
+    view.prepend(img);
+    view.classList.add('has-scene');
+  }
+  return view;
+}
+
+function furnitureStrip(ctx) {
+  const strip = el('div', 'furniture-strip');
+  strip.append(el('p', 'fine', 'Furniture art is bound. Nothing is installed, and a house tier does not add storage.'));
+  const row = el('div', 'row');
+  const seen = new Set();
+  for (const asset of ctx.manifest.assets ?? []) {
+    if (asset.slot !== 'furniture' || asset.placeholder === true) continue;
+    if (seen.has(asset.path)) continue;
+    seen.add(asset.path);
+    const fig = el('figure', 'furniture-prop');
+    const img = el('img');
+    img.alt = '';
+    bindImage(img, asset);
+    fig.append(img);
+    row.append(fig);
+  }
+  strip.append(row);
+  return strip;
 }

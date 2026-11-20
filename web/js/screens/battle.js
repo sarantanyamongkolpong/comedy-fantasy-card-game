@@ -107,10 +107,7 @@ function leadPlate(ctx, bands) {
   const front = ctx.match.units.find((unit) => unit.sideId === 'enemy' && !unit.ko)
     ?? ctx.match.units.find((unit) => unit.sideId === 'enemy');
   const medal = el('span', 'lead-medal');
-  const art = front ? firstAsset(ctx.manifest, [
-    { slot: 'battle-sprite', subjectId: front.avatarId },
-    { slot: 'illustration', subjectId: front.avatarId },
-  ]) : null;
+  const art = front ? unitArt(ctx, front) : null;
   if (art) {
     const img = el('img');
     img.alt = '';
@@ -124,6 +121,34 @@ function leadPlate(ctx, bands) {
   copy.append(el('span', null, front ? `${front.hp} / ${front.maxHp}` : ''));
   lead.append(copy);
   return lead;
+}
+
+const ENEMY_SPRITE_BY_ROLE = {
+  Tank: 'ENM_DEMO_001',
+  DPS: 'ENM_DEMO_002',
+  Magic: 'ENM_DEMO_003',
+};
+
+function unitArt(ctx, unit) {
+  const queries = [];
+  if (unit.sideId === 'enemy' && ENEMY_SPRITE_BY_ROLE[unit.role]) {
+    queries.push({ slot: 'battle-sprite', subjectId: ENEMY_SPRITE_BY_ROLE[unit.role] });
+  }
+  queries.push(
+    { slot: 'battle-sprite', subjectId: unit.avatarId },
+    { slot: 'illustration', subjectId: unit.avatarId },
+  );
+  return firstAsset(ctx.manifest, queries);
+}
+
+function statusVfx(unit) {
+  const subjects = [];
+  if (unit.ko) subjects.push('ko');
+  for (const status of unit.statuses ?? []) {
+    if (status.id === 'shield' || status.name === 'shield') subjects.push('shield');
+    if (status.id === 'regen' || status.name === 'regen') subjects.push('regen');
+  }
+  return subjects;
 }
 
 function hpBar(unit) {
@@ -147,10 +172,7 @@ function unitToken(ctx, unit, slot, arenaBox) {
   };
   place(node, local);
   node.append(el('span', 'shadow'));
-  const art = firstAsset(ctx.manifest, [
-    { slot: 'battle-sprite', subjectId: unit.avatarId },
-    { slot: 'illustration', subjectId: unit.avatarId },
-  ]);
+  const art = unitArt(ctx, unit);
   if (art) {
     const img = el('img', 'sprite');
     img.alt = '';
@@ -166,6 +188,14 @@ function unitToken(ctx, unit, slot, arenaBox) {
     if (status.label) node.append(el('span', 'floater', status.label));
   }
   if (unit.ko) node.append(el('span', 'ko-tag', 'KO'));
+  for (const subjectId of statusVfx(unit)) {
+    const vfx = findAsset(ctx.manifest, { slot: 'battle-vfx', subjectId });
+    if (!vfx) continue;
+    const overlay = el('img', 'vfx');
+    overlay.alt = '';
+    bindImage(overlay, vfx);
+    node.append(overlay);
+  }
   node.append(hpBar(unit));
   node.append(el('span', 'unit-hp', `${unit.hp}/${unit.maxHp}`));
   const selected = ctx.battleUi.selection.actorAvatarId === unit.instanceId || ctx.battleUi.selection.targetId === unit.instanceId;

@@ -10,6 +10,7 @@ export function findAsset(manifest, query) {
   const assets = manifest?.assets ?? [];
   return assets.find((asset) => {
     if (query.assetId && asset.asset_id !== query.assetId) return false;
+    if (asset.default === false && query.default !== false && !query.assetId) return false;
     if (query.slot && asset.slot !== query.slot) return false;
     if (Object.prototype.hasOwnProperty.call(query, 'rarity') && asset.rarity !== query.rarity) return false;
     if (Object.prototype.hasOwnProperty.call(query, 'subjectId') && asset.subject_id !== query.subjectId) return false;
@@ -40,6 +41,11 @@ export function bindImage(img, entry) {
   img.dataset.slot = entry.slot ?? '';
   if (entry.placeholder) img.dataset.placeholder = 'true';
   if (entry.review_status) img.dataset.reviewStatus = entry.review_status;
+  const presentation = entry.presentation ?? {};
+  if (presentation.objectFit) img.style.objectFit = presentation.objectFit;
+  if (presentation.objectPosition) img.style.objectPosition = presentation.objectPosition;
+  if (presentation.blend) img.dataset.blend = presentation.blend;
+  if (presentation.mask) img.dataset.mask = presentation.mask;
   img.src = assetUrl(entry);
   if (entry.fallback_path) {
     img.addEventListener('error', () => {
