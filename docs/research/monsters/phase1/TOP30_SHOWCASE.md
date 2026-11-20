@@ -1,8 +1,8 @@
 # Top 30 Showcase — Monster & Boss Parody Research Phase 1
 
-สถานะทุกตัว: **PROPOSED** (ยังไม่ QA_PASSED / ยังไม่ LOCKED / ยังไม่ OWNER_APPROVED) · ไม่มีตัวเลข HP/ATK/DEF · Rarity เป็นข้อเสนอเท่านั้น ไม่ใช่อัตรากาชา
+สถานะทุกตัว: **PROPOSED** (การตัดสินใจ Owner t282u = OWNER_DECIDED · ไม่มี QA_PASSED / LOCKED) · ไม่มีตัวเลข HP/ATK/DEF · Rarity เป็นข้อเสนอเท่านั้น ไม่ใช่อัตรากาชา · 30 ตัวนี้อนุมัติให้ *ตรวจทาน* เท่านั้น ยังไม่ขยายเป็น 370
 
-รวบรวมโดย Mira จาก branch `research/monster-phase1-int` (agent 06 = Normal/Elite, agent 07 = Bosses, QA = agent 10). ข้อความ concept/mechanic/visual ยกมาจากไฟล์ของ agent ตรงตัว (ภาษาอังกฤษ) ไม่ได้เขียนใหม่ ส่วน IP risk ใช้ผล QA heuristic ของ agent 10 และแสดงค่าที่ agent ประเมินตัวเองไว้ในวงเล็บ
+รวบรวมโดย Mira จาก branch `research/monster-phase1-int` (agent 06 = Normal/Elite, agent 07 = Bosses, QA = agent 10). ข้อความ concept/mechanic/visual ยกมาจากไฟล์ของ agent (ภาษาอังกฤษ) · Owner t282u: บอสทั้ง 15 ใช้คำว่า Avatars แทน Hunters แล้ว · IP risk ใช้ผล QA heuristic ของ agent 10 และแสดงค่าที่ agent ประเมินตัวเองไว้ในวงเล็บ
 
 รหัส: `Agent ID` คือรหัสในไฟล์ agent, `MON ID` คือรหัส canonical ที่เครื่องมือ agent 09 แปลงให้ (ใช้ใน Excel/JSON)
 
@@ -50,7 +50,6 @@
 | 28 | BOS-WORLD-03 | MON-WLB-0003 | Sir Lotusbulk | เซอร์ทุ่งบัว | World Boss | EX | Behemoth, the beast described in Job 40 | low (low) | ✅ verified |
 | 29 | BOS-SECRET-01 | MON-SCB-0001 | Zero Cabinet | ตู้ศูนย์ | Secret / Comedy Boss | EX | Polybius, the urban legend of a 1981 arcade cabinet that left no evidence | low (low) | ✅ verified, ✅ verified, ✅ verified |
 | 30 | BOS-SECRET-02 | MON-SCB-0002 | Dame Compact | ดามตลับ | Secret / Comedy Boss | EX | The magical-girl transformation, from the compact in the 1966 Sally the Witch lineage and… | medium (medium) | ✅ verified |
-
 
 ## Normal
 
@@ -221,7 +220,7 @@
 - **Visual concept:** A barrel-chested clerk baked from ticket-clay, thumbs like stamps, a paper waistcoat cracked at the folds. A blank sticky note sits on the forehead where a sacred word would have been.
 - **Signature Mechanic:** Shield plus Taunt on his DEF card. The three stub seats exist at match start and do not Taunt.
 - **Signature Silhouette:** Wide clay torso, no neck, a hard square on the forehead, three small lumps at his heels.
-- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-01 The Lobby of Lost Badges · Clerk Claypunch is a tower guardian kneaded under the Lobby of Lost Badges, still blocking a queue that moved upstairs. He holds a Tank-shaped post and stays outside Aegis Dominion. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-01 The Lobby of Lost Badges · Clerk Claypunch is a tower guardian kneaded under the Lobby of Lost Badges, still blocking a queue that moved upstairs. He holds a Tank-shaped post and stays outside Aegis Dominion. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Golem>
 
@@ -234,7 +233,7 @@
 - **Visual concept:** Short and thickset, iron boots too heavy for the stair, a pikestaff used as a dye rack. The cap is tower-vermilion and will not set: pink drips run into grey.
 - **Signature Mechanic:** ATK plus a chance on-attack bonus_damage, and a Taunt on a separate short DEF or Skill so the boot-stamp is a tell. AUTO can play both a hit and a taunt.
 - **Signature Silhouette:** Wide short body, oversized boots, a pike cutting a diagonal, a soft cap shape at the tip.
-- **Lore link (agent 08, PROPOSED):** Corrupted Echo · ENV-TWR-03 The Armory of Wrong Sizes · Capper Crimson is a corrupted echo in the Armory of Wrong Sizes, furious that the cap will not stay the right red. He stands outside the four factions and still hits like a striker. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Corrupted Echo · ENV-TWR-03 The Armory of Wrong Sizes · Capper Crimson is a corrupted echo in the Armory of Wrong Sizes, furious that the cap will not stay the right red. He stands outside the four factions and still hits like a striker. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = medium
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Redcap>
 
@@ -247,7 +246,7 @@
 - **Visual concept:** A door-sized symmetrical bronze face, raised eyes, no lower jaw, ring handles where ears would be. Three rivet-echoes share the other seats and do not speak.
 - **Signature Mechanic:** Shield plus Taunt on the DEF card. The bite is a later ATK with no Taunt.
 - **Signature Silhouette:** Wide symmetrical face, two eye-ridges, a hard gap under the mouth, ring handles as side circles.
-- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-02 The Pantry of Living Leftovers · Clerk Nochin is the pantry door itself, a tower guardian who announces a bite the missing jaw cannot finish. The Pantry of Living Leftovers keeps the bowl, and no new room was opened for him. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-02 The Pantry of Living Leftovers · Clerk Nochin is the pantry door itself, a tower guardian who announces a bite the missing jaw cannot finish. The Pantry of Living Leftovers keeps the bowl, and no new room was opened for him. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Taotie>
 
@@ -260,7 +259,7 @@
 - **Visual concept:** A hen-sized head with a clerk's visor, wattles stamped like wax seals, a short serpent body and two scaled legs. She holds a hand mirror the way other clerks hold a date stamp.
 - **Signature Mechanic:** Self Taunt Skill with no damage, plus a possible turn-start DEF buff. The other seats are ledger-stands that only DEF.
 - **Signature Silhouette:** Comb and beak over a low serpent coil, mirror disk separated from the body by a gap of background.
-- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-07 The Mirror Well · Dame Glasspeck is a tower anomaly at the Mirror Well who rejects a form by looking at it. The glance is a tell, and she is not a member of Celestial Nexus. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-07 The Mirror Well · Dame Glasspeck is a tower anomaly at the Mirror Well who rejects a form by looking at it. The glance is a tell, and she is not a member of Celestial Nexus. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Cockatrice>
 
@@ -273,7 +272,7 @@
 - **Visual concept:** Tall, thin, a gentleman's cloak over a night-auditor's sash, spring heels visible under the hem, a blue lantern instead of flaming breath. The face is a polite half-mask with round red lenses.
 - **Signature Mechanic:** next_attack Skill, then ATK. Optional draw for the report card.
 - **Signature Silhouette:** Narrow cloak, two coils under the feet, a lantern held out so the arm makes a gap.
-- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-04 The Corridor of Uninvited Footsteps · Auditor Leapwell is a tower anomaly auditing the Corridor of Uninvited Footsteps from one balcony above the conversation. The leap is the tell, and Phantom Blades does not employ him. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-04 The Corridor of Uninvited Footsteps · Auditor Leapwell is a tower anomaly auditing the Corridor of Uninvited Footsteps from one balcony above the conversation. The leap is the tell, and Phantom Blades does not employ him. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Spring-heeled_Jack>
 
@@ -289,7 +288,7 @@
 - **Visual concept:** A long dragon in a scorched waistcoat, abacus beads along the wing-bone, receipts speared on the horns. The hoard is paper, not coins.
 - **Signature Mechanic:** Ally Shield while three receipt-echo seats live. All_Enemies ATK as the breath once he spends a next_attack or simply plays the ATK card.
 - **Signature Silhouette:** Seated dragon, waistcoat as the bulky torso, horns carrying horizontal paper flags, one wing raised so the abacus reads as a rake.
-- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-05 The Observatory of Bad Math · Sir Cindervest guards a receipt vault in the Observatory of Bad Math, a dragon outline around a book that will not close. The title is a comedy rank, the ash is paint, and Aegis Dominion does not knight him. · open flags: CONF-07-DUAL-PROSE, CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-05 The Observatory of Bad Math · Sir Cindervest guards a receipt vault in the Observatory of Bad Math, a dragon outline around a book that will not close. The title is a comedy rank, the ash is paint, and Aegis Dominion does not knight him. · open flags: CONF-07-DUAL-PROSE, CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Boss_(video_games)>; ⛔ blocked (403) <https://digitalcommons.liu.edu/cgi/viewcontent.cgi?article=1042&context=post_honors_theses>; ✅ verified <https://www.gamedeveloper.com/design/building-better-bosses>
 
@@ -302,7 +301,7 @@
 - **Visual concept:** Half again the height of a portrait, green armor and a bush of a beard, a tower wreath of green receipts instead of holly, a beheading axe, and a hatbox on a chain. The head’s place is the box, not a severed prop in the hand.
 - **Signature Mechanic:** Taunt plus Regen on the body seat. Two feint DEF cards, then an ATK.
 - **Signature Silhouette:** Oversized green man, axe clear of the body, round wreath, rectangular box at the hip.
-- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-14 The Throne Landing of Maybe · Sir Verdant Gale is a tower guardian at the Throne Landing of Maybe who offers one honest blow and keeps the head in a hatbox. He is not an Aegis knight, and that landing is still not a locked last floor. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE, CONF-SHARED-TWR-14
+- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-14 The Throne Landing of Maybe · Sir Verdant Gale is a tower guardian at the Throne Landing of Maybe who offers one honest blow and keeps the head in a hatbox. He is not an Aegis knight, and that landing is still not a locked last floor. · open flags: CONF-07-ROLE-SHAPE, CONF-SHARED-TWR-14
 - **IP risk:** QA = low · agent self-report = medium
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Green_Knight>
 
@@ -315,7 +314,7 @@
 - **Visual concept:** One coiled body in the boss seat. Nine small faces clustered on a single neck, the older woodcut stack, not a fan of hydra necks.
 - **Signature Mechanic:** Direction seats Taunt. Body Shield.
 - **Signature Silhouette:** A low coil, a cluster of small heads on one neck, three arrow boards at different heights.
-- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-13 The Service Elevator Between Moods · Clerk Forkwater is a wild creature coiled in the Service Elevator Between Moods because the heads will not agree which way the water leaves. The elevator's indecision carries that joke, and no flood biome was added. · open flags: CONF-07-ENV-FLOOD, CONF-07-ROLE-WILD-MAGIC, CONF-07-HUNTER-WORD
+- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-13 The Service Elevator Between Moods · Clerk Forkwater is a wild creature coiled in the Service Elevator Between Moods because the heads will not agree which way the water leaves. The elevator's indecision carries that joke, and no flood biome was added. · open flags: CONF-07-ENV-FLOOD, CONF-07-ROLE-WILD-MAGIC
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Xiangliu>
 
@@ -328,7 +327,7 @@
 - **Visual concept:** A tall spider with a human smile and a clerk’s cuffs, a quill in one limb, webs strung along the stair like filing lines. The web is also his shield-art.
 - **Signature Mechanic:** Own-Discard retrieve with an explicit card-id permit, plus Shield as the web, plus Taunt once the shield pose ends. Draw may support the retelling.
 - **Signature Silhouette:** Limb spread wider than the stair, quill breaking the outline, abdomen like a sealed jar of thread.
-- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-12 The Archive of Unfinished Legends · Sir Stairweb is a wild spider brokering stories on the Archive of Unfinished Legends stair and charging rent in being heard twice. He retells his own anecdote, and Celestial Nexus does not license him. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-12 The Archive of Unfinished Legends · Sir Stairweb is a wild spider brokering stories on the Archive of Unfinished Legends stair and charging rent in being heard twice. He retells his own anecdote, and Celestial Nexus does not license him. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Anansi>
 
@@ -337,11 +336,11 @@
 - **Boss Title:** Rival Who Announces His Form / คู่ปรับผู้ประกาศร่าง
 - **Tier / Rarity (proposed):** Main Boss / EX
 - **Inspiration:** The transforming masked rider of the Kamen Rider franchise, as a genre pattern, not as any one rider
-- **Concept:** Epic but ridiculous. He thinks the hunter party is his destined rival and will not throw the punch until the landing has heard the name of the form.
+- **Concept:** Epic but ridiculous. He thinks the Avatar party is his destined rival and will not throw the punch until the landing has heard the name of the form.
 - **Visual concept:** A tower usher in a short cape who slams a time-clock belt and shouts. The visor is a megaphone, not an insect helmet.
 - **Signature Mechanic:** next_attack Skill named as the announcement, then ATK. Optional turn-start self ATK buff.
 - **Signature Silhouette:** Megaphone visor as the primary mass, rectangular belt, scarf cutting away from the body.
-- **Lore link (agent 08, PROPOSED):** Corrupted Echo · ENV-TWR-09 The Ballroom Stuck on One Dance · Captain Encore is a corrupted echo on the Ballroom Stuck on One Dance balcony who will not strike until the landing has heard the form-name. Phantom Blades does not own the shout. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Corrupted Echo · ENV-TWR-09 The Ballroom Stuck on One Dance · Captain Encore is a corrupted echo on the Ballroom Stuck on One Dance balcony who will not strike until the landing has heard the form-name. Phantom Blades does not own the shout. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = medium
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Kamen_Rider>; ✅ verified <https://en.wikipedia.org/wiki/Kamen_Riders>
 
@@ -353,11 +352,11 @@
 - **Boss Title:** Waist of the Unfinished Tower / เอวหอคอยที่ยังไม่เสร็จ
 - **Tier / Rarity (proposed):** World Boss / EX
 - **Inspiration:** Jörmungandr, the Midgard Serpent of Norse mythology
-- **Concept:** Absurd comedy at epic scale. The world serpent is trying to finish the tower's waist measurement, and the hunters are standing in the number.
+- **Concept:** Absurd comedy at epic scale. The world serpent is trying to finish the tower's waist measurement, and the Avatars are standing in the number.
 - **Visual concept:** A serpent of tape and scale buckled around the tower's unfinished waist. One end is a clasp biting the other.
 - **Signature Mechanic:** Clasp Taunt. Segment Shield and Regen on allies.
 - **Signature Silhouette:** A ring bigger than one portrait, clasp as the only asymmetry.
-- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-11 The Roof Garden of Indoor Weather · Sir Yarncoil is a tower anomaly belted around the Roof Garden of Indoor Weather, still trying to measure the Mysterious Tower's waist. Letting the clasp go makes a hallway again, and it starts no doom and no quest. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE, CONF-SHARED-TWR-11
+- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-11 The Roof Garden of Indoor Weather · Sir Yarncoil is a tower anomaly belted around the Roof Garden of Indoor Weather, still trying to measure the Mysterious Tower's waist. Letting the clasp go makes a hallway again, and it starts no doom and no quest. · open flags: CONF-07-ROLE-SHAPE, CONF-SHARED-TWR-11
 - **IP risk:** QA = low · agent self-report = medium
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/J%C3%B6rmungandr>
 
@@ -370,7 +369,7 @@
 - **Visual concept:** Only the upper body fits in the frame, black, wider than the doorway, a wooden ladle with the bottom already punched out held forward like a seal. Three small spoons with no bowls share the other seats.
 - **Signature Mechanic:** Taunt on the demand. Scoop is an ATK.
 - **Signature Silhouette:** Upper body only, black bulk wider than the frame, a ladle held forward as a circle with a bright hole.
-- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-10 The Basement of Retired Bosses · Dame Dryladle is a wild giant in the Basement of Retired Bosses, asking for a ladle that already has a hole. She is not one of the retired bosses, and the fifteen biomes include no sea, so the open ceiling does the work. · open flags: CONF-07-ENV-SEA, CONF-07-PRONOUN, CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-10 The Basement of Retired Bosses · Dame Dryladle is a wild giant in the Basement of Retired Bosses, asking for a ladle that already has a hole. She is not one of the retired bosses, and the fifteen biomes include no sea, so the open ceiling does the work. · open flags: CONF-07-ENV-SEA, CONF-07-PRONOUN, CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Umib%C5%8Dzu>
 
@@ -383,7 +382,7 @@
 - **Visual concept:** A hippo-shouldered, ox-heavy beast lying across the loading dock, tail a bundle of packing tubes stood up like a cedar, hide stitched with bronze-colored strapping. He eats flattened cardboard the way the verse says grass.
 - **Signature Mechanic:** Snout Taunt. Body Shield.
 - **Signature Silhouette:** A horizontal mass wider than four portraits, a vertical bundle tail, a snout with no ring.
-- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-08 The Menagerie of Unfiled Beasts · Sir Lotusbulk is a wild beast asleep on packing paper in the Menagerie of Unfiled Beasts, too courteous to be winched. The dock is a prop in that pen, and he is not an Aegis tank. · open flags: CONF-07-ENV-SCALE, CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE, CONF-SHARED-TWR-08
+- **Lore link (agent 08, PROPOSED):** Wild Creature · ENV-TWR-08 The Menagerie of Unfiled Beasts · Sir Lotusbulk is a wild beast asleep on packing paper in the Menagerie of Unfiled Beasts, too courteous to be winched. The dock is a prop in that pen, and he is not an Aegis tank. · open flags: CONF-07-ENV-SCALE, CONF-07-ROLE-SHAPE, CONF-SHARED-TWR-08
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Behemoth>
 
@@ -399,7 +398,7 @@
 - **Visual concept:** A matte-black cabinet that was never in the catalog, coin slot replaced by a form-feeder, screen showing a boot word and then a boss plate. Four tiny reels behind the glass are the other seats.
 - **Signature Mechanic:** Own cards resolve to Void. Skill retrieves one permitted card from own Void.
 - **Signature Silhouette:** A pure upright rectangle, taller than a human boss, one bright screen, one chute.
-- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-15 The Gift Shop of the Conquered · Zero Cabinet is an unlisted tower anomaly in the Gift Shop of the Conquered, a game the directory never stocked. Missing the door does not gate the tower, and the Void it boots from is the card pile. · open flags: CONF-07-ATTR-ECHO, CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Lore link (agent 08, PROPOSED):** Tower Anomaly · ENV-TWR-15 The Gift Shop of the Conquered · Zero Cabinet is an unlisted tower anomaly in the Gift Shop of the Conquered, a game the directory never stocked. Missing the door does not gate the tower, and the Void it boots from is the card pile. · open flags: CONF-07-ATTR-ECHO, CONF-07-ROLE-SHAPE
 - **IP risk:** QA = low · agent self-report = low
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Polybius_(urban_legend)>; ✅ verified <https://en.wikipedia.org/wiki/Boss_(video_games)>; ✅ verified <https://www.gamedeveloper.com/design/building-better-bosses>
 
@@ -409,17 +408,17 @@
 - **Tier / Rarity (proposed):** Secret / Comedy Boss / EX
 - **Inspiration:** The magical-girl transformation, from the compact in the 1966 Sally the Witch lineage and the transforming heroine pattern later popularized in the 1990s
 - **Concept:** Epic but ridiculous. She was posted to bless the landing and, because nobody stayed for the oath, the transformation completed into the problem.
-- **Visual concept:** Before the change: a tower usher in a plain coat, holding a compact mirror like a stamp. After: a ribbon comet of a robe, the same face, the compact now a clasp at the throat.
+- **Visual concept:** Before the change: a tower usher in a plain coat, holding a round brass fine-stamp on a short handle. After: a ribbon comet of a robe, the same face, the fine-stamp now a heavy seal hung on a cord at the throat.
 - **Signature Mechanic:** Early cards: Regen on allies. Speech Skill: next_attack plus self ATK buff, with ribbon seats Taunting.
-- **Signature Silhouette:** Primary characteristic is the compact disk, present before and after, the way a clarity note keeps a champion's key shape through a skin.
-- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-06 The Infirmary of Too Much Care · Dame Compact is an optional tower guardian on a hidden landing of the Infirmary of Too Much Care, and skipping her oath turns the blessing into the fine. The tower can be climbed without her, and Sanctuary Order does not post her. · open flags: CONF-07-HUNTER-WORD, CONF-07-ROLE-SHAPE
+- **Signature Silhouette:** Primary characteristic is the round stamp face, present before and after, the way a clarity note keeps a champion's key shape through a skin.
+- **Lore link (agent 08, PROPOSED):** Tower Guardian · ENV-TWR-06 The Infirmary of Too Much Care · Dame Compact is an optional tower guardian on a hidden landing of the Infirmary of Too Much Care, and skipping her oath turns the blessing into the fine. The tower can be climbed without her, and Sanctuary Order does not post her. · open flags: CONF-07-ROLE-SHAPE
 - **IP risk:** QA = medium · agent self-report = medium
 - **Source status:** ✅ verified <https://en.wikipedia.org/wiki/Magical_girl>
-- **QA flag:** **P2 — IP medium** ดูข้อเสนอแก้ด้านล่าง
-- **ข้อเสนอแก้ (จาก QA, ยังไม่แก้ตัวงาน):** ตัดชุดนักเรียน คทา และมงกุฎออก และพิจารณาเปลี่ยน prop เป็นอย่างอื่นที่ไม่ใช่ตลับแปลงร่าง (transformation compact) — รอ Owner/agent 07 ตัดสิน
+- **QA flag:** **P2 — IP medium → QA fix applied, pending re-review** (Owner t282u)
+- **การแก้ (OWNER_DECIDED t282u):** ใช้วิธีของ QA แล้ว — prop เปลี่ยนจากตลับแปลงร่างเป็นตราประทับค่าปรับทองเหลือง (brass fine-stamp) และไม่มีชุดนักเรียน คทา มงกุฎ · id และชื่อเดิม · รอ QA re-review
 
 
-## นอก Sample (ห้ามโปรโมต)
+## นอก Sample
 
-- **P0 Tub Critic / Tubcritic** — ชื่อซ้ำกันระหว่าง pitch ของ agent 03 (`PITCH-03-02` “Tub Critic”) กับ name bank ของ agent 06 (“Tubcritic”). **ไม่อยู่ใน 30 ตัวนี้** และห้ามดึงเข้ามาจนกว่าจะเลือกให้เหลือชื่อเดียว
+- **Tub Critic / Tubcritic** — ชื่อซ้ำระหว่าง pitch agent 03 (`PITCH-03-02`) กับ name bank agent 06 (`M06-NB-054`). **ไม่อยู่ใน 30 ตัวนี้** · OWNER_DECIDED t282u: ชื่อเป็นของ agent 03 (เสนอก่อน) · `M06-NB-054` ต้องตั้งชื่อใหม่ (ดู NAME_OWNERSHIP.md)
 

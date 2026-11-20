@@ -6,7 +6,7 @@
     "docs/research/monsters/qa/ip_audit.json",
     "docs/research/monsters/qa/QA_REPORT.md"
   ],
-  "note": "Flags only. Does not change creative text or status. P0 Tub Critic/Tubcritic is outside the 30-entry sample (name bank / agent 03 pitch) and must not be promoted.",
+  "note": "Flags only. Does not change creative text or status. P0 Tub Critic/Tubcritic is outside the 30-entry sample (name bank / agent 03 pitch) and must not be promoted. Owner t282u: 'Tub Critic' is owned by agent 03 (first proposer); agent 06 name-bank entry M06-NB-054 'Tubcritic' needs a new name (see NAME_OWNERSHIP.md).",
   "reviews": [
     {
       "monsterId": "MON-ELT-0001",
@@ -168,7 +168,7 @@
       "monsterId": "MON-SCB-0002",
       "agentId": "BOS-SECRET-02",
       "ipRisk": "medium",
-      "notes": "QA P2 IP medium: matched 3 of 4 magical-girl visual cue groups (transformation compact, ribbon costume, second pose). Suggested fix (QA reviewer pass): leave off school uniform, wand and tiara, and consider a prop that is not a transformation compact. Creative text NOT rewritten; awaiting Owner/agent 07."
+      "notes": "QA P2 IP medium → QA fix applied, pending re-review (Owner t282u, OWNER_DECIDED): transformation compact replaced by a brass fine-stamp; visual drops school uniform, wand and tiara. Id/name unchanged. Rating stays medium until QA re-reviews."
     },
     {
       "monsterId": "MON-WLB-0001",

@@ -941,6 +941,8 @@
     {
       "nameId": "M06-NB-054",
       "status": "PROPOSED",
+      "nameStatus": "NEEDS_NEW_NAME",
+      "nameOwnershipNote": "OWNER_DECIDED t282u: first proposer keeps the name. 'Tub Critic' belongs to agent 03 (PITCH-03-02, af596cb 2026-11-20 20:15:15 ICT), earlier than this entry (77c558b 20:21:58 ICT). This entry needs a new name from agent 06; replacement not invented here. See docs/research/monsters/phase1/NAME_OWNERSHIP.md.",
       "parodyNameEn": "Tubcritic",
       "thaiName": "อ่างวิจารณ์",
       "inspirationId": "INS-03-039",
