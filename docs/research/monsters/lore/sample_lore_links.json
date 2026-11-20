@@ -1,0 +1,154 @@
+{
+  "documentId": "SAMPLE-LORE-LINKS",
+  "status": "PROPOSED",
+  "canon": false,
+  "agent": "08",
+  "framework": "docs/research/monsters/lore/framework.json",
+  "warning": "PROPOSED links only. A hook is not canon. An empty entries list means the sample monsters were not on the remote yet. Do not invent the missing 30 to fill this file.",
+  "expectedSample": {
+    "total": 30,
+    "source": "docs/research/monsters/BRIEF.md phase-1 sample",
+    "inferredSplit": {
+      "note": "Inferred from Agent 06's id plan in STYLE_GUIDE.md. Agent 07 has published no ids.",
+      "m06": ["M06-N-001..M06-N-010 normal", "M06-E-001..M06-E-005 elite"],
+      "m07": ["5 mini boss", "5 main boss", "3 world boss", "2 secret/comedy boss"]
+    }
+  },
+  "watches": [
+    {
+      "at": "2026-11-20T13:04:56Z",
+      "m06": {
+        "branch": "research/m06-parody",
+        "present": true,
+        "commit": "ee9c6498d2d585afe36d1634aafbf8b173e1186e",
+        "subject": "docs(research): parody style guide for monster names (agent 06)",
+        "files": ["docs/research/monsters/creative/parody/STYLE_GUIDE.md"],
+        "sampleEntryCount": 0
+      },
+      "m07": {
+        "branch": "research/m07-boss",
+        "present": false,
+        "commit": null,
+        "sampleEntryCount": 0
+      },
+      "entriesLinked": 0
+    }
+  ],
+  "entries": [],
+  "unmappedEnvironments": [
+    {
+      "theirLabel": "Flooded Reliquary",
+      "environmentId": null,
+      "reason": "No ENV-TWR biome is a flooded holy room. Not added as a 16th environment. A later sample that needs water-and-relic should say so in conflicts instead of minting a floor."
+    }
+  ],
+  "environmentCrosswalk": [
+    {
+      "theirLabel": "Gate Market",
+      "environmentId": "ENV-TWR-01",
+      "fit": "partial",
+      "note": "Both are arrival bureaucracy. Theirs is a market. Ours is a badge lobby. Use ENV-TWR-01 unless the joke is specifically commerce, then flag partial."
+    },
+    {
+      "theirLabel": "Echo Archives",
+      "environmentId": "ENV-TWR-12",
+      "fit": "close",
+      "note": "Archive of Unfinished Legends."
+    },
+    {
+      "theirLabel": "Service Tunnels",
+      "environmentId": "ENV-TWR-13",
+      "fit": "partial",
+      "note": "Both are back-of-house transit. Theirs is tunnels. Ours is an elevator between moods."
+    },
+    {
+      "theirLabel": "Unlicensed Observatory",
+      "environmentId": "ENV-TWR-05",
+      "fit": "close",
+      "note": "Observatory of Bad Math."
+    },
+    {
+      "theirLabel": "Night Kitchen",
+      "environmentId": "ENV-TWR-02",
+      "fit": "close",
+      "note": "Pantry of Living Leftovers."
+    },
+    {
+      "theirLabel": "Roof Laundry",
+      "environmentId": "ENV-TWR-11",
+      "fit": "partial",
+      "note": "Both are the roof. Their joke is laundry. Ours is indoor weather. Do not treat laundry as a second roof region."
+    }
+  ],
+  "elementCrosswalk": {
+    "note": "Their creative.element may stay as an art-color word. Lore stores attributeId. This is not permission to add an element enum to src/schema.",
+    "map": [
+      { "theirElement": "Cinder", "attributeId": "ATTR_STRIKE", "secondary": "ATTR_ARCANE", "flag": "Heat color only. Not a fire element." },
+      { "theirElement": "Tide", "attributeId": "ATTR_WILD", "secondary": null, "flag": "Water as a place the creature stands, not a damage type." },
+      { "theirElement": "Loam", "attributeId": "ATTR_WILD", "secondary": null, "flag": null },
+      { "theirElement": "Gale", "attributeId": "ATTR_STRIKE", "secondary": null, "flag": "Speed and push, lining up with DPS, not a wind element." },
+      { "theirElement": "Spark", "attributeId": "ATTR_ARCANE", "secondary": null, "flag": "Magic-role color. Not lightning damage." },
+      { "theirElement": "Gloom", "attributeId": "ATTR_ECHO", "secondary": "ATTR_NEUTRAL", "flag": "Mood. Not a dark element and not holy opposition to Gleam." },
+      { "theirElement": "Bloom", "attributeId": "ATTR_WILD", "secondary": "ATTR_AID", "flag": null },
+      { "theirElement": "Gleam", "attributeId": "ATTR_AID", "secondary": "ATTR_ARCANE", "flag": "Bright mood. Not a light element and not Saving Grace." },
+      { "theirElement": "Scrap", "attributeId": "ATTR_GUARD", "secondary": "ATTR_NEUTRAL", "flag": "Wrong-object armor color. Fits the Armory joke." },
+      { "theirElement": "Neutral", "attributeId": "ATTR_NEUTRAL", "secondary": null, "flag": null }
+    ]
+  },
+  "conflicts": [
+    {
+      "conflictId": "CONF-06-FIELD",
+      "severity": "vocabulary",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md faction affiliation list",
+      "theirClaim": "creative.factionAffiliation may be Wild Creature, Corrupted Echo, Tower Guardian, Tower Anomaly, or one of the four faction ids.",
+      "lorePosition": "originId is one of ORG-WILD, ORG-ECHO, ORG-GUARD, ORG-ANOM, ORG-FACTION. factionId is null unless the joke wears a real faction, and required only for ORG-FACTION.",
+      "resolution": "When a sample arrives, translate the combined field. Do not store Wild Creature in factionId."
+    },
+    {
+      "conflictId": "CONF-06-ELEM",
+      "severity": "vocabulary",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md element list",
+      "theirClaim": "Element is one of Cinder, Tide, Loam, Gale, Spark, Gloom, Bloom, Gleam, Scrap, Neutral. No Void.",
+      "lorePosition": "No element enum exists in src/schema. Research attributeId is ATTR_GUARD, ATTR_STRIKE, ATTR_ARCANE, ATTR_AID, ATTR_WILD, ATTR_ECHO, or ATTR_NEUTRAL. Void, Sync, and a Light/Dark pair stay banned on both sides.",
+      "resolution": "Keep their word as art color. Set attributeId from elementCrosswalk. Do not import the ten names into the battle schema."
+    },
+    {
+      "conflictId": "CONF-06-RARITY",
+      "severity": "guidance-variance",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md suggested rarity",
+      "theirClaim": "Normals are N, or R when the gag and the silhouette do extra work. Elites are R or Epic. Do not spend EX on the normal/elite sample. Do not use FAC.",
+      "lorePosition": "Default map is Normal N, Elite R, Mini Boss Epic, Main Boss EX, World Boss EX, Secret/Comedy Epic or EX only with a phase. FAC is never a monster rarity. Superseded words stay banned.",
+      "resolution": "A Normal marked R or an Elite marked Epic is flagged on that entry as guidance-variance. It is still inside CORE-024. EX on a normal or elite, or FAC on any monster, is a real miss against both proposals."
+    },
+    {
+      "conflictId": "CONF-06-ECHO",
+      "severity": "boundary",
+      "canonImpact": "none if the sentence stays about creatures",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md echo paragraph",
+      "theirClaim": "Echo means the tower misremembered a story and the misfile grew legs. Marked PROPOSED, and it yields to Agent 08.",
+      "lorePosition": "ORG-ECHO is a hostile or wild creature that looks like a person done wrong. MAP-09's 'Real People + Echo hybrid Avatar' stays undefined. Echo Summoning is not a mechanic.",
+      "resolution": "Creature hooks may use the misfile joke. They may not narrate how a real person becomes a hybrid avatar."
+    },
+    {
+      "conflictId": "CONF-06-FLOORS",
+      "severity": "vocabulary",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 example floor labels",
+      "theirClaim": "Provisional labels: Gate Market, Echo Archives, Service Tunnels, Flooded Reliquary, Unlicensed Observatory, Night Kitchen, Roof Laundry. Not canon regions.",
+      "lorePosition": "Fifteen ENV-TWR biomes are the research set. They are not locked floors (OPEN-07).",
+      "resolution": "Use environmentCrosswalk. Flooded Reliquary stays unmapped."
+    },
+    {
+      "conflictId": "CONF-07-ABSENT",
+      "severity": "watch",
+      "canonImpact": "none",
+      "source": "git ls-remote origin refs/heads/research/m07-boss",
+      "theirClaim": null,
+      "lorePosition": "No boss sample can be linked until the branch publishes entries under docs/research/monsters/creative/bosses/.",
+      "resolution": "Leave entries empty for bosses. Do not draft boss lore in their place."
+    }
+  ]
+}

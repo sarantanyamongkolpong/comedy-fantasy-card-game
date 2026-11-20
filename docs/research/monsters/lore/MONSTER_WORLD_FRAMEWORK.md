@@ -182,3 +182,19 @@ Flag the link when the sample does any of these:
 - defines how a real person becomes an Echo hybrid
 
 Hooks are PROPOSED extension text. They are not canon even when the sample's parody name is good.
+
+---
+
+## Sibling vocabulary already on `research/m06-parody` (not canon)
+
+Watched at `ee9c649` (`docs/research/monsters/creative/parody/STYLE_GUIDE.md`). That guide is PROPOSED and says it yields to this file once it exists. It does not move any core-lore line. `research/m07-boss` was not on the remote at the same check. Details and the crosswalk live in `sample_lore_links.json`.
+
+Three tensions, all between proposals:
+
+1. **One field versus two.** Their `creative.factionAffiliation` may be `Wild Creature`, `Corrupted Echo`, `Tower Guardian`, `Tower Anomaly`, or a faction id. This framework splits that into `originId` plus an optional `factionId`. "Wild Creature" is an origin, not a fifth faction.
+2. **Attributes versus their element list.** They suggest Cinder, Tide, Loam, Gale, Spark, Gloom, Bloom, Gleam, Scrap, Neutral, and they already ban Void. This framework does not adopt that list as elements. There is still no element enum in `src/schema`. A sample may keep their word as art color. The lore link stores one `attributeId` from the table above. Gloom and Gleam stay moods. They are not a holy war and not Light/Dark.
+3. **Rarity step-up.** They allow a Normal monster to be `R`, and an Elite to be `Epic`. The table in this file is stricter (`N`, then `R`). Both are proposals. A sample that steps up is a guidance variance, not a canon break, as long as it stays on `N` / `R` / `Epic` / `EX` and never uses `FAC`.
+
+Their echo sentence — the tower misremembered a story and the misfile grew legs — can sit inside `ORG-ECHO` for creatures. It still must not become the definition of "Real People + Echo hybrid Avatar."
+
+Their example floor labels (Gate Market, Echo Archives, Service Tunnels, Flooded Reliquary, Unlicensed Observatory, Night Kitchen, Roof Laundry) are not extra canon regions. The link file maps the close ones onto `ENV-TWR-*` and leaves Flooded Reliquary unmapped rather than adding a sixteenth biome.

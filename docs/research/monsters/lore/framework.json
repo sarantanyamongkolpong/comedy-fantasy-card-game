@@ -447,6 +447,13 @@
       }
     ]
   },
+  "siblingWatch": {
+    "note": "PROPOSED tensions with Agent 06's style guide. Not canon conflicts. See sample_lore_links.json.",
+    "m06Commit": "ee9c6498d2d585afe36d1634aafbf8b173e1186e",
+    "m06File": "docs/research/monsters/creative/parody/STYLE_GUIDE.md",
+    "m07": "remote branch research/m07-boss was absent at this watch",
+    "yield": "Their guide says the echo flavor and the floor labels yield to this lore file."
+  },
   "linkRulesForSamples": {
     "status": "PROPOSED",
     "requiredOnEachLink": ["originId", "environmentId", "attributeId", "suggestedRarity", "factionId"],
