@@ -1,0 +1,3116 @@
+[
+  {
+    "inspirationId": "INS-05-001",
+    "name": "Isekai",
+    "origin": "Japanese fantasy and science-fiction genre (anime, manga, light novels)",
+    "kind": "anime",
+    "facts": [
+      "Isekai (異世界, 'another world') is a Japanese fantasy and science-fiction subgenre about a person who is transported to another world and has to survive there, usually gaining formidable powers or importance they did not have before.",
+      "The crossing may happen through death and reincarnation, or through summoning by an object, god, or person. A common setting is a medieval fantasy world populated with humans, humanoids, and monsters.",
+      "The Wikipedia article traces the idea to older tales such as Urashima Tarō and to Western fantasy, and names Haruka Takachiho's novel Warrior from Another World and the anime Aura Battler Dunbine as early modern works, with The Twelve Kingdoms and Sword Art Online among the works that helped popularize the genre."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Isekai",
+        "title": "Isekai",
+        "accessed": "2026-11-20",
+        "supports": "Definition, reincarnation or summoning, medieval monster-world setting, and the named early and popularizing works."
+      }
+    ],
+    "archetypeTags": [
+      "portal-fantasy",
+      "reincarnation",
+      "summoned-stranger",
+      "power-gain"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A tower arrival who was summoned for a prophecy and immediately asked to sign the visitor log before the prophecy will start.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "genre-pattern",
+        "copyrighted-examples"
+      ],
+      "guidance": "The genre pattern is usable. The named series are copyrighted works; do not lift their plots, proper names, or character designs."
+    }
+  },
+  {
+    "inspirationId": "INS-05-002",
+    "name": "Rimuru Tempest (That Time I Got Reincarnated as a Slime)",
+    "origin": "That Time I Got Reincarnated as a Slime, light novel by Fuse, illustrated by Mitz Vah",
+    "kind": "anime",
+    "facts": [
+      "That Time I Got Reincarnated as a Slime (転生したらスライムだった件) is a fantasy light novel by Fuse, illustrated by Mitz Vah. It follows Satoru Mikami, a salaryman who is murdered and reincarnated in a sword-and-sorcery world as the slime Rimuru Tempest.",
+      "Rimuru gathers allies and builds a nation of monsters. The same article says Rimuru and their subjects draw the attention of foreign powers, including monarchs, legendary heroes, and demon lords, some of whom want alliance and some of whom want to use or destroy them.",
+      "The story was serialized on the user-novel site Shōsetsuka ni Narō from 2013 to 2016, then published by Micro Magazine, with a Kodansha manga and an anime adaptation. Yen Press licensed the novels in North America."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/That_Time_I_Got_Reincarnated_as_a_Slime",
+        "title": "That Time I Got Reincarnated as a Slime",
+        "accessed": "2026-11-20",
+        "supports": "Reincarnated murdered salaryman, slime Rimuru, monster nation, demon lords as rival powers, and the publication path."
+      }
+    ],
+    "archetypeTags": [
+      "slime",
+      "reincarnated-monster",
+      "nation-builder",
+      "demon-lord-politics"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower slime that becomes a middle manager: it absorbs complaints instead of prey and issues citizenship to anything that sits still long enough.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character",
+        "copyrighted-design"
+      ],
+      "guidance": "Rimuru, Tempest, the series title, the predator-style skill list, and Mitz Vah's slime-human design are protected. Parody the 'weak blob builds a polity' idea with a new silhouette and none of those names."
+    }
+  },
+  {
+    "inspirationId": "INS-05-003",
+    "name": "Momonga / Ainz Ooal Gown (Overlord)",
+    "origin": "Overlord, light novel by Kugane Maruyama, illustrated by So-bin",
+    "kind": "anime",
+    "facts": [
+      "Overlord is a Japanese light novel by Kugane Maruyama, illustrated by So-bin, which began online in 2010 and was published by Enterbrain from 2012. It has a manga and a Madhouse anime.",
+      "In the plot summary, the VR game YGGDRASIL is shutting down. The guild Ainz Ooal Gown has one player left: Momonga, a skeletal lich called an Overlord, who maintains the Great Tomb of Nazarick.",
+      "When the servers should shut down, Nazarick is instead in another world, its NPCs are living beings, and Momonga is trapped in his avatar. He takes the guild's name, and the article says in-game mechanics leave him without ordinary moral qualms about killing."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Overlord_(novel_series)",
+        "title": "Overlord (novel series)",
+        "accessed": "2026-11-20",
+        "supports": "Authorship, the skeletal lich Momonga, the guild name Ainz Ooal Gown, Nazarick becoming real, and the morality shift."
+      }
+    ],
+    "archetypeTags": [
+      "protagonist-is-the-boss",
+      "lich",
+      "trapped-avatar",
+      "dungeon-ruler"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower boss who still thinks the fight is a logged-out game and keeps pausing to check a menu that no longer exists.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "fictional-mass-harm"
+      ],
+      "guidance": "Momonga, Ainz Ooal Gown, Nazarick, and So-bin's bone-king design are protected. The 'player becomes the final boss and stops flinching' pattern can be retold; do not copy the guild, the floor guardians, or the costume."
+    }
+  },
+  {
+    "inspirationId": "INS-05-004",
+    "name": "Vegeta",
+    "origin": "Dragon Ball, created by Akira Toriyama",
+    "kind": "anime",
+    "facts": [
+      "Vegeta, fully Prince Vegeta IV, is a Dragon Ball character created by Akira Toriyama. He debuts in chapter 204 (Weekly Shōnen Jump, 7 January 1989) seeking the Dragon Balls for immortality, and is the prince of the Saiyan warrior race.",
+      "The article describes him as blunt, regal, hard-working, and proud, with a destructive temper, obsessed with surpassing Son Goku after losing to the Z fighters.",
+      "He begins as the first major antagonist of Dragon Ball Z and later unites with the heroes against larger threats, while remaining a key rival of Goku. The article calls him one of the popular examples of rival characters in manga and anime."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Vegeta",
+        "title": "Vegeta",
+        "accessed": "2026-11-20",
+        "supports": "Prince of the Saiyans, pride and the need to surpass Goku, and the villain-to-uneasy-ally rival arc."
+      }
+    ],
+    "archetypeTags": [
+      "rival",
+      "proud-prince",
+      "villain-to-ally",
+      "obsession-with-the-hero"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower rival who announces a formal ranking dispute, loses, and then refuses to leave because the rematch has not been scheduled.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character"
+      ],
+      "guidance": "Vegeta, Saiyan, and the armor-and-widow's-peak design are protected. A proud rival who defects without apologizing is a pattern; the name and the scouter-armor silhouette are not free to reuse."
+    }
+  },
+  {
+    "inspirationId": "INS-05-005",
+    "name": "Frieza",
+    "origin": "Dragon Ball, created by Akira Toriyama",
+    "kind": "anime",
+    "facts": [
+      "Frieza is a main Dragon Ball antagonist created by Akira Toriyama, debuting in chapter 247 (Weekly Shōnen Jump, 24 October 1989). He is depicted as a galactic tyrant feared as the most powerful being in the universe.",
+      "The article says he possesses a variety of forms, each different and more powerful than the last. It says his fourth form is implied to be his basic form, with the earlier three suppressing his power to conserve it, and a later form unleashing further power.",
+      "Toriyama said he did not plan the transformations until about midway through, and that he tends to make a character more complex-looking and then finally sleek because a complicated design is painful to draw. The article says that is why the most intricate third form appears only briefly."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Frieza",
+        "title": "Frieza",
+        "accessed": "2026-11-20",
+        "supports": "Galactic-tyrant role, suppressed forms versus a true form, and Toriyama's design reason for the transformation sequence."
+      }
+    ],
+    "archetypeTags": [
+      "tyrant",
+      "suppressed-forms",
+      "final-form",
+      "polite-monster"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A boss who keeps a polite receptionist body for the first phase and only unpacks the dramatic one when someone questions the dress code.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "copyrighted-design",
+        "fictional-mass-harm"
+      ],
+      "guidance": "Frieza's name, white-and-purple final body, planetary genocide plot, and the specific form sequence are protected. A tyrant who hides power inside a smaller shape is the usable pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-006",
+    "name": "Cell",
+    "origin": "Dragon Ball, created by Akira Toriyama",
+    "kind": "anime",
+    "facts": [
+      "Cell is a Dragon Ball antagonist created by Akira Toriyama, debuting in chapter 361 (Weekly Shōnen Jump, 16 February 1992). Doctor Gero of the Red Ribbon Army made him as an artificial life form from the DNA and cells of several strong characters, and he travels from an alternate timeline to become perfect and defeat Goku.",
+      "The article says he is designed to evolve by absorbing Androids 17 and 18, with each stage a large gain in strength, and that he can also drain bio-energy through his tail.",
+      "He hatches from a larval, cicada-like form into an insect-like Imperfect form, and the article also uses the later labels Semi-Perfect Cell, Perfect Cell, and Super Perfect Cell. Toriyama has said the spotted design was tedious to draw, and that he did not initially plan for Cell to transform."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cell_(Dragon_Ball)",
+        "title": "Cell (Dragon Ball)",
+        "accessed": "2026-11-20",
+        "supports": "Artificial DNA creature, absorption evolution, tail drain, imperfect-to-perfect staging, and the design note."
+      }
+    ],
+    "archetypeTags": [
+      "artificial-life",
+      "absorption",
+      "metamorphosis",
+      "perfect-form"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower insect that evolves by swallowing other fighters' signature moves and then announces it has achieved a perfect filing system.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "copyrighted-design",
+        "body-horror-fictional"
+      ],
+      "guidance": "Cell's name, spotted carapace, tail-absorption, android targets, and perfect-form silhouette are protected. A lab creature that changes shape by consuming specific prey is the pattern to reinvent."
+    }
+  },
+  {
+    "inspirationId": "INS-05-007",
+    "name": "Super Saiyan",
+    "origin": "Dragon Ball, created by Akira Toriyama",
+    "kind": "anime",
+    "facts": [
+      "The Dragon Ball article says Son Goku becomes a Super Saiyan (超サイヤ人) and defeats Frieza, and that this sets the later tone: each enemy is stronger than the last and demands further training.",
+      "Toriyama created the transformation during the Frieza arc. He has said the only way he saw to show Goku's massive power-up was a transformation, and he worried the new face looked villainous, then accepted it because the change was brought on by anger.",
+      "The development notes say the Super Saiyan hair is blonde because that was easier than blacking in Goku's hair on black-and-white pages, and that the piercing eyes were inspired by Bruce Lee's glare."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragon_Ball",
+        "title": "Dragon Ball",
+        "accessed": "2026-11-20",
+        "supports": "Super Saiyan as the Frieza-arc power-up that resets the power scale, and the anger, hair, and eyes design notes."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Goku",
+        "title": "Goku",
+        "accessed": "2026-11-20",
+        "supports": "Toriyama's account that a transformation was how he showed the power-up, that anger justified the severe face, and that blonde hair and a Bruce Lee glare shaped the look."
+      }
+    ],
+    "archetypeTags": [
+      "mid-battle-transformation",
+      "anger-power-up",
+      "hair-change",
+      "escalating-forms"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A fighter whose power-up is a terrible new haircut that only happens when they are genuinely furious about a rules technicality.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-design",
+        "trademark-likely"
+      ],
+      "guidance": "The name Super Saiyan and the blonde spiked hair, teal eyes, and aura are a protected Dragon Ball design. Anger-triggered transformation is a wider pattern; do not copy that color-and-hair package or the name."
+    }
+  },
+  {
+    "inspirationId": "INS-05-008",
+    "name": "Kaiju",
+    "origin": "Japanese monster cinema (kaiju eiga) and tokusatsu",
+    "kind": "pop",
+    "facts": [
+      "Kaiju (怪獣, 'strange beast') is the term used for a Japanese monster-film subgenre, kaiju eiga, which is also a branch of tokusatsu. The films usually show creatures of various origins and sizes attacking a city or town, often in Japan, and fighting the Japan Self-Defense Forces, other monsters, or both.",
+      "The article says these films have often carried social and political commentary. It credits the 1954 film Godzilla, and effects director Eiji Tsuburaya, with pioneering the subgenre and the tokusatsu template, while noting Godzilla was not the first movie monster.",
+      "An older Japanese term is daikaijū (大怪獣, 'giant monster'). 'Kaiju' can mean either the monsters or the genre."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kaiju",
+        "title": "Kaiju",
+        "accessed": "2026-11-20",
+        "supports": "Genre definition, city attack, military and monster-versus-monster fights, the 1954 Godzilla template, and the daikaijū distinction."
+      }
+    ],
+    "archetypeTags": [
+      "giant-monster",
+      "city-attack",
+      "monster-versus-monster",
+      "tokusatsu"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A tower-floor giant that is only giant relative to the furniture, and that files a noise complaint against the smaller heroes.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "genre-pattern",
+        "copyrighted-examples"
+      ],
+      "guidance": "Kaiju is a genre word, not a character you can own. Individual monsters (Godzilla, King Ghidorah, and the rest of the Toho and other studio casts) are protected designs. Do not copy a specific suit."
+    }
+  },
+  {
+    "inspirationId": "INS-05-009",
+    "name": "Godzilla",
+    "origin": "Toho kaiju films; first film directed by Ishirō Honda (1954)",
+    "kind": "pop",
+    "facts": [
+      "Godzilla is a fictional giant monster, or daikaijū, who first appeared in the 1954 film directed by Ishirō Honda. The character has appeared in 33 Japanese Toho films, five American films, and many other media, and is an international pop-culture icon.",
+      "The epithet King of the Monsters was first used in the 1956 American localization Godzilla, King of the Monsters! The 1954 Japanese version was 50 meters tall; later incarnations range from 50 meters to a little over 100 meters.",
+      "The article describes a prehistoric reptilian or dinosaurian monster, amphibious or partly oceanic, awakened and empowered by nuclear radiation and nuclear testing. It says that with Hiroshima, Nagasaki, and the Lucky Dragon 5 incident still recent, Godzilla was conceived as a nuclear metaphor."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Godzilla",
+        "title": "Godzilla",
+        "accessed": "2026-11-20",
+        "supports": "1954 origin, Toho ownership of the Japanese film series, the King of the Monsters epithet, size, reptilian sea-monster body, and the nuclear-metaphor context."
+      }
+    ],
+    "archetypeTags": [
+      "kaiju",
+      "nuclear-awakened",
+      "sea-monster",
+      "city-destroyer"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower leviathan that is mostly asleep inside the plumbing and only stands up when someone runs a forbidden experiment on the wrong floor.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-character",
+        "nuclear-history",
+        "real-disaster-metaphor"
+      ],
+      "guidance": "Godzilla, the dorsal plates, the atomic breath, and the Toho roar-and-suit identity are protected. The 1954 film is a metaphor for nuclear bombing and the Lucky Dragon 5 exposure. Do not joke about Hiroshima, Nagasaki, or that incident. A giant sea-reptile boss can exist without that history or that silhouette."
+    }
+  },
+  {
+    "inspirationId": "INS-05-010",
+    "name": "King Ghidorah",
+    "origin": "Toho Godzilla films; first appearance in Ghidorah, the Three-Headed Monster (1964)",
+    "kind": "pop",
+    "facts": [
+      "King Ghidorah is a giant dragon-like extraterrestrial kaiju in Toho's Godzilla films. He first appeared in the 1964 film Ghidorah, the Three-Headed Monster, directed by Ishirō Honda, and was created by Tomoyuki Tanaka, Eiji Tsuburaya, and Shinichi Sekizawa.",
+      "The article says the design was an homage to the eight-headed dragon Yamata no Orochi, and that Tanaka's inspiration included an illustration of the Lernaean Hydra as well as Orochi. The usual body is an armless golden or yellowish bipedal dragon with three heads, two fan-shaped wings, and two tails.",
+      "His main attack in the article is gravity beams, lightning-like blasts from the three mouths, roughly comparable to Godzilla's atomic breath and able to combine. The article says he is commonly treated, with Mechagodzilla, as a Godzilla archenemy, and that his origin has varied across films."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/King_Ghidorah",
+        "title": "King Ghidorah",
+        "accessed": "2026-11-20",
+        "supports": "1964 three-headed space dragon, Orochi and Hydra homage, the golden three-head two-wing two-tail body, and gravity beams."
+      }
+    ],
+    "archetypeTags": [
+      "multi-headed-dragon",
+      "space-monster",
+      "rival-kaiju",
+      "beam-attack"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A three-argument committee dragon: each head wants a different plan, and the fight cannot start until they pass a motion.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character",
+        "copyrighted-design"
+      ],
+      "guidance": "The name King Ghidorah, the golden armless body, two tails, fan wings, and gravity beams are a Toho design. Multi-headed dragons exist in older myth (Hydra, Orochi); those myths are separate sources. Do not reproduce this specific suit."
+    }
+  },
+  {
+    "inspirationId": "INS-05-011",
+    "name": "Mechagodzilla",
+    "origin": "Toho Godzilla films; first appearance in Godzilla vs. Mechagodzilla (1974)",
+    "kind": "pop",
+    "facts": [
+      "Mechagodzilla is a mecha kaiju, a giant robotic monster, who first appeared in the 1974 film Godzilla vs. Mechagodzilla.",
+      "In the Showa-era films the article says extraterrestrial invaders built him to confront and destroy Godzilla. Later eras reframe him, including versions meant to defend against Godzilla and other kaiju.",
+      "The article calls him a robotic counterpart of Godzilla with a large high-tech arsenal, and says that along with King Ghidorah he is commonly treated as Godzilla's archenemy. Effects director Teruyoshi Nakano is quoted as finding a mechanical monster cheaper to build than another mutated animal."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mechagodzilla",
+        "title": "Mechagodzilla",
+        "accessed": "2026-11-20",
+        "supports": "1974 robot double, alien-built Showa version, later defensive versions, and the weapon-covered counterpart role."
+      }
+    ],
+    "archetypeTags": [
+      "robot-double",
+      "mecha-kaiju",
+      "mirror-boss",
+      "arsenal"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower guardian that is a clockwork copy of a wild beast, built by someone who thought the original would be easier to manage if it took orders.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character",
+        "copyrighted-design"
+      ],
+      "guidance": "Mechagodzilla's name and the robotic Godzilla silhouette, including the MG missile fingers and chest beam of specific films, are protected. 'Mechanical duplicate of the organic boss' is the usable pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-012",
+    "name": "Mecha (super robot and real robot)",
+    "origin": "Japanese anime and manga robot genre",
+    "kind": "anime",
+    "facts": [
+      "Mecha, also called giant robot, is an anime and manga genre of fighting machines. The article splits it into super robot, meaning super-sized implausible robots, and real robot, where machines follow more realistic physics and technical limits.",
+      "It says Go Nagai defined the super-robot genre with Mazinger Z in 1972: one-of-a-kind, often ancient, alien, or mad-genius machines, frequently piloted by teenagers by voice or neural link and powered by exotic energy, with abilities described as quasi-magical.",
+      "It credits Yoshiyuki Tomino's 1979 Mobile Suit Gundam with birthing the real-robot genre, a grittier space war that rejected the formula and toy-advertising tone of the super-robot shows Tomino had worked on."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mecha_anime_and_manga",
+        "title": "Mecha anime and manga",
+        "accessed": "2026-11-20",
+        "supports": "The super-robot versus real-robot split, Mazinger Z as the super-robot marker, and Gundam as the real-robot marker."
+      }
+    ],
+    "archetypeTags": [
+      "piloted-robot",
+      "super-robot",
+      "real-robot",
+      "mecha-boss"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A boss cockpit with two arguments inside it: one pilot wants a shouting miracle weapon, the other is reading the fuel gauge.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "genre-pattern",
+        "copyrighted-examples"
+      ],
+      "guidance": "The genre split is a pattern. Mazinger Z, Gundam, mobile suits, and any named robot from those series are protected. Invent the machine."
+    }
+  },
+  {
+    "inspirationId": "INS-05-013",
+    "name": "Mazinger Z",
+    "origin": "Super-robot manga and anime by Go Nagai (1972)",
+    "kind": "anime",
+    "facts": [
+      "Mazinger Z is a super-robot manga written and illustrated by Go Nagai, serialized in Weekly Shōnen Jump from October 1972 to August 1973, with a Toei anime from December 1972 to September 1974. In the United States it was known as Tranzor Z.",
+      "Professor Juzo Kabuto built the robot from Super-Alloy Z, forged from Japanium mined under Mount Fuji, as a secret weapon against Dr. Hell's Mechanical Beasts. His grandson Koji Kabuto becomes the pilot and fights those machines and Dr. Hell's henchmen, including Baron Ashura.",
+      "The mecha article adds Nagai's stated idea: a robot a person could control like a car. The series ends by destroying the original robot and introducing Great Mazinger and a new pilot."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mazinger_Z",
+        "title": "Mazinger Z",
+        "accessed": "2026-11-20",
+        "supports": "Nagai's 1972 super robot, Koji piloting it against Dr. Hell's Mechanical Beasts, and the Super-Alloy Z origin."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mecha_anime_and_manga",
+        "title": "Mecha anime and manga",
+        "accessed": "2026-11-20",
+        "supports": "Nagai defining the super-robot genre in 1972 with a machine controlled like a vehicle."
+      }
+    ],
+    "archetypeTags": [
+      "super-robot",
+      "teen-pilot",
+      "mad-scientist-army",
+      "mechanical-beasts"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower robot that will not move until the pilot finds the family car keys, which were left inside the previous pilot.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character",
+        "copyrighted-design"
+      ],
+      "guidance": "Mazinger Z, Koji Kabuto, the hover-pilder chest cockpit, Photon Energy, and the chest-blades design are protected. A teenager climbing into a one-off super robot to fight a mad doctor's machine-beasts is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-014",
+    "name": "Kamen Rider henshin and kaijin",
+    "origin": "Kamen Rider franchise, created by Shotaro Ishinomori (1971)",
+    "kind": "pop",
+    "facts": [
+      "Kamen Rider is a tokusatsu franchise created by Shotaro Ishinomori. It centers on motorcycle-riding insect-motif superheroes who fight supervillains often called kaijin (怪人, 'strange person').",
+      "The 1971 series follows college student Takeshi Hongo against the world-conquering organization Shocker. The article says the series launched the early-1970s Henshin Boom.",
+      "In most entries the Rider uses a transformation belt, often called a Driver, and the call 'Henshin!' (変身, 'transform'). They then fight kaijin on a monster-of-the-week basis. A kaijin is typically finished by a signature weapon or the Rider Kick, a flying dive kick used once the enemy is weakened. Bandai holds the toy rights in Japan and other Asian regions."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kamen_Rider",
+        "title": "Kamen Rider",
+        "accessed": "2026-11-20",
+        "supports": "Ishinomori's motorcycle insect heroes, Shocker, the Henshin call and belt, weekly kaijin, and the finishing kick."
+      }
+    ],
+    "archetypeTags": [
+      "henshin",
+      "monster-of-the-week",
+      "evil-organization",
+      "masked-rider",
+      "finishing-move"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower guardian who will not fight until someone shouts the correct verb, then spends the whole turn looking for a parking space for the bike.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-franchise",
+        "trademark"
+      ],
+      "guidance": "Kamen Rider, the compound eyes, the scarf, the belt, Shocker, and the Rider Kick are protected. A masked transforming biker and a weekly strange-person monster are the pattern. The Japanese verb henshin itself is ordinary language."
+    }
+  },
+  {
+    "inspirationId": "INS-05-015",
+    "name": "Super Sentai monster-of-the-week, then giant",
+    "origin": "Super Sentai, produced by Toei Company",
+    "kind": "pop",
+    "facts": [
+      "Super Sentai is a Japanese superhero-team tokusatsu franchise produced by Toei and aired by TV Asahi. The article says it is best known in North America as the source footage adapted into Power Rangers.",
+      "A typical episode has the color-coded team stop an otherworldly villain plan, defeat enemy soldiers and the monster of the week, and then face an enlarged version of that monster, which they fight again with their mecha.",
+      "The article says giant robots entered tokusatsu hero shows through Toei and Marvel's Spider-Man live-action series, and that the idea carried into Battle Fever J (1979). It also says each Sentai season is usually its own universe."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Super_Sentai",
+        "title": "Super Sentai",
+        "accessed": "2026-11-20",
+        "supports": "Team tokusatsu, the foot-soldier and weekly-monster fight, the enlargement, the mecha rematch, and the Power Rangers adaptation relationship."
+      }
+    ],
+    "archetypeTags": [
+      "team-hero",
+      "monster-of-the-week",
+      "size-change",
+      "combining-mecha",
+      "second-phase"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A floor boss who loses the duel, then ruins the rematch by becoming exactly one story taller than the room.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-franchise",
+        "trademark"
+      ],
+      "guidance": "Super Sentai and Power Rangers names, suits, zords, and catchphrases are protected. The two-phase pattern 'defeat the creature, then fight it again after it grows' is the usable structure. Do not copy a specific season's suits or combination robot."
+    }
+  },
+  {
+    "inspirationId": "INS-05-016",
+    "name": "Magical girl transformation",
+    "origin": "Mahō shōjo anime and manga",
+    "kind": "anime",
+    "facts": [
+      "Magical girl (魔法少女, mahō shōjo) is a Japanese fantasy genre centered on girls who use magical abilities, typically through an ideal alter ego they transform into. The article dates the genre's emergence to the 1962 manga Himitsu no Akko-chan, followed by Sally the Witch in 1966.",
+      "It says the 1970s term majokko ('little witch') gave way in the 1980s to 'magical girl', with shows such as Magical Princess Minky Momo and Creamy Mami.",
+      "It says Sailor Moon in the 1990s redefined the genre by combining transforming-hero elements from live-action tokusatsu, specifically Super Sentai and Kamen Rider, with the magical-girl tradition. Transformations in that series emphasize beauty, makeup, and fashion."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Magical_girl",
+        "title": "Magical girl",
+        "accessed": "2026-11-20",
+        "supports": "Transformation into a magical alter ego, the early history, and Sailor Moon's fusion with tokusatsu hero transformation."
+      }
+    ],
+    "archetypeTags": [
+      "transformation-sequence",
+      "alter-ego",
+      "magical-hero",
+      "henshin"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A support-faction echo whose transformation sequence is mostly tying a ribbon correctly, and the fight cannot begin until the bow is symmetrical.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "genre-pattern",
+        "copyrighted-examples"
+      ],
+      "guidance": "The genre pattern is usable. Sailor Moon, her brooch, the planetary scouts, and other named magical-girl casts are protected. Do not reproduce a specific transformation speech or costume."
+    }
+  },
+  {
+    "inspirationId": "INS-05-017",
+    "name": "Ultraman (kyodai hero)",
+    "origin": "Ultra Series, Tsuburaya Productions, from Ultra Q (1966)",
+    "kind": "pop",
+    "facts": [
+      "Ultraman, or the Ultra Series, is a Tsuburaya Productions science-fiction franchise that began with Ultra Q in 1966. The article calls it a pioneer of the kyodai hero subgenre and says it centers on a fictional alien race of superheroes who often fight kaiju or other aliens.",
+      "Ultras sent to other worlds are given Color Timers, or warning lights, which blink faster as energy runs down. They can stay active only for a limited span of minutes before the energy is depleted, though it can be replenished.",
+      "The article says the protagonists end up on Earth and bond with humans, or have a human incarnation, and that hosts use devices to summon the Ultra's power."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ultraman",
+        "title": "Ultraman",
+        "accessed": "2026-11-20",
+        "supports": "Giant alien hero versus kaiju, the Color Timer limit, and the human-host summoning device."
+      }
+    ],
+    "archetypeTags": [
+      "giant-hero",
+      "kaiju-fight",
+      "time-limit",
+      "human-host"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A towering tower guardian whose chest lamp is just a timer for how long it can stand the embarrassment of being indoors.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-franchise",
+        "trademark"
+      ],
+      "guidance": "Ultraman, the silver-and-red suit, the Color Timer, and Specium Ray are protected. A giant hero who can only stay giant for a short timed window is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-018",
+    "name": "Stand (JoJo's Bizarre Adventure)",
+    "origin": "JoJo's Bizarre Adventure, manga by Hirohiko Araki",
+    "kind": "anime",
+    "facts": [
+      "JoJo's Bizarre Adventure is a manga by Hirohiko Araki, serialized in Weekly Shōnen Jump from 1987 to 2004 and then in Ultra Jump. It is divided into story parts, each with a new protagonist nicknamed JoJo.",
+      "The article defines a Stand (スタンド) as a psycho-spiritual manifestation of a person's fighting spirit, with its own supernatural abilities. Battles in the series are well known for centering on Stands.",
+      "It also describes Hamon, or Ripple, as an earlier bodily-energy martial art in the same series, and says a mystical Bow and Arrow can bestow Stands on people it strikes."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/JoJo%27s_Bizarre_Adventure",
+        "title": "JoJo's Bizarre Adventure",
+        "accessed": "2026-11-20",
+        "supports": "Stand as a fighting-spirit manifestation with a unique power, Stand-centered battles, and the Bow and Arrow as one way Stands are granted."
+      }
+    ],
+    "archetypeTags": [
+      "manifested-spirit",
+      "personalized-power",
+      "duel",
+      "fighting-ghost"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A duelist whose punch ghost is visible only to people who agreed to the duel, and who loses if the ghost gets distracted by its own pose.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-mechanic",
+        "copyrighted-design"
+      ],
+      "guidance": "Stand, the name JoJo, Araki's poses, and every named Stand are protected. A manifested fighting spirit with one strange rule is a pattern; do not copy a specific Stand's appearance, name, or ability."
+    }
+  },
+  {
+    "inspirationId": "INS-05-019",
+    "name": "Titan (Attack on Titan)",
+    "origin": "Attack on Titan, manga by Hajime Isayama",
+    "kind": "anime",
+    "facts": [
+      "Attack on Titan (進撃の巨人) is a manga by Hajime Isayama, serialized in Bessatsu Shōnen Magazine from September 2009 to April 2021. Humanity in the story lives in cities behind three enormous walls that protect them from gigantic man-eating humanoids called Titans.",
+      "The setting summary says Pure Titans are the weakest and most common, with predictable behavior that makes them easier to kill, while Abnormal Titans are less predictable and harder to fight.",
+      "The military fights them with Vertical Maneuvering Equipment, also called Omni-Directional Maneuvering Gear: waist-mounted grappling hooks and gas propulsion. The article also mentions later Thunder Spears."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Attack_on_Titan",
+        "title": "Attack on Titan",
+        "accessed": "2026-11-20",
+        "supports": "Walled cities, man-eating humanoid giants, Pure versus Abnormal classification, and the grappling maneuver gear."
+      }
+    ],
+    "archetypeTags": [
+      "giant-humanoid",
+      "walled-city",
+      "man-eater",
+      "mobility-fight"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower giant that is only dangerous because the stairwells were built to its stride, and that gets lost if someone moves the signs.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-design",
+        "body-horror-fictional",
+        "mass-death-theme"
+      ],
+      "guidance": "Titans, the walls, the maneuver gear, and Isayama's giant designs are protected. This record does not assert a specific anatomical weak point because the cited article did not state one. Do not import unpublished or unsourced anatomy, and do not copy the gear or the names."
+    }
+  },
+  {
+    "inspirationId": "INS-05-020",
+    "name": "Death Note shinigami and the notebook",
+    "origin": "Death Note, manga by Tsugumi Ohba and Takeshi Obata",
+    "kind": "anime",
+    "facts": [
+      "Death Note is a manga written by Tsugumi Ohba and illustrated by Takeshi Obata, serialized in Weekly Shōnen Jump from December 2003 to May 2006. Light Yagami, a genius student, finds a notebook that belonged to the shinigami Ryuk.",
+      "The article states the rule that writing a person's name in the notebook causes their death, and that the writer must know the target's true name and face. Ryuk, invisible to anyone who has not touched the notebook, dropped it in the human world out of boredom.",
+      "Light uses the notebook to kill people he judges immoral, under the public alias Kira, and is pursued by the detective L. The article also describes a second notebook and a bargain for 'shinigami eyes' that reveal names at the cost of half the user's remaining lifespan."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Death_Note",
+        "title": "Death Note",
+        "accessed": "2026-11-20",
+        "supports": "Ryuk's notebook, the name-and-face death rule, the boredom motive, Kira versus L, and the eyes bargain."
+      }
+    ],
+    "archetypeTags": [
+      "death-god",
+      "cursed-object",
+      "rules-lawyer",
+      "invisible-observer"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A bored tower scribe whose notebook only embarrasses people whose names are spelled correctly, and who is mostly interested in the handwriting.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-mechanic",
+        "fictional-mass-harm",
+        "do-not-copy-kill-rules"
+      ],
+      "guidance": "Death Note, Ryuk, Kira, L, and the name-writing kill rules are protected. Do not implement a name-targeted death mechanic. A bored otherworld clerk with a fussy magical ledger is as far as the pattern should be pushed."
+    }
+  },
+  {
+    "inspirationId": "INS-05-021",
+    "name": "Kurama, the Nine-Tails sealed in Naruto",
+    "origin": "Naruto, manga by Masashi Kishimoto",
+    "kind": "anime",
+    "facts": [
+      "Naruto is a manga by Masashi Kishimoto. In the plot, a demonic nine-tailed fox called Kurama attacks the village of Konoha. The Fourth Hokage, Minato Namikaze, dies sealing the fox into his newborn son, Naruto Uzumaki, making the child the beast's host.",
+      "The article says the villagers scorn Naruto for being the host, and that a decree forbids mention of the attack, so Naruto does not learn the truth until he is 12.",
+      "In Part II, the group Akatsuki kidnaps the hosts of the nine Tailed Beasts and extracts seven of them. The article also notes a critical comparison with Japanese kitsune stories in which foxes possess people."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Naruto",
+        "title": "Naruto",
+        "accessed": "2026-11-20",
+        "supports": "The nine-tailed fox Kurama, the sealing into a newborn, the hidden-host stigma, and the later hunt for tailed-beast hosts."
+      }
+    ],
+    "archetypeTags": [
+      "sealed-beast",
+      "child-host",
+      "tailed-beast",
+      "inner-monster"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A sanctified echo that contains a much larger, much ruder creature who only comes out when the host is asked to share.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "child-host",
+        "living-folklore-adjacent"
+      ],
+      "guidance": "Naruto, Kurama, jinchūriki, the Akatsuki, and the nine named beasts are protected. Kitsune possession is older folklore and belongs with eastern-myth research if used directly. Do not build a comedy on a child being shunned or used as a container."
+    }
+  },
+  {
+    "inspirationId": "INS-05-022",
+    "name": "Digimon evolution",
+    "origin": "Digimon / Digital Monster franchise, created 1997",
+    "kind": "anime",
+    "facts": [
+      "Digimon, short for Digital Monsters, is a Japanese franchise of virtual pets, anime, manga, games, and a card game about creatures that live in a digital world born from communication networks. It began in 1997 as the digital pet Digital Monster, intended as a masculine counterpart to Tamagotchi.",
+      "A common anime setup gives a child a digivice, modeled on the toys, which empowers a partner Digimon. Evolution, called digivolution in most English dubs, happens when a Digimon absorbs more data and changes form.",
+      "The article lists evolutionary levels from Baby I and Baby II through Child, Adult, Perfect, and Ultimate, with English dubs often renaming the top stage Mega. Jogress, or DNA Digivolution, combines two or more Digimon. Partnership with a human lets them reach stronger forms faster."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Digimon",
+        "title": "Digimon",
+        "accessed": "2026-11-20",
+        "supports": "Digital-world partner monsters, the digivice, staged evolution, Jogress combination, and the 1997 toy origin."
+      }
+    ],
+    "archetypeTags": [
+      "partner-monster",
+      "staged-evolution",
+      "digital-creature",
+      "combination"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A pocket monster that evolves only when its human remembers to feed the device, and whose final form is just the same creature wearing a longer coat.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-franchise",
+        "trademark"
+      ],
+      "guidance": "Digimon, digivice, the named species, and the official evolution charts are protected. A partner creature with visible growth stages is the pattern. Do not copy Agumon or any other species design."
+    }
+  },
+  {
+    "inspirationId": "INS-05-023",
+    "name": "Duel Monsters and the Millennium Puzzle",
+    "origin": "Yu-Gi-Oh!, manga by Kazuki Takahashi",
+    "kind": "anime",
+    "facts": [
+      "Yu-Gi-Oh! is a manga by Kazuki Takahashi, serialized in Weekly Shōnen Jump from September 1996 to March 2004. Yugi Mutou solves the ancient Egyptian Millennium Puzzle and becomes host to a gambling spirit sealed inside it, who possesses him to face conflicts as games.",
+      "Later arcs shift to the collectible card game Duel Monsters, originally called Magic & Wizards, in which players duel using fantasy monsters. The article says a real-world card game was adapted from that fictional game.",
+      "Takahashi said Yugi's other self, a sharp and apparently invincible game-player, was a 'henshin' with strong appeal to children, and that he had not originally planned the story to be about cards until reader response pulled it that way."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yu-Gi-Oh!",
+        "title": "Yu-Gi-Oh!",
+        "accessed": "2026-11-20",
+        "supports": "Puzzle possession, card duels of fantasy monsters, the real card game spun from the fiction, and Takahashi's henshin comment."
+      }
+    ],
+    "archetypeTags": [
+      "sealed-spirit",
+      "card-summon",
+      "game-duel",
+      "possession"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower duel where the monsters on the cards refuse to come out until the players agree on the house rules.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-franchise",
+        "trademark"
+      ],
+      "guidance": "Yu-Gi-Oh, Duel Monsters, the Millennium Items, and every printed card monster are protected. A spirit that possesses a player during a game, and monsters that exist as cards, are the patterns. Do not copy card text, art, or names."
+    }
+  },
+  {
+    "inspirationId": "INS-05-024",
+    "name": "Tokusatsu suitmation",
+    "origin": "Japanese practical-effects filmmaking, associated with Eiji Tsuburaya",
+    "kind": "pop",
+    "facts": [
+      "Tokusatsu (特撮, 'special filming') is the Japanese term for live-action films and television that rely heavily on practical special effects. The article credits Eiji Tsuburaya and says the word's modern media use was popularized around the first monster boom of 1966–1968.",
+      "It lists subgenres: kaiju such as Godzilla and Gamera, superheroes such as Kamen Rider, kyodai heroes such as Ultraman, and mecha such as Giant Robo. Some shows, including Super Sentai, combine several.",
+      "Suitmation is the technique of playing a monster with an actor in a costume, usually combined with miniatures and scaled city sets. The article says Tsuburaya developed this approach for the 1954 Godzilla, inspired in part by King Kong."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tokusatsu",
+        "title": "Tokusatsu",
+        "accessed": "2026-11-20",
+        "supports": "Practical-effects genre, the listed subgenres, and suitmation as a costumed actor plus miniatures."
+      }
+    ],
+    "archetypeTags": [
+      "suit-monster",
+      "practical-effects",
+      "miniature-city",
+      "tokusatsu"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A boss whose silhouette is obviously a person in a magnificent costume, and whose weakness is a stuck zipper.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "technique",
+        "copyrighted-examples"
+      ],
+      "guidance": "Suitmation is a technique, not a character. The example franchises and their suits are protected. A comedy boss can admit it is an occupied costume without copying a famous suit."
+    }
+  },
+  {
+    "inspirationId": "INS-05-025",
+    "name": "Slender Man",
+    "origin": "Creepypasta created by Eric Knudsen (Victor Surge) on Something Awful, 10 June 2009",
+    "kind": "urban_legend",
+    "facts": [
+      "The Slender Man is a fictional supernatural character created by Something Awful user Eric Knudsen, under the name Victor Surge, on 10 June 2009, for a Photoshop contest about paranormal images. He is depicted as a thin, unnaturally tall humanoid with pale skin and a featureless face, wearing a black suit, sometimes with branching tendrils.",
+      "The article says stories commonly show him stalking, abducting, or traumatizing people, particularly children, and that the lore was extended by many later authors. It also says his exact nature and intentions are usually left vague, and that graphic violence is uncommon in the mythos.",
+      "A copyright section states that despite the folkloric style, the Slender Man is not in the public domain. For-profit uses have acknowledged Knudsen as creator, some distributions were blocked after legal complaints, and in May 2016 the media rights were sold to Mythology Entertainment."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Slender_Man",
+        "title": "Slender Man",
+        "accessed": "2026-11-20",
+        "supports": "10 June 2009 Something Awful origin, the tall faceless suited figure, the multi-author mythos, and the explicit statement that the character is not public domain."
+      }
+    ],
+    "archetypeTags": [
+      "creepypasta",
+      "faceless-tall-man",
+      "stalker",
+      "modern-folklore"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Not recommended as a direct parody. If a tall faceless tower stranger is ever used, it needs a new name, no children, no abduction, and no reference to the real crime associated with this character.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-character",
+        "child-endangerment-theme",
+        "living-memory-harm",
+        "do-not-parody-crime"
+      ],
+      "guidance": "The character is copyrighted, not public domain. The article also records a 2014 violent crime in Wisconsin that was publicly linked to the character; Knudsen said he was deeply saddened and declined interviews. Do not depict that crime, its victims, or its perpetrators, and do not make comedy from child abduction. Prefer a different tall-stranger archetype if a boss is needed."
+    }
+  },
+  {
+    "inspirationId": "INS-05-026",
+    "name": "Kuchisake-onna",
+    "origin": "Japanese urban legend and folklore",
+    "kind": "urban_legend",
+    "facts": [
+      "Kuchisake-onna (口裂け女, 'Slit-Mouthed Woman') is a malevolent figure in Japanese urban legends and folklore, described as the vengeful spirit of a woman who hides a scarred mouth with a mask, fan, or cloth and carries a blade or scissors.",
+      "The popular legend says she asks whether she is pretty, often 'Watashi, kirei?'. An answer of no leads to an attack. An answer of yes leads her to reveal a mouth slit from ear to ear and ask again. The article says versions differ on what a second yes or a hesitant yes brings, including the threat of a similar cut.",
+      "The article says origin stories also differ: a jealous attack, a botched surgery, or, in some Western retellings, other mutilation tales. It notes a modern association with children walking home from school, and describes her as a contemporary yōkai."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kuchisake-onna",
+        "title": "Kuchisake-onna",
+        "accessed": "2026-11-20",
+        "supports": "The masked slit-mouthed spirit, the repeated beauty question, the scissors or blade, and the variation among origin stories."
+      }
+    ],
+    "archetypeTags": [
+      "question-trap",
+      "masked-spirit",
+      "urban-legend",
+      "no-right-answer"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower inspector who asks if her paperwork looks tidy, and every honest answer opens a worse form.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "living-folklore",
+        "mutilation-theme",
+        "violence"
+      ],
+      "guidance": "The legend is traditional urban folklore, so the name is not a studio trademark, but specific films and manga about her are copyrighted. Do not play the facial mutilation for laughs. The usable pattern is a courteous question with no safe answer."
+    }
+  },
+  {
+    "inspirationId": "INS-05-027",
+    "name": "Bloody Mary (mirror folklore)",
+    "origin": "Modern folklore and sleepover divination ritual",
+    "kind": "urban_legend",
+    "facts": [
+      "Bloody Mary, in this folklore sense, is a ghost, phantom, witch, or spirit said to appear in a mirror when her name is chanted repeatedly. The article says she may be benevolent or malevolent depending on the version, and that sightings are mostly part of group play.",
+      "An older form has young women walk backward up stairs with a candle and a hand mirror, hoping to see a future husband's face, with a skull or the Grim Reaper meaning death before marriage. The article says the modern ritual, chanting the name into a mirror in a dim room, began to coalesce in the late 1960s.",
+      "The identification section says there is debate, and that proposed real-world names include Mary I of England, remembered for executions of Protestant dissenters and called Bloody Mary by opponents, and a Mary Worth whose identity is itself disputed. The article presents these as candidates, not as a settled origin."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bloody_Mary_(folklore)",
+        "title": "Bloody Mary (folklore)",
+        "accessed": "2026-11-20",
+        "supports": "Mirror summoning by repeated name, the older marriage-divination variant, the late-1960s modern form, and the unsettled link to historical Marys."
+      }
+    ],
+    "archetypeTags": [
+      "mirror-summon",
+      "name-ritual",
+      "divination",
+      "sleepover-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower mirror that only answers if you say your own name clearly, and that critiques your pronunciation instead of your future.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "living-folklore",
+        "historical-violence-adjacent",
+        "unsettled-origin"
+      ],
+      "guidance": "The mirror game is folklore. Do not treat the Mary I identification as fact. Mary I's executions are a separate historical topic and are not a joke. Do not write a how-to that encourages frightening children."
+    }
+  },
+  {
+    "inspirationId": "INS-05-028",
+    "name": "Chupacabra",
+    "origin": "Latin American cryptid legend, publicized in Puerto Rico in 1995",
+    "kind": "urban_legend",
+    "facts": [
+      "Chupacabra or chupacabras ('goat-sucker') is a legendary creature in the folklore of parts of the Americas, said to prey on livestock, especially goats, and also reported against sheep, chickens, and other animals. Accounts say it kills by puncturing the neck and drinking blood, which is why it is linked with vampirism.",
+      "Descriptions split by region. In Puerto Rico and much of Hispanic America it is often reptilian or alien-looking, about the size of a small bear, with a row of spines from neck to tail. In the southwestern United States it is often a hairless canine with long fangs. The article says the first widely publicized sightings were in Puerto Rico in 1995, and that comedian Silverio Pérez is credited with coining the name that year.",
+      "The article reports that researchers concluded the original Puerto Rico witness description, from Madelyne Tolentino in Canóvanas, matched the creature Sil in the 1995 science-fiction film Species, which Tolentino had seen."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chupacabra",
+        "title": "Chupacabra",
+        "accessed": "2026-11-20",
+        "supports": "Goat-sucker livestock vampire, the two regional body types, the 1995 Puerto Rico origin of the name, and the reported resemblance to the film creature Sil."
+      }
+    ],
+    "archetypeTags": [
+      "cryptid",
+      "livestock-predator",
+      "vampire-animal",
+      "regional-variants"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower pest-control beast that only drinks from unattended teacups and leaves a very formal puncture in the saucer.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "living-folklore",
+        "copyrighted-lookalike"
+      ],
+      "guidance": "The legend and the name are folklore. The spined humanoid look tied to Sil is a copyrighted film design from Species and should not be copied. A hairless canid or a generic livestock-drinker is safer visual territory than the movie creature."
+    }
+  },
+  {
+    "inspirationId": "INS-05-029",
+    "name": "Mothman",
+    "origin": "American folklore, Point Pleasant, West Virginia, 1966–1967",
+    "kind": "urban_legend",
+    "facts": [
+      "Mothman is the name given to a winged humanoid with red eyes in American folklore. Reports around Point Pleasant, West Virginia, ran from 15 November 1966 to 15 December 1967. The article cites a Point Pleasant Register story of 16 November 1966, 'Couples See Man-Sized Bird ... Creature ... Something'.",
+      "The name was popularized by John Keel in the 1975 book The Mothman Prophecies. Keel connected the sightings with other paranormal claims and with the Silver Bridge collapse. The article notes earlier, heavily fictionalized treatment in Gray Barker's The Silver Bridge, and also mundane explanations that have been proposed, including misidentified cranes, herons, or owls.",
+      "The article presents the link to the Silver Bridge collapse as John Keel's claim in The Mothman Prophecies, alongside proposed ordinary explanations such as misidentified cranes, herons, or owls."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mothman",
+        "title": "Mothman",
+        "accessed": "2026-11-20",
+        "supports": "Winged red-eyed humanoid, the 1966 Point Pleasant reports, Keel's 1975 book, and the claimed rather than proven bridge connection."
+      }
+    ],
+    "archetypeTags": [
+      "winged-humanoid",
+      "omen",
+      "cryptid",
+      "local-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower moth the size of a person that is mostly embarrassed by porch lights and only becomes ominous when someone writes it into a prophecy.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "real-disaster-adjacent",
+        "living-memory-harm",
+        "copyrighted-retellings"
+      ],
+      "guidance": "The 1967 Silver Bridge collapse was a real disaster with real deaths. Do not parody the collapse, the victims, or a monster 'causing' it. Keel's book and the 2002 film are copyrighted retellings. A red-eyed winged cryptid omen can be used without that tragedy."
+    }
+  },
+  {
+    "inspirationId": "INS-05-030",
+    "name": "Vlad III (Vlad the Impaler / Vlad Dracula)",
+    "origin": "Wallachian history, 15th century; later linked by suggestion to Bram Stoker's Dracula",
+    "kind": "historical",
+    "facts": [
+      "Vlad III (about 1428/31–1476/77), called Vlad the Impaler (Vlad Țepeș) or Vlad Dracula (Vlad Drăculea), was Voivode of Wallachia in 1448, 1456–1462, and 1475–1476/77. He was the son of Vlad II Dracul and is remembered for centralizing authority, fighting rival boyars, and resisting the Ottoman Empire, including the 1462 Night Attack at Târgoviște.",
+      "The article says his epithet comes from impalement, including of captives taken from Saxon villages after 1460 raids, and that he was killed in battle in 1476 or 1477.",
+      "It says it is suggested that his patronymic inspired the name of Bram Stoker's Count Dracula, but that Vlad is not directly mentioned in Stoker's notes for the novel. The article describes only implicit references, such as a note about a 1460 Wallachian voivode called Dracula."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Vlad_the_Impaler",
+        "title": "Vlad the Impaler",
+        "accessed": "2026-11-20",
+        "supports": "Historical identity and reigns, the impalement epithet, death in battle, and the cautious, non-proven link to Stoker's naming."
+      }
+    ],
+    "archetypeTags": [
+      "historical-ruler",
+      "dracula-name-origin",
+      "war-lord",
+      "legend-over-history"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower magistrate whose legend is much worse than his filing cabinet, and who is annoyed that a novelist borrowed only his father's nickname.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "real-person",
+        "historical-violence",
+        "do-not-joke-about-executions"
+      ],
+      "guidance": "Vlad III was a real ruler, and impalement was real violence, even though it is not living memory. Do not comedy-write the executions or the Saxon and Ottoman victims. The usable piece is the gap between a historical prince and a later vampire novel that may only have borrowed a name. Stoker's Count Dracula is a separate record."
+    }
+  },
+  {
+    "inspirationId": "INS-05-031",
+    "name": "Blackbeard (Edward Teach)",
+    "origin": "Golden Age of Piracy, died 1718",
+    "kind": "historical",
+    "facts": [
+      "Edward Teach, or Thatch (about 1680–22 November 1718, Old Style), known as Blackbeard, was an English pirate active in the West Indies and along Britain's North American colonies. He is one of history's best-known pirates.",
+      "The article says his nickname came from a thick black beard and a menacing appearance, and that he was reported to have tied lit fuses, or slow matches, under his hat to frighten enemies.",
+      "He captured the French slave ship La Concorde, renamed her Queen Anne's Revenge, armed her with 40 guns, and crewed her with over 300 men. He later blockaded Charles Town, South Carolina, and ransomed the inhabitants. He was killed in 1718."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Blackbeard",
+        "title": "Blackbeard",
+        "accessed": "2026-11-20",
+        "supports": "Identity, the beard and reported hat-fuses, Queen Anne's Revenge, the Charles Town blockade, and the 1718 death."
+      }
+    ],
+    "archetypeTags": [
+      "pirate-captain",
+      "silhouette-terror",
+      "flagship",
+      "theatrical-entrance"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower corsair whose entrance is mostly smoke, and whose hat is a fire hazard the safety faction keeps trying to extinguish.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "real-person",
+        "slavery-history",
+        "violence"
+      ],
+      "guidance": "The historical man and the reported burning-fuse silhouette are not a copyrighted character. Do not joke about his capture of a slave ship or the people aboard La Concorde. Film pirates who use his name, including the Pirates of the Caribbean depiction, are separate copyrighted designs."
+    }
+  },
+  {
+    "inspirationId": "INS-05-032",
+    "name": "Flying Dutchman",
+    "origin": "Maritime legend, likely Dutch Golden Age, oldest known print version late 18th century",
+    "kind": "folklore",
+    "facts": [
+      "The Flying Dutchman (De Vliegende Hollander) is a legendary ghost ship said never to be able to make port, doomed to sail forever. The article says the stories likely grew from the 17th-century Dutch East India Company era, and that the oldest known extant version is from the late 18th century.",
+      "If hailed, the crew may try to send messages to land or to people long dead. Nineteenth- and twentieth-century sighting reports described a ghostly glow. In sailors' lore the sight is a portent of doom. It was commonly imagined as a fluyt, a 17th-century cargo ship.",
+      "The first known print reference cited in the article is John MacDonald's 1790 Travels in various parts of Europe, Asia and Africa, in which sailors in a storm say they saw the Flying Dutchman."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Flying_Dutchman",
+        "title": "Flying Dutchman",
+        "accessed": "2026-11-20",
+        "supports": "The never-make-port ghost ship, the message-to-the-dead motif, the doom portent, and the 1790 print source."
+      }
+    ],
+    "archetypeTags": [
+      "ghost-ship",
+      "eternal-voyage",
+      "omen",
+      "undelivered-message"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower ferry that has been 'about to dock' for centuries and will fight anyone who suggests a different pier.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "folklore",
+        "copyrighted-adaptations"
+      ],
+      "guidance": "The legend is public-domain folklore. Specific later works, especially the Pirates of the Caribbean ghost ship and its captain, are copyrighted designs and must not be copied. Use a ship that cannot arrive, not a film's barnacle-face design."
+    }
+  },
+  {
+    "inspirationId": "INS-05-033",
+    "name": "Devilman (Akira Fudo absorbing Amon)",
+    "origin": "Devilman, manga by Go Nagai",
+    "kind": "anime",
+    "facts": [
+      "Devilman is a manga by Go Nagai. High-school student Akira Fudo absorbs the powers of a demon called Amon, with help from his friend Ryo Asuka, so he can fight creatures hidden in human society, and calls himself Devilman.",
+      "The article says Toei ordered the original anime as a toned-down version of Nagai's earlier manga Demon Lord Dante, although the Devilman manga itself went much darker."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Devilman",
+        "title": "Devilman",
+        "accessed": "2026-11-20",
+        "supports": "Akira absorbing the demon Amon to fight demons hidden among humans, and the toned-down origin relative to Demon Lord Dante."
+      }
+    ],
+    "archetypeTags": [
+      "human-demon-fusion",
+      "hidden-monsters",
+      "tragic-hero"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower volunteer who borrows a demon's power for one shift and then cannot clock out of the horns.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-character",
+        "apocalyptic-violence"
+      ],
+      "guidance": "Devilman, Amon, Akira, and Ryo are protected. The manga's ending is extremely violent. Use only the pattern of a person who takes in a demon to fight demons already hiding in the crowd."
+    }
+  },
+  {
+    "inspirationId": "INS-05-034",
+    "name": "Apostle (Berserk)",
+    "origin": "Berserk, manga by Kentaro Miura",
+    "kind": "anime",
+    "facts": [
+      "Berserk is a dark-fantasy manga by Kentaro Miura about the swordsman Guts and Griffith, leader of the mercenary Band of the Hawk. The plot summary says Griffith is offered godhood in exchange for sacrificing his comrades.",
+      "Those comrades are branded as offerings and slaughtered by Apostles, which the article calls demonic beings who were once human. Few survive."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Berserk_(manga)",
+        "title": "Berserk (manga)",
+        "accessed": "2026-11-20",
+        "supports": "The sacrifice bargain and Apostles as former humans who slaughter the branded mercenaries."
+      }
+    ],
+    "archetypeTags": [
+      "former-human-demon",
+      "sacrifice-brand",
+      "betrayal-boss"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "Not a comedy target. If a 'person who accepted a promotion and became a monster' is used, drop the brand, the sacrifice, and every name from this manga.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-character",
+        "sexual-violence-in-source",
+        "body-horror-fictional",
+        "do-not-parody"
+      ],
+      "guidance": "The article's plot summary includes a sexual assault during this betrayal. Do not depict it, joke about it, or build a boss around the Eclipse. Apostles, the Brand of Sacrifice, Griffith, and Femto are protected."
+    }
+  },
+  {
+    "inspirationId": "INS-05-035",
+    "name": "Ghoul (Tokyo Ghoul)",
+    "origin": "Tokyo Ghoul, manga by Sui Ishida",
+    "kind": "anime",
+    "facts": [
+      "Tokyo Ghoul is a manga by Sui Ishida set in an alternate Tokyo. Ghouls look like humans but can only survive by eating human flesh. Ken Kaneki, a college student, is transformed into a half-ghoul after an encounter with one.",
+      "The article says a ghoul has at least one predatory organ called a kagune, which it manifests as a weapon, and that a ghoul's eyes change color when it is excited or hungry."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tokyo_Ghoul",
+        "title": "Tokyo Ghoul",
+        "accessed": "2026-11-20",
+        "supports": "Human-looking flesh-eaters, Kaneki's half-ghoul transformation, the kagune weapon-organ, and the eye tell."
+      }
+    ],
+    "archetypeTags": [
+      "hidden-predator",
+      "half-monster",
+      "weapon-organ",
+      "hunger-tell"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower clerk whose secret is a dramatic extra limb that only appears when the cafeteria is closed.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-design",
+        "cannibalism-theme"
+      ],
+      "guidance": "Kaneki, the kagune shapes, the mask, and the eye pattern are protected. Do not make a joke of eating people. The usable pattern is a person turned into the predator, with one tell that gives them away."
+    }
+  },
+  {
+    "inspirationId": "INS-05-036",
+    "name": "Demon (Demon Slayer)",
+    "origin": "Demon Slayer: Kimetsu no Yaiba, manga by Koyoharu Gotouge",
+    "kind": "anime",
+    "facts": [
+      "Demon Slayer: Kimetsu no Yaiba is a manga by Koyoharu Gotouge. The article says Muzan Kibutsuji is the progenitor of all demons in the story and is responsible for the murder of the protagonists' family.",
+      "It states demons can be killed by direct sunlight, by decapitation with Nichirin alloy weapons, or by a poison extracted from wisteria. The human slayers use specialized elemental breathing techniques."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba",
+        "title": "Demon Slayer: Kimetsu no Yaiba",
+        "accessed": "2026-11-20",
+        "supports": "Muzan as demon progenitor, and the sunlight, Nichirin, and wisteria weaknesses alongside breathing techniques."
+      }
+    ],
+    "archetypeTags": [
+      "oni",
+      "sunlight-weakness",
+      "progenitor-demon",
+      "special-weapon"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower demon that is only vulnerable to a very specific office lamp, and that files a complaint about the bulb.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-design",
+        "family-murder-theme"
+      ],
+      "guidance": "Muzan, Nichirin, the breathing styles, and the checkered haori are protected. Sunlight as a monster weakness is older than this manga; the three-part kit of sun, special sword, and wisteria belongs to this work. Do not copy it as a set."
+    }
+  },
+  {
+    "inspirationId": "INS-05-037",
+    "name": "Cursed spirit (Jujutsu Kaisen)",
+    "origin": "Jujutsu Kaisen, manga by Gege Akutami",
+    "kind": "anime",
+    "facts": [
+      "Jujutsu Kaisen is a manga by Gege Akutami. The article says every living being gives off Cursed Energy from negative emotions. People who cannot control it leak that energy, which gives rise to Curses, malevolent spirits that want to harm humans and often look like grotesque monsters drawn from folklore such as onryō.",
+      "Yuji Itadori becomes the host of a powerful curse, Ryomen Sukuna. The article calls Domain Expansion the peak technique: a barrier that usually traps the target and strengthens the user's hits inside it."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jujutsu_Kaisen",
+        "title": "Jujutsu Kaisen",
+        "accessed": "2026-11-20",
+        "supports": "Curses born from negative emotion, Sukuna as a hosted curse, and Domain Expansion as a trapping barrier."
+      }
+    ],
+    "archetypeTags": [
+      "emotion-made-monster",
+      "sealed-king",
+      "arena-barrier"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower spirit that condenses out of unanswered mail, and that can only be fought inside the inbox it creates.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-mechanic",
+        "body-horror-fictional"
+      ],
+      "guidance": "Sukuna, Domain Expansion, and the series' curse designs are protected. A monster made of a crowd's bad feelings, and a fight that happens inside the monster's own room, are the patterns."
+    }
+  },
+  {
+    "inspirationId": "INS-05-038",
+    "name": "Devil (Chainsaw Man)",
+    "origin": "Chainsaw Man, manga by Tatsuki Fujimoto",
+    "kind": "anime",
+    "facts": [
+      "Chainsaw Man is a manga by Tatsuki Fujimoto. Denji, an impoverished teenager, makes a contract that fuses him with Pochita, a dog-like Chainsaw Devil, so parts of his body can become chainsaws. He joins the Public Safety Devil Hunters.",
+      "The article says Devils are born from humanity's collective fears and become more powerful as those fears become more common."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chainsaw_Man",
+        "title": "Chainsaw Man",
+        "accessed": "2026-11-20",
+        "supports": "Fear-born devils that scale with how common the fear is, and the contract that fuses Denji with Pochita."
+      }
+    ],
+    "archetypeTags": [
+      "fear-embodied",
+      "contract-fusion",
+      "devil-hunter"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower devil that is only as strong as the number of people currently afraid of paperwork, and that shrinks when someone stamps the form.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "gore-theme"
+      ],
+      "guidance": "Pochita, Denji, the chainsaw transformation, and the named devils are protected. A creature that is literally a widespread fear, and that weakens when the fear does, is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-039",
+    "name": "Shadow Monarch (Solo Leveling)",
+    "origin": "Solo Leveling, web novel by Chugong; webtoon art by Jang Sung-rak",
+    "kind": "anime",
+    "facts": [
+      "Solo Leveling is a South Korean fantasy web novel by Chugong. Its plot is a world of hunters, people with supernatural abilities, who fight monsters. Sung Jin-woo starts as the weakest E-rank hunter. A program called the System makes him its only player and lets him grow stronger, which other hunters cannot do because their abilities are fixed when they awaken.",
+      "The article says he is chosen to inherit the Shadow Monarch, becoming an immortal necromancer called the King of the Dead, with absolute rule over the dead. He is the only Monarch fighting to save humanity; the other Monarchs lead the monsters and try to wipe humans out."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Solo_Leveling",
+        "title": "Solo Leveling",
+        "accessed": "2026-11-20",
+        "supports": "The weak hunter who alone can level, and the Shadow Monarch as a necromancer king opposed to monster-leading Monarchs."
+      }
+    ],
+    "archetypeTags": [
+      "necromancer-king",
+      "shadow-army",
+      "weak-to-monarch",
+      "system"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower intern who is allowed to gain ranks while everyone else is stuck on their first badge, and who then inherits a union of very literal shadows.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character",
+        "copyrighted-mechanic"
+      ],
+      "guidance": "Sung Jin-woo, the System, the Shadow Monarch, and the webtoon's soldier designs are protected. A commander whose army is made of defeated enemies is the pattern to reinvent."
+    }
+  },
+  {
+    "inspirationId": "INS-05-040",
+    "name": "Witch (Puella Magi Madoka Magica)",
+    "origin": "Puella Magi Madoka Magica, anime by Magica Quartet",
+    "kind": "anime",
+    "facts": [
+      "Puella Magi Madoka Magica follows girls who make supernatural contracts to become magical girls and then battle surreal enemies called witches. The article says the role brings anguish and peril.",
+      "In the plot summary, magical girls give up their souls to form Soul Gems, the source of their magic. When a Soul Gem is too tainted with despair it becomes a Grief Seed and the girl is irreversibly transformed into a witch."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica",
+        "title": "Puella Magi Madoka Magica",
+        "accessed": "2026-11-20",
+        "supports": "Contract magical girls, witches as their enemies, and the Soul Gem despair transformation that turns a girl into a witch."
+      }
+    ],
+    "archetypeTags": [
+      "magical-girl-inversion",
+      "despair-form",
+      "contract",
+      "witch"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A support echo whose cheerful badge, if ignored too long, hatches into the very problem she was hired to cure.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-twist",
+        "despair-theme"
+      ],
+      "guidance": "Soul Gems, Grief Seeds, Kyubey, and the witch labyrinths are protected. Do not copy the revelation beat for beat. The pattern is a helper whose neglected power source becomes the boss."
+    }
+  },
+  {
+    "inspirationId": "INS-05-041",
+    "name": "Angel (Neon Genesis Evangelion)",
+    "origin": "Neon Genesis Evangelion, anime directed by Hideaki Anno (Gainax)",
+    "kind": "anime",
+    "facts": [
+      "The Angels (使徒, shito, 'apostles') are entities from Neon Genesis Evangelion. In the animated series almost all of them are enemies of humanity who repeatedly try to reach Nerv headquarters in Tokyo-3. Most originate from an entity called Adam. The article says humanity is the eighteenth Angel and descends from Lilith, the second.",
+      "Nerv builds Evangelion mechas to fight them. Both Angels and Evangelions use a force field called an AT Field, also expanded as the Absolute Terror Field, which makes Angels nearly indestructible. The article says their names and attacks were prophesied in documents held by the secret group Seele."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Angels_(Neon_Genesis_Evangelion)",
+        "title": "Angels (Neon Genesis Evangelion)",
+        "accessed": "2026-11-20",
+        "supports": "Angels assaulting Tokyo-3, the Adam/Lilith split, humanity as the eighteenth, and the shared AT Field."
+      }
+    ],
+    "archetypeTags": [
+      "incomprehensible-invader",
+      "shared-defense",
+      "mecha-versus-angel",
+      "numbered-sequence"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower visitor that can only be blocked by the same kind of stubbornness the guardian was built from, and that has a number instead of a name.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-design",
+        "religious-imagery"
+      ],
+      "guidance": "Every Evangelion Angel design, the AT Field, Lilith, Adam, and the Eva units are protected. Do not copy a geometric Angel or the purple mecha. An invader that shares a defense with the machine sent to stop it is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-042",
+    "name": "Homunculus (Fullmetal Alchemist)",
+    "origin": "Fullmetal Alchemist, manga by Hiromu Arakawa",
+    "kind": "anime",
+    "facts": [
+      "Fullmetal Alchemist presents a Law of Equivalent Exchange: to obtain something, something of equal value must be lost. Human transmutation, trying to create a person from bodily substances, is the taboo. The article says it fails because nothing physical equals a soul, and the attempt produces an incomplete body that dies at once.",
+      "The same article says a substance can then be used to transmute fully functional artificial humans called Homunculi. Most of them regenerate by spending trapped souls inside a philosopher's stone, do not age normally, and can be killed by destroying or exhausting that stone."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fullmetal_Alchemist",
+        "title": "Fullmetal Alchemist",
+        "accessed": "2026-11-20",
+        "supports": "Equivalent exchange, the human-transmutation taboo, and homunculi sustained by a philosopher's stone of souls."
+      }
+    ],
+    "archetypeTags": [
+      "artificial-human",
+      "philosopher-stone",
+      "equivalent-exchange",
+      "named-sin"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower homunculus that is a perfect clerk except that every favor it does must be paid for with an equal stack of forms.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "soul-fuel-theme"
+      ],
+      "guidance": "The named homunculi, their sin titles, and the Flamel symbol are protected. A made person who runs on a hidden store of borrowed life, and a magic that cannot get something for nothing, are the patterns."
+    }
+  },
+  {
+    "inspirationId": "INS-05-043",
+    "name": "Char Aznable, the Red Comet",
+    "origin": "Mobile Suit Gundam and its sequels, created by Yoshiyuki Tomino",
+    "kind": "anime",
+    "facts": [
+      "Char Aznable is known by the honorary title the Red Comet during Gundam's One Year War. The article says he opposes Earth Federation pilot Amuro Ray repeatedly.",
+      "In the sequel he appears as Quattro Bajeena, fighting beside the protagonists and mentoring Kamille, while also pursuing his own aim. In Char's Counterattack he leads Neo Zeon and is the film's antagonist. An origin passage says he takes the Char identity and wears sunglasses to hide an eye color that would not match the real Char's papers."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Char_Aznable",
+        "title": "Char Aznable",
+        "accessed": "2026-11-20",
+        "supports": "The Red Comet rival, the later ally-and-mentor turn, the final-antagonist return, and the sunglasses disguise."
+      }
+    ],
+    "archetypeTags": [
+      "masked-ace",
+      "rival-pilot",
+      "switches-sides",
+      "final-return"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A red tower ace who defects, mentors the party, and then comes back because the scoreboard was never settled.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character"
+      ],
+      "guidance": "Char, the Red Comet, the mask-and-sunglasses look, and his mobile suits are protected. A charismatic enemy ace who changes flags and still wants the rematch is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-044",
+    "name": "Xenomorph",
+    "origin": "Alien film series; creature design by H. R. Giger, first film 1979",
+    "kind": "pop",
+    "facts": [
+      "The xenomorph debuted in Alien (1979) and returned in later films. The article credits the design to H. R. Giger, from a lithograph called Necronom IV, refined for the first film. Carlo Rambaldi built the practical head effects.",
+      "It describes a eusocial species with a single fertile queen and specialist castes. The life cycle implants an endoparasitoid larva in a living host; the chestburster larva erupts after a short incubation, matures within hours, and seeks more hosts. The article also describes pressurized acidic blood that can eat through a ship's hull, an idea Ron Cobb suggested so the creature could not simply be shot indoors."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Xenomorph",
+        "title": "Xenomorph",
+        "accessed": "2026-11-20",
+        "supports": "Giger's design, the queen-and-caste structure, the chestburster life cycle, and acidic blood as a reason guns are a bad idea."
+      }
+    ],
+    "archetypeTags": [
+      "parasite-lifecycle",
+      "queen",
+      "acid-blood",
+      "biomechanical"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower pest with a queen in the walls whose offspring are only dangerous because swatting them ruins the plumbing.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-design",
+        "body-horror",
+        "parasite-theme"
+      ],
+      "guidance": "The Giger silhouette, the nested life stages, the inner jaw, and the acid blood are protected. Do not stage a body-bursting infestation. A hive with a queen and a reason not to use brute force is as far as the pattern should go."
+    }
+  },
+  {
+    "inspirationId": "INS-05-045",
+    "name": "The Thing (1982 creature)",
+    "origin": "John Carpenter's 1982 film The Thing, adapting John W. Campbell's novella",
+    "kind": "pop",
+    "facts": [
+      "The Thing (1982) follows a research team in Antarctica after it encounters the Thing, an extraterrestrial life-form that assimilates other organisms and then imitates them.",
+      "The article says the group is overcome by paranoia and conflict once they realize they can no longer trust each other and that any of them could be the Thing. The production is described as following the 1951 film The Thing from Another World and, in intent, Campbell's novella."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Thing_(1982_film)",
+        "title": "The Thing (1982 film)",
+        "accessed": "2026-11-20",
+        "supports": "Assimilation followed by imitation, and the paranoia that anyone in the group might already be the creature."
+      }
+    ],
+    "archetypeTags": [
+      "assimilation",
+      "impostor",
+      "paranoia",
+      "isolation"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower duplicate that copies a party member's badge but not their handwriting, and that is offended when someone notices.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-design",
+        "body-horror"
+      ],
+      "guidance": "Carpenter's effects designs and Campbell's novella are not free to copy. The pattern is an enemy that is already wearing a teammate. Do not reproduce the film's transformation effects."
+    }
+  },
+  {
+    "inspirationId": "INS-05-046",
+    "name": "Gremlins / mogwai rules",
+    "origin": "Gremlins (1984 film)",
+    "kind": "pop",
+    "facts": [
+      "In Gremlins, a grandfather warns that a mogwai has three care rules: keep it away from light, especially sunlight, which will kill it; do not let it touch water; and never let it eat after midnight.",
+      "When water is spilled on the friendly mogwai Gizmo, five more spawn from him, a more mischievous group led by Stripe."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gremlins",
+        "title": "Gremlins",
+        "accessed": "2026-11-20",
+        "supports": "The three care rules, sunlight as lethal, water as multiplication, and the post-midnight feeding rule."
+      }
+    ],
+    "archetypeTags": [
+      "rule-creature",
+      "multiplication",
+      "pet-to-swarm",
+      "care-instructions"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower pet with three completely different house rules, such as no umbrellas, no rhyming, and no second breakfast, which of course someone breaks.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-mechanic",
+        "copyrighted-design"
+      ],
+      "guidance": "Gizmo, Stripe, mogwai, and the exact three rules are a Warner Bros. device. A small creature with posted care rules, where breaking one makes more of them, is the pattern. Invent different rules."
+    }
+  },
+  {
+    "inspirationId": "INS-05-047",
+    "name": "Sadako Yamamura",
+    "origin": "Ring, novel by Koji Suzuki; film adaptations",
+    "kind": "pop",
+    "facts": [
+      "Sadako Yamamura, in the Ring novel and films, hides her face and uses a power called nensha to create a cursed videotape. Whoever watches it is haunted by her and dies exactly one week later, unless they copy the tape and show it to someone else, who must then do the same.",
+      "The article says the 'ring' is a ring-like image on the tape, the mouth of the well as seen from the bottom, where Sadako was. Korean and American films reimagine the character as Park Eun-seo and Samara Morgan."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sadako_Yamamura",
+        "title": "Sadako Yamamura",
+        "accessed": "2026-11-20",
+        "supports": "The cursed tape, the seven-day deadline, the copy-to-survive chain, the well image, and the renamed foreign versions."
+      }
+    ],
+    "archetypeTags": [
+      "cursed-media",
+      "deadline",
+      "well-ghost",
+      "chain-letter"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower recording that gives the listener seven days to forward a very boring meeting, or the meeting forwards itself.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "child-harm-in-backstory"
+      ],
+      "guidance": "Sadako, Samara, the well, the long hair over the face, and the seven-day tape are protected. Do not copy the crawl out of a screen. A cursed message with a deadline and a way to pass it on is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-048",
+    "name": "Ju-On curse",
+    "origin": "Ju-On / The Grudge, created by Takashi Shimizu",
+    "kind": "pop",
+    "facts": [
+      "Ju-On (呪怨, 'Curse Grudge'), also known as The Grudge, is a Japanese horror franchise created by Takashi Shimizu, beginning with short films in 1998. The films revolve around a curse created in a house in Nerima, Tokyo, after Takeo Saeki murders his wife Kayako, their son Toshio, and the boy's cat in a jealous rage.",
+      "The article states the rule of the series: when a person dies with a deep and powerful rage, a curse is born. It gathers where that person died or often went, and repeats. Anyone who enters the cursed house, or who contacts someone already cursed, can be killed by it."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ju-On",
+        "title": "Ju-On",
+        "accessed": "2026-11-20",
+        "supports": "A rage-death that becomes a repeating curse, and spread by entering the place or touching someone who already entered."
+      }
+    ],
+    "archetypeTags": [
+      "contagious-curse",
+      "haunted-place",
+      "repeating-death",
+      "grudge"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower room that stays angry about a slight, and that infects the next person who reads the complaint log.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "copyrighted-franchise",
+        "domestic-murder",
+        "child-death-in-source"
+      ],
+      "guidance": "Kayako, Toshio, the croaking ghost, and the house murder are not comedy material and are protected. Do not depict the killings. A grudge that repeats in a place and spreads by contact is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-049",
+    "name": "Night of the Living Dead ghouls",
+    "origin": "Night of the Living Dead (1968), directed by George A. Romero",
+    "kind": "pop",
+    "facts": [
+      "Night of the Living Dead (1968) is a George A. Romero horror film. The article says that because the film was released without a copyright notice, it entered the public domain on release, which led to many later adaptations and remakes. An official 1990 remake was written by Romero and directed by Tom Savini.",
+      "The plot summary describes pale ghouls who attack the living and gather around a farmhouse. The article treats the film as a founding work of the modern zombie film even while calling the creatures ghouls in the synopsis."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Night_of_the_Living_Dead",
+        "title": "Night of the Living Dead",
+        "accessed": "2026-11-20",
+        "supports": "The missing copyright notice, public-domain status of the 1968 film, and the ghoul siege of a house."
+      }
+    ],
+    "archetypeTags": [
+      "zombie",
+      "horde",
+      "public-domain-film",
+      "siege"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower crowd that is only dangerous in a group, and that politely queues at a door someone forgot to bar.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "public-domain-film",
+        "later-films-still-copyrighted",
+        "violence"
+      ],
+      "guidance": "The 1968 film is the work the article says is public domain. Romero's later Dead films, the 1990 remake, and other studios' zombies are not. Do not copy a later film's look and call it the 1968 film."
+    }
+  },
+  {
+    "inspirationId": "INS-05-050",
+    "name": "Frankenstein's creature",
+    "origin": "Mary Shelley, Frankenstein; or, The Modern Prometheus (1818); later stage and film versions",
+    "kind": "pop",
+    "facts": [
+      "Mary Shelley's novel does not give the creation a proper name. In the 1818 text Victor calls it creature, fiend, spectre, daemon, wretch, devil, thing, being, and ogre. The creature refers to himself as a monster at least once.",
+      "The article says the most recognized version is Boris Karloff's portrayal in Universal's Frankenstein (1931), Bride of Frankenstein (1935), and Son of Frankenstein (1939), and that this film incarnation bears little resemblance to the novel. The novel article's external links label LibriVox readings as public-domain audiobooks and point to the 1818 and 1831 texts on Project Gutenberg."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Frankenstein%27s_monster",
+        "title": "Frankenstein's monster",
+        "accessed": "2026-11-20",
+        "supports": "The unnamed creature, the words the novel uses, and the statement that Karloff's film look barely matches the book."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Frankenstein",
+        "title": "Frankenstein",
+        "accessed": "2026-11-20",
+        "supports": "External-link labels presenting LibriVox readings as public domain and linking Project Gutenberg's 1818 and 1831 editions."
+      }
+    ],
+    "archetypeTags": [
+      "made-person",
+      "creator-and-creature",
+      "public-domain-novel",
+      "film-likeness-differs"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower creature who is furious that everyone recognizes the film haircut and nobody has read the book it keeps quoting.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "public-domain-text",
+        "copyrighted-film-likeness"
+      ],
+      "guidance": "The novel's unnamed, articulate creature is the public-domain layer the citations support. Karloff's flat head, neck bolts, and the Universal laboratory look are film designs and are not cleared by the novel's age. Do not draw the 1931 monster."
+    }
+  },
+  {
+    "inspirationId": "INS-05-051",
+    "name": "Count Dracula (Bram Stoker's novel)",
+    "origin": "Dracula, 1897 novel by Bram Stoker",
+    "kind": "historical",
+    "facts": [
+      "Dracula is an 1897 Gothic novel by Bram Stoker, told through letters, diaries, and news articles. Solicitor Jonathan Harker visits Count Dracula, a Transylvanian nobleman who is a vampire. Dracula moves to England and preys on Whitby. Harker joins a group led by Abraham Van Helsing that hunts the Count.",
+      "The article says that in the mid-20th century publishers and filmmakers realized Stoker had incorrectly filed the United States copyright, so the story and characters are public domain there. It also says Count Dracula has deeply shaped the popular idea of the vampire, and that Guinness names him the most portrayed literary character."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dracula",
+        "title": "Dracula",
+        "accessed": "2026-11-20",
+        "supports": "The 1897 epistolary vampire count, the move from Transylvania to England, Van Helsing's hunt, and U.S. public-domain status from the faulty copyright filing."
+      }
+    ],
+    "archetypeTags": [
+      "vampire-count",
+      "public-domain-novel",
+      "hunter-and-prey",
+      "invasion"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower count who is legally in the public domain and is personally offended that every cape in the building is still someone else's costume.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "public-domain-text-us",
+        "copyrighted-film-likeness"
+      ],
+      "guidance": "The article limits the public-domain statement to the story and characters in the United States. Universal, Hammer, and later film looks, including the widow's peak, medallion, and specific capes, are separate copyrights. Vlad III is a different record and is a real person."
+    }
+  },
+  {
+    "inspirationId": "INS-05-052",
+    "name": "King Kong",
+    "origin": "King Kong, RKO film and novelization, 1933",
+    "kind": "pop",
+    "facts": [
+      "King Kong is a fictional giant gorilla who has appeared in media since 1933. The article says his first appearance was the novelization of the RKO film, with the film premiering a little over two months later. He is an international pop-culture icon.",
+      "In the 1933 story as summarized, Kong escapes in New York, climbs the Empire State Building, and falls after being attacked by armed biplanes. Carl Denham's line in the article is that it was not the airplanes, it was beauty that killed the beast."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/King_Kong",
+        "title": "King Kong",
+        "accessed": "2026-11-20",
+        "supports": "The 1933 giant ape, the Empire State climb, the biplanes, and the 'beauty killed the beast' line."
+      }
+    ],
+    "archetypeTags": [
+      "giant-ape",
+      "brought-to-the-city",
+      "tragic-monster",
+      "height-finale"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower ape that climbs the only tall thing on the floor, which is a ladder, and is defeated by admiration rather than by the ladder.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-character",
+        "trademark"
+      ],
+      "guidance": "Kong's name, the 1933 design, and later Monsterverse designs are commercially protected. This record does not claim the 1933 film is public domain. A giant ape brought into a city that cannot hold it is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-053",
+    "name": "Devil Fruit",
+    "origin": "One Piece, manga by Eiichiro Oda",
+    "kind": "anime",
+    "facts": [
+      "One Piece is a manga by Eiichiro Oda about Monkey D. Luffy and the Straw Hat pirates searching for the treasure called the One Piece so Luffy can become King of the Pirates.",
+      "The article says Devil Fruits are mysterious fruits that grant transformative powers, at the cost of the eater becoming weak in water and losing the ability to swim. It also describes Haki as a willpower ability and one of the few ways to hurt certain Devil Fruit users."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/One_Piece",
+        "title": "One Piece",
+        "accessed": "2026-11-20",
+        "supports": "Devil Fruits as a power with a seawater weakness, and Haki as a counter to some users."
+      }
+    ],
+    "archetypeTags": [
+      "cursed-food",
+      "power-with-a-cost",
+      "pirate-fantasy",
+      "seawater-weakness"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower snack that grants one ridiculous talent and a matching embarrassing allergy.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-mechanic"
+      ],
+      "guidance": "Devil Fruits, their names, Haki, and Luffy's powers are protected. A bite-sized blessing with a clear built-in weakness is the pattern. Invent the food and the weakness."
+    }
+  },
+  {
+    "inspirationId": "INS-05-054",
+    "name": "Predator",
+    "origin": "Predator franchise, conceived by Jim and John Thomas; first film 1987",
+    "kind": "pop",
+    "facts": [
+      "Predator is an American science-fiction action-horror franchise about encounters between humans and a fictional species of extraterrestrial trophy hunters. The article says the series was conceived by screenwriters Jim and John Thomas and began with John McTiernan's 1987 film, produced and distributed by 20th Century Studios.",
+      "It says the species is credited as Predators in the films, and is alternatively named Yautja, Hish-Qu-Ten, and Skin Thieves in expanded-universe media. Stories are largely self-contained and mix military science fiction with action horror."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Predator_(franchise)",
+        "title": "Predator (franchise)",
+        "accessed": "2026-11-20",
+        "supports": "Extraterrestrial trophy hunters, the 1987 origin, and the split between the film name and expanded-universe species names."
+      }
+    ],
+    "archetypeTags": [
+      "trophy-hunter",
+      "alien-duelist",
+      "stalker"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower hunter that only fights people who have already won something, and that keeps the trophy ribbons rather than the people.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-design",
+        "hunting-humans-theme"
+      ],
+      "guidance": "The Predator mask, dreadlocks, plasma caster, and cloaking look are protected. This record does not claim invisibility as a sourced trait because the fetched page did not state it as a species rule. A hunter who collects proof of worthy opponents is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-055",
+    "name": "Terminator (T-800)",
+    "origin": "The Terminator franchise; character portrayed by Arnold Schwarzenegger",
+    "kind": "pop",
+    "facts": [
+      "The Terminator, also called a Cyberdyne Systems Model 101 or the T-800, is a machine built by the artificial intelligence Skynet for infiltration, surveillance, and assassination. It is a cyborg: a computer-controlled metal endoskeleton covered in living tissue.",
+      "The article says the character first appeared as the antagonist of The Terminator (1984), directed and co-written by James Cameron, and that several film characters in the series are portrayed by Arnold Schwarzenegger."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Terminator_(character)",
+        "title": "Terminator (character)",
+        "accessed": "2026-11-20",
+        "supports": "The infiltration cyborg, living tissue over a metal endoskeleton, Skynet, and the 1984 film origin."
+      }
+    ],
+    "archetypeTags": [
+      "infiltrator",
+      "endoskeleton",
+      "machine-under-skin",
+      "relentless"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower inspector whose polite skin comes off to reveal a much ruder skeleton that still has to finish the audit.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "likeness",
+        "assassination-theme"
+      ],
+      "guidance": "The T-800, Skynet, the red-eyed skull, and Schwarzenegger's likeness are protected. A machine wearing a person, revealed when the disguise fails, is the pattern. Do not copy the face or the catchphrases."
+    }
+  },
+  {
+    "inspirationId": "INS-05-056",
+    "name": "Mae Nak Phra Khanong",
+    "origin": "Thai ghost legend, associated with Phra Khanong and the reign of Rama IV",
+    "kind": "folklore",
+    "facts": [
+      "Mae Nak Phra Khanong, also Mae Nak or Nang Nak, is a well-known Thai ghost. The article says local folklore places the events in the reign of King Rama IV, and that a shrine to Nak stands at Wat Mahabut, moved in 1997 to Bangkok's Suan Luang district.",
+      "In the common legend, Nak loves her husband Mak. While she is pregnant he is conscripted into the army. Nak and the child die in childbirth. When Mak comes home he finds his wife and child waiting, not knowing they have died."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mae_Nak_Phra_Khanong",
+        "title": "Mae Nak Phra Khanong",
+        "accessed": "2026-11-20",
+        "supports": "The Phra Khanong ghost, the Rama IV setting, the shrine, and the husband who returns to a wife who died in childbirth."
+      }
+    ],
+    "archetypeTags": [
+      "devoted-ghost",
+      "household-haunting",
+      "hidden-death",
+      "thai-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower household that is still being kept, perfectly, by someone the floor register insists moved out.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "living-folklore",
+        "childbirth-death",
+        "cultural-respect"
+      ],
+      "guidance": "The legend is traditional. Specific films about Nang Nak are copyrighted. Do not joke about the death in childbirth. The pattern is a loving presence that keeps a home going after the household thinks it is empty."
+    }
+  },
+  {
+    "inspirationId": "INS-05-057",
+    "name": "Krasue",
+    "origin": "Thai and wider Southeast Asian folklore",
+    "kind": "folklore",
+    "facts": [
+      "The Krasue (กระสือ) is a nocturnal female spirit of Southeast Asian folklore. It appears as the floating, disembodied head of a woman, usually young and beautiful, with internal organs still attached and trailing from the neck.",
+      "The article places it in a family of similar beings across the region, including the Khmer Ahp, all sharing a woman's head with hanging organs and entrails. It also notes village suspicion that a living woman becomes a Krasue at night."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Krasue",
+        "title": "Krasue",
+        "accessed": "2026-11-20",
+        "supports": "The floating head with attached organs, the regional cousins, and the night-transformation suspicion."
+      }
+    ],
+    "archetypeTags": [
+      "floating-head",
+      "night-spirit",
+      "southeast-asian",
+      "dual-life"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower head that leaves its body at the desk to attend a meeting, and that has to come back before the body clocks out.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "living-folklore",
+        "viscera-image",
+        "cultural-respect"
+      ],
+      "guidance": "Folklore, not a studio character. Do not sexualize the spirit or play the organs as gore comedy. A person who leaves the body behind at night is the pattern. Films that depict a specific Krasue are copyrighted."
+    }
+  },
+  {
+    "inspirationId": "INS-05-058",
+    "name": "Krahang",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Krahang (กระหัง) is a male spirit in Thai folklore. He appears as a shirtless man in a traditional loincloth who flies at night in rural Thailand.",
+      "The article says he flies using two large kradong, round rice-winnowing baskets, and often rides a sak tam khao, the long wooden pestle of a manual rice pounder. It calls him a nocturnal ghost said to haunt the countryside."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Krahang",
+        "title": "Krahang",
+        "accessed": "2026-11-20",
+        "supports": "The night-flying man, the rice-winnowing baskets as wings, and the rice-pestle mount."
+      }
+    ],
+    "archetypeTags": [
+      "night-flyer",
+      "household-tools",
+      "rural-ghost",
+      "thai-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower night watchman whose wings are kitchenware and whose mount is a piece of gym equipment.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "living-folklore"
+      ],
+      "guidance": "Traditional folklore. The basket-and-pestle flight is a distinctive silhouette; a parody should change the tools so it is not a straight copy of the Krahang costume, while the 'flies on ordinary objects' idea can stay."
+    }
+  },
+  {
+    "inspirationId": "INS-05-059",
+    "name": "Nang Tani",
+    "origin": "Thai folklore, with Cambodian and Lao parallels",
+    "kind": "folklore",
+    "facts": [
+      "Nang Tani (นางตานี, 'Lady of Tani') is a female spirit in Thai folklore. She appears as a young woman who haunts wild banana trees, Kluai Tani. She belongs to the broader Nang Mai, or 'Lady of the Wood', tree spirits, and the article notes similar spirits in Cambodia and Laos.",
+      "One description in the article is a beautiful young woman in a green traditional Thai costume. Most of the time she stays hidden and comes out on particular occasions."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nang_Tani",
+        "title": "Nang Tani",
+        "accessed": "2026-11-20",
+        "supports": "The banana-tree lady, the green costume, the Nang Mai class, and the regional parallels."
+      }
+    ],
+    "archetypeTags": [
+      "tree-spirit",
+      "green-lady",
+      "hidden-until-called",
+      "thai-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower gardener who only appears when a particular plant is disrespected, and who dresses for the plant.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "living-folklore",
+        "cultural-respect"
+      ],
+      "guidance": "Folklore. Keep her a tree spirit with her own reasons. Do not turn the legend into a generic sexy ghost."
+    }
+  },
+  {
+    "inspirationId": "INS-05-060",
+    "name": "Kuman thong",
+    "origin": "Thai folk religion",
+    "kind": "folklore",
+    "facts": [
+      "A kuman thong (กุมารทอง) is a household deity in Thai folk religion, believed to bring luck, fortune, and wealth if properly revered. The article glosses kuman as 'young boy' and thong as 'golden', and says these beings are worshipped for personal gain, protection, wealth, and sometimes harm, with consequences for each request.",
+      "It says this veneration is not mainstream Buddhist practice. The description section links the belief to stillborn children invoked and adopted by specialists."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kuman_thong",
+        "title": "Kuman thong",
+        "accessed": "2026-11-20",
+        "supports": "The golden-boy household spirit, the luck bargain, the non-mainstream status, and the article's link to stillborn children."
+      }
+    ],
+    "archetypeTags": [
+      "household-spirit",
+      "luck-bargain",
+      "thai-folk-religion",
+      "do-not-depict-remains"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Not recommended. A small household helper can exist in the game without this name and without any child-remains lore.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "child-remains",
+        "living-religion",
+        "do-not-depict",
+        "cultural-respect"
+      ],
+      "guidance": "Do not depict, explain, or joke about stillborn remains or any ritual for making a kuman thong. Do not use the name on a comedy monster. The only safe borrow is a generic household spirit that trades small favors, with no child and no corpse."
+    }
+  },
+  {
+    "inspirationId": "INS-05-061",
+    "name": "Teke Teke",
+    "origin": "Japanese urban legend",
+    "kind": "urban_legend",
+    "facts": [
+      "Teke Teke is a Japanese urban legend about the ghost of a schoolgirl whose body was split in half by a train after she became stuck. She is an onryō who lurks in urban areas and train stations at night.",
+      "The article says that without a lower body she travels on her hands, dragging her upper torso, and the scraping makes a 'teke teke' sound from her elbows or from the cut end."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Teke_Teke",
+        "title": "Teke Teke",
+        "accessed": "2026-11-20",
+        "supports": "The train-accident ghost, the onryō, and the scraping sound that gives her the name."
+      }
+    ],
+    "archetypeTags": [
+      "sound-cue",
+      "station-ghost",
+      "onryo",
+      "urban-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower ghost you hear before you see, whose sound is a squeaky wheel rather than an injury.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "graphic-injury",
+        "child-or-student-victim",
+        "train-death"
+      ],
+      "guidance": "Do not depict the bisection or a train death. The usable pattern is a pursuer identified by a repeated sound. Specific manga and films about Teke Teke are copyrighted."
+    }
+  },
+  {
+    "inspirationId": "INS-05-062",
+    "name": "Hanako-san of the toilet",
+    "origin": "Japanese school urban legend",
+    "kind": "urban_legend",
+    "facts": [
+      "Hanako-san, or Toire no Hanako-san, is a Japanese urban legend about the ghost of a young girl who haunts school toilets. The article says origin stories vary: a World War II girl killed during an air-raid game of hide-and-seek, a girl murdered by a parent or stranger, or a suicide in a school toilet.",
+      "One version in the article sends the summoner to the girls' toilet, usually on the third floor, to knock three times on the third stall and ask if Hanako-san is present."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hanako-san",
+        "title": "Hanako-san",
+        "accessed": "2026-11-20",
+        "supports": "The toilet ghost, the varying tragic origins, and the third-floor, third-stall, three-knock ritual."
+      }
+    ],
+    "archetypeTags": [
+      "school-ghost",
+      "knock-ritual",
+      "toilet-spirit",
+      "summon-by-question"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower restroom attendant who only answers if you knock the right number of times and ask politely.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "child-death-variants",
+        "suicide-in-source",
+        "school-setting"
+      ],
+      "guidance": "Do not use the murder, air-raid, or suicide versions. Do not sexualize a child ghost. A spirit who answers a specific knock is the pattern. Anime versions of Hanako are copyrighted."
+    }
+  },
+  {
+    "inspirationId": "INS-05-063",
+    "name": "Aka Manto",
+    "origin": "Japanese school urban legend, recorded as a rumor by the 1930s",
+    "kind": "urban_legend",
+    "facts": [
+      "Aka Manto ('Red Cloak'), also called Red Paper Blue Paper, is a masked spirit in a red cloak who appears to people in public or school toilets. Accounts vary, but he asks a question. Versions include a choice of red or blue paper, or a red or blue cloak.",
+      "The article says choosing either option gets the person killed, so survival means ignoring him or rejecting both choices and fleeing. Folklorist Matthew Meyer is cited for the legend as a schoolyard rumor as early as the 1930s, when manto meant a sleeveless jacket rather than a cape."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Aka_Manto",
+        "title": "Aka Manto",
+        "accessed": "2026-11-20",
+        "supports": "The masked red-cloaked questioner, the deadly color choice, the reject-both escape, and the 1930s schoolyard dating."
+      }
+    ],
+    "archetypeTags": [
+      "false-choice",
+      "masked-spirit",
+      "school-legend",
+      "reject-both"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower bureaucrat who offers two stamped options, both fatal to your afternoon, unless you refuse the form entirely.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "violence",
+        "school-setting"
+      ],
+      "guidance": "Folklore. Do not specify a gory kill for the colors. The pattern is a forced choice where the winning move is to refuse both."
+    }
+  },
+  {
+    "inspirationId": "INS-05-064",
+    "name": "Hasshaku-sama",
+    "origin": "Japanese internet ghost story, earliest known post 26 August 2008",
+    "kind": "urban_legend",
+    "facts": [
+      "Hasshaku-sama ('Ms. Eight Foot Tall') is a tall ghostly woman in a Japanese urban legend who curses people with death in isolated countryside places. The article says the legend arose recently online, possibly around 2008, and compares her to the mountain yōkai Yama-onna.",
+      "It says her origins are unknown, and that the earliest known appearance is an anonymous ghost story posted on 26 August 2008."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hasshaku-sama",
+        "title": "Hasshaku-sama",
+        "accessed": "2026-11-20",
+        "supports": "The eight-foot woman, the death curse in the countryside, and the 26 August 2008 anonymous post as the earliest known text."
+      }
+    ],
+    "archetypeTags": [
+      "tall-woman",
+      "internet-legend",
+      "countryside",
+      "modern-yokai"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A tower woman who is exactly too tall for the doorway and who considers that a personal curse on the architecture.",
+    "confidence": "medium",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "recent-authored-story",
+        "death-curse",
+        "unclear-copyright"
+      ],
+      "guidance": "This is a recent anonymous story, not old folklore and not shown to be public domain. Do not copy the 2008 text or later illustrations. A very tall rural stranger is a pattern already covered with more caution under Slender Man; prefer a clearly comic height gag if used at all."
+    }
+  },
+  {
+    "inspirationId": "INS-05-065",
+    "name": "La Llorona",
+    "origin": "Hispanic American folklore, especially Mexico and the southwestern United States",
+    "kind": "folklore",
+    "facts": [
+      "La Llorona ('the Weeping Woman') is a vengeful ghost in Hispanic American folklore. She is said to roam near water mourning children she drowned in a river. Hearing her cry is said to bring misfortune, death, or a ruined life.",
+      "The article says the lore is well known in Mexico and the southwestern United States and is told through Mexico, Central America, and northern South America."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/La_Llorona",
+        "title": "La Llorona",
+        "accessed": "2026-11-20",
+        "supports": "The weeping ghost by water, the drowned children, and the misfortune that follows her cry."
+      }
+    ],
+    "archetypeTags": [
+      "weeping-ghost",
+      "water-omen",
+      "hispanic-folklore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Not as a child-death joke. A tower ghost who weeps because a fountain was installed wrong is the furthest safe bend.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "child-death",
+        "living-folklore",
+        "cultural-respect"
+      ],
+      "guidance": "Do not comedy the drowning of children. The legend is living folklore across many countries. A weeping omen near water can be used only if the children are not the joke and not depicted. Specific films are copyrighted."
+    }
+  },
+  {
+    "inspirationId": "INS-05-066",
+    "name": "Spring-heeled Jack",
+    "origin": "Victorian English urban legend, first claimed sightings 1837",
+    "kind": "urban_legend",
+    "facts": [
+      "Spring-heeled Jack is a figure in Victorian English folklore. The article dates the first claimed sighting to 1837, with later reports across the United Kingdom, especially suburban London, the Midlands, and Scotland.",
+      "He was famous for a bizarre appearance and extraordinary leaps, and became the subject of fiction. The article says some accounts gave him sharp metallic claws, and at least two people claimed he could speak in a comprehensible way."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Spring-heeled_Jack",
+        "title": "Spring-heeled Jack",
+        "accessed": "2026-11-20",
+        "supports": "The 1837 start, the leaping stranger, the metallic claws in some accounts, and the leap into period fiction."
+      }
+    ],
+    "archetypeTags": [
+      "leaping-phantom",
+      "victorian-urban-legend",
+      "clawed-stranger",
+      "entrance-by-jump"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower phantom whose entire combat plan is arriving from a floor he should not be able to reach.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "historical-scare",
+        "period-assault-accounts"
+      ],
+      "guidance": "The Victorian legend is old enough to treat as folklore. Some original reports describe attacks on women; do not replay those attacks. The leap and the impossible entrance are the pattern. Later comics that use the name may have their own copyrights."
+    }
+  },
+  {
+    "inspirationId": "INS-05-067",
+    "name": "Jersey Devil",
+    "origin": "South Jersey and Philadelphia folklore",
+    "kind": "folklore",
+    "facts": [
+      "The Jersey Devil, also called the Leeds Devil, is a legendary creature said to live in the forests of the New Jersey Pine Barrens. It is often described as a flying biped with hooves, with many variations.",
+      "A common description in the article is a kangaroo-like or wyvern-like biped with a horse- or goat-like head, leathery bat-like wings, horns, small clawed arms, cloven hooves, and a forked tail."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jersey_Devil",
+        "title": "Jersey Devil",
+        "accessed": "2026-11-20",
+        "supports": "The Pine Barrens cryptid, the Leeds Devil alias, and the winged hoofed biped description."
+      }
+    ],
+    "archetypeTags": [
+      "cryptid",
+      "composite-beast",
+      "local-devil",
+      "winged-biped"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower mascot assembled from spare animal parts that cannot agree which end is the front.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "regional-folklore"
+      ],
+      "guidance": "Folklore. The Leeds family birth-curse versions can be ugly about a real surname; prefer the composite creature over a joke about a named family. Sports-team logos are trademarks."
+    }
+  },
+  {
+    "inspirationId": "INS-05-068",
+    "name": "The Backrooms",
+    "origin": "Anonymous 4chan post, 2019, using a 2002 photograph",
+    "kind": "urban_legend",
+    "facts": [
+      "The Backrooms are a fictional location from a 2019 4chan thread. They are usually shown as an impossibly large extradimensional complex of empty rooms, entered by leaving reality. The article calls them a well-known liminal-space and creepypasta example.",
+      "The concept began as an anonymous caption of a photo of a large empty room with a yellow cast. The photo was taken in 2002 in Oshkosh, Wisconsin, in a former furniture store. The caption warns that if you noclip out of reality in the wrong areas you end up in the Backrooms. Later works include a found-footage series by Kane Pixels."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Backrooms",
+        "title": "The Backrooms",
+        "accessed": "2026-11-20",
+        "supports": "The 2019 4chan origin, the yellow empty rooms, the 2002 photo, the noclip caption, and the later Kane Pixels series."
+      }
+    ],
+    "archetypeTags": [
+      "liminal-space",
+      "endless-rooms",
+      "creepypasta",
+      "wrong-exit"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "A tower floor that is only carpet, humming lights, and a map that apologizes for not existing.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "recent-internet-fiction",
+        "later-works-copyrighted"
+      ],
+      "guidance": "The anonymous 2019 caption is not a license to copy later Backrooms monsters, levels, or Kane Pixels' footage. Those are copyrighted. An endless bland interior you enter by a wrong exit is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-069",
+    "name": "Candle Cove",
+    "origin": "Creepypasta by Kris Straub, published 2009 on Ichor Falls",
+    "kind": "urban_legend",
+    "facts": [
+      "Candle Cove is an online horror story by cartoonist Kris Straub. It is a forum discussion about a fictional children's television show. Straub has said he was inspired by an Onion article about an adult still having nightmares about the 1970s show Lidsville.",
+      "The article says Straub published the story in 2009 on ichorfalls.com under a Creative Commons license, as part of his horror stories about the fictional town of Ichor Falls."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Candle_Cove",
+        "title": "Candle Cove",
+        "accessed": "2026-11-20",
+        "supports": "Straub's authorship, the fake-children's-show frame, the 2009 publication, and the Creative Commons release."
+      }
+    ],
+    "archetypeTags": [
+      "creepypasta",
+      "cursed-broadcast",
+      "false-memory",
+      "clear-provenance"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower channel that only some of the party remember, and that insists it was always on the schedule.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "creative-commons-not-public-domain",
+        "children-horror",
+        "copyrighted-text"
+      ],
+      "guidance": "Creative Commons is not public domain and is not permission to paste the story into a commercial game. Do not copy Straub's text, the puppet, or the show's name. A half-remembered cursed broadcast is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-070",
+    "name": "Siren Head",
+    "origin": "Creature by Trevor Henderson, 2018",
+    "kind": "urban_legend",
+    "facts": [
+      "The creepypasta list says Siren Head was created in 2018 by Canadian horror illustrator Trevor Henderson. It is a 40-foot-tall, thin, skeletal figure with rotting emaciated skin and two rusted siren-like megaphones for a head.",
+      "The sirens sometimes blare random words in a staticky voice. In other stories they scream garbled music, radio reports, people calling for help, or Emergency Alert System broadcasts, mimicking sounds to lure people into the forest. The article says it became widely popular online in 2020."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_creepypastas",
+        "title": "List of creepypastas",
+        "accessed": "2026-11-20",
+        "supports": "The Siren Head section: Henderson, 2018, the megaphone head, the lure-by-mimicry, and the 2020 popularity."
+      }
+    ],
+    "archetypeTags": [
+      "modern-cryptid",
+      "sound-lure",
+      "tall-thin",
+      "creator-known"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower pole that is mostly loudspeaker, and that lures people by playing the wrong floor's battle music.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "copyrighted-character",
+        "distress-call-lure"
+      ],
+      "guidance": "Siren Head's name and the siren-megaphone design belong to Trevor Henderson. Do not copy them. A tall thing that mimics a helpful sound is a much older pattern and must look like something else."
+    }
+  },
+  {
+    "inspirationId": "INS-05-071",
+    "name": "SCP Foundation",
+    "origin": "Collaborative fiction wiki, moved to Wikidot in July 2008",
+    "kind": "urban_legend",
+    "facts": [
+      "The SCP Foundation is a fictional secret organization and the premise of a collaborative wiki. It captures, contains, and studies paranormal anomalies called SCPs, while hiding them from the public. The article describes the project as horror, science fiction, and urban fantasy, mostly written as case files.",
+      "It says that when the wiki moved to Wikidot in July 2008, new Wikidot wikis defaulted to CC BY-SA 3.0, and the staff therefore accidentally adopted that license. It also says the original SCP-173 text was placed in Creative Commons by its author in 2013 because earlier license status was uncertain."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/SCP_Foundation",
+        "title": "SCP Foundation",
+        "accessed": "2026-11-20",
+        "supports": "The containment organization, the case-file format, and the accidental CC BY-SA 3.0 adoption plus the later SCP-173 release."
+      }
+    ],
+    "archetypeTags": [
+      "containment-agency",
+      "catalogued-anomaly",
+      "case-file",
+      "collaborative-fiction"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower archive that files monsters by how inconvenient they are, and that is more afraid of a missing label than of the monster.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "cc-by-sa",
+        "do-not-copy-text",
+        "collaborative-copyright"
+      ],
+      "guidance": "CC BY-SA is not public domain. Share-alike text cannot be pasted into a closed game. Do not copy SCP numbers, procedures, or creature designs. A bureau that contains oddities in files is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-072",
+    "name": "Elizabeth Báthory",
+    "origin": "Hungarian history, 1560–1614, and later folklore",
+    "kind": "historical",
+    "facts": [
+      "Elizabeth Báthory (7 August 1560 – 21 August 1614) was a Hungarian noblewoman and alleged serial killer. The article says she was imprisoned in Csejte Castle (now Čachtice, Slovakia) until she died in her sleep in 1614.",
+      "Legends of vampiric habits, including the tale that she bathed in the blood of virgins to stay young, are described as rumours written down as if factual more than a century after her death. The article says at least three later historians repeated them, and that modern historians consider those stories unreliable."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Elizabeth_B%C3%A1thory",
+        "title": "Elizabeth Báthory",
+        "accessed": "2026-11-20",
+        "supports": "The historical imprisonment and death, and the article's statement that the blood-bath legend is a late, unreliable rumour."
+      }
+    ],
+    "archetypeTags": [
+      "blood-countess-legend",
+      "real-person",
+      "legend-versus-record",
+      "unreliable-rumour"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Not recommended. A vain immortal who moisturizes with something harmless is a different joke and should not use her name.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "real-person",
+        "alleged-serial-murder",
+        "sexual-violence-adjacent",
+        "do-not-joke-about-victims"
+      ],
+      "guidance": "She was a real person accused of killing real people. Do not comedy the accusations, the victims, or the blood-bath rumour. The research point is that the vampire story was written long after her death and is considered unreliable. Do not use her as a boss."
+    }
+  },
+  {
+    "inspirationId": "INS-05-073",
+    "name": "Mary I of England",
+    "origin": "Tudor history; the nickname Bloody Mary",
+    "kind": "historical",
+    "facts": [
+      "Mary I was the only surviving child of Henry VIII and his first wife, Catherine of Aragon. The article says she was expected to reverse the Protestant reforms of the previous reign.",
+      "During her five-year reign, more than 280 religious dissenters were burned at the stake in the Marian persecutions. The article says later commentators labeled her Bloody Mary because of those executions."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mary_I",
+        "title": "Mary I",
+        "accessed": "2026-11-20",
+        "supports": "The Tudor queen, the Marian burnings of more than 280 dissenters, and the later nickname Bloody Mary."
+      }
+    ],
+    "archetypeTags": [
+      "historical-nickname",
+      "tudor",
+      "bloody-mary-name",
+      "not-the-mirror-ghost"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody the executions. The nickname is only here so it is not confused with the mirror folklore in INS-05-027.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "real-person",
+        "religious-persecution",
+        "executions",
+        "do-not-joke"
+      ],
+      "guidance": "The burnings were real. Do not make a boss out of them or out of Mary I. The mirror Bloody Mary is a separate, unsettled folklore record and is not proven to be this queen."
+    }
+  },
+  {
+    "inspirationId": "INS-05-074",
+    "name": "Zheng Yi Sao",
+    "origin": "South China Sea piracy, 1801–1810",
+    "kind": "historical",
+    "facts": [
+      "Zheng Yi Sao, also known in the West as Ching Shih, was a Chinese pirate leader in the South China Sea from 1801 to 1810. The article says she was born Shi Yang in 1775 and married the pirate Zheng Yi.",
+      "Under the fleet she came to command, by 1805 there were about 400 junks and between 40,000 and 70,000 pirates. The article presents her as the leader of that confederation."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zheng_Yi_Sao",
+        "title": "Zheng Yi Sao",
+        "accessed": "2026-11-20",
+        "supports": "The historical pirate leader, the 1801–1810 dates, and the scale of about 400 junks and tens of thousands of pirates."
+      }
+    ],
+    "archetypeTags": [
+      "pirate-confederation",
+      "fleet-boss",
+      "historical-captain",
+      "scale"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower admiral whose fleet is so large the battle is mostly roll call.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "real-person",
+        "piracy",
+        "violence"
+      ],
+      "guidance": "Historical commander, not a copyrighted character. Do not invent a sexualized origin. The usable pattern is a pirate boss whose power is the size of the fleet and the code that holds it, not a costume from a film."
+    }
+  },
+  {
+    "inspirationId": "INS-05-075",
+    "name": "Anne Bonny",
+    "origin": "Golden Age of Piracy; early biography in Captain Charles Johnson, 1724",
+    "kind": "historical",
+    "facts": [
+      "Anne Bonny (likely died December 1733) was a pirate who served under John Rackham. The article calls her one of the few recorded women pirates of the Golden Age and one of the best known.",
+      "It says much of her background is unknown, and that the first biography is Captain Charles Johnson's 1724 A General History of the Pyrates. Johnson says she was born in Ireland, the illegitimate daughter of an attorney and his servant."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anne_Bonny",
+        "title": "Anne Bonny",
+        "accessed": "2026-11-20",
+        "supports": "Service under Rackham, the scarcity of records, and Johnson's 1724 book as the first biography."
+      }
+    ],
+    "archetypeTags": [
+      "woman-pirate",
+      "golden-age",
+      "biography-versus-legend",
+      "crew-captain"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower corsair whose legend is mostly one book, and who keeps correcting the footnotes mid-fight.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "real-person",
+        "source-is-partly-literary"
+      ],
+      "guidance": "Johnson's 1724 book mixes report and storytelling. Do not treat every colorful detail as settled fact. She is not a fantasy character to costume from a recent TV series; those costumes are copyrighted."
+    }
+  },
+  {
+    "inspirationId": "INS-05-076",
+    "name": "Davy Jones's locker",
+    "origin": "Sailors' euphemism, in print by 1726",
+    "kind": "folklore",
+    "facts": [
+      "Davy Jones's locker is the traditional resting place of drowned sailors and travellers. The article calls it a euphemism for drowning or shipwreck, the remains consigned to the bottom of the sea, and says the phrase is first used in print in 1726.",
+      "The article quotes a definition of David Jones as the devil, the spirit of the sea, compared with northern spirits such as the Necken or Draugr."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Davy_Jones%27s_locker",
+        "title": "Davy Jones's locker",
+        "accessed": "2026-11-20",
+        "supports": "The drowned-sailors' resting place, the 1726 print date, and the devil-of-the-sea definition."
+      }
+    ],
+    "archetypeTags": [
+      "sea-devil",
+      "drowned-dead",
+      "sailors-euphemism",
+      "locker"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower purser who keeps a locker for anything that fell overboard, including arguments.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "folklore",
+        "copyrighted-film-character"
+      ],
+      "guidance": "The locker and the old sea-devil name are sailors' lore. The tentacled captain from Pirates of the Caribbean is a separate copyrighted design. Do not draw that character."
+    }
+  },
+  {
+    "inspirationId": "INS-05-077",
+    "name": "Faust and Mephistopheles",
+    "origin": "German legend of a scholar's pact, later Goethe and many retellings",
+    "kind": "historical",
+    "facts": [
+      "Faust is the legend of a scholar who makes a pact at a crossroads, trading his soul for unlimited knowledge and worldly pleasure. The article says related devil-pact tales include the early Dutch play Mariken van Nieumeghen.",
+      "Mephistopheles is the devil's representative in the legend. Faust knowingly trades his soul, condemning himself to Hell, for what Mephistopheles offers. The article calls Mephistopheles a stock character who began as the chief devil of this legend and spread into later art."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Faust",
+        "title": "Faust",
+        "accessed": "2026-11-20",
+        "supports": "The crossroads pact of soul for knowledge and pleasure."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mephistopheles",
+        "title": "Mephistopheles",
+        "accessed": "2026-11-20",
+        "supports": "Mephistopheles as the devil's agent in the Faust legend and as a later stock character."
+      }
+    ],
+    "archetypeTags": [
+      "deal-with-the-devil",
+      "contract-boss",
+      "scholar",
+      "stock-demon"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower clerk who will sign anything if the other party initials the price, and who is very clear about the price.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "religious-devil-figure",
+        "literary-legend"
+      ],
+      "guidance": "The legend is old. Goethe's specific lines, if quoted at length, and modern film devils are not free to paste. A signed bargain with a visible price is the pattern. Do not copy a studio's demon design."
+    }
+  },
+  {
+    "inspirationId": "INS-05-078",
+    "name": "Headless Horseman",
+    "origin": "European headless-rider folklore and Washington Irving, The Legend of Sleepy Hollow (1820)",
+    "kind": "folklore",
+    "facts": [
+      "The Legend of Sleepy Hollow is an 1820 short story by Washington Irving, written while he was living abroad and printed in The Sketch Book of Geoffrey Crayon, Gent. It is the famous American telling of a headless horseman.",
+      "The Headless Horseman article says that, depending on the legend, the rider is carrying his head or searching for it. It notes a local story of a Hessian soldier decapitated by a cannonball, and also says there is no documented record of that body being found and buried. It adds that Irving likely knew older European folklore of a headless rider, attested since the Middle Ages."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Legend_of_Sleepy_Hollow",
+        "title": "The Legend of Sleepy Hollow",
+        "accessed": "2026-11-20",
+        "supports": "Irving's 1820 story as the famous American version."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Headless_Horseman",
+        "title": "Headless Horseman",
+        "accessed": "2026-11-20",
+        "supports": "The carrying-or-seeking head, the undocumented Hessian burial claim, and older European headless riders."
+      }
+    ],
+    "archetypeTags": [
+      "headless-rider",
+      "chase",
+      "literary-legend",
+      "older-folklore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower courier who cannot file a report because he has misplaced the head that holds the face everyone recognizes.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "literary-legend",
+        "copyrighted-film-versions"
+      ],
+      "guidance": "Irving's 1820 story and the older rider folklore are the public layer. This record does not certify a legal public-domain opinion beyond the 1820 date and the folklore. Disney and later film horsemen are protected designs. Do not copy them."
+    }
+  },
+  {
+    "inspirationId": "INS-05-079",
+    "name": "Pied Piper of Hamelin",
+    "origin": "German legend of Hamelin, medieval, with a 1284 town memory",
+    "kind": "historical",
+    "facts": [
+      "In the familiar legend, the town hires a piper to lure rats away with his music. When the citizens refuse to pay, he uses the same power on their children and leads them away. The article says this version spread as folklore and appears in Goethe and the Brothers Grimm.",
+      "It also quotes a Hamelin record dated 1284, on the feast of Saints John and Paul, about a well-dressed young man of about thirty who entered by the West Gate and then began to play. The article presents that inscription as part of the town's memory of children being lost."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pied_Piper_of_Hamelin",
+        "title": "Pied Piper of Hamelin",
+        "accessed": "2026-11-20",
+        "supports": "The unpaid rat-catcher who leads the children away, and the 1284 Hamelin record of a strikingly dressed young man."
+      }
+    ],
+    "archetypeTags": [
+      "music-control",
+      "unpaid-bargain",
+      "crowd-leader",
+      "medieval-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower exterminator who clears the rats, is not paid, and then leads the paperwork out of the building.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "children-led-away",
+        "possible-historical-tragedy",
+        "do-not-joke-about-children"
+      ],
+      "guidance": "Do not comedy the children being taken. The safe door is the unpaid contractor and the rats. The music that moves a crowd is the pattern. Do not depict harm to children."
+    }
+  },
+  {
+    "inspirationId": "INS-05-080",
+    "name": "Vanishing hitchhiker",
+    "origin": "International urban legend, classified by folklorists",
+    "kind": "urban_legend",
+    "facts": [
+      "The vanishing hitchhiker, also called the ghostly or phantom hitchhiker, is an urban legend in which a ghost asks for a ride. A common form summarized in the article: a young woman's ghost asks for a ride, then disappears from the closed car without the driver noticing, after giving an address.",
+      "In many tellings she leaves a token, often the overcoat she borrowed, on her grave, which corroborates the ride."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Vanishing_hitchhiker",
+        "title": "Vanishing hitchhiker",
+        "accessed": "2026-11-20",
+        "supports": "The ghost passenger who vanishes from a closed car, and the borrowed coat left on a grave."
+      }
+    ],
+    "archetypeTags": [
+      "phantom-passenger",
+      "proof-left-behind",
+      "road-legend",
+      "disappearance"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower passenger who vanishes between floors and leaves a borrowed scarf on a memorial plaque.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "ghost-story",
+        "road-death-implied"
+      ],
+      "guidance": "A widespread folklore type, not one studio's character. Do not pin the joke on a real traffic death. The vanish-and-leave-proof structure is the pattern."
+    }
+  },
+  {
+    "inspirationId": "INS-05-081",
+    "name": "The Hook",
+    "origin": "American urban legend, in circulation by the mid-1950s, printed by Dear Abby in 1960",
+    "kind": "urban_legend",
+    "facts": [
+      "The Hook, or the Hookman, is an American urban legend about a killer with a hook for a hand attacking a couple in a parked car. Many versions describe a faceless old man in a raincoat and rain hat.",
+      "The article says the story is thought to date from at least the mid-1950s and gained attention when Dear Abby reprinted it in 1960. It calls the tale a morality archetype in later popular culture."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Hook",
+        "title": "The Hook",
+        "accessed": "2026-11-20",
+        "supports": "The hook-handed attacker, the parked-car setting, the raincoat silhouette, and the 1960 Dear Abby printing."
+      }
+    ],
+    "archetypeTags": [
+      "hook-hand",
+      "parked-car",
+      "moral-legend",
+      "silhouette"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower usher with a coat hook for a hand who is mostly a problem for unattended coats.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "medium",
+      "flags": [
+        "violent-legend",
+        "lover's-lane"
+      ],
+      "guidance": "Folklore, not a film slasher. Do not stage an attack on a couple as the joke. A hook silhouette and a scare that turns out to be a hanging coat are enough."
+    }
+  },
+  {
+    "inspirationId": "INS-05-082",
+    "name": "Pope Lick Monster",
+    "origin": "Louisville, Kentucky urban legend, tied to a real railroad trestle",
+    "kind": "urban_legend",
+    "facts": [
+      "The Pope Lick Monster, often called the Goat Man, is a part-man, part-goat, part-sheep creature said to live beneath a railroad trestle over Pope Lick Creek in the Fisherville area of Louisville, Kentucky. Stories disagree about its origin and how it takes victims. Some say it uses hypnosis or voice mimicry to lure people onto the trestle, where a train kills them.",
+      "The article has a deaths section: several people have died on or near the trestle while pursuing the legend, including a 17-year-old struck and killed by a train in 1988."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pope_Lick_Monster",
+        "title": "Pope Lick Monster",
+        "accessed": "2026-11-20",
+        "supports": "The goat-like creature under the trestle, the lure stories, and the documented real deaths of people seeking the legend."
+      }
+    ],
+    "archetypeTags": [
+      "goat-man",
+      "lure",
+      "local-legend",
+      "real-hazard"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Not on a real bridge and not as a dare. A tower goat that lives under a staircase is a different creature.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "high",
+      "flags": [
+        "living-memory-deaths",
+        "do-not-encourage-trespass",
+        "real-victims"
+      ],
+      "guidance": "People have died on this real trestle, including a teenager in 1988. Do not name the victims in game text, do not describe how to reach the bridge, and do not make a challenge out of visiting it. Do not use this legend as a boss."
+    }
+  },
+  {
+    "inspirationId": "INS-05-083",
+    "name": "Captain William Kidd",
+    "origin": "Scottish privateer, hanged 1701; later treasure legend",
+    "kind": "historical",
+    "facts": [
+      "William Kidd (about 1645 – 23 May 1701), also Captain Kidd, was a Scottish privateer. The article says he was likely born in Dundee and later lived in New York, and that by 1695 he held a royal commission connected to the Earl of Bellomont.",
+      "He was found guilty and hanged in 1701. After his death he was romanticized in fiction. The article says the belief that he had left buried treasure did a great deal to build the legend and inspired treasure hunts for centuries."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/William_Kidd",
+        "title": "William Kidd",
+        "accessed": "2026-11-20",
+        "supports": "The privateer's career, the 1701 hanging, and the buried-treasure belief as the engine of the later legend."
+      }
+    ],
+    "archetypeTags": [
+      "buried-treasure",
+      "privateer",
+      "legend-after-death",
+      "map-boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower privateer whose map leads only to another map, and who is more famous for the hole than for the gold.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "real-person",
+        "execution",
+        "piracy"
+      ],
+      "guidance": "Historical figure. The hanging is not a joke. The usable pattern is a treasure legend that outgrew the person, and a map that may be the whole monster."
+    }
+  },
+  {
+    "inspirationId": "INS-05-084",
+    "name": "Jaeger and Kaiju (Pacific Rim)",
+    "origin": "Pacific Rim (2013 film), directed by Guillermo del Toro",
+    "kind": "pop",
+    "facts": [
+      "Pacific Rim is a 2013 film set in a future war against the Kaiju, colossal sea monsters that come through an interdimensional portal on the Pacific Ocean floor.",
+      "Humanity answers with Jaegers, gigantic humanoid machines. Each is controlled by two co-pilots whose minds are joined by a mental link the film calls the Drift."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pacific_Rim_(film)",
+        "title": "Pacific Rim (film)",
+        "accessed": "2026-11-20",
+        "supports": "Ocean kaiju from a portal, and two-pilot Jaegers linked by the Drift."
+      }
+    ],
+    "archetypeTags": [
+      "dual-pilot",
+      "giant-mecha",
+      "sea-kaiju",
+      "mental-link"
+    ],
+    "protectedName": true,
+    "publicDomain": false,
+    "parodyPotential": "A tower machine that needs two pilots who agree, and that spends the first phase on the argument.",
+    "confidence": "high",
+    "sensitivity": {
+      "rating": "low",
+      "flags": [
+        "copyrighted-design",
+        "copyrighted-mechanic"
+      ],
+      "guidance": "Jaeger, Kaiju as used in this film, the Drift, and the category system (not described in the fetched lead, so not recorded) are protected. Two people sharing one giant machine is the pattern."
+    }
+  }
+]
