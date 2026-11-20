@@ -6,10 +6,24 @@ Owner brief: `docs/research/monsters/BRIEF.md` (t273u). World rules this guide i
 
 - Comedy fantasy throughout the game (`MAP-08`, `CORE-001`). No compulsory main story.
 - Factions stay `Aegis Dominion` (Tank), `Phantom Blades` (DPS), `Celestial Nexus` (Magic), `Sanctuary Order` (Support). Ids in `src/schema/constants.js`. Do not rename them.
-- The Mysterious Tower is the PvE place. World lore seed is "Real People + Echo hybrid Avatar" (`MAP-09`). Depth is optional.
-- Avatar rarity words are `N` / `R` / `Epic` / `EX`. `FAC` is an action-card rarity, not a monster rank.
-- The Void is a card pile (`CORE-018`). Do not use "Void" as an element name.
-- Do not print HP, ATK, DEF, SPD, AP, or damage numbers on monster abilities.
+- The Mysterious Tower is the PvE place. World lore seed is "Real People + Echo hybrid Avatar" (`MAP-09`). Depth is optional. That sentence does not define what an Echo is.
+- Avatar rarity words are `N` / `R` / `Epic` / `EX`. `FAC` is an action-card rarity, not a monster rank. Do not use the superseded words Common, Rare, Legendary, or Mythic.
+- The Void is a card pile (`CORE-018`). Do not use "Void" as an element name, a plane, or a creature type.
+- HP is not a catalog stat. Do not print HP, ATK, DEF, SPD, AP, or damage numbers on monster abilities.
+- SYNC is rejected. Valhalla is a superseded rules word. Justin Spirit and Barry Blitz are discarded names. Do not bring any of them back.
+
+## Alignment with Agent 08
+
+Read at `research/m08-lore` commit `4d1f584`, file `docs/research/monsters/lore/LORE_AUDIT.md` (status RESEARCH; it quotes the repo and does not add canon). Parody copy follows it:
+
+- Do not write a main story, a quest chain, or a tower campaign into a lore summary. `MAP-08` and `CORE-001` keep story optional.
+- The locked place name is Mysterious Tower. The locked specification also says "Mystery Tower lore". Do not pick a new name. Floor counts, builders, biomes, and a top are UNKNOWN, and tower floors stay PENDING (`OPEN-07`). A `towerEnvironment` string is a provisional postcard mood for the art prompt. It is not a floor that now exists.
+- Do not define Echo, hybrid, or summoning. The brief's heading "Echo Summoning" is a research label, not a v0.5 rule. No rite, no cost, no recipe.
+- `Wild Creature`, `Corrupted Echo`, `Tower Guardian`, and `Tower Anomaly` are buckets the brief allows. They are not canon factions. The demo enemies "Placeholder Echo Tank / Blade / Spark / Hymn" are load stand-ins, not creatures to parody. A match fixture named `echo:` plus an avatar id is code, not lore.
+- The eight named people are eight people (Owner t253u). Do not merge Sir Potlid with Justin Case, Nox Squeak with Justin Time, Madame Meteor with Justin Theory, or Sister Plaster with Justina Moment, and do not turn any of them into a monster.
+- "Sister" is part of Sister Plaster's name. It does not found a church. Sanctuary Order has no theology in canon. Celestial Nexus has no star doctrine. Aegis Dominion and Phantom Blades have a name and a role and nothing else. A monster may be an embarrassment near a faction. It may not give that faction a god, a homeland, a mascot, or a creed.
+- The game schema has no element enum and no weakness chart. Element and weakness in this folder are creative labels for art and for a later designer. They are not a damage wheel.
+- If Agent 08 later proposes lore, prefer that wording over this guide's postcard moods, and keep the result PROPOSED.
 
 House voice already on the cards (do not reuse these names, Thai forms, or their exact jokes):
 
@@ -127,7 +141,7 @@ Reject the entry. Do not "fix" it by adding an adjective.
 - **Copied character bibles.** No source catchphrase, attack name, tragic backstory, or costume description pasted into lore.
 - **Gore and cruelty** as comedy.
 - **Empty dark prefixes** (Dark, Shadow, Blood, Death) used to make a normal monster sound elite.
-- **Reuse of locked cast jokes**, including pot lids, squeaky shoes, meteors, plaster, and any new Justin.
+- **Reuse of locked cast jokes**, including pot lids, squeaky shoes, meteors, plaster, and any new Justin. The eight named people are not monster material.
 
 ## Thai-name guidelines
 
@@ -178,7 +192,7 @@ Elites use the same six. They do not get a seventh word that means "stronger".
 
 **Suggested rarity:** Normal monsters are `N`, or `R` when the gag and the silhouette are doing extra work. Elites are `R` or `Epic`. Do not spend `EX` on this normal/elite sample. Do not use `FAC`.
 
-**Faction affiliation** (optional). Legal values:
+**Faction affiliation** (optional). Legal values, all of them research buckets from the brief, none of them canon:
 
 - `Wild Creature`
 - `Corrupted Echo`
@@ -186,9 +200,9 @@ Elites use the same six. They do not get a seventh word that means "stronger".
 - `Tower Anomaly`
 - one of the four faction ids, only when the joke is that the faction is stuck with the creature
 
-Most sample creatures should be wild, an echo, a guardian, or an anomaly. Echo here means the tower misremembered a story and the misfile grew legs. That is a flavor reading of `MAP-09`, marked PROPOSED, and it yields to Agent 08's lore file the moment that file exists. Do not write faction doctrine.
+Most sample creatures should sit in one of the four buckets. Choosing `Corrupted Echo` does not explain what an Echo is. The lore summary may say the tower's records misfiled a story. It must not describe a summoning. Do not write faction doctrine. If a later Agent 08 proposal names these buckets differently, follow that proposal.
 
-**Tower environment** is a suggested floor mood, not a new named region of the canon. Use a short invented floor label and keep it obviously provisional, for example "Gate Market", "Echo Archives", "Service Tunnels", "Flooded Reliquary", "Unlicensed Observatory", "Night Kitchen", "Roof Laundry". Repeat a floor only when two creatures would actually share a postcard. Do not declare a floor canon.
+**Tower environment** is a suggested postcard mood, not a floor. Tower floors are PENDING. Use a short provisional label, for example "Gate Market", "Service Tunnels", "Flooded Reliquary", "Unlicensed Observatory", "Night Kitchen", "Roof Laundry". Repeat a label only when two creatures would actually share a postcard. Do not declare it canon. Say "Mysterious Tower" when you need the real place name.
 
 ## Research block versus creative block
 
