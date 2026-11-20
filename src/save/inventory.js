@@ -1,5 +1,7 @@
 import { SAVE_VERSION } from '../schema/constants.js';
 import { validateDeck } from '../schema/deck.js';
+// Sport v3 hook: new profiles carry an empty sport payload so save/load round-trips.
+import { emptySportState, migrateSportV3 } from '../sport/save/migrate-v3.js';
 
 const LIST = {
   avatar: 'avatars',
@@ -44,6 +46,7 @@ export function createProfile(overrides = {}) {
       installedFurniture: [],
     },
     rewardLedger: {},
+    sport: overrides.sport ? structuredClone(overrides.sport) : emptySportState(),
   };
   if (overrides.currency) profile.currency = { ...profile.currency, ...overrides.currency };
   if (overrides.inventory) profile.inventory = structuredClone(overrides.inventory);
@@ -61,7 +64,7 @@ export function createProfile(overrides = {}) {
       ...structuredClone(incoming),
     };
   }
-  return profile;
+  return migrateSportV3(profile);
 }
 
 /**
