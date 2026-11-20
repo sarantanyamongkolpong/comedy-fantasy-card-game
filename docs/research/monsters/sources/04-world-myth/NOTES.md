@@ -12,9 +12,13 @@ A comedy-fantasy card game set in the Mysterious Tower. Avatars are real people 
 
 The parody target is the creature's recognizable behavior (regenerating heads, a bitten pledge, a hut that spins). It is not a religion, a people, or a living sacred being.
 
-## Batch 1 (this commit)
+## Counts
 
-32 distinct inspirations, 12 pitches.
+53 inspirations so far (`INS-04-001`–`INS-04-053`). 12 pitches, unchanged. High-sensitivity records, none of them pitched: Hel, Ravana, naga, ifrit, jinn, Garuda, Kali, the bunyip label, Quetzalcoatl, the Tuatha Dé Danann.
+
+## Batch 1
+
+32 records on the first push.
 
 | Culture | Ids | Notes |
 |---|---|---|
@@ -25,7 +29,19 @@ The parody target is the creature's recognizable behavior (regenerating heads, a
 | Indian epic | INS-04-028–030 | Britannica. Rakshasa is medium. Ravana and naga are **high** |
 | Slavic folklore | INS-04-031–032 | Baba Yaga and the leshy |
 
-Not in this batch yet, and required before the pass is finished: Celtic, African traditions (named by people, not as one "African myth"), Mesoamerican and Native American beings with the sacred ones flagged and not pitched, Oceanic beings, and further Persian, Arabian, and other traditions. Egyptian and Mesopotamian coverage is still thin on purpose. Padding with half-remembered names was rejected.
+## Batch 2
+
+Added INS-04-033–053 after fetching each page.
+
+New low-sensitivity Greek and classical shapes: Egyptian sphinx kept separate from the Theban one, griffin, Echidna, Talos, Stymphalian birds, Orthrus, centaurs, Colchian dragon, and the Ctesias martichora (medium confidence, Wikipedia). The Greek sphinx record now includes Britannica's wording of the riddle.
+
+New medium records: ghoul, domovoy, rusalka, lamassu, kelpie. Rusalka is not a pitch. The rusalka origin is dead children and drowned women.
+
+New high records, research flags only: ifrit and jinn (Qur'an), Garuda, Kali, Quetzalcoatl (British Museum), the Tuatha Dé Danann, and the bunyip. The bunyip record is medium confidence on purpose. The only page fetched was a Britannica students article that merges Aboriginal traditions into one monster and guesses at seals and bitterns. That is a colonial composite. It is not a design source.
+
+Kelpie and manticore cite Wikipedia because a Britannica article was not found. Both are marked medium confidence. The kelpie article itself says specialists disagree on whether the each-uisge is the same being. Andy Scott's Falkirk sculptures are a modern artwork and are not the folklore creature.
+
+Still required: African traditions named by people, further Celtic monsters with a real page (Balor was not on the Tuatha Dé Danann article and was not invented), Mesoamerican creatures that are not gods, a careful wendigo / thunderbird flag from a source that states the sensitivity, Oceanic beings from a Māori or museum page (Te Ara returned 403), and a better-than-Wikipedia source for the simurgh. Anansi's Britannica Scholars URL returned HTTP 500 twice and is not cited.
 
 ## Sensitivity
 
