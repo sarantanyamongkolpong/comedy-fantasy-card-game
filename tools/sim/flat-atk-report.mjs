@@ -96,8 +96,9 @@ const ABLATIONS = {
   no_passives: (avatars) => { for (const a of avatars) a.passive = null; },
 };
 
-function withConfig(input, preset) {
-  return { ...input, config: engine.resolveRuleConfig(preset === undefined ? {} : { damage: { preset } }) };
+function withConfig(input, preset, extra = {}) {
+  const damage = preset === undefined ? { ...extra } : { preset, ...extra };
+  return { ...input, config: engine.resolveRuleConfig(Object.keys(damage).length ? { damage } : {}) };
 }
 
 /** Mirror of web/js/app.js startAutoLoop: counts animateLog waits. */
@@ -201,8 +202,9 @@ function castRegenIfHurt(state, sideId) {
   }
 }
 
-function runOne(matchup, seed, { preset, ablation = 'none', loop = 'web', scriptedRegen = false } = {}) {
-  const input = withConfig(MATCHUPS[matchup].build(seed), preset);
+function runOne(matchup, seed, { preset, ablation = 'none', loop = 'web', scriptedRegen = false, bulwarkEnabled } = {}) {
+  const extra = bulwarkEnabled === undefined ? {} : { bulwark: { enabled: bulwarkEnabled } };
+  const input = withConfig(MATCHUPS[matchup].build(seed), preset, extra);
   ABLATIONS[ablation](input.teams[1].avatars);
   const state = engine.createMatch(input);
   const web = loop === 'web' ? playWebAuto(state) : (playFast(state, { scriptedRegen }), { waits: 0, playerTurnWaits: [], enemyTurnWaits: [] });
@@ -283,6 +285,20 @@ for (const matchup of ['mirror_justins_starter', 'mirror_justins_engine_sample_d
     const rows = []; for (let s = 1; s <= SEEDS; s += 1) rows.push(runOne(matchup, s, { ...v.opts, loop: 'fast' }));
     const s = summarise(rows);
     out.ablations[`${matchup}:${v.name}`] = { playerWinPct: s.playerWinPct, turns: s.turns, tauntRedirectPct: s.tauntRedirectPct, mechanics: s.mechanics };
+  }
+}
+if (part === 'all' || part === 'bulwark') {
+  out.bulwark = {};
+  for (const enabled of [true, false]) {
+    const rows = [];
+    for (let s = 1; s <= SEEDS; s += 1) rows.push(runOne('mirror_justins_starter', s, { preset: 'flat_atk', bulwarkEnabled: enabled, loop: 'fast' }));
+    const s = summarise(rows);
+    out.bulwark[enabled ? 'flat_atk_shield2' : 'flat_atk_legacy_def1'] = {
+      playerWinPct: s.playerWinPct,
+      turns: s.turns,
+      mechanics: { absorbed: s.mechanics.absorbed, shieldGranted: s.mechanics.shieldGranted, regenApplied: s.mechanics.regenApplied, regenHealed: s.mechanics.regenHealed, passiveProcs: s.mechanics.passiveProcs },
+      roles: { tank: s.roles['player:Tank'], dps: s.roles['player:DPS'], support: s.roles['player:Support'], magic: s.roles['player:Magic'] },
+    };
   }
 }
 const text = JSON.stringify(out, null, 2);

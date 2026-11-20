@@ -81,11 +81,12 @@ test('auto policy stays proposed and SYNC is not a config', () => {
   assert.equal(config.damage.status, 'MVP_PROVISIONAL');
   assert.equal(config.damage.formula, 'placeholder_atk_minus_def');
   assert.equal(config.damage.minDamage, 1);
+  assert.equal(config.autoPolicy.policies.balanced.allyLowHpRatio, 0.5);
   assert.deepEqual(config.autoPolicy.policies.balanced.priorities, [
-    'setup_next_attack',
-    'highest_damage_lowest_hp',
     'shield_taunt_if_lethal',
     'heal_regen',
+    'setup_next_attack',
+    'highest_damage_lowest_hp',
     'any_legal_expected_value',
   ]);
   assert.equal(config.autoPolicy.policies.balanced.voluntaryDiscard, 'hand_locked_or_no_progress');
@@ -108,14 +109,17 @@ test('chooseAutoActions does not change the match', () => {
   assert.deepEqual(getState(state), before);
 });
 
-test('a regen skill does not replace a damaging play, even when an ally is low', () => {
+test('t282u AUTO uses a worthwhile Regen at 50% HP even when a damaging play is legal', () => {
   const state = createMatch(matchInput({
     playerDeck: padDeck([skill({ cardId: 'GRACE' })], strike({ costAp: 0 })),
-    player: roster((avatar, index) => { if (index === 3) avatar.hp = 10; }),
+    player: roster((avatar, index) => { if (index === 3) avatar.hp = 20; }),
   }));
+  const justina = state.sides.player.avatars.find((row) => row.avatarId === 'AVT_SAN_002');
+  assert.equal(justina.hp / justina.maxHp, 0.5);
   const plan = chooseAutoActions(state, 'player');
-  assert.ok(plan[0].priority === 'setup_next_attack' || plan[0].priority === 'highest_damage_lowest_hp');
-  assert.equal(plan.some((action) => action.cardId === 'GRACE' && action.actorAvatarId === 'AVT_SAN_002'), false);
+  const grace = plan.find((action) => action.cardId === 'GRACE' && action.actorAvatarId === 'AVT_SAN_002');
+  assert.ok(grace, JSON.stringify(plan));
+  assert.equal(grace.priority, 'heal_regen');
 });
 
 test('the priority table is data, so damage can be ordered ahead of healing', () => {
@@ -144,12 +148,12 @@ test('balanced shields the tank when an enemy strike can KO', () => {
     player: roster((avatar) => { avatar.hp = 1; }),
   }));
   const plan = chooseAutoActions(state, 'player');
-  assert.equal(plan[0].priority, 'highest_damage_lowest_hp');
   const shield = plan.find((action) => action.cardId === 'GUARD');
-  assert.ok(shield);
+  assert.ok(shield, JSON.stringify(plan));
+  assert.equal(plan[0].cardId, 'GUARD');
   assert.equal(shield.priority, 'shield_taunt_if_lethal');
   assert.equal(shield.actorAvatarId, 'AVT_AEG_002');
-  assert.ok(plan.findIndex((action) => action.cardId === 'HIT' || action.priority === 'highest_damage_lowest_hp') < plan.indexOf(shield));
+  assert.ok(plan.some((action) => action.cardId === 'HIT' || action.priority === 'highest_damage_lowest_hp'));
 });
 
 test('auto attacks respect Taunt even when another enemy has less HP', () => {

@@ -62,7 +62,18 @@ const TEMPLATE = {
       status: 'MVP_PROVISIONAL',
       switchable: true,
       defHp: 'DEF still adds HP through the unchanged hp formula',
-      followUp: 'Balance pass after real play. No card or skill values changed.',
+      followUp: 'Owner t282u: AUTO uses Regen at HP <= 50% when affordable and worthwhile. Under flat_atk, Bulwark grants Shield +2 instead of DEF +1 (MVP_PROVISIONAL, not LOCKED). No authored card or skill values were edited.',
+    },
+    // Owner t282u: remap only at resolve time when preset is flat_atk. Authored Bulwark data stays DEF +1.
+    bulwark: {
+      status: 'MVP_PROVISIONAL',
+      evidence: 't282u',
+      date: '2026-11-20',
+      enabled: true,
+      matchAvatarIds: ['AVT_AEG_002'],
+      matchNames: ['Bulwark'],
+      shieldAmount: 2,
+      note: 'Temporary MVP_PROVISIONAL. When damage.preset is flat_atk and enabled is true, Justin Case / Bulwark turn-start DEF +1 becomes Shield +2 on all allies. Legacy presets and enabled: false keep the authored DEF +1. Not LOCKED.',
     },
     // Legacy formula used only when preset is null: max(minDamage, ATK - DEF). Kept selectable.
     formula: 'placeholder_atk_minus_def',
@@ -168,13 +179,14 @@ const TEMPLATE = {
     name: 'balanced',
     policies: {
       balanced: {
-        allyLowHpRatio: 0.4,
-        priorities: ['setup_next_attack', 'highest_damage_lowest_hp', 'shield_taunt_if_lethal', 'heal_regen', 'any_legal_expected_value'],
+        // Owner t282u: AUTO uses Regen when a target ally is at or below this ratio (inclusive).
+        allyLowHpRatio: 0.5,
+        priorities: ['shield_taunt_if_lethal', 'heal_regen', 'setup_next_attack', 'highest_damage_lowest_hp', 'any_legal_expected_value'],
         spend: 'greedy',
         voluntaryDiscard: 'hand_locked_or_no_progress',
       },
     },
-    note: 'AUTO is locked. This preference table is proposed and editable. balanced plays a next-attack Skill before damage when that buff raises the hit, then the highest estimated damage on the lowest-HP legal target, then a real shield or taunt when an enemy strike can KO, then a non-regen heal when an ally is under allyLowHpRatio and no damaging card is legal. The last tier plays any other legal card whose expected value is above 0. Team regen and a shield of 0 score 0, so they do not replace a damaging play. hand_locked_or_no_progress spends 1 AP to discard one zero-value or unplayable card so the hand can draw. AP is spent greedily.',
+    note: 'AUTO is locked. This preference table is PROPOSED and editable, never silently LOCKED. Owner t282u (MVP_PROVISIONAL): balanced first plays a real shield or taunt when an enemy strike can KO, then a worthwhile affordable Regen or heal when an ally is at or below allyLowHpRatio 0.5 (skip if that unit already has regen, is at max HP, or the skill would not heal). A Skill is given to Justina in that case so it is not spent on a next-attack setup. Then a next-attack Skill if it raises a still-payable hit, then the highest estimated damage on the lowest-HP legal target. any_legal_expected_value plays any other card whose expected value is above 0. A shield of 0 does not outrank a damaging play. Affordability is the engine play check (AP / cost; this ruleset has no MP). hand_locked_or_no_progress spends 1 AP to discard one zero-value or unplayable card so the hand can draw. AP is spent greedily.',
   },
 };
 

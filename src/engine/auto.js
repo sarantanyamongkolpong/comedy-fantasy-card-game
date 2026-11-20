@@ -69,7 +69,58 @@ function legalPlays(state, side) {
 }
 
 function allyIsLow(side, ratio) {
-  return living(side.avatars).some((unit) => unit.maxHp > 0 && unit.hp / unit.maxHp < ratio);
+  return living(side.avatars).some((unit) => unit.maxHp > 0 && unit.hp / unit.maxHp <= ratio);
+}
+
+function missingHp(unit) {
+  return Math.max(0, (unit.maxHp ?? 0) - (unit.hp ?? 0));
+}
+
+function hasRegenStatus(unit) {
+  return (unit.statuses ?? []).some((status) => status.kind === 'regen');
+}
+
+function isAtOrBelowRatio(unit, ratio) {
+  return isLiving(unit) && unit.maxHp > 0 && unit.hp / unit.maxHp <= ratio;
+}
+
+function healRecipients(side, play, effect) {
+  const target = effect.target ?? 'all_allies';
+  if (target === 'all_allies') return living(side.avatars);
+  if (target === 'self' || target === 'actor') return isLiving(play.actor) ? [play.actor] : [];
+  if (target === 'chosen' || target === 'ally') {
+    const ids = new Set(play.targets ?? []);
+    return living(side.avatars).filter((unit) => ids.has(unit.avatarId));
+  }
+  return [];
+}
+
+function healVolume(effect) {
+  if (effect.op === 'regen') return (effect.amount ?? 0) * (effect.ticks ?? 1);
+  if (effect.op === 'heal') return effect.amount ?? 0;
+  return 0;
+}
+
+/** Owner t282u: skip if unaffordable, already at max, already has regen, or the heal would not land. */
+function worthwhileHeal(state, side, play, policy) {
+  if ((side.ap ?? 0) < (play.card.costAp ?? 0)) return false;
+  const effects = play.tags.effects.filter((effect) => effect.op === 'regen' || effect.op === 'heal');
+  if (effects.length === 0) return false;
+  for (const effect of effects) {
+    if (healVolume(effect) <= 0) continue;
+    const needy = healRecipients(side, play, effect).filter((unit) => (
+      isAtOrBelowRatio(unit, policy.allyLowHpRatio)
+      && !hasRegenStatus(unit)
+      && missingHp(unit) > 0
+    ));
+    if (needy.length === 0) continue;
+    return true;
+  }
+  return false;
+}
+
+function allyNeedsHeal(side, ratio) {
+  return living(side.avatars).some((unit) => isAtOrBelowRatio(unit, ratio) && !hasRegenStatus(unit) && missingHp(unit) > 0);
 }
 
 function enemyCanKill(state, side) {
@@ -198,12 +249,11 @@ function improvesTheHit(state, side, play, plays) {
 function pickPlay(state, side, policy) {
   const plays = legalPlays(state, side);
   for (const step of policy.priorities) {
-    if (step === 'heal_regen' && !allyIsLow(side, policy.allyLowHpRatio)) continue;
+    if (step === 'heal_regen' && !allyNeedsHeal(side, policy.allyLowHpRatio)) continue;
     if (step === 'shield_taunt_if_lethal' && !enemyCanKill(state, side)) continue;
     let matching = [];
     if (step === 'heal_regen') {
-      matching = plays.filter((play) => play.tags.heal && !plays.some((other) => other.tags.damage)
-        && !play.tags.effects.some((effect) => effect.op === 'regen'));
+      matching = plays.filter((play) => worthwhileHeal(state, side, play, policy));
     }
     else if (step === 'shield_taunt_if_lethal') matching = plays.filter((play) => usefulProtect(play));
     else if (step === 'setup_next_attack') matching = plays.filter((play) => improvesTheHit(state, side, play, plays));
