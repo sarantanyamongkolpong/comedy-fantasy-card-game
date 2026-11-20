@@ -1,0 +1,118 @@
+{
+  "agent": "guide",
+  "role": "sources",
+  "records": [
+    {
+      "id": "GUIDE-COPYRIGHT-PROTECT",
+      "kind": "citation",
+      "name": "U.S. Copyright Office",
+      "facts": ["Copyright protects original expression and does not protect names, titles, or short phrases."],
+      "sources": [
+        {
+          "url": "https://www.copyright.gov/help/faq/faq-protect.html",
+          "title": "What Does Copyright Protect? (FAQ) | U.S. Copyright Office",
+          "accessed": "2026-11-20",
+          "supports": "Copyright protects original works of authorship including literary, dramatic, musical, and artistic works. Copyright does not protect facts, ideas, systems, or methods of operation. Names are not protected by copyright law. Copyright does not protect names, titles, slogans, or short phrases."
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-FAIR-USE",
+      "kind": "citation",
+      "name": "U.S. Copyright Office Fair Use Index",
+      "facts": ["Fair use includes criticism and comment. Transformative use adds something new."],
+      "sources": [
+        {
+          "url": "https://www.copyright.gov/fair-use/",
+          "title": "U.S. Copyright Office Fair Use Index",
+          "accessed": "2026-11-20",
+          "supports": "Fair use is a legal doctrine that promotes freedom of expression by permitting the unlicensed use of copyright-protected works in certain circumstances. Transformative uses are those that add something new, with a further purpose or different character, and do not substitute for the original use of the work. The Index is not a substitute for legal advice."
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-USPTO-TRADEMARK",
+      "kind": "citation",
+      "name": "USPTO",
+      "facts": ["A trademark identifies the source of goods. It is not ownership of a word in general."],
+      "sources": [
+        {
+          "url": "https://www.uspto.gov/trademarks/basics/what-trademark",
+          "title": "What is a trademark? | USPTO",
+          "accessed": "2026-11-20",
+          "supports": "A trademark can be any word, phrase, symbol, design, or a combination of these things that identifies your goods or services. You do not have rights to the word or phrase in general, only to how that word or phrase is used with your specific goods or services."
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-USPTO-CONFUSION",
+      "kind": "citation",
+      "name": "USPTO",
+      "facts": ["Marks can be confusingly similar by sound, appearance, meaning, or commercial impression when the goods are related."],
+      "sources": [
+        {
+          "url": "https://www.uspto.gov/trademarks/search/likelihood-confusion",
+          "title": "Likelihood of confusion | USPTO",
+          "accessed": "2026-11-20",
+          "supports": "Trademarks do not have to be identical to be confusingly similar. They could be similar in sound, appearance, or meaning, or could create a similar commercial impression. Identical trademarks can coexist when the goods or services are not related, as with Dove soap and Dove ice cream."
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-CAMPBELL",
+      "kind": "citation",
+      "name": "Campbell v. Acuff-Rose",
+      "facts": ["A commercial parody can be fair use. The question is whether the new work is transformative."],
+      "sources": [
+        {
+          "url": "https://www.law.cornell.edu/supct/html/92-1292.ZS.html",
+          "title": "Campbell v. Acuff-Rose Music, 510 U.S. 569 (1994)",
+          "accessed": "2026-11-20",
+          "supports": "2 Live Crew's commercial parody may be a fair use. The enquiry focuses on whether the new work is transformative, altering the original with new expression, meaning, or message. The heart of any parodist's claim to quote from existing material is the use of some elements of a prior author's composition to create a new one."
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-JACK-DANIELS",
+      "kind": "citation",
+      "name": "Jack Daniel's v. VIP Products",
+      "facts": ["Using a trademark as the source name of your own goods is still judged for likelihood of confusion. A humorous message does not skip that test."],
+      "sources": [
+        {
+          "url": "https://www.law.cornell.edu/supremecourt/text/22-148",
+          "title": "Jack Daniel's Properties, Inc. v. VIP Products LLC, syllabus via Cornell LII",
+          "accessed": "2026-11-20",
+          "supports": "When an alleged infringer uses a trademark as a designation of source for the infringer's own goods, the Rogers test does not apply. Bad Spaniels. humorous message. likelihood of confusion. source identifier."
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-WIPO-COPYRIGHT",
+      "kind": "citation",
+      "name": "WIPO",
+      "facts": ["Copyright protects expression. Titles and slogans depend on whether they contain enough authorship."],
+      "sources": [
+        {
+          "url": "https://www.wipo.int/en/web/copyright/faq-copyright",
+          "title": "WIPO Frequently Asked Questions: Copyright",
+          "accessed": "2026-11-20",
+          "supports": "Copyright protection extends only to expressions, and not to ideas, procedures, methods of operation or mathematical concepts as such. Titles, slogans, or logos depend on whether they contain sufficient authorship."
+        }
+      ]
+    },
+    {
+      "id": "GUIDE-WIPO-TK",
+      "kind": "citation",
+      "name": "WIPO",
+      "facts": ["Indigenous peoples seek protection for traditional knowledge and cultural expressions, including art and symbols."],
+      "sources": [
+        {
+          "url": "https://www.wipo.int/en/web/traditional-knowledge",
+          "title": "WIPO Genetic Resources, Traditional Knowledge and Traditional Cultural Expressions",
+          "accessed": "2026-11-20",
+          "supports": "Many Indigenous Peoples, local communities and governments seek intellectual property protection for traditional knowledge and traditional cultural expressions. Such assets can range from traditional medicine and environmental knowledge to art, symbols and music."
+        }
+      ]
+    }
+  ]
+}

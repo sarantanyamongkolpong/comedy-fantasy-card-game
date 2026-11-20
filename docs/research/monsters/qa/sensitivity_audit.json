@@ -1,0 +1,289 @@
+{
+  "generatedAt": "2026-11-20T13:41:52.763Z",
+  "disclaimer": "Editorial flags for worship, real tragedies, and ethnic caricature. A note on a research record means the source mentioned the subject. It is not by itself a failed source.",
+  "summary": {
+    "rows": 11,
+    "high": 0,
+    "review": 0,
+    "note": 11
+  },
+  "entries": [
+    {
+      "agent": "01",
+      "id": "INS-01-036",
+      "path": "docs/research/monsters/sources/01-classic-rpg/inspirations.json",
+      "ref": "origin/research/m01-classic-rpg",
+      "sha": "0cbdc10201a699535399e489f2d9fb90105ac62c",
+      "role": "research",
+      "name": "Final Fantasy summon (Esper / Aeon pattern)",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-shiva",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-shiva (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "03",
+      "id": "INS-03-075",
+      "path": "docs/research/monsters/sources/03-eastern/inspirations.json",
+      "ref": "origin/research/m03-eastern",
+      "sha": "af596cbd2776a142d46188cde35142053f7c1337",
+      "role": "research",
+      "name": "Nang Kwak (นางกวัก)",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-lakshmi",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-lakshmi (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "03",
+      "id": "INS-03-078",
+      "path": "docs/research/monsters/sources/03-eastern/inspirations.json",
+      "ref": "origin/research/m03-eastern",
+      "sha": "af596cbd2776a142d46188cde35142053f7c1337",
+      "role": "research",
+      "name": "Garuda / Phaya Krut (ครุฑ)",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-vishnu",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-vishnu (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "04",
+      "id": "INS-04-029",
+      "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+      "ref": "origin/research/m04-world-myth",
+      "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "role": "research",
+      "name": "Ravana",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-shiva",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        },
+        {
+          "id": "sacred-vishnu",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-shiva (note, body); sacred/sacred-vishnu (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "04",
+      "id": "INS-04-030",
+      "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+      "ref": "origin/research/m04-world-myth",
+      "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "role": "research",
+      "name": "Naga",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-buddha",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        },
+        {
+          "id": "sacred-vishnu",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-buddha (note, body); sacred/sacred-vishnu (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "04",
+      "id": "INS-04-046",
+      "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+      "ref": "origin/research/m04-world-myth",
+      "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "role": "research",
+      "name": "Garuda",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-vishnu",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-vishnu (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "04",
+      "id": "INS-04-047",
+      "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+      "ref": "origin/research/m04-world-myth",
+      "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "role": "research",
+      "name": "Kali",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-shiva",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        },
+        {
+          "id": "sacred-durga",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        },
+        {
+          "id": "sacred-kali",
+          "category": "sacred",
+          "level": "note",
+          "where": "name",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-shiva (note, body); sacred/sacred-durga (note, body); sacred/sacred-kali (note, name)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "04",
+      "id": "INS-04-062",
+      "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+      "ref": "origin/research/m04-world-myth",
+      "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "role": "research",
+      "name": "Windigo (wendigo)",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-wendigo",
+          "category": "sacred",
+          "level": "note",
+          "where": "name",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-wendigo (note, name)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "04",
+      "id": "INS-04-070",
+      "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+      "ref": "origin/research/m04-world-myth",
+      "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "role": "research",
+      "name": "Asuras",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-shiva",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        },
+        {
+          "id": "sacred-vishnu",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-shiva (note, body); sacred/sacred-vishnu (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "04",
+      "id": "INS-04-071",
+      "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+      "ref": "origin/research/m04-world-myth",
+      "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "role": "research",
+      "name": "Rahu and Ketu",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "sacred-vishnu",
+          "category": "sacred",
+          "level": "note",
+          "where": "body",
+          "note": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+        }
+      ],
+      "reason": "sacred/sacred-vishnu (note, body)",
+      "suggestedFix": "Living objects of worship are a poor comedy target. Keep the culture's folklore creature, and leave the deity's name in the research block."
+    },
+    {
+      "agent": "05",
+      "id": "INS-05-009",
+      "path": "docs/research/monsters/sources/05-anime-pop/inspirations.json",
+      "ref": "origin/research/m05-anime-pop",
+      "sha": "2877fcbb27de4c922a52500f0a2b4804c7b84987",
+      "role": "research",
+      "name": "Godzilla",
+      "level": "note",
+      "priority": null,
+      "hits": [
+        {
+          "id": "tragedy-atomic",
+          "category": "tragedy",
+          "level": "note",
+          "where": "body",
+          "note": "A real mass death is not a boss joke. Use a fictional tower accident."
+        }
+      ],
+      "reason": "tragedy/tragedy-atomic (note, body)",
+      "suggestedFix": "A real mass death is not a boss joke. Use a fictional tower accident."
+    }
+  ]
+}

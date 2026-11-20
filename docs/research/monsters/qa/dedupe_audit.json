@@ -1,0 +1,207 @@
+{
+  "generatedAt": "2026-11-20T13:41:52.763Z",
+  "summary": {
+    "pairs": 9,
+    "p0": 1
+  },
+  "pairs": [
+    {
+      "priority": "P0",
+      "kind": "exact-parody-name",
+      "score": 1,
+      "reason": "These entries use the same parody name. Every sample entry has to be distinct.",
+      "left": {
+        "agent": "03",
+        "id": "PITCH-03-02",
+        "name": "Tub Critic",
+        "path": "docs/research/monsters/sources/03-eastern/pitches.json",
+        "ref": "origin/research/m03-eastern",
+        "sha": "af596cbd2776a142d46188cde35142053f7c1337"
+      },
+      "right": {
+        "agent": "06",
+        "id": "M06-NB-054",
+        "name": "Tubcritic",
+        "path": "docs/research/monsters/creative/parody/name_bank.json",
+        "ref": "origin/research/m06-parody",
+        "sha": "77c558bba78d93586a1d0b2926231e5008a44cbf"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "01",
+        "id": "INS-01-068",
+        "name": "Doppelganger",
+        "path": "docs/research/monsters/sources/01-classic-rpg/inspirations.json",
+        "ref": "origin/research/m01-classic-rpg",
+        "sha": "0cbdc10201a699535399e489f2d9fb90105ac62c"
+      },
+      "right": {
+        "agent": "02",
+        "id": "INS-02-059",
+        "name": "Doppelgänger",
+        "path": "docs/research/monsters/sources/02-western/inspirations.json",
+        "ref": "origin/research/m02-western",
+        "sha": "b561082958587599b754ad03be8065e469a024b4"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "02",
+        "id": "INS-02-009",
+        "name": "Kelpie",
+        "path": "docs/research/monsters/sources/02-western/inspirations.json",
+        "ref": "origin/research/m02-western",
+        "sha": "b561082958587599b754ad03be8065e469a024b4"
+      },
+      "right": {
+        "agent": "04",
+        "id": "INS-04-052",
+        "name": "Kelpie",
+        "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+        "ref": "origin/research/m04-world-myth",
+        "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "02",
+        "id": "INS-02-034",
+        "name": "Lernaean Hydra",
+        "path": "docs/research/monsters/sources/02-western/inspirations.json",
+        "ref": "origin/research/m02-western",
+        "sha": "b561082958587599b754ad03be8065e469a024b4"
+      },
+      "right": {
+        "agent": "04",
+        "id": "INS-04-002",
+        "name": "Lernaean Hydra",
+        "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+        "ref": "origin/research/m04-world-myth",
+        "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "02",
+        "id": "INS-02-041",
+        "name": "Goblin",
+        "path": "docs/research/monsters/sources/02-western/inspirations.json",
+        "ref": "origin/research/m02-western",
+        "sha": "b561082958587599b754ad03be8065e469a024b4"
+      },
+      "right": {
+        "agent": "06",
+        "id": "SELF-06-004",
+        "name": "Goblin",
+        "path": "docs/research/monsters/creative/parody/self_inspirations.json",
+        "ref": "origin/research/m06-parody",
+        "sha": "77c558bba78d93586a1d0b2926231e5008a44cbf"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "02",
+        "id": "INS-02-042",
+        "name": "Troll",
+        "path": "docs/research/monsters/sources/02-western/inspirations.json",
+        "ref": "origin/research/m02-western",
+        "sha": "b561082958587599b754ad03be8065e469a024b4"
+      },
+      "right": {
+        "agent": "06",
+        "id": "SELF-06-007",
+        "name": "Troll",
+        "path": "docs/research/monsters/creative/parody/self_inspirations.json",
+        "ref": "origin/research/m06-parody",
+        "sha": "77c558bba78d93586a1d0b2926231e5008a44cbf"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "02",
+        "id": "INS-02-098",
+        "name": "Leshy",
+        "path": "docs/research/monsters/sources/02-western/inspirations.json",
+        "ref": "origin/research/m02-western",
+        "sha": "b561082958587599b754ad03be8065e469a024b4"
+      },
+      "right": {
+        "agent": "04",
+        "id": "INS-04-032",
+        "name": "Leshy",
+        "path": "docs/research/monsters/sources/04-world-myth/inspirations.json",
+        "ref": "origin/research/m04-world-myth",
+        "sha": "596e431afb84db98343c65e35f6f9277cfcec6e3"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "05",
+        "id": "INS-05-066",
+        "name": "Spring-heeled Jack",
+        "path": "docs/research/monsters/sources/05-anime-pop/inspirations.json",
+        "ref": "origin/research/m05-anime-pop",
+        "sha": "2877fcbb27de4c922a52500f0a2b4804c7b84987"
+      },
+      "right": {
+        "agent": "06",
+        "id": "SELF-06-006",
+        "name": "Spring-heeled Jack",
+        "path": "docs/research/monsters/creative/parody/self_inspirations.json",
+        "ref": "origin/research/m06-parody",
+        "sha": "77c558bba78d93586a1d0b2926231e5008a44cbf"
+      }
+    },
+    {
+      "priority": "P2",
+      "kind": "shared-inspiration",
+      "score": 1,
+      "reason": "Two agents researched the same inspiration. Merge the source record before anyone designs a second monster from it.",
+      "left": {
+        "agent": "05",
+        "id": "INS-05-067",
+        "name": "Jersey Devil",
+        "path": "docs/research/monsters/sources/05-anime-pop/inspirations.json",
+        "ref": "origin/research/m05-anime-pop",
+        "sha": "2877fcbb27de4c922a52500f0a2b4804c7b84987"
+      },
+      "right": {
+        "agent": "06",
+        "id": "SELF-06-008",
+        "name": "Jersey Devil",
+        "path": "docs/research/monsters/creative/parody/self_inspirations.json",
+        "ref": "origin/research/m06-parody",
+        "sha": "77c558bba78d93586a1d0b2926231e5008a44cbf"
+      }
+    }
+  ]
+}
