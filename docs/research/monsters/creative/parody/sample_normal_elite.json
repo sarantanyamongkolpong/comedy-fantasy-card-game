@@ -1,0 +1,1083 @@
+{
+  "documentId": "PARODY-SAMPLE-NORMAL-ELITE",
+  "status": "PROPOSED",
+  "agent": "06",
+  "canon": false,
+  "scope": "Phase-1 non-boss sample only: 10 Normal and 5 Elite. Mini, main, world, and secret bosses belong to Agent 07. No HP, ATK, DEF, SPD, AP, or damage numbers.",
+  "counts": {
+    "normal": 10,
+    "elite": 5,
+    "total": 15
+  },
+  "loreAlignment": {
+    "branch": "research/m08-lore",
+    "commit": "1c44f4e8ba19d0a329a639fdd5a5ea6c0fd6be34",
+    "files": [
+      "docs/research/monsters/lore/MONSTER_WORLD_FRAMEWORK.md",
+      "docs/research/monsters/lore/framework.json"
+    ],
+    "note": "originId, attributeId, environmentId, and rarity follow that PROPOSED framework. They are not canon. Tower floors stay PENDING. Echo summoning is not defined."
+  },
+  "sourcesRead": [
+    {
+      "branch": "research/m02-western",
+      "commit": "b561082958587599b754ad03be8065e469a024b4",
+      "file": "docs/research/monsters/sources/02-western/inspirations.json"
+    },
+    {
+      "branch": "research/m03-eastern",
+      "commit": "af596cbd2776a142d46188cde35142053f7c1337",
+      "file": "docs/research/monsters/sources/03-eastern/inspirations.json"
+    },
+    {
+      "branch": "research/m04-world-myth",
+      "commit": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "file": "docs/research/monsters/sources/04-world-myth/inspirations.json"
+    },
+    {
+      "branch": "research/m05-anime-pop",
+      "commit": "2877fcbb27de4c922a52500f0a2b4804c7b84987",
+      "file": "docs/research/monsters/sources/05-anime-pop/inspirations.json"
+    }
+  ],
+  "recheck": "On 2026-11-20 the four source branches moved. Facts, source URLs, sensitivity, and confidence on every inspiration id used here were compared to the new tips and were unchanged, so the copied facts stay verbatim and the commit ids above are the rechecked tips.",
+  "selfVerified": {
+    "reason": "research/m01-classic-rpg was not on origin at the recheck. The three classic-RPG sample rows cite SELF-06 ids in self_inspirations.json. Those pages were fetched on 2026-11-20. research/m09-db was also absent, so field keys stay PROPOSED.",
+    "file": "docs/research/monsters/creative/parody/self_inspirations.json"
+  },
+  "schemaNote": "Field keys are PROPOSED until Agent 09 publishes a schema. research/m09-db was not on origin. The 22 brief fields are all present on every entry.",
+  "spread": {
+    "domains": {
+      "02-western": ["M06-N-001", "M06-N-002", "M06-E-001"],
+      "04-world-myth": ["M06-N-003", "M06-N-004", "M06-E-002"],
+      "01-classic-rpg": ["M06-N-005", "M06-N-006", "M06-E-003"],
+      "03-eastern": ["M06-N-007", "M06-N-008", "M06-E-004"],
+      "05-anime-pop": ["M06-N-009", "M06-N-010", "M06-E-005"]
+    },
+    "humorTypes": {
+      "Absurd Comedy": ["M06-N-003", "M06-N-006", "M06-N-007", "M06-E-002"],
+      "Dark Fantasy Comedy": ["M06-N-002", "M06-N-004", "M06-N-010"],
+      "Satirical Fantasy": ["M06-N-005", "M06-N-008", "M06-N-009", "M06-E-004"],
+      "Epic but Ridiculous": ["M06-N-001", "M06-E-001", "M06-E-003", "M06-E-005"]
+    }
+  },
+  "entries": [
+    {
+      "monsterId": "M06-N-001",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-02-001",
+        "originalInspiration": "Bonnacon",
+        "origin": "Medieval European bestiary",
+        "kind": "folklore",
+        "domain": "02-western",
+        "facts": [
+          "The bonnacon (also bonasus or bonacho) is a legendary bull with inward-curving horns and a horse-like mane.",
+          "Medieval bestiaries usually depict its fur as reddish-brown or black.",
+          "Because the horns were useless for defense, it was said to expel caustic feces that burned pursuers so it could escape."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Bonnacon",
+            "title": "Bonnacon",
+            "accessed": "2026-11-20",
+            "supports": "All three facts are in the lead of the article."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "copiedFrom": {
+          "agent": "02",
+          "branch": "research/m02-western",
+          "commit": "b561082958587599b754ad03be8065e469a024b4",
+          "file": "docs/research/monsters/sources/02-western/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Curlhorn",
+        "thaiName": "เขางุ้ม",
+        "punLanguage": "both",
+        "humorType": "Epic but Ridiculous",
+        "creatureType": "bestiary bull",
+        "visualIdentity": "A rust-brown bull with a black horse mane and horns that curl back into its own pride. It paws the straw like a charger. The only mark of its famous exit is a raked scorch line in the aisle, not a gross-out drawing.",
+        "personality": "Immensely proud, easily startled, and convinced the pose is the same thing as the victory.",
+        "signatureTrait": "The horns cannot do the job the stance promises, so the retreat is the whole attack.",
+        "comedyConcept": "Epic but ridiculous: a war-beast entrance that the anatomy cancels. The menagerie treats the scorch line as a janitorial incident and the bull treats it as a tactical withdrawal.",
+        "element": {
+          "attributeId": "ATTR_STRIKE",
+          "name": "Strike",
+          "note": "The failed charge is the one commitment. The scorch is a picture, not a fire element. The beast stays a wild origin."
+        },
+        "combatArchetype": "Striker",
+        "signatureAbilityConcept": "It announces a charge, the horns fail the idea, and it bolts, leaving a hot trail the lane has to walk around.",
+        "weaknessConcept": "If nobody chases, it stops to hold the pose and the trail goes cold.",
+        "loreSummary": "The Menagerie of Unfiled Beasts wrote Curlhorn down as a war-beast. The horns disagree, and it keeps the job anyway. It is a wild animal in the Mysterious Tower, not a faction mount.",
+        "originId": "ORG-WILD",
+        "originName": "Wild Creature",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-08",
+          "name": "The Menagerie of Unfiled Beasts",
+          "note": "PROPOSED biome, not a floor number."
+        },
+        "artworkPromptConcept": "Comedy-fantasy card art of an original rust-brown bull with a black horse mane and inward-curled horns, posing in straw like a knight's mount. One scorch rake-mark on the floor behind it. Menagerie signs hung on the wrong cages, warm lantern light. No gore, no famous game beast, no living artist's style.",
+        "creativeBoundary": "The third sourced fact stays in research. The picture uses the useless horns and a scorch trail."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "Public-domain bestiary bull. The name is not Bonnacon. The silhouette is a proud mismatched charger, not a franchise creature."
+    },
+    {
+      "monsterId": "M06-N-002",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-02-014",
+        "originalInspiration": "Banshee",
+        "origin": "Irish folklore",
+        "kind": "folklore",
+        "domain": "02-western",
+        "facts": [
+          "A banshee is a female spirit who heralds a family death by screaming, wailing, shrieking, or keening.",
+          "The name is Modern Irish bean sí, from Old Irish ben síde, 'woman of the fairy mound' or 'fairy woman', tied to the síde burial mounds."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Banshee",
+            "title": "Banshee",
+            "accessed": "2026-11-20",
+            "supports": "Both facts are in the lead."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "copiedFrom": {
+          "agent": "02",
+          "branch": "research/m02-western",
+          "commit": "b561082958587599b754ad03be8065e469a024b4",
+          "file": "docs/research/monsters/sources/02-western/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Sheetwail",
+        "thaiName": "ผ้าครวญ",
+        "punLanguage": "both",
+        "humorType": "Dark Fantasy Comedy",
+        "creatureType": "warning spirit",
+        "visualIdentity": "A standing bedsheet of steam with a woman's mouth opened in the linen and wet thread for hair. No pointed ears, no armor, no funeral mound. The infirmary bed behind her is still empty, which is the problem.",
+        "personality": "Dutiful, extremely loud, and always a little early. She is offended if the news has already been posted.",
+        "signatureTrait": "The keen arrives before there is anything to keen about.",
+        "comedyConcept": "Dark fantasy comedy: the silhouette is a death-warning, and the errand is that she is early. The infirmary treats the wail as a drill and she treats the drill as a failure of gratitude.",
+        "element": {
+          "attributeId": "ATTR_AID",
+          "name": "Aid",
+          "note": "Help that will not stop. Not named Saving Grace, and not a church power."
+        },
+        "combatArchetype": "Chanter",
+        "signatureAbilityConcept": "Her wail makes the other creatures stop and look for a patient who is not on the ward yet. The help spends the moment.",
+        "weaknessConcept": "If someone says, calmly, that the notice is already on the board, she loses the verse and goes quiet.",
+        "loreSummary": "Sheetwail is a warning that clocked into the Infirmary of Too Much Care ahead of the injury. She means to help. The linen is the only body she brought, and she is not a member of the Sanctuary Order.",
+        "originId": "ORG-ECHO",
+        "originName": "Corrupted Echo",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-06",
+          "name": "The Infirmary of Too Much Care",
+          "note": "PROPOSED biome, not a floor number."
+        },
+        "artworkPromptConcept": "Comedy-fantasy card art, dim white tile and soup steam. An original spirit made of a torn hospital sheet, mouth open in a keen, hair like wet thread, empty bed behind her. Melancholy and funny because she is early. No elf, no game banshee costume, no graveyard joke.",
+        "creativeBoundary": "No mock accent, no church, no burial-mound gag. The etymology stays in research."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "Irish folklore spirit. Not a game banshee's face, armor, or name. The sheet and the early warning are the new costume and the new motive."
+    },
+    {
+      "monsterId": "M06-E-001",
+      "status": "PROPOSED",
+      "category": "Elite Monster",
+      "research": {
+        "inspirationId": "INS-02-028",
+        "originalInspiration": "Tarasque",
+        "origin": "French legend, Golden Legend",
+        "kind": "folklore",
+        "domain": "02-western",
+        "facts": [
+          "The Tarasque is a creature of French legend. The Golden Legend describes a lion-like head, a turtle-like shell, six feet with bear claws, a serpent tail, and poisonous breath.",
+          "Tradition has St Martha confronting it while it swallowed a person, which became a stock image of the monster with a victim's legs still sticking out.",
+          "From 1474 René of Anjou used a tarasque figure in Tarascon's Pentecost festival; the festival continues."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Tarasque",
+            "title": "Tarasque",
+            "accessed": "2026-11-20",
+            "supports": "Anatomy, the swallowing motif, and the 1474 festival are in the lead."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "copiedFrom": {
+          "agent": "02",
+          "branch": "research/m02-western",
+          "commit": "b561082958587599b754ad03be8065e469a024b4",
+          "file": "docs/research/monsters/sources/02-western/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Shellmarch",
+        "thaiName": "กระดองขบวน",
+        "punLanguage": "both",
+        "humorType": "Epic but Ridiculous",
+        "creatureType": "parade dragon",
+        "visualIdentity": "Lion head, six bear-clawed feet, a turtle shell worn like a bass drum, and a serpent tail keeping a ribbon in time. Bunting, not blood. It is mid-bow and the bow has worn a circle in the floor.",
+        "personality": "Civic, deaf to the word stop, and certain the song hired it personally.",
+        "signatureTrait": "The procession outranks the fight. It will take one ceremonial step and then wait to be bowed back to.",
+        "comedyConcept": "Epic but ridiculous: a six-legged feast marshal stuck on the ballroom's one dance. The grandeur is real. The agenda is a parade that was never given an end time.",
+        "element": {
+          "attributeId": "ATTR_GUARD",
+          "name": "Guard",
+          "note": "It blocks the lane with the shell. Not a faction membership."
+        },
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "It advances one bow at a time and fills the lane with the shell until someone returns the bow.",
+        "weaknessConcept": "If the music actually stops, it looks down to count its feet, and the lane opens while it is doing arithmetic it did not bring a form for.",
+        "loreSummary": "Shellmarch believes the Ballroom Stuck on One Dance hired a grand marshal and then forgot to end the contract. It is a tower guardian in pose only. There is no town, no saint, and no feast on the calendar.",
+        "originId": "ORG-GUARD",
+        "originName": "Tower Guardian",
+        "factionAffiliation": null,
+        "suggestedRarity": "R",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-09",
+          "name": "The Ballroom Stuck on One Dance",
+          "note": "PROPOSED biome, not a floor number."
+        },
+        "artworkPromptConcept": "Tall comedy-fantasy card. Original six-legged lion-headed beast with a turtle shell and a ribbon-bearing serpent tail, bowing under chandeliers and confetti that will not land. Parade bunting. No person in its mouth, no saint, no copy of a living town's festival float.",
+        "creativeBoundary": "The swallowing motif and the saint stay in research. The card uses the body plan and the idea of a procession."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "French legend anatomy, public domain. Not the modern Tarascon parade costume, and not a sacred scene. The ribbon and the endless bow are new."
+    },
+    {
+      "monsterId": "M06-N-003",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-04-031",
+        "originalInspiration": "Baba Yaga",
+        "origin": "Slavic folklore",
+        "kind": "folklore",
+        "domain": "04-world-myth",
+        "facts": [
+          "Britannica: Baba Yaga, also spelled Baba Jaga, is an ogress in Slavic folklore who steals, cooks, and eats her victims, usually children.",
+          "She is a guardian of the fountains of the water of life. She lives with two or three sisters, all called Baba Yaga, in a forest hut that spins continually on birds' legs. The fence is topped with human skulls.",
+          "She rides through the air in an iron kettle, or in a mortar she drives with a pestle, and raises tempests as she goes. She often accompanies Death and devours newly released souls."
+        ],
+        "sources": [
+          {
+            "url": "https://kids.britannica.com/scholars/article/Baba-Yaga/11585",
+            "title": "Baba Yaga - Britannica Scholars",
+            "accessed": "2026-11-20",
+            "supports": "The spinning hut on bird legs, the mortar and pestle, the skull fence, the water of life, and the child-eating ogress role."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "sensitivity": "medium",
+        "copiedFrom": {
+          "agent": "04",
+          "branch": "research/m04-world-myth",
+          "commit": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+          "file": "docs/research/monsters/sources/04-world-myth/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Pestlehut",
+        "thaiName": "กระท่อมครก",
+        "punLanguage": "both",
+        "humorType": "Absurd Comedy",
+        "creatureType": "spinning hut",
+        "visualIdentity": "A small wooden hut on bird legs, spinning in indoor rain. A pestle stands in the roof like a chimney. The window is a mortar bowl. No fence of skulls, no cookpot with a person, no film face in the door.",
+        "personality": "Hospitable and physically incapable of holding still. It offers shelter and then rotates the offer.",
+        "signatureTrait": "The door is never where it was when you raised your hand.",
+        "comedyConcept": "Absurd comedy: the house is the monster, and the rule is that it spins. The joke is architecture with a commute, told straight.",
+        "element": {
+          "attributeId": "ATTR_ARCANE",
+          "name": "Arcane",
+          "note": "The spin is bad geometry. Not a storm element and not a faction school."
+        },
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "It spins so the door faces away. Anyone on the stoop turns with the house until they step off.",
+        "weaknessConcept": "A hand on the pestle works as a brake. It stops, offended, and argues about being steered.",
+        "loreSummary": "The Roof Garden of Indoor Weather grew a hut that remembered a forest and kept the spin. Pestlehut is a tower anomaly, not a witch and not a quest-giver. It does not eat, hire, or haunt anyone.",
+        "originId": "ORG-ANOM",
+        "originName": "Tower Anomaly",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-11",
+          "name": "The Roof Garden of Indoor Weather",
+          "note": "PROPOSED biome, not a floor number. Shares the garden postcard with Spillguard; different silhouette."
+        },
+        "artworkPromptConcept": "Comedy-fantasy card. A small original hut on chicken legs spinning under rain that falls only on plants. A wooden pestle for a chimney, a mortar-bowl window, wet galoshes on the step. No skulls, no children, no famous film witch.",
+        "creativeBoundary": "Child-eating, the skull fence, soul-devouring, and film designs are not used. Only the spinning bird-leg hut and the pestle."
+      },
+      "ipSimilarityRisk": "medium",
+      "ipSimilarityReason": "Players will name Baba Yaga from the bird-leg hut. Distance: no film face, no skull fence, no kettle-rider, and the pestle is a brake rather than a weapon. Medium because the hut itself is the famous tell."
+    },
+    {
+      "monsterId": "M06-N-004",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-04-024",
+        "originalInspiration": "Ammit",
+        "origin": "Ancient Egyptian religion",
+        "kind": "myth",
+        "domain": "04-world-myth",
+        "facts": [
+          "The British Museum's schools guide says Ammit was not considered a goddess but a powerful and terrifying creature.",
+          "She is often depicted with the head of a crocodile, the forelegs of a lion, and the hind legs of a hippopotamus.",
+          "Her name means 'the devourer.' She devoured the hearts of the dead if they were unworthy when the heart was weighed against the feather of truth. She waited by the scales in the underworld, and her image in funeral art warned the dead to live well."
+        ],
+        "sources": [
+          {
+            "url": "https://www.britishmuseum.org/learn/schools/ages-7-11/ancient-egypt/ancient-egyptian-gods-and-goddesses",
+            "title": "Ancient Egyptian gods and goddesses | British Museum",
+            "accessed": "2026-11-20",
+            "supports": "Not a goddess; crocodile, lion, and hippopotamus body; devourer of unworthy hearts beside the scales."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "sensitivity": "medium",
+        "copiedFrom": {
+          "agent": "04",
+          "branch": "research/m04-world-myth",
+          "commit": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+          "file": "docs/research/monsters/sources/04-world-myth/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Ledgermaw",
+        "thaiName": "ปากบัญชี",
+        "punLanguage": "both",
+        "humorType": "Dark Fantasy Comedy",
+        "creatureType": "composite clerk-beast",
+        "visualIdentity": "Crocodile head, lion forelegs, hippo hindquarters, in an archive apron and a clerk's visor. It eats a paper slip. No crown, no feather, no scale-pan, no funeral hall.",
+        "personality": "Precise, gloomy, and hungry only for a total that does not match its twin.",
+        "signatureTrait": "An unbalanced slip does not leave the room.",
+        "comedyConcept": "Dark fantasy comedy: the body is frightening and the appetite is a bad sum. The joke lands on bookkeeping, not on the fate of the dead and not on anyone's faith.",
+        "element": {
+          "attributeId": "ATTR_ECHO",
+          "name": "Echo",
+          "note": "A legend misfiled as staff. Does not define hybrid avatars."
+        },
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "It snatches a mismatched tally, and the fight's order stutters while everyone re-counts. The bite is paper.",
+        "weaknessConcept": "A tally that already balances. It has nothing to eat and becomes a large, embarrassed animal in an apron.",
+        "loreSummary": "The Archive of Unfinished Legends needed something that hated a bad sum, and this shape arrived from a misfiled story. Ledgermaw is not a god, does not weigh a life, and does not run a judgment.",
+        "originId": "ORG-ECHO",
+        "originName": "Corrupted Echo",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-12",
+          "name": "The Archive of Unfinished Legends",
+          "note": "PROPOSED biome, not a floor number."
+        },
+        "artworkPromptConcept": "Comedy-fantasy card in a dusty archive. Original composite beast: crocodile head, lion forelegs, hippo hind legs, wearing a clerk's apron and visor, chewing a receipt. Lamp, torn last pages. No funeral scene, no feather, no goddess crown.",
+        "creativeBoundary": "The weighing of hearts stays in research. Creative text does not restage it or mock funerary belief."
+      },
+      "ipSimilarityRisk": "medium",
+      "ipSimilarityReason": "The crocodile-lion-hippo body is the famous tell of Ammit. Distance: apron, visor, and a paper diet, with no underworld scales. Medium because the body plan is specific and the source is a funerary religion; the joke is aimed at accounting."
+    },
+    {
+      "monsterId": "M06-E-002",
+      "status": "PROPOSED",
+      "category": "Elite Monster",
+      "research": {
+        "inspirationId": "INS-04-001",
+        "originalInspiration": "Minotaur (Minotauros)",
+        "origin": "Greek mythology, Crete",
+        "kind": "myth",
+        "domain": "04-world-myth",
+        "facts": [
+          "The Minotaur was a bull-headed monster born to Queen Pasiphae of Crete, lived in the maze-like labyrinth, received regular offerings for its hunger, and was slain by Theseus.",
+          "Theoi gives his proper name as Asterion, 'the starry one,' and says that name suggests a link with the constellation Taurus.",
+          "A classical encyclopedia summary preserved on the same page says he had a human body and a bull's head, or in other accounts the body of an ox and a human head; he was the offspring of Pasiphae and the bull sent from the sea, was shut in the Cnossian labyrinth, and Athenians were sent to Minos as tribute at fixed times."
+        ],
+        "sources": [
+          {
+            "url": "https://www.theoi.com/Ther/Minotauros.html",
+            "title": "MINOTAUR (Minotauros) - Theoi Greek Mythology",
+            "accessed": "2026-11-20",
+            "supports": "Birth, labyrinth, hunger-offerings, death at Theseus's hands, the name Asterion, and the human-body/bull-head description."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "sensitivity": "low",
+        "copiedFrom": {
+          "agent": "04",
+          "branch": "research/m04-world-myth",
+          "commit": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+          "file": "docs/research/monsters/sources/04-world-myth/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Switchback",
+        "thaiName": "วัวกลับทาง",
+        "punLanguage": "both",
+        "humorType": "Absurd Comedy",
+        "creatureType": "bull-headed doorman",
+        "visualIdentity": "A human body in an elevator-operator uniform and a bull's head, holding a wooden paddle that only points back. No axe, no bare-chested film costume, no maze carved on the skin. The car's indicator shows moods instead of numbers.",
+        "personality": "Polite, certain, and unable to imagine a forward direction that is not a mistake.",
+        "signatureTrait": "The correct way is the way you just came.",
+        "comedyConcept": "Absurd comedy with an elite silhouette: the labyrinth has been replaced by a lift, and the only true instruction is a U-turn. Hunger and tribute are not on the card.",
+        "element": {
+          "attributeId": "ATTR_GUARD",
+          "name": "Guard",
+          "note": "Holds the door. Not a faction."
+        },
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "It plants in the doorway and reverses everyone's approach until somebody turns around on purpose.",
+        "weaknessConcept": "If you turn around before it asks, the paddle has no instruction left and it holds the door like a professional.",
+        "loreSummary": "Switchback guards the Service Elevator Between Moods and believes a passenger's offering is admitting they were going the wrong way. It is a tower guardian of one car, not a king and not a prisoner.",
+        "originId": "ORG-GUARD",
+        "originName": "Tower Guardian",
+        "factionAffiliation": null,
+        "suggestedRarity": "R",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-13",
+          "name": "The Service Elevator Between Moods",
+          "note": "PROPOSED biome, not a floor number."
+        },
+        "artworkPromptConcept": "Comedy-fantasy card inside a brass elevator whose indicator lists feelings. A bull-headed person in a neat operator uniform holds a BACK paddle. Warm practical lighting. No axe, no film costume, no tribute scene.",
+        "creativeBoundary": "Does not use the birth story, the proper name, the hero, or the tribute. Body plan is human body plus bull head, which the source allows."
+      },
+      "ipSimilarityRisk": "medium",
+      "ipSimilarityReason": "A bull head plus a maze-rule will read as the Minotaur. Distance: operator uniform, a back-paddle, and no film or game weapon. Medium because the head and the 'you are lost' job are the famous pair."
+    },
+    {
+      "monsterId": "M06-N-005",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "SELF-06-002",
+        "originalInspiration": "Mimic (Dungeons & Dragons)",
+        "origin": "Dungeons & Dragons, Monster Manual (1977)",
+        "kind": "game",
+        "domain": "01-classic-rpg",
+        "facts": [
+          "In Dungeons & Dragons the mimic is a monster that changes shape to look like an inanimate object, commonly a chest. It was introduced in the original Monster Manual (1977) and is described there as a subterranean creature that cannot stand sunlight and can mimic stone or wood, posing as stonework, doors, or chests.",
+          "The same article describes a powerful adhesive and pseudopods. Those two mechanics are specific to this game monster and are not used in the parody."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Mimic_(Dungeons_%26_Dragons)",
+            "title": "Mimic (Dungeons & Dragons)",
+            "accessed": "2026-11-20",
+            "supports": "Chest disguise, 1977 debut, sunlight aversion, stone-or-wood mimicry, and the adhesive pseudopods."
+          }
+        ],
+        "protectedName": true,
+        "publicDomain": false,
+        "confidence": "high",
+        "copiedFrom": {
+          "agent": "06-self",
+          "reason": "research/m01-classic-rpg was absent",
+          "file": "docs/research/monsters/creative/parody/self_inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Claimbite",
+        "thaiName": "กัดใบรับ",
+        "punLanguage": "both",
+        "humorType": "Satirical Fantasy",
+        "creatureType": "ambush luggage",
+        "visualIdentity": "A stack of unclaimed suitcases in the lobby, one handle hinged like a jaw, luggage tags for teeth. Not a wooden treasure chest, not a tongue, not a stonework door.",
+        "personality": "Suspicious of hands and deeply committed to the claim procedure.",
+        "signatureTrait": "It is the lost luggage, and it checks the ticket before it is anything else.",
+        "comedyConcept": "Satirical fantasy: the dungeon ambush has become a lost-and-found desk. The joke is the form, not a surprise chest.",
+        "element": {
+          "attributeId": "ATTR_ARCANE",
+          "name": "Arcane",
+          "note": "The claim tag changes the rule. Not a faction school."
+        },
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "A wrong ticket makes it shut on the wrist and hold still until the story matches the tag. It does not glue, and it does not grow extra limbs.",
+        "weaknessConcept": "Swing the desk lamp onto it. It prefers the unclaimed dark, sulks, and pops its latches.",
+        "loreSummary": "The Lobby of Lost Badges left a pile unclaimed long enough for the pile to start answering. Claimbite is a tower anomaly, not a treasure and not a chest.",
+        "originId": "ORG-ANOM",
+        "originName": "Tower Anomaly",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-01",
+          "name": "The Lobby of Lost Badges",
+          "note": "PROPOSED biome, not a floor number. Shares the lobby with Signfirst."
+        },
+        "artworkPromptConcept": "Comedy-fantasy lobby: cracked marble, velvet rope, a heap of suitcases, one handle opened as a jaw full of luggage tags. A desk lamp just out of its preferred shadow. No treasure chest, no tongue, no game-manual diagram.",
+        "creativeBoundary": "Does not use the adhesive or the pseudopods. The lamp sulk is a new joke beside the sourced dislike of sunlight, not a copied rule."
+      },
+      "ipSimilarityRisk": "medium",
+      "ipSimilarityReason": "Players will say mimic. Distance: suitcases and a claim ticket instead of a chest, with none of the manual's adhesive limbs. Medium because 'the object was the monster' is that game's iconic trap."
+    },
+    {
+      "monsterId": "M06-N-006",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "SELF-06-001",
+        "originalInspiration": "Slime (Dragon Quest)",
+        "origin": "Dragon Quest (1986), inspired by Wizardry",
+        "kind": "game",
+        "domain": "01-classic-rpg",
+        "facts": [
+          "Slimes are a fictional species of slime monster in the Dragon Quest series, conceived as a weak and common enemy for the 1986 game and inspired by Wizardry.",
+          "Yuji Horii said the slime was originally conceived as a pile of goo. Akira Toriyama's design came back as a teardrop, which the team considered perfect, and that teardrop became the series mascot and merchandise."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Slime_(Dragon_Quest)",
+            "title": "Slime (Dragon Quest)",
+            "accessed": "2026-11-20",
+            "supports": "Both facts are in the lead and in the Concept and design section fetched the same day."
+          }
+        ],
+        "protectedName": true,
+        "publicDomain": false,
+        "confidence": "high",
+        "copiedFrom": {
+          "agent": "06-self",
+          "reason": "research/m01-classic-rpg was absent",
+          "file": "docs/research/monsters/creative/parody/self_inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Duty Puddle",
+        "thaiName": "แอ่งเข้าเวร",
+        "punLanguage": "both",
+        "humorType": "Absurd Comedy",
+        "creatureType": "wash-water puddle",
+        "visualIdentity": "A bucket's worth of grey wash-water on pantry tile, a mop handle stuck through it like a spine, a paper shift-tag floating on top. Not a teardrop, not a smile, not one bright color, not onion-shaped.",
+        "personality": "Diligent. It believes absorption is cleaning, and it has clocked in.",
+        "signatureTrait": "The floor is on shift, and the shift does not end when you step in it.",
+        "comedyConcept": "Absurd comedy: the weak common blob returned as the janitor's spill and takes the job seriously. The rule is consistent. The rule is also a puddle.",
+        "element": {
+          "attributeId": "ATTR_WILD",
+          "name": "Wild",
+          "note": "A spill that grew habits. Not a slime element. Wall agrees with Wild."
+        },
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "It spreads across one lane and will not be stepped through. Mopping it uphill only makes it prouder and wider.",
+        "weaknessConcept": "Leave a dry mop standing in a bucket. It climbs in, settles, and clocks out.",
+        "loreSummary": "The Pantry of Living Leftovers has a floor that took a shift. Duty Puddle is wash-water with opinions. It is not a mascot and not a citizen of any faction.",
+        "originId": "ORG-ANOM",
+        "originName": "Tower Anomaly",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-02",
+          "name": "The Pantry of Living Leftovers",
+          "note": "PROPOSED biome, not a floor number."
+        },
+        "artworkPromptConcept": "Comedy-fantasy pantry, copper pots and steam. A flat grey puddle with a mop-handle spine and a floating shift-tag. Tile floor, fridge light. Explicitly not a teardrop, not a cute face, not a single primary color.",
+        "creativeBoundary": "The protected teardrop is the thing this design refuses. The usable sourced idea is a pile of goo that is a common weak encounter."
+      },
+      "ipSimilarityRisk": "medium",
+      "ipSimilarityReason": "The closest protected thing is the Dragon Quest slime mascot, a teardrop designed by Akira Toriyama. Duty Puddle is grey wash-water with a mop spine and no face. Medium because 'a slime that clocks in' still points at that franchise's common enemy."
+    },
+    {
+      "monsterId": "M06-E-003",
+      "status": "PROPOSED",
+      "category": "Elite Monster",
+      "research": {
+        "inspirationId": "SELF-06-003",
+        "originalInspiration": "Animated object",
+        "origin": "Folklore and fantasy stories, including games",
+        "kind": "folklore",
+        "domain": "01-classic-rpg",
+        "facts": [
+          "An animated object is an item that acts on its own, apart from a person using it, often by supernatural means.",
+          "The article says forms ranging from household tools to armor have appeared in stories throughout history, and that animated objects also appear in games."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Animated_object",
+            "title": "Animated object",
+            "accessed": "2026-11-20",
+            "supports": "Self-moving items, including armor, in stories and in games."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "medium",
+        "copiedFrom": {
+          "agent": "06-self",
+          "reason": "research/m01-classic-rpg was absent. Confidence is medium because the page is a survey, not one bestiary entry.",
+          "file": "docs/research/monsters/creative/parody/self_inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Spare Plate",
+        "thaiName": "เกราะสำรอง",
+        "punLanguage": "en",
+        "humorType": "Epic but Ridiculous",
+        "creatureType": "empty armor",
+        "visualIdentity": "An empty suit of plate where every piece is a size off. The helm fits a mood rather than a head. It salutes. No crest from a famous knight, no pot, no one inside.",
+        "personality": "Dutiful, embarrassed, and immovable until a piece finally fits.",
+        "signatureTrait": "The armor is the wrong size and is on duty anyway.",
+        "comedyConcept": "Epic but ridiculous, in Aegis colors: bracing and stalling, worn as objects that do not fit. It does not found a kingdom and it is not either of the faction's two locked people.",
+        "element": {
+          "attributeId": "ATTR_GUARD",
+          "name": "Guard",
+          "note": "Matches FAC_AEG's Tank role. Not a new element."
+        },
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "It sets itself in a doorway and buys time by refusing to be the right size to walk past. No shield slogan from an avatar card.",
+        "weaknessConcept": "A single piece that actually fits. It stops to admire the accident, and the doorway clears.",
+        "loreSummary": "The Armory of Wrong Sizes kept a spare for a body that never arrived. Spare Plate clocks in for Aegis Dominion's joke, which is standing still in embarrassing armor. The plate is the whole person. It is not a lid and it is not someone hiding in luggage.",
+        "originId": "ORG-FACTION",
+        "originName": "Faction-aligned",
+        "factionAffiliation": {
+          "factionId": "FAC_AEG",
+          "name": "Aegis Dominion",
+          "role": "Tank",
+          "note": "The silhouette wears the locked Tank role. It adds no doctrine and no homeland."
+        },
+        "suggestedRarity": "R",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-03",
+          "name": "The Armory of Wrong Sizes",
+          "note": "PROPOSED biome, not a floor number. Not Aegis headquarters."
+        },
+        "artworkPromptConcept": "Comedy-fantasy armory, dust in heroic piles, racks of almost-right shields. An empty mismatched plate suit saluting, helm too tall, pauldrons uneven. No pot lid, no named knight's crest, no person inside.",
+        "creativeBoundary": "Does not use the tsukumogami tradition from the same article. That belongs to eastern research."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "Walking armor is a genre noun. This one is defined by wrong sizes and an empty salute, not by any game's knight silhouette."
+    },
+    {
+      "monsterId": "M06-N-007",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-03-025",
+        "originalInspiration": "Kappa (河童)",
+        "origin": "Japanese folklore",
+        "kind": "folklore",
+        "domain": "03-eastern",
+        "facts": [
+          "The kappa, 'river-child', is a major Japanese water yōkai living in ponds and rivers, also called kawatarō in some places.",
+          "Older accounts make them drowners of people, horses, and cattle. Later tales have a captured kappa, sometimes with an arm pulled off, repay forgiveness with labor or a secret medicine.",
+          "They are pictured as green, slimy or scaly, webbed, and turtle-shelled. A dish (sara) of water on the head is their strength; spill it and they weaken. They like cucumbers and sumo, and are accused of pulling out a mythical organ called the shirikodama."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Kappa_(folklore)",
+            "title": "Kappa (folklore)",
+            "accessed": "2026-11-20",
+            "supports": "River monster; head-dish; cucumbers; sumo; shift from killer to indebted helper."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "sensitivity": "low",
+        "copiedFrom": {
+          "agent": "03",
+          "branch": "research/m03-eastern",
+          "commit": "af596cbd2776a142d46188cde35142053f7c1337",
+          "file": "docs/research/monsters/sources/03-eastern/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Spillguard",
+        "thaiName": "ยามหก",
+        "punLanguage": "both",
+        "humorType": "Absurd Comedy",
+        "creatureType": "river lifeguard",
+        "visualIdentity": "A small webbed humanlike with a shell under a yellowed raincoat and a dish of water set into a lifeguard cap. A whistle. A cucumber sits uneaten in a lunch tin. Not a bright-green turtle boy from a cartoon.",
+        "personality": "Officious, rule-loving, and undone by its own bow.",
+        "signatureTrait": "The dish of water is the badge. Splashing, which is the whole job, threatens the badge.",
+        "comedyConcept": "Absurd comedy: a lifeguard whose authority is a bowl balanced on the head, stationed where the rain only falls on the plants. It blows the whistle at the weather.",
+        "element": {
+          "attributeId": "ATTR_WILD",
+          "name": "Wild",
+          "note": "Water is where it stands, not a damage type."
+        },
+        "combatArchetype": "Skirmisher",
+        "signatureAbilityConcept": "While the dish is full it insists on a formal grapple for position, the way the old stories insist on a match. A deep bow tips the dish and ends the authority.",
+        "weaknessConcept": "Bow lower than the cap. The water spills, it sits, and it becomes suddenly helpful, which is the later story of a kappa that repays a kindness with a chore.",
+        "loreSummary": "Spillguard assigned itself to the Roof Garden of Indoor Weather and guards puddles that are not a river. It is a wild creature. The drowning tales and the crueler accusations stay off the card.",
+        "originId": "ORG-WILD",
+        "originName": "Wild Creature",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-11",
+          "name": "The Roof Garden of Indoor Weather",
+          "note": "PROPOSED biome. Shares the garden with Pestlehut."
+        },
+        "artworkPromptConcept": "Comedy-fantasy roof garden, rain only on the plants. A small original webbed lifeguard in a yellowed raincoat, shell hinted underneath, water dish set into the cap, whistle raised. Lunch tin with an untouched cucumber. No drowning, no cartoon turtle-boy palette as the whole design.",
+        "creativeBoundary": "Does not depict drowning, severed arms, or the organ accusation. Uses the dish, the bow that spills it, the later helpfulness, and a nod to the wrestling stories."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "Kappa is a folklore type, not one studio's character. Raincoat, cap, and whistle replace the usual naked green turtle body. The dish is the single famous tell."
+    },
+    {
+      "monsterId": "M06-N-008",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-03-027",
+        "originalInspiration": "Kitsune (狐)",
+        "origin": "Japanese folklore",
+        "kind": "folklore",
+        "domain": "03-eastern",
+        "facts": [
+          "In popular Japanese folklore the kitsune is a fox or fox spirit with the supernatural ability to shapeshift or bewitch other living beings.",
+          "The bake-danuki article says that in some regions tanuki are reputed to share kitsune-like powers of shapeshifting and possession. The noppera-bō article lists kitsune among shapeshifters who may stage a faceless scare."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Kitsune",
+            "title": "Kitsune",
+            "accessed": "2026-11-20",
+            "supports": "Fox spirit that shapeshifts or bewitches."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Bake-danuki",
+            "title": "Bake-danuki",
+            "accessed": "2026-11-20",
+            "supports": "Some regions credit tanuki with kitsune-like shapeshifting and possession."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "medium",
+        "sensitivity": "low",
+        "copiedFrom": {
+          "agent": "03",
+          "branch": "research/m03-eastern",
+          "commit": "af596cbd2776a142d46188cde35142053f7c1337",
+          "file": "docs/research/monsters/sources/03-eastern/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Receiptfox",
+        "thaiName": "จิ้งจอกบิล",
+        "punLanguage": "both",
+        "humorType": "Satirical Fantasy",
+        "creatureType": "fox spirit",
+        "visualIdentity": "An ordinary fox in a gift-shop apron. One tail is a roll of receipt paper. It does not have a fan of many tails, wears no shrine robes, and shapeshifts into a second copy of the receipt rather than into a person.",
+        "personality": "Helpful, proud, and catastrophically bad at names.",
+        "signatureTrait": "The bewitchment lands on the paperwork, not on the hero.",
+        "comedyConcept": "Satirical fantasy: a fox spirit's trick is filing two buyers under each other's names. The gift shop sells endings that have not happened yet.",
+        "element": {
+          "attributeId": "ATTR_ARCANE",
+          "name": "Arcane",
+          "note": "A trick, not a pantheon and not a faction school."
+        },
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "It swaps two name-tags. The next action looks for the name on the receipt until someone reads the true name aloud.",
+        "weaknessConcept": "A form filled in with the real name. The trick snaps, and the fox is offended by the accuracy.",
+        "loreSummary": "Receiptfox works the Gift Shop of the Conquered and bewitches the ledger. The kitsune record's confidence is medium, and this card does not add shrine lore the sources did not give. It is a wild fox, not a celestial doctrine.",
+        "originId": "ORG-WILD",
+        "originName": "Wild Creature",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-15",
+          "name": "The Gift Shop of the Conquered",
+          "note": "PROPOSED biome. Not the Shopping Mall."
+        },
+        "artworkPromptConcept": "Comedy-fantasy gift shop, mugs that spoil the ending. A normal fox in an apron whose single tail is a receipt roll, offering the wrong name-tag. No shrine gate, no multiple tails, no anime fox fire.",
+        "creativeBoundary": "Does not attach the fox to any shrine cult. Agent 03 flagged that link as not in the sources they read."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "A shapeshifting fox is a folklore type. One receipt-tail and an apron avoid the many-tailed fox costumes of living manga and games. No shrine imagery."
+    },
+    {
+      "monsterId": "M06-E-004",
+      "status": "PROPOSED",
+      "category": "Elite Monster",
+      "research": {
+        "inspirationId": "INS-03-024",
+        "originalInspiration": "Oni (鬼)",
+        "origin": "Japanese folklore",
+        "kind": "folklore",
+        "domain": "03-eastern",
+        "facts": [
+          "An oni is a yōkai, demon, or ogre in Japanese folklore, said to live in caves, deep mountains, or hell.",
+          "They are hugely strong, tied to thunder and lightning, and storied as murderous and cannibal. Typical pictures show horns, huge teeth, sometimes a third eye, red blue black or yellow skin, a tiger-skin loincloth, and an iron kanabō.",
+          "They can change shape to win trust. Heian setsuwa show them eating a person in one bite (onihitokuchi). They have also been linked to good fortune. Shuten-dōji is regarded as the most famous and strongest oni."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Oni",
+            "title": "Oni",
+            "accessed": "2026-11-20",
+            "supports": "Horned club-wielding ogre; shapeshifting; Heian man-eating tales; also a luck association."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "sensitivity": "low",
+        "copiedFrom": {
+          "agent": "03",
+          "branch": "research/m03-eastern",
+          "commit": "af596cbd2776a142d46188cde35142053f7c1337",
+          "file": "docs/research/monsters/sources/03-eastern/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Hornstamp",
+        "thaiName": "เขาลงเวลา",
+        "punLanguage": "both",
+        "humorType": "Satirical Fantasy",
+        "creatureType": "horned hall monitor",
+        "visualIdentity": "A huge ink-blue figure with one pair of horns and an iron club whose head is a rubber date-stamp. Lanyard, folding chair, no tiger-skin loincloth, no feast. The basement throne is being used as a coat rack behind it.",
+        "personality": "Punctual, booming, and privately hopeful that the meeting will end.",
+        "signatureTrait": "Lateness is the only offense it still prosecutes.",
+        "comedyConcept": "Satirical fantasy at elite scale: the punisher's club became a time clock. Strength is still obvious. The crime is a missed bell, which is a joke about dungeon ceremony, not about violence.",
+        "element": {
+          "attributeId": "ATTR_STRIKE",
+          "name": "Strike",
+          "note": "One heavy commitment. Thunder in the source is not used as an element."
+        },
+        "combatArchetype": "Striker",
+        "signatureAbilityConcept": "It stamps LATE across someone's momentum, and that someone has to arrive at their own action a second time. The stamp is the whole hit.",
+        "weaknessConcept": "Anyone who is exactly on time. The stamp has nothing to say, and the club droops.",
+        "loreSummary": "Hornstamp took a chair in the Basement of Retired Bosses and kept the club. The club now clocks people in. Good fortune, for it, is a meeting that ends. It is a tower guardian pose, not a named legend and not a doctrine.",
+        "originId": "ORG-GUARD",
+        "originName": "Tower Guardian",
+        "factionAffiliation": null,
+        "suggestedRarity": "R",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-10",
+          "name": "The Basement of Retired Bosses",
+          "note": "PROPOSED biome, not a previous game's canon."
+        },
+        "artworkPromptConcept": "Comedy-fantasy basement, folding chairs, a throne used as a coat rack. A large ink-blue horned figure with a date-stamp for a club and a lanyard, mid-stamp. No tiger pelt, no feast, no specific manga oni.",
+        "creativeBoundary": "Does not use the man-eating stories or Shuten-dōji. Skin is one of the colors the article lists, chosen so the design is not only the red default."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "Oni are a folklore type. The office stamp, lanyard, and ink-blue hide avoid a specific anime costume and the tiger-pelt club portrait. Horns plus a heavy implement remain the tell."
+    },
+    {
+      "monsterId": "M06-N-009",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-05-001",
+        "originalInspiration": "Isekai",
+        "origin": "Japanese fantasy and science-fiction genre (anime, manga, light novels)",
+        "kind": "anime",
+        "domain": "05-anime-pop",
+        "facts": [
+          "Isekai (異世界, 'another world') is a Japanese fantasy and science-fiction subgenre about a person who is transported to another world and has to survive there, usually gaining formidable powers or importance they did not have before.",
+          "The crossing may happen through death and reincarnation, or through summoning by an object, god, or person. A common setting is a medieval fantasy world populated with humans, humanoids, and monsters.",
+          "The Wikipedia article traces the idea to older tales such as Urashima Tarō and to Western fantasy, and names Haruka Takachiho's novel Warrior from Another World and the anime Aura Battler Dunbine as early modern works, with The Twelve Kingdoms and Sword Art Online among the works that helped popularize the genre."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Isekai",
+            "title": "Isekai",
+            "accessed": "2026-11-20",
+            "supports": "Definition, reincarnation or summoning, medieval monster-world setting, and the named early and popularizing works."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": false,
+        "confidence": "high",
+        "sensitivity": "low",
+        "copiedFrom": {
+          "agent": "05",
+          "branch": "research/m05-anime-pop",
+          "commit": "2877fcbb27de4c922a52500f0a2b4804c7b84987",
+          "file": "docs/research/monsters/sources/05-anime-pop/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Signfirst",
+        "thaiName": "เซ็นก่อน",
+        "punLanguage": "th",
+        "humorType": "Satirical Fantasy",
+        "creatureType": "summoned arrival",
+        "visualIdentity": "A short traveler's cloak over a body that is only a smudged badge photo, holding a prophecy scroll that stays blank. No spiky hair, no signature sword, no vehicle, no slime. The lobby desk is the whole battlefield.",
+        "personality": "Chosen, impatient, and stuck at the sign-in line.",
+        "signatureTrait": "The prophecy will not start until the log has a signature.",
+        "comedyConcept": "Satirical fantasy: another-world importance is real, and the visitor log is more real. No series hero is being quoted or costumed.",
+        "element": {
+          "attributeId": "ATTR_ECHO",
+          "name": "Echo",
+          "note": "A story-shape that arrived wrong. Not a definition of the player's hybrid avatar, and not a reincarnation rite."
+        },
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "It will not swing until someone signs. A wrong name makes it chase the name on the line instead of the person in front of it.",
+        "weaknessConcept": "A signature that matches the badge. The scroll stays blank, and it has to admit it is merely early.",
+        "loreSummary": "Something was summoned into the Lobby of Lost Badges and gained a destiny it did not have at home. The desk asked it to sign first. Signfirst is not a player avatar and not a protagonist from a book or a show.",
+        "originId": "ORG-ECHO",
+        "originName": "Corrupted Echo",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-01",
+          "name": "The Lobby of Lost Badges",
+          "note": "PROPOSED biome. Shares the lobby with Claimbite."
+        },
+        "artworkPromptConcept": "Comedy-fantasy lobby desk. A small original cloaked arrival with a smudged badge for a face and a blank scroll, pen offered. Velvet rope, heap of badges. No recognizable anime hero, no vehicle, no magical sword.",
+        "creativeBoundary": "Does not name or costume any series listed in the research facts. Does not depict death-and-rebirth as a mechanic."
+      },
+      "ipSimilarityRisk": "medium",
+      "ipSimilarityReason": "Isekai is a genre full of copyrighted protagonists. Signfirst has none of their hair, weapons, or vehicles; the joke is the sign-in sheet. Medium because 'summoned and suddenly important' is the genre's whole plot."
+    },
+    {
+      "monsterId": "M06-N-010",
+      "status": "PROPOSED",
+      "category": "Normal Monster",
+      "research": {
+        "inspirationId": "INS-05-024",
+        "originalInspiration": "Tokusatsu suitmation",
+        "origin": "Japanese live-action special-effects filming",
+        "kind": "pop",
+        "domain": "05-anime-pop",
+        "facts": [
+          "Tokusatsu (特撮, 'special filming') is the Japanese term for live-action films and television that rely heavily on practical special effects. The article credits Eiji Tsuburaya and says the word's modern media use was popularized around the first monster boom of 1966–1968.",
+          "It lists subgenres: kaiju such as Godzilla and Gamera, superheroes such as Kamen Rider, kyodai heroes such as Ultraman, and mecha such as Giant Robo. Some shows, including Super Sentai, combine several.",
+          "Suitmation is the technique of playing a monster with an actor in a costume, usually combined with miniatures and scaled city sets. The article says Tsuburaya developed this approach for the 1954 Godzilla, inspired in part by King Kong."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Tokusatsu",
+            "title": "Tokusatsu",
+            "accessed": "2026-11-20",
+            "supports": "Practical-effects genre, the listed subgenres, and suitmation as a costumed actor plus miniatures."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": false,
+        "confidence": "high",
+        "sensitivity": "low",
+        "copiedFrom": {
+          "agent": "05",
+          "branch": "research/m05-anime-pop",
+          "commit": "2877fcbb27de4c922a52500f0a2b4804c7b84987",
+          "file": "docs/research/monsters/sources/05-anime-pop/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Zipperhide",
+        "thaiName": "ซิปค้าง",
+        "punLanguage": "both",
+        "humorType": "Dark Fantasy Comedy",
+        "creatureType": "person in a beast suit",
+        "visualIdentity": "A person-sized original beast suit, somewhere between a bird and a teapot, magnificent until the shoulder. One zipper is stuck. A normal elbow shows. Not a rider helmet, not a giant reptile, not a silver giant, not a miniature city.",
+        "personality": "Heroic, muffled, and unable to start until the costume sits right.",
+        "signatureTrait": "The monster is a suit, and the suit is not finished.",
+        "comedyConcept": "Dark fantasy comedy: the shape is frightening in the doorway, and then the elbow is a person. The joke is affectionate toward a filming technique, not toward the audience.",
+        "element": {
+          "attributeId": "ATTR_STRIKE",
+          "name": "Strike",
+          "note": "The pose is the commitment that cannot start. No series color and no faction."
+        },
+        "combatArchetype": "Striker",
+        "signatureAbilityConcept": "It strikes a tremendous pose and cannot take the step. Everyone waits on the zipper.",
+        "weaknessConcept": "Someone zips it. The suit becomes an ordinary impressive costume, the person inside apologizes, and they sit down.",
+        "loreSummary": "The Menagerie of Unfiled Beasts needed a monster and hired a suit. Zipperhide is the whole job. It is a guardian pose with nobody's franchise inside it.",
+        "originId": "ORG-GUARD",
+        "originName": "Tower Guardian",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-08",
+          "name": "The Menagerie of Unfiled Beasts",
+          "note": "PROPOSED biome. Shares the menagerie with Curlhorn."
+        },
+        "artworkPromptConcept": "Comedy-fantasy menagerie cage. An original bird-teapot monster suit, person-sized, one stuck zipper and a visible human elbow, straw on the floor. No tokusatsu helmet, no giant-monster silhouette, no miniature skyline.",
+        "creativeBoundary": "The research names several copyrighted series as examples of the genre. None of their suits, belts, or roars are used."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "Suitmation is a technique. The suit is an original bird-teapot with a stuck zipper, not Godzilla, not a rider, not a sentai monster, and not Ultraman. The elbow is the distance."
+    },
+    {
+      "monsterId": "M06-E-005",
+      "status": "PROPOSED",
+      "category": "Elite Monster",
+      "research": {
+        "inspirationId": "INS-05-032",
+        "originalInspiration": "Flying Dutchman",
+        "origin": "Maritime legend, likely Dutch Golden Age, oldest known print version late 18th century",
+        "kind": "folklore",
+        "domain": "05-anime-pop",
+        "facts": [
+          "The Flying Dutchman (De Vliegende Hollander) is a legendary ghost ship said never to be able to make port, doomed to sail forever. The article says the stories likely grew from the 17th-century Dutch East India Company era, and that the oldest known extant version is from the late 18th century.",
+          "If hailed, the crew may try to send messages to land or to people long dead. Nineteenth- and twentieth-century sighting reports described a ghostly glow. In sailors' lore the sight is a portent of doom. It was commonly imagined as a fluyt, a 17th-century cargo ship.",
+          "The first known print reference cited in the article is John MacDonald's 1790 Travels in various parts of Europe, Asia and Africa, in which sailors in a storm say they saw the Flying Dutchman."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Flying_Dutchman",
+            "title": "Flying Dutchman",
+            "accessed": "2026-11-20",
+            "supports": "The never-make-port ghost ship, the message-to-the-dead motif, the doom portent, and the 1790 print source."
+          }
+        ],
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "high",
+        "sensitivity": "low",
+        "copiedFrom": {
+          "agent": "05",
+          "branch": "research/m05-anime-pop",
+          "commit": "2877fcbb27de4c922a52500f0a2b4804c7b84987",
+          "file": "docs/research/monsters/sources/05-anime-pop/inspirations.json"
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Stilldock",
+        "thaiName": "ยังไม่จอด",
+        "punLanguage": "both",
+        "humorType": "Epic but Ridiculous",
+        "creatureType": "ghost cargo ship",
+        "visualIdentity": "A small fluyt-like cargo ship of fog and lobby velvet, lantern lit, stuck half through a doorway as if the throne landing were a harbor. Letters in bottles addressed to people who are already in the room. No barnacled face, no film captain, no cursed crew portrait.",
+        "personality": "Doomed to arrive, endlessly about to, and very concerned about the mail.",
+        "signatureTrait": "The dock is always the next one.",
+        "comedyConcept": "Epic but ridiculous: a portent of doom whose actual problem is parking. The ship fills the landing the way a boss would, and then it asks someone to take a letter.",
+        "element": {
+          "attributeId": "ATTR_ARCANE",
+          "name": "Arcane",
+          "note": "The unaccepted letter is the trick. Not a summoning rite and not a damage element. Looking like a legend stays the origin, not this tag."
+        },
+        "combatArchetype": "Artillery",
+        "signatureAbilityConcept": "It hails from the doorway and will not clear the lane until someone accepts the letter. Refusing the mail keeps the ship exactly where it is.",
+        "weaknessConcept": "Accept the letter and point at a pier that is only a chalk mark. It tries to dock, bumps the frame, and the grandeur leaks out as fog.",
+        "loreSummary": "Stilldock mistook the Throne Landing of Maybe for a harbor and has been about to arrive ever since. Seeing it is inconvenient. It is not a curse with a rule, and it is not the final floor, which the tower has not declared.",
+        "originId": "ORG-ECHO",
+        "originName": "Corrupted Echo",
+        "factionAffiliation": null,
+        "suggestedRarity": "R",
+        "towerEnvironment": {
+          "environmentId": "ENV-TWR-14",
+          "name": "The Throne Landing of Maybe",
+          "note": "PROPOSED set-piece color. OPEN-07: there is no locked last floor. This elite is not a world boss."
+        },
+        "artworkPromptConcept": "Comedy-fantasy doorway that is also a stage. A small original 17th-century cargo ship of fog and velvet, half through the door, lantern and a bottle-letter. Empty throne with a maybe-not sign in the background. No film ghost captain, no barnacle face, no skull crew.",
+        "creativeBoundary": "Does not copy the Pirates of the Caribbean ghost ship or captain. The fluyt silhouette and the undelivered message are the sourced tells."
+      },
+      "ipSimilarityRisk": "low",
+      "ipSimilarityReason": "The never-make-port ghost ship is public-domain maritime legend. The card is a velvet cargo ship stuck in a doorway with a letter, not a film's barnacled captain."
+    }
+  ]
+}

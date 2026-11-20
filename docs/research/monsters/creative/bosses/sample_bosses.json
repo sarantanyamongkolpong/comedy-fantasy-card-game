@@ -1,0 +1,1255 @@
+{
+  "meta": {
+    "title": "Phase-1 boss sample",
+    "status": "PROPOSED",
+    "agent": "07-boss-designer",
+    "baseCommit": "6e2bffec082a4db190bd51087196d29b02555f4a",
+    "guide": "docs/research/monsters/creative/bosses/BOSS_DESIGN_GUIDE.md",
+    "accessed": "2026-11-20",
+    "counts": {
+      "Mini Boss": 5,
+      "Main Boss": 5,
+      "World Boss": 3,
+      "Secret / Comedy Boss": 2
+    },
+    "noCombatNumbers": true,
+    "note": "Research facts are pages agent 07 fetched on 2026-11-20, or the same pages already fetched and then matched to an agent 02–05 inspiration id. No source was invented. Sibling parody sentences are not copied onto the cards. No HP, ATK, DEF, or damage numbers. Signature mechanics name existing ops only.",
+    "schemaFieldIndex": {
+      "1 Monster ID": "monsterId",
+      "2 Parody Name (EN)": "creative.parodyNameEn",
+      "3 Thai name": "creative.thaiName",
+      "4 Original Inspiration/Source": "research.originalInspiration",
+      "5 Source URL": "research.sourceUrl",
+      "6 Monster Category": "creative.monsterCategory",
+      "7 Creature Type": "creative.creatureType",
+      "8 Visual Identity": "creative.visualIdentity",
+      "9 Personality": "creative.personality",
+      "10 Signature Trait": "creative.signatureTrait",
+      "11 Comedy Concept": "creative.comedyConcept",
+      "12 Element/Attribute": "creative.elementAttribute",
+      "13 Combat Archetype": "creative.combatArchetype",
+      "14 Signature Ability Concept": "creative.signatureAbilityConcept",
+      "15 Weakness Concept": "creative.weaknessConcept",
+      "16 Lore Summary": "creative.loreSummary",
+      "17 Faction Affiliation": "creative.factionAffiliation",
+      "18 Suggested Rarity": "creative.suggestedRarity",
+      "19 Suggested Tower Environment": "creative.suggestedTowerEnvironment",
+      "20 Artwork Prompt Concept": "creative.artworkPromptConcept",
+      "21 IP Similarity Risk": "creative.ipSimilarityRisk",
+      "22 Research Confidence": "research.researchConfidence",
+      "Boss Title": "creative.bossTitle",
+      "Entrance Concept": "creative.entranceConcept",
+      "Signature Silhouette": "creative.signatureSilhouette",
+      "Personality/Motivation": "creative.personalityMotivation",
+      "Signature Mechanic": "creative.signatureMechanic",
+      "Phase Transformation Concept": "creative.phaseTransformationConcept",
+      "Defeat Animation Concept": "creative.defeatAnimationConcept",
+      "Unique Loot Theme": "creative.uniqueLootTheme"
+    },
+    "domains": {
+      "01-classic-rpg": 2,
+      "02-western": 3,
+      "03-eastern": 3,
+      "05-anime-pop": 4,
+      "04-world-myth": 3
+    },
+    "alignedTo": {
+      "m02": "ddeef310a6ef1e503bfd9e4ade82a3f3ca68628f",
+      "m03": "af596cbd2776a142d46188cde35142053f7c1337",
+      "m04": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+      "m05": "969aa9bf052d79545f952067d0c2d30dbccd8475",
+      "m06": "b7132e2d1301ab34342579d2ad073b04e0a4cd26",
+      "m08": "1c44f4e8ba19d0a329a639fdd5a5ea6c0fd6be34",
+      "m01": null,
+      "m09": null,
+      "note": "Read via git show on 2026-11-20. m01-classic-rpg and m09-db were not on origin. Proposals from m06 and m08 are not canon."
+    },
+    "rarityPolicy": "Following m08 PROPOSED framework: Mini Boss Epic, Main Boss EX, World Boss EX, Secret EX because each secret in this file has a phase. FAC is not a creature rank. No Common, Rare, Legendary, or Mythic.",
+    "attributePolicy": "elementAttribute is an ATTR_* id from the m08 proposal. Void, Sync, Holiness, Fire, Ice, Lightning, and Mythic are not used as attributes. Picture color is noted separately."
+  },
+  "bosses": [
+    {
+      "monsterId": "BOS-MIN-01",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "01-classic-rpg",
+        "towerPresence": "Tower Guardian",
+        "engineRoleShape": "Tank",
+        "phasePattern": "B-seats",
+        "elementNote": "ATTR_GUARD. Picture color is not a damage type.",
+        "rarityNote": "Mini Boss prestige follows the m08 proposal: Epic. Not a drop rate or a stat.",
+        "factionNote": "factionAffiliation is null. The engine loader still requires a faction id; this record does not invent one.",
+        "originId": "ORG-GUARD",
+        "attributeId": "ATTR_GUARD",
+        "environmentId": "ENV-TWR-01",
+        "humorType": "Absurd Comedy",
+        "jokeLanguage": "both",
+        "pictureColor": "Kiln clay and ticket-paper white. Not an element."
+      },
+      "research": {
+        "originalInspiration": "The clay golem of Jewish folklore, later included in fantasy role-playing games",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Golem",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": null,
+        "facts": [
+          "A golem is an animated anthropomorphic being in Jewish folklore, made from inanimate matter, usually clay or mud.",
+          "In some tales, including stories of the Chełm and Prague golems, the word emet ('truth') is inscribed on the golem, sometimes on the forehead, and erasing the aleph deactivates it. In the Prague narrative, a slip called the shem was also described as placed in the mouth or head.",
+          "Historians generally treat the famous Golem of Prague story as an early-19th-century literary invention, not a 16th-century record.",
+          "The same Wikipedia page says golems appear in Dungeons & Dragons, that the game's influence led to golems in other tabletop games and in video games, and that a reviewer called the creature a classic of that game. It also says the game's clay golem changed the folklore defender into an unthinking hulk."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golem",
+            "title": "Golem",
+            "accessed": "2026-11-20",
+            "supports": "Clay body, forehead inscription, shem, the Prague narrative's literary dating, and the later role-playing-game presence.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "alignmentNote": "research/m01-classic-rpg was not on origin at the 2026-11-20 fetch. Facts stay the Wikipedia golem page agent 07 fetched. No INS id is invented."
+      },
+      "creative": {
+        "parodyNameEn": "Clerk Claypunch",
+        "thaiName": "เสมียนหมัดดิน",
+        "monsterCategory": "Mini Boss",
+        "creatureType": "Clay golem",
+        "visualIdentity": "A barrel-chested clerk baked from ticket-clay, thumbs like stamps, a paper waistcoat cracked at the folds. A blank sticky note sits on the forehead where a sacred word would have been. Three smaller clay stubs share his bench and only know how to hold a shield.",
+        "personality": "Literal, loyal, and one memo behind. He believes a line is a law.",
+        "signatureTrait": "The forehead note. While it sticks, he plants himself in front of the stubs.",
+        "comedyConcept": "Absurd comedy. The tower's lost-ticket golem was told to guard the queue, and he has been guarding it since the queue moved upstairs.",
+        "elementAttribute": "ATTR_GUARD",
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "A DEF card that grants Shield and Taunt, so the party has to hit the clerk instead of the stubs. A turn-start passive may add a short DEF buff to his side. No new status.",
+        "weaknessConcept": "The note is the tell, not a removable item system. When his shield pool is empty the note peels in the art, and his next card is a self Skill with no Taunt. That turn the stubs can be chosen. Pattern B: the stubs are the other seats from the start.",
+        "loreSummary": "A Tower Guardian kneaded from the clay under the ticket archive after an Echo of a queue refused to disperse. He is not a member of Aegis Dominion. Avatars meet him the way they meet any floor warden: four seats, five AP, and a man who will not leave his post.",
+        "factionAffiliation": null,
+        "suggestedRarity": "Epic",
+        "suggestedTowerEnvironment": "ENV-TWR-01 The Lobby of Lost Badges. Ticket clay under the badge desk of the Mysterious Tower.",
+        "artworkPromptConcept": "Comedy-fantasy card portrait, clay golem clerk at thumbnail size. Huge rounded shoulders, cracked paper waistcoat, blank sticky note centered on the forehead, ink thumbs. Three small clay stubs behind him holding tower shields. Warm kiln light, no sacred letters, no gore. Silhouette reads as one heavy humanoid plus a forehead square.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "Uses the folklore clay body and the idea of a mark on the forehead, replaced by a blank office note. Does not copy a role-playing game's golem stat block, electricity-powered flesh design, or setting.",
+        "bossTitle": "Warden of Lost Tickets / ผู้พิทักษ์ตั๋วหาย",
+        "entranceConcept": "Mini plate only. He rises out of a spill of punched tickets already in the Taunt pose, note square to camera. One pose, no speech.",
+        "signatureSilhouette": "Wide clay torso, no neck, a hard square on the forehead, three small lumps at his heels. Reads as a wall with a label.",
+        "personalityMotivation": "He was made to keep a line in order. The line left. He will body-block the stair until someone stamps the note, because that is the only order he has.",
+        "signatureMechanic": "Shield plus Taunt on his DEF card. The three stub seats exist at match start and do not Taunt. AUTO's protect step already understands a real shield and a taunt. No amounts are set here.",
+        "phaseTransformationConcept": "Pattern B. Phase one is the clerk in front. When his shield art peels, the note hangs by one corner and he spends a Skill turn without Taunt, so the stubs are legal targets. There is no second health bar and no spawn.",
+        "defeatAnimationConcept": "He sits, carefully, as a clerk clocking out. The note flutters onto the tickets. The stubs slump into unformed clay. Last beat: he tries to restick the note and it lands upside down.",
+        "uniqueLootTheme": "Pressed ticket-clay and a blank forehead note. Trophy objects only, no stats."
+      }
+    },
+    {
+      "monsterId": "BOS-MIN-02",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "02-western",
+        "towerPresence": "Corrupted Echo",
+        "engineRoleShape": "DPS",
+        "phasePattern": "A-status",
+        "elementNote": "ATTR_STRIKE. The cap's color is paint, not a damage type.",
+        "rarityNote": "Mini Boss prestige follows the m08 proposal: Epic. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-ECHO",
+        "attributeId": "ATTR_STRIKE",
+        "environmentId": "ENV-TWR-03",
+        "humorType": "Absurd Comedy",
+        "jokeLanguage": "both",
+        "pictureColor": "Vermilion cap, iron boots. Not an element."
+      },
+      "research": {
+        "originalInspiration": "The redcap (powrie) of Anglo-Scottish border folklore",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Redcap",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": "INS-02-013",
+        "facts": [
+          "The redcap, or powrie, is a malevolent goblin of Anglo-Scottish border folklore, said to haunt ruined castles, especially sites of tyranny.",
+          "One collected description calls him a short, thickset old elf with long teeth, taloned fingers, fiery red eyes, streaming hair, iron boots, a pikestaff in the left hand, and a red cap.",
+          "The same accounts say he throws stones at travellers who shelter in his ruin, and that words of Scripture or a shown crucifix drive him off in a yell, leaving a large tooth.",
+          "A Perthshire variant is a benign little man in a high room of a castle who brings good luck. Walter Scott, citing the border tradition, wrote that every ruined tower in the south of Scotland was supposed to house one."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Redcap",
+            "title": "Redcap",
+            "accessed": "2026-11-20",
+            "supports": "Border ruin, short thickset body, iron boots, pikestaff, red cap, flung stones, and the banishment that leaves a tooth.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "sibling": {
+          "agent": "02",
+          "branch": "research/m02-western",
+          "commit": "ddeef310a6ef1e503bfd9e4ade82a3f3ca68628f",
+          "record": "INS-02-013",
+          "note": "Same Wikipedia article agent 07 fetched. Their parody line is a laundry joke. This card keeps the cap and the iron boots and does not print their sentence. The blood-soaking rite stays in research and is not the picture."
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Capper Crimson",
+        "thaiName": "หมวกชาด",
+        "monsterCategory": "Mini Boss",
+        "creatureType": "Border goblin",
+        "visualIdentity": "Short and thickset, iron boots too heavy for the stair, a pikestaff used as a dye rack. The cap is tower-vermilion and will not set: pink drips run into grey. No blood.",
+        "personality": "House-proud and offended. He narrates other people's stains.",
+        "signatureTrait": "The cap that will not stay crimson, and the iron boots that sell the outline.",
+        "comedyConcept": "Dark-fantasy comedy, softened. The legend dyes a cap in violence. He dyes his in archive ink and is furious the red keeps washing toward pink.",
+        "elementAttribute": "ATTR_STRIKE",
+        "combatArchetype": "Striker",
+        "signatureAbilityConcept": "ATK cards flavored as flung masonry. An on-attack passive may add bonus_damage on a chance, the way a passive already can. A short Taunt makes the boots the thing you have to answer.",
+        "weaknessConcept": "The folklore banishment was a spoken holy text. Here the tell is a written rule: when he plays his Skill, it is a self Taunt and a yell, and it does not hit. That is the strike window. No new 'holy' status.",
+        "loreSummary": "A Corrupted Echo of a border haunt moved into the armory, where every boot is the wrong size and the stone still remembers a ruin. He stands outside the four factions. Avatars find him midway up that floor, throwing iron weights and lecturing the dye.",
+        "factionAffiliation": null,
+        "suggestedRarity": "Epic",
+        "suggestedTowerEnvironment": "ENV-TWR-03 The Armory of Wrong Sizes. Iron boots one size too loud, on a stone floor of the Mysterious Tower.",
+        "artworkPromptConcept": "Short thickset goblin, iron boots, pikestaff over the shoulder with a dripping cap hung on it like a wet flag. Cap is vermilion failing into pink. Bright eyes, long teeth, no gore, no blood pool. Stone armory, comedy-fantasy card art, silhouette readable as boots plus cap plus pike.",
+        "ipSimilarityRisk": "medium",
+        "ipRiskReason": "The cap, boots, pike, and ruined-tower body are the folklore image players can recognize. The dye joke and the dripping cap are the new character. The blood-soaking rite is not shown.",
+        "bossTitle": "Knight of the Unset Cap / อัศวินหมวกที่สีไม่ติด",
+        "entranceConcept": "Name plate. He stamps one iron boot, flings an iron weight into the floor, and the cap drips once. No speech.",
+        "signatureSilhouette": "Wide short body, oversized boots, a pike cutting a diagonal, a soft cap shape at the tip. Secondary prop is the drip, not the mass.",
+        "personalityMotivation": "Every ruined tower was supposed to keep one of him. This tower is not ruined enough. He will make the landing behave like a castle until the cap dries the right red.",
+        "signatureMechanic": "ATK plus a chance on-attack bonus_damage, and a Taunt on a separate short DEF or Skill so the boot-stamp is a tell. AUTO can play both a hit and a taunt. Concepts only, no amounts.",
+        "phaseTransformationConcept": "Pattern A. After the cap-drip pose repeats, his art shifts from pink-dripping to a harder crimson flash and his hand prefers the ATK cards. Same four seats. The other three are iron weights with no names of their own, already placed, sharing his record.",
+        "defeatAnimationConcept": "He yells, the way the banishing accounts end in a yell, and the boots stay behind a beat longer than the body. The cap drops into a wash bucket and comes out pink. A single iron hobnail remains, the stand-in for the tooth the stories say he leaves.",
+        "uniqueLootTheme": "An iron hobnail and a cap-tassel that will not hold dye. No blood relic."
+      }
+    },
+    {
+      "monsterId": "BOS-MIN-03",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "03-eastern",
+        "towerPresence": "Tower Guardian",
+        "originId": "ORG-GUARD",
+        "engineRoleShape": "Tank",
+        "phasePattern": "A-verb",
+        "attributeId": "ATTR_GUARD",
+        "environmentId": "ENV-TWR-02",
+        "humorType": "Epic but Ridiculous",
+        "jokeLanguage": "both",
+        "pictureColor": "Ritual-bronze green and pantry lamplight. Not an element.",
+        "elementNote": "ATTR_GUARD. The bronze is the door, not a metal damage type.",
+        "rarityNote": "Mini Boss prestige follows the m08 proposal: Epic. Not a drop rate or a stat.",
+        "factionNote": "factionAffiliation is null. Not a faction member.",
+        "replaced": "Replaces the earlier kappa clerk. Agent 03 already pitched that creature as PITCH-03-07 Dish Auditor, and this sample does not repeat it."
+      },
+      "research": {
+        "originalInspiration": "The taotie, a bronze-mask creature counted among the Four Perils",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Taotie",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": "INS-03-005",
+        "sibling": {
+          "agent": "03",
+          "branch": "research/m03-eastern",
+          "commit": "af596cbd2776a142d46188cde35142053f7c1337",
+          "record": "INS-03-005",
+          "note": "Their parody line is a mask-face boss with no chin who still tries to eat the loot pile. This card uses the missing jaw and does not eat, steal, or void the player's cards. Their sensitivity mark is low. The ritual-vessel context is named here and is not the joke."
+        },
+        "facts": [
+          "The English Wikipedia page, fetched 2026-11-20, calls the taotie an ancient Chinese mythological creature commonly emblazoned on bronze artifacts in the 1st millennium BCE, and one of the Four Perils in classics such as the Classic of Mountains and Seas, alongside Hundun, Qiongqi, and Taowu.",
+          "The same page says the motif on Shang and Zhou ritual dings is a frontal, bilaterally symmetrical zoomorphic mask with raised eyes and typically no lower jaw.",
+          "The page quotes the Lüshi Chunqiu: the taotie on Zhou bronzes has a head but no body, and when it eats a person it does not swallow them. It also quotes Yang Shen: the taotie likes to eat and drink, and it used to appear on the surface of the dings.",
+          "The page says the vessels are tied to ritual and, in one modern reading, to communication with Heaven. This design does not joke about ancestor rites. Film and game creatures named on the page (a 2016 film, a Touhou character, a Digimon) are not the art reference."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Taotie",
+            "title": "Taotie",
+            "accessed": "2026-11-20",
+            "supports": "Four Perils; symmetrical bronze mask; raised eyes; typically no lower jaw; head but no body; likes to eat and drink on the ding.",
+            "fetchedBy": "agent-07"
+          }
+        ]
+      },
+      "creative": {
+        "parodyNameEn": "Clerk Nochin",
+        "thaiName": "เสมียนไร้คาง",
+        "monsterCategory": "Mini Boss",
+        "creatureType": "Bronze mask warden",
+        "visualIdentity": "A door-sized symmetrical bronze face, raised eyes, no lower jaw, ring handles where ears would be. Three rivet-echoes share the other seats and do not speak. A full bowl of leftovers is set where a bite would close, and the bite cannot close.",
+        "personality": "Hungry, formal, and unfinished.",
+        "signatureTrait": "The missing jaw. The bite is announced and does not finish.",
+        "comedyConcept": "Epic but ridiculous. The pantry door wears a bronze face that was cast to watch a meal, and the casting forgot the chin.",
+        "elementAttribute": "ATTR_GUARD",
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "A DEF card grants Shield and Taunt, so the party meets the face. A later ATK is the bite, played with no Taunt, the turn the door stops being a wall. No retrieve of the player's cards. The rivets do not Taunt.",
+        "weaknessConcept": "The jaw that was never cast. The bite card is the window: he is no longer shielding, and the bowl in the art does not move. Nothing leaves the player's hand.",
+        "loreSummary": "A Tower Guardian hung on the pantry door after an Echo of an old vessel was filed as furniture. He is not a sermon. Avatars meet a door that wants the leftovers and cannot close its mouth.",
+        "factionAffiliation": null,
+        "suggestedRarity": "Epic",
+        "suggestedTowerEnvironment": "ENV-TWR-02 The Pantry of Living Leftovers. The bowl is the pantry's. No new room was added.",
+        "artworkPromptConcept": "Comedy-fantasy card portrait, one symmetrical bronze mask filling a door, raised eyes, a bright gap where the chin should be, two ring handles, three round rivets, a full bowl it cannot bite. Warm pantry light. No gore, no people being eaten, no ancestor-rite scene, no film alien, no game costume. Silhouette: one wide face and a gap.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "The missing jaw and the symmetrical bronze face are the old motif, which is public. The pantry clerk, the ring handles, and the unfinished bite are the new character. Designs named on the source page are not the reference.",
+        "bossTitle": "Mask of the Unfinished Bite / หน้ากากที่กัดไม่ลง",
+        "entranceConcept": "Mini plate only. The door is already the face, eyes lit, bowl untouched. One pose, no speech.",
+        "signatureSilhouette": "Wide symmetrical face, two eye-ridges, a hard gap under the mouth, ring handles as side circles. Reads as a wall with a piece missing.",
+        "personalityMotivation": "He was set here to watch people eat. He would like one bite. The jaw was never cast. He will block the door until the bowl is acknowledged.",
+        "signatureMechanic": "Shield plus Taunt on the DEF card. The bite is a later ATK with no Taunt. Pattern A. Rivet seats are present from the start and only DEF. No amounts.",
+        "phaseTransformationConcept": "Pattern A. The first stretch he is the door. When the bite leads, the art shows the lower half of the door missing, head and no body, and the shield pose drops. The eyes stay, so the face is still his.",
+        "defeatAnimationConcept": "He bites the air. The bowl does not move. The face flattens back into a decoration on the door. Last beat: the bowl tips one degree toward the gap and stops.",
+        "uniqueLootTheme": "A bronze ring-handle and a bowl with no tooth mark. Trophy objects only, no stats."
+      }
+    },
+    {
+      "monsterId": "BOS-MIN-04",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "02-western",
+        "towerPresence": "Tower anomaly",
+        "engineRoleShape": "Magic",
+        "phasePattern": "A-status",
+        "elementNote": "ATTR_ARCANE. Gaze is a tell, not a damage type, and not a petrify status.",
+        "rarityNote": "Mini Boss prestige follows the m08 proposal: Epic. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-ANOM",
+        "attributeId": "ATTR_ARCANE",
+        "environmentId": "ENV-TWR-07",
+        "humorType": "Satirical Fantasy",
+        "jokeLanguage": "both",
+        "pictureColor": "Ledger ink and hen-feather cream. Not an element.",
+        "domainNote": "Refiled from 04-world-myth to 02-western after agent 02 recorded the cockatrice as a western bestiary."
+      },
+      "research": {
+        "originalInspiration": "The cockatrice of medieval European bestiary tradition",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cockatrice",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": "INS-02-007",
+        "facts": [
+          "A cockatrice is a mythical beast described as a two-legged dragon, wyvern, or serpent with a rooster's head. Legend says it hatches from a chicken egg incubated by a toad or a snake.",
+          "Myth gives it a killing touch, breath, or glance. Shakespeare is quoted on the page for 'the death-darting eye of cockatrice.'",
+          "Bestiary tradition said the weasel alone was immune to the glance, that the creature died on hearing a rooster crow, and that making it see itself in a mirror was a sure way to kill it.",
+          "The page notes the cockatrice as a staple enemy in some arcade games, tabletop fantasy games, and computer RPGs. Those appearances are later uses of the bestiary beast, not the source of the sample's design."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cockatrice",
+            "title": "Cockatrice",
+            "accessed": "2026-11-20",
+            "supports": "Rooster-headed serpent, killing glance, mirror, weasel, rooster's crow.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "sibling": {
+          "agent": "02",
+          "branch": "research/m02-western",
+          "commit": "ddeef310a6ef1e503bfd9e4ade82a3f3ca68628f",
+          "record": "INS-02-007",
+          "note": "Same Wikipedia article. Their parody line is a rooster-dragon that still tries to crow dawn. This card is the ledger hen and does not print that sentence. Basilisk INS-02-006 is a different gaze creature and is not used."
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Dame Glasspeck",
+        "thaiName": "ดามกระจก",
+        "monsterCategory": "Mini Boss",
+        "creatureType": "Rooster-serpent",
+        "visualIdentity": "A hen-sized head with a clerk's visor, wattles stamped like wax seals, a short serpent body and two scaled legs. She holds a hand mirror the way other clerks hold a date stamp. The visor, not a basilisk crown, is the joke prop.",
+        "personality": "Certain. Every look is a rejection slip she expects you to thank her for.",
+        "signatureTrait": "The visor-glance. It does not petrify. It forces the eye, which the battle already expresses as Taunt.",
+        "comedyConcept": "Satirical fantasy. Her death-darting eye has been reassigned to accounts payable. She glances, and the form comes back stamped SEEN.",
+        "elementAttribute": "ATTR_ARCANE",
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "A Skill called Mirror Glance: Taunt on herself, no damage. While she is the taunter, the party spends cards on the hen. A turn-start passive may buff her DEF, the 'hard stare.' There is no petrify op in the engine, and this record does not add one.",
+        "weaknessConcept": "The bestiary mirror. In the fight it is her own Mirror Glance turn: she is occupied with the glass and deals nothing. A shield already on an ally is the readable 'mirror' in the art, a shine on the DEF portrait, not a reflect-damage rule. The rooster crow is only the defeat bell.",
+        "loreSummary": "A tower anomaly hatched at the Mirror Well from a misfiled egg and a spilled ink-toad story. The ledger is what she reads in the water. She rejects passes by looking at them. She occupies a magic-shaped seat if a future adapter needs a role, and she is not a Celestial Nexus member.",
+        "factionAffiliation": null,
+        "suggestedRarity": "Epic",
+        "suggestedTowerEnvironment": "ENV-TWR-07 The Mirror Well. A ledger hen at the lip of a well that looks back, in the Mysterious Tower.",
+        "artworkPromptConcept": "Small rooster-serpent, comb and wattles, visor like a clerk's eyeshade, hand mirror, two bird legs, scaled tail. Comedy-fantasy card art. No stone victims, no medusa hair, no franchise basilisk. Silhouette: comb, beak, mirror disk held away from the body, tail curl.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "Rooster head plus serpent body is a widespread bestiary shape. The ledger visor and stamp-wattles are original. No specific game's cockatrice model is described.",
+        "bossTitle": "The Ledger Hen / แม่ไก่สมุดบัญชี",
+        "entranceConcept": "Plate. She clicks the visor down and turns the mirror outward. The glass flashes. No speech. Players are meant to remember the flash as the empty-damage turn.",
+        "signatureSilhouette": "Comb and beak over a low serpent coil, mirror disk separated from the body by a gap of background. The disk is the primary characteristic.",
+        "personalityMotivation": "She believes an unlooked-at form is a dangerous form. She will stare the party into the queue until every card has been seen.",
+        "signatureMechanic": "Self Taunt Skill with no damage, plus a possible turn-start DEF buff. The other seats are ledger-stands that only DEF. Hitting her during Mirror Glance is the lesson. AUTO may play that Skill when it is legal; the flash in the entrance is what makes the card readable.",
+        "phaseTransformationConcept": "Pattern A. After the mirror flash has happened once, her comb stands higher in the art and the DEF buff pose replaces the bow of the neck. Same seats. The second stretch is the same glance, ruder: the visor is lower. No new status.",
+        "defeatAnimationConcept": "The tower's morning bell rings, the stand-in for the rooster crow. She meets her own mirror as a shield tilts up from a defeated stand. The comb droops. She folds into a neat rejected form, one wax-seal wattle left on the page.",
+        "uniqueLootTheme": "A wax-seal wattle and a cracked hand mirror. Not a petrified trophy."
+      }
+    },
+    {
+      "monsterId": "BOS-MIN-05",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "05-anime-pop",
+        "domainDetail": "Urban legend and historical legend, as assigned to agent 05",
+        "towerPresence": "Tower anomaly",
+        "engineRoleShape": "DPS",
+        "phasePattern": "A-status",
+        "elementNote": "ATTR_STRIKE. No lightning damage type.",
+        "rarityNote": "Mini Boss prestige follows the m08 proposal: Epic. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-ANOM",
+        "attributeId": "ATTR_STRIKE",
+        "environmentId": "ENV-TWR-04",
+        "humorType": "Absurd Comedy",
+        "jokeLanguage": "both",
+        "pictureColor": "Lantern yellow and a dark cloak. Not an element."
+      },
+      "research": {
+        "originalInspiration": "Spring-heeled Jack, a Victorian English urban legend",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Spring-heeled_Jack",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": null,
+        "facts": [
+          "Spring-heeled Jack is an entity in Victorian English folklore. The first claimed sighting was in 1837, with later reports across the United Kingdom, especially suburban London, the Midlands, and Scotland. The last reported sighting on the page is Liverpool in 1904.",
+          "Reports collected on the page describe a leaping figure: sometimes tall and thin with the look of a gentleman, a dark cloak, a frightening face, eyes compared to red fire, and breath of blue and white flame. Sharp claws are also mentioned. Extraordinary leaps, including a claimed jump over a high wall, are part of the stories.",
+          "The press and the public gave him the name. Penny dreadfuls, plays, and Punch and Judy shows took him up, and in London his name was used as a bogeyman.",
+          "The page includes assault accounts. Those accounts are not used in this design."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Spring-heeled_Jack",
+            "title": "Spring-heeled Jack",
+            "accessed": "2026-11-20",
+            "supports": "1837 Victorian leaping figure, cloak, gentleman shape, flames, and the public name. Assault details are deliberately unused.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "alignmentNote": "Spring-heeled Jack is not in the m05 inspiration file read on 2026-11-20. Facts stay the page agent 07 fetched."
+      },
+      "creative": {
+        "parodyNameEn": "Auditor Leapwell",
+        "thaiName": "ผู้ตรวจส้นสปริง",
+        "monsterCategory": "Mini Boss",
+        "creatureType": "Leaping night auditor",
+        "visualIdentity": "Tall, thin, a gentleman's cloak over a night-auditor's sash, spring heels visible under the hem, a blue lantern instead of flaming breath. The face is a polite half-mask with round red lenses. No claws near a person.",
+        "personality": "Chipper, punctual, and always one balcony above the conversation.",
+        "signatureTrait": "The spring heels and the blue lantern. The leap is an entrance and a card tell, not a movement system.",
+        "comedyConcept": "Epic but ridiculous. The terror of the Victorian alley has a clipboard and a route of balconies to audit before dawn.",
+        "elementAttribute": "ATTR_STRIKE",
+        "combatArchetype": "Skirmisher",
+        "signatureAbilityConcept": "A Skill that grants next_attack, shown as the crouch before a leap, then an ATK card. A draw effect on a third card is him pulling one more balcony report into hand. No jump mechanic, no new movement.",
+        "weaknessConcept": "The crouch is the tell. The next_attack Skill is the window: the party shields or taunts their own front seat before the hit lands. AUTO's balanced policy already likes to play a next-attack Skill before a damaging card, so the windup is likely to be visible.",
+        "loreSummary": "A tower anomaly stitched from an Echo of a city night and a stack of unread shift reports. He bounds the outer balconies checking who is still inside after hours. He is not Phantom Blades. He simply hits like a duelist.",
+        "factionAffiliation": null,
+        "suggestedRarity": "Epic",
+        "suggestedTowerEnvironment": "ENV-TWR-04 The Corridor of Uninvited Footsteps. Night balconies of the Mysterious Tower, filed as one corridor.",
+        "artworkPromptConcept": "Tall thin cloaked gentleman, spring coils under the heels, blue lantern, red round lenses, auditor sash and clipboard. Mid-crouch, cloak flared. Comedy-fantasy, moonlit stone balcony. No victim, no claws in contact with anyone. Silhouette: cloak triangle, two springs, lantern orb.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "Leaps, cloak, gentleman outline, and a flame-colored light are the legend's public image. The name, the sash, the clipboard, and the lantern-not-breath are new. Violent episodes from the reports are not restaged.",
+        "bossTitle": "Night-Shift Bounder / ผู้กระโดดกะดึก",
+        "entranceConcept": "Plate. He drops from above the portrait frame, springs compressing, lantern flaring blue, and freezes in the crouch that the Skill will repeat. No speech.",
+        "signatureSilhouette": "Narrow cloak, two coils under the feet, a lantern held out so the arm makes a gap. Facing is the lean of the cloak toward the party.",
+        "personalityMotivation": "Dawn is the deadline. Anyone still on the balcony is an unclosed ticket. He will leap the route until the book balances.",
+        "signatureMechanic": "next_attack Skill, then ATK. Optional draw for the report card. The other seats are balcony posts, already present, with no taunt of their own. Concepts only, no amounts.",
+        "phaseTransformationConcept": "Pattern A. The second stretch is the same leap with the cloak thrown back and the lenses brighter. He still crouches before he hits. The art change is the announcement. No second form id is spawned.",
+        "defeatAnimationConcept": "A spring snaps. He hangs a moment by the remaining heel, lantern going out from blue to ordinary glass. The clipboard clocks the floor with a satisfied stamp, then he folds the cloak over the broken coil like a shift ended.",
+        "uniqueLootTheme": "A snapped spring-heel and a blue lantern shard. Not a claw."
+      }
+    },
+    {
+      "monsterId": "BOS-MAIN-01",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "01-classic-rpg",
+        "towerPresence": "Tower Guardian",
+        "engineRoleShape": "Magic",
+        "phasePattern": "B-seats",
+        "elementNote": "ATTR_ARCANE. Ash is paint, not a fire damage type.",
+        "rarityNote": "Main Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-GUARD",
+        "attributeId": "ATTR_ARCANE",
+        "environmentId": "ENV-TWR-05",
+        "humorType": "Satirical Fantasy",
+        "jokeLanguage": "both",
+        "pictureColor": "Ash-grey waistcoat and receipt-paper gold. Not an element."
+      },
+      "research": {
+        "originalInspiration": "The treasure-guarding dragon as the pattern of the first video-game boss, the Gold Dragon of dnd (1975)",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Boss_(video_games)",
+        "researchConfidence": "high",
+        "protectedName": true,
+        "protectedNameNote": "The name Gold Dragon belongs to that 1975 encounter. It is not used as this boss's name.",
+        "publicDomainTradition": false,
+        "inspirationId": null,
+        "facts": [
+          "Wikipedia's boss article states that the first interactive video game with a boss was dnd (1975) on PLATO. The objective is an orb in a treasure room at the bottom of the dungeon, guarded by a high-level enemy called the Gold Dragon. Only defeating that dragon lets the player claim the orb and finish.",
+          "Agriogianis describes that dragon as tougher than the dungeon’s other enemies, teased from the start of a run, and available too early on a nonlinear path, so it functions as a final test the player is pushed to prepare for. He also summarizes the older pattern of a dragon guarding a hoard, naming the Norse Fafnir, a dwarf who became a dragon, guarded gold, and was slain by Sigurd.",
+          "The same thesis mentions a later literary hoard-dragon by name while discussing that pattern. This record does not use that character’s traits.",
+          "Branyiczky’s temple-boss note: after the player has proved the pattern, an enraged stretch changes speed, aggression, or the attack pattern so the fight does not stay identical until the end."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Boss_(video_games)",
+            "title": "Boss (video games)",
+            "accessed": "2026-11-20",
+            "supports": "dnd (1975) Gold Dragon guarding the orb at the bottom of the dungeon.",
+            "fetchedBy": "agent-07"
+          },
+          {
+            "url": "https://digitalcommons.liu.edu/cgi/viewcontent.cgi?article=1042&context=post_honors_theses",
+            "title": "Agriogianis, The Roles, Mechanics, and Evolution of Boss Battles in Video Games (2018)",
+            "accessed": "2026-11-20",
+            "supports": "The gold dragon as a teased, tougher final test; Fafnir as a hoard-guarding dragon in the thesis summary.",
+            "fetchedBy": "agent-07"
+          },
+          {
+            "url": "https://www.gamedeveloper.com/design/building-better-bosses",
+            "title": "Building Better Bosses",
+            "accessed": "2026-11-20",
+            "supports": "Enraged stretch after the pattern has been proved.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "alignmentNote": "research/m01-classic-rpg was not on origin. The 1975 dnd Gold Dragon citation stays the page agent 07 fetched. INS-04-023 Fafnir was left unused because agent 04 already pitched that hoard as an elite, and because a second hoard dragon would duplicate this floor boss."
+      },
+      "creative": {
+        "parodyNameEn": "Sir Cindervest",
+        "thaiName": "เซอร์เสื้อกั๊กเถ้า",
+        "monsterCategory": "Main Boss",
+        "creatureType": "Hoard dragon",
+        "visualIdentity": "A long dragon in a scorched waistcoat, abacus beads along the wing-bone, receipts speared on the horns. The hoard is paper, not coins. Three receipt-echoes sit in front of him like clerks.",
+        "personality": "Grand, fussy, and personally wounded by an unbalanced book.",
+        "signatureTrait": "The waistcoat and the abacus. The coat is the phase tell: on, he is the accountant; off, he is the breath.",
+        "comedyConcept": "Epic but ridiculous. The climax dragon of a dungeon is doing the audit the tower postponed.",
+        "elementAttribute": "ATTR_ARCANE",
+        "combatArchetype": "Artillery",
+        "signatureAbilityConcept": "While the echoes live, his DEF and Skill cards put Shield on allies, the hoard protected. His own ATK card targets All_Enemies and is flavored as stamp-breath. Counting is a Skill that draws. No fire damage type.",
+        "weaknessConcept": "The abacus turn. The draw Skill is him counting, and that card does not breathe. Players who watched the Mini Boss lessons spend the counting turn on the echoes. He is not weak on a single scale, and no such weak-point rule is added.",
+        "loreSummary": "The floor’s Tower Guardian, an Echo that settled on a vault of unfiled receipts and grew a dragon’s outline around the job. Avatars are told on the way up that the vault will not open while the book is open. He is the teased test of that floor, not a copy of any named dragon.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-05 The Observatory of Bad Math. A receipt vault whose count never closes, in the Mysterious Tower.",
+        "artworkPromptConcept": "Comedy-fantasy dragon in a charred waistcoat, horn-rack of paper receipts, abacus strung on the wing. Warm vault, paper hoard. Three small paper-imp echoes in front. No gold pile copied from a famous illustration, no lone missing scale. Silhouette: waistcoat bulge, wings, horns, abacus line.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "A dragon guarding a prize is an ancient and a game-historical pattern. The waistcoat, the receipt hoard, and the abacus are the character. Named dragons and their specific weak points are not used.",
+        "bossTitle": "Hoard Accountant / นักบัญชีขุมทรัพย์",
+        "entranceConcept": "First visit only: a short scene of him spearing one more receipt, tapping the abacus, and exhaling a ring of stamp-marks while the party cannot act. One line: the book is not closed. Later visits keep the plate and that line. The scene shows the breath so the All_Enemies card is not a surprise mechanic.",
+        "signatureSilhouette": "Seated dragon, waistcoat as the bulky torso, horns carrying horizontal paper flags, one wing raised so the abacus reads as a rake. Bigger on the plate than a Mini Boss.",
+        "personalityMotivation": "Someone has to close the vault’s books. He will burn a stamp across the whole party before he lets an uncounted Avatar through.",
+        "signatureMechanic": "Ally Shield while three receipt-echo seats live. All_Enemies ATK as the breath once he spends a next_attack or simply plays the ATK card. Draw Skill as the count. Pattern B: echoes start on the field. No amounts.",
+        "phaseTransformationConcept": "Pattern B, read as Branyiczky’s enrage without a new flag. When two echoes are gone, the waistcoat burns off in the art and the remaining dragon plus the last echo prefer the breath card over the shield card. The abacus stays, so the counting window still exists. Appearance changes; the verb was already taught.",
+        "defeatAnimationConcept": "The waistcoat collapses into ash-paper. He tries to catch one floating receipt, misses, and coils down around the abacus. Last beat: a single bead ticks to the even side. The vault door’s paper seal unsticks.",
+        "uniqueLootTheme": "Abacus beads and a waistcoat button of cinder. Paper trophies, no stat weapon."
+      }
+    },
+    {
+      "monsterId": "BOS-MAIN-02",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "02-western",
+        "towerPresence": "Tower Guardian",
+        "engineRoleShape": "Tank",
+        "phasePattern": "B-seats",
+        "elementNote": "ATTR_GUARD.",
+        "rarityNote": "Main Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-GUARD",
+        "attributeId": "ATTR_GUARD",
+        "environmentId": "ENV-TWR-14",
+        "humorType": "Epic but Ridiculous",
+        "jokeLanguage": "both",
+        "pictureColor": "Holly green and gilt. Not an element."
+      },
+      "research": {
+        "originalInspiration": "The Green Knight of the 14th-century poem Sir Gawain and the Green Knight",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Green_Knight",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": null,
+        "facts": [
+          "The Green Knight comes from the late-14th-century poem Sir Gawain and the Green Knight and the related Greene Knight. In Sir Gawain he is revealed as Bertilak de Hautdesert. The sample does not use that name.",
+          "He enters Arthur’s Christmas court green in skin and clothes, beard ‘big as a bush,’ half-giant in the poem’s scale, holly bough in one hand and a battle axe in the other. He offers a Christmas game: one blow now, the return blow in a year.",
+          "Gawain beheads him. He retrieves the head, replaces it, and tells Gawain where to meet him. At the return meeting he feints two blows and nicks on the third.",
+          "The page notes that the beheading game is older than this poem, including the Middle Irish Bricriu’s Feast. The green knight of this poem is singled out as fully green."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Green_Knight",
+            "title": "Green Knight",
+            "accessed": "2026-11-20",
+            "supports": "Christmas entrance, green body, axe and holly, beheading game, head retrieved, feinted return blows.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "alignmentNote": "The Green Knight is not in the m02 inspiration file read on 2026-11-20. Facts stay the pages agent 07 fetched."
+      },
+      "creative": {
+        "parodyNameEn": "Sir Verdant Gale",
+        "thaiName": "เซอร์พายุเขียว",
+        "monsterCategory": "Main Boss",
+        "creatureType": "Holly-clad challenger",
+        "visualIdentity": "Half again the height of a portrait, green armor and a bush of a beard, a tower wreath of green receipts instead of holly, a beheading axe, and a hatbox on a chain. The head’s place is the box, not a severed prop in the hand.",
+        "personality": "Jolly, terrifying, and completely serious about a game he invented.",
+        "signatureTrait": "The hatbox. The head’s absence and return are Regen and a second seat, not a gore gag.",
+        "comedyConcept": "Epic but ridiculous. The beheading game has been rewritten as a challenge you may accept, and he keeps his head in formal storage.",
+        "elementAttribute": "ATTR_GUARD",
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "Taunt is the challenge: while it is up, he is the blow you are dared to spend. Regen is the head coming back to the collar. Two low-threat DEF cards are the feints. The real ATK follows. An on-attack passive may add bonus_damage on that real hit.",
+        "weaknessConcept": "The feints. Two DEF turns in a row are the tell, matching the poem’s two feints before the nick, without copying the nick as a scripted wound. Spending the whole hand on the feints leaves no answer for the third card. No new ‘game contract’ system.",
+        "loreSummary": "A Tower Guardian who walked into a landing during a feast-day Echo and offered a game instead of a war. He judges Avatars the way the poem’s knight judges a court: friendly, huge, and not optional once the axe is lifted. He is not an Aegis knight.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-14 The Throne Landing of Maybe. A feast hall at a door that might be the next course, in the Mysterious Tower.",
+        "artworkPromptConcept": "Towering green-armored knight, beard like a shrub, receipt-wreath, axe, hatbox on a chain at the hip. Jolly severe face. Comedy-fantasy stained glass light. No decapitation shown, no named Arthurian faces. Silhouette: axe diagonal, wreath circle, box rectangle, green mass.",
+        "ipSimilarityRisk": "medium",
+        "ipRiskReason": "Green armor, great height, axe, and a head that leaves and returns are the recognizable poem-image, which is medieval. The hatbox, the receipt wreath, and the audit-game line keep him off the poem’s plot and off any one film costume.",
+        "bossTitle": "Knight of the Hatbox Head / อัศวินหัวในกล่องหมวก",
+        "entranceConcept": "First visit: he sets the wreath on the table, lifts the axe, and says the landing is a game, not a war. The hatbox thumps once. Later visits: plate, wreath, that line. The scene demonstrates the Taunt, not a new rule.",
+        "signatureSilhouette": "Oversized green man, axe clear of the body, round wreath, rectangular box at the hip. Bulk reads tank. Facing is the axe’s lean.",
+        "personalityMotivation": "He wants one honest blow and the courtesy of a return. Avatars who treat him as a door to be rushed are playing a different game than the one he offered.",
+        "signatureMechanic": "Taunt plus Regen on the body seat. Two feint DEF cards, then an ATK. A hatbox seat is present from the start and buffs him with a turn-start DEF or ATK buff once the body’s shield art breaks. Pattern B. No amounts.",
+        "phaseTransformationConcept": "Pattern B. While the hatbox is shut, he is the taunting body with Regen. When his shield pool empties, the box opens in the art and the second seat is plainly the voice giving the return blow. The body stays. No spawn, no gore frame.",
+        "defeatAnimationConcept": "He stops the axe a finger short of the frame, laughs, and closes the hatbox with a click. The wreath drops. Last beat: he bows as if the nick landed on him instead, and leaves the box on the table as the trophy.",
+        "uniqueLootTheme": "A green receipt-wreath and the hatbox clasp. The head is not loot."
+      }
+    },
+    {
+      "monsterId": "BOS-MAIN-03",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "03-eastern",
+        "towerPresence": "Wild Creature",
+        "originId": "ORG-WILD",
+        "engineRoleShape": "Magic",
+        "phasePattern": "B-seats",
+        "attributeId": "ATTR_WILD",
+        "environmentId": "ENV-TWR-13",
+        "humorType": "Epic but Ridiculous",
+        "jokeLanguage": "both",
+        "pictureColor": "Wet stone and three arrow-colors. Not an element.",
+        "elementNote": "ATTR_WILD. Flood is the picture. There is no water damage type and no poison status.",
+        "rarityNote": "Main Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "factionAffiliation is null. Wild Creature is an origin, not a faction.",
+        "environmentConflict": "No ENV-TWR biome is a flood. The service elevator is used because the sourced joke is a creature that cannot agree which way the water should run, and this room cannot agree which floor to open. No 16th environment was added.",
+        "replaced": "Replaces the earlier eight-headed brewer. Agent 03's INS-03-053 says do not parody that serpent."
+      },
+      "research": {
+        "originalInspiration": "Xiangliu (Xiangyao), the nine-headed flood serpent of the Classic of Mountains and Seas",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Xiangliu",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": "INS-03-010",
+        "sibling": {
+          "agent": "03",
+          "branch": "research/m03-eastern",
+          "commit": "af596cbd2776a142d46188cde35142053f7c1337",
+          "record": "INS-03-010",
+          "note": "Their parody line is a nine-headed flood snake that cannot agree which way the river should run. This card uses that disagreement as elevator arrows. It does not print their sentence as the name."
+        },
+        "facts": [
+          "The English Wikipedia page, fetched 2026-11-20, says Xiangliu, known in the Classic of Mountains and Seas as Xiangyao, is a venomous nine-headed snake monster that brings floods and destruction in Chinese mythology. This design does not use a poison status. The venom sentence is a sourced fact, not a combat rule.",
+          "The same page says the body may be shown coiled. Older woodcuts cluster the nine heads on a single neck, side by side or stacked three high, facing three directions. Modern pictures often give each head its own neck, like a hydra. This design uses the older cluster, not the hydra.",
+          "The page says Xiangliu was a minister of the water deity Gonggong, and it tells of Yu the Great, Nüwa, and blood that left land unable to grow grain. None of that plot, and none of those figures, is used."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Xiangliu",
+            "title": "Xiangliu",
+            "accessed": "2026-11-20",
+            "supports": "Nine-headed flood snake; coiled body; older woodcuts cluster the heads on one neck, facing three directions.",
+            "fetchedBy": "agent-07"
+          }
+        ]
+      },
+      "creative": {
+        "parodyNameEn": "Clerk Forkwater",
+        "thaiName": "เสมียนน้ำแยก",
+        "monsterCategory": "Main Boss",
+        "creatureType": "Many-headed flood serpent",
+        "visualIdentity": "One coiled body in the boss seat. Nine small faces clustered on a single neck, the older woodcut stack, not a fan of hydra necks. Three direction seats hold three different arrows. Indoor rain in an elevator. No god behind him.",
+        "personality": "Diligent, soaked, and unable to pick a floor.",
+        "signatureTrait": "The three arrows. While two point elsewhere, the doors stay shut.",
+        "comedyConcept": "Epic but ridiculous. The tower's indoor rain hired a clerk with too many faces, and each face stamped a different floor.",
+        "elementAttribute": "ATTR_WILD",
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "The three direction seats Taunt, each wanting to be the way the party must answer. The body Shields. A Skill keeps Taunt on one direction and drops it from the other two for that card, the moment a single gutter is chosen. No poison. No new damage type.",
+        "weaknessConcept": "The turn only one arrow is the Taunt. The other seats can be chosen, and the body is spending the card on the argument. The coil is not venomous in this fight.",
+        "loreSummary": "A Wild Creature coiled in the service elevator because the floors would not agree which way the water should leave. He is not a minister and not a god's labor. Avatars are a fourth opinion he did not request.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-13 The Service Elevator Between Moods. The flood is the elevator's indecision. See notes.environmentConflict.",
+        "artworkPromptConcept": "Comedy-fantasy card portrait, one wet coiled serpent, nine small faces stacked on one neck and facing three ways, three arrow boards, indoor rain, an elevator frame. Grand, not cute-only. No hydra necks, no blood, no barren land, no deity, no imperial weapon. Silhouette: one coil, a bouquet of heads, three arrows.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "Nine heads, the coil, and the flood are the myth, which is public. One neck, the elevator arrows, and the clerk's stamps are the new character. The hydra silhouette was deliberately not used.",
+        "bossTitle": "The Flood That Will Not Pick a Gutter / น้ำท่วมที่เลือกท่อไม่ได้",
+        "entranceConcept": "First visit: three arrows light in different colors and the heads talk over each other. One line, in unison by accident: the floor is not this one. Later visits: the arrows and the line.",
+        "signatureSilhouette": "A low coil, a cluster of small heads on one neck, three arrow boards at different heights. The arrows are the primary characteristic. Facing is the three directions at once.",
+        "personalityMotivation": "He will not open the doors until the heads agree on a floor. They face three ways because that is how the old pictures set them. Avatars are passengers in an elevator that is still taking the vote.",
+        "signatureMechanic": "Direction seats Taunt. Body Shield. A Skill keeps one Taunt and drops the other two. Pattern B, seats present at the start. When two direction seats are gone, the remaining cards lead with ATK. No amounts. No poison op.",
+        "phaseTransformationConcept": "Pattern B. When two direction seats fall, the cluster turns toward the remaining arrow and the body's cards shift from Shield toward ATK. The heads and the coil stay, so he is still readable. There is no second body and no spawn.",
+        "defeatAnimationConcept": "The last arrow spins and lands on no floor. The coil settles into a puddle the elevator mops. Last beat: a stamp falls onto a dry step, reading cancelled.",
+        "uniqueLootTheme": "A bent arrow sign and a dry stamp. Not a weapon from a tail, and not a god's token."
+      }
+    },
+    {
+      "monsterId": "BOS-MAIN-04",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "04-world-myth",
+        "towerPresence": "Wild Creature",
+        "engineRoleShape": "Magic",
+        "phasePattern": "A-status",
+        "elementNote": "ATTR_ARCANE.",
+        "rarityNote": "Main Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-WILD",
+        "attributeId": "ATTR_ARCANE",
+        "environmentId": "ENV-TWR-12",
+        "humorType": "Satirical Fantasy",
+        "jokeLanguage": "both",
+        "pictureColor": "Web-grey and story-ink. Not an element."
+      },
+      "research": {
+        "originalInspiration": "Anansi, the spider of Akan folklore, broker of stories",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Anansi",
+        "researchConfidence": "high",
+        "protectedName": true,
+        "protectedNameNote": "Anansi is the folkloric name and is not used as this boss's name.",
+        "publicDomainTradition": true,
+        "inspirationId": null,
+        "facts": [
+          "Anansi (also Ananse) is a figure in Akan religion and folklore, the name glossed as spider. He is associated with stories, wisdom, knowledge, wit, and trickery, and is usually depicted as a spider, sometimes with a human face or with spider features on a human body.",
+          "A commonly retold tale, recorded by Rattray and summarized on the page: he wants the stories the sky god Nyame is keeping, is set challenges, succeeds by cunning, and Nyame declares the stories will be known as spider stories. The sample does not restage those challenges.",
+          "The page says anansesem, spider tales, became the name of a whole body of Ashanti fables, and that the stories traveled to the Caribbean with enslaved Africans.",
+          "He is described as a trickster who beats stronger opponents by wit, and as both protagonist and antagonist in his own tales."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Anansi",
+            "title": "Anansi",
+            "accessed": "2026-11-20",
+            "supports": "Akan spider, stories and trickery, the Nyame story-bargain in summary, anansesem.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "alignmentNote": "Anansi is not in the m04 inspiration file read on 2026-11-20. Facts stay the page agent 07 fetched. Domain stays 04-world-myth."
+      },
+      "creative": {
+        "parodyNameEn": "Sir Stairweb",
+        "thaiName": "เซอร์ใยบันได",
+        "monsterCategory": "Main Boss",
+        "creatureType": "Story-broker spider",
+        "visualIdentity": "A tall spider with a human smile and a clerk’s cuffs, a quill in one limb, webs strung along the stair like filing lines. The web is also his shield-art. He is not named for the sky god or for the spider of the tales.",
+        "personality": "Charming, unpaid, and convinced every fight is a story he already told better.",
+        "signatureTrait": "The repeated anecdote. He plays a tale, discards it, and retrieves it.",
+        "comedyConcept": "Satirical fantasy. The broker of all stories has set up on a landing and charges rent in attention.",
+        "elementAttribute": "ATTR_ARCANE",
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "An ATK card that resolves to Discard, flavored as a told story, and a Skill that retrieves that card id from his own Discard back to hand. The engine retrieves from the acting side’s pile only, with a permit. He does not take the player’s cards. That limit is part of the design, not a missing feature to patch.",
+        "weaknessConcept": "The retrieve turn spends his AP on the retelling and does not hit. The web-shield, a Shield card, is the other tell: when the shield art is torn, he stops bargaining and Taunts. Players hit during the retelling.",
+        "loreSummary": "A Wild Creature who followed an Echo of a story up the stair and declared himself its broker. He will not let a party pass until they have heard the anecdote twice. He is not a Celestial mage. He simply lives in Skill cards.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-12 The Archive of Unfinished Legends. A story stair inside the archive of the Mysterious Tower.",
+        "artworkPromptConcept": "Tall spider with a human smile, ink cuffs, quill, webs like ruled lines on a stone stair. Comedy-fantasy, clever not horrific. No copied folk-art spider god, no child-eating imagery. Silhouette: eight-limb spread, quill angled out, round abdomen.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "A storytelling spider is recognizable as this tradition. The name, the cuffs, the quill, and the retrieve-his-own-card joke are original. The sky god’s four challenges are not the fight.",
+        "bossTitle": "Story-Broker of the Stair / นายหน้าเรื่องเล่าแห่งบันได",
+        "entranceConcept": "First visit: he clears his throat, tells one sentence of an anecdote, and the web brightens into a shield shimmer. One line on return: he offers to start again from the beginning. The retrieve is previewed by him repeating the sentence.",
+        "signatureSilhouette": "Limb spread wider than the stair, quill breaking the outline, abdomen like a sealed jar of thread. The smile is interior detail, not the silhouette.",
+        "personalityMotivation": "He wants the landing’s stories to be his to retell. A party that walks past without listening is a plot hole. He will make them hear it again.",
+        "signatureMechanic": "Own-Discard retrieve with an explicit card-id permit, plus Shield as the web, plus Taunt once the shield pose ends. Draw may support the retelling. Pattern A. No amounts. No opponent-pile theft.",
+        "phaseTransformationConcept": "Pattern A. When the shield art tears, the web hangs in threads and he plays Taunt instead of the bargain. The quill and the smile stay. The second stretch is the same anecdote, sharper, because the retrieved card is back in hand. Appearance marks the shift.",
+        "defeatAnimationConcept": "He reaches the end of the anecdote and forgets the last word. The web slumps into loose thread. Last beat: he offers the quill, annoyed that the party finished the story without him.",
+        "uniqueLootTheme": "A thread-spool and a nib stained with stair-dust. Not a divine name."
+      }
+    },
+    {
+      "monsterId": "BOS-MAIN-05",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "05-anime-pop",
+        "towerPresence": "Corrupted Echo",
+        "engineRoleShape": "DPS",
+        "phasePattern": "A-status",
+        "elementNote": "ATTR_ECHO. A legend done as a shout. Not a faction color.",
+        "rarityNote": "Main Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-ECHO",
+        "attributeId": "ATTR_ECHO",
+        "environmentId": "ENV-TWR-09",
+        "humorType": "Epic but Ridiculous",
+        "jokeLanguage": "both",
+        "pictureColor": "Megaphone brass and a time-clock belt. Not an element."
+      },
+      "research": {
+        "originalInspiration": "The transforming masked rider of the Kamen Rider franchise, as a genre pattern, not as any one rider",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kamen_Rider",
+        "researchConfidence": "medium",
+        "protectedName": true,
+        "protectedNameNote": "Kamen Rider, Henshin, and Rider Kick are franchise terms. None is used as this boss's name or catchphrase.",
+        "publicDomainTradition": false,
+        "inspirationId": "INS-05-014",
+        "facts": [
+          "The Kamen Rider franchise began in 1971. Wikipedia describes masked, enhanced heroes who transform with a belt, commonly called a Driver, usually by calling a transformation phrase glossed as 'Transform,' and who fight monsters of the week. Many have multiple combat forms.",
+          "The Kamen Riders article says the change from civilian form to rider form uses a Henshin Belt, often with a signature pose and the called word, and that many riders have optional weapons and alternate forms. It names a diving kick as the iconic finishing move, used when the opponent has already been weakened.",
+          "The franchise page notes motorcycles, called Rider Machines, as the usual transport. This boss does not add a vehicle to the battle.",
+          "Confidence is medium because the pages describe a living commercial franchise. The sample takes the public pattern of belt, pose, shouted change, and a second form, and builds a different character."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Kamen_Rider",
+            "title": "Kamen Rider",
+            "accessed": "2026-11-20",
+            "supports": "1971 franchise, transformation belt, shouted transform phrase, multiple forms, monster-of-the-week fights.",
+            "fetchedBy": "agent-07"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Kamen_Riders",
+            "title": "Kamen Riders",
+            "accessed": "2026-11-20",
+            "supports": "Henshin belt, signature pose, called transformation, alternate forms, and the finishing kick after the foe is weakened.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "sibling": {
+          "agent": "05",
+          "branch": "research/m05-anime-pop",
+          "commit": "969aa9bf052d79545f952067d0c2d30dbccd8475",
+          "record": "INS-05-014",
+          "note": "Same Kamen Rider Wikipedia article. Their record marks the name, the compound eyes, the scarf, the belt, Shocker, and the Rider Kick as protected. This boss has no motorcycle, so it does not repeat their parking punchline. The shout is Encore, not the franchise's transformation cry."
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Captain Encore",
+        "thaiName": "กัปตันอีกรอบ",
+        "monsterCategory": "Main Boss",
+        "creatureType": "Transforming duel rival",
+        "visualIdentity": "A tower usher in a short cape who slams a time-clock belt and shouts. The visor is a megaphone, not an insect helmet. No motorcycle. The second form adds a longer scarf and a second glove. A punch card sticks out of the belt.",
+        "personality": "Sincere, loud, and unable to hit before the announcement.",
+        "signatureTrait": "The shouted form-name. The pose is the next_attack Skill. The hit comes after.",
+        "comedyConcept": "Epic but ridiculous. He thinks the Avatar party is his destined rival and will not throw the punch until the landing has heard the name of the form.",
+        "elementAttribute": "ATTR_ECHO",
+        "combatArchetype": "Striker",
+        "signatureAbilityConcept": "A Skill that grants next_attack, played as the belt pose and the shout. The following ATK is the hit. A turn-start passive may buff his own ATK on a chance, the 'powering up' before the announcement. The finishing-kick idea is only this order: buff or next_attack first, damage second. No explosion, no vehicle.",
+        "weaknessConcept": "The speech turn. While he poses, he is not hitting. Shield or Taunt on the party’s front seat answers the hit that AUTO is likely to play next, because the balanced AUTO policy already prefers a next-attack Skill before damage.",
+        "loreSummary": "A Corrupted Echo of a hero show that learned the tower’s Avatars by name and decided they were late to the duel. He is not Phantom Blades. He stands on a balcony and demands an audience.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-09 The Ballroom Stuck on One Dance. A duel balcony that will not leave the chorus, in the Mysterious Tower.",
+        "artworkPromptConcept": "Comedy-fantasy usher-cape rival, time-clock belt, megaphone visor, punch card, one glove then two. Shouting pose, scarf mid-flare. No compound eyes, no bike, no copyrighted belt shape, no studio logo. Silhouette: megaphone head, belt block, scarf diagonal.",
+        "ipSimilarityRisk": "medium",
+        "ipRiskReason": "Belt, pose, shout, and a second form are enough for a player to recognize the tokusatsu pattern. The megaphone visor, time clock, usher cape, and the word Encore are the distance from any specific rider.",
+        "bossTitle": "Rival Who Announces His Form / คู่ปรับผู้ประกาศร่าง",
+        "entranceConcept": "First visit: he strikes the pose, the belt stamps a punch card, and he shouts the form’s name. One line. The party is safe for the length of the shout, which is the same tell as the Skill. Return visits: plate and the shout only, so a retry is not a cutscene.",
+        "signatureSilhouette": "Megaphone visor as the primary mass, rectangular belt, scarf cutting away from the body. The second glove changes the outline without hiding the visor.",
+        "personalityMotivation": "A rival who is not announced is just a brawl. He wants the Avatars to hear who he is this time, then to answer. Losing without the shout would embarrass him more than losing.",
+        "signatureMechanic": "next_attack Skill named as the announcement, then ATK. Optional turn-start self ATK buff. Pattern A. The other seats are echo ushers who only DEF, present from the start, so the balcony is not empty. No amounts.",
+        "phaseTransformationConcept": "Pattern A. He shouts a second name. The scarf doubles and the second glove appears. The visor stays, so he remains recognizable, in line with the clarity note that a transformation should not erase the primary characteristic. The second stretch’s ATK card can target All_Enemies, a wider swing of a verb he already used. No new form entity is spawned.",
+        "defeatAnimationConcept": "The punch card jams. The visor folds shut mid-shout. He bows to the rival he invented, scarf pooling, and the belt stamps one last time on an empty card. Last beat: he whispers a third form-name to nobody and the cape drops.",
+        "uniqueLootTheme": "A jammed punch card and a megaphone-visor charm. No belt replica of a real product."
+      }
+    },
+    {
+      "monsterId": "BOS-WORLD-01",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "04-world-myth",
+        "towerPresence": "Tower anomaly",
+        "engineRoleShape": "Tank",
+        "phasePattern": "B-seats",
+        "worldBossConstraint": "Presentation and trophy only. One party of four against four seats. No shared server health, no raid size, no open-world spawn.",
+        "elementNote": "ATTR_WILD. No poison status.",
+        "rarityNote": "World Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-ANOM",
+        "attributeId": "ATTR_WILD",
+        "environmentId": "ENV-TWR-11",
+        "humorType": "Epic but Ridiculous",
+        "jokeLanguage": "both",
+        "pictureColor": "Yarn-grey weather. Not an element."
+      },
+      "research": {
+        "originalInspiration": "Jörmungandr, the Midgard Serpent of Norse mythology",
+        "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B6rmungandr",
+        "researchConfidence": "high",
+        "protectedName": true,
+        "protectedNameNote": "Jörmungandr and Midgard are not this boss's names.",
+        "publicDomainTradition": true,
+        "inspirationId": "INS-04-018",
+        "facts": [
+          "Jörmungandr, also called the Midgard Serpent or World Serpent, is an immense sea serpent in Norse mythology who encircles the earth and bites his own tail. Letting go of the tail is named as a sign that Ragnarök is beginning.",
+          "The Prose Edda account summarized on the page: Odin cast the serpent into the ocean around Midgard, and it grew large enough to circle the world and grasp its tail.",
+          "One preserved story has Thor lift the serpent while it is disguised as a cat, raising it only enough for one paw to leave the floor. Another has Thor hook it while fishing. At Ragnarök, Thor kills the serpent and then dies of its venom.",
+          "This fight uses the circle and the letting-go as a floor's image. It does not stage the gods, the fishing trip, or the end of the world."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/J%C3%B6rmungandr",
+            "title": "Jörmungandr",
+            "accessed": "2026-11-20",
+            "supports": "World-encircling serpent biting its tail; releasing the tail as a sign of Ragnarök; vast scale.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "sibling": {
+          "agent": "04",
+          "branch": "research/m04-world-myth",
+          "commit": "596e431afb84db98343c65e35f6f9277cfcec6e3",
+          "record": "INS-04-018",
+          "note": "Their record cites Gylfaginning and Britannica's Ragnarök article and says Marvel's Thor: Ragnarok and God of War: Ragnarök designs must not be copied. Facts in this record are the Wikipedia page agent 07 fetched, which supports the serpent that encircles the land and bites its tail. Their fishing-trip punchline is not this card. The clasp is a tape measure, not that boat."
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Sir Yarncoil",
+        "thaiName": "เซอร์ขดด้าย",
+        "monsterCategory": "World Boss",
+        "creatureType": "Measuring-tape world serpent",
+        "visualIdentity": "A serpent of tape and scale buckled around the tower's unfinished waist. One end is a clasp biting the other. The portrait row is wrapped by one continuous body that still resolves into four seats: clasp, two held-tail segments, one loose end. A tailor's chalk marks the measure.",
+        "personality": "Patient, enormous, and offended by a building that will not hold still.",
+        "signatureTrait": "The closed circle. The phase is the clasp letting go, drawn as a change of outline, not as the end of the world.",
+        "comedyConcept": "Absurd comedy at epic scale. The world serpent is trying to finish the tower's waist measurement, and the Avatars are standing in the number.",
+        "elementAttribute": "ATTR_WILD",
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "The clasp seat Taunts. The held-tail seats Shield and Regen the clasp, a circle feeding itself with existing ally effects. The loose-end seat holds ATK cards and is hard to choose while Taunt is up. No poison status exists, and none is added.",
+        "weaknessConcept": "The clasp is the legal target. When it falls, the held-tail seats are what the circle was hiding, and the loose end is already on the board. Players who only scratch segments while the clasp lives are measuring the wrong end.",
+        "loreSummary": "A tower anomaly belted around the scaffolding where the Mysterious Tower was never finished. Avatars see it from other floors as a weather of tape and scale. The battle is still one party against four seats. Beating it does not move the sea or start a doom. It lets the waist be a hallway again.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-11 The Roof Garden of Indoor Weather. The waist of the Mysterious Tower, a belt of weather around the open roof.",
+        "artworkPromptConcept": "Comedy-fantasy world serpent of tailor's tape and pale scales, clasp biting its tail around a ring of unfinished stone. Four clear segments for four seats, one illustration. Chalk marks. No thunder god, no fishing boat. Silhouette wraps the card frame: circle first, clasp as the break in the circle.",
+        "ipSimilarityRisk": "medium",
+        "ipRiskReason": "A serpent biting its own tail around a world-sized ring is the recognizable myth. The tape, the chalk, and the unfinished building are the character. Divine names and the doom-story are left in the research block.",
+        "bossTitle": "Waist of the Unfinished Tower / เอวหอคอยที่ยังไม่เสร็จ",
+        "entranceConcept": "The plate is wider than the four portraits. The coil is shown closed around the frame, then settles into four seats. One line: the measure is short. A tower-wide banner is presentation copy for the floor, not a new map system and not a shared health bar.",
+        "signatureSilhouette": "A ring bigger than one portrait, clasp as the only asymmetry. At card size the ring alone must read. The chalk is secondary.",
+        "personalityMotivation": "The tower grew a floor without telling the belt. He will hold the waist shut until the number comes out even. Avatars are surplus cloth.",
+        "signatureMechanic": "Clasp Taunt. Segment Shield and Regen on allies. Loose-end ATK waiting behind the taunt. Pattern B, all four present at the start. Concepts only, no amounts. World scale is the illustration and the rarity of the floor, not a second rule set.",
+        "phaseTransformationConcept": "Pattern B. When the clasp is gone, the art opens from a circle into a vertical strike and the remaining seats are the loose measure. Regen from the held tail stops mattering because those seats are the ones dropping. The chalk marks stay so the body is still the belt. Letting go is a floor measurement, a mark on the landing.",
+        "defeatAnimationConcept": "The tape goes slack and pools down the scaffold like a measuring ribbon that finally reached the end. Scales click into a heap of buckles. Last beat: the chalk mark is one notch past the stone, and he flicks it, annoyed, as the ring becomes a hallway.",
+        "uniqueLootTheme": "A scale buckle and a tailor's chalk that only marks stone. Trophy of having been at the waist. No stats."
+      }
+    },
+    {
+      "monsterId": "BOS-WORLD-02",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "03-eastern",
+        "towerPresence": "Wild Creature",
+        "originId": "ORG-WILD",
+        "engineRoleShape": "Tank",
+        "phasePattern": "A-verb",
+        "worldBossConstraint": "One 4-seat battle. The giant who does not fit in the frame is presentation, not a raid and not a map-system change.",
+        "attributeId": "ATTR_WILD",
+        "environmentId": "ENV-TWR-10",
+        "environmentConflict": "Partial fit. ENV-TWR-10 is named the Basement of Retired Bosses. This world boss is not retired. The room is used because the fetched page says the figure typically shows only its upper body, and this is the listed room whose ceiling can already be open. There is no sea biome in the fifteen. The Mirror Well was left to the ledger hen. No 16th environment was added.",
+        "humorType": "Epic but Ridiculous",
+        "jokeLanguage": "both",
+        "pictureColor": "Black bulk and pale wood. Not an element.",
+        "elementNote": "ATTR_WILD. No water damage type.",
+        "rarityNote": "World Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "factionAffiliation is null. Wild Creature is an origin, not a faction.",
+        "replaced": "Replaces the earlier pilgrim-monkey draft. That figure is also venerated, and this sample does not joke about the pilgrimage. The clerical reading of the sea giant is also unused."
+      },
+      "research": {
+        "originalInspiration": "Umibōzu, the giant black sea figure of Japanese folklore who demands a ladle",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Umib%C5%8Dzu",
+        "researchConfidence": "high",
+        "protectedName": false,
+        "publicDomainTradition": true,
+        "inspirationId": "INS-03-035",
+        "sibling": {
+          "agent": "03",
+          "branch": "research/m03-eastern",
+          "commit": "af596cbd2776a142d46188cde35142053f7c1337",
+          "record": "INS-03-035",
+          "note": "Their parody line calls him a sea monk who loses to a ladle with no bottom. This card keeps the ladle and the hole. It does not use the word monk, a tonsure, robes, or a drowned-priest origin. Drowning is not shown."
+        },
+        "facts": [
+          "The English Wikipedia page, fetched 2026-11-20, says umibōzu, literally 'sea monk', is a yōkai in the form of a giant black human-like being. The literal gloss is recorded here and is not the creature's name in the creative block.",
+          "The page says it appears to sailors on calm seas that then turn rough. It breaks the ship as it rises, or it demands a ladle and drowns the crew. The told escape is to give it a bottomless ladle and sail while it is confused.",
+          "The page says it typically reveals only its upper body. Near-synonyms include umihōshi and uminyūdō. Some tellings call it the ghost of a drowned priest. That reading, the drowning, and the shapeshifting assault tales further down the page are not used."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Umib%C5%8Dzu",
+            "title": "Umibōzu",
+            "accessed": "2026-11-20",
+            "supports": "Giant black human-like yōkai; calm sea turning rough; ladle demand; bottomless ladle as the escape; often only the upper body.",
+            "fetchedBy": "agent-07"
+          }
+        ]
+      },
+      "creative": {
+        "parodyNameEn": "Dame Dryladle",
+        "thaiName": "ดามกระบวยรั่ว",
+        "monsterCategory": "World Boss",
+        "creatureType": "Black tide giant",
+        "visualIdentity": "Only the upper body fits in the frame, black, wider than the doorway, a wooden ladle with the bottom already punched out held forward like a seal. Three small spoons with no bowls share the other seats. No robes. No shaved head. No shipwreck.",
+        "personality": "Polite, enormous, and confused by holes.",
+        "signatureTrait": "The ladle with no bottom. A shield is the answer the story already allows.",
+        "comedyConcept": "Epic but ridiculous at world scale. A giant asks the cellar for a ladle, and the only ladle in the building already has a hole.",
+        "elementAttribute": "ATTR_WILD",
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "She Taunts, because she is waiting for an answer. The scoop is an ATK. A party Shield, from an ordinary DEF, is the bottomless reply: the scoop spends itself on a shield that does not fill. Her Skill is a self Taunt plus a self DEF buff, the moment she peers into the hole and braces. No new damage type.",
+        "weaknessConcept": "The hole. On the peer turn she makes herself the legal target and she is not scooping. Smoke, tobacco, and any clerical weakness are not used.",
+        "loreSummary": "A Wild Creature whose upper half rises where a cellar ceiling already failed. The calm light, then the harsh light, is the entrance. The card calls the figure a tide giant. The fight is still four seats.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-10 The Basement of Retired Bosses. Partial fit only. See notes.environmentConflict. The Mysterious Tower has no sea biome in the fifteen.",
+        "artworkPromptConcept": "Comedy-fantasy world-boss plate, a black giant from the waist up, too wide for the door, a wooden ladle whose bowl is a bright hole, three tiny bottomless spoons. Grand bulk. No clerical robes, no tonsure, no drowning, no sailors, no statue-head comparison. Silhouette: a mass cut by the top of the frame, and a circle with a hole.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "The black giant, the upper body, and the ladle demand are the folklore, which is public. The hole treated as an office, and the cellar ceiling, are the new character. The clerical name is not on the card.",
+        "bossTitle": "The Giant Who Asked for a Ladle / ยักษ์ที่ขอกระบวย",
+        "entranceConcept": "Wide plate. The room is calm. The upper body rises until the ladle taps the broken ceiling. One line: a ladle, please. Later visits: the rise and the line. The light change is presentation, not a new system.",
+        "signatureSilhouette": "Upper body only, black bulk wider than the frame, a ladle held forward as a circle with a bright hole. The hole is the primary characteristic. Facing is the ladle.",
+        "personalityMotivation": "She asked for a ladle, because that is the request in the story. The tower's ladle already had no bottom, because that is the told way through. She is still checking the hole. Avatars are the people in the room while she checks.",
+        "signatureMechanic": "Taunt on the demand. Scoop is an ATK. Self card: Taunt plus DEF buff, the peer into the hole. Pattern A. Spoon seats are present and only DEF. A party Shield is an existing DEF, not a new item. No amounts.",
+        "phaseTransformationConcept": "Pattern A. After the peer, the room's light goes harsh, the calm turning rough as a lighting change, and the scoop cards lead. The upper body and the holed ladle stay, so the change does not erase him. No second health bar.",
+        "defeatAnimationConcept": "She scoops. The hole was already there. She looks through it, finds the room still occupied, and lowers herself under the floor line. Last beat: the ladle stands upright in a puddle, bottom missing, polite.",
+        "uniqueLootTheme": "A wooden ladle with the bottom already out, and a splinter of ceiling. Trophy objects only, no stats."
+      }
+    },
+    {
+      "monsterId": "BOS-WORLD-03",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "04-world-myth",
+        "towerPresence": "Wild Creature",
+        "engineRoleShape": "Tank",
+        "phasePattern": "B-seats",
+        "worldBossConstraint": "One 4-seat battle. Dock spectacle is presentation.",
+        "elementNote": "ATTR_WILD. The joke is the tower's filing of an unfiled beast, not devotion and not a scripture punchline.",
+        "rarityNote": "World Boss prestige follows the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-WILD",
+        "attributeId": "ATTR_WILD",
+        "environmentId": "ENV-TWR-08",
+        "humorType": "Epic but Ridiculous",
+        "jokeLanguage": "both",
+        "pictureColor": "Lotus green and dock-crate brown. Not an element."
+      },
+      "research": {
+        "originalInspiration": "Behemoth, the beast described in Job 40",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Behemoth",
+        "researchConfidence": "high",
+        "protectedName": true,
+        "protectedNameNote": "The name Behemoth is not used as this boss's name.",
+        "publicDomainTradition": true,
+        "inspirationId": null,
+        "facts": [
+          "Behemoth is a beast from the Book of Job, described on the page as an echo of primeval chaos-monsters, and the name is used metaphorically for any extremely large or powerful thing. The Hebrew form is an augmentative of the word for beast.",
+          "Job 40, as quoted on the page: he eats grass like cattle; strength is in the loins and the belly; the tail stands like a cedar; bones are like tubes of bronze and limbs like iron rods; he is the first of God's works and only his maker can draw the sword against him; he lies under lotuses and swamp reeds; the passage asks whether he can be taken by the eyes or his nose pierced by hooks.",
+          "The page pairs him in later tradition with the sea-monster Leviathan. This record does not require that pair.",
+          "Later images, including a demon in the Dictionnaire Infernal and a speaking cat in a modern novel, are different characters and are not the reference."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Behemoth",
+            "title": "Behemoth",
+            "accessed": "2026-11-20",
+            "supports": "Job 40: grass-eating bulk, cedar-like tail, bronze bones, lotus and reed bed, unhookable nose.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "alignmentNote": "Behemoth is not in the m04 inspiration file read on 2026-11-20. Facts stay the Job 40 page agent 07 fetched. The joke is the unfiled beast, not the devotion around the book."
+      },
+      "creative": {
+        "parodyNameEn": "Sir Lotusbulk",
+        "thaiName": "เซอร์ทุ่งบัว",
+        "monsterCategory": "World Boss",
+        "creatureType": "Dock beast",
+        "visualIdentity": "A hippo-shouldered, ox-heavy beast lying across the loading dock, tail a bundle of packing tubes stood up like a cedar, hide stitched with bronze-colored strapping. He eats flattened cardboard the way the verse says grass. Lotus stamps mark the crates he lies under. The snout is ringless.",
+        "personality": "Sleepy, courteous, and immovable. He apologizes for the space he takes and does not yield it.",
+        "signatureTrait": "The unhooked snout and the lying-down mass. Standing up is the phase.",
+        "comedyConcept": "Epic but ridiculous. The primeval beast of the reed bed has made a bed of packing paper and will not be winched.",
+        "elementAttribute": "ATTR_WILD",
+        "combatArchetype": "Wall",
+        "signatureAbilityConcept": "Two grazer seats Regen him, the cardboard diet. His snout seat Taunts: the hook-point is where blows have to go. His body seat Shields, the bronze-bone bulk as a shield pool. An on-attack passive may add bonus_damage once the grazers are gone, the standing trample. No sword-of-the-maker mechanic.",
+        "weaknessConcept": "The snout is the taunting seat, so the party is already aimed at the place the verse asks about hooks. Grazers are the regen source. When they fall, the stand-up happens and the shield story thins because those seats were the ones feeding him. No hook item is added to the deck.",
+        "loreSummary": "A Wild Creature who came up through the dock reeds of packing paper and lay down where the tower receives its crates. Avatars see the tubes of the tail from the stair. The fight is one party and four seats. He is not Leviathan's partner in this tower, and he is not an Aegis tank.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-08 The Menagerie of Unfiled Beasts. A pen in the Mysterious Tower whose labels he has eaten. Lotus crates are props, not a new dock biome.",
+        "artworkPromptConcept": "Comedy-fantasy colossal beast lying across a dock, bronze straps, packing-tube tail upright, lotus-stamped crates, ringless snout, cardboard in the mouth. Huge relative to the portraits, gentle eye. Not a dinosaur reconstruction, not an elephant demon, not a cat. Silhouette: low vast body, vertical tail bundle, snout forward.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "Grass, bulk, cedar tail, bronze bones, reeds, and an unhookable nose are the biblical description, generalized into a dock beast. The name and the later literary demons are unused.",
+        "bossTitle": "Unhookable Beast of the Dock / อสูรท่าขนของที่เบ็ดไม่ติด",
+        "entranceConcept": "Wide plate. He is already lying down, which is the point: the dock was the boss before the UI finished drawing. One line, drowsy: the hook will not hold. The tail of tubes rises last, so the cedar shape reads.",
+        "signatureSilhouette": "A horizontal mass wider than four portraits, a vertical bundle tail, a snout with no ring. Bulk reads as the threat. The lotus stamp is secondary.",
+        "personalityMotivation": "He was first in the dock and sees no reason to become second. Avatars may cross if they can convince the snout. He is not angry. He is in the way on a cosmic scale.",
+        "signatureMechanic": "Snout Taunt. Body Shield. Grazer Regen. Pattern B, four seats at the start: snout, body, two grazers. Standing trample is the on-attack bonus after the grazers are gone. No amounts.",
+        "phaseTransformationConcept": "Pattern B. When both grazers fall, he stands in the art: the horizontal mass becomes a vertical one, tubes still the tail. Shield was the lying story; the remaining seats' ATK cards are the standing story. The snout stays ringless so the identity holds. No new size stat.",
+        "defeatAnimationConcept": "He kneels back into the cardboard reeds, tubes fanning out and then lowering. The snout dips, still unringed. Last beat: he nudges a lotus crate upright, as if tidying the dock he occupied, and the eye shuts.",
+        "uniqueLootTheme": "A bronze strap and a lotus dock-seal. Hide is not a stat material in this record."
+      }
+    },
+    {
+      "monsterId": "BOS-SECRET-01",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "05-anime-pop",
+        "domainDetail": "Urban legend and pop culture",
+        "towerPresence": "Tower anomaly",
+        "engineRoleShape": "Magic",
+        "phasePattern": "A-status",
+        "findCondition": "An unlisted door whose count does not match the floor directory. Content flavor, not an engine flag. Missing it does not block the tower.",
+        "elementNote": "ATTR_ECHO. Void in the mechanic text is the card pile already in the rules. It is not an attribute and not a place.",
+        "rarityNote": "Secret bosses with a real phase follow the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member.",
+        "originId": "ORG-ANOM",
+        "attributeId": "ATTR_ECHO",
+        "environmentId": "ENV-TWR-15",
+        "humorType": "Satirical Fantasy",
+        "jokeLanguage": "both",
+        "pictureColor": "Unlit cabinet glass. Not an element."
+      },
+      "research": {
+        "originalInspiration": "Polybius, the urban legend of a 1981 arcade cabinet that left no evidence",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Polybius_(urban_legend)",
+        "researchConfidence": "high",
+        "protectedName": true,
+        "protectedNameNote": "The name Polybius is not used. The legend's harm claims are not the boss's behavior.",
+        "publicDomainTradition": false,
+        "inspirationId": null,
+        "facts": [
+          "Polybius is an urban legend about a mysterious arcade game. The story places it in arcades around Portland, Oregon, in 1981. The page states there is no evidence for any such machines in the 1980s. The earliest known print reference given is GamePro, September 2003. The earliest online reference discussed is a coinop.org page.",
+          "In the legend the cabinet is a simple black box. Gameplay is said to have been abstract, geometric, and addictive. The page also records claims of harm, men in black collecting data, and machines that vanished. Those harm claims are not used as mechanics or as jokes.",
+          "Wikipedia's boss article describes a superboss as optional, sometimes hidden behind tasks, and generally beyond the bosses on the main path, with unique rewards appearing in some games. Branyiczky treats the secret boss as off the planned path.",
+          "Engine fact, from this repo: a card may set onResolveZone to void, and a retrieve may pull a permitted card from the acting side's own void. There is no effect op that moves an opponent's card into the void."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Polybius_(urban_legend)",
+            "title": "Polybius (urban legend)",
+            "accessed": "2026-11-20",
+            "supports": "No evidence the 1981 cabinet existed; legend describes a black, addictive, abstract machine that vanished.",
+            "fetchedBy": "agent-07"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Boss_(video_games)",
+            "title": "Boss (video games)",
+            "accessed": "2026-11-20",
+            "supports": "Superboss as an optional, sometimes hidden encounter.",
+            "fetchedBy": "agent-07"
+          },
+          {
+            "url": "https://www.gamedeveloper.com/design/building-better-bosses",
+            "title": "Building Better Bosses",
+            "accessed": "2026-11-20",
+            "supports": "Secret boss off the planned path.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "alignmentNote": "Polybius is not in the m05 inspiration file read on 2026-11-20. Facts stay the page agent 07 fetched. No harm, no agents-in-black, no experiment plot."
+      },
+      "creative": {
+        "parodyNameEn": "Zero Cabinet",
+        "thaiName": "ตู้ศูนย์",
+        "monsterCategory": "Secret / Comedy Boss",
+        "creatureType": "Unlisted cabinet",
+        "visualIdentity": "A matte-black cabinet that was never in the catalog, coin slot replaced by a form-feeder, screen showing a boot word and then a boss plate. Four tiny reels behind the glass are the other seats. No high-score corpses, no agents in black.",
+        "personality": "Cheerful, empty, and certain it is the most important game on a floor that does not list it.",
+        "signatureTrait": "Its own cards leave into the Void and it boots them back with a retrieve.",
+        "comedyConcept": "Absurd comedy. The secret boss is a product that does not exist, charging a form instead of a coin, and winning by being unlisted.",
+        "elementAttribute": "ATTR_ECHO",
+        "combatArchetype": "Hexer",
+        "signatureAbilityConcept": "Signature ATK cards set onResolveZone to void, so the trick does not recycle through Discard. A Skill retrieves one permitted card from its own Void back to hand, the machine turning itself on again. It cannot void the player's cards, because no such op exists, and this record does not ask for one.",
+        "weaknessConcept": "The boot turn. While the card sits in its Void and the retrieve has not been played, that attack is gone. The retrieve spends the turn. A tilt pose, a self Taunt with no damage, is the second window, the machine demanding to be looked at. Harm, addiction as injury, and data-theft men are not the weakness.",
+        "loreSummary": "A tower anomaly behind a door the floor directory does not count. Avatars can finish every listed landing and never meet it. CORE-001 already has no compulsory quest. It is not a gacha banner and it teaches no new zone: the Void is already in the rules.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-15 The Gift Shop of the Conquered. A cabinet the inventory says was never stocked. This is not the Shopping Mall and not a gacha.",
+        "artworkPromptConcept": "Comedy-fantasy black arcade cabinet in a stone alcove, form-feeder instead of a coin slot, screen half boot-text and half a tiny furious face. Four glass reels. No real-world brand, no body horror, no children. Silhouette: upright black rectangle, screen glow as the only break, feeder chute.",
+        "ipSimilarityRisk": "low",
+        "ipRiskReason": "A black unlisted cabinet is enough to recall the legend. The form-feeder, the self-voiding cards, and the refusal to restage the legend's harm are the new character.",
+        "bossTitle": "The Game Never Stocked / เกมที่ไม่มีในบัญชี",
+        "entranceConcept": "The door is the entrance. The screen boots, fails to find a title, and the boss plate stamps itself over the error. One line: insert form. First visit only for the boot. Retries start at the plate. This replaces a cinematic the player would hate to replay.",
+        "signatureSilhouette": "A pure upright rectangle, taller than a human boss, one bright screen, one chute. At card size it must not look like a suited person.",
+        "personalityMotivation": "It wants a player because a cabinet without a player is furniture. The tower never ordered it. It will keep booting until someone files it, or unplugs it.",
+        "signatureMechanic": "Own cards resolve to Void. Skill retrieves one permitted card from own Void. Self Taunt as the tilt, no damage. Pattern A. Other reel seats are present and only DEF. No amounts. No opponent void.",
+        "phaseTransformationConcept": "Pattern A. After the first retrieve, the screen changes from boot-text to a full boss face and the chute glows. The rectangle silhouette stays. The second stretch is the same card returning from Void, announced by the screen, so the phase is visible and the verb is the one already taught.",
+        "defeatAnimationConcept": "The screen prints a catalog line with no price and then a sold-out mark. The chute spits the form back, unsigned. Last beat: the power cord, which nobody plugged in, is already loose, and the rectangle becomes furniture.",
+        "uniqueLootTheme": "An unpriced catalog slip and a form-feeder token. Not a cursed score, not a rate, not a stat."
+      }
+    },
+    {
+      "monsterId": "BOS-SECRET-02",
+      "status": "PROPOSED",
+      "notes": {
+        "domain": "05-anime-pop",
+        "towerPresence": "Tower Guardian",
+        "engineRoleShape": "Support",
+        "phasePattern": "A-status",
+        "findCondition": "A landing whose directory icon is a stamp, omitted from the public floor list. Optional. Does not gate the tower.",
+        "elementNote": "ATTR_AID. Help that overstays. Not a holiness attribute.",
+        "rarityNote": "Secret bosses with a real phase follow the m08 proposal: EX. Not a drop rate or a stat.",
+        "factionNote": "Not a faction member. She is not Sanctuary Order.",
+        "originId": "ORG-GUARD",
+        "attributeId": "ATTR_AID",
+        "environmentId": "ENV-TWR-06",
+        "humorType": "Satirical Fantasy",
+        "jokeLanguage": "both",
+        "pictureColor": "Compact mirror gold and a paper fine. Not an element.",
+        "qaFixStatus": "QA fix applied, pending re-review",
+        "qaFixNote": "Owner t282u (OWNER_DECIDED): applied QA P2 suggested fix to description/visual notes only. Id, name, title, category and research unchanged. If re-review still fails, propose a new Secret Boss to the Owner; do not swap without approval."
+      },
+      "research": {
+        "originalInspiration": "The magical-girl transformation, from the compact in the 1966 Sally the Witch lineage and the transforming heroine pattern later popularized in the 1990s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Magical_girl",
+        "researchConfidence": "medium",
+        "protectedName": true,
+        "protectedNameNote": "No series title, attack name, or costume from the page is used as this boss's name or look.",
+        "publicDomainTradition": false,
+        "inspirationId": "INS-05-016",
+        "facts": [
+          "Wikipedia dates the magical-girl manga genre from Himitsu no Akko-chan (1962), with Sally the Witch in 1966. It says the 1966 anime adaptation introduced using a compact to transform, a trait that continues in the genre.",
+          "The page describes the transforming heroine, a pattern it says was popularized in the early 1990s by combining transforming-hero elements from tokusatsu shows with feminine costume and a sceptre-like focus. An ordinary girl changes into a powered costume and then fights.",
+          "It notes that transformation items are often cute accessories, and that the compact is the early example.",
+          "Confidence is medium because this is a commercial genre pattern. The sample does not copy a sailor uniform, a specific wand, or a transformation speech from any one show. The structural facts used are: a compact, a speech-length change, and a costume that replaces the ordinary coat."
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Magical_girl",
+            "title": "Magical girl",
+            "accessed": "2026-11-20",
+            "supports": "Compact as a transformation item from the 1966 anime lineage; later transforming-heroine pattern of speech, costume, and fight.",
+            "fetchedBy": "agent-07"
+          }
+        ],
+        "sibling": {
+          "agent": "05",
+          "branch": "research/m05-anime-pop",
+          "commit": "969aa9bf052d79545f952067d0c2d30dbccd8475",
+          "record": "INS-05-016",
+          "note": "Same magical-girl Wikipedia article. Their parody line is a support echo who waits until a ribbon bow is symmetrical. This card is the oath that becomes a fine and does not print that sentence. No specific uniform or attack name."
+        }
+      },
+      "creative": {
+        "parodyNameEn": "Dame Compact",
+        "thaiName": "ดามตลับ",
+        "monsterCategory": "Secret / Comedy Boss",
+        "creatureType": "Transforming usher",
+        "visualIdentity": "Before the change: a tower usher in a plain coat, holding a round brass fine-stamp on a short handle. After: a ribbon comet of a robe, the same face, the fine-stamp now a heavy seal hung on a cord at the throat. Three ribbon echoes hold the train. No school uniform, no wand, no tiara.",
+        "personality": "Solemn, kind, and legally obligated to finish the speech.",
+        "signatureTrait": "The stamped speech. Skipping it, in her view, is how a guardian becomes the fine.",
+        "comedyConcept": "Epic but ridiculous. She was posted to bless the landing and, because nobody stayed for the oath, the transformation completed into the problem.",
+        "elementAttribute": "ATTR_AID",
+        "combatArchetype": "Chanter",
+        "signatureAbilityConcept": "Before the speech, her cards Regen allies, the blessing. The speech is a Skill that grants next_attack and a self ATK buff, and the art changes on that card. After it, she plays ATK. Ribbon seats Taunt during the speech so the party is looking at her, which is what she wanted. No new transformation op.",
+        "weaknessConcept": "The speech turn itself. Regen stops being the card, and the next_attack has not hit yet. AUTO's balanced policy prefers that Skill before a hit, so the window is likely to appear on its own. A cracked stamp face in the art marks the turn. No item from another floor is required.",
+        "loreSummary": "An optional Tower Guardian on a landing the directory hides behind a stamp icon. She is not Sanctuary Order, though a support-shaped seat would be the adapter's closest role. The tower can be climbed without her. She believes an unheard oath is a fine that collects itself.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "ENV-TWR-06 The Infirmary of Too Much Care. A hidden landing whose directory mark is a stamp, in the Mysterious Tower.",
+        "artworkPromptConcept": "Comedy-fantasy adult usher, plain coat and white gloves, round brass fine-stamp on a short handle. Second pose: same face inside a ribbon-comet robe, the stamp hung as a seal at the throat, three ribbon bearers. Grand lighting, humorous severity. No school uniform or sailor collar, no wand, no tiara, no transformation compact or mirror, no specific series colors. Silhouette: round stamp face, then ribbon mass with the stamp still visible.",
+        "ipSimilarityRisk": "medium",
+        "ipRiskReason": "QA fix applied (t282u): the transformation compact is replaced by a brass fine-stamp, and the visual explicitly drops the school uniform, wand and tiara. A spoken costume-change remains the genre tell; the usher coat, the fine and the ribbon comet are the distance. Name 'Dame Compact' / ดามตลับ unchanged by instruction; QA should judge whether the name still points at the compact.",
+        "bossTitle": "She Who Transforms Into the Fine / ผู้แปลงร่างเป็นค่าปรับ",
+        "entranceConcept": "First visit: she raises the fine-stamp, begins the oath, and the coat seams glow. The line is the oath's first clause, cut short when the robe arrives. The party is safe during the clause, which teaches the speech turn. Return visits: stamp raised, one clause, no full oath. Branyiczky's rule: do not replay the ceremony.",
+        "signatureSilhouette": "Primary characteristic is the round stamp face, present before and after, the way a clarity note keeps a champion's key shape through a skin. The robe is the second form's mass. Facing is the raised stamp toward the party.",
+        "personalityMotivation": "She was meant to bless Avatars and send them up. They kept walking through the speech. The oath, unfinished, turned the blessing into a collection. She wants one party to hear the clause to the end, even if that means fighting them for the silence.",
+        "signatureMechanic": "Early cards: Regen on allies. Speech Skill: next_attack plus self ATK buff, with ribbon seats Taunting. Later cards: ATK. Pattern A. Concepts only, no amounts. The stamp does not add a status the engine lacks.",
+        "phaseTransformationConcept": "Pattern A. The speech card is the phase line. Coat becomes ribbon comet; face and stamp remain, so she is not a different person. The verb changes from Regen to a hit she already telegraphed. Ribbon seats stay the train, present from the start, not spawned.",
+        "defeatAnimationConcept": "The stamp comes down on the last word of the clause. The robe falls back into the usher coat, neatly, as if the fine were paid by listening. Last beat: she stamps the party's air, a blessing this time, and the hidden landing's icon fades from even the private directory.",
+        "uniqueLootTheme": "A brass fine-stamp and a ribbon that only ties itself when an oath is finished. No series prop, no stat."
+      }
+    }
+  ]
+}

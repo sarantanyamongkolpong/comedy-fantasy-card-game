@@ -1,0 +1,1291 @@
+{
+  "documentId": "SAMPLE-LORE-LINKS",
+  "status": "PROPOSED",
+  "canon": false,
+  "agent": "08",
+  "framework": "docs/research/monsters/lore/framework.json",
+  "warning": "PROPOSED links only. A hook is not canon and does not change core lore. Assignments follow framework.json. Where a sample already used those ids, the link keeps them.",
+  "expectedSample": {
+    "total": 30,
+    "source": "docs/research/monsters/BRIEF.md phase-1 sample",
+    "inferredSplit": {
+      "note": "Confirmed by the published samples. Agent 06: 10 normal + 5 elite. Agent 07: 5 mini, 5 main, 3 world, 2 secret.",
+      "m06": [
+        "M06-N-001..M06-N-010 normal",
+        "M06-E-001..M06-E-005 elite"
+      ],
+      "m07": [
+        "5 mini boss",
+        "5 main boss",
+        "3 world boss",
+        "2 secret/comedy boss"
+      ]
+    },
+    "linked": 30
+  },
+  "watches": [
+    {
+      "at": "2026-11-20T13:04:56Z",
+      "m06": {
+        "branch": "research/m06-parody",
+        "present": true,
+        "commit": "ee9c6498d2d585afe36d1634aafbf8b173e1186e",
+        "subject": "docs(research): parody style guide for monster names (agent 06)",
+        "files": [
+          "docs/research/monsters/creative/parody/STYLE_GUIDE.md"
+        ],
+        "sampleEntryCount": 0
+      },
+      "m07": {
+        "branch": "research/m07-boss",
+        "present": false,
+        "commit": null,
+        "sampleEntryCount": 0
+      },
+      "entriesLinked": 0
+    },
+    {
+      "at": "2026-11-20T13:20:19Z",
+      "m06": {
+        "branch": "research/m06-parody",
+        "present": true,
+        "commit": "b7132e2d1301ab34342579d2ad073b04e0a4cd26",
+        "subject": "docs(research): use the proposed tower attributes and biomes",
+        "also": "dd728bf docs(research): align parody rules with the lore audit",
+        "files": [
+          "docs/research/monsters/creative/parody/STYLE_GUIDE.md"
+        ],
+        "sampleEntryCount": 0,
+        "note": "Style guide now uses ORG-* , ATTR-* , ENV-TWR-01..15, and Normal N / Elite R. No monster records yet."
+      },
+      "m07": {
+        "branch": "research/m07-boss",
+        "present": false,
+        "commit": null,
+        "sampleEntryCount": 0
+      },
+      "entriesLinked": 0
+    },
+    {
+      "at": "2026-11-20T13:34:08Z",
+      "m06": {
+        "branch": "research/m06-parody",
+        "present": true,
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "subject": "docs(research): add the normal and elite parody sample",
+        "files": [
+          "docs/research/monsters/creative/parody/sample_normal_elite.json"
+        ],
+        "sampleEntryCount": 15
+      },
+      "m07": {
+        "branch": "research/m07-boss",
+        "present": true,
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "subject": "docs(research): propose boss tiers and a 15-boss sample",
+        "files": [
+          "docs/research/monsters/creative/bosses/sample_bosses.json"
+        ],
+        "sampleEntryCount": 15
+      },
+      "entriesLinked": 30
+    }
+  ],
+  "entries": [
+    {
+      "monsterId": "M06-N-001",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Curlhorn",
+        "thaiName": "เขางุ้ม",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-WILD",
+      "originName": "Wild Creature",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_STRIKE",
+      "environmentId": "ENV-TWR-08",
+      "environmentName": "The Menagerie of Unfiled Beasts",
+      "suggestedRarity": "N",
+      "hook": "Curlhorn is a wild bull the Menagerie of Unfiled Beasts filed as a war-beast. The horns refuse the charge, and no faction has claimed the embarrassment.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-002",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Sheetwail",
+        "thaiName": "ผ้าครวญ",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-ECHO",
+      "originName": "Corrupted Echo",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_AID",
+      "environmentId": "ENV-TWR-06",
+      "environmentName": "The Infirmary of Too Much Care",
+      "suggestedRarity": "N",
+      "hook": "Sheetwail is a corrupted echo who clocks into the Infirmary of Too Much Care before anyone is hurt. The wail is help that will not wait, and the Sanctuary Order does not employ her.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-E-001",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Shellmarch",
+        "thaiName": "กระดองขบวน",
+        "category": "Elite Monster"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_GUARD",
+      "environmentId": "ENV-TWR-09",
+      "environmentName": "The Ballroom Stuck on One Dance",
+      "suggestedRarity": "R",
+      "hook": "Shellmarch guards the Ballroom Stuck on One Dance by marching a parade that outranks the fight. The shell is a tower pose, with no town behind it and no faction banner on it.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-003",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Pestlehut",
+        "thaiName": "กระท่อมครก",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-ANOM",
+      "originName": "Tower Anomaly",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ARCANE",
+      "environmentId": "ENV-TWR-11",
+      "environmentName": "The Roof Garden of Indoor Weather",
+      "suggestedRarity": "N",
+      "hook": "Pestlehut is the Roof Garden's spinning hut, a tower anomaly that offers shelter and then turns the door away. It hands out no quest.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-004",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Ledgermaw",
+        "thaiName": "ปากบัญชี",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-ECHO",
+      "originName": "Corrupted Echo",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ECHO",
+      "environmentId": "ENV-TWR-12",
+      "environmentName": "The Archive of Unfinished Legends",
+      "suggestedRarity": "N",
+      "hook": "Ledgermaw is a misfiled legend clerking in the Archive of Unfinished Legends, hungry only for a sum that does not match. The bite is paper, and the archive still judges no one's life.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-E-002",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Switchback",
+        "thaiName": "วัวกลับทาง",
+        "category": "Elite Monster"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_GUARD",
+      "environmentId": "ENV-TWR-13",
+      "environmentName": "The Service Elevator Between Moods",
+      "suggestedRarity": "R",
+      "hook": "Switchback keeps the Service Elevator Between Moods and treats the way you just came as the correct way. One car, one paddle, and no kingdom attached.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-005",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Claimbite",
+        "thaiName": "กัดใบรับ",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-ANOM",
+      "originName": "Tower Anomaly",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ARCANE",
+      "environmentId": "ENV-TWR-01",
+      "environmentName": "The Lobby of Lost Badges",
+      "suggestedRarity": "N",
+      "hook": "Claimbite is unclaimed luggage in the Lobby of Lost Badges that started checking tickets. It is a tower anomaly, and the lobby's lost-and-found is not a hoard.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-006",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Duty Puddle",
+        "thaiName": "แอ่งเข้าเวร",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-ANOM",
+      "originName": "Tower Anomaly",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_WILD",
+      "environmentId": "ENV-TWR-02",
+      "environmentName": "The Pantry of Living Leftovers",
+      "suggestedRarity": "N",
+      "hook": "Duty Puddle is wash-water that took a shift on the Pantry of Living Leftovers and treats a footstep as more work. No faction claims the puddle.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-E-003",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Spare Plate",
+        "thaiName": "เกราะสำรอง",
+        "category": "Elite Monster"
+      },
+      "originId": "ORG-FACTION",
+      "originName": "Faction-aligned",
+      "factionId": "FAC_AEG",
+      "factionName": "Aegis Dominion",
+      "attributeId": "ATTR_GUARD",
+      "environmentId": "ENV-TWR-03",
+      "environmentName": "The Armory of Wrong Sizes",
+      "suggestedRarity": "R",
+      "hook": "Spare Plate wears Aegis Dominion's Tank joke and nothing else: empty armor of the wrong size, on duty in the Armory of Wrong Sizes. The armory is not that faction's capital, and the plate is neither Sir Potlid nor Justin Case.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-007",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Spillguard",
+        "thaiName": "ยามหก",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-WILD",
+      "originName": "Wild Creature",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_WILD",
+      "environmentId": "ENV-TWR-11",
+      "environmentName": "The Roof Garden of Indoor Weather",
+      "suggestedRarity": "N",
+      "hook": "Spillguard is a wild creature who assigned itself to the Roof Garden's indoor puddles and loses authority whenever it bows. The water is the place it stands.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-008",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Receiptfox",
+        "thaiName": "จิ้งจอกบิล",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-WILD",
+      "originName": "Wild Creature",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ARCANE",
+      "environmentId": "ENV-TWR-15",
+      "environmentName": "The Gift Shop of the Conquered",
+      "suggestedRarity": "N",
+      "hook": "Receiptfox is a wild fox at the Gift Shop of the Conquered, bewitching the ledger instead of the hero. That shop is not the Shopping Mall, and the fox founds no shrine.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-E-004",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Hornstamp",
+        "thaiName": "เขาลงเวลา",
+        "category": "Elite Monster"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_STRIKE",
+      "environmentId": "ENV-TWR-10",
+      "environmentName": "The Basement of Retired Bosses",
+      "suggestedRarity": "R",
+      "hook": "Hornstamp keeps a chair in the Basement of Retired Bosses and prosecutes lateness with one heavy stamp. The pose is a tower guardian's, and the basement is not a previous game's canon.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-N-009",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Signfirst",
+        "thaiName": "เซ็นก่อน",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-ECHO",
+      "originName": "Corrupted Echo",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ECHO",
+      "environmentId": "ENV-TWR-01",
+      "environmentName": "The Lobby of Lost Badges",
+      "suggestedRarity": "N",
+      "hook": "Signfirst is a corrupted echo stuck in the Lobby of Lost Badges because the arrival will not count until the log is signed. That desk joke leaves Real People and Echo hybrid Avatars undefined.",
+      "conflicts": [
+        "CONF-06-SUMMON-WORD"
+      ]
+    },
+    {
+      "monsterId": "M06-N-010",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Zipperhide",
+        "thaiName": "ซิปค้าง",
+        "category": "Normal Monster"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_STRIKE",
+      "environmentId": "ENV-TWR-08",
+      "environmentName": "The Menagerie of Unfiled Beasts",
+      "suggestedRarity": "N",
+      "hook": "Zipperhide is the Menagerie's hired suit, a guardian pose that cannot take the first step until the zipper moves. The eight named people stay out of the costume.",
+      "conflicts": []
+    },
+    {
+      "monsterId": "M06-E-005",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "06",
+        "branch": "research/m06-parody",
+        "commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+        "file": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+        "parodyNameEn": "Stilldock",
+        "thaiName": "ยังไม่จอด",
+        "category": "Elite Monster"
+      },
+      "originId": "ORG-ECHO",
+      "originName": "Corrupted Echo",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ARCANE",
+      "environmentId": "ENV-TWR-14",
+      "environmentName": "The Throne Landing of Maybe",
+      "suggestedRarity": "R",
+      "hook": "Stilldock is a corrupted echo that mistook the Throne Landing of Maybe for a harbor and is still about to arrive. An elite on that landing leaves the floors unnumbered.",
+      "conflicts": [
+        "CONF-SHARED-TWR-14"
+      ]
+    },
+    {
+      "monsterId": "BOS-MIN-01",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Clerk Claypunch",
+        "thaiName": "เสมียนหมัดดิน",
+        "category": "Mini Boss"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_GUARD",
+      "environmentId": "ENV-TWR-01",
+      "environmentName": "The Lobby of Lost Badges",
+      "suggestedRarity": "Epic",
+      "hook": "Clerk Claypunch is a tower guardian kneaded under the Lobby of Lost Badges, still blocking a queue that moved upstairs. He holds a Tank-shaped post and stays outside Aegis Dominion.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-MIN-02",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Capper Crimson",
+        "thaiName": "หมวกชาด",
+        "category": "Mini Boss"
+      },
+      "originId": "ORG-ECHO",
+      "originName": "Corrupted Echo",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_STRIKE",
+      "environmentId": "ENV-TWR-03",
+      "environmentName": "The Armory of Wrong Sizes",
+      "suggestedRarity": "Epic",
+      "hook": "Capper Crimson is a corrupted echo in the Armory of Wrong Sizes, furious that the cap will not stay the right red. He stands outside the four factions and still hits like a striker.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-MIN-03",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Clerk Nochin",
+        "thaiName": "เสมียนไร้คาง",
+        "category": "Mini Boss"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_GUARD",
+      "environmentId": "ENV-TWR-02",
+      "environmentName": "The Pantry of Living Leftovers",
+      "suggestedRarity": "Epic",
+      "hook": "Clerk Nochin is the pantry door itself, a tower guardian who announces a bite the missing jaw cannot finish. The Pantry of Living Leftovers keeps the bowl, and no new room was opened for him.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-MIN-04",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Dame Glasspeck",
+        "thaiName": "ดามกระจก",
+        "category": "Mini Boss"
+      },
+      "originId": "ORG-ANOM",
+      "originName": "Tower Anomaly",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ARCANE",
+      "environmentId": "ENV-TWR-07",
+      "environmentName": "The Mirror Well",
+      "suggestedRarity": "Epic",
+      "hook": "Dame Glasspeck is a tower anomaly at the Mirror Well who rejects a form by looking at it. The glance is a tell, and she is not a member of Celestial Nexus.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-MIN-05",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Auditor Leapwell",
+        "thaiName": "ผู้ตรวจส้นสปริง",
+        "category": "Mini Boss"
+      },
+      "originId": "ORG-ANOM",
+      "originName": "Tower Anomaly",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_STRIKE",
+      "environmentId": "ENV-TWR-04",
+      "environmentName": "The Corridor of Uninvited Footsteps",
+      "suggestedRarity": "Epic",
+      "hook": "Auditor Leapwell is a tower anomaly auditing the Corridor of Uninvited Footsteps from one balcony above the conversation. The leap is the tell, and Phantom Blades does not employ him.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-MAIN-01",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Sir Cindervest",
+        "thaiName": "เซอร์เสื้อกั๊กเถ้า",
+        "category": "Main Boss"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ARCANE",
+      "environmentId": "ENV-TWR-05",
+      "environmentName": "The Observatory of Bad Math",
+      "suggestedRarity": "EX",
+      "hook": "Sir Cindervest guards a receipt vault in the Observatory of Bad Math, a dragon outline around a book that will not close. The title is a comedy rank, the ash is paint, and Aegis Dominion does not knight him.",
+      "conflicts": [
+        "CONF-07-DUAL-PROSE",
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-MAIN-02",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Sir Verdant Gale",
+        "thaiName": "เซอร์พายุเขียว",
+        "category": "Main Boss"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_GUARD",
+      "environmentId": "ENV-TWR-14",
+      "environmentName": "The Throne Landing of Maybe",
+      "suggestedRarity": "EX",
+      "hook": "Sir Verdant Gale is a tower guardian at the Throne Landing of Maybe who offers one honest blow and keeps the head in a hatbox. He is not an Aegis knight, and that landing is still not a locked last floor.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE",
+        "CONF-SHARED-TWR-14"
+      ]
+    },
+    {
+      "monsterId": "BOS-MAIN-03",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Clerk Forkwater",
+        "thaiName": "เสมียนน้ำแยก",
+        "category": "Main Boss"
+      },
+      "originId": "ORG-WILD",
+      "originName": "Wild Creature",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_WILD",
+      "environmentId": "ENV-TWR-13",
+      "environmentName": "The Service Elevator Between Moods",
+      "suggestedRarity": "EX",
+      "hook": "Clerk Forkwater is a wild creature coiled in the Service Elevator Between Moods because the heads will not agree which way the water leaves. The elevator's indecision carries that joke, and no flood biome was added.",
+      "conflicts": [
+        "CONF-07-ENV-FLOOD",
+        "CONF-07-ROLE-WILD-MAGIC",
+        "CONF-07-HUNTER-WORD"
+      ]
+    },
+    {
+      "monsterId": "BOS-MAIN-04",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Sir Stairweb",
+        "thaiName": "เซอร์ใยบันได",
+        "category": "Main Boss"
+      },
+      "originId": "ORG-WILD",
+      "originName": "Wild Creature",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ARCANE",
+      "environmentId": "ENV-TWR-12",
+      "environmentName": "The Archive of Unfinished Legends",
+      "suggestedRarity": "EX",
+      "hook": "Sir Stairweb is a wild spider brokering stories on the Archive of Unfinished Legends stair and charging rent in being heard twice. He retells his own anecdote, and Celestial Nexus does not license him.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-MAIN-05",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Captain Encore",
+        "thaiName": "กัปตันอีกรอบ",
+        "category": "Main Boss"
+      },
+      "originId": "ORG-ECHO",
+      "originName": "Corrupted Echo",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ECHO",
+      "environmentId": "ENV-TWR-09",
+      "environmentName": "The Ballroom Stuck on One Dance",
+      "suggestedRarity": "EX",
+      "hook": "Captain Encore is a corrupted echo on the Ballroom Stuck on One Dance balcony who will not strike until the landing has heard the form-name. Phantom Blades does not own the shout.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-WORLD-01",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Sir Yarncoil",
+        "thaiName": "เซอร์ขดด้าย",
+        "category": "World Boss"
+      },
+      "originId": "ORG-ANOM",
+      "originName": "Tower Anomaly",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_WILD",
+      "environmentId": "ENV-TWR-11",
+      "environmentName": "The Roof Garden of Indoor Weather",
+      "suggestedRarity": "EX",
+      "hook": "Sir Yarncoil is a tower anomaly belted around the Roof Garden of Indoor Weather, still trying to measure the Mysterious Tower's waist. Letting the clasp go makes a hallway again, and it starts no doom and no quest.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE",
+        "CONF-SHARED-TWR-11"
+      ]
+    },
+    {
+      "monsterId": "BOS-WORLD-02",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Dame Dryladle",
+        "thaiName": "ดามกระบวยรั่ว",
+        "category": "World Boss"
+      },
+      "originId": "ORG-WILD",
+      "originName": "Wild Creature",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_WILD",
+      "environmentId": "ENV-TWR-10",
+      "environmentName": "The Basement of Retired Bosses",
+      "suggestedRarity": "EX",
+      "hook": "Dame Dryladle is a wild giant in the Basement of Retired Bosses, asking for a ladle that already has a hole. She is not one of the retired bosses, and the fifteen biomes include no sea, so the open ceiling does the work.",
+      "conflicts": [
+        "CONF-07-ENV-SEA",
+        "CONF-07-PRONOUN",
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-WORLD-03",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Sir Lotusbulk",
+        "thaiName": "เซอร์ทุ่งบัว",
+        "category": "World Boss"
+      },
+      "originId": "ORG-WILD",
+      "originName": "Wild Creature",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_WILD",
+      "environmentId": "ENV-TWR-08",
+      "environmentName": "The Menagerie of Unfiled Beasts",
+      "suggestedRarity": "EX",
+      "hook": "Sir Lotusbulk is a wild beast asleep on packing paper in the Menagerie of Unfiled Beasts, too courteous to be winched. The dock is a prop in that pen, and he is not an Aegis tank.",
+      "conflicts": [
+        "CONF-07-ENV-SCALE",
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE",
+        "CONF-SHARED-TWR-08"
+      ]
+    },
+    {
+      "monsterId": "BOS-SECRET-01",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Zero Cabinet",
+        "thaiName": "ตู้ศูนย์",
+        "category": "Secret / Comedy Boss"
+      },
+      "originId": "ORG-ANOM",
+      "originName": "Tower Anomaly",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_ECHO",
+      "environmentId": "ENV-TWR-15",
+      "environmentName": "The Gift Shop of the Conquered",
+      "suggestedRarity": "EX",
+      "hook": "Zero Cabinet is an unlisted tower anomaly in the Gift Shop of the Conquered, a game the directory never stocked. Missing the door does not gate the tower, and the Void it boots from is the card pile.",
+      "conflicts": [
+        "CONF-07-ATTR-ECHO",
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    },
+    {
+      "monsterId": "BOS-SECRET-02",
+      "status": "PROPOSED",
+      "canon": false,
+      "source": {
+        "agent": "07",
+        "branch": "research/m07-boss",
+        "commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+        "file": "docs/research/monsters/creative/bosses/sample_bosses.json",
+        "parodyNameEn": "Dame Compact",
+        "thaiName": "ดามตลับ",
+        "category": "Secret / Comedy Boss"
+      },
+      "originId": "ORG-GUARD",
+      "originName": "Tower Guardian",
+      "factionId": null,
+      "factionName": null,
+      "attributeId": "ATTR_AID",
+      "environmentId": "ENV-TWR-06",
+      "environmentName": "The Infirmary of Too Much Care",
+      "suggestedRarity": "EX",
+      "hook": "Dame Compact is an optional tower guardian on a hidden landing of the Infirmary of Too Much Care, and skipping her oath turns the blessing into the fine. The tower can be climbed without her, and Sanctuary Order does not post her.",
+      "conflicts": [
+        "CONF-07-HUNTER-WORD",
+        "CONF-07-ROLE-SHAPE"
+      ]
+    }
+  ],
+  "crosswalkStatus": "Historical. Superseded at research/m06-parody b7132e2, which cites ENV-TWR ids and ATTR ids directly. Kept so the first-watch clash stays readable.",
+  "unmappedEnvironments": [
+    {
+      "theirLabel": "Flooded Reliquary",
+      "environmentId": null,
+      "reason": "No ENV-TWR biome is a flooded holy room. Not added as a 16th environment. A later sample that needs water-and-relic should say so in conflicts instead of minting a floor."
+    }
+  ],
+  "environmentCrosswalk": [
+    {
+      "theirLabel": "Gate Market",
+      "environmentId": "ENV-TWR-01",
+      "fit": "partial",
+      "note": "Both are arrival bureaucracy. Theirs is a market. Ours is a badge lobby. Use ENV-TWR-01 unless the joke is specifically commerce, then flag partial."
+    },
+    {
+      "theirLabel": "Echo Archives",
+      "environmentId": "ENV-TWR-12",
+      "fit": "close",
+      "note": "Archive of Unfinished Legends."
+    },
+    {
+      "theirLabel": "Service Tunnels",
+      "environmentId": "ENV-TWR-13",
+      "fit": "partial",
+      "note": "Both are back-of-house transit. Theirs is tunnels. Ours is an elevator between moods."
+    },
+    {
+      "theirLabel": "Unlicensed Observatory",
+      "environmentId": "ENV-TWR-05",
+      "fit": "close",
+      "note": "Observatory of Bad Math."
+    },
+    {
+      "theirLabel": "Night Kitchen",
+      "environmentId": "ENV-TWR-02",
+      "fit": "close",
+      "note": "Pantry of Living Leftovers."
+    },
+    {
+      "theirLabel": "Roof Laundry",
+      "environmentId": "ENV-TWR-11",
+      "fit": "partial",
+      "note": "Both are the roof. Their joke is laundry. Ours is indoor weather. Do not treat laundry as a second roof region."
+    }
+  ],
+  "elementCrosswalk": {
+    "note": "Their creative.element may stay as an art-color word. Lore stores attributeId. This is not permission to add an element enum to src/schema.",
+    "map": [
+      {
+        "theirElement": "Cinder",
+        "attributeId": "ATTR_STRIKE",
+        "secondary": "ATTR_ARCANE",
+        "flag": "Heat color only. Not a fire element."
+      },
+      {
+        "theirElement": "Tide",
+        "attributeId": "ATTR_WILD",
+        "secondary": null,
+        "flag": "Water as a place the creature stands, not a damage type."
+      },
+      {
+        "theirElement": "Loam",
+        "attributeId": "ATTR_WILD",
+        "secondary": null,
+        "flag": null
+      },
+      {
+        "theirElement": "Gale",
+        "attributeId": "ATTR_STRIKE",
+        "secondary": null,
+        "flag": "Speed and push, lining up with DPS, not a wind element."
+      },
+      {
+        "theirElement": "Spark",
+        "attributeId": "ATTR_ARCANE",
+        "secondary": null,
+        "flag": "Magic-role color. Not lightning damage."
+      },
+      {
+        "theirElement": "Gloom",
+        "attributeId": "ATTR_ECHO",
+        "secondary": "ATTR_NEUTRAL",
+        "flag": "Mood. Not a dark element and not holy opposition to Gleam."
+      },
+      {
+        "theirElement": "Bloom",
+        "attributeId": "ATTR_WILD",
+        "secondary": "ATTR_AID",
+        "flag": null
+      },
+      {
+        "theirElement": "Gleam",
+        "attributeId": "ATTR_AID",
+        "secondary": "ATTR_ARCANE",
+        "flag": "Bright mood. Not a light element and not Saving Grace."
+      },
+      {
+        "theirElement": "Scrap",
+        "attributeId": "ATTR_GUARD",
+        "secondary": "ATTR_NEUTRAL",
+        "flag": "Wrong-object armor color. Fits the Armory joke."
+      },
+      {
+        "theirElement": "Neutral",
+        "attributeId": "ATTR_NEUTRAL",
+        "secondary": null,
+        "flag": null
+      }
+    ]
+  },
+  "conflicts": [
+    {
+      "conflictId": "CONF-06-FIELD",
+      "severity": "vocabulary",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md faction affiliation list",
+      "theirClaim": "creative.factionAffiliation may be Wild Creature, Corrupted Echo, Tower Guardian, Tower Anomaly, or one of the four faction ids.",
+      "lorePosition": "originId is one of ORG-WILD, ORG-ECHO, ORG-GUARD, ORG-ANOM, ORG-FACTION. factionId is null unless the joke wears a real faction, and required only for ORG-FACTION.",
+      "status": "resolved",
+      "resolvedAt": "research/m06-parody@b7132e2",
+      "resolution": "Closed. Their guide now stores creative.originId separately and puts only a factionId or null in creative.factionAffiliation."
+    },
+    {
+      "conflictId": "CONF-06-ELEM",
+      "severity": "vocabulary",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md element list",
+      "theirClaim": "Element is one of Cinder, Tide, Loam, Gale, Spark, Gloom, Bloom, Gleam, Scrap, Neutral. No Void.",
+      "lorePosition": "No element enum exists in src/schema. Research attributeId is ATTR_GUARD, ATTR_STRIKE, ATTR_ARCANE, ATTR_AID, ATTR_WILD, ATTR_ECHO, or ATTR_NEUTRAL. Void, Sync, and a Light/Dark pair stay banned on both sides.",
+      "status": "resolved",
+      "resolvedAt": "research/m06-parody@b7132e2",
+      "resolution": "Closed. Their element field is now an attributeId from this framework. The Cinder/Tide list is no longer their working vocabulary. The crosswalk below is history."
+    },
+    {
+      "conflictId": "CONF-06-RARITY",
+      "severity": "guidance-variance",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md suggested rarity",
+      "theirClaim": "Normals are N, or R when the gag and the silhouette do extra work. Elites are R or Epic. Do not spend EX on the normal/elite sample. Do not use FAC.",
+      "lorePosition": "Default map is Normal N, Elite R, Mini Boss Epic, Main Boss EX, World Boss EX, Secret/Comedy Epic or EX only with a phase. FAC is never a monster rarity. Superseded words stay banned.",
+      "status": "resolved",
+      "resolvedAt": "research/m06-parody@b7132e2",
+      "resolution": "Closed. Their normal/elite sample rule is now N and R. Epic and EX stay off that sample. FAC stays off monsters."
+    },
+    {
+      "conflictId": "CONF-06-ECHO",
+      "severity": "boundary",
+      "canonImpact": "none if the sentence stays about creatures",
+      "source": "research/m06-parody@ee9c649 STYLE_GUIDE.md echo paragraph",
+      "theirClaim": "Echo means the tower misremembered a story and the misfile grew legs. Marked PROPOSED, and it yields to Agent 08.",
+      "lorePosition": "ORG-ECHO is a hostile or wild creature that looks like a person done wrong. MAP-09's 'Real People + Echo hybrid Avatar' stays undefined. Echo Summoning is not a mechanic.",
+      "status": "resolved",
+      "resolvedAt": "research/m06-parody@b7132e2",
+      "resolution": "Closed. Their guide refuses to define Echo, hybrid, or summoning, and it keeps the eight named people off the monster list."
+    },
+    {
+      "conflictId": "CONF-06-FLOORS",
+      "severity": "vocabulary",
+      "canonImpact": "none",
+      "source": "research/m06-parody@ee9c649 example floor labels",
+      "theirClaim": "Provisional labels: Gate Market, Echo Archives, Service Tunnels, Flooded Reliquary, Unlicensed Observatory, Night Kitchen, Roof Laundry. Not canon regions.",
+      "lorePosition": "Fifteen ENV-TWR biomes are the research set. They are not locked floors (OPEN-07).",
+      "status": "resolved",
+      "resolvedAt": "research/m06-parody@b7132e2",
+      "resolution": "Closed. Their tower field is now an ENV-TWR id. Flooded Reliquary is no longer a working label."
+    },
+    {
+      "conflictId": "CONF-06-SUMMON-WORD",
+      "status": "open",
+      "severity": "boundary",
+      "canonImpact": "none if the hook stays a desk joke",
+      "monsterIds": [
+        "M06-N-009"
+      ],
+      "source": "research/m06-parody@77c558b Signfirst loreSummary",
+      "theirClaim": "The lore summary says something was summoned into the Lobby and gained a destiny.",
+      "lorePosition": "Echo Summoning is not a mechanic. MAP-09 stays the undefined phrase Real People + Echo hybrid Avatar.",
+      "resolution": "The link keeps ORG-ECHO and ENV-TWR-01. The hook treats the signature as the creature's problem and does not describe a rite."
+    },
+    {
+      "conflictId": "CONF-07-HUNTER-WORD",
+      "status": "open",
+      "severity": "glossary",
+      "canonImpact": "none if the word stays a nickname",
+      "monsterIds": [
+        "BOS-MIN-01",
+        "BOS-MIN-02",
+        "BOS-MIN-03",
+        "BOS-MIN-04",
+        "BOS-MIN-05",
+        "BOS-MAIN-01",
+        "BOS-MAIN-02",
+        "BOS-MAIN-03",
+        "BOS-MAIN-04",
+        "BOS-MAIN-05",
+        "BOS-WORLD-01",
+        "BOS-WORLD-02",
+        "BOS-WORLD-03",
+        "BOS-SECRET-01",
+        "BOS-SECRET-02"
+      ],
+      "source": "research/m07-boss@76360d6 lore summaries",
+      "theirClaim": "Boss lore addresses the climbing party as Hunters.",
+      "lorePosition": "This card game's party is four Avatars. The repo is a separate project from Hunter Life. Hunter is not a faction, a class, or a map pin.",
+      "resolution": "Hooks say party or leave the climbers unnamed. Do not import Hunter Life. Do not add a hunter faction."
+    },
+    {
+      "conflictId": "CONF-07-ROLE-SHAPE",
+      "status": "open",
+      "severity": "integration",
+      "canonImpact": "none while factionId stays null",
+      "monsterIds": [
+        "BOS-MIN-01",
+        "BOS-MIN-02",
+        "BOS-MIN-03",
+        "BOS-MIN-04",
+        "BOS-MIN-05",
+        "BOS-MAIN-01",
+        "BOS-MAIN-02",
+        "BOS-MAIN-04",
+        "BOS-MAIN-05",
+        "BOS-WORLD-01",
+        "BOS-WORLD-02",
+        "BOS-WORLD-03",
+        "BOS-SECRET-01",
+        "BOS-SECRET-02"
+      ],
+      "source": "research/m07-boss@76360d6 notes.engineRoleShape and notes.factionNote",
+      "theirClaim": "Each boss notes a Tank, DPS, Magic, or Support shape. Clerk Claypunch's note says the engine loader still requires a faction id, and the record does not invent one.",
+      "lorePosition": "The four roles belong to the four factions on Avatars. A monster's staging shape does not join a faction and does not satisfy an avatar faction field.",
+      "resolution": "Every boss link keeps factionId null. Do not mint a faction id so a loader will accept the record."
+    },
+    {
+      "conflictId": "CONF-07-ROLE-WILD-MAGIC",
+      "status": "open",
+      "severity": "guidance-variance",
+      "canonImpact": "none",
+      "monsterIds": [
+        "BOS-MAIN-03"
+      ],
+      "source": "research/m07-boss@76360d6 Clerk Forkwater notes",
+      "theirClaim": "attributeId is ATTR_WILD and engineRoleShape is Magic.",
+      "lorePosition": "ATTR_WILD has no faction. Magic is Celestial Nexus's locked avatar role. A wild creature may look arcane in play without joining that faction.",
+      "resolution": "Link keeps ORG-WILD, ATTR_WILD, factionId null. The Magic shape is staging only."
+    },
+    {
+      "conflictId": "CONF-07-DUAL-PROSE",
+      "status": "open",
+      "severity": "wording",
+      "canonImpact": "none",
+      "monsterIds": [
+        "BOS-MAIN-01"
+      ],
+      "source": "research/m07-boss@76360d6 Sir Cindervest loreSummary versus notes.originId",
+      "theirClaim": "The lore calls him the floor's Tower Guardian and, in the same breath, an Echo that grew a dragon outline. notes.originId is ORG-GUARD.",
+      "lorePosition": "A link stores one originId. Echo hybrid Avatars stay undefined either way.",
+      "resolution": "The link uses ORG-GUARD, matching the notes field and the vault-keeper joke. The Echo clause stays flavor inside that guardian, not a second origin."
+    },
+    {
+      "conflictId": "CONF-07-ENV-FLOOD",
+      "status": "open",
+      "severity": "environment",
+      "canonImpact": "none",
+      "monsterIds": [
+        "BOS-MAIN-03"
+      ],
+      "source": "research/m07-boss@76360d6 notes.environmentConflict",
+      "theirClaim": "No ENV-TWR biome is a flood. The sample uses ENV-TWR-13 because the elevator cannot agree which floor to open.",
+      "lorePosition": "The fifteen biomes are the set. OPEN-07 still has no floor list. A sixteenth flood floor would be a new proposal past the set.",
+      "resolution": "Accepted their mapping. The link does not add a biome."
+    },
+    {
+      "conflictId": "CONF-07-ENV-SEA",
+      "status": "open",
+      "severity": "environment",
+      "canonImpact": "none",
+      "monsterIds": [
+        "BOS-WORLD-02"
+      ],
+      "source": "research/m07-boss@76360d6 notes.environmentConflict",
+      "theirClaim": "ENV-TWR-10 is the Basement of Retired Bosses. This world boss is not retired. The room is used for an open ceiling. There is no sea biome.",
+      "lorePosition": "Same fifteen-biome cap. A partial postcard is allowed. It does not rename the basement.",
+      "resolution": "Accepted ENV-TWR-10. The hook says the fit is partial."
+    },
+    {
+      "conflictId": "CONF-07-PRONOUN",
+      "status": "open",
+      "severity": "continuity",
+      "canonImpact": "none",
+      "monsterIds": [
+        "BOS-WORLD-02"
+      ],
+      "source": "research/m07-boss@76360d6 Dame Dryladle",
+      "theirClaim": "The name is Dame and the lore uses she. The phase line says the lighting change does not erase him.",
+      "lorePosition": "One figure, one presentation. This is inside the sample, not a faction rule.",
+      "resolution": "The hook uses Dame and she. The phase line should be aligned by Agent 07 when they next edit. Lore does not rename her."
+    },
+    {
+      "conflictId": "CONF-07-ENV-SCALE",
+      "status": "open",
+      "severity": "environment",
+      "canonImpact": "none",
+      "monsterIds": [
+        "BOS-WORLD-03"
+      ],
+      "source": "research/m07-boss@76360d6 Sir Lotusbulk environment string",
+      "theirClaim": "A world-scale dock beast is filed in the Menagerie. The sample says lotus crates are props, not a new dock biome.",
+      "lorePosition": "ENV-TWR-08 may hold him. World-boss scale is presentation, not a new region and not a raid.",
+      "resolution": "Accepted ENV-TWR-08. No dock biome added."
+    },
+    {
+      "conflictId": "CONF-07-ATTR-ECHO",
+      "status": "open",
+      "severity": "guidance-variance",
+      "canonImpact": "none",
+      "monsterIds": [
+        "BOS-SECRET-01"
+      ],
+      "source": "research/m07-boss@76360d6 Zero Cabinet notes",
+      "theirClaim": "originId is ORG-ANOM and attributeId is ATTR_ECHO. The note correctly says the Void in the mechanic is the card pile.",
+      "lorePosition": "ATTR_ECHO is the look of a person or a legend done wrong. A cabinet that was never stocked is an anomaly first. Void stays a pile, which their note already says.",
+      "resolution": "Link keeps their ids so the sample and the link match, and flags the stretch. Do not retcon ATTR_ECHO into a definition of hybrid avatars."
+    },
+    {
+      "conflictId": "CONF-SHARED-TWR-14",
+      "status": "open",
+      "severity": "note",
+      "canonImpact": "none",
+      "monsterIds": [
+        "M06-E-005",
+        "BOS-MAIN-02"
+      ],
+      "source": "both samples",
+      "theirClaim": "An elite and a main boss share the Throne Landing of Maybe.",
+      "lorePosition": "Biomes may repeat. The elite does not become a world boss, and the landing is not floor N.",
+      "resolution": "Both links kept. No floor number assigned."
+    },
+    {
+      "conflictId": "CONF-SHARED-TWR-11",
+      "status": "open",
+      "severity": "note",
+      "canonImpact": "none",
+      "monsterIds": [
+        "M06-N-003",
+        "M06-N-007",
+        "BOS-WORLD-01"
+      ],
+      "source": "both samples",
+      "theirClaim": "Two normals and a world boss share the Roof Garden.",
+      "lorePosition": "Shared postcard. World scale on Sir Yarncoil is presentation.",
+      "resolution": "All three links kept."
+    },
+    {
+      "conflictId": "CONF-SHARED-TWR-08",
+      "status": "open",
+      "severity": "note",
+      "canonImpact": "none",
+      "monsterIds": [
+        "M06-N-001",
+        "M06-N-010",
+        "BOS-WORLD-03"
+      ],
+      "source": "both samples",
+      "theirClaim": "Two normals and a world boss share the Menagerie.",
+      "lorePosition": "Shared postcard. See also CONF-07-ENV-SCALE.",
+      "resolution": "All three links kept."
+    },
+    {
+      "conflictId": "CONF-07-ABSENT",
+      "status": "resolved",
+      "resolvedAt": "research/m07-boss@76360d6",
+      "severity": "watch",
+      "canonImpact": "none",
+      "source": "git ls-remote origin refs/heads/research/m07-boss at 2026-11-20T13:20:19Z",
+      "theirClaim": null,
+      "lorePosition": "The branch has since published 15 bosses.",
+      "resolution": "Closed. Boss links are in entries."
+    }
+  ],
+  "sharedPostcards": [
+    {
+      "environmentId": "ENV-TWR-01",
+      "monsterIds": [
+        "M06-N-005",
+        "M06-N-009",
+        "BOS-MIN-01"
+      ],
+      "note": "Three lobby creatures. Different silhouettes: luggage, sign-in echo, clay clerk."
+    },
+    {
+      "environmentId": "ENV-TWR-08",
+      "monsterIds": [
+        "M06-N-001",
+        "M06-N-010",
+        "BOS-WORLD-03"
+      ],
+      "note": "Two normals share the menagerie with a world boss. Scale stays presentation."
+    },
+    {
+      "environmentId": "ENV-TWR-11",
+      "monsterIds": [
+        "M06-N-003",
+        "M06-N-007",
+        "BOS-WORLD-01"
+      ],
+      "note": "Hut, lifeguard, and the waist-measuring anomaly share the roof garden."
+    },
+    {
+      "environmentId": "ENV-TWR-14",
+      "monsterIds": [
+        "M06-E-005",
+        "BOS-MAIN-02"
+      ],
+      "note": "An elite ship and a main-boss challenger share the Maybe landing. The elite does not become the final floor."
+    }
+  ]
+}
