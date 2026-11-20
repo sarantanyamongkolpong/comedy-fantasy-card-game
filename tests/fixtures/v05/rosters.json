@@ -1,0 +1,103 @@
+{
+  "fixtureKind": "v05-acceptance-rosters",
+  "note": "Sample teams for acceptance. rosterId is intentional so this file is not a runtime avatar catalog record. Stats other than Justina's active are PROPOSED sheet samples.",
+  "existing001": [
+    {
+      "rosterId": "AVT_AEG_001",
+      "nameEn": "Sir Potlid",
+      "nameTh": "เซอร์ฝาหม้อ",
+      "factionCode": "FAC_AEG",
+      "roleName": "Tank",
+      "rigId": "humanoid_heavy"
+    },
+    {
+      "rosterId": "AVT_PHA_001",
+      "nameEn": "Nox Squeak",
+      "nameTh": "น็อกซ์ รองเท้าดัง",
+      "factionCode": "FAC_PHA",
+      "roleName": "DPS",
+      "rigId": "humanoid_standard"
+    },
+    {
+      "rosterId": "AVT_CEL_001",
+      "nameEn": "Madame Meteor",
+      "nameTh": "มาดามดาวตก",
+      "factionCode": "FAC_CEL",
+      "roleName": "Magic",
+      "rigId": "humanoid_standard"
+    },
+    {
+      "rosterId": "AVT_SAN_001",
+      "nameEn": "Sister Plaster",
+      "nameTh": "ซิสเตอร์พลาสเตอร์",
+      "factionCode": "FAC_SAN",
+      "roleName": "Support",
+      "rigId": "humanoid_standard"
+    }
+  ],
+  "justins": [
+    {
+      "rosterId": "AVT_AEG_002",
+      "designRef": "AV_EX01",
+      "nameEn": "Justin Case",
+      "factionCode": "FAC_AEG",
+      "factionName": "Aegis Dominion",
+      "roleName": "Tank",
+      "rarityName": "Epic",
+      "nameStatus": "LOCKED",
+      "statsStatus": "PROPOSED",
+      "stats": { "atk": 3, "def": 8, "spd": 1 },
+      "active": { "name": "Shield", "status": "PROPOSED" },
+      "passive": { "name": "Team DEF", "status": "PROPOSED", "chance": 0.7 }
+    },
+    {
+      "rosterId": "AVT_PHA_002",
+      "designRef": "AV_EX02",
+      "nameEn": "Justin Time",
+      "factionCode": "FAC_PHA",
+      "factionName": "Phantom Blades",
+      "roleName": "DPS",
+      "rarityName": "Epic",
+      "nameStatus": "LOCKED",
+      "statsStatus": "PROPOSED",
+      "stats": { "atk": 8, "def": 2, "spd": 9 },
+      "active": { "name": "Reckless Rush", "status": "PROPOSED" },
+      "passive": { "name": "Lucky Slash", "status": "PROPOSED", "chance": 0.3 }
+    },
+    {
+      "rosterId": "AVT_CEL_002",
+      "designRef": "AV_EX03",
+      "nameEn": "Justin Theory",
+      "factionCode": "FAC_CEL",
+      "factionName": "Celestial Nexus",
+      "roleName": "Magic",
+      "rarityName": "Epic",
+      "nameStatus": "LOCKED",
+      "statsStatus": "PROPOSED",
+      "stats": { "atk": 7, "def": 3, "spd": 4 },
+      "active": { "name": "Arcane Formula", "status": "PROPOSED" },
+      "passive": { "name": "Eureka", "status": "PROPOSED", "chance": 0.4 }
+    },
+    {
+      "rosterId": "AVT_SAN_002",
+      "designRef": "AV_EX04",
+      "nameEn": "Justina Moment",
+      "female": true,
+      "factionCode": "FAC_SAN",
+      "factionName": "Sanctuary Order",
+      "roleName": "Support",
+      "rarityName": "Epic",
+      "nameStatus": "LOCKED",
+      "statsStatus": "PROPOSED",
+      "stats": { "atk": 2, "def": 5, "spd": 6 },
+      "active": {
+        "id": "saving-grace",
+        "name": "Saving Grace",
+        "status": "LOCKED",
+        "trigger": "skill-action",
+        "effect": { "op": "regen", "amount": 3, "turns": 2, "target": "all_teammates" }
+      },
+      "passive": { "name": "Moral Support", "status": "PROPOSED", "chance": 0.5 }
+    }
+  ]
+}

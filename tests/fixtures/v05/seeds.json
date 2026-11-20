@@ -1,0 +1,8 @@
+{
+  "fixtureKind": "v05-acceptance-seeds",
+  "note": "Deterministic seeds for the v0.5 acceptance suite. Not a catalog record.",
+  "battleSeed": 20261120,
+  "battleSeedAlt": 20261121,
+  "gachaSeed": 20261120,
+  "passiveSeed": 11011
+}
