@@ -173,6 +173,8 @@ export function createMatch(input) {
       simultaneousDeath: 'PENDING_OWNER',
       deckDuplicateMax: 'PENDING_OWNER',
       statusExpiry: 'PENDING_OWNER',
+      autoMode: 'LOCKED',
+      autoPolicy: 'PROPOSED',
     },
     phase: 'action',
     roundIndex: 1,
@@ -376,6 +378,16 @@ function legalAction(state, action, { requireTargets }) {
     chosen: targets.chosen,
     retrieveInstanceIds: requested.retrieveInstanceIds,
     pureTrigger: false,
+  };
+}
+
+/** Legality only. Does not spend AP and does not copy the match. */
+export function assessAction(state, action) {
+  const check = legalAction(state, action ?? {}, { requireTargets: true });
+  return {
+    ok: check.ok === true,
+    reason: check.reason ?? null,
+    cost: check.card?.costAp ?? check.cost ?? null,
   };
 }
 

@@ -11,6 +11,7 @@ const SPD_AGGREGATIONS = new Set(['sum', 'average', 'max']);
 const SIMULTANEOUS_POLICIES = new Set(['higher_team_spd_then_input_order', 'input_order']);
 const HEAL_POLICIES = new Set(['clamp_to_max_hp', 'allow_overheal']);
 const REGEN_STACKS = new Set(['refresh_ticks_keep_higher_amount', 'stack_separate']);
+const AUTO_STEPS = new Set(['heal_regen', 'shield_taunt_if_lethal', 'highest_damage_lowest_hp']);
 
 const TEMPLATE = {
   meta: {
@@ -116,6 +117,26 @@ const TEMPLATE = {
     policy: 'sum_pool_absorbs_before_hp',
     note: 'Shield amounts add into one pool and absorb damage before HP. The pool has no turn limit unless a future status says so. Taunt is a separate timed status. Not an approved mitigation rule.',
   },
+  autoMode: {
+    id: 'AUTO-MODE',
+    status: 'LOCKED',
+    enabled: true,
+    note: 'AUTO battle mode is part of this ruleset. SYNC was dropped and is not implemented.',
+  },
+  autoPolicy: {
+    id: 'AUTO-POLICY',
+    status: 'PROPOSED',
+    name: 'balanced',
+    policies: {
+      balanced: {
+        allyLowHpRatio: 0.4,
+        priorities: ['heal_regen', 'shield_taunt_if_lethal', 'highest_damage_lowest_hp'],
+        spend: 'greedy',
+        voluntaryDiscard: 'hand_locked_only',
+      },
+    },
+    note: 'AUTO is locked. This preference table is proposed and editable. balanced heals or applies regen when an ally is under allyLowHpRatio of max HP, shields or taunts the tank when an enemy strike can KO, otherwise plays the highest estimated damage on the lowest-HP legal target. AP is spent greedily. A voluntary discard is used only for a hand-locked card.',
+  },
 };
 
 const PENDING_KEYS = [
@@ -184,6 +205,21 @@ function assertConfig(config) {
   if (!REGEN_STACKS.has(config.regenStack.policy)) throw gameError('UNKNOWN_REGEN_STACK');
   if (config.buffStack.policy !== 'sum_independent_durations') throw gameError('UNKNOWN_BUFF_STACK');
   if (config.shield.policy !== 'sum_pool_absorbs_before_hp') throw gameError('UNKNOWN_SHIELD_POLICY');
+  if (config.autoMode?.status !== 'LOCKED' || config.autoMode?.enabled !== true) {
+    throw gameError('LOCKED_RULE', 'AUTO mode is LOCKED on');
+  }
+  const auto = config.autoPolicy;
+  if (auto?.status !== 'PROPOSED') throw gameError('PROPOSED_LOCK', 'autoPolicy must stay PROPOSED');
+  if (!auto.policies || !auto.policies[auto.name]) throw gameError('UNKNOWN_AUTO_POLICY');
+  for (const policy of Object.values(auto.policies)) {
+    if (!Array.isArray(policy.priorities) || policy.priorities.length === 0) throw gameError('UNKNOWN_AUTO_POLICY');
+    if (policy.priorities.some((step) => !AUTO_STEPS.has(step))) throw gameError('UNKNOWN_AUTO_POLICY');
+    if (typeof policy.allyLowHpRatio !== 'number' || policy.allyLowHpRatio < 0 || policy.allyLowHpRatio > 1) {
+      throw gameError('UNKNOWN_AUTO_POLICY');
+    }
+    if (policy.spend !== 'greedy') throw gameError('UNKNOWN_AUTO_POLICY');
+    if (policy.voluntaryDiscard !== 'hand_locked_only') throw gameError('UNKNOWN_AUTO_POLICY');
+  }
   const duplicateCap = config.deckDuplicateMax.value;
   if (duplicateCap !== null && !(Number.isInteger(duplicateCap) && duplicateCap >= 1)) {
     throw gameError('UNKNOWN_DUPLICATE_CAP');
