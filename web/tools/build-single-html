@@ -35,10 +35,11 @@ function dataUri(filePath) {
 }
 
 mkdirSync(outDir, { recursive: true });
-const built = spawnSync('npx', ['--yes', 'esbuild@0.25.0', join(repoRoot, 'web/js/app.js'), '--bundle', '--format=iife', '--target=es2022', `--outfile=${bundleFile}`], {
-  cwd: repoRoot,
-  stdio: 'inherit',
-});
+// CFCG_ESBUILD points at a local esbuild binary (offline builds); otherwise npx fetches the pinned version.
+const esbuildArgs = [join(repoRoot, 'web/js/app.js'), '--bundle', '--format=iife', '--target=es2022', `--outfile=${bundleFile}`];
+const built = process.env.CFCG_ESBUILD
+  ? spawnSync(process.env.CFCG_ESBUILD, esbuildArgs, { cwd: repoRoot, stdio: 'inherit' })
+  : spawnSync('npx', ['--yes', 'esbuild@0.25.0', ...esbuildArgs], { cwd: repoRoot, stdio: 'inherit' });
 if (built.status !== 0) process.exit(built.status ?? 1);
 
 const manifest = JSON.parse(readFileSync(join(repoRoot, 'web/assets-manifest.json'), 'utf8'));
@@ -50,18 +51,29 @@ for (const asset of manifest.assets ?? []) {
   }
 }
 
-// HOOK prod/c-inventory: keep bag screens styled in the single-file build.
-const collectionCssPath = join(repoRoot, 'web/css/collection.css');
-const collectionCss = existsSync(collectionCssPath) ? `\n${readFileSync(collectionCssPath, 'utf8')}` : '';
-const css = (readFileSync(join(repoRoot, 'web/css/app.css'), 'utf8') + collectionCss).replace(
-  /url\((['"]?)(\.\.\/assets\/[^)'"]+)\1\)/g,
-  (full, _quote, rel) => {
-    const file = join(repoRoot, 'web', rel.replace(/^\.\.\//, ''));
+// Inline every stylesheet that web/index.html links, in page order (app, collection, gacha-fx,
+// battle-polish, ...), so C/D/E screens keep their styles in the single file.
+const indexHtml = readFileSync(join(repoRoot, 'web/index.html'), 'utf8');
+const cssFiles = [...indexHtml.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g)].map((match) => match[1]);
+function inlineCss(rel) {
+  const cssPath = join(repoRoot, 'web', rel);
+  if (!existsSync(cssPath)) return '';
+  return readFileSync(cssPath, 'utf8').replace(/url\((['"]?)([^)'"]+)\1\)/g, (full, _quote, ref) => {
+    if (/^(data:|https?:|#)/.test(ref)) return full;
+    const file = resolve(dirname(cssPath), ref);
     if (!existsSync(file)) return full;
     return `url("${dataUri(file)}")`;
-  },
-);
-const js = readFileSync(bundleFile, 'utf8');
+  });
+}
+const css = cssFiles.map(inlineCss).join('\n');
+// Manifest fragments imported as JSON (gacha.json, battle-ui.json, ...) keep repo paths such as
+// "web/assets/gacha/vfx_n.webp". An iife has no import.meta.url, so those paths would not load from
+// file://. Replace each path literal that names a real file with a data URI.
+const js = readFileSync(bundleFile, 'utf8').replace(/(["'])((?:web\/)?assets\/[^"'\s]+\.(?:webp|png|svg|jpe?g))\1/g, (full, quote, rel) => {
+  const file = join(repoRoot, rel.startsWith('web/') ? rel : `web/${rel}`);
+  if (!existsSync(file)) return full;
+  return `${quote}${dataUri(file)}${quote}`;
+});
 const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
