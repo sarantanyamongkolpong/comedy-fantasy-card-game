@@ -4,6 +4,8 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import { createBattle, endTurn, evaluateOutcome, playCard, publicView, resolveEffect } from '../src/battle/battle.js';
+import { createMatch, getOutcome } from '../src/engine/index.js';
+import { matchInput } from './engine/fixture.js';
 import { addCard } from '../src/cards/hand.js';
 import { defaultRules } from '../src/design/blocked-rules.js';
 import { DesignBlockedError } from '../src/design/errors.js';
@@ -320,4 +322,16 @@ test('the engine source has no RNG and does not sum SPD itself', () => {
   for (const [name, questionId] of Object.entries(expected)) {
     assert.throws(() => blockers[name](), (error) => error.questionId === questionId, name);
   }
+});
+
+test('v0.5 matches live in src/engine and leave the blocked battle shell in place', () => {
+  const sideA = testOnlySide('A', [1, 0, 0, 0]);
+  const sideB = testOnlySide('B', [0, 0, 0, 0]);
+  assert.throws(() => createBattle({ sideA, sideB }), (error) => error.questionId === 'Q-SPD-AGG');
+  const match = createMatch(matchInput({ seed: 1, matchId: 'bridge' }));
+  assert.equal(match.productionReady, false);
+  assert.equal(match.sides.player.avatars.length, 4);
+  assert.equal(match.sides.player.ap, 5);
+  assert.equal(getOutcome(match).status, 'ongoing');
+  assert.equal(getOutcome(match).rewards, null);
 });
