@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#24124a"/>
+      <stop offset="0.45" stop-color="#3a4d86"/>
+      <stop offset="1" stop-color="#1a2744"/>
+    </linearGradient>
+  </defs>
+  <rect width="1672" height="941" fill="url(#sky)"/>
+  <circle cx="220" cy="120" r="36" fill="#f0d7a4" opacity="0.85"/>
+  <path d="M180 420 L280 250 L390 420 Z" fill="#6d7eab"/>
+  <path d="M360 460 L520 220 L700 460 Z" fill="#8ea0c4"/>
+  <path d="M980 440 L1180 180 L1400 440 Z" fill="#9a7eb8"/>
+  <rect x="760" y="250" width="160" height="220" fill="#d7c4a2"/>
+  <polygon points="740,250 840,160 940,250" fill="#c45b7a"/>
+  <rect x="820" y="300" width="40" height="70" fill="#6ec8ff"/>
+  <text x="40" y="900" fill="#f4e2c4" font-size="28" font-family="serif">PLACEHOLDER battle background</text>
+</svg>

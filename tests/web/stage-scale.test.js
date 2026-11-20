@@ -35,12 +35,11 @@ test('proposed building anchors stay inside the master canvas', () => {
     assert.equal(hotspot.placementStatus, 'PROPOSED');
     assert.equal(hotspot.anchorX >= 0 && hotspot.anchorX <= canvas.width, true, hotspot.id);
     assert.equal(hotspot.anchorY >= 0 && hotspot.anchorY <= canvas.height, true, hotspot.id);
-    if (!rectInsideCanvas(hotspot, canvas)) overflow.push(hotspot.id);
+    assert.equal(rectInsideCanvas(hotspot, canvas), true, `${hotspot.id} sprite box leaves the master`);
   }
   for (const anchor of uiAnchors(manifest)) {
     assert.equal(rectInsideCanvas(anchor, canvas), true, anchor.id);
   }
-  assert.deepEqual(overflow, ['mall']);
 });
 
 test('canvas positions are invariant across landscape viewports', () => {

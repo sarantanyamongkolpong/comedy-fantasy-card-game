@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, sep } from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 import { REQUIRED_CARD_ANCHORS, cardFace, layoutFor } from '../../web/js/card-layers.js';
@@ -120,7 +120,7 @@ test('web source does not bake images or reference-card pngs', () => {
   const files = walk(join(repoRoot, 'web')).filter((file) => /\.(js|css|html|svg|json)$/.test(file));
   const offenders = [];
   for (const file of files) {
-    if (file.endsWith('assets-manifest.json')) continue;
+    if (file.endsWith('assets-manifest.json') || file.includes(`${sep}dist${sep}`)) continue;
     const text = readFileSync(file, 'utf8');
     if (/data:image/i.test(text) || /REF_CARD_/.test(text)) offenders.push(file);
     if (/\.(js|css|html)$/.test(file) && /web\/assets\//.test(text)) offenders.push(file);

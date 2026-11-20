@@ -358,52 +358,56 @@ export const STARTER_DECK_LIST = Object.freeze([
   'ACT_SAMPLE_FAC_SAN',
 ]);
 
-/** TEST booths. Weights are not drop rates (GA-11 PENDING). Pity caps are LOCKED. */
+/** Same labelled TEST banners as src/gacha/test-config.js. Weights are not drop rates. */
+const TEST_WARNING = 'TEST_ONLY_NOT_PRODUCTION. These weights are fixtures for the pity engine. NOT A DROP RATE. GA-11 remains PENDING_OWNER.';
+
+function testBanner(fields) {
+  const entries = Object.freeze(fields.entries.map((entry) => Object.freeze({ ...entry })));
+  return Object.freeze({
+    testOnly: true,
+    rateStatus: 'TEST_ONLY_NOT_PRODUCTION',
+    warning: TEST_WARNING,
+    costG: null,
+    costStatus: 'PENDING_OWNER',
+    bannerId: fields.bannerId,
+    pool: fields.pool,
+    name: fields.name,
+    pityEpic: 100,
+    pityTop: fields.pool === 'companion' ? null : 200,
+    entries,
+    weights: entries,
+  });
+}
+
 export const TEST_BANNERS = Object.freeze([
-  Object.freeze({
+  testBanner({
     bannerId: 'TEST_BANNER_AVATAR',
     pool: 'avatar',
     name: 'Avatar Gachapon',
-    testConfig: true,
-    pityEpic: 100,
-    pityTop: 200,
-    topLabel: 'EX',
-    weights: Object.freeze([
-      Object.freeze({ rarity: 'N', weight: 70 }),
-      Object.freeze({ rarity: 'R', weight: 20 }),
-      Object.freeze({ rarity: 'Epic', weight: 8 }),
-      Object.freeze({ rarity: 'EX', weight: 2 }),
-    ]),
+    entries: [
+      { id: 'TEST_POOL_N', rarity: 'N', weight: 100 },
+      { id: 'TEST_POOL_EPIC', rarity: 'Epic', weight: 0 },
+      { id: 'TEST_POOL_EX', rarity: 'EX', weight: 0 },
+    ],
   }),
-  Object.freeze({
+  testBanner({
     bannerId: 'TEST_BANNER_ACTION',
     pool: 'action',
     name: 'Action Gachapon',
-    testConfig: true,
-    pityEpic: 100,
-    pityTop: 200,
-    topLabel: 'EX / FAC',
-    weights: Object.freeze([
-      Object.freeze({ rarity: 'N', weight: 60 }),
-      Object.freeze({ rarity: 'R', weight: 22 }),
-      Object.freeze({ rarity: 'Epic', weight: 8 }),
-      Object.freeze({ rarity: 'EX', weight: 5 }),
-      Object.freeze({ rarity: 'FAC', weight: 5 }),
-    ]),
+    entries: [
+      { id: 'TEST_POOL_N', rarity: 'N', weight: 100 },
+      { id: 'TEST_POOL_EPIC', rarity: 'Epic', weight: 0 },
+      { id: 'TEST_POOL_FAC', rarity: 'FAC', weight: 0 },
+    ],
   }),
-  Object.freeze({
+  testBanner({
     bannerId: 'TEST_BANNER_COMPANION',
     pool: 'companion',
     name: 'Companion Gachapon',
-    testConfig: true,
-    pityEpic: 100,
-    pityTop: null,
-    topLabel: 'none',
-    weights: Object.freeze([
-      Object.freeze({ rarity: 'N', weight: 75 }),
-      Object.freeze({ rarity: 'R', weight: 20 }),
-      Object.freeze({ rarity: 'Epic', weight: 5 }),
-    ]),
+    entries: [
+      { id: 'TEST_POOL_N', rarity: 'N', weight: 100 },
+      { id: 'TEST_POOL_EPIC', rarity: 'Epic', weight: 0 },
+    ],
   }),
 ]);
 

@@ -34,11 +34,26 @@ export function renderCard(manifest, model, options = {}) {
     root.setAttribute('aria-disabled', 'true');
     root.dataset.reason = options.reason ?? '';
   }
-  root.setAttribute('aria-label', face.text.name || 'Card');
+  const shownName = playerFacingName(face.text.name);
+  root.setAttribute('aria-label', shownName || 'Card');
+  root.dataset.cardName = face.text.name || '';
+  if (face.text.statusNote) root.dataset.status = face.text.statusNote;
+  const illustration = face.layers.find((part) => part.slot === 'illustration');
   for (const part of face.layers) {
     if (part.slot === 'stat-icon' || part.slot === 'ui-icon') continue;
+    if (part.slot === 'illustration' && part.placeholder) continue;
     const entry = findAsset(manifest, { assetId: part.assetId });
     if (entry) root.append(layerImage(entry, face.layout, part.anchor, part.slot));
+  }
+  if (!illustration || illustration.placeholder) {
+    const mark = typeMark(manifest, face.text.type);
+    if (mark) {
+      const img = document.createElement('img');
+      img.className = 'type-mark';
+      img.alt = '';
+      bindImage(img, mark);
+      root.append(img);
+    }
   }
   if (face.text.apCost != null) {
     const cost = document.createElement('span');
@@ -58,7 +73,7 @@ export function renderCard(manifest, model, options = {}) {
   }
   const name = document.createElement('span');
   name.className = 'card-name';
-  name.textContent = face.text.name;
+  name.textContent = shownName;
   place(name, face.layout, 'name');
   root.append(name);
   if (face.text.stats) {
@@ -89,13 +104,32 @@ export function renderCard(manifest, model, options = {}) {
   place(rules, face.layout, 'rulesText');
   const bits = [];
   if (face.text.type) bits.push(face.text.type);
-  if (face.text.rarity) bits.push(face.text.rarity);
-  bits.push(...face.text.lines);
-  if (face.text.statusNote) bits.push(face.text.statusNote);
+  if (face.text.rarity) bits.push(playerFacingLine(face.text.rarity));
+  bits.push(...face.text.lines.map(playerFacingLine));
+  bits.push(playerFacingLine(face.text.statusNote));
   rules.textContent = bits.filter(Boolean).join(' · ');
   root.append(rules);
   if (options.onClick) root.addEventListener('click', options.onClick);
   return root;
+}
+
+/** Player-facing label. Status words stay on data-status, not on the face. */
+export function playerFacingName(name) {
+  const cleaned = String(name ?? '').replace(/placeholder/ig, ' ').replace(/\s+/g, ' ').trim();
+  return cleaned || String(name ?? '');
+}
+
+export function playerFacingLine(text) {
+  const value = String(text ?? '').trim();
+  if (!value || /placeholder/i.test(value)) return '';
+  return value;
+}
+
+function typeMark(manifest, type) {
+  if (type === 'ATK') return findAsset(manifest, { slot: 'stat-icon', subjectId: 'atk' });
+  if (type === 'DEF') return findAsset(manifest, { slot: 'stat-icon', subjectId: 'def' });
+  if (type === 'Skill') return findAsset(manifest, { slot: 'type-icon', subjectId: 'Skill' });
+  return null;
 }
 
 export function avatarModel(def, extra = {}) {
@@ -117,7 +151,7 @@ export function actionModel(def) {
     name: def.name,
     rarity: def.rarity,
     factionId: def.factionRequirement,
-    illustrationSubjectId: 'generic-action',
+    illustrationSubjectId: def.cardId || 'generic-action',
     costAp: def.costAp,
     type: def.type,
     stats: null,
