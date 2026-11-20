@@ -9,6 +9,7 @@ import {
   deserialize,
   grantItem,
   serialize,
+  setAutoBattle,
 } from '../../src/save/index.js';
 
 test('serialize and deserialize round-trip inventory, decks, currency, pity, and house', () => {
@@ -40,7 +41,45 @@ test('serialize and deserialize round-trip inventory, decks, currency, pity, and
   assert.equal(back.pity.TEST_BANNER_AVATAR.epicCounter, pulled.state.epicCounter);
   assert.equal(back.house.displayTier, 'loft');
   assert.equal(back.house.installedFurniture[0].capacity, 100);
+  assert.equal(back.preferences.autoBattle, false);
   assert.throws(() => deserialize('{"saveVersion":99,"profile":{}}'), /Unsupported saveVersion/);
+});
+
+test('AUTO preference round-trips and a version 1 save defaults to false', () => {
+  const on = deserialize(serialize(setAutoBattle(createProfile({ profileId: 'PLAYER' }), true)));
+  assert.equal(on.preferences.autoBattle, true);
+  const off = deserialize(serialize(createProfile({ profileId: 'PLAYER', preferences: { autoBattle: false } })));
+  assert.equal(off.preferences.autoBattle, false);
+  const legacy = deserialize(JSON.stringify({
+    saveVersion: 1,
+    profile: {
+      profileId: 'PLAYER',
+      saveVersion: 1,
+      inventory: { avatars: [], actions: [], companions: [] },
+      decks: [],
+      currency: { G: 0 },
+      pity: {},
+      house: { acquiredTiers: ['cabin'], displayTier: 'cabin', installedFurniture: [] },
+      rewardLedger: {},
+    },
+  }));
+  assert.equal(legacy.preferences.autoBattle, false);
+  assert.equal(legacy.saveVersion, 2);
+  const kept = deserialize(JSON.stringify({
+    saveVersion: 1,
+    profile: {
+      profileId: 'PLAYER',
+      inventory: { avatars: [], actions: [], companions: [] },
+      decks: [],
+      currency: { G: 3 },
+      pity: {},
+      house: { acquiredTiers: ['cabin'], installedFurniture: [] },
+      rewardLedger: {},
+      preferences: { autoBattle: true },
+    },
+  }));
+  assert.equal(kept.preferences.autoBattle, true);
+  assert.equal(kept.currency.G, 3);
 });
 
 test('memory and localStorage-like adapters load the same profile', () => {

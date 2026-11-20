@@ -4,6 +4,7 @@ export {
   consumeDuplicate,
   createProfile,
   grantItem,
+  setAutoBattle,
   setFavorite,
   setLocked,
   unbindDeck,

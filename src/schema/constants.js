@@ -65,10 +65,14 @@ export const TOP_PITY_PULLS = 200;
 
 export const COMPANION_EPIC_PITY_PULLS = 100;
 
-export const SAVE_VERSION = 1;
+/** Current on-disk save. Version 1 profiles migrate forward. */
+export const SAVE_VERSION = 2;
 
 /** Owner t253u, 20 Nov 2026. Cited wherever these three decisions are stored. */
 export const OWNER_EVIDENCE_T253U = 'Owner t253u 20 Nov 2026';
+
+/** Owner t261u, 20 Nov 2026. SYNC is rejected. AUTO battle is required. */
+export const OWNER_EVIDENCE_T261U = 'Owner t261u 20 Nov 2026';
 
 /**
  * CORE-005 is LOCKED as a 1:1 copy. `legacy.pow` keeps the old value.

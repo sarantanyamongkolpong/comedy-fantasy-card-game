@@ -40,6 +40,7 @@ export {
 export {
   DECK_SIZE,
   OWNER_EVIDENCE_T253U,
+  OWNER_EVIDENCE_T261U,
   POW_TO_ATK,
   SAVE_VERSION,
 } from './schema/constants.js';
@@ -55,6 +56,7 @@ export {
   deserialize,
   grantItem,
   serialize,
+  setAutoBattle,
   setFavorite,
   setLocked,
   unbindDeck,
