@@ -425,18 +425,42 @@ export function applyDamage(unit, amount) {
   return { absorbed, dealt, defeated };
 }
 
+function activeDamageRule(config) {
+  const damage = config.damage;
+  if (!damage.preset) {
+    return { formula: damage.formula, minDamage: damage.minDamage, floorPct: null, preset: null };
+  }
+  const preset = damage.presets?.[damage.preset];
+  if (!preset) throw gameError('UNKNOWN_FORMULA', `Unknown damage preset ${damage.preset}`);
+  return {
+    formula: preset.formula,
+    minDamage: preset.minDamage,
+    floorPct: preset.floorPct ?? null,
+    preset: damage.preset,
+  };
+}
+
+function percentFloor(atk, floorPct) {
+  const scaled = Math.round(floorPct * 100);
+  return Math.ceil((atk * scaled) / 100);
+}
+
 export function formulaDamage(attacker, defender, config, bonus) {
+  const rule = activeDamageRule(config);
   const atk = effectiveStat(attacker, 'atk', true);
   const def = effectiveStat(defender, 'def', false);
   let raw;
-  if (config.damage.formula === 'placeholder_atk_minus_def') raw = atk - def;
-  else if (config.damage.formula === 'placeholder_flat_atk') raw = atk;
+  if (rule.formula === 'placeholder_atk_minus_def') raw = atk - def;
+  else if (rule.formula === 'placeholder_flat_atk') raw = atk;
   else throw gameError('UNKNOWN_FORMULA');
+  let amount = Math.max(rule.minDamage, raw);
+  if (typeof rule.floorPct === 'number') amount = Math.max(amount, percentFloor(atk, rule.floorPct));
   return {
-    amount: Math.max(config.damage.minDamage, raw) + bonus,
+    amount: amount + bonus,
     atk,
     def,
-    formula: config.damage.formula,
+    formula: rule.formula,
+    preset: rule.preset,
     placeholder: true,
   };
 }

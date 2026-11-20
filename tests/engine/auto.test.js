@@ -76,10 +76,14 @@ test('auto policy stays proposed and SYNC is not a config', () => {
   assert.equal(config.autoMode.enabled, true);
   assert.equal(config.autoPolicy.status, 'PROPOSED');
   assert.equal(config.autoPolicy.name, 'balanced');
+  assert.equal(config.damage.preset, null);
+  assert.equal(config.damage.formula, 'placeholder_atk_minus_def');
+  assert.equal(config.damage.minDamage, 1);
   assert.deepEqual(config.autoPolicy.policies.balanced.priorities, [
     'heal_regen',
     'shield_taunt_if_lethal',
     'highest_damage_lowest_hp',
+    'any_legal_expected_value',
   ]);
   assert.equal(config.sync, undefined);
   assert.throws(() => resolveRuleConfig({ autoPolicy: { status: 'LOCKED' } }), (error) => error.reason === 'PROPOSED_LOCK');
@@ -201,6 +205,57 @@ test('auto stops between actions and leaves the turn open', () => {
   assert.equal(once.log.filter((entry) => entry.kind === 'play').length, 1);
   assert.equal(once.ended, false);
   assert.equal(capped.phase, 'action');
+});
+
+test('auto plays a Skill that fires an Active instead of passing the turn', () => {
+  const state = createMatch(matchInput({
+    playerDeck: padDeck([skill({ cardId: 'SPARK', costAp: 1 })], skill({ cardId: 'SPARK', costAp: 1 })),
+  }));
+  const plan = chooseAutoActions(state, 'player');
+  assert.ok(plan.length > 0);
+  assert.equal(plan[0].priority, 'any_legal_expected_value');
+  assert.equal(plan[0].kind, 'play');
+  const step = runAutoTurn(state, 'player');
+  assert.equal(step.log.some((entry) => entry.kind === 'play'), true);
+  assert.equal(step.ended, true);
+});
+
+test('a legal damaging play is taken before a zero-shield card', () => {
+  const guard = sampleCard({
+    cardId: 'ZERO',
+    type: 'DEF',
+    costAp: 1,
+    targetRule: 'Self',
+    effects: [{ op: 'shield', amount: 0, target: 'self' }],
+  });
+  const state = createMatch(matchInput({
+    playerDeck: padDeck([guard, strike({ cardId: 'HIT', costAp: 1 })], guard),
+    player: roster((avatar) => { avatar.hp = 1; }),
+  }));
+  const plan = chooseAutoActions(state, 'player');
+  assert.equal(plan[0].priority, 'highest_damage_lowest_hp');
+  assert.equal(plan[0].cardId, 'HIT');
+});
+
+test('named damage presets are selectable and do not replace the default', () => {
+  const config = defaultRuleConfig();
+  assert.equal(config.damage.preset, null);
+  assert.throws(() => resolveRuleConfig({ damage: { preset: 'approved_real_formula' } }), (error) => error.reason === 'UNKNOWN_FORMULA');
+  const selected = resolveRuleConfig({ damage: { preset: 'floor_50_pct_atk' } });
+  assert.equal(selected.damage.status, 'PENDING_OWNER');
+  assert.equal(selected.damage.formula, 'placeholder_atk_minus_def');
+  assert.equal(selected.damage.minDamage, 1);
+  assert.equal(selected.damage.preset, 'floor_50_pct_atk');
+  const state = createMatch(matchInput({
+    config: { damage: { preset: 'floor_50_pct_atk' } },
+    playerDeck: padDeck([strike({ cardId: 'HIT', costAp: 0 })]),
+    enemy: roster((avatar, index) => { if (index === 0) { avatar.stats.def = 8; avatar.hp = 26; avatar.maxHp = 26; } }),
+  }));
+  const card = handCard(state, 'player', 'HIT');
+  const played = playAction(state, { cardInstanceId: card.instanceId, actorAvatarId: 'AVT_PHA_002', targets: ['AVT_AEG_002'] });
+  assert.equal(played.ok, true, played.reason);
+  const tank = state.sides.enemy.avatars.find((unit) => unit.avatarId === 'AVT_AEG_002');
+  assert.equal(tank.hp, 22);
 });
 
 test('playEnemyTurn is the auto turn for the non-human side', () => {
