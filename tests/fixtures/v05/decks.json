@@ -1,0 +1,28 @@
+{
+  "fixtureKind": "v05-acceptance-decks",
+  "note": "Sample 30-card action decks. defId is not cardKind. SAMPLE cards exercise the core paths. They are not a published card list and carry no drop rates.",
+  "standardFront": [
+    { "defId": "ACT_GEN_ATK0", "name": "Sample Zero", "type": "ATK", "rarity": "N", "costAp": 0, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_GEN_ATK5", "name": "Sample Five", "type": "ATK", "rarity": "N", "costAp": 5, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_GEN_SKILL", "name": "Sample Skill", "type": "Skill", "rarity": "N", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_GEN_DRAW", "name": "Sample Draw", "type": "Skill", "rarity": "R", "costAp": 1, "copies": 1, "effect": { "op": "draw", "count": 2 }, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_VOID", "name": "Sample Void", "type": "Skill", "rarity": "R", "costAp": 1, "copies": 1, "onResolveZone": "Void", "sampleStatus": "SAMPLE" }
+  ],
+  "standardRest": [
+    { "defId": "ACT_GEN_ATK", "name": "Sample Strike", "type": "ATK", "rarity": "N", "costAp": 1, "copies": 17, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_GEN_DEF", "name": "Sample Guard", "type": "DEF", "rarity": "N", "costAp": 2, "copies": 2, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_GEN_SKILL_EXTRA", "name": "Sample Skill Extra", "type": "Skill", "rarity": "N", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_RETRIEVE", "name": "Sample Return", "type": "Skill", "rarity": "R", "costAp": 1, "copies": 1, "zoneRecovery": { "from": "Discard", "destination": "Hand", "mode": "named" }, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_FAC_AEG", "name": "Sample Aegis Order", "type": "Skill", "rarity": "FAC", "factionRequirement": "FAC_AEG", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_FAC_AEG_OVERRIDE", "name": "Sample Aegis Exception", "type": "Skill", "rarity": "FAC", "factionRequirement": "FAC_AEG", "factionOverride": true, "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_FAC_PHA", "name": "Sample Phantom Order", "type": "Skill", "rarity": "FAC", "factionRequirement": "FAC_PHA", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_DMG_ALL", "name": "Sample Rout", "type": "ATK", "rarity": "R", "costAp": 1, "copies": 1, "effect": { "op": "damage", "amount": 1, "target": "all_enemies" }, "sampleStatus": "SAMPLE" }
+  ],
+  "factionFront": [
+    { "defId": "ACT_GEN_SKILL", "name": "Sample Skill", "type": "Skill", "rarity": "N", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_FAC_AEG", "name": "Sample Aegis Order", "type": "Skill", "rarity": "FAC", "factionRequirement": "FAC_AEG", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_FAC_AEG_OVERRIDE", "name": "Sample Aegis Exception", "type": "Skill", "rarity": "FAC", "factionRequirement": "FAC_AEG", "factionOverride": true, "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_FAC_PHA", "name": "Sample Phantom Order", "type": "Skill", "rarity": "FAC", "factionRequirement": "FAC_PHA", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" },
+    { "defId": "ACT_GEN_ATK", "name": "Sample Strike", "type": "ATK", "rarity": "N", "costAp": 1, "copies": 1, "sampleStatus": "SAMPLE" }
+  ]
+}
