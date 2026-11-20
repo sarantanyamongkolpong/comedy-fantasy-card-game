@@ -23,7 +23,7 @@ import { collectionRoute, renderCollection } from './collection/index.js';
 const SAVE_KEY = 'cfcg.v05.web.save';
 
 const state = {
-  screen: 'home',
+  screen: 'map', // Owner 2026-11-21: the game starts on the World Map.
   manifest: null,
   api: null,
   profile: null,
@@ -285,6 +285,17 @@ function render() {
   else if (state.screen === 'rewards' && state.match) view = renderRewards(ctx);
   else view = renderHome(ctx);
   if ((state.screen === 'battle' && state.match) || state.screen === 'prep') applyBattlePolish(view, ctx);
+  // Owner 2026-11-21: every place except the map and a live battle gets a World Map button that
+  // stays on screen (fixed corner), so long panels can never trap the player.
+  if (state.screen !== 'map' && !(state.screen === 'battle' && state.match)) {
+    const mapBtn = document.createElement('button');
+    mapBtn.type = 'button';
+    mapBtn.className = 'global-map-button';
+    mapBtn.textContent = 'World Map';
+    mapBtn.setAttribute('aria-label', 'World Map');
+    mapBtn.addEventListener('click', () => ctx.goto('map'));
+    view.append(mapBtn);
+  }
   stage.replaceChildren(view);
 }
 
@@ -312,9 +323,8 @@ async function main() {
     state.match = stored.match;
     state.battleUi = stored.battleUi ?? freshBattleUi();
     if (stored.screen === 'battle' || stored.screen === 'rewards') state.screen = stored.screen;
-  } else if (stored?.screen && ['home', 'stash', 'party', 'gacha', 'map', 'prep', 'mall', 'inventory', 'collection', 'deck', 'detail'].includes(stored.screen)) {
-    state.screen = stored.screen;
   }
+  // Owner 2026-11-21: outside a saved battle, a new session always opens on the World Map.
   ensureBanners();
   mountRotateArt();
   applyStage();

@@ -974,3 +974,12 @@ body.is-portrait #rotate-overlay { display: flex; }
   object-fit: contain;
   pointer-events: none;
 }
+
+/* Owner 2026-11-21: always-visible way back to the World Map. */
+.global-map-button {
+  position: absolute; right: 24px; bottom: 24px; z-index: 50;
+  min-width: 180px; min-height: 64px; padding: 12px 24px;
+  font: 700 26px/1 inherit; color: #2a1b12;
+  background: linear-gradient(#f5d47a, #d9a93e); border: 3px solid #7a4e12; border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.45); cursor: pointer;
+}
