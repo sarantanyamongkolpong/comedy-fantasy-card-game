@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768" fill="none">
+  <defs>
+    <linearGradient id="facWing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd0c2"/>
+      <stop offset="0.4" stop-color="#d84b45"/>
+      <stop offset="1" stop-color="#6e1c2c"/>
+    </linearGradient>
+    <linearGradient id="facJade" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#08382c"/>
+      <stop offset="0.5" stop-color="#1f8f6a"/>
+      <stop offset="1" stop-color="#d8ffe8"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#facWing)" d="M70 390l150-78 28 46-70 18 78 16-78 18 70 16-28 48L70 390z"/>
+  <path fill="url(#facWing)" d="M698 390l-150-78-28 46 70 18-78 16 78 18-70 16 28 48 150-78z"/>
+  <path fill="url(#facJade)" d="M118 390l92-36 16 22-48 10 52 8-52 10 48 8-16 24-92-46z"/>
+  <path fill="url(#facJade)" d="M650 390l-92-36-16 22 48 10-52 8 52 10-48 8 16 24 92-46z"/>
+  <path fill="#e7c56a" d="M384 250l18 46 48 12-38 30 12 48-40-24-40 24 12-48-38-30 48-12z"/>
+  <path fill="none" stroke="#f3e2a8" stroke-width="6" d="M330 384h108M384 330v108"/>
+  <g fill="#f6e7b2">
+    <path d="M384 168l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/>
+    <path d="M250 250l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M518 250l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M250 520l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M518 520l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M384 600l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/>
+  </g>
+  <path fill="none" stroke="#7d2433" stroke-width="10" d="M300 210l84-48 84 48M300 558l84 48 84-48"/>
+</svg>
