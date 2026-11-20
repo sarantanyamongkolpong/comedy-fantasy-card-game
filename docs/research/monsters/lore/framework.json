@@ -448,12 +448,14 @@
     ]
   },
   "siblingWatch": {
-    "note": "Agent 06's style guide at b7132e2 adopts this vocabulary. Earlier tensions at ee9c649 are closed. See sample_lore_links.json. Still no sample creatures.",
-    "m06Commit": "b7132e2d1301ab34342579d2ad073b04e0a4cd26",
-    "m06File": "docs/research/monsters/creative/parody/STYLE_GUIDE.md",
-    "m06SampleEntryCount": 0,
-    "m07": "remote branch research/m07-boss was absent at 2026-11-20T13:20:19Z",
-    "yield": "Their guide now uses ORG-* ids, ATTR-* ids, ENV-TWR-01..15, and Normal N / Elite R."
+    "note": "Samples are linked in sample_lore_links.json. Style-guide tensions from ee9c649 closed at b7132e2. Entry-level flags are in the link file and are not canon edits.",
+    "m06Commit": "77c558bba78d93586a1d0b2926231e5008a44cbf",
+    "m06File": "docs/research/monsters/creative/parody/sample_normal_elite.json",
+    "m06SampleEntryCount": 15,
+    "m07Commit": "76360d6c50dbf431def2fb9be6b06bf81814bd43",
+    "m07File": "docs/research/monsters/creative/bosses/sample_bosses.json",
+    "m07SampleEntryCount": 15,
+    "yield": "Agent 06's guide uses ORG-* ids, ATTR-* ids, ENV-TWR-01..15, and Normal N / Elite R. The 30 links keep those ids."
   },
   "linkRulesForSamples": {
     "status": "PROPOSED",
