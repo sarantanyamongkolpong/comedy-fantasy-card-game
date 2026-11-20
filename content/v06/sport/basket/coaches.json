@@ -1,0 +1,282 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "basket",
+  "status": "PROPOSED",
+  "coaches": [
+    {
+      "id": "SPC_BASKET_COA_001",
+      "sport": "basket",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Chef Stevie Stir",
+      "rarity": "Epic",
+      "team": "Golden Snack Wafflers",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 62,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_COA_001_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Steve Kerr",
+        "url": "https://www.nba.com/warriors/news/warriors-head-coach-steve-kerr-earns-600th-career-win-20260316",
+        "season": "NBA coach milestone report",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Steve Kerr"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Identity metadata only. The passive number lives in tuning and is not an official rating."
+      }
+    },
+    {
+      "id": "SPC_BASKET_COA_002",
+      "sport": "basket",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Gregg Popcorn-Vich",
+      "rarity": "R",
+      "team": "Sideline Workshop",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 59,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_COA_002_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Gregg Popovich",
+        "url": "https://www.nba.com/spurs/news/gregg-popovich-transitions-to-spurs-president-of-basketball-operations",
+        "season": "NBA front-office transition, May 2025",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Gregg Popovich"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Workbook says the head-coach role ended in May 2025. Do not present this card as an active head coach."
+      }
+    },
+    {
+      "id": "SPC_BASKET_COA_003",
+      "sport": "basket",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Becky Ham-Bun",
+      "rarity": "Epic",
+      "team": "Sideline Workshop",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 57,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_BASKET_COA_003_PORTRAIT",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Becky Hammon",
+        "url": "https://aces.wnba.com/head-coach-becky-hammon",
+        "season": "WNBA coach page",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Becky Hammon"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Identity metadata only. The passive number lives in tuning and is not an official rating."
+      }
+    },
+    {
+      "id": "SPC_BASKET_COA_004",
+      "sport": "basket",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Clipboard Crumb",
+      "rarity": "N",
+      "team": "Hardwood Exhibition",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 57,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_COA_004_PORTRAIT",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_BASKET_COA_005",
+      "sport": "basket",
+      "kind": "card",
+      "role": "COA",
+      "parodyName": "Timer Ladle",
+      "rarity": "N",
+      "team": "Gravy Garden",
+      "bannerId": "SPORT_BASKET",
+      "stats": {
+        "Shooting": {
+          "value": 69,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Def": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Spd": {
+          "value": 64,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        },
+        "Sta": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "role-baseline-not-from-raw-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_BASKET_COA_005_PORTRAIT",
+        "placeholder": true
+      }
+    }
+  ]
+}
