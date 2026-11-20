@@ -1,0 +1,20 @@
+{
+  "fixtureKind": "v05-acceptance-viewports",
+  "note": "OWNER-PLAT-04 viewport matrix. Portrait is the rotate-overlay case.",
+  "landscape": [
+    { "width": 640, "height": 360 },
+    { "width": 812, "height": 375 },
+    { "width": 844, "height": 390 },
+    { "width": 915, "height": 412 },
+    { "width": 1024, "height": 768 },
+    { "width": 1280, "height": 720 },
+    { "width": 1920, "height": 1080 }
+  ],
+  "portrait": { "width": 390, "height": 844 },
+  "anchors": [
+    { "id": "home", "designX": 480, "designY": 540 },
+    { "id": "tower", "designX": 960, "designY": 280 },
+    { "id": "arena", "designX": 1280, "designY": 640 },
+    { "id": "mall", "designX": 1500, "designY": 860 }
+  ]
+}

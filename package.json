@@ -4,7 +4,9 @@
   "type": "module",
   "description": "Comedy Fantasy Card Game — core systems prototype (schema, turn battle, hand/AP, asset loader).",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "test:acceptance": "node tools/ci/acceptance-status.mjs",
+    "test:e2e": "node tools/ci/e2e-smoke.mjs"
   },
   "engines": {
     "node": ">=18"
