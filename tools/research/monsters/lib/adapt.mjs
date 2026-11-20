@@ -266,6 +266,11 @@ export function splitPayload(json) {
   for (const key of ['links', 'lore']) {
     if (Array.isArray(json[key])) out.lore.push(...json[key].filter(isPlainObject));
   }
+  // Agent 08 lore document with an entries list of links (Phase-1 integration).
+  if (isLoreDocument(json) && Array.isArray(json.entries) && json.entries.length > 0 && json.entries.every(isLoreLink)) {
+    out.lore.push(...json.entries);
+    return out;
+  }
   for (const key of ['reviews', 'qa', 'audits']) {
     if (Array.isArray(json[key])) out.qa.push(...json[key].filter(isPlainObject));
   }
@@ -537,10 +542,11 @@ export function adaptLore(row, source, index) {
   }
   const lore = row.loreSummary ?? row.lore ?? row.hook ?? row.loreHook ?? row['Lore Summary'];
   if (typeof lore === 'string') link.loreSummary = lore;
-  const environment = row.suggestedTowerEnvironment ?? row.towerEnvironment ?? row.environment ?? row['Suggested Tower Environment'];
+  const environment = row.suggestedTowerEnvironment ?? row.towerEnvironment ?? row.environment ?? row['Suggested Tower Environment']
+    ?? (row.environmentId ? [row.environmentId, row.environmentName].filter(Boolean).join(' ') : undefined);
   const place = flattenPlace(environment);
   if (typeof place === 'string') link.suggestedTowerEnvironment = place;
-  if (row.status != null) link.ignoredStatus = row.status;
+  if (row.status != null && normalizeStatus(row.status) !== 'PROPOSED') link.ignoredStatus = row.status;
   return link;
 }
 
@@ -554,6 +560,12 @@ export function canonicalMonsterId(value) {
   if (typeof value !== 'string') return value;
   const trimmed = value.trim();
   if (/^MON-(NRM|ELT|MNB|MJB|WLB|SCB)-[0-9]{4}$/.test(trimmed)) return trimmed;
+  // Agent 07 boss ids (BOS-MIN-01 etc.). Added at Phase-1 integration by Mira.
+  const boss = trimmed.match(/^BOS-(MIN|MAIN|WORLD|SECRET)-(\d{1,4})$/);
+  if (boss) {
+    const bossPrefix = { MIN: 'MNB', MAIN: 'MJB', WORLD: 'WLB', SECRET: 'SCB' }[boss[1]];
+    return `MON-${bossPrefix}-${boss[2].padStart(4, '0')}`;
+  }
   const match = trimmed.match(/^M\d{2}-([A-Z]{1,3})-(\d{1,4})$/);
   if (!match) return trimmed;
   const prefix = AGENT_ID_PREFIX[match[1]];
@@ -774,11 +786,11 @@ function rewriteAgentRecord(row, bag, where) {
   const record = {};
   const monsterId = canonicalMonsterId(row.monsterId);
   if (typeof monsterId === 'string') record.monsterId = monsterId;
-  const category = normalizeCategory(row.category);
+  const category = normalizeCategory(row.category ?? row.creative?.monsterCategory);
   if (category !== undefined) record.category = category;
   const status = normalizeStatus(row.status);
   if (status !== undefined) record.status = status;
-  const ipRisk = normalizeIp(row.ipRisk ?? row.ipSimilarityRisk);
+  const ipRisk = normalizeIp(row.ipRisk ?? row.ipSimilarityRisk ?? row.creative?.ipSimilarityRisk);
   if (ipRisk !== undefined) record.ipRisk = ipRisk;
 
   const rawResearch = row.research;
@@ -788,6 +800,10 @@ function rewriteAgentRecord(row, bag, where) {
     'sourceUrl', 'protectedName', 'publicDomain', 'confidence', 'archetypeTags',
   ]);
   if (research.kind != null && !INSPIRATION_KINDS.includes(research.kind)) delete research.kind;
+  // Agent 07 field names (Phase-1 integration).
+  if (research.inspirationId == null) delete research.inspirationId;
+  if (research.confidence == null && rawResearch.researchConfidence != null) research.confidence = normalizeConfidence(rawResearch.researchConfidence);
+  if (research.publicDomain == null && typeof rawResearch.publicDomainTradition === 'boolean') research.publicDomain = rawResearch.publicDomainTradition;
   const sources = asSources(research.sources);
   if (sources) research.sources = sources;
   if (typeof research.sourceUrl !== 'string' && typeof research.sources?.[0]?.url === 'string') {
@@ -798,6 +814,7 @@ function rewriteAgentRecord(row, bag, where) {
     'inspirationId', 'originalInspiration', 'origin', 'kind', 'facts', 'sources',
     'sourceUrl', 'protectedName', 'publicDomain', 'confidence', 'archetypeTags',
     'domain', 'copiedFrom', 'sensitivity', 'sensitivityNote',
+    'researchConfidence', 'publicDomainTradition', 'alignmentNote', 'protectedNameNote', 'sibling',
   ]), bag, where, record.monsterId ?? null, 'research');
 
   const rawCreative = row.creative;
@@ -810,7 +827,7 @@ function rewriteAgentRecord(row, bag, where) {
   ]) {
     if (typeof rawCreative[field] === 'string') creative[field] = rawCreative[field];
   }
-  const element = flattenLabel(rawCreative.element);
+  const element = flattenLabel(rawCreative.element ?? rawCreative.elementAttribute);
   if (typeof element === 'string') creative.element = element;
   const place = flattenPlace(rawCreative.suggestedTowerEnvironment ?? rawCreative.towerEnvironment);
   if (typeof place === 'string') creative.suggestedTowerEnvironment = place;
@@ -825,6 +842,7 @@ function rewriteAgentRecord(row, bag, where) {
     'element', 'combatArchetype', 'signatureAbilityConcept', 'weaknessConcept', 'loreSummary',
     'originId', 'originName', 'factionAffiliation', 'suggestedRarity', 'towerEnvironment',
     'suggestedTowerEnvironment', 'artworkPromptConcept', 'creativeBoundary',
+    'monsterCategory', 'elementAttribute', 'ipSimilarityRisk', 'ipRiskReason', ...BOSS_FIELDS,
   ]), bag, where, record.monsterId ?? null, 'creative');
 
   const hooks = {};
@@ -843,13 +861,17 @@ function rewriteAgentRecord(row, bag, where) {
       if (typeof row.boss[field] === 'string') boss[field] = row.boss[field];
     }
   }
+  // Agent 07 keeps the 8 boss fields inside creative.
+  for (const field of BOSS_FIELDS) {
+    if (boss[field] == null && typeof rawCreative[field] === 'string') boss[field] = rawCreative[field];
+  }
   const bossCategory = typeof record.category === 'string' && BOSS_CATEGORIES.includes(record.category);
   if (Object.keys(boss).length > 0) record.boss = boss;
   else if (!bossCategory) record.boss = null;
 
   warnUnknown(row, new Set([
     'monsterId', 'status', 'category', 'research', 'creative', 'boss', 'hooks',
-    'ipRisk', 'ipSimilarityRisk', 'ipSimilarityReason',
+    'ipRisk', 'ipSimilarityRisk', 'ipSimilarityReason', 'notes',
   ]), bag, where, record.monsterId ?? null, '');
   return record;
 }
@@ -939,7 +961,8 @@ function isLoreLink(row) {
   if (!isPlainObject(row) || CREATIVE_SIGNAL.some((key) => row[key] != null) || row.research || row.category) return false;
   const ref = row.monsterId || row.nameEn || row.parodyNameEn || row['Parody Name (EN)'] || row.name;
   const lore = row.loreSummary != null || row.lore != null || row.factionAffiliation != null || row.faction != null
-    || row.suggestedTowerEnvironment != null || row['Lore Summary'] != null;
+    || row.suggestedTowerEnvironment != null || row['Lore Summary'] != null
+    || row.hook != null || row.environmentId != null || row.originId != null;
   return Boolean(ref && lore);
 }
 

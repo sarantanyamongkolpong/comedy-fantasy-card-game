@@ -236,7 +236,7 @@ Colour words and number suffixes are errors because the brief forbids padding by
 6. World Bosses
 7. Secret Bosses
 8. Research Sources
-9. Duplicate / IP Risk Audit
+9. Duplicate & IP Risk Audit (renamed from 'Duplicate / IP Risk Audit': Excel forbids '/' in sheet names)
 
 Category sheets use the same columns as the master sheet and only the rows for that category. Research Sources has one row per source. The audit sheet lists errors, warnings, and QA notes.
 

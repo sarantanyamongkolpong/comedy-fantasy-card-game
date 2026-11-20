@@ -30,7 +30,7 @@ const SHEETS = [
   'World Bosses',
   'Secret Bosses',
   'Research Sources',
-  'Duplicate / IP Risk Audit',
+  'Duplicate & IP Risk Audit',
 ];
 
 function cloneRecord(index = 0, patch = {}) {
@@ -446,7 +446,7 @@ test('commands build the workbook and the stat-free import JSON', () => {
   const failed = runTool('tools/research/monsters/build-workbook.mjs', ['--input', bad, '--out', failedBook]);
   assert.equal(failed.status, 1);
   assert.match(failed.stdout, /DUPLICATE_NAME/);
-  const audit = readXlsx(readFileSync(failedBook)).find((sheet) => sheet.name === 'Duplicate / IP Risk Audit');
+  const audit = readXlsx(readFileSync(failedBook)).find((sheet) => sheet.name === 'Duplicate & IP Risk Audit');
   assert.ok(audit.rows.some((row) => row.includes('DUPLICATE_NAME')));
 
   const failedExport = runTool('tools/research/monsters/export-json.mjs', ['--input', bad, '--out', join(dir, 'nope.json')]);

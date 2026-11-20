@@ -207,8 +207,14 @@ function applyLore(records, links, errors, warnings) {
     }
     const creative = hits[0].creative ?? (hits[0].creative = {});
     if (Object.hasOwn(link, 'factionAffiliation')) creative.factionAffiliation = link.factionAffiliation;
-    if (typeof link.loreSummary === 'string') creative.loreSummary = link.loreSummary;
-    if (typeof link.suggestedTowerEnvironment === 'string') creative.suggestedTowerEnvironment = link.suggestedTowerEnvironment;
+    // Phase-1 integration (Mira): never overwrite the creative agent's lore. Append the agent 08 hook.
+    if (typeof link.loreSummary === 'string') {
+      const own = typeof creative.loreSummary === 'string' ? creative.loreSummary.trim() : '';
+      creative.loreSummary = own && own !== link.loreSummary.trim()
+        ? `${own}\n\nLore link (agent 08, PROPOSED): ${link.loreSummary.trim()}`
+        : link.loreSummary;
+    }
+    if (typeof link.suggestedTowerEnvironment === 'string' && !creative.suggestedTowerEnvironment) creative.suggestedTowerEnvironment = link.suggestedTowerEnvironment;
     if (link.ignoredStatus != null) {
       warnings.push(finding('warning', 'LORE_IGNORED_STATUS', link.monsterId ?? link.source, `Lore file tried to set status "${link.ignoredStatus}". Status comes from the monster record or QA.`, link.monsterId ?? null));
     }

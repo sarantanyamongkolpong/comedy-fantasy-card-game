@@ -1,0 +1,192 @@
+{
+  "documentId": "PHASE1-QA-FLAGS",
+  "status": "PROPOSED",
+  "agent": "Mira (integration)",
+  "derivedFrom": [
+    "docs/research/monsters/qa/ip_audit.json",
+    "docs/research/monsters/qa/QA_REPORT.md"
+  ],
+  "note": "Flags only. Does not change creative text or status. P0 Tub Critic/Tubcritic is outside the 30-entry sample (name bank / agent 03 pitch) and must not be promoted.",
+  "reviews": [
+    {
+      "monsterId": "MON-ELT-0001",
+      "agentId": "M06-E-001",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-ELT-0002",
+      "agentId": "M06-E-002",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-ELT-0003",
+      "agentId": "M06-E-003",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-ELT-0004",
+      "agentId": "M06-E-004",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-ELT-0005",
+      "agentId": "M06-E-005",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-NRM-0001",
+      "agentId": "M06-N-001",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-NRM-0002",
+      "agentId": "M06-N-002",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-NRM-0003",
+      "agentId": "M06-N-003",
+      "ipRisk": "low",
+      "notes": "QA P1 (QA_REPORT reviewer pass): the only cited URL (kids.britannica.com Baba-Yaga) returned 403 to the QA checker, so this entry has NO VERIFIED SOURCE. Flag only; the page may be real. Needs a readable source before QA_PASSED."
+    },
+    {
+      "monsterId": "MON-NRM-0004",
+      "agentId": "M06-N-004",
+      "ipRisk": "low",
+      "notes": "QA P1 (QA_REPORT reviewer pass): the only cited URL (britishmuseum.org schools page) returned 403 to the QA checker, so this entry has NO VERIFIED SOURCE. Flag only; needs a readable source before QA_PASSED."
+    },
+    {
+      "monsterId": "MON-NRM-0005",
+      "agentId": "M06-N-005",
+      "ipRisk": "low",
+      "notes": "QA watch: names a protected game creature in research; low score depends on final art refusing the treasure-chest shape."
+    },
+    {
+      "monsterId": "MON-NRM-0006",
+      "agentId": "M06-N-006",
+      "ipRisk": "low",
+      "notes": "QA watch: names a protected game creature in research; low score depends on final art refusing the teardrop/smile/single-colour shape."
+    },
+    {
+      "monsterId": "MON-NRM-0007",
+      "agentId": "M06-N-007",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-NRM-0008",
+      "agentId": "M06-N-008",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-NRM-0009",
+      "agentId": "M06-N-009",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-NRM-0010",
+      "agentId": "M06-N-010",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MJB-0001",
+      "agentId": "BOS-MAIN-01",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MJB-0002",
+      "agentId": "BOS-MAIN-02",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MJB-0003",
+      "agentId": "BOS-MAIN-03",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MJB-0004",
+      "agentId": "BOS-MAIN-04",
+      "ipRisk": "low",
+      "notes": "QA watch: do not add Akan religious iconography or a copied folk-art spider."
+    },
+    {
+      "monsterId": "MON-MJB-0005",
+      "agentId": "BOS-MAIN-05",
+      "ipRisk": "low",
+      "notes": "QA watch: transforming masked-rider pattern; art must refuse compound eyes, motorcycle and copied belt."
+    },
+    {
+      "monsterId": "MON-MNB-0001",
+      "agentId": "BOS-MIN-01",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MNB-0002",
+      "agentId": "BOS-MIN-02",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MNB-0003",
+      "agentId": "BOS-MIN-03",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MNB-0004",
+      "agentId": "BOS-MIN-04",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-MNB-0005",
+      "agentId": "BOS-MIN-05",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-SCB-0001",
+      "agentId": "BOS-SECRET-01",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-SCB-0002",
+      "agentId": "BOS-SECRET-02",
+      "ipRisk": "medium",
+      "notes": "QA P2 IP medium: matched 3 of 4 magical-girl visual cue groups (transformation compact, ribbon costume, second pose). Suggested fix (QA reviewer pass): leave off school uniform, wand and tiara, and consider a prop that is not a transformation compact. Creative text NOT rewritten; awaiting Owner/agent 07."
+    },
+    {
+      "monsterId": "MON-WLB-0001",
+      "agentId": "BOS-WORLD-01",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-WLB-0002",
+      "agentId": "BOS-WORLD-02",
+      "ipRisk": "low",
+      "notes": "QA IP low: No franchise token, signature visual, or close name match in the heuristic."
+    },
+    {
+      "monsterId": "MON-WLB-0003",
+      "agentId": "BOS-WORLD-03",
+      "ipRisk": "low",
+      "notes": "QA watch: do not mock the verse or the faith."
+    }
+  ]
+}

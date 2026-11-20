@@ -114,7 +114,7 @@ export const SHEET_NAMES = Object.freeze([
   'World Bosses',
   'Secret Bosses',
   'Research Sources',
-  'Duplicate / IP Risk Audit',
+  'Duplicate & IP Risk Audit',
 ]);
 
 export const CATEGORY_SHEET = Object.freeze({
