@@ -11,6 +11,8 @@ import {
   removeCard,
 } from '../src/cards/hand.js';
 import { assessActionPlay, assessAffordability } from '../src/cards/play.js';
+import { createMatch, playAction, sampleCard } from '../src/engine/index.js';
+import { handCard, matchInput, padDeck } from './engine/fixture.js';
 import { DesignBlockedError } from '../src/design/errors.js';
 import { defaultRules } from '../src/design/blocked-rules.js';
 import { HAND_SIZE } from '../src/schema/constants.js';
@@ -144,6 +146,36 @@ test('deck size, draw, and discard throw unless a TEST-ONLY rule is injected', (
   assert.equal(drawn.cardId, 'd1');
   assert.equal(hand.cards.length, 1);
   assert.equal(deck.cards.length, 1);
+});
+
+test('v0.5 card costs are read from the card and must be an integer from 0 to 5', () => {
+  const priced = sampleCard({ cardId: 'PRICED', costAp: 0 });
+  const state = createMatch(matchInput({
+    playerDeck: padDeck([priced, sampleCard({ cardId: 'FIVE', costAp: 5 })]),
+  }));
+  const free = handCard(state, 'player', 'PRICED');
+  const spent = playAction(state, {
+    cardInstanceId: free.instanceId,
+    actorAvatarId: 'AVT_PHA_002',
+    targets: ['AVT_AEG_002'],
+  });
+  assert.equal(spent.ok, true);
+  assert.equal(spent.cost, 0);
+  assert.equal(state.sides.player.ap, 5);
+  const heavy = handCard(state, 'player', 'FIVE');
+  const paid = playAction(state, {
+    cardInstanceId: heavy.instanceId,
+    actorAvatarId: 'AVT_PHA_002',
+    targets: ['AVT_AEG_002'],
+  });
+  assert.equal(paid.cost, 5);
+  assert.equal(state.sides.player.ap, 0);
+  assert.throws(() => createMatch(matchInput({
+    playerDeck: padDeck([sampleCard({ cardId: 'NOPE', costAp: 6 })]),
+  })), (error) => error.reason === 'COST_OUT_OF_RANGE');
+  assert.throws(() => createMatch(matchInput({
+    playerDeck: padDeck([sampleCard({ cardId: 'BLANK', costAp: null, apCost: null })]),
+  })), (error) => error.reason === 'COST_UNASSIGNED');
 });
 
 test('gacha and upgrade defaults throw', () => {
