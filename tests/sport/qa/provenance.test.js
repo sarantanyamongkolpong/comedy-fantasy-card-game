@@ -92,8 +92,22 @@ test('a forbidden release token in sport data is rejected', () => {
 
 const repoAudit = auditRepo();
 
+function summarizeFindings(findings) {
+  const counts = new Map();
+  for (const row of findings) {
+    const file = String(row.path).split(':')[0];
+    const key = `${row.code} ${file}`;
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+  const lines = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 16)
+    .map(([key, count]) => `${count} ${key}`);
+  return `${findings.length} findings\n${lines.join('\n')}`;
+}
+
 test('landed sport surfaces pass the provenance audit', {
   skip: repoAudit.skipped ? repoAudit.reason : false,
 }, () => {
-  assert.deepEqual(repoAudit.findings, [], JSON.stringify(repoAudit.findings, null, 2));
+  assert.equal(repoAudit.findings.length, 0, summarizeFindings(repoAudit.findings));
 });

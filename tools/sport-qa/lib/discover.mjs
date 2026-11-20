@@ -37,10 +37,34 @@ const SAVE_V3_FILES = [
 ];
 
 const SIM_FILES = {
-  football: ['src/sport/football/sim.js', 'src/sport/football/index.js'],
-  basket: ['src/sport/basket/sim.js', 'src/sport/basket/index.js'],
-  car: ['src/sport/car/sim.js', 'src/sport/car/index.js'],
-  moto: ['src/sport/moto/sim.js', 'src/sport/moto/index.js'],
+  football: [
+    'src/sport/football/index.mjs',
+    'src/sport/football/simulate.mjs',
+    'src/sport/football/index.js',
+    'src/sport/football/simulate.js',
+    'src/sport/football/sim.js',
+  ],
+  basket: [
+    'src/sport/basket/index.mjs',
+    'src/sport/basket/simulate.mjs',
+    'src/sport/basket/index.js',
+    'src/sport/basket/simulate.js',
+    'src/sport/basket/sim.js',
+  ],
+  car: [
+    'src/sport/car/index.js',
+    'src/sport/car/simulate.js',
+    'src/sport/car/sim.js',
+    'src/sport/car/index.mjs',
+    'src/sport/car/simulate.mjs',
+  ],
+  moto: [
+    'src/sport/moto/index.js',
+    'src/sport/moto/simulate.js',
+    'src/sport/moto/sim.js',
+    'src/sport/moto/index.mjs',
+    'src/sport/moto/simulate.mjs',
+  ],
 };
 
 /**
@@ -124,7 +148,7 @@ export function webSportPresent() {
 }
 
 export function srcSportPresent() {
-  return isDir('src/sport') && walkFiles('src/sport', (name) => name.endsWith('.js')).length > 0;
+  return isDir('src/sport') && walkFiles('src/sport', (name) => name.endsWith('.js') || name.endsWith('.mjs')).length > 0;
 }
 
 export function builtHtmlFiles() {

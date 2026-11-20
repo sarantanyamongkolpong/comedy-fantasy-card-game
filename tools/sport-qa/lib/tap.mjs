@@ -33,8 +33,20 @@ export function parseTap(output) {
     for (let k = i + 1; k < Math.min(lines.length, i + 40); k += 1) {
       const row = lines[k];
       if (/^(ok |not ok |# Subtest:|# tests )/.test(row)) break;
-      const err = row.match(/^\s+error: ['"]?(.*?)['"]?\s*$/);
-      if (err && !error) error = err[1];
+      const err = row.match(/^(\s+)error: (.*)$/);
+      if (err && !error) {
+        const value = err[2].replace(/^['"]|['"]$/g, '').trim();
+        if (value === '|-' || value === '|') {
+          const block = [];
+          for (let j = k + 1; j < Math.min(lines.length, i + 80); j += 1) {
+            if (!/^\s{4}\S/.test(lines[j]) && !/^\s{4}$/.test(lines[j])) break;
+            block.push(lines[j].trim());
+          }
+          error = block.join(' ');
+        } else {
+          error = value;
+        }
+      }
       const loc = row.match(/^\s+location: ['"]([^'"]+)['"]/);
       if (loc) location = loc[1];
     }

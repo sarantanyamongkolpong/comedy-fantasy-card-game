@@ -74,9 +74,27 @@ What the harness will enforce once those modules land:
 - `simulate({ seed, home, away, field, tactics, tuning })` is pure and seed-stable.
 - Playwright at 844×390, 667×375, 915×412, and 1280×720: every visible button lies inside the viewport. Screenshots go to `tests/e2e/sport/screenshots/`.
 
+## CI on the phase 1 head
+
+Quality gates on `bef153f` (run 44741256022) passed data validation, repository structure, and the asset manifest. `SYSTEMS_TEST` is red on Node 20 and Node 22. Each `node --test` step is `continue-on-error`, and the job fails because the outcome is not success. Combined suite, both Nodes:
+
+| Node | pass | fail | todo | skip | cancelled | tests |
+|---|---:|---:|---:|---:|---:|---:|
+| 20 | 406 | 1 | 4 | 13 | 0 | 424 |
+| 22.23.5 | 406 | 1 | 4 | 13 | 0 | 424 |
+
+The only failing name is the pre-existing `QA-10 real-engine Deck Battle Rewards win and lose`. The per-file baseline was 404 tests (395 pass, 4 skip) and the phase 1 harness was 19 tests (10 pass, 9 skip). The combined CI run is one passing test higher than that sum. The failure set did not grow.
+
 ## Screenshots
 
-None. `web/sport` is not on `sport/v06-base`, so the viewport test did not open a page.
+Phase 1 had no page to open. Probe 2 saved the Sport Complex hub after Map → Sports Complex:
+
+- `tests/e2e/sport/screenshots/probe2/844x390.png`
+- `tests/e2e/sport/screenshots/probe2/667x375.png`
+- `tests/e2e/sport/screenshots/probe2/915x412.png`
+- `tests/e2e/sport/screenshots/probe2/1280x720.png`
+
+The hub shows four sports, parody copy, `8000 G`, and `PROPOSED`. Map and hub buttons sat inside all four viewports.
 
 ## Phase 2 — stream probes
 
@@ -86,18 +104,54 @@ Throwaway merges use `node tools/sport-qa/throwaway-merge.mjs`. The worktree is 
 
 `git fetch` of `sport/v06-data`, `sport/v06-sim-ball`, `sport/v06-sim-race`, and `sport/v06-web`. All four are absent. `sport/v06-sim` is also absent. No merge was created. No new product findings.
 
+### Probe 2 — 2026-11-20T13:22Z, harness re-run after the landed APIs were wired in
+
+All four branches were present. A local throwaway merge onto `sport/v06-base` completed with no conflicts (detached `92577c8`). That merge was not pushed.
+
+| Stream | Tip | Subject |
+|---|---|---|
+| `sport/v06-data` | `1483a45d94a31df009e0f1e899414bba1a01f59c` | Add Sport Complex v0.6 parody content and provenance checks. |
+| `sport/v06-sim-ball` | `8f503523aa1989f81a6fcf9947dd3297a159663e` | Add seeded football and basketball auto sims. |
+| `sport/v06-sim-race` | `17ca51b35cac342ce66029c0beb55d8866dcb60e` | Add seeded car and moto sims plus the sport wallet, gacha, and save v3 payload. |
+| `sport/v06-web` | `18f1bc2ff47e1a13eaf3548c6cf10301850512cb` | Add the Sport Complex hub, prep, sim, result, gacha, and roster. |
+
+None of those subjects say feature-complete. The probe timer stays up.
+
+The first harness call looked for `sim.js`, a `teamId`-less lineup, and a migrate export named `migrateV3`. Those misses were harness gaps. The re-run imports `simulate.mjs` / `simulate.js`, passes `players` or `teamId` plus two entries, and calls `migrateSportV3`. Node v22.23.4 on the merged tree:
+
+| pass | fail | skip | todo | tests | hangs |
+|---:|---:|---:|---:|---:|---:|
+| 16 | 5 | 1 | 0 | 22 | 0 |
+
+Counts: `tools/sport-qa/baselines/harness-probe2.json`.
+
+Passed: v1 and v2 saves still load with only `G`; `migrateSportV3` adds `{ roster, pity, ledger }` and the sport bag round-trips through serialize/deserialize while the envelope stays at save version 2; one `G` wallet; a basket pull leaves football pity unchanged and advances the basket counter; football, basket, car, and moto sims are pure and seed-stable, and their reward `G` is tagged `PROPOSED`.
+
+Skipped: `src/sport/racing/index.js` has no `simulate` export. Car and moto enter through their own modules, which passed.
+
+Failed: the provenance audit (248 real-name/URL hits, all in one web file) and the four viewport walks (v0.5 home buttons below the fold). Detail is under Findings.
+
+Content JSON had no stat-key, rarity, untagged-number, or forbidden-token findings. Public content fields did not contain real-block names.
+
+### Probe 3 — 2026-11-20T13:33:18Z
+
+Fetched each stream again. Tips are the same four commits as probe 2. None match feature-complete. Throwaway merge onto `sport/v06-base` was clean again and was not pushed. Harness on Node v22.23.4 reproduced the same totals: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. The five failures are still the 248 real-name hits in `web/sport/fixtures/catalog.js` and the four hideout viewports. No new P0, P1, or P2. Counts: `tools/sport-qa/baselines/harness-20261120T133318Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T133318Z/`.
+
 ## Findings
 
 ### P0
 
-None.
+1. **web.** `web/sport/fixtures/catalog.js` embeds real legal names and source URLs inside the client module (248 matches against `real.name` and `real.url` in the content JSON). `presentCard` strips `real` before the objects screens render, and the hub screenshots show parody names only. The page still loads that module, because `web/sport/fixtures/index.js` re-exports the catalog and the screens import that index. Real identity is in player-facing JavaScript.
 
 ### P1
 
 1. Pre-existing, v0.5 web adapter: `createMatch` does not expose the engine match. Sport files were not changed. The v0.5 acceptance failure stays red on purpose.
+2. Pre-existing hideout layout, measured again on the merged tree. At 844×390, 667×375, 915×412, and 1280×720 the home buttons Save, Load, Cabin, Bungalow, Cottage, Loft, Villa, and Penthouse start below the viewport. Map hotspots and the Sport Complex hub buttons were inside at all four sizes. `sport/v06-web` does not change `web/js/screens/home.js` or `web/css`.
 
 ### P2
 
 - v0.5 `layoutWorldMap` is still not exported from `web/src/map/`. Map behaviour that uses `web/js/map-layout.js` is already covered by other tests.
-- v0.5 browser tests did not drive Chrome, because `playwright-core` and `@playwright/test` are not installed in this repo. The sport harness can load `playwright-core` from a side install when `web/sport` exists.
-- Sport content, sims, wallet, gacha, save v3, and the sport UI have not been pushed yet.
+- v0.5 browser tests did not drive Chrome, because `playwright-core` and `@playwright/test` are not installed in this repo. The sport harness loads `playwright-core` from a side install and serves `web/` over `127.0.0.1`.
+- `src/sport/gacha/catalog.js` mentions `LOCKED` and `PRODUCTION_READY` only in a comparison that rejects those statuses. That is not a status assignment.
+- The card-game envelope stays at save version 2. Sport state is the added `profile.sport` bag. v1 and v2 fixtures still load.
+- No stream tip is a feature-complete commit yet.
