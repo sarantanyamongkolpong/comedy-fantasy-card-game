@@ -64,12 +64,35 @@ createMatch({
   reason: 'all_avatars_defeated' | 'simultaneous_death',
   rewards: {
     emissionId, emitted: true, timesEmitted: 1,
-    payloadStatus: 'PENDING_OWNER', payload: null
+    matchId, winnerSideId, loserSideId, reason,
+    payloadStatus: 'PENDING_OWNER',
+    payload: {
+      status: 'PENDING_OWNER',
+      label: 'PENDING_OWNER',
+      G: null, GStatus: 'PENDING_OWNER',
+      loot: null, lootStatus: 'PENDING_OWNER',
+      items: null, itemsStatus: 'PENDING_OWNER',
+    }
   }
 }
 ```
 
-`all_avatars_defeated` is a win for the side that still has a living avatar and a loss for the wiped side. No currency amount is invented.
+`all_avatars_defeated` is a win for the side that still has a living avatar and a loss for the wiped side. `G` and `loot` stay `null`. They are labelled `PENDING_OWNER`. Passing that payload to `applyBattleReward` grants nothing, because a grant requires an integer `G`.
+
+While the match is ongoing, `getOutcome` is `{ status: 'ongoing', winnerSideId: null, loserSideId: null, verdict: null, reason: null, rewards: null }`. `playAction` and `endTurn` mutate the same match object and return `{ ok, reason, outcome }`. They do not return a replacement state.
+
+## Battle log amounts
+
+`state.log` records the numbers a floating combat label can read. `amount` is the effect size. `delta` is the HP change (negative damage, positive heal, `0` for a shield).
+
+| `type` | Amount fields |
+|---|---|
+| `damage` | `amount` hit, `dealt` HP lost, `absorbed`, `delta`, `avatarId`, `sideId`, `hp` |
+| `shield` | `amount` added, `shield` pool after, `delta` 0, `avatarId`, `sideId` |
+| `regen_applied` | `amount`, `ticks`, `delta` 0, `avatarId`, `sideId` |
+| `regen_tick` | `amount` (the +3), `healed` HP gained, `delta`, `hp`, `ticksRemaining`, `avatarId`, `sideId` |
+
+`runAutoTurn(...).log` is the action list (`play`, `discard_voluntary`, `end_turn`). The amounts above are on `state.log`, not on that action list.
 
 ## State
 
