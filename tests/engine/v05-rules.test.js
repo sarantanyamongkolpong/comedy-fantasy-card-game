@@ -747,6 +747,16 @@ test('winning, losing, and simultaneous death emit one rewards object', () => {
   assert.equal(outcome.reason, 'all_avatars_defeated');
   assert.equal(outcome.rewards.timesEmitted, 1);
   assert.equal(outcome.rewards.payloadStatus, 'PENDING_OWNER');
+  assert.equal(outcome.rewards.payload.status, 'PENDING_OWNER');
+  assert.equal(outcome.rewards.payload.label, 'PENDING_OWNER');
+  assert.equal(outcome.rewards.payload.G, null);
+  assert.equal(outcome.rewards.payload.GStatus, 'PENDING_OWNER');
+  assert.equal(outcome.rewards.payload.loot, null);
+  assert.equal(outcome.rewards.payload.lootStatus, 'PENDING_OWNER');
+  assert.equal(outcome.rewards.payload.items, null);
+  assert.equal(getOutcome(win).winnerSideId, 'player');
+  assert.equal(getOutcome(win).verdict.player, 'victory');
+  assert.equal(getOutcome(win).verdict.enemy, 'defeat');
   assert.equal(win.log.filter((event) => event.type === 'rewards').length, 1);
   assert.equal(endTurn(win).reason, 'BATTLE_DECIDED');
   assert.equal(playAction(win, { cardInstanceId: 'gone', actorAvatarId: 'AVT_PHA_002' }).reason, 'BATTLE_DECIDED');
@@ -769,8 +779,15 @@ test('winning, losing, and simultaneous death emit one rewards object', () => {
     enemySpd: [9, 0, 0, 0],
   }));
   play(loss, 'WIPE', 'AVT_PHA_002', undefined, 'enemy');
-  assert.equal(getOutcome(loss).winnerSideId, 'enemy');
-  assert.equal(getOutcome(loss).verdict.player, 'defeat');
+  const lost = getOutcome(loss);
+  assert.equal(lost.status, 'decided');
+  assert.equal(lost.winnerSideId, 'enemy');
+  assert.equal(lost.loserSideId, 'player');
+  assert.equal(lost.verdict.player, 'defeat');
+  assert.equal(lost.verdict.enemy, 'victory');
+  assert.equal(lost.rewards.timesEmitted, 1);
+  assert.equal(lost.rewards.payload.G, null);
+  assert.equal(lost.rewards.payload.lootStatus, 'PENDING_OWNER');
   assert.equal(loss.log.filter((event) => event.type === 'rewards').length, 1);
 
   const both = createMatch(matchInput({
