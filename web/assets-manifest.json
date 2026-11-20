@@ -116,6 +116,314 @@
   ],
   "assets": [
     {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_SAN_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_SAN_002",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_SAN_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_SAN_002.png",
+      "bytes": 57474,
+      "source_bytes": 1069338,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_SAN_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_SAN_001",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_SAN_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_SAN_001.png",
+      "bytes": 63172,
+      "source_bytes": 1087121,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_CEL_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_CEL_002",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_CEL_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_CEL_002.png",
+      "bytes": 66568,
+      "source_bytes": 1094474,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_CEL_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_CEL_001",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_CEL_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_CEL_001.png",
+      "bytes": 84728,
+      "source_bytes": 1309332,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_PHA_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_PHA_002",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_PHA_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_PHA_002.png",
+      "bytes": 78582,
+      "source_bytes": 1249482,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_PHA_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_PHA_001",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_PHA_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_PHA_001.png",
+      "bytes": 78364,
+      "source_bytes": 1067933,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_AEG_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_AEG_002",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_AEG_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_AEG_002.png",
+      "bytes": 65016,
+      "source_bytes": 1129551,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_AEG_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_AEG_001",
+      "rarity": "FAC",
+      "path": "web/assets/cards/subjects/ACT_FAC_AEG_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_AEG_001.png",
+      "bytes": 70926,
+      "source_bytes": 1265657,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_SKILL_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_SKILL_002",
+      "rarity": "Epic",
+      "path": "web/assets/cards/subjects/ACT_GEN_SKILL_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_SKILL_002.png",
+      "bytes": 75550,
+      "source_bytes": 1044497,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_SKILL_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_SKILL_001",
+      "rarity": "N",
+      "path": "web/assets/cards/subjects/ACT_GEN_SKILL_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_SKILL_001.png",
+      "bytes": 55118,
+      "source_bytes": 923568,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_DEF_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_DEF_002",
+      "rarity": "R",
+      "path": "web/assets/cards/subjects/ACT_GEN_DEF_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_DEF_002.png",
+      "bytes": 44630,
+      "source_bytes": 836684,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_DEF_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_DEF_001",
+      "rarity": "N",
+      "path": "web/assets/cards/subjects/ACT_GEN_DEF_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_DEF_001.png",
+      "bytes": 52096,
+      "source_bytes": 916681,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_ATK_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_ATK_002",
+      "rarity": "R",
+      "path": "web/assets/cards/subjects/ACT_GEN_ATK_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_ATK_002.png",
+      "bytes": 60238,
+      "source_bytes": 991364,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_ATK_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_ATK_001",
+      "rarity": "N",
+      "path": "web/assets/cards/subjects/ACT_GEN_ATK_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_ATK_001.png",
+      "bytes": 56540,
+      "source_bytes": 966215,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "illustration",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
       "asset_id": "AVT_AEG_002",
       "path": "web/assets/generated/avatars/AVT_AEG_002.webp",
       "type": "illustration",
@@ -351,6 +659,116 @@
       "source_file": "art_source/dream_v02/items_cards/item_loot_chest.png"
     },
     {
+      "asset_id": "CARD_FRAME_FAC",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "FAC",
+      "path": "web/assets/cards/frames/FRAME_FAC.webp",
+      "source_path": "art-src/cards/frames/FRAME_FAC.png",
+      "bytes": 43450,
+      "source_bytes": 527593,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_FRAME_EX",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "EX",
+      "path": "web/assets/cards/frames/FRAME_EX.webp",
+      "source_path": "art-src/cards/frames/FRAME_EX.png",
+      "bytes": 43326,
+      "source_bytes": 509341,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_FRAME_EPIC",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "Epic",
+      "path": "web/assets/cards/frames/FRAME_Epic.webp",
+      "source_path": "art-src/cards/frames/FRAME_Epic.png",
+      "bytes": 48998,
+      "source_bytes": 521382,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_FRAME_R",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "R",
+      "path": "web/assets/cards/frames/FRAME_R.webp",
+      "source_path": "art-src/cards/frames/FRAME_R.png",
+      "bytes": 50480,
+      "source_bytes": 506401,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_FRAME_N",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "N",
+      "path": "web/assets/cards/frames/FRAME_N.webp",
+      "source_path": "art-src/cards/frames/FRAME_N.png",
+      "bytes": 39828,
+      "source_bytes": 469091,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
       "asset_id": "FRAME_N",
       "path": "web/assets/generated/frames/FRAME_N.webp",
       "type": "card_frame",
@@ -449,6 +867,116 @@
       "subject_id": null
     },
     {
+      "asset_id": "CARD_BADGE_GENERIC",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "generic",
+      "rarity": null,
+      "path": "web/assets/cards/icons/CARD_BADGE_GENERIC.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_GENERIC.png",
+      "bytes": 6618,
+      "source_bytes": 1090805,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_SAN",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_SAN",
+      "rarity": null,
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_SAN.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_SAN.png",
+      "bytes": 5464,
+      "source_bytes": 740456,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_CEL",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_CEL",
+      "rarity": null,
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_CEL.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_CEL.png",
+      "bytes": 6618,
+      "source_bytes": 1074350,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_PHA",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_PHA",
+      "rarity": null,
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_PHA.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_PHA.png",
+      "bytes": 14172,
+      "source_bytes": 1237454,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_AEG",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_AEG",
+      "rarity": null,
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_AEG.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_AEG.png",
+      "bytes": 10148,
+      "source_bytes": 1497215,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
       "asset_id": "BADGE_FAC_AEG",
       "path": "web/assets/badges/BADGE_FAC_AEG.svg",
       "type": "faction_badge",
@@ -514,6 +1042,74 @@
       "subject_id": "generic"
     },
     {
+      "asset_id": "CARD_STAT_DEF",
+      "slot": "stat-icon",
+      "anchor": "statDef",
+      "subject_id": "def",
+      "rarity": null,
+      "path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "bytes": 8040,
+      "source_bytes": 8040,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "stat_icon",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_STAT_ATK",
+      "slot": "stat-icon",
+      "anchor": "statAtk",
+      "subject_id": "atk",
+      "rarity": null,
+      "path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "bytes": 9776,
+      "source_bytes": 9776,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "stat_icon",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_STAT_SPD",
+      "slot": "stat-icon",
+      "anchor": "statSpd",
+      "subject_id": "spd",
+      "rarity": null,
+      "path": "web/assets/cards/icons/CARD_STAT_SPD.webp",
+      "source_path": "art-src/cards/icons/CARD_STAT_SPD.png",
+      "bytes": 7750,
+      "source_bytes": 1102614,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "stat_icon",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
       "asset_id": "STAT_ICON_ATK",
       "path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
       "type": "stat_icon",
@@ -559,6 +1155,28 @@
       "placeholder": true,
       "rarity": null,
       "subject_id": "spd"
+    },
+    {
+      "asset_id": "CARD_ICON_AP",
+      "slot": "ui-icon",
+      "anchor": "apCost",
+      "subject_id": "ap",
+      "rarity": null,
+      "path": "web/assets/cards/icons/CARD_ICON_AP.webp",
+      "source_path": "art-src/cards/icons/CARD_ICON_AP.png",
+      "bytes": 4808,
+      "source_bytes": 901140,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "ui_icon",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
     },
     {
       "asset_id": "ICO_AP",
@@ -945,7 +1563,7 @@
     },
     {
       "asset_id": "HOU_TIER_CABIN",
-      "path": "web/assets/generated/dream_v02/house_cabin.webp",
+      "path": "web/assets/hideout/exteriors/HOU_TIER_CABIN.webp",
       "type": "house",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -955,14 +1573,16 @@
       "placeholder": false,
       "rarity": null,
       "subject_id": "cabin",
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "fallback_path": "web/assets/houses/HOU_TIER_CABIN.svg",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/house_cabin.png"
+      "source_file": "art_source/dream_v02/housing/house_cabin.png",
+      "source_path": "art-src/hideout/exteriors/HOU_TIER_CABIN.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "HOU_TIER_BUNGALOW",
-      "path": "web/assets/generated/dream_v02/house_bungalow.webp",
+      "path": "web/assets/hideout/exteriors/HOU_TIER_BUNGALOW.webp",
       "type": "house",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -972,14 +1592,16 @@
       "placeholder": false,
       "rarity": null,
       "subject_id": "bungalow",
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "fallback_path": "web/assets/houses/HOU_TIER_BUNGALOW.svg",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/house_bungalow.png"
+      "source_file": "art_source/dream_v02/housing/house_bungalow.png",
+      "source_path": "art-src/hideout/exteriors/HOU_TIER_BUNGALOW.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "HOU_TIER_COTTAGE",
-      "path": "web/assets/generated/dream_v02/house_cottage.webp",
+      "path": "web/assets/hideout/exteriors/HOU_TIER_COTTAGE.webp",
       "type": "house",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -989,14 +1611,16 @@
       "placeholder": false,
       "rarity": null,
       "subject_id": "cottage",
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "fallback_path": "web/assets/houses/HOU_TIER_COTTAGE.svg",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/house_cottage.png"
+      "source_file": "art_source/dream_v02/housing/house_cottage.png",
+      "source_path": "art-src/hideout/exteriors/HOU_TIER_COTTAGE.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "HOU_TIER_LOFT",
-      "path": "web/assets/generated/dream_v02/house_loft.webp",
+      "path": "web/assets/hideout/exteriors/HOU_TIER_LOFT.webp",
       "type": "house",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1006,14 +1630,16 @@
       "placeholder": false,
       "rarity": null,
       "subject_id": "loft",
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "fallback_path": "web/assets/houses/HOU_TIER_LOFT.svg",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/house_loft.png"
+      "source_file": "art_source/dream_v02/housing/house_loft.png",
+      "source_path": "art-src/hideout/exteriors/HOU_TIER_LOFT.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "HOU_TIER_VILLA",
-      "path": "web/assets/generated/dream_v02/house_villa.webp",
+      "path": "web/assets/hideout/exteriors/HOU_TIER_VILLA.webp",
       "type": "house",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1023,14 +1649,16 @@
       "placeholder": false,
       "rarity": null,
       "subject_id": "villa",
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "fallback_path": "web/assets/houses/HOU_TIER_VILLA.svg",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/house_villa.png"
+      "source_file": "art_source/dream_v02/housing/house_villa.png",
+      "source_path": "art-src/hideout/exteriors/HOU_TIER_VILLA.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "HOU_TIER_PENTHOUSE",
-      "path": "web/assets/generated/dream_v02/house_penthouse.webp",
+      "path": "web/assets/hideout/exteriors/HOU_TIER_PENTHOUSE.webp",
       "type": "house",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1040,10 +1668,34 @@
       "placeholder": false,
       "rarity": null,
       "subject_id": "penthouse",
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "fallback_path": "web/assets/houses/HOU_TIER_PENTHOUSE.svg",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/house_penthouse.png"
+      "source_file": "art_source/dream_v02/housing/house_penthouse.png",
+      "source_path": "art-src/hideout/exteriors/HOU_TIER_PENTHOUSE.png",
+      "preview_source": "prod/b-hideout (#42)"
+    },
+    {
+      "asset_id": "CARD_PARCHMENT",
+      "slot": "card-interior",
+      "anchor": "interior",
+      "subject_id": "neutral",
+      "rarity": null,
+      "path": "web/assets/cards/interior/CARD_INTERIOR.webp",
+      "source_path": "art-src/cards/interior/CARD_INTERIOR.png",
+      "bytes": 1676,
+      "source_bytes": 6072,
+      "placeholder": false,
+      "kind": "interior",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "card_interior",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
     },
     {
       "asset_id": "CARD_INTERIOR",
@@ -1060,6 +1712,75 @@
       "status": "CONCEPT",
       "source_commit": "0c063ca176f3b7f8ee329f47c03714b9410966c3",
       "source_file": "card_ui/card_interior_neutral.png"
+    },
+    {
+      "asset_id": "CARD_TYPE_SKILL",
+      "slot": "type-icon",
+      "anchor": "typeIcon",
+      "subject_id": "Skill",
+      "rarity": null,
+      "path": "web/assets/generated/icons/TYPE_ICON_SKILL.webp",
+      "source_path": "web/assets/generated/icons/TYPE_ICON_SKILL.webp",
+      "bytes": 8488,
+      "source_bytes": 8488,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "type_icon",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_TYPE_DEF",
+      "slot": "type-icon",
+      "anchor": "typeIcon",
+      "subject_id": "DEF",
+      "rarity": null,
+      "path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "bytes": 8040,
+      "source_bytes": 8040,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "type_icon",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
+    },
+    {
+      "asset_id": "CARD_TYPE_ATK",
+      "slot": "type-icon",
+      "anchor": "typeIcon",
+      "subject_id": "ATK",
+      "rarity": null,
+      "path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "bytes": 9776,
+      "source_bytes": 9776,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "PROVISIONAL_PREVIEW",
+      "type": "type_icon",
+      "owner": "a-card-art",
+      "status": "CONCEPT",
+      "preview_source": "prod/a-card-art (#49)"
     },
     {
       "asset_id": "TYPE_ICON_SKILL",
@@ -1320,7 +2041,7 @@
     },
     {
       "asset_id": "FUR_REF_BUNGALOW_BOX",
-      "path": "web/assets/generated/dream_v02/furniture_card_box.webp",
+      "path": "web/assets/hideout/storage/FUR_REF_BUNGALOW_BOX.webp",
       "type": "furniture",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1328,15 +2049,17 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_BUNGALOW_BOX",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/furniture_card_box.png"
+      "source_file": "art_source/dream_v02/housing/furniture_card_box.png",
+      "source_path": "art-src/hideout/storage/FUR_REF_BUNGALOW_BOX.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "FUR_REF_COTTAGE_BOX",
-      "path": "web/assets/generated/dream_v02/furniture_card_box.webp",
+      "path": "web/assets/hideout/storage/FUR_REF_COTTAGE_BOX.webp",
       "type": "furniture",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1344,15 +2067,17 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_COTTAGE_BOX",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/furniture_card_box.png"
+      "source_file": "art_source/dream_v02/housing/furniture_card_box.png",
+      "source_path": "art-src/hideout/storage/FUR_REF_COTTAGE_BOX.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "FUR_REF_LOFT_TALL_CABINET",
-      "path": "web/assets/generated/dream_v02/furniture_tall_cabinet.webp",
+      "path": "web/assets/hideout/storage/FUR_REF_LOFT_TALL_CABINET.webp",
       "type": "furniture",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1360,15 +2085,17 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_LOFT_TALL_CABINET",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/furniture_tall_cabinet.png"
+      "source_file": "art_source/dream_v02/housing/furniture_tall_cabinet.png",
+      "source_path": "art-src/hideout/storage/FUR_REF_LOFT_TALL_CABINET.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "FUR_REF_PENTHOUSE_LARGE_TALL_CABINET",
-      "path": "web/assets/generated/dream_v02/furniture_tall_cabinet.webp",
+      "path": "web/assets/hideout/storage/FUR_REF_PENTHOUSE_LARGE_TALL_CABINET.webp",
       "type": "furniture",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1376,15 +2103,17 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_PENTHOUSE_LARGE_TALL_CABINET",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/furniture_tall_cabinet.png"
+      "source_file": "art_source/dream_v02/housing/furniture_tall_cabinet.png",
+      "source_path": "art-src/hideout/storage/FUR_REF_PENTHOUSE_LARGE_TALL_CABINET.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "FUR_REF_VILLA_DISPLAY_COUNTER",
-      "path": "web/assets/generated/dream_v02/furniture_display_counter.webp",
+      "path": "web/assets/hideout/storage/FUR_REF_VILLA_DISPLAY_COUNTER.webp",
       "type": "furniture",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1392,15 +2121,17 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_VILLA_DISPLAY_COUNTER",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/furniture_display_counter.png"
+      "source_file": "art_source/dream_v02/housing/furniture_display_counter.png",
+      "source_path": "art-src/hideout/storage/FUR_REF_VILLA_DISPLAY_COUNTER.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "ICO_FUR_REF_BUNGALOW_BOX",
-      "path": "web/assets/generated/dream_v02/furniture_card_box_icon.webp",
+      "path": "web/assets/hideout/icons/ICO_FUR_REF_BUNGALOW_BOX.webp",
       "type": "inventory_icon",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1408,15 +2139,17 @@
       "layer": "icon",
       "anchor": "icon",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_BUNGALOW_BOX",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/items_cards/furniture_card_box_icon.png"
+      "source_file": "art_source/dream_v02/items_cards/furniture_card_box_icon.png",
+      "source_path": "art-src/hideout/icons/ICO_FUR_REF_BUNGALOW_BOX.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "ICO_FUR_REF_COTTAGE_BOX",
-      "path": "web/assets/generated/dream_v02/furniture_card_box_icon.webp",
+      "path": "web/assets/hideout/icons/ICO_FUR_REF_COTTAGE_BOX.webp",
       "type": "inventory_icon",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1424,15 +2157,17 @@
       "layer": "icon",
       "anchor": "icon",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_COTTAGE_BOX",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/items_cards/furniture_card_box_icon.png"
+      "source_file": "art_source/dream_v02/items_cards/furniture_card_box_icon.png",
+      "source_path": "art-src/hideout/icons/ICO_FUR_REF_COTTAGE_BOX.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "ICO_FUR_REF_LOFT_TALL_CABINET",
-      "path": "web/assets/generated/dream_v02/furniture_tall_cabinet_icon.webp",
+      "path": "web/assets/hideout/icons/ICO_FUR_REF_LOFT_TALL_CABINET.webp",
       "type": "inventory_icon",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1440,15 +2175,17 @@
       "layer": "icon",
       "anchor": "icon",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_LOFT_TALL_CABINET",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/items_cards/furniture_tall_cabinet_icon.png"
+      "source_file": "art_source/dream_v02/items_cards/furniture_tall_cabinet_icon.png",
+      "source_path": "art-src/hideout/icons/ICO_FUR_REF_LOFT_TALL_CABINET.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "ICO_FUR_REF_PENTHOUSE_LARGE_TALL_CABINET",
-      "path": "web/assets/generated/dream_v02/furniture_tall_cabinet_icon.webp",
+      "path": "web/assets/hideout/icons/ICO_FUR_REF_PENTHOUSE_LARGE_TALL_CABINET.webp",
       "type": "inventory_icon",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1456,15 +2193,17 @@
       "layer": "icon",
       "anchor": "icon",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_PENTHOUSE_LARGE_TALL_CABINET",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/items_cards/furniture_tall_cabinet_icon.png"
+      "source_file": "art_source/dream_v02/items_cards/furniture_tall_cabinet_icon.png",
+      "source_path": "art-src/hideout/icons/ICO_FUR_REF_PENTHOUSE_LARGE_TALL_CABINET.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "ICO_FUR_REF_VILLA_DISPLAY_COUNTER",
-      "path": "web/assets/generated/dream_v02/furniture_display_counter_icon.webp",
+      "path": "web/assets/hideout/icons/ICO_FUR_REF_VILLA_DISPLAY_COUNTER.webp",
       "type": "inventory_icon",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1472,11 +2211,13 @@
       "layer": "icon",
       "anchor": "icon",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "FUR_REF_VILLA_DISPLAY_COUNTER",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/items_cards/furniture_display_counter_icon.png"
+      "source_file": "art_source/dream_v02/items_cards/furniture_display_counter_icon.png",
+      "source_path": "art-src/hideout/icons/ICO_FUR_REF_VILLA_DISPLAY_COUNTER.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "ILLUST_ACT_GEN_ATK_001",
@@ -1707,8 +2448,83 @@
       "source_file": "art_source/dream_v02/gacha_companions/gacha_hall_background.png"
     },
     {
+      "asset_id": "BG_HIDEOUT_PENTHOUSE",
+      "slot": "bg-hideout",
+      "path": "web/assets/hideout/interiors/BG_HIDEOUT_PENTHOUSE.webp",
+      "anchor": "interior",
+      "subject_id": "penthouse",
+      "rarity": null,
+      "source_path": "art-src/hideout/interiors/BG_HIDEOUT_PENTHOUSE.png",
+      "bytes": 165258,
+      "category": "interior",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "BG_HIDEOUT_VILLA",
+      "slot": "bg-hideout",
+      "path": "web/assets/hideout/interiors/BG_HIDEOUT_VILLA.webp",
+      "anchor": "interior",
+      "subject_id": "villa",
+      "rarity": null,
+      "source_path": "art-src/hideout/interiors/BG_HIDEOUT_VILLA.png",
+      "bytes": 91988,
+      "category": "interior",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "BG_HIDEOUT_LOFT",
+      "slot": "bg-hideout",
+      "path": "web/assets/hideout/interiors/BG_HIDEOUT_LOFT.webp",
+      "anchor": "interior",
+      "subject_id": "loft",
+      "rarity": null,
+      "source_path": "art-src/hideout/interiors/BG_HIDEOUT_LOFT.png",
+      "bytes": 164252,
+      "category": "interior",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "BG_HIDEOUT_COTTAGE",
+      "slot": "bg-hideout",
+      "path": "web/assets/hideout/interiors/BG_HIDEOUT_COTTAGE.webp",
+      "anchor": "interior",
+      "subject_id": "cottage",
+      "rarity": null,
+      "source_path": "art-src/hideout/interiors/BG_HIDEOUT_COTTAGE.png",
+      "bytes": 84592,
+      "category": "interior",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "BG_HIDEOUT_BUNGALOW",
+      "slot": "bg-hideout",
+      "path": "web/assets/hideout/interiors/BG_HIDEOUT_BUNGALOW.webp",
+      "anchor": "interior",
+      "subject_id": "bungalow",
+      "rarity": null,
+      "source_path": "art-src/hideout/interiors/BG_HIDEOUT_BUNGALOW.png",
+      "bytes": 99906,
+      "category": "interior",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
       "asset_id": "BG_HIDEOUT_CABIN",
-      "path": "web/assets/generated/dream_v02/interior_cabin.webp",
+      "path": "web/assets/hideout/interiors/BG_HIDEOUT_CABIN.webp",
       "type": "background",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1716,11 +2532,13 @@
       "layer": "background",
       "anchor": "stage",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "cabin",
       "source_commit": "0cd126cd8f6b2f30f49cb189c12cf771cc283fa0",
-      "source_file": "art_source/dream_v02/housing/interior_cabin.png"
+      "source_file": "art_source/dream_v02/housing/interior_cabin.png",
+      "source_path": "art-src/hideout/interiors/BG_HIDEOUT_CABIN.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "ICO_CURRENCY_G",
@@ -1838,7 +2656,7 @@
     },
     {
       "asset_id": "PROP_HIDEOUT_BED",
-      "path": "web/assets/generated/dream_v03/furniture_companion_bed.webp",
+      "path": "web/assets/hideout/furniture/PROP_HIDEOUT_BED.webp",
       "type": "prop",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1846,7 +2664,7 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "companion-bed",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
@@ -1858,11 +2676,13 @@
           "w": 260,
           "h": 260
         }
-      }
+      },
+      "source_path": "art-src/hideout/furniture/PROP_HIDEOUT_BED.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "PROP_HIDEOUT_SOFA",
-      "path": "web/assets/generated/dream_v03/furniture_cozy_sofa.webp",
+      "path": "web/assets/hideout/furniture/PROP_HIDEOUT_SOFA.webp",
       "type": "prop",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1870,7 +2690,7 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "cozy-sofa",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
@@ -1882,11 +2702,13 @@
           "w": 320,
           "h": 220
         }
-      }
+      },
+      "source_path": "art-src/hideout/furniture/PROP_HIDEOUT_SOFA.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "PROP_HIDEOUT_BOOKCASE",
-      "path": "web/assets/generated/dream_v03/furniture_bookcase.webp",
+      "path": "web/assets/hideout/furniture/PROP_HIDEOUT_BOOKCASE.webp",
       "type": "prop",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1894,7 +2716,7 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "bookcase",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
@@ -1906,11 +2728,13 @@
           "w": 200,
           "h": 300
         }
-      }
+      },
+      "source_path": "art-src/hideout/furniture/PROP_HIDEOUT_BOOKCASE.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "PROP_HIDEOUT_SHELF",
-      "path": "web/assets/generated/dream_v03/furniture_trophy_shelf.webp",
+      "path": "web/assets/hideout/furniture/PROP_HIDEOUT_SHELF.webp",
       "type": "prop",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1918,7 +2742,7 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "trophy-shelf",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
@@ -1930,11 +2754,13 @@
           "w": 190,
           "h": 270
         }
-      }
+      },
+      "source_path": "art-src/hideout/furniture/PROP_HIDEOUT_SHELF.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "PROP_HIDEOUT_WARDROBE",
-      "path": "web/assets/generated/dream_v03/furniture_wardrobe.webp",
+      "path": "web/assets/hideout/furniture/PROP_HIDEOUT_WARDROBE.webp",
       "type": "prop",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1942,7 +2768,7 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "wardrobe",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
@@ -1954,11 +2780,13 @@
           "w": 180,
           "h": 320
         }
-      }
+      },
+      "source_path": "art-src/hideout/furniture/PROP_HIDEOUT_WARDROBE.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "PROP_HIDEOUT_WORKBENCH",
-      "path": "web/assets/generated/dream_v03/furniture_magic_workbench.webp",
+      "path": "web/assets/hideout/interactive/PROP_HIDEOUT_WORKBENCH.webp",
       "type": "prop",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1966,7 +2794,7 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "magic-workbench",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
@@ -1978,11 +2806,13 @@
           "w": 250,
           "h": 220
         }
-      }
+      },
+      "source_path": "art-src/hideout/interactive/PROP_HIDEOUT_WORKBENCH.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "PROP_HIDEOUT_CHEST",
-      "path": "web/assets/generated/dream_v03/furniture_ornate_storage_chest.webp",
+      "path": "web/assets/hideout/storage/PROP_HIDEOUT_CHEST.webp",
       "type": "prop",
       "owner": "web-ui",
       "status": "CONCEPT",
@@ -1990,7 +2820,7 @@
       "layer": "prop",
       "anchor": "hideout",
       "placeholder": false,
-      "review_status": "GENERATED_REVIEW",
+      "review_status": "PROVISIONAL_PREVIEW",
       "rarity": null,
       "subject_id": "ornate-chest",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
@@ -2002,7 +2832,9 @@
           "w": 160,
           "h": 160
         }
-      }
+      },
+      "source_path": "art-src/hideout/storage/PROP_HIDEOUT_CHEST.png",
+      "preview_source": "prod/b-hideout (#42)"
     },
     {
       "asset_id": "VFX_STATUS_TAUNT",
@@ -2579,6 +3411,81 @@
       "subject_id": "filter",
       "source_commit": "67f97ce73f4ba7480df733dec9e2c5dfc8adbf5b",
       "source_file": "art_source/dream_v03/ui_vector/icon_filter.svg"
+    },
+    {
+      "asset_id": "DEC_HIDEOUT_PLANTER",
+      "slot": "hideout-decoration",
+      "path": "web/assets/hideout/decorations/DEC_HIDEOUT_PLANTER.webp",
+      "anchor": "decor.planter",
+      "subject_id": "planter",
+      "rarity": null,
+      "source_path": "art-src/hideout/decorations/DEC_HIDEOUT_PLANTER.png",
+      "bytes": 37564,
+      "category": "decoration",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "DEC_HIDEOUT_WALL_LANTERN",
+      "slot": "hideout-decoration",
+      "path": "web/assets/hideout/decorations/DEC_HIDEOUT_WALL_LANTERN.webp",
+      "anchor": "decor.lantern",
+      "subject_id": "wall-lantern",
+      "rarity": null,
+      "source_path": "art-src/hideout/decorations/DEC_HIDEOUT_WALL_LANTERN.png",
+      "bytes": 23172,
+      "category": "decoration",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "DEC_HIDEOUT_STAR_BANNER",
+      "slot": "hideout-decoration",
+      "path": "web/assets/hideout/decorations/DEC_HIDEOUT_STAR_BANNER.webp",
+      "anchor": "decor.banner",
+      "subject_id": "star-banner",
+      "rarity": null,
+      "source_path": "art-src/hideout/decorations/DEC_HIDEOUT_STAR_BANNER.png",
+      "bytes": 32474,
+      "category": "decoration",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "DEC_HIDEOUT_STAR_RUG",
+      "slot": "hideout-decoration",
+      "path": "web/assets/hideout/decorations/DEC_HIDEOUT_STAR_RUG.webp",
+      "anchor": "decor.rug",
+      "subject_id": "star-rug",
+      "rarity": null,
+      "source_path": "art-src/hideout/decorations/DEC_HIDEOUT_STAR_RUG.png",
+      "bytes": 54122,
+      "category": "decoration",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
+    },
+    {
+      "asset_id": "INT_HIDEOUT_CRYSTAL_ORB",
+      "slot": "hideout-interactive",
+      "path": "web/assets/hideout/interactive/INT_HIDEOUT_CRYSTAL_ORB.webp",
+      "anchor": "interactive.orb",
+      "subject_id": "crystal-orb",
+      "rarity": null,
+      "source_path": "art-src/hideout/interactive/INT_HIDEOUT_CRYSTAL_ORB.png",
+      "bytes": 34408,
+      "category": "interactive",
+      "status": "CONCEPT",
+      "review_status": "PROVISIONAL_PREVIEW",
+      "preview_source": "prod/b-hideout (#42)",
+      "placeholder": false
     }
   ],
   "frameInsets": {
