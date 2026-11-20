@@ -1,0 +1,734 @@
+{
+  "contentTier": "draft",
+  "warning": "PLACEHOLDER action cards for a 30-card demo deck. Every number is PLACEHOLDER, not locked balance. Not PRODUCTION_READY.",
+  "actionCards": [
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_GEN_ATK_001",
+      "cardKind": "action_card",
+      "actionType": "ATK",
+      "name": "Placeholder Jab",
+      "apCost": 1,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_GEN_ATK_001",
+      "rarity": "N",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_GEN_ATK_001",
+      "Name": "Placeholder Jab",
+      "Type": "ATK",
+      "Rarity": "N",
+      "Faction_Requirement": null,
+      "Cost_AP": 1,
+      "Target_Rule": "Enemy",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": false,
+        "factionId": null,
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-022"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_GEN_ATK_002",
+      "cardKind": "action_card",
+      "actionType": "ATK",
+      "name": "Placeholder Smash",
+      "apCost": 2,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_GEN_ATK_002",
+      "rarity": "R",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_GEN_ATK_002",
+      "Name": "Placeholder Smash",
+      "Type": "ATK",
+      "Rarity": "R",
+      "Faction_Requirement": null,
+      "Cost_AP": 2,
+      "Target_Rule": "Enemy",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": false,
+        "factionId": null,
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-022"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_GEN_DEF_001",
+      "cardKind": "action_card",
+      "actionType": "DEF",
+      "name": "Placeholder Guard",
+      "apCost": 1,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_GEN_DEF_001",
+      "rarity": "N",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_GEN_DEF_001",
+      "Name": "Placeholder Guard",
+      "Type": "DEF",
+      "Rarity": "N",
+      "Faction_Requirement": null,
+      "Cost_AP": 1,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": false,
+        "factionId": null,
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-022"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_GEN_DEF_002",
+      "cardKind": "action_card",
+      "actionType": "DEF",
+      "name": "Placeholder Bulwark",
+      "apCost": 2,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_GEN_DEF_002",
+      "rarity": "R",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_GEN_DEF_002",
+      "Name": "Placeholder Bulwark",
+      "Type": "DEF",
+      "Rarity": "R",
+      "Faction_Requirement": null,
+      "Cost_AP": 2,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": false,
+        "factionId": null,
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-022"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_GEN_SKILL_001",
+      "cardKind": "action_card",
+      "actionType": "Skill",
+      "name": "Placeholder Spark",
+      "apCost": 1,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_GEN_SKILL_001",
+      "rarity": "N",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_GEN_SKILL_001",
+      "Name": "Placeholder Spark",
+      "Type": "Skill",
+      "Rarity": "N",
+      "Faction_Requirement": null,
+      "Cost_AP": 1,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": false,
+        "factionId": null,
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": true,
+        "rule": "CORE-022"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_GEN_SKILL_002",
+      "cardKind": "action_card",
+      "actionType": "Skill",
+      "name": "Placeholder Anthem",
+      "apCost": 2,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_GEN_SKILL_002",
+      "rarity": "Epic",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_GEN_SKILL_002",
+      "Name": "Placeholder Anthem",
+      "Type": "Skill",
+      "Rarity": "Epic",
+      "Faction_Requirement": null,
+      "Cost_AP": 2,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": false,
+        "factionId": null,
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": true,
+        "rule": "CORE-022"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_AEG_001",
+      "cardKind": "action_card",
+      "actionType": "DEF",
+      "name": "Placeholder Aegis Wall",
+      "apCost": 1,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_AEG_001",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_AEG_001",
+      "Name": "Placeholder Aegis Wall",
+      "Type": "DEF",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_AEG",
+      "Cost_AP": 1,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_AEG",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_AEG_002",
+      "cardKind": "action_card",
+      "actionType": "Skill",
+      "name": "Placeholder Aegis Taunt",
+      "apCost": 2,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_AEG_002",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_AEG_002",
+      "Name": "Placeholder Aegis Taunt",
+      "Type": "Skill",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_AEG",
+      "Cost_AP": 2,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_AEG",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": true,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_PHA_001",
+      "cardKind": "action_card",
+      "actionType": "ATK",
+      "name": "Placeholder Phantom Cut",
+      "apCost": 1,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_PHA_001",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_PHA_001",
+      "Name": "Placeholder Phantom Cut",
+      "Type": "ATK",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_PHA",
+      "Cost_AP": 1,
+      "Target_Rule": "Enemy",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_PHA",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_PHA_002",
+      "cardKind": "action_card",
+      "actionType": "Skill",
+      "name": "Placeholder Phantom Rush",
+      "apCost": 2,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_PHA_002",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_PHA_002",
+      "Name": "Placeholder Phantom Rush",
+      "Type": "Skill",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_PHA",
+      "Cost_AP": 2,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_PHA",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": true,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_CEL_001",
+      "cardKind": "action_card",
+      "actionType": "ATK",
+      "name": "Placeholder Star Bolt",
+      "apCost": 1,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_CEL_001",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_CEL_001",
+      "Name": "Placeholder Star Bolt",
+      "Type": "ATK",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_CEL",
+      "Cost_AP": 1,
+      "Target_Rule": "Enemy",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_CEL",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_CEL_002",
+      "cardKind": "action_card",
+      "actionType": "Skill",
+      "name": "Placeholder Arcane Poke",
+      "apCost": 2,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_CEL_002",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_CEL_002",
+      "Name": "Placeholder Arcane Poke",
+      "Type": "Skill",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_CEL",
+      "Cost_AP": 2,
+      "Target_Rule": "Self",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_CEL",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": true,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_SAN_001",
+      "cardKind": "action_card",
+      "actionType": "Skill",
+      "name": "Placeholder Saving Ping",
+      "apCost": 1,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_SAN_001",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_SAN_001",
+      "Name": "Placeholder Saving Ping",
+      "Type": "Skill",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_SAN",
+      "Cost_AP": 1,
+      "Target_Rule": "All_Allies",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_SAN",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": true,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "cardId": "ACT_FAC_SAN_002",
+      "cardKind": "action_card",
+      "actionType": "DEF",
+      "name": "Placeholder Sanctuary Ward",
+      "apCost": 2,
+      "costStatus": "PLACEHOLDER",
+      "effectId": "ACT_FAC_SAN_002",
+      "rarity": "FAC",
+      "labels": [
+        "PLACEHOLDER",
+        "NOT_LOCKED"
+      ],
+      "Action_ID": "ACT_FAC_SAN_002",
+      "Name": "Placeholder Sanctuary Ward",
+      "Type": "DEF",
+      "Rarity": "FAC",
+      "Faction_Requirement": "FAC_SAN",
+      "Cost_AP": 2,
+      "Target_Rule": "Ally",
+      "Effect_Spec": {
+        "valueStatus": "PLACEHOLDER",
+        "ops": [
+          {
+            "op": "placeholder",
+            "note": "Not a locked combat effect.",
+            "valueStatus": "PLACEHOLDER"
+          }
+        ]
+      },
+      "Duration_Turns": null,
+      "On_Resolve_Zone": "Discard",
+      "Zone_Recovery": null,
+      "Can_Play": {
+        "requiresFaction": true,
+        "factionId": "FAC_SAN",
+        "factionOverride": false,
+        "requiresAp": true,
+        "requiresSkillAction": false,
+        "rule": "CORE-023"
+      },
+      "Asset_Ref": null,
+      "Version_And_Status": "PLACEHOLDER",
+      "evidence": null,
+      "fieldStatus": {
+        "Cost_AP": "PLACEHOLDER",
+        "Effect_Spec": "PLACEHOLDER",
+        "Name": "PLACEHOLDER",
+        "Target_Rule": "PENDING_OWNER"
+      }
+    }
+  ]
+}

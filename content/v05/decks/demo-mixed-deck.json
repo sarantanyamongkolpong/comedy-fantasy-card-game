@@ -1,0 +1,47 @@
+{
+  "contentTier": "draft",
+  "warning": "PLACEHOLDER 30-card mixed-faction deck. Not PRODUCTION_READY.",
+  "deck": {
+    "deckId": "DECK_DEMO_MIXED_001",
+    "name": "Demo mixed deck",
+    "status": "PLACEHOLDER",
+    "note": "30 action cards across all four factions. Costs and effects are placeholders. Duplicate cap is PENDING_OWNER (CORE-040).",
+    "cardIds": [
+      "ACT_GEN_ATK_001",
+      "ACT_GEN_ATK_001",
+      "ACT_GEN_ATK_001",
+      "ACT_GEN_ATK_002",
+      "ACT_GEN_ATK_002",
+      "ACT_GEN_DEF_001",
+      "ACT_GEN_DEF_001",
+      "ACT_GEN_DEF_001",
+      "ACT_GEN_DEF_002",
+      "ACT_GEN_DEF_002",
+      "ACT_GEN_SKILL_001",
+      "ACT_GEN_SKILL_001",
+      "ACT_GEN_SKILL_002",
+      "ACT_GEN_SKILL_002",
+      "ACT_FAC_AEG_001",
+      "ACT_FAC_AEG_001",
+      "ACT_FAC_AEG_002",
+      "ACT_FAC_AEG_002",
+      "ACT_FAC_PHA_001",
+      "ACT_FAC_PHA_001",
+      "ACT_FAC_PHA_002",
+      "ACT_FAC_PHA_002",
+      "ACT_FAC_CEL_001",
+      "ACT_FAC_CEL_001",
+      "ACT_FAC_CEL_002",
+      "ACT_FAC_CEL_002",
+      "ACT_FAC_SAN_001",
+      "ACT_FAC_SAN_001",
+      "ACT_FAC_SAN_002",
+      "ACT_FAC_SAN_002"
+    ],
+    "duplicateMax": {
+      "value": null,
+      "status": "PENDING_OWNER",
+      "rule": "CORE-040"
+    }
+  }
+}

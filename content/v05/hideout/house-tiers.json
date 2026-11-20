@@ -1,0 +1,157 @@
+{
+  "contentTier": "draft",
+  "warning": "House tier names are LOCKED. Furniture capacities are the sheet reference. Grant versus unlock-to-buy is PENDING_OWNER. Cabin base capacity is PENDING_OWNER.",
+  "houseTiers": [
+    {
+      "tier": 1,
+      "id": "cabin",
+      "name": "Cabin",
+      "rule": "HOME-01",
+      "status": "LOCKED",
+      "referenceFurniture": null
+    },
+    {
+      "tier": 2,
+      "id": "bungalow",
+      "name": "Bungalow",
+      "rule": "HOME-02",
+      "status": "LOCKED",
+      "referenceFurniture": {
+        "furnitureId": "FUR_REF_BUNGALOW_BOX",
+        "name": "Box",
+        "capacity": 50,
+        "capacityStatus": "LOCKED",
+        "capacityEvidence": "v05_Hideout_Map HOME-02 implementation note",
+        "grantStatus": "PENDING_OWNER",
+        "grantRule": "OPEN-06",
+        "note": "Capacity is the sheet reference. Whether the tier grants this piece or only unlocks it for sale is PENDING_OWNER. Acquiring the tier does not install it."
+      }
+    },
+    {
+      "tier": 3,
+      "id": "cottage",
+      "name": "Cottage",
+      "rule": "HOME-03",
+      "status": "LOCKED",
+      "referenceFurniture": {
+        "furnitureId": "FUR_REF_COTTAGE_BOX",
+        "name": "Box",
+        "capacity": 50,
+        "capacityStatus": "LOCKED",
+        "capacityEvidence": "v05_Hideout_Map HOME-03 implementation note",
+        "grantStatus": "PENDING_OWNER",
+        "grantRule": "OPEN-06",
+        "note": "Capacity is the sheet reference. Whether the tier grants this piece or only unlocks it for sale is PENDING_OWNER. Acquiring the tier does not install it."
+      }
+    },
+    {
+      "tier": 4,
+      "id": "loft",
+      "name": "Loft",
+      "rule": "HOME-04",
+      "status": "LOCKED",
+      "referenceFurniture": {
+        "furnitureId": "FUR_REF_LOFT_TALL_CABINET",
+        "name": "Tall Cabinet",
+        "capacity": 100,
+        "capacityStatus": "LOCKED",
+        "capacityEvidence": "v05_Hideout_Map HOME-04 implementation note",
+        "grantStatus": "PENDING_OWNER",
+        "grantRule": "OPEN-06",
+        "note": "Capacity is the sheet reference. Whether the tier grants this piece or only unlocks it for sale is PENDING_OWNER. Acquiring the tier does not install it."
+      }
+    },
+    {
+      "tier": 5,
+      "id": "villa",
+      "name": "Villa",
+      "rule": "HOME-05",
+      "status": "LOCKED",
+      "referenceFurniture": {
+        "furnitureId": "FUR_REF_VILLA_DISPLAY_COUNTER",
+        "name": "Display Counter",
+        "capacity": 100,
+        "capacityStatus": "LOCKED",
+        "capacityEvidence": "v05_Hideout_Map HOME-05 implementation note",
+        "grantStatus": "PENDING_OWNER",
+        "grantRule": "OPEN-06",
+        "note": "Capacity is the sheet reference. Whether the tier grants this piece or only unlocks it for sale is PENDING_OWNER. Acquiring the tier does not install it."
+      }
+    },
+    {
+      "tier": 6,
+      "id": "penthouse",
+      "name": "Penthouse",
+      "rule": "HOME-06",
+      "status": "LOCKED",
+      "referenceFurniture": {
+        "furnitureId": "FUR_REF_PENTHOUSE_LARGE_TALL_CABINET",
+        "name": "Large Tall Cabinet",
+        "capacity": 150,
+        "capacityStatus": "LOCKED",
+        "capacityEvidence": "v05_Hideout_Map HOME-06 implementation note",
+        "grantStatus": "PENDING_OWNER",
+        "grantRule": "OPEN-06",
+        "note": "Capacity is the sheet reference. Whether the tier grants this piece or only unlocks it for sale is PENDING_OWNER. Acquiring the tier does not install it."
+      }
+    }
+  ],
+  "mapDestinations": [
+    {
+      "id": "home",
+      "name": "Home",
+      "rule": "MAP-02",
+      "status": "LOCKED",
+      "summary": "Player hub / Hideout",
+      "playable": true
+    },
+    {
+      "id": "mysterious-tower",
+      "name": "Mysterious Tower",
+      "rule": "MAP-03",
+      "status": "LOCKED",
+      "summary": "PvE battle and Mystery Tower lore",
+      "playable": true
+    },
+    {
+      "id": "sports-complex",
+      "name": "Sports Complex",
+      "rule": "MAP-04",
+      "status": "LOCKED",
+      "summary": "Football, Basketball, Racing, MotoGP",
+      "modes": [
+        "Football",
+        "Basketball",
+        "Racing",
+        "MotoGP"
+      ],
+      "playable": false,
+      "implementation": "OUT_OF_SCOPE",
+      "note": "The map pin is locked. The four side-battle games are not part of this core pass."
+    },
+    {
+      "id": "tournament-arena",
+      "name": "Tournament Arena",
+      "rule": "MAP-05",
+      "status": "LOCKED",
+      "summary": "Main battle / PvP venue",
+      "playable": true
+    },
+    {
+      "id": "shopping-mall",
+      "name": "Shopping Mall",
+      "rule": "MAP-06",
+      "status": "LOCKED",
+      "summary": "Furniture and cosmetics",
+      "playable": true
+    },
+    {
+      "id": "gachapon",
+      "name": "Gachapon",
+      "rule": "MAP-07",
+      "status": "LOCKED",
+      "summary": "Avatar / Action / Companion pools",
+      "playable": true
+    }
+  ]
+}

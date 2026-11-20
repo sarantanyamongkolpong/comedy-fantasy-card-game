@@ -1,0 +1,727 @@
+{
+  "contentTier": "draft",
+  "warning": "SAMPLE. Name and faction are LOCKED (Owner t253u 20 Nov 2026). Stats and skills are PROPOSED except Justina Moment active, which is LOCKED. Not PRODUCTION_READY.",
+  "avatars": [
+    {
+      "schemaVersion": "v05",
+      "avatarId": "AVT_AEG_002",
+      "designRef": "AV_EX01",
+      "sheetName": "JUSTIN CASE",
+      "nameEn": "Justin Case",
+      "nameTh": "Justin Case",
+      "nameThNote": "No Thai name in the v05 sheet. This copy of nameEn is not a locked localization.",
+      "factionId": "FAC_AEG",
+      "factionName": "Aegis Dominion",
+      "role": "Tank",
+      "rarity": "Epic",
+      "gender": null,
+      "rigId": null,
+      "stats": {
+        "atk": 3,
+        "def": 8,
+        "spd": 1,
+        "valueStatus": "PROPOSED",
+        "fieldStatus": {
+          "atk": "PROPOSED",
+          "def": "PROPOSED",
+          "spd": "PROPOSED"
+        },
+        "evidence": "AV_EX01 numbers are proposed design samples (OPEN-08), not locked balance."
+      },
+      "skills": {
+        "active": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_AEG_002_ACTIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "Shield +2; Taunt 1 Turn",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_AEG_002_ACTIVE",
+          "rarity": "Epic",
+          "labels": [
+            "PROPOSED",
+            "NOT_LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_AEG_002_ACTIVE",
+          "Name": "Shield +2; Taunt 1 Turn",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "Self",
+          "Effect_Spec": {
+            "valueStatus": "PROPOSED",
+            "trigger": "action",
+            "chance": null,
+            "ops": [
+              {
+                "op": "shield",
+                "amount": 2,
+                "durationTurns": 1,
+                "also": "taunt",
+                "valueStatus": "PROPOSED"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": 1,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "PROPOSED",
+          "evidence": null,
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "PROPOSED",
+            "Name": "PROPOSED"
+          }
+        },
+        "passive": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_AEG_002_PASSIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "70% turn start: team DEF +1 for 1 Turn",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_AEG_002_PASSIVE",
+          "rarity": "Epic",
+          "labels": [
+            "PROPOSED",
+            "NOT_LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_AEG_002_PASSIVE",
+          "Name": "70% turn start: team DEF +1 for 1 Turn",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "All_Allies",
+          "Effect_Spec": {
+            "valueStatus": "PROPOSED",
+            "trigger": "turn-start",
+            "chance": {
+              "value": 0.7,
+              "valueStatus": "PROPOSED"
+            },
+            "ops": [
+              {
+                "op": "stat-buff",
+                "stat": "def",
+                "amount": 1,
+                "targets": "All_Allies",
+                "durationTurns": 1,
+                "valueStatus": "PROPOSED"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": 1,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "PROPOSED",
+          "evidence": null,
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "PROPOSED",
+            "Name": "PROPOSED"
+          }
+        },
+        "ultimate": null
+      },
+      "assetIds": {},
+      "assetNote": "No modular asset id is invented. Reference card art stays on the design branch until it is decomposed.",
+      "fieldStatus": {
+        "nameEn": "LOCKED",
+        "nameTh": "PENDING_OWNER",
+        "factionId": "LOCKED",
+        "role": "LOCKED",
+        "rarity": "LOCKED",
+        "gender": "PENDING_OWNER",
+        "stats": "PROPOSED",
+        "active": "PROPOSED",
+        "passive": "PROPOSED"
+      },
+      "levelCap": {
+        "max": 5,
+        "status": "LOCKED",
+        "rule": "CORE-030"
+      },
+      "stars": {
+        "value": null,
+        "status": "PENDING_OWNER",
+        "rule": "OPEN-04",
+        "note": "Do not lock a star cap such as N2/R3/Epic4/EX5."
+      },
+      "identity": {
+        "status": "LOCKED",
+        "decision": "new-character",
+        "evidence": "Owner t253u 20 Nov 2026",
+        "notARenameOf": "AVT_AEG_001"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "avatarId": "AVT_PHA_002",
+      "designRef": "AV_EX02",
+      "sheetName": "JUSTIN TIME",
+      "nameEn": "Justin Time",
+      "nameTh": "Justin Time",
+      "nameThNote": "No Thai name in the v05 sheet. This copy of nameEn is not a locked localization.",
+      "factionId": "FAC_PHA",
+      "factionName": "Phantom Blades",
+      "role": "DPS",
+      "rarity": "Epic",
+      "gender": null,
+      "rigId": null,
+      "stats": {
+        "atk": 8,
+        "def": 2,
+        "spd": 9,
+        "valueStatus": "PROPOSED",
+        "fieldStatus": {
+          "atk": "PROPOSED",
+          "def": "PROPOSED",
+          "spd": "PROPOSED"
+        },
+        "evidence": "AV_EX02 numbers are proposed design samples (OPEN-08), not locked balance."
+      },
+      "skills": {
+        "active": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_PHA_002_ACTIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "Reckless Rush",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_PHA_002_ACTIVE",
+          "rarity": "Epic",
+          "labels": [
+            "PROPOSED",
+            "NOT_LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_PHA_002_ACTIVE",
+          "Name": "Reckless Rush",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "Self",
+          "Effect_Spec": {
+            "valueStatus": "PROPOSED",
+            "trigger": "action",
+            "chance": null,
+            "ops": [
+              {
+                "op": "next-attack-buff",
+                "stat": "atk",
+                "amount": 2,
+                "targets": "Self",
+                "durationTurns": 1,
+                "note": "next attack ATK +2 this Turn",
+                "valueStatus": "PROPOSED"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": 1,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "PROPOSED",
+          "evidence": null,
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "PROPOSED",
+            "Name": "PROPOSED"
+          }
+        },
+        "passive": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_PHA_002_PASSIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "Lucky Slash",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_PHA_002_PASSIVE",
+          "rarity": "Epic",
+          "labels": [
+            "PROPOSED",
+            "NOT_LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_PHA_002_PASSIVE",
+          "Name": "Lucky Slash",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "Enemy",
+          "Effect_Spec": {
+            "valueStatus": "PROPOSED",
+            "trigger": "on-attack",
+            "chance": {
+              "value": 0.3,
+              "valueStatus": "PROPOSED"
+            },
+            "ops": [
+              {
+                "op": "bonus-damage",
+                "amount": 2,
+                "valueStatus": "PROPOSED"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": null,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "PROPOSED",
+          "evidence": null,
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "PROPOSED",
+            "Name": "PROPOSED"
+          }
+        },
+        "ultimate": null
+      },
+      "assetIds": {},
+      "assetNote": "No modular asset id is invented. Reference card art stays on the design branch until it is decomposed.",
+      "fieldStatus": {
+        "nameEn": "LOCKED",
+        "nameTh": "PENDING_OWNER",
+        "factionId": "LOCKED",
+        "role": "LOCKED",
+        "rarity": "LOCKED",
+        "gender": "PENDING_OWNER",
+        "stats": "PROPOSED",
+        "active": "PROPOSED",
+        "passive": "PROPOSED"
+      },
+      "levelCap": {
+        "max": 5,
+        "status": "LOCKED",
+        "rule": "CORE-030"
+      },
+      "stars": {
+        "value": null,
+        "status": "PENDING_OWNER",
+        "rule": "OPEN-04",
+        "note": "Do not lock a star cap such as N2/R3/Epic4/EX5."
+      },
+      "identity": {
+        "status": "LOCKED",
+        "decision": "new-character",
+        "evidence": "Owner t253u 20 Nov 2026",
+        "notARenameOf": "AVT_PHA_001"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "avatarId": "AVT_CEL_002",
+      "designRef": "AV_EX03",
+      "sheetName": "JUSTIN THEORY",
+      "nameEn": "Justin Theory",
+      "nameTh": "Justin Theory",
+      "nameThNote": "No Thai name in the v05 sheet. This copy of nameEn is not a locked localization.",
+      "factionId": "FAC_CEL",
+      "factionName": "Celestial Nexus",
+      "role": "Magic",
+      "rarity": "Epic",
+      "gender": null,
+      "rigId": null,
+      "stats": {
+        "atk": 7,
+        "def": 3,
+        "spd": 4,
+        "valueStatus": "PROPOSED",
+        "fieldStatus": {
+          "atk": "PROPOSED",
+          "def": "PROPOSED",
+          "spd": "PROPOSED"
+        },
+        "evidence": "AV_EX03 numbers are proposed design samples (OPEN-08), not locked balance."
+      },
+      "skills": {
+        "active": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_CEL_002_ACTIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "Arcane Formula",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_CEL_002_ACTIVE",
+          "rarity": "Epic",
+          "labels": [
+            "PROPOSED",
+            "NOT_LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_CEL_002_ACTIVE",
+          "Name": "Arcane Formula",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "Self",
+          "Effect_Spec": {
+            "valueStatus": "PROPOSED",
+            "trigger": "action",
+            "chance": null,
+            "ops": [
+              {
+                "op": "next-attack-buff",
+                "stat": "atk",
+                "amount": 3,
+                "targets": "Self",
+                "durationTurns": 1,
+                "valueStatus": "PROPOSED"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": 1,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "PROPOSED",
+          "evidence": null,
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "PROPOSED",
+            "Name": "PROPOSED"
+          }
+        },
+        "passive": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_CEL_002_PASSIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "Eureka",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_CEL_002_PASSIVE",
+          "rarity": "Epic",
+          "labels": [
+            "PROPOSED",
+            "NOT_LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_CEL_002_PASSIVE",
+          "Name": "Eureka",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "Self",
+          "Effect_Spec": {
+            "valueStatus": "PROPOSED",
+            "trigger": "turn-start",
+            "chance": {
+              "value": 0.4,
+              "valueStatus": "PROPOSED"
+            },
+            "ops": [
+              {
+                "op": "stat-buff",
+                "stat": "atk",
+                "amount": 1,
+                "targets": "Self",
+                "durationTurns": 1,
+                "valueStatus": "PROPOSED"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": 1,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "PROPOSED",
+          "evidence": null,
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "PROPOSED",
+            "Name": "PROPOSED"
+          }
+        },
+        "ultimate": null
+      },
+      "assetIds": {},
+      "assetNote": "No modular asset id is invented. Reference card art stays on the design branch until it is decomposed.",
+      "fieldStatus": {
+        "nameEn": "LOCKED",
+        "nameTh": "PENDING_OWNER",
+        "factionId": "LOCKED",
+        "role": "LOCKED",
+        "rarity": "LOCKED",
+        "gender": "PENDING_OWNER",
+        "stats": "PROPOSED",
+        "active": "PROPOSED",
+        "passive": "PROPOSED"
+      },
+      "levelCap": {
+        "max": 5,
+        "status": "LOCKED",
+        "rule": "CORE-030"
+      },
+      "stars": {
+        "value": null,
+        "status": "PENDING_OWNER",
+        "rule": "OPEN-04",
+        "note": "Do not lock a star cap such as N2/R3/Epic4/EX5."
+      },
+      "identity": {
+        "status": "LOCKED",
+        "decision": "new-character",
+        "evidence": "Owner t253u 20 Nov 2026",
+        "notARenameOf": "AVT_CEL_001"
+      }
+    },
+    {
+      "schemaVersion": "v05",
+      "avatarId": "AVT_SAN_002",
+      "designRef": "AV_EX04",
+      "sheetName": "JUSTINA MOMENT",
+      "nameEn": "Justina Moment",
+      "nameTh": "Justina Moment",
+      "nameThNote": "No Thai name in the v05 sheet. This copy of nameEn is not a locked localization.",
+      "factionId": "FAC_SAN",
+      "factionName": "Sanctuary Order",
+      "role": "Support",
+      "rarity": "Epic",
+      "gender": "female",
+      "rigId": null,
+      "stats": {
+        "atk": 2,
+        "def": 5,
+        "spd": 6,
+        "valueStatus": "PROPOSED",
+        "fieldStatus": {
+          "atk": "PROPOSED",
+          "def": "PROPOSED",
+          "spd": "PROPOSED"
+        },
+        "evidence": "AV_EX04 numbers are proposed design samples (OPEN-08), not locked balance."
+      },
+      "skills": {
+        "active": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_SAN_002_ACTIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "Saving Grace",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_SAN_002_ACTIVE",
+          "rarity": "Epic",
+          "labels": [
+            "LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_SAN_002_ACTIVE",
+          "Name": "Saving Grace",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "All_Allies",
+          "Effect_Spec": {
+            "valueStatus": "LOCKED",
+            "evidence": "v05 AV_EX04 Active Skill: Saving Grace, all teammates Regen +3 for 2 Turns.",
+            "trigger": "action",
+            "chance": null,
+            "ops": [
+              {
+                "op": "regen",
+                "amount": 3,
+                "durationTurns": 2,
+                "targets": "All_Allies",
+                "valueStatus": "LOCKED",
+                "evidence": "v05 AV_EX04"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": 2,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "LOCKED",
+          "evidence": "Owner t253u 20 Nov 2026. v05 AV_EX04 active effect stays LOCKED.",
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "LOCKED",
+            "Name": "LOCKED"
+          }
+        },
+        "passive": {
+          "schemaVersion": "v05",
+          "cardId": "ACT_SKILL_AVT_SAN_002_PASSIVE",
+          "cardKind": "action_card",
+          "actionType": "Skill",
+          "name": "Moral Support",
+          "apCost": null,
+          "costStatus": "PENDING_OWNER",
+          "effectId": "ACT_SKILL_AVT_SAN_002_PASSIVE",
+          "rarity": "Epic",
+          "labels": [
+            "PROPOSED",
+            "NOT_LOCKED"
+          ],
+          "Action_ID": "ACT_SKILL_AVT_SAN_002_PASSIVE",
+          "Name": "Moral Support",
+          "Type": "Skill",
+          "Rarity": "Epic",
+          "Faction_Requirement": null,
+          "Cost_AP": null,
+          "Target_Rule": "Ally",
+          "Effect_Spec": {
+            "valueStatus": "PROPOSED",
+            "trigger": "turn-start",
+            "chance": {
+              "value": 0.5,
+              "valueStatus": "PROPOSED"
+            },
+            "ops": [
+              {
+                "op": "stat-buff",
+                "stat": "atk",
+                "amount": 1,
+                "targets": "random-ally",
+                "durationTurns": 1,
+                "valueStatus": "PROPOSED"
+              }
+            ],
+            "tickTiming": {
+              "value": null,
+              "status": "PENDING_OWNER",
+              "rule": "OPEN-02"
+            }
+          },
+          "Duration_Turns": 1,
+          "On_Resolve_Zone": "Discard",
+          "Zone_Recovery": null,
+          "Can_Play": {
+            "kind": "avatar-skill",
+            "requiresSkillAction": true,
+            "rule": "CORE-021"
+          },
+          "Asset_Ref": null,
+          "Version_And_Status": "PROPOSED",
+          "evidence": null,
+          "fieldStatus": {
+            "Cost_AP": "PENDING_OWNER",
+            "Target_Rule": "PENDING_OWNER",
+            "Effect_Spec": "PROPOSED",
+            "Name": "PROPOSED"
+          }
+        },
+        "ultimate": null
+      },
+      "assetIds": {},
+      "assetNote": "No modular asset id is invented. Reference card art stays on the design branch until it is decomposed.",
+      "fieldStatus": {
+        "nameEn": "LOCKED",
+        "nameTh": "PENDING_OWNER",
+        "factionId": "LOCKED",
+        "role": "LOCKED",
+        "rarity": "LOCKED",
+        "gender": "LOCKED",
+        "stats": "PROPOSED",
+        "active": "LOCKED",
+        "passive": "PROPOSED"
+      },
+      "levelCap": {
+        "max": 5,
+        "status": "LOCKED",
+        "rule": "CORE-030"
+      },
+      "stars": {
+        "value": null,
+        "status": "PENDING_OWNER",
+        "rule": "OPEN-04",
+        "note": "Do not lock a star cap such as N2/R3/Epic4/EX5."
+      },
+      "identity": {
+        "status": "LOCKED",
+        "decision": "new-character",
+        "evidence": "Owner t253u 20 Nov 2026",
+        "notARenameOf": "AVT_SAN_001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_Mira_Handoff",
+  "title": "MIRA TASK HANDOFF",
+  "columns": [
+    "Phase",
+    "Required Action",
+    "Output",
+    "Priority",
+    "Safety",
+    "Status"
+  ],
+  "rows": [
+    {
+      "Phase": "1. Audit",
+      "Required Action": "Inspect actual Card Game repo/PR #9/#11; merge conflict dry run",
+      "Output": "Audit report + PR dependency map",
+      "Priority": "P0",
+      "Safety": "No merge/push to main",
+      "Status": "NOT STARTED"
+    },
+    {
+      "Phase": "2. Core",
+      "Required Action": "Implement deterministic Battle engine and Action/Avatar schemas",
+      "Output": "Draft PR + tests",
+      "Priority": "P0",
+      "Safety": "No unapproved config guesses",
+      "Status": "NOT STARTED"
+    },
+    {
+      "Phase": "3. Loop",
+      "Required Action": "Connect Hideout/Deck/Gacha/Tower/UI",
+      "Output": "Usable preview + mobile smoke",
+      "Priority": "P0",
+      "Safety": "No other agents' overwrite",
+      "Status": "NOT STARTED"
+    },
+    {
+      "Phase": "4. QA",
+      "Required Action": "Run unit/integration/smoke/regression and document failing cases",
+      "Output": "Exact pass/fail + commands",
+      "Priority": "P0",
+      "Safety": "Do not claim unexecuted tests passed",
+      "Status": "NOT STARTED"
+    },
+    {
+      "Phase": "5. Handoff",
+      "Required Action": "Commit/push authorized branches and provide Draft PR links",
+      "Output": "README + owner decision list",
+      "Priority": "P0",
+      "Safety": "Do not merge/deploy production",
+      "Status": "NOT STARTED"
+    },
+    {
+      "Phase": "Source",
+      "Required Action": "Read linked master prompt MIRA_CARD_GAME_CORE_MASTER_PROMPT_20261120.md",
+      "Output": "Single full instruction",
+      "Priority": "P0",
+      "Safety": "This workbook has higher priority than v0.4 archive",
+      "Status": "READY"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}

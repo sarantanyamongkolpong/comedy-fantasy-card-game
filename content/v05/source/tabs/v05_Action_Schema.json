@@ -1,0 +1,129 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_Action_Schema",
+  "title": "ACTION CARD DATA CONTRACT",
+  "columns": [
+    "Field",
+    "Data Type",
+    "Meaning",
+    "State",
+    "Example/Condition",
+    "Priority"
+  ],
+  "rows": [
+    {
+      "Field": "Action_ID",
+      "Data Type": "string",
+      "Meaning": "Unique ID",
+      "State": "REQUIRED",
+      "Example/Condition": "Example ACT_0001",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Name",
+      "Data Type": "string",
+      "Meaning": "Card display name",
+      "State": "REQUIRED",
+      "Example/Condition": "Editable localization",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Type",
+      "Data Type": "enum",
+      "Meaning": "ATK / DEF / Skill",
+      "State": "REQUIRED",
+      "Example/Condition": "Never Tactic legacy",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Rarity",
+      "Data Type": "enum",
+      "Meaning": "N / R / Epic / EX / FAC",
+      "State": "REQUIRED",
+      "Example/Condition": "FAC is high-tier faction action",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Faction_Requirement",
+      "Data Type": "enum|null",
+      "Meaning": "One of four factions if faction-locked",
+      "State": "OPTIONAL",
+      "Example/Condition": "FAC gate check; generic null",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Cost_AP",
+      "Data Type": "integer",
+      "Meaning": "0..5 AP",
+      "State": "REQUIRED",
+      "Example/Condition": "Do not invent production costs",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Target_Rule",
+      "Data Type": "enum",
+      "Meaning": "Self / Ally / All_Allies / Enemy / All_Enemies / Card / Pile",
+      "State": "PENDING",
+      "Example/Condition": "Per card",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Effect_Spec",
+      "Data Type": "object",
+      "Meaning": "typed effect list, conditional triggers, values",
+      "State": "REQUIRED",
+      "Example/Condition": "No arbitrary raw eval",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Duration_Turns",
+      "Data Type": "integer|null",
+      "Meaning": "Timed statuses e.g. Regen 2",
+      "State": "OPTIONAL",
+      "Example/Condition": "Tick semantics config",
+      "Priority": "P0"
+    },
+    {
+      "Field": "On_Resolve_Zone",
+      "Data Type": "enum",
+      "Meaning": "Discard or Void",
+      "State": "REQUIRED",
+      "Example/Condition": "Default Discard",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Zone_Recovery",
+      "Data Type": "object|null",
+      "Meaning": "Select retrieval from Discard/Void and destination",
+      "State": "OPTIONAL",
+      "Example/Condition": "Per card overrides",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Can_Play",
+      "Data Type": "predicate",
+      "Meaning": "Faction match / target / AP / effect conditions",
+      "State": "REQUIRED",
+      "Example/Condition": "Validation + UI feedback",
+      "Priority": "P0"
+    },
+    {
+      "Field": "Asset_Ref",
+      "Data Type": "string|null",
+      "Meaning": "Verified artwork path in repository",
+      "State": "OPTIONAL",
+      "Example/Condition": "No invented art paths",
+      "Priority": "P1"
+    },
+    {
+      "Field": "Version_And_Status",
+      "Data Type": "string",
+      "Meaning": "Data version and LOCKED/PROPOSED/PENDING",
+      "State": "REQUIRED",
+      "Example/Condition": "Owner approval semantics",
+      "Priority": "P0"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}
