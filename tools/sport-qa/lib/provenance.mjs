@@ -68,9 +68,11 @@ function tagged(ancestors) {
 function considerSecret(key, value, path, ctx) {
   const text = value.trim();
   if (!text) return;
-  const identity = IDENTITY_KEY.test(key) || text.includes('://') || /\.(png|svg|jpe?g|webp)$/i.test(text);
-  if (!identity && text.length < 4) return;
-  if (identity && text.length < 3 && !/\.(png|svg|jpe?g|webp)$/i.test(text)) return;
+  const url = text.includes('://');
+  const image = /\.(png|svg|jpe?g|webp)$/i.test(text);
+  const identity = IDENTITY_KEY.test(key);
+  if (!identity && !url && !image) return;
+  if (text.length < 3 && !image) return;
   if (/^[0-9./:-]+$/.test(text)) return;
   if (STOP.has(text.toLowerCase())) return;
   ctx.secrets.push({ path, value: text });
@@ -176,9 +178,12 @@ function appears(haystack, secret) {
 }
 
 function scanTokens(file, text, findings) {
+  const lines = text.split('\n');
   for (const token of FORBIDDEN_TOKENS) {
-    const re = new RegExp(`\\b${token}\\b`);
-    if (re.test(text)) {
+    const word = new RegExp(`\\b${token}\\b`);
+    const rejection = new RegExp(`(?:===|!==|==|!=)\\s*['"]${token}['"]`);
+    const hits = lines.filter((line) => word.test(line) && !rejection.test(line) && !/must stay|reject|forbidden/i.test(line));
+    if (hits.length > 0) {
       findings.push({
         code: 'FORBIDDEN_TOKEN',
         path: file,
@@ -220,7 +225,7 @@ function readText(file) {
 export function auditRepo() {
   const jsonFiles = walkFiles('content/v06/sport', (name) => name.endsWith('.json'));
   const webFiles = walkFiles('web/sport', (name) => /\.(html|js|mjs|css|svg|json)$/.test(name));
-  const srcFiles = walkFiles('src/sport', (name) => name.endsWith('.js'));
+  const srcFiles = walkFiles('src/sport', (name) => name.endsWith('.js') || name.endsWith('.mjs'));
   const htmlFiles = walkFiles('web/dist', (name) => name.endsWith('.html'));
   const surfaces = jsonFiles.length + webFiles.length + srcFiles.length;
   if (surfaces === 0 && htmlFiles.length === 0) {

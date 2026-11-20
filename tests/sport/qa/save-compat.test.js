@@ -83,6 +83,7 @@ test('version 3 sport state round-trips', {
   }
 
   const migrate = firstFunction(v3Module.mod, [
+    'migrateSportV3',
     'migrateV3',
     'migrateToV3',
     'migrateV2ToV3',

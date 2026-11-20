@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
 import { existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import test from 'node:test';
-import { pathToFileURL } from 'node:url';
-import { abs, sportEntryHtml } from '../../../tools/sport-qa/lib/discover.mjs';
+import { sportEntryHtml } from '../../../tools/sport-qa/lib/discover.mjs';
 import { repoRoot } from '../../../tools/sport-qa/lib/paths.mjs';
 
 const VIEWPORTS = [
@@ -14,14 +14,41 @@ const VIEWPORTS = [
 ];
 
 const entry = sportEntryHtml();
+const port = 8795;
+let server = null;
+
+async function startServer() {
+  if (server) return;
+  server = spawn('python3', ['-m', 'http.server', String(port), '--bind', '127.0.0.1'], {
+    cwd: repoRoot(),
+    stdio: 'ignore',
+  });
+  for (let attempt = 0; attempt < 50; attempt += 1) {
+    try {
+      const response = await fetch(`http://127.0.0.1:${port}/web/`);
+      if (response.ok || response.status === 404) return;
+    } catch {
+      await new Promise((resolve) => { setTimeout(resolve, 100); });
+    }
+  }
+  throw new Error('static server did not start');
+}
+
+test.after(() => {
+  server?.kill();
+});
 
 async function loadDriver() {
+  const specifiers = [
+    'playwright-core',
+    '/tmp/sport-qa-deps/node_modules/playwright-core/index.mjs',
+  ];
   let chromium = null;
-  try {
-    ({ chromium } = await import('playwright-core'));
-  } catch {
+  for (const specifier of specifiers) {
     try {
-      ({ chromium } = await import('/tmp/sport-qa-deps/node_modules/playwright-core/index.js'));
+      const mod = await import(specifier);
+      chromium = mod.chromium ?? mod.default?.chromium ?? null;
+      if (chromium) break;
     } catch {
       chromium = null;
     }
@@ -83,21 +110,35 @@ if (!entry) {
         const errors = [];
         page.on('pageerror', (error) => errors.push(error.message));
         try {
-          await page.goto(pathToFileURL(abs(entry.file)).href, { waitUntil: 'domcontentloaded' });
+          await startServer();
+          const url = entry.kind === 'sport-page'
+            ? `http://127.0.0.1:${port}/${entry.file}`
+            : `http://127.0.0.1:${port}/web/`;
+          await page.goto(url, { waitUntil: 'domcontentloaded' });
+          await page.getByRole('button').first().waitFor({ timeout: 10000 });
+          const outside = [];
           const landing = await visibleButtons(page);
           assert.ok(landing.visible > 0, `${entry.file} has no visible buttons at ${viewport.width}x${viewport.height}`);
-          assert.deepEqual(landing.outside, [], 'a visible button is outside the viewport');
+          outside.push(...landing.outside.map((row) => ({ screen: 'home', ...row })));
           if (entry.kind === 'app-shell') {
-            const entrance = page.getByRole('button', { name: /sport/i });
+            const map = page.getByRole('button', { name: /world map/i });
+            if (await map.count()) {
+              await map.first().click();
+              await page.waitForTimeout(200);
+              const mapped = await visibleButtons(page);
+              outside.push(...mapped.outside.map((row) => ({ screen: 'map', ...row })));
+            }
+            let entrance = page.getByRole('button', { name: /sport/i });
             const links = page.getByRole('link', { name: /sport/i });
             if (await entrance.count()) await entrance.first().click();
             else if (await links.count()) await links.first().click();
             else throw new Error('the app shell has no sport entrance');
-            await page.waitForTimeout(200);
+            await page.waitForTimeout(300);
             const sport = await visibleButtons(page);
             assert.ok(sport.visible > 0, 'the sport screen has no visible buttons');
-            assert.deepEqual(sport.outside, [], 'a sport-screen button is outside the viewport');
+            outside.push(...sport.outside.map((row) => ({ screen: 'sport', ...row })));
           }
+          assert.deepEqual(outside, [], `a visible button is outside the viewport: ${JSON.stringify(outside)}`);
           assert.deepEqual(errors, []);
         } finally {
           await page.screenshot({

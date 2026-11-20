@@ -1,21 +1,14 @@
 import { STAT_KEYS } from './discover.mjs';
 
-const ROLES = {
-  football: ['GK', 'DF', 'DF', 'DF', 'DF', 'MF', 'MF', 'MF', 'FW', 'FW', 'FW'],
-  basket: ['PG', 'SG', 'SF', 'PF', 'C'],
-  car: ['A', 'B'],
-  moto: ['A', 'B'],
-};
+const FOOTBALL_XI = ['GK', 'RB', 'CB', 'CB', 'LB', 'CM', 'CM', 'CM', 'RW', 'ST', 'LW'];
+const BASKET_FIVE = ['PG', 'SG', 'SF', 'PF', 'C'];
 
-/**
- * @param {'football'|'basket'|'car'|'moto'} sport
- * @param {string} prefix
- */
-export function lineup(sport, prefix) {
-  return ROLES[sport].map((role, index) => ({
+function players(sport, prefix, roles) {
+  return roles.map((role, index) => ({
     id: `${prefix}_${index + 1}`,
     sport,
     role,
+    position: role,
     parodyName: `Placeholder ${prefix} ${index + 1}`,
     rarity: 'N',
     team: 'Placeholder XI',
@@ -25,30 +18,53 @@ export function lineup(sport, prefix) {
   }));
 }
 
+function ballSide(sport, prefix, roles) {
+  const squad = players(sport, prefix, roles);
+  return {
+    id: `${sport}_${prefix}`,
+    parodyName: `Placeholder ${prefix}`,
+    players: squad,
+    coach: null,
+    lineupIds: squad.map((player) => player.id),
+  };
+}
+
+function raceSide(sport, prefix) {
+  return {
+    teamId: `${sport}_${prefix}`,
+    parodyName: `Placeholder ${prefix}`,
+    entries: [0, 1].map((index) => ({
+      id: `${sport}_${prefix}_${index + 1}`,
+      parodyName: `Placeholder ${prefix} ${index + 1}`,
+      stats: Object.fromEntries(STAT_KEYS[sport].map((key) => [key, 50 + index])),
+      balance: 'BALANCE_PLACEHOLDER',
+      status: 'PROPOSED',
+    })),
+  };
+}
+
 /**
- * Contract input: simulate({ seed, home, away|field, tactics, tuning }).
+ * Input that matches both the contract and the landed sim readers.
+ * Ball sims read `players` plus per-side tactics. Race sims read `teamId` and two `entries`.
  * @param {'football'|'basket'|'car'|'moto'} sport
  * @param {number} seed
  */
 export function simInput(sport, seed) {
-  const home = {
-    id: `${sport}_home`,
-    formation: sport === 'football' ? '4-3-3' : null,
-    lineup: lineup(sport, 'H'),
-    coach: null,
-  };
-  const away = {
-    id: `${sport}_away`,
-    formation: home.formation,
-    lineup: lineup(sport, 'A'),
-    coach: null,
-  };
-  return {
-    seed,
-    home,
-    away,
-    field: [home, away],
-    tactics: {},
-    tuning: { balance: 'BALANCE_PLACEHOLDER', status: 'PROPOSED' },
-  };
+  const tuning = { balance: 'BALANCE_PLACEHOLDER', status: 'PROPOSED' };
+  if (sport === 'car' || sport === 'moto') {
+    return { seed, home: raceSide(sport, 'home'), tactics: {}, tuning };
+  }
+  const roles = sport === 'football' ? FOOTBALL_XI : BASKET_FIVE;
+  const home = ballSide(sport, 'H', roles);
+  const away = ballSide(sport, 'A', roles);
+  const tactics = sport === 'football'
+    ? {
+      home: { formation: '4-3-3', lineup: home.lineupIds },
+      away: { formation: '4-3-3', lineup: away.lineupIds },
+    }
+    : {
+      home: { scheme: 'man-to-man', pace: 'balanced', lineup: home.lineupIds },
+      away: { scheme: 'man-to-man', pace: 'balanced', lineup: away.lineupIds },
+    };
+  return { seed, home, away, tactics, tuning };
 }

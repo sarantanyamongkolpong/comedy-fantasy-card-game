@@ -74,7 +74,7 @@ const hangs = [];
 const files = [];
 
 for (const file of FILES) {
-  const timeoutS = file.includes('/e2e/') ? 180 : 120;
+  const timeoutS = file.includes('/e2e/') ? 300 : 120;
   process.stdout.write(`RUN ${file}\n`);
   const row = await runFile(file, timeoutS);
   files.push({

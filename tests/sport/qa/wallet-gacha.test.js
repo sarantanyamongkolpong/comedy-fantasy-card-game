@@ -117,20 +117,19 @@ test('one G wallet, four banners, and separate pity', {
     assert.deepEqual(pityOf(mixed, 'SPORT_FOOTBALL'), footballPity, 'basket pull changed football pity');
     assert.deepEqual(pityOf(mixed, 'SPORT_CAR'), pityOf(football, 'SPORT_CAR'));
     assert.deepEqual(pityOf(mixed, 'SPORT_MOTO'), pityOf(football, 'SPORT_MOTO'));
-    if (basketBefore && pityOf(mixed, 'SPORT_BASKET')) {
-      assert.notDeepEqual(
-        pityOf(mixed, 'SPORT_BASKET'),
-        pityOf(mixed, 'SPORT_FOOTBALL'),
-        'football and basket pity collapsed to the same counter',
-      );
+    const basketAfter = pityOf(mixed, 'SPORT_BASKET');
+    const pullsOf = (bag) => bag?.pulls ?? bag?.epicCounter ?? bag?.epic ?? null;
+    if (basketBefore && basketAfter && pullsOf(basketBefore) != null && pullsOf(basketAfter) != null) {
+      assert.ok(pullsOf(basketAfter) > pullsOf(basketBefore), 'basket pull did not advance the basket pity counter');
     }
   }
 
   if (wallet.mod) {
     const names = Object.keys(wallet.mod);
-    const grant = names.map((name) => [name, wallet.mod[name]]).find(([name, value]) => (
-      typeof value === 'function' && /grant|credit/i.test(name)
-    ));
+    const preferred = ['earn', 'grant', 'grantG', 'credit', 'addG', 'claimReward'];
+    const grantName = preferred.find((name) => typeof wallet.mod[name] === 'function')
+      ?? names.find((name) => typeof wallet.mod[name] === 'function' && /grant|credit|earn/i.test(name));
+    const grant = grantName ? [grantName, wallet.mod[grantName]] : null;
     assert.ok(grant, `${wallet.file} exports ${names.join(', ')}; no grant function`);
     const base = createProfile({ profileId: 'QA_SPORT_WALLET', currency: { G: 100 } });
     const request = { id: 'qa-grant-1', txnId: 'qa-grant-1', G: 15, amount: 15 };
