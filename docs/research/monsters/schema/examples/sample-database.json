@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "monster-research-1",
+  "contentTier": "research",
+  "records": [
+    {
+      "monsterId": "MON-NRM-0001",
+      "category": "Normal",
+      "status": "PROPOSED",
+      "ipRisk": "low",
+      "research": {
+        "inspirationId": "INS-04-001",
+        "originalInspiration": "Household mop",
+        "origin": "Structural fixture, not a field citation",
+        "kind": "folklore",
+        "facts": [
+          "FIXTURE FACT: a mop is a bundled cloth on a handle, used to wipe a floor. This sentence is a structural example, not a field citation."
+        ],
+        "sources": [
+          {
+            "url": "https://example.com/monster-research-fixture/mop",
+            "title": "Fixture source, not a fetched citation",
+            "accessed": "2026-11-20",
+            "supports": "FIXTURE FACT: a mop is a bundled cloth on a handle, used to wipe a floor. This s"
+          }
+        ],
+        "sourceUrl": "https://example.com/monster-research-fixture/mop",
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "low",
+        "archetypeTags": [
+          "fixture",
+          "object"
+        ]
+      },
+      "creative": {
+        "nameEn": "Mopwick the Bucket Imp",
+        "nameTh": "ม็อบวิค อิมพ์ถัง",
+        "creatureType": "imp living in a wash bucket",
+        "visualIdentity": "A knee-high imp whose hat is an upside-down mop head, dripping clean water rather than ooze.",
+        "personality": "Earnest and noisy. It salutes puddles and wants every stair to shine.",
+        "signatureTrait": "Leaves a sparkling trail that proud fighters refuse to step through.",
+        "comedyConcept": "A janitor imp who thinks a dungeon is a lobby that failed inspection.",
+        "humorType": "Absurd Comedy",
+        "element": "Tide",
+        "combatArchetype": "apologetic controller",
+        "signatureAbilityConcept": "Calls a rolling bucket that shoves one foe back to the square they were bragging about.",
+        "weaknessConcept": "Loses the plot when someone tracks mud on purpose and starts cleaning them instead.",
+        "loreSummary": "Mopwick roosts in a closet of the Mysterious Tower and salutes passing guardians.",
+        "factionAffiliation": null,
+        "suggestedRarity": "N",
+        "suggestedTowerEnvironment": "Mysterious Tower, ground-floor mop closet",
+        "artworkPromptConcept": "Original comedy-fantasy imp with a mop-hat and a wooden bucket shield, bright lobby light, no likeness of any existing character."
+      },
+      "boss": null,
+      "hooks": {
+        "cardId": null,
+        "enemyId": "ENM_NRM_0001",
+        "rarity": "N",
+        "role": "Support",
+        "factionId": null,
+        "gachaPool": null
+      }
+    },
+    {
+      "monsterId": "MON-ELT-0001",
+      "category": "Elite",
+      "status": "PROPOSED",
+      "ipRisk": "low",
+      "research": {
+        "originalInspiration": "Paper bookmark",
+        "origin": "Structural fixture, not a field citation",
+        "kind": "folklore",
+        "facts": [
+          "FIXTURE FACT: a bookmark is a slip of paper left in a book to mark a page. This sentence is a structural example, not a field citation."
+        ],
+        "sources": [
+          {
+            "url": "https://example.com/monster-research-fixture/bookmark",
+            "title": "Fixture source, not a fetched citation",
+            "accessed": "2026-11-20",
+            "supports": "FIXTURE FACT: a bookmark is a slip of paper left in a book to mark a page. This "
+          }
+        ],
+        "sourceUrl": "https://example.com/monster-research-fixture/bookmark",
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "low"
+      },
+      "creative": {
+        "nameEn": "Cinderpage Herald",
+        "nameTh": "ซินเดอร์เพจ เฮรัลด์",
+        "creatureType": "bookmark crane",
+        "visualIdentity": "A paper crane with singed margins and a ribbon tail, wings printed like index cards.",
+        "personality": "Hushes the whole hall, then apologises for the volume of the hush.",
+        "signatureTrait": "Every step it takes files itself under the wrong letter.",
+        "comedyConcept": "A reference librarian who treats a fight as a cataloguing error.",
+        "humorType": "Dark Fantasy Comedy",
+        "element": "Spark",
+        "combatArchetype": "skirmisher",
+        "signatureAbilityConcept": "Opens a pop-up index that hides one foe behind a wall of footnotes.",
+        "weaknessConcept": "A question asked in an ordinary speaking voice undoes the hush.",
+        "loreSummary": "Nests in the card catalog of the Mysterious Tower and reshelves echoes.",
+        "factionAffiliation": null,
+        "suggestedRarity": "R",
+        "suggestedTowerEnvironment": "Mysterious Tower, card catalog",
+        "artworkPromptConcept": "Original paper crane made of index cards with a ribbon tail, warm library lamps, no existing mascot."
+      },
+      "boss": null
+    },
+    {
+      "monsterId": "MON-MNB-0001",
+      "category": "Mini Boss",
+      "status": "PROPOSED",
+      "ipRisk": "medium",
+      "research": {
+        "originalInspiration": "Woven carpet",
+        "origin": "Structural fixture, not a field citation",
+        "kind": "folklore",
+        "facts": [
+          "FIXTURE FACT: a carpet is a woven floor covering. This sentence is a structural example, not a field citation."
+        ],
+        "sources": [
+          {
+            "url": "https://example.com/monster-research-fixture/carpet",
+            "title": "Fixture source, not a fetched citation",
+            "accessed": "2026-11-20",
+            "supports": "FIXTURE FACT: a carpet is a woven floor covering. This sentence is a structural "
+          }
+        ],
+        "sourceUrl": "https://example.com/monster-research-fixture/carpet",
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "medium"
+      },
+      "creative": {
+        "nameEn": "Baron Puddlehorn",
+        "nameTh": "บารอนพุดเดิลฮอร์น",
+        "creatureType": "antlered usher",
+        "visualIdentity": "A tall antlered usher in a soaked velvet coat, teapot pauldrons, and a rolled-rug spear.",
+        "personality": "Polite, and predatory about cleanliness fees.",
+        "signatureTrait": "Charges rent on footprints.",
+        "comedyConcept": "A hallway noble who taxes every echo for dripping on the rug.",
+        "humorType": "Satirical Fantasy",
+        "element": "Stone",
+        "combatArchetype": "tax bruiser",
+        "signatureAbilityConcept": "Locks the landing door until the party wipes their boots on a giant ledger.",
+        "weaknessConcept": "A guest who arrived already barefoot owes nothing and walks through.",
+        "loreSummary": "Collects rug tolls on a landing of the Mysterious Tower.",
+        "factionAffiliation": "Tower Guardian",
+        "suggestedRarity": "Epic",
+        "suggestedTowerEnvironment": "Mysterious Tower, third-landing rug",
+        "artworkPromptConcept": "Original antlered usher in wet velvet with teapot shoulder plates and a rolled rug spear, no copied costume."
+      },
+      "boss": {
+        "bossTitle": "Warden of the Leaky Landing",
+        "entranceConcept": "A velvet rope unhooks itself and the rug rises to bow.",
+        "signatureSilhouette": "Antlers over a long wet coat, a teapot on each shoulder, a rug rolled like a spear.",
+        "personalityMotivation": "He wants every visitor to pay for the privilege of being damp.",
+        "signatureMechanic": "The landing stays shut until someone admits their boots are dirty.",
+        "phaseTransformationConcept": "The coat wrings itself out and the landing becomes a shallow tea-colored pool he tries to invoice.",
+        "defeatAnimationConcept": "He stamps a voided receipt, the rug lies flat, and the rope clips itself.",
+        "uniqueLootTheme": "Tear-stained rug swatches and a receipt for boot mud."
+      }
+    },
+    {
+      "monsterId": "MON-MJB-0001",
+      "category": "Main Boss",
+      "status": "PROPOSED",
+      "ipRisk": "medium",
+      "research": {
+        "originalInspiration": "Theatre marquee",
+        "origin": "Structural fixture, not a field citation",
+        "kind": "folklore",
+        "facts": [
+          "FIXTURE FACT: a marquee is a lit sign over a theatre door. This sentence is a structural example, not a field citation."
+        ],
+        "sources": [
+          {
+            "url": "https://example.com/monster-research-fixture/marquee",
+            "title": "Fixture source, not a fetched citation",
+            "accessed": "2026-11-20",
+            "supports": "FIXTURE FACT: a marquee is a lit sign over a theatre door. This sentence is a st"
+          }
+        ],
+        "sourceUrl": "https://example.com/monster-research-fixture/marquee",
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "medium"
+      },
+      "creative": {
+        "nameEn": "The Marquee of Unfinished Stairs",
+        "nameTh": "มาร์คีแห่งบันไดค้าง",
+        "creatureType": "walking theatre door",
+        "visualIdentity": "A doorway on legs under a crooked sign of dark bulbs that never spell a real word.",
+        "personality": "Grand, needy, and furious if anyone leaves at the interval.",
+        "signatureTrait": "Applauds itself before anyone else can.",
+        "comedyConcept": "A theatre door that refuses to let the show end.",
+        "humorType": "Epic but Ridiculous",
+        "element": "Spark",
+        "combatArchetype": "controller",
+        "signatureAbilityConcept": "Holds the party in the aisle until someone admits they do not know the next line.",
+        "weaknessConcept": "An audience that stays silent on purpose starves the sign of attention.",
+        "loreSummary": "Blocks a stair of the Mysterious Tower and sells tickets to echoes.",
+        "factionAffiliation": "Tower Anomaly",
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "Mysterious Tower, unfinished stair landing",
+        "artworkPromptConcept": "Original walking doorway with a crooked bulb sign, velvet rope, no real theatre logo and no actor likeness."
+      },
+      "boss": {
+        "bossTitle": "Keeper of the Missing Step",
+        "entranceConcept": "The stairwell applauds and a velvet rope unclips in the dark.",
+        "signatureSilhouette": "A tall door with legs and a bent canopy of unlit bulbs.",
+        "personalityMotivation": "It wants the audience to stay for an intermission that never ends.",
+        "signatureMechanic": "Nobody passes until one hero speaks a line they actually mean.",
+        "phaseTransformationConcept": "The canopy drops and the door becomes a heap of tickets that usher themselves into a taller frame.",
+        "defeatAnimationConcept": "The bulbs bow one by one and the rope clips itself shut.",
+        "uniqueLootTheme": "Torn ticket stubs and a bow that still expects applause."
+      }
+    },
+    {
+      "monsterId": "MON-WLB-0001",
+      "category": "World Boss",
+      "status": "PROPOSED",
+      "ipRisk": "low",
+      "research": {
+        "originalInspiration": "Whale and clock, as separate everyday motifs",
+        "origin": "Structural fixture, not a field citation",
+        "kind": "folklore",
+        "facts": [
+          "FIXTURE FACT: a whale is a large marine mammal and a clock measures hours. This sentence is a structural example, not a field citation."
+        ],
+        "sources": [
+          {
+            "url": "https://example.com/monster-research-fixture/whale",
+            "title": "Fixture source, not a fetched citation",
+            "accessed": "2026-11-20",
+            "supports": "FIXTURE FACT: a whale is a large marine mammal and a clock measures hours. This "
+          }
+        ],
+        "sourceUrl": "https://example.com/monster-research-fixture/whale",
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "low"
+      },
+      "creative": {
+        "nameEn": "Clockwhale Orm",
+        "nameTh": "ออร์มวาฬนาฬิกา",
+        "creatureType": "clock-barnacle whale",
+        "visualIdentity": "A long whale back studded with dim clock faces, circling the tower in upward rain.",
+        "personality": "Late for a tide that already happened, and stormy about it.",
+        "signatureTrait": "Bells toll underwater whenever it disagrees with the hour.",
+        "comedyConcept": "A sea giant that orbits the tower because it missed its own high tide.",
+        "humorType": "Epic but Ridiculous",
+        "element": "Tide",
+        "combatArchetype": "juggernaut",
+        "signatureAbilityConcept": "The arena current pushes everyone toward the side they were avoiding.",
+        "weaknessConcept": "If every clock on its back shows a different hour, it stops to argue with itself.",
+        "loreSummary": "Swims the rain around the outside of the Mysterious Tower and is late to everything.",
+        "factionAffiliation": null,
+        "suggestedRarity": "EX",
+        "suggestedTowerEnvironment": "Mysterious Tower, outer rain ring",
+        "artworkPromptConcept": "Original whale seen through tower rain, barnacles drawn as plain clock faces, no ship mascot and no film creature."
+      },
+      "boss": {
+        "bossTitle": "The Hour That Swam Back",
+        "entranceConcept": "Rain runs upward and a bell tolls from inside the storm.",
+        "signatureSilhouette": "A whale spine against the clouds, round clock-barnacles along the back.",
+        "personalityMotivation": "It is furious that the tide left without it.",
+        "signatureMechanic": "The current drags fighters toward the edge they keep retreating from.",
+        "phaseTransformationConcept": "It beaches into a chapel aisle, clocks chiming out of order, then dives through the floor.",
+        "defeatAnimationConcept": "The clocks agree on one quiet tick and the rain falls the ordinary way.",
+        "uniqueLootTheme": "Warm barnacle-clocks that show a different hour on every wrist."
+      }
+    },
+    {
+      "monsterId": "MON-SCB-0001",
+      "category": "Secret Boss",
+      "status": "PROPOSED",
+      "ipRisk": "low",
+      "research": {
+        "originalInspiration": "Counting abacus",
+        "origin": "Structural fixture, not a field citation",
+        "kind": "folklore",
+        "facts": [
+          "FIXTURE FACT: an abacus is a frame of beads used for counting. This sentence is a structural example, not a field citation."
+        ],
+        "sources": [
+          {
+            "url": "https://example.com/monster-research-fixture/abacus",
+            "title": "Fixture source, not a fetched citation",
+            "accessed": "2026-11-20",
+            "supports": "FIXTURE FACT: an abacus is a frame of beads used for counting. This sentence is "
+          }
+        ],
+        "sourceUrl": "https://example.com/monster-research-fixture/abacus",
+        "protectedName": false,
+        "publicDomain": true,
+        "confidence": "low"
+      },
+      "creative": {
+        "nameEn": "Accountant of the Last Turn",
+        "nameTh": "นักบัญชีเทิร์นสุดท้าย",
+        "creatureType": "abacus beetle",
+        "visualIdentity": "A round beetle under a green desk lamp, antennae strung with counting beads.",
+        "personality": "Small, polite, and unable to enjoy a celebration that was not in the plan.",
+        "signatureTrait": "Appears in the loot pile and asks who approved the cheering.",
+        "comedyConcept": "A clerk beetle who audits the victory before anyone may leave.",
+        "humorType": "Absurd Comedy",
+        "element": "None",
+        "combatArchetype": "trick clerk",
+        "signatureAbilityConcept": "The winning side must speak one true sentence before the exit opens.",
+        "weaknessConcept": "A perfectly honest and very boring sentence satisfies it at once.",
+        "loreSummary": "Keeps the books for a quiet corner of the Sanctuary Order inside the Mysterious Tower.",
+        "factionAffiliation": "Sanctuary Order",
+        "suggestedRarity": "R",
+        "suggestedTowerEnvironment": "Mysterious Tower, lamp-lit record niche",
+        "artworkPromptConcept": "Original round beetle with bead antennae and a green desk lamp, paper clips on the floor, no brand and no known mascot."
+      },
+      "boss": {
+        "bossTitle": "Auditor of the Final Action",
+        "entranceConcept": "A desk lamp clicks on inside the loot pile.",
+        "signatureSilhouette": "A round beetle crouched under a green lampshade.",
+        "personalityMotivation": "The battle was never in the budget, and someone must explain the noise.",
+        "signatureMechanic": "The victors file one truthful sentence or the door stays a desk.",
+        "phaseTransformationConcept": "The lamp grows a second beetle made of receipts, and the pair audit each other.",
+        "defeatAnimationConcept": "Both beetles stamp a smiley onto the air and vanish in a puff of paper clips.",
+        "uniqueLootTheme": "Paper clips and a stamp that only prints question marks."
+      }
+    }
+  ]
+}
