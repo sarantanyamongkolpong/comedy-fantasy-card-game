@@ -274,6 +274,7 @@ function handRow(ctx) {
     });
     face.classList.add('hand-card');
     if (ctx.match.phase === 'playerTurn' && !reason) face.classList.add('is-playable');
+    enableCardThrow(ctx, face, card, reason);
     face.style.zIndex = String(index + 1);
     wrap.append(face);
   });
@@ -518,4 +519,166 @@ function settle(ctx) {
     return;
   }
   ctx.redraw();
+}
+
+
+// ---- Card throw (Owner 2026-11-21): drag a card onto a character, with a curved light line. ----
+
+const SNAP_RADIUS = 230; // stage px: generous so a throw never misses its character
+
+function stageScale() {
+  const stage = document.getElementById('stage');
+  if (!stage) return { rect: { left: 0, top: 0 }, k: 1 };
+  const rect = stage.getBoundingClientRect();
+  return { rect, k: rect.width / 1672 || 1 };
+}
+
+function toStage(clientX, clientY) {
+  const { rect, k } = stageScale();
+  return { x: (clientX - rect.left) / k, y: (clientY - rect.top) / k };
+}
+
+function unitCentre(node) {
+  const r = node.getBoundingClientRect();
+  const sprite = node.querySelector('.sprite')?.getBoundingClientRect();
+  const box = sprite && sprite.height > 0 ? sprite : r;
+  return toStage(box.left + box.width / 2, box.top + box.height * 0.45);
+}
+
+function engineAtk(ctx, unit) {
+  const row = ctx.match.engine?.sides?.[unit.sideId]?.avatars?.find((a) => a.avatarId === unit.avatarId);
+  return row?.stats?.atk ?? 0;
+}
+
+function eligibleAllies(ctx, card) {
+  return ctx.match.units.filter((u) => u.sideId === 'player' && !u.ko
+    && (!card.factionRequirement || u.factionId === card.factionRequirement));
+}
+
+function dropTargets(ctx, card) {
+  if (card.targetRule === 'Enemy') {
+    if (eligibleAllies(ctx, card).length === 0) return [];
+    return ctx.match.units.filter((u) => u.sideId === 'enemy' && !u.ko);
+  }
+  return eligibleAllies(ctx, card);
+}
+
+function throwCard(ctx, card, unit) {
+  let actor = unit;
+  let targets = [];
+  if (card.targetRule === 'Enemy') {
+    actor = eligibleAllies(ctx, card).sort((a, b) => engineAtk(ctx, b) - engineAtk(ctx, a))[0];
+    targets = [unit.instanceId];
+  }
+  if (!actor) return;
+  ctx.api.playAction(ctx.match, { cardInstanceId: card.instanceId, actorAvatarId: actor.instanceId, targets });
+  ctx.setNotice(ctx.match.lastError || `${card.name.replace(/^Placeholder\s+/, '')} → ${unit.name}`);
+  ctx.patchBattle({ confirm: null, selection: cancelPlay(ctx.match).selection, voluntary: false });
+  settle(ctx);
+}
+
+function enableCardThrow(ctx, face, card, reason) {
+  face.style.touchAction = 'none';
+  face.addEventListener('pointerdown', (down) => {
+    if (ctx.autoRunning || ctx.match.phase !== 'playerTurn' || ctx.battleUi.voluntary || reason) return;
+    const start = { x: down.clientX, y: down.clientY };
+    let drag = null;
+    const stage = document.getElementById('stage');
+    const field = stage?.querySelector('[data-screen="battle"]');
+    const move = (ev) => {
+      if (!drag) {
+        if (Math.hypot(ev.clientX - start.x, ev.clientY - start.y) < 10) return;
+        drag = beginDrag(ctx, face, card, field);
+      }
+      updateDrag(drag, ev);
+    };
+    const up = (ev) => {
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+      window.removeEventListener('pointercancel', up);
+      if (!drag) return;
+      const hit = drag.current;
+      endDrag(drag);
+      face.dataset.dragged = '1';
+      setTimeout(() => { delete face.dataset.dragged; }, 50);
+      if (hit) throwCard(ctx, card, hit.unit);
+      else {
+        ctx.setNotice(drag.targets.length ? 'Drop the card on a glowing character.' : 'No character can use that card.');
+        ctx.redraw();
+      }
+      ev.preventDefault();
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+    window.addEventListener('pointercancel', up);
+  });
+  face.addEventListener('click', (ev) => {
+    if (face.dataset.dragged) { ev.stopImmediatePropagation(); ev.preventDefault(); }
+  }, true);
+}
+
+function beginDrag(ctx, face, card, field) {
+  const units = dropTargets(ctx, card);
+  const nodes = units.map((unit) => {
+    const node = field?.querySelector(`.unit[data-side-id="${unit.sideId}"][data-avatar-id="${unit.avatarId}"]`);
+    node?.classList.add('throw-candidate');
+    return node ? { unit, node, c: unitCentre(node) } : null;
+  }).filter(Boolean);
+  const r = face.getBoundingClientRect();
+  const origin = toStage(r.left + r.width / 2, r.top + r.height * 0.3);
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('class', 'throw-arc');
+  svg.setAttribute('viewBox', '0 0 1672 941');
+  const glow = document.createElementNS(ns, 'path');
+  glow.setAttribute('class', 'throw-arc-glow');
+  const line = document.createElementNS(ns, 'path');
+  line.setAttribute('class', 'throw-arc-line');
+  const tip = document.createElementNS(ns, 'circle');
+  tip.setAttribute('class', 'throw-arc-tip');
+  tip.setAttribute('r', '16');
+  svg.append(glow, line, tip);
+  const ghost = face.cloneNode(true);
+  ghost.classList.add('throw-ghost');
+  ghost.removeAttribute('style');
+  const { k } = stageScale();
+  ghost.style.width = `${r.width / k}px`;
+  ghost.style.height = `${r.height / k}px`;
+  const stage = document.getElementById('stage');
+  stage.append(svg, ghost);
+  face.classList.add('is-throwing');
+  return { svg, glow, line, tip, ghost, face, origin, targets: nodes, current: null };
+}
+
+function updateDrag(drag, ev) {
+  const p = toStage(ev.clientX, ev.clientY);
+  let best = null;
+  for (const t of drag.targets) {
+    const d = Math.hypot(t.c.x - p.x, t.c.y - p.y);
+    if (d < SNAP_RADIUS && (!best || d < best.d)) best = { ...t, d };
+  }
+  if (drag.current && drag.current.node !== best?.node) drag.current.node.classList.remove('throw-target');
+  drag.current = best;
+  const end = best ? best.c : p;
+  if (best) best.node.classList.add('throw-target');
+  const o = drag.origin;
+  const cx = (o.x + end.x) / 2;
+  const cy = Math.min(o.y, end.y) - 220 - Math.abs(end.x - o.x) * 0.15;
+  const d = `M ${o.x} ${o.y} Q ${cx} ${cy} ${end.x} ${end.y}`;
+  drag.glow.setAttribute('d', d);
+  drag.line.setAttribute('d', d);
+  drag.tip.setAttribute('cx', String(end.x));
+  drag.tip.setAttribute('cy', String(end.y));
+  drag.svg.classList.toggle('is-locked', Boolean(best));
+  const gw = parseFloat(drag.ghost.style.width) || 140;
+  const gh = parseFloat(drag.ghost.style.height) || 200;
+  drag.ghost.style.left = `${p.x - gw / 2}px`;
+  drag.ghost.style.top = `${p.y - gh * 0.6}px`;
+}
+
+function endDrag(drag) {
+  drag.svg.remove();
+  drag.ghost.remove();
+  drag.face.classList.remove('is-throwing');
+  for (const t of drag.targets) t.node.classList.remove('throw-candidate', 'throw-target');
 }

@@ -8,18 +8,20 @@
 const IMAGE = { width: 1280, height: 720 };
 const STAGE = { width: 1672, height: 941 };
 
+// Owner 2026-11-21: staggered line-up so every avatar has its own clear column (no overlap),
+// alternating front/back rows, Tank nearest the centre. Easy, unambiguous card-throw targets.
 const PLAYER_FEET = [
-  { id: 'p0', row: 'back', column: 0, imageX: 172, imageY: 336 },
-  { id: 'p1', row: 'back', column: 4, imageX: 550, imageY: 336 },
-  { id: 'p2', row: 'front', column: 2, imageX: 312, imageY: 456 },
-  { id: 'p3', row: 'front', column: 3, imageX: 425, imageY: 456 },
+  { id: 'p0', row: 'front', column: 3, imageX: 505, imageY: 470 },
+  { id: 'p1', row: 'back', column: 2, imageX: 390, imageY: 330 },
+  { id: 'p2', row: 'front', column: 1, imageX: 275, imageY: 470 },
+  { id: 'p3', row: 'back', column: 0, imageX: 160, imageY: 330 },
 ];
 
 const ENEMY_FEET = [
-  { id: 'e0', row: 'back', column: 4, imageX: 1108, imageY: 336 },
-  { id: 'e1', row: 'back', column: 0, imageX: 730, imageY: 336 },
-  { id: 'e2', row: 'front', column: 2, imageX: 968, imageY: 456 },
-  { id: 'e3', row: 'front', column: 1, imageX: 855, imageY: 456 },
+  { id: 'e0', row: 'front', column: 1, imageX: 775, imageY: 470 },
+  { id: 'e1', row: 'back', column: 2, imageX: 890, imageY: 330 },
+  { id: 'e2', row: 'front', column: 3, imageX: 1005, imageY: 470 },
+  { id: 'e3', row: 'back', column: 4, imageX: 1120, imageY: 330 },
 ];
 
 function stagePoint(imageX, imageY) {
