@@ -137,6 +137,12 @@ Content JSON had no stat-key, rarity, untagged-number, or forbidden-token findin
 
 Fetched each stream again. Tips are the same four commits as probe 2. None match feature-complete. Throwaway merge onto `sport/v06-base` was clean again and was not pushed. Harness on Node v22.23.4 reproduced the same totals: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. The five failures are still the 248 real-name hits in `web/sport/fixtures/catalog.js` and the four hideout viewports. No new P0, P1, or P2. Counts: `tools/sport-qa/baselines/harness-20261120T133318Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T133318Z/`.
 
+Quality gates on `4f9e934` (run 44745398763) finished after that push. Data validation, repository structure, and the asset manifest passed. `SYSTEMS_TEST` is red. Node 20 and Node 22 both report 406 pass, 1 fail, 4 todo, 13 skip, 424 tests. The only failing name is still `QA-10 real-engine Deck Battle Rewards win and lose`. The sport harness cases on this branch skipped, because the sport modules are not in the QA checkout.
+
+### Probe 4 — 2026-11-20T14:00:35Z
+
+Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T140035Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T140035Z/`.
+
 ## Findings
 
 ### P0
