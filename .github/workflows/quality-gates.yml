@@ -1,0 +1,146 @@
+# Quality gates. Job names are the check names: SYSTEMS_TEST, DATA_VALIDATION,
+# ASSET_MANIFEST_VALIDATION, REPOSITORY_STRUCTURE. Each check prints PASS or FAIL.
+# pull_request runs for every base branch. push runs for every branch except main.
+
+name: Quality gates
+
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-gates-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  SYSTEMS_TEST:
+    name: SYSTEMS_TEST
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run node --test (Node.js 20)
+        id: node20
+        continue-on-error: true
+        env:
+          CI_CHECK_NAME: SYSTEMS_TEST
+          CI_NODE_LABEL: '20'
+          CI_WRITE_SUMMARY: '1'
+        run: node --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=./tools/ci/github-summary-reporter.mjs --test-reporter-destination=stderr
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run node --test (Node.js 22)
+        id: node22
+        continue-on-error: true
+        env:
+          CI_CHECK_NAME: SYSTEMS_TEST
+          CI_NODE_LABEL: '22'
+          CI_WRITE_SUMMARY: '1'
+        run: node --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=./tools/ci/github-summary-reporter.mjs --test-reporter-destination=stderr
+
+      - name: SYSTEMS_TEST result
+        if: always()
+        env:
+          CI_WRITE_SUMMARY: '1'
+        run: |
+          set -eu
+          node20="${{ steps.node20.outcome }}"
+          node22="${{ steps.node22.outcome }}"
+          if [ "$node20" = "success" ] && [ "$node22" = "success" ]; then
+            result="PASS"
+          else
+            result="FAIL"
+          fi
+          details=""
+          if [ -n "${GITHUB_STEP_SUMMARY}" ] && [ -f "$GITHUB_STEP_SUMMARY" ]; then
+            details="$(cat "$GITHUB_STEP_SUMMARY")"
+          fi
+          {
+            echo "## SYSTEMS_TEST"
+            echo ""
+            echo "**Result: ${result}**"
+            echo ""
+            echo "| Node.js | Step result |"
+            echo "| --- | --- |"
+            echo "| 20 | ${node20} |"
+            echo "| 22 | ${node22} |"
+            echo ""
+            echo "Discovery command: \`node --test\` with no file list, so new test folders are included without editing this workflow."
+            echo ""
+            printf '%s\n' "$details"
+          } > "$GITHUB_STEP_SUMMARY"
+          echo "SYSTEMS_TEST: ${result}"
+          test "$result" = "PASS"
+
+  DATA_VALIDATION:
+    name: DATA_VALIDATION
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate JSON, character IDs, and schema
+        env:
+          CI_CHECK_NAME: DATA_VALIDATION
+          CI_WRITE_SUMMARY: '1'
+        run: node tools/ci/validate-data.mjs
+
+  ASSET_MANIFEST_VALIDATION:
+    name: ASSET_MANIFEST_VALIDATION
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate asset IDs and manifest paths
+        env:
+          CI_CHECK_NAME: ASSET_MANIFEST_VALIDATION
+          CI_WRITE_SUMMARY: '1'
+        run: node tools/ci/validate-assets.mjs
+
+  REPOSITORY_STRUCTURE:
+    name: REPOSITORY_STRUCTURE
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check docs and protected constants
+        env:
+          CI_CHECK_NAME: REPOSITORY_STRUCTURE
+          CI_WRITE_SUMMARY: '1'
+        run: node tools/ci/validate-repository.mjs

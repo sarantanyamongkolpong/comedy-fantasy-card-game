@@ -1,0 +1,15 @@
+{
+  "source": "Approved gameplay constants snapshotted from src/schema/constants.js. sha256 is the SHA-256 of the canonical JSON object containing only partySize, handSize, baseAp, factions, cardActionTypes, and statuses, in that key order. Deck size, damage, HP, gacha rates, and upgrade formulas are intentionally absent: those rules are still BLOCKED_BY_DESIGN.",
+  "partySize": 4,
+  "handSize": 5,
+  "baseAp": 5,
+  "factions": [
+    { "factionId": "FAC_AEG", "name": "Aegis Dominion", "role": "Tank" },
+    { "factionId": "FAC_PHA", "name": "Phantom Blades", "role": "DPS" },
+    { "factionId": "FAC_CEL", "name": "Celestial Nexus", "role": "Magic" },
+    { "factionId": "FAC_SAN", "name": "Sanctuary Order", "role": "Support" }
+  ],
+  "cardActionTypes": ["ATK", "DEF", "Skill"],
+  "statuses": ["CONCEPT", "PROTOTYPE", "QA_PASSED", "PRODUCTION_READY", "INTEGRATED"],
+  "sha256": "5362368800d814d9a319f35ea020d165d92279c1451dc534d940bbbe384e48f9"
+}
