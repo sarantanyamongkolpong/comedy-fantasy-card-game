@@ -2,7 +2,7 @@
 
 Agent H. Base `prod/wave-base` @ `7cbf071a15d2da747ba5f9c100696a805860271e`. Damage preset under test: `flat_atk` (Owner choice, MVP_PROVISIONAL). This file is the QA record. It does not mark the game PRODUCTION_READY, LOCKED, or OWNER_APPROVED.
 
-Updated 2026-11-20T13:31:34.560Z.
+Updated 2026-11-20T13:37:32.525Z.
 
 ## Baseline
 
@@ -705,13 +705,39 @@ Phase 1 ran on `prod/wave-base` only. Stream branches are merged only inside a l
 
 | Stream | Branch | State on this pass | SHA | Commits ahead of wave-base | Merged locally | Conflicts | Notes |
 |---|---|---|---|---:|---|---:|---|
-| A | `prod/a-card-art` | not fetched this pass | — | — | — | — | waiting for the next poll |
-| B | `prod/b-hideout` | not fetched this pass | — | — | — | — | waiting for the next poll |
-| C | `prod/c-inventory` | not fetched this pass | — | — | — | — | waiting for the next poll |
-| D | `prod/d-gacha` | not fetched this pass | — | — | — | — | waiting for the next poll |
-| E | `prod/e-battle-polish` | not fetched this pass | — | — | — | — | waiting for the next poll |
-| F | `prod/f-sport-art` | not fetched this pass | — | — | — | — | waiting for the next poll |
-| G | `prod/g-world-content` | not fetched this pass | — | — | — | — | waiting for the next poll |
+| A | `prod/a-card-art` | branch missing on origin | `—` | 0 | no | 0 | not on origin this poll |
+| B | `prod/b-hideout` | merged in throwaway | `70e64971174b` | 1 | yes | 0 | included in the throwaway harness |
+| C | `prod/c-inventory` | merged in throwaway | `85ccc41b4b9a` | 1 | yes | 0 | included in the throwaway harness |
+| D | `prod/d-gacha` | branch missing on origin | `—` | 0 | no | 0 | not on origin this poll |
+| E | `prod/e-battle-polish` | merge conflict | `7b2c3c7b8075` | 2 | no | 1 | conflict in web/index.html |
+| F | `prod/f-sport-art` | merged in throwaway | `41fe22e54756` | 1 | yes | 0 | included in the throwaway harness |
+| G | `prod/g-world-content` | merged in throwaway | `0da3a45452d7` | 1 | yes | 0 | included in the throwaway harness |
+
+## Phase 2 pass
+
+Pass 1 at 2026-11-20T13:37:40.000Z. Throwaway worktree only. Not pushed. Included streams: B, C, F, G.
+`npm test` on the merged tree, Node v22.23.4: tests 457, pass 448, fail 0, skip 4, todo 5, exit 0, 144.8s.
+Asset audit on the merged tree: missing 0, oversize 1, shipped 12.42 MB, referenced 9.47 MB, static catalog 9.82 MB.
+
+| Stream | Sev | Finding |
+|---|---|---|
+| A | info | prod/a-card-art is not on origin. |
+| B | info | Hideout art is a GENERATED_REVIEW fragment (web/manifests/hideout.json uses entries, not assets). Files are present, none are missing, and none exceed 400 KB. Ids such as HOU_TIER_CABIN already exist in web/assets-manifest.json, which matches the stream note that this fragment must not be copied into the live catalog yet. The running hideout still uses the existing house art. |
+| C | P2 | The Stash, Inventory, Collection, and Deck screens render. At 667×375, 844×390, 932×430, and 1280×720 every measured control is at least 44 CSS px, 22 cards are visible, and there were no page errors. The section sets data-collection-route and does not set data-screen=stash, so a waiter on [data-screen=stash] does not resolve. Back returns to the hideout. Map, prep, battle, rewards, and gacha still open. npm test on the merged tree is 457/448/0 with one extra todo: collection screens at landscape viewports, because Playwright is not installed in the repo. |
+| D | info | prod/d-gacha is not on origin. |
+| E | P0 | prod/e-battle-polish conflicts with prod/c-inventory in web/index.html. Both insert a stylesheet link on the line after css/app.css (collection.css and battle-polish.css). web/js/app.js auto-merges. E merges cleanly onto prod/wave-base by itself. This pass left E out of the throwaway tree, so battle-polish.css was not on the screens that were played. |
+| F | info | Sport art landed as a review manifest (productionReady false). No missing files and no raster at or above 400 KB from this stream. The live Sports Complex pin is still locked. |
+| G | info | World content tests pass. The proposed copy is in content/prod/world. The live map still shows the wave-base pin labels, including the overlapping Sports Complex / Coming soon pair. |
+
+Merged-tree screenshots:
+
+- `tools/qa/artifacts/screenshots/phase2-pass1/1280-home.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass1/1280-stash.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass1/1280-map.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass1/1280-prep.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass1/1280-battle.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass1/1280-rewards.jpg`
+- `tools/qa/artifacts/screenshots/phase2-pass1/1280-gacha.jpg`
 
 
 ## Severity on the wave-base client

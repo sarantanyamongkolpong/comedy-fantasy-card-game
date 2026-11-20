@@ -98,11 +98,21 @@ function mergeOne(dir, branch) {
   };
 }
 
+function fetchRef(branch) {
+  const fetched = git(['fetch', 'origin', branch]);
+  return {
+    branch,
+    ok: fetched.status === 0,
+    error: fetched.status === 0 ? '' : `${fetched.stderr}${fetched.stdout}`.trim(),
+  };
+}
+
 export function throwawayMerge(dir = '/tmp/qa-merge') {
-  const fetched = git(['fetch', 'origin', 'prod/wave-base', ...STREAMS.map((row) => row[1])]);
-  if (fetched.status !== 0) {
-    throw new Error(`git fetch failed\n${fetched.stderr}`);
+  const waveFetch = fetchRef('prod/wave-base');
+  if (!waveFetch.ok) {
+    throw new Error(`git fetch prod/wave-base failed\n${waveFetch.error}`);
   }
+  const fetchedStreams = STREAMS.map((row) => fetchRef(row[1]));
   ensureWorktree(dir);
   const wave = git(['rev-parse', 'origin/prod/wave-base']);
   const head = git(['rev-parse', 'HEAD'], dir);
@@ -117,7 +127,8 @@ export function throwawayMerge(dir = '/tmp/qa-merge') {
     worktree: dir,
     head: head.stdout.trim(),
     originWaveBase: wave.stdout.trim(),
-    fetchStatus: fetched.status,
+    fetchStatus: waveFetch.ok ? 0 : 1,
+    fetches: fetchedStreams,
     streams,
     dirtySummary: status.stdout.trim().split('\n').filter(Boolean).length,
     pushed: false,

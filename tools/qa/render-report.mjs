@@ -198,9 +198,45 @@ function streamSection(phase2) {
       continue;
     }
     const ahead = stream.commitsBeyondWaveBase?.length ?? stream.commits?.length ?? 0;
-    const state = !stream.present ? 'branch missing' : ahead === 0 ? 'no commits beyond wave-base' : stream.merged ? 'merged in throwaway' : 'merge conflict';
-    const note = stream.error ? String(stream.error).split('\n')[0].slice(0, 180) : (stream.merged ? 'harness re-run recorded below when present' : '');
+    const state = !stream.present ? 'branch missing on origin' : ahead === 0 ? 'no commits beyond wave-base' : stream.merged ? 'merged in throwaway' : 'merge conflict';
+    const conflictFiles = (stream.conflicts ?? []).join(', ');
+    const note = !stream.present
+      ? 'not on origin this poll'
+      : conflictFiles
+        ? `conflict in ${conflictFiles}`
+        : stream.merged
+          ? 'included in the throwaway harness'
+          : '';
     lines.push(`| ${id} | \`${branch}\` | ${state} | \`${stream.sha ? stream.sha.slice(0, 12) : '—'}\` | ${ahead} | ${stream.merged ? 'yes' : 'no'} | ${stream.conflicts?.length ?? 0} | ${note.replaceAll('|', '/')} |`);
+  }
+  return `${lines.join('\n')}\n`;
+}
+
+function phase2PassSection(pass) {
+  if (!pass) return '';
+  const lines = [];
+  lines.push('## Phase 2 pass');
+  lines.push('');
+  lines.push(`Pass ${pass.pass} at ${pass.generatedAt}. Throwaway worktree only. Not pushed. Included streams: ${(pass.included ?? []).join(', ') || 'none'}.`);
+  if (pass.npmTest) {
+    const row = pass.npmTest;
+    lines.push(`\`npm test\` on the merged tree, Node ${row.node}: tests ${row.tests}, pass ${row.pass}, fail ${row.fail}, skip ${row.skipped}, todo ${row.todo}, exit ${row.exit}, ${row.duration}.`);
+  }
+  if (pass.assets) {
+    const asset = pass.assets;
+    lines.push(`Asset audit on the merged tree: missing ${asset.missing}, oversize ${asset.oversize}, shipped ${asset.shipped}, referenced ${asset.referenced}, static catalog ${asset.staticCatalog}.`);
+  }
+  lines.push('');
+  lines.push('| Stream | Sev | Finding |');
+  lines.push('|---|---|---|');
+  for (const item of pass.findings ?? []) {
+    lines.push(`| ${item.stream} | ${item.severity} | ${String(item.message).replaceAll('|', '/')} |`);
+  }
+  if (pass.screenshots?.length) {
+    lines.push('');
+    lines.push('Merged-tree screenshots:');
+    lines.push('');
+    for (const file of pass.screenshots) lines.push(`- \`${file}\``);
   }
   return `${lines.join('\n')}\n`;
 }
@@ -211,6 +247,7 @@ export function renderReport() {
   const ui = readJson('ui-coverage.json');
   const asset = readJson('asset-audit.json');
   const phase2 = readJson('phase2-merge.json');
+  const phase2Pass = readJson('phase2-pass.json');
   const build = readJson('playable-build.json');
   const msPerFrame = ui?.playbackMsPerFrame ?? null;
   const head = baseline?.head ?? '7cbf071a15d2da747ba5f9c100696a805860271e';
@@ -273,6 +310,7 @@ ${assetSection(asset, build)}
 ## Per-stream findings
 
 ${streamSection(phase2)}
+${phase2PassSection(phase2Pass)}
 
 ## Severity on the wave-base client
 

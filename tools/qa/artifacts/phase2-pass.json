@@ -1,0 +1,86 @@
+{
+  "pass": 1,
+  "generatedAt": "2026-11-20T13:37:40.000Z",
+  "originWaveBase": "7cbf071a15d2da747ba5f9c100696a805860271e",
+  "qaHead": "b3948e8b7bfbfdcc169ad05eb491f536afacb613",
+  "included": ["B", "C", "F", "G"],
+  "excluded": {
+    "A": "branch not on origin",
+    "D": "branch not on origin",
+    "E": "conflict with C in web/index.html; E alone merges onto wave-base"
+  },
+  "tips": {
+    "A": null,
+    "B": "70e64971174bee1c131dbd991f977fad1aa234d5",
+    "C": "85ccc41b4b9aff2c17c9dcaa4affe5ebf59ff533",
+    "D": null,
+    "E": "7b2c3c7b80758fce143d69f69e6d3e099f494835",
+    "F": "41fe22e54756cb465c958d83a7d97a82de86aa0f",
+    "G": "0da3a45452d7de4ef788c868d112603b6a9889fe"
+  },
+  "npmTest": {
+    "node": "v22.23.4",
+    "tests": 457,
+    "pass": 448,
+    "fail": 0,
+    "skipped": 4,
+    "todo": 5,
+    "exit": 0,
+    "duration": "144.8s"
+  },
+  "assets": {
+    "missing": 0,
+    "oversize": 1,
+    "shipped": "12.42 MB",
+    "referenced": "9.47 MB",
+    "staticCatalog": "9.82 MB",
+    "oversizePath": "web/assets/generated/map/BG_MAP.webp"
+  },
+  "engineUnchanged": true,
+  "findings": [
+    {
+      "stream": "A",
+      "severity": "info",
+      "message": "prod/a-card-art is not on origin."
+    },
+    {
+      "stream": "B",
+      "severity": "info",
+      "message": "Hideout art is a GENERATED_REVIEW fragment (web/manifests/hideout.json uses entries, not assets). Files are present, none are missing, and none exceed 400 KB. Ids such as HOU_TIER_CABIN already exist in web/assets-manifest.json, which matches the stream note that this fragment must not be copied into the live catalog yet. The running hideout still uses the existing house art."
+    },
+    {
+      "stream": "C",
+      "severity": "P2",
+      "message": "The Stash, Inventory, Collection, and Deck screens render. At 667×375, 844×390, 932×430, and 1280×720 every measured control is at least 44 CSS px, 22 cards are visible, and there were no page errors. The section sets data-collection-route and does not set data-screen=stash, so a waiter on [data-screen=stash] does not resolve. Back returns to the hideout. Map, prep, battle, rewards, and gacha still open. npm test on the merged tree is 457/448/0 with one extra todo: collection screens at landscape viewports, because Playwright is not installed in the repo."
+    },
+    {
+      "stream": "D",
+      "severity": "info",
+      "message": "prod/d-gacha is not on origin."
+    },
+    {
+      "stream": "E",
+      "severity": "P0",
+      "message": "prod/e-battle-polish conflicts with prod/c-inventory in web/index.html. Both insert a stylesheet link on the line after css/app.css (collection.css and battle-polish.css). web/js/app.js auto-merges. E merges cleanly onto prod/wave-base by itself. This pass left E out of the throwaway tree, so battle-polish.css was not on the screens that were played."
+    },
+    {
+      "stream": "F",
+      "severity": "info",
+      "message": "Sport art landed as a review manifest (productionReady false). No missing files and no raster at or above 400 KB from this stream. The live Sports Complex pin is still locked."
+    },
+    {
+      "stream": "G",
+      "severity": "info",
+      "message": "World content tests pass. The proposed copy is in content/prod/world. The live map still shows the wave-base pin labels, including the overlapping Sports Complex / Coming soon pair."
+    }
+  ],
+  "screenshots": [
+    "tools/qa/artifacts/screenshots/phase2-pass1/1280-home.jpg",
+    "tools/qa/artifacts/screenshots/phase2-pass1/1280-stash.jpg",
+    "tools/qa/artifacts/screenshots/phase2-pass1/1280-map.jpg",
+    "tools/qa/artifacts/screenshots/phase2-pass1/1280-prep.jpg",
+    "tools/qa/artifacts/screenshots/phase2-pass1/1280-battle.jpg",
+    "tools/qa/artifacts/screenshots/phase2-pass1/1280-rewards.jpg",
+    "tools/qa/artifacts/screenshots/phase2-pass1/1280-gacha.jpg"
+  ]
+}
