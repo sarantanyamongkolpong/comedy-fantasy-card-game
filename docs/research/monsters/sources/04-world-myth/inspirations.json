@@ -1,0 +1,2229 @@
+[
+  {
+    "inspirationId": "INS-04-001",
+    "name": "Minotaur (Minotauros)",
+    "origin": "Greek mythology, Crete",
+    "kind": "myth",
+    "facts": [
+      "The Minotaur was a bull-headed monster born to Queen Pasiphae of Crete, lived in the maze-like labyrinth, received regular offerings for its hunger, and was slain by Theseus.",
+      "Theoi gives his proper name as Asterion, 'the starry one,' and says that name suggests a link with the constellation Taurus.",
+      "A classical encyclopedia summary preserved on the same page says he had a human body and a bull's head, or in other accounts the body of an ox and a human head; he was the offspring of Pasiphae and the bull sent from the sea, was shut in the Cnossian labyrinth, and Athenians were sent to Minos as tribute at fixed times."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/Minotauros.html",
+        "title": "MINOTAUR (Minotauros) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Birth, labyrinth, hunger-offerings, death at Theseus's hands, the name Asterion, and the human-body/bull-head description."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "labyrinth",
+      "guardian",
+      "man-eater"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower hallway that is itself the landlord: a bull-headed bouncer who charges rent in wrong turns.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Ancient literary monster. No living cult of the Minotaur. Still do not copy a specific film or game costume."
+  },
+  {
+    "inspirationId": "INS-04-002",
+    "name": "Lernaean Hydra",
+    "origin": "Greek mythology, Lerna",
+    "kind": "myth",
+    "facts": [
+      "The Hydra was a gigantic nine-headed water-serpent of the Lerna swamps. Heracles was sent to destroy it as a labour; for each head he cut off, two more sprang forth, until Iolaus cauterized the stumps with burning brands.",
+      "A giant crab came to help the Hydra and was crushed under Heracles's heel. Hera afterwards placed the Hydra and the crab among the stars as the constellations Hydra and Cancer.",
+      "Theoi's encyclopedia extract says the middle head was immortal, that the creature was brought up by Hera, and that Heracles buried that head under a rock and poisoned his arrows with the Hydra's bile. Eurystheus rejected the labour because Iolaus had helped."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/DrakonHydra.html",
+        "title": "LERNAEAN HYDRA - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Nine heads, regeneration, cauterizing, the crab, the constellations, the immortal head, and the poisoned arrows."
+      }
+    ],
+    "archetypeTags": [
+      "multi-head",
+      "regeneration",
+      "serpent",
+      "poison",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A boss whose severed heads are agenda items: cauterize the minutes or two new action points grow back.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Classical monster. Franchise hydras (specific games and films) are separate protected designs."
+  },
+  {
+    "inspirationId": "INS-04-003",
+    "name": "Cerberus (Kerberos)",
+    "origin": "Greek mythology, underworld",
+    "kind": "myth",
+    "facts": [
+      "Cerberus was the gigantic three-headed hound of Hades. He guarded the gates of the underworld and stopped the shades of the dead from escaping.",
+      "Theoi describes him as a three-headed dog with a serpent's tail, a mane of snakes, and a lion's claws. Some accounts give him fifty heads, which the page says may have included the snakes of his mane.",
+      "Fetching him was one of Heracles's twelve labours, accomplished with Persephone's aid. Hesiod names him as a son of Typhoeus and Echidna; the page notes that Homer mentions the dog of Hades without yet using the name Cerberus."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/KuonKerberos.html",
+        "title": "CERBERUS (Kerberos) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Three heads, gatekeeping, serpent mane and tail, lion's claws, the fifty-head variant, and the Heracles labour."
+      }
+    ],
+    "archetypeTags": [
+      "hound",
+      "multi-head",
+      "underworld",
+      "guardian",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A three-shift night porter who lets people into the tower basement and never lets them clock out.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Literary underworld hound, not a worshipped deity."
+  },
+  {
+    "inspirationId": "INS-04-004",
+    "name": "Chimera (Khimaira)",
+    "origin": "Greek mythology, Lycia",
+    "kind": "myth",
+    "facts": [
+      "The Chimera was a three-headed fire-breathing monster that ravaged Lycia in Anatolia: lion's body and head, a goat's head rising from the back, the udders of a goat, and a serpent for a tail.",
+      "Bellerophon, riding Pegasus, killed it for King Iobates by driving a lead-tipped lance into its flaming throat so the beast choked on molten metal. Late classical writers treated it as a metaphor for a Lycian volcano.",
+      "Theoi cites Hesiod for parents Typhoeus and Echidna, and for offspring the Sphinx and the Nemean lion by Orthos. Homer's description, quoted in the page's encyclopedia extract, is forepart lion, hind part dragon, middle a goat."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/Khimaira.html",
+        "title": "CHIMERA (Khimaira) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Body plan, fire-breath, Lycia, Bellerophon's lead-tipped lance, and the parentage."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "fire",
+      "multi-head",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Three animals sharing one torso who cannot agree whose turn it is to breathe.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "The common noun 'chimera' is generic. Do not copy a particular game's chimera model."
+  },
+  {
+    "inspirationId": "INS-04-005",
+    "name": "Medusa and the Gorgons",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "The Gorgons were three winged daimones: Medusa, Stheno, and Euryale. Only Medusa was mortal. King Polydectes of Seriphos ordered Perseus to fetch her head.",
+      "The gods equipped Perseus with a reflective shield, a curved sword, winged boots, and a helm of invisibility. Pegasus and the giant Chrysaor sprang from the neck when she was decapitated.",
+      "Late classical poets say Medusa had been a beautiful woman transformed by Athena. Earlier Greek writers and artists simply portray her as a monster born into a family of monsters.",
+      "Archaic vase painting shows winged women with serpentine hair, staring eyes, wide mouths, lolling tongues, and swine tusks. Late classical art humanizes Medusa's face, and mosaics often give her a round snake-wreathed face with small wings on the brow."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Pontios/Gorgones.html",
+        "title": "MEDUSA & GORGONS - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The three sisters, Medusa's mortality, Perseus's gear, the birth of Pegasus, the two origin traditions, and the change in how she was depicted."
+      }
+    ],
+    "archetypeTags": [
+      "gaze",
+      "serpents",
+      "severed-head",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A critic whose annotated glare files people into statues of their worst draft. Use a tusks-and-round-face silhouette, not a modern film Medusa.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Mythic monster. Several living films and games own specific Medusa designs and the name is fine to evoke, not to costume-copy."
+  },
+  {
+    "inspirationId": "INS-04-006",
+    "name": "Elder Cyclopes",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "The elder Cyclopes were three immortal orb-eyed giants, Brontes, Steropes, and Arges, who forged Zeus's lightning-bolts.",
+      "Their father Ouranos locked them inside the earth with the Hundred-Handers. The Titans later drove them into Tartaros. Zeus and his brothers released them; in return they gave Zeus his thunderbolts, Poseidon a storm-raising trident, and Hades a helm of invisibility.",
+      "Theoi separates this smith-trio from the younger shepherd Cyclopes of the Odyssey, and also from the later story that Cyclopes built the 'Cyclopean' walls of Argos, Tiryns, and Mycenae."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Titan/Kyklopes.html",
+        "title": "CYCLOPES (Kyklopes) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Names, single eye, imprisonment, the three divine weapons, and the distinction from the Homeric shepherds."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "one-eyed",
+      "smith",
+      "storm"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower foundry crew of three one-eyed smiths who issue lightning only against a signed work order.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Primordial craftsmen, not cult statues. Keep them distinct from Polyphemus."
+  },
+  {
+    "inspirationId": "INS-04-007",
+    "name": "Polyphemus and the younger Cyclopes",
+    "origin": "Greek mythology, Odyssey / Sicily",
+    "kind": "myth",
+    "facts": [
+      "In the Homeric poems the Cyclopes are a gigantic, insolent, lawless race of shepherds in south-western Sicily who devour human beings. They do not farm; each lives with his wives and children in a mountain cave and rules them with arbitrary power.",
+      "Theoi notes that Homer does not clearly say every Cyclops had one eye, but Polyphemus, the chief of them, is described as having only one eye on his forehead.",
+      "These Homeric Cyclopes are not servants of Zeus. The page cites Odyssey 9.275 for their disregard of him, and treats them as a different breed from the elder forging Cyclopes."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Titan/Kyklopes.html",
+        "title": "CYCLOPES (Kyklopes) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The shepherd tribe, cannibalism, cave households, and Polyphemus's single forehead eye."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "one-eyed",
+      "shepherd",
+      "man-eater"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A one-eyed innkeeper with a one-star rating who eats guests that complain about the cave.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Homeric giant. The 'Nobody' trick is not restated here because this page's fetched text only identifies Polyphemus's eye, not the full blinding episode."
+  },
+  {
+    "inspirationId": "INS-04-008",
+    "name": "Sirens (Seirenes)",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "The Sirens were three monstrous sea-nymphs who lured sailors to death with a bewitching song. Theoi says they had been handmaidens of Persephone; after Hades abducted her, Demeter gave them bird bodies to help in the search. They settled on the island Anthemoessa.",
+      "The Argonauts passed them because Orpheus drowned out their music. Odysseus was bound to the mast while his crew stopped their ears with wax. The page says the Sirens then threw themselves into the sea.",
+      "They were depicted as birds with the heads, or the entire upper bodies, of women. Mosaic art sometimes gives them only bird legs. The page's translation of the name is 'entwiner' or 'binder.'"
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Pontios/Seirenes.html",
+        "title": "SIRENS (Seirenes) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Song, bird bodies, Persephone's handmaidens, Orpheus, Odysseus at the mast, and the island."
+      }
+    ],
+    "archetypeTags": [
+      "song",
+      "bird-woman",
+      "lure",
+      "sea"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower choir of bird-legged sopranos. Draw the Greek bird-body, not a fish-tailed mermaid, which this page does not describe.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "The fetched page shows bird-bodied Sirens. A mermaid silhouette would be a later, different image and is easy to confuse with protected modern characters."
+  },
+  {
+    "inspirationId": "INS-04-009",
+    "name": "Scylla (Skylla)",
+    "origin": "Greek mythology, Strait of Messina",
+    "kind": "myth",
+    "facts": [
+      "Scylla haunted rocks in a narrow strait opposite the whirlpool Charybdis. Ships that sailed too close lost six men to her darting heads.",
+      "Homer, as summarized by Theoi, gives her twelve dangling feet, six long necks, and grisly heads with a triple row of teeth, and a voice like yelping dogs.",
+      "Classical art shows a fish-tailed sea-goddess with a cluster of canine foreparts around her waist. Late writers say the nymph was transformed by Circe; older poets treat her as a monster born into a monstrous family."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Pontios/Skylla.html",
+        "title": "SCYLLA (Skylla) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Six heads, twelve feet, the strait opposite Charybdis, the dog-voice, and the two traditions of her origin."
+      }
+    ],
+    "archetypeTags": [
+      "multi-head",
+      "sea",
+      "snatcher",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A doorway with six necks that taxes any party of exactly six by taking one snack, one card, or one boot from each.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Literary sea monster."
+  },
+  {
+    "inspirationId": "INS-04-010",
+    "name": "Charybdis (Kharybdis)",
+    "origin": "Greek mythology, Strait of Messina",
+    "kind": "myth",
+    "facts": [
+      "Charybdis was a sea-monster whose whirlpool swirled in the Strait of Messina opposite Scylla's cliffs. Theoi calls her probably the daimon of the tides, from Homer's account of her sucking in and expelling water three times a day.",
+      "Scholia summarized on the page give two origins: a daughter of Pontos and Gaia who besieged the land with waves until Zeus chained her to the seabed, or a voracious woman who stole Heracles's cattle and was blasted into the sea by his thunderbolt.",
+      "The page notes a Greek verb meaning to swallow like Charybdis, used for gluttons."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Pontios/Kharybdis.html",
+        "title": "CHARYBDIS (Kharybdis) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Whirlpool opposite Scylla, thrice-daily tide, the two origin stories, and the gluttony verb."
+      }
+    ],
+    "archetypeTags": [
+      "whirlpool",
+      "sea",
+      "swallow",
+      "hazard"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floor trap that inhales the discard pile three times a day and burps it back in the wrong order.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Personified hazard, not a cult deity in the fetched account."
+  },
+  {
+    "inspirationId": "INS-04-011",
+    "name": "Harpies (Harpyiai)",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "The Harpies were daimones of sudden sharp gusts of wind, called the hounds of Zeus, sent to snatch people and things. Sudden disappearances were blamed on them.",
+      "Zeus sent them to plague King Phineus of Thrace. Whenever food was set before him they snatched it and befouled the scraps. The winged Boreades, with the Argonauts, chased them to the Strophades, where Iris ordered the chase to stop.",
+      "Theoi depicts them as winged women, sometimes with ugly faces, or with the lower bodies of birds. The name is glossed as 'snatchers.'"
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Pontios/Harpyiai.html",
+        "title": "HARPIES (Harpyiai) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Wind spirits, the snatching of Phineus's food, the befouling, and the winged-woman or bird-legged form."
+      }
+    ],
+    "archetypeTags": [
+      "bird-woman",
+      "wind",
+      "snatcher",
+      "thief"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Cafeteria hawks who steal the plate and leave a polite but ruined crumb.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Wind daimones. Not the same beings as the Sirens."
+  },
+  {
+    "inspirationId": "INS-04-012",
+    "name": "Sphinx of Thebes",
+    "origin": "Greek mythology, Boeotia",
+    "kind": "myth",
+    "facts": [
+      "The Greek Sphinx had a lion's body, a woman's head and breast, eagle's wings, and according to some a serpent's tail. Theoi places her home at Mount Phicium in Boeotia.",
+      "The gods sent her to plague Thebes. She devoured anyone who failed her riddle. Creon offered the throne to whoever destroyed her. When Oedipus solved the riddle she cast herself off the mountainside.",
+      "Hesiod, cited on the page, makes her the child of Orthos and the Chimera; other citations give Typhoeus and Echidna. Greek sphinxes also appear as tomb markers for youths and in animal processions with sirens.",
+      "Britannica gives the riddle the Muses taught her: what has one voice and is four-footed, two-footed, and three-footed? Oedipus answers that it is a human, who crawls, then walks, then leans on a staff. She then kills herself. The same article says Hesiod called the creature Phix."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/Sphinx.html",
+        "title": "SPHINX - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Body plan, the Theban riddle, Oedipus, the suicide, and the distinction of this figure as a plague-monster."
+      },
+      {
+        "url": "https://kids.britannica.com/scholars/article/sphinx/69103",
+        "title": "sphinx - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The wording of the Theban riddle and Hesiod's name Phix. The Egyptian sphinx is a separate record."
+      }
+    ],
+    "archetypeTags": [
+      "riddle",
+      "hybrid",
+      "lion",
+      "wings"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A toll-lion who eats wrong answers and hurls herself off the floor if anyone reads the FAQ. Keep her separate from the Egyptian royal sphinx.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Greek literary monster. Do not merge her with the Egyptian sphinx, which is a different figure."
+  },
+  {
+    "inspirationId": "INS-04-013",
+    "name": "Typhoeus (Typhon)",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "Typhoeus was a monstrous storm-giant who besieged heaven, was defeated by Zeus, and was imprisoned in Tartaros. He was the source of devastating storms from that pit. Later poets make him a volcano-giant trapped under Mount Etna.",
+      "Theoi describes him as a winged giant whose head brushed the stars, man-shaped to the waist, with two coiled serpents for legs and a hundred serpent-heads for fingers. Some accounts give him a hundred heads, one human and the rest bestial, and fire from his mouth.",
+      "Hesiodic parentage on the page is Tartaros and Gaia. With Echidna he fathered Orthos, Cerberus, the Hydra, and the Chimera."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Gigante/Typhoeus.html",
+        "title": "TYPHOEUS (Typhon) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Storm-giant, Tartaros, Etna, the serpent anatomy, and the brood of monsters."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "storm",
+      "serpent-legs",
+      "world-boss-material",
+      "father-of-monsters"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floor-eating storm that files a hundred animal-headed complaints and then gets sat on by the tower.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Vanquished monster, not an Olympian god. His name was later compared with the Egyptian Seth by some classical writers; do not treat that guess as a license to depict Seth."
+  },
+  {
+    "inspirationId": "INS-04-014",
+    "name": "Lamia",
+    "origin": "Greek mythology, Libya",
+    "kind": "myth",
+    "facts": [
+      "Lamia was a child-devouring sea-monster or night-haunting daemon, a daughter of Poseidon, and in some accounts the mother of Scylla.",
+      "Theoi's narrative says she was a Libyan queen loved by Zeus. Hera stole her children; Lamia tore out her own eyes in grief, and Zeus then made her a monster who devoured other people's children.",
+      "The name is the ancient Greek word for a large shark. She was also used as a bogey to frighten children, and was sometimes multiplied into a host of vampiric Lamiai."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/Lamia.html",
+        "title": "LAMIA - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Child-devouring daemon, the Libyan queen story, the shark name, and the plural Lamiai."
+      }
+    ],
+    "archetypeTags": [
+      "night-demon",
+      "sea",
+      "grief",
+      "bogey"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Only if the appetite is rewritten away from children. A night-auditor who eats unsent letters is usable; a child-eater is not a comedy beat.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Not a worshipped goddess in this account, but the traditional story is about devouring children. Do not make child harm the joke, the mechanic, or the art."
+  },
+  {
+    "inspirationId": "INS-04-015",
+    "name": "Ladon (Hesperian Dragon)",
+    "origin": "Greek mythology, Garden of the Hesperides",
+    "kind": "myth",
+    "facts": [
+      "Ladon was a hundred-headed serpent set to guard the golden apples of the Hesperides and to torment the Titan Atlas. Heracles slew him while fetching the apples, and the gods placed him in the stars as the constellation Draco.",
+      "Theoi says Hesiod's parents for him are Phorcys and Ceto, while Apollodorus and Hyginus say Typhoeus and Echidna. The encyclopedia extract says he could use various tones of voice and never slept.",
+      "The page glosses the hundred-headed serpent, in a Hesiodic sea-danger reading, as a 'strong flow' that may once have stood for dangerous currents."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/DrakonHesperios.html",
+        "title": "HESPERIAN DRAGON (Drakon Hesperios) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Hundred heads, the golden apples, sleeplessness, Heracles, and the constellation Draco."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "multi-head",
+      "guardian",
+      "sleepless"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An orchard night manager who has never clocked out and hisses in a hundred customer-service voices.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Literary guardian serpent. The name Ladon is also a river; the monster is the one meant here."
+  },
+  {
+    "inspirationId": "INS-04-016",
+    "name": "Nemean Lion",
+    "origin": "Greek mythology, Nemea",
+    "kind": "myth",
+    "facts": [
+      "The Nemean lion was a large lion whose hide weapons could not pierce. It plagued Nemea in the Argolid. Eurystheus set its destruction as Heracles's first labour.",
+      "Heracles cornered it in its cave and wrestled it to death, then wore the skin. Hera placed the lion in the stars as Leo.",
+      "Theoi cites Hesiod for parents Orthros and the Chimera, Apollodorus for Typhoeus, and a further tradition that the lion came from the Moon."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/LeonNemeios.html",
+        "title": "NEMEAN LION - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Impervious hide, the cave wrestling, the lion-skin, and the constellation Leo."
+      }
+    ],
+    "archetypeTags": [
+      "lion",
+      "impervious",
+      "wrestle",
+      "elite-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mane that ignores cards and only loses to a grapple. The joke is the rule, not a copy of any Heracles costume.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Labour beast. Low religious sensitivity."
+  },
+  {
+    "inspirationId": "INS-04-017",
+    "name": "Fenrir (Fenris-Wolf)",
+    "origin": "Norse mythology",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Fenrir is a monstrous wolf, son of Loki and the giantess Angerboda. The gods bound him with a magical chain made of the sound of a cat's footsteps, the beard of a woman, the breath of a fish, and other occult elements. He bit off Tyr's hand, was gagged with a sword, and was destined to lie bound to a rock until Ragnarök.",
+      "The same article says one version has him devour the sun; at Ragnarök he swallows Odin, and Odin's son Vidar kills him, either by stabbing the heart or by tearing the jaws apart. Poets of the 10th and 11th centuries in Norway and Iceland speak of the day he breaks loose.",
+      "The Prose Edda's Gylfaginning, in the English text at sacred-texts, names the fetter Gleipnir and says the gods put Tyr's hand in the wolf's mouth as a pledge they would release him.",
+      "Britannica's Ragnarök article names modern retellings, including Wagner's Götterdämmerung, Marvel's Thor: Ragnarok, and Santa Monica Studio's God of War: Ragnarök. Those depictions are protected. Do not copy them."
+    ],
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/Fenrir",
+        "title": "Fenrir | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "Parentage, the occult chain, Tyr's hand, the sword gag, and the Ragnarök fight with Odin and Vidar."
+      },
+      {
+        "url": "https://www.sacred-texts.com/neu/pre/pre04.htm",
+        "title": "Gylfaginning, The Prose Edda by Snorri Sturluson",
+        "accessed": "2026-11-20",
+        "supports": "The name Gleipnir and Tyr's hand given as a pledge."
+      },
+      {
+        "url": "https://www.britannica.com/topic/Ragnarok",
+        "title": "Ragnarök | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "The modern franchise versions that must not be copied, and the battle in which Fenrir swallows Odin."
+      }
+    ],
+    "archetypeTags": [
+      "wolf",
+      "binding",
+      "apocalypse",
+      "world-boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A wolf who bites the hand that signed the pledge, chained with ridiculous ingredients. Do not use the God of War or Marvel wolf design.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "A monster in a mythology that modern Heathenry treats as religious. He is not described here as a god people worship. Parody the broken oath, not a living faith, and do not copy franchise models."
+  },
+  {
+    "inspirationId": "INS-04-018",
+    "name": "Jörmungandr (Midgard Serpent)",
+    "origin": "Norse mythology",
+    "kind": "myth",
+    "facts": [
+      "In Gylfaginning, Loki and the giantess Angrboda have three children: the Fenris-Wolf, Jörmungandr the Midgard Serpent, and Hel. The Allfather casts the serpent into the sea, where it grows until it encircles the land and bites its own tail.",
+      "The same text tells Thor's fishing trip with the giant Hymir: an ox-head on a hook catches the serpent's jaw, the serpent blows venom, and Hymir cuts the line.",
+      "Britannica's Ragnarök article says that at the end Thor kills Jörmungandr and is poisoned by it. The article also flags Marvel's Thor: Ragnarok and God of War: Ragnarök as modern versions whose designs must not be copied."
+    ],
+    "sources": [
+      {
+        "url": "https://www.sacred-texts.com/neu/pre/pre04.htm",
+        "title": "Gylfaginning, The Prose Edda by Snorri Sturluson",
+        "accessed": "2026-11-20",
+        "supports": "Birth, the sea-encircling body, the tail in the mouth, and Thor's fishing trip."
+      },
+      {
+        "url": "https://www.britannica.com/topic/Ragnarok",
+        "title": "Ragnarök | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "Thor and the serpent killing each other, and the named modern retellings."
+      }
+    ],
+    "archetypeTags": [
+      "world-serpent",
+      "sea",
+      "venom",
+      "world-boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A serpent so long it queues behind itself. The fight is a fishing trip that ruins the boat, not a copy of a game boss.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Cosmic monster in a living revived mythology. Medium rather than high because the fetched pages present him as a monster, not as a god with a cult."
+  },
+  {
+    "inspirationId": "INS-04-019",
+    "name": "Hel",
+    "origin": "Norse mythology",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Hel was originally the name of the world of the dead and later the goddess of death. She is a child of Loki. Her kingdom lies downward and northward and is called Niflheim, the World of Darkness.",
+      "One section of that realm is Náströnd, the shore of corpses, where a north-facing castle is filled with serpent venom. Murderers, adulterers, and perjurers are tormented there, and the dragon Nidhogg sucks the blood from their bodies.",
+      "People who fell in battle were said not to go to Hel but to Odin in Valhalla.",
+      "Gylfaginning says she was given power over nine worlds, to house those who die of sickness or old age, and describes her hall with the names Hunger, Famine, and Disease."
+    ],
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/Hel-Norse-deity",
+        "title": "Hel | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "Goddess of death, Niflheim, Náströnd, Nidhogg, and the Valhalla contrast."
+      },
+      {
+        "url": "https://www.sacred-texts.com/neu/pre/pre04.htm",
+        "title": "Gylfaginning, The Prose Edda by Snorri Sturluson",
+        "accessed": "2026-11-20",
+        "supports": "Cast into Niflheim, ruler of those who die of sickness or age, and the named hall."
+      },
+      {
+        "url": "https://www.britannica.com/topic/Ragnarok",
+        "title": "Ragnarök | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "Marvel's Hela, played in Thor: Ragnarok, is a franchise character and is not a design source for the Norse Hel."
+      }
+    ],
+    "archetypeTags": [
+      "death-goddess",
+      "underworld",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch. Recorded so designers do not turn a death goddess, or Marvel's Hela, into a gag.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "Britannica calls her a goddess. Modern Heathenry may honor her. Marvel's Hela is a separate copyrighted character. Research only."
+  },
+  {
+    "inspirationId": "INS-04-020",
+    "name": "Nidhogg (Níðhöggr)",
+    "origin": "Norse mythology",
+    "kind": "myth",
+    "facts": [
+      "Britannica's article on Hel says that at Náströnd, the shore of corpses, murderers, adulterers, and perjurers suffer in a castle filled with serpent venom, while the dragon Nidhogg sucks the blood from their bodies."
+    ],
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/Hel-Norse-deity",
+        "title": "Hel | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "Nidhogg as the corpse-shore dragon. This record is deliberately narrow: a separate Nidhogg article was not successfully fetched."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "underworld",
+      "corpse-shore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A basement wyrm who subscribes to other people's grudges. Do not invent Yggdrasil details until a page that states them is fetched.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium because he belongs to the same religious mythology as Hel, and because this record rests on one sentence. The root-gnawing role is widely repeated elsewhere but is not asserted here until its own page is fetched."
+  },
+  {
+    "inspirationId": "INS-04-021",
+    "name": "Garm (Garmr)",
+    "origin": "Norse mythology",
+    "kind": "myth",
+    "facts": [
+      "Britannica's Ragnarök article says Tyr faces the hellhound Garm (Garmr) in the final battle, and that the two kill each other."
+    ],
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/Ragnarok",
+        "title": "Ragnarök | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "Garm as the hellhound who dies killing Tyr. No fuller description was on the pages fetched for this batch."
+      }
+    ],
+    "archetypeTags": [
+      "hound",
+      "underworld",
+      "duelist"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A narrow one: a door-hound whose only canonical job, on the evidence fetched so far, is a mutual last stand with a one-handed war god. Do not flesh him out from memory.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium because the detail sits inside a sacred narrative. Confidence is medium because the fetched page gives the duel and the word hellhound, not a physical description."
+  },
+  {
+    "inspirationId": "INS-04-022",
+    "name": "Surtr",
+    "origin": "Norse mythology, Muspell",
+    "kind": "myth",
+    "facts": [
+      "Gylfaginning places Surtr at the land's end of Muspell, a burning southern region impassable to outsiders. He brandishes a flaming sword. At the end of the world he will go forth, overcome the gods, and burn the world.",
+      "The verse quoted there says Surtr fares from the south with flame, and the sun of the war-gods shimmers on his sword.",
+      "Britannica's Ragnarök article calls him the fire giant who leads the sons of Muspelheim across Bifrost and shatters that rainbow bridge, strikes down Freyr, and raises his sword as the world burns. The same article's pop-culture section names Marvel's fire demon Surtur in Thor: Ragnarok, which is a protected design."
+    ],
+    "sources": [
+      {
+        "url": "https://www.sacred-texts.com/neu/pre/pre04.htm",
+        "title": "Gylfaginning, The Prose Edda by Snorri Sturluson",
+        "accessed": "2026-11-20",
+        "supports": "Surtr's station at Muspell's border, the flaming sword, and the world-burning."
+      },
+      {
+        "url": "https://www.britannica.com/topic/Ragnarok",
+        "title": "Ragnarök | Britannica",
+        "accessed": "2026-11-20",
+        "supports": "The Bifrost crossing, Freyr's death, and Marvel's Surtur as a version not to copy."
+      }
+    ],
+    "archetypeTags": [
+      "fire-giant",
+      "apocalypse",
+      "sword",
+      "world-boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A fire warden who is contractually required to burn the building at closing time. Do not draw Marvel's Surtur.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "A giant in a religious mythology, not labeled a god on the fetched pages. Medium, and higher if a later source shows a cult. The Marvel design is off limits."
+  },
+  {
+    "inspirationId": "INS-04-023",
+    "name": "Fafnir",
+    "origin": "Norse legend, Völsunga saga",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Fafnir is the great dragon slain by Sigurd, the Norse version of the German hero Siegfried.",
+      "In the Völsunga saga as summarized there, Fafnir killed his father Hreithmar for the gold Hreithmar had demanded from Odin as compensation for a son. Odin paid, and cursed the gold. Greed turned Fafnir into a dragon to guard the hoard.",
+      "Sigurd killed him at the urging of Fafnir's brother, the smith Regin. Sigurd burned his thumb testing the cooking heart, tasted it, understood birds, learned that Regin meant to kill him, killed Regin instead, and left with the treasure."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Fafnir/474500",
+        "title": "Fafnir - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The cursed gold, the man who became a dragon, Sigurd, Regin, and the heart that teaches bird-speech."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "hoard",
+      "curse",
+      "transformation",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A paymaster who sits on the payroll until he becomes the vault. Wagner's ring cycle is a separate dramatic version; do not copy its staging.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Legendary dragon from a saga. Low religious sensitivity compared with the gods. The German Siegfried tradition overlaps agent 02's western-legend lane; flagged for Mira to dedupe."
+  },
+  {
+    "inspirationId": "INS-04-024",
+    "name": "Ammit",
+    "origin": "Ancient Egyptian religion",
+    "kind": "myth",
+    "facts": [
+      "The British Museum's schools guide says Ammit was not considered a goddess but a powerful and terrifying creature.",
+      "She is often depicted with the head of a crocodile, the forelegs of a lion, and the hind legs of a hippopotamus.",
+      "Her name means 'the devourer.' She devoured the hearts of the dead if they were unworthy when the heart was weighed against the feather of truth. She waited by the scales in the underworld, and her image in funeral art warned the dead to live well."
+    ],
+    "sources": [
+      {
+        "url": "https://www.britishmuseum.org/learn/schools/ages-7-11/ancient-egypt/ancient-egyptian-gods-and-goddesses",
+        "title": "Ancient Egyptian gods and goddesses | British Museum",
+        "accessed": "2026-11-20",
+        "supports": "Not a goddess; crocodile, lion, and hippopotamus body; devourer of unworthy hearts beside the scales."
+      }
+    ],
+    "archetypeTags": [
+      "composite",
+      "judgment",
+      "devourer",
+      "underworld"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A clerk who eats unbalanced receipts. Do not mock the judgment of the dead or draw her as a goddess.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "The museum explicitly says she was not considered a goddess. Medium because she belongs to Egyptian funerary religion, which modern Kemetic practice treats as sacred, and because the scene is about the fate of the dead."
+  },
+  {
+    "inspirationId": "INS-04-025",
+    "name": "Apopis (Apep)",
+    "origin": "Ancient Egyptian religion",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Apopis, also called Apep, Apepi, or Rerek, was an ancient Egyptian demon of chaos in serpent form. As the foe of the sun god Re, he represented everything outside the ordered cosmos.",
+      "Each night he met Re at a particular hour of the sun god's journey through the underworld in the divine bark. Seth, riding as guardian at the front of the bark, speared and slew him. He could not be permanently subdued and was back the next night.",
+      "The Egyptians believed the king helped maintain order by performing rituals against Apopis. The page distinguishes him from serpents that symbolized divinity and royalty."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Apopis/8037",
+        "title": "Apopis - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Chaos serpent, nightly defeat by Seth on Re's bark, and the ritual of execration. The adult URL /topic/Apophis is the asteroid, not this demon, and was not used."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "chaos",
+      "nightly-return",
+      "world-boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A night shift that cannot be fired: it is speared at 3 a.m. and is on the roster again after sundown. Do not depict Re or Seth as the punchline.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "A demon who was ritually attacked, not a beneficent cult god. Medium because the myth is part of Egyptian religion and the other figures in the scene, Re and Seth, are worshipped gods."
+  },
+  {
+    "inspirationId": "INS-04-026",
+    "name": "Huwawa (Humbaba)",
+    "origin": "Sumerian poetry, Gilgamesh and Huwawa",
+    "kind": "myth",
+    "facts": [
+      "In the ETCSL translation of the Sumerian poem Gilgamesh and Huwawa, version A, Huwawa lives among the cedars. Enkidu says his mouth is a dragon's maw, his face a lion's grimace, and his chest like a raging flood, and that no one dares approach his brow.",
+      "When Huwawa looks at someone it is the look of death. He possesses seven terrors, which he hands over one by one after Gilgamesh's gifts and pleas. Enkidu cuts his throat and the head is carried in a leather bag to Enlil, who is angry and says Huwawa should have sat before Gilgamesh and shared his bread and water.",
+      "Enlil redistributes the seven auras to the fields, the rivers, the reed-beds, the lions, the palace, the forests, and Nungal. Huwawa says he was born in the mountains and raised by Utu.",
+      "British Museum object 116624 is an Old Babylonian fired-clay mask from Sippar, about 1800–1600 BC. The curator comment says it is usually believed to represent Huwawa's face and that the same shape also represents a sheep's intestines read for divination. The identification is the museum's 'usually believed,' not a certainty."
+    ],
+    "sources": [
+      {
+        "url": "https://etcsl.orinst.ox.ac.uk/section1/tr1815.htm",
+        "title": "Gilgamesh and Huwawa, version A (ETCSL translation)",
+        "accessed": "2026-11-20",
+        "supports": "The cedar-mountain dwelling, the lion-dragon face, the look of death, the seven terrors, the beheading, and Enlil's redistribution of the auras."
+      },
+      {
+        "url": "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2598",
+        "title": "Fired clay mask of the demon Humbaba | British Museum 116624",
+        "accessed": "2026-11-20",
+        "supports": "The Old Babylonian mask and the museum's cautious identification, including the divination-intestine reading."
+      }
+    ],
+    "archetypeTags": [
+      "guardian",
+      "gaze",
+      "seven-phases",
+      "cedar",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bouncer with seven auras who gives them up one bribe at a time, and whose face looks like a very bad omen-reading.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Literary demon in an ancient poem. Low living-cult sensitivity. Do not import later game versions of Gilgamesh."
+  },
+  {
+    "inspirationId": "INS-04-027",
+    "name": "Lamashtu",
+    "origin": "Mesopotamian religion, Akkadian / Sumerian Dimme",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Lamashtu, Sumerian Dimme, was the most terrible of Mesopotamian female demons and a daughter of the sky god Anu. Pazuzu, called there the king of wind demons, is often depicted with her.",
+      "She slew children, drank the blood of men, and ate their flesh. She was the bearer of seven names and was described in incantations as the 'seven witches.' She brought nightmares, killed foliage, infested rivers, bound muscles, caused miscarriages, and brought disease.",
+      "On amulets she is a lion-headed or bird-headed female figure kneeling on an ass, holding a double-headed serpent in each hand, suckling a dog at one breast and a pig or another dog at the other."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Lamashtu/46921",
+        "title": "Lamashtu - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Parentage, the seven names, the harms, Pazuzu's association, and the amulet pose."
+      }
+    ],
+    "archetypeTags": [
+      "demon",
+      "disease",
+      "nightmare",
+      "do-not-parody-the-harm"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch the child-killing, miscarriage, or disease. If anything is ever used, it would have to be a distant 'seven named forms' motif with the harm removed. Default is research-only.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Not described as a goddess people prayed to for blessing; she was a demon opposed by incantations. Medium is for the content, which is child death and miscarriage, and for her place in Mesopotamian religion. Do not make that harm funny."
+  },
+  {
+    "inspirationId": "INS-04-028",
+    "name": "Rakshasa",
+    "origin": "Hindu epic and Puranic literature",
+    "kind": "myth",
+    "facts": [
+      "Britannica: a rakshasa (feminine rakshasi) is a demon in Hindu epic and Puranic literature. Rakshasas change shape at will and appear as animals, as monsters, or, for the female demons, as beautiful women.",
+      "They are most powerful in the evening, especially during the dark of the new moon, and are dispelled by the rising sun. They detest sacrifices and prayer and disrupt ritual.",
+      "One origin in the Markandeya Purana, retold by Britannica, says Brahma created hungry beings at night; those who said 'Rakshama' ('let us protect') became rakshasas, and those who said a word heard as 'let us eat' became yakshas. The Ramayana's Uttarakanda tells a related creation-to-protect-the-waters story.",
+      "The same article says Western games, specifically Dungeons & Dragons, reimagined rakshasas as shape-shifting, backward-handed, tiger-headed demons. That is a modern game design. Do not copy the tiger head or the backward hands.",
+      "Sculpture canons summarized there tell the artist to carve fearful side tusks, ugly eyes, curling brows, and horrible weapons."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/rakshasa/62543",
+        "title": "rakshasa - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Shape-changing, night power, sunrise banishment, the creation etymology, the D&D redesign, and the sculpture canons."
+      }
+    ],
+    "archetypeTags": [
+      "shape-shifter",
+      "night",
+      "demon",
+      "epic"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A night-shift shape-changer who must clock out at the tower's morning bell. Do not use the Sanskrit name as the card title, and do not use the D&D tiger.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "A class of beings inside living Hindu tradition, not one single worshipped god. Medium for the class. Particular figures such as Ravana are venerated in some communities and are flagged separately as high. Hanuman, whom this article calls the monkey god, is not a target."
+  },
+  {
+    "inspirationId": "INS-04-029",
+    "name": "Ravana",
+    "origin": "Ramayana, Hindu epic; also revered in parts of Sri Lanka",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Ravana is the ten-headed king of the rakshasas and the antagonist of Rama in the Ramayana. In Valmiki's telling he is learned, an exceptional musician, and a great devotee of Shiva. He is called the great-grandson of Brahma through Pulastya.",
+      "Brahma's boon makes him invulnerable to divine beings, but not to humans, whom he considers harmless. Rama, described in the article as a human avatar of Vishnu, kills him. Ravana is burned in effigy at the holiday Dussehra.",
+      "The article says Tamil and Telugu versions emphasize his positive traits, and that Sinhala Buddhists in Sri Lanka have revered him as a historical king and cultural hero, especially in identity-building since the end of the civil war in 2009.",
+      "His sister Shurpanakha, his brothers Kumbhakarna and Vibhishana, and his son Indrajit are named as further rakshasas in the epic. This record does not add traits for them beyond those names, because the fetched page does not describe them further."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/rakshasa/62543",
+        "title": "rakshasa - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Ten heads, the Ramayana antagonism, Shiva devotion, the boon, Dussehra, and Sri Lankan reverence."
+      }
+    ],
+    "archetypeTags": [
+      "ten-headed",
+      "epic-king",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch. A public-domain plot is not permission to mock a figure people venerate or burn in a living festival.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High because he is a devotee of Shiva in the epic, is burned in effigy at Dussehra, and is revered by Sinhala Buddhists as a cultural hero and king. Research flag only."
+  },
+  {
+    "inspirationId": "INS-04-030",
+    "name": "Naga",
+    "origin": "Hinduism, Buddhism, and Jainism",
+    "kind": "myth",
+    "facts": [
+      "Britannica: naga means serpent. In Hinduism, Buddhism, and Jainism, nagas are semidivine beings, half human and half cobra. They can become wholly human or wholly serpentine. They are potentially dangerous and often beneficial.",
+      "They live in an underground kingdom, Naga-loka or Patala-loka, in gemmed palaces. Brahma sent them to the nether regions when they grew too numerous and ordered them to bite only the truly evil or those destined to die prematurely. They are tied to rivers, lakes, seas, and wells, and they guard treasure.",
+      "Shesha, or Ananta, supports Vishnu on the cosmic ocean. Vasuki was the rope that churned the ocean of milk. Takshaka is named as a tribal chief of snakes. Modern Hinduism celebrates the birth of the serpents on Naga-panchami.",
+      "In Buddhism, nagas are door guardians or, in Tibet, minor deities, and the naga king Muchalinda sheltered the meditating Buddha from rain for seven days. In Jainism the Tirthankara Parshvanatha is shown under a canopy of naga hoods."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/naga/54633",
+        "title": "naga - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The half-cobra form, Naga-loka, the bite restriction, Naga-panchami, Shesha, Vasuki, Muchalinda, and Parshvanatha."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "guardian",
+      "water",
+      "treasure",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch. Nagas are worshipped and appear as sacred beings in three living religions.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. Semidivine, celebrated at Naga-panchami, depicted as protectors of the Buddha and of a Jain Tirthankara, and tied to Vishnu through Shesha. A cobra-guardian boss that winks at this tradition is not appropriate."
+  },
+  {
+    "inspirationId": "INS-04-031",
+    "name": "Baba Yaga",
+    "origin": "Slavic folklore",
+    "kind": "folklore",
+    "facts": [
+      "Britannica: Baba Yaga, also spelled Baba Jaga, is an ogress in Slavic folklore who steals, cooks, and eats her victims, usually children.",
+      "She is a guardian of the fountains of the water of life. She lives with two or three sisters, all called Baba Yaga, in a forest hut that spins continually on birds' legs. The fence is topped with human skulls.",
+      "She rides through the air in an iron kettle, or in a mortar she drives with a pestle, and raises tempests as she goes. She often accompanies Death and devours newly released souls."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Baba-Yaga/11585",
+        "title": "Baba Yaga - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The spinning hut on bird legs, the mortar and pestle, the skull fence, the water of life, and the child-eating ogress role."
+      }
+    ],
+    "archetypeTags": [
+      "witch",
+      "hut",
+      "flying-mortar",
+      "forest",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Use the spinning hut and the pestle commute. Do not use the eating of children. The house that will not stop rotating is the comedy.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Living Slavic folklore, not a single church's deity, so not high. Medium because she is a cultural figure whose traditional story centers on eating children, and because illustrated film versions are protected."
+  },
+  {
+    "inspirationId": "INS-04-032",
+    "name": "Leshy",
+    "origin": "Slavic mythology, forest spirit",
+    "kind": "folklore",
+    "facts": [
+      "Britannica: the leshy is the Slavic forest spirit, a sportive trickster who can turn treacherous when angered. He is seldom seen. His voice laughs, whistles, or sings in the forest.",
+      "When seen he often looks like a man, but his eyebrows, eyelashes, and right ear are missing, his head is somewhat pointed, and he wears neither hat nor belt.",
+      "Inside his own forest he is as tall as the trees. The moment he steps beyond it he shrinks to the size of grass.",
+      "The article says this picture is familiar to most Slavs in heavily forested country, while Ukrainians of the steppe know the leshy from hearsay and lack a fully articulated version."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/leshy/47904",
+        "title": "leshy - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Tricks, the missing ear and brows, the pointed head, and the tree-height that collapses to grass at the tree line."
+      }
+    ],
+    "archetypeTags": [
+      "forest",
+      "trickster",
+      "size-shift",
+      "boundary"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floor boss who is canopy-tall inside the tree tiles and ankle-high the instant he crosses the path.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "A living folklore spirit across Slavic forest regions, not a supreme deity. Medium: parody the size rule, do not parody the peoples who tell the stories. The steppe caveat means he is not a universal 'Slavic mascot.'"
+  },
+  {
+    "inspirationId": "INS-04-033",
+    "name": "Egyptian sphinx (Great Sphinx of Giza)",
+    "origin": "Ancient Egypt, Old Kingdom royal image",
+    "kind": "myth",
+    "facts": [
+      "Britannica: a sphinx is a lion-bodied, human-headed creature important in both Egyptian and Greek art. The colossal recumbent Great Sphinx at Giza dates from the reign of Khafre, about 2575–2465 BCE, and is a portrait statue of that king.",
+      "The sphinx continued as an Egyptian royal portrait type through most of Egyptian history. The same article says Arabs know the Great Sphinx as Abu al-Hawl, 'Father of Terror.'",
+      "The Egyptian sphinx was not originally the winged female riddle-monster of Thebes. Wings were added when the image moved into Asia around 1500 BCE, and the female sphinx appears from the 15th century BCE. The Greek Theban sphinx is a different figure and is recorded separately."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/sphinx/69103",
+        "title": "sphinx - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Giza as Khafre's portrait, the name Abu al-Hawl, and the difference between the Egyptian royal sphinx and the later winged Greek one."
+      }
+    ],
+    "archetypeTags": [
+      "lion",
+      "royal-portrait",
+      "monument",
+      "do-not-mock-the-monument"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody the Giza portrait or treat Abu al-Hawl as a joke name. A winged Greek riddle-lion is already a separate inspiration.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Not a cult animal in the way a god is, but the Great Sphinx is a portrait of a king and one of the best-known monuments of Egypt. Medium: do not build a comedy boss on that statue."
+  },
+  {
+    "inspirationId": "INS-04-034",
+    "name": "Griffin (Gryps)",
+    "origin": "Greek and Scythian tradition, with an eastern background",
+    "kind": "myth",
+    "facts": [
+      "Theoi: the griffin has an eagle's head and wings and a lion's body. A tribe of them guarded gold in the mountains of Scythia. Their one-eyed neighbors, the Arimaspians, fought them for it.",
+      "Herodotus, quoted on the page, says he cannot confirm how the northern gold is produced, but that one-eyed men called Arimaspians are said to steal it from griffins. He also glosses the Scythian name: arima 'one' and spou 'eye.'",
+      "Aeschylus, also quoted, calls griffins the sharp-beaked hounds of Zeus that do not bark. Ctesias, via the same page, describes an Indian griffin as a four-footed bird about the size of a wolf, with lion claws and red breast feathers. That Indian report is a different ancient description, not a second species this record is willing to merge."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Thaumasios/Grypes.html",
+        "title": "GRIFFIN (Gryps) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Eagle-lion body, Scythian gold, the Arimaspians, and the separate Ctesias description."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "guardian",
+      "gold",
+      "eagle-lion"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A treasury bird-lion that hates one-eyed auditors. Do not copy a heraldic logo or a game mount.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Classical beast. The page itself says the image likely came from farther east. Low religious sensitivity."
+  },
+  {
+    "inspirationId": "INS-04-035",
+    "name": "Echidna",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "Theoi, citing Hesiod: Echidna is half a fair-faced nymph and half a monstrous voracious serpent, living in a cave far from gods and mortals, ageless and undying. Hesiod places that cave among the Arimoi.",
+      "With Typhoeus she bears Orthos, Cerberus, the Hydra, and the Chimera in Hesiod's list. Other ancient lists on the same page add the Sphinx, the Hesperian dragon, Scylla, and the Colchian dragon, so the exact brood is not stable across authors.",
+      "Apollodorus, cited on the page, says Argus killed her in her sleep. A separate strand equates her with the Python that Apollo shot at Delphi, after which the place is called Pytho, the rotting."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/DrakainaEkhidna1.html",
+        "title": "ECHIDNA - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Half-woman, half-serpent body, the Hesiodic brood, Argus killing her asleep, and the Python equation."
+      }
+    ],
+    "archetypeTags": [
+      "drakaina",
+      "mother-of-monsters",
+      "serpent"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower archivist who is the parent row of several other floors' bosses. The Australian animal of the same English name is unrelated.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Literary monster. Not the modern echidna the mammal."
+  },
+  {
+    "inspirationId": "INS-04-036",
+    "name": "Talos",
+    "origin": "Greek mythology, Crete",
+    "kind": "myth",
+    "facts": [
+      "Theoi: Talos is a giant bronze automaton forged by Hephaestus, or in another account the last of the bronze race of men. Zeus gave him to Europa, or in the encyclopedia extract to Minos, to patrol Crete.",
+      "He circled the island three times a day and threw rocks at ships. He had a single vein from the neck to the ankles, closed by a bronze nail or stud. Medea killed him by madness-inducing drugs or by pulling the stud so the ichor ran out. Another version says Poeas shot him in the ankle.",
+      "A further genealogy, from the poet Cinaethon via Pausanias, makes Talos a Cretan sun figure, son of Cres and father of Hephaestus. The page says talos means 'sun' in the Cretan dialect and 'cut down' in mainland Greek. Classical art shows him as a handsome bronze young man."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Gigante/GiganteTalos.html",
+        "title": "TALOS - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Bronze body, the thrice-daily patrol, the single vein, Medea and Poeas, and the sun-figure genealogy."
+      }
+    ],
+    "archetypeTags": [
+      "automaton",
+      "bronze",
+      "guardian",
+      "single-weak-point"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floor guard who is invulnerable except for one labeled screw. Do not use the sun-god genealogy as the joke.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "The monster tradition is a bronze patrolman. One ancient genealogy makes him a Cretan sun figure, so he is medium rather than low. Pitch the automaton, not a Cretan god."
+  },
+  {
+    "inspirationId": "INS-04-037",
+    "name": "Stymphalian birds",
+    "origin": "Greek mythology, Arcadia",
+    "kind": "myth",
+    "facts": [
+      "Theoi: they were a flock of man-eating birds on Lake Stymphalis in Arcadia. Driving them off was Heracles's sixth labour. Athena brought him bronze rattles made by Hephaestus; the noise flushed the birds and he shot them.",
+      "The page's encyclopedia extract says they are most often described as birds of prey with bronze wings that shoot their feathers like arrows, and that some authors say Ares raised them.",
+      "Pausanias, quoted on the page, also records a version in which they were not birds but inhospitable daughters of Stymphalus and Ornis, and he saw white marble maidens with birds' feet behind the temple of Stymphalian Artemis. He is unsure whether the Arabian birds later called by the same name are the same breed."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/OrnithesStymphalides.html",
+        "title": "STYMPHALIAN BIRDS - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The lake flock, the bronze rattle, arrow-feathers, and Pausanias's bird-footed maidens."
+      }
+    ],
+    "archetypeTags": [
+      "flock",
+      "ranged",
+      "birds",
+      "noise"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A flock that panics when the tower's alarm rattles, and sheds tickets instead of arrow-feathers.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Labour beasts. The man-eating trait should stay off the punchline; the rattle and the bronze feathers are the usable parts."
+  },
+  {
+    "inspirationId": "INS-04-038",
+    "name": "Orthrus (Orthros)",
+    "origin": "Greek mythology, Erytheia",
+    "kind": "myth",
+    "facts": [
+      "Theoi: Orthrus was a two-headed, serpent-tailed dog who guarded Geryon's red cattle on the island of Erytheia. Heracles killed the dog and the herdsman Eurytion while taking the cattle.",
+      "Hesiod, cited on the page, makes him the offspring of Echidna and Typhoeus and the brother of Cerberus, and has the Chimera bear the Sphinx and the Nemean lion to Orthrus.",
+      "The page derives the name from orthros, 'twilight,' and notes a second spelling Orthos, 'straight.'"
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/KuonOrthros.html",
+        "title": "ORTHRUS - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Two heads, serpent tail, Geryon's cattle, and the link to Cerberus."
+      }
+    ],
+    "archetypeTags": [
+      "hound",
+      "two-headed",
+      "guardian"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A two-shift cattle dog. Distinct from Cerberus, who guards the dead rather than a herd.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Literary hound."
+  },
+  {
+    "inspirationId": "INS-04-039",
+    "name": "Centaurs (Thessalian Kentauroi)",
+    "origin": "Greek mythology, Thessaly",
+    "kind": "myth",
+    "facts": [
+      "Theoi: the centaurs were a tribe of half-man, half-horse beings in the mountains and forests of Thessalian Magnesia. They lived in caves, hunted, and armed themselves with rocks and branches.",
+      "The page distinguishes early accounts, in which they are hairy savage men, from later hippocentaurs whose bodies are human to the waist and horse below. It cites the wedding of Pirithous, where they became drunk and tried to carry off the bride and other women, and were mostly destroyed in the fight that followed.",
+      "Chiron is named on the page as the immortal centaur whose daughters nursed the brood, and as the exception who knew the useful arts. Cyprus had a separate bull-horned tribe. Female centaurs appear only in late classical art and literature."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Georgikos/KentauroiThessalioi.html",
+        "title": "CENTAURS (Kentauroi) - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The hybrid body, the Thessalian tribe, the Pirithous wedding, and Chiron as the civilized exception."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "tribe",
+      "horse-man"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A rowdy floor crew that is half guest and half obstacle. Do not use the assault at the wedding, or Ixion's crime, as comedy. Chiron is a teacher, not this tribe.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Low as a creature type. The origin and the wedding story include sexual violence and are not joke material."
+  },
+  {
+    "inspirationId": "INS-04-040",
+    "name": "Colchian dragon",
+    "origin": "Greek mythology, Colchis",
+    "kind": "myth",
+    "facts": [
+      "Theoi: a giant watchful serpent guarded the Golden Fleece in the sacred grove of Ares in Colchis. Jason either killed it or Medea put it to sleep. One vase tradition, noted on the page, shows the dragon swallowing Jason and then disgorging him.",
+      "King Aeetes harvested the teeth and ordered Jason to sow them in a field of Ares with a plough pulled by fire-breathing bulls. Armed men, the Spartoi, sprang up full grown.",
+      "The page cites Apollonius for an origin in the blood of Typhoeus and Gaia, and Hyginus for Typhoeus and Echidna."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/DrakonKholkikos.html",
+        "title": "COLCHIAN DRAGON - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The unsleeping guardian, the two ways it is overcome, the sown teeth, and the parentage citations."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "guardian",
+      "sleepless",
+      "sown-teeth"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A fleece that is a towel on a line, watched by a serpent who falls asleep only for a forged lullaby. The teeth-into-soldiers trick is a second mechanic, not a copy of any film Argonaut.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Literary guardian. The grove belongs to Ares, a god; the dragon is the record, not Ares."
+  },
+  {
+    "inspirationId": "INS-04-041",
+    "name": "Ghoul (ghul)",
+    "origin": "Arabic folklore, later English legend",
+    "kind": "folklore",
+    "facts": [
+      "Britannica: Arabic ghul, a demonic being of burial grounds and deserted places. In ancient Arabic folklore, ghouls were a diabolical class of jinn and the offspring of Iblis. They change shape constantly, but ass's hooves always give them away.",
+      "The ancients considered the ghul female. She was confused with the si'la, another female jinn who cannot change shape. A ghul stalks the desert, often as an attractive woman, and if she distracts a traveler she kills and eats them. The only defense is to kill her in one blow. A second blow brings her back.",
+      "The figure is in pre-Islamic poetry, including that of Ta'abbata Sharran. Modern Arabic uses ghul for a human or demonic cannibal and as a word to frighten children. In English, via the anglicized ghoul, the creature became a grave-robber that feeds on corpses and on children. Britannica quotes Poe calling Western ghouls 'neither man nor woman, neither brute nor human.'"
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/ghoul/36705",
+        "title": "ghoul - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Jinn class, ass hooves, the one-blow rule, and the later English grave-robber."
+      }
+    ],
+    "archetypeTags": [
+      "shape-shifter",
+      "desert",
+      "grave",
+      "one-blow"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "If used at all, the one-blow rule and the hooves, not Iblis and not the frightening of children. The English grave-robber is a drifted tradition and should not be drawn as a generic game undead.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium because the ghul is classed with jinn and called offspring of Iblis, inside a living religious cosmology. Not a worshipped being. Do not joke about Iblis, Islam, or eating children."
+  },
+  {
+    "inspirationId": "INS-04-042",
+    "name": "Ifrit",
+    "origin": "Islamic scripture and Arabic folklore",
+    "kind": "myth",
+    "facts": [
+      "Britannica: ifrit (also afreet, afrit, efreet; Arabic 'ifrit, feminine 'ifritah) is a class of powerful, usually malevolent beings in Islamic mythology and folklore.",
+      "The word does not appear in pre-Islamic poetry. It occurs once in the Qur'an, 27:39, in the phrase 'the ifrit of the jinn,' where it seems to mean a rebellious jinn. The phrase also occurs in Hadith.",
+      "Later popular tales depict an enormous winged creature of smoke, male or female, living underground and haunting ruins, organized in tribes with kings. Ordinary weapons do not work. Magic can kill or enslave them. An ifrit, like other jinn, may be a believer or not, but is most often shown as wicked."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/ifrit/42048",
+        "title": "ifrit - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Qur'an 27:39, the smoke-winged form, and the resistance to ordinary weapons."
+      }
+    ],
+    "archetypeTags": [
+      "jinn",
+      "smoke",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "Do not pitch. The class is named in the Qur'an.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. Part of Islamic scripture and belief, not a public-domain monster costume. publicDomain is false because the defining occurrence is a Qur'anic phrase, and modern fictional ifrits are separate copyrighted designs. Do not make a card called Efreet."
+  },
+  {
+    "inspirationId": "INS-04-043",
+    "name": "Jinn (jinni)",
+    "origin": "Islamic belief and Arabic folklore",
+    "kind": "myth",
+    "facts": [
+      "Britannica: a jinni (plural jinn, also genie, Arabic jinni) is a spirit of the earth, unseen by humans, able to take many forms. Pre-Islamic Arabia believed jinn inspired poets and soothsayers. The Qur'an affirms that they exist.",
+      "In Islam they are creatures parallel to humans, made of smokeless flame as humans are made of earth, able to choose good or evil, and subject to salvation or damnation.",
+      "Folklore has them in stones, trees, ruins, underground, air, and fire. They can be killed, they punish harm, and they are blamed for diseases and accidents. People who know the right procedure are said to exploit them. The article names ghul, ifrit, and si'la as classes of jinn, and says they are central to The Thousand and One Nights."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/jinni/43660",
+        "title": "jinni - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Qur'anic affirmation, smokeless flame, moral agency, and the three named classes."
+      }
+    ],
+    "archetypeTags": [
+      "spirit",
+      "flame",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "Do not pitch a genie, a wish-lamp, or a comic jinn. The English 'genie' tradition and the Nights are named by Britannica; cartoon genies are a further protected layer and are not a source.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. Jinn are part of living Islamic belief and are affirmed in the Qur'an. A comedy genie mocks that belief even when it copies a cartoon instead of scripture."
+  },
+  {
+    "inspirationId": "INS-04-044",
+    "name": "Domovoy",
+    "origin": "Slavic household folklore",
+    "kind": "folklore",
+    "facts": [
+      "Britannica: the domovoy is a Slavic household spirit with many local names, traced by the article to ancestor worship. He lives near the oven, under the doorstep, or in the hearth, and he never goes beyond the household boundary.",
+      "He guards the family and its wealth and prefers hard-working people. Displeasure shows up as trouble with the farm animals or as knocks and grating, which might also just be him amusing himself. He is easily placated.",
+      "He enforces traditional proprieties and is treated as able to foresee the future: groans and weeping, or singing and jumping, are read as bad or good portents. No household in the tradition would move without formally inviting him along."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/domovoy/30886",
+        "title": "domovoy - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The threshold limit, the oven and hearth, the ancestor-worship origin, and the invitation required for a move."
+      }
+    ],
+    "archetypeTags": [
+      "household",
+      "ancestor",
+      "threshold",
+      "guardian"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floor spirit who will not cross a tile line and must be formally invited when the party changes rooms. Do not mock ancestors.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. A living household spirit whose origin the encyclopedia ties to ancestor worship. He is a guardian, not a villain."
+  },
+  {
+    "inspirationId": "INS-04-045",
+    "name": "Rusalka",
+    "origin": "Slavic folklore",
+    "kind": "folklore",
+    "facts": [
+      "Britannica: a rusalka (plural rusalki) is a lake-dwelling soul of a child who died unbaptized or of a virgin who drowned, by accident or on purpose.",
+      "Traditions disagree. Near the Danube, where they are called vile, they are beautiful girls in robes of mist who sing bewitching songs. In northern Russia they are ugly, unkempt, naked, and eager to ambush people. Both kinds entice men, the vile to enchant and the northern rusalki to torture.",
+      "In rusalki week at the start of summer they leave the water, climb willow and birch trees, and at night dance in rings. Anyone who joins must dance until he dies. Afterward the grass grows thicker where they trod."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/rusalka/64448",
+        "title": "rusalka - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The unbaptized or drowned origin, the Danube versus northern contrast, and the fatal ring dance."
+      }
+    ],
+    "archetypeTags": [
+      "water",
+      "dance",
+      "regional-variants"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not use the dead-child origin. The only distant usable image is a ring dance on a floor that will not let you leave the beat, and even that should not be a drowned girl.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium, bordering on do-not-use. The tradition is about dead children and drowned women. Living Slavic folklore. Not a pitch."
+  },
+  {
+    "inspirationId": "INS-04-046",
+    "name": "Garuda",
+    "origin": "Hindu mythology, also Nepal and Southeast Asia",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Garuda is the bird, a kite or eagle, and the vahana of the god Vishnu. The Mahabharata account makes him the younger brother of Aruna, charioteer of the sun god Surya, and the son of Vinata.",
+      "Vinata was enslaved by her sister Kadru, mother of the nagas. The nagas freed her when Garuda brought them the amrita. That drink let the snakes shed their skins. On the way back he met Vishnu and agreed to be his vehicle and emblem. The article ties the enmity of birds and serpents to this story.",
+      "One text describes him as emerald, with a kite's beak, golden wings, four arms, and kite-like legs. Devotees of Vishnu use his image to show their affiliation. He appears on Gupta coins and, with Hinduism's spread, on monuments in Nepal and Southeast Asia, where he is associated with royalty."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Garuda/36128",
+        "title": "Garuda - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Vishnu's mount, the amrita errand, the four-armed form, and living use by devotees."
+      }
+    ],
+    "archetypeTags": [
+      "divine-bird",
+      "vahana",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch. He is Vishnu's mount and a living religious emblem.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. Worshipped alongside Vishnu, used by devotees to mark affiliation, and tied to royalty in several countries. A bird-versus-snake boss that winks at Garuda is not appropriate. Nagas are separately flagged high."
+  },
+  {
+    "inspirationId": "INS-04-047",
+    "name": "Kali",
+    "origin": "Hinduism, especially Bengal, Assam, Kerala, and Kashmir",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Kali, 'She Who Is Black' or 'She Who Is Death,' is a Hindu goddess of time, doomsday, and death. She is worshipped across India, with strong devotion in West Bengal, Assam, Jammu and Kashmir, and Kerala. Kali Puja coincides with Diwali.",
+      "The Devi Mahatmya tells of her springing from Durga's anger to stop the demon Raktabija, whose blood grew a new demon from every drop that hit the ground. She laps the blood up before it lands. Her fury does not end with the victory, and Shiva lies down in her path so that she steps on him and stops.",
+      "Common iconography in the article: black or blue, often naked, long tongue, many arms, a skirt of arms, a necklace of heads, a severed head in one hand, standing or dancing on Shiva. Her mount is a preta, a ghost, not an animal. Major shrines include Kalighat, Dakshineswar, and Kamakhya."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Kali/44396",
+        "title": "Kali - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Worship, Kali Puja, the Raktabija episode, and the iconography that must not be copied as a boss costume."
+      }
+    ],
+    "archetypeTags": [
+      "goddess",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch. The tongue, the garland, the multiple arms, and the blood-drinking are sacred iconography, not a character sheet.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. A widely worshipped goddess with major temples and an annual festival. Recorded only so a designer does not turn the iconography into a comedy boss. Raktabija's multiplying blood is also not a mechanic to lift."
+  },
+  {
+    "inspirationId": "INS-04-048",
+    "name": "Lamassu",
+    "origin": "Assyrian and Mesopotamian monumental art, 9th–7th century BCE",
+    "kind": "myth",
+    "facts": [
+      "Britannica: lamassu are monumental Mesopotamian guardian sculptures of the 9th to 7th centuries BCE, usually in pairs at city or citadel gates. They have a bearded human head, wings, and the body of a bull or a lion.",
+      "Assyrian palaces at Nimrud and Dur-Sharrukin used them to guard and display royal power. Some carry cuneiform inscriptions threatening those who oppose the king. They were carved in place from single stones that could weigh 40 tons or more.",
+      "They are double-aspect reliefs, meant to be seen from the front or the side. Some have five legs: two visible from the front so the figure seems to stand, and four visible in profile so it seems to stride. They wear horned crowns. The article reports a scholarly reading in which the bull body is strength, the wings freedom, and the human head intelligence."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/lamassu/634720",
+        "title": "Lamassu - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Gate guardians, the human-bull-or-lion body, the five-leg double aspect, and the Assyrian palace context."
+      }
+    ],
+    "archetypeTags": [
+      "guardian",
+      "hybrid",
+      "gate",
+      "monument"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A gate figure that is standing still and walking at the same time, because it has five legs. The joke is the optical rule. Do not mock Assyria or the destroyed monuments.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. They are guardians of palaces and temples and part of Iraqi cultural heritage. Several originals were destroyed in the 2010s; this article does not document that destruction, so it is not asserted here. Do not treat them as evil monsters."
+  },
+  {
+    "inspirationId": "INS-04-049",
+    "name": "Bunyip",
+    "origin": "Australian Aboriginal traditions, as lumped by a colonial-era encyclopedia label",
+    "kind": "folklore",
+    "facts": [
+      "A Britannica students article says the bunyip, in 'Australian Aboriginal folklore,' is a legendary monster of reedy swamps and lagoons in the interior. Descriptions it lists include a round head, a long neck, and a body like an ox, hippopotamus, or manatee, and sometimes a human figure.",
+      "The same short article says it boomed or roared and devoured people, especially women and children, and then offers a probable natural origin: stray seals far upstream, and the cry of the bittern.",
+      "That page treats many Aboriginal peoples as one folklore and presents the seal and bittern explanation as probability, not as a cited Aboriginal account. This record does not adopt that explanation as fact."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/students/article/bunyip/623258",
+        "title": "bunyip - Britannica Students",
+        "accessed": "2026-11-20",
+        "supports": "The colonial summary and its seal-and-bittern theory. Used as a caution, not as a design source."
+      }
+    ],
+    "archetypeTags": [
+      "water",
+      "colonial-label",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": false,
+    "parodyPotential": "Do not pitch. The name is a colonial catch-all for Aboriginal water beings, and this source is not a community telling.",
+    "confidence": "medium",
+    "sensitivity": "high",
+    "sensitivityNote": "High. Aboriginal water beings are culturally specific and often sacred. A students article that merges them into one monster and explains them away is not a safe basis for a comedy creature. publicDomain is false because what would be copied is a distorted colonial composite, not a single traditional story we have from its owners."
+  },
+  {
+    "inspirationId": "INS-04-050",
+    "name": "Quetzalcoatl",
+    "origin": "Aztec and broader Mesoamerican religion",
+    "kind": "myth",
+    "facts": [
+      "British Museum object Am1825,1210.11 is an Aztec stone bust, 1325–1521, of Quetzalcoatl, the Feathered Serpent. The curator note, citing Colin McEwan, says the Nahuatl name means quetzal-feather (quetzalli) plus snake (coatl).",
+      "The same note calls him one of the principal deities of the Aztec pantheon and the inspiration of a cult throughout Mesoamerica. As Quetzalcoatl-Ehecatl, the wind god, he is associated with rain-bearing storm clouds. The greenstone is tied to that moisture.",
+      "McEwan's note on the museum page also records the creation story in which, after the fourth world was destroyed by floods, Quetzalcoatl descended to the underworld, tricked Mictlantecuhtli, lord of the dead, and retrieved the bones of the previous people. With those bones and his own blood he made the humans of the present world."
+    ],
+    "sources": [
+      {
+        "url": "https://www.britishmuseum.org/collection/object/E_Am1825-1210-11",
+        "title": "Stone bust of Quetzalcoatl | British Museum Am1825,1210.11",
+        "accessed": "2026-11-20",
+        "supports": "The feathered-serpent name, the cult, the wind aspect, and the bone-and-blood creation account as given by the museum."
+      }
+    ],
+    "archetypeTags": [
+      "feathered-serpent",
+      "deity",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch a feathered-serpent god, a wind priest, or a joke about the creation of humans. Mictlantecuhtli, named in the same note, is also a deity and is not a separate toy.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. A principal Mesoamerican deity with a widespread cult. The museum bust is a religious image. Living and descendant communities still hold these traditions as heritage. Research flag only."
+  },
+  {
+    "inspirationId": "INS-04-051",
+    "name": "Tuatha Dé Danann",
+    "origin": "Irish mythology",
+    "kind": "myth",
+    "facts": [
+      "Britannica: Tuatha Dé Danann, 'People of the Goddess Danu,' are a race in Celtic mythology who inhabited Ireland before the Milesians, whom the article calls the ancestors of the modern Irish.",
+      "They were skilled in magic. The earliest reference in the article says they were banished from heaven because of their knowledge and descended on Ireland in a cloud of mist. Overcome by the Milesians, they were thought to have disappeared into the hills.",
+      "The Leabhar Gabhála, the Book of Invasions, treats them as actual people, and native historians did so up to the 17th century. In popular legend they became associated with the fairies still supposed to inhabit the Irish landscape."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Tuatha-D%C3%A9-Danann/73659",
+        "title": "Tuatha Dé Danann - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The goddess's people, the mist-arrival, the withdrawal into the hills, and the later fairy association."
+      }
+    ],
+    "archetypeTags": [
+      "divine-race",
+      "fairy-folk",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch them as a monster faction or as 'Irish fairies' for a gag. This record does not describe individual gods. Balor was not on this page and is not invented here.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. They are a divine people, named for a goddess, and popular legend still connects them to the fairies of the Irish landscape. Not a bestiary entry."
+  },
+  {
+    "inspirationId": "INS-04-052",
+    "name": "Kelpie",
+    "origin": "Scottish folklore",
+    "kind": "folklore",
+    "facts": [
+      "Wikipedia's kelpie article, read in full on 2026-11-20, says the kelpie is a shape-shifting water spirit of Scottish folklore, often a horse that can look human. It warns that writers do not agree on the habitat: John Gregorson Campbell, Lewis Spence, and Katharine Briggs separate a river kelpie from the loch-dwelling each-uisge, while Walter Scott extends the kelpie to lochs.",
+      "Traits the article attributes to recorded tales, not to one canonical text: a powerful black horse of deep pools, reversed hooves, a back that lengthens to take many riders, a hide that sticks to the hand, water weeds in the hair of the human form, and a bridle that holds the spirit's power.",
+      "Robert Burns's 1786 'Address to the Devil' is quoted there linking water-kelpies at the ford to the devil. The article also describes the 30-metre steel Kelpies at Falkirk, completed in 2013 by Andy Scott, as a modern monument to horse-powered industry. Those sculptures are not the folklore creature.",
+      "Several tales the article summarizes are about children drowned after climbing onto the horse. That strand is not usable."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kelpie",
+        "title": "Kelpie - Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "The horse form, the kelpie versus each-uisge dispute, the bridle and the adhesive hide, Burns, and the modern Falkirk sculptures. Confidence is medium because this is a tertiary synthesis."
+      }
+    ],
+    "archetypeTags": [
+      "water-horse",
+      "shape-shifter",
+      "bridle"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A ford-horse whose bridle is the off switch, and whose back is one seat longer than the party. Do not show drowned children, and do not copy the Falkirk steel heads.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. Living Scottish folklore, and a number of the collected tales are warnings about children drowning. The each-uisge is not silently folded in, because the article itself says specialists disagree. Andy Scott's Kelpies are a copyrighted modern artwork."
+  },
+  {
+    "inspirationId": "INS-04-053",
+    "name": "Manticore (martichora)",
+    "origin": "Greek reports, via Ctesias at the Persian court, of a beast said to live in India",
+    "kind": "myth",
+    "facts": [
+      "Wikipedia, fetched in full, says the English name comes through Latin from Greek martikhoras, itself a rendering of an Old Persian compound for man-eater. Ctesias, a 5th-century BCE Greek physician at the Achaemenid court, recorded the name martichora from Persian-speaking informants who had traveled to India.",
+      "The article's paraphrase of Photius and Aelian, both citing Ctesias, describes a blue-eyed, human-faced beast the size of the largest lion, with cinnabar-red fur, three rows of teeth, lion feet, and a scorpion tail whose stings could be fired and then regrew. Only the elephant was said to be immune, and the beast overcame every animal except the lion. Aelian adds that it preferred to hunt humans.",
+      "The same article says a faulty copy of Aristotle produced the spelling mantichora, which Pliny repeated. Pausanias was skeptical and treated the report as an exaggerated tiger. The lead sentence calls it a creature of ancient Persian mythology; the body shows a Greek ethnographic report about India, so this record does not treat 'Persian myth' as settled."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Manticore",
+        "title": "Manticore - Wikipedia",
+        "accessed": "2026-11-20",
+        "supports": "The Ctesias description, the man-eater etymology, Pausanias's skepticism, and the spelling history. Medium confidence: tertiary synthesis of classical fragments."
+      }
+    ],
+    "archetypeTags": [
+      "man-eater",
+      "human-face",
+      "scorpion-tail",
+      "classical-report"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A customs beast with three rows of teeth and a tail that restocks its own darts. Label it as Ctesias's traveler's tale, not as a sacred Persian being. Medieval bestiary drawings are a later layer.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "sensitivityNote": "Low religious sensitivity. It is a classical traveler's account, and Pausanias already doubted it. Not a worshipped creature in the sources read."
+  },
+  {
+    "inspirationId": "INS-04-054",
+    "name": "Simorgh (Simorḡ, Sēnmurw)",
+    "origin": "Iranian mythology, Avesta through the Shahnameh",
+    "kind": "myth",
+    "facts": [
+      "Encyclopaedia Iranica (Hanns-Peter Schmidt): the name comes from Avestan mərəγō saēnō, 'the bird Saēna,' a raptor, and is related to Sanskrit śyená. In Yašt 14.41 the victory deity Vərəθraγna wraps fortune around a house like that great bird. In Yašt 12.17 Saēna's tree stands in the sea Vourukaša, holds all-healing medicine, and carries the seeds of all plants.",
+      "In the Pahlavi Mēnōg ī Xrad the Sēnmurw nests on the tree without evil. When the bird rises, a thousand shoots grow; when it alights, it breaks a thousand and drops the seeds. The Bundahišn calls the three-fingered Sēn the largest of the birds and also, in a conflicting passage, counts the Sēnmurw among bats. Zādspram counts the Sēnmurw among birds of a different nature: they have teeth and feed their young with milk.",
+      "In Ferdowsi's Shahnameh the female Simorgh finds the white-haired infant Zāl exposed on the Alborz, raises him, and gives him a feather: burning it summons her. She directs the birth of Rostam and later draws the arrows from Rostam and his horse Rakhsh. The same epic has a second, hostile Simorgh that can carry off elephants and is cut apart by Esfandiar.",
+      "In Attar's Mantiq al-tayr the Simorgh is the king of the birds and a Sufi figure for the divine. Thirty birds (si morgh) who finish the quest find that they themselves are the Simorgh. That layer is not a monster."
+    ],
+    "sources": [
+      {
+        "url": "https://www.iranicaonline.org/articles/simorg",
+        "title": "SĪMORḠ - Encyclopaedia Iranica",
+        "accessed": "2026-11-20",
+        "supports": "The Avestan raptor, the seed-tree, the Shahnameh guardian of Zāl, the hostile elephant-carrying double, and Attar's divine metaphor."
+      }
+    ],
+    "archetypeTags": [
+      "giant-bird",
+      "guardian",
+      "feather-summon",
+      "do-not-parody-the-sufi-layer"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower nurse-bird who leaves one feather as a pager. Do not use Attar's 'the seekers are God' ending, and do not copy a manuscript painting.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. The bird is in Zoroastrian scripture and, in Attar, a metaphor for God. The Zal story is literary. Do not parody the Sufi or Avestan religious layer. Garuda is a separate high-sensitivity record; Iranica notes an old comparison but they are not the same being."
+  },
+  {
+    "inspirationId": "INS-04-055",
+    "name": "Kamak",
+    "origin": "Iranian mythology, Pahlavi texts",
+    "kind": "myth",
+    "facts": [
+      "Encyclopaedia Iranica, in the Simorḡ article, describes Kamak as the Sēnmurw's evil counterpart, one of the monsters killed by Karšāsp.",
+      "The Saddar Bundahišn account summarized there: when Kamak appeared he spread his wings over the whole world, so the rain fell on his wings and back into the sea. Drought followed, people died, and springs, rivers, and wells dried up. He devoured people and animals as a bird pecks grain.",
+      "Karšāsp showers him with arrows day and night until he falls. The article contrasts him with Camrōš, who pecks up the enemies of Iran."
+    ],
+    "sources": [
+      {
+        "url": "https://www.iranicaonline.org/articles/simorg",
+        "title": "SĪMORḠ - Encyclopaedia Iranica",
+        "accessed": "2026-11-20",
+        "supports": "Kamak as the world-covering drought bird slain by Karšāsp. No separate Kamak article was fetched."
+      }
+    ],
+    "archetypeTags": [
+      "giant-bird",
+      "drought",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bird so wide the floor's weather falls on his back and never reaches the ground. Distinct from the benevolent Simorgh.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "A monster in a religious literature, not himself a god. Low, with the usual caution not to mock Zoroastrian scripture around him."
+  },
+  {
+    "inspirationId": "INS-04-056",
+    "name": "Anzu",
+    "origin": "Sumerian and Akkadian mythology",
+    "kind": "myth",
+    "facts": [
+      "Encyclopaedia Iranica's Simorḡ article, comparing Near Eastern giant birds, says that in the Sumerian Lugalbanda epic the bird Anzu is benevolent: the hero frees the young and the bird blesses him in return.",
+      "The same paragraph says that in the Sumerian Lugal-e and the Akkadian Anzu epic the bird represents demonic powers and is vanquished by the god Ninurta.",
+      "No physical description and no quotation from those epics were on the page. The Etana eagle, mentioned next to them, is a different bird and is not folded into this record."
+    ],
+    "sources": [
+      {
+        "url": "https://www.iranicaonline.org/articles/simorg",
+        "title": "SĪMORḠ - Encyclopaedia Iranica",
+        "accessed": "2026-11-20",
+        "supports": "The benevolent Lugalbanda Anzu and the demonic Anzu defeated by Ninurta. Narrow on purpose."
+      }
+    ],
+    "archetypeTags": [
+      "giant-bird",
+      "two-traditions"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Not enough fetched detail to design from. Two opposite Anzus exist in the sources named. Do not pick a video-game lion-bird and call it this.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium confidence and medium sensitivity. The demonic Anzu is defeated by the god Ninurta, so the story sits inside Mesopotamian religion. A dedicated edition of the epic was not fetched."
+  },
+  {
+    "inspirationId": "INS-04-057",
+    "name": "Pazuzu",
+    "origin": "Neo-Assyrian religion",
+    "kind": "myth",
+    "facts": [
+      "British Museum 91876 is a yellow limestone head, about 800–600 BC, probably from Babylon. The description says Pazuzu has the face of a lion or a dog, unnaturally bulging eyes, and horns, with a cuneiform inscription on the back and sides.",
+      "The curator comment says he is a demonic figure first named and depicted in the Assyrian period. Complete figures show a scaly body, the forepaws of a lion, the talons of a bird, a scorpion's tail, and usually wings. He often raises his right hand in a threatening gesture.",
+      "The same comment says the rituals emphasize his evil nature, yet he could also be turned to good use. The head is on display in the museum's Mesopotamia gallery."
+    ],
+    "sources": [
+      {
+        "url": "https://www.britishmuseum.org/collection/object/W_1983-0101-66",
+        "title": "Head of Pazuzu | British Museum 91876",
+        "accessed": "2026-11-20",
+        "supports": "The lion-or-dog face, horns, bulging eyes, composite body, and the apotropaic note."
+      }
+    ],
+    "archetypeTags": [
+      "demon",
+      "composite",
+      "apotropaic"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A doorway head that is filed under both threat and ward. Do not copy a horror-film demon, and do not build a joke on the body the museum also describes.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. An ancient demon who was also used for protection, not a beneficent god. Modern horror films have their own Pazuzu; none was fetched, so no film plot is asserted, and none should be copied."
+  },
+  {
+    "inspirationId": "INS-04-058",
+    "name": "Roc (rukh)",
+    "origin": "Arabic legend, Thousand and One Nights and Marco Polo",
+    "kind": "myth",
+    "facts": [
+      "Britannica: the roc, also rukh, Arabic rukhkh, is a gigantic legendary bird said to carry off elephants and other large beasts for food.",
+      "It is mentioned in The Thousand and One Nights and by Marco Polo, who spoke of it while describing Madagascar and other islands off eastern Africa.",
+      "According to the article, Kublai Khan asked about the roc in those parts and was brought what was claimed to be a roc's feather, which may really have been a Raphia palm frond."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/roc/63939",
+        "title": "roc - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The elephant-carrying bird, the Nights, Marco Polo, and the palm-frond 'feather.'"
+      }
+    ],
+    "archetypeTags": [
+      "giant-bird",
+      "traveler-tale"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A cargo bird whose famous feather is a leaf. Do not copy a particular illustrated Nights edition. Distinct from the Simorgh, though later writers sometimes merged them.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "A legendary bird in Arabic tale and a traveler's report. Low. Not the Qur'anic jinn."
+  },
+  {
+    "inspirationId": "INS-04-059",
+    "name": "Bennu",
+    "origin": "Ancient Egyptian religion",
+    "kind": "myth",
+    "facts": [
+      "Britannica's phoenix article says the classical phoenix is possibly related to the Egyptian bennu. The bennu is represented as a gray heron that landed on the first land after creation and made the first noise.",
+      "Egyptian mythology, as the article states it, held that the morning sun arises daily as a bennu and that the bird is the soul of the sun god Re. It was later closely affiliated with Osiris, and it appears in the Book of the Dead in a funerary context."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/phoenix/59758",
+        "title": "phoenix - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The heron form, the first cry, the soul of Re, and the Osiris link. The classical phoenix is a separate record."
+      }
+    ],
+    "archetypeTags": [
+      "sun-bird",
+      "heron",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch. The bennu is the soul of Re and a funerary being.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. Identified as the soul of the sun god and tied to Osiris and the Book of the Dead. A gray heron that 'is just a phoenix' would erase that."
+  },
+  {
+    "inspirationId": "INS-04-060",
+    "name": "Phoenix (classical)",
+    "origin": "Greek and Roman tradition, later Christian allegory",
+    "kind": "myth",
+    "facts": [
+      "Britannica: the phoenix is a mythical bird said to live a long life, die, and be reborn. Most classical accounts link it to the sun and to palm trees, to death in fire and revival from the ashes, and to there being only one.",
+      "Herodotus, as summarized there, reported an Egyptian telling from Heliopolis: a bird as large as an eagle, scarlet and gold, visiting from Arabia every 500 years, carrying its dead father embalmed in an egg of myrrh to the temple of Re.",
+      "A later predominant version has the bird die on a pyre of aromatic substances and rise from the ashes. Lifespans in the sources range from 500 years to thousands. Christian writers including Clement, Tertullian, and Ambrose used the phoenix as an image of resurrection. That allegory is not a monster trait."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/phoenix/59758",
+        "title": "phoenix - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The unique sun-bird, Herodotus's 500-year myrrh egg, the pyre, and the Christian resurrection allegory."
+      }
+    ],
+    "archetypeTags": [
+      "unique",
+      "rebirth",
+      "fire"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A single tower bird that keeps the same employee number after it burns its desk. Do not joke about resurrection, Re, or Jesus, and do not use a school or city logo.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium because Christian writers made it an allegory of resurrection, and because the Egyptian telling is tied to the temple of Re. The bennu itself is flagged high separately."
+  },
+  {
+    "inspirationId": "INS-04-061",
+    "name": "Banshee (etymology only)",
+    "origin": "Irish tradition",
+    "kind": "folklore",
+    "facts": [
+      "Britannica's Milesians article says medieval Irish historians had the Tuatha Dé Danann withdraw into the old burial mounds. It says the word for burial mound is side, pronounced 'shee,' and that this word is used for the otherworld in Irish tales up to the present.",
+      "The only sentence on the banshee is: a banshee means a 'woman from the burial mound.'",
+      "The wail, the families she attends, her age, and her color were not on this page. They are not asserted."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/Milesians/474609",
+        "title": "Milesians - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The name as 'woman from the burial mound,' and nothing else."
+      }
+    ],
+    "archetypeTags": [
+      "otherworld",
+      "incomplete-record"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not design a screaming woman from this record. The only fetched fact is the name.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. She belongs to living Irish tradition and to the same otherworld as the Tuatha Dé Danann, who are flagged high. A pop-culture banshee would be invented on top of a one-line source."
+  },
+  {
+    "inspirationId": "INS-04-062",
+    "name": "Windigo (wendigo)",
+    "origin": "Algonquian-speaking First Nations",
+    "kind": "folklore",
+    "facts": [
+      "The Canadian Encyclopedia: a windigo or wendigo is a supernatural being in the spiritual traditions of Algonquian-speaking First Nations. The article names Abenaki, Siksika, Mi'kmaq, Algonquin, Ojibwe, and Innu among the peoples, and a list of other pronunciations and names, including atchen, chenoo, and kewok.",
+      "It is described as a cannibalistic monster that preys on the weak and the socially disconnected. In most versions a human becomes a windigo when greed or extreme hunger and cold corrupts them, or when a spirit possesses them. The legends are cautionary tales about isolation, selfishness, and the need to share.",
+      "Appearance is not one canon. The article lists, as variants across tellings, an emaciated ash-colored body, a giant who grows as it eats, animal ears, antlers or horns, sunken or glowing eyes. Some tellings say it can be killed with an ordinary weapon, some that its icy heart must be cut out and melted, and some that only a knowledgeable spiritual leader can deal with it.",
+      "The same article says Western popular culture took the being up recently, and it names Marvel's Wendigo among comics and films. Those are outsider designs. It also names art by Norval Morrisseau. Neither is a source to copy."
+    ],
+    "sources": [
+      {
+        "url": "https://www.thecanadianencyclopedia.ca/en/article/windigo",
+        "title": "Windigo | The Canadian Encyclopedia",
+        "accessed": "2026-11-20",
+        "supports": "The Algonquian traditions, the cautionary meaning, the lack of a single look, and the named pop-culture versions."
+      }
+    ],
+    "archetypeTags": [
+      "cannibal-spirit",
+      "cautionary",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch. A comedy windigo, an antlered skull, or Marvel's Wendigo would misuse a living spiritual tradition.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. A being in the spiritual traditions of multiple First Nations, still used as a metaphor for greed and for colonial harm. Not a public-domain monster costume. Research flag only."
+  },
+  {
+    "inspirationId": "INS-04-063",
+    "name": "Calydonian boar",
+    "origin": "Greek mythology, Calydon",
+    "kind": "myth",
+    "facts": [
+      "Theoi: a gigantic boar sent by Artemis to ravage Calydon because King Oeneus had neglected her in the first-fruit offerings.",
+      "Heroes from across Greece hunted it. Meleager, the king's son, struck the killing blow and gave the skin to Atalanta for drawing first blood.",
+      "The page cites Strabo for a parentage that makes this boar the offspring of the Crommyonian sow."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/HusKalydonios.html",
+        "title": "CALYDONIAN BOAR - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Artemis's punishment, the hunt, Meleager, Atalanta's first blood, and the sow parentage."
+      }
+    ],
+    "archetypeTags": [
+      "boar",
+      "hunt",
+      "divine-punishment"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floor that sends a boar because someone skipped the offering box. Artemis herself is not the punchline.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "A beast sent by a goddess. The boar is low. Do not parody Artemis."
+  },
+  {
+    "inspirationId": "INS-04-064",
+    "name": "Cretan bull",
+    "origin": "Greek mythology, Crete and Marathon",
+    "kind": "myth",
+    "facts": [
+      "Theoi: a handsome bull sent from the sea by Poseidon. Heracles was ordered to fetch it as a labour, then set it free. It reached Marathon, laid waste to the countryside, and was killed by Theseus.",
+      "The page says the gods placed it among the stars as Taurus, with the Hydra, the Nemean lion, and other labour beasts.",
+      "The same page says Pasiphae coupled with the bull by hiding inside a wooden cow made by Daedalus, and later gave birth to the Minotaur. That episode is the genealogy of INS-04-001. It is not a comedy beat."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/TaurosKretaios.html",
+        "title": "CRETAN BULL - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Poseidon's bull, the labour, Marathon, Theseus, the constellation, and the stated parentage of the Minotaur."
+      }
+    ],
+    "archetypeTags": [
+      "bull",
+      "labour",
+      "constellation"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A loose bull that was 'released humanely' and is now everyone else's problem. Do not stage the wooden cow.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Low for the animal. The Pasiphae episode is sexual and is excluded from parody even though the page states it."
+  },
+  {
+    "inspirationId": "INS-04-065",
+    "name": "Erymanthian boar",
+    "origin": "Greek mythology, Arcadia",
+    "kind": "myth",
+    "facts": [
+      "Theoi: a gigantic boar that ravaged the farmland of Psophis in western Arcadia. Capturing it alive was one of Heracles's labours.",
+      "He chased it through the winter snow of Mount Erymanthus, netted or noosed it once it weakened, and brought it back alive. Eurystheus, terrified, leapt into a buried pithos jar.",
+      "The page notes other traditions that put the hunt in Thessaly or even Phrygia, and that the labour is tied to the side-story of the centaurs at Pholoe."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/HusErymanthios.html",
+        "title": "ERYMANTHIAN BOAR - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The living capture in snow, Psophis, and Eurystheus hiding in a jar."
+      }
+    ],
+    "archetypeTags": [
+      "boar",
+      "capture-alive",
+      "snow"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A boss the quest says to bring back alive, whose mere entrance makes the floor manager jump into a pot.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "Labour beast. Distinct from the Calydonian boar, which was killed on a hunt."
+  },
+  {
+    "inspirationId": "INS-04-066",
+    "name": "Campe (Kampe)",
+    "origin": "Greek mythology, Tartarus",
+    "kind": "myth",
+    "facts": [
+      "Theoi: Campe was a drakaina whom Cronus set to guard the Hundred-Handers and the Cyclopes imprisoned in Tartarus. Zeus killed her and freed them for the war against the Titans.",
+      "The page's summary describes a woman to the waist, a serpent tail, serpentine hair, fifty bestial heads of lions, boars, and other animals about the shoulders or waist, a thousand vipers for feet, dark wings, and a scorpion sting raised over the head. The name is glossed as 'crooked' or 'winding.'",
+      "Nonnus, quoted on the page, has Zeus destroy her with a thunderbolt. Apollodorus, also cited, only says Zeus slew the jailer and freed the prisoners. The elaborate anatomy is the later poetic picture, and the page notes she may have been identified with Echidna."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/DrakainaKampe.html",
+        "title": "CAMPE - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The Tartarus jailer, Zeus's killing of her, and the composite body in the page summary and in Nonnus."
+      }
+    ],
+    "archetypeTags": [
+      "drakaina",
+      "jailer",
+      "multi-form",
+      "boss-material"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A warden made of too many animals, whose only job is to keep the smiths locked up. A thunderbolt is the key, not a new anatomy.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "sensitivityNote": "A literary jailer. The hundred-animal description is easy to over-design; the job is the interesting part."
+  },
+  {
+    "inspirationId": "INS-04-067",
+    "name": "Empusa (Empousa)",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "Theoi: the Empusae are daimones who take the form of beautiful women. Behind the illusion, an Empusa has flaming hair and mismatched legs, one of bronze and one of an ass. Aristophanes's Frogs, quoted on the page, has her shift among bull, mule, girl, and dog, with a blazing face and one copper leg.",
+      "She is sent by Hecate. Philostratus, cited on the page, says insulting her makes her flee shrieking. The Suda, also cited, derives the name from moving on one leg.",
+      "The page also says Lamiae and Empusae lure young men and consume their flesh and blood. That predatory story is not a comedy beat. Mormo, mentioned alongside them, is a bogey used to frighten children, which is also not a beat."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Phasma/Empousai.html",
+        "title": "EMPUSA - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "The mismatched legs, the shape-shifting in Frogs, Hecate, and the rout by insult."
+      }
+    ],
+    "archetypeTags": [
+      "shape-shifter",
+      "one-leg",
+      "bogey"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floor phantom with one metal leg and one that does not match, who leaves if you are rude enough. Do not use the seduction, the blood, or the frightening of children. Hecate is not the target.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. The traditional story includes preying on young men and, for Mormo, scaring children. Hecate, who sends the Empusa, is a goddess some people still honor."
+  },
+  {
+    "inspirationId": "INS-04-068",
+    "name": "Cerynitian hind",
+    "origin": "Greek mythology, Arcadia",
+    "kind": "myth",
+    "facts": [
+      "Theoi: a golden-horned deer sacred to Artemis. Fetching it was one of Heracles's labours. He chased it for a full year and caught it on Mount Artemisium. Artemis objected, and in the page's opening a horn had broken in the struggle. He persuaded her to let him borrow the deer to finish the labour.",
+      "The encyclopedia extract says it had golden antlers and brazen feet, and that it had to be brought alive. Callimachus, quoted on the page, says Artemis yoked four of five such deer to her chariot and that Hera let one escape to become the labour.",
+      "Some accounts on the page say he wounded it with an arrow. Diodorus lists nets, catching it asleep, or running it down, and stresses that the labour was done by wit rather than force."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Ther/ElaphosKerynitis.html",
+        "title": "CERYNITIAN HIND - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Sacred to Artemis, golden horns, the year-long chase, and the requirement to bring it alive."
+      }
+    ],
+    "archetypeTags": [
+      "deer",
+      "sacred-animal",
+      "capture-alive"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A quarry the rules say you may not kill, with horns that do not belong to you. Do not make Artemis the joke, and do not break the horn for a laugh.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium because the hind is sacred to Artemis, a goddess. The animal can be a capture objective. Killing it, or mocking the goddess, is the line."
+  },
+  {
+    "inspirationId": "INS-04-069",
+    "name": "Satyrs",
+    "origin": "Greek mythology",
+    "kind": "myth",
+    "facts": [
+      "Theoi: satyrs are rustic fertility spirits of the countryside. They consorted with nymphs and were companions of Dionysus, Hermes, Hephaestus, Pan, Rhea-Cybele, and Gaia.",
+      "They are depicted as animalistic men with ass's ears, pug noses, receding hairlines, and horses' tails. As Dionysus's companions they drink, dance, play flutes, and sport with maenads.",
+      "The page distinguishes subtypes: goat-legged Panes, elderly silens, child satyriskoi, and flute-playing tityroi. Roman tradition identified them with fauns."
+    ],
+    "sources": [
+      {
+        "url": "https://www.theoi.com/Georgikos/Satyroi.html",
+        "title": "SATYRS - Theoi Greek Mythology",
+        "accessed": "2026-11-20",
+        "supports": "Fertility spirits, the horse-tail and ass-ear body, and the gods they attend."
+      }
+    ],
+    "archetypeTags": [
+      "fertility-spirit",
+      "companion",
+      "not-a-boss"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Not recommended as a monster. They are attendants of worshipped gods. A flute-playing extra is the furthest this should go, and Pan himself is off limits.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "sensitivityNote": "Medium. Daimones in the company of Dionysus, Pan, and other gods. Easy to turn into a crude joke. Prefer not to."
+  },
+  {
+    "inspirationId": "INS-04-070",
+    "name": "Asuras",
+    "origin": "Hindu mythology, Puranas",
+    "kind": "myth",
+    "facts": [
+      "Britannica's article on the Samudra Manthana calls asuras demons or titans, in an ongoing struggle with the devas. The story is told in the Vishnu Purana and the Bhagavata Purana and is linked to the Kumbh Mela.",
+      "In that account the asuras, led by their king Bali, defeat the weakened devas and take the three worlds. The two sides then ally to churn the ocean of milk. The asuras hold the head of the naga Vasuki, who is the churning rope, while the devas hold the tail.",
+      "When the amrita appears, Vishnu as Mohini keeps it from the asuras. One asura, Swarbhanu, drinks some anyway and is beheaded; head and body become Rahu and Ketu. Those two are a separate record. Shiva, Vishnu, and the other gods in the story are not targets."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/churning-of-the-ocean-of-milk/82582",
+        "title": "Samudra Manthana - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "Asuras as the rivals of the devas, Bali, the Vasuki rope, and the link to the Kumbh Mela. A different URL titled asura dumped a Rig Veda text and was not used."
+      }
+    ],
+    "archetypeTags": [
+      "titan-class",
+      "cosmic",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch asuras as a generic demon faction. The story is part of living Hindu practice, including the Kumbh Mela.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. A class inside Hindu scripture and a myth tied to one of the largest religious gatherings. 'Demon' is the encyclopedia's gloss, not permission to raid the tradition for enemy types."
+  },
+  {
+    "inspirationId": "INS-04-071",
+    "name": "Rahu and Ketu",
+    "origin": "Hindu mythology, eclipse beings",
+    "kind": "myth",
+    "facts": [
+      "Britannica's Samudra Manthana article: the asura Swarbhanu disguised himself as a deva and drank some amrita. Surya and Chandra recognized him. Vishnu beheaded him with the Sudarshana Chakra.",
+      "Because he had tasted the amrita, both parts stayed immortal. The severed head is Rahu and the headless body is Ketu. The article says they later became responsible for eclipses."
+    ],
+    "sources": [
+      {
+        "url": "https://kids.britannica.com/scholars/article/churning-of-the-ocean-of-milk/82582",
+        "title": "Samudra Manthana - Britannica Scholars",
+        "accessed": "2026-11-20",
+        "supports": "The beheading of Swarbhanu and the eclipse role of Rahu and Ketu."
+      }
+    ],
+    "archetypeTags": [
+      "eclipse",
+      "immortal-severed",
+      "do-not-parody"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not pitch a headless eclipse boss from this. Rahu and Ketu are part of Hindu cosmology.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "sensitivityNote": "High. They explain eclipses inside a living religious cosmology and come out of a myth tied to the Kumbh Mela. Research flag only."
+  }
+]
