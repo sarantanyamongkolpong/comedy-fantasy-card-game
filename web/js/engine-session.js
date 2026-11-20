@@ -267,6 +267,8 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
         actions: (ui.actions ?? []).map((row) => stack('action', row.cardId, row)),
         companions: [],
       },
+      // v0.6 sport hook: mirror the sport save-v3 payload (roster, pity, ledger) at profile.sport.
+      ...(ui.sport && typeof ui.sport === 'object' && !Array.isArray(ui.sport) ? { sport: ui.sport } : {}),
     });
     const plainUi = { ...ui };
     delete plainUi._restoredMatch;
@@ -287,6 +289,8 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
     const saved = save.deserialize(json);
     const web = saved.web;
     if (!web?.ui) throw new Error('This save has no web profile.');
+    // v0.6 sport hook: older web saves carry no ui.sport; adopt the migrated profile.sport when it has data.
+    if (!web.ui.sport && saved.sport && Object.keys(saved.sport.roster ?? {}).length > 0) web.ui.sport = saved.sport;
     web.ui.autoPlay = {
       ...(web.ui.autoPlay ?? {}),
       enabled: saved.preferences?.autoBattle === true,

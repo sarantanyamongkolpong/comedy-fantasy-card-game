@@ -1,0 +1,94 @@
+{
+  "ok": false,
+  "stamp": "20261120T133318Z",
+  "worktree": null,
+  "base": {
+    "sha": "d5da98a79803c03c963e5b1c88fe14aac78efbe2",
+    "subject": "docs(sport v0.6): research pack, plan, stream contracts"
+  },
+  "head": "b841e7d872d644b5f4d8a1c0bca3cb2ddcaaa58d",
+  "fetchResults": [
+    {
+      "branch": "sport/v06-base",
+      "status": 0,
+      "error": "From https://github.com/sarantanyamongkolpong/comedy-fantasy-card-game\n * branch            sport/v06-base -> FETCH_HEAD\n"
+    },
+    {
+      "branch": "sport/v06-data",
+      "status": 0,
+      "error": "From https://github.com/sarantanyamongkolpong/comedy-fantasy-card-game\n * branch            sport/v06-data -> FETCH_HEAD\n"
+    },
+    {
+      "branch": "sport/v06-sim-ball",
+      "status": 0,
+      "error": "From https://github.com/sarantanyamongkolpong/comedy-fantasy-card-game\n * branch            sport/v06-sim-ball -> FETCH_HEAD\n"
+    },
+    {
+      "branch": "sport/v06-sim-race",
+      "status": 0,
+      "error": "From https://github.com/sarantanyamongkolpong/comedy-fantasy-card-game\n * branch            sport/v06-sim-race -> FETCH_HEAD\n"
+    },
+    {
+      "branch": "sport/v06-web",
+      "status": 0,
+      "error": "From https://github.com/sarantanyamongkolpong/comedy-fantasy-card-game\n * branch            sport/v06-web -> FETCH_HEAD\n"
+    }
+  ],
+  "streams": [
+    {
+      "branch": "sport/v06-data",
+      "present": true,
+      "sha": "1483a45d94a31df009e0f1e899414bba1a01f59c",
+      "subject": "Add Sport Complex v0.6 parody content and provenance checks.",
+      "featureComplete": false
+    },
+    {
+      "branch": "sport/v06-sim-ball",
+      "present": true,
+      "sha": "8f503523aa1989f81a6fcf9947dd3297a159663e",
+      "subject": "Add seeded football and basketball auto sims.",
+      "featureComplete": false
+    },
+    {
+      "branch": "sport/v06-sim-race",
+      "present": true,
+      "sha": "17ca51b35cac342ce66029c0beb55d8866dcb60e",
+      "subject": "Add seeded car and moto sims plus the sport wallet, gacha, and save v3 payload.",
+      "featureComplete": false
+    },
+    {
+      "branch": "sport/v06-web",
+      "present": true,
+      "sha": "18f1bc2ff47e1a13eaf3548c6cf10301850512cb",
+      "subject": "Add the Sport Complex hub, prep, sim, result, gacha, and roster.",
+      "featureComplete": false
+    }
+  ],
+  "merges": [
+    {
+      "branch": "sport/v06-data",
+      "status": "merged",
+      "sha": "1483a45d94a31df009e0f1e899414bba1a01f59c"
+    },
+    {
+      "branch": "sport/v06-sim-ball",
+      "status": "merged",
+      "sha": "8f503523aa1989f81a6fcf9947dd3297a159663e"
+    },
+    {
+      "branch": "sport/v06-sim-race",
+      "status": "merged",
+      "sha": "17ca51b35cac342ce66029c0beb55d8866dcb60e"
+    },
+    {
+      "branch": "sport/v06-web",
+      "status": "merged",
+      "sha": "18f1bc2ff47e1a13eaf3548c6cf10301850512cb"
+    }
+  ],
+  "featureComplete": false,
+  "harnessStatus": 1,
+  "harnessStdout": "RUN tests/sport/qa/provenance.test.js\nDONE tests/sport/qa/provenance.test.js pass=8 fail=1 skip=0 todo=0\nRUN tests/sport/qa/save-compat.test.js\nDONE tests/sport/qa/save-compat.test.js pass=3 fail=0 skip=0 todo=0\nRUN tests/sport/qa/wallet-gacha.test.js\nDONE tests/sport/qa/wallet-gacha.test.js pass=1 fail=0 skip=0 todo=0\nRUN tests/sport/qa/sim-determinism.test.js\nDONE tests/sport/qa/sim-determinism.test.js pass=4 fail=0 skip=1 todo=0\nRUN tests/e2e/sport/viewport-buttons.test.js\nDONE tests/e2e/sport/viewport-buttons.test.js pass=0 fail=4 skip=0 todo=0\nHARNESS node v22.23.4 pass=16 fail=5 skip=1 todo=0 hangs=0\n",
+  "harnessStderr": "",
+  "screenshots": "/agent/repos/comedy-fantasy-card-game/tests/e2e/sport/screenshots/20261120T133318Z"
+}

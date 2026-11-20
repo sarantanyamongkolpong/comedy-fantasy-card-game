@@ -1,6 +1,9 @@
 import { bindImage, findAsset } from '../assets.js';
 import { button, el } from '../dom.js';
 import { anchorById, buildingHotspots } from '../map-layout.js';
+// v0.6 web hook: the Sports Complex hotspot opens web/sport.
+// The manifest flag stays as shipped. Routing lives in web/sport/map-hook.js.
+import { isSportsComplexHotspot, openSportsComplex } from '../../sport/map-hook.js';
 const KNOWN_ACTIONS = new Set(['home', 'gacha', 'battle', 'mall', 'locked']);
 
 export function renderMap(ctx) {
@@ -25,7 +28,10 @@ export function renderMap(ctx) {
   root.append(back);
 
   for (const hotspot of buildingHotspots(ctx.manifest)) {
-    const spot = el('button', `hotspot${hotspot.locked ? ' is-locked' : ''}`);
+    const sportsHub = isSportsComplexHotspot(hotspot);
+    const showLocked = Boolean(hotspot.locked) && !sportsHub;
+    const spot = el('button', `hotspot${showLocked ? ' is-locked' : ''}`);
+    if (sportsHub) spot.dataset.sportsHub = 'open';
     spot.type = 'button';
     if (hotspot.anchorMode === 'bottom-center') {
       spot.style.left = `${hotspot.anchorX}px`;
@@ -48,7 +54,7 @@ export function renderMap(ctx) {
       spot.append(img);
     }
     spot.append(el('span', 'hotspot-label', hotspot.label));
-    if (hotspot.locked) spot.append(el('span', 'hotspot-lock', 'Coming soon'));
+    if (showLocked) spot.append(el('span', 'hotspot-lock', 'Coming soon'));
     spot.addEventListener('click', () => onHotspot(ctx, hotspot));
     root.append(spot);
   }
@@ -67,6 +73,10 @@ function place(node, box) {
 }
 
 function onHotspot(ctx, hotspot) {
+  if (isSportsComplexHotspot(hotspot)) {
+    openSportsComplex(ctx);
+    return;
+  }
   if (!KNOWN_ACTIONS.has(hotspot.action)) {
     ctx.setNotice(`${hotspot.label} is on the map. Nothing is wired to action "${hotspot.action}" yet.`);
     ctx.redraw();
@@ -81,7 +91,7 @@ function onHotspot(ctx, hotspot) {
     return;
   }
   if (hotspot.action === 'locked') {
-    ctx.setNotice('The Sports Complex is locked. Football, basketball, racing, and MotoGP are stretching off-screen. Coming soon.');
+    ctx.setNotice(`${hotspot.label} is not open in this build.`);
     ctx.redraw();
     return;
   }

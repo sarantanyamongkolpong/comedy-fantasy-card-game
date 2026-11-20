@@ -1,0 +1,423 @@
+.sport-root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(240, 193, 74, 0.18), transparent 34%),
+    #241430;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.sport-root button {
+  min-width: 116px;
+  min-height: 116px;
+  height: 116px;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 16px;
+  border: 3px solid var(--gold-mid);
+  background: linear-gradient(180deg, rgba(36, 52, 92, 0.94), rgba(12, 18, 40, 0.94));
+  color: var(--gold-bright);
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  box-shadow: inset 0 0 0 2px var(--navy-deep);
+  overflow: hidden;
+}
+
+.sport-root button.is-primary {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 244, 200, 0.7), transparent 46%),
+    linear-gradient(180deg, #ffe7a3, #c9922e 55%, #8a5a12);
+  color: #2a1608;
+  border-color: #fff1c2;
+}
+
+.sport-root button.is-selected {
+  outline: 4px solid #fff4cc;
+  outline-offset: 2px;
+}
+
+.sport-root button:disabled {
+  filter: grayscale(0.45);
+}
+
+.sport-bar,
+.sport-controls,
+.banner-row,
+.pull-row,
+.filter-row,
+.pager-row {
+  flex: 0 0 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 16px;
+}
+
+.sport-note,
+.pity-line {
+  flex: 0 0 32px;
+  height: 32px;
+  margin: 0 16px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #f0d7a4;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pity-line { flex-basis: 36px; height: 36px; line-height: 36px; }
+
+.sport-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sport-title .sport-art {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+}
+
+.sport-title h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 36px;
+  line-height: 1.05;
+  color: var(--gold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sport-title p {
+  margin: 2px 0 0;
+  font-size: 16px;
+  color: #f0d7a4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sport-g {
+  flex: 0 0 210px;
+  width: 210px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 3px solid var(--gold-deep);
+  border-radius: 16px;
+  background: #1a1024;
+}
+
+.sport-g-value { font-family: var(--display); font-size: 28px; color: var(--gold-bright); }
+.sport-g-tag, .tag-proposed { color: #ffe7a3; font-size: 14px; letter-spacing: 0.08em; }
+
+.sport-art { width: 100%; height: 100%; min-height: 0; }
+.sport-art svg, .sport-art img { width: 100%; height: 100%; display: block; object-fit: contain; }
+
+.hub-grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding: 0 16px 16px;
+}
+
+.sport-tile {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 3px solid var(--gold-mid);
+  border-radius: 18px;
+  background: rgba(12, 18, 40, 0.72);
+}
+
+.sport-tile .tile-art { flex: 1 1 auto; min-height: 0; }
+.sport-tile h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 28px;
+  color: var(--gold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sport-tile p { margin: 0; font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sport-tile button { width: 100%; flex: 0 0 116px; }
+
+.prep-row {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  gap: 16px;
+  padding: 0 16px 16px;
+  align-items: flex-start;
+}
+
+.pitch, .entry-stack {
+  position: relative;
+  width: 1080px;
+  height: 744px;
+  flex: 0 0 auto;
+}
+
+.pitch {
+  border: 3px solid var(--gold-mid);
+  border-radius: 18px;
+  background: rgba(20, 70, 40, 0.55);
+}
+
+.pitch button.slot {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  white-space: normal;
+  text-align: left;
+}
+
+.slot .role { font-size: 14px; letter-spacing: 0.06em; color: #ffe7a3; }
+.slot .who { font-size: 16px; line-height: 1.1; max-height: 36px; overflow: hidden; }
+.slot .stat { font-size: 14px; color: var(--paper); }
+
+.prep-side {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 744px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.choice-label {
+  margin: 0;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffe7a3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.choice-grid {
+  display: grid;
+  gap: 8px;
+  grid-auto-rows: 116px;
+}
+
+.choice-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.choice-grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.choice-grid button {
+  width: 100%;
+  white-space: normal;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.side-blurb {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  max-height: 88px;
+  overflow: hidden;
+  color: var(--paper);
+}
+
+.entry-stack { display: flex; flex-direction: column; gap: 12px; }
+
+.entry-card {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 12px;
+  border: 3px solid var(--gold-mid);
+  border-radius: 18px;
+  background: rgba(12, 18, 40, 0.72);
+}
+
+.entry-card .sport-art { flex: 0 0 150px; height: 150px; }
+.entry-card p { margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--paper); }
+.entry-card .entry-name { font-family: var(--display); font-size: 28px; color: var(--gold-bright); }
+.entry-card button { width: 100%; flex: 0 0 116px; }
+
+.sim-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px;
+}
+
+.sim-board, .sim-commentary, .result-panel, .roster-card, .reveal-card {
+  border: 3px solid var(--gold-mid);
+  border-radius: 16px;
+  background: rgba(12, 18, 40, 0.78);
+}
+
+.sim-board {
+  flex: 0 0 120px;
+  height: 120px;
+  padding: 10px 16px;
+  overflow: hidden;
+}
+
+.sim-board h2 { margin: 0; font-family: var(--display); font-size: 32px; color: var(--gold); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sim-board p { margin: 4px 0 0; font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.sim-commentary {
+  flex: 0 0 88px;
+  height: 88px;
+  padding: 10px 16px;
+  overflow: hidden;
+}
+
+.sim-commentary p { margin: 0; font-size: 20px; line-height: 1.25; }
+
+.sim-log {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.sim-log p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #f0d7a4;
+}
+
+.sim-log p.is-current { color: var(--paper); font-size: 22px; }
+
+.result-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 16px;
+  padding: 8px 16px 16px;
+}
+
+.result-panel { min-height: 0; overflow: hidden; padding: 16px 20px; }
+.result-panel h2 { margin: 0 0 8px; font-family: var(--display); font-size: 28px; color: var(--gold); }
+.score-xl { margin: 0; font-family: var(--display); font-size: 64px; line-height: 1; color: var(--gold-bright); }
+.stand-row { margin: 0 0 6px; font-size: 22px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.reveal-row {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  gap: 8px;
+  padding: 0 16px 16px;
+  align-items: stretch;
+}
+
+.reveal-card {
+  flex: 1 1 0;
+  max-width: 340px;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  padding: 8px;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 84px;
+  gap: 6px;
+}
+
+.reveal-card .sport-art { height: 100%; min-height: 0; }
+.reveal-copy {
+  height: 84px;
+  overflow: hidden;
+  padding: 6px 8px;
+  border-radius: 10px;
+  background: #100818;
+}
+.reveal-card p { margin: 0; font-size: 16px; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reveal-card .rarity { font-family: var(--display); font-size: 22px; color: var(--gold-bright); }
+.reveal-empty {
+  flex: 1;
+  margin: 0 16px 12px;
+  border: 3px dashed var(--gold-deep);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0d7a4;
+  font-size: 24px;
+}
+
+.roster-grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.roster-card {
+  min-height: 0;
+  overflow: hidden;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 8px;
+}
+
+.roster-card .sport-art { height: 100%; }
+.roster-card h2,
+.roster-card .stats {
+  margin: 0;
+  font-size: 16px;
+  color: var(--gold-bright);
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.roster-card .stats { color: var(--paper); font-size: 14px; -webkit-line-clamp: 2; }
+.roster-card p { margin: 2px 0 0; font-size: 14px; }
+
+.pager-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  color: var(--paper);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

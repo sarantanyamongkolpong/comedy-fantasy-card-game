@@ -1,0 +1,904 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "status": "PROPOSED",
+  "items": [
+    {
+      "entityId": "SPC_FOOTBALL_ATH_001",
+      "parodyName": "Theo Court-Tea",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Thibaut Courtois",
+        "identities": [
+          "Thibaut Courtois"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_002",
+      "parodyName": "Ash-Raf Haki-Mi",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Achraf Hakimi",
+        "identities": [
+          "Achraf Hakimi"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_003",
+      "parodyName": "Virgil Van Brick",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Virgil van Dijk",
+        "identities": [
+          "Virgil van Dijk"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_004",
+      "parodyName": "Willy Patchwork",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Willian Pacho",
+        "identities": [
+          "Willian Pacho"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_005",
+      "parodyName": "Noodle Mendez",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Nuno Mendes",
+        "identities": [
+          "Nuno Mendes"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_006",
+      "parodyName": "Carousel Six",
+      "closeness": "RENAMED",
+      "status": "PROPOSED",
+      "reason": "Workbook display still contained the real identity, so the shipped parody was moved further away.",
+      "real": {
+        "name": "Rodri",
+        "workbookParody": "Rodri-Go Round",
+        "identities": [
+          "Rodri",
+          "Rodri-Go Round"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_007",
+      "parodyName": "Penne Al-Dente",
+      "closeness": "RENAMED",
+      "status": "PROPOSED",
+      "reason": "Workbook display still contained the real identity, so the shipped parody was moved further away.",
+      "real": {
+        "name": "Pedri",
+        "workbookParody": "Pedri-Pasta",
+        "identities": [
+          "Pedri",
+          "Pedri-Pasta"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_008",
+      "parodyName": "Jude Belly-Ham",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Jude Bellingham",
+        "identities": [
+          "Jude Bellingham"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_009",
+      "parodyName": "Vinnie Juicebox Jr.",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Vinícius Júnior",
+        "identities": [
+          "Vinícius Júnior"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_010",
+      "parodyName": "Earl Haa-Landlord",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Erling Haaland",
+        "identities": [
+          "Erling Haaland"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_011",
+      "parodyName": "Lemon Yammal",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Lamine Yamal",
+        "identities": [
+          "Lamine Yamal"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_012",
+      "parodyName": "Killian Map-Pay",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Kylian Mbappé",
+        "identities": [
+          "Kylian Mbappé"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_ATH_013",
+      "parodyName": "Lion Messo",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Lionel Messi",
+        "identities": [
+          "Lionel Messi"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_001",
+      "parodyName": "Stew Currywurst",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Stephen Curry",
+        "identities": [
+          "Stephen Curry"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_002",
+      "parodyName": "Nikola Yogurt",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Nikola Jokić",
+        "identities": [
+          "Nikola Jokić"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_003",
+      "parodyName": "Victor Wobble-yama",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Victor Wembanyama",
+        "identities": [
+          "Victor Wembanyama"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_004",
+      "parodyName": "Shy Gorgeous Salamander",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Shai Gilgeous-Alexander",
+        "identities": [
+          "Shai Gilgeous-Alexander"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_005",
+      "parodyName": "Yannis Alphabet-Soup",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Giannis Antetokounmpo",
+        "identities": [
+          "Giannis Antetokounmpo"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_006",
+      "parodyName": "LeBrawn Jams",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "LeBron James",
+        "identities": [
+          "LeBron James"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_007",
+      "parodyName": "Kaitlyn Cluck",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Caitlin Clark",
+        "identities": [
+          "Caitlin Clark"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_008",
+      "parodyName": "Ay-Jay Wobble-Son",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "A’ja Wilson",
+        "identities": [
+          "A’ja Wilson"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_009",
+      "parodyName": "Brianna Stew-Pot",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Breanna Stewart",
+        "identities": [
+          "Breanna Stewart"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_ATH_010",
+      "parodyName": "Angel Rice-Bowl",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Angel Reese",
+        "identities": [
+          "Angel Reese"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_COA_001",
+      "parodyName": "Pepper Gourd-ola",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Pep Guardiola",
+        "identities": [
+          "Pep Guardiola"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_COA_002",
+      "parodyName": "Hansy Flicker",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Hansi Flick",
+        "identities": [
+          "Hansi Flick"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_COA_003",
+      "parodyName": "Tony Count-Té",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Antonio Conte",
+        "identities": [
+          "Antonio Conte"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_COA_004",
+      "parodyName": "Carlo Anchovy-Lotti",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Carlo Ancelotti",
+        "identities": [
+          "Carlo Ancelotti"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_COA_002",
+      "parodyName": "Gregg Popcorn-Vich",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Gregg Popovich",
+        "identities": [
+          "Gregg Popovich"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_COA_003",
+      "parodyName": "Becky Ham-Bun",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Becky Hammon",
+        "identities": [
+          "Becky Hammon"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_VEN_001",
+      "parodyName": "Sangria Bernaboo Dome",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Santiago Bernabéu",
+        "identities": [
+          "Santiago Bernabéu"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_VEN_002",
+      "parodyName": "Camp Noodle Colosseum",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Camp Nou",
+        "identities": [
+          "Camp Nou"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_VEN_003",
+      "parodyName": "Eddy-Tea-Had Stadium",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Etihad Stadium",
+        "identities": [
+          "Etihad Stadium"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_TEA_004",
+      "parodyName": "Dockside Noodles",
+      "closeness": "RENAMED",
+      "status": "PROPOSED",
+      "reason": "Workbook display still contained the real identity, so the shipped parody was moved further away.",
+      "real": {
+        "name": "Liverpool",
+        "workbookParody": "Liver-Pool Noodles",
+        "identities": [
+          "Liverpool",
+          "Liver-Pool Noodles"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_FOOTBALL_VEN_004",
+      "parodyName": "Auntie's Field",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Anfield",
+        "identities": [
+          "Anfield"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_TEA_001",
+      "parodyName": "Golden Snack Wafflers",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Golden State Warriors",
+        "identities": [
+          "Golden State Warriors"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_TEA_002",
+      "parodyName": "Denver Dino Nuggets",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Denver Nuggets",
+        "identities": [
+          "Denver Nuggets"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_TEA_003",
+      "parodyName": "LA Latte-Makers",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Los Angeles Lakers",
+        "identities": [
+          "Los Angeles Lakers"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_TEA_004",
+      "parodyName": "Indiana Flavor",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Indiana Fever",
+        "identities": [
+          "Indiana Fever"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_VEN_001",
+      "parodyName": "Cheese Center",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Chase Center",
+        "identities": [
+          "Chase Center"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_VEN_002",
+      "parodyName": "Bowl Arena",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Ball Arena",
+        "identities": [
+          "Ball Arena"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_BASKET_VEN_003",
+      "parodyName": "Crouton Arena",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Crypto.com Arena",
+        "identities": [
+          "Crypto.com Arena"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_TRK_001",
+      "parodyName": "Mozza Speedway",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Monza",
+        "identities": [
+          "Monza"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_TRK_002",
+      "parodyName": "Monocle Harbor Loop",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Monaco",
+        "identities": [
+          "Monaco"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_TRK_004",
+      "parodyName": "Silver Spoonstone",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Silverstone",
+        "identities": [
+          "Silverstone"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_TRK_005",
+      "parodyName": "Spa-ghetti Summit",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Spa-Francorchamps",
+        "identities": [
+          "Spa-Francorchamps"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_001",
+      "parodyName": "Lando Nori-Rice",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Lando Norris",
+        "identities": [
+          "Lando Norris"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_002",
+      "parodyName": "Oscar Pie-Astro",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Oscar Piastri",
+        "identities": [
+          "Oscar Piastri"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_003",
+      "parodyName": "Charlie LaCrêpe",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Charles Leclerc",
+        "identities": [
+          "Charles Leclerc"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_004",
+      "parodyName": "Lewie Ham-a-Ton",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Lewis Hamilton",
+        "identities": [
+          "Lewis Hamilton"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_005",
+      "parodyName": "Georgie Rustle",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "George Russell",
+        "identities": [
+          "George Russell"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_006",
+      "parodyName": "Kimi Anti-Noodle",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Kimi Antonelli",
+        "identities": [
+          "Kimi Antonelli"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_007",
+      "parodyName": "Max Verstomper",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Max Verstappen",
+        "identities": [
+          "Max Verstappen"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_008",
+      "parodyName": "Isaac Hat-Jar",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Isack Hadjar",
+        "identities": [
+          "Isack Hadjar"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_009",
+      "parodyName": "Nico Hula-Burger",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Nico Hülkenberg",
+        "identities": [
+          "Nico Hülkenberg"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_010",
+      "parodyName": "Gabe Burrito-Letto",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Gabriel Bortoleto",
+        "identities": [
+          "Gabriel Bortoleto"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_011",
+      "parodyName": "Carlos Saucez",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Carlos Sainz",
+        "identities": [
+          "Carlos Sainz"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_CAR_ENT_012",
+      "parodyName": "Alex All-Bun",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Alexander Albon",
+        "identities": [
+          "Alexander Albon"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_TRK_001",
+      "parodyName": "Mushgello Valley",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Mugello",
+        "identities": [
+          "Mugello"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_TRK_002",
+      "parodyName": "Sausage Ring",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Sachsenring",
+        "identities": [
+          "Sachsenring"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_TRK_003",
+      "parodyName": "Pillow Island",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Phillip Island",
+        "identities": [
+          "Phillip Island"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_TRK_004",
+      "parodyName": "Ramen Temple Raceway",
+      "closeness": "RENAMED",
+      "status": "PROPOSED",
+      "reason": "Workbook display still contained the real identity, so the shipped parody was moved further away.",
+      "real": {
+        "name": "Buriram",
+        "workbookParody": "Buri-Ramen Raceway",
+        "identities": [
+          "Buriram",
+          "Buri-Ramen Raceway"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_TRK_005",
+      "parodyName": "Canal Zigzag",
+      "closeness": "RENAMED",
+      "status": "PROPOSED",
+      "reason": "Workbook display still contained the real identity, so the shipped parody was moved further away.",
+      "real": {
+        "name": "Assen",
+        "workbookParody": "Assen S-Bend",
+        "identities": [
+          "Assen",
+          "Assen S-Bend"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_ENT_003",
+      "parodyName": "Fabio Fourturn",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Fabio Quartararo",
+        "identities": [
+          "Fabio Quartararo"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_ENT_004",
+      "parodyName": "Pedro Acoaster",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Pedro Acosta",
+        "identities": [
+          "Pedro Acosta"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_ENT_005",
+      "parodyName": "Jorge Martian",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Jorge Martín",
+        "identities": [
+          "Jorge Martín"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_ENT_007",
+      "parodyName": "Marco Buzzachi",
+      "closeness": "HIGH",
+      "status": "PROPOSED",
+      "reason": "Shipped parody still echoes the real identity and needs a publicity review before any release.",
+      "real": {
+        "name": "Marco Bezzecchi",
+        "identities": [
+          "Marco Bezzecchi"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_ENT_008",
+      "parodyName": "Horizon Mirage",
+      "closeness": "RENAMED",
+      "status": "PROPOSED",
+      "reason": "Workbook display still contained the real identity, so the shipped parody was moved further away.",
+      "real": {
+        "name": "Joan Mir",
+        "workbookParody": "Joan Mirage",
+        "identities": [
+          "Joan Mir",
+          "Joan Mirage"
+        ]
+      }
+    },
+    {
+      "entityId": "SPC_MOTO_ENT_010",
+      "parodyName": "Ayo Oguramen",
+      "closeness": "MEDIUM",
+      "status": "PROPOSED",
+      "reason": "Shipped parody is transformed, but a reviewer should still confirm it is far enough from the real identity.",
+      "real": {
+        "name": "Ai Ogura",
+        "identities": [
+          "Ai Ogura"
+        ]
+      }
+    }
+  ],
+  "internalNote": "Names that still sit close to a real identity, plus workbook strings that were replaced."
+}

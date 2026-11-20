@@ -1,0 +1,74 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "basket",
+  "status": "PROPOSED",
+  "schemes": [
+    {
+      "id": "SPC_BASKET_TAC_001",
+      "sport": "basket",
+      "kind": "scheme",
+      "parodyName": "Shadow Mark",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Each defender picks up one opponent. Chasing a hot scorer can tire the whole side.",
+      "real": {
+        "name": "FIBA WABC Level 1",
+        "url": "https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-level-manuals-level-1-eng.pdf",
+        "season": "FIBA coaching manual current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "FIBA WABC Level 1"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Scheme bonuses are design inferences, not official rulebook values."
+      }
+    },
+    {
+      "id": "SPC_BASKET_TAC_002",
+      "sport": "basket",
+      "kind": "scheme",
+      "parodyName": "Paint Picnic",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Bodies pack the lane and help the rebound. Spacing around the arc can pull the shell apart.",
+      "real": {
+        "name": "FIBA WABC Level 2",
+        "url": "https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-manual-level-2-eng.pdf",
+        "season": "FIBA coaching manual current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "FIBA WABC Level 2"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Scheme bonuses are design inferences, not official rulebook values."
+      }
+    },
+    {
+      "id": "SPC_BASKET_TAC_003",
+      "sport": "basket",
+      "kind": "scheme",
+      "parodyName": "Region Buddy",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Defenders pass assignments as the ball moves. It needs the five to know the handoff.",
+      "real": {
+        "name": "FIBA WABC Level 3",
+        "url": "https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-manual-level-3-eng.pdf",
+        "season": "FIBA coaching manual current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "FIBA WABC Level 3"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Scheme bonuses are design inferences, not official rulebook values."
+      }
+    }
+  ]
+}

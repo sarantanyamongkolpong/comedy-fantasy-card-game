@@ -1,0 +1,8 @@
+"GACHA, RARITY & ECONOMY",,,,,,,
+"No odds, costs or payout numbers are silently invented. Sports rarity inherits Avatar v0.5, not Action.",,,,,,,
+Banner ID,Pool,Rarity,Currency,Pity counter,Costs/rates,Status,Operational rule
+SPORT_FOOTBALL,Football athlete / coach,N / R / Epic / EX,G (existing shared),FOOTBALL only,TBD editable,OWNER_LOCKED,No cross-sport cards
+SPORT_BASKET,Basketball athlete / coach,N / R / Epic / EX,G (existing shared),BASKET only,TBD editable,OWNER_LOCKED,No cross-sport cards
+SPORT_CAR,Car racing driver and/or car,N / R / Epic / EX,G (existing shared),CAR only,TBD editable,OWNER_LOCKED,One sport banner; subpool optional
+SPORT_MOTO,Moto rider and/or bike,N / R / Epic / EX,G (existing shared),MOTO only,TBD editable,OWNER_LOCKED,One sport banner; subpool optional
+MAIN_EXISTING,Avatar & Action,Keep current separate rules,Same G wallet,Existing config,Preserve values,OWNER_LOCKED,Action FAC tier unaffected

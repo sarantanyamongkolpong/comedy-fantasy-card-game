@@ -69,11 +69,27 @@ const css = cssFiles.map(inlineCss).join('\n');
 // Manifest fragments imported as JSON (gacha.json, battle-ui.json, ...) keep repo paths such as
 // "web/assets/gacha/vfx_n.webp". An iife has no import.meta.url, so those paths would not load from
 // file://. Replace each path literal that names a real file with a data URI.
-const js = readFileSync(bundleFile, 'utf8').replace(/(["'])((?:web\/)?assets\/[^"'\s]+\.(?:webp|png|svg|jpe?g))\1/g, (full, quote, rel) => {
+const js = readFileSync(bundleFile, 'utf8')
+  .replace(/\b(real\d*)\(\s*"[^"]*",\s*"https?:\/\/[^"]*"\s*\)/g, '$1(null, null)')
+  .replace(/(["'])((?:web\/)?assets\/[^"'\s]+\.(?:webp|png|svg|jpe?g))\1/g, (full, quote, rel) => {
   const file = join(repoRoot, rel.startsWith('web/') ? rel : `web/${rel}`);
   if (!existsSync(file)) return full;
   return `${quote}${dataUri(file)}${quote}`;
 });
+// v0.6 Sport Complex: inline sport.css and every file named in web/sport/art-manifest.json.
+const sportCss = readFileSync(join(repoRoot, 'web/sport/sport.css'), 'utf8');
+const sportArt = JSON.parse(readFileSync(join(repoRoot, 'web/sport/art-manifest.json'), 'utf8'));
+const sportArtInline = {};
+for (const asset of sportArt.assets ?? []) {
+  if (!asset.file || asset.file.startsWith('data:') || sportArtInline[asset.file]) continue;
+  const file = join(repoRoot, 'web/sport', asset.file);
+  if (existsSync(file)) sportArtInline[asset.file] = dataUri(file);
+}
+const leaked = js.match(/https?:\/\/(?:www\.)?(?:formula1\.com|motogp\.com)[^"'\s]*/);
+if (leaked) {
+  console.error(`build-single-html: real-provenance URL left in bundle: ${leaked[0]}`);
+  process.exit(1);
+}
 const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,6 +98,9 @@ const html = `<!DOCTYPE html>
   <title>Comedy Fantasy Card Game</title>
   <style>
 ${css}
+  </style>
+  <style data-sport-css="true">
+${sportCss}
   </style>
 </head>
 <body>
@@ -93,6 +112,7 @@ ${css}
     <p>This stage is built for landscape. Portrait is just a very tall joke.</p>
   </div>
   <script>globalThis.__CFCG_MANIFEST = ${JSON.stringify(manifest)};</script>
+  <script>globalThis.__SPORT_ART_INLINE = ${JSON.stringify(sportArtInline)};</script>
   <script>${js}</script>
 </body>
 </html>

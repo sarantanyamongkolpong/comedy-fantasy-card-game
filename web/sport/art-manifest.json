@@ -1,0 +1,1855 @@
+{
+  "id": "sport-art-v06",
+  "status": "PROPOSED",
+  "note": "Swap any entry by setting file to an original image path relative to web/sport/. Null file draws the shape. No logos or likenesses.",
+  "assets": [
+    {
+      "id": "SPORT_MARK_HUB",
+      "slot": "mark",
+      "subjectId": "hub",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder complex mark",
+      "file": "art/mark-hub.svg",
+      "shape": {
+        "kind": "badge",
+        "primary": "#141c38",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_TILE_FOOTBALL",
+      "slot": "tile",
+      "subjectId": "football",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder Football tile",
+      "file": "art/tile-football.svg",
+      "shape": {
+        "kind": "tile",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_TILE_BASKET",
+      "slot": "tile",
+      "subjectId": "basket",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder Basketball tile",
+      "file": "art/tile-basket.svg",
+      "shape": {
+        "kind": "tile",
+        "primary": "#c46a2f",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_TILE_CAR",
+      "slot": "tile",
+      "subjectId": "car",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder Car Racing tile",
+      "file": "art/tile-car.svg",
+      "shape": {
+        "kind": "tile",
+        "primary": "#1a2744",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_TILE_MOTO",
+      "slot": "tile",
+      "subjectId": "moto",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder Motorcycle tile",
+      "file": "art/tile-moto.svg",
+      "shape": {
+        "kind": "tile",
+        "primary": "#3a2458",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_001",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_001",
+      "contentSlot": "SPC_FOOTBALL_ATH_001_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_002",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_002",
+      "contentSlot": "SPC_FOOTBALL_ATH_002_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_003",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_003",
+      "contentSlot": "SPC_FOOTBALL_ATH_003_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_004",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_004",
+      "contentSlot": "SPC_FOOTBALL_ATH_004_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_005",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_005",
+      "contentSlot": "SPC_FOOTBALL_ATH_005_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_006",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_006",
+      "contentSlot": "SPC_FOOTBALL_ATH_006_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_007",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_007",
+      "contentSlot": "SPC_FOOTBALL_ATH_007_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_008",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_008",
+      "contentSlot": "SPC_FOOTBALL_ATH_008_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_009",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_009",
+      "contentSlot": "SPC_FOOTBALL_ATH_009_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_010",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_010",
+      "contentSlot": "SPC_FOOTBALL_ATH_010_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_011",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_011",
+      "contentSlot": "SPC_FOOTBALL_ATH_011_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_012",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_012",
+      "contentSlot": "SPC_FOOTBALL_ATH_012_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_013",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_013",
+      "contentSlot": "SPC_FOOTBALL_ATH_013_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_014",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_014",
+      "contentSlot": "SPC_FOOTBALL_ATH_014_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_015",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_015",
+      "contentSlot": "SPC_FOOTBALL_ATH_015_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_016",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_016",
+      "contentSlot": "SPC_FOOTBALL_ATH_016_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_017",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_017",
+      "contentSlot": "SPC_FOOTBALL_ATH_017_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_018",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_018",
+      "contentSlot": "SPC_FOOTBALL_ATH_018_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_019",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_019",
+      "contentSlot": "SPC_FOOTBALL_ATH_019_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_020",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_020",
+      "contentSlot": "SPC_FOOTBALL_ATH_020_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_021",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_021",
+      "contentSlot": "SPC_FOOTBALL_ATH_021_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_022",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_022",
+      "contentSlot": "SPC_FOOTBALL_ATH_022_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_023",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_023",
+      "contentSlot": "SPC_FOOTBALL_ATH_023_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_024",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_024",
+      "contentSlot": "SPC_FOOTBALL_ATH_024_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_025",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_025",
+      "contentSlot": "SPC_FOOTBALL_ATH_025_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_026",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_026",
+      "contentSlot": "SPC_FOOTBALL_ATH_026_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_027",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_027",
+      "contentSlot": "SPC_FOOTBALL_ATH_027_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_ATH_028",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_ATH_028",
+      "contentSlot": "SPC_FOOTBALL_ATH_028_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_COA_001",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_COA_001",
+      "contentSlot": "SPC_FOOTBALL_COA_001_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_COA_002",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_COA_002",
+      "contentSlot": "SPC_FOOTBALL_COA_002_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_COA_003",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_COA_003",
+      "contentSlot": "SPC_FOOTBALL_COA_003_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_COA_004",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_COA_004",
+      "contentSlot": "SPC_FOOTBALL_COA_004_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_COA_005",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_COA_005",
+      "contentSlot": "SPC_FOOTBALL_COA_005_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_FOOTBALL_COA_006",
+      "slot": "portrait",
+      "subjectId": "SPC_FOOTBALL_COA_006",
+      "contentSlot": "SPC_FOOTBALL_COA_006_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1f6b3a",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "ball"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_001",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_001",
+      "contentSlot": "SPC_BASKET_ATH_001_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_002",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_002",
+      "contentSlot": "SPC_BASKET_ATH_002_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_003",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_003",
+      "contentSlot": "SPC_BASKET_ATH_003_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_004",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_004",
+      "contentSlot": "SPC_BASKET_ATH_004_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_005",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_005",
+      "contentSlot": "SPC_BASKET_ATH_005_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_006",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_006",
+      "contentSlot": "SPC_BASKET_ATH_006_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_007",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_007",
+      "contentSlot": "SPC_BASKET_ATH_007_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_008",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_008",
+      "contentSlot": "SPC_BASKET_ATH_008_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_009",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_009",
+      "contentSlot": "SPC_BASKET_ATH_009_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_010",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_010",
+      "contentSlot": "SPC_BASKET_ATH_010_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_011",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_011",
+      "contentSlot": "SPC_BASKET_ATH_011_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_012",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_012",
+      "contentSlot": "SPC_BASKET_ATH_012_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_013",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_013",
+      "contentSlot": "SPC_BASKET_ATH_013_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_014",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_014",
+      "contentSlot": "SPC_BASKET_ATH_014_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_015",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_015",
+      "contentSlot": "SPC_BASKET_ATH_015_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_016",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_016",
+      "contentSlot": "SPC_BASKET_ATH_016_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_017",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_017",
+      "contentSlot": "SPC_BASKET_ATH_017_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_018",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_018",
+      "contentSlot": "SPC_BASKET_ATH_018_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_019",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_019",
+      "contentSlot": "SPC_BASKET_ATH_019_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_020",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_020",
+      "contentSlot": "SPC_BASKET_ATH_020_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_ATH_021",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_ATH_021",
+      "contentSlot": "SPC_BASKET_ATH_021_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_COA_001",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_COA_001",
+      "contentSlot": "SPC_BASKET_COA_001_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_COA_002",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_COA_002",
+      "contentSlot": "SPC_BASKET_COA_002_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_COA_003",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_COA_003",
+      "contentSlot": "SPC_BASKET_COA_003_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#c46a2f",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "plus"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_COA_004",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_COA_004",
+      "contentSlot": "SPC_BASKET_COA_004_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_BASKET_COA_005",
+      "slot": "portrait",
+      "subjectId": "SPC_BASKET_COA_005",
+      "contentSlot": "SPC_BASKET_COA_005_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#7a3b12",
+        "secondary": "#f2a65a",
+        "accent": "#f4e2c4",
+        "mark": "hoop"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_001",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_001",
+      "contentSlot": "SPC_CAR_ENT_001_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_002",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_002",
+      "contentSlot": "SPC_CAR_ENT_002_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_003",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_003",
+      "contentSlot": "SPC_CAR_ENT_003_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_004",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_004",
+      "contentSlot": "SPC_CAR_ENT_004_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_005",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_005",
+      "contentSlot": "SPC_CAR_ENT_005_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_006",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_006",
+      "contentSlot": "SPC_CAR_ENT_006_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_007",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_007",
+      "contentSlot": "SPC_CAR_ENT_007_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_008",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_008",
+      "contentSlot": "SPC_CAR_ENT_008_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_009",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_009",
+      "contentSlot": "SPC_CAR_ENT_009_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_010",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_010",
+      "contentSlot": "SPC_CAR_ENT_010_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_011",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_011",
+      "contentSlot": "SPC_CAR_ENT_011_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_012",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_012",
+      "contentSlot": "SPC_CAR_ENT_012_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#1a2744",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_013",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_013",
+      "contentSlot": "SPC_CAR_ENT_013_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_014",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_014",
+      "contentSlot": "SPC_CAR_ENT_014_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_015",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_015",
+      "contentSlot": "SPC_CAR_ENT_015_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_016",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_016",
+      "contentSlot": "SPC_CAR_ENT_016_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_017",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_017",
+      "contentSlot": "SPC_CAR_ENT_017_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_018",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_018",
+      "contentSlot": "SPC_CAR_ENT_018_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_019",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_019",
+      "contentSlot": "SPC_CAR_ENT_019_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_020",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_020",
+      "contentSlot": "SPC_CAR_ENT_020_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_021",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_021",
+      "contentSlot": "SPC_CAR_ENT_021_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_CAR_ENT_022",
+      "slot": "portrait",
+      "subjectId": "SPC_CAR_ENT_022",
+      "contentSlot": "SPC_CAR_ENT_022_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#5a1a1a",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "car"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_001",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_001",
+      "contentSlot": "SPC_MOTO_ENT_001_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_002",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_002",
+      "contentSlot": "SPC_MOTO_ENT_002_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_003",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_003",
+      "contentSlot": "SPC_MOTO_ENT_003_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_004",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_004",
+      "contentSlot": "SPC_MOTO_ENT_004_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_005",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_005",
+      "contentSlot": "SPC_MOTO_ENT_005_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#e6c36a",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_006",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_006",
+      "contentSlot": "SPC_MOTO_ENT_006_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_007",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_007",
+      "contentSlot": "SPC_MOTO_ENT_007_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#7eb6d8",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_008",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_008",
+      "contentSlot": "SPC_MOTO_ENT_008_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_009",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_009",
+      "contentSlot": "SPC_MOTO_ENT_009_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#c9a0e0",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_010",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_010",
+      "contentSlot": "SPC_MOTO_ENT_010_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_011",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_011",
+      "contentSlot": "SPC_MOTO_ENT_011_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_012",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_012",
+      "contentSlot": "SPC_MOTO_ENT_012_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_013",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_013",
+      "contentSlot": "SPC_MOTO_ENT_013_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_014",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_014",
+      "contentSlot": "SPC_MOTO_ENT_014_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_015",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_015",
+      "contentSlot": "SPC_MOTO_ENT_015_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_016",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_016",
+      "contentSlot": "SPC_MOTO_ENT_016_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_017",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_017",
+      "contentSlot": "SPC_MOTO_ENT_017_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_018",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_018",
+      "contentSlot": "SPC_MOTO_ENT_018_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_019",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_019",
+      "contentSlot": "SPC_MOTO_ENT_019_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_020",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_020",
+      "contentSlot": "SPC_MOTO_ENT_020_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_021",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_021",
+      "contentSlot": "SPC_MOTO_ENT_021_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    },
+    {
+      "id": "SPORT_ART_SPC_MOTO_ENT_022",
+      "slot": "portrait",
+      "subjectId": "SPC_MOTO_ENT_022",
+      "contentSlot": "SPC_MOTO_ENT_022_PORTRAIT",
+      "placeholder": true,
+      "status": "PROPOSED",
+      "alt": "Placeholder",
+      "file": null,
+      "shape": {
+        "kind": "badge",
+        "primary": "#3a2458",
+        "secondary": "#d5d5d5",
+        "accent": "#f4e2c4",
+        "mark": "moto"
+      }
+    }
+  ]
+}

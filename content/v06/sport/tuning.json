@@ -1,0 +1,4302 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "status": "PROPOSED",
+  "balance": "BALANCE_PLACEHOLDER",
+  "internalNote": "Every number in this file is a balance placeholder. None of them are official stats, prices, odds, or championship points.",
+  "statScale": {
+    "min": {
+      "value": 1,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "max": {
+      "value": 99,
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    }
+  },
+  "coachPassiveWeight": {
+    "value": 4,
+    "balance": "BALANCE_PLACEHOLDER",
+    "status": "PROPOSED"
+  },
+  "banners": {
+    "SPORT_FOOTBALL": {
+      "bannerId": "SPORT_FOOTBALL",
+      "pool": "athlete-and-coach",
+      "currency": "G",
+      "pityScope": "this banner only",
+      "status": "PROPOSED",
+      "pity": {
+        "Epic": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "pullCostG": {
+        "value": 100,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "odds": {
+        "weightPer": {
+          "value": 10000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "N": {
+          "value": 7000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "R": {
+          "value": 2200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "Epic": {
+          "value": 700,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "internalNote": "Placeholder weights and price. Not a drop rate and not an approved cost."
+    },
+    "SPORT_BASKET": {
+      "bannerId": "SPORT_BASKET",
+      "pool": "athlete-and-coach",
+      "currency": "G",
+      "pityScope": "this banner only",
+      "status": "PROPOSED",
+      "pity": {
+        "Epic": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "pullCostG": {
+        "value": 100,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "odds": {
+        "weightPer": {
+          "value": 10000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "N": {
+          "value": 7000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "R": {
+          "value": 2200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "Epic": {
+          "value": 700,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "internalNote": "Placeholder weights and price. Not a drop rate and not an approved cost."
+    },
+    "SPORT_CAR": {
+      "bannerId": "SPORT_CAR",
+      "pool": "combined-entry",
+      "currency": "G",
+      "pityScope": "this banner only",
+      "status": "PROPOSED",
+      "pity": {
+        "Epic": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "pullCostG": {
+        "value": 100,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "odds": {
+        "weightPer": {
+          "value": 10000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "N": {
+          "value": 7000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "R": {
+          "value": 2200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "Epic": {
+          "value": 700,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "internalNote": "Placeholder weights and price. Not a drop rate and not an approved cost."
+    },
+    "SPORT_MOTO": {
+      "bannerId": "SPORT_MOTO",
+      "pool": "combined-entry",
+      "currency": "G",
+      "pityScope": "this banner only",
+      "status": "PROPOSED",
+      "pity": {
+        "Epic": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "pullCostG": {
+        "value": 100,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "odds": {
+        "weightPer": {
+          "value": 10000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "N": {
+          "value": 7000,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "R": {
+          "value": 2200,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "Epic": {
+          "value": 700,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        },
+        "EX": {
+          "value": 100,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED"
+        }
+      },
+      "internalNote": "Placeholder weights and price. Not a drop rate and not an approved cost."
+    }
+  },
+  "eventRewardsG": {
+    "football": {
+      "win": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "draw": {
+        "value": 20,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "loss": {
+        "value": 10,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    },
+    "basket": {
+      "win": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "draw": {
+        "value": 15,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "loss": {
+        "value": 10,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    },
+    "car": {
+      "first": {
+        "value": 60,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "second": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "third": {
+        "value": 30,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "classified": {
+        "value": 15,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "dnf": {
+        "value": 5,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    },
+    "moto": {
+      "first": {
+        "value": 60,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "second": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "third": {
+        "value": 30,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "classified": {
+        "value": 15,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "dnf": {
+        "value": 5,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    }
+  },
+  "matchLengths": {
+    "football": {
+      "halves": {
+        "value": 2,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "minutesPerHalf": {
+        "value": 45,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "simMinutes": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "playbackSecondsMin": {
+        "value": 60,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "playbackSecondsMax": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "extraTimeMinutes": {
+        "value": 30,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    },
+    "basket": {
+      "quarters": {
+        "value": 4,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "minutesPerQuarter": {
+        "value": 10,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "overtimeMinutes": {
+        "value": 5,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "playbackSeconds": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    },
+    "car": {
+      "grandPrixLaps": {
+        "value": 12,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "sprintLaps": {
+        "value": 6,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "playbackSeconds": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    },
+    "moto": {
+      "grandPrixLaps": {
+        "value": 12,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "sprintLaps": {
+        "value": 6,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      },
+      "playbackSeconds": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED"
+      }
+    }
+  },
+  "statsByCardId": {
+    "SPC_FOOTBALL_ATH_001": {
+      "Power": {
+        "value": 44,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 91,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 47,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_002": {
+      "Power": {
+        "value": 59,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 69,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_003": {
+      "Power": {
+        "value": 54,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_004": {
+      "Power": {
+        "value": 53,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 61,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_005": {
+      "Power": {
+        "value": 56,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_006": {
+      "Power": {
+        "value": 57,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_007": {
+      "Power": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_008": {
+      "Power": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 55,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_009": {
+      "Power": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 48,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 89,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_010": {
+      "Power": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 85,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_011": {
+      "Power": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 45,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_012": {
+      "Power": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_013": {
+      "Power": {
+        "value": 91,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 41,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_001": {
+      "Shooting": {
+        "value": 89,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_002": {
+      "Shooting": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_003": {
+      "Shooting": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_004": {
+      "Shooting": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_005": {
+      "Shooting": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_006": {
+      "Shooting": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 69,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_007": {
+      "Shooting": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_008": {
+      "Shooting": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_009": {
+      "Shooting": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_010": {
+      "Shooting": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_COA_001": {
+      "Power": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 54,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_COA_002": {
+      "Power": {
+        "value": 65,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 55,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_COA_003": {
+      "Power": {
+        "value": 60,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 57,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_COA_004": {
+      "Power": {
+        "value": 63,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 59,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_COA_001": {
+      "Shooting": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 62,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_COA_002": {
+      "Shooting": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 59,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_COA_003": {
+      "Shooting": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 57,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_CAR_ENT_001": {
+      "TopSpeed": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_002": {
+      "TopSpeed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_003": {
+      "TopSpeed": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_004": {
+      "TopSpeed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_005": {
+      "TopSpeed": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_006": {
+      "TopSpeed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 69,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_007": {
+      "TopSpeed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_008": {
+      "TopSpeed": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_009": {
+      "TopSpeed": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_010": {
+      "TopSpeed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_011": {
+      "TopSpeed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_012": {
+      "TopSpeed": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 69,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_001": {
+      "TopSpeed": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_002": {
+      "TopSpeed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_003": {
+      "TopSpeed": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_004": {
+      "TopSpeed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_005": {
+      "TopSpeed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_006": {
+      "TopSpeed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_007": {
+      "TopSpeed": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_008": {
+      "TopSpeed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_009": {
+      "TopSpeed": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_010": {
+      "TopSpeed": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_014": {
+      "Power": {
+        "value": 46,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_015": {
+      "Power": {
+        "value": 59,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 68,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_016": {
+      "Power": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 61,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_017": {
+      "Power": {
+        "value": 49,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_018": {
+      "Power": {
+        "value": 58,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_019": {
+      "Power": {
+        "value": 57,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 65,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 85,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_020": {
+      "Power": {
+        "value": 63,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_021": {
+      "Power": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 54,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_022": {
+      "Power": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 47,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 85,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_023": {
+      "Power": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 42,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_024": {
+      "Power": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 41,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_025": {
+      "Power": {
+        "value": 46,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_026": {
+      "Power": {
+        "value": 49,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_027": {
+      "Power": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 40,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_ATH_028": {
+      "Power": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 46,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_COA_005": {
+      "Power": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 52,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_FOOTBALL_COA_006": {
+      "Power": {
+        "value": 61,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Speed": {
+        "value": 54,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Acc": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_011": {
+      "Shooting": {
+        "value": 86,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_012": {
+      "Shooting": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 69,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_013": {
+      "Shooting": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_014": {
+      "Shooting": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 61,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 87,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_015": {
+      "Shooting": {
+        "value": 88,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 66,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_016": {
+      "Shooting": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_017": {
+      "Shooting": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 81,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_018": {
+      "Shooting": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 90,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 67,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_019": {
+      "Shooting": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 63,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 83,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_020": {
+      "Shooting": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 84,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 82,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_ATH_021": {
+      "Shooting": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 89,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_COA_004": {
+      "Shooting": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 57,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_BASKET_COA_005": {
+      "Shooting": {
+        "value": 69,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Def": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Spd": {
+        "value": 64,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      },
+      "Sta": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "role-baseline-not-from-raw-metrics"
+      }
+    },
+    "SPC_CAR_ENT_013": {
+      "TopSpeed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_014": {
+      "TopSpeed": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_015": {
+      "TopSpeed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 69,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_016": {
+      "TopSpeed": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_017": {
+      "TopSpeed": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_018": {
+      "TopSpeed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_019": {
+      "TopSpeed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_020": {
+      "TopSpeed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_021": {
+      "TopSpeed": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_CAR_ENT_022": {
+      "TopSpeed": {
+        "value": 80,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_011": {
+      "TopSpeed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_012": {
+      "TopSpeed": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_013": {
+      "TopSpeed": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_014": {
+      "TopSpeed": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_015": {
+      "TopSpeed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 72,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_016": {
+      "TopSpeed": {
+        "value": 79,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_017": {
+      "TopSpeed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_018": {
+      "TopSpeed": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_019": {
+      "TopSpeed": {
+        "value": 78,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_020": {
+      "TopSpeed": {
+        "value": 74,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 71,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_021": {
+      "TopSpeed": {
+        "value": 77,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 70,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 73,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    },
+    "SPC_MOTO_ENT_022": {
+      "TopSpeed": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Accel": {
+        "value": 75,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      },
+      "Handling": {
+        "value": 76,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "scale": "game-scale-not-official",
+        "source": "not-from-verified-metrics"
+      }
+    }
+  },
+  "rarityByCardId": {
+    "SPC_FOOTBALL_ATH_001": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_002": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_003": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_004": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_005": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_006": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_007": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_008": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_009": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_010": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_011": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_012": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_013": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_001": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_002": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_003": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_004": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_005": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_006": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_007": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_008": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_009": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_010": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_COA_001": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_COA_002": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_COA_003": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_COA_004": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_COA_001": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_COA_002": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_COA_003": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_001": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_002": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_003": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_004": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_005": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_006": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_007": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_008": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_009": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_010": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_011": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_012": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_001": {
+      "rarity": "EX",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_002": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_003": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_004": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_005": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_006": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_007": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_008": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_009": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_010": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_014": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_015": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_016": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_017": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_018": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_019": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_020": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_021": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_022": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_023": {
+      "rarity": "Epic",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_024": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_025": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_026": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_027": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_ATH_028": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_COA_005": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_FOOTBALL_COA_006": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_011": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_012": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_013": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_014": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_015": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_016": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_017": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_018": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_019": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_020": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_ATH_021": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_COA_004": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_BASKET_COA_005": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_013": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_014": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_015": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_016": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_017": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_018": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_019": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_020": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_021": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_CAR_ENT_022": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_011": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_012": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_013": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_014": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_015": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_016": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_017": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_018": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_019": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_020": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_021": {
+      "rarity": "R",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    },
+    "SPC_MOTO_ENT_022": {
+      "rarity": "N",
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED"
+    }
+  },
+  "motoGameTraits": {
+    "byCardId": {
+      "SPC_MOTO_ENT_001": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_002": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "H",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_003": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_004": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_005": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "H",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_006": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_007": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_008": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_009": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "H",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_010": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "H",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_011": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_012": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_013": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_014": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_015": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_016": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_017": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_018": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_019": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_020": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_021": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      },
+      "SPC_MOTO_ENT_022": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "handling": "M",
+        "speedUse": "M",
+        "accelUse": "M",
+        "internalNote": "Qualitative game bands only. Not a measured rider or bike metric."
+      }
+    },
+    "byVehicleId": {
+      "SPC_MOTO_VEH_001": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "H",
+        "accel": "H",
+        "handling": "M",
+        "researchedProfile": true,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_002": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "H",
+        "researchedProfile": true,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_003": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "H",
+        "handling": "M",
+        "researchedProfile": true,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_004": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "H",
+        "researchedProfile": true,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_005": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "M",
+        "researchedProfile": true,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_006": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "M",
+        "researchedProfile": false,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_007": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "M",
+        "researchedProfile": false,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_008": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "M",
+        "researchedProfile": false,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_009": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "M",
+        "researchedProfile": false,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_010": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "M",
+        "researchedProfile": false,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      },
+      "SPC_MOTO_VEH_011": {
+        "gameOnly": true,
+        "balance": "BALANCE_PLACEHOLDER",
+        "status": "PROPOSED",
+        "topSpeed": "M",
+        "accel": "M",
+        "handling": "M",
+        "researchedProfile": false,
+        "internalNote": "Fictional H/M/L bike profile. Not a measured metric and not stored on the real block."
+      }
+    }
+  }
+}

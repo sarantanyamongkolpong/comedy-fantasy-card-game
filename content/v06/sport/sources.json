@@ -1,0 +1,2663 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "status": "RESEARCH",
+  "snapshotDate": "2026-11-20",
+  "sources": [
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_001",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_001"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250011668--thibaut-courtois/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Thibaut Courtois",
+        "identities": [
+          "Thibaut Courtois"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_002",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_002"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250088061--achraf-hakimi/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Achraf Hakimi",
+        "identities": [
+          "Achraf Hakimi"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_003",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_003"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/50327420--virgil-van-dijk/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Virgil van Dijk",
+        "identities": [
+          "Virgil van Dijk"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_004",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_004"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250174126--willian-pacho/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Willian Pacho",
+        "identities": [
+          "Willian Pacho"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_005",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_005"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250136465--nuno-mendes/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Nuno Mendes",
+        "identities": [
+          "Nuno Mendes"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_006",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_006"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250082664--rodri/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Rodri",
+        "identities": [
+          "Rodri"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_007",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_007"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250143693--pedri/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Pedri",
+        "identities": [
+          "Pedri"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_008",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_008"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250128377--jude-bellingham/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Jude Bellingham",
+        "identities": [
+          "Jude Bellingham"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_009",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_009"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250121533--vinicius-junior/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Vinícius Júnior",
+        "identities": [
+          "Vinícius Júnior"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_010",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_010"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250103758--erling-haaland/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Erling Haaland",
+        "identities": [
+          "Erling Haaland"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_011",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_011"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250176450--lamine-yamal/statistics/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Lamine Yamal",
+        "identities": [
+          "Lamine Yamal"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_012",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_012"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/players/250076574--kylian-mbappe/",
+      "season": "UCL 2026/27",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Kylian Mbappé",
+        "identities": [
+          "Kylian Mbappé"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_ATH_013",
+      "entityIds": [
+        "SPC_FOOTBALL_ATH_013"
+      ],
+      "sport": "football",
+      "url": "https://www.mlssoccer.com/news/inter-miami-cf-forward-lionel-messi-wins-2026-mls-golden-boot-presented-by-audi",
+      "season": "MLS 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Lionel Messi",
+        "identities": [
+          "Lionel Messi",
+          "Inter Miami CF"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_001",
+      "entityIds": [
+        "SPC_BASKET_ATH_001"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/stats/leaders?Season=2024-25&SeasonType=Regular+Season&StatCategory=AST",
+      "season": "NBA 2024/25",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Stephen Curry",
+        "identities": [
+          "Stephen Curry"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_002",
+      "entityIds": [
+        "SPC_BASKET_ATH_002"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/nuggets/news/nikola-jokic-named-to-kia-all-nba-first-team-3",
+      "season": "NBA 2024/25",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Nikola Jokić",
+        "identities": [
+          "Nikola Jokić",
+          "Denver Nuggets"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_003",
+      "entityIds": [
+        "SPC_BASKET_ATH_003"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/stats/leaders?Season=2024-25&SeasonType=Regular+Season&StatCategory=BLK",
+      "season": "NBA 2024/25",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Victor Wembanyama",
+        "identities": [
+          "Victor Wembanyama"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_004",
+      "entityIds": [
+        "SPC_BASKET_ATH_004"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/news/kia-nba-most-valuable-player-award-2024-25-shai-gilgeous-alexander",
+      "season": "NBA 2024/25",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Shai Gilgeous-Alexander",
+        "identities": [
+          "Shai Gilgeous-Alexander"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_005",
+      "entityIds": [
+        "SPC_BASKET_ATH_005"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/bucks/news/giannis-antetokounmpo-named-eastern-conference-player-of-the-week-24",
+      "season": "NBA 2024/25",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Giannis Antetokounmpo",
+        "identities": [
+          "Giannis Antetokounmpo"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_006",
+      "entityIds": [
+        "SPC_BASKET_ATH_006"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/lakers/news/lebron-james-named-to-2024-25-all-nba-second-team-052325",
+      "season": "NBA 2024/25",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "LeBron James",
+        "identities": [
+          "LeBron James",
+          "Los Angeles Lakers"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_007",
+      "entityIds": [
+        "SPC_BASKET_ATH_007"
+      ],
+      "sport": "basket",
+      "url": "https://fever.wnba.com/news/indiana-fever-guards-caitlin-clark-and-kelsey-mitchell-named-to-2026-all-wnba-first-team",
+      "season": "WNBA 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Caitlin Clark",
+        "identities": [
+          "Caitlin Clark",
+          "Indiana Fever"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_008",
+      "entityIds": [
+        "SPC_BASKET_ATH_008"
+      ],
+      "sport": "basket",
+      "url": "https://www.wnba.com/news/wilson-named-2026-most-valuable-player",
+      "season": "WNBA 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "A’ja Wilson",
+        "identities": [
+          "A’ja Wilson"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_009",
+      "entityIds": [
+        "SPC_BASKET_ATH_009"
+      ],
+      "sport": "basket",
+      "url": "https://liberty.wnba.com/roster",
+      "season": "WNBA 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Breanna Stewart",
+        "identities": [
+          "Breanna Stewart",
+          "New York Liberty"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_ATH_010",
+      "entityIds": [
+        "SPC_BASKET_ATH_010"
+      ],
+      "sport": "basket",
+      "url": "https://www.wnba.com/news/reese-named-2026-defensive-player-of-the-year",
+      "season": "WNBA 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Angel Reese",
+        "identities": [
+          "Angel Reese"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_COA_001",
+      "entityIds": [
+        "SPC_FOOTBALL_COA_001"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0280-17c6b1ac9a53-0dc7fbd642da-1000--in-the-zone-city-slickers/",
+      "season": "UCL tactical report",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Pep Guardiola",
+        "identities": [
+          "Pep Guardiola"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_COA_002",
+      "entityIds": [
+        "SPC_FOOTBALL_COA_002"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0298-1d89b8face21-7d7daaad2e8e-1000--meet-the-champions-league-semi-finalists/",
+      "season": "UCL tactical analysis",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Hansi Flick",
+        "identities": [
+          "Hansi Flick"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_COA_003",
+      "entityIds": [
+        "SPC_FOOTBALL_COA_003"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/news/027a-1672a7a4bb35-e53198f581e7-1000--round-of-16-meet-the-teams/",
+      "season": "UCL round of 16 tactical report",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Antonio Conte",
+        "identities": [
+          "Antonio Conte"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_COA_004",
+      "entityIds": [
+        "SPC_FOOTBALL_COA_004"
+      ],
+      "sport": "football",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/carlo-ancelotti-brazil-attacking-options",
+      "season": "FIFA World Cup 2026 manager profile",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Carlo Ancelotti",
+        "identities": [
+          "Carlo Ancelotti"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_COA_001",
+      "entityIds": [
+        "SPC_BASKET_COA_001"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/warriors/news/warriors-head-coach-steve-kerr-earns-600th-career-win-20260316",
+      "season": "NBA coach milestone report",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Steve Kerr",
+        "identities": [
+          "Steve Kerr"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_COA_002",
+      "entityIds": [
+        "SPC_BASKET_COA_002"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/spurs/news/gregg-popovich-transitions-to-spurs-president-of-basketball-operations",
+      "season": "NBA front-office transition, May 2025",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Gregg Popovich",
+        "identities": [
+          "Gregg Popovich"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_COA_003",
+      "entityIds": [
+        "SPC_BASKET_COA_003"
+      ],
+      "sport": "basket",
+      "url": "https://aces.wnba.com/head-coach-becky-hammon",
+      "season": "WNBA coach page",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Becky Hammon",
+        "identities": [
+          "Becky Hammon"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TAC_001",
+      "entityIds": [
+        "SPC_FOOTBALL_TAC_001"
+      ],
+      "sport": "football",
+      "url": "https://inside.fifa.com/tournaments/mens/mensolympic/tokyo2020/news/analysing-the-olympics-attacking-success-stories",
+      "season": "Tactical reference current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "formation",
+      "real": {
+        "name": "FIFA tactical analysis",
+        "identities": [
+          "FIFA tactical analysis"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TAC_002",
+      "entityIds": [
+        "SPC_FOOTBALL_TAC_002"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0298-1d89b8face21-7d7daaad2e8e-1000--meet-the-champions-league-semi-finalists/",
+      "season": "Tactical reference current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "formation",
+      "real": {
+        "name": "UEFA Champions League analysis",
+        "identities": [
+          "UEFA Champions League analysis"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TAC_003",
+      "entityIds": [
+        "SPC_FOOTBALL_TAC_003"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefaconferenceleague/news/0299-1da976b7409d-0bab90537314-1000--uefa-conference-league-tactical-analysis-how-real-betis-/",
+      "season": "Tactical reference current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "formation",
+      "real": {
+        "name": "UEFA tactical analysis",
+        "identities": [
+          "UEFA tactical analysis"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TAC_004",
+      "entityIds": [
+        "SPC_FOOTBALL_TAC_004"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/news-media/news/01de-0f8e489e9402-ca60279b93b5-1000--graham-taylor-s-4-4-2/",
+      "season": "Tactical reference current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "formation",
+      "real": {
+        "name": "UEFA history/tactics",
+        "identities": [
+          "UEFA history/tactics"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TAC_005",
+      "entityIds": [
+        "SPC_FOOTBALL_TAC_005"
+      ],
+      "sport": "football",
+      "url": "https://www.uefa.com/uefachampionsleague/news/027a-1672a7a4bb35-e53198f581e7-1000--round-of-16-meet-the-teams/",
+      "season": "Tactical reference current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "formation",
+      "real": {
+        "name": "UEFA coaching analysis",
+        "identities": [
+          "UEFA coaching analysis"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_TAC_001",
+      "entityIds": [
+        "SPC_BASKET_TAC_001"
+      ],
+      "sport": "basket",
+      "url": "https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-level-manuals-level-1-eng.pdf",
+      "season": "FIBA coaching manual current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "scheme",
+      "real": {
+        "name": "FIBA WABC Level 1",
+        "identities": [
+          "FIBA WABC Level 1"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_TAC_002",
+      "entityIds": [
+        "SPC_BASKET_TAC_002"
+      ],
+      "sport": "basket",
+      "url": "https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-manual-level-2-eng.pdf",
+      "season": "FIBA coaching manual current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "scheme",
+      "real": {
+        "name": "FIBA WABC Level 2",
+        "identities": [
+          "FIBA WABC Level 2"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_TAC_003",
+      "entityIds": [
+        "SPC_BASKET_TAC_003"
+      ],
+      "sport": "basket",
+      "url": "https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-manual-level-3-eng.pdf",
+      "season": "FIBA coaching manual current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "scheme",
+      "real": {
+        "name": "FIBA WABC Level 3",
+        "identities": [
+          "FIBA WABC Level 3"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TEA_001",
+      "entityIds": [
+        "SPC_FOOTBALL_TEA_001"
+      ],
+      "sport": "football",
+      "url": "https://www.realmadrid.com/en-US/bernabeu-stadium/",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Real Madrid",
+        "identities": [
+          "Real Madrid"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_VEN_001",
+      "entityIds": [
+        "SPC_FOOTBALL_VEN_001"
+      ],
+      "sport": "football",
+      "url": "https://www.realmadrid.com/en-US/bernabeu-stadium/",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "venue",
+      "real": {
+        "name": "Santiago Bernabéu",
+        "identities": [
+          "Santiago Bernabéu"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TEA_002",
+      "entityIds": [
+        "SPC_FOOTBALL_TEA_002"
+      ],
+      "sport": "football",
+      "url": "https://www.fcbarcelona.com/en/club/facilities/spotify-camp-nou",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Barcelona",
+        "identities": [
+          "Barcelona"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_VEN_002",
+      "entityIds": [
+        "SPC_FOOTBALL_VEN_002"
+      ],
+      "sport": "football",
+      "url": "https://www.fcbarcelona.com/en/club/facilities/spotify-camp-nou",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "venue",
+      "real": {
+        "name": "Camp Nou",
+        "identities": [
+          "Camp Nou"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TEA_003",
+      "entityIds": [
+        "SPC_FOOTBALL_TEA_003"
+      ],
+      "sport": "football",
+      "url": "https://www.mancity.com/etihad-stadium",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Manchester City",
+        "identities": [
+          "Manchester City"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_VEN_003",
+      "entityIds": [
+        "SPC_FOOTBALL_VEN_003"
+      ],
+      "sport": "football",
+      "url": "https://www.mancity.com/etihad-stadium",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "venue",
+      "real": {
+        "name": "Etihad Stadium",
+        "identities": [
+          "Etihad Stadium"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_TEA_004",
+      "entityIds": [
+        "SPC_FOOTBALL_TEA_004"
+      ],
+      "sport": "football",
+      "url": "https://www.liverpoolfc.com/anfield",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Liverpool",
+        "identities": [
+          "Liverpool"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_FOOTBALL_VEN_004",
+      "entityIds": [
+        "SPC_FOOTBALL_VEN_004"
+      ],
+      "sport": "football",
+      "url": "https://www.liverpoolfc.com/anfield",
+      "season": "Club site current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "venue",
+      "real": {
+        "name": "Anfield",
+        "identities": [
+          "Anfield"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_TEA_001",
+      "entityIds": [
+        "SPC_BASKET_TEA_001"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/warriors",
+      "season": "Team page current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Golden State Warriors",
+        "identities": [
+          "Golden State Warriors"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_TEA_002",
+      "entityIds": [
+        "SPC_BASKET_TEA_002"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/nuggets",
+      "season": "Team page current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Denver Nuggets",
+        "identities": [
+          "Denver Nuggets"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_TEA_003",
+      "entityIds": [
+        "SPC_BASKET_TEA_003"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/lakers",
+      "season": "Team page current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Los Angeles Lakers",
+        "identities": [
+          "Los Angeles Lakers"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_TEA_004",
+      "entityIds": [
+        "SPC_BASKET_TEA_004"
+      ],
+      "sport": "basket",
+      "url": "https://fever.wnba.com",
+      "season": "Team page current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Indiana Fever",
+        "identities": [
+          "Indiana Fever"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_VEN_001",
+      "entityIds": [
+        "SPC_BASKET_VEN_001"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/news/all-30-nba-arenas-by-team",
+      "season": "Arena list current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "venue",
+      "real": {
+        "name": "Chase Center",
+        "identities": [
+          "Chase Center"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_VEN_002",
+      "entityIds": [
+        "SPC_BASKET_VEN_002"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/news/all-30-nba-arenas-by-team",
+      "season": "Arena list current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "venue",
+      "real": {
+        "name": "Ball Arena",
+        "identities": [
+          "Ball Arena"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_BASKET_VEN_003",
+      "entityIds": [
+        "SPC_BASKET_VEN_003"
+      ],
+      "sport": "basket",
+      "url": "https://www.nba.com/news/all-30-nba-arenas-by-team",
+      "season": "Arena list current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "venue",
+      "real": {
+        "name": "Crypto.com Arena",
+        "identities": [
+          "Crypto.com Arena"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_VEH_001",
+      "entityIds": [
+        "SPC_CAR_VEH_001"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/mclaren",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "MCL40",
+        "identities": [
+          "MCL40",
+          "McLaren"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TEA_001",
+      "entityIds": [
+        "SPC_CAR_TEA_001"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/mclaren",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "McLaren",
+        "identities": [
+          "McLaren",
+          "MCL40"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_VEH_002",
+      "entityIds": [
+        "SPC_CAR_VEH_002"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/ferrari",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "SF-26",
+        "identities": [
+          "SF-26",
+          "Ferrari"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TEA_002",
+      "entityIds": [
+        "SPC_CAR_TEA_002"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/ferrari",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Ferrari",
+        "identities": [
+          "Ferrari",
+          "SF-26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_VEH_003",
+      "entityIds": [
+        "SPC_CAR_VEH_003"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/mercedes",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "W17",
+        "identities": [
+          "W17",
+          "Mercedes"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TEA_003",
+      "entityIds": [
+        "SPC_CAR_TEA_003"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/mercedes",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Mercedes",
+        "identities": [
+          "Mercedes",
+          "W17"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_VEH_004",
+      "entityIds": [
+        "SPC_CAR_VEH_004"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/red-bull-racing",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "RB22",
+        "identities": [
+          "RB22",
+          "Red Bull"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TEA_004",
+      "entityIds": [
+        "SPC_CAR_TEA_004"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/red-bull-racing",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Red Bull",
+        "identities": [
+          "Red Bull",
+          "RB22"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_VEH_005",
+      "entityIds": [
+        "SPC_CAR_VEH_005"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/first-look-audi-reveal-their-new-car-for-2026-f1-season.5g0jakpo0CQwnqoFDjhsAG.5g0jakpo0CQwnqoFDjhsAG",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "R26",
+        "identities": [
+          "R26",
+          "Audi"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TEA_005",
+      "entityIds": [
+        "SPC_CAR_TEA_005"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/first-look-audi-reveal-their-new-car-for-2026-f1-season.5g0jakpo0CQwnqoFDjhsAG.5g0jakpo0CQwnqoFDjhsAG",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Audi",
+        "identities": [
+          "Audi",
+          "R26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_VEH_006",
+      "entityIds": [
+        "SPC_CAR_VEH_006"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/williams",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "FW48",
+        "identities": [
+          "FW48",
+          "Williams"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TEA_006",
+      "entityIds": [
+        "SPC_CAR_TEA_006"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/teams/williams",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Williams",
+        "identities": [
+          "Williams",
+          "FW48"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TRK_001",
+      "entityIds": [
+        "SPC_CAR_TRK_001"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/racing/2026/italy",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Monza",
+        "identities": [
+          "Monza"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TRK_002",
+      "entityIds": [
+        "SPC_CAR_TRK_002"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/racing/2026/monaco",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Monaco",
+        "identities": [
+          "Monaco"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TRK_003",
+      "entityIds": [
+        "SPC_CAR_TRK_003"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/racing/2026/japan",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Suzuka",
+        "identities": [
+          "Suzuka"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TRK_004",
+      "entityIds": [
+        "SPC_CAR_TRK_004"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/racing/2026/great-britain",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Silverstone",
+        "identities": [
+          "Silverstone"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TRK_005",
+      "entityIds": [
+        "SPC_CAR_TRK_005"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/racing/2026/belgium",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Spa-Francorchamps",
+        "identities": [
+          "Spa-Francorchamps"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TRK_006",
+      "entityIds": [
+        "SPC_CAR_TRK_006"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/racing/2026/singapore",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Marina Bay",
+        "identities": [
+          "Marina Bay"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_001",
+      "entityIds": [
+        "SPC_CAR_ENT_001"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/lando-norris",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Lando Norris",
+        "identities": [
+          "Lando Norris",
+          "McLaren",
+          "MCL40"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_002",
+      "entityIds": [
+        "SPC_CAR_ENT_002"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/oscar-piastri",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Oscar Piastri",
+        "identities": [
+          "Oscar Piastri",
+          "McLaren",
+          "MCL40"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_003",
+      "entityIds": [
+        "SPC_CAR_ENT_003"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/charles-leclerc",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Charles Leclerc",
+        "identities": [
+          "Charles Leclerc",
+          "Ferrari",
+          "SF-26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_004",
+      "entityIds": [
+        "SPC_CAR_ENT_004"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/lewis-hamilton",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Lewis Hamilton",
+        "identities": [
+          "Lewis Hamilton",
+          "Ferrari",
+          "SF-26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_005",
+      "entityIds": [
+        "SPC_CAR_ENT_005"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/george-russell",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "George Russell",
+        "identities": [
+          "George Russell",
+          "Mercedes",
+          "W17"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_006",
+      "entityIds": [
+        "SPC_CAR_ENT_006"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/kimi-antonelli",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Kimi Antonelli",
+        "identities": [
+          "Kimi Antonelli",
+          "Mercedes",
+          "W17"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_007",
+      "entityIds": [
+        "SPC_CAR_ENT_007"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/max-verstappen",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Max Verstappen",
+        "identities": [
+          "Max Verstappen",
+          "Red Bull Racing",
+          "RB22",
+          "Red Bull"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_008",
+      "entityIds": [
+        "SPC_CAR_ENT_008"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/isack-hadjar",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Isack Hadjar",
+        "identities": [
+          "Isack Hadjar",
+          "Red Bull Racing",
+          "RB22",
+          "Red Bull"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_009",
+      "entityIds": [
+        "SPC_CAR_ENT_009"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/nico-hulkenberg",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Nico Hülkenberg",
+        "identities": [
+          "Nico Hülkenberg",
+          "Audi",
+          "R26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_010",
+      "entityIds": [
+        "SPC_CAR_ENT_010"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/gabriel-bortoleto",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Gabriel Bortoleto",
+        "identities": [
+          "Gabriel Bortoleto",
+          "Audi",
+          "R26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_011",
+      "entityIds": [
+        "SPC_CAR_ENT_011"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/carlos-sainz",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Carlos Sainz",
+        "identities": [
+          "Carlos Sainz",
+          "Williams",
+          "FW48"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_ENT_012",
+      "entityIds": [
+        "SPC_CAR_ENT_012"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/drivers/alexander-albon",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Alexander Albon",
+        "identities": [
+          "Alexander Albon",
+          "Williams",
+          "FW48"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_VEH_001",
+      "entityIds": [
+        "SPC_MOTO_VEH_001"
+      ],
+      "sport": "moto",
+      "url": "https://www.ducati.com/us/en/racing/motogp/ducati-lenovo-team-bike-desmosedici-gp",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "Ducati Desmosedici GP26",
+        "identities": [
+          "Ducati Desmosedici GP26",
+          "Ducati"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TEA_001",
+      "entityIds": [
+        "SPC_MOTO_TEA_001"
+      ],
+      "sport": "moto",
+      "url": "https://www.ducati.com/us/en/racing/motogp/ducati-lenovo-team-bike-desmosedici-gp",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Ducati",
+        "identities": [
+          "Ducati",
+          "Ducati Desmosedici GP26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_VEH_002",
+      "entityIds": [
+        "SPC_MOTO_VEH_002"
+      ],
+      "sport": "moto",
+      "url": "https://www.aprilia.com/us_EN/aprilia-racing/moto-gp/the-bike/",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "Aprilia RS-GP26",
+        "identities": [
+          "Aprilia RS-GP26",
+          "Aprilia"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TEA_002",
+      "entityIds": [
+        "SPC_MOTO_TEA_002"
+      ],
+      "sport": "moto",
+      "url": "https://www.aprilia.com/us_EN/aprilia-racing/moto-gp/the-bike/",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Aprilia",
+        "identities": [
+          "Aprilia",
+          "Aprilia RS-GP26"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_VEH_003",
+      "entityIds": [
+        "SPC_MOTO_VEH_003"
+      ],
+      "sport": "moto",
+      "url": "https://press.ktm.com/news-race-ready-2026-motogp-gets-live?id=229400&imageid=920294&l=international&menueid=7311",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "KTM RC16",
+        "identities": [
+          "KTM RC16",
+          "KTM"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TEA_003",
+      "entityIds": [
+        "SPC_MOTO_TEA_003"
+      ],
+      "sport": "moto",
+      "url": "https://press.ktm.com/news-race-ready-2026-motogp-gets-live?id=229400&imageid=920294&l=international&menueid=7311",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "KTM",
+        "identities": [
+          "KTM",
+          "KTM RC16"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_VEH_004",
+      "entityIds": [
+        "SPC_MOTO_VEH_004"
+      ],
+      "sport": "moto",
+      "url": "https://www.yamaha-racing.com/series/grand-prix/motogp/bike/",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "Yamaha YZR-M1 V4",
+        "identities": [
+          "Yamaha YZR-M1 V4",
+          "Yamaha"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TEA_004",
+      "entityIds": [
+        "SPC_MOTO_TEA_004"
+      ],
+      "sport": "moto",
+      "url": "https://www.yamaha-racing.com/series/grand-prix/motogp/bike/",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Yamaha",
+        "identities": [
+          "Yamaha",
+          "Yamaha YZR-M1 V4"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_VEH_005",
+      "entityIds": [
+        "SPC_MOTO_VEH_005"
+      ],
+      "sport": "moto",
+      "url": "https://motogp.honda.racing/page/rc213v-b5943814",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "vehicle",
+      "real": {
+        "name": "Honda RC213V",
+        "identities": [
+          "Honda RC213V",
+          "Honda"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TEA_005",
+      "entityIds": [
+        "SPC_MOTO_TEA_005"
+      ],
+      "sport": "moto",
+      "url": "https://motogp.honda.racing/page/rc213v-b5943814",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "team",
+      "real": {
+        "name": "Honda",
+        "identities": [
+          "Honda",
+          "Honda RC213V"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TRK_001",
+      "entityIds": [
+        "SPC_MOTO_TRK_001"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/calendar/2026/event/italy/bf2104f9-f5cc-4a99-a993-cb5d01bccd24",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Mugello",
+        "identities": [
+          "Mugello"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TRK_002",
+      "entityIds": [
+        "SPC_MOTO_TRK_002"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/calendar/2026/event/germany/259be6f4-c23c-4dc2-bc42-7664842f6409",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Sachsenring",
+        "identities": [
+          "Sachsenring"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TRK_003",
+      "entityIds": [
+        "SPC_MOTO_TRK_003"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/calendar/2026/event/australia/66961f05-2454-4455-9d65-f99c49d25b17",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Phillip Island",
+        "identities": [
+          "Phillip Island"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TRK_004",
+      "entityIds": [
+        "SPC_MOTO_TRK_004"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2026/02/26/enstination-thailand-burirams-beating-heart-brings-motogps-2026-opener/998050",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Buriram",
+        "identities": [
+          "Buriram"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TRK_005",
+      "entityIds": [
+        "SPC_MOTO_TRK_005"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/calendar/2026/event/netherlands/47c25c37-d307-4d45-b1ed-b1cb5e811975",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Assen",
+        "identities": [
+          "Assen"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TRK_006",
+      "entityIds": [
+        "SPC_MOTO_TRK_006"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/calendar/2026/event/americas/8c83648e-8ec9-40f1-9ba0-b0f19883e7d7",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "track",
+      "real": {
+        "name": "Circuit of the Americas",
+        "identities": [
+          "Circuit of the Americas"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_001",
+      "entityIds": [
+        "SPC_MOTO_ENT_001"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/marc-marquez/23e50438-a657-4fb0-a190-3262b5472f29",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Marc Márquez",
+        "identities": [
+          "Marc Márquez",
+          "Ducati Lenovo Team",
+          "Ducati"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_002",
+      "entityIds": [
+        "SPC_MOTO_ENT_002"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/francesco-bagnaia/66b78301-5826-4986-b11e-fa68a7bd77a7",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Francesco Bagnaia",
+        "identities": [
+          "Francesco Bagnaia",
+          "Ducati Lenovo Team",
+          "Ducati"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_003",
+      "entityIds": [
+        "SPC_MOTO_ENT_003"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/fabio-quartararo/bf95d959-6a60-44f1-84b5-ded861e62578",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Fabio Quartararo",
+        "identities": [
+          "Fabio Quartararo",
+          "Yamaha"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_004",
+      "entityIds": [
+        "SPC_MOTO_ENT_004"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/pedro-acosta/ea39a0af-95d3-4a37-81a7-f332efdb9216",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Pedro Acosta",
+        "identities": [
+          "Pedro Acosta",
+          "KTM"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_005",
+      "entityIds": [
+        "SPC_MOTO_ENT_005"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/jorge-martin/5b9af34e-da94-4ca2-9c4c-6be0fc8b1bbc",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Jorge Martín",
+        "identities": [
+          "Jorge Martín",
+          "Aprilia"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_006",
+      "entityIds": [
+        "SPC_MOTO_ENT_006"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/brad-binder/ade5ef32-01ea-487c-95ca-491544a668ed",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Brad Binder",
+        "identities": [
+          "Brad Binder",
+          "KTM"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_007",
+      "entityIds": [
+        "SPC_MOTO_ENT_007"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/marco-bezzecchi/e622ec5b-5ccf-457c-a67f-ec028f0ddf6e",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Marco Bezzecchi",
+        "identities": [
+          "Marco Bezzecchi",
+          "Aprilia"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_008",
+      "entityIds": [
+        "SPC_MOTO_ENT_008"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/joan-mir/f55f9c34-8621-437b-ae04-ae2418720204",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Joan Mir",
+        "identities": [
+          "Joan Mir",
+          "Honda"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_009",
+      "entityIds": [
+        "SPC_MOTO_ENT_009"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/toprak-razgatlioglu/c883a3b8-17ce-419d-b71b-32c252f6fc7e",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Toprak Razgatlıoğlu",
+        "identities": [
+          "Toprak Razgatlıoğlu",
+          "Yamaha"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_ENT_010",
+      "entityIds": [
+        "SPC_MOTO_ENT_010"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/ai-ogura/244b6f51-ac33-40ee-876d-9401dc9d1346",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "card",
+      "real": {
+        "name": "Ai Ogura",
+        "identities": [
+          "Ai Ogura",
+          "Aprilia"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TAC_001",
+      "entityIds": [
+        "SPC_CAR_TAC_001"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "Formula 1 dry tyre guide",
+        "identities": [
+          "Formula 1 dry tyre guide",
+          "Pirelli"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TAC_002",
+      "entityIds": [
+        "SPC_CAR_TAC_002"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "Formula 1 dry tyre guide",
+        "identities": [
+          "Formula 1 dry tyre guide",
+          "Pirelli"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TAC_003",
+      "entityIds": [
+        "SPC_CAR_TAC_003"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "Formula 1 dry tyre guide",
+        "identities": [
+          "Formula 1 dry tyre guide",
+          "Pirelli"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TAC_004",
+      "entityIds": [
+        "SPC_CAR_TAC_004"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "Formula 1 wet tyre guide",
+        "identities": [
+          "Formula 1 wet tyre guide",
+          "Pirelli"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TAC_005",
+      "entityIds": [
+        "SPC_CAR_TAC_005"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-tyres.61SvF0Kfg29UR2SPhakDqd",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "Formula 1 wet tyre guide",
+        "identities": [
+          "Formula 1 wet tyre guide",
+          "Pirelli"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_CAR_TAC_006",
+      "entityIds": [
+        "SPC_CAR_TAC_006"
+      ],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/anatomy-of-a-pit-stop-how-do-teams-service-their-cars-in-less-than-two.5p9LNdd8XJdvP4mRsXoGsB",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "Formula 1 pit stop guide",
+        "identities": [
+          "Formula 1 pit stop guide",
+          "Pirelli"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_001",
+      "entityIds": [
+        "SPC_MOTO_TAC_001"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_002",
+      "entityIds": [
+        "SPC_MOTO_TAC_002"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_003",
+      "entityIds": [
+        "SPC_MOTO_TAC_003"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_004",
+      "entityIds": [
+        "SPC_MOTO_TAC_004"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/04/30/how-does-motogp-tyre-selection-work-the-ultimate-guide/747424",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP tyre selection guide",
+        "identities": [
+          "MotoGP tyre selection guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_005",
+      "entityIds": [
+        "SPC_MOTO_TAC_005"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_006",
+      "entityIds": [
+        "SPC_MOTO_TAC_006"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_007",
+      "entityIds": [
+        "SPC_MOTO_TAC_007"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_SPC_MOTO_TAC_008",
+      "entityIds": [
+        "SPC_MOTO_TAC_008"
+      ],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/05/07/how-do-motogp-teams-prepare-bikes-for-different-tracks/748304",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "tactic",
+      "real": {
+        "name": "MotoGP bike setup guide",
+        "identities": [
+          "MotoGP bike setup guide",
+          "Michelin"
+        ]
+      },
+      "internalNote": "Internal source row. Do not render this block."
+    },
+    {
+      "id": "SRC_RULE_001",
+      "entityIds": [],
+      "sport": "football",
+      "url": "https://www.theifab.com/laws/latest/the-players/",
+      "season": "IFAB Laws of the Game current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "IFAB Law 3 The Players",
+        "identities": [
+          "IFAB Law 3 The Players",
+          "IFAB"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_002",
+      "entityIds": [],
+      "sport": "football",
+      "url": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+      "season": "IFAB Laws of the Game current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "IFAB Law 7 The Duration of the Match",
+        "identities": [
+          "IFAB Law 7 The Duration of the Match",
+          "IFAB"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_003",
+      "entityIds": [],
+      "sport": "football",
+      "url": "https://www.theifab.com/laws/latest/offside/",
+      "season": "IFAB Laws of the Game current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "IFAB Law 11 Offside",
+        "identities": [
+          "IFAB Law 11 Offside",
+          "IFAB"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_004",
+      "entityIds": [],
+      "sport": "basket",
+      "url": "https://about.fiba.basketball/en/news/fiba-official-basketball-rules-2026-to-take-effect-october-1",
+      "season": "FIBA rules effective 1 Oct 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "FIBA Official Basketball Rules 2026 announcement",
+        "identities": [
+          "FIBA Official Basketball Rules 2026 announcement",
+          "FIBA"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_005",
+      "entityIds": [],
+      "sport": "basket",
+      "url": "https://about.fiba.basketball/en/services/resource-hub/downloads",
+      "season": "FIBA rules effective 1 Oct 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "FIBA resource hub",
+        "identities": [
+          "FIBA resource hub",
+          "FIBA"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_006",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_a_general_provisions_-_iss_02_-_2026-02-27.pdf",
+      "season": "FIA 2026 Formula 1 regulations issue 02",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "FIA 2026 Formula 1 Section A",
+        "identities": [
+          "FIA 2026 Formula 1 Section A",
+          "FIA",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_007",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-f1-constructors-championship.66nTfWSqrUYv3bnbosPkHV",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "Formula 1 constructors guide",
+        "identities": [
+          "Formula 1 constructors guide",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_008",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-formula-1-weekend.5RFZzGXNhEi9AEuMXwo987",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "Formula 1 weekend guide",
+        "identities": [
+          "Formula 1 weekend guide",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_009",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-f1-sprint.55yJBEiF7vYkZEwSV9lZJ9",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "Formula 1 sprint guide",
+        "identities": [
+          "Formula 1 sprint guide",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_010",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.fia.com/regulation/category/110",
+      "season": "FIA 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "FIA sporting regulations category",
+        "identities": [
+          "FIA sporting regulations category",
+          "FIA"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_011",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-2026-regulations.6j0tS0hrHG2T01tpmK6XYz",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "Formula 1 2026 regulations explainer",
+        "identities": [
+          "Formula 1 2026 regulations explainer",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_012",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/f1-explains-downforce-and-why-f1-cars-have-wings-with-mclaren-aero.10xj8CJPz8s7CmwfoyWmCU",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "Formula 1 downforce explainer",
+        "identities": [
+          "Formula 1 downforce explainer",
+          "Formula 1",
+          "McLaren"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_013",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://api.fia.com/events/fia-formula-one-world-championship/season-2026/italian-grand-prix/qualifying-classification",
+      "season": "Formula 1 2026 Italian Grand Prix",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "FIA 2026 Italian Grand Prix qualifying classification",
+        "identities": [
+          "FIA 2026 Italian Grand Prix qualifying classification",
+          "FIA",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_014",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/latest/article/rob-smedley-on-car-performance-scores-and-the-data-behind-the-latest-f1.5QoyFi4KL63EULKM4u5mGL",
+      "season": "Formula 1 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "Formula 1 car performance scores explainer",
+        "identities": [
+          "Formula 1 car performance scores explainer",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_015",
+      "entityIds": [],
+      "sport": "car",
+      "url": "https://www.formula1.com/en/information/guidelines.4EOKE9RRqevL4niTK9kWyt",
+      "season": "Formula 1 guidelines current at snapshot",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "Formula 1 intellectual property guidelines",
+        "identities": [
+          "Formula 1 intellectual property guidelines",
+          "Formula 1"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_016",
+      "entityIds": [],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/teams",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "MotoGP teams index",
+        "identities": [
+          "MotoGP teams index",
+          "MotoGP"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_017",
+      "entityIds": [],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/riders/",
+      "season": "MotoGP 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "MotoGP riders index",
+        "identities": [
+          "MotoGP riders index",
+          "MotoGP"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_018",
+      "entityIds": [],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/03/11/what-are-the-motogp-rules-a-complete-overview/521386",
+      "season": "MotoGP rules overview dated 2025-03-11",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "MotoGP rules overview",
+        "identities": [
+          "MotoGP rules overview",
+          "MotoGP"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_019",
+      "entityIds": [],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/11/03/what-is-a-motogp-sprint-race/762769",
+      "season": "MotoGP sprint explainer dated 2025-11-03",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "MotoGP sprint explainer",
+        "identities": [
+          "MotoGP sprint explainer",
+          "MotoGP"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_020",
+      "entityIds": [],
+      "sport": "moto",
+      "url": "https://www.fim-moto.com/en/documents/view/fim-2026-motogp-moto2-moto3-world-championship-regulations-update-13-september",
+      "season": "FIM update 13 September 2026",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "FIM 2026 world championship regulations",
+        "identities": [
+          "FIM 2026 world championship regulations",
+          "FIM",
+          "MotoGP"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    },
+    {
+      "id": "SRC_RULE_021",
+      "entityIds": [],
+      "sport": "moto",
+      "url": "https://www.motogp.com/en/news/2025/01/31/how-do-motogp-riders-switch-bikes-during-a-racex/517529",
+      "season": "MotoGP explainer dated 2025-01-31",
+      "snapshotDate": "2026-11-20",
+      "topic": "rules",
+      "real": {
+        "name": "MotoGP flag-to-flag bike switch explainer",
+        "identities": [
+          "MotoGP flag-to-flag bike switch explainer",
+          "MotoGP"
+        ]
+      },
+      "internalNote": "Rules or rights source. Not rendered. No table of official results was copied into game stats."
+    }
+  ],
+  "internalNote": "Every real URL used by this pack, with season and snapshot date."
+}

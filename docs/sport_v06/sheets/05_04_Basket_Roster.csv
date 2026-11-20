@@ -1,0 +1,13 @@
+BASKETBALL | 10 researched player inspirations,,,,,,,,,
+Position roles and nicknames are PROPOSED; NBA and WNBA sample metrics must be normalized separately.,,,,,,,,,
+Draft ID,Position,Real reference (private),Parody display (proposed),Season,Verified raw evidence,Official URL,Shooting/Def/Spd/Sta,Rating status,Snapshot
+BA001,PG,Stephen Curry,Stew Currywurst,NBA 2024/25,"24.5 PPG, 4.4 3PM, 6.0 AST",https://www.nba.com/stats/leaders?Season=2024-25&SeasonType=Regular+Season&StatCategory=AST,,DATA_MISSING,2026-11-20
+BA002,C,Nikola Jokić,Nikola Yogurt,NBA 2024/25,"29.6 PPG, 12.7 REB, 10.2 AST",https://www.nba.com/nuggets/news/nikola-jokic-named-to-kia-all-nba-first-team-3,,DATA_MISSING,2026-11-20
+BA003,C,Victor Wembanyama,Victor Wobble-yama,NBA 2024/25,"3.8 BLK, 11.0 REB, 24.3 PPG (46 GP)",https://www.nba.com/stats/leaders?Season=2024-25&SeasonType=Regular+Season&StatCategory=BLK,,DATA_MISSING,2026-11-20
+BA004,SG,Shai Gilgeous-Alexander,Shy Gorgeous Salamander,NBA 2024/25,"32.7 PPG, 6.4 AST, 1.7 STL",https://www.nba.com/news/kia-nba-most-valuable-player-award-2024-25-shai-gilgeous-alexander,,DATA_MISSING,2026-11-20
+BA005,PF,Giannis Antetokounmpo,Yannis Alphabet-Soup,NBA 2024/25,"30.4 PPG, 11.9 REB, 6.5 AST",https://www.nba.com/bucks/news/giannis-antetokounmpo-named-eastern-conference-player-of-the-week-24,,DATA_MISSING,2026-11-20
+BA006,SF,LeBron James,LeBrawn Jams,NBA 2024/25,"24.4 PPG, 7.8 REB, 8.2 AST",https://www.nba.com/lakers/news/lebron-james-named-to-2024-25-all-nba-second-team-052325,,DATA_MISSING,2026-11-20
+BA007,PG,Caitlin Clark,Kaitlyn Cluck,WNBA 2026,"22.3 PPG, 8.3 AST",https://fever.wnba.com/news/indiana-fever-guards-caitlin-clark-and-kelsey-mitchell-named-to-2026-all-wnba-first-team,,DATA_MISSING,2026-11-20
+BA008,PF/C,A’ja Wilson,Ay-Jay Wobble-Son,WNBA 2026,"26.2 PPG, 9.4 REB, 1.9 BLK",https://www.wnba.com/news/wilson-named-2026-most-valuable-player,,DATA_MISSING,2026-11-20
+BA009,PF,Breanna Stewart,Brianna Stew-Pot,WNBA 2026,"20.8 PPG, 8.3 REB, 3.3 AST",https://liberty.wnba.com/roster,,DATA_MISSING,2026-11-20
+BA010,PF,Angel Reese,Angel Rice-Bowl,WNBA 2026,12.1 REB; 2026 DPOY,https://www.wnba.com/news/reese-named-2026-defensive-player-of-the-year,,DATA_MISSING,2026-11-20

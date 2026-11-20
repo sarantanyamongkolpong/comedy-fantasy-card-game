@@ -1,0 +1,246 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "car",
+  "status": "PROPOSED",
+  "vehicles": [
+    {
+      "id": "SPC_CAR_VEH_001",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Zesteroid V1",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic single-seater. Bodywork is not a copied chassis or livery.",
+      "team": "Papaya Peel Racing",
+      "art": {
+        "slot": "SPC_CAR_VEH_001_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "MCL40",
+        "url": "https://www.formula1.com/en/teams/mclaren",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "MCL40",
+          "McLaren"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_002",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Pasta Rocket",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic single-seater. Bodywork is not a copied chassis or livery.",
+      "team": "Scarlet Spaghetti Works",
+      "art": {
+        "slot": "SPC_CAR_VEH_002_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "SF-26",
+        "url": "https://www.formula1.com/en/teams/ferrari",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "SF-26",
+          "Ferrari"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_003",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Teaspoon Turbo",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic single-seater. Bodywork is not a copied chassis or livery.",
+      "team": "Silver Spoon GP",
+      "art": {
+        "slot": "SPC_CAR_VEH_003_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "W17",
+        "url": "https://www.formula1.com/en/teams/mercedes",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "W17",
+          "Mercedes"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_004",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Moo-Boost",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic single-seater. Bodywork is not a copied chassis or livery.",
+      "team": "Thunder Moo Motorsport",
+      "art": {
+        "slot": "SPC_CAR_VEH_004_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "RB22",
+        "url": "https://www.formula1.com/en/teams/red-bull-racing",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "RB22",
+          "Red Bull"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_005",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Pretzel Drive",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic single-seater. Bodywork is not a copied chassis or livery.",
+      "team": "Noodle Torque Racing",
+      "art": {
+        "slot": "SPC_CAR_VEH_005_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "R26",
+        "url": "https://www.formula1.com/en/latest/article/first-look-audi-reveal-their-new-car-for-2026-f1-season.5g0jakpo0CQwnqoFDjhsAG.5g0jakpo0CQwnqoFDjhsAG",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "R26",
+          "Audi"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_006",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Berry Burner",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic single-seater. Bodywork is not a copied chassis or livery.",
+      "team": "Royal Blueberries GP",
+      "art": {
+        "slot": "SPC_CAR_VEH_006_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "FW48",
+        "url": "https://www.formula1.com/en/teams/williams",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "FW48",
+          "Williams"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_007",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Crumb Coupe",
+      "team": "Biscuit Axle Club",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_CAR_VEH_007_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_008",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Brine Bullet",
+      "team": "Pickle Piston Works",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_CAR_VEH_008_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_009",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Syrup Dart",
+      "team": "Waffle Wing Union",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_CAR_VEH_009_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_010",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Husk Hammer",
+      "team": "Coconut Coast GP",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_CAR_VEH_010_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_VEH_011",
+      "sport": "car",
+      "kind": "vehicle",
+      "parodyName": "Bao Booster",
+      "team": "Dumpling Draft Team",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original comic machine with no real-world chassis behind it.",
+      "art": {
+        "slot": "SPC_CAR_VEH_011_BODY",
+        "placeholder": true
+      }
+    }
+  ]
+}

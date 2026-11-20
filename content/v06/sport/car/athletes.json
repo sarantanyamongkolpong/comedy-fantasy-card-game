@@ -1,0 +1,1236 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "car",
+  "status": "PROPOSED",
+  "athletes": [
+    {
+      "id": "SPC_CAR_ENT_001",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Lando Nori-Rice",
+      "rarity": "Epic",
+      "team": "Papaya Peel Racing",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_001_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_001",
+      "vehicleParodyName": "Zesteroid V1",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_001_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Lando Norris",
+        "url": "https://www.formula1.com/en/drivers/lando-norris",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Lando Norris",
+          "McLaren",
+          "MCL40"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR001",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_002",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Oscar Pie-Astro",
+      "rarity": "R",
+      "team": "Papaya Peel Racing",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_002_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_001",
+      "vehicleParodyName": "Zesteroid V1",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_001_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Oscar Piastri",
+        "url": "https://www.formula1.com/en/drivers/oscar-piastri",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Oscar Piastri",
+          "McLaren",
+          "MCL40"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR002",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_003",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Charlie LaCrêpe",
+      "rarity": "Epic",
+      "team": "Scarlet Spaghetti Works",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_003_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_002",
+      "vehicleParodyName": "Pasta Rocket",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_002_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Charles Leclerc",
+        "url": "https://www.formula1.com/en/drivers/charles-leclerc",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Charles Leclerc",
+          "Ferrari",
+          "SF-26"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR003",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_004",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Lewie Ham-a-Ton",
+      "rarity": "EX",
+      "team": "Scarlet Spaghetti Works",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_004_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_002",
+      "vehicleParodyName": "Pasta Rocket",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_002_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Lewis Hamilton",
+        "url": "https://www.formula1.com/en/drivers/lewis-hamilton",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Lewis Hamilton",
+          "Ferrari",
+          "SF-26"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR004",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_005",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Georgie Rustle",
+      "rarity": "Epic",
+      "team": "Silver Spoon GP",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_005_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_003",
+      "vehicleParodyName": "Teaspoon Turbo",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_003_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "George Russell",
+        "url": "https://www.formula1.com/en/drivers/george-russell",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "George Russell",
+          "Mercedes",
+          "W17"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR005",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_006",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Kimi Anti-Noodle",
+      "rarity": "R",
+      "team": "Silver Spoon GP",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 69,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_006_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_003",
+      "vehicleParodyName": "Teaspoon Turbo",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_003_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Kimi Antonelli",
+        "url": "https://www.formula1.com/en/drivers/kimi-antonelli",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Kimi Antonelli",
+          "Mercedes",
+          "W17"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR006",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_007",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Max Verstomper",
+      "rarity": "EX",
+      "team": "Thunder Moo Motorsport",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_007_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_004",
+      "vehicleParodyName": "Moo-Boost",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_004_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Max Verstappen",
+        "url": "https://www.formula1.com/en/drivers/max-verstappen",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Max Verstappen",
+          "Red Bull Racing",
+          "RB22",
+          "Red Bull"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR007",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_008",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Isaac Hat-Jar",
+      "rarity": "R",
+      "team": "Thunder Moo Motorsport",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_008_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_004",
+      "vehicleParodyName": "Moo-Boost",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_004_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Isack Hadjar",
+        "url": "https://www.formula1.com/en/drivers/isack-hadjar",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Isack Hadjar",
+          "Red Bull Racing",
+          "RB22",
+          "Red Bull"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR008",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_009",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Nico Hula-Burger",
+      "rarity": "R",
+      "team": "Noodle Torque Racing",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_009_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_005",
+      "vehicleParodyName": "Pretzel Drive",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_005_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Nico Hülkenberg",
+        "url": "https://www.formula1.com/en/drivers/nico-hulkenberg",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Nico Hülkenberg",
+          "Audi",
+          "R26"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR009",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_010",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Gabe Burrito-Letto",
+      "rarity": "N",
+      "team": "Noodle Torque Racing",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_010_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_005",
+      "vehicleParodyName": "Pretzel Drive",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_005_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Gabriel Bortoleto",
+        "url": "https://www.formula1.com/en/drivers/gabriel-bortoleto",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Gabriel Bortoleto",
+          "Audi",
+          "R26"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR010",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_011",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Carlos Saucez",
+      "rarity": "Epic",
+      "team": "Royal Blueberries GP",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_011_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_006",
+      "vehicleParodyName": "Berry Burner",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_006_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Carlos Sainz",
+        "url": "https://www.formula1.com/en/drivers/carlos-sainz",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Carlos Sainz",
+          "Williams",
+          "FW48"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR011",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_012",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Alex All-Bun",
+      "rarity": "R",
+      "team": "Royal Blueberries GP",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 69,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": false,
+      "art": {
+        "slot": "SPC_CAR_ENT_012_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_006",
+      "vehicleParodyName": "Berry Burner",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_006_BODY",
+        "placeholder": true
+      },
+      "real": {
+        "name": "Alexander Albon",
+        "url": "https://www.formula1.com/en/drivers/alexander-albon",
+        "season": "Formula 1 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Alexander Albon",
+          "Williams",
+          "FW48"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "draftId": "CR012",
+        "internalNote": "Combined entry. Top speed, acceleration, and handling numbers are placeholders. No speed-trap table was copied."
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_013",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Crumbly McGear",
+      "rarity": "R",
+      "team": "Biscuit Axle Club",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 70,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_013_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_007",
+      "vehicleParodyName": "Crumb Coupe",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_007_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_014",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Toffee Treadwell",
+      "rarity": "N",
+      "team": "Biscuit Axle Club",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_014_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_007",
+      "vehicleParodyName": "Crumb Coupe",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_007_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_015",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Dill Driftwood",
+      "rarity": "R",
+      "team": "Pickle Piston Works",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 69,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_015_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_008",
+      "vehicleParodyName": "Brine Bullet",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_008_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_016",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Gherkin Gearbox",
+      "rarity": "N",
+      "team": "Pickle Piston Works",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 77,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 73,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 71,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_016_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_008",
+      "vehicleParodyName": "Brine Bullet",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_008_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_017",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Maple Apex",
+      "rarity": "R",
+      "team": "Waffle Wing Union",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_017_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_009",
+      "vehicleParodyName": "Syrup Dart",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_009_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_018",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Butter Chicane",
+      "rarity": "N",
+      "team": "Waffle Wing Union",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 79,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 72,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_018_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_009",
+      "vehicleParodyName": "Syrup Dart",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_009_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_019",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Sandy Hairpin",
+      "rarity": "R",
+      "team": "Coconut Coast GP",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_019_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_010",
+      "vehicleParodyName": "Husk Hammer",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_010_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_020",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Reef Downforce",
+      "rarity": "N",
+      "team": "Coconut Coast GP",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 78,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_020_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_010",
+      "vehicleParodyName": "Husk Hammer",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_010_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_021",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Steamer Straight",
+      "rarity": "R",
+      "team": "Dumpling Draft Team",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 76,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_021_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_011",
+      "vehicleParodyName": "Bao Booster",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_011_BODY",
+        "placeholder": true
+      }
+    },
+    {
+      "id": "SPC_CAR_ENT_022",
+      "sport": "car",
+      "kind": "card",
+      "role": "entry",
+      "parodyName": "Soy Sauceover",
+      "rarity": "N",
+      "team": "Dumpling Draft Team",
+      "bannerId": "SPORT_CAR",
+      "stats": {
+        "TopSpeed": {
+          "value": 80,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Accel": {
+          "value": 74,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        },
+        "Handling": {
+          "value": 75,
+          "balance": "BALANCE_PLACEHOLDER",
+          "status": "PROPOSED",
+          "scale": "game-scale-not-official",
+          "source": "not-from-verified-metrics"
+        }
+      },
+      "balance": "BALANCE_PLACEHOLDER",
+      "status": "PROPOSED",
+      "fictional": true,
+      "art": {
+        "slot": "SPC_CAR_ENT_022_PORTRAIT",
+        "placeholder": true
+      },
+      "combined": true,
+      "vehicleId": "SPC_CAR_VEH_011",
+      "vehicleParodyName": "Bao Booster",
+      "vehicleArt": {
+        "slot": "SPC_CAR_VEH_011_BODY",
+        "placeholder": true
+      }
+    }
+  ]
+}

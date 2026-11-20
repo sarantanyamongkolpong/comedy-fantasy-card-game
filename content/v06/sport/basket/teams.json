@@ -1,0 +1,176 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "basket",
+  "status": "PROPOSED",
+  "teams": [
+    {
+      "id": "SPC_BASKET_TEA_001",
+      "sport": "basket",
+      "kind": "team",
+      "parodyName": "Golden Snack Wafflers",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic franchise. Colors and marks are not a copied uniform.",
+      "real": {
+        "name": "Golden State Warriors",
+        "url": "https://www.nba.com/warriors",
+        "season": "Team page current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Golden State Warriors"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_BASKET_TEA_002",
+      "sport": "basket",
+      "kind": "team",
+      "parodyName": "Denver Dino Nuggets",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic franchise. Colors and marks are not a copied uniform.",
+      "real": {
+        "name": "Denver Nuggets",
+        "url": "https://www.nba.com/nuggets",
+        "season": "Team page current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Denver Nuggets"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_BASKET_TEA_003",
+      "sport": "basket",
+      "kind": "team",
+      "parodyName": "LA Latte-Makers",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic franchise. Colors and marks are not a copied uniform.",
+      "real": {
+        "name": "Los Angeles Lakers",
+        "url": "https://www.nba.com/lakers",
+        "season": "Team page current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Los Angeles Lakers"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      }
+    },
+    {
+      "id": "SPC_BASKET_TEA_004",
+      "sport": "basket",
+      "kind": "team",
+      "parodyName": "Indiana Flavor",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Original comic franchise. Colors and marks are not a copied uniform.",
+      "real": {
+        "name": "Indiana Fever",
+        "url": "https://fever.wnba.com",
+        "season": "Team page current at snapshot",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Indiana Fever"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Internal reference. Not a player-facing label."
+      },
+      "venueId": "SPC_BASKET_VEN_004"
+    },
+    {
+      "id": "SPC_BASKET_TEA_005",
+      "sport": "basket",
+      "kind": "team",
+      "parodyName": "Hardwood Exhibition",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original mixed five plus a small bench. Franchise rows stay separate because the workbook did not publish a bench.",
+      "venueId": "SPC_BASKET_VEN_001"
+    },
+    {
+      "id": "SPC_BASKET_TEA_006",
+      "sport": "basket",
+      "kind": "team",
+      "parodyName": "Gravy Garden",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original opponent five with a bench.",
+      "venueId": "SPC_BASKET_VEN_005"
+    },
+    {
+      "id": "SPC_BASKET_TEA_007",
+      "sport": "basket",
+      "kind": "team",
+      "parodyName": "Sideline Workshop",
+      "status": "PROPOSED",
+      "fictional": true,
+      "summary": "Original staff pool for researched coaches who do not have a franchise row in the workbook."
+    }
+  ],
+  "lineups": [
+    {
+      "id": "SPC_BASKET_LIN_001",
+      "sport": "basket",
+      "kind": "lineup",
+      "side": "home",
+      "status": "PROPOSED",
+      "fictional": true,
+      "teamId": "SPC_BASKET_TEA_005",
+      "coachId": "SPC_BASKET_COA_004",
+      "venueId": "SPC_BASKET_VEN_001",
+      "starters": [
+        "SPC_BASKET_ATH_001",
+        "SPC_BASKET_ATH_004",
+        "SPC_BASKET_ATH_006",
+        "SPC_BASKET_ATH_005",
+        "SPC_BASKET_ATH_002"
+      ],
+      "bench": [
+        "SPC_BASKET_ATH_011",
+        "SPC_BASKET_ATH_012",
+        "SPC_BASKET_ATH_013"
+      ],
+      "summary": "Five starters and a small bench."
+    },
+    {
+      "id": "SPC_BASKET_LIN_002",
+      "sport": "basket",
+      "kind": "lineup",
+      "side": "away",
+      "status": "PROPOSED",
+      "fictional": true,
+      "teamId": "SPC_BASKET_TEA_006",
+      "coachId": "SPC_BASKET_COA_005",
+      "venueId": "SPC_BASKET_VEN_005",
+      "starters": [
+        "SPC_BASKET_ATH_014",
+        "SPC_BASKET_ATH_015",
+        "SPC_BASKET_ATH_016",
+        "SPC_BASKET_ATH_017",
+        "SPC_BASKET_ATH_018"
+      ],
+      "bench": [
+        "SPC_BASKET_ATH_019",
+        "SPC_BASKET_ATH_020",
+        "SPC_BASKET_ATH_021"
+      ],
+      "summary": "Original opponent five and a bench."
+    }
+  ]
+}

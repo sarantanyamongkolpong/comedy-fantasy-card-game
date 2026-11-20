@@ -1,8 +1,12 @@
 import { migrateSavePow } from '../migrate/save-pow.js';
 import { SAVE_VERSION } from '../schema/constants.js';
+// Sport v3 hook (sim-race stream). Adds profile.sport on load.
+// SAVE_VERSION stays 2 so existing v1/v2 profiles still report 2.
+// See src/sport/save/migrate-v3.js.
+import { migrateSportV3 } from '../sport/save/migrate-v3.js';
 
 const REQUIRED = ['profileId', 'inventory', 'decks', 'currency', 'pity', 'house', 'rewardLedger'];
-const READABLE_VERSIONS = new Set([1, SAVE_VERSION]);
+const READABLE_VERSIONS = new Set([1, 2, 3]);
 
 function isDataProfile(profile) {
   return Boolean(
@@ -70,7 +74,10 @@ export function playerView(profile) {
 export function serialize(profile) {
   if (!profile || typeof profile !== 'object' || Array.isArray(profile)) throw new TypeError('profile is required');
   const stored = isDataProfile(profile) ? profile : (isWebPlayer(profile) ? adoptWebProfile(profile) : profile);
-  return JSON.stringify({ saveVersion: SAVE_VERSION, profile: stored });
+  // A profile that already opted into sport schema 3 keeps that envelope.
+  // Ordinary card-game profiles stay on SAVE_VERSION (2).
+  const envelope = stored.saveVersion === 3 ? 3 : SAVE_VERSION;
+  return JSON.stringify({ saveVersion: envelope, profile: stored });
 }
 
 /**
@@ -80,7 +87,7 @@ export function deserialize(json) {
   const data = typeof json === 'string' ? JSON.parse(json) : json;
   if (!data || typeof data !== 'object' || Array.isArray(data)) throw new TypeError('save must be an object');
   if (!READABLE_VERSIONS.has(data.saveVersion)) {
-    throw new Error(`Unsupported saveVersion ${String(data.saveVersion)}; this build reads ${SAVE_VERSION}`);
+    throw new Error(`Unsupported saveVersion ${String(data.saveVersion)}; this build reads 1, 2, and 3`);
   }
   const profile = data.profile;
   if (!profile || typeof profile !== 'object') throw new TypeError('save is missing profile');
@@ -105,8 +112,8 @@ function migrateProfile(profile) {
   const bag = current && typeof current === 'object' && !Array.isArray(current) ? current : {};
   const autoBattle = typeof bag.autoBattle === 'boolean' ? bag.autoBattle : false;
   next.preferences = { ...bag, autoBattle };
-  next.saveVersion = SAVE_VERSION;
-  return next;
+  if (next.saveVersion !== 3) next.saveVersion = SAVE_VERSION;
+  return migrateSportV3(next);
 }
 
 function liftPlayerFields(profile) {

@@ -1,0 +1,140 @@
+{
+  "contentTier": "draft",
+  "schemaVersion": "sport-v0.6-data",
+  "sport": "moto",
+  "status": "PROPOSED",
+  "tracks": [
+    {
+      "id": "SPC_MOTO_TRK_001",
+      "sport": "moto",
+      "kind": "track",
+      "parodyName": "Mushgello Valley",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A long straight into flowing bends.",
+      "real": {
+        "name": "Mugello",
+        "url": "https://www.motogp.com/en/calendar/2026/event/italy/bf2104f9-f5cc-4a99-a993-cb5d01bccd24",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Mugello"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Circuit type only. The game layout is not traced from the real plan."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TRK_002",
+      "sport": "moto",
+      "kind": "track",
+      "parodyName": "Sausage Ring",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A tight, one-direction-heavy lap.",
+      "real": {
+        "name": "Sachsenring",
+        "url": "https://www.motogp.com/en/calendar/2026/event/germany/259be6f4-c23c-4dc2-bc42-7664842f6409",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Sachsenring"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Circuit type only. The game layout is not traced from the real plan."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TRK_003",
+      "sport": "moto",
+      "kind": "track",
+      "parodyName": "Pillow Island",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A fast flowing lap that asks for sustained pace.",
+      "real": {
+        "name": "Phillip Island",
+        "url": "https://www.motogp.com/en/calendar/2026/event/australia/66961f05-2454-4455-9d65-f99c49d25b17",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Phillip Island"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Circuit type only. The game layout is not traced from the real plan."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TRK_004",
+      "sport": "moto",
+      "kind": "track",
+      "parodyName": "Ramen Temple Raceway",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Straights, heavy braking, and exits.",
+      "real": {
+        "name": "Buriram",
+        "url": "https://www.motogp.com/en/news/2026/02/26/enstination-thailand-burirams-beating-heart-brings-motogps-2026-opener/998050",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Buriram"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Circuit type only. The game layout is not traced from the real plan."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TRK_005",
+      "sport": "moto",
+      "kind": "track",
+      "parodyName": "Canal Zigzag",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "Quick changes of direction.",
+      "real": {
+        "name": "Assen",
+        "url": "https://www.motogp.com/en/calendar/2026/event/netherlands/47c25c37-d307-4d45-b1ed-b1cb5e811975",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Assen"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Circuit type only. The game layout is not traced from the real plan."
+      }
+    },
+    {
+      "id": "SPC_MOTO_TRK_006",
+      "sport": "moto",
+      "kind": "track",
+      "parodyName": "Corners of Chaos",
+      "status": "PROPOSED",
+      "fictional": false,
+      "summary": "A climb, technical bends, and a long straight.",
+      "real": {
+        "name": "Circuit of the Americas",
+        "url": "https://www.motogp.com/en/calendar/2026/event/americas/8c83648e-8ec9-40f1-9ba0-b0f19883e7d7",
+        "season": "MotoGP 2026",
+        "snapshotDate": "2026-11-20",
+        "identities": [
+          "Circuit of the Americas"
+        ],
+        "verifiedRawMetrics": "DATA_MISSING",
+        "recordStatus": "FACT_VERIFIED",
+        "ratingStatus": "DATA_MISSING",
+        "internalNote": "Circuit type only. The game layout is not traced from the real plan."
+      }
+    }
+  ]
+}
