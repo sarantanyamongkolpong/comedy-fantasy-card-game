@@ -1,0 +1,10 @@
+{
+  "exit": 0,
+  "bytes": 11533868,
+  "path": "web/dist/playable.html",
+  "bundleBytes": 380840,
+  "warnings": [
+    "esbuild iife build warns that import.meta is empty in web/js/assets.js. The builder inlines manifest paths as data URIs before the page runs, and loadManifest uses globalThis.__CFCG_MANIFEST, so the shipped file does not fetch those URLs."
+  ],
+  "committed": false
+}

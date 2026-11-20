@@ -1,0 +1,455 @@
+{
+  "generatedAt": "2026-11-20T13:30:51.040Z",
+  "chrome": "/usr/bin/google-chrome",
+  "viewports": [
+    {
+      "id": "844x390",
+      "width": 844,
+      "height": 390
+    },
+    {
+      "id": "667x375",
+      "width": 667,
+      "height": 375
+    },
+    {
+      "id": "915x412",
+      "width": 915,
+      "height": 412
+    },
+    {
+      "id": "1280x720",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "932x430",
+      "width": 932,
+      "height": 430
+    },
+    {
+      "id": "1024x768",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "screenshots": [
+    "tools/qa/artifacts/screenshots/844x390/home.jpg",
+    "tools/qa/artifacts/screenshots/844x390/stash-avatars.jpg",
+    "tools/qa/artifacts/screenshots/844x390/stash-actions.jpg",
+    "tools/qa/artifacts/screenshots/844x390/stash-tokens.jpg",
+    "tools/qa/artifacts/screenshots/844x390/party.jpg",
+    "tools/qa/artifacts/screenshots/844x390/party-deck.jpg",
+    "tools/qa/artifacts/screenshots/844x390/gacha.jpg",
+    "tools/qa/artifacts/screenshots/844x390/gacha-after-pull.jpg",
+    "tools/qa/artifacts/screenshots/844x390/map.jpg",
+    "tools/qa/artifacts/screenshots/844x390/mall.jpg",
+    "tools/qa/artifacts/screenshots/844x390/prep.jpg",
+    "tools/qa/artifacts/screenshots/844x390/battle.jpg",
+    "tools/qa/artifacts/screenshots/844x390/battle-auto.jpg",
+    "tools/qa/artifacts/screenshots/844x390/rewards.jpg",
+    "tools/qa/artifacts/screenshots/844x390/map-after-rewards.jpg",
+    "tools/qa/artifacts/screenshots/844x390/companion.jpg",
+    "tools/qa/artifacts/screenshots/844x390/home-after-load.jpg",
+    "tools/qa/artifacts/screenshots/667x375/home.jpg",
+    "tools/qa/artifacts/screenshots/667x375/stash-avatars.jpg",
+    "tools/qa/artifacts/screenshots/667x375/stash-actions.jpg",
+    "tools/qa/artifacts/screenshots/667x375/stash-tokens.jpg",
+    "tools/qa/artifacts/screenshots/667x375/party.jpg",
+    "tools/qa/artifacts/screenshots/667x375/party-deck.jpg",
+    "tools/qa/artifacts/screenshots/667x375/gacha.jpg",
+    "tools/qa/artifacts/screenshots/667x375/gacha-after-pull.jpg",
+    "tools/qa/artifacts/screenshots/667x375/map.jpg",
+    "tools/qa/artifacts/screenshots/667x375/mall.jpg",
+    "tools/qa/artifacts/screenshots/667x375/prep.jpg",
+    "tools/qa/artifacts/screenshots/667x375/battle.jpg",
+    "tools/qa/artifacts/screenshots/667x375/battle-auto.jpg",
+    "tools/qa/artifacts/screenshots/667x375/rewards.jpg",
+    "tools/qa/artifacts/screenshots/667x375/map-after-rewards.jpg",
+    "tools/qa/artifacts/screenshots/667x375/companion.jpg",
+    "tools/qa/artifacts/screenshots/667x375/home-after-load.jpg",
+    "tools/qa/artifacts/screenshots/915x412/home.jpg",
+    "tools/qa/artifacts/screenshots/915x412/stash-avatars.jpg",
+    "tools/qa/artifacts/screenshots/915x412/stash-actions.jpg",
+    "tools/qa/artifacts/screenshots/915x412/stash-tokens.jpg",
+    "tools/qa/artifacts/screenshots/915x412/party.jpg",
+    "tools/qa/artifacts/screenshots/915x412/party-deck.jpg",
+    "tools/qa/artifacts/screenshots/915x412/gacha.jpg",
+    "tools/qa/artifacts/screenshots/915x412/gacha-after-pull.jpg",
+    "tools/qa/artifacts/screenshots/915x412/map.jpg",
+    "tools/qa/artifacts/screenshots/915x412/mall.jpg",
+    "tools/qa/artifacts/screenshots/915x412/prep.jpg",
+    "tools/qa/artifacts/screenshots/915x412/battle.jpg",
+    "tools/qa/artifacts/screenshots/915x412/battle-auto.jpg",
+    "tools/qa/artifacts/screenshots/915x412/rewards.jpg",
+    "tools/qa/artifacts/screenshots/915x412/map-after-rewards.jpg",
+    "tools/qa/artifacts/screenshots/915x412/companion.jpg",
+    "tools/qa/artifacts/screenshots/915x412/home-after-load.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/home.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/stash-avatars.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/stash-actions.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/stash-tokens.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/party.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/party-deck.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/gacha.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/gacha-after-pull.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/map.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/mall.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/prep.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/battle.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/battle-auto.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/rewards.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/map-after-rewards.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/companion.jpg",
+    "tools/qa/artifacts/screenshots/1280x720/home-after-load.jpg",
+    "tools/qa/artifacts/screenshots/932x430/home.jpg",
+    "tools/qa/artifacts/screenshots/932x430/stash-avatars.jpg",
+    "tools/qa/artifacts/screenshots/932x430/stash-actions.jpg",
+    "tools/qa/artifacts/screenshots/932x430/stash-tokens.jpg",
+    "tools/qa/artifacts/screenshots/932x430/party.jpg",
+    "tools/qa/artifacts/screenshots/932x430/party-deck.jpg",
+    "tools/qa/artifacts/screenshots/932x430/gacha.jpg",
+    "tools/qa/artifacts/screenshots/932x430/gacha-after-pull.jpg",
+    "tools/qa/artifacts/screenshots/932x430/map.jpg",
+    "tools/qa/artifacts/screenshots/932x430/mall.jpg",
+    "tools/qa/artifacts/screenshots/932x430/prep.jpg",
+    "tools/qa/artifacts/screenshots/932x430/battle.jpg",
+    "tools/qa/artifacts/screenshots/932x430/battle-auto.jpg",
+    "tools/qa/artifacts/screenshots/932x430/rewards.jpg",
+    "tools/qa/artifacts/screenshots/932x430/map-after-rewards.jpg",
+    "tools/qa/artifacts/screenshots/932x430/companion.jpg",
+    "tools/qa/artifacts/screenshots/932x430/home-after-load.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/home.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/stash-avatars.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/stash-actions.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/stash-tokens.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/party.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/party-deck.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/gacha.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/gacha-after-pull.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/map.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/mall.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/prep.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/battle.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/battle-auto.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/rewards.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/map-after-rewards.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/companion.jpg",
+    "tools/qa/artifacts/screenshots/1024x768/home-after-load.jpg",
+    "tools/qa/artifacts/screenshots/390x844-portrait/rotate-overlay.jpg"
+  ],
+  "findings": [
+    {
+      "severity": "P1",
+      "area": "gacha",
+      "message": "Pull 10 is covered after Pull 1 (N: N TEST token TEST_POOL_N)",
+      "viewport": "844x390"
+    },
+    {
+      "severity": "P2",
+      "area": "map",
+      "message": "map map label overlaps (hotspot-label / hotspot-lock, 1)",
+      "viewport": "844x390",
+      "screen": "map"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "844x390",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "844x390",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "844x390",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "844x390",
+      "screen": "battle"
+    },
+    {
+      "severity": "P1",
+      "area": "gacha",
+      "message": "Pull 10 is covered after Pull 1 (N: N TEST token TEST_POOL_N)",
+      "viewport": "667x375"
+    },
+    {
+      "severity": "P2",
+      "area": "map",
+      "message": "map map label overlaps (hotspot-label / hotspot-lock, 1)",
+      "viewport": "667x375",
+      "screen": "map"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "667x375",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "667x375",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "667x375",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "667x375",
+      "screen": "battle"
+    },
+    {
+      "severity": "P1",
+      "area": "gacha",
+      "message": "Pull 10 is covered after Pull 1 (N: N TEST token TEST_POOL_N)",
+      "viewport": "915x412"
+    },
+    {
+      "severity": "P2",
+      "area": "map",
+      "message": "map map label overlaps (hotspot-label / hotspot-lock, 1)",
+      "viewport": "915x412",
+      "screen": "map"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "915x412",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "915x412",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "915x412",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "915x412",
+      "screen": "battle"
+    },
+    {
+      "severity": "P1",
+      "area": "gacha",
+      "message": "Pull 10 is covered after Pull 1 (N: N TEST token TEST_POOL_N)",
+      "viewport": "1280x720"
+    },
+    {
+      "severity": "P2",
+      "area": "map",
+      "message": "map map label overlaps (hotspot-label / hotspot-lock, 1)",
+      "viewport": "1280x720",
+      "screen": "map"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "1280x720",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "1280x720",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "1280x720",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "1280x720",
+      "screen": "battle"
+    },
+    {
+      "severity": "P1",
+      "area": "gacha",
+      "message": "Pull 10 is covered after Pull 1 (N: N TEST token TEST_POOL_N)",
+      "viewport": "932x430"
+    },
+    {
+      "severity": "P2",
+      "area": "map",
+      "message": "map map label overlaps (hotspot-label / hotspot-lock, 1)",
+      "viewport": "932x430",
+      "screen": "map"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "932x430",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "932x430",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "932x430",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "932x430",
+      "screen": "battle"
+    },
+    {
+      "severity": "P1",
+      "area": "gacha",
+      "message": "Pull 10 is covered after Pull 1 (N: N TEST token TEST_POOL_N)",
+      "viewport": "1024x768"
+    },
+    {
+      "severity": "P2",
+      "area": "map",
+      "message": "map map label overlaps (hotspot-label / hotspot-lock, 1)",
+      "viewport": "1024x768",
+      "screen": "map"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "1024x768",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "1024x768",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.164)",
+      "viewport": "1024x768",
+      "screen": "battle"
+    },
+    {
+      "severity": "P2",
+      "area": "characters",
+      "message": "battle character sprites overlap (sprite / sprite, 0.361)",
+      "viewport": "1024x768",
+      "screen": "battle"
+    }
+  ],
+  "performance": {
+    "load": {
+      "durationMs": 59.8,
+      "domContentLoadedMs": 59.7,
+      "loadEventMs": 59.8,
+      "resourceCount": 82,
+      "transferSize": 997115,
+      "decodedBodySize": 972215
+    },
+    "fpsHome": {
+      "frames": 61,
+      "ms": 1009.7,
+      "fps": 60.4
+    },
+    "fpsBattle": {
+      "frames": 61,
+      "ms": 1003.8,
+      "fps": 60.8
+    },
+    "heapHome": {
+      "jsHeapUsedSize": 2974832,
+      "jsHeapTotalSize": 5234688,
+      "nodes": 359
+    },
+    "heapBattle": {
+      "jsHeapUsedSize": 2830816,
+      "jsHeapTotalSize": 6025216,
+      "nodes": 575
+    }
+  },
+  "playback": [
+    {
+      "preset": "current",
+      "delayMs": 640,
+      "elapsedMs": 12140,
+      "reachedRewards": false,
+      "toastChanges": 19,
+      "medianToastGapMs": 642.5,
+      "distinctTurns": 5,
+      "lastTurn": "TURN 05",
+      "pageErrors": []
+    },
+    {
+      "preset": "current",
+      "delayMs": 0,
+      "elapsedMs": 3944,
+      "reachedRewards": true,
+      "toastChanges": 448,
+      "medianToastGapMs": 7.1,
+      "distinctTurns": 89,
+      "lastTurn": "TURN 89",
+      "pageErrors": []
+    },
+    {
+      "preset": "flat_atk",
+      "delayMs": 0,
+      "elapsedMs": 901,
+      "reachedRewards": true,
+      "toastChanges": 88,
+      "medianToastGapMs": 6.4,
+      "distinctTurns": 19,
+      "lastTurn": "TURN 19",
+      "pageErrors": []
+    }
+  ],
+  "playbackMsPerFrame": 642.5
+}

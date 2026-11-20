@@ -1,0 +1,55 @@
+{
+  "head": "7cbf071a15d2da747ba5f9c100696a805860271e",
+  "branch": "prod/wave-base",
+  "notes": "Clean totals are `node --test` and `npm run test:acceptance` with Agent H tests moved aside, so the regression suite does not count them. Playwright is not installed in the repo, so four browser tests skip and four acceptance entries stay todo. Node 20 wall time is longer because the battle matrix and Chrome coverage were running on the same machine.",
+  "runs": [
+    {
+      "command": "npm test",
+      "node": "v22.23.4",
+      "tests": 411,
+      "pass": 403,
+      "fail": 0,
+      "skipped": 4,
+      "todo": 4,
+      "cancelled": 0,
+      "exit": 0,
+      "duration": "140.6s"
+    },
+    {
+      "command": "npm test",
+      "node": "v20.20.2",
+      "tests": 411,
+      "pass": 403,
+      "fail": 0,
+      "skipped": 4,
+      "todo": 4,
+      "cancelled": 0,
+      "exit": 0,
+      "duration": "194.1s"
+    },
+    {
+      "command": "npm run test:acceptance",
+      "node": "v22.23.4",
+      "tests": 112,
+      "pass": 108,
+      "fail": 0,
+      "skipped": 0,
+      "todo": 4,
+      "cancelled": 0,
+      "exit": 0,
+      "duration": "139.6s"
+    },
+    {
+      "command": "npm run test:acceptance",
+      "node": "v20.20.2",
+      "tests": 112,
+      "pass": 108,
+      "fail": 0,
+      "skipped": 0,
+      "todo": 4,
+      "cancelled": 0,
+      "exit": 0,
+      "duration": "179.1s"
+    }
+  ]
+}
