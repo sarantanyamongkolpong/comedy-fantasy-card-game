@@ -35,10 +35,10 @@ function dataUri(filePath) {
 }
 
 mkdirSync(outDir, { recursive: true });
-const built = spawnSync('npx', ['--yes', 'esbuild@0.25.0', join(repoRoot, 'web/js/app.js'), '--bundle', '--format=iife', '--target=es2022', `--outfile=${bundleFile}`], {
-  cwd: repoRoot,
-  stdio: 'inherit',
-});
+const esbuildArgs = [join(repoRoot, 'web/js/app.js'), '--bundle', '--format=iife', '--target=es2022', `--outfile=${bundleFile}`];
+const built = process.env.CFCG_ESBUILD
+  ? spawnSync(process.env.CFCG_ESBUILD, esbuildArgs, { cwd: repoRoot, stdio: 'inherit' })
+  : spawnSync('npx', ['--yes', 'esbuild@0.25.0', ...esbuildArgs], { cwd: repoRoot, stdio: 'inherit' });
 if (built.status !== 0) process.exit(built.status ?? 1);
 
 const manifest = JSON.parse(readFileSync(join(repoRoot, 'web/assets-manifest.json'), 'utf8'));
