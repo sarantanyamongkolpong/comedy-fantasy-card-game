@@ -1,0 +1,4 @@
+cardId,cardKind,actionType,name,apCost,costStatus,effectId,rarity,labels
+ACT_SCHEMA_ATK,action_card,ATK,,,TBD,,,"[""SCHEMA_SAMPLE"",""TBD""]"
+ACT_SCHEMA_DEF,action_card,DEF,,,TBD,,,"[""SCHEMA_SAMPLE"",""TBD""]"
+ACT_SCHEMA_SKILL,action_card,Skill,,,TBD,,,"[""SCHEMA_SAMPLE"",""TBD""]"

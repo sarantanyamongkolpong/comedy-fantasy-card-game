@@ -1,0 +1,13 @@
+{
+  "templateId": "action-card",
+  "kind": "action_card",
+  "description": "Action card shell. actionType must be ATK, DEF, or Skill. Name, AP cost, effect, and rarity stay null until the Owner sets them. A null AP cost requires costStatus TBD. These defaults are not a designed card list.",
+  "defaults": {
+    "cardKind": "action_card",
+    "name": null,
+    "apCost": null,
+    "costStatus": "TBD",
+    "effectId": null,
+    "rarity": null
+  }
+}

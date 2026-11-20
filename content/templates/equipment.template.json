@@ -1,0 +1,24 @@
+{
+  "templateId": "equipment",
+  "kind": "equipment",
+  "description": "Equipment identity. assetId defaults to equipmentId, which is how the art manifest names items. Stat modifiers stay null. upgrade stays null and upgradeStatus stays BLOCKED_BY_DESIGN (Q-UPGRADE). nativeAvatarId null means a shared item.",
+  "defaults": {
+    "nativeAvatarId": null,
+    "variantOf": null,
+    "statModifiers": {
+      "pow": null,
+      "def": null,
+      "spd": null,
+      "valueStatus": "TBD"
+    },
+    "upgrade": null,
+    "upgradeStatus": "BLOCKED_BY_DESIGN"
+  },
+  "derive": [
+    {
+      "field": "assetId",
+      "from": "equipmentId",
+      "when": "missing"
+    }
+  ]
+}
