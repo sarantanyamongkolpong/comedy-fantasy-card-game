@@ -1,0 +1,13 @@
+STATUS & RESEARCH POLICY,,,,,
+"Always separate owner-locked game requirements, sourced facts and unapproved balance/identities",,,,,
+ID,Type,Requirement / approach,Status,Notes,Citation / source
+SP-01,Locked,All 4 sports AUTO: no manual in-match controls,OWNER_LOCKED,Pre-match decisions allowed,Owner 2026-11-20
+SP-02,Locked,Every sport entity draws from real-world research and displays original parody,OWNER_LOCKED,Roster/coach/constructor/vehicle/venue/tactics,Owner addendum 2026-11-20
+SP-03,Locked,"One canonical G wallet, 4 separate banners & pity tracks",OWNER_LOCKED,"Atomic, versioned transaction ledger",Owner 2026-11-20
+SP-04,Locked,Sports rarity N / R / Epic / EX,OWNER_LOCKED,Do not change Action FAC,v05_Gacha GA-03
+SP-05,Locked,"Web, phone landscape, replaceable asset manifest",OWNER_LOCKED,Do not stretch fixed world map,Owner 2026-11-20
+SP-06,Source rule,source_identity and parody_display_name separate,OWNER_LOCKED,Never publish real photos/logos by default,Owner addendum 2026-11-20
+SP-07,Source rule,"source_url, season, snapshot, raw units, confidence",OWNER_LOCKED,No false 0-100 official scores,Owner addendum 2026-11-20
+SP-08,Design,Ratings normalized per sport and role; tune separately,PROPOSED,Numerical values intentionally blank,Research dossier
+SP-09,Risk,Rights review before commercial launch,PROPOSED,Parody is not automatic IP permission,F1 / MotoGP policies
+SP-10,Integration,Draft PRs then owner approval; preserve #9 restriction,OWNER_LOCKED,"No silent merges, retain prior saves",Owner prior instructions

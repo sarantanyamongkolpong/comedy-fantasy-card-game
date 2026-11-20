@@ -1,0 +1,16 @@
+"BASKETBALL | tactics, coaches, teams",,,,,,
+"Official 2026 FIBA rules: 5 on court, 4×10 min, 5-min OT; all sim bonuses are PROPOSED.",,,,,,
+Type,Reference → parody,Proposed feature,Caution / tradeoff,Primary source,Official URL,Status
+Tactic,Man-to-man,"Individual matching, switch/help",Against elite scorer: tailored coverage; chasing can fatigue team,FIBA WABC Level 1,https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-level-manuals-level-1-eng.pdf,PROPOSED
+Tactic,2-3 zone,"Protect the paint, help rebound",Perimeter spacing/movement can expose zones,FIBA WABC Level 2,https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-manual-level-2-eng.pdf,PROPOSED
+Tactic,Matchup zone,Dynamic region-to-person assignments,Requires synergy and execution,FIBA WABC Level 3,https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-manual-level-3-eng.pdf,PROPOSED
+Coach,Steve Kerr → Chef Stevie Stir,Movement/shooting offense,Passive coefficient unapproved,NBA Warriors,https://www.nba.com/warriors/news/warriors-head-coach-steve-kerr-earns-600th-career-win-20260316,PROPOSED
+Coach,Gregg Popovich → Gregg Popcorn-Vich,Discipline/rotation identity,Former head coach; role ended in May 2025,NBA Spurs,https://www.nba.com/spurs/news/gregg-popovich-transitions-to-spurs-president-of-basketball-operations,PROPOSED
+Coach,Becky Hammon → Becky Ham-Bun,Clutch substitutions,Passive coefficient unapproved,WNBA Aces,https://aces.wnba.com/head-coach-becky-hammon,PROPOSED
+Team,Golden State Warriors → Golden Snack Wafflers,Parody team design,Fresh crest and uniforms,NBA team page,https://www.nba.com/warriors,PROPOSED
+Team,Denver Nuggets → Denver Dino Nuggets,Parody team design,Fresh crest and uniforms,NBA team page,https://www.nba.com/nuggets,PROPOSED
+Team,Los Angeles Lakers → LA Latte-Makers,Parody team design,Fresh crest and uniforms,NBA team page,https://www.nba.com/lakers,PROPOSED
+Team,Indiana Fever → Indiana Flavor,Parody team design,Fresh crest and uniforms,WNBA team page,https://fever.wnba.com,PROPOSED
+Venue,Chase Center → Cheese Center,Original fantasy arena,No copied venue photos,NBA venue list,https://www.nba.com/news/all-30-nba-arenas-by-team,PROPOSED
+Venue,Ball Arena → Bowl Arena,Original fantasy arena,No copied venue photos,NBA venue list,https://www.nba.com/news/all-30-nba-arenas-by-team,PROPOSED
+Venue,Crypto.com Arena → Crouton Arena,Original fantasy arena,No copied venue photos,NBA venue list,https://www.nba.com/news/all-30-nba-arenas-by-team,PROPOSED

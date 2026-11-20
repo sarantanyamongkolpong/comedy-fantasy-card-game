@@ -1,0 +1,18 @@
+IMPLEMENTATION CHECKS & OPEN DECISIONS,,,,,
+All unconfirmed outcomes stay PROPOSED; user must approve any production locking or merge.,,,,,
+Check ID,Area,Acceptance / unresolved point,Status,Owner / team action,Proof required
+QA-01,Auto sim,All 4 events run start-to-finish without manual gameplay,OWNER_LOCKED,Mira implements,Seeded match logs + video
+QA-02,Football,11 unique slots inc GK; five formations; coach passive + stamina,OWNER_LOCKED,Mira tests positions,11v11 lineups screenshot + tests
+QA-03,Basketball,Exactly five on court; four custom stats; OT/fouls/bench stable,OWNER_LOCKED,Mira tests rotation,5v5 pre-match + gameplay QA
+QA-04,Car & moto,2 active entrants per team; individual DNF not double team forfeit,OWNER_LOCKED,Mira tests race,Two-entrant entry + results
+QA-05,Gacha,4 banners; no pity cross-contamination; no unrelated sport pulls,OWNER_LOCKED,Mira data tests,Banner isolation assertions
+QA-06,Wallet,One G ledger; no repeated reward payouts or duplicate decrements,OWNER_LOCKED,Mira integration tests,Replay/load/idempotency tests
+QA-07,Parity,"Avatar rarity N/R/Epic/EX, existing Action rules untouched",OWNER_LOCKED,Mira compatibility tests,Existing v0.5 regression
+QA-08,Research,"Every public parody maps to official source, dated in metadata",OWNER_LOCKED,Mira provenance QA,Source completeness report
+QA-09,Art IP,No exact logos/faces/jerseys/liveries or unlicensed official imagery,OWNER_LOCKED,Design + legal review,Asset audit screenshot
+QA-10,Landscape,Small mobile landscape controls never overlap; map never stretches,OWNER_LOCKED,Mira Playwright,844x390 + varied aspect captures
+OPEN-01,Balance,"Ratings, coaches, formation bonuses, race tyre effects",PROPOSED,Owner approves later,Editable tuning table
+OPEN-02,Economy,"Sports gacha prices, drop odds, pity, G rewards",PROPOSED,Owner approves later,Economy impact simulation
+OPEN-03,Acquisition,Driver and car together or separate subpools per sport,PROPOSED,Owner approves later,Reversible schema/design
+OPEN-04,Legality,Licensing / personality / trademark clearance before release,PROPOSED,IP review,Approval record
+OPEN-05,Merge,"No PR merge, especially #9, without owner approval",OWNER_LOCKED,Mira reports Draft PRs,PR list and test counts

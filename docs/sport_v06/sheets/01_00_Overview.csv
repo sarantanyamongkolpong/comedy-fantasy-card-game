@@ -1,0 +1,9 @@
+SPORT COMPLEX | v0.6,,,,,,,
+"Owner addendum · 20 Nov 2026 · 4 Auto Sim sports · every inspiration researched, every public identity parody",,,,,,,
+Sport,Participants / Entries,Stats (exact owner spec),Separate gacha,Card rarity,Currency,Owner status,Source baseline
+Football,"11 vs 11, one GK",Power / Def / Speed / Sta / Acc,SPORT_FOOTBALL,N / R / Epic / EX,Shared canonical G,OWNER_LOCKED,IFAB / FIFA / UEFA / MLS
+Basketball,5 vs 5 on court,Shooting / Def / Spd / Sta,SPORT_BASKET,N / R / Epic / EX,Shared canonical G,OWNER_LOCKED,FIBA 2026 / NBA / WNBA
+Car Racing,2 cars per team,Top Speed / Accel / Handling,SPORT_CAR,N / R / Epic / EX,Shared canonical G,OWNER_LOCKED,FIA / Formula 1 2026
+Motorcycle,2 rider+bike entries per team,Top Speed / Accel / Handling,SPORT_MOTO,N / R / Epic / EX,Shared canonical G,OWNER_LOCKED,MotoGP / FIM / OEMs 2026
+Research scope,"Athletes, coaches, team, venues, vehicles, tactics",Official raw metric != proposed game rating,Separate pity/stock,Inherit Avatar tiers,No sports coin,OWNER_LOCKED,Date-stamp all sources
+Implementation,Pre-event prep then Auto Sim,Seeded and replayable,Single wallet ledger,No invented tier,Idempotent grants,PROPOSED,Mira/parallel Draft PRs
