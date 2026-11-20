@@ -1,0 +1,648 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "world-content-1",
+  "title": "Comedy fantasy world content pack",
+  "description": "Proposed world copy. Review status stays GENERATED_REVIEW. Design status stays PROPOSED. Economy amounts stay null with PENDING_OWNER. This schema does not approve the pack.",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 3,
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "ruleId": {
+      "type": "string",
+      "pattern": "^(HOME|MAP|OPEN|GA|CORE)-[0-9]{2,3}$"
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/ruleId" }
+    },
+    "blankMoney": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["G", "price", "priceStatus", "unlockCost", "unlockCostStatus", "amount", "amountStatus"],
+      "properties": {
+        "G": { "type": "null" },
+        "price": { "type": "null" },
+        "priceStatus": { "const": "PENDING_OWNER" },
+        "unlockCost": { "type": "null" },
+        "unlockCostStatus": { "const": "PENDING_OWNER" },
+        "amount": { "type": "null" },
+        "amountStatus": { "const": "PENDING_OWNER" }
+      }
+    },
+    "reward": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "G",
+        "price",
+        "unlockCost",
+        "amount",
+        "items",
+        "cardIds",
+        "status",
+        "kinds",
+        "amountMark",
+        "difficultyCap",
+        "premiumCurrency"
+      ],
+      "properties": {
+        "G": { "type": "null" },
+        "price": { "type": "null" },
+        "unlockCost": { "type": "null" },
+        "amount": { "type": "null" },
+        "items": { "type": "null" },
+        "cardIds": { "type": "null" },
+        "status": { "const": "PENDING_OWNER" },
+        "kinds": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": { "enum": ["G", "materials", "decorations"] }
+        },
+        "amountMark": { "const": "PENDING" },
+        "difficultyCap": { "const": "PENDING" },
+        "premiumCurrency": { "const": "avoid_large_amounts" }
+      }
+    },
+    "building": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assetId",
+        "hotspotId",
+        "siteId",
+        "hotspotLabel",
+        "mapDestinationId",
+        "mapDestinationName",
+        "mapAction",
+        "webMode",
+        "hotspotLocked"
+      ],
+      "properties": {
+        "assetId": { "type": "string", "minLength": 1 },
+        "hotspotId": { "type": "string", "minLength": 1 },
+        "siteId": { "type": "string", "minLength": 1 },
+        "hotspotLabel": { "type": "string", "minLength": 1 },
+        "mapDestinationId": { "type": "string", "minLength": 1 },
+        "mapDestinationName": { "type": "string", "minLength": 1 },
+        "mapAction": { "enum": ["home", "gacha", "battle", "mall", "locked"] },
+        "webMode": { "type": ["string", "null"] },
+        "hotspotLocked": { "type": "boolean" }
+      }
+    },
+    "fileHead": {
+      "type": "object",
+      "required": ["schemaVersion", "reviewStatus", "designStatus", "mainQuest", "wiredToClient"],
+      "properties": {
+        "schemaVersion": { "const": "world-content-1" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "mainQuest": { "const": false },
+        "wiredToClient": { "const": false }
+      }
+    },
+    "npc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "name",
+        "nameStanding",
+        "role",
+        "building",
+        "lines",
+        "mentionsAvatarIds",
+        "mentionsCardIds",
+        "shopkeeperId",
+        "canonRules",
+        "economy"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "name": { "type": "string", "minLength": 1 },
+        "nameStanding": { "enum": ["unique_dialogue_role", "temporary"] },
+        "role": { "enum": ["greeter", "archivist", "announcer", "coach", "attendant", "shopkeeper"] },
+        "building": { "$ref": "#/$defs/building" },
+        "lines": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 20 }
+        },
+        "mentionsAvatarIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "mentionsCardIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "shopkeeperId": { "type": ["string", "null"] },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "economy": { "$ref": "#/$defs/blankMoney" }
+      }
+    },
+    "offer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "kind",
+        "refId",
+        "pool",
+        "houseTierId",
+        "displayName",
+        "mallScreenLabel",
+        "testOnly",
+        "currency",
+        "note",
+        "G",
+        "price",
+        "priceStatus",
+        "unlockCost",
+        "unlockCostStatus",
+        "amount",
+        "amountStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "kind": { "enum": ["furniture_reference", "furniture_art", "gacha_banner"] },
+        "refId": { "type": "string", "minLength": 1 },
+        "pool": { "type": ["string", "null"] },
+        "houseTierId": { "type": ["string", "null"] },
+        "displayName": { "type": "string", "minLength": 1 },
+        "mallScreenLabel": { "type": ["string", "null"] },
+        "testOnly": { "type": "boolean" },
+        "currency": { "type": ["string", "null"] },
+        "note": { "type": "string", "minLength": 10 },
+        "G": { "type": "null" },
+        "price": { "type": "null" },
+        "priceStatus": { "const": "PENDING_OWNER" },
+        "unlockCost": { "type": "null" },
+        "unlockCostStatus": { "const": "PENDING_OWNER" },
+        "amount": { "type": "null" },
+        "amountStatus": { "const": "PENDING_OWNER" }
+      }
+    },
+    "shopkeeper": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "npcId",
+        "building",
+        "displayName",
+        "pitch",
+        "canonRules",
+        "sells",
+        "checkoutEnabled",
+        "offers"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "npcId": { "$ref": "#/$defs/id" },
+        "building": { "$ref": "#/$defs/building" },
+        "displayName": { "type": "string", "minLength": 1 },
+        "pitch": { "type": "string", "minLength": 20 },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "sells": { "const": true },
+        "checkoutEnabled": { "const": false },
+        "offers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/offer" } }
+      }
+    },
+    "sideEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "kind",
+        "mainQuest",
+        "mandatory",
+        "gatesCoreLoop",
+        "questId",
+        "building",
+        "title",
+        "body",
+        "npcId",
+        "mentionsCardIds",
+        "mentionsAvatarIds",
+        "mentionsEnemyIds",
+        "artworkTags",
+        "canonRules",
+        "reward"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "kind": { "const": "side_event" },
+        "mainQuest": { "const": false },
+        "mandatory": { "const": false },
+        "gatesCoreLoop": { "const": false },
+        "questId": { "type": "null" },
+        "building": { "$ref": "#/$defs/building" },
+        "title": { "type": "string", "minLength": 1 },
+        "body": { "type": "string", "minLength": 20 },
+        "npcId": { "$ref": "#/$defs/id" },
+        "mentionsCardIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "mentionsAvatarIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "mentionsEnemyIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "artworkTags": { "type": "array", "items": { "$ref": "#/$defs/artworkFlag" } },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "reward": { "$ref": "#/$defs/reward" }
+      }
+    },
+    "pointsAt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["screen", "hotspotId", "uiAnchorId", "control"],
+      "properties": {
+        "screen": {
+          "enum": ["home", "map", "prep", "battle", "rewards", "gacha", "stash", "party", "mall"]
+        },
+        "hotspotId": { "type": ["string", "null"] },
+        "uiAnchorId": { "type": ["string", "null"] },
+        "control": { "type": ["string", "null"] }
+      }
+    },
+    "tutorial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "order",
+        "round",
+        "screen",
+        "loopStep",
+        "title",
+        "body",
+        "pointsAt",
+        "mentionsCardIds",
+        "mentionsAvatarIds",
+        "skippable",
+        "blocksProgress",
+        "canonRules",
+        "economy"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "order": { "type": "integer", "minimum": 1 },
+        "round": { "enum": ["first", "later"] },
+        "screen": {
+          "enum": ["home", "map", "prep", "battle", "rewards", "gacha", "stash", "party", "mall"]
+        },
+        "loopStep": {
+          "enum": ["map", "prep_battle", "battle", "rewards", "gacha", "hideout", "stash", "deck", "mall"]
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "body": { "type": "string", "minLength": 40 },
+        "pointsAt": { "$ref": "#/$defs/pointsAt" },
+        "mentionsCardIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "mentionsAvatarIds": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+        "skippable": { "const": true },
+        "blocksProgress": { "const": false },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "economy": { "$ref": "#/$defs/blankMoney" }
+      }
+    },
+    "artworkFlag": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enemyId", "artworkTag", "placeholderImage"],
+      "properties": {
+        "enemyId": { "$ref": "#/$defs/id" },
+        "artworkTag": { "const": "Missing Artwork" },
+        "placeholderImage": { "type": "string", "minLength": 1 }
+      }
+    },
+    "enemyRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enemyId", "displayName", "artworkTag", "placeholderImage"],
+      "properties": {
+        "enemyId": { "$ref": "#/$defs/id" },
+        "displayName": { "type": "string", "minLength": 1 },
+        "artworkTag": { "type": ["string", "null"] },
+        "placeholderImage": { "type": ["string", "null"] }
+      }
+    },
+    "runtimeOpponent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "avatarIds", "deckId", "note"],
+      "properties": {
+        "kind": { "const": "echo_copies_of_avatars" },
+        "avatarIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+        "deckId": { "$ref": "#/$defs/id" },
+        "note": { "type": "string", "minLength": 20 }
+      }
+    },
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "order",
+        "title",
+        "summary",
+        "building",
+        "webMode",
+        "catalogBattleId",
+        "enemies",
+        "rosterReuse",
+        "distinctFloorRoster",
+        "rosterWiredToWebBattle",
+        "runtimeOpponent",
+        "requiresStageId",
+        "enforcedByClient",
+        "proposedOrderOnly",
+        "gatesCoreLoop",
+        "mainQuest",
+        "canonRules",
+        "reward"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "order": { "type": "integer", "minimum": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 20 },
+        "building": { "$ref": "#/$defs/building" },
+        "webMode": { "enum": ["tower", "arena"] },
+        "catalogBattleId": { "$ref": "#/$defs/id" },
+        "enemies": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/enemyRef" } },
+        "rosterReuse": { "type": "string", "minLength": 1 },
+        "distinctFloorRoster": { "const": false },
+        "rosterWiredToWebBattle": { "const": false },
+        "runtimeOpponent": { "$ref": "#/$defs/runtimeOpponent" },
+        "requiresStageId": { "type": ["string", "null"] },
+        "enforcedByClient": { "const": false },
+        "proposedOrderOnly": { "const": true },
+        "gatesCoreLoop": { "const": false },
+        "mainQuest": { "const": false },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "reward": { "$ref": "#/$defs/reward" }
+      }
+    },
+    "chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "order",
+        "title",
+        "summary",
+        "building",
+        "mainQuest",
+        "gatesCoreLoop",
+        "canonRules",
+        "stages"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "order": { "type": "integer", "minimum": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 20 },
+        "building": { "$ref": "#/$defs/building" },
+        "mainQuest": { "const": false },
+        "gatesCoreLoop": { "const": false },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "stages": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/stage" } }
+      }
+    },
+    "facility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "kind",
+        "building",
+        "availableFromStart",
+        "includedInUnlockChain",
+        "screenLive",
+        "note",
+        "G",
+        "price",
+        "priceStatus",
+        "unlockCost",
+        "unlockCostStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "kind": { "const": "facility" },
+        "building": { "$ref": "#/$defs/building" },
+        "availableFromStart": { "const": true },
+        "includedInUnlockChain": { "const": false },
+        "screenLive": { "const": true },
+        "note": { "type": "string", "minLength": 10 },
+        "G": { "type": "null" },
+        "price": { "type": "null" },
+        "priceStatus": { "const": "PENDING_OWNER" },
+        "unlockCost": { "type": "null" },
+        "unlockCostStatus": { "const": "PENDING_OWNER" }
+      }
+    },
+    "lockedNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewStatus",
+        "designStatus",
+        "kind",
+        "building",
+        "includedInUnlockChain",
+        "mapPinLive",
+        "systemsLive",
+        "implementation",
+        "canonRules",
+        "note",
+        "G",
+        "price",
+        "priceStatus",
+        "unlockCost",
+        "unlockCostStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "kind": { "const": "locked_building" },
+        "building": { "$ref": "#/$defs/building" },
+        "includedInUnlockChain": { "const": false },
+        "mapPinLive": { "const": true },
+        "systemsLive": { "const": false },
+        "implementation": { "const": "OUT_OF_SCOPE" },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "note": { "type": "string", "minLength": 10 },
+        "G": { "type": "null" },
+        "price": { "type": "null" },
+        "priceStatus": { "const": "PENDING_OWNER" },
+        "unlockCost": { "type": "null" },
+        "unlockCostStatus": { "const": "PENDING_OWNER" }
+      }
+    },
+    "openQuestion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "resolution", "decisionSource", "decidedOn"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "type": "string", "minLength": 20 },
+        "resolution": { "enum": ["OPEN", "OWNER_DECIDED"] },
+        "decisionSource": { "type": ["string", "null"] },
+        "decidedOn": { "type": ["string", "null"] }
+      }
+    },
+    "catalogFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "packId",
+        "reviewStatus",
+        "designStatus",
+        "mainQuest",
+        "wiredToClient",
+        "ownerOrder",
+        "agent",
+        "baseBranch",
+        "baseCommit",
+        "summary",
+        "files",
+        "sources",
+        "openQuestions"
+      ],
+      "properties": {
+        "schemaVersion": { "const": "world-content-1" },
+        "packId": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "mainQuest": { "const": false },
+        "wiredToClient": { "const": false },
+        "ownerOrder": { "const": "t270u" },
+        "agent": { "const": "G" },
+        "baseBranch": { "const": "prod/wave-base" },
+        "baseCommit": { "const": "7cbf071a15d2da747ba5f9c100696a805860271e" },
+        "summary": { "type": "string", "minLength": 20 },
+        "files": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "sources": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "openQuestions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/openQuestion" } }
+      }
+    },
+    "npcFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "reviewStatus", "designStatus", "mainQuest", "wiredToClient", "npcs"],
+      "properties": {
+        "schemaVersion": { "const": "world-content-1" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "mainQuest": { "const": false },
+        "wiredToClient": { "const": false },
+        "npcs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/npc" } }
+      }
+    },
+    "shopFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "reviewStatus", "designStatus", "mainQuest", "wiredToClient", "shopkeepers"],
+      "properties": {
+        "schemaVersion": { "const": "world-content-1" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "mainQuest": { "const": false },
+        "wiredToClient": { "const": false },
+        "shopkeepers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/shopkeeper" } }
+      }
+    },
+    "eventFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "reviewStatus", "designStatus", "mainQuest", "wiredToClient", "sideEvents"],
+      "properties": {
+        "schemaVersion": { "const": "world-content-1" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "mainQuest": { "const": false },
+        "wiredToClient": { "const": false },
+        "sideEvents": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sideEvent" } }
+      }
+    },
+    "tutorialFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "reviewStatus", "designStatus", "mainQuest", "wiredToClient", "tutorials"],
+      "properties": {
+        "schemaVersion": { "const": "world-content-1" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "mainQuest": { "const": false },
+        "wiredToClient": { "const": false },
+        "tutorials": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/tutorial" } }
+      }
+    },
+    "progressionFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "reviewStatus",
+        "designStatus",
+        "mainQuest",
+        "wiredToClient",
+        "id",
+        "gatesCoreLoop",
+        "enforcedByClient",
+        "proposedOrderOnly",
+        "summary",
+        "canonRules",
+        "chapters",
+        "facilities",
+        "lockedNodes"
+      ],
+      "properties": {
+        "schemaVersion": { "const": "world-content-1" },
+        "reviewStatus": { "const": "GENERATED_REVIEW" },
+        "designStatus": { "const": "PROPOSED" },
+        "mainQuest": { "const": false },
+        "wiredToClient": { "const": false },
+        "id": { "$ref": "#/$defs/id" },
+        "gatesCoreLoop": { "const": false },
+        "enforcedByClient": { "const": false },
+        "proposedOrderOnly": { "const": true },
+        "summary": { "type": "string", "minLength": 20 },
+        "canonRules": { "$ref": "#/$defs/rules" },
+        "chapters": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/chapter" } },
+        "facilities": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/facility" } },
+        "lockedNodes": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/lockedNode" } }
+      }
+    }
+  }
+}
