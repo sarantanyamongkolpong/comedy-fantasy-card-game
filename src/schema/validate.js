@@ -1,11 +1,20 @@
 import {
+  ACTION_RARITIES,
   ASSET_STATUSES,
+  AVATAR_RARITIES,
   CARD_ACTION_TYPES,
   FACTION_RECORDS,
   STAT_KEYS,
   SUBJECT_KINDS,
   VARIANT_KINDS,
 } from './constants.js';
+import {
+  isV05Action,
+  isV05Avatar,
+  validateActionCardV05,
+  validateAvatarV05,
+  validateSkillSlots,
+} from './validate-v05.js';
 
 /**
  * @param {string} path
@@ -82,10 +91,14 @@ export function validateFaction(faction, path = 'faction') {
   return errors;
 }
 
-function validateRarity(rarity, path, errors) {
+function validateRarity(rarity, path, errors, allowed) {
   if (rarity === null) return;
   if (typeof rarity !== 'string' || rarity.length === 0) {
     errors.push(issue(path, 'rarity must be null until a scale exists, or a non-empty string'));
+    return;
+  }
+  if (allowed && !allowed.includes(rarity)) {
+    errors.push(issue(path, `rarity must be null or one of ${allowed.join(', ')}`));
   }
 }
 
@@ -94,6 +107,7 @@ function validateRarity(rarity, path, errors) {
  * @param {string} [path]
  */
 export function validateAvatar(avatar, path = 'avatar') {
+  if (isV05Avatar(avatar)) return validateAvatarV05(avatar, path);
   const errors = [];
   if (!isObject(avatar)) return [issue(path, 'avatar must be an object')];
   unknownKeys(
@@ -118,7 +132,8 @@ export function validateAvatar(avatar, path = 'avatar') {
     errors.push(issue(`${path}.role`, `role must be ${faction.role} for ${faction.name}`));
   }
   errors.push(...validateStats(avatar.stats, `${path}.stats`));
-  validateRarity(avatar.rarity, `${path}.rarity`, errors);
+  validateRarity(avatar.rarity, `${path}.rarity`, errors, AVATAR_RARITIES);
+  validateSkillSlots(avatar.rarity, avatar.skills, `${path}.skills`, errors);
   if (avatar.rigId !== undefined && (typeof avatar.rigId !== 'string' || avatar.rigId.length === 0)) {
     errors.push(issue(`${path}.rigId`, 'rigId must be a non-empty string when present'));
   }
@@ -171,7 +186,7 @@ export function validateAvatarCard(card, path = 'avatarCard') {
     errors.push(issue(`${path}.role`, `role must be ${faction.role} for ${faction.name}`));
   }
   errors.push(...validateStats(card.stats, `${path}.stats`));
-  validateRarity(card.rarity, `${path}.rarity`, errors);
+  validateRarity(card.rarity, `${path}.rarity`, errors, AVATAR_RARITIES);
   if (typeof card.assetId !== 'string' || card.assetId.length === 0) {
     errors.push(issue(`${path}.assetId`, 'assetId is required'));
   }
@@ -183,6 +198,7 @@ export function validateAvatarCard(card, path = 'avatarCard') {
  * @param {string} [path]
  */
 export function validateActionCard(card, path = 'actionCard') {
+  if (isV05Action(card)) return validateActionCardV05(card, path);
   const errors = [];
   if (!isObject(card)) return [issue(path, 'action card must be an object')];
   unknownKeys(
@@ -216,7 +232,7 @@ export function validateActionCard(card, path = 'actionCard') {
   if (card.effectId !== null && (typeof card.effectId !== 'string' || card.effectId.length === 0)) {
     errors.push(issue(`${path}.effectId`, 'effectId must be null or a non-empty string'));
   }
-  validateRarity(card.rarity, `${path}.rarity`, errors);
+  validateRarity(card.rarity, `${path}.rarity`, errors, ACTION_RARITIES);
   if (card.labels !== undefined) {
     if (!Array.isArray(card.labels) || card.labels.some((label) => typeof label !== 'string')) {
       errors.push(issue(`${path}.labels`, 'labels must be an array of strings'));

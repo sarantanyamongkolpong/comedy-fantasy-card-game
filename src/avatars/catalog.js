@@ -1,5 +1,7 @@
 import { FACTION_RECORDS } from '../schema/constants.js';
 
+export { V05_JUSTIN_AVATARS } from '../schema/v05-samples.js';
+
 function tbdStats() {
   return { pow: null, def: null, spd: null, valueStatus: 'TBD' };
 }

@@ -1,0 +1,87 @@
+{
+  "contentTier": "draft",
+  "warning": "PLACEHOLDER enemy team. Stats are not locked balance. Not PRODUCTION_READY.",
+  "battle": {
+    "battleId": "DEMO_BATTLE_001",
+    "status": "PLACEHOLDER",
+    "note": "One demo enemy team so Deck to Battle can load four opponents. Every number is a placeholder, not locked balance.",
+    "enemies": [
+      {
+        "enemyId": "ENM_DEMO_001",
+        "displayName": "Placeholder Echo Tank",
+        "factionId": "FAC_AEG",
+        "role": "Tank",
+        "rarity": "N",
+        "rarityStatus": "PLACEHOLDER",
+        "stats": {
+          "atk": 1,
+          "def": 1,
+          "spd": 1,
+          "valueStatus": "PLACEHOLDER",
+          "fieldStatus": {
+            "atk": "PLACEHOLDER",
+            "def": "PLACEHOLDER",
+            "spd": "PLACEHOLDER"
+          }
+        }
+      },
+      {
+        "enemyId": "ENM_DEMO_002",
+        "displayName": "Placeholder Echo Blade",
+        "factionId": "FAC_PHA",
+        "role": "DPS",
+        "rarity": "N",
+        "rarityStatus": "PLACEHOLDER",
+        "stats": {
+          "atk": 1,
+          "def": 1,
+          "spd": 1,
+          "valueStatus": "PLACEHOLDER",
+          "fieldStatus": {
+            "atk": "PLACEHOLDER",
+            "def": "PLACEHOLDER",
+            "spd": "PLACEHOLDER"
+          }
+        }
+      },
+      {
+        "enemyId": "ENM_DEMO_003",
+        "displayName": "Placeholder Echo Spark",
+        "factionId": "FAC_CEL",
+        "role": "Magic",
+        "rarity": "N",
+        "rarityStatus": "PLACEHOLDER",
+        "stats": {
+          "atk": 1,
+          "def": 1,
+          "spd": 1,
+          "valueStatus": "PLACEHOLDER",
+          "fieldStatus": {
+            "atk": "PLACEHOLDER",
+            "def": "PLACEHOLDER",
+            "spd": "PLACEHOLDER"
+          }
+        }
+      },
+      {
+        "enemyId": "ENM_DEMO_004",
+        "displayName": "Placeholder Echo Hymn",
+        "factionId": "FAC_SAN",
+        "role": "Support",
+        "rarity": "N",
+        "rarityStatus": "PLACEHOLDER",
+        "stats": {
+          "atk": 1,
+          "def": 1,
+          "spd": 1,
+          "valueStatus": "PLACEHOLDER",
+          "fieldStatus": {
+            "atk": "PLACEHOLDER",
+            "def": "PLACEHOLDER",
+            "spd": "PLACEHOLDER"
+          }
+        }
+      }
+    ]
+  }
+}

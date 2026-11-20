@@ -14,6 +14,7 @@ import {
   validateOwnership,
   validateVariant,
 } from '../src/schema/validate.js';
+import { validateSkillSlots } from '../src/schema/validate-v05.js';
 
 const STARTERS = [
   ['AVT_AEG_001', 'Sir Potlid', 'เซอร์ฝาหม้อ', 'FAC_AEG', 'Aegis Dominion', 'Tank', 'humanoid_heavy'],
@@ -117,6 +118,13 @@ test('JSON Schema document parses and names the core records', () => {
     'Ownership',
     'Variant',
     'AssetManifestEntry',
+    'AvatarV05',
+    'ActionCardV05',
+    'Deck',
+    'GachaBanner',
+    'PlayerProfile',
+    'Furniture',
+    'RuleConfig',
   ]) {
     assert.ok(schema.$defs[name], name);
   }
@@ -133,4 +141,25 @@ test('art manifest snapshot validates and reports duplicate ids', () => {
   const duplicate = structuredClone(manifest);
   duplicate.assets.push({ ...duplicate.assets[0] });
   assert.ok(validateAssetManifest(duplicate).some((error) => error.message.includes('duplicate')));
+});
+
+test('avatar rarity skill slots follow CORE-026 through CORE-029', () => {
+  const slots = (active, passive, ultimate) => ({ active, passive, ultimate });
+  const present = { Name: 'sample' };
+  const check = (rarity, skills) => {
+    const errors = [];
+    validateSkillSlots(rarity, skills, 'skills', errors);
+    return errors;
+  };
+  assert.deepEqual(check('N', slots(null, null, null)), []);
+  assert.deepEqual(check('N', slots(present, null, null)), []);
+  assert.ok(check('N', slots(null, present, null)).some((error) => error.path.endsWith('passive')));
+  assert.ok(check('R', slots(present, present, null)).length > 0);
+  assert.ok(check('R', slots(null, null, null)).length > 0);
+  assert.deepEqual(check('R', slots(present, null, null)), []);
+  assert.deepEqual(check('Epic', slots(present, present, null)), []);
+  assert.ok(check('Epic', slots(present, null, null)).some((error) => error.path.endsWith('passive')));
+  assert.ok(check('EX', slots(present, present, null)).some((error) => error.path.endsWith('ultimate')));
+  assert.deepEqual(check('EX', slots(present, present, present)), []);
+  assert.deepEqual(check(null, undefined), []);
 });

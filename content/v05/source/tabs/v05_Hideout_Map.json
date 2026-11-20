@@ -1,0 +1,177 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_Hideout_Map",
+  "title": "HIDEOUT + MAIN MAP — CURRENT RULES",
+  "columns": [
+    "ID",
+    "Topic",
+    "Specification",
+    "Status",
+    "Evidence/Theme",
+    "Implementation Notes"
+  ],
+  "rows": [
+    {
+      "ID": "HOME-01",
+      "Topic": "House tier 1",
+      "Specification": "Cabin",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Base Home",
+      "Implementation Notes": "Starter Stash/Deck Builder/Companion"
+    },
+    {
+      "ID": "HOME-02",
+      "Topic": "House tier 2",
+      "Specification": "Bungalow",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Rustic→simple",
+      "Implementation Notes": "Reference +1 Box 50 cards"
+    },
+    {
+      "ID": "HOME-03",
+      "Topic": "House tier 3",
+      "Specification": "Cottage",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Cozy",
+      "Implementation Notes": "Reference +1 Box 50 cards"
+    },
+    {
+      "ID": "HOME-04",
+      "Topic": "House tier 4",
+      "Specification": "Loft",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Modern",
+      "Implementation Notes": "Reference +1 Tall Cabinet 100"
+    },
+    {
+      "ID": "HOME-05",
+      "Topic": "House tier 5",
+      "Specification": "Villa",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Luxury",
+      "Implementation Notes": "Reference +1 Display Counter 100"
+    },
+    {
+      "ID": "HOME-06",
+      "Topic": "House tier 6",
+      "Specification": "Penthouse",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Ultra luxury",
+      "Implementation Notes": "Reference +1 Large Tall Cabinet 150"
+    },
+    {
+      "ID": "HOME-07",
+      "Topic": "Visual home",
+      "Specification": "Always display current highest acquired house tier",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner 19-20 Nov",
+      "Implementation Notes": "Not cumulative house skins in display"
+    },
+    {
+      "ID": "HOME-08",
+      "Topic": "Storage",
+      "Specification": "Capacity from actually installed storage furniture, pooled globally",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner 19-20 Nov",
+      "Implementation Notes": "House upgrade alone adds no slots"
+    },
+    {
+      "ID": "HOME-09",
+      "Topic": "Furniture purchase",
+      "Specification": "Shopping Mall sells/unlocks furniture with home requirements",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner 19-20 Nov",
+      "Implementation Notes": "Tier grant vs unlock-to-buy remains PENDING"
+    },
+    {
+      "ID": "HOME-10",
+      "Topic": "Furniture layout",
+      "Specification": "Auto-place into beautiful predefined blocks",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner 19-20 Nov",
+      "Implementation Notes": "No freehand house editor in core"
+    },
+    {
+      "ID": "HOME-11",
+      "Topic": "Cabin storage",
+      "Specification": "Starting base storage capacity",
+      "Status": "PENDING",
+      "Evidence/Theme": "Owner",
+      "Implementation Notes": "Do not set a random number"
+    },
+    {
+      "ID": "MAP-01",
+      "Topic": "Main Map",
+      "Specification": "Separate from home; Isometric Pixel Art 2.5D",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner 19-20 Nov",
+      "Implementation Notes": "Map navigation"
+    },
+    {
+      "ID": "MAP-02",
+      "Topic": "Home",
+      "Specification": "Player hub / Hideout",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner",
+      "Implementation Notes": "Map destination"
+    },
+    {
+      "ID": "MAP-03",
+      "Topic": "Mysterious Tower",
+      "Specification": "PvE battle and Mystery Tower lore",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner",
+      "Implementation Notes": "Map destination"
+    },
+    {
+      "ID": "MAP-04",
+      "Topic": "Sports Complex",
+      "Specification": "Football, Basketball, Racing, MotoGP",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner",
+      "Implementation Notes": "Four substantive Side Battle modes deferred from P0"
+    },
+    {
+      "ID": "MAP-05",
+      "Topic": "Tournament Arena",
+      "Specification": "Main battle/PvP venue",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner",
+      "Implementation Notes": "Modes & multiplayer specifics pending"
+    },
+    {
+      "ID": "MAP-06",
+      "Topic": "Shopping Mall",
+      "Specification": "Furniture and cosmetics",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner",
+      "Implementation Notes": "Map destination"
+    },
+    {
+      "ID": "MAP-07",
+      "Topic": "Gachapon",
+      "Specification": "Avatar / Action / Companion pools",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner",
+      "Implementation Notes": "Map destination"
+    },
+    {
+      "ID": "MAP-08",
+      "Topic": "World Tone",
+      "Specification": "Comedy Fantasy throughout",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner 17 Nov",
+      "Implementation Notes": "No Main Story or Main Quest"
+    },
+    {
+      "ID": "MAP-09",
+      "Topic": "World Lore",
+      "Specification": "Mystery Tower, Real People + Echo hybrid Avatar",
+      "Status": "LOCKED",
+      "Evidence/Theme": "Owner 16 Nov",
+      "Implementation Notes": "Lore depth optional, not gated narrative"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}

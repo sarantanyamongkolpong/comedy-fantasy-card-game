@@ -161,6 +161,86 @@
         "sha256": { "type": "string" },
         "bytes": { "type": "integer", "minimum": 0 }
       }
+    },
+    "AvatarV05": {
+      "description": "v0.5 avatar. Primary stats are atk/def/spd. legacy.pow is retained when migrated. Rarity is N/R/Epic/EX. Not a replacement for the legacy Avatar def, which still uses pow.",
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["schemaVersion", "avatarId", "nameEn", "nameTh", "factionId", "role", "stats", "rarity"],
+      "properties": {
+        "schemaVersion": { "const": "v05" },
+        "avatarId": { "type": "string", "pattern": "^AVT_[A-Z0-9_]+$" },
+        "rarity": { "enum": ["N", "R", "Epic", "EX", null] },
+        "stats": { "$ref": "#/$defs/AvatarStatsV05" }
+      }
+    },
+    "AvatarStatsV05": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["atk", "def", "spd", "valueStatus"],
+      "properties": {
+        "atk": { "type": ["integer", "null"], "minimum": 0 },
+        "def": { "type": ["integer", "null"], "minimum": 0 },
+        "spd": { "type": ["integer", "null"], "minimum": 0 },
+        "pow": { "type": ["integer", "null"], "minimum": 0 },
+        "valueStatus": { "enum": ["TBD", "SET", "PROPOSED", "PLACEHOLDER", "PENDING_OWNER", "LOCKED"] }
+      }
+    },
+    "ActionCardV05": {
+      "description": "v05_Action_Schema. EX and FAC are the same top tier. Numeric demo values are PLACEHOLDER unless evidence marks them LOCKED.",
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["schemaVersion", "Action_ID", "Name", "Type", "Rarity", "Cost_AP", "Effect_Spec", "On_Resolve_Zone", "Can_Play", "Version_And_Status"],
+      "properties": {
+        "schemaVersion": { "const": "v05" },
+        "Type": { "enum": ["ATK", "DEF", "Skill"] },
+        "Rarity": { "enum": ["N", "R", "Epic", "EX", "FAC"] },
+        "Cost_AP": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "On_Resolve_Zone": { "enum": ["Discard", "Void"] },
+        "Target_Rule": {
+          "description": "Vocabulary from the sheet. The field status is PENDING_OWNER.",
+          "enum": ["Self", "Ally", "All_Allies", "Enemy", "All_Enemies", "Card", "Pile", null]
+        }
+      }
+    },
+    "Deck": {
+      "description": "CORE-009 deck of exactly 30 action cards. Mixed factions are allowed. Duplicate cap is PENDING_OWNER.",
+      "type": "object",
+      "required": ["deckId", "cardIds"],
+      "properties": {
+        "deckId": { "type": "string", "minLength": 1 },
+        "cardIds": { "type": "array", "items": { "type": "string" }, "minItems": 30, "maxItems": 30 }
+      }
+    },
+    "GachaBanner": {
+      "description": "Pity thresholds are LOCKED. Rates and G cost are PENDING_OWNER. A pullable banner in this build must be marked TEST_ONLY_NOT_PRODUCTION.",
+      "type": "object",
+      "required": ["bannerId", "pool", "entries"],
+      "properties": {
+        "pool": { "enum": ["avatar", "action", "companion"] },
+        "rateStatus": { "const": "TEST_ONLY_NOT_PRODUCTION" }
+      }
+    },
+    "PlayerProfile": {
+      "type": "object",
+      "required": ["profileId", "inventory", "decks", "currency", "pity", "house", "rewardLedger"],
+      "properties": {
+        "saveVersion": { "const": 1 }
+      }
+    },
+    "Furniture": {
+      "description": "Storage capacity is the installed piece. House tier does not add slots. Cabin base capacity is PENDING_OWNER.",
+      "type": "object",
+      "required": ["furnitureId", "capacity"],
+      "properties": {
+        "capacity": { "type": "integer", "minimum": 0 },
+        "grantStatus": { "const": "PENDING_OWNER" }
+      }
+    },
+    "RuleConfig": {
+      "description": "defaultRuleConfig() shape. LOCKED values are exact. PENDING_OWNER values are null.",
+      "type": "object",
+      "required": ["deckSize", "powToAtk", "gacha", "house"]
     }
   }
 }

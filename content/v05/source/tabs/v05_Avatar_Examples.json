@@ -1,0 +1,79 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_Avatar_Examples",
+  "title": "FOUR EPIC AVATARS — OWNER LOCK + PROPOSALS",
+  "columns": [
+    "ID",
+    "Name",
+    "Faction",
+    "Role",
+    "Rarity",
+    "ATK",
+    "DEF",
+    "SPD",
+    "Active Skill",
+    "Passive",
+    "Approval State",
+    "Notes"
+  ],
+  "rows": [
+    {
+      "ID": "AV_EX01",
+      "Name": "JUSTIN CASE",
+      "Faction": "Aegis Dominion",
+      "Role": "Tank",
+      "Rarity": "Epic",
+      "ATK": 3,
+      "DEF": 8,
+      "SPD": 1,
+      "Active Skill": "Shield +2; Taunt 1 Turn",
+      "Passive": "70% turn start: team DEF +1 for 1 Turn",
+      "Approval State": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+      "Notes": "4 stars on concept art are illustrative"
+    },
+    {
+      "ID": "AV_EX02",
+      "Name": "JUSTIN TIME",
+      "Faction": "Phantom Blades",
+      "Role": "DPS",
+      "Rarity": "Epic",
+      "ATK": 8,
+      "DEF": 2,
+      "SPD": 9,
+      "Active Skill": "Reckless Rush: next attack ATK +2 this Turn",
+      "Passive": "30% on attack: +2 Damage",
+      "Approval State": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+      "Notes": "Renamed from Barry Blitz"
+    },
+    {
+      "ID": "AV_EX03",
+      "Name": "JUSTIN THEORY",
+      "Faction": "Celestial Nexus",
+      "Role": "Magic",
+      "Rarity": "Epic",
+      "ATK": 7,
+      "DEF": 3,
+      "SPD": 4,
+      "Active Skill": "Arcane Formula: next attack ATK +3 this Turn",
+      "Passive": "40% turn start: self ATK +1 for 1 Turn",
+      "Approval State": "Name/Faction LOCKED; Stats/Skills PROPOSED",
+      "Notes": "Science/magic comedy"
+    },
+    {
+      "ID": "AV_EX04",
+      "Name": "JUSTINA MOMENT",
+      "Faction": "Sanctuary Order",
+      "Role": "Support",
+      "Rarity": "Epic",
+      "ATK": 2,
+      "DEF": 5,
+      "SPD": 6,
+      "Active Skill": "Saving Grace: All teammates Regen +3 for 2 Turns",
+      "Passive": "50% turn start: random ally ATK +1 for 1 Turn",
+      "Approval State": "Female + Name + ACTIVE EFFECT LOCKED; other stats/skills PROPOSED",
+      "Notes": "Former male Justin Spirit SUPERSEDED"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}
