@@ -1,0 +1,861 @@
+[
+  {
+    "inspirationId": "INS-02-001",
+    "name": "Bonnacon",
+    "origin": "Medieval European bestiary",
+    "kind": "folklore",
+    "facts": [
+      "The bonnacon (also bonasus or bonacho) is a legendary bull with inward-curving horns and a horse-like mane.",
+      "Medieval bestiaries usually depict its fur as reddish-brown or black.",
+      "Because the horns were useless for defense, it was said to expel caustic feces that burned pursuers so it could escape."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bonnacon",
+        "title": "Bonnacon",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead of the article."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "bestiary",
+      "comedy-anatomy",
+      "bull"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A proud war-bull whose only weapon is a panicked rear blast — tower janitor's nightmare.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-002",
+    "name": "Barnacle goose (myth)",
+    "origin": "Medieval European bestiary",
+    "kind": "folklore",
+    "facts": [
+      "One widespread medieval version said barnacle geese and brant geese emerge fully formed from goose barnacles rather than from eggs.",
+      "The myth was carried largely by monastic manuscripts and bestiaries, and it lasted in part because migration to Arctic nesting grounds was not understood."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Barnacle_goose_myth",
+        "title": "Barnacle goose myth",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "bestiary",
+      "bird",
+      "misbelief",
+      "comedy"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bird that insists it hatched from a dock piling and files the paperwork to prove it.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-003",
+    "name": "Caladrius",
+    "origin": "Physiologus and medieval bestiary",
+    "kind": "folklore",
+    "facts": [
+      "In the Physiologus the caladrius (charadrius; Greek dhalion) is a snow-white bird that lives in the king's house.",
+      "It was said to take a person's sickness into itself and fly away, dispersing the illness and healing both itself and the sick person.",
+      "The legend was copied into medieval bestiaries, which usually added a Christian moral."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Caladrius",
+        "title": "Caladrius",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "bestiary",
+      "bird",
+      "healer",
+      "omen"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A royal white bird that diagnoses you by looking, then flies off with your flu and your lunch.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-004",
+    "name": "Aspidochelone",
+    "origin": "Physiologus and medieval bestiary",
+    "kind": "folklore",
+    "facts": [
+      "The aspidochelone is a fabled sea monster described as a huge whale or vast sea turtle, sometimes with spines along its back.",
+      "It is so large that sailors mistake it for a sandy, vegetated island, land on it, and are pulled under.",
+      "It also gives off a sweet smell that lures fish, which it then eats. Bestiary allegory treats it as Satan."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Aspidochelone",
+        "title": "Aspidochelone",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "sea",
+      "bestiary",
+      "false-island",
+      "trap"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A living island that runs a fake beach resort until the tide — meaning itself — goes out.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-005",
+    "name": "Catoblepas",
+    "origin": "Pliny the Elder and later classical writers; later bestiaries",
+    "kind": "myth",
+    "facts": [
+      "Pliny the Elder and later Claudius Aelianus describe the catoblepas as a creature of Aethiopia.",
+      "One description makes it like a cape buffalo whose head hangs down because it is too heavy; its stare or its breath could kill.",
+      "The name is from Greek for looking downward. Some later depictions give it a hog's head on a buffalo body, and it is sometimes called an African gorgon."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Catoblepas",
+        "title": "Catoblepas",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "beast",
+      "gaze",
+      "poison-breath",
+      "bestiary"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A buffalo so depressed its own face is a weapon, and it apologizes into the dirt.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-006",
+    "name": "Basilisk",
+    "origin": "Classical and medieval European bestiary",
+    "kind": "folklore",
+    "facts": [
+      "European bestiary tradition calls the basilisk a serpent king whose glance kills.",
+      "Pliny's Natural History describes the basilisk of Cyrene as a snake no more than twelve inches long, so venomous it leaves a deadly trail, with a lethal gaze as well.",
+      "Pliny says its weakness is the smell of a weasel, which was thrown into the basilisk's burrow."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Basilisk",
+        "title": "Basilisk",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead, including the Pliny summary."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "gaze",
+      "king",
+      "bestiary"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A pocket-sized king snake who wins by eye contact and loses to a weasel's cologne.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-007",
+    "name": "Cockatrice",
+    "origin": "English and broader European legend",
+    "kind": "folklore",
+    "facts": [
+      "A cockatrice is a mythical beast told as a two-legged dragon, wyvern, or serpent with a rooster's head.",
+      "Legend says it hatches from a chicken egg incubated by a toad or a snake."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cockatrice",
+        "title": "Cockatrice",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "bird",
+      "hybrid",
+      "bestiary"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A rooster-dragon that still tries to crow dawn and start barnyard duels.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-008",
+    "name": "Manticore",
+    "origin": "Persian myth, transmitted through Western medieval art and bestiaries",
+    "kind": "myth",
+    "facts": [
+      "The manticore comes from ancient Persian mythology and its image spread through Western European medieval art.",
+      "It is described with a human face, a lion's body, and a scorpion tail or a tail of venomous spines; some accounts say the spines can be shot like arrows.",
+      "It is said to eat victims whole with three rows of teeth and leave no bones."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Manticore",
+        "title": "Manticore",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "hybrid",
+      "bestiary",
+      "man-eater",
+      "ranged"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A smiling lion-man who files his quill-tail like a clerk and hates leftovers.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-009",
+    "name": "Kelpie",
+    "origin": "Scottish and wider British Isles folklore",
+    "kind": "folklore",
+    "facts": [
+      "A kelpie is a shape-shifting water spirit of Scottish lochs, also told in Yorkshire meres and streams, with related water-horse stories across the British Isles.",
+      "It is usually a grey or white horse that can look human; some accounts say the hooves remain in human form.",
+      "The kelpie article glosses Scottish Gaelic each-uisge as a name for the water kelpie. A separate each-uisge article treats that being as similar but more vicious, so the names overlap in the sources."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kelpie",
+        "title": "Kelpie",
+        "accessed": "2026-11-20",
+        "supports": "Horse form, lochs, human shape with hooves, and the each-uisge gloss."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Each-uisge",
+        "title": "Each-uisge",
+        "accessed": "2026-11-20",
+        "supports": "States the each-uisge is similar to the kelpie but far more vicious."
+      }
+    ],
+    "archetypeTags": [
+      "water",
+      "horse",
+      "shapechanger",
+      "fey"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A loch horse that offers rides and keeps the receipt in its teeth.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-010",
+    "name": "Nuckelavee",
+    "origin": "Orcadian folklore",
+    "kind": "folklore",
+    "facts": [
+      "The nuckelavee is a horse-like demon of Orkney that looks, at a glance or in the dark, like an ordinary rider.",
+      "Closer up it is a skinless horse with one eye and fins for legs, and a skinless human head, torso, and over-long arms growing from the horse's back.",
+      "Its breath was thought to wilt crops and sicken livestock; it was blamed for drought and epidemics. Katharine Briggs called it the nastiest demon of Scotland's Northern Isles. It cannot tolerate fresh water."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nuckelavee",
+        "title": "Nuckelavee",
+        "accessed": "2026-11-20",
+        "supports": "Appearance, breath, Briggs's judgment, and fresh-water intolerance are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "demon",
+      "horse",
+      "sea",
+      "plague",
+      "skinless"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A skinless centaur-horse whose whole plan fails at the first rain puddle.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-011",
+    "name": "Each-uisge",
+    "origin": "Scottish and Irish folklore",
+    "kind": "folklore",
+    "facts": [
+      "The each-uisge, literally 'water horse', is a water spirit in Scottish and Irish folklore (Irish each-uisce; Manx cabbyl-ushtey).",
+      "It usually appears as a horse and is similar to the kelpie but far more vicious."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Each-uisge",
+        "title": "Each-uisge",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "water",
+      "horse",
+      "shapechanger"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The kelpie's meaner cousin who still pretends to be a rental pony.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-012",
+    "name": "Dullahan",
+    "origin": "Irish folklore, weakly attested",
+    "kind": "folklore",
+    "facts": [
+      "The Dullahan is depicted as a headless rider on a black horse, or as a coachman, who carries his own head.",
+      "The same article notes it is not widely attested in native sources, including no references on the Irish Folklore Commission's website, so there is doubt it was originally part of Irish oral tradition."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dullahan",
+        "title": "Dullahan",
+        "accessed": "2026-11-20",
+        "supports": "Depiction and the attestation caveat are both in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "headless",
+      "rider",
+      "omen"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A headless coachman who keeps losing his own head under the seat.",
+    "confidence": "medium"
+  },
+  {
+    "inspirationId": "INS-02-013",
+    "name": "Redcap",
+    "origin": "Anglo-Scottish border folklore",
+    "kind": "folklore",
+    "facts": [
+      "The redcap, or powrie, is a murderous goblin of the Anglo-Scottish border.",
+      "He is said to live in ruined castles, especially sites of tyranny, and to soak his cap in the blood of his victims. Other names include Redcomb and Bloody Cap."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Redcap",
+        "title": "Redcap",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "goblin",
+      "fey",
+      "blood",
+      "ruin"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tiny castle squatter whose entire identity is laundry that will not come clean.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-014",
+    "name": "Banshee",
+    "origin": "Irish folklore",
+    "kind": "folklore",
+    "facts": [
+      "A banshee is a female spirit who heralds a family death by screaming, wailing, shrieking, or keening.",
+      "The name is Modern Irish bean sí, from Old Irish ben síde, 'woman of the fairy mound' or 'fairy woman', tied to the síde burial mounds."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Banshee",
+        "title": "Banshee",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "fey",
+      "undead",
+      "omen",
+      "spirit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A family early-warning siren who is always slightly early and extremely loud.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-015",
+    "name": "Black Shuck",
+    "origin": "East Anglian folklore",
+    "kind": "folklore",
+    "facts": [
+      "Black Shuck is a ghostly black dog said to roam the coast and countryside of East Anglia (Norfolk, Suffolk, the Cambridgeshire Fens, and Essex).",
+      "Accounts disagree: sometimes a death omen, sometimes companionable.",
+      "The name is linked to Old English scucca, 'devil, fiend'. An 1850 Notes and Queries piece by Reverend E. S. Taylor describes a black shaggy dog with fiery eyes, immense size, that visits churchyards at midnight."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Black_Shuck",
+        "title": "Black Shuck",
+        "accessed": "2026-11-20",
+        "supports": "Region, mixed temperament, etymology, and the 1850 description are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "black-dog",
+      "ghost",
+      "omen",
+      "beast"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A churchyard dog the size of a cart who might be a curse or might just want company.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-016",
+    "name": "Will-o'-the-wisp",
+    "origin": "European folklore",
+    "kind": "folklore",
+    "facts": [
+      "A will-o'-the-wisp (Latin ignis fatuus, 'foolish flame') is a ghost light seen by night travelers, especially over bogs, swamps, or marshes.",
+      "Folklore treats the lights as ghosts, fairies, or elemental spirits that reveal or hide a path. They dance until followed, then fade.",
+      "The article also records the modern chemical explanation (oxidation of phosphine, diphosphane, and methane from decay) for the light itself."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Will-o%27-the-wisp",
+        "title": "Will-o'-the-wisp",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "light",
+      "trickster",
+      "bog",
+      "spirit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A lantern that gives directions, then ghosts you the moment you trust it.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-017",
+    "name": "Kobold",
+    "origin": "German folklore",
+    "kind": "folklore",
+    "facts": [
+      "Kobold is a generic German name for a household spirit (hausgeist).",
+      "Kobolds are tied both to mischief and to helpful chores, often in exchange for offerings, and may cause damage if they feel mistreated.",
+      "One subtype, the hütchen ('little hat'), and other kobold sprites are known for pointy red caps."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kobold",
+        "title": "Kobold",
+        "accessed": "2026-11-20",
+        "supports": "Household role, offerings, and the red-cap subtype are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "household-spirit",
+      "fey",
+      "trickster",
+      "mine-adjacent"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A house sprite who does the dishes and then invoices you in missing spoons. The German folklore kobold is not the same design as any later game's mine kobold.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-018",
+    "name": "Draugr",
+    "origin": "Nordic folklore and Icelandic sagas",
+    "kind": "folklore",
+    "facts": [
+      "Draugr is an old term for a malevolent revenant whose traits change from story to story.",
+      "In the Icelandic sagas, draugar often live in the grave or a burial mound, guarding buried treasure. They are physical, like animated corpses, and also ghostlike.",
+      "The article distinguishes that modern 'Norse zombie' portrayals are a loose later reading of the saga draugr."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Draugr",
+        "title": "Draugr",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "barrow",
+      "guardian",
+      "revenant"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mound landlord who will not stop haunting because the treasure inventory is unfinished.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-019",
+    "name": "Selkie",
+    "origin": "Northern Isles, Celtic and Norse tradition",
+    "kind": "folklore",
+    "facts": [
+      "Selkies shapeshift between seal and human by taking off or putting on a seal skin. The word is from Scots for seal, and the stories are especially tied to the Northern Isles.",
+      "Stories often have a human steal and hide the skin, which traps the selkie in a marriage on land until the skin is found."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Selkie",
+        "title": "Selkie",
+        "accessed": "2026-11-20",
+        "supports": "Skin-shifting, Northern Isles, and the stolen-skin marriage motif are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "shapechanger",
+      "sea",
+      "seal",
+      "fey"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A seal-person whose whole power is a coat check someone else is running.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-020",
+    "name": "Púca",
+    "origin": "Irish, English, and Channel Islands folklore",
+    "kind": "folklore",
+    "facts": [
+      "The púca (also pooka, pwca, puck, and similar names) is a Celtic, English, and Channel Islands spirit that can bring good or bad luck.",
+      "Púcaí are shape-changers said to appear as horses, goats, cats, dogs, or hares, or as a human with animal ears or a tail. Fur may be dark or white."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/P%C3%BAca",
+        "title": "Púca",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "shapechanger",
+      "trickster",
+      "fey",
+      "beast"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A luck spirit that shows up as the wrong farm animal at the worst moment.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-021",
+    "name": "Brownie",
+    "origin": "Scottish folklore",
+    "kind": "folklore",
+    "facts": [
+      "A brownie (broonie; Scottish Gaelic brùnaidh or gruagach) is a household spirit that comes out at night and does chores and farm work while the household sleeps.",
+      "People are supposed to leave milk, cream, or another offering, usually by the hearth. Brownies leave forever if insulted or taken advantage of, and they prank lazy servants.",
+      "Descriptions vary, but they are usually ugly, brown-skinned, and hairy. Older stories make them human-sized or larger; later ones make them small. They can turn invisible or appear as animals."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Brownie_(folklore)",
+        "title": "Brownie (folklore)",
+        "accessed": "2026-11-20",
+        "supports": "Chores, offerings, offense, and appearance are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "household-spirit",
+      "fey",
+      "labor"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A night-shift housemate who quits forever if you say thank you the wrong way.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-022",
+    "name": "Bluecap",
+    "origin": "English mine folklore, especially the Anglo-Scottish borders",
+    "kind": "folklore",
+    "facts": [
+      "A bluecap is a mine fairy or ghost that appears as a small blue flame.",
+      "If treated with respect it leads miners to rich ore and, like knockers or kobolds, can warn of cave-ins.",
+      "Bluecaps were said to be owed a working miner's exact wage, left in a corner of the mine, and they would not take more or less than they were due."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bluecap",
+        "title": "Bluecap",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "mine",
+      "fairy",
+      "light",
+      "labor"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A union flame that walks off the job if the pay packet is a copper short or a copper over.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-023",
+    "name": "Lou Carcolh",
+    "origin": "French folklore of the Landes",
+    "kind": "folklore",
+    "facts": [
+      "Lou Carcolh is a mythical beast of French folklore: a large slimy snail-like serpent with hairy tentacles and a large shell.",
+      "It is said to live in a cavern under Hastingues in Les Landes. Its slime can be seen before it arrives, and the tentacles reach out to drag prey into the cave."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lou_Carcolh",
+        "title": "Lou Carcolh",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "snail",
+      "cave",
+      "ambush"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A basement snail-dragon that does all its hunting by extremely committed hug.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-024",
+    "name": "Boobrie",
+    "origin": "Scottish west-coast folklore",
+    "kind": "folklore",
+    "facts": [
+      "The boobrie is a shapeshifting being of the lochs of Scotland's west coast. Its usual form is a gigantic water bird like a cormorant or great northern diver, and it can also appear as a water bull.",
+      "It is generally malevolent, preys on livestock being shipped, and is fond of eating otters. As a water horse it can gallop across the loch surface. In summer it is sometimes a large insect that sucks horses' blood.",
+      "Folklorist Campbell of Islay speculated the bird form might reflect great-auk sightings, and the bull-like bellow might come from the bittern's call."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Boobrie",
+        "title": "Boobrie",
+        "accessed": "2026-11-20",
+        "supports": "Forms, diet, and Campbell's speculation are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "shapechanger",
+      "bird",
+      "water",
+      "beast"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A loch bird that is also a bull, a horse, and in summer a horsefly with ambition.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-025",
+    "name": "Sluagh",
+    "origin": "Irish and Scottish folklore",
+    "kind": "folklore",
+    "facts": [
+      "The Sluagh, or Sluagh na marbh ('host of the dead'), are the hosts of the unforgiven dead in Irish and Scottish folklore.",
+      "Lewis Spence described the Western Isles Sluagh as souls of the dead flying through the air, and linked the Hallowe'en feast of the dead with the fairies.",
+      "They were usually pictured in a crescent, like a flight of birds, able to lift a person and carry them from island to island. They sometimes rescued people from rock clefts but were generally dangerous."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sluagh",
+        "title": "Sluagh",
+        "accessed": "2026-11-20",
+        "supports": "All three facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "host",
+      "undead",
+      "flying",
+      "fairy"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A flock of the unforgiven dead that abducts you and then argues about the seating.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-026",
+    "name": "Fachan",
+    "origin": "Scottish Gaelic folklore",
+    "kind": "folklore",
+    "facts": [
+      "John Francis Campbell, in Popular Tales of the West Highlands, describes the fachan (also Direach of Glen Etive) as a monster or giant with one eye in the middle of the face, one hand sticking out of the chest, and one leg on the body's center line.",
+      "It has a single tuft of hair on its head, which Campbell says would be easier to uproot a mountain than to bend."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fachan",
+        "title": "Fachan",
+        "accessed": "2026-11-20",
+        "supports": "Campbell's one-eyed, one-handed, one-legged description and the hair tuft are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "asymmetry",
+      "highland"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A one-legged, one-eyed hopper who still tries to dual-wield.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-027",
+    "name": "Afanc",
+    "origin": "Welsh mythology",
+    "kind": "myth",
+    "facts": [
+      "The afanc (also addanc) is a Welsh lake monster. Descriptions do not agree: crocodile, beaver, dwarf-like creature, platypus, or demon.",
+      "Which lake it lives in also varies in the sources, including Llyn Llion, Llyn Barfog, near Brynberian Bridge, and Llyn yr Afanc on the Afon Conwy near Betws-y-coed."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Afanc",
+        "title": "Afanc",
+        "accessed": "2026-11-20",
+        "supports": "Both the shifting description and the list of lakes are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "lake",
+      "monster",
+      "welsh"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A lake monster that cannot agree with itself whether it is a beaver, a crocodile, or a platypus.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-028",
+    "name": "Tarasque",
+    "origin": "French legend, Golden Legend",
+    "kind": "folklore",
+    "facts": [
+      "The Tarasque is a creature of French legend. The Golden Legend describes a lion-like head, a turtle-like shell, six feet with bear claws, a serpent tail, and poisonous breath.",
+      "Tradition has St Martha confronting it while it swallowed a person, which became a stock image of the monster with a victim's legs still sticking out.",
+      "From 1474 René of Anjou used a tarasque figure in Tarascon's Pentecost festival; the festival continues."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tarasque",
+        "title": "Tarasque",
+        "accessed": "2026-11-20",
+        "supports": "Anatomy, the swallowing motif, and the 1474 festival are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "hybrid",
+      "festival",
+      "bestiary"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A six-legged parade dragon that is mostly shell, breath, and civic pride.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-029",
+    "name": "Knucker",
+    "origin": "Sussex folklore",
+    "kind": "folklore",
+    "facts": [
+      "Knucker is a Sussex dialect word for a water dragon that lives in a knuckerhole.",
+      "The word comes from Old English nicor, 'water monster', the same word used in Beowulf."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Knucker",
+        "title": "Knucker",
+        "accessed": "2026-11-20",
+        "supports": "Both facts are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "water",
+      "local-legend"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A pond dragon whose entire territory is one very serious puddle.",
+    "confidence": "high"
+  },
+  {
+    "inspirationId": "INS-02-030",
+    "name": "Stoor worm",
+    "origin": "Orcadian folklore",
+    "kind": "folklore",
+    "facts": [
+      "The stoor worm, or Mester Stoor Worm, is a gigantic evil sea serpent of Orkney whose putrid breath contaminates plants and destroys animals and people. It is probably an Orkney variant of the Norse world serpent Jörmungandr.",
+      "In the story a king offers seven virgins a week, then his kingdom, his daughter's marriage, and a magic sword, to whoever kills it. Assipattle, a farmer's youngest son, slays it. Its falling teeth become Orkney, Shetland, and the Faroes, and its body becomes Iceland."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Stoor_worm",
+        "title": "Stoor worm",
+        "accessed": "2026-11-20",
+        "supports": "Breath, the Jörmungandr link, Assipattle, and the island origin are in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "sea-serpent",
+      "dragon",
+      "world-boss",
+      "folklore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A sea worm whose corpse is a geography lesson and whose breath is a public-health incident.",
+    "confidence": "high"
+  }
+]
