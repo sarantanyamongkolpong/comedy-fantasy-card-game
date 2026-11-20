@@ -51,6 +51,31 @@ export function migratePowToAtk(record) {
   };
   if (clone !== stats && typeof clone.avatarId === 'string' && clone.schemaVersion === undefined) {
     clone.schemaVersion = 'v05';
+    stats.migration.addedSchemaVersion = true;
   }
+  return clone;
+}
+
+/**
+ * Restore the pre-migration stat shape. `pow` and `legacy.pow` stay.
+ * `atk` is removed only when it is the 1:1 copy of `legacy.pow`.
+ * @param {unknown} record
+ */
+export function reversePowMigration(record) {
+  if (!isStatsBag(record)) throw new TypeError('record must be an object');
+  const clone = structuredClone(record);
+  const stats = isStatsBag(clone.stats) ? clone.stats : clone;
+  if (!isStatsBag(stats.legacy) || !hasOwn(stats.legacy, 'pow')) return clone;
+  if (hasOwn(stats, 'atk') && stats.atk !== stats.legacy.pow) {
+    throw new Error('CORE-005 reverse refused: atk is not the 1:1 copy of legacy.pow. Nothing was deleted.');
+  }
+  if (hasOwn(stats, 'pow') && stats.pow !== stats.legacy.pow) {
+    throw new Error('CORE-005 reverse refused: pow and legacy.pow differ. Nothing was deleted.');
+  }
+  stats.pow = stats.legacy.pow;
+  delete stats.atk;
+  const addedSchemaVersion = stats.migration?.addedSchemaVersion === true;
+  delete stats.migration;
+  if (addedSchemaVersion && clone !== stats) delete clone.schemaVersion;
   return clone;
 }

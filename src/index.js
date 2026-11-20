@@ -46,9 +46,10 @@ export {
   POW_TO_ATK,
   SAVE_VERSION,
 } from './schema/constants.js';
-export { migratePowToAtk } from './migrate/index.js';
+export { migratePowToAtk, migrateSavePow, reversePowMigration, reverseSavePow } from './migrate/index.js';
 export { createBannerState, exampleTestBanners, pull, testBanner } from './gacha/index.js';
 export {
+  adoptWebProfile,
   applyBattleReward,
   bindDeck,
   consumeDuplicate,
@@ -57,6 +58,7 @@ export {
   createProfile,
   deserialize,
   grantItem,
+  playerView,
   serialize,
   setAutoBattle,
   stackCounts,

@@ -12,4 +12,4 @@ export {
 } from './inventory.js';
 export { stashReport } from './stash.js';
 export { applyBattleReward } from './rewards.js';
-export { deserialize, serialize } from './serialize.js';
+export { adoptWebProfile, deserialize, playerView, serialize } from './serialize.js';

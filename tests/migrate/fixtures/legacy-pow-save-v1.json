@@ -1,0 +1,57 @@
+{
+  "saveVersion": 1,
+  "profile": {
+    "profileId": "PLAYER_LEGACY",
+    "inventory": {
+      "avatars": [
+        {
+          "instanceId": "STACK_avatar_AVT_LEGACY_001",
+          "catalogId": "AVT_LEGACY_001",
+          "kind": "avatar",
+          "quantity": 1,
+          "locked": false,
+          "favorite": false,
+          "reservations": [],
+          "record": {
+            "avatarId": "AVT_LEGACY_001",
+            "nameEn": "Legacy One",
+            "nameTh": "เลกาซีวัน",
+            "factionId": "FAC_AEG",
+            "role": "Tank",
+            "rarity": null,
+            "stats": { "pow": 5, "def": 2, "spd": 1, "valueStatus": "SET" }
+          }
+        },
+        {
+          "instanceId": "STACK_avatar_AVT_LEGACY_002",
+          "catalogId": "AVT_LEGACY_002",
+          "kind": "avatar",
+          "quantity": 1,
+          "locked": false,
+          "favorite": false,
+          "reservations": [],
+          "record": {
+            "avatarId": "AVT_LEGACY_002",
+            "nameEn": "Legacy Two",
+            "nameTh": "เลกาซีทู",
+            "factionId": "FAC_PHA",
+            "role": "DPS",
+            "rarity": null,
+            "stats": { "pow": null, "def": null, "spd": null, "valueStatus": "TBD" }
+          }
+        }
+      ],
+      "actions": [],
+      "companions": []
+    },
+    "decks": [],
+    "currency": { "G": 0 },
+    "pity": {},
+    "house": {
+      "acquiredTiers": ["cabin"],
+      "displayTier": "cabin",
+      "installedFurniture": []
+    },
+    "rewardLedger": {}
+  }
+}
