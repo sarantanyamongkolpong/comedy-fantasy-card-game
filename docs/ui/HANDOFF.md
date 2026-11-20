@@ -59,7 +59,7 @@ Sports Complex is locked. Shopping Mall has no prices. Companion is a placeholde
 | Dream v0.2 pack @ `0cd126c` | Houses on `HOU_TIER_*`. Furniture on `FUR_REF_*`. Action art on `ACT_GEN_ATK_001/002` and `ACT_GEN_DEF_001/002` (object-position `center 30%`). Enemies `ENM_DEMO_001/002/003`. `ENM_DEMO_004` has no art. Gacha hall, machines, G coin, shield/regen/KO overlays, reveal Epic/EX. Cabin interior is the Hideout background. Loot chest is `ILLUST_REWARDS`. Lucky cat is `ILLUST_COMPANION`. The other 9 unmatched files stay unbound. |
 | Battle composition | Owner ref `BATTLE_LAYOUT_REF_OWNER_20261120` mirrored: four Justins on the left (cyan tiles, facing right), echoes on the right (magenta tiles, facing left). The file itself shows the opposite sides. |
 | Prep Battle | Owner ref `PREP_BATTLE_REF_OWNER_20261120`. Team list on the left, cyan preview in the center, deck icons and the selected avatar’s data text on the right. |
-| Battle, gacha, save | Real modules. Enemy turns call `runEnemyTurn` until `playEnemyTurn` is exported. Player AUTO calls `runAutoTurn` when that export exists. Gacha `pull` gets an integer seed. Banners are the labelled TEST configs. |
+| Battle, gacha, save | Real modules. Enemy turns call `playEnemyTurn`. Player AUTO calls `runAutoTurn`. `createMatch` forwards `input.config`. Gacha `pull` gets an integer seed. Banners are the labelled TEST configs. The default damage formula stays `placeholder_atk_minus_def`, preset null, `PENDING_OWNER`. |
 | Justin stats except Justina’s Active text | PROPOSED content from `content/v05`. HP is the engine placeholder `10 + DEF * 2`. Damage is the engine placeholder formula. Both stay `PENDING_OWNER`. |
 | Action card effects | Content ops are the string `placeholder`. ATK uses the engine damage formula, DEF uses a shield of 0, Skill fires the avatar Active. No new balance numbers. |
 | Map pads | PROPOSED. The mall’s target width is 280 so the sprite box stays inside the master. The anchor is still (1393, 280). |
@@ -70,9 +70,9 @@ Screenshots of Home, Stash, Team, Gacha, Map, Battle, and Rewards at 844×390, 6
 
 ## Known issues
 
-- AUTO uses the engine policy `balanced` (PROPOSED). That policy plays heal, a shield or taunt only when a hit would KO, or damage. Other cards are passed. On the sample deck the fight can stall with both sides still up, so AUTO does not promise a Rewards screen. The web passes `maxActions: 1` so the log can play one action at a time.
+- AUTO uses the engine policy `balanced` (PROPOSED) from `core/v05-engine` @ `33513e4`. It sets up a next attack when that raises the hit, then plays the highest damage on the lowest-HP legal target, then a real shield or taunt if a hit can KO. Zero-value cards are discarded for 1 AP. The web passes `maxActions: 1` so the log can play one action at a time. It does not pick cards. The default damage formula is unchanged.
 - A refresh during a fight reloads the match from the versioned save (`web` field on the profile, engine state included). Leaving the page writes that save.
-- Enemy play is `runEnemyTurn`, the engine’s demo AI, not a design opponent.
+- Enemy play is `playEnemyTurn`, the same proposed AUTO policy, not a design opponent.
 - Pity reset is a labelled GA-12 assumption: per banner, reset the tier that was hit.
 - Gacha prices and drop rates are not shown as live numbers. The booth prints TEST weights.
 - `AVT_*_001` cannot enter the tower while their stats are TBD.
