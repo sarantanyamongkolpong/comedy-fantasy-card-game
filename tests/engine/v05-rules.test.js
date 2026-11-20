@@ -40,12 +40,17 @@ test('contract config keeps locked numbers and pending decisions', () => {
   assert.equal(config.openingHand.value, 5);
   assert.equal(config.handSize.value, 5);
   assert.equal(config.voluntaryDiscardAp.value, 1);
-  for (const key of ['teamSpd', 'damage', 'hp', 'healCap', 'regenTickTiming', 'simultaneousDeath', 'deckDuplicateMax', 'statusExpiry']) {
+  // Owner t269u: damage is MVP_PROVISIONAL (flat_atk), never LOCKED.
+  assert.equal(config.damage.status, 'MVP_PROVISIONAL');
+  assert.equal(config.damage.preset, 'flat_atk');
+  assert.equal(config.damage.placeholder, true);
+  assert.equal(resolveRuleConfig({ damage: { status: 'PENDING_OWNER' } }).damage.status, 'PENDING_OWNER');
+  for (const key of ['teamSpd', 'hp', 'healCap', 'regenTickTiming', 'simultaneousDeath', 'deckDuplicateMax', 'statusExpiry']) {
     assert.equal(config[key].status, 'PENDING_OWNER', key);
     assert.equal(config[key].placeholder === true || config[key].value === null, true, key);
   }
   assert.equal(config.damage.formula, 'placeholder_atk_minus_def');
-  assert.equal(config.damage.label, 'PLACEHOLDER_NOT_APPROVED');
+  assert.equal(config.damage.label, 'MVP_PROVISIONAL_NOT_LOCKED');
   assert.throws(() => resolveRuleConfig({ baseAp: { value: 7 } }), (error) => error.reason === 'LOCKED_RULE');
   assert.throws(() => resolveRuleConfig({ damage: { status: 'LOCKED' } }), (error) => error.reason === 'PENDING_LOCK');
   assert.throws(() => resolveRuleConfig({ damage: { formula: 'invented' } }), (error) => error.reason === 'UNKNOWN_FORMULA');
@@ -556,6 +561,8 @@ test('shield absorbs, taunt restricts a single target, and next-attack bonuses e
       if (index === 1) avatar.passive = null;
     }),
     enemy: roster((avatar) => { avatar.stats.def = 2; }),
+    // Pinned to the legacy ATK - DEF formula: this checks the next-attack bonus against DEF.
+    config: { damage: { preset: null } },
     playerDeck: padDeck([
       sampleCard({
         cardId: 'RUSH',
@@ -681,6 +688,8 @@ test('placeholder damage is labelled, pluggable, and legacy pow maps to atk with
       }
     }),
     enemy: roster((avatar) => { avatar.stats.def = 8; avatar.hp = 20; avatar.maxHp = 20; }),
+    // Pinned to the legacy floor-1 formula (preset null). The default is flat_atk (Owner t269u).
+    config: { damage: { preset: null } },
     playerDeck: padDeck([strike({ cardId: 'HIT', costAp: 0 })]),
   }));
   const attacker = base.sides.player.avatars.find((unit) => unit.avatarId === 'AVT_PHA_002');
@@ -689,21 +698,34 @@ test('placeholder damage is labelled, pluggable, and legacy pow maps to atk with
   play(base, 'HIT', 'AVT_PHA_002', ['AVT_AEG_002']);
   const logged = base.log.find((event) => event.type === 'damage');
   assert.equal(logged.placeholder, true);
-  assert.equal(logged.formulaStatus, 'PENDING_OWNER');
+  assert.equal(logged.formulaStatus, 'MVP_PROVISIONAL');
   assert.equal(logged.formula, 'placeholder_atk_minus_def');
+  assert.equal(logged.preset, null);
   assert.equal(logged.amount, 1);
 
+  const byDefault = createMatch(matchInput({
+    enemy: roster((avatar) => { avatar.stats.def = 8; avatar.hp = 20; avatar.maxHp = 20; }),
+    playerDeck: padDeck([strike({ cardId: 'HIT', costAp: 0 })]),
+  }));
+  play(byDefault, 'HIT', 'AVT_PHA_002', ['AVT_AEG_002']);
+  const flatLogged = byDefault.log.find((event) => event.type === 'damage');
+  assert.equal(flatLogged.amount, 8);
+  assert.equal(flatLogged.formula, 'placeholder_flat_atk');
+  assert.equal(flatLogged.preset, 'flat_atk');
+  assert.equal(flatLogged.formulaStatus, 'MVP_PROVISIONAL');
+  assert.equal(byDefault.flags.damageFormula, 'MVP_PROVISIONAL');
+
   const flat = createMatch(matchInput({
-    config: { damage: { formula: 'placeholder_flat_atk', minDamage: 1 } },
+    config: { damage: { preset: null, formula: 'placeholder_flat_atk', minDamage: 1 } },
     enemy: roster((avatar) => { avatar.stats.def = 8; avatar.hp = 20; avatar.maxHp = 20; }),
     playerDeck: padDeck([strike({ cardId: 'HIT', costAp: 0 })]),
   }));
   play(flat, 'HIT', 'AVT_PHA_002', ['AVT_AEG_002']);
   assert.equal(flat.log.find((event) => event.type === 'damage').amount, 8);
-  assert.equal(flat.config.damage.status, 'PENDING_OWNER');
+  assert.equal(flat.config.damage.status, 'MVP_PROVISIONAL');
 
   const zero = createMatch(matchInput({
-    config: { damage: { minDamage: 0 } },
+    config: { damage: { preset: null, minDamage: 0 } },
     player: roster((avatar, index) => { if (index === 1) avatar.stats.atk = 1; }),
     enemy: roster((avatar) => { avatar.stats.def = 8; avatar.hp = 20; avatar.maxHp = 20; }),
     playerDeck: padDeck([strike({ cardId: 'HIT', costAp: 0 })]),

@@ -76,7 +76,9 @@ test('auto policy stays proposed and SYNC is not a config', () => {
   assert.equal(config.autoMode.enabled, true);
   assert.equal(config.autoPolicy.status, 'PROPOSED');
   assert.equal(config.autoPolicy.name, 'balanced');
-  assert.equal(config.damage.preset, null);
+  // Owner t269u: flat_atk is the MVP_PROVISIONAL default. The legacy floor-1 fields stay for preset null.
+  assert.equal(config.damage.preset, 'flat_atk');
+  assert.equal(config.damage.status, 'MVP_PROVISIONAL');
   assert.equal(config.damage.formula, 'placeholder_atk_minus_def');
   assert.equal(config.damage.minDamage, 1);
   assert.deepEqual(config.autoPolicy.policies.balanced.priorities, [
@@ -243,10 +245,11 @@ test('a legal damaging play is taken before a zero-shield card', () => {
 
 test('named damage presets are selectable and do not replace the default', () => {
   const config = defaultRuleConfig();
-  assert.equal(config.damage.preset, null);
+  assert.equal(config.damage.preset, 'flat_atk');
+  assert.equal(resolveRuleConfig({ damage: { preset: null } }).damage.preset, null);
   assert.throws(() => resolveRuleConfig({ damage: { preset: 'approved_real_formula' } }), (error) => error.reason === 'UNKNOWN_FORMULA');
   const selected = resolveRuleConfig({ damage: { preset: 'floor_50_pct_atk' } });
-  assert.equal(selected.damage.status, 'PENDING_OWNER');
+  assert.equal(selected.damage.status, 'MVP_PROVISIONAL');
   assert.equal(selected.damage.formula, 'placeholder_atk_minus_def');
   assert.equal(selected.damage.minDamage, 1);
   assert.equal(selected.damage.preset, 'floor_50_pct_atk');

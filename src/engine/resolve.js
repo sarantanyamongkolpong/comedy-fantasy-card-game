@@ -164,7 +164,8 @@ function applyOne(state, ctx, effect, source) {
         defeated: result.defeated,
         formula,
         placeholder,
-        formulaStatus: placeholder ? 'PENDING_OWNER' : null,
+        formulaStatus: placeholder ? state.config.damage.status : null,
+        preset: placeholder ? (state.config.damage.preset ?? null) : null,
         bonus,
       });
       if (result.defeated) {

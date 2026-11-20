@@ -14,6 +14,8 @@ const REGEN_STACKS = new Set(['refresh_ticks_keep_higher_amount', 'stack_separat
 const AUTO_STEPS = new Set(['heal_regen', 'shield_taunt_if_lethal', 'setup_next_attack', 'highest_damage_lowest_hp', 'any_legal_expected_value']);
 const DISCARD_POLICIES = new Set(['hand_locked_only', 'hand_locked_or_no_progress']);
 const DAMAGE_PRESETS = new Set(['floor_25_pct_atk', 'floor_50_pct_atk', 'flat_atk']);
+/** Owner t269u: damage may be MVP_PROVISIONAL or PENDING_OWNER. Never LOCKED. */
+const DAMAGE_STATUSES = new Set(['MVP_PROVISIONAL', 'PENDING_OWNER']);
 
 const TEMPLATE = {
   meta: {
@@ -46,33 +48,47 @@ const TEMPLATE = {
   },
   damage: {
     id: 'CORE-039',
-    status: 'PENDING_OWNER',
+    // Owner t269u (Pote, 2026-11-20 19:48 ICT): option A, flat ATK that ignores DEF, for the MVP.
+    // Status is MVP_PROVISIONAL. It is NOT LOCKED and resolveRuleConfig refuses LOCKED.
+    // Switch formula by changing `preset` below (or pass config.damage.preset); the engine is untouched.
+    status: 'MVP_PROVISIONAL',
     placeholder: true,
-    label: 'PLACEHOLDER_NOT_APPROVED',
+    label: 'MVP_PROVISIONAL_NOT_LOCKED',
+    decision: {
+      owner: 'Pote',
+      evidence: 't269u',
+      date: '2026-11-20',
+      choice: 'A_flat_atk',
+      status: 'MVP_PROVISIONAL',
+      switchable: true,
+      defHp: 'DEF still adds HP through the unchanged hp formula',
+      followUp: 'Balance pass after real play. No card or skill values changed.',
+    },
+    // Legacy formula used only when preset is null: max(minDamage, ATK - DEF). Kept selectable.
     formula: 'placeholder_atk_minus_def',
     minDamage: 1,
-    preset: null,
+    preset: 'flat_atk',
     presets: {
       floor_25_pct_atk: {
         formula: 'placeholder_atk_minus_def',
         minDamage: 1,
         floorPct: 0.25,
-        note: 'PLACEHOLDER alternate. Damage is at least ceil(25% of effective ATK), and still at least ATK - DEF and minDamage. DEF can still reduce a hit above that floor. Not approved.',
+        note: 'Alternate. Damage is at least ceil(25% of effective ATK), and still at least ATK - DEF and minDamage. DEF can still reduce a hit above that floor. Not approved.',
       },
       floor_50_pct_atk: {
         formula: 'placeholder_atk_minus_def',
         minDamage: 1,
         floorPct: 0.5,
-        note: 'PLACEHOLDER alternate. Damage is at least ceil(50% of effective ATK), and still at least ATK - DEF and minDamage. Not approved.',
+        note: 'Alternate. Damage is at least ceil(50% of effective ATK), and still at least ATK - DEF and minDamage. Not approved.',
       },
       flat_atk: {
         formula: 'placeholder_flat_atk',
         minDamage: 0,
         floorPct: null,
-        note: 'PLACEHOLDER alternate. Damage is effective ATK and ignores DEF. Not approved.',
+        note: 'MVP_PROVISIONAL default (Owner t269u). Damage is effective ATK plus on-attack bonus and ignores DEF. Shield still absorbs first. Not LOCKED.',
       },
     },
-    note: 'No v0.5 source defines damage. The default stays placeholder_atk_minus_def: max(minDamage, effectiveATK - effectiveDEF) plus on-attack bonus. minDamage 1 and preset null are unchanged. Select damage.preset floor_25_pct_atk, floor_50_pct_atk, or flat_atk to try a named alternate. effectiveATK includes ATK buffs and a next-attack bonus. Shield absorbs before HP. This is not balance.',
+    note: 'Owner t269u picked flat_atk for the MVP as MVP_PROVISIONAL (not LOCKED). Default preset flat_atk: effectiveATK plus on-attack bonus, DEF ignored for damage; DEF still raises max HP through hp. Set damage.preset to null for the legacy max(minDamage 1, effectiveATK - effectiveDEF), or to floor_25_pct_atk / floor_50_pct_atk. effectiveATK includes ATK buffs and a next-attack bonus. Shield absorbs before HP. Balance pass comes after real play.',
   },
   hp: {
     id: 'CORE-039',
@@ -202,6 +218,12 @@ function assertConfig(config) {
     }
   }
   for (const key of PENDING_KEYS) {
+    if (key === 'damage') {
+      if (!DAMAGE_STATUSES.has(config.damage?.status)) {
+        throw gameError('PENDING_LOCK', 'damage must stay MVP_PROVISIONAL or PENDING_OWNER, never LOCKED');
+      }
+      continue;
+    }
     if (config[key]?.status !== 'PENDING_OWNER') {
       throw gameError('PENDING_LOCK', `${key} must stay PENDING_OWNER`);
     }

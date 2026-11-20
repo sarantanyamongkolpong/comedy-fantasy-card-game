@@ -127,11 +127,15 @@ bindApi(config, [
     name: 'QA-06 CORE-039 OPEN-02 heal cap and dead unit regen stay configurable',
     fn(api) {
       const rules = api.defaultRuleConfig();
-      for (const key of ['healCap', 'regenTickTiming', 'damageFormula']) {
+      for (const key of ['healCap', 'regenTickTiming']) {
         const flag = flagOf(rules, key);
         assert.equal(isPending(flag.status), true, key);
         assert.equal(flag.value ?? null, null, key);
       }
+      // Owner t269u: damage is MVP_PROVISIONAL flat_atk, configurable and not LOCKED.
+      const damage = flagOf(rules, 'damageFormula');
+      assert.equal(damage.status, 'MVP_PROVISIONAL');
+      assert.equal(damage.value ?? null, null, 'damageFormula');
       const dead = findOptionalFlag(rules, ['deadUnitRegen', 'hpModel']);
       assert.ok(dead, 'defeated-unit / HP handling must stay a pending flag');
       assert.equal(isPending(dead.status), true);

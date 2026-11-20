@@ -35,6 +35,14 @@ Passives with a chance use the match RNG (`src/engine/rng.js`). Chance `0` and `
 
 Saving Grace is avatar data on the Justina sample: Regen +3, 2 ticks, all living teammates. Dead units are not healed. The status leaves after the second tick.
 
+## MVP_PROVISIONAL — Owner picked for now, not LOCKED
+
+| Topic | Config | Rule in force |
+|---|---|---|
+| CORE-039 damage | `damage.preset` (default `'flat_atk'`), `damage.status` `'MVP_PROVISIONAL'`, `damage.decision` | Owner t269u (Pote, 2026-11-20 19:48 ICT) picked option A for the MVP: damage = effective ATK + on-attack bonus, DEF is ignored for damage. Shield still absorbs first. DEF still adds HP through the unchanged `hp` formula (`maxHp = 10 + DEF * 2`). The status is `MVP_PROVISIONAL`; `resolveRuleConfig` accepts `MVP_PROVISIONAL` or `PENDING_OWNER` and rejects `LOCKED`. To switch, set `damage.preset` in `src/engine/rule-config.js` (one line) or pass `config.damage.preset`: `null` = legacy `max(minDamage 1, effectiveATK - effectiveDEF)`, `floor_25_pct_atk`, `floor_50_pct_atk`, `flat_atk`. No engine change is needed. No card or skill value was changed. A balance pass follows real play. Sim and match-length report: `docs/final_v05/DAMAGE_FLAT_ATK_REPORT.md`. |
+
+Side effect to know: under `flat_atk` a DEF buff (Justin Case passive *Bulwark*, team DEF +1) no longer changes damage, because DEF only sets max HP at match start. The passive still procs and is logged. This is reported, not fixed.
+
 ## Pending — placeholder, not approved
 
 These stay `status: 'PENDING_OWNER'`. `resolveRuleConfig` rejects an attempt to mark them `LOCKED`.
@@ -43,7 +51,7 @@ These stay `status: 'PENDING_OWNER'`. `resolveRuleConfig` rejects an attempt to 
 |---|---|---|
 | CORE-038 team SPD | `teamSpd.aggregation`, `teamSpd.tieBreak` | `sum` of all four roster SPD values, taken once at the start. Tie: dedicated seeded stream labelled `spd-tie`, which does not move the draw stream. Also implemented: `average`, `max`. |
 | CORE-004 simultaneous death | `simultaneousDeath.policy` | `higher_team_spd_then_input_order`. Alternate: `input_order` (teams[0]). |
-| CORE-039 damage | `damage.formula`, `damage.minDamage`, `damage.preset` | Default is unchanged: `preset` null and `placeholder_atk_minus_def` with `minDamage` 1, so `max(1, effectiveATK - effectiveDEF) + on-attack bonus`. Named alternates, still placeholders: `floor_25_pct_atk` and `floor_50_pct_atk` (also at least ceil of that percent of ATK), and `flat_atk` (effective ATK, ignores DEF). Selecting a preset does not rewrite the default formula fields. |
+| CORE-039 damage (alternates) | `damage.formula`, `damage.minDamage`, `damage.preset` | Moved to MVP_PROVISIONAL above (default `flat_atk`). The legacy fields `formula: placeholder_atk_minus_def` and `minDamage: 1` are kept and apply when `preset` is `null`. `floor_25_pct_atk` / `floor_50_pct_atk` (at least ceil of that percent of ATK) stay selectable placeholders. |
 | CORE-039 HP | `hp.base`, `hp.perDef` | If the avatar does not bring `maxHp`, `maxHp = 10 + DEF * 2`. KO at HP 0. |
 | OPEN-02 heal cap | `healCap.policy` | `clamp_to_max_hp`. Alternate: `allow_overheal`. |
 | OPEN-02 regen ticks | `regenTickTiming.timing` | Tick at the start of that side's later turns. A regen applied during a turn does not tick on that same turn. Two ticks means two of those starts, then the status is removed. |

@@ -8,7 +8,6 @@ const PENDING = [
   ['CORE-036 OPEN-01', 'battleGrid', 'CORE-036'],
   ['CORE-038 OPEN-01', 'teamSpdAggregation', 'CORE-038'],
   ['CORE-038 OPEN-01', 'spdTieBreak', 'CORE-038'],
-  ['CORE-039 OPEN-02', 'damageFormula', 'CORE-039'],
   ['CORE-039 OPEN-02', 'healCap', 'CORE-039'],
   ['CORE-039 OPEN-02', 'regenTickTiming', 'OPEN-02'],
   ['CORE-040 OPEN-03', 'deckDuplicateMax', 'CORE-040'],
@@ -33,6 +32,19 @@ bindApi(config, PENDING.map(([id, key, rule]) => ({
     }
   },
 })));
+
+bindApi(config, [
+  {
+    name: 'CORE-039 OPEN-02 damageFormula is MVP_PROVISIONAL flat_atk (Owner t269u), never LOCKED',
+    fn(api) {
+      const flag = flagOf(api.defaultRuleConfig(), 'damageFormula');
+      assert.equal(flag.status, 'MVP_PROVISIONAL');
+      assert.notEqual(flag.status, 'LOCKED');
+      assert.equal(flag.provisional, 'flat_atk');
+      assert.equal(flag.value ?? null, null, 'damageFormula must not ship a final production value');
+    },
+  },
+]);
 
 bindApi(config, [
   {

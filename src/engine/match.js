@@ -166,7 +166,7 @@ export function createMatch(input) {
       productionReady: false,
       teamSpd: 'PENDING_OWNER',
       spdTieBreak: 'PENDING_OWNER',
-      damageFormula: 'PENDING_OWNER',
+      damageFormula: config.damage.status,
       hp: 'PENDING_OWNER',
       healCap: 'PENDING_OWNER',
       regenTickTiming: 'PENDING_OWNER',

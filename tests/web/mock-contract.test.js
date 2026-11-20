@@ -116,7 +116,8 @@ test('the adapter uses the engine when the exports exist', async () => {
   assert.equal(api.missing.length, 0);
   assert.equal(typeof api.playEnemyTurn, 'function');
   const config = api.defaultRuleConfig();
-  assert.equal(config.damage.status, 'PENDING_OWNER');
+  assert.equal(config.damage.status, 'MVP_PROVISIONAL');
+  assert.equal(config.damage.preset, 'flat_atk');
   assert.equal(config.meta.productionReady, false);
   assert.equal(api.catalog.source, 'content/v05');
   assert.deepEqual(api.catalog.justinIds, ['AVT_AEG_002', 'AVT_PHA_002', 'AVT_CEL_002', 'AVT_SAN_002']);

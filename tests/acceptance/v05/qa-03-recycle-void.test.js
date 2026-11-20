@@ -22,7 +22,9 @@ bindApi(engine, [
   {
     name: 'QA-03 CORE-016 CORE-017 CORE-018 empty Draw recycles only Discard',
     fn(api) {
-      let state = asState(api.createMatch(buildMatch()));
+      // Recycling needs a long match. Pin the legacy floor-1 damage preset so the battle lasts
+      // long enough to empty Draw; the MVP_PROVISIONAL flat_atk default (Owner t269u) ends it first.
+      let state = asState(api.createMatch(buildMatch({ config: { damage: { preset: null } } })));
       const voidCard = findCard(zonesOf(api, state, 'player').hand, 'ACT_VOID');
       state = playCard(api, state, 'player', 'ACT_VOID', 'AVT_AEG_002').state;
       assert.ok(zonesOf(api, state, 'player').void.some((card) => card.instanceId === voidCard.instanceId));
