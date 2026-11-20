@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768" fill="none">
+  <defs>
+    <radialGradient id="rWash" cx="50%" cy="48%" r="52%">
+      <stop offset="40%" stop-color="#b7fff6" stop-opacity="0"/>
+      <stop offset="62%" stop-color="#67d5cc" stop-opacity="0.35"/>
+      <stop offset="82%" stop-color="#245e78" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#245e78" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4fffd"/>
+      <stop offset="0.45" stop-color="#7edcd4"/>
+      <stop offset="1" stop-color="#2f6f86"/>
+    </linearGradient>
+  </defs>
+  <circle cx="384" cy="384" r="360" fill="url(#rWash)"/>
+  <g stroke="url(#rMetal)" stroke-width="16" fill="none">
+    <path d="M250 150c150-90 310 10 300 150-8 110-90 150-170 120 80 10 150-40 150-140C530 140 390 60 250 150z"/>
+    <path d="M518 618c-150 90-310-10-300-150 8-110 90-150 170-120-80-10-150 40-150 140 0 140 140 220 280 130z"/>
+  </g>
+  <g stroke="#d7fffb" stroke-width="3" fill="none" opacity="0.9">
+    <polygon points="384,96 414,150 474,156 430,196 444,254 384,224 324,254 338,196 294,156 354,150"/>
+    <polygon points="660,400 624,430 620,490 580,446 524,460 556,410 524,360 580,374 620,330 624,390"/>
+    <polygon points="120,390 164,360 168,300 208,344 264,330 232,380 264,430 208,416 168,460 164,400"/>
+  </g>
+  <g fill="#e9fffc">
+    <path d="M384 64l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/>
+    <path d="M700 250l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M70 520l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+    <path d="M520 700l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+  </g>
+  <circle cx="384" cy="384" r="188" stroke="#9ee7e1" stroke-width="2" stroke-dasharray="4 10" opacity="0.7"/>
+</svg>
