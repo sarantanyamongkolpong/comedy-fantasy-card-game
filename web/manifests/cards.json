@@ -1,0 +1,865 @@
+{
+  "manifest_version": 1,
+  "stream": "a-card-art",
+  "project": "Comedy Fantasy Card Game",
+  "status": "GENERATED_REVIEW",
+  "productionReady": false,
+  "note": "Editable Agent A fragment. Integration merges this file. Do not treat it as OWNER_APPROVED.",
+  "deck": {
+    "deckId": "DECK_DEMO_MIXED_001",
+    "source": "content/v05/decks/demo-mixed-deck.json",
+    "slots": 30,
+    "uniqueCardIds": [
+      "ACT_GEN_ATK_001",
+      "ACT_GEN_ATK_002",
+      "ACT_GEN_DEF_001",
+      "ACT_GEN_DEF_002",
+      "ACT_GEN_SKILL_001",
+      "ACT_GEN_SKILL_002",
+      "ACT_FAC_AEG_001",
+      "ACT_FAC_AEG_002",
+      "ACT_FAC_PHA_001",
+      "ACT_FAC_PHA_002",
+      "ACT_FAC_CEL_001",
+      "ACT_FAC_CEL_002",
+      "ACT_FAC_SAN_001",
+      "ACT_FAC_SAN_002"
+    ],
+    "cardIds": [
+      "ACT_GEN_ATK_001",
+      "ACT_GEN_ATK_001",
+      "ACT_GEN_ATK_001",
+      "ACT_GEN_ATK_002",
+      "ACT_GEN_ATK_002",
+      "ACT_GEN_DEF_001",
+      "ACT_GEN_DEF_001",
+      "ACT_GEN_DEF_001",
+      "ACT_GEN_DEF_002",
+      "ACT_GEN_DEF_002",
+      "ACT_GEN_SKILL_001",
+      "ACT_GEN_SKILL_001",
+      "ACT_GEN_SKILL_002",
+      "ACT_GEN_SKILL_002",
+      "ACT_FAC_AEG_001",
+      "ACT_FAC_AEG_001",
+      "ACT_FAC_AEG_002",
+      "ACT_FAC_AEG_002",
+      "ACT_FAC_PHA_001",
+      "ACT_FAC_PHA_001",
+      "ACT_FAC_PHA_002",
+      "ACT_FAC_PHA_002",
+      "ACT_FAC_CEL_001",
+      "ACT_FAC_CEL_001",
+      "ACT_FAC_CEL_002",
+      "ACT_FAC_CEL_002",
+      "ACT_FAC_SAN_001",
+      "ACT_FAC_SAN_001",
+      "ACT_FAC_SAN_002",
+      "ACT_FAC_SAN_002"
+    ],
+    "derivation": "The published starter is DECK_DEMO_MIXED_001, exactly 30 action-card slots. CORE-040 is pending, so the 30 slots are 14 unique card ids with legal duplicates. Illustrations are one subject per card id."
+  },
+  "frameInsets": {
+    "masterWidth": 576,
+    "masterHeight": 768,
+    "status": "MEASURED",
+    "note": "Transparent windows measured on the Agent A frames after the black matte was removed. Text stays HTML.",
+    "byRarity": {
+      "N": {
+        "art": {
+          "x": 99,
+          "y": 130,
+          "w": 379,
+          "h": 373
+        },
+        "title": {
+          "x": 178,
+          "y": 63,
+          "w": 304,
+          "h": 47
+        },
+        "body": {
+          "x": 90,
+          "y": 527,
+          "w": 396,
+          "h": 161
+        }
+      },
+      "R": {
+        "art": {
+          "x": 98,
+          "y": 129,
+          "w": 383,
+          "h": 377
+        },
+        "title": {
+          "x": 177,
+          "y": 61,
+          "w": 307,
+          "h": 48
+        },
+        "body": {
+          "x": 89,
+          "y": 529,
+          "w": 398,
+          "h": 163
+        }
+      },
+      "Epic": {
+        "art": {
+          "x": 86,
+          "y": 129,
+          "w": 393,
+          "h": 376
+        },
+        "title": {
+          "x": 177,
+          "y": 61,
+          "w": 306,
+          "h": 49
+        },
+        "body": {
+          "x": 89,
+          "y": 528,
+          "w": 398,
+          "h": 171
+        }
+      },
+      "EX": {
+        "art": {
+          "x": 99,
+          "y": 129,
+          "w": 380,
+          "h": 376
+        },
+        "title": {
+          "x": 178,
+          "y": 61,
+          "w": 306,
+          "h": 48
+        },
+        "body": {
+          "x": 90,
+          "y": 529,
+          "w": 397,
+          "h": 162
+        }
+      },
+      "FAC": {
+        "art": {
+          "x": 98,
+          "y": 129,
+          "w": 380,
+          "h": 375
+        },
+        "title": {
+          "x": 178,
+          "y": 61,
+          "w": 305,
+          "h": 47
+        },
+        "body": {
+          "x": 90,
+          "y": 528,
+          "w": 397,
+          "h": 161
+        }
+      }
+    }
+  },
+  "budgets": {
+    "subject": 102400,
+    "frame": 92160,
+    "icon": 22528,
+    "interior": 71680
+  },
+  "bytes": {
+    "shippedWebp": 1192338,
+    "originalPng": 25135811
+  },
+  "counts": {
+    "subject": 14,
+    "frame": 5,
+    "icon": 7,
+    "interior": 1
+  },
+  "assets": [
+    {
+      "asset_id": "CARD_PARCHMENT",
+      "slot": "card-interior",
+      "anchor": "interior",
+      "subject_id": "neutral",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/interior/CARD_INTERIOR.webp",
+      "source_path": "art-src/cards/interior/CARD_INTERIOR.png",
+      "bytes": 1676,
+      "source_bytes": 6072,
+      "placeholder": false,
+      "kind": "interior",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "card_interior",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_ATK_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_ATK_001",
+      "rarity": "N",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_GEN_ATK_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_ATK_001.png",
+      "bytes": 56540,
+      "source_bytes": 966215,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_ATK_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_ATK_002",
+      "rarity": "R",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_GEN_ATK_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_ATK_002.png",
+      "bytes": 60238,
+      "source_bytes": 991364,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_DEF_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_DEF_001",
+      "rarity": "N",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_GEN_DEF_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_DEF_001.png",
+      "bytes": 52096,
+      "source_bytes": 916681,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_DEF_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_DEF_002",
+      "rarity": "R",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_GEN_DEF_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_DEF_002.png",
+      "bytes": 44630,
+      "source_bytes": 836684,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_SKILL_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_SKILL_001",
+      "rarity": "N",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_GEN_SKILL_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_SKILL_001.png",
+      "bytes": 55118,
+      "source_bytes": 923568,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_GEN_SKILL_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_GEN_SKILL_002",
+      "rarity": "Epic",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_GEN_SKILL_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_GEN_SKILL_002.png",
+      "bytes": 75550,
+      "source_bytes": 1044497,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_AEG_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_AEG_001",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_AEG_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_AEG_001.png",
+      "bytes": 70926,
+      "source_bytes": 1265657,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_AEG_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_AEG_002",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_AEG_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_AEG_002.png",
+      "bytes": 65016,
+      "source_bytes": 1129551,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_PHA_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_PHA_001",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_PHA_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_PHA_001.png",
+      "bytes": 78364,
+      "source_bytes": 1067933,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_PHA_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_PHA_002",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_PHA_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_PHA_002.png",
+      "bytes": 78582,
+      "source_bytes": 1249482,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_CEL_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_CEL_001",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_CEL_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_CEL_001.png",
+      "bytes": 84728,
+      "source_bytes": 1309332,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_CEL_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_CEL_002",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_CEL_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_CEL_002.png",
+      "bytes": 66568,
+      "source_bytes": 1094474,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_SAN_001",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_SAN_001",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_SAN_001.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_SAN_001.png",
+      "bytes": 63172,
+      "source_bytes": 1087121,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_SUBJECT_ACT_FAC_SAN_002",
+      "slot": "illustration",
+      "anchor": "illustration",
+      "subject_id": "ACT_FAC_SAN_002",
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/subjects/ACT_FAC_SAN_002.webp",
+      "source_path": "art-src/cards/subjects/ACT_FAC_SAN_002.png",
+      "bytes": 57474,
+      "source_bytes": 1069338,
+      "placeholder": false,
+      "kind": "subject",
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "illustration",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_FRAME_N",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "N",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/frames/FRAME_N.webp",
+      "source_path": "art-src/cards/frames/FRAME_N.png",
+      "bytes": 39828,
+      "source_bytes": 469091,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_FRAME_R",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "R",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/frames/FRAME_R.webp",
+      "source_path": "art-src/cards/frames/FRAME_R.png",
+      "bytes": 50480,
+      "source_bytes": 506401,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_FRAME_EPIC",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "Epic",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/frames/FRAME_Epic.webp",
+      "source_path": "art-src/cards/frames/FRAME_Epic.png",
+      "bytes": 48998,
+      "source_bytes": 521382,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_FRAME_EX",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "EX",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/frames/FRAME_EX.webp",
+      "source_path": "art-src/cards/frames/FRAME_EX.png",
+      "bytes": 43326,
+      "source_bytes": 509341,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_FRAME_FAC",
+      "slot": "frame",
+      "anchor": "frame",
+      "subject_id": null,
+      "rarity": "FAC",
+      "status": "CONCEPT",
+      "path": "web/assets/cards/frames/FRAME_FAC.webp",
+      "source_path": "art-src/cards/frames/FRAME_FAC.png",
+      "bytes": 43450,
+      "source_bytes": 527593,
+      "placeholder": false,
+      "kind": "frame",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "card_frame",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_STAT_SPD",
+      "slot": "stat-icon",
+      "anchor": "statSpd",
+      "subject_id": "spd",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/icons/CARD_STAT_SPD.webp",
+      "source_path": "art-src/cards/icons/CARD_STAT_SPD.png",
+      "bytes": 7750,
+      "source_bytes": 1102614,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "stat_icon",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_ICON_AP",
+      "slot": "ui-icon",
+      "anchor": "apCost",
+      "subject_id": "ap",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/icons/CARD_ICON_AP.webp",
+      "source_path": "art-src/cards/icons/CARD_ICON_AP.png",
+      "bytes": 4808,
+      "source_bytes": 901140,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "ui_icon",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_AEG",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_AEG",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_AEG.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_AEG.png",
+      "bytes": 10148,
+      "source_bytes": 1497215,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_PHA",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_PHA",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_PHA.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_PHA.png",
+      "bytes": 14172,
+      "source_bytes": 1237454,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_CEL",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_CEL",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_CEL.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_CEL.png",
+      "bytes": 6618,
+      "source_bytes": 1074350,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_BADGE_FAC_SAN",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "FAC_SAN",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/icons/CARD_BADGE_FAC_SAN.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_FAC_SAN.png",
+      "bytes": 5464,
+      "source_bytes": 740456,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_BADGE_GENERIC",
+      "slot": "faction-badge",
+      "anchor": "factionBadge",
+      "subject_id": "generic",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/cards/icons/CARD_BADGE_GENERIC.webp",
+      "source_path": "art-src/cards/icons/CARD_BADGE_GENERIC.png",
+      "bytes": 6618,
+      "source_bytes": 1090805,
+      "placeholder": false,
+      "kind": "icon",
+      "presentation": {
+        "objectFit": "fill",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "faction_badge",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_STAT_ATK",
+      "slot": "stat-icon",
+      "anchor": "statAtk",
+      "subject_id": "atk",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "bytes": 9776,
+      "source_bytes": 9776,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "stat_icon",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_STAT_DEF",
+      "slot": "stat-icon",
+      "anchor": "statDef",
+      "subject_id": "def",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "bytes": 8040,
+      "source_bytes": 8040,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "stat_icon",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_TYPE_ATK",
+      "slot": "type-icon",
+      "anchor": "typeIcon",
+      "subject_id": "ATK",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_ATK.webp",
+      "bytes": 9776,
+      "source_bytes": 9776,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "type_icon",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_TYPE_DEF",
+      "slot": "type-icon",
+      "anchor": "typeIcon",
+      "subject_id": "DEF",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "source_path": "web/assets/generated/icons/STAT_ICON_DEF.webp",
+      "bytes": 8040,
+      "source_bytes": 8040,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "type_icon",
+      "owner": "a-card-art"
+    },
+    {
+      "asset_id": "CARD_TYPE_SKILL",
+      "slot": "type-icon",
+      "anchor": "typeIcon",
+      "subject_id": "Skill",
+      "rarity": null,
+      "status": "CONCEPT",
+      "path": "web/assets/generated/icons/TYPE_ICON_SKILL.webp",
+      "source_path": "web/assets/generated/icons/TYPE_ICON_SKILL.webp",
+      "bytes": 8488,
+      "source_bytes": 8488,
+      "placeholder": false,
+      "kind": "icon",
+      "borrowed": true,
+      "presentation": {
+        "objectFit": "contain",
+        "objectPosition": "center"
+      },
+      "review_status": "GENERATED_REVIEW",
+      "type": "type_icon",
+      "owner": "a-card-art"
+    }
+  ]
+}
