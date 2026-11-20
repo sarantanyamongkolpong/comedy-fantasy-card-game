@@ -10,6 +10,20 @@ Owner t253u (20 Nov 2026, 16:10 ICT) locked three items the sheet or the baselin
 | GA-12 | Per-banner counters. Epic and top are separate. Epic hit resets Epic only. EX/FAC hit resets both. Companion Epic is separate. Thresholds 100 / 200 / companion Epic 100. | tests/acceptance/v05/qa-08-gacha.test.js and pending-owner.test.js |
 | CORE-005 migration | pow maps to atk 1:1 and legacy.pow is preserved. | tests/acceptance/v05/core-005-migration.test.js |
 
+Owner t261u (20 Nov 2026, 17:07 ICT):
+
+| Decision | Locked behavior | Test |
+| --- | --- | --- |
+| CORE-037 SYNC | REJECTED. Out of scope. Not PENDING. | tests/acceptance/v05/qa-13-auto.test.js |
+| AUTO mode | LOCKED as required. The choice policy is PROPOSED config, not a locked algorithm. | tests/acceptance/v05/qa-13-auto.test.js |
+| AUTO-01 | AUTO finishes a match with no manual card play. | tests/acceptance/v05/qa-13-auto.test.js |
+| AUTO-02 | A seeded sweep never proposes an illegal play. | tests/acceptance/v05/qa-13-auto.test.js |
+| AUTO-03 | The same seed replays the same actions. | tests/acceptance/v05/qa-13-auto.test.js |
+| AUTO-04 | Turning AUTO off mid-turn returns control. The web battle screen wires the toggle. | tests/acceptance/v05/qa-13-auto.test.js |
+| AUTO-05 | The AUTO preference survives save and load. | tests/acceptance/v05/qa-13-auto.test.js |
+
+Engine exports for that mode are `chooseAutoActions`, `runAutoTurn`, and `playEnemyTurn`. Manual End Turn (CORE-015) stays. This does not bring back the superseded autonomous battler (CORE-035) as the primary system.
+
 Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill status) and must stay marked PROPOSED. Pending flags live in `src/config/index.js` `defaultRuleConfig()`. The current matrix is `docs/qa/v05/ACCEPTANCE_STATUS.md`. Todo is not pass.
 
 ## Rows
@@ -30,7 +44,12 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | CORE-012 | LOCKED | LOCKED | Extra draw during turn may temporarily exceed five | tests/acceptance/v05/qa-01-deck-hand.test.js |  |
 | CORE-013 | LOCKED | LOCKED | Discard excess freely until hand ≤ 5 at end of round | tests/acceptance/v05/qa-02-discard.test.js |  |
 | CORE-014 | LOCKED | LOCKED | Optional discard during own turn costs 1 AP per card | tests/acceptance/v05/qa-02-discard.test.js |  |
-| CORE-015 | LOCKED | LOCKED | Player explicitly presses End Turn | tests/acceptance/v05/qa-05-ap-turn.test.js |  |
+| CORE-015 | LOCKED | LOCKED | Player explicitly presses End Turn | tests/acceptance/v05/qa-05-ap-turn.test.js | AUTO can play the turn. Turning it off returns this manual control. |
+| AUTO-01 | LOCKED Owner t261u | LOCKED | AUTO completes a match without manual input. Mode is required. Policy is PROPOSED. | tests/acceptance/v05/qa-13-auto.test.js | Source: Owner t261u, 20 Nov 2026, 17:07 ICT. |
+| AUTO-02 | LOCKED Owner t261u | LOCKED | AUTO never makes an illegal play (seeded sweep) | tests/acceptance/v05/qa-13-auto.test.js | Source: Owner t261u, 20 Nov 2026, 17:07 ICT. |
+| AUTO-03 | LOCKED Owner t261u | LOCKED | AUTO replay is deterministic for the same seed | tests/acceptance/v05/qa-13-auto.test.js | Source: Owner t261u, 20 Nov 2026, 17:07 ICT. |
+| AUTO-04 | LOCKED Owner t261u | LOCKED | Turning AUTO off returns control mid-turn | tests/acceptance/v05/qa-13-auto.test.js | Source: Owner t261u, 20 Nov 2026, 17:07 ICT. Web wires the toggle. |
+| AUTO-05 | LOCKED Owner t261u | LOCKED | AUTO preference persists in save | tests/acceptance/v05/qa-13-auto.test.js | Source: Owner t261u, 20 Nov 2026, 17:07 ICT. |
 | CORE-016 | LOCKED | LOCKED | Normal played Action moves to Discard Pile | tests/acceptance/v05/qa-03-recycle-void.test.js |  |
 | CORE-017 | LOCKED | LOCKED | When Draw empties, shuffle only Discard into Draw | tests/acceptance/v05/qa-03-recycle-void.test.js |  |
 | CORE-018 | LOCKED | LOCKED | Active pile for cards exiled by effects; viewable any time | tests/acceptance/v05/qa-03-recycle-void.test.js |  |
@@ -50,9 +69,9 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | CORE-032 | LOCKED | LOCKED | Gifts and Relationship apply to Companions ONLY, not Avatars | tests/acceptance/v05/qa-04-faction.test.js |  |
 | CORE-033 | SUPERSEDED | SUPERSEDED | Common/Rare/Legendary/Mythic v0.4 values | tests/acceptance/v05/baseline-constants.test.js and qa-04-faction.test.js | Do not reintroduce this rule. |
 | CORE-034 | SUPERSEDED | SUPERSEDED | 10+10 Tactic, 7 MP, Valhalla, no Void | tests/acceptance/v05/baseline-constants.test.js | Do not reintroduce this rule. |
-| CORE-035 | SUPERSEDED | SUPERSEDED | Autonomous AI fight is not current primary battle system | tests/acceptance/v05/baseline-constants.test.js | Do not reintroduce this rule. |
+| CORE-035 | SUPERSEDED | SUPERSEDED | Autonomous AI fight is not current primary battle system | tests/acceptance/v05/baseline-constants.test.js | Do not reintroduce this rule. AUTO (Owner t261u) is a mode inside the manual battle, not a return of this system. |
 | CORE-036 | PENDING | PENDING | Old Tactical 5×2 / front-back | tests/acceptance/v05/pending-owner.test.js | Adopt the old 5×2 grid, reject it, or leave it unused? |
-| CORE-037 | PENDING | PENDING | 100% initial Sync from old concept | tests/acceptance/v05/pending-owner.test.js | Is VR Sync an active stat, lore only, or dropped? |
+| CORE-037 | PENDING | REJECTED | 100% initial Sync from old concept | tests/acceptance/v05/qa-13-auto.test.js | Owner t261u (20 Nov 2026, 17:07 ICT) dropped SYNC. Out of scope. Do not leave vrSync PENDING. |
 | CORE-038 | PENDING | PENDING | Sum/Avg/Max and tie handling | tests/acceptance/v05/pending-owner.test.js | Team SPD aggregate (sum, average, or max) and which side wins a tie. |
 | CORE-039 | PENDING | PENDING | Exact formulas, heal cap and KO behavior | tests/acceptance/v05/pending-owner.test.js | Damage formula, HP model, heal cap, and whether Regen ticks on a defeated unit. |
 | CORE-040 | PENDING | PENDING | Max duplicates in 30-card deck | tests/acceptance/v05/pending-owner.test.js | Maximum copies of one Action card in a 30-card deck. |
@@ -113,7 +132,7 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | OPEN-04 | PENDING | PENDING | Rarity Star cap, EXP curve, synthesis materials, promotion recipes | tests/acceptance/v05/pending-owner.test.js | Star cap per rarity, EXP curve, synthesis cost, promotion cost. Do not assume N2/R3/Epic4/EX5. |
 | OPEN-05 | PENDING | PENDING | Exact drop probabilities, G costs, pity-reset semantics | tests/acceptance/v05/pending-owner.test.js and tests/acceptance/v05/qa-12-playable-web.test.js | Rates and G price stay open. Pity reset is locked by Owner t253u. The playable web booth does not meet the test-banner or integer-seed contract. |
 | OPEN-06 | PENDING | PENDING | Cabin base capacity, furniture grant vs unlock-to-buy, prices | tests/acceptance/v05/pending-owner.test.js | Whether reference furniture is granted or only unlocked to buy, and any price. |
-| OPEN-07 | PENDING | PENDING | Sync 100%, old 5×2, Tower floors, Sports games | tests/acceptance/v05/pending-owner.test.js | Whether Sync 100%, the old 5×2 grid, Tower floors, or Sports games are in this core. |
+| OPEN-07 | PENDING | PENDING except SYNC | Sync 100%, old 5×2, Tower floors, Sports games | tests/acceptance/v05/pending-owner.test.js and tests/acceptance/v05/qa-13-auto.test.js | SYNC is REJECTED by Owner t261u. The old 5×2 grid, Tower floors, and Sports games stay pending. |
 | OPEN-08 | PROPOSED | PROPOSED | Stats and passives other than Justina's active | tests/acceptance/v05/pending-owner.test.js | Keep the value editable and labelled PROPOSED. Location: sample record field status, not a production constant. |
 | OPEN-09 | PENDING | PENDING | PR #9, #11, 14 other drafts status may have changed | tests/acceptance/v05/pending-owner.test.js | Sheet cell is still PENDING. The 20 Nov baseline audit already re-checked PR state. Do not promote the sheet cell from this branch. |
 | OPEN-10 | PENDING | PENDING | Card game repository URL not verified in this Master | tests/acceptance/v05/pending-owner.test.js | Sheet cell is still PENDING. The baseline audit identified this repository. Do not promote the sheet cell from this branch. |
@@ -148,3 +167,9 @@ Editable PROPOSED values live on the sample records (`stats.valueStatus` / skill
 | OWNER-PLAT-03 | LOCKED | tests/acceptance/v05/qa-10-ui.test.js | Manifest asset refs. No data:image. |
 | OWNER-PLAT-04 | LOCKED | tests/acceptance/v05/owner-plat-04-map.test.js and tests/acceptance/v05/qa-12-playable-web.test.js | 1672×941 stage. On playable, the mall sprite box starts at y=-50. |
 | D-ID | LOCKED Owner t253u | tests/acceptance/v05/qa-04-faction.test.js | New Justin ids. *_001 unchanged test passes on this branch today. |
+| CORE-037 | REJECTED Owner t261u | tests/acceptance/v05/qa-13-auto.test.js | SYNC mechanic is out of scope. |
+| AUTO-01 | LOCKED Owner t261u | tests/acceptance/v05/qa-13-auto.test.js | AUTO completes a match with no manual input. Policy stays PROPOSED. |
+| AUTO-02 | LOCKED Owner t261u | tests/acceptance/v05/qa-13-auto.test.js | Seeded sweep: no illegal play. |
+| AUTO-03 | LOCKED Owner t261u | tests/acceptance/v05/qa-13-auto.test.js | Same seed, same actions. |
+| AUTO-04 | LOCKED Owner t261u | tests/acceptance/v05/qa-13-auto.test.js | Toggle off returns control mid-turn. |
+| AUTO-05 | LOCKED Owner t261u | tests/acceptance/v05/qa-13-auto.test.js | Preference persists in the save. |

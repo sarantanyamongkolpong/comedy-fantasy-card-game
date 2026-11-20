@@ -41,5 +41,5 @@ Rule coverage is listed in `docs/qa/v05/REQUIREMENT_RECONCILIATION.md`. Local me
 Next:
 
 - Re-run `npm run test:acceptance` when `src/engine/index.js` or `web/` lands.
-- Keep pending flags unset until the Owner decides them.
+- Keep pending flags unset until the Owner decides them. SYNC is rejected (Owner t261u). AUTO battle is required; its policy stays proposed.
 - Do not merge this branch into `main` from here.

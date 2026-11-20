@@ -1,4 +1,4 @@
-const RULE_ID = /\b(?:QA-\d+|CORE-\d+|GA-\d+|HOME-\d+|MAP-\d+|OPEN-\d+|OWNER-PLAT-\d+|AV_EX\d+|D-ID|Target_Rule)\b/g;
+const RULE_ID = /\b(?:QA-\d+|CORE-\d+|GA-\d+|HOME-\d+|MAP-\d+|OPEN-\d+|OWNER-PLAT-\d+|AV_EX\d+|AUTO-\d+|D-ID|Target_Rule)\b/g;
 
 const RANK = { fail: 0, todo: 1, skip: 2, pass: 3 };
 

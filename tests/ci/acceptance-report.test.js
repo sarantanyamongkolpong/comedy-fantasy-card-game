@@ -34,6 +34,16 @@ test('INCOMPLETE is not PASS when todos remain', () => {
   assert.equal(overallStatus({ pass: 0, fail: 0, todo: 0, skipped: 0 }), 'FAIL');
 });
 
+test('AUTO rule ids from Owner t261u stay in the matrix', () => {
+  const matrix = ruleMatrix([
+    { name: 'AUTO-01 Owner t261u AUTO completes a match without manual input — not landed', status: 'todo' },
+    { name: 'AUTO-04 Owner t261u toggle-off returns control mid-turn', status: 'pass' },
+  ]);
+  const byId = Object.fromEntries(matrix.map((row) => [row.id, row.status]));
+  assert.equal(byId['AUTO-01'], 'TODO');
+  assert.equal(byId['AUTO-04'], 'PASS');
+});
+
 test('a passing check does not hide a todo for the same rule', () => {
   const matrix = ruleMatrix([
     { name: 'D-ID Owner t253u AVT_AEG_001 identities unchanged', status: 'pass' },

@@ -10,6 +10,16 @@ Landed on `origin/core/v05-engine` @ `07b1b2f`. Stable names: `createMatch`, `st
 
 `getZones(state, sideId)` returns `{ draw, hand, discard, void }`. `getOutcome(state)` uses `status: 'ongoing' | 'decided'`, `winnerSideId`, `loserSideId`, and one `rewards` object (or null). A preview is `previewAction`. It must not spend AP. Regen ticks on the next start of that side's turn. `advanceStatusTick` and `rollPassive` are not exported; passives are in the match log.
 
+Owner t261u (20 Nov 2026, 17:07 ICT) dropped SYNC. `vrSync` is `REJECTED` with `value: null`, or the flag is absent. It is not `PENDING`.
+
+AUTO battle is required. The mode flag is `LOCKED`. The choice policy stays `PROPOSED`.
+
+- `chooseAutoActions(state, { seed })` returns the next legal plays (`playAction` arguments, or `{ endTurn: true }`) and does not change the match. An array, or `{ actions }`, is accepted.
+- `runAutoTurn(state, { seed, auto })` plays the active player turn while AUTO is on. It stops without playing when AUTO is off. `state.auto.enabled === false` and `options.auto === false` both mean off. `setAuto(state, enabled)` may apply the flag. The return uses `played` (same shape as `chooseAutoActions`) and `ok`. A yielded turn sets `yielded: true` or returns no plays.
+- `playEnemyTurn(state)` plays the AI side. It may be the existing `runEnemyTurn` under this name.
+
+The web battle screen exposes the toggle (`data-testid="auto-toggle"`, `setAuto`, or `autoBattle`). The save profile keeps `preferences.autoBattle` through `serialize` / `deserialize`. `setAutoBattle(profile, enabled)` or `createProfile({ preferences: { autoBattle } })` must preserve it.
+
 ## Rule config (`src/config/index.js`)
 
 `defaultRuleConfig()` returns a fresh object. Locked numbers: party 4, base AP 5, hand 5, deck 30, voluntary discard 1 AP, max level 5. Pending flags use status `PENDING` or `PENDING_OWNER` and `value: null`.

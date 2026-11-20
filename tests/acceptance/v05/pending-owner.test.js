@@ -6,7 +6,6 @@ const config = await loadNamed(CONFIG_FILES, ['defaultRuleConfig'], 'stream B');
 
 const PENDING = [
   ['CORE-036 OPEN-01', 'battleGrid', 'CORE-036'],
-  ['CORE-037 OPEN-07', 'vrSync', 'CORE-037'],
   ['CORE-038 OPEN-01', 'teamSpdAggregation', 'CORE-038'],
   ['CORE-038 OPEN-01', 'spdTieBreak', 'CORE-038'],
   ['CORE-039 OPEN-02', 'damageFormula', 'CORE-039'],

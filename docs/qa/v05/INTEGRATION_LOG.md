@@ -76,3 +76,17 @@ The Deck → Battle → Rewards smoke against `src/engine` passed for both a pla
 ### Still todo
 
 `layoutWorldMap` is not the web export (the web uses `stageLayout` and `buildingHotspots`). The Playwright smoke stays todo; the node smoke above is the one that ran. `core/v05-playable-wire` was not on the remote, so it was not run.
+
+## 20 Nov 2026, 17:07 ICT — Owner t261u
+
+SYNC is REJECTED and out of scope. AUTO battle is LOCKED; its choice policy stays PROPOSED. The new rows are `AUTO-01` through `AUTO-05` in `tests/acceptance/v05/qa-13-auto.test.js`. On this branch the engine, config, save, and web modules are absent, so those rows are todo.
+
+A detached overlay of `core/v05-playable` @ `6be1689` (not merged) ran `qa-13-auto.test.js` and failed the rows the current tree cannot meet:
+
+- `vrSync` is still `pending('CORE-037')`.
+- `defaultRuleConfig` has no `autoBattle` flag.
+- `src/engine/index.js` is missing `chooseAutoActions`, `runAutoTurn`, and `playEnemyTurn`. The four behavior checks stay todo behind that missing contract.
+- `createProfile` does not keep `preferences.autoBattle`.
+- The web shell has no AUTO toggle (`auto-toggle`, `setAuto`, or `autoBattle`).
+
+Stream A is adding the engine exports. Stream C wires the toggle. This log does not merge either branch.
