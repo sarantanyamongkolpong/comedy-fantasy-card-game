@@ -83,12 +83,21 @@ export function createRevealDirector(results, options = {}) {
 
   function start() {
     if (finished) return snapshot();
-    if (list.length === 0 || reduced) {
+    if (list.length === 0 || (reduced && options.manual !== true)) {
       index = Math.max(list.length - 1, 0);
       return finish();
     }
     emit();
-    arm();
+    if (options.manual !== true) arm();
+    return snapshot();
+  }
+
+  /** Manual mode (Owner 2026-11-21): the player taps Next to see each card. */
+  function next() {
+    if (finished) return snapshot();
+    if (index >= list.length - 1) return finish();
+    index += 1;
+    emit();
     return snapshot();
   }
 
@@ -101,6 +110,7 @@ export function createRevealDirector(results, options = {}) {
   return {
     start,
     skip,
+    next,
     cancel,
     get index() { return index; },
     get done() { return done; },

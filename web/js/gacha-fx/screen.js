@@ -22,6 +22,7 @@ import { presentationFor, withGachaFragment } from './vfx.js';
 import { balanceLabel, chargeLabel, priceLabel, walletView } from './wallet-view.js';
 
 let director = null;
+let charging = null;
 let chargedG = 0;
 let selectedId = null;
 let stepMs = 820;
@@ -147,8 +148,17 @@ function pullAndPresent(ctx, banner, count) {
     isAlive: () => typeof document !== 'undefined' && document.querySelector('.gfx-gacha') != null,
     onStep: () => ctx.redraw(),
     onDone: () => ctx.redraw(),
+    manual: true,
   });
-  director.start();
+  // Owner 2026-11-21: the machine charges and summons before the first card, and each card
+  // waits for the player (Next) so a x10 pull can be read card by card.
+  charging = { count, bannerId: banner.bannerId };
+  ctx.redraw();
+  setTimeout(() => {
+    charging = null;
+    director?.start();
+    ctx.redraw();
+  }, 1400);
 }
 
 function renderBanners(ctx, banners, manifest) {
@@ -243,6 +253,25 @@ function renderSummaryBlock(ctx, manifest) {
   return log;
 }
 
+function renderCharge(manifest) {
+  const overlay = el('div', 'gfx-reveal gfx-charging');
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-label', 'Summoning');
+  const stage = el('div', 'gfx-stage');
+  const machine = findAsset(manifest, { slot: 'gacha-machine' });
+  if (machine) {
+    const img = el('img', 'gfx-machine');
+    img.alt = '';
+    bindGacha(img, machine, { eager: true });
+    stage.append(img);
+  }
+  stage.append(el('span', 'gfx-ring'));
+  for (let spark = 0; spark < 10; spark += 1) stage.append(el('i', 'gfx-spark'));
+  overlay.append(stage);
+  overlay.append(el('p', 'gfx-step', `Summoning x${charging.count}…`));
+  return overlay;
+}
+
 function renderReveal(manifest) {
   const current = director.results[director.index];
   const overlay = el('div', 'gfx-reveal');
@@ -279,6 +308,14 @@ function renderReveal(manifest) {
     bindGacha(img, frame, { eager: true });
     face.append(img);
   }
+  const subject = current?.subjectId ?? current?.avatarId ?? current?.cardId ?? current?.id ?? null;
+  const illus = subject ? findAsset(manifest, { slot: 'illustration', subjectId: subject }) : null;
+  if (illus) {
+    const img = el('img', 'gfx-illus');
+    img.alt = '';
+    bindGacha(img, illus, { eager: true });
+    face.append(img);
+  }
   face.append(el('p', 'gfx-rarity-label', current?.rarity ?? ''));
   face.append(el('p', 'gfx-card-name', current?.name ?? ''));
   if (current?.duplicate) face.append(el('p', 'gfx-dup', current.duplicateNote));
@@ -288,9 +325,13 @@ function renderReveal(manifest) {
   stage.append(card);
   overlay.append(stage);
   overlay.append(el('p', 'gfx-step', `${director.index + 1} / ${director.results.length}`));
-  const skip = button('Skip', () => director?.skip(), 'hit slim gfx-skip');
-  overlay.append(skip);
-  queueMicrotask(() => skip.focus({ preventScroll: true }));
+  const last = director.index >= director.results.length - 1;
+  const nav = el('div', 'gfx-nav');
+  const nextBtn = button(last ? 'Done' : 'Next', () => director?.next(), 'hit gfx-next');
+  nav.append(nextBtn);
+  if (!last) nav.append(button('Skip', () => director?.skip(), 'hit slim gfx-skip'));
+  overlay.append(nav);
+  queueMicrotask(() => nextBtn.focus({ preventScroll: true }));
   return overlay;
 }
 
@@ -333,7 +374,8 @@ export function renderGachaFx(ctx) {
   body.append(note);
   body.append(renderBanners(ctx, banners, manifest));
   if (ctx.gachaResults?.length) body.append(renderSummaryBlock(ctx, manifest));
-  if (director && !director.done && director.results.length > 0) body.append(renderReveal(manifest));
+  if (charging) body.append(renderCharge(manifest));
+  else if (director && !director.done && director.results.length > 0) body.append(renderReveal(manifest));
   const view = shell(ctx, 'Gachapon', body, { back: 'home' });
   const bg = findAsset(manifest, { slot: 'bg-gacha', subjectId: 'gacha' });
   if (bg) {

@@ -1,3 +1,4 @@
+import { presentBattleEvents, presentOutcome } from './present/battle-present.js';
 import { actionCaption, autoDelayMs, fightSignature, speedChoices } from './auto-play.js';
 import { bindImage, findAsset, loadManifest } from './assets.js';
 import { loadGameApi } from './game-api.js';
@@ -269,7 +270,7 @@ function startBattle(mode) {
   if (state.screen === 'battle' && state.profile.autoPlay?.enabled) startAutoLoop();
 }
 
-function render() {
+function paint() {
   const stage = document.getElementById('stage');
   const ctx = makeCtx();
   let view;
@@ -296,7 +297,100 @@ function render() {
     mapBtn.addEventListener('click', () => ctx.goto('map'));
     view.append(mapBtn);
   }
-  stage.replaceChildren(view);
+  swapView(stage, view);
+}
+
+// ---- Presentation layer (Owner 2026-11-21, P0 visual playability) ----------------------------
+// The engine resolves instantly; render() first replays new engine log rows on the battle that is
+// still on screen, shows VICTORY/DEFEAT, then crossfades to the next screen. Engine results are
+// never changed. Rapid calls during a presentation are coalesced into one render afterwards.
+let paintedScreen = null;
+let presenting = null;
+let renderAgain = false;
+let fadeTimer = null;
+
+function engineLog() {
+  return state.match?.engine?.log ?? null;
+}
+
+async function waitForImages(view, limitMs) {
+  const imgs = [...view.querySelectorAll('img')].filter((img) => img.src && !img.complete);
+  if (imgs.length === 0) return;
+  await Promise.race([
+    Promise.all(imgs.map((img) => (img.decode ? img.decode().catch(() => {}) : Promise.resolve()))),
+    new Promise((resolve) => { setTimeout(resolve, limitMs); }),
+  ]);
+}
+
+function swapView(stage, view) {
+  const changed = paintedScreen !== null && paintedScreen !== state.screen;
+  paintedScreen = state.screen;
+  if (fadeTimer) {
+    clearTimeout(fadeTimer);
+    fadeTimer = null;
+  }
+  if (!changed) {
+    stage.replaceChildren(view);
+    return;
+  }
+  // Crossfade: keep the old screen underneath, fade the new one in, then drop the old one.
+  for (const old of [...stage.children]) old.classList.add('screen-leaving');
+  view.classList.add('screen-entering');
+  stage.append(view);
+  waitForImages(view, 350).then(() => {
+    requestAnimationFrame(() => view.classList.add('is-in'));
+    fadeTimer = setTimeout(() => {
+      for (const old of [...stage.children]) if (old !== view) old.remove();
+      view.classList.remove('screen-entering', 'is-in');
+      fadeTimer = null;
+    }, 320);
+  });
+}
+
+function render() {
+  if (presenting) {
+    renderAgain = true;
+    return presenting;
+  }
+  const log = engineLog();
+  const stage = document.getElementById('stage');
+  const onBattle = paintedScreen === 'battle' && stage?.querySelector('[data-screen="battle"]');
+  const cursor = state.battleUi?.presentedCursor;
+  if (onBattle && log && Number.isInteger(cursor) && cursor < log.length) {
+    const events = log.slice(cursor);
+    state.battleUi.presentedCursor = log.length;
+    const root = stage.querySelector('[data-screen="battle"]');
+    // The confirm dialog closes as soon as the action is chosen, then the action plays out.
+    for (const node of stage.querySelectorAll('.modal')) node.remove();
+    root.querySelector('.is-selected')?.classList.remove('is-selected');
+    const outcome = state.api.getOutcome(state.match);
+    presenting = (async () => {
+      try {
+        await presentBattleEvents(root, events, {
+          engine: state.match.engine,
+          speed: state.profile.autoPlay?.speed || 'normal',
+        });
+        if (outcome.status === 'decided') {
+          const won = (outcome.winnerSideId ?? outcome.winner) === 'player';
+          await presentOutcome(root, won);
+        }
+      } finally {
+        presenting = null;
+        renderAgain = false;
+        if (state.battleUi) state.battleUi.logCursor = log.length;
+        paintAndTrack();
+      }
+    })();
+    return presenting;
+  }
+  paintAndTrack();
+  return Promise.resolve();
+}
+
+function paintAndTrack() {
+  paint();
+  const log = engineLog();
+  if (state.screen === 'battle' && log && state.battleUi) state.battleUi.presentedCursor = log.length;
 }
 
 function mountRotateArt() {
@@ -404,16 +498,14 @@ async function startAutoLoop() {
 }
 
 async function animateLog(log, token) {
-  const entries = log.length > 0 ? log : [{ text: 'Auto' }];
-  for (const entry of entries) {
-    if (token !== autoToken || state.screen !== 'battle') return true;
-    state.notice = actionCaption(entry);
-    render();
-    const speed = state.profile.autoPlay?.speed || 'normal';
-    await wait(autoDelayMs(speed, state.autoDelayOverride));
-    if (token !== autoToken || state.profile.autoPlay?.enabled !== true) return true;
-  }
-  return false;
+  // Owner 2026-11-21: AUTO plays through the same visual queue as manual play.
+  if (token !== autoToken || state.screen !== 'battle') return true;
+  const first = log.find((entry) => entry && entry.kind !== 'end_turn') ?? log[0];
+  if (first) state.notice = actionCaption(first);
+  await render();
+  const speed = state.profile.autoPlay?.speed || 'normal';
+  await wait(Math.min(autoDelayMs(speed, state.autoDelayOverride), speed === 'fast' ? 150 : 300));
+  return token !== autoToken || state.profile.autoPlay?.enabled !== true;
 }
 
 main().then(() => {

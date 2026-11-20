@@ -169,6 +169,9 @@ function unitToken(ctx, unit, slot, arenaBox) {
   const node = el('button', `unit${unit.ko ? ' is-ko' : ''}${unit.sideId === 'enemy' ? ' faces-left' : ' faces-right'}`);
   node.type = 'button';
   node.dataset.row = slot.row;
+  node.dataset.avatarId = unit.avatarId ?? '';
+  node.dataset.sideId = unit.sideId ?? '';
+  node.dataset.maxHp = String(unit.maxHp ?? '');
   const local = {
     x: slot.box.x - arenaBox.x,
     y: slot.box.y - arenaBox.y,
