@@ -67,18 +67,28 @@ function teamSelect(ctx) {
   return wrap;
 }
 
+const DECK_PAGE = 7;
+let deckPage = 0;
+
 function deckBuilder(ctx) {
   const wrap = el('div', 'deck-builder');
   wrap.append(el('p', 'lede', 'Exactly 30 action cards. Not 29. Not 31. Duplicates are allowed until CORE-040 grows a number.'));
-  const inDeck = el('div', 'card-grid deck-strip');
+  const entries = [];
   for (const instanceId of ctx.profile.deck) {
     const owned = ctx.profile.actions.find((action) => action.instanceId === instanceId);
     const def = owned ? ctx.api.catalog.cardById(owned.cardId) : null;
     if (!def) continue;
-    inDeck.append(renderCard(ctx.manifest, actionModel(def), {
+    entries.push({ instanceId, def });
+  }
+  const pages = Math.max(1, Math.ceil(entries.length / DECK_PAGE));
+  if (deckPage > pages - 1) deckPage = pages - 1;
+  if (deckPage < 0) deckPage = 0;
+  const inDeck = el('div', 'card-grid deck-strip');
+  for (const entry of entries.slice(deckPage * DECK_PAGE, deckPage * DECK_PAGE + DECK_PAGE)) {
+    inDeck.append(renderCard(ctx.manifest, actionModel(entry.def), {
       onClick: () => {
-        const result = toggleDeckCard(ctx.profile, instanceId);
-        ctx.setNotice(result.ok ? `Removed ${def.name}.` : result.reason);
+        const result = toggleDeckCard(ctx.profile, entry.instanceId);
+        ctx.setNotice(result.ok ? `Removed ${entry.def.name}.` : result.reason);
         ctx.persist();
         ctx.redraw();
       },
@@ -86,6 +96,18 @@ function deckBuilder(ctx) {
   }
   wrap.append(el('h2', null, `In the deck (${ctx.profile.deck.length})`));
   wrap.append(inDeck);
+  if (pages > 1) {
+    const pager = el('div', 'row');
+    pager.append(button('Previous page', () => {
+      deckPage = Math.max(0, deckPage - 1);
+      ctx.redraw();
+    }, 'hit slim'));
+    pager.append(button('Next page', () => {
+      deckPage = Math.min(pages - 1, deckPage + 1);
+      ctx.redraw();
+    }, 'hit slim'));
+    wrap.append(pager);
+  }
   const spare = ctx.profile.actions.filter((action) => !ctx.profile.deck.includes(action.instanceId));
   wrap.append(el('h2', null, `On the shelf (${spare.length})`));
   const shelf = el('div', 'card-grid');

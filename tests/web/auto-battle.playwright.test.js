@@ -35,9 +35,9 @@ async function browserPage() {
     args: ['--no-sandbox', '--disable-dev-shm-usage'],
   });
   const page = await browser.newPage({ viewport: { width: 844, height: 390 } });
-  await page.goto(`http://127.0.0.1:${port}/web/`, { waitUntil: 'networkidle' });
+  await page.goto(`http://127.0.0.1:${port}/web/`, { waitUntil: 'domcontentloaded' });
   await page.evaluate(() => localStorage.clear());
-  await page.reload({ waitUntil: 'networkidle' });
+  await page.reload({ waitUntil: 'domcontentloaded' });
   return { browser, page };
 }
 

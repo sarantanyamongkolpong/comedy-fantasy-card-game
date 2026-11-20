@@ -3,6 +3,7 @@
  * (phase, ap, units, zones, log) and keeps that view in sync after each call.
  */
 
+import { installFurniture as installPiece, removeFurniture as removePiece } from '../../src/schema/hideout.js';
 import { factionName, FACTION_NAMES } from './sample-catalog.js';
 
 const FACTION_ID = Object.freeze(Object.fromEntries(
@@ -108,11 +109,27 @@ export function presentMatch(engineState, meta = {}) {
   const view = {
     source: 'engine',
     engine: engineState,
+    state: engineState,
+    sides: engineState.sides,
     mode: meta.mode ?? 'tower',
     rewardId: meta.rewardId ?? engineState.matchId,
     lastError: '',
   };
   return refreshMatchView(view);
+}
+
+/** Acceptance helpers keep the raw match. The screen keeps the view. Both are accepted. */
+export function engineStateOf(input) {
+  if (input?.engine?.sides) return input.engine;
+  if (input?.state?.sides && input.state !== input) return input.state;
+  if (input?.sides) return input;
+  return input?.engine ?? input?.state ?? input;
+}
+
+function viewOf(input) {
+  if (input?.engine?.sides && Array.isArray(input.units)) return input;
+  const state = engineStateOf(input);
+  return presentMatch(state, { mode: input?.mode ?? 'tower', rewardId: input?.rewardId ?? state?.matchId });
 }
 
 function avatarIdOf(view, token) {
@@ -169,7 +186,8 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
     return presentMatch(state, { mode: input.mode, rewardId: input.rewardId });
   }
 
-  function playAction(view, action) {
+  function playAction(input, action) {
+    const view = viewOf(input);
     const result = engine.playAction(view.engine, {
       cardInstanceId: action.cardInstanceId,
       actorAvatarId: avatarIdOf(view, action.actorAvatarId),
@@ -200,10 +218,7 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
 
   function hashSeed(value) {
     if (Number.isInteger(value) && value >= 0) return value;
-    const text = String(value ?? 1);
-    let hash = 2166136261;
-    for (let index = 0; index < text.length; index += 1) hash = Math.imul(hash ^ text.charCodeAt(index), 16777619);
-    return hash >>> 0;
+    return gacha.integerSeed(String(value ?? 1));
   }
 
   function pull(bannerState, options = {}) {
@@ -212,16 +227,18 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
       seed: hashSeed(options.seed),
       count: options.count ?? 1,
     });
+    const results = result.pulls.map((row) => ({
+      rarity: row.rarity,
+      name: `${row.rarity} TEST token ${row.id}`,
+      note: row.forced ? 'Pity hit. TEST weights, not a drop rate. GA-11 is still pending.' : 'TEST weight, not a drop rate.',
+      forced: row.forced,
+      pool: realState.pool,
+      assetId: null,
+    }));
     return {
       state: toUiBanner(result.state),
-      results: result.pulls.map((row) => ({
-        rarity: row.rarity,
-        name: `${row.rarity} TEST token ${row.id}`,
-        note: row.forced ? 'Pity hit. TEST weights, not a drop rate. GA-11 is still pending.' : 'TEST weight, not a drop rate.',
-        forced: row.forced,
-        pool: realState.pool,
-        assetId: null,
-      })),
+      pulls: result.pulls,
+      results,
       chargedG: 0,
     };
   }
@@ -234,9 +251,11 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
       preferences: { autoBattle: ui.autoPlay?.enabled === true },
       currency: { G: Number.isInteger(ui.currencyG) ? ui.currencyG : 0 },
       house: {
-        acquiredTiers: ['cabin'],
-        displayTier: ui.house?.tierId ?? 'cabin',
-        installedFurniture: [],
+        acquiredTiers: Array.isArray(ui.house?.acquiredTiers) && ui.house.acquiredTiers.length > 0
+          ? ui.house.acquiredTiers
+          : [ui.house?.tierId ?? 'cabin'],
+        displayTier: ui.house?.displayTier ?? ui.house?.tierId ?? 'cabin',
+        installedFurniture: Array.isArray(ui.house?.installedFurniture) ? ui.house.installedFurniture : [],
       },
       rewardLedger: Object.fromEntries((ui.claimedRewardIds ?? []).map((id) => [id, { grants: { G: 0, items: [] } }])),
       decks: [{
@@ -251,6 +270,8 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
     });
     const plainUi = { ...ui };
     delete plainUi._restoredMatch;
+    saved.team = Array.isArray(ui.team) ? structuredClone(ui.team) : [];
+    saved.deck = Array.isArray(ui.deck) ? structuredClone(ui.deck) : [];
     saved.web = {
       ui: plainUi,
       match: match?.engine ? engine.getState(match.engine) : null,
@@ -271,8 +292,19 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
       enabled: saved.preferences?.autoBattle === true,
       speed: web.ui.autoPlay?.speed ?? 'normal',
     };
+    if (saved.house) {
+      web.ui.house = {
+        ...(web.ui.house ?? {}),
+        acquiredTiers: saved.house.acquiredTiers ?? web.ui.house?.acquiredTiers,
+        displayTier: saved.house.displayTier ?? web.ui.house?.displayTier ?? web.ui.house?.tierId,
+        installedFurniture: Array.isArray(saved.house.installedFurniture)
+          ? structuredClone(saved.house.installedFurniture)
+          : (web.ui.house?.installedFurniture ?? []),
+      };
+    }
     const match = web.match ? presentMatch(web.match, { mode: web.mode ?? 'tower', rewardId: web.rewardId ?? web.match.matchId }) : null;
     return {
+      ...save.playerView(saved),
       webBundle: true,
       profile: web.ui,
       match,
@@ -281,19 +313,71 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
     };
   }
 
+  function dataHouse(profile) {
+    const house = profile?.house ?? {};
+    const tierId = house.displayTier ?? house.tierId ?? 'cabin';
+    return {
+      acquiredTiers: Array.isArray(house.acquiredTiers) && house.acquiredTiers.length > 0 ? [...house.acquiredTiers] : [tierId],
+      displayTier: tierId,
+      installedFurniture: Array.isArray(house.installedFurniture) ? house.installedFurniture.map((piece) => ({ ...piece })) : [],
+    };
+  }
+
+  function writeHouse(profile, next) {
+    const current = profile.house ?? {};
+    profile.house = {
+      ...current,
+      tierId: current.tierId ?? next.displayTier ?? 'cabin',
+      acquiredTiers: next.acquiredTiers,
+      displayTier: next.displayTier,
+      installedFurniture: next.installedFurniture,
+    };
+  }
+
+  function stashReport(profile) {
+    return save.stashReport({
+      house: dataHouse(profile),
+      inventory: { avatars: [], actions: [], companions: [] },
+    });
+  }
+
+  function installFurniture(profile, piece) {
+    writeHouse(profile, installPiece(dataHouse(profile), piece));
+    return stashReport(profile);
+  }
+
+  function removeFurniture(profile, furnitureId) {
+    writeHouse(profile, removePiece(dataHouse(profile), furnitureId));
+    return stashReport(profile);
+  }
+
   return {
     createMatch,
-    startTurn(view) { return fail(view, engine.startTurn(view.engine)); },
+    startTurn(input) {
+      const view = viewOf(input);
+      return fail(view, engine.startTurn(view.engine));
+    },
     playAction,
-    discardVoluntary(view, cardInstanceId) { return fail(view, engine.discardVoluntary(view.engine, cardInstanceId)); },
-    endTurn(view) { return fail(view, engine.endTurn(view.engine)); },
-    resolveEndOfRoundDiscard(view, ids) { return fail(view, engine.resolveEndOfRoundDiscard(view.engine, ids)); },
-    getZones(view, sideId) {
+    discardVoluntary(input, cardInstanceId) {
+      const view = viewOf(input);
+      return fail(view, engine.discardVoluntary(view.engine, cardInstanceId));
+    },
+    endTurn(input) {
+      const view = viewOf(input);
+      return fail(view, engine.endTurn(view.engine));
+    },
+    resolveEndOfRoundDiscard(input, ids) {
+      const view = viewOf(input);
+      return fail(view, engine.resolveEndOfRoundDiscard(view.engine, ids));
+    },
+    getZones(input, sideId) {
+      const view = viewOf(input);
       refreshMatchView(view);
       return view.zones[sideId];
     },
-    getOutcome(view) { return engine.getOutcome(view.engine); },
-    playEnemyTurn(view, opts) {
+    getOutcome(input) { return engine.getOutcome(engineStateOf(input)); },
+    playEnemyTurn(input, opts) {
+      const view = viewOf(input);
       if (typeof enemyTurn !== 'function') {
         view.lastError = 'src/engine/index.js#playEnemyTurn is missing';
         return { ok: false, reason: 'NO_ENEMY_TURN', log: [] };
@@ -306,7 +390,8 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
       ? (state, sideId, opts) => chooseTurn(state, sideId, opts)
       : null,
     refreshMatch: refreshMatchView,
-    runAutoTurn(view, sideId = 'player', opts) {
+    runAutoTurn(input, sideId = 'player', opts) {
+      const view = viewOf(input);
       if (typeof autoTurn !== 'function') return { ok: false, reason: 'AUTO_LOADING', log: [] };
       const result = autoTurn(view.engine, sideId, opts);
       return applyTurn(view, result);
@@ -317,6 +402,9 @@ export function bindEngine(engine, gacha, save, hooks = {}) {
     pull,
     serialize,
     deserialize,
+    stashReport,
+    installFurniture,
+    removeFurniture,
   };
 }
 

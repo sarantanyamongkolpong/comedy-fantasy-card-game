@@ -1,3 +1,4 @@
+import { integerSeed } from '../../../src/gacha/rng.js';
 import { bindImage, findAsset } from '../assets.js';
 import { button, el, shell } from '../dom.js';
 import { applyPull } from '../profile.js';
@@ -79,8 +80,9 @@ export function renderGacha(ctx) {
 
 export function performPull(ctx, banner, count) {
   const state = ctx.profile.banners[banner.bannerId];
+  const seed = integerSeed(['gacha', banner.bannerId, ctx.profile.seq, count].join(':'));
   const outcome = ctx.api.pull(state, {
-    seed: `gacha:${banner.bannerId}:${ctx.profile.seq}:${count}`,
+    seed: seed,
     count,
     catalog: ctx.api.catalog,
   });

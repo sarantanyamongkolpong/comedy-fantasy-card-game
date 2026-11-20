@@ -71,6 +71,7 @@ test('a content deck fights on the real engine and the save keeps the match', as
   const banner = api.catalog.banners.find((row) => row.pool === 'avatar');
   const state = api.createBannerState(banner);
   const pulled = api.pull(state, { seed: 'gacha:string-seed:1', count: 1 });
+  assert.equal(pulled.pulls.length, 1);
   assert.equal(pulled.state.pulls, 1);
   assert.equal(typeof pulled.state.pityEpic, 'number');
   assert.equal(pulled.results.length, 1);
