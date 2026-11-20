@@ -6,40 +6,16 @@ import { bindApi, CONFIG_FILES, ENGINE_FILES, SAVE_FILES, loadNamed, repoPath } 
 import { buildMatch } from './helpers/match.js';
 import { asState, flagOf, isPendingStatus, playCard, readOutcome } from './helpers/state.js';
 
-const AUTO_EXPORTS = ['createMatch', 'playAction', 'previewAction', 'endTurn', 'getZones', 'getOutcome', 'chooseAutoActions', 'runAutoTurn', 'playEnemyTurn'];
+const AUTO_EXPORTS = ['createMatch', 'playAction', 'previewAction', 'discardVoluntary', 'endTurn', 'getZones', 'getOutcome', 'chooseAutoActions', 'runAutoTurn', 'playEnemyTurn'];
 const SWEEP_SEEDS = [1, 2, 11, 42, 20261120];
 
 const engine = await loadNamed(ENGINE_FILES, AUTO_EXPORTS, 'stream A');
 const config = await loadNamed(CONFIG_FILES, ['defaultRuleConfig'], 'stream B');
 const save = await loadNamed(SAVE_FILES, ['serialize', 'deserialize', 'createProfile'], 'stream B');
 
-function listActions(value) {
-  if (Array.isArray(value)) return value;
-  if (Array.isArray(value?.actions)) return value.actions;
-  if (Array.isArray(value?.played)) return value.played;
-  return [];
-}
-
-function playArgs(action) {
-  if (!action || typeof action !== 'object') return null;
-  if (action.endTurn === true || action.type === 'endTurn' || action.kind === 'endTurn') return { endTurn: true };
-  const cardInstanceId = action.cardInstanceId ?? action.instanceId;
-  if (typeof cardInstanceId !== 'string') return null;
-  const args = { cardInstanceId, targets: action.targets ?? [] };
-  if (action.actorAvatarId) args.actorAvatarId = action.actorAvatarId;
-  if (action.retrieveInstanceIds) args.retrieveInstanceIds = action.retrieveInstanceIds;
-  return args;
-}
-
-function setAuto(api, state, enabled) {
-  if (typeof api.setAuto === 'function') {
-    const result = api.setAuto(state, enabled);
-    return result == null ? state : asState(result, state);
-  }
-  if (!state.auto || typeof state.auto !== 'object') state.auto = {};
-  state.auto.enabled = enabled;
-  state.auto.player = enabled;
-  return state;
+function stepName(entry) {
+  if (!entry || typeof entry !== 'object') return String(entry ?? 'step');
+  return `${entry.kind ?? entry.type ?? 'step'}:${entry.cardInstanceId ?? ''}:${entry.actorAvatarId ?? ''}`;
 }
 
 function stamp(api, state) {
@@ -53,20 +29,25 @@ function stamp(api, state) {
   });
 }
 
-function assertNextLegal(api, state, seed) {
+function assertNextLegal(api, state, sideId) {
   const before = structuredClone(state);
-  const planned = listActions(api.chooseAutoActions(state, { seed }));
+  const planned = api.chooseAutoActions(state, sideId);
+  assert.ok(Array.isArray(planned), 'chooseAutoActions returns the ordered plays');
   assert.deepEqual(state, before, 'chooseAutoActions must not change the match');
-  if (planned.length === 0) return;
-  const action = playArgs(planned[0]);
-  assert.ok(action, 'chooseAutoActions must return playAction arguments or endTurn');
-  if (action.endTurn) {
-    const ended = api.endTurn(structuredClone(state));
-    assert.notEqual(ended?.ok, false, ended?.reason ?? 'AUTO tried to end a turn illegally');
+  const first = planned[0];
+  if (!first) return;
+  const copy = structuredClone(state);
+  if (first.kind === 'discard_voluntary') {
+    const discarded = api.discardVoluntary(copy, first.cardInstanceId);
+    assert.notEqual(discarded?.ok, false, discarded?.reason ?? 'AUTO discard was illegal');
     return;
   }
-  const preview = api.previewAction(structuredClone(state), action);
-  assert.notEqual(preview?.ok, false, preview?.reason ?? `AUTO proposed an illegal play of ${action.cardInstanceId}`);
+  const preview = api.previewAction(copy, {
+    cardInstanceId: first.cardInstanceId,
+    actorAvatarId: first.actorAvatarId,
+    targets: first.targets ?? [],
+  });
+  assert.notEqual(preview?.ok, false, preview?.reason ?? `AUTO proposed an illegal play of ${first.cardInstanceId}`);
 }
 
 function isEnemy(state) {
@@ -81,25 +62,35 @@ function drive(api, seed) {
   const input = buildMatch({ seed });
   input.seed = seed;
   input.shuffleDecks = true;
-  let state = setAuto(api, asState(api.createMatch(input)), true);
+  let state = asState(api.createMatch(input));
   const log = [];
-  for (let guard = 0; guard < 240; guard += 1) {
+  for (let guard = 0; guard < 4000; guard += 1) {
     if (readOutcome(api, state).result !== 'ongoing') break;
+    if (state.phase === 'end_of_round_discard') {
+      let moved = false;
+      for (const sideId of state.sideOrder) {
+        if (state.phase !== 'end_of_round_discard') break;
+        const beforeDiscard = stamp(api, state);
+        const result = api.runAutoTurn(state, sideId);
+        assert.notEqual(result?.ok, false, result?.reason ?? 'runAutoTurn failed during discard');
+        log.push(['discard', sideId, ...(result.log ?? []).map(stepName)]);
+        state = asState(result, state);
+        if (stamp(api, state) !== beforeDiscard) moved = true;
+      }
+      assert.equal(moved, true, 'the discard phase made no progress');
+      continue;
+    }
     const before = stamp(api, state);
     if (isEnemy(state)) {
       const result = api.playEnemyTurn(state);
       assert.notEqual(result?.ok, false, result?.reason ?? 'playEnemyTurn failed');
-      log.push(['enemy', ...listActions(result).map((action) => playArgs(action)?.cardInstanceId ?? 'end')]);
+      log.push(['enemy', ...(result.log ?? []).map(stepName)]);
       state = asState(result, state);
     } else {
-      assertNextLegal(api, state, seed);
-      const result = api.runAutoTurn(state, { seed, auto: true });
+      assertNextLegal(api, state, state.activeSideId);
+      const result = api.runAutoTurn(state, state.activeSideId);
       assert.notEqual(result?.ok, false, result?.reason ?? 'runAutoTurn failed');
-      log.push(['player', ...listActions(result).map((action) => {
-        const args = playArgs(action);
-        if (!args) return 'step';
-        return args.endTurn ? 'end' : args.cardInstanceId;
-      })]);
+      log.push(['player', ...(result.log ?? []).map(stepName)]);
       state = asState(result, state);
     }
     assert.notEqual(stamp(api, state), before, 'AUTO made no progress');
@@ -170,15 +161,16 @@ bindApi(engine, [
   {
     name: 'AUTO-04 Owner t261u toggle-off returns control mid-turn',
     fn(api) {
-      let state = setAuto(api, asState(api.createMatch(buildMatch({ seed: 7 }))), true);
+      let state = asState(api.createMatch(buildMatch({ seed: 7 })));
       assert.equal(state.activeSideId, 'player');
       state = playCard(api, state, 'player', 'ACT_GEN_ATK0', 'AVT_PHA_002').state;
       assert.equal(readOutcome(api, state).result, 'ongoing');
       assert.equal(state.activeSideId, 'player');
-      state = setAuto(api, state, false);
       const before = stamp(api, state);
-      const result = api.runAutoTurn(state, { seed: 7, auto: false });
+      const result = api.runAutoTurn(state, 'player', { shouldStop: () => true });
       state = asState(result, state);
+      assert.equal(result.stopped, true);
+      assert.equal(result.ended, false);
       assert.equal(stamp(api, state), before, 'AUTO kept playing after the toggle turned off');
       assert.equal(state.activeSideId, 'player');
       const ended = api.endTurn(state);

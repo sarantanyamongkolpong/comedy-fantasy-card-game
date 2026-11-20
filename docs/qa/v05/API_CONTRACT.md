@@ -14,9 +14,11 @@ Owner t261u (20 Nov 2026, 17:07 ICT) dropped SYNC. `vrSync` is `REJECTED` with `
 
 AUTO battle is required. The mode flag is `LOCKED`. The choice policy stays `PROPOSED`.
 
-- `chooseAutoActions(state, { seed })` returns the next legal plays (`playAction` arguments, or `{ endTurn: true }`) and does not change the match. An array, or `{ actions }`, is accepted.
-- `runAutoTurn(state, { seed, auto })` plays the active player turn while AUTO is on. It stops without playing when AUTO is off. `state.auto.enabled === false` and `options.auto === false` both mean off. `setAuto(state, enabled)` may apply the flag. The return uses `played` (same shape as `chooseAutoActions`) and `ok`. A yielded turn sets `yielded: true` or returns no plays.
-- `playEnemyTurn(state)` plays the AI side. It may be the existing `runEnemyTurn` under this name.
+- `chooseAutoActions(state, sideId)` returns the ordered legal plays for that side and does not change the match. `sideId` is `'player'` or `'enemy'` (or `{ sideId }`). An options object is not a side.
+- `runAutoTurn(state, sideId, opts)` plays that side's turn and updates the match in place. The return includes `state`, `log`, `ok`, `stopped`, and `ended`. `opts.shouldStop` or `opts.maxActions` stops between actions without ending the turn.
+- `playEnemyTurn(state, opts)` is `runAutoTurn` for the non-human side.
+
+The web session presents that match as a view (`activeSideId`, `units`, `zones`, `engine`). `playAction` and `getOutcome` take the view. `getOutcome` still returns the engine object: `status`, `winnerSideId`, `loserSideId`, and one `rewards` object with `timesEmitted: 1`. The booth may pass a string seed; `engine-session.js` hashes it with `hashSeed` before `src/gacha` `pull`, which still rejects a raw string. Save reload of the web profile comes back as `{ webBundle, profile }`. `profile.team` and `profile.deck` are the round trip.
 
 The web battle screen exposes the toggle (`data-testid="auto-toggle"`, `setAuto`, or `autoBattle`). The save profile keeps `preferences.autoBattle` through `serialize` / `deserialize`. `setAutoBattle(profile, enabled)` or `createProfile({ preferences: { autoBattle } })` must preserve it.
 
