@@ -12,9 +12,16 @@ test('v0.5 acceptance workflow keeps the four quality gates and runs Node 20 and
   assert.match(gates, /node-version: '22'/);
   assert.match(gates, /node tools\/ci\/validate-data\.mjs/);
   assert.match(acceptance, /integration\/v05-core-base/);
+  assert.match(acceptance, /integration\/v05-final/);
   assert.match(acceptance, /core\/v05-\*/);
+  assert.match(acceptance, /final\/\*/);
   assert.match(acceptance, /node: \['20', '22'\]/);
   assert.match(acceptance, /npm run test:acceptance/);
+  assert.equal(/npm run test:acceptance\s*\|/.test(acceptance), false);
+  const statusTool = readFileSync(new URL('../../tools/ci/acceptance-status.mjs', import.meta.url), 'utf8');
+  assert.match(statusTool, /spawnSync\(process\.execPath/);
+  assert.match(statusTool, /if \(status === 'FAIL' \|\| run\.status !== 0\) process\.exit\(1\)/);
+  assert.equal(/\|\s*tee|\|\s*cat/.test(statusTool), false);
   assert.equal(acceptance.includes('hunter-life'), false);
   const uses = [...acceptance.matchAll(/^\s*uses:\s*(\S+)/gm)].map((match) => match[1]);
   assert.deepEqual([...new Set(uses)].sort(), ['actions/checkout@v4', 'actions/setup-node@v4']);

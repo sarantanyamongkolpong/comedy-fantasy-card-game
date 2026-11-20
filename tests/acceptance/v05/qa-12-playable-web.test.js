@@ -16,7 +16,7 @@ const engineLanded = existsSync(repoPath('src', 'engine', 'index.js'))
 function walk(dir, out = []) {
   if (!existsSync(dir)) return out;
   for (const name of readdirSync(dir)) {
-    if (name === 'node_modules') continue;
+    if (name === 'node_modules' || name === 'dist') continue;
     const full = join(dir, name);
     if (statSync(full).isDirectory()) walk(full, out);
     else out.push(full);
@@ -118,31 +118,39 @@ if (!webLanded || !engineLanded) {
     assert.equal(api.productionReady, false);
     assert.equal(typeof api.playEnemyTurn, 'function', 'the web adapter must expose playEnemyTurn from the engine');
 
-    let won = asState(api.createMatch(buildMatch({ damageSide: 'player', enemyHp: 1 })));
+    const created = api.createMatch(buildMatch({ damageSide: 'player', enemyHp: 1 }));
+    assert.ok(
+      created?.sides || created?.state?.sides,
+      'web createMatch must return the engine match (sides) or { state }. A view with only engine/units/phase hides the match; unwrapping view.engine belongs to the web adapter.',
+    );
+    let won = asState(created);
     won = playCard(api, won, 'player', 'ACT_DMG_ALL', 'AVT_PHA_002').state;
     const win = readOutcome(api, won);
     assert.equal(win.result, 'win');
     assert.equal(win.winningSideId, 'player');
+    assert.equal(win.verdict?.player, 'victory');
     assert.equal(win.losingSideId, 'enemy');
     assert.equal(win.rewards.length, 1);
+    assert.equal(win.rewards[0].timesEmitted, 1);
+    assert.equal(win.rewards[0].payloadStatus, 'PENDING_OWNER');
+    assert.equal(win.rewards[0].payload.G, null);
+    assert.equal(win.rewards[0].payload.loot, null);
+    assert.equal(win.rewards[0].payload.items, null);
     assert.deepEqual(duplicateRewardIds(win.rewards), []);
-    assert.deepEqual(readOutcome(api, won), win);
+    assert.equal(readOutcome(api, won).rewards[0].timesEmitted, 1);
 
     let lost = asState(api.createMatch(buildMatch({ damageSide: 'enemy', playerHp: 1 })));
     assert.equal(lost.activeSideId, 'enemy');
-    const card = api.getZones(lost, 'enemy').hand.find((entry) => entry.cardId === 'ACT_DMG_ALL');
-    assert.ok(card, 'enemy opening hand is missing ACT_DMG_ALL');
-    lost = asState(api.playAction(lost, {
-      cardInstanceId: card.instanceId,
-      actorAvatarId: lost.sides.enemy.avatars[0].avatarId,
-      targets: [],
-    }), lost);
+    lost = playCard(api, lost, 'enemy', 'ACT_DMG_ALL', lost.sides.enemy.avatars[0].avatarId).state;
     const lose = readOutcome(api, lost);
     assert.equal(lose.result, 'lose');
     assert.equal(lose.winningSideId, 'enemy');
+    assert.equal(lose.verdict?.player, 'defeat');
     assert.equal(lose.losingSideId, 'player');
     assert.equal(lose.rewards.length, 1);
-    assert.deepEqual(readOutcome(api, lost).rewards, lose.rewards);
+    assert.equal(lose.rewards[0].timesEmitted, 1);
+    assert.equal(lose.rewards[0].payload.G, null);
+    assert.equal(lose.rewards[0].payload.loot, null);
   });
 
   test('QA-10 GA-11 web gacha banners must satisfy src/gacha', async () => {
@@ -157,15 +165,26 @@ if (!webLanded || !engineLanded) {
         assert.fail(`${banner.bannerId} was rejected by src/gacha: ${error.message}`);
       }
       const pulled = api.pull(state, { seed: 20261120, count: 1 });
-      assert.equal(pulled.pulls.length, 1);
+      const rows = pulled.pulls ?? pulled.results;
+      assert.ok(Array.isArray(rows), 'pull returns pulls from src/gacha or results from the web adapter');
+      assert.equal(rows.length, 1);
     }
   });
 
-  test('QA-10 GA-11 web pull seed must be an integer', () => {
-    const source = readFileSync(join(webRoot, 'js', 'screens', 'gacha.js'), 'utf8');
-    const seedLine = source.split('\n').find((line) => line.includes('seed:'));
-    assert.ok(seedLine, 'performPull must pass seed');
-    assert.equal(seedLine.includes('`'), false, `pull() requires an integer seed; web passes ${seedLine.trim()}`);
+  test('QA-10 GA-11 web pull seed must be an integer', async () => {
+    const session = readFileSync(join(webRoot, 'js', 'engine-session.js'), 'utf8');
+    assert.match(session, /seed:\s*hashSeed\(options\.seed\)/);
+    const gacha = await import(pathToFileURL(repoPath('src', 'gacha', 'index.js')).href);
+    const api = await gameApi.loadGameApi();
+    const banner = api.catalog.banners[0];
+    const screenSeed = `gacha:${banner.bannerId}:1:1`;
+    assert.equal(Number.isInteger(screenSeed), false);
+    assert.throws(() => gacha.pull(gacha.createBannerState(banner), { seed: screenSeed, count: 1 }));
+    const throughAdapter = api.pull(api.createBannerState(banner), { seed: screenSeed, count: 1 });
+    const rows = throughAdapter.pulls ?? throughAdapter.results;
+    assert.equal(rows.length, 1);
+    const integerPull = api.pull(api.createBannerState(banner), { seed: 20261120, count: 1 });
+    assert.equal((integerPull.pulls ?? integerPull.results).length, 1);
   });
 
   test('QA-10 save load reload restores the player profile', async () => {
@@ -176,10 +195,12 @@ if (!webLanded || !engineLanded) {
     const raw = api.serialize(profile);
     const text = typeof raw === 'string' ? raw : JSON.stringify(raw);
     const loaded = api.deserialize(text);
-    assert.deepEqual(loaded.team, profile.team);
-    assert.deepEqual(loaded.deck, profile.deck);
+    const restored = loaded.webBundle ? loaded.profile : loaded;
+    assert.deepEqual(restored.team, profile.team);
+    assert.deepEqual(restored.deck, profile.deck);
     const again = api.deserialize(api.serialize(loaded));
-    assert.deepEqual(again.team, profile.team);
-    assert.deepEqual(again.deck, profile.deck);
+    const restoredAgain = again.webBundle ? again.profile : again;
+    assert.deepEqual(restoredAgain.team, profile.team);
+    assert.deepEqual(restoredAgain.deck, profile.deck);
   });
 }

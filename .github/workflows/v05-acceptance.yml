@@ -1,7 +1,8 @@
 # v0.5 acceptance suite. Does not replace the four quality gates in
 # quality-gates.yml. Those jobs still run on every pull request.
-# This job runs on Node.js 20 and Node.js 22 for core/v05-* pushes and for
-# pull requests into integration/v05-core-base.
+# This job runs on Node.js 20 and Node.js 22. The run step is not piped, so a
+# failing acceptance suite fails the job. npm run test:acceptance exits 1 when
+# the suite status is FAIL.
 
 name: v0.5 acceptance
 
@@ -9,10 +10,13 @@ on:
   pull_request:
     branches:
       - integration/v05-core-base
+      - integration/v05-final
+      - core/v05-playable
   push:
     branches:
       - core/v05-*
-      - integration/v05-core-base
+      - integration/v05-*
+      - final/*
 
 permissions:
   contents: read

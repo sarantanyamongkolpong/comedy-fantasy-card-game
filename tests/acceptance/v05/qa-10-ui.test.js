@@ -9,7 +9,7 @@ const webLanded = existsSync(WEB_ROOT);
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
-    if (name === 'node_modules') continue;
+    if (name === 'node_modules' || name === 'dist') continue;
     const full = join(dir, name);
     const info = statSync(full);
     if (info.isDirectory()) walk(full, out);
