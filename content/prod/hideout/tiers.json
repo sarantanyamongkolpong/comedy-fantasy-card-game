@@ -1,0 +1,78 @@
+{
+  "status": "GENERATED_REVIEW",
+  "namesFrom": "content/v05/hideout/house-tiers.json",
+  "note": "Tier names and HOME-01 through HOME-06 stay as written in v0.5. This file binds exterior and interior art only. A tier does not add stash slots and does not install its reference furniture.",
+  "stage": {
+    "width": 1672,
+    "height": 941,
+    "rule": "Phase 2 housing fixed canvas"
+  },
+  "tiers": [
+    {
+      "tier": 1,
+      "id": "cabin",
+      "name": "Cabin",
+      "rule": "HOME-01",
+      "exteriorAssetId": "HOU_TIER_CABIN",
+      "interiorAssetId": "BG_HIDEOUT_CABIN",
+      "referenceFurnitureId": null,
+      "theme": "Base home",
+      "artStatus": "GENERATED_REVIEW"
+    },
+    {
+      "tier": 2,
+      "id": "bungalow",
+      "name": "Bungalow",
+      "rule": "HOME-02",
+      "exteriorAssetId": "HOU_TIER_BUNGALOW",
+      "interiorAssetId": "BG_HIDEOUT_BUNGALOW",
+      "referenceFurnitureId": "FUR_REF_BUNGALOW_BOX",
+      "theme": "Rustic to simple",
+      "artStatus": "GENERATED_REVIEW"
+    },
+    {
+      "tier": 3,
+      "id": "cottage",
+      "name": "Cottage",
+      "rule": "HOME-03",
+      "exteriorAssetId": "HOU_TIER_COTTAGE",
+      "interiorAssetId": "BG_HIDEOUT_COTTAGE",
+      "referenceFurnitureId": "FUR_REF_COTTAGE_BOX",
+      "theme": "Cozy",
+      "artStatus": "GENERATED_REVIEW"
+    },
+    {
+      "tier": 4,
+      "id": "loft",
+      "name": "Loft",
+      "rule": "HOME-04",
+      "exteriorAssetId": "HOU_TIER_LOFT",
+      "interiorAssetId": "BG_HIDEOUT_LOFT",
+      "referenceFurnitureId": "FUR_REF_LOFT_TALL_CABINET",
+      "theme": "Modern",
+      "artStatus": "GENERATED_REVIEW"
+    },
+    {
+      "tier": 5,
+      "id": "villa",
+      "name": "Villa",
+      "rule": "HOME-05",
+      "exteriorAssetId": "HOU_TIER_VILLA",
+      "interiorAssetId": "BG_HIDEOUT_VILLA",
+      "referenceFurnitureId": "FUR_REF_VILLA_DISPLAY_COUNTER",
+      "theme": "Luxury",
+      "artStatus": "GENERATED_REVIEW"
+    },
+    {
+      "tier": 6,
+      "id": "penthouse",
+      "name": "Penthouse",
+      "rule": "HOME-06",
+      "exteriorAssetId": "HOU_TIER_PENTHOUSE",
+      "interiorAssetId": "BG_HIDEOUT_PENTHOUSE",
+      "referenceFurnitureId": "FUR_REF_PENTHOUSE_LARGE_TALL_CABINET",
+      "theme": "Ultra luxury",
+      "artStatus": "GENERATED_REVIEW"
+    }
+  ]
+}

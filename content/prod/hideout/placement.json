@@ -1,0 +1,335 @@
+{
+  "status": "GENERATED_REVIEW",
+  "stage": {
+    "width": 1672,
+    "height": 941
+  },
+  "grid": {
+    "cell": 40,
+    "origin": "top-left",
+    "note": "Footprint cols and rows are ceil(pixels / cell). Anchors are predefined blocks (HOME-10). There is no freehand editor."
+  },
+  "layerOrder": [
+    "interior",
+    "floor-decor",
+    "wall",
+    "floor-furniture",
+    "storage",
+    "interactive"
+  ],
+  "replacementRules": [
+    "An anchor holds at most one object.",
+    "Replacement is allowed only when the object category is in the anchor accepts list and the object footprint fits inside the anchor footprint.",
+    "Replacement changes the asset id at that anchor. It does not change visual capacity, price, or stash slots.",
+    "Clearing an anchor leaves it empty. The house tier stays as it was.",
+    "The same manifest asset id cannot occupy two anchors.",
+    "Floor decorations may overlap floor anchors because they are a lower layer. Anchors on the same layer must not overlap.",
+    "Swapping a tier replaces the exterior and interior art ids. Tier ids stay cabin, bungalow, cottage, loft, villa, penthouse.",
+    "Art files are replaced by changing the manifest path. Ids stay stable.",
+    "Preview layouts are not installed and grant nothing."
+  ],
+  "anchors": [
+    {
+      "id": "floor.west",
+      "layer": "floor-furniture",
+      "x": 48,
+      "y": 600,
+      "w": 360,
+      "h": 300,
+      "accepts": [
+        "furniture"
+      ],
+      "footprint": {
+        "cols": 9,
+        "rows": 8
+      }
+    },
+    {
+      "id": "floor.center",
+      "layer": "floor-furniture",
+      "x": 448,
+      "y": 600,
+      "w": 360,
+      "h": 300,
+      "accepts": [
+        "furniture"
+      ],
+      "footprint": {
+        "cols": 9,
+        "rows": 8
+      }
+    },
+    {
+      "id": "interactive.work",
+      "layer": "interactive",
+      "x": 848,
+      "y": 600,
+      "w": 360,
+      "h": 300,
+      "accepts": [
+        "interactive"
+      ],
+      "footprint": {
+        "cols": 9,
+        "rows": 8
+      }
+    },
+    {
+      "id": "floor.east",
+      "layer": "storage",
+      "x": 1248,
+      "y": 600,
+      "w": 360,
+      "h": 300,
+      "accepts": [
+        "storage"
+      ],
+      "footprint": {
+        "cols": 9,
+        "rows": 8
+      }
+    },
+    {
+      "id": "wall.west",
+      "layer": "wall",
+      "x": 48,
+      "y": 160,
+      "w": 280,
+      "h": 360,
+      "accepts": [
+        "furniture"
+      ],
+      "footprint": {
+        "cols": 7,
+        "rows": 9
+      }
+    },
+    {
+      "id": "wall.mid",
+      "layer": "wall",
+      "x": 696,
+      "y": 140,
+      "w": 280,
+      "h": 360,
+      "accepts": [
+        "furniture"
+      ],
+      "footprint": {
+        "cols": 7,
+        "rows": 9
+      }
+    },
+    {
+      "id": "wall.east",
+      "layer": "wall",
+      "x": 1344,
+      "y": 160,
+      "w": 280,
+      "h": 360,
+      "accepts": [
+        "furniture"
+      ],
+      "footprint": {
+        "cols": 7,
+        "rows": 9
+      }
+    },
+    {
+      "id": "decor.rug",
+      "layer": "floor-decor",
+      "x": 448,
+      "y": 760,
+      "w": 360,
+      "h": 140,
+      "accepts": [
+        "decoration"
+      ],
+      "footprint": {
+        "cols": 9,
+        "rows": 4
+      }
+    },
+    {
+      "id": "decor.banner",
+      "layer": "wall",
+      "x": 360,
+      "y": 150,
+      "w": 160,
+      "h": 300,
+      "accepts": [
+        "decoration"
+      ],
+      "footprint": {
+        "cols": 4,
+        "rows": 8
+      }
+    },
+    {
+      "id": "decor.lantern",
+      "layer": "wall",
+      "x": 1080,
+      "y": 150,
+      "w": 140,
+      "h": 220,
+      "accepts": [
+        "decoration"
+      ],
+      "footprint": {
+        "cols": 4,
+        "rows": 6
+      }
+    },
+    {
+      "id": "decor.planter",
+      "layer": "wall",
+      "x": 1080,
+      "y": 400,
+      "w": 180,
+      "h": 180,
+      "accepts": [
+        "decoration"
+      ],
+      "footprint": {
+        "cols": 5,
+        "rows": 5
+      }
+    },
+    {
+      "id": "interactive.orb",
+      "layer": "interactive",
+      "x": 520,
+      "y": 470,
+      "w": 150,
+      "h": 110,
+      "accepts": [
+        "interactive"
+      ],
+      "footprint": {
+        "cols": 4,
+        "rows": 3
+      }
+    }
+  ],
+  "previewLayouts": {
+    "cabin": {
+      "previewOnly": true,
+      "installed": false,
+      "grantsCapacity": false,
+      "note": "Sample arrangement for review. It is not installed and it does not add stash slots. Acquiring the tier does not place the reference piece.",
+      "anchors": {
+        "floor.west": "PROP_HIDEOUT_BED",
+        "floor.center": "PROP_HIDEOUT_SOFA",
+        "interactive.work": "PROP_HIDEOUT_WORKBENCH",
+        "wall.west": "PROP_HIDEOUT_BOOKCASE",
+        "wall.mid": "PROP_HIDEOUT_SHELF",
+        "wall.east": "PROP_HIDEOUT_WARDROBE",
+        "decor.rug": "DEC_HIDEOUT_STAR_RUG",
+        "decor.banner": "DEC_HIDEOUT_STAR_BANNER",
+        "decor.lantern": "DEC_HIDEOUT_WALL_LANTERN",
+        "decor.planter": "DEC_HIDEOUT_PLANTER",
+        "interactive.orb": "INT_HIDEOUT_CRYSTAL_ORB",
+        "floor.east": "PROP_HIDEOUT_CHEST"
+      }
+    },
+    "bungalow": {
+      "previewOnly": true,
+      "installed": false,
+      "grantsCapacity": false,
+      "note": "Sample arrangement for review. It is not installed and it does not add stash slots. Acquiring the tier does not place the reference piece.",
+      "anchors": {
+        "floor.west": "PROP_HIDEOUT_BED",
+        "floor.center": "PROP_HIDEOUT_SOFA",
+        "interactive.work": "PROP_HIDEOUT_WORKBENCH",
+        "wall.west": "PROP_HIDEOUT_BOOKCASE",
+        "wall.mid": "PROP_HIDEOUT_SHELF",
+        "wall.east": "PROP_HIDEOUT_WARDROBE",
+        "decor.rug": "DEC_HIDEOUT_STAR_RUG",
+        "decor.banner": "DEC_HIDEOUT_STAR_BANNER",
+        "decor.lantern": "DEC_HIDEOUT_WALL_LANTERN",
+        "decor.planter": "DEC_HIDEOUT_PLANTER",
+        "interactive.orb": "INT_HIDEOUT_CRYSTAL_ORB",
+        "floor.east": "FUR_REF_BUNGALOW_BOX"
+      }
+    },
+    "cottage": {
+      "previewOnly": true,
+      "installed": false,
+      "grantsCapacity": false,
+      "note": "Sample arrangement for review. It is not installed and it does not add stash slots. Acquiring the tier does not place the reference piece.",
+      "anchors": {
+        "floor.west": "PROP_HIDEOUT_BED",
+        "floor.center": "PROP_HIDEOUT_SOFA",
+        "interactive.work": "PROP_HIDEOUT_WORKBENCH",
+        "wall.west": "PROP_HIDEOUT_BOOKCASE",
+        "wall.mid": "PROP_HIDEOUT_SHELF",
+        "wall.east": "PROP_HIDEOUT_WARDROBE",
+        "decor.rug": "DEC_HIDEOUT_STAR_RUG",
+        "decor.banner": "DEC_HIDEOUT_STAR_BANNER",
+        "decor.lantern": "DEC_HIDEOUT_WALL_LANTERN",
+        "decor.planter": "DEC_HIDEOUT_PLANTER",
+        "interactive.orb": "INT_HIDEOUT_CRYSTAL_ORB",
+        "floor.east": "FUR_REF_COTTAGE_BOX"
+      }
+    },
+    "loft": {
+      "previewOnly": true,
+      "installed": false,
+      "grantsCapacity": false,
+      "note": "Sample arrangement for review. It is not installed and it does not add stash slots. Acquiring the tier does not place the reference piece.",
+      "anchors": {
+        "floor.west": "PROP_HIDEOUT_BED",
+        "floor.center": "PROP_HIDEOUT_SOFA",
+        "interactive.work": "PROP_HIDEOUT_WORKBENCH",
+        "wall.west": "PROP_HIDEOUT_BOOKCASE",
+        "wall.mid": "PROP_HIDEOUT_SHELF",
+        "wall.east": "PROP_HIDEOUT_WARDROBE",
+        "decor.rug": "DEC_HIDEOUT_STAR_RUG",
+        "decor.banner": "DEC_HIDEOUT_STAR_BANNER",
+        "decor.lantern": "DEC_HIDEOUT_WALL_LANTERN",
+        "decor.planter": "DEC_HIDEOUT_PLANTER",
+        "interactive.orb": "INT_HIDEOUT_CRYSTAL_ORB",
+        "floor.east": "FUR_REF_LOFT_TALL_CABINET"
+      }
+    },
+    "villa": {
+      "previewOnly": true,
+      "installed": false,
+      "grantsCapacity": false,
+      "note": "Sample arrangement for review. It is not installed and it does not add stash slots. Acquiring the tier does not place the reference piece.",
+      "anchors": {
+        "floor.west": "PROP_HIDEOUT_BED",
+        "floor.center": "PROP_HIDEOUT_SOFA",
+        "interactive.work": "PROP_HIDEOUT_WORKBENCH",
+        "wall.west": "PROP_HIDEOUT_BOOKCASE",
+        "wall.mid": "PROP_HIDEOUT_SHELF",
+        "wall.east": "PROP_HIDEOUT_WARDROBE",
+        "decor.rug": "DEC_HIDEOUT_STAR_RUG",
+        "decor.banner": "DEC_HIDEOUT_STAR_BANNER",
+        "decor.lantern": "DEC_HIDEOUT_WALL_LANTERN",
+        "decor.planter": "DEC_HIDEOUT_PLANTER",
+        "interactive.orb": "INT_HIDEOUT_CRYSTAL_ORB",
+        "floor.east": "FUR_REF_VILLA_DISPLAY_COUNTER"
+      }
+    },
+    "penthouse": {
+      "previewOnly": true,
+      "installed": false,
+      "grantsCapacity": false,
+      "note": "Sample arrangement for review. It is not installed and it does not add stash slots. Acquiring the tier does not place the reference piece.",
+      "anchors": {
+        "floor.west": "PROP_HIDEOUT_BED",
+        "floor.center": "PROP_HIDEOUT_SOFA",
+        "interactive.work": "PROP_HIDEOUT_WORKBENCH",
+        "wall.west": "PROP_HIDEOUT_BOOKCASE",
+        "wall.mid": "PROP_HIDEOUT_SHELF",
+        "wall.east": "PROP_HIDEOUT_WARDROBE",
+        "decor.rug": "DEC_HIDEOUT_STAR_RUG",
+        "decor.banner": "DEC_HIDEOUT_STAR_BANNER",
+        "decor.lantern": "DEC_HIDEOUT_WALL_LANTERN",
+        "decor.planter": "DEC_HIDEOUT_PLANTER",
+        "interactive.orb": "INT_HIDEOUT_CRYSTAL_ORB",
+        "floor.east": "FUR_REF_PENTHOUSE_LARGE_TALL_CABINET"
+      }
+    }
+  }
+}

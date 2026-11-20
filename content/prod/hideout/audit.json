@@ -1,0 +1,125 @@
+{
+  "status": "GENERATED_REVIEW",
+  "base": "7cbf071a15d2da747ba5f9c100696a805860271e",
+  "branch": "prod/b-hideout",
+  "reviewed": [
+    "content/v05/hideout/house-tiers.json",
+    "content/v05/hideout/phase3-furniture-art.json",
+    "docs/design/v05/tabs/v05_Hideout_Map.md",
+    "docs/final_v05/PLAN.md",
+    "docs/final_v05/QA_REPORT.md",
+    "web/assets/houses/HOU_TIER_*.svg",
+    "web/assets/buildings/MAP_BLD_HIDEOUT.svg",
+    "web/assets/generated/buildings/MAP_BLD_HIDEOUT.webp",
+    "web/assets/generated/dream_v02 house, interior, and furniture WebP",
+    "art_source/dream_v03/furniture",
+    "PR #22 art/dream-v02-drop",
+    "PR #23 art/dream-v03-drop"
+  ],
+  "decisions": [
+    {
+      "assetIds": [
+        "HOU_TIER_CABIN",
+        "HOU_TIER_BUNGALOW",
+        "HOU_TIER_COTTAGE",
+        "HOU_TIER_LOFT",
+        "HOU_TIER_VILLA",
+        "HOU_TIER_PENTHOUSE"
+      ],
+      "action": "reuse",
+      "source": "PR #22 art_source/dream_v02/housing/house_*.png copied into art-src/hideout/exteriors. Shipped WebP is the existing derivative.",
+      "defects": [
+        "web/assets/houses/HOU_TIER_*.svg bake the tier name and the word PLACEHOLDER. Those files are outside this ownership and were not edited. The hideout manifest does not use them.",
+        "Phase 2 cutouts carry a few alpha-1 red fringe pixels (Phase 2 QA P3). The paintings are distinct and have no gameplay text, so they were not redrawn."
+      ]
+    },
+    {
+      "assetIds": [
+        "BG_HIDEOUT_CABIN"
+      ],
+      "action": "reuse",
+      "source": "PR #22 interior_cabin.png. Shipped file remains the existing 1024x576 WebP. The PNG original is 1672x941.",
+      "defects": [
+        "The cabin interior bakes shelves, books, and a work surface into the room plate, so modular props can overlap those props. It was kept because it is the only finished cabin interior and the current home background."
+      ]
+    },
+    {
+      "assetIds": [
+        "BG_HIDEOUT_BUNGALOW",
+        "BG_HIDEOUT_COTTAGE",
+        "BG_HIDEOUT_LOFT",
+        "BG_HIDEOUT_VILLA",
+        "BG_HIDEOUT_PENTHOUSE"
+      ],
+      "action": "generate",
+      "source": "Original layered room plates. Phase 2 housing manifest says no other interiors were generated. Rasterized to WebP. Originals are PNG under art-src/hideout/interiors.",
+      "defectsNotedBeforeShip": [
+        "A first loft plate still contained a desk and bookshelf. It was discarded and replaced by an empty loft.",
+        "Villa and penthouse plates include built-in architecture (columns, sconces, a sideboard). Those are part of the room shell, not placeable objects. The foreground floor is open."
+      ]
+    },
+    {
+      "assetIds": [
+        "FUR_REF_BUNGALOW_BOX",
+        "FUR_REF_COTTAGE_BOX"
+      ],
+      "action": "reuse-separate-files",
+      "defects": [
+        "Both ids previously pointed at one WebP path, so replacing one replaced the other. Each id now has its own file. The pixels stay the same because both locked rows are the Box reference at visual capacity 50."
+      ]
+    },
+    {
+      "assetIds": [
+        "FUR_REF_LOFT_TALL_CABINET"
+      ],
+      "action": "reuse",
+      "note": "Tall cabinet painting kept for the loft id only."
+    },
+    {
+      "assetIds": [
+        "FUR_REF_PENTHOUSE_LARGE_TALL_CABINET"
+      ],
+      "action": "replace",
+      "defects": [
+        "The penthouse Large Tall Cabinet previously used the same bitmap as the loft Tall Cabinet, despite a different id, name, and visual capacity (150 versus 100)."
+      ],
+      "replacement": "A new tall cabinet painting with a duck keyhole and an extra row of small drawers. A wide swan sideboard was generated and rejected because it is not tall and it drops the duck motif."
+    },
+    {
+      "assetIds": [
+        "PROP_HIDEOUT_BED",
+        "PROP_HIDEOUT_SOFA",
+        "PROP_HIDEOUT_BOOKCASE",
+        "PROP_HIDEOUT_SHELF",
+        "PROP_HIDEOUT_WARDROBE",
+        "PROP_HIDEOUT_WORKBENCH",
+        "PROP_HIDEOUT_CHEST"
+      ],
+      "action": "reuse",
+      "source": "PR #23 furniture PNG originals and existing WebP derivatives. Content ids furniture_* are unchanged.",
+      "defects": [
+        "No defect that required a redraw. Cutouts are transparent and have no gameplay text."
+      ]
+    },
+    {
+      "assetIds": [
+        "MAP_BLD_HIDEOUT"
+      ],
+      "action": "out-of-scope",
+      "note": "Map pin for Home. It is not one of the six house tiers. web/assets/buildings is outside this ownership and was not edited."
+    }
+  ],
+  "gaps": [
+    "Art status is GENERATED_REVIEW. It is not owner-approved.",
+    "HOME-11 cabin base capacity is still unset.",
+    "Grant versus unlock-to-buy is still unset. Placing a picture does not install furniture.",
+    "No prices are defined.",
+    "The preview is a standalone page under tests/prod/b/preview. web/index.html, app.js, and assets-manifest.json were not changed.",
+    "web/manifests/hideout.json lists entries rather than assets. The current asset gate treats a non-test assets array as a second live catalog and would reject these stable ids and GENERATED_REVIEW.",
+    "INT_HIDEOUT_CRYSTAL_ORB is a visual tap target with no gameplay effect.",
+    "Villa and penthouse interiors still contain built-in scenery.",
+    "The cabin interior still contains baked props.",
+    "The lantern chain is cut by the top of its frame."
+  ],
+  "artProcess": "Reused rasters were copied. New room plates and cutouts were generated as original images, keyed off a flat background where a cutout was required, and encoded to WebP. No raster generator was used for the placement rules."
+}
