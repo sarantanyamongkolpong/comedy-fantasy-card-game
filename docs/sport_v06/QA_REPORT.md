@@ -143,6 +143,12 @@ Quality gates on `4f9e934` (run 44745398763) finished after that push. Data vali
 
 Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T140035Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T140035Z/`.
 
+Quality gates on `2ad9d9e` (runs 44749425321 and 44749434861) did not start. All four jobs failed in about two seconds with no runner and no steps. GitHub’s annotation says the job was not started because recent account payments have failed or the spending limit needs to be increased. That is an Actions billing block. The last executed suite remains the `4f9e934` run above.
+
+### Probe 5 — 2026-11-20T14:30:27Z
+
+Fetched each stream again. Tips are still `1483a45`, `8f50352`, `17ca51b`, and `18f1bc2`. None match feature-complete. The throwaway merge was clean and was not pushed. Harness on Node v22.23.4 again: 16 pass, 5 fail, 1 skip, 22 tests, 0 hangs. Same five failures, no new severity. Counts: `tools/sport-qa/baselines/harness-20261120T143027Z.json`. Hub screenshots: `tests/e2e/sport/screenshots/20261120T143027Z/`.
+
 ## Findings
 
 ### P0
