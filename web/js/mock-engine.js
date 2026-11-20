@@ -909,7 +909,8 @@ function materializePull(banner, rarity, forced, rng, catalog) {
   };
 }
 
-export function serialize(profile) {
+export function serialize(input) {
+  const profile = input?.profile?.avatars ? input.profile : input;
   return JSON.stringify({
     saveVersion: 1,
     source: 'mock-save',

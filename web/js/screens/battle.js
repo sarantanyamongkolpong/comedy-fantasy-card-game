@@ -1,37 +1,33 @@
+import { speedChoices } from '../auto-play.js';
 import { bindImage, findAsset, firstAsset } from '../assets.js';
+import { battleBands, battleSlots } from '../battle-layout.js';
 import { beginCard, cancelPlay, chooseActor, chooseTarget } from '../battle-flow.js';
 import { button, el, modal } from '../dom.js';
 import { actionModel, renderCard } from '../render-card.js';
 import { factionName } from '../sample-catalog.js';
 
-const STATUS_SUBJECT = {
-  shield: 'shield',
-  taunt: 'taunt',
-  regen: 'regen',
-  atkBuff: 'atk',
-  defBuff: 'def',
-  nextStrike: 'atk',
-};
+function place(node, box) {
+  node.style.left = `${box.x}px`;
+  node.style.top = `${box.y}px`;
+  node.style.width = `${box.w}px`;
+  node.style.height = `${box.h}px`;
+}
 
 export function renderBattle(ctx) {
   const match = ctx.match;
   const ui = ctx.battleUi;
+  const bands = battleBands();
   const root = el('section', 'battle');
-  const top = el('header', 'battle-top');
-  const modeLabel = match.mode === 'arena' ? 'Tournament Arena (practice echo)' : 'Mysterious Tower (practice echo)';
-  top.append(el('div', 'title-block', null));
-  top.firstChild.append(el('h1', 'title', modeLabel));
-  top.firstChild.append(el('p', 'badge', 'HP & damage PROVISIONAL · End Turn is always manual'));
-  top.append(button('Flee to map', () => ctx.goto('map'), 'hit slim'));
-  root.append(top);
-
-  root.append(unitRow(ctx, 'enemy', 'Echoes'));
-  root.append(unitRow(ctx, 'player', 'Your team'));
-
-  const lower = el('div', 'battle-lower');
-  lower.append(handRow(ctx));
-  lower.append(rail(ctx));
-  root.append(lower);
+  root.dataset.screen = 'battle';
+  root.append(topBar(ctx, bands.top));
+  root.append(arena(ctx, bands));
+  root.append(pileStack(ctx, bands.piles));
+  const hand = el('div', 'band-hand');
+  hand.dataset.band = 'hand';
+  place(hand, bands.hand);
+  hand.append(handRow(ctx));
+  root.append(hand);
+  root.append(controls(ctx, bands.controls));
 
   if (ctx.notice) root.append(el('p', 'toast', ctx.notice));
   if (match.phase === 'mandatoryDiscard') root.append(mandatoryModal(ctx));
@@ -40,20 +36,97 @@ export function renderBattle(ctx) {
   return root;
 }
 
-function unitRow(ctx, sideId, label) {
-  const row = el('div', `unit-row side-${sideId}`);
-  row.append(el('p', 'row-label', label));
-  const units = ctx.match.units.filter((unit) => unit.sideId === sideId);
-  const strip = el('div', 'units');
-  for (const unit of units) strip.append(unitButton(ctx, unit));
-  row.append(strip);
-  return row;
+function topBar(ctx, box) {
+  const bar = el('header', 'battle-top');
+  place(bar, box);
+  const badge = button('BATTLE', () => ctx.goto('map'), 'battle-badge');
+  const plate = findAsset(ctx.manifest, { slot: 'ui-badge', subjectId: 'battle' });
+  if (plate) {
+    const img = el('img');
+    img.alt = '';
+    bindImage(img, plate);
+    badge.prepend(img);
+  }
+  bar.append(badge);
+  const turn = el('p', 'turn-chip', `TURN ${String(ctx.match.turnIndex ?? 1).padStart(2, '0')}`);
+  bar.append(turn);
+  bar.append(apMeter(ctx));
+  return bar;
 }
 
-function unitButton(ctx, unit) {
-  const ui = ctx.battleUi;
-  const node = el('button', `unit${unit.ko ? ' is-ko' : ''}`);
+function apMeter(ctx) {
+  const ap = ctx.match.ap?.player ?? 0;
+  const meter = el('div', 'ap-meter');
+  meter.append(el('b', null, `AP ${ap}/5`));
+  const pips = el('span', 'pips');
+  const icon = findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: 'ap-pip' })
+    ?? findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: 'ap' });
+  for (let i = 0; i < 5; i += 1) {
+    const pip = el('span', i < ap ? 'pip is-on' : 'pip');
+    if (icon) {
+      const img = el('img');
+      img.alt = '';
+      bindImage(img, icon);
+      pip.append(img);
+    }
+    pips.append(pip);
+  }
+  meter.append(pips);
+  return meter;
+}
+
+function arena(ctx, bands) {
+  const field = el('div', 'arena');
+  field.dataset.band = 'arena';
+  place(field, bands.arena);
+  const bg = findAsset(ctx.manifest, { slot: 'bg-battle', subjectId: 'battle' });
+  if (bg) {
+    const img = el('img', 'battle-bg');
+    img.alt = '';
+    bindImage(img, bg);
+    field.append(img);
+  }
+  const lead = el('div', 'lead-plate');
+  place(lead, {
+    x: bands.lead.x - bands.arena.x,
+    y: bands.lead.y - bands.arena.y,
+    w: bands.lead.w,
+    h: bands.lead.h,
+  });
+  const front = ctx.match.units.find((unit) => unit.sideId === 'enemy' && !unit.ko)
+    ?? ctx.match.units.find((unit) => unit.sideId === 'enemy');
+  lead.append(el('b', null, front ? front.name : 'Echoes'));
+  lead.append(el('span', null, front ? `${front.hp} / ${front.maxHp}` : ''));
+  field.append(lead);
+  const slots = battleSlots();
+  const used = { player: 0, enemy: 0 };
+  for (const unit of ctx.match.units) {
+    const index = used[unit.sideId] ?? 0;
+    used[unit.sideId] = index + 1;
+    const slot = slots.find((row) => row.side === unit.sideId && row.id === `${unit.sideId === 'player' ? 'p' : 'e'}${index}`);
+    if (!slot) continue;
+    field.append(unitToken(ctx, unit, slot, bands.arena));
+  }
+  return field;
+}
+
+function unitToken(ctx, unit, slot, arenaBox) {
+  const node = el('button', `unit${unit.ko ? ' is-ko' : ''}${unit.sideId === 'enemy' ? ' faces-left' : ' faces-right'}`);
   node.type = 'button';
+  const local = {
+    x: slot.box.x - arenaBox.x,
+    y: slot.box.y - arenaBox.y,
+    w: slot.box.w,
+    h: slot.box.h,
+  };
+  place(node, local);
+  const tile = findAsset(ctx.manifest, { slot: 'battle-tile', subjectId: unit.sideId });
+  if (tile) {
+    const pad = el('img', 'tile');
+    pad.alt = '';
+    bindImage(pad, tile);
+    node.append(pad);
+  }
   const art = firstAsset(ctx.manifest, [
     { slot: 'battle-sprite', subjectId: unit.avatarId },
     { slot: 'illustration', subjectId: unit.avatarId },
@@ -64,33 +137,19 @@ function unitButton(ctx, unit) {
     bindImage(img, art);
     node.append(img);
   }
-  node.append(el('span', 'unit-name', unit.name));
-  node.append(el('span', 'unit-meta', `${factionName(unit.factionId)} · ${unit.role}`));
-  node.append(el('span', 'unit-hp', `HP ${unit.hp}/${unit.maxHp}`));
-  node.append(el('span', 'fine', 'provisional'));
-  const icons = el('span', 'statuses');
-  if (unit.ko) icons.append(statusIcon(ctx, 'ko', 'Down'));
-  for (const status of unit.statuses) {
-    icons.append(statusIcon(ctx, STATUS_SUBJECT[status.id] ?? status.id, status.name));
-  }
-  node.append(icons);
-  const selected = ui.selection.actorAvatarId === unit.instanceId || ui.selection.targetId === unit.instanceId;
+  const floater = (unit.statuses ?? []).find((status) => status.label);
+  if (floater) node.append(el('span', 'floater', floater.label));
+  const bar = el('span', 'hp-bar');
+  const fill = el('span', 'hp-fill');
+  const ratio = unit.maxHp ? Math.max(0, Math.min(1, unit.hp / unit.maxHp)) : 0;
+  fill.style.width = `${ratio * 100}%`;
+  bar.append(fill);
+  node.append(bar);
+  node.append(el('span', 'unit-hp', `${unit.hp}/${unit.maxHp}`));
+  const selected = ctx.battleUi.selection.actorAvatarId === unit.instanceId || ctx.battleUi.selection.targetId === unit.instanceId;
   if (selected) node.classList.add('is-selected');
   node.addEventListener('click', () => onUnit(ctx, unit));
   return node;
-}
-
-function statusIcon(ctx, subjectId, label) {
-  const wrap = el('span', 'status');
-  const art = findAsset(ctx.manifest, { slot: 'status-icon', subjectId });
-  if (art) {
-    const img = el('img');
-    img.alt = label;
-    bindImage(img, art);
-    wrap.append(img);
-  }
-  wrap.append(el('b', null, label));
-  return wrap;
 }
 
 function onUnit(ctx, unit) {
@@ -134,22 +193,30 @@ function handCard(ctx, instanceId) {
 function handRow(ctx) {
   const wrap = el('div', 'hand');
   const zones = ctx.api.getZones(ctx.match, 'player');
-  for (const card of zones.hand) {
+  zones.hand.forEach((card, index) => {
     const reason = typeof ctx.api.playBlockReason === 'function'
       ? ctx.api.playBlockReason(ctx.match, card)
       : null;
     const discarding = ctx.battleUi.discardIds.includes(card.instanceId);
-    wrap.append(renderCard(ctx.manifest, actionModel(card), {
+    const face = renderCard(ctx.manifest, actionModel(card), {
       disabled: ctx.match.phase === 'playerTurn' && ctx.battleUi.voluntary && Boolean(reason && reason.startsWith('FAC')),
       reason,
       selected: ctx.battleUi.selection.cardInstanceId === card.instanceId || discarding,
       onClick: () => onCard(ctx, card, reason),
-    }));
-  }
+    });
+    face.classList.add('hand-card');
+    face.style.zIndex = String(index + 1);
+    wrap.append(face);
+  });
   return wrap;
 }
 
 function onCard(ctx, card, reason) {
+  if (ctx.autoRunning) {
+    ctx.setNotice('Auto is in the middle of an action. Switch AUTO off to take the next one.');
+    ctx.redraw();
+    return;
+  }
   if (ctx.match.phase === 'mandatoryDiscard') {
     toggleDiscard(ctx, card.instanceId);
     return;
@@ -194,29 +261,38 @@ function toggleDiscard(ctx, instanceId) {
   ctx.patchBattle({ discardIds: ids });
 }
 
-function rail(ctx) {
-  const match = ctx.match;
-  const railNode = el('aside', 'rail');
-  const ap = match.ap?.player ?? 0;
-  const meter = el('div', 'ap-meter');
-  meter.append(el('span', 'fine', 'AP'));
-  const pips = el('span', 'pips');
-  for (let i = 0; i < 5; i += 1) {
-    const pip = el('span', i < ap ? 'pip is-on' : 'pip');
-    const icon = findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: 'ap' });
+function pileStack(ctx, box) {
+  const stack = el('div', 'pile-stack');
+  stack.dataset.band = 'piles';
+  place(stack, box);
+  const zones = ctx.api.getZones(ctx.match, 'player');
+  for (const [zone, label] of [['draw', 'DECK'], ['discard', 'DISCARD'], ['void', 'VOID']]) {
+    const row = button(`${label} ${zones[zone].length}`, () => {
+      ctx.patchBattle({ pile: { sideId: 'player', zone }, confirm: null });
+    }, 'pile-btn');
+    const icon = findAsset(ctx.manifest, { slot: 'ui-icon', subjectId: zone });
     if (icon) {
       const img = el('img');
       img.alt = '';
       bindImage(img, icon);
-      pip.append(img);
+      row.prepend(img);
     }
-    pips.append(pip);
+    stack.append(row);
   }
-  meter.append(pips);
-  meter.append(el('b', null, `${ap}/5`));
-  railNode.append(meter);
+  return stack;
+}
 
-  const end = button('End Turn', () => {
+function controls(ctx, box) {
+  const match = ctx.match;
+  const panel = el('div', 'battle-controls');
+  panel.dataset.band = 'controls';
+  place(panel, box);
+  const end = button('END TURN', () => {
+    if (ctx.autoRunning) {
+      ctx.setNotice('Auto is in the middle of an action. Switch AUTO off to take the next one.');
+      ctx.redraw();
+      return;
+    }
     if (match.phase !== 'playerTurn') {
       ctx.setNotice('End Turn waits for your turn. It will not press itself.');
       ctx.redraw();
@@ -226,41 +302,56 @@ function rail(ctx) {
     ctx.api.endTurn(match);
     ctx.patchBattle({ selection: cancelled.selection, confirm: null, voluntary: false });
     settle(ctx);
-  });
-  if (match.phase !== 'playerTurn') end.disabled = false;
-  railNode.append(end);
-
-  railNode.append(button(ctx.battleUi.voluntary ? 'Cancel toss' : 'Toss a card (1 AP)', () => {
-    if (match.phase !== 'playerTurn') {
-      ctx.setNotice('You can toss a card only on your turn.');
-      ctx.redraw();
-      return;
-    }
-    ctx.patchBattle({ voluntary: !ctx.battleUi.voluntary, selection: cancelPlay(match).selection, confirm: null });
-  }, 'hit slim'));
-
-  const zones = ctx.api.getZones(match, 'player');
-  const piles = el('div', 'piles');
-  for (const [zone, label] of [['draw', 'Draw'], ['discard', 'Discard'], ['void', 'Void']]) {
-    piles.append(button(`${label} ${zones[zone].length}`, () => {
-      ctx.patchBattle({ pile: { sideId: 'player', zone }, confirm: null });
-    }, 'hit slim'));
+  }, 'end-turn');
+  const art = findAsset(ctx.manifest, { slot: 'ui-button', subjectId: 'end-turn' });
+  if (art) {
+    const img = el('img');
+    img.alt = '';
+    bindImage(img, art);
+    end.prepend(img);
   }
-  railNode.append(piles);
-  const log = el('div', 'log');
-  const lines = (match.log ?? []).slice(-6);
-  for (const line of lines) log.append(el('p', null, line.text));
-  railNode.append(log);
-  if (ctx.battleUi.selection.mode === 'pickActor') railNode.append(el('p', 'fine', 'Who performs the card? Cancel with End Turn\'s neighbor or the No button after you pick.'));
+  panel.append(end);
+  const available = ctx.api.autoAvailable === true;
+  const rules = typeof ctx.api.dataRules === 'function' ? ctx.api.dataRules() : null;
+  const choices = speedChoices(rules);
+  const speed = choices.includes(ctx.autoSpeed) ? ctx.autoSpeed : (rules?.autoPolicy?.speed?.value ?? 'normal');
+  const autoRow = el('div', 'auto-row');
+  const auto = button('AUTO', () => ctx.setAuto(!ctx.autoEnabled), 'auto-toggle');
+  auto.disabled = !available;
+  auto.title = available ? 'Play your turns with the engine auto.' : 'Auto loading';
+  if (ctx.autoEnabled) auto.classList.add('is-on');
+  auto.dataset.auto = available ? (ctx.autoEnabled ? 'on' : 'off') : 'loading';
+  autoRow.append(auto);
+  if (available) {
+    const chip = button(speed, () => {
+      const index = choices.indexOf(speed);
+      ctx.setAutoSpeed(choices[(index + 1) % choices.length]);
+    }, 'speed-btn');
+    chip.title = 'PROPOSED playback speed.';
+    autoRow.append(chip);
+  }
+  panel.append(autoRow);
   if (ctx.battleUi.selection.mode === 'confirmPlay') {
-    railNode.append(button('Play card', () => askPlay(ctx)));
-    railNode.append(button('Cancel', () => {
+    const row = el('div', 'auto-row');
+    row.append(button('Play card', () => askPlay(ctx), 'toss-btn'));
+    row.append(button('Cancel', () => {
       const cancelled = cancelPlay(match);
       ctx.setNotice('Cancelled. No AP spent.');
       ctx.patchBattle({ selection: cancelled.selection, confirm: null });
-    }, 'hit slim'));
+    }, 'toss-btn'));
+    panel.append(row);
+  } else {
+    panel.append(button(ctx.battleUi.voluntary ? 'Cancel toss' : 'Toss 1 AP', () => {
+      if (ctx.autoRunning) return;
+      if (match.phase !== 'playerTurn') {
+        ctx.setNotice('You can toss a card only on your turn.');
+        ctx.redraw();
+        return;
+      }
+      ctx.patchBattle({ voluntary: !ctx.battleUi.voluntary, selection: cancelPlay(match).selection, confirm: null });
+    }, 'toss-btn'));
   }
-  return railNode;
+  return panel;
 }
 
 function askPlay(ctx) {
@@ -345,6 +436,7 @@ function pileModal(ctx) {
 }
 
 function settle(ctx) {
+  ctx.persist?.(false);
   let outcome = ctx.api.getOutcome(ctx.match);
   if (outcome.status !== 'decided' && ctx.match.phase === 'enemyTurn' && typeof ctx.api.playEnemyTurn === 'function') {
     ctx.api.playEnemyTurn(ctx.match);

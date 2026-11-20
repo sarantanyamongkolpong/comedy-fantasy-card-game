@@ -109,13 +109,15 @@ test('void cards are not shuffled back into the draw pile', () => {
   assert.equal(getZones(match, 'player').discard.some((card) => card.instanceId === 'void-me'), false);
 });
 
-test('the adapter reports the mock until engine exports exist', async () => {
+test('the adapter uses the engine when the exports exist', async () => {
   const api = await loadGameApi();
-  assert.equal(api.source, 'mock');
+  assert.equal(api.source, 'engine');
   assert.equal(api.productionReady, false);
-  assert.ok(api.missing.some((item) => item.includes('createMatch')));
+  assert.equal(api.missing.length, 0);
+  assert.equal(typeof api.playEnemyTurn, 'function');
   const config = api.defaultRuleConfig();
-  assert.equal(config.damageFormula.status, 'PENDING');
-  assert.equal(config.gachaRates.status, 'PENDING');
-  assert.equal(config.pityEpic.status, 'LOCKED');
+  assert.equal(config.damage.status, 'PENDING_OWNER');
+  assert.equal(config.meta.productionReady, false);
+  assert.equal(api.catalog.source, 'content/v05');
+  assert.deepEqual(api.catalog.justinIds, ['AVT_AEG_002', 'AVT_PHA_002', 'AVT_CEL_002', 'AVT_SAN_002']);
 });

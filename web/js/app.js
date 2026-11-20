@@ -1,3 +1,4 @@
+import { actionCaption, autoDelayMs, fightSignature, speedChoices } from './auto-play.js';
 import { bindImage, findAsset, loadManifest } from './assets.js';
 import { loadGameApi } from './game-api.js';
 import { designSize } from './map-layout.js';
@@ -10,6 +11,7 @@ import { performPull, renderGacha } from './screens/gacha.js';
 import { renderHome } from './screens/home.js';
 import { renderMap } from './screens/map.js';
 import { renderParty } from './screens/party.js';
+import { renderPrep } from './screens/prep.js';
 import { renderRewards } from './screens/rewards.js';
 import { renderStash } from './screens/stash.js';
 
@@ -27,6 +29,9 @@ const state = {
   detail: null,
   partyTab: 'team',
   replacing: null,
+  prepIndex: null,
+  autoRunning: false,
+  autoDelayOverride: null,
   gachaBannerId: null,
   gachaResults: [],
   match: null,
@@ -43,6 +48,11 @@ function freshBattleUi() {
   };
 }
 
+function acceptSave(data) {
+  if (data && data.webBundle) return data;
+  return { webBundle: false, profile: data, match: null, screen: null, battleUi: null };
+}
+
 function hydrate(profile) {
   profile.tokens ??= [];
   profile.claimedRewardIds ??= [];
@@ -50,6 +60,9 @@ function hydrate(profile) {
   profile.seq ??= 1;
   profile.companion ??= { status: 'PLACEHOLDER' };
   profile.storage ??= { status: 'PENDING', rule: 'HOME-11', installed: [] };
+  profile.autoPlay ??= { enabled: false, speed: 'normal' };
+  if (typeof profile.autoPlay.speed !== 'string' || profile.autoPlay.speed.length === 0) profile.autoPlay.speed = 'normal';
+  profile.autoPlay.enabled = profile.autoPlay.enabled === true;
   return profile;
 }
 
@@ -89,7 +102,12 @@ function applyStage() {
 }
 
 function persist(announce) {
-  const payload = state.api.serialize(state.profile);
+  const payload = state.api.serialize({
+    profile: state.profile,
+    match: state.match,
+    screen: state.screen,
+    battleUi: state.battleUi,
+  });
   const text = typeof payload === 'string' ? payload : JSON.stringify(payload);
   localStorage.setItem(SAVE_KEY, text);
   if (announce) {
@@ -106,7 +124,13 @@ function loadSave() {
     return;
   }
   try {
-    state.profile = hydrate(state.api.deserialize(text));
+    const loaded = acceptSave(state.api.deserialize(text));
+    state.profile = hydrate(loaded.profile);
+    if (loaded.match) {
+      state.match = loaded.match;
+      state.battleUi = loaded.battleUi ?? freshBattleUi();
+      if (loaded.screen === 'battle' || loaded.screen === 'rewards' || loaded.screen === 'prep') state.screen = loaded.screen;
+    }
     ensureBanners();
     state.notice = 'Loaded the save from this browser.';
   } catch (error) {
@@ -128,6 +152,11 @@ function makeCtx() {
     detail: state.detail,
     partyTab: state.partyTab,
     replacing: state.replacing,
+    prepIndex: state.prepIndex,
+    prepSite: state.profile.prepSite ?? null,
+    autoEnabled: state.profile.autoPlay?.enabled === true,
+    autoSpeed: state.profile.autoPlay?.speed || 'normal',
+    autoRunning: state.autoRunning,
     gachaBannerId: state.gachaBannerId,
     gachaResults: state.gachaResults,
     match: state.match,
@@ -149,6 +178,29 @@ function makeCtx() {
     setDetail(detail) { state.detail = detail; render(); },
     setPartyTab(tab) { state.partyTab = tab; state.replacing = null; render(); },
     setReplacing(index) { state.replacing = index; render(); },
+    setPrepIndex(index) { state.prepIndex = index; render(); },
+    openPrep(site) {
+      state.profile.prepSite = { label: site.label, mode: site.mode || 'tower' };
+      state.screen = 'prep';
+      state.modal = null;
+      state.notice = '';
+      persist(false);
+      render();
+    },
+    setAuto(enabled) {
+      if (state.api.autoAvailable !== true) return;
+      state.profile.autoPlay.enabled = enabled === true;
+      persist(false);
+      render();
+      if (state.profile.autoPlay.enabled) startAutoLoop();
+    },
+    setAutoSpeed(speed) {
+      const rules = typeof state.api.dataRules === 'function' ? state.api.dataRules() : null;
+      const choices = speedChoices(rules);
+      state.profile.autoPlay.speed = choices.includes(speed) ? speed : 'normal';
+      persist(false);
+      render();
+    },
     setGachaResults(results) { state.gachaResults = results; },
     pullBanner(banner, count) { performPull(makeCtx(), banner, count); },
     patchBattle(partial) {
@@ -198,11 +250,13 @@ function startBattle(mode) {
   }
   state.match = match;
   state.battleUi = freshBattleUi();
+  persist(false);
   state.screen = state.api.getOutcome(match).status === 'decided' ? 'rewards' : 'battle';
   state.notice = mode === 'arena'
     ? 'Arena practice. The opponent is an echo, not a second player.'
     : 'The tower clears its throat. The opponent is a practice echo.';
   render();
+  if (state.screen === 'battle' && state.profile.autoPlay?.enabled) startAutoLoop();
 }
 
 function render() {
@@ -213,6 +267,7 @@ function render() {
   else if (state.screen === 'party') view = renderParty(ctx);
   else if (state.screen === 'gacha') view = renderGacha(ctx);
   else if (state.screen === 'map') view = renderMap(ctx);
+  else if (state.screen === 'prep') view = renderPrep(ctx);
   else if (state.screen === 'battle' && state.match) view = renderBattle(ctx);
   else if (state.screen === 'rewards' && state.match) view = renderRewards(ctx);
   else view = renderHome(ctx);
@@ -234,16 +289,107 @@ async function main() {
   let stored = null;
   try {
     const text = localStorage.getItem(SAVE_KEY);
-    if (text) stored = hydrate(state.api.deserialize(text));
+    if (text) stored = acceptSave(state.api.deserialize(text));
   } catch {
     stored = null;
   }
-  state.profile = stored ?? createStarterProfile(state.api.catalog);
+  state.profile = hydrate(stored?.profile ?? createStarterProfile(state.api.catalog));
+  if (stored?.match) {
+    state.match = stored.match;
+    state.battleUi = stored.battleUi ?? freshBattleUi();
+    if (stored.screen === 'battle' || stored.screen === 'rewards') state.screen = stored.screen;
+  } else if (stored?.screen === 'prep') {
+    state.screen = 'prep';
+  }
   ensureBanners();
   mountRotateArt();
   applyStage();
   window.addEventListener('resize', applyStage);
+  window.addEventListener('pagehide', () => persist(false));
   render();
+  if (state.screen === 'battle' && state.profile.autoPlay?.enabled) startAutoLoop();
+}
+
+let autoToken = 0;
+
+function wait(ms) {
+  return new Promise((resolve) => { setTimeout(resolve, ms); });
+}
+
+async function startAutoLoop() {
+  if (state.api.autoAvailable !== true || typeof state.api.runAutoTurn !== 'function') return;
+  if (state.screen !== 'battle' || !state.match) return;
+  const token = ++autoToken;
+  state.autoRunning = true;
+  render();
+    let previous = '';
+    let spins = 0;
+  try {
+    while (token === autoToken && state.profile.autoPlay?.enabled && state.screen === 'battle' && state.match && spins < 2000) {
+      spins += 1;
+      const outcome = state.api.getOutcome(state.match);
+      if (outcome.status === 'decided') {
+        state.screen = 'rewards';
+        break;
+      }
+      const signature = fightSignature(state.match);
+      if (signature === previous) {
+        state.notice = 'Auto returned no change. The turn is yours.';
+        state.profile.autoPlay.enabled = false;
+        break;
+      }
+      previous = signature;
+      const stop = () => token !== autoToken || state.profile.autoPlay?.enabled !== true;
+      if (state.match.phase === 'enemyTurn') {
+        const enemy = state.api.playEnemyTurn(state.match);
+        const stopped = await animateLog(enemy?.log ?? [], token);
+        if (stopped) break;
+        continue;
+      }
+      if (state.match.phase === 'mandatoryDiscard') {
+        const logs = [];
+        const playerDiscard = state.api.runAutoTurn(state.match, 'player');
+        logs.push(...(playerDiscard?.log ?? []));
+        if (state.match.phase === 'mandatoryDiscard') {
+          const enemyDiscard = state.api.runAutoTurn(state.match, 'enemy');
+          logs.push(...(enemyDiscard?.log ?? []));
+        }
+        const stopped = await animateLog(logs, token);
+        if (stopped) break;
+        continue;
+      }
+      const result = state.api.runAutoTurn(state.match, 'player', { maxActions: 1, shouldStop: stop });
+      if (result?.reason === 'AUTO_LOADING') {
+        state.profile.autoPlay.enabled = false;
+        state.notice = 'Auto loading';
+        break;
+      }
+      await animateLog(result?.log ?? [], token);
+      if (state.match?.phase === 'enemyTurn') {
+        const enemy = state.api.playEnemyTurn(state.match);
+        await animateLog(enemy?.log ?? [], token);
+      }
+      if (token !== autoToken || state.profile.autoPlay?.enabled !== true) break;
+    }
+    if (state.match && state.api.getOutcome(state.match).status === 'decided') state.screen = 'rewards';
+  } finally {
+    if (token === autoToken) state.autoRunning = false;
+    persist(false);
+    render();
+  }
+}
+
+async function animateLog(log, token) {
+  const entries = log.length > 0 ? log : [{ text: 'Auto' }];
+  for (const entry of entries) {
+    if (token !== autoToken || state.screen !== 'battle') return true;
+    state.notice = actionCaption(entry);
+    render();
+    const speed = state.profile.autoPlay?.speed || 'normal';
+    await wait(autoDelayMs(speed, state.autoDelayOverride));
+    if (token !== autoToken || state.profile.autoPlay?.enabled !== true) return true;
+  }
+  return false;
 }
 
 main().then(() => {
@@ -254,7 +400,28 @@ main().then(() => {
       state.notice = '';
       render();
     },
+    prep(label = 'Mysterious Tower', mode = 'tower') {
+      state.profile.prepSite = { label, mode };
+      state.screen = 'prep';
+      state.notice = '';
+      render();
+    },
     battle() { startBattle('tower'); },
+    installAutoContract(fns) {
+      if (typeof fns?.runAutoTurn !== 'function') return;
+      state.api.autoAvailable = true;
+      const refresh = state.api.refreshMatch;
+      state.api.runAutoTurn = (view, sideId = 'player') => {
+        const result = fns.runAutoTurn(view.engine, sideId);
+        if (result?.state && result.state !== view.engine) view.engine = result.state;
+        if (typeof refresh === 'function') refresh(view);
+        return { ok: result?.ok !== false, log: result?.log ?? result?.actions ?? [], state: view.engine };
+      };
+      render();
+    },
+    setAutoDelay(ms) { state.autoDelayOverride = ms; },
+    autoEnabled() { return state.profile.autoPlay?.enabled === true; },
+    phase() { return state.match?.phase ?? null; },
     rewards() {
       startBattle('tower');
       const api = state.api;

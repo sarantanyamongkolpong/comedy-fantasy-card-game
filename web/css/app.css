@@ -218,41 +218,176 @@ h2 { margin: 0 0 8px; font-size: 28px; }
 }
 .hotspot.is-locked { filter: grayscale(0.4); }
 
-.battle {
-  display: grid;
-  grid-template-rows: 96px 150px 156px 1fr;
-  background: #1b2438;
+.battle, .prep {
+  position: relative;
+  width: 100%;
+  height: 100%;
   color: var(--paper);
+  overflow: hidden;
 }
-.unit-row { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: 8px; padding: 0 8px; }
-.units { display: flex; gap: 8px; }
-.unit {
-  width: 250px;
-  min-height: 130px;
-  display: grid;
-  grid-template-columns: 88px 1fr;
-  gap: 6px;
-  padding: 6px;
-  background: #f4e2c4;
-  color: var(--ink);
-  text-align: left;
+.battle-top, .arena, .pile-stack, .band-hand, .battle-controls,
+.prep-title, .prep-location, .prep-team, .prep-arena, .prep-deck, .prep-detail,
+.prep-back, .prep-start, .lead-plate, .unit, .prep-token {
+  position: absolute;
+  overflow: hidden;
 }
-.sprite { width: 88px; height: 116px; object-fit: contain; }
-.unit-name { font-size: 18px; font-weight: 700; }
-.unit-meta, .unit-hp, .unit .fine { font-size: 14px; }
+.battle-top, .prep-title, .prep-location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.battle-badge, .prep-title, .prep-location, .end-turn, .prep-start, .prep-back {
+  position: relative;
+  isolation: isolate;
+  color: var(--paper);
+  background: transparent;
+  min-width: 0;
+}
+.battle-badge { min-height: 0; height: 100%; width: 280px; font-size: 28px; }
+.battle-badge img, .prep-title img, .prep-location img, .end-turn img, .prep-start img, .prep-back img, .panel-bg, .battle-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: -1;
+}
+.battle-badge, .prep-title h1, .prep-location h2, .end-turn, .prep-start, .prep-back { z-index: 1; }
+.prep-title h1, .prep-location h2 { position: relative; margin: 0; width: 100%; text-align: center; font-size: 32px; }
+.turn-chip { margin: 0 auto; font-size: 28px; letter-spacing: 1px; }
+.ap-meter { margin-left: auto; display: flex; align-items: center; gap: 8px; font-size: 24px; }
+.pips { display: flex; gap: 4px; }
+.pip { width: 28px; height: 28px; opacity: 0.35; display: grid; place-items: center; }
+.pip.is-on { opacity: 1; }
+.pip img { width: 28px; height: 28px; }
+.arena, .prep-arena { background: #1b2438; }
+.lead-plate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  background: rgba(42, 16, 48, 0.8);
+  border: 2px solid #ff4ad8;
+  font-size: 18px;
+}
+.unit, .prep-token {
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  background: transparent;
+  color: white;
+  border: 0;
+}
+.unit .tile, .prep-token .tile {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  height: 36px;
+  object-fit: fill;
+}
+.unit .sprite, .prep-token .sprite {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 28px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center bottom;
+}
+.faces-left .sprite { transform: scaleX(-1); }
+.floater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #b6ff9a;
+  font-size: 14px;
+  text-shadow: 0 1px 0 #140c1c;
+}
+.hp-bar { position: absolute; left: 8px; right: 8px; bottom: 16px; height: 8px; background: #3a2418; }
+.hp-fill { display: block; height: 100%; background: #d24b4b; }
+.unit-hp, .unit-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  text-shadow: 0 1px 0 #140c1c;
+}
 .unit.is-ko { filter: grayscale(1); }
-.statuses { display: flex; flex-wrap: wrap; gap: 2px; grid-column: 1 / -1; }
-.status { display: inline-flex; align-items: center; gap: 2px; font-size: 12px; }
-.status img { width: 16px; height: 16px; }
-.battle-lower { display: grid; grid-template-columns: 1fr 280px; min-height: 0; }
-.hand { padding: 8px; align-items: flex-start; }
-.rail { overflow: auto; padding: 8px; display: flex; flex-direction: column; gap: 6px; }
-.ap-meter, .pips { display: flex; align-items: center; gap: 4px; }
-.pip { width: 36px; height: 36px; border-radius: 50%; background: #3a2a44; display: grid; place-items: center; }
-.pip.is-on { background: var(--gold); }
-.pip img { width: 24px; height: 24px; }
-.log { font-size: 14px; line-height: 1.25; }
-.log p { margin: 0 0 4px; }
+.unit.is-selected, .prep-member.is-selected { outline: 4px solid var(--gold); }
+.band-hand { display: flex; align-items: flex-end; }
+.band-hand .hand { width: 100%; height: 100%; align-items: flex-end; justify-content: center; overflow: hidden; gap: 12px; }
+.hand-card { width: 190px; min-width: 0; min-height: 0; flex: 0 0 auto; }
+.hand-card.is-selected { box-shadow: 0 0 0 4px #7dffb2, 0 0 24px #7dffb2; }
+.pile-stack, .battle-controls { display: flex; flex-direction: column; gap: 8px; }
+.pile-btn, .end-turn, .toss-btn, .auto-toggle, .speed-btn {
+  min-width: 0;
+  min-height: 0;
+  height: 112px;
+  font-size: 20px;
+}
+.pile-btn { display: flex; align-items: center; gap: 8px; }
+.pile-btn img { width: 36px; height: 36px; }
+.end-turn { font-size: 28px; }
+.auto-row { display: flex; gap: 8px; height: 112px; }
+.auto-toggle { flex: 1; }
+.auto-toggle.is-on { background: #3f8f62; color: white; }
+.speed-btn { width: 120px; }
+.prep-team, .prep-deck, .prep-detail { isolation: isolate; color: var(--paper); padding: 12px; }
+.prep-team h2, .prep-deck h2, .prep-detail h2 { position: relative; margin: 0 0 8px; font-size: 28px; }
+.prep-member {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10px 92px 1fr;
+  gap: 8px;
+  width: 100%;
+  height: 128px;
+  min-height: 0;
+  margin-bottom: 8px;
+  padding: 8px;
+  text-align: left;
+  background: rgba(20, 12, 28, 0.72);
+  color: white;
+}
+.prep-portrait { overflow: hidden; border-radius: 12px; }
+.prep-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.prep-member-text { display: flex; flex-direction: column; justify-content: center; gap: 6px; }
+.prep-role { display: flex; align-items: center; gap: 6px; font-size: 18px; }
+.prep-role img { width: 28px; height: 28px; }
+.faction-FAC_AEG { background: var(--aegis); }
+.faction-FAC_PHA { background: var(--phantom); }
+.faction-FAC_CEL { background: var(--celestial); }
+.faction-FAC_SAN { background: var(--sanctuary); }
+.deck-icons { position: relative; display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+.deck-icon {
+  height: 52px;
+  overflow: hidden;
+  background: rgba(20, 12, 28, 0.72);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+}
+.deck-icon img { width: 28px; height: 28px; object-fit: contain; }
+.prep-detail-head { position: relative; display: flex; gap: 8px; align-items: center; }
+.prep-detail-head img { width: 72px; height: 96px; object-fit: cover; object-position: center top; }
+.prep-skill { position: relative; margin-top: 8px; }
+.prep-skill b, .prep-skill p { margin: 0; }
+.prep-start, .prep-back { font-size: 28px; }
+.battle .toast, .prep .toast {
+  top: 220px;
+  bottom: auto;
+  left: 640px;
+  right: auto;
+  width: 400px;
+  text-align: center;
+}
 .toast {
   position: absolute;
   left: 16px;

@@ -64,7 +64,7 @@ Edit that building’s `hotspot` in the manifest. Do not change CSS per breakpoi
 - `transform`: `translate(-50%, -100%)`
 - `placementStatus`: `PROPOSED` until the Owner locks the pads
 
-The values came from `WORLD_MAP_PLACEMENT_PROPOSED.json`. The mall’s proposed box (anchor y 280, height 330) extends about 50 px above the master canvas and the stage clips it. Nudge `anchorY` or `targetWidth` in the manifest if that crop is wrong. Re-running the build script overwrites these numbers from the JSON.
+The values came from `WORLD_MAP_PLACEMENT_PROPOSED.json`. The mall anchor stays at (1393, 280). Its target size is 280×280 so the sprite box meets the top edge instead of crossing it. Re-running the art build script overwrites these numbers from Dream’s JSON; put the 280 back if that happens, until the pad itself moves.
 
 Known actions the map already understands: `home`, `gacha`, `battle` (with `mode` `tower` or `arena`), `mall`, `locked`. Any other `action` still draws the building and shows a notice.
 

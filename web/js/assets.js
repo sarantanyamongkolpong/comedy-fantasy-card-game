@@ -28,6 +28,7 @@ export function firstAsset(manifest, queries) {
 export function assetUrl(entry) {
   const file = entry?.path;
   if (!file) return '';
+  if (file.startsWith('data:')) return file;
   const relative = file.replace(/^web\//, '');
   return new URL(`../${relative}`, import.meta.url).href;
 }
@@ -51,6 +52,13 @@ export function bindImage(img, entry) {
 }
 
 export async function loadManifest() {
+  if (globalThis.__CFCG_MANIFEST) {
+    const manifest = globalThis.__CFCG_MANIFEST;
+    byId.clear();
+    for (const asset of manifest.assets ?? []) byId.set(asset.asset_id, asset);
+    loaded = manifest;
+    return manifest;
+  }
   const url = new URL('../assets-manifest.json', import.meta.url);
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Asset manifest failed (${response.status})`);

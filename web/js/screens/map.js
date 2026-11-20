@@ -1,8 +1,6 @@
 import { bindImage, findAsset } from '../assets.js';
 import { button, el } from '../dom.js';
 import { anchorById, buildingHotspots } from '../map-layout.js';
-import { battleReady } from '../profile.js';
-
 const KNOWN_ACTIONS = new Set(['home', 'gacha', 'battle', 'mall', 'locked']);
 
 export function renderMap(ctx) {
@@ -93,13 +91,6 @@ function onHotspot(ctx, hotspot) {
     return;
   }
   if (hotspot.action === 'battle') {
-    const ready = battleReady(ctx.profile, ctx.api.catalog);
-    if (!ready.ok) {
-      const problem = ready.messages.find((message) => message.level === 'error');
-      ctx.setNotice(problem?.text ?? 'Fix the team and the 30-card deck before the fight.');
-      ctx.redraw();
-      return;
-    }
-    ctx.startBattle(hotspot.mode || 'tower');
+    ctx.openPrep({ label: hotspot.label, mode: hotspot.mode || 'tower' });
   }
 }

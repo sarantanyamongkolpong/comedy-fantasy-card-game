@@ -7,50 +7,22 @@
  *   src/config/index.js  defaultRuleConfig
  *   src/gacha/index.js   createBannerState, pull
  *   src/save/index.js    serialize, deserialize
- *   content/v05/index.js optional catalog
+ *   content/v05 JSON via web/js/content-catalog.js
  *
- * Until those exports exist, this file serves the clearly marked mock.
- * It does not copy engine or content files onto this branch.
+ * Enemy turns use `playEnemyTurn`. Player AUTO uses `runAutoTurn` and
+ * `chooseAutoActions`. `runEnemyTurn` remains the older demo helper.
+ * The mock remains only when a required export is missing.
  */
 
+import { chooseAutoActions, playEnemyTurn, runAutoTurn, runEnemyTurn } from '../../src/engine/index.js';
+import * as engineMod from '../../src/engine/index.js';
+import * as configMod from '../../src/config/index.js';
+import * as gachaMod from '../../src/gacha/index.js';
+import * as saveMod from '../../src/save/index.js';
+import { contentCatalog } from './content-catalog.js';
+import { bindEngine } from './engine-session.js';
 import * as mock from './mock-engine.js';
 import { sampleCatalog } from './sample-catalog.js';
-
-const ENGINE_URL = '../../src/engine/index.js';
-const CONFIG_URL = '../../src/config/index.js';
-const GACHA_URL = '../../src/gacha/index.js';
-const SAVE_URL = '../../src/save/index.js';
-const CONTENT_URL = '../../content/v05/index.js';
-
-async function tryImport(specifier) {
-  try {
-    return await import(specifier);
-  } catch {
-    return null;
-  }
-}
-
-function normalizeContent(content) {
-  if (!content) return null;
-  const avatars = content.avatars ?? content.AVATARS;
-  const actionCards = content.actionCards ?? content.ACTION_CARDS;
-  if (!Array.isArray(avatars) || !Array.isArray(actionCards)) return null;
-  const avatarMap = new Map(avatars.map((avatar) => [avatar.avatarId, avatar]));
-  const cardMap = new Map(actionCards.map((card) => [card.cardId, card]));
-  const banners = Array.isArray(content.banners) ? content.banners : sampleCatalog.banners;
-  const justinIds = avatars.filter((avatar) => avatar.battleLegal !== false && /_002$/.test(avatar.avatarId)).map((avatar) => avatar.avatarId);
-  return {
-    source: 'content/v05',
-    productionReady: false,
-    avatars,
-    actionCards,
-    banners,
-    justinIds: justinIds.length === 4 ? justinIds : sampleCatalog.justinIds,
-    avatarById: (id) => avatarMap.get(id) ?? null,
-    cardById: (id) => cardMap.get(id) ?? null,
-    factionName: sampleCatalog.factionName,
-  };
-}
 
 function missingExports(parts) {
   const missing = [];
@@ -63,30 +35,28 @@ function missingExports(parts) {
   if (typeof parts.gacha?.pull !== 'function') missing.push('src/gacha/index.js#pull');
   if (typeof parts.save?.serialize !== 'function') missing.push('src/save/index.js#serialize');
   if (typeof parts.save?.deserialize !== 'function') missing.push('src/save/index.js#deserialize');
+  if (typeof parts.save?.createProfile !== 'function') missing.push('src/save/index.js#createProfile');
+  if (typeof runEnemyTurn !== 'function') missing.push('src/engine/index.js#runEnemyTurn');
+  if (typeof chooseAutoActions !== 'function') missing.push('src/engine/index.js#chooseAutoActions');
+  if (typeof runAutoTurn !== 'function') missing.push('src/engine/index.js#runAutoTurn');
+  if (typeof playEnemyTurn !== 'function') missing.push('src/engine/index.js#playEnemyTurn');
   return missing;
 }
 
-function bindReal(parts, catalog) {
+function bindReal(parts) {
+  const session = bindEngine(parts.engine, parts.gacha, parts.save, {
+    playEnemyTurn,
+    runAutoTurn,
+    chooseAutoActions,
+    runEnemyTurn,
+  });
   return {
     source: 'engine',
     productionReady: false,
     missing: [],
-    catalog,
-    createMatch: parts.engine.createMatch,
-    startTurn: parts.engine.startTurn,
-    playAction: parts.engine.playAction,
-    discardVoluntary: parts.engine.discardVoluntary,
-    endTurn: parts.engine.endTurn,
-    resolveEndOfRoundDiscard: parts.engine.resolveEndOfRoundDiscard,
-    getZones: parts.engine.getZones,
-    getOutcome: parts.engine.getOutcome,
-    playEnemyTurn: parts.engine.playEnemyTurn ?? parts.engine.runEnemyTurn ?? null,
-    playBlockReason: parts.engine.playBlockReason ?? null,
-    defaultRuleConfig: parts.config.defaultRuleConfig,
-    createBannerState: parts.gacha.createBannerState,
-    pull: parts.gacha.pull,
-    serialize: parts.save.serialize,
-    deserialize: parts.save.deserialize,
+    catalog: contentCatalog,
+    dataRules: parts.config.defaultRuleConfig,
+    ...session,
   };
 }
 
@@ -115,16 +85,8 @@ function bindMock(catalog, missing) {
 }
 
 export async function loadGameApi() {
-  const [engine, config, gacha, saveMod, content] = await Promise.all([
-    tryImport(ENGINE_URL),
-    tryImport(CONFIG_URL),
-    tryImport(GACHA_URL),
-    tryImport(SAVE_URL),
-    tryImport(CONTENT_URL),
-  ]);
-  const catalog = normalizeContent(content) ?? sampleCatalog;
-  const parts = { engine, config, gacha, save: saveMod };
+  const parts = { engine: engineMod, config: configMod, gacha: gachaMod, save: saveMod };
   const missing = missingExports(parts);
-  if (missing.length > 0) return bindMock(catalog, missing);
-  return bindReal(parts, catalog);
+  if (missing.length > 0) return bindMock(sampleCatalog, missing);
+  return bindReal(parts);
 }

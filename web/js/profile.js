@@ -22,7 +22,8 @@ export function createStarterProfile(catalog) {
     favorite: false,
     source: avatar.battleLegal ? 'SAMPLE_STARTER' : 'EXISTING_ART_AVATAR',
   }));
-  const actions = STARTER_DECK_LIST.map((cardId, index) => ({
+  const deckList = catalog.starterDeckIds ?? catalog.starterDeckList ?? STARTER_DECK_LIST;
+  const actions = deckList.map((cardId, index) => ({
     instanceId: `own:act:${index}:${cardId}`,
     cardId,
     locked: false,
@@ -39,7 +40,7 @@ export function createStarterProfile(catalog) {
     avatars,
     actions,
     tokens: [],
-    team: JUSTIN_IDS.map((id) => `own:${id}`),
+    team: (catalog.justinIds ?? JUSTIN_IDS).map((id) => `own:${id}`),
     deck: actions.map((action) => action.instanceId),
     banners: {},
     claimedRewardIds: [],
@@ -141,6 +142,11 @@ export function battleReady(profile, catalog) {
 }
 
 function memberFrom(instanceId, def) {
+  if (def?.engineAvatar) {
+    const copy = structuredClone(def.engineAvatar);
+    copy.name = def.name;
+    return copy;
+  }
   return {
     instanceId,
     avatarId: def.avatarId,
@@ -159,15 +165,18 @@ function memberFrom(instanceId, def) {
 
 export function buildMatchInput(profile, catalog, { seed, mode }) {
   const members = teamDefs(profile, catalog).map((row) => memberFrom(row.owned.instanceId, row.def));
-  const deck = deckDefs(profile, catalog).map((row) => ({ ...row.def, instanceId: row.instanceId }));
+  const deck = deckDefs(profile, catalog).map((row) => (
+    row.def?.engineCard ? structuredClone(row.def.engineCard) : { ...row.def, instanceId: row.instanceId }
+  ));
   const enemyMembers = catalog.justinIds.map((avatarId) => {
     const def = catalog.avatarById(avatarId);
     return memberFrom(`echo:${avatarId}`, { ...def, name: `Echo ${def.name}` });
   });
-  const enemyDeck = STARTER_DECK_LIST.map((cardId, index) => ({
-    ...catalog.cardById(cardId),
-    instanceId: `echo:act:${index}:${cardId}`,
-  }));
+  const enemyList = catalog.starterDeckIds ?? catalog.starterDeckList ?? STARTER_DECK_LIST;
+  const enemyDeck = enemyList.map((cardId) => {
+    const def = catalog.cardById(cardId);
+    return def?.engineCard ? structuredClone(def.engineCard) : { ...def, instanceId: `echo:${cardId}` };
+  });
   return {
     seed,
     mode,
