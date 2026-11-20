@@ -1,0 +1,105 @@
+{
+  "source_workbook": "Card_Battle_Design_Master_v0.5_20261120",
+  "source_sha256": "f4a23a97c11e8a1b6dcbac2e356dd18997fd4f67cdb3386c1d0555ff9134b493",
+  "tab": "v05_QA",
+  "title": "MIRA ACCEPTANCE TEST TRACKER",
+  "columns": [
+    "ID",
+    "Feature",
+    "Expected Behavior",
+    "Priority",
+    "Test Evidence Required",
+    "Current Result"
+  ],
+  "rows": [
+    {
+      "ID": "QA-01",
+      "Feature": "Deck/Hand",
+      "Expected Behavior": "30 cards, 5 initial, leftover retain, draw to 5, draw>5 via effect",
+      "Priority": "P0",
+      "Test Evidence Required": "Expected deterministic tests",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-02",
+      "Feature": "Discard",
+      "Expected Behavior": "Mandatory over-cap free; voluntary own turn 1 AP",
+      "Priority": "P0",
+      "Test Evidence Required": "AP & hand checks",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-03",
+      "Feature": "Recycle/Void",
+      "Expected Behavior": "Draw empty shuffles only Discard, Void remains excluded",
+      "Priority": "P0",
+      "Test Evidence Required": "Zone integrity tests",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-04",
+      "Feature": "Faction",
+      "Expected Behavior": "Mixed team and deck, generic action, FAC faction gate",
+      "Priority": "P0",
+      "Test Evidence Required": "Permission matrices",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-05",
+      "Feature": "AP/Turn",
+      "Expected Behavior": "AP resets 5; cost 0-5; manual End even at AP=0",
+      "Priority": "P0",
+      "Test Evidence Required": "No auto End, cancellation free",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-06",
+      "Feature": "Skill/Regen",
+      "Expected Behavior": "Active requires Action; Justina Regen +3 over two turns",
+      "Priority": "P0",
+      "Test Evidence Required": "Tick/lifecycle tests",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-07",
+      "Feature": "Win/Lose",
+      "Expected Behavior": "All enemy dead win; all own 4 dead lose",
+      "Priority": "P0",
+      "Test Evidence Required": "Result + rewards once",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-08",
+      "Feature": "Gacha",
+      "Expected Behavior": "Epic pity 100, top 200, Companion Epic 100",
+      "Priority": "P0",
+      "Test Evidence Required": "No invented rates",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-09",
+      "Feature": "Storage",
+      "Expected Behavior": "No capacity boost solely from house tier; installed furniture pools",
+      "Priority": "P0",
+      "Test Evidence Required": "Buying/uninstalling/check caps",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-10",
+      "Feature": "UI/Mobile",
+      "Expected Behavior": "Map→Home/Gacha/Battle→Rewards, touch controls, piles viewer",
+      "Priority": "P0",
+      "Test Evidence Required": "Manual smoke on narrow viewport",
+      "Current Result": "NOT RUN"
+    },
+    {
+      "ID": "QA-11",
+      "Feature": "Git/PR",
+      "Expected Behavior": "No unapproved merge/deploy, all commits pushed, conflict map",
+      "Priority": "P0",
+      "Test Evidence Required": "Mira evidence URLs",
+      "Current Result": "NOT RUN"
+    }
+  ],
+  "import_note": "Verbatim import; values and Status strings unchanged. Numbers that were x.0 floats are stored as integers."
+}
