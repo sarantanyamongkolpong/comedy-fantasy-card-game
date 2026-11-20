@@ -1,0 +1,3935 @@
+[
+  {
+    "inspirationId": "INS-03-001",
+    "name": "Jiangshi (僵尸 / 殭屍)",
+    "origin": "Chinese folklore",
+    "kind": "folklore",
+    "facts": [
+      "A jiangshi is an undead or reanimated corpse in Chinese legends and folklore, often called a Chinese hopping vampire in English.",
+      "Hong Kong cinema fixed the popular image of a stiff corpse in Qing official dress that hops; folkloric accounts instead describe a more dangerous corpse that can run, and an old enough one, or one that has absorbed enough yang, that can fly.",
+      "J. J. M. de Groot linked the fear to unburied corpses and to qi animating exposed bodies. The nighttime trade of 'corpse-driving' — tying a body to bamboo so it could be carried home for burial — also produced the look of a hopping corpse."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jiangshi",
+        "title": "Jiangshi",
+        "accessed": "2026-11-20",
+        "supports": "Undead corpse; hop is a cinema image; folklore allows running and flight; corpse-driving practice."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "corpse",
+      "pursuit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower corpse furious that films taught it to hop, when it would rather sprint the corridor.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-002",
+    "name": "Huli jing (狐狸精)",
+    "origin": "Chinese mythology and folklore",
+    "kind": "myth",
+    "facts": [
+      "Huli jing are Chinese fox spirits, usually able to shapeshift, and they may be benevolent or malevolent.",
+      "Names in the tradition sort them into fox immortal, fox god, fox saint, fox king, fox demon, fox clan, and nine-tailed fox (jiuweihu).",
+      "Whether a fox spirit is a good or bad omen depends on the story. The nine-tailed fox motif later passed into Japanese, Korean, and Vietnamese tradition."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Huli_jing",
+        "title": "Huli jing",
+        "accessed": "2026-11-20",
+        "supports": "Shapeshifting fox spirits, good or bad, including the nine-tailed fox and later transmission."
+      }
+    ],
+    "archetypeTags": [
+      "shapeshifter",
+      "fox",
+      "omen"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A nine-resume fox who keeps one tail per failed job interview.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-003",
+    "name": "Nian (年獸)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The nian is a beast said to live under the sea or in the mountains. The character nian more usually means year or new year.",
+      "The earliest written sources that treat the nian as a creature date to the early 20th century, so it is unclear whether it is ancient mythology or an oral tradition first written down then.",
+      "It is now a key Chinese New Year figure. Scholars cite it as the reason for practices such as wearing red and making noise with drums and fireworks."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nian",
+        "title": "Nian",
+        "accessed": "2026-11-20",
+        "supports": "Sea or mountain beast; early-20th-century written sources; linked by scholars to red clothes and New Year noise."
+      }
+    ],
+    "archetypeTags": [
+      "festival-beast",
+      "noise",
+      "calendar"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A New Year beast that files a noise complaint and then flees its own fireworks.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-004",
+    "name": "Pixiu (貔貅)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The pixiu is a Chinese mythical hybrid, described as resembling a strong winged lion, and treated as a protector of the souls of the dead, of xian, and of feng shui practitioners.",
+      "It is an auspicious wealth creature whose appetite is said to be only for gold, silver, and jewels, drawing cai qi (wealth-energy) from all directions.",
+      "A two-antler form, the female Bixie, wards off evil; a one-antler form, the male Tianlu, seeks wealth. Statues are used to attract money."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pixiu",
+        "title": "Pixiu",
+        "accessed": "2026-11-20",
+        "supports": "Winged-lion wealth guardian; gold appetite; Bixie and Tianlu antler types."
+      }
+    ],
+    "archetypeTags": [
+      "auspicious",
+      "wealth",
+      "hybrid"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A treasury beast that can swallow coins and cannot spit them back out.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-005",
+    "name": "Taotie (饕餮)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The taotie is an ancient Chinese mythological creature, one of the Four Perils in classics such as the Classic of Mountains and Seas, with Hundun, Qiongqi, and Taowu.",
+      "It is the familiar frontal, symmetrical mask on Shang and Zhou ritual bronze vessels such as dings: raised eyes and typically no lower jaw.",
+      "Some scholars trace related designs to Neolithic jades, including the Liangzhu culture."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Taotie",
+        "title": "Taotie",
+        "accessed": "2026-11-20",
+        "supports": "Four Perils member; bronze mask with eyes and usually no lower jaw."
+      }
+    ],
+    "archetypeTags": [
+      "glutton",
+      "bronze-mask",
+      "ancient"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mask-face boss with no chin who still tries to eat the loot pile.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-006",
+    "name": "Hundun (混沌)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Hundun names both a legendary faceless being in Chinese mythology and the primordial central chaos of Chinese cosmogony, compared with the world egg.",
+      "The taotie article lists Hundun among the Four Perils beside Taotie, Qiongqi, and Taowu."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hundun",
+        "title": "Hundun",
+        "accessed": "2026-11-20",
+        "supports": "Faceless being and primordial chaos."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Taotie",
+        "title": "Taotie",
+        "accessed": "2026-11-20",
+        "supports": "Hundun is named as one of the Four Perils."
+      }
+    ],
+    "archetypeTags": [
+      "faceless",
+      "chaos",
+      "primordial"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A faceless round boss who wins by having no features left to target.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-007",
+    "name": "Penghou (彭侯)",
+    "origin": "Chinese mythology and folklore",
+    "kind": "myth",
+    "facts": [
+      "The Penghou, literally 'drumbeat marquis', is a tree spirit. The Baize tu says a creature evolved from the essence of wood looks like a black dog with no tail, and that its meat can be eaten.",
+      "The Soushenji tells of Jing Shu felling a camphor tree in the Wu kingdom: the wood bled, and inside was an animal like a dog with a human face, which he identified as a Penghou and stewed.",
+      "Li Shizhen's Bencao gangmu repeats those sources. Toriyama Sekien later drew the Japanese reading Hōkō from the same Chinese texts."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Penghou",
+        "title": "Penghou",
+        "accessed": "2026-11-20",
+        "supports": "Tailless black-dog tree spirit; camphor-tree story; later a Sekien yokai under the Japanese name."
+      }
+    ],
+    "archetypeTags": [
+      "tree-spirit",
+      "dog-faced",
+      "edible-in-lore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A camphor-tree dog with a human face who objects to being a recipe.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-008",
+    "name": "Bai Ze (白澤)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Bai Ze is a mythical creature from ancient Chinese legend, later introduced to Japan under the same name in the Tang period.",
+      "The Book of Song tradition of the Bai Ze tu says this divine creature knows the world's ghosts and gods. The Yellow Emperor entrusted it to draw and annotate them.",
+      "Appearance differs by source: the Ming San Cai Tu Hui gives green hair, a dragon head, a horn, and flight; the History of Yuan gives a tiger head and red mane. Households hung Bai Ze drawings to ward off spirit harm."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bai_Ze",
+        "title": "Bai Ze",
+        "accessed": "2026-11-20",
+        "supports": "All-knowing divine beast; ghost diagram for the Yellow Emperor; protective household images."
+      }
+    ],
+    "archetypeTags": [
+      "cataloguer",
+      "auspicious",
+      "anti-spirit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A librarian of ghosts whose diagram is always one entry out of date. Do not mock the protective custom.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-009",
+    "name": "Zhenniao (鴆鳥)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Zhenniao, often just zhen, literally 'poison-feather bird', is the name given in Chinese myths, annals, and poetry to poisonous birds once said to live in what is now southern China.",
+      "The fifth chapter of the Classic of Mountains and Seas describes the zhen as resembling an eagle and places it on several southern mountains, including Mount Nüji in Jiangsu."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zhenniao",
+        "title": "Zhenniao",
+        "accessed": "2026-11-20",
+        "supports": "Poison-feather bird resembling an eagle in southern mountains, from the Shanhaijing."
+      }
+    ],
+    "archetypeTags": [
+      "poison",
+      "bird",
+      "classic"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A southern eagle whose feathers are a walking hazard label.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-010",
+    "name": "Xiangliu (相柳 / 相繇)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Xiangliu, called Xiangyao in the Classic of Mountains and Seas, is a venomous nine-headed snake monster that brings floods and destruction.",
+      "The body may be shown coiled. Older woodcuts cluster the nine heads on one neck; many modern pictures give each head its own neck, like a hydra."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Xiangliu",
+        "title": "Xiangliu",
+        "accessed": "2026-11-20",
+        "supports": "Venomous nine-headed flood snake; head arrangement varies by picture."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "flood",
+      "multi-head"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A nine-headed flood snake that cannot agree which way the river should run.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-011",
+    "name": "Xiezhi (獬豸), also haechi",
+    "origin": "Chinese mythology, also Korean",
+    "kind": "myth",
+    "facts": [
+      "The xiezhi is a mythical creature of Chinese origin across Sinospheric legends. It resembles an ox or goat, with thick dark fur, bright eyes, and one long horn.",
+      "It is said to understand human speech and to know right from wrong. Finding a corrupt official, it rams them with the horn and devours them. It is a symbol of justice.",
+      "The English Wikipedia disambiguation for Haechi points to the xiezhi as the legendary creature in Chinese and Korean mythology and as the Seoul mascot."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Xiezhi",
+        "title": "Xiezhi",
+        "accessed": "2026-11-20",
+        "supports": "One-horned justice beast that gores corrupt officials."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Haechi",
+        "title": "Haechi",
+        "accessed": "2026-11-20",
+        "supports": "Disambiguation identifies the xiezhi with Chinese and Korean mythology and the Seoul mascot."
+      }
+    ],
+    "archetypeTags": [
+      "justice",
+      "unicorn-ox",
+      "judge"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A one-horn auditor who headbutts only the player who cheated the loot roll. Avoid mocking the Seoul civic symbol.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-012",
+    "name": "Kui (夔)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Kui is a polysemous name. Classic texts use it for a legendary musician who invented music and dancing, for a one-legged mountain demon or rain-god, and for the kuiniu wild yak or buffalo.",
+      "The one-legged Kui is variously said to resemble a Chinese dragon, a drum, or a monkey with a human face."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kui_(Chinese_mythology)",
+        "title": "Kui (Chinese mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Musician, one-legged mountain demon or rain-god, and wild bovine share the name."
+      }
+    ],
+    "archetypeTags": [
+      "one-legged",
+      "music",
+      "mountain"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A one-legged drum-demon who keeps perfect time and terrible balance. Do not target the rain-god sense.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-013",
+    "name": "Chinese dragon (long / loong, 龍)",
+    "origin": "Chinese mythology and culture",
+    "kind": "myth",
+    "facts": [
+      "The Chinese dragon, long or loong, is a legendary creature in Chinese mythology, folklore, and culture at large.",
+      "It has many animal-like forms, including turtles and fish, but is most often shown as snake-like with four legs.",
+      "Scholars have offered four origin theories: snakes, Chinese alligators, thunder worship, and nature worship. Dragons traditionally symbolize potent auspicious power, especially control of water and weather."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chinese_dragon",
+        "title": "Chinese dragon",
+        "accessed": "2026-11-20",
+        "supports": "Snake-like four-legged auspicious weather and water being."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "water",
+      "auspicious"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Research record only for a sacred auspicious symbol. Prefer the hornless jiaolong if a comic flood-serpent is needed.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-014",
+    "name": "Qilin (麒麟)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The qilin is a legendary hooved chimera in Chinese mythology, said to appear with the imminent arrival or passing of a sage or illustrious ruler.",
+      "It is a specific type within the lin family of one-horned beasts, and it also appears in other Chinese-influenced mythologies."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Qilin",
+        "title": "Qilin",
+        "accessed": "2026-11-20",
+        "supports": "Hooved chimera and omen of a sage or ruler; one-horned lin type."
+      }
+    ],
+    "archetypeTags": [
+      "omen",
+      "hooved",
+      "auspicious"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An omen beast that arrives for a wise ruler and looks embarrassed when the party is not one.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-015",
+    "name": "Fenghuang (鳳凰)",
+    "origin": "Chinese and Sinosphere mythology",
+    "kind": "myth",
+    "facts": [
+      "Fenghuang are mythological birds across the Sinosphere, understood to reign over all other birds.",
+      "Males and females were once called feng and huang separately. The gender split is usually dropped now, and the fenghuang is generally treated as feminine and paired with the traditionally masculine Chinese dragon.",
+      "Calling it a Chinese phoenix is a Western habit; similarities to the Persian or Western phoenix are superficial."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fenghuang",
+        "title": "Fenghuang",
+        "accessed": "2026-11-20",
+        "supports": "Bird-sovereign paired with the dragon; not a Western phoenix."
+      }
+    ],
+    "archetypeTags": [
+      "bird",
+      "auspicious",
+      "sovereign"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bird-sovereign who refuses to be called a phoenix on the nameplate.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-016",
+    "name": "Jiaolong (蛟龍)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "The jiaolong, or jiao, is a serpent-like dragon in Chinese mythology, often defined as a scaled dragon. Certain scholars say it is hornless, and it is described as aquatic or river-dwelling. It may once have referred to a crocodile.",
+      "Scholars point to non-Sinitic southern origins. Ancient texts say the Yue tattooed their bodies to ward these monsters off.",
+      "English translators render jiao as jiao-dragon, crocodile, flood dragon, scaly dragon, or even kraken."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jiaolong",
+        "title": "Jiaolong",
+        "accessed": "2026-11-20",
+        "supports": "Hornless aquatic scaled dragon; Yue tattoos as a ward."
+      }
+    ],
+    "archetypeTags": [
+      "flood-dragon",
+      "river",
+      "serpent"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A hornless river dragon still annoyed that people got tattoos instead of paying the toll.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-017",
+    "name": "Chi (螭)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Chi means either a hornless dragon or a mountain demon (chimei) in Chinese mythology.",
+      "Hornless dragons were a common motif in ancient Chinese art. The chiwen, or 'hornless-dragon mouth', was an imperial roof ornament."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chi_(mythology)",
+        "title": "Chi (mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Hornless dragon or mountain demon; chiwen roof ornament."
+      }
+    ],
+    "archetypeTags": [
+      "hornless-dragon",
+      "roof-guardian",
+      "mountain-demon"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A roof-ornament dragon that eats gutter water and files leak reports.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-018",
+    "name": "Bixi (贔屭)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Bixi is a figure from Chinese mythology, one of the nine sons of the Dragon King, depicted as a dragon with a turtle's shell.",
+      "Stone bixi have served for centuries as plinths under commemorative steles, including in later imperial funerary complexes, and also under bridges and archways.",
+      "People traditionally rub the sculptures for luck, which damages them. They occur across East Asia and the Russian Far East."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bixi",
+        "title": "Bixi",
+        "accessed": "2026-11-20",
+        "supports": "Dragon-turtle son of the Dragon King, used as a stele plinth and rubbed for luck."
+      }
+    ],
+    "archetypeTags": [
+      "dragon-turtle",
+      "monument",
+      "burden"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A dragon-turtle who has been holding the same tablet up for centuries and would like a shift change.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-019",
+    "name": "Feilian (飛廉)",
+    "origin": "Chinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Feilian is a Chinese wind spirit from a southern tradition, later identified with and absorbed under the main wind deity Fengbo.",
+      "The name has also been tied to a late Shang minister and to the mythical phoenix. After losing the rank of wind-master, Feilian kept a separate identity as a mythical creature."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Feilian",
+        "title": "Feilian",
+        "accessed": "2026-11-20",
+        "supports": "Southern wind spirit later folded into Fengbo, surviving as a creature."
+      }
+    ],
+    "archetypeTags": [
+      "wind",
+      "demoted-spirit"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A retired wind spirit who still gusts the discard pile when ignored.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-020",
+    "name": "Wangliang (魍魎)",
+    "origin": "Chinese folklore",
+    "kind": "folklore",
+    "facts": [
+      "A wangliang is a malevolent spirit. Readings of the name include a wilderness spirit like the kui, a water spirit akin to the Chinese dragon, a fever demon like the three-legged poisonous turtle called yu, and a graveyard ghost also called wangxiang or fangliang.",
+      "One description is a man-eating demon like a three-year-old child, with brown skin, red eyes, long ears, and beautiful hair."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wangliang",
+        "title": "Wangliang",
+        "accessed": "2026-11-20",
+        "supports": "Several malevolent-spirit readings, including a child-shaped man-eater."
+      }
+    ],
+    "archetypeTags": [
+      "wilderness-spirit",
+      "grave",
+      "ambiguous"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Use the wilderness or graveyard reading. Do not build a joke on the child-shaped man-eater.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-021",
+    "name": "Daji (妲己) as fox spirit",
+    "origin": "Chinese historical legend and literature",
+    "kind": "historical",
+    "facts": [
+      "Daji is the alleged favorite consort of Di Xin, last king of Shang. She is not recorded in contemporary oracle-bone inscriptions.",
+      "In later legend and fiction she is a malevolent fox spirit who kills and impersonates the real Daji. That fox identification is traced at least to the Tang, and it was spread by works such as Wu Wang fa Zhou pinghua, Fengshen yanyi, and Lieguo zhi.",
+      "She is a stock example of a beautiful femme fatale blamed for a dynasty's fall. In 1111 a Song edict ordered destruction of many Kaifeng spirit shrines, including shrines of Daji; suppression of fox cults was unsuccessful."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Daji",
+        "title": "Daji",
+        "accessed": "2026-11-20",
+        "supports": "Later fox-spirit impersonator of a Shang consort; shrine suppression in 1111; not on oracle bones."
+      }
+    ],
+    "archetypeTags": [
+      "fox",
+      "femme-fatale",
+      "court"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A fox who stole a queen's name and is still bad at paperwork. Do not treat the shrine cult as a punchline.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-022",
+    "name": "Bai Suzhen (白素貞), Lady White Snake",
+    "origin": "Chinese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Bai Suzhen, also Lady Bai, is a thousand-year-old white snake spirit and the title figure of the Legend of the White Snake, one of China's four great folktales.",
+      "The legend is a romance between the snake spirit and a man named Xu Xian. The story has changed by era and region and has been told in novels, operas, and other media.",
+      "In some versions Bai Suzhen becomes a goddess, and worshippers call her Madam White Snake. She is widely taken as a symbol of true love and kind-heartedness."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bai_Suzhen",
+        "title": "Bai Suzhen",
+        "accessed": "2026-11-20",
+        "supports": "Thousand-year white snake of a great folktale; sometimes worshipped as Madam White Snake."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Legend_of_the_White_Snake",
+        "title": "Legend of the White Snake",
+        "accessed": "2026-11-20",
+        "supports": "Romance of Xu Xian and Bai Suzhen; one of the four great folktales."
+      }
+    ],
+    "archetypeTags": [
+      "snake-spirit",
+      "romance",
+      "folktale"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An affectionate tower echo of a devoted snake-doctor, not a mockery of Madam White Snake worship.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-023",
+    "name": "Mogwai (魔鬼), as a word",
+    "origin": "Cantonese and Chinese religious vocabulary",
+    "kind": "folklore",
+    "facts": [
+      "Mogwai is the Cantonese reading of 魔鬼, meaning monster, evil spirit, devil, or demon. Mandarin reads the same characters móguǐ.",
+      "Mo comes from Sanskrit māra, evil beings, literally death. Examples given are the yecha (yaksha) and the luocha (rakshasa), both reaching Chinese lore through Buddhism.",
+      "This is a class word, not a single species, and it is not the creature from the 1984 film that borrowed the sound of the word."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mogwai_(Chinese_culture)",
+        "title": "Mogwai (Chinese culture)",
+        "accessed": "2026-11-20",
+        "supports": "Cantonese word for demon; Sanskrit māra; yaksha and rakshasa as examples."
+      }
+    ],
+    "archetypeTags": [
+      "terminology",
+      "demon",
+      "loanword"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not design a furry film-gremlin. The word is a generic demon label.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-024",
+    "name": "Oni (鬼)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "An oni is a yōkai, demon, or ogre in Japanese folklore, said to live in caves, deep mountains, or hell.",
+      "They are hugely strong, tied to thunder and lightning, and storied as murderous and cannibal. Typical pictures show horns, huge teeth, sometimes a third eye, red blue black or yellow skin, a tiger-skin loincloth, and an iron kanabō.",
+      "They can change shape to win trust. Heian setsuwa show them eating a person in one bite (onihitokuchi). They have also been linked to good fortune. Shuten-dōji is regarded as the most famous and strongest oni."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Oni",
+        "title": "Oni",
+        "accessed": "2026-11-20",
+        "supports": "Horned club-wielding ogre; shapeshifting; Heian man-eating tales; also a luck association."
+      }
+    ],
+    "archetypeTags": [
+      "oni",
+      "brute",
+      "shapeshifter"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A horned hall monitor whose club is heavier than the joke.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-025",
+    "name": "Kappa (河童)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The kappa, 'river-child', is a major Japanese water yōkai living in ponds and rivers, also called kawatarō in some places.",
+      "Older accounts make them drowners of people, horses, and cattle. Later tales have a captured kappa, sometimes with an arm pulled off, repay forgiveness with labor or a secret medicine.",
+      "They are pictured as green, slimy or scaly, webbed, and turtle-shelled. A dish (sara) of water on the head is their strength; spill it and they weaken. They like cucumbers and sumo, and are accused of pulling out a mythical organ called the shirikodama."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kappa_(folklore)",
+        "title": "Kappa (folklore)",
+        "accessed": "2026-11-20",
+        "supports": "River monster; head-dish; cucumbers; sumo; shift from killer to indebted helper."
+      }
+    ],
+    "archetypeTags": [
+      "river",
+      "trickster",
+      "water-weakness"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A river auditor who will wrestle for a cucumber and folds if anyone bows low enough to spill the dish.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-026",
+    "name": "Tengu (天狗)",
+    "origin": "Japanese folklore and Shinto belief",
+    "kind": "folklore",
+    "facts": [
+      "Tengu, 'heavenly dog', are legendary creatures in Shinto belief, classed as yōkai or as kami.",
+      "They were first thought of as birds of prey and were tied to a monkey deity, drawn with human, monkey, and bird traits. Sarutahiko Ōkami is considered the model of the red-faced long-nosed konoha-tengu now treated as the popular tengu.",
+      "Buddhism long called them disruptive demons and omens of war. The image softened into dangerous but protective mountain and forest spirits, associated with Shugendō and usually dressed as yamabushi."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tengu",
+        "title": "Tengu",
+        "accessed": "2026-11-20",
+        "supports": "Heavenly-dog yokai or kami; long-nosed yamabushi form; Sarutahiko as model of the konoha-tengu."
+      }
+    ],
+    "archetypeTags": [
+      "mountain",
+      "bird",
+      "ascetic"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A long-nosed mountain guide who gives terrible directions on purpose. Do not parody Sarutahiko Ōkami.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-027",
+    "name": "Kitsune (狐)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "In popular Japanese folklore the kitsune is a fox or fox spirit with the supernatural ability to shapeshift or bewitch other living beings.",
+      "The bake-danuki article says that in some regions tanuki are reputed to share kitsune-like powers of shapeshifting and possession. The noppera-bō article lists kitsune among shapeshifters who may stage a faceless scare."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kitsune",
+        "title": "Kitsune",
+        "accessed": "2026-11-20",
+        "supports": "Fox spirit that shapeshifts or bewitches."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bake-danuki",
+        "title": "Bake-danuki",
+        "accessed": "2026-11-20",
+        "supports": "Some regions credit tanuki with kitsune-like shapeshifting and possession."
+      }
+    ],
+    "archetypeTags": [
+      "fox",
+      "shapeshifter",
+      "possession"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A fox clerk who files the party under the wrong names. Do not attach this record to Inari worship; that link was not in the sources read.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-028",
+    "name": "Bake-danuki (化け狸)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Bake-danuki are yōkai in classics and local legends, associated with the Japanese raccoon dog, the tanuki. The literary bake-danuki is a strange or supernatural animal, not just the real mammal.",
+      "In some regions they are said to shapeshift or possess people, abilities also attributed to kitsune.",
+      "Named tanuki of Sado, Awa, and Kagawa, among others, became subjects of ritual."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bake-danuki",
+        "title": "Bake-danuki",
+        "accessed": "2026-11-20",
+        "supports": "Supernatural tanuki; shapeshift and possess; some named ones receive rites."
+      }
+    ],
+    "archetypeTags": [
+      "tanuki",
+      "shapeshifter",
+      "trickster"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A raccoon-dog merchant whose leaf disguise is a bad receipt. Leave the ritually named tanuki alone.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-029",
+    "name": "Yuki-onna (雪女)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Yuki-onna, 'snow woman', is a yūrei or yōkai in Japanese folklore, also common in literature, film, and animation.",
+      "Regional names include yuki-musume, yukihime, yuki-onago, yukijorō, yuki-onba, yukinba in Ehime, and yukifuri-baba in Nagano, plus icicle names such as tsurara-onna.",
+      "The English lead read for this project lists names and does not specify powers. Do not treat ice-breath or a spare-the-youth bargain as sourced from this pass."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yuki-onna",
+        "title": "Yuki-onna",
+        "accessed": "2026-11-20",
+        "supports": "Snow-woman yurei or yokai under many regional names; powers not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "snow",
+      "woman-spirit",
+      "regional-names"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A snow woman whose only confirmed trait here is that every village files her under a different name.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-030",
+    "name": "Noppera-bō (のっぺらぼう)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The noppera-bō is a faceless yōkai that looks human but has no face. An 18th-century version calls a similar being a nupperibō.",
+      "Lafcadio Hearn's 1904 story 'Mujina', set in Edo, uses the double scare: a man flees a blank-faced woman and tells a soba-shop keeper, who then turns around blank-faced.",
+      "The blank face is sometimes said to be a trick by a mujina, kitsune, or tanuki."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Noppera-b%C5%8D",
+        "title": "Noppera-bō",
+        "accessed": "2026-11-20",
+        "supports": "Faceless human yokai; Hearn's soba-shop double scare; sometimes a beast's trick."
+      }
+    ],
+    "archetypeTags": [
+      "faceless",
+      "scare",
+      "shapeshifter-trick"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A help-desk ghost whose face loads only after you stop asking.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-031",
+    "name": "Rokurokubi (ろくろ首)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Rokurokubi are yōkai who look almost human. One type stretches its neck; another, the nukekubi, detaches its head and lets it fly.",
+      "They appear in classical kaidan and in yōkai picture-books. The krasue article notes them as a Japanese comparison for Southeast Asian flying-head spirits, not as the same being."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rokurokubi",
+        "title": "Rokurokubi",
+        "accessed": "2026-11-20",
+        "supports": "Stretching neck or detachable flying head."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Krasue",
+        "title": "Krasue",
+        "accessed": "2026-11-20",
+        "supports": "Names nukekubi and rokurokubi as a Japanese comparison, not an identity."
+      }
+    ],
+    "archetypeTags": [
+      "neck",
+      "flying-head",
+      "human-disguise"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A customer whose neck reaches the back of the shop while the body stays in line.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-032",
+    "name": "Nurikabe (塗壁)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The nurikabe, 'plastered wall', is a yōkai said to appear as an invisible wall that blocks or misdirects night travelers. It is described as too tall to climb and too wide to walk around.",
+      "Kunio Yanagita recorded an early prominent example. A 17th-century scroll at Brigham Young University, noticed in 2007, labels a white dog-elephant-like creature as nurikabe.",
+      "Shigeru Mizuki's manga nurikabe was inspired by his own claim of being stuck in coal tar in New Guinea. That character is a modern depiction, not the folklore wall."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nurikabe",
+        "title": "Nurikabe",
+        "accessed": "2026-11-20",
+        "supports": "Invisible night wall; Yanagita; 17th-century dog-elephant picture; Mizuki's version is separate."
+      }
+    ],
+    "archetypeTags": [
+      "wall",
+      "obstacle",
+      "night"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An invisible wall that is simply the next room refusing to load.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-033",
+    "name": "Tsukumogami (付喪神)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Tsukumogami, literally 'tool kami', are tools that have acquired a spirit. One theory in a commentary on The Tales of Ise, traced to the Onmyōki, counts hundred-year-old shapeshifted foxes and tanuki as tsukumogami too.",
+      "The characters 九十九神, 'ninety-nine kami', are a modern spelling that stresses age.",
+      "Komatsu Kazuhiko argues the tool-yōkai idea spread in the middle ages and later faded, and that Bakumatsu prints revived a picture without the old belief. The popular 'any object turns alive at 100' rule is widespread and disputed."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tsukumogami",
+        "title": "Tsukumogami",
+        "accessed": "2026-11-20",
+        "supports": "Tools that gain a kami; the 100-year rule is a modern and contested reading."
+      }
+    ],
+    "archetypeTags": [
+      "object",
+      "animated-tool",
+      "age"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A union of retired tools. Do not treat the hundred-year rule as settled folklore.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-034",
+    "name": "Kasa-obake (傘おばけ)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Kasa-obake are umbrella ghosts or yōkai. They are sometimes, not always, classed as tsukumogami that old umbrellas become.",
+      "Other names include karakasa-obake, kasa-bake, and karakasa kozō.",
+      "The English lead read here does not describe a single eye, a single leg, or a licking tongue. Those details are not sourced in this pass."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kasa-obake",
+        "title": "Kasa-obake",
+        "accessed": "2026-11-20",
+        "supports": "Umbrella yokai, sometimes a tsukumogami; one-eye one-leg look not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "umbrella",
+      "object",
+      "tsukumogami"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An umbrella that opens indoors on purpose. Do not add a one-eyed foot unless a later source is fetched.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-035",
+    "name": "Umibōzu (海坊主)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Umibōzu, 'sea monk', is a yōkai in the form of a giant black human-like being.",
+      "It appears to sailors on calm seas that then turn rough. It breaks the ship as it rises, or it demands a ladle and drowns the crew.",
+      "The told escape is to hand it a bottomless ladle and sail while it is confused. Near-synonyms include umihōshi and uminyūdō."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Umib%C5%8Dzu",
+        "title": "Umibōzu",
+        "accessed": "2026-11-20",
+        "supports": "Giant black sea figure; ladle demand; bottomless ladle as the escape."
+      }
+    ],
+    "archetypeTags": [
+      "sea",
+      "giant",
+      "riddle-object"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A sea monk who loses the fight to a ladle with no bottom.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-036",
+    "name": "Jorōgumo (絡新婦)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Jorōgumo is a yōkai. The kanji 女郎蜘蛛 mean 'woman-spider'; the kanji usually written, 絡新婦, mean 'entangling newlywed woman' and are read with a jukujikun.",
+      "In Toriyama Sekien's Gazu Hyakki Yagyō it is a spider woman manipulating small fire-breathing spiders.",
+      "The same word, in katakana, is the entomologists' name for the spider Trichonephila clavata, the joro spider. That animal is not the yōkai."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jor%C5%8Dgumo",
+        "title": "Jorōgumo",
+        "accessed": "2026-11-20",
+        "supports": "Spider woman in Sekien, with small fire-breathing spiders; distinct from the joro spider species."
+      }
+    ],
+    "archetypeTags": [
+      "spider",
+      "shapeshifter",
+      "woman"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bridal spider who sends smaller spiders to do the talking. Do not draw the real joro spider as if it were the monster.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-037",
+    "name": "Amabie (アマビエ)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Amabie is a legendary Japanese merfolk figure with a beak-like mouth and three legs or tail-fins. It is said to rise from the sea, prophesy a rich harvest or an epidemic, and tell people to copy its picture as a defense against illness.",
+      "It appears to be a variant or misspelling of amabiko or amahiko, a prophetic beast drawn with three or four legs and ape-like, daruma-like, bird-like, or fish-like features.",
+      "The known amabie picture is a woodblock dated 1846 at Kyoto University Library. An amabiko leaflet dated 1844 is older. These prints are yogenjū, prophecy-beasts."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Amabie",
+        "title": "Amabie",
+        "accessed": "2026-11-20",
+        "supports": "Three-legged prophetic merfolk; copying the picture wards illness; 1846 print."
+      }
+    ],
+    "archetypeTags": [
+      "prophet",
+      "merfolk",
+      "epidemic",
+      "print"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A three-legged forecast fish that is only defeated by fan art.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-038",
+    "name": "Kamaitachi (鎌鼬)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Kamaitachi is a yōkai from the oral tradition of the Kōshin'etsu region, and the name also covers the strange events it causes.",
+      "They ride dust devils and cut people with sickle-like front claws, leaving sharp wounds that do not hurt.",
+      "The name joins kama, sickle, and itachi, weasel."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kamaitachi",
+        "title": "Kamaitachi",
+        "accessed": "2026-11-20",
+        "supports": "Sickle-weasel on a dust devil; painless cuts."
+      }
+    ],
+    "archetypeTags": [
+      "weasel",
+      "wind",
+      "cut"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A dust-devil weasel that deals papercuts and apologizes.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-039",
+    "name": "Akaname (垢嘗)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The akaname, 'scum-licker' or 'filth-licker', is a yōkai drawn in Toriyama Sekien's 1776 Gazu Hyakki Yagyō. A precursor, akaneburi, is documented in 1686.",
+      "These beings are presumed to lick the filth that collects in bathtubs and bathrooms."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Akaname",
+        "title": "Akaname",
+        "accessed": "2026-11-20",
+        "supports": "Sekien filth-licker of baths; 1776, with a 1686 precursor."
+      }
+    ],
+    "archetypeTags": [
+      "filth",
+      "bath",
+      "licker"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bathroom critic who rates grime and will not fight a clean tub.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-040",
+    "name": "Baku (獏)",
+    "origin": "Japanese folklore, from Chinese mo",
+    "kind": "folklore",
+    "facts": [
+      "Baku are Japanese supernatural beings said to devour nightmares. They originate from the Chinese mo.",
+      "Legend says they were made from the spare pieces left when the gods finished the other animals.",
+      "The word baku now also means the Malayan tapir, and recent art has changed how the dream-eater is drawn. Dream-eating is the folkloric sense; the tapir is the modern animal sense."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Baku_(mythology)",
+        "title": "Baku (mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Nightmare-eater made of leftover parts; Chinese mo origin; later confused with the tapir."
+      }
+    ],
+    "archetypeTags": [
+      "dream",
+      "chimera",
+      "benevolent"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A leftover-parts beast that eats the party's bad draws and sometimes a good one.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-041",
+    "name": "Raijū (雷獣)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "The raijū, 'thunder beast', is a yōkai associated with lightning, thunder, and the god Raijin. It is said to appear with lightning strikes.",
+      "Legends are centered in eastern Japan, and the name is common in Edo essays and modern folklore notes.",
+      "One theory says the nue shot by Minamoto no Yorimasa in the Heike was actually a raijū."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Raij%C5%AB",
+        "title": "Raijū",
+        "accessed": "2026-11-20",
+        "supports": "Thunder beast accompanying lightning and Raijin; a theory equates one nue with a raiju."
+      }
+    ],
+    "archetypeTags": [
+      "thunder",
+      "beast",
+      "lightning"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A storm weasel that arrives only when the thunder cue fires. Do not parody Raijin.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-042",
+    "name": "Nue (鵺)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "The nue is a legendary yōkai or mononoke. In the Tale of the Heike it is a chimera with a monkey's head, a tiger's limbs, a tanuki's body, and a snake's front half for a tail. The Genpei jōsuiki instead gives a tiger's back, tanuki limbs, a fox tail, a cat's head, and a chicken's torso.",
+      "It is said to cry an eerie 'hyoo hyoo' like a scaly thrush, to be nocturnal, and to shapeshift, often into a flying black cloud.",
+      "In the Heike telling, a black cloud and the cry sicken an emperor until Minamoto no Yorimasa shoots the cloud and Ino Hayata finishes the creature. Kyoto, fearing a curse, floats the corpse downstream; mounds called Nuezuka mark burials, and disturbing one is said to have revived the grudge."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nue",
+        "title": "Nue",
+        "accessed": "2026-11-20",
+        "supports": "Heike chimera; thrush cry; black-cloud form; Yorimasa's shot; cursed burial mounds."
+      }
+    ],
+    "archetypeTags": [
+      "chimera",
+      "illness",
+      "night-bird"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mixed-up beast whose own bestiaries disagree about the parts.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-043",
+    "name": "Shuten-dōji (酒呑童子)",
+    "origin": "Japanese legend",
+    "kind": "folklore",
+    "facts": [
+      "Shuten-dōji is a mythical oni leader, killed in legend by Minamoto no Raikō (Yorimitsu).",
+      "After the beheading, the detached head still bit at the hero, who survived by wearing several helmets stacked on his head.",
+      "The lair is Mount Ōe northwest of Kyoto, or Mount Ibuki, depending on the version. Another theory places the original mountain at the western edge of Kyoto."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Shuten-d%C5%8Dji",
+        "title": "Shuten-dōji",
+        "accessed": "2026-11-20",
+        "supports": "Oni leader; the severed head still bites; stacked helmets; Mount Oe lair."
+      }
+    ],
+    "archetypeTags": [
+      "oni",
+      "boss",
+      "severed-head"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A drinking-oni whose defeat animation is a head that still tries one bite, answered by a stack of pots.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-044",
+    "name": "Gashadokuro (がしゃどくろ)",
+    "origin": "Modern Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Gashadokuro, literally 'rattling skeleton', also called odokuro, are mythical creatures the English Wikipedia places in modern Japanese mythology.",
+      "They are said to pick up people they wish to eat.",
+      "The lead read for this pass does not give a size, a starvation origin, or a ringing in the ears. Those details are not sourced here."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gashadokuro",
+        "title": "Gashadokuro",
+        "accessed": "2026-11-20",
+        "supports": "Modern-mythology rattling skeleton that picks up people to eat; further traits not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "skeleton",
+      "giant",
+      "modern-folklore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A rattling skeleton that grabs one hero for a snack. Keep it distinct from older bone-ghosts; the article calls the tradition modern.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-045",
+    "name": "Nuppeppō (ぬっぺっぽう)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The nuppeppō appears in Edo-period yōkai picture scrolls, including Gazu Hyakki Yagyō and Hyakkai zukan.",
+      "It is drawn as a blob of meat whose face and body are the same mass of wrinkles, so the features cannot be told apart."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nuppepp%C5%8D",
+        "title": "Nuppeppō",
+        "accessed": "2026-11-20",
+        "supports": "Edo picture-scroll blob of wrinkled meat with no separate face."
+      }
+    ],
+    "archetypeTags": [
+      "blob",
+      "flesh",
+      "edo"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A walking meatball with no face to aim at and no interest in being cooked.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-046",
+    "name": "Azukiarai (小豆洗い)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Azukiarai, or azukitogi, is a ghostly sound like azuki beans being washed or ground, usually near a river.",
+      "Sometimes the spirit sings that it might grind beans or catch a person to eat, and anyone who approaches falls into the water.",
+      "It is seldom seen. When described, it is a short grotesque man with a large balding head, crooked teeth, a thin moustache, bulging yellow eyes, and ragged clothes, bent over a pail. The sound is sometimes blamed on a tanuki or a weasel."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Azukiarai",
+        "title": "Azukiarai",
+        "accessed": "2026-11-20",
+        "supports": "Bean-washing sound by water; a song; approaching means falling in; sometimes a tanuki or weasel."
+      }
+    ],
+    "archetypeTags": [
+      "sound",
+      "river",
+      "lure"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bean-washer whose chorus is the tell that the riverbank is a trap.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-047",
+    "name": "Wanyūdō (輪入道)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Wanyūdō, literally 'wheel monk', also called Firewheel or Soultaker, is a yōkai in Toriyama Sekien's Konjaku gazu zoku hyakki.",
+      "The earliest reports are said to date to the Heian period.",
+      "The lead gives the names and the Sekien depiction. It does not describe the method of taking souls. Do not invent that method from the alias alone."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wany%C5%ABd%C5%8D",
+        "title": "Wanyūdō",
+        "accessed": "2026-11-20",
+        "supports": "Wheel-monk yokai in Sekien; Heian reports; aliases Firewheel and Soultaker."
+      }
+    ],
+    "archetypeTags": [
+      "wheel",
+      "fire",
+      "monk-form"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A flaming cartwheel monk who demands the right of way. Do not add a soul-stealing procedure that this source does not give.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-048",
+    "name": "Namazu (鯰)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "Namazu, or ōnamazu, is a giant underground catfish that causes earthquakes.",
+      "It lives under the Japanese islands and is guarded by the god Takemikazuchi at Kashima, who holds it down with a stone.",
+      "When that god's guard slips, the catfish thrashes and the earthquake follows."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Namazu",
+        "title": "Namazu",
+        "accessed": "2026-11-20",
+        "supports": "Earthquake catfish pinned by the Kashima god's stone."
+      }
+    ],
+    "archetypeTags": [
+      "catfish",
+      "earthquake",
+      "underground"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A catfish under the tower whose thrash is the quake. Do not parody Takemikazuchi.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-049",
+    "name": "Bake-kujira (化鯨)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Bake-kujira, 'ghost whale', also hone-kujira, 'bone whale', is a yōkai usually drawn as a whale's skeleton appearing at sea on stormy nights.",
+      "It is most closely tied to the coasts of western Japan, especially the Shimane peninsula.",
+      "It is generally read as a vengeful spirit of a whale, carrying resentment toward people involved in whaling."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bake-kujira",
+        "title": "Bake-kujira",
+        "accessed": "2026-11-20",
+        "supports": "Skeletal whale on stormy nights; Shimane; grudge against whalers."
+      }
+    ],
+    "archetypeTags": [
+      "whale",
+      "skeleton",
+      "sea",
+      "vengeful"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bone whale that arrives with the weather and will not beach for a selfie.",
+    "confidence": "medium",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-050",
+    "name": "Futakuchi-onna (二口女)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Futakuchi-onna, 'two-mouthed woman', is a yōkai with a normal mouth and a second mouth on the back of the head, under the hair, where the skull splits into lips, teeth, and a tongue.",
+      "The article places her with rokurokubi, kuchisake-onna, and yamauba: women transformed by a curse or supernatural disease, whose nature stays hidden until the end."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Futakuchi-onna",
+        "title": "Futakuchi-onna",
+        "accessed": "2026-11-20",
+        "supports": "Second mouth on the back of the head; hidden until revealed."
+      }
+    ],
+    "archetypeTags": [
+      "two-mouths",
+      "curse",
+      "woman"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A diner whose back-of-head mouth clears the plate the front mouth refused. Kuchisake-onna is a separate urban legend and is left to that research lane.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-051",
+    "name": "Tesso (鉄鼠)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Tesso, 'iron rat', is a yōkai tied to the vengeful spirit of the Heian monk Raigō and to a mouse.",
+      "Toriyama Sekien gave it the name tesso in Gazu Hyakki Yagyō. Older names include Raigō-nezumi, from a Heike yomihon, and Mii-dera-nezumi, from Miidera in Ōtsu."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tesso",
+        "title": "Tesso",
+        "accessed": "2026-11-20",
+        "supports": "Vengeful monk as a rat; Sekien's name; also Raigo-nezumi and Miidera-nezumi."
+      }
+    ],
+    "archetypeTags": [
+      "rat",
+      "vengeful-monk",
+      "swarm"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A monastery grudge that shows up as one iron rat and then as too many rats.",
+    "confidence": "high",
+    "sensitivity": "low"
+  },
+  {
+    "inspirationId": "INS-03-052",
+    "name": "Zashiki-warashi (座敷童子)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Zashiki-warashi, 'parlor child', are spirit-like beings told of mostly in Iwate. They are yōkai said to live in parlors or storerooms and to play pranks.",
+      "Seeing one is believed to bring good fortune, and families they dwell with are said to prosper. Yanagita's Tōno monogatari records them; chapter 17 says families with whom this spirit dwells become prosperous."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zashiki-warashi",
+        "title": "Zashiki-warashi",
+        "accessed": "2026-11-20",
+        "supports": "Iwate parlor-child; pranks; the house prospers while they stay."
+      }
+    ],
+    "archetypeTags": [
+      "house-spirit",
+      "child",
+      "fortune"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A parlor child who pranks the hideout and whose leaving is the real disaster. Not a corpse-spirit.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-053",
+    "name": "Yamata no Orochi (八岐大蛇)",
+    "origin": "Japanese mythology",
+    "kind": "myth",
+    "facts": [
+      "Yamata no Orochi is a legendary eight-headed, eight-tailed serpent in the Kojiki and the Nihon shoki. The kami Susanoo defeats it to rescue Kushinadahime, and the Kusanagi sword, part of the imperial regalia, is found in a tail.",
+      "A local tradition says the serpent survived, fled to Mount Ibuki, and was venerated as Ibuki Daimyōjin.",
+      "Emperor Antoku and the dragon girl Longnü have been identified as incarnations of the serpent."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yamata_no_Orochi",
+        "title": "Yamata no Orochi",
+        "accessed": "2026-11-20",
+        "supports": "Eight-headed serpent of the Kojiki; sword in the tail; venerated at Ibuki in one tradition."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "eight-heads",
+      "myth"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. The serpent is tied to imperial-regalia myth and, locally, to veneration as Ibuki Daimyōjin.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-054",
+    "name": "Onryō (怨霊)",
+    "origin": "Japanese traditional belief",
+    "kind": "folklore",
+    "facts": [
+      "Onryō, 'vengeful spirits', are yūrei believed able to harm the living, kill enemies, or cause disasters to redress wrongs suffered while alive.",
+      "They are often pictured as wronged women. Emperor Sutoku, Taira no Masakado, and Sugawara no Michizane are called the Three Great Onryō and were later enshrined as kami to calm them.",
+      "Masakado's head mound near Tokyo Station is still maintained; moves proposed for redevelopment were followed, in the telling, by worker deaths and accidents, so the mound stayed. Goryō are onryō of nobles who died unjust political deaths and became objects of reverence."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Onry%C5%8D",
+        "title": "Onryō",
+        "accessed": "2026-11-20",
+        "supports": "Vengeful ghosts; three great onryo deified; Masakado's mound still tended."
+      }
+    ],
+    "archetypeTags": [
+      "vengeful-ghost",
+      "disaster",
+      "appeasement"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A generic grudge-ghost may be usable. Do not parody Masakado's mound, Tenjin, or Sutoku.",
+    "confidence": "high",
+    "sensitivity": "high"
+  },
+  {
+    "inspirationId": "INS-03-055",
+    "name": "Shisa (シーサー)",
+    "origin": "Ryukyuan / Okinawan tradition",
+    "kind": "folklore",
+    "facts": [
+      "Shisa are traditional Ryukyuan ornaments derived from Chinese guardian lions, usually in pairs, like a cross between a lion and a dog.",
+      "They are wards against some evils, placed on rooftops or beside house gates. The left figure traditionally has a closed mouth and the right an open mouth.",
+      "The open mouth wards off evil spirits; the closed mouth keeps good spirits in."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Shisa",
+        "title": "Shisa",
+        "accessed": "2026-11-20",
+        "supports": "Okinawan lion-dog pairs; open mouth expels evil, closed mouth keeps good."
+      }
+    ],
+    "archetypeTags": [
+      "guardian-lion",
+      "pair",
+      "ward"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A gate pair who argue about whether the door should stay open. Do not mock them as fake charms.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-056",
+    "name": "Komainu (狛犬)",
+    "origin": "Japanese Shinto shrine tradition",
+    "kind": "folklore",
+    "facts": [
+      "Komainu, often called lion-dogs in English, are pairs of lion-like statues that guard the gate of a Shinto shrine or stand before or inside the honden."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Komainu",
+        "title": "Komainu",
+        "accessed": "2026-11-20",
+        "supports": "Lion-dog statue pairs guarding Shinto shrine gates or the inner sanctuary."
+      }
+    ],
+    "archetypeTags": [
+      "guardian-lion",
+      "shrine",
+      "pair"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Research record for a shrine guardian. Do not use it as a comedy enemy of the sanctuary.",
+    "confidence": "medium",
+    "sensitivity": "medium"
+  },
+  {
+    "inspirationId": "INS-03-057",
+    "name": "Chinese guardian lions (石獅)",
+    "origin": "Chinese Buddhist architectural tradition",
+    "kind": "folklore",
+    "facts": [
+      "Chinese guardian lions, or shishi, are traditional architectural ornaments, usually stone, also called stone lions and, in colloquial English, lion dogs, foo dogs, or fu dogs.",
+      "The form became popular in Chinese Buddhism. A pair, often a male with a ball and a female with a cub, was thought to protect a building from harmful spiritual influences and dangerous people.",
+      "From imperial palaces and tombs the lions spread across Asia, including Japan (komainu), Okinawa, Korea, Thailand, Vietnam, Cambodia, and Laos, among other places."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chinese_guardian_lions",
+        "title": "Chinese guardian lions",
+        "accessed": "2026-11-20",
+        "supports": "Buddhist stone-lion pairs as building protectors; spread includes komainu and much of East and Southeast Asia."
+      }
+    ],
+    "archetypeTags": [
+      "guardian-lion",
+      "pair",
+      "threshold"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A threshold pair, male with a ball and female with a cub. 'Foo dog' is an English nickname, not a separate species, and not a film character.",
+    "confidence": "high",
+    "sensitivity": "medium"
+  },
+  {
+    "name": "Dokkaebi (도깨비)",
+    "origin": "Korean mythology and folklore",
+    "kind": "folklore",
+    "facts": [
+      "Dokkaebi are legendary creatures of Korean mythology and folklore, also called Korean ogres in English.",
+      "The same article calls them nature deities or spirits. They use extraordinary powers on humans, sometimes tricking them and sometimes helping them.",
+      "Legends give them many forms, 'a thousand faces', and they often wear hanbok."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dokkaebi",
+        "title": "Dokkaebi",
+        "accessed": "2026-11-20",
+        "supports": "Trickster nature spirits or deities; many forms; often in hanbok."
+      }
+    ],
+    "archetypeTags": [
+      "trickster",
+      "shapeshifter",
+      "ogre"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A hanbok trickster who wants a game, not a shrine gag. The source uses the word deities, so keep worship out of the joke.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-058"
+  },
+  {
+    "name": "Gumiho (구미호)",
+    "origin": "Korean folklore",
+    "kind": "folklore",
+    "facts": [
+      "Gumiho or kumiho, literally nine-tailed fox, is a creature in East Asian folktales and Korean legend, likened to the Chinese jiuweihu, the Japanese kitsune, and the Vietnamese hồ ly tinh.",
+      "The word first pointed to a magical fox in Joseon novels, or was a political insult for treacherous officials. Modern Korean usage widened it to fox spirits in traditional sources generally, which the article calls a conflation. Other names include bulyeou, baegyeou, maegu, and hogwi.",
+      "Korean myth usually paints foxes as deceptive, malevolent, and tragic, with rare benevolent or mountain-deity cases. Ancient records describe white fur and human transformation; nine tails show up in Korean historical records from Goryeo onward, not in the earliest kingdom records. Joseon novels also give some foxes a magical marble and more than one tail. The wish to become human is much more common in modern retellings than in older tales."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gumiho",
+        "title": "Gumiho",
+        "accessed": "2026-11-20",
+        "supports": "Nine-tailed-fox name; Joseon literary history; deceptive fox; nine tails from Goryeo; marble in novels; becoming-human motif is mostly modern."
+      }
+    ],
+    "archetypeTags": [
+      "fox",
+      "shapeshifter",
+      "nine-tails"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A fox whose tail count is a Joseon novel device, not a power meter copied from a drama. Liver-eating was not the general trait in the sections read.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-059"
+  },
+  {
+    "name": "Bulgasari (불가살이)",
+    "origin": "Korean folklore",
+    "kind": "folklore",
+    "facts": [
+      "The Encyclopedia of Korean Culture defines the folklore bulgasari as an animal of tales that lives by eating iron and is a monster that cannot be killed. The name bulgasari (不可殺) means that.",
+      "In Korean tales its shape is not fixed: pig, ant, mouse, horse, insect, and others. It grows by eating metal and is destroyed by fire, its opposite in five-phase thought. Another name, hwagasal (火可殺), means it can be killed by fire.",
+      "Tales are usually set in the troubled years of Goryeo and Joseon, and historical figures appear. A common plot has persecuted people, often monks, make a small figure that eats iron and swells. The Joseon book Songnam japji reports a popular story of a Songdo monster that ate nearly all the iron and could not be killed. The encyclopedia separates this Korean tradition from the Chinese mo, which also eats metal. The 1962 and 1985 films are modern adaptations, not the shape of the tale."
+    ],
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0024904",
+        "title": "불가사리, Encyclopedia of Korean Culture (Academy of Korean Studies)",
+        "accessed": "2026-11-20",
+        "supports": "Iron-eating, unkillable-by-weapons tale creature; variable animal forms; fire as the counter; Songnam japji; not the Chinese mo and not the films."
+      }
+    ],
+    "archetypeTags": [
+      "metal-eater",
+      "growing",
+      "fire-weakness"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A scrap-eating creature whose silhouette changes every telling. Do not copy either film's monster suit. The Korean word also means starfish; that is a different encyclopedia entry.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-060"
+  },
+  {
+    "name": "Bulgae (불개)",
+    "origin": "Korean mythology",
+    "kind": "myth",
+    "facts": [
+      "Bulgae or pulgae, 'fire dog', are mythical fire dogs in Korean mythology.",
+      "They come from the kingdom of darkness and chase the sun and the moon. Eclipses happen when they bite those bodies.",
+      "The article calls them strong, fierce, or hairy dogs, and says they are likely the Korean Sapsali, whose name means ghost-chasing dog. The breed link is the article's suggestion, not a separate source read here."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bulgae",
+        "title": "Bulgae",
+        "accessed": "2026-11-20",
+        "supports": "Fire dogs from the dark kingdom; their bite on sun or moon is the eclipse."
+      }
+    ],
+    "archetypeTags": [
+      "dog",
+      "eclipse",
+      "fire"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A kennel of fire dogs who bite the moon and then have to be called off.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-061"
+  },
+  {
+    "name": "Inmyeonjo (인면조)",
+    "origin": "Korean mythology",
+    "kind": "myth",
+    "facts": [
+      "Inmyeonjo, 'human-face bird', is a Korean mythological bird with a human face, usually a woman's, sometimes a man's.",
+      "It is called a sacred bird linking sky and land, and it appears in Three Kingdoms tomb murals. Goguryeo examples include the Anak tombs, Dukheung-ri, Samsilchong, and Mooyongchong. At Dukheung-ri a pair named Cheonchu and Mansei are a longevity symbol, said to live a thousand years.",
+      "Silla gilt-bronze shoes and the Baekje gilt-bronze incense burner also show them. Some viewers instead identify a winged figure with the Buddhist kalavinka."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Inmyeonjo",
+        "title": "Inmyeonjo",
+        "accessed": "2026-11-20",
+        "supports": "Human-faced sacred bird of tomb art; longevity symbol; sometimes read as a kalavinka."
+      }
+    ],
+    "archetypeTags": [
+      "human-faced-bird",
+      "longevity",
+      "tomb-art"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A thousand-year choir bird. Tomb murals and the kalavinka reading are not comedy targets.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-062"
+  },
+  {
+    "name": "Jeoseung Saja (저승사자)",
+    "origin": "Korean mythology and shamanism",
+    "kind": "myth",
+    "facts": [
+      "Jeoseung Saja, 'netherworld emissary', or Jeoseung Chasa, are psychopomps who guide the dead to the afterlife.",
+      "Like Yeomna, the king of the underworld, they are Buddhist divinities adopted into Korean shamanism and then tied to Korean beliefs that are not in Buddhism.",
+      "They are pictured as stern bureaucrats in Yeomna's service. Gangnim Doryeong carries the jeokpaeji, a red-cloth list of the dead, and calls a name three times so the soul must follow. Shamanic tradition often shows them as soldiers. The black durumagi, gat, and pale face popular today come from the KBS drama Hometown of Legends, not from the older picture."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jeoseung_Saja",
+        "title": "Jeoseung Saja",
+        "accessed": "2026-11-20",
+        "supports": "Buddhist-shamanic psychopomp; red name-list; the modern black-coat look is from a TV drama."
+      }
+    ],
+    "archetypeTags": [
+      "psychopomp",
+      "bureaucrat",
+      "underworld"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. These are Buddhist divinities still carried in shamanic tradition. The television costume is a separate copyrighted look.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-063"
+  },
+  {
+    "name": "Three-legged crow (Jinwu / Yangwu)",
+    "origin": "East Asian mythology, especially Chinese",
+    "kind": "myth",
+    "facts": [
+      "The three-legged crow is a mythological creature in East Asian myth and art, believed to live in and represent the sun.",
+      "The most popular Chinese telling is the Yangwu or Jinwu, the golden crow.",
+      "The English lead read here does not use the Korean name samjok-o. That name is not claimed from this page."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Three-legged_crow",
+        "title": "Three-legged crow",
+        "accessed": "2026-11-20",
+        "supports": "Sun-dwelling, sun-representing bird; Chinese golden crow Jinwu or Yangwu."
+      }
+    ],
+    "archetypeTags": [
+      "sun",
+      "bird",
+      "three-legs"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody the sun crow. It is a sacred solar symbol, not a mascot.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-064"
+  },
+  {
+    "name": "Krasue (กระสือ)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "The krasue is a nocturnal female spirit of Southeast Asian folklore: a floating woman's head, usually young and beautiful, with internal organs still hanging from the neck.",
+      "Thai ethnographer Phraya Anuman Rajadhon says she is accompanied by a will-o'-the-wisp glow. She is often said to live in the same areas as the male spirit Krahang. She hovers because she has no lower body. The organs usually include the heart, the stomach, and a length of intestine.",
+      "The English article groups her with Khmer ahp, Lao kasu, Malay penanggalan, Balinese leyak, Vietnamese ma lai, and Philippine manananggal as related but regionally named traditions. Fangs and extra organs in films are contemporary pictures, not the older description."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Krasue",
+        "title": "Krasue",
+        "accessed": "2026-11-20",
+        "supports": "Floating head with heart, stomach, and intestine; Anuman's glow; shares ground with Krahang; film fangs are modern."
+      }
+    ],
+    "archetypeTags": [
+      "flying-head",
+      "entrails",
+      "night",
+      "woman"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A floating head late for dinner because her own lights tangled. Living rural belief: joke the logistics, not the believers. Not the same card as penanggalan, ahp, or manananggal.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-065"
+  },
+  {
+    "name": "Krahang (กระหัง)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Krahang is a male spirit of Thai folklore. He appears as a shirtless man in a traditional loincloth and flies at night.",
+      "He flies with two large kradong, round rice-winnowing baskets, in rural Thailand, and he often rides a sak tam khao, the long wooden pestle of a manual rice pounder.",
+      "The krasue article says the krasue is often said to live in the same areas."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Krahang",
+        "title": "Krahang",
+        "accessed": "2026-11-20",
+        "supports": "Shirtless night flier using two winnowing baskets and often a rice pestle."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Krasue",
+        "title": "Krasue",
+        "accessed": "2026-11-20",
+        "supports": "Krasue and Krahang are often said to share the same areas."
+      }
+    ],
+    "archetypeTags": [
+      "flyer",
+      "rural",
+      "man",
+      "tools"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A night flier whose mount is kitchen equipment.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-066"
+  },
+  {
+    "name": "Phi Kong Koi (ผีกองกอย)",
+    "origin": "Thai and Lao folklore",
+    "kind": "folklore",
+    "facts": [
+      "Phi Kong Koi is a Lao and Thai jungle ghost, often described as a one-legged phantom that hops and shouts 'Koi, koi, koi'.",
+      "Some people give it a fly-like tube mouth; others say it looks like a monkey or langur. Accounts agree it is ugly and, unusually, cannot climb trees. It is believed to suck blood from the toes of a traveler sleeping in the jungle. Crossing or keeping the feet together is the protection named on the English page.",
+      "Phya Anuman Rajadhon's 1954 essay The Phi, in the Journal of the Siam Society, describes the same one-legged hopper, the kong-koi cry, blood sucked from a sleeping wayfarer's toe, and says a loud shout frightens it off."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kong_koi",
+        "title": "Kong koi",
+        "accessed": "2026-11-20",
+        "supports": "One-legged hopping jungle ghost; koi cry; toe blood; crossed feet as protection."
+      },
+      {
+        "url": "https://thesiamsociety.org/wp-content/uploads/1954/03/JSS_041_2c_PhyaAnumanRajathon_ThePhi.pdf",
+        "title": "Phya Anuman Rajadhon, The Phi (Journal of the Siam Society, 1954 PDF)",
+        "accessed": "2026-11-20",
+        "supports": "One leg, the cry, toe blood, and retreat when shouted at."
+      }
+    ],
+    "archetypeTags": [
+      "one-legged",
+      "jungle",
+      "blood",
+      "hopper"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A one-legged jungle pest who loses if the party crosses its ankles and shouts. A dictionary note linking the name to an ethnic label is not used.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-067"
+  },
+  {
+    "name": "Mae Nak Phra Khanong (แม่นากพระโขนง)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Mae Nak, or Nang Nak, is a well-known Thai ghost. Local folklore sets the story in the reign of King Rama IV. Wikipedia's creature summary calls her a legendary creature and a tutelary deity.",
+      "In the common legend, Nak of Phra Khanong Canal dies in childbirth while her husband Mak is away at war. He comes home to a wife and child who are already dead. She drops a lime while making nam phrik and stretches an arm to an impossible length to pick it up. Mak hides behind Blumea leaves, which ghosts are said to fear, and reaches Wat Mahabut, which she cannot enter. Later tellings have a monk confine her in a jar, or in the bone of her forehead.",
+      "A shrine at Wat Mahabut, moved in 1997 within the Suan Luang area, still receives offerings, especially from women asking for an easy birth or for a husband to avoid conscription. Historian Anek Nawikamul found an 1899 Siam Prabheth article by K.S.R. Kulap claiming a son invented the ghost to stop his father remarrying. That claim is a historical theory, not a replacement for the legend people tell."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mae_Nak_Phra_Khanong",
+        "title": "Mae Nak Phra Khanong",
+        "accessed": "2026-11-20",
+        "supports": "Childbirth death, the long arm and the lime, Blumea and the temple, a living shrine, and the 1899 skeptical article."
+      }
+    ],
+    "archetypeTags": [
+      "ghost",
+      "devotion",
+      "shrine",
+      "long-arm"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "If used at all, only as affection: a ghost who stretches for a dropped lime and will not start the raid until everyone has eaten. Do not mock the shrine, the childbirth death, or the people who ask her for help.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-068"
+  },
+  {
+    "name": "Nang Tani (นางตานี)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Nang Tani, 'Lady of Tani', is a female spirit who haunts wild banana trees, Musa acuminata, called kluai tani.",
+      "She belongs to the tree maidens generically called Nang Mai, 'Lady of the Wood'. Similar spirits are noted in Cambodian and Lao tradition.",
+      "Other names are Phi Tani and Phrai Tani."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nang_Tani",
+        "title": "Nang Tani",
+        "accessed": "2026-11-20",
+        "supports": "Young woman haunting wild banana trees; a kind of nang mai."
+      }
+    ],
+    "archetypeTags": [
+      "tree-spirit",
+      "banana",
+      "woman"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A banana-tree lady who is offended by litter, not by the party existing.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-069"
+  },
+  {
+    "name": "Nang Ta-khian (นางตะเคียน)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Nang Ta-khian, 'Lady of Ta-khian', is a female spirit of Thai folklore. She manifests as a woman who haunts Hopea odorata trees, called ta-khian in Thai."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nang_Ta-khian",
+        "title": "Nang Ta-khian",
+        "accessed": "2026-11-20",
+        "supports": "Woman who haunts Hopea odorata, the takhian tree."
+      }
+    ],
+    "archetypeTags": [
+      "tree-spirit",
+      "woman",
+      "forest"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A great-tree lady. The English lead does not include dresses, lottery numbers, or curses; those are not claimed here.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-070"
+  },
+  {
+    "name": "Phi Phong (ผีโพง)",
+    "origin": "Northern Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Phi Phong, called Phi Pao in the northeast, is a northern Thai ghost said to come from black magic the practitioner could not control.",
+      "The belief ties the change to raising a herb called wan phi phong: white leaves, a fiery taste, a glow like a luminous woodlouse. As it matures, the leaves are said to take the shape of the grower's face, and the grower becomes Phi Phong.",
+      "By day they look ordinary. By night a soft flame shows in the nose and a resin like torch wax drips. Like krasue, krahang, and phi pop, they feed on filth: frogs, dung, rotting corpses, and afterbirth. They avoid people unless provoked, and then may throw objects. The article names a widow's bamboo carrying pole among the things thrown."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phong_(ghost)",
+        "title": "Phong (ghost)",
+        "accessed": "2026-11-20",
+        "supports": "Failed northern sorcery; glowing herb; nose-flame; filth diet; usually flees people."
+      }
+    ],
+    "archetypeTags": [
+      "sorcery-gone-wrong",
+      "filth",
+      "flame",
+      "disguise"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A neighbor who is ordinary until the nose lights up. Do not play the afterbirth diet for laughs.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-071"
+  },
+  {
+    "name": "Phi Pop (ปอบ)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Pop or Pob is a cannibalistic spirit of Thai folklore that devours human viscera. The English page says it is related to the Phi Fa spirit, without describing Phi Fa.",
+      "Katarzyna Ancuta, in eTropic 16.1 (2017), treats phi pop and phi krasue as beings with an appetite for viscera and for bodily discharges, perceived by many in Thailand as part of the natural world rather than as fiction. She argues their long life in belief comes from possession of a living host, not from a corpse walking. Phi krasue is always female in her account. Phi pop is often thought shapeless and can possess men or women. Regional names overlap, and in some places phi pop, phi krasue, and phi thamop are distinct."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pop_(ghost)",
+        "title": "Pop (ghost)",
+        "accessed": "2026-11-20",
+        "supports": "Cannibalistic viscera-eating spirit, related to Phi Fa."
+      },
+      {
+        "url": "https://journals.jcu.edu.au/etropic/article/download/3564/3453",
+        "title": "Katarzyna Ancuta, Beyond the Vampire, eTropic 16.1 (2017)",
+        "accessed": "2026-11-20",
+        "supports": "Viscera appetite; living belief; possession rather than a walking corpse; pop can be shapeless and of either sex."
+      }
+    ],
+    "archetypeTags": [
+      "possession",
+      "viscera",
+      "witch"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A possession that makes the host hungry for the wrong pantry. Living belief, and not a prop for mocking rural people. Phi Fa is only a name here.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-072"
+  },
+  {
+    "name": "Phi Tai Hong (ผีตายโหง)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Phi Tai Hong is a ghost of Thai folklore: the vengeful, restless spirit of a person who died suddenly by violence or cruelty."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phi_Tai_Hong",
+        "title": "Phi Tai Hong",
+        "accessed": "2026-11-20",
+        "supports": "Restless ghost of a sudden violent or cruel death."
+      }
+    ],
+    "archetypeTags": [
+      "ghost",
+      "wrongful-death",
+      "vengeful"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A restless death, not a slapstick corpse. If used, the joke cannot be the death itself.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-073"
+  },
+  {
+    "name": "Kuman thong (กุมารทอง)",
+    "origin": "Thai folk religion",
+    "kind": "folklore",
+    "facts": [
+      "A kuman thong is a household deity of Thai folk religion, believed to bring luck, fortune, and wealth if properly revered. Kuman, from Pali kumara, means young boy; thong means golden.",
+      "The English lead says these beings are often worshipped so they will obey requests for gain, protection, wealth, and in some cases harm, and that each request is believed to have consequences.",
+      "The lead that was read does not describe how such a figure is made. No ritual claim is added."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kuman_thong",
+        "title": "Kuman thong",
+        "accessed": "2026-11-20",
+        "supports": "Household boy-deity of luck; requests are believed to carry consequences."
+      }
+    ],
+    "archetypeTags": [
+      "household-spirit",
+      "child",
+      "luck"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not make a card. This is a living child-spirit practice.",
+    "confidence": "medium",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-074"
+  },
+  {
+    "name": "Nang Kwak (นางกวัก)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Nang Kwak is a bodhisattva, household goddess, or spirit of Thai folklore, believed to bring fortune, prosperity, and customers.",
+      "The article says she is more a figure of popular folklore than a deity, while Buddhist legends try to fold her into Buddhism. She is commonly dressed in red Thai clothing, called an incarnation of Mae Po Sop the rice goddess, and compared with Lakshmi.",
+      "She is found among shops and merchants."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nang_Kwak",
+        "title": "Nang Kwak",
+        "accessed": "2026-11-20",
+        "supports": "Shop spirit in red who beckons customers; linked to the rice goddess."
+      }
+    ],
+    "archetypeTags": [
+      "prosperity",
+      "shop",
+      "beckoning"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not make her a monster. She is a living shop blessing, tied to the rice goddess.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-075"
+  },
+  {
+    "name": "Nariphon",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "The Himavanta article says the mythical Nariphon tree, often mentioned in Thai folklore, grows in the Himavanta forest.",
+      "The lead does not describe the tree's fruit or any maiden-shaped crop. That detail is not claimed from this page."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Himavanta",
+        "title": "Himavanta",
+        "accessed": "2026-11-20",
+        "supports": "Names the Nariphon as a mythical tree of Thai folklore growing in Himavanta."
+      }
+    ],
+    "archetypeTags": [
+      "tree",
+      "himmaphan",
+      "mythic-plant"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A named mythical tree and nothing more until a page that describes it is fetched.",
+    "confidence": "low",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-076"
+  },
+  {
+    "name": "Phaya Nak / Nāga",
+    "origin": "Hindu and Buddhist tradition; Thai Himmaphan literature",
+    "kind": "myth",
+    "facts": [
+      "English Wikipedia redirects Phaya Naga to Nāga. Nāgas are a divine or semi-divine race of half-human, half-serpent beings in Asian religious traditions, living in Patala, also known as dragons and water spirits. A female is a nagini. Rituals for them have been held in South Asia for at least two thousand years.",
+      "They are shown as humans with snakes on the head and neck, as serpents, or as half-human half-snake beings in Hindu and Buddhist art. Nagaraja is the title of a naga king.",
+      "The Thai Traibhumikatha tradition of Himavanta, as summarized in English, places Phaya Naga among the beings of that forest, with Phaya Krut and Kinnaree."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/N%C4%81ga",
+        "title": "Nāga",
+        "accessed": "2026-11-20",
+        "supports": "Divine or semi-divine serpent race; Phaya Naga redirects here; long ritual history."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Himavanta",
+        "title": "Himavanta",
+        "accessed": "2026-11-20",
+        "supports": "Thai literary forest that houses Phaya Naga, Phaya Krut, and Kinnaree."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "water",
+      "sacred",
+      "himmaphan"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. Naga are worshipped, and Phaya Nak is a sacred Himmaphan and Mekong being, not a boss gag.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-077"
+  },
+  {
+    "name": "Garuda / Phaya Krut (ครุฑ)",
+    "origin": "Hindu, Buddhist, and Jain tradition; Thai and Indonesian state insignia",
+    "kind": "myth",
+    "facts": [
+      "Garuda is a Hindu deity, primarily the mount of Vishnu, and is also present in Buddhist and Jain tradition. He is king of birds, shown as a giant kite-like bird or as a winged man, a protector and an enemy of serpents.",
+      "He is part of the state insignia of India, Indonesia, and Thailand.",
+      "The Himavanta article names Phaya Krut among the creatures of that Thai literary forest, beside Phaya Naga and Kinnaree."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Garuda",
+        "title": "Garuda",
+        "accessed": "2026-11-20",
+        "supports": "Vishnu's mount; king of birds; state insignia of India, Indonesia, and Thailand."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Himavanta",
+        "title": "Himavanta",
+        "accessed": "2026-11-20",
+        "supports": "Phaya Krut is named in the Thai Himavanta forest."
+      }
+    ],
+    "archetypeTags": [
+      "bird",
+      "sacred",
+      "state-emblem",
+      "himmaphan"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. Garuda is a deity and a national emblem.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-078"
+  },
+  {
+    "name": "Kinnara / Kinnaree (กินรี)",
+    "origin": "Hindu and Buddhist mythology; Thai Himmaphan literature",
+    "kind": "myth",
+    "facts": [
+      "A kinnara is a Hindu and Buddhist being, part human and part bird, strongly tied to music and love, believed to come from the Himalayas and to watch over humans in trouble.",
+      "In the Mahabharata's Adi Parva they describe themselves as eternal lovers who never separate and never become parents.",
+      "In Southeast Asian Buddhist art, kinnaris, the women, are half-bird, half-woman. The Himavanta article names Kinnaree among the forest's beings."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kinnara",
+        "title": "Kinnara",
+        "accessed": "2026-11-20",
+        "supports": "Half-human half-bird musicians and lovers; Southeast Asian kinnari are half-bird women."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Himavanta",
+        "title": "Himavanta",
+        "accessed": "2026-11-20",
+        "supports": "Kinnaree is named in the Thai Himavanta forest."
+      }
+    ],
+    "archetypeTags": [
+      "bird-people",
+      "music",
+      "himmaphan"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A heavenly musician, not a monster punchline. Sacred Buddhist and Hindu art.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-079"
+  },
+  {
+    "name": "Pret / Preta",
+    "origin": "Buddhist, Hindu, and Thai ghost belief",
+    "kind": "myth",
+    "facts": [
+      "Preta, often translated hungry ghost, is a being in Hinduism, Buddhism, Taoism, and Chinese folk religion who suffers more than humans, especially from extreme hunger and thirst.",
+      "Early sources such as the Petavatthu are more varied than the later hungry-ghost picture. Passing on is tied to rites and offerings by the family.",
+      "The English article on ghosts in Thai culture says Thai belief mixes Buddhist popular ideas with local spirits, and names the tall preta as one figure that comes from Buddhist mythology."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Preta",
+        "title": "Preta",
+        "accessed": "2026-11-20",
+        "supports": "Hungry ghost of extreme hunger and thirst across Hindu, Buddhist, and Chinese tradition."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ghosts_in_Thai_culture",
+        "title": "Ghosts in Thai culture",
+        "accessed": "2026-11-20",
+        "supports": "The tall preta is part of Thai ghost lore via Buddhism."
+      }
+    ],
+    "archetypeTags": [
+      "hungry-ghost",
+      "buddhist",
+      "tall"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. The pret is a religious image of suffering and craving, still part of merit-making.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-080"
+  },
+  {
+    "name": "Himavanta (หิมพานต์)",
+    "origin": "Thai Buddhist literature",
+    "kind": "myth",
+    "facts": [
+      "Himavanta, also called Himmapan or Himmapun Mountain, is a legendary forest said to lie in the Himalayas.",
+      "It appears in the Thai Traibhumikatha, which places there many mythical creatures, including Phaya Naga, Phaya Krut, and Kinnaree, plus spirits and gods. The Nariphon tree is also said to grow there.",
+      "The account of the three planes and this forest is credited to Phaya Lithai of Si Satchanalai. Because the forest belongs to Buddhist cosmology, it shapes belief, culture, and art in Buddhist and Hindu settings."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Himavanta",
+        "title": "Himavanta",
+        "accessed": "2026-11-20",
+        "supports": "Legendary forest in Traibhumikatha; home of Phaya Naga, Phaya Krut, Kinnaree, and the Nariphon."
+      }
+    ],
+    "archetypeTags": [
+      "forest",
+      "bestiary-region",
+      "cosmology"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tower environment, not a single enemy, and not a joke about Buddhist cosmology.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-081"
+  },
+  {
+    "name": "Chao phi (เจ้าผี)",
+    "origin": "Thai folklore",
+    "kind": "folklore",
+    "facts": [
+      "Phya Anuman Rajadhon writes that Thai phi once covered both gods and devils. After Thai contact with Hinduized Khmer culture, good phi were renamed thevada, from Sanskrit deva, and phi narrowed toward ghost, devil, or evil spirit, though the older sense survives in some phrases.",
+      "Chao phi, a lord or prince phi, sit on the border between gods and devils and are sometimes also called thevada. Each desolate place has a chao phi over its lesser phi. People build a shrine and make offerings. The chao phi is a tutelary spirit, arak or theparak. Worshippers address the lord father or lord mother and call themselves an elephant calf."
+    ],
+    "sources": [
+      {
+        "url": "https://thesiamsociety.org/wp-content/uploads/1954/03/JSS_041_2c_PhyaAnumanRajathon_ThePhi.pdf",
+        "title": "Phya Anuman Rajadhon, The Phi (Journal of the Siam Society, 1954 PDF)",
+        "accessed": "2026-11-20",
+        "supports": "Phi once included gods; chao phi are shrine guardians on the border of thevada."
+      }
+    ],
+    "archetypeTags": [
+      "tutelary",
+      "shrine",
+      "terminology"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not make a boss. Chao phi are guardians with shrines. Not every phi is a monster.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-082"
+  },
+  {
+    "name": "Yaksha (ยักษ์ / yakkha)",
+    "origin": "Hindu, Jain, and Buddhist tradition, including Southeast Asian temples",
+    "kind": "myth",
+    "facts": [
+      "Yakshas are a broad class of nature spirits in Hindu mythology, tied to water, trees, forests, wilderness, treasure, and fertility. They are usually benevolent and sometimes mischievous. A feminine form is the yakshi.",
+      "They appear in Hindu, Jain, and Buddhist texts and as guardian deities on ancient and medieval temples in South and Southeast Asia.",
+      "The same article gives them a second face: an inoffensive wood and mountain spirit, or a darker ghost that haunts the wild and devours travelers, compared there with rakshasas."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yaksha",
+        "title": "Yaksha",
+        "accessed": "2026-11-20",
+        "supports": "Nature spirits and temple guardians; a darker traveler-devouring version is also described."
+      }
+    ],
+    "archetypeTags": [
+      "guardian",
+      "nature-spirit",
+      "giant"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Temple guardians are sacred. A wild, traveler-waylaying yaksha is the only version that could become an enemy, and even then not as a mockery of temple statues.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-083"
+  },
+  {
+    "name": "Aswang",
+    "origin": "Philippine folklore",
+    "kind": "folklore",
+    "facts": [
+      "Aswang is a general term for evil shapeshifting creatures in Filipino folklore: vampires, ghouls, witches, viscera suckers, and human-beast hybrids, usually dogs, cats, or pigs.",
+      "Spanish colonists in the 16th century already recorded the aswang as the most feared mythical creature in the islands. The article reads their behavior as an inversion of traditional Filipino values, without a motive beyond harm.",
+      "The tradition is especially popular in southern Luzon, parts of Mindanao, and the Visayas, notably Capiz. Manananggal is a separate, more specific creature and should not be the same card."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Aswang",
+        "title": "Aswang",
+        "accessed": "2026-11-20",
+        "supports": "Umbrella term for shapeshifting evil beings; feared in Spanish-era reports; Capiz and other regions."
+      }
+    ],
+    "archetypeTags": [
+      "shapeshifter",
+      "umbrella-term",
+      "night"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A category boss only if the card is clearly a shapeshifter-of-the-week, not a copy of one subtype.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-084"
+  },
+  {
+    "name": "Manananggal",
+    "origin": "Philippine folklore",
+    "kind": "folklore",
+    "facts": [
+      "Manananggal, literally 'remover', is a Philippine mythical creature that can split its upper torso from the lower body. Fangs and wings give it a vampire-like look.",
+      "The krasue article calls the manananggal a Philippine spirit that haunts pregnant women and distinguishes it from head-only flying spirits because the lower half of the body detaches."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Manananggal",
+        "title": "Manananggal",
+        "accessed": "2026-11-20",
+        "supports": "Separates the upper torso; fangs and wings."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Krasue",
+        "title": "Krasue",
+        "accessed": "2026-11-20",
+        "supports": "Groups the manananggal as the Philippine form that haunts pregnant women and splits at the waist."
+      }
+    ],
+    "archetypeTags": [
+      "split-body",
+      "flyer",
+      "vampire-like"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A self-separating flyer. Do not build the joke on hunting pregnant women. Not a krasue with a new hat.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-085"
+  },
+  {
+    "name": "Tikbalang",
+    "origin": "Philippine folklore",
+    "kind": "folklore",
+    "facts": [
+      "The tikbalang is a Philippine folklore creature of mountains and rainforests: a tall bony humanoid with a horse's head and hooves, and limbs so long that its knees reach above its head when it squats.",
+      "In some versions it is a transformation of an aborted fetus sent from limbo. That is one version in the article, not the only one."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tikbalang",
+        "title": "Tikbalang",
+        "accessed": "2026-11-20",
+        "supports": "Horse-headed, long-limbed mountain humanoid; one version links it to an aborted fetus."
+      }
+    ],
+    "archetypeTags": [
+      "horse-headed",
+      "mountain",
+      "trickster"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Use the backwards-looking horse giant and the impossible squat. Do not use the fetus version.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-086"
+  },
+  {
+    "name": "Kapre",
+    "origin": "Philippine folklore",
+    "kind": "folklore",
+    "facts": [
+      "A kapre is a human-like mythical creature described as a tree giant: tall, dark, hairy, and muscular.",
+      "In Philippine folklore, kapre sit in fruitless trees, smoke large cigars, and are mischievous but benign toward nearby travelers."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kapre",
+        "title": "Kapre",
+        "accessed": "2026-11-20",
+        "supports": "Hairy tree giant with a large cigar; mischievous and mostly benign."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "tree",
+      "cigar"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tree landlord whose cigar is bigger than the party and whose mischief stops short of murder.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-087"
+  },
+  {
+    "name": "Tiyanak",
+    "origin": "Philippine mythology",
+    "kind": "myth",
+    "facts": [
+      "The tiyanak is a vampiric Philippine creature that takes the form of a toddler or a newborn. It cries in the jungle to draw travelers, then reverts and attacks when it is picked up.",
+      "It is also said to enjoy leading travelers astray or abducting children."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tiyanak",
+        "title": "Tiyanak",
+        "accessed": "2026-11-20",
+        "supports": "Baby-form vampire that cries to be picked up, then attacks."
+      }
+    ],
+    "archetypeTags": [
+      "baby-form",
+      "lure",
+      "vampire"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not make a comedy card about a crying baby that attacks. The record exists so the idea is not stumbled into.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-088"
+  },
+  {
+    "name": "Nuno sa punso",
+    "origin": "Philippine mythology",
+    "kind": "myth",
+    "facts": [
+      "A nuno sa punso, 'old man of the mound', is a dwarf-like nature spirit believed to live in an anthill or termite mound. Nuno means old man, grandparent, or ancestor."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nuno_sa_punso",
+        "title": "Nuno sa punso",
+        "accessed": "2026-11-20",
+        "supports": "Dwarf ancestor spirit living in an anthill."
+      }
+    ],
+    "archetypeTags": [
+      "anthill",
+      "dwarf",
+      "ancestor"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A tiny landlord of a dirt mound. The custom of asking permission is respect, not the punchline.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-089"
+  },
+  {
+    "name": "Bakunawa",
+    "origin": "Philippine mythology",
+    "kind": "myth",
+    "facts": [
+      "The Bakunawa is a dragon-like serpent in Philippine mythology that causes natural events, above all eclipses. It is called the moon-eating dragon. Its movements were a geomantic calendar and part of babaylan ritual.",
+      "It is usually drawn with a looped tail and one horn on the nose, and was thought to live in the sky or the underworld.",
+      "Later trade and Indianization syncretized it with the naga, Rahu, and Ketu."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bakunawa",
+        "title": "Bakunawa",
+        "accessed": "2026-11-20",
+        "supports": "Moon-eating serpent; eclipse; babaylan calendar; later tied to naga, Rahu, and Ketu."
+      }
+    ],
+    "archetypeTags": [
+      "serpent",
+      "eclipse",
+      "moon"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A moon-eater whose horn and looped tail are the silhouette. Babaylan ritual and the Hindu identification are not the joke.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-090"
+  },
+  {
+    "name": "Bungisngis",
+    "origin": "Philippine folklore",
+    "kind": "folklore",
+    "facts": [
+      "Bungisngis is a one-eyed giant of Philippine folklore, said to live at Meluz, Orion in Bataan, and in Batangas, and described as always laughing. The name is tied to the Cebuano ngisi, to giggle.",
+      "It shows large teeth, an upper lip that can cover the face when thrown back, and two long tusks. The single eye is in the forehead. Hearing is strong, and so is the body: in 'The Three Friends' it throws a carabao so hard the animal lands knee-deep. The same tale says it is easily outwitted and panics, and the monkey's tricks lead to its death."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bungisngis",
+        "title": "Bungisngis",
+        "accessed": "2026-11-20",
+        "supports": "Laughing one-eyed tusked giant; strong, easily fooled, panics."
+      }
+    ],
+    "archetypeTags": [
+      "giant",
+      "cyclops",
+      "laughter"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A giggling one-eyed giant who can throw a buffalo and still loses to a bad plan.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-091"
+  },
+  {
+    "name": "Berberoka",
+    "origin": "Philippine folklore",
+    "kind": "folklore",
+    "facts": [
+      "The Berberoka is a swamp creature of Apayao, Abra, and Ilocos Norte. It sucks the water out of a pond so the fish lie on the mud. When people come for the fish, it releases the water and eats them as they struggle.",
+      "It can also spray water like a hose until a victim drowns. Despite that power, these water ogres have a fear of crabs."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Berberoka",
+        "title": "Berberoka",
+        "accessed": "2026-11-20",
+        "supports": "Drains a pond as bait; fears crabs; can hose victims with the water."
+      }
+    ],
+    "archetypeTags": [
+      "swamp",
+      "water",
+      "phobia"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A pond that inhales, then panics at a crab.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-092"
+  },
+  {
+    "name": "Bal-bal",
+    "origin": "Philippine mythology",
+    "kind": "myth",
+    "facts": [
+      "A bal-bal is an undead monster that steals corpses from funerals or graves and eats them. It smells out dead bodies and has claws and teeth that can rip burial clothes. It eats only corpses, so its breath is foul.",
+      "After eating, it leaves a banana-tree trunk in the coffin so the theft is not obvious.",
+      "The article associates it with aswang, amalanhig, and busaw as flesh eaters."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bal-Bal",
+        "title": "Bal-Bal",
+        "accessed": "2026-11-20",
+        "supports": "Corpse thief that leaves a banana trunk in the coffin."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "corpse",
+      "substitution"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A grave robber whose alibi is a banana trunk. Dark, not a joke about a real funeral.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-093"
+  },
+  {
+    "name": "Amalanhig",
+    "origin": "Visayan mythology",
+    "kind": "myth",
+    "facts": [
+      "Amalanhig, also maranhig or amaranhig, are Visayan creatures, especially among Hiligaynon speakers. One account says they are aswang who failed to pass on their monstrosity, so they rise from the grave and kill by biting the neck.",
+      "A word-of-mouth version says they chase the living and tickle them until they die of laughter and terror.",
+      "They look human, often with enlarged upper canines. The article calls them a Philippine vampire variant."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Amalanhig",
+        "title": "Amalanhig",
+        "accessed": "2026-11-20",
+        "supports": "Grave-rising aswang variant; neck bite or death by tickling."
+      }
+    ],
+    "archetypeTags": [
+      "undead",
+      "vampire",
+      "tickle"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The tickle version is the comedy door. The neck-bite version can stay in the research note.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-094"
+  },
+  {
+    "name": "Wakwak",
+    "origin": "Philippine mythology",
+    "kind": "myth",
+    "facts": [
+      "The wakwak is a vampiric bird-like creature said to snatch people at night. Unlike the manananggal it cannot split its torso. Some call it a vampire; others, a night bird tied to witches.",
+      "It is named for the wing sound, heard only while hunting. The sound gets softer as it comes closer. Loud means far; faint means it is about to attack. Ekek is distinguished by a bird bill the wakwak lacks.",
+      "It is often given long sharp talons and bat-like wings, the wings said to be knife-sharp. The article also says the terrifying wakwak is becoming rarer as a belief and is mostly told to scare children, and that a gecko's night call has been mistaken for it."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wakwak",
+        "title": "Wakwak",
+        "accessed": "2026-11-20",
+        "supports": "Night bird-vampire; the flap grows quieter as it approaches; cannot split like a manananggal."
+      }
+    ],
+    "archetypeTags": [
+      "bird",
+      "sound",
+      "night"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A hunter you locate by the volume going the wrong way.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-095"
+  },
+  {
+    "name": "Minokawa",
+    "origin": "Philippine mythology, Bagobo tale",
+    "kind": "myth",
+    "facts": [
+      "Minokawa is a giant dragon-like bird. Early people used it to explain eclipses: it is large enough to swallow or cover the sun. One description puts it in outer space, able to devour the sun and the moon and willing to try the earth.",
+      "In a Bagobo tale it is as large as an island. Its feathers are sharp swords, its eyes reflect like mirrors, and its beak and legs are like steel. It lives outside the sky, at the eastern horizon."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Minokawa",
+        "title": "Minokawa",
+        "accessed": "2026-11-20",
+        "supports": "Island-sized eclipse bird; sword feathers; steel beak and legs; eastern horizon beyond the sky."
+      }
+    ],
+    "archetypeTags": [
+      "eclipse",
+      "giant-bird",
+      "cosmic"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "An eclipse bird so large the fight is about its shadow, not its hit points.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-096"
+  },
+  {
+    "name": "Penanggalan",
+    "origin": "Malay ghost myth",
+    "kind": "folklore",
+    "facts": [
+      "The penanggalan, or penanggal, is a nocturnal Malay vampire: a floating woman's head with organs and entrails, twinkling from afar like a ball of flame.",
+      "The name comes from tanggal, to remove or take off. The article says it is not a classical undead so much as a witch who gained the form by meditation in a vat of vinegar. By day, or whenever it is attached, it is a living person.",
+      "It hunts at night for menstrual blood and birth blood, and also for pregnant women and young boys. The article lists ahp, kasu, krasue, leyak, ma lai, and manananggal as regional cousins, not duplicates."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Penanggalan",
+        "title": "Penanggalan",
+        "accessed": "2026-11-20",
+        "supports": "Vinegar-witch whose head detaches; flame-like glow; living by day."
+      }
+    ],
+    "archetypeTags": [
+      "flying-head",
+      "witch",
+      "vinegar"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The daytime person and the vinegar vat are the card. Do not make a mechanic out of hunting women in childbirth or boys.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-097"
+  },
+  {
+    "name": "Kuntilanak / Pontianak",
+    "origin": "Indonesian, Malay, and Singaporean folklore",
+    "kind": "folklore",
+    "facts": [
+      "Kuntilanak is the Indonesian name, and pontianak the Malay name, for a vengeful spirit in Indonesia, Malaysia, and Singapore. She usually looks like a beautiful woman and shows an ugly monstrous form if she must.",
+      "One account says she is the stillborn child of a langsuir. Another calls her an angry female spirit, or the ghost or white lady of Southeast Asian folklore.",
+      "She is often a long-haired woman in white who lures men. Signs of her nearness are a baby crying and the smell of a corpse or of plumeria."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kuntilanak",
+        "title": "Kuntilanak",
+        "accessed": "2026-11-20",
+        "supports": "Vengeful woman in white; baby cry and plumeria or decay; langsuir-child is only one origin."
+      }
+    ],
+    "archetypeTags": [
+      "ghost",
+      "woman",
+      "lure",
+      "childbirth"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A white-dressed voice that smells of frangipani. Do not punch down at death in childbirth. The city of Pontianak is not this spirit.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-098"
+  },
+  {
+    "name": "Pocong",
+    "origin": "Indonesian and Malay folklore",
+    "kind": "folklore",
+    "facts": [
+      "A pocong is a ghost that looks like a body wrapped in a shroud. In Islamic funerals the kain kafan is tied over the head, under the feet, and around the neck.",
+      "The belief is that the knots must be undone in the grave. If they are not, the corpse animates and is called a pocong. In Malaysia the same ghost is Hantu Bungkus, the wrapped-up ghost."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pocong",
+        "title": "Pocong",
+        "accessed": "2026-11-20",
+        "supports": "Shroud-wrapped ghost caused by burial knots left tied; Malay name hantu bungkus."
+      }
+    ],
+    "archetypeTags": [
+      "shroud",
+      "hopper",
+      "burial"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A wrapped figure who cannot walk until someone unties the knots. Do not mock Islamic burial. The hop is the tied feet, not a jiangshi copy.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-099"
+  },
+  {
+    "name": "Leyak",
+    "origin": "Balinese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The leyak is a Balinese mythological figure: a flying head with entrails, including heart, lung, and liver, still attached.",
+      "Leyak are said to fly in search of a pregnant woman, to suck her baby's blood, or of a newborn child.",
+      "Rangda is the demon queen of the leyaks in a separate article. That sacred figure is not this record's comedy target."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Leyak",
+        "title": "Leyak",
+        "accessed": "2026-11-20",
+        "supports": "Balinese flying head with entrails, seeking a pregnant woman or a newborn."
+      }
+    ],
+    "archetypeTags": [
+      "flying-head",
+      "balinese",
+      "sorcerer"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not build a card on attacking a newborn. Rangda's dance is sacred and is filed separately.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-100"
+  },
+  {
+    "name": "Pelesit",
+    "origin": "Malay folklore",
+    "kind": "folklore",
+    "facts": [
+      "Pelesit is a familiar spirit in Malay folklore, generally a cricket, sometimes a grasshopper. The name means buzzer, from lesit.",
+      "The article also says they are called palasik. Belief is traced to Malay animism before monotheism. A pelesit can only be owned by a woman in the general account, and the belief was said to be prevalent in Kedah. The male counterpart is the bajang. The two are sometimes confused.",
+      "The krasue and penanggalan articles use pelasik or pelesit in lists of flying-head spirits. That conflicts with the cricket description. Both statements are reported; they are not reconciled here."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pelesit",
+        "title": "Pelesit",
+        "accessed": "2026-11-20",
+        "supports": "Cricket or grasshopper familiar; woman owner; Kedah; male pair is the bajang; also called palasik on this page."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Penanggalan",
+        "title": "Penanggalan",
+        "accessed": "2026-11-20",
+        "supports": "Lists pelasik and pelesit among flying-head names, which disagrees with the cricket article."
+      }
+    ],
+    "archetypeTags": [
+      "familiar",
+      "insect",
+      "name-conflict"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A cricket familiar. Do not merge it with a flying head until the name clash is checked. Confidence is medium because the sources disagree.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-101"
+  },
+  {
+    "name": "Hantu Raya",
+    "origin": "Malay folklore",
+    "kind": "folklore",
+    "facts": [
+      "Hantu Raya, roughly 'great ghost', is a familiar spirit that acts as a double for a black-magic practitioner and is supposed to give its master great power.",
+      "Folktale form: a humanoid with a black hairy body except the face, rough grey skin, long sharp teeth, and red eyes."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hantu_Raya",
+        "title": "Hantu Raya",
+        "accessed": "2026-11-20",
+        "supports": "Familiar double; hairy black body, grey skin, sharp teeth, red eyes."
+      }
+    ],
+    "archetypeTags": [
+      "familiar",
+      "double",
+      "humanoid"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A stunt double who shows up when the caster is supposed to be elsewhere.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-102"
+  },
+  {
+    "name": "Sundel bolong",
+    "origin": "Indonesian mythology",
+    "kind": "myth",
+    "facts": [
+      "A sundel bolong is an Indonesian ghost, a woman with long black hair and a long white dress, similar in outline to the pontianak.",
+      "The myth is closely linked to prostitutes. The name is explained as a prostitute with a hole, referring to a large hole said to appear in her back."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sundel_bolong",
+        "title": "Sundel bolong",
+        "accessed": "2026-11-20",
+        "supports": "White-dressed woman with a hole in her back; the name is tied to prostitution."
+      }
+    ],
+    "archetypeTags": [
+      "ghost",
+      "woman",
+      "hole-in-back"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The visual is a back that is a window. Do not make the joke about sex workers.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-103"
+  },
+  {
+    "name": "Wewe Gombel",
+    "origin": "Javanese mythology",
+    "kind": "myth",
+    "facts": [
+      "Wewe Gombel is a female supernatural being or vengeful ghost in Javanese mythology, said to kidnap children.",
+      "The myth is taught so children stay home at night. She is traditionally a woman with long hanging breasts. Modern pictures add vampire fangs. She also appears in comics."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wewe_Gombel",
+        "title": "Wewe Gombel",
+        "accessed": "2026-11-20",
+        "supports": "Child-snatching ghost; long breasts; a cautionary night story."
+      }
+    ],
+    "archetypeTags": [
+      "kidnapper",
+      "woman",
+      "cautionary"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A night curfew story. Do not make child-snatching the fun part. Fangs are a modern add.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-104"
+  },
+  {
+    "name": "Orang bunian",
+    "origin": "Malay, Singaporean, Bruneian, and Indonesian folklore",
+    "kind": "folklore",
+    "facts": [
+      "Orang bunian, literally hidden people or whistling people, are supernatural beings invisible to most humans, except those with spiritual sight. English often translates them as elves.",
+      "They are described as beautiful, dressed in an old Southeast Asian style, and nearly identical to humans. Some accounts say they lack a philtrum.",
+      "Modern pictures that add pointed ears, high-fantasy clothes, or a modern Minangkabau coat depart from the traditional description."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Orang_bunian",
+        "title": "Orang bunian",
+        "accessed": "2026-11-20",
+        "supports": "Invisible beautiful hidden people; sometimes no philtrum; elf ears are a modern change."
+      }
+    ],
+    "archetypeTags": [
+      "hidden-people",
+      "invisible",
+      "parallel-society"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Neighbors who are present and uninvited to be photographed. Not a demon.",
+    "confidence": "high",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-105"
+  },
+  {
+    "name": "Toyol / tuyul",
+    "origin": "Malay and Indonesian folklore",
+    "kind": "folklore",
+    "facts": [
+      "A toyol or tuyul is an undead infant in Indonesian and Malay folklore, also found in other Southeast Asian mythologies. Shamans (dukun, pawang, or bomoh) invoke it by black magic as a helper.",
+      "A common use is theft for the owner's gain, compared in the article to the boar demon babi ngepet and the familiar hantu raya. It is said to bring luck to its host and mishap to everyone else."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Toyol",
+        "title": "Toyol",
+        "accessed": "2026-11-20",
+        "supports": "Undead infant familiar used for theft; invoked by a shaman."
+      }
+    ],
+    "archetypeTags": [
+      "familiar",
+      "child",
+      "theft"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not make a card. This is a child-spirit practice.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-106"
+  },
+  {
+    "name": "Ahp (អាប)",
+    "origin": "Khmer folklore",
+    "kind": "folklore",
+    "facts": [
+      "The krasue article names Ahp (Khmer អាប) as the Cambodian member of the flying-head group: a woman, half spirit and half mortal, whose head and organs leave the body at night.",
+      "Ethnologist Ang Choulean, reported by Cambodianess from a 2022 talk at the Royal University of Fine Arts, describes the ahp, which he also calls krasue, as an ordinary village person by day: lazy, unwashed, avoiding farm work, asking door to door for vegetables and spices. At night or in the rain the head leaves, intestines glowing, and flies low for food. He says the favored food is the blood of a woman who has just given birth. The English report uses 'his' for this being."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Krasue",
+        "title": "Krasue",
+        "accessed": "2026-11-20",
+        "supports": "Names the Khmer ahp as the Cambodian flying head with organs."
+      },
+      {
+        "url": "https://cambodianess.com/article/ethnologist-ang-choulean-the-rich-and-complex-world-of-spirits-in-cambodian-tradition",
+        "title": "Cambodianess, Ethnologist Ang Choulean on Cambodian spirits (20 March 2022)",
+        "accessed": "2026-11-20",
+        "supports": "Daytime ordinary beggar of spices; nighttime glowing entrails; birth-blood as the desired food."
+      }
+    ],
+    "archetypeTags": [
+      "flying-head",
+      "khmer",
+      "possession"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The daytime spice-borrower is the distinctive note. Do not make a card about blood from childbirth. Not a relabel of the Thai krasue.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-107"
+  },
+  {
+    "name": "Ngeuak",
+    "origin": "Lao folklore",
+    "kind": "folklore",
+    "facts": [
+      "A Luang Prabang culture page, drawing on Mayoury and Pheuiphanh Ngaosrivathana and on Archaimbault, says naga and ngeuak are both water spirits of rivers, ponds, and the underground.",
+      "Naga are generally benevolent guardians if shown respect. Ngeuak may be malevolent, are often associated with drownings, and must be propitiated.",
+      "The page treats named guardian naga of the city as sacred. This record is only the ngeuak as the dangerous counterpart, not those named guardians and not the 1931 royal drowning."
+    ],
+    "sources": [
+      {
+        "url": "https://www.luangprabangculture.com/nagas-and-ngeuak.html",
+        "title": "Nagas and Ngeuak, Luang Prabang Culture",
+        "accessed": "2026-11-20",
+        "supports": "Ngeuak are water spirits, unlike benevolent naga, linked to drownings and offerings."
+      }
+    ],
+    "archetypeTags": [
+      "water-serpent",
+      "drowning",
+      "lao"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A river serpent that is explicitly not the temple naga. Still propitiated: no joke about drownings or about Luang Prabang's guardian rites. Confidence is medium because this is a secondary site.",
+    "confidence": "medium",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-108"
+  },
+  {
+    "name": "Neak ta (អ្នកតា)",
+    "origin": "Cambodian tradition",
+    "kind": "myth",
+    "facts": [
+      "A neak ta is a Cambodian ancestral or tutelary deity, believed to watch over people, places, and things if they are paid proper respect.",
+      "The name translates as the ancestor. A neak ta can be feminine or masculine, and they most often work as a couple."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Neak_ta",
+        "title": "Neak ta",
+        "accessed": "2026-11-20",
+        "supports": "Ancestral tutelary deity, often a couple, who protects what is respected."
+      }
+    ],
+    "archetypeTags": [
+      "ancestor",
+      "tutelary",
+      "pair"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. Neak ta are living tutelary deities.",
+    "confidence": "medium",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-109"
+  },
+  {
+    "name": "Rangda",
+    "origin": "Balinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Rangda is the demon queen of the leyaks in traditional Balinese mythology. She is terrifying and is described as child-eating. She leads evil witches against Barong, leader of the forces of good.",
+      "Their battle is danced as the eternal fight of good and evil. Rangda is an Old Javanese word meaning widow."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rangda",
+        "title": "Rangda",
+        "accessed": "2026-11-20",
+        "supports": "Demon queen of leyaks; ritual dance against Barong; name means widow."
+      }
+    ],
+    "archetypeTags": [
+      "demon-queen",
+      "dance",
+      "sacred"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. Rangda is a sacred dance figure, not a horror mascot.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-110"
+  },
+  {
+    "name": "Barong",
+    "origin": "Balinese mythology",
+    "kind": "myth",
+    "facts": [
+      "Barong, a word glossed as bear, is a panther-like creature and character in Balinese culture. He is king of the spirits, leader of the hosts of good, and enemy of Rangda.",
+      "The Barong dance stages their battle as the eternal fight of good and evil."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Barong_(mythology)",
+        "title": "Barong (mythology)",
+        "accessed": "2026-11-20",
+        "supports": "Panther-like king of good spirits; ritual opponent of Rangda."
+      }
+    ],
+    "archetypeTags": [
+      "protector",
+      "dance",
+      "beast"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. Barong is a sacred protector in living dance.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-111"
+  },
+  {
+    "name": "Nyi Roro Kidul",
+    "origin": "Sundanese and Javanese mythology",
+    "kind": "myth",
+    "facts": [
+      "Nyi Roro Kidul, also Nyai Rara Kidul, is a supernatural being in Indonesian folklore, Queen of the Southern Sea in Sundanese and Javanese mythology.",
+      "One Javanese account ties Kanjeng Ratu Kidul to a creation of Dewa Kaping Telu and to harvest and nature, and says Nyi Roro Kidul was a daughter of the king of Sunda, expelled because of her stepmother. Some people equate the two queens; Kejawen belief, as the article states it, makes Nyi Roro Kidul a loyal subordinate of Kanjeng Ratu Kidul.",
+      "Her place as the Phantom Queen of Java is a popular motif and is tied to the beauty of Sundanese princesses."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nyai_Roro_Kidul",
+        "title": "Nyai Roro Kidul",
+        "accessed": "2026-11-20",
+        "supports": "Queen of the Southern Sea; identity with Kanjeng Ratu Kidul is disputed in the article."
+      }
+    ],
+    "archetypeTags": [
+      "sea-queen",
+      "goddess",
+      "javanese"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. She is a sea queen of living Javanese and Sundanese belief.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-112"
+  },
+  {
+    "name": "Vietnamese dragon (rồng)",
+    "origin": "Vietnamese mythology",
+    "kind": "myth",
+    "facts": [
+      "Vietnamese dragons are symbolic creatures of Vietnamese folklore and mythology. An origin myth says the Vietnamese people descend from a dragon and an immortal.",
+      "The dragon stands for rain, which agriculture needs, and for the emperor, prosperity, and the power of the nation. Like the Chinese dragon that influenced it, it is a fierce but benevolent serpent and a symbol of yang, the universe, life, and growth."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Vietnamese_dragon",
+        "title": "Vietnamese dragon",
+        "accessed": "2026-11-20",
+        "supports": "National rain and sovereignty symbol; descent from a dragon and an immortal."
+      }
+    ],
+    "archetypeTags": [
+      "dragon",
+      "rain",
+      "national-symbol"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody the origin myth or the national symbol.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-113"
+  },
+  {
+    "name": "Sơn Tinh and Thủy Tinh",
+    "origin": "Vietnamese myth",
+    "kind": "myth",
+    "facts": [
+      "Sơn Tinh – Thủy Tinh, the mountain god against the lord of the waters, is a Vietnamese myth that explains tidal irrigation and monsoon floods.",
+      "Sơn Tinh is also one of the Four Immortals, specifically Tản Viên Sơn Thánh."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/S%C6%A1n_Tinh_%E2%80%93_Th%E1%BB%A7y_Tinh",
+        "title": "Sơn Tinh – Thủy Tinh",
+        "accessed": "2026-11-20",
+        "supports": "Mountain god versus water lord as the myth of floods; Son Tinh is a Four Immortal."
+      }
+    ],
+    "archetypeTags": [
+      "mountain",
+      "flood",
+      "rivalry"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. Sơn Tinh is one of the Four Immortals. The flood rivalry can be noted as myth, not as a comedy boss.",
+    "confidence": "medium",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-114"
+  },
+  {
+    "name": "Nghê",
+    "origin": "Vietnamese culture",
+    "kind": "myth",
+    "facts": [
+      "Nghê is a mythical animal in Vietnamese culture, a combination of lion and dog, often used as a mascot in front of communal temples, temples, pagodas, and shrines."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ngh%C3%AA",
+        "title": "Nghê",
+        "accessed": "2026-11-20",
+        "supports": "Lion-dog guardian figure at Vietnamese temples and shrines."
+      }
+    ],
+    "archetypeTags": [
+      "guardian-lion",
+      "temple",
+      "lion-dog"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A threshold lion-dog. Temple guardians are not enemies.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-115"
+  },
+  {
+    "name": "Hamsa (หงส์)",
+    "origin": "Hindu and Southeast Asian tradition",
+    "kind": "myth",
+    "facts": [
+      "The hamsa is an aquatic migratory bird in ancient Sanskrit texts. Scholars have read the image as goose, swan, or flamingo.",
+      "In Indian and Southeast Asian culture it is a spiritual symbol and a decoration. Myth gives it the power to separate milk from water, or good from evil.",
+      "In Hindu iconography the hamsa is the vahana of Brahma, Gayatri, Saraswati, and Vishvakarma. This page does not itself equate the bird with the Lao town Hongsa or spell the Thai name."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hamsa_(bird)",
+        "title": "Hamsa (bird)",
+        "accessed": "2026-11-20",
+        "supports": "Sacred aquatic bird; separates milk from water; vehicle of Brahma and Saraswati."
+      }
+    ],
+    "archetypeTags": [
+      "bird",
+      "sacred",
+      "discernment"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. The hamsa is a sacred vehicle and symbol.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-116"
+  },
+  {
+    "name": "Makara",
+    "origin": "Hindu mythology",
+    "kind": "myth",
+    "facts": [
+      "Makara is a legendary sea creature in Hindu mythology and, in Hindu astrology, the sign Capricorn.",
+      "It is the vahana of the river goddesses Ganga and Narmada and of Varuna, god of the ocean. Makara guard gateways and thresholds, including throne rooms and temple entries, and are among the most common creatures in Hindu and Buddhist temple art. They also appear as gargoyles or as spouts on springs."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Makara",
+        "title": "Makara",
+        "accessed": "2026-11-20",
+        "supports": "Sea creature; vehicle of Ganga and Varuna; temple threshold guardian."
+      }
+    ],
+    "archetypeTags": [
+      "sea-hybrid",
+      "threshold",
+      "sacred"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "Do not parody. Makara are temple guardians and vehicles of gods.",
+    "confidence": "high",
+    "sensitivity": "high",
+    "inspirationId": "INS-03-117"
+  },
+  {
+    "name": "Sarimanok",
+    "origin": "Maranao / Philippine mythology",
+    "kind": "myth",
+    "facts": [
+      "The sarimanok, feminine form papanok, is a legendary bird of the Maranao people of Mindanao.",
+      "The name joins sari, assorted or various, and manok, which early Spanish sources used for bird and which later narrowed to chicken. The article glosses the creature as a bird, or chicken, of assorted colors.",
+      "The lead does not describe a fish in the talons or a luck charm. Those details are not added."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sarimanok",
+        "title": "Sarimanok",
+        "accessed": "2026-11-20",
+        "supports": "Maranao legendary bird; name means a bird of assorted colors."
+      }
+    ],
+    "archetypeTags": [
+      "bird",
+      "cultural-symbol",
+      "color"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A many-colored bird and a Maranao symbol. Do not turn the name into a chicken joke.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-118"
+  },
+  {
+    "name": "Siyokoy",
+    "origin": "Philippine mythology",
+    "kind": "myth",
+    "facts": [
+      "A siyokoy is an aquatic humanoid in Philippine mythology, often described with scales, webbed limbs, and fins.",
+      "Most legends make siyokoy hostile to humans, and they are said to drown people."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Siyokoy",
+        "title": "Siyokoy",
+        "accessed": "2026-11-20",
+        "supports": "Scaled, webbed, finned humanoid that drowns people."
+      }
+    ],
+    "archetypeTags": [
+      "aquatic",
+      "humanoid",
+      "hostile"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A scaled swimmer of the tower cistern, distinct from a mermaid and from a naga.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-119"
+  },
+  {
+    "name": "Mandurugo",
+    "origin": "Philippine folklore",
+    "kind": "folklore",
+    "facts": [
+      "The mandurugo is a kind of aswang, similar to a vampire, in stories popular among Tagalog and Bicol speakers. There are many variations.",
+      "By day they are usually young beautiful women. By night they grow wings and a long sharp tongue, used to cut a man's neck or to prick the inside of his mouth while kissing, to take blood.",
+      "Sometimes the mandurugo marries an unsuspecting man as cover and flies to other villages to feed."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mandurugo",
+        "title": "Mandurugo",
+        "accessed": "2026-11-20",
+        "supports": "Daytime woman, nighttime wings and tongue; blood taken by a cut or a kiss."
+      }
+    ],
+    "archetypeTags": [
+      "vampire",
+      "aswang",
+      "disguise"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A day-face and a night-tongue. Keep it separate from manananggal, which splits at the waist.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-120"
+  },
+  {
+    "name": "Polong",
+    "origin": "Malay folklore",
+    "kind": "folklore",
+    "facts": [
+      "The polong is a familiar spirit in Malay folklore, a miniature woman the size of the first joint of a finger.",
+      "It is one of the ghosts named in Hikayat Abdullah, by Abdullah bin Abdul Kadir.",
+      "The penanggalan article separately mentions a 'hantu polong' of the Temuan in a flying-head list. That may be a different use of the word. This record follows the finger-sized familiar."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Polong",
+        "title": "Polong",
+        "accessed": "2026-11-20",
+        "supports": "Finger-sized woman familiar, named in Hikayat Abdullah."
+      }
+    ],
+    "archetypeTags": [
+      "familiar",
+      "miniature",
+      "woman"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A familiar small enough to hide in a thimble. Do not merge her with the flying head without a source that does so on purpose.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-121"
+  },
+  {
+    "name": "Hitodama (人魂)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Hitodama, 'human soul', are balls of fire that float in the night air. They are also called onibi, demon fires, or hikarimono, glowing things.",
+      "They are said to be souls of the dead that have separated from their bodies, which is where the name comes from."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hitodama",
+        "title": "Hitodama",
+        "accessed": "2026-11-20",
+        "supports": "Night fireballs that are separated souls of the dead."
+      }
+    ],
+    "archetypeTags": [
+      "fireball",
+      "soul",
+      "night"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A lost soul that is only a light, useful as a telegraph, not as a boss.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-122"
+  },
+  {
+    "name": "Yamauba (山姥)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Yamauba, also yamamba and yamanba, is a yōkai mostly said to resemble a woman. She may be shown as a predatory monster or as a benevolent being.",
+      "The oni article says female oni are sometimes called yamauba."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yama-uba",
+        "title": "Yama-uba",
+        "accessed": "2026-11-20",
+        "supports": "Mountain woman yokai, predatory or kind depending on the telling."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Oni",
+        "title": "Oni",
+        "accessed": "2026-11-20",
+        "supports": "Female oni are sometimes called yamauba."
+      }
+    ],
+    "archetypeTags": [
+      "mountain",
+      "woman",
+      "ambiguous-moral"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A mountain host who might feed the party or be the meal. The lead does not specify a second mouth or a spinning hut.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-123"
+  },
+  {
+    "name": "Ningyo (人魚)",
+    "origin": "Japanese literature and folklore",
+    "kind": "folklore",
+    "facts": [
+      "Ningyo, 'human fish', is a being with both human and fish features in Japanese literature. The word is not gender-specific and covers what English calls mermaids and mermen.",
+      "The lead that was read does not say that eating the flesh grants long life, or that a ningyo's prophecy must be heeded. Those points are not claimed here."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ningyo",
+        "title": "Ningyo",
+        "accessed": "2026-11-20",
+        "supports": "Human-fish, not specifically female; further powers not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "merfolk",
+      "fish",
+      "ambiguous"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A human-fish who corrects anyone who calls them a mermaid. Do not add the immortality meal without a fetched page.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-124"
+  },
+  {
+    "name": "Dodomeki (百々目鬼)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "A dodomeki, also todomeki, is a yōkai depicted as a woman cursed with long arms covered in hundreds of bird eyes because she stole money."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dodomeki",
+        "title": "Dodomeki",
+        "accessed": "2026-11-20",
+        "supports": "Thief cursed with eye-covered long arms."
+      }
+    ],
+    "archetypeTags": [
+      "curse",
+      "eyes",
+      "thief"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A pickpocket whose arms grew eyes and can no longer work unnoticed.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-125"
+  },
+  {
+    "name": "Jubokko (樹木子)",
+    "origin": "Japanese folklore, as presented in yokai books",
+    "kind": "folklore",
+    "facts": [
+      "The English article calls the jubokko a yōkai tree that appears in many yokai books, including Shigeru Mizuki's works.",
+      "According to the folklore as that article states it, the tree stands on an old battlefield, looks ordinary, and became a yokai by drinking the blood of the dead. It catches passersby, turns branches into tubes, and drinks their blood, which keeps it looking fresh. Cut it, and blood runs. A branch is said to be able to heal and cleanse a wound.",
+      "The lead does not cite a premodern collection. Confidence stays medium."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jubokko",
+        "title": "Jubokko",
+        "accessed": "2026-11-20",
+        "supports": "Battlefield blood tree in yokai books; healing branch; antiquity not shown in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "tree",
+      "blood",
+      "battlefield"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A pretty tree on a battlefield that is too green. Do not present it as ancient if the only cite is modern yokai books.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-126"
+  },
+  {
+    "name": "Funayūrei (船幽霊)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Funayūrei, 'boat spirits', are yūrei who became vengeful ghosts at sea. Stories are told in many regions, in Edo ghost tales and in modern folk custom.",
+      "In Yamaguchi and Saga they are called ayakashi.",
+      "The lead does not give the ladle trick. That trick is sourced for umibozu, not for this ghost."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Funay%C5%ABrei",
+        "title": "Funayūrei",
+        "accessed": "2026-11-20",
+        "supports": "Vengeful ghosts of the sea; called ayakashi in Yamaguchi and Saga."
+      }
+    ],
+    "archetypeTags": [
+      "sea",
+      "ghost",
+      "vengeful"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A drowned crew that wants the boat stopped. Do not copy the umibozu's bottomless ladle onto them.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-127"
+  },
+  {
+    "name": "Nure-onna (濡女)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Nure-onna, 'wet woman', is a yōkai with a woman's head and a snake's body. At sea the same phenomenon is called nureyomejo.",
+      "Legends often say they eat humans, but the article says they have no single appearance or personality."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nure-onna",
+        "title": "Nure-onna",
+        "accessed": "2026-11-20",
+        "supports": "Snake-bodied woman of the shore or sea; personality is not fixed."
+      }
+    ],
+    "archetypeTags": [
+      "snake",
+      "woman",
+      "shore"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A shore serpent whose mood is not in the manual. Do not lock one tale's baby-bundle trick; it was not in the lead.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-128"
+  },
+  {
+    "name": "Ushi-oni (牛鬼)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The ushi-oni, or gyūki, is a yōkai of western Japan. More than one kind exists, but a bovine head is the common picture.",
+      "They generally appear on beaches and attack people walking there."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ushi-oni",
+        "title": "Ushi-oni",
+        "accessed": "2026-11-20",
+        "supports": "Ox-headed beach monster of western Japan; several local kinds."
+      }
+    ],
+    "archetypeTags": [
+      "oni",
+      "ox",
+      "beach"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A beach ox-demon. Spider-bodied variants were not in the lead and are not claimed.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-129"
+  },
+  {
+    "name": "Inugami (犬神)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Inugami, 'dog god' or 'dog spirit', is spiritual possession by a dog, widely known in western Japan, with a strong footing into recent years in eastern Oita, Shimane, and part of Kochi. A theory in the article makes Shikoku, where foxes were absent, the main home of the belief.",
+      "Traces are also described in Yamaguchi, Kyushu, the Satsunan islands, and Okinawa. Local pronunciations include ingami and irigami.",
+      "The lead describes the geography of the belief. It does not describe a ritual for making an inugami. No such ritual is added."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Inugami",
+        "title": "Inugami",
+        "accessed": "2026-11-20",
+        "supports": "Dog-spirit possession, especially western Japan and Shikoku; creation ritual not in the lead."
+      }
+    ],
+    "archetypeTags": [
+      "possession",
+      "dog",
+      "familiar"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A dog spirit that possesses, not a pet. Do not invent the cruel making-ritual from memory.",
+    "confidence": "medium",
+    "sensitivity": "medium",
+    "inspirationId": "INS-03-130"
+  },
+  {
+    "name": "Tōfu-kozō (豆腐小僧)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Tōfu-kozō, 'tofu boy', is a yōkai that looks like a child carrying a tray of tofu.",
+      "He is frequent in Edo kusazōshi, kibyōshi, and kaidan, and from the Bakumatsu into Meiji he was a familiar character on toys: kites, sugoroku, and karuta. He also shows up in senryū, kyōka, theater pamphlets, and nishiki-e."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/T%C5%8Dfu-koz%C5%8D",
+        "title": "Tōfu-kozō",
+        "accessed": "2026-11-20",
+        "supports": "Child yokai with a tofu tray; an Edo print and toy character."
+      }
+    ],
+    "archetypeTags": [
+      "child",
+      "food",
+      "edo"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A delivery boy who will not put the tray down. He is a print character, not a child-spirit cult.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-131"
+  },
+  {
+    "name": "Aoandon (青行燈)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Aoandon, 'blue andon', is a creature Toriyama Sekien drew in Konjaku hyakki shūi to be the spirit that appears in the game of a hundred candles, hyakumonogatari kaidankai, after the last story.",
+      "The candles were often set in blue-paper andon lamps, which gives the name.",
+      "Sekien shows a woman with a blue face, two horns on the brow, and sharp teeth."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Aoandon",
+        "title": "Aoandon",
+        "accessed": "2026-11-20",
+        "supports": "Sekien's spirit of the last story in the hundred-candle game; blue face and horns."
+      }
+    ],
+    "archetypeTags": [
+      "story-spirit",
+      "lamp",
+      "horns"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "The thing that shows up when the party tells one story too many.",
+    "confidence": "high",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-132"
+  },
+  {
+    "name": "Mikoshi-nyūdō (見越し入道)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "Mikoshi-nyūdō is a bald yōkai with a neck that keeps extending. In folklore and Edo kaidan he frightens people who look over the top of a folding screen or similar barrier.",
+      "The name joins 'looking over the top' and nyūdō, a Buddhist priest or a tonsured monster."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mikoshi-ny%C5%ABd%C5%8D",
+        "title": "Mikoshi-nyūdō",
+        "accessed": "2026-11-20",
+        "supports": "Bald extending-neck yokai that appears when you peer over a screen."
+      }
+    ],
+    "archetypeTags": [
+      "neck",
+      "bald",
+      "scare"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A bald head that grows to meet whoever peeks over the wall.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-133"
+  },
+  {
+    "name": "Kasha (火車)",
+    "origin": "Japanese folklore",
+    "kind": "folklore",
+    "facts": [
+      "The kasha is a yōkai said to steal corpses. The name is written as fire-cart or changed-wheel.",
+      "It is now generally thought of as a cat-shaped monster, though earlier types were more demonic."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kasha_(folklore)",
+        "title": "Kasha (folklore)",
+        "accessed": "2026-11-20",
+        "supports": "Corpse-stealing yokai; now usually a cat; older forms more demonic."
+      }
+    ],
+    "archetypeTags": [
+      "cat",
+      "corpse",
+      "fire"
+    ],
+    "protectedName": false,
+    "publicDomain": true,
+    "parodyPotential": "A funeral cat. The cart of fire is the name; the modern shape is the cat. Do not make a joke of a real funeral.",
+    "confidence": "medium",
+    "sensitivity": "low",
+    "inspirationId": "INS-03-134"
+  }
+]
