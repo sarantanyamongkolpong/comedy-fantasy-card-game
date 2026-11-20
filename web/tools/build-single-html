@@ -50,7 +50,10 @@ for (const asset of manifest.assets ?? []) {
   }
 }
 
-const css = readFileSync(join(repoRoot, 'web/css/app.css'), 'utf8').replace(
+// HOOK prod/c-inventory: keep bag screens styled in the single-file build.
+const collectionCssPath = join(repoRoot, 'web/css/collection.css');
+const collectionCss = existsSync(collectionCssPath) ? `\n${readFileSync(collectionCssPath, 'utf8')}` : '';
+const css = (readFileSync(join(repoRoot, 'web/css/app.css'), 'utf8') + collectionCss).replace(
   /url\((['"]?)(\.\.\/assets\/[^)'"]+)\1\)/g,
   (full, _quote, rel) => {
     const file = join(repoRoot, 'web', rel.replace(/^\.\.\//, ''));
