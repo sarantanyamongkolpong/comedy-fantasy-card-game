@@ -448,11 +448,12 @@
     ]
   },
   "siblingWatch": {
-    "note": "PROPOSED tensions with Agent 06's style guide. Not canon conflicts. See sample_lore_links.json.",
-    "m06Commit": "ee9c6498d2d585afe36d1634aafbf8b173e1186e",
+    "note": "Agent 06's style guide at b7132e2 adopts this vocabulary. Earlier tensions at ee9c649 are closed. See sample_lore_links.json. Still no sample creatures.",
+    "m06Commit": "b7132e2d1301ab34342579d2ad073b04e0a4cd26",
     "m06File": "docs/research/monsters/creative/parody/STYLE_GUIDE.md",
-    "m07": "remote branch research/m07-boss was absent at this watch",
-    "yield": "Their guide says the echo flavor and the floor labels yield to this lore file."
+    "m06SampleEntryCount": 0,
+    "m07": "remote branch research/m07-boss was absent at 2026-11-20T13:20:19Z",
+    "yield": "Their guide now uses ORG-* ids, ATTR-* ids, ENV-TWR-01..15, and Normal N / Elite R."
   },
   "linkRulesForSamples": {
     "status": "PROPOSED",
