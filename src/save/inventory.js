@@ -1,3 +1,4 @@
+import { SAVE_VERSION } from '../schema/constants.js';
 import { validateDeck } from '../schema/deck.js';
 
 const LIST = {
@@ -25,7 +26,10 @@ function fail(message, code, extra = {}) {
 export function createProfile(overrides = {}) {
   const profile = {
     profileId: overrides.profileId ?? 'PLAYER',
-    saveVersion: 1,
+    saveVersion: SAVE_VERSION,
+    preferences: {
+      autoBattle: false,
+    },
     inventory: {
       avatars: [],
       actions: [],
@@ -47,7 +51,28 @@ export function createProfile(overrides = {}) {
   if (overrides.pity) profile.pity = structuredClone(overrides.pity);
   if (overrides.decks) profile.decks = structuredClone(overrides.decks);
   if (overrides.rewardLedger) profile.rewardLedger = structuredClone(overrides.rewardLedger);
+  if (overrides.preferences) {
+    const incoming = overrides.preferences;
+    if (Object.prototype.hasOwnProperty.call(incoming, 'autoBattle') && typeof incoming.autoBattle !== 'boolean') {
+      throw new TypeError('preferences.autoBattle must be a boolean');
+    }
+    profile.preferences = {
+      ...profile.preferences,
+      ...structuredClone(incoming),
+    };
+  }
   return profile;
+}
+
+/**
+ * @param {object} profile
+ * @param {boolean} enabled
+ */
+export function setAutoBattle(profile, enabled) {
+  if (typeof enabled !== 'boolean') throw new TypeError('autoBattle must be a boolean');
+  const next = structuredClone(profile);
+  next.preferences = { ...(next.preferences ?? {}), autoBattle: enabled };
+  return next;
 }
 
 function reservedCount(stack) {

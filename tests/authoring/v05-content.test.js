@@ -6,7 +6,7 @@ import { DEMO_MIXED_DECK, V05_JUSTIN_AVATARS, V05_STARTER_ACTIONS } from '../../
 import { buildV05Content } from '../../src/schema/v05-samples.js';
 import { validateActionCard, validateAvatar } from '../../src/schema/validate.js';
 import { validateDeck } from '../../src/schema/deck.js';
-import { DECK_SIZE, OWNER_EVIDENCE_T253U } from '../../src/schema/constants.js';
+import { DECK_SIZE, OWNER_EVIDENCE_T253U, OWNER_EVIDENCE_T261U } from '../../src/schema/constants.js';
 import { defaultRuleConfig, pendingOwnerFlags } from '../../src/config/index.js';
 
 function read(relative) {
@@ -117,9 +117,19 @@ test('t253u decisions are locked and the other open rules stay pending', () => {
   assert.equal(config.house.cabinBaseCapacity.status, 'PENDING_OWNER');
   assert.equal(config.teamSpdAggregation.status, 'PENDING_OWNER');
   assert.equal(config.deckDuplicateMax.status, 'PENDING_OWNER');
+  assert.equal(config.vrSync.status, 'REJECTED');
+  assert.equal(config.vrSync.value, null);
+  assert.equal(config.vrSync.evidence, OWNER_EVIDENCE_T261U);
+  assert.equal(config.autoBattle.status, 'LOCKED');
+  assert.equal(config.autoBattle.value, true);
+  assert.equal(config.autoBattle.evidence, OWNER_EVIDENCE_T261U);
+  assert.equal(config.autoPolicy.status, 'PROPOSED');
+  assert.equal(config.autoPolicy.value, 'balanced');
+  assert.equal(config.autoPolicy.speed.status, 'PROPOSED');
   const pending = pendingOwnerFlags(config).map((row) => row.rule);
   assert.equal(pending.includes('GA-12'), false);
   assert.equal(pending.includes('CORE-005'), false);
+  assert.equal(pending.includes('CORE-037'), false);
   assert.ok(pending.includes('GA-11'));
   assert.ok(pending.includes('HOME-11'));
   assert.ok(pending.includes('CORE-038'));

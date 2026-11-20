@@ -223,9 +223,16 @@
     },
     "PlayerProfile": {
       "type": "object",
-      "required": ["profileId", "inventory", "decks", "currency", "pity", "house", "rewardLedger"],
+      "required": ["profileId", "inventory", "decks", "currency", "pity", "house", "rewardLedger", "preferences"],
       "properties": {
-        "saveVersion": { "const": 1 }
+        "saveVersion": { "enum": [1, 2] },
+        "preferences": {
+          "type": "object",
+          "required": ["autoBattle"],
+          "properties": {
+            "autoBattle": { "type": "boolean", "description": "Player toggle. Default false when a save has no preference." }
+          }
+        }
       }
     },
     "Furniture": {

@@ -126,8 +126,12 @@ Legacy samples above are unchanged: `AVT_*_001` still use `pow` / `def` / `spd` 
 | CORE-026..029 skill slots | N optional Active; R exactly one of Active or Passive; Epic both; EX both plus Ultimate | `validateSkillSlots` |
 | GA-12 pity | Per banner. Epic and top counters are separate. Epic resets Epic only. EX/FAC resets both. Companion has its own Epic counter and no top counter. Thresholds 100 / 200 / 100 | `src/gacha` |
 | Justin identity | New characters `AVT_AEG_002`, `AVT_PHA_002`, `AVT_CEL_002`, `AVT_SAN_002` | `V05_JUSTIN_AVATARS` |
+| AUTO battle | Required (`autoBattle.value` true). Policy is not locked | `defaultRuleConfig().autoBattle` |
+| CORE-037 SYNC | REJECTED, value null. Not pending | `defaultRuleConfig().vrSync` |
 
 Justina Moment's active, Saving Grace (Regen +3 for 2 turns, all teammates), is LOCKED. Her other numbers, and the other three Justins' stats and skills, stay PROPOSED. Starter action costs and the demo enemy stats are PLACEHOLDER. They are not locked balance and they are not `PRODUCTION_READY`.
+
+AUTO uses the engine field `autoPolicy`. The proposed default is `balanced` (`autoPolicy.value`). Playback speed is `autoPolicy.speed` (`normal`, options `slow` / `normal` / `fast`), also PROPOSED. The player toggle is `preferences.autoBattle` on the save profile. New profiles start at false. A version 1 save with no preference migrates to false. `setAutoBattle(profile, enabled)` writes the boolean. Evidence for both the rejection and the AUTO requirement is `Owner t261u 20 Nov 2026`.
 
 ### Still PENDING_OWNER
 
