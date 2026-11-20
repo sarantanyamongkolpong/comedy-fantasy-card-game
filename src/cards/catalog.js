@@ -1,5 +1,7 @@
 import { SAMPLE_AVATARS } from '../avatars/catalog.js';
 
+export { DEMO_ENEMY_TEAM, DEMO_MIXED_DECK, V05_STARTER_ACTIONS } from '../schema/v05-samples.js';
+
 function tbdStats() {
   return { pow: null, def: null, spd: null, valueStatus: 'TBD' };
 }

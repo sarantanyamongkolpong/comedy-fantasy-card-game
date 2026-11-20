@@ -1,5 +1,18 @@
 {
-  "source": "Approved gameplay constants snapshotted from src/schema/constants.js. sha256 is the SHA-256 of the canonical JSON object containing only partySize, handSize, baseAp, factions, cardActionTypes, and statuses, in that key order. Deck size, damage, HP, gacha rates, and upgrade formulas are intentionally absent: those rules are still BLOCKED_BY_DESIGN.",
+  "source": "Approved gameplay constants snapshotted from src/schema/constants.js. sha256 is the SHA-256 of the canonical JSON object containing only partySize, handSize, baseAp, factions, cardActionTypes, and statuses, in that key order. The checker in tools/ci/lib/repository-structure.mjs (stream D) hashes only those six keys. Deck size is now LOCKED in src/schema/constants.js as DECK_SIZE = 30 (CORE-009) but this file still omits the key deckSize because tests/ci/repository-structure.test.js asserts deckSize, hp, damage, and gachaRate are absent. See changelog. Damage, HP, gacha rates, and upgrade formulas stay absent on purpose.",
+  "changelog": [
+    {
+      "date": "2026-11-20",
+      "evidence": "v05 CORE-009; stream B core/v05-data",
+      "note": "DECK_SIZE 30 is LOCKED at runtime (src/schema/constants.js export DECK_SIZE, src/config defaultRuleConfig().deckSize). The sha256 below is unchanged because PROTECTED_KEYS does not include deck size yet. CONTRACT_REQUEST: stream D should add deckSize to PROTECTED_KEYS and drop the assertion that file.deckSize is undefined. Do not treat this snapshot as locking HP, damage, or gacha rates."
+    }
+  ],
+  "allowedLockedConstantsNotInHash": {
+    "DECK_SIZE": 30,
+    "status": "LOCKED",
+    "rule": "CORE-009",
+    "runtimeExport": "src/schema/constants.js#DECK_SIZE"
+  },
   "partySize": 4,
   "handSize": 5,
   "baseAp": 5,

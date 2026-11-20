@@ -1,0 +1,79 @@
+{
+  "contentTier": "draft",
+  "warning": "TEST_ONLY_NOT_PRODUCTION. These weights are fixtures for the pity engine. NOT A DROP RATE. GA-11 remains PENDING_OWNER.",
+  "banners": [
+    {
+      "testOnly": true,
+      "rateStatus": "TEST_ONLY_NOT_PRODUCTION",
+      "warning": "TEST_ONLY_NOT_PRODUCTION. These weights are fixtures for the pity engine. NOT A DROP RATE. GA-11 remains PENDING_OWNER.",
+      "costG": null,
+      "costStatus": "PENDING_OWNER",
+      "bannerId": "TEST_BANNER_AVATAR",
+      "pool": "avatar",
+      "entries": [
+        {
+          "id": "TEST_POOL_N",
+          "rarity": "N",
+          "weight": 100
+        },
+        {
+          "id": "TEST_POOL_EPIC",
+          "rarity": "Epic",
+          "weight": 0
+        },
+        {
+          "id": "TEST_POOL_EX",
+          "rarity": "EX",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "testOnly": true,
+      "rateStatus": "TEST_ONLY_NOT_PRODUCTION",
+      "warning": "TEST_ONLY_NOT_PRODUCTION. These weights are fixtures for the pity engine. NOT A DROP RATE. GA-11 remains PENDING_OWNER.",
+      "costG": null,
+      "costStatus": "PENDING_OWNER",
+      "bannerId": "TEST_BANNER_ACTION",
+      "pool": "action",
+      "entries": [
+        {
+          "id": "TEST_POOL_N",
+          "rarity": "N",
+          "weight": 100
+        },
+        {
+          "id": "TEST_POOL_EPIC",
+          "rarity": "Epic",
+          "weight": 0
+        },
+        {
+          "id": "TEST_POOL_FAC",
+          "rarity": "FAC",
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "testOnly": true,
+      "rateStatus": "TEST_ONLY_NOT_PRODUCTION",
+      "warning": "TEST_ONLY_NOT_PRODUCTION. These weights are fixtures for the pity engine. NOT A DROP RATE. GA-11 remains PENDING_OWNER.",
+      "costG": null,
+      "costStatus": "PENDING_OWNER",
+      "bannerId": "TEST_BANNER_COMPANION",
+      "pool": "companion",
+      "entries": [
+        {
+          "id": "TEST_POOL_N",
+          "rarity": "N",
+          "weight": 100
+        },
+        {
+          "id": "TEST_POOL_EPIC",
+          "rarity": "Epic",
+          "weight": 0
+        }
+      ]
+    }
+  ]
+}
