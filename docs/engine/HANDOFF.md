@@ -49,8 +49,8 @@ AUTO is locked. SYNC is not in this build: there is no sync function and no sync
 - `playEnemyTurn(state)` is `runAutoTurn` for the non-human side.
 - Stop between actions with `opts.shouldStop` returning true, or `opts.maxActions`. The current action finishes; the turn is not ended, so the player can take over.
 - `defaultRuleConfig().autoPolicy` is `PROPOSED`. Default name `balanced`: next-attack setup when it raises the hit, then highest damage on the lowest-HP legal target, then a real shield or taunt if a hit can KO. A generic Skill is not given to Justina while an attack is available. A shield of 0 does not outrank damage. Zero-value cards are discarded for 1 AP so the hand can draw. Edit `policies.balanced` to change the order. Do not mark the policy `LOCKED`.
-- Pass `config` into `createMatch`. The web adapter forwards `input.config`. The engine applies `config.damage.preset` when one is set. The product leaves the preset null, so the default floor stays 1.
-- Damage presets are selectable and still `PENDING_OWNER`. Leave `damage.preset` null for the current floor of 1. `floor_25_pct_atk`, `floor_50_pct_atk`, and `flat_atk` are named alternates. They do not change the default formula. On the mirror Justin deck the default floor still takes a long tank grind after the DPS avatars die, because a hit into DEF 8 is 1. That is the open damage decision, not a frozen AUTO turn.
+- Pass `config` into `createMatch`. The web adapter forwards `input.config`, and `web/js/app.js` fills it from the engine's `defaultRuleConfig()`, so the web build plays the engine default with no web change.
+- Damage (Owner t269u, 2026-11-20): default `damage.preset` is `flat_atk`, `damage.status` is `MVP_PROVISIONAL` (not LOCKED). Damage = effective ATK + on-attack bonus, DEF ignored; DEF still adds HP (`10 + DEF * 2`). Switch by editing `damage.preset` in `src/engine/rule-config.js` or passing `config.damage.preset` (`null` = legacy floor 1, `floor_25_pct_atk`, `floor_50_pct_atk`). Damage log events carry `formulaStatus` (the config status) and `preset`. `state.flags.damageFormula` mirrors the status. `src/config` `damageFormula` is `MVP_PROVISIONAL` with `provisional: 'flat_atk'` and `value: null`. Report: `docs/final_v05/DAMAGE_FLAT_ATK_REPORT.md`.
 
 `runEnemyTurn` remains the older lowest-instance demo. The web adapter should call `playEnemyTurn` for AUTO.
 
@@ -113,7 +113,7 @@ Justina `AV_EX04` Saving Grace is Regen +3 for 2 ticks. The cast turn does not h
 
 ## Known limits
 
-- Damage, HP, heal cap, regen timing, status duration, team-SPD math, SPD ties, and simultaneous death are placeholders. See `docs/engine/RULES.md`. The default damage floor is still 1. On the mirror Justin practice match a hit into Case is 1 after the damage dealers die, so the match runs long. Pick `damage.preset` if a shorter match is wanted. The default was not switched.
+- Damage is `flat_atk` as MVP_PROVISIONAL (Owner t269u), not a locked formula. HP, heal cap, regen timing, status duration, team-SPD math, SPD ties, and simultaneous death are placeholders. See `docs/engine/RULES.md`. Under `flat_atk`, DEF buffs (Case *Bulwark*) do not change damage, and the PROPOSED AUTO policy never casts Justina's regen; both are reported in the damage report, not fixed.
 - A KO sets `alive` false, HP 0, and clears that unit's statuses. The unit stays in the roster so the screen can show the seat. `0/14` with `alive: false` is defeated, not still fighting.
 - The legacy hand still throws on draw and discard. v0.5 zones are inside the match.
 - The rewards payload is present and labelled. `G` and `loot` are `null` with status `PENDING_OWNER`. No currency amount is filled in.

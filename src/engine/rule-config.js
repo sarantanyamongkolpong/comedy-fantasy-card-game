@@ -14,6 +14,8 @@ const REGEN_STACKS = new Set(['refresh_ticks_keep_higher_amount', 'stack_separat
 const AUTO_STEPS = new Set(['heal_regen', 'shield_taunt_if_lethal', 'setup_next_attack', 'highest_damage_lowest_hp', 'any_legal_expected_value']);
 const DISCARD_POLICIES = new Set(['hand_locked_only', 'hand_locked_or_no_progress']);
 const DAMAGE_PRESETS = new Set(['floor_25_pct_atk', 'floor_50_pct_atk', 'flat_atk']);
+/** Owner t269u: damage may be MVP_PROVISIONAL or PENDING_OWNER. Never LOCKED. */
+const DAMAGE_STATUSES = new Set(['MVP_PROVISIONAL', 'PENDING_OWNER']);
 
 const TEMPLATE = {
   meta: {
@@ -46,33 +48,58 @@ const TEMPLATE = {
   },
   damage: {
     id: 'CORE-039',
-    status: 'PENDING_OWNER',
+    // Owner t269u (Pote, 2026-11-20 19:48 ICT): option A, flat ATK that ignores DEF, for the MVP.
+    // Status is MVP_PROVISIONAL. It is NOT LOCKED and resolveRuleConfig refuses LOCKED.
+    // Switch formula by changing `preset` below (or pass config.damage.preset); the engine is untouched.
+    status: 'MVP_PROVISIONAL',
     placeholder: true,
-    label: 'PLACEHOLDER_NOT_APPROVED',
+    label: 'MVP_PROVISIONAL_NOT_LOCKED',
+    decision: {
+      owner: 'Pote',
+      evidence: 't269u',
+      date: '2026-11-20',
+      choice: 'A_flat_atk',
+      status: 'MVP_PROVISIONAL',
+      switchable: true,
+      defHp: 'DEF still adds HP through the unchanged hp formula',
+      followUp: 'Owner t282u: AUTO uses Regen at HP <= 50% when affordable and worthwhile. Under flat_atk, Bulwark grants Shield +2 instead of DEF +1 (MVP_PROVISIONAL, not LOCKED). No authored card or skill values were edited.',
+    },
+    // Owner t282u: remap only at resolve time when preset is flat_atk. Authored Bulwark data stays DEF +1.
+    bulwark: {
+      status: 'MVP_PROVISIONAL',
+      evidence: 't282u',
+      date: '2026-11-20',
+      enabled: true,
+      matchAvatarIds: ['AVT_AEG_002'],
+      matchNames: ['Bulwark'],
+      shieldAmount: 2,
+      note: 'Temporary MVP_PROVISIONAL. When damage.preset is flat_atk and enabled is true, Justin Case / Bulwark turn-start DEF +1 becomes Shield +2 on all allies. Legacy presets and enabled: false keep the authored DEF +1. Not LOCKED.',
+    },
+    // Legacy formula used only when preset is null: max(minDamage, ATK - DEF). Kept selectable.
     formula: 'placeholder_atk_minus_def',
     minDamage: 1,
-    preset: null,
+    preset: 'flat_atk',
     presets: {
       floor_25_pct_atk: {
         formula: 'placeholder_atk_minus_def',
         minDamage: 1,
         floorPct: 0.25,
-        note: 'PLACEHOLDER alternate. Damage is at least ceil(25% of effective ATK), and still at least ATK - DEF and minDamage. DEF can still reduce a hit above that floor. Not approved.',
+        note: 'Alternate. Damage is at least ceil(25% of effective ATK), and still at least ATK - DEF and minDamage. DEF can still reduce a hit above that floor. Not approved.',
       },
       floor_50_pct_atk: {
         formula: 'placeholder_atk_minus_def',
         minDamage: 1,
         floorPct: 0.5,
-        note: 'PLACEHOLDER alternate. Damage is at least ceil(50% of effective ATK), and still at least ATK - DEF and minDamage. Not approved.',
+        note: 'Alternate. Damage is at least ceil(50% of effective ATK), and still at least ATK - DEF and minDamage. Not approved.',
       },
       flat_atk: {
         formula: 'placeholder_flat_atk',
         minDamage: 0,
         floorPct: null,
-        note: 'PLACEHOLDER alternate. Damage is effective ATK and ignores DEF. Not approved.',
+        note: 'MVP_PROVISIONAL default (Owner t269u). Damage is effective ATK plus on-attack bonus and ignores DEF. Shield still absorbs first. Not LOCKED.',
       },
     },
-    note: 'No v0.5 source defines damage. The default stays placeholder_atk_minus_def: max(minDamage, effectiveATK - effectiveDEF) plus on-attack bonus. minDamage 1 and preset null are unchanged. Select damage.preset floor_25_pct_atk, floor_50_pct_atk, or flat_atk to try a named alternate. effectiveATK includes ATK buffs and a next-attack bonus. Shield absorbs before HP. This is not balance.',
+    note: 'Owner t269u picked flat_atk for the MVP as MVP_PROVISIONAL (not LOCKED). Default preset flat_atk: effectiveATK plus on-attack bonus, DEF ignored for damage; DEF still raises max HP through hp. Set damage.preset to null for the legacy max(minDamage 1, effectiveATK - effectiveDEF), or to floor_25_pct_atk / floor_50_pct_atk. effectiveATK includes ATK buffs and a next-attack bonus. Shield absorbs before HP. Balance pass comes after real play.',
   },
   hp: {
     id: 'CORE-039',
@@ -152,13 +179,14 @@ const TEMPLATE = {
     name: 'balanced',
     policies: {
       balanced: {
-        allyLowHpRatio: 0.4,
-        priorities: ['setup_next_attack', 'highest_damage_lowest_hp', 'shield_taunt_if_lethal', 'heal_regen', 'any_legal_expected_value'],
+        // Owner t282u: AUTO uses Regen when a target ally is at or below this ratio (inclusive).
+        allyLowHpRatio: 0.5,
+        priorities: ['shield_taunt_if_lethal', 'heal_regen', 'setup_next_attack', 'highest_damage_lowest_hp', 'any_legal_expected_value'],
         spend: 'greedy',
         voluntaryDiscard: 'hand_locked_or_no_progress',
       },
     },
-    note: 'AUTO is locked. This preference table is proposed and editable. balanced plays a next-attack Skill before damage when that buff raises the hit, then the highest estimated damage on the lowest-HP legal target, then a real shield or taunt when an enemy strike can KO, then a non-regen heal when an ally is under allyLowHpRatio and no damaging card is legal. The last tier plays any other legal card whose expected value is above 0. Team regen and a shield of 0 score 0, so they do not replace a damaging play. hand_locked_or_no_progress spends 1 AP to discard one zero-value or unplayable card so the hand can draw. AP is spent greedily.',
+    note: 'AUTO is locked. This preference table is PROPOSED and editable, never silently LOCKED. Owner t282u (MVP_PROVISIONAL): balanced first plays a real shield or taunt when an enemy strike can KO, then a worthwhile affordable Regen or heal when an ally is at or below allyLowHpRatio 0.5 (skip if that unit already has regen, is at max HP, or the skill would not heal). A Skill is given to Justina in that case so it is not spent on a next-attack setup. Then a next-attack Skill if it raises a still-payable hit, then the highest estimated damage on the lowest-HP legal target. any_legal_expected_value plays any other card whose expected value is above 0. A shield of 0 does not outrank a damaging play. Affordability is the engine play check (AP / cost; this ruleset has no MP). hand_locked_or_no_progress spends 1 AP to discard one zero-value or unplayable card so the hand can draw. AP is spent greedily.',
   },
 };
 
@@ -202,6 +230,12 @@ function assertConfig(config) {
     }
   }
   for (const key of PENDING_KEYS) {
+    if (key === 'damage') {
+      if (!DAMAGE_STATUSES.has(config.damage?.status)) {
+        throw gameError('PENDING_LOCK', 'damage must stay MVP_PROVISIONAL or PENDING_OWNER, never LOCKED');
+      }
+      continue;
+    }
     if (config[key]?.status !== 'PENDING_OWNER') {
       throw gameError('PENDING_LOCK', `${key} must stay PENDING_OWNER`);
     }

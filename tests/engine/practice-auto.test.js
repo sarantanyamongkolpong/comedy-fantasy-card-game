@@ -83,7 +83,8 @@ function practiceInput(seed, preset) {
     seed,
     matchId: `tower-${seed}`,
     shuffleDecks: true,
-    config: preset ? resolveRuleConfig({ damage: { preset } }) : undefined,
+    // preset null pins the legacy floor-1 formula; the engine default is flat_atk (Owner t269u).
+    config: resolveRuleConfig({ damage: { preset } }),
     teams: [
       { sideId: 'player', control: 'human', avatars: practiceRoster(false) },
       { sideId: 'enemy', control: 'ai', avatars: practiceRoster(true) },
@@ -117,7 +118,10 @@ function fight(seed, preset, cap) {
 }
 
 test('createMatch applies a damage preset on the practice input', () => {
-  const baseline = createMatch(practiceInput(2));
+  const baseline = createMatch(practiceInput(2, null));
+  const byDefault = createMatch({ ...practiceInput(2, null), config: undefined });
+  assert.equal(byDefault.config.damage.preset, 'flat_atk');
+  assert.equal(byDefault.config.damage.status, 'MVP_PROVISIONAL');
   const boosted = createMatch(practiceInput(2, 'floor_50_pct_atk'));
   assert.equal(baseline.config.damage.preset, null);
   assert.equal(baseline.config.damage.formula, 'placeholder_atk_minus_def');

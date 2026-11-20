@@ -120,8 +120,8 @@ test('AUTO accepts player and enemy, and rejects an options object used as a sid
   assert.equal(enemy.reason, 'NOT_ACTIVE_SIDE');
   assert.equal(defaultRuleConfig().damage.formula, 'placeholder_atk_minus_def');
   assert.equal(defaultRuleConfig().damage.minDamage, 1);
-  assert.equal(defaultRuleConfig().damage.preset, null);
-  assert.equal(defaultRuleConfig().damage.status, 'PENDING_OWNER');
+  assert.equal(defaultRuleConfig().damage.preset, 'flat_atk');
+  assert.equal(defaultRuleConfig().damage.status, 'MVP_PROVISIONAL');
   assert.equal(defaultRuleConfig().autoPolicy.status, 'PROPOSED');
 });
 

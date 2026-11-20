@@ -13,23 +13,26 @@ test('content and sample banners pass the gacha TEST guard', async () => {
   }
 });
 
-test('createMatch forwards input.config and leaves the default damage formula alone', async () => {
+test('createMatch forwards input.config and the web default is flat_atk MVP_PROVISIONAL', async () => {
   const api = await loadGameApi();
   const profile = createStarterProfile(api.catalog);
   const plainInput = buildMatchInput(profile, api.catalog, { seed: 4, mode: 'tower' });
   plainInput.config = api.defaultRuleConfig();
   const plain = api.createMatch(plainInput);
+  // Owner t269u: the web build plays flat_atk by default, status MVP_PROVISIONAL (not LOCKED).
+  assert.equal(plain.engine.config.damage.preset, 'flat_atk');
+  assert.equal(plain.engine.config.damage.status, 'MVP_PROVISIONAL');
   assert.equal(plain.engine.config.damage.formula, 'placeholder_atk_minus_def');
-  assert.equal(plain.engine.config.damage.status, 'PENDING_OWNER');
-  assert.equal(plain.engine.config.damage.preset ?? null, null);
 
   const config = api.defaultRuleConfig();
+  config.damage.preset = null;
   config.damage.formula = 'placeholder_flat_atk';
   const input = buildMatchInput(profile, api.catalog, { seed: 4, mode: 'tower' });
   input.config = config;
   const match = api.createMatch(input);
   assert.equal(match.engine.config.damage.formula, 'placeholder_flat_atk');
-  assert.equal(match.engine.config.damage.status, 'PENDING_OWNER');
+  assert.equal(match.engine.config.damage.preset, null);
+  assert.equal(match.engine.config.damage.status, 'MVP_PROVISIONAL');
   assert.notEqual(match.engine.config, config);
 });
 

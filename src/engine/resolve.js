@@ -164,7 +164,8 @@ function applyOne(state, ctx, effect, source) {
         defeated: result.defeated,
         formula,
         placeholder,
-        formulaStatus: placeholder ? 'PENDING_OWNER' : null,
+        formulaStatus: placeholder ? state.config.damage.status : null,
+        preset: placeholder ? (state.config.damage.preset ?? null) : null,
         bonus,
       });
       if (result.defeated) {
@@ -314,6 +315,24 @@ function chanceProcs(chance, rng) {
   return rng.next() < chance;
 }
 
+
+/** Owner t282u: under flat_atk only, remap authored Bulwark DEF +1 to Shield +2. Does not mutate stored skill data. */
+function remappedPassiveEffects(state, unit, passive) {
+  const cfg = state.config.damage?.bulwark;
+  if (!cfg || cfg.enabled === false) return passive.effects;
+  if (state.config.damage?.preset !== 'flat_atk') return passive.effects;
+  const names = cfg.matchNames ?? ['Bulwark'];
+  const avatars = cfg.matchAvatarIds ?? ['AVT_AEG_002'];
+  if (!names.includes(passive.name) && !avatars.includes(unit.avatarId)) return passive.effects;
+  const amount = Number.isInteger(cfg.shieldAmount) ? cfg.shieldAmount : 2;
+  return passive.effects.map((effect) => {
+    if (effect.op === 'buff' && effect.stat === 'def' && effect.amount === 1) {
+      return { op: 'shield', amount, target: effect.target ?? 'all_allies' };
+    }
+    return effect;
+  });
+}
+
 export function fireTurnPassives(state, side, rng) {
   const allies = living(side.avatars);
   for (const unit of side.avatars) {
@@ -347,7 +366,7 @@ export function fireTurnPassives(state, side, rng) {
       bonusRolled: false,
       bonus: 0,
     };
-    resolveEffects(state, ctx, passive.effects, passive);
+    resolveEffects(state, ctx, remappedPassiveEffects(state, unit, passive), passive);
     state.log.push({ type: 'passive_proc', avatarId: unit.avatarId, name: passive.name, trigger: 'turn_start' });
   }
 }
